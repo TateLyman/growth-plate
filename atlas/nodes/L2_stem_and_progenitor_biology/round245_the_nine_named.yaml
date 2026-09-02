@@ -1,0 +1,168 @@
+id: round245_the_nine_named
+name: >-
+  ROUND 245 - the nine ARE named. Fig. 3R reconstructed column by column from the published figure: SFRP1,
+  SFRP2, SFRP5, DKK1, DKK3, SOSTDC1, WIF1, SERPINF1 and PORCN, against four ligands WNT3, WNT3A, WNT8A and
+  WNT9A. AND THE RECONSTRUCTION CUTS AGAINST THE FRAMING IT WAS MEANT TO SUPPORT - all four ligands peak in
+  gp1 too
+type: dataset
+layer: L2
+aliases:
+- the nine named
+- Fig 3R reconstructed
+- SFRP1 SFRP2 SFRP5 DKK1 DKK3 SOSTDC1 WIF1 SERPINF1 PORCN
+- round 245
+stub: false
+summary: |
+  ROUND 244 CONCLUDED THE NINE COULD NOT BE NAMED AND THAT THE ONLY ROUTE LEFT WAS TO EMAIL THE AUTHORS.
+  THAT WAS WRONG, AND IT WAS WRONG IN A LAZY WAY: the names are printed in the published figure. They are
+  inside an embedded raster, so they do not appear in the PDF text layer and did not appear in any of the
+  text extractions this atlas had been reading for a week. Extracting the image and reading it settles it.
+
+  HOW IT WAS DONE, SO IT CAN BE CHECKED. Panel R of Fig. 3 is embedded image xref 142 on page 6 of the
+  published PDF, native 2177 x 576. The axis ticks were detected computationally: EXACTLY 28, evenly spaced
+  at 72.5 pixels, from x = 157 to x = 2120. Each label was then read at four times magnification. The four
+  category captions - WNT Coreceptors, WNT receptors, Soluble WNT inhibitors, WNT ligands - ARE live text in
+  the PDF, with pixel centres at 338, 897, 1550 and 2011.
+
+  THE GROUP BOUNDARIES WERE NOT GUESSED. A contiguous 6/9/9/4 split puts the group centres at 338, 884, 1538
+  and 2011 - residuals of 0, 13, 12 and 0 pixels against a 72.5 pixel column. The competing 6/9/8/5 split,
+  which would make PORCN a ligand, gives residuals of 48 and 37. AND THE 6/9/9/4 SPLIT REPRODUCES THE
+  PAPER'S OWN SENTENCE EXACTLY - four ligands and nine soluble inhibitors. Two independent constraints, one
+  geometric and one textual, agree.
+
+  THE ANSWER.
+
+  - NINE SOLUBLE WNT INHIBITORS: WIF1, SERPINF1, DKK3, DKK1, SOSTDC1, SFRP1, SFRP2, SFRP5, PORCN
+  - FOUR WNT LIGANDS: WNT8A, WNT3, WNT3A, WNT9A
+  - nine receptors: FZD6, FZD3, FZD1, FZD9, FZD7, FZD5, FZD2, FZD4, FZD8
+  - six coreceptors: APCDD1, RNF43, ZNF3 (as printed - see below), RYK, LRP6, LRP5
+
+  SFRP1 IS CONFIRMED INDEPENDENTLY. Round 243 recovered SFRP1 alone, off the ligand-receptor panel as an
+  autocrine SFRP1 -> FZD2 pair with GP1 as both source and target. It appears here in the inhibitor block,
+  gp1-maximal, from a different figure by a different route.
+
+  THREE THINGS THAT ARE WRONG WITH THE PANEL AS PRINTED, RECORDED RATHER THAN TIDIED AWAY.
+
+  ONE - ZNF3 IS ALMOST CERTAINLY ZNRF3. ZNF3 is a zinc finger protein with no role in WNT signalling and is
+  NOT in KEGG:04310; ZNRF3 is the pathway member, a transmembrane E3 ligase that degrades frizzled. Every
+  other gene in the panel is a KEGG:04310 member. The label is recorded AS PRINTED and flagged, not silently
+  corrected.
+
+  TWO - THE PANEL IS NOT THE KEGG SET. DKK3 and SOSTDC1 are genuinely absent from current KEGG:04310, so the
+  panel is KEGG plus curated additions, or an older release. Current membership is 178 against the paper's
+  174. The '174 genes of the KEGG:04310 pathway' framing and the panel do not correspond one to one.
+
+  THREE - AND THIS IS THE ONE THAT MATTERS. 'NINE AGAINST FOUR' COMPARES CATEGORIES OF DIFFERENT SIZES AND
+  MEANS LITTLE ON ITS OWN. KEGG:04310 contains NINETEEN WNT ligands and THIRTEEN genuinely secreted
+  antagonists. So GP1 has four of nineteen ligands on - 21 per cent - and six of thirteen KEGG antagonists
+  plus two more from outside it - 46 per cent. THE ASYMMETRY IS REAL AND IT IS A PROPORTION, NOT A RAW
+  COUNT, and stating it as a proportion is both more defensible and roughly twice as strong.
+
+  WHAT GP1 POINTEDLY DOES NOT EXPRESS is as informative as what it does: not SFRP4, not FRZB, not DKK2, not
+  DKK4, not SOST, not NOTUM, not CER1. Round 243 found that the MOUSE root cluster runs WIF1 and FRZB
+  instead, and the human cell has WIF1 but not FRZB - so even the class-level convergence is partial.
+
+  NOW THE PART THAT CUTS AGAINST ROUNDS 241 AND 243, AND IT WAS FOUND BY DOING THE RECONSTRUCTION PROPERLY.
+  Reading the gp1 row across all 28 columns, SEVENTEEN OF TWENTY-EIGHT GENES ARE gp1-MAXIMAL - INCLUDING ALL
+  FOUR LIGANDS. WNT3, WNT3A, WNT8A and WNT9A all peak in gp1. If the root cell were an antagonist source in
+  the sense those rounds implied, the ligands should not peak there as well.
+
+  ROUND 244 ALREADY ESTABLISHED WHY: root-region cells in this dataset carry more transcript overall, and
+  scaling within a gene across clusters does NOT correct for detection depth. THE REDNESS OF THE gp1 ROW IS
+  THEREFORE NOT EVIDENCE OF ANTAGONIST BIAS. It is the same confound, now visible in the authors' own
+  figure rather than in my re-analysis of their data.
+
+  WHAT SURVIVES, AND IT IS THE USEFUL HALF. The COMPOSITION result - which genes are switched on, against
+  how many were available in each category - is not vulnerable to depth in the same way, because it compares
+  two categories measured in the same cells. GP1 runs 46 per cent of the available secreted antagonists and
+  21 per cent of the available ligands. THE ROOT CELL IS ANTAGONIST-RICH IN ITS REPERTOIRE, NOT IN ITS
+  INTENSITY, and rounds 241 and 243 should be read that way from here.
+
+  THE PRACTICAL CONSEQUENCE. The claim is now druggable in principle rather than pathway-level: nine named
+  proteins, of which SFRP1, SFRP2, SFRP5, DKK1, DKK3, SOSTDC1, WIF1 and SERPINF1 are secreted and in
+  principle measurable in a growth plate or supplementable to one. PORCN is the exception and does not
+  belong with them - it is an ER O-acyltransferase required for WNT palmitoleoylation, neither soluble nor
+  an inhibitor, and the authors' grouping of it here is a curation choice rather than a biological one.
+quantitative:
+- parameter: >-
+    the nine soluble WNT inhibitors expressed by the human root cluster GP1, recovered by column-by-column
+    reconstruction of Fig. 3R
+  value: 'WIF1, SERPINF1, DKK3, DKK1, SOSTDC1, SFRP1, SFRP2, SFRP5, PORCN'
+  unit: named genes in the panel's soluble-WNT-inhibitor block
+  conditions: >-
+    embedded image xref 142, page 6 of the published PDF, 2177 x 576 native; 28 axis ticks detected at 72.5
+    px spacing; group boundaries fixed by the live-text category captions at pixel centres 338, 897, 1550
+    and 2011, giving residuals of 0, 13, 12 and 0 for the 6/9/9/4 split
+  species: human
+  source_ref: chu2026
+  uncertainty: >-
+    A FIGURE READ, not a table. PORCN is in the block as the authors grouped it but is an ER
+    acyltransferase, neither soluble nor an inhibitor. DKK3 and SOSTDC1 are not in current KEGG:04310, so
+    the panel is not exactly the KEGG set
+- parameter: the four WNT ligands expressed by GP1
+  value: 'WNT8A, WNT3, WNT3A, WNT9A'
+  unit: named genes in the panel's WNT-ligand block
+  conditions: same reconstruction; this block's centre matches its caption to within 0 px
+  species: human
+  source_ref: chu2026
+  uncertainty: figure read; the block boundary is the best-constrained of the four
+- parameter: >-
+    the asymmetry restated as a proportion, which is what makes it meaningful - GP1 runs nearly half the
+    available secreted antagonists and a fifth of the available ligands
+  value: '6 of 13 KEGG:04310 secreted antagonists (46 per cent) plus DKK3 and SOSTDC1 from outside it,
+    against 4 of 19 KEGG WNT ligands (21 per cent)'
+  unit: proportion of available pathway members switched on, by category
+  conditions: denominators from the current KEGG hsa04310 release fetched 2026-08-11, 178 genes
+  species: human
+  source_ref: chu2026
+  uncertainty: >-
+    KEGG membership drifts - the paper cites 174 genes and the current release has 178 - and which genes
+    count as 'genuinely secreted antagonists' is a judgement, taken here as SFRP1/2/4/5, FRZB, DKK1/2/4,
+    WIF1, SOST, SERPINF1, CER1 and NOTUM
+- parameter: >-
+    the confound in the authors' own figure - seventeen of twenty-eight genes are gp1-maximal, including all
+    four ligands, so the gp1 row's redness cannot be read as antagonist bias
+  value: '17 of 28 genes gp1-maximal; 4 of 4 ligands gp1-maximal'
+  unit: count of columns whose maximum across gp1-gp5 falls in gp1
+  conditions: >-
+    colour values read off the blue-white-red scale at each of the 28 tick positions across the five cluster
+    rows; the figure legend states values are scaled within each gene
+  species: human
+  source_ref: chu2026
+  uncertainty: >-
+    colour reads are approximate and within-gene scaling makes columns non-comparable to each other. The
+    inference drawn is deliberately narrow - that a uniformly gp1-maximal pattern across ligands AND
+    antagonists cannot support a directional claim about either
+localization:
+- 'human upper resting zone GP1: the nine named antagonists and four ligands are the WNT module this cluster
+  runs'
+human_evidence: direct
+human_evidence_note: >-
+  Human growth plate single-cell data from four donors, as published. This node adds no new measurement -
+  it recovers names and group boundaries from a published figure and computes denominators from KEGG.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: >-
+  No cross-species inference is made. The one comparison drawn is that the mouse root cluster runs WIF1 and
+  FRZB while the human runs WIF1 but not FRZB, which is recorded as a partial rather than a full
+  convergence.
+confidence: B
+confidence_reason: >-
+  Graded B for the gene identities and group assignment, which rest on a published figure read at high
+  magnification with the boundaries fixed by two independent constraints that agree. Not A, because it is a
+  figure read rather than a table, PORCN's membership is a curation artefact, and one label - ZNF3 - is
+  almost certainly a misprint for ZNRF3. The confound finding is graded with the node.
+key_refs:
+- ref_id: chu2026
+  pmid: '41984930'
+  doi: 10.1126/scitranslmed.adw3590
+  year: 2026
+  type: primary
+  role: >-
+    Fig. 3R, the source of both the count and, once the embedded image is extracted, the names; and the
+    source of the gp1-row pattern that undercuts the antagonist-bias reading
+open_questions:
+- g_l2stem_001
+builds_on: round244_the_nine_cannot_be_named_this_way
+last_verified: '2026-08-11'

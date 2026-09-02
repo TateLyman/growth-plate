@@ -1,0 +1,149 @@
+graph LR
+  npr2_gene["NPR2"]
+  npr2_heterozygous_short_stature["NPR2 heterozygous short stature"]
+  shox_haploinsufficiency["SHOX haploinsufficiency"]
+  turner_syndrome["Turner syndrome"]
+  shox_gene["SHOX"]
+  klinefelter_syndrome["Klinefelter syndrome"]
+  gdf5_protein["GDF5"]
+  gdf5_height_locus["GDF5 height locus"]
+  npr2_receptor["NPR2"]
+  cgmp_second_messenger["cGMP"]
+  nppc_gene["NPPC"]
+  cnp_protein["C-type natriuretic peptide"]
+  fgfr3_gene["FGFR3"]
+  fgfr3_receptor["FGFR3"]
+  ihh_gene["IHH"]
+  ihh_protein["Indian hedgehog"]
+  pth1r_gene["PTH1R"]
+  pth1r_receptor["PTH1R"]
+  hdac4_gene["HDAC4"]
+  hdac4_protein["HDAC4"]
+  acan_gene["ACAN"]
+  aggrecan_acan["Aggrecan (ACAN)"]
+  col10a1_gene["COL10A1"]
+  collagen_type_x["Collagen type X (COL10A1)"]
+  hypertrophic_chondrocyte["Hypertrophic chondrocyte"]
+  col2a1_gene["COL2A1"]
+  collagen_type_ii["Collagen type II (COL2A1)"]
+  comp_gene["COMP"]
+  comp_protein["Cartilage oligomeric matrix protein (COMP)"]
+  ghr_gene["GHR"]
+  gh_receptor["Growth hormone receptor (GHR)"]
+  stat5b_gene["STAT5B"]
+  stat5b_tf["STAT5B"]
+  igfals_gene["IGFALS"]
+  als_igfals["Acid-labile subunit (ALS / IGFALS)"]
+  igf_ternary_complex["IGF ternary complex and bioavailability layer"]
+  pappa2_gene["PAPPA2"]
+  pappa2_protease["PAPP-A2 (pappalysin-2)"]
+  igf1r_gene["IGF1R"]
+  igf1_receptor["IGF-1 receptor (IGF1R)"]
+  igf1_gene["IGF1"]
+  igf1_systemic["Systemic (hepatic) IGF-1"]
+  adult_height_attainment["Adult height attainment"]
+  esr1_gene["ESR1"]
+  estrogen_receptor_alpha["Estrogen receptor alpha (ESR1 / ERalpha)"]
+  epiphyseal_fusion["Epiphyseal fusion"]
+  cyp19a1_gene["CYP19A1"]
+  aromatase_cyp19a1["Aromatase (CYP19A1)"]
+  estradiol_hormone["17beta-estradiol"]
+  acan_related_short_stature["ACAN-related short stature with advanced bone age"]
+  schmid_metaphyseal_chondrodysplasia["Schmid metaphyseal chondrodysplasia"]
+  pseudoachondroplasia["Pseudoachondroplasia"]
+  multiple_epiphyseal_dysplasia["Multiple epiphyseal dysplasia"]
+  spondyloepiphyseal_dysplasia["Spondyloepiphyseal dysplasia (COL2A1 type II collagenopathy)"]
+  laron_syndrome["Laron syndrome (growth hormone receptor deficiency)"]
+  stat5b_deficiency["STAT5B deficiency"]
+  pappa2_deficiency["PAPP-A2 deficiency"]
+  igf1r_mutation_human["IGF1R mutations"]
+  igf1_deficiency_human["IGF1 gene defects (biallelic deletion and haploinsufficiency)"]
+  estrogen_resistance_esr1["ESR1 estrogen resistance - stature outcome"]
+  aromatase_deficiency_human["Aromatase (CYP19A1) deficiency - stature outcome"]
+  achondroplasia["Achondroplasia"]
+  hypochondroplasia["Hypochondroplasia"]
+  npr2_gain_of_function_tall["NPR2 gain-of-function tall stature"]
+  nppc_duplication_tall_stature["NPPC dosage disorders (CNP overexpression and CNP loss)"]
+  jansen_metaphyseal_chondrodysplasia["Jansen metaphyseal chondrodysplasia"]
+  blomstrand_chondrodysplasia["Blomstrand chondrodysplasia"]
+  idiopathic_short_stature["Idiopathic short stature"]
+  height_gwas["Height GWAS"]
+  height_polygenic_score["Height polygenic score"]
+  assortative_mating_height["Assortative mating for height"]
+  height_heritability["Heritability of adult height"]
+  rare_variant_height["Rare variant contribution to height"]
+  missing_heritability_height["Missing heritability of height"]
+  common_vs_rare_pathway_divergence["Divergence between common-variant and rare-disease pathway rankings for height"]
+  de_novo_variant_growth["De novo variation and growth"]
+  igf2_h19_imprinting["IGF2/H19 imprinted locus"]
+  russell_silver_syndrome["Silver-Russell syndrome"]
+  beckwith_wiedemann_syndrome["Beckwith-Wiedemann syndrome"]
+  genomic_imprinting_growth["Genomic imprinting and growth"]
+  dna_methylation_growth_plate["DNA methylation in the growth plate"]
+  npr2_gene -->|"required_for (A)"| npr2_heterozygous_short_stature
+  shox_haploinsufficiency -->|"required_for (A)"| turner_syndrome
+  shox_gene -->|"correlates_with (A)"| klinefelter_syndrome
+  gdf5_protein -->|"correlates_with (B)"| gdf5_height_locus
+  npr2_gene -->|"required_for (A)"| npr2_receptor
+  npr2_gene -->|"activates (A)"| cgmp_second_messenger
+  npr2_gene -->|"activates (A)"| npr2_receptor
+  nppc_gene -->|"transcribes (A)"| cnp_protein
+  nppc_gene -->|"activates (B)"| npr2_receptor
+  fgfr3_gene --x|"inhibits (A)"| fgfr3_receptor
+  fgfr3_gene -->|"activates (B)"| fgfr3_receptor
+  ihh_gene -->|"required_for (A)"| ihh_protein
+  ihh_gene -->|"activates (B)"| ihh_protein
+  pth1r_gene -->|"activates (A)"| pth1r_receptor
+  pth1r_gene -->|"required_for (D)"| pth1r_receptor
+  hdac4_gene -->|"required_for (B)"| hdac4_protein
+  acan_gene -->|"required_for (A)"| aggrecan_acan
+  col10a1_gene -->|"required_for (A)"| collagen_type_x
+  col10a1_gene -->|"required_for (C)"| hypertrophic_chondrocyte
+  col2a1_gene -->|"required_for (B)"| collagen_type_ii
+  comp_gene -->|"required_for (B)"| comp_protein
+  ghr_gene -->|"required_for (A)"| gh_receptor
+  stat5b_gene -->|"required_for (B)"| stat5b_tf
+  igfals_gene -->|"required_for (A)"| als_igfals
+  igfals_gene -->|"required_for (A)"| igf_ternary_complex
+  pappa2_gene -->|"required_for (B)"| pappa2_protease
+  pappa2_gene -->|"degrades (B)"| igf_ternary_complex
+  igf1r_gene -->|"required_for (B)"| igf1_receptor
+  igf1_gene -->|"required_for (D)"| igf1_systemic
+  igf1_gene -->|"correlates_with (A)"| adult_height_attainment
+  esr1_gene -->|"required_for (B)"| estrogen_receptor_alpha
+  esr1_gene -->|"required_for (B)"| epiphyseal_fusion
+  cyp19a1_gene -->|"required_for (A)"| aromatase_cyp19a1
+  cyp19a1_gene -->|"required_for (A)"| estradiol_hormone
+  shox_gene -->|"required_for (A)"| shox_haploinsufficiency
+  shox_gene -->|"required_for (B)"| turner_syndrome
+  acan_gene -->|"required_for (A)"| acan_related_short_stature
+  col10a1_gene -->|"required_for (A)"| schmid_metaphyseal_chondrodysplasia
+  comp_gene -->|"required_for (A)"| pseudoachondroplasia
+  comp_gene -->|"required_for (A)"| multiple_epiphyseal_dysplasia
+  col2a1_gene -->|"required_for (A)"| spondyloepiphyseal_dysplasia
+  ghr_gene -->|"required_for (A)"| laron_syndrome
+  stat5b_gene -->|"required_for (A)"| stat5b_deficiency
+  pappa2_gene -->|"required_for (A)"| pappa2_deficiency
+  igf1r_gene -->|"required_for (A)"| igf1r_mutation_human
+  igf1_gene -->|"required_for (B)"| igf1_deficiency_human
+  esr1_gene -->|"required_for (A)"| estrogen_resistance_esr1
+  cyp19a1_gene -->|"required_for (A)"| aromatase_deficiency_human
+  fgfr3_gene -->|"required_for (A)"| achondroplasia
+  fgfr3_gene -->|"required_for (A)"| hypochondroplasia
+  npr2_gene -->|"required_for (A)"| npr2_heterozygous_short_stature
+  npr2_gene -->|"required_for (A)"| npr2_gain_of_function_tall
+  nppc_gene -->|"required_for (A)"| nppc_duplication_tall_stature
+  pth1r_gene -->|"required_for (A)"| jansen_metaphyseal_chondrodysplasia
+  pth1r_gene -->|"required_for (D)"| blomstrand_chondrodysplasia
+  igfals_gene -->|"correlates_with (B)"| igf1_deficiency_human
+  hdac4_gene -->|"correlates_with (C)"| idiopathic_short_stature
+  height_gwas -->|"required_for (A)"| height_polygenic_score
+  assortative_mating_height -->|"correlates_with (B)"| height_heritability
+  rare_variant_height -->|"required_for (A)"| missing_heritability_height
+  height_gwas -->|"correlates_with (C)"| common_vs_rare_pathway_divergence
+  de_novo_variant_growth -->|"activates (B)"| fgfr3_gene
+  igf2_h19_imprinting -->|"required_for (B)"| russell_silver_syndrome
+  igf2_h19_imprinting -->|"required_for (B)"| beckwith_wiedemann_syndrome
+  genomic_imprinting_growth --x|"inhibits (D)"| igf2_h19_imprinting
+  dna_methylation_growth_plate -->|"correlates_with (B)"| height_gwas
+  genomic_imprinting_growth --x|"inhibits (D)"| igf2_h19_imprinting

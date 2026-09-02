@@ -1,0 +1,302 @@
+# Shard l2daudit - gaps opened by the phase 2d canonical-mechanism audit.
+# Every gap here was produced by reading a PRIMARY source in full and finding that the
+# mechanism the field attributes to it is narrower, differently located, or differently
+# signed than stated. See atlas/audit/mechanism_audit.md for the audit that generated each.
+gaps:
+
+  - gap_id: g_l2d_001
+    question: >-
+      Does the growth plate phenotype of a chondrocyte-specific cGKI/cGKII (Prkg1;Prkg2) double
+      knockout phenocopy CNP or GC-B loss - a thinned plate with a hypertrophic layer reduced to
+      roughly a quarter of control - or does it reproduce the EXPANDED plate of the cGKII single
+      mutant?
+    type: contradiction
+    layer: L3
+    why_it_matters: >-
+      The atlas, and every review of CNP signalling, wires CNP through GC-B and cGMP to PKG-II as a
+      linear chain. That chain makes a falsifiable prediction: losing the terminal kinase should
+      phenocopy losing the receptor. It does the opposite. The cartilage-specific Npr2 knockout
+      hypertrophic layer is 23.0% of control with a thinner plate overall (nakao2015), while the
+      Prkg2-mutant KMI rat plate is 2.6-fold EXPANDED, 665 +/- 47 versus 255 +/- 34 um, n=8
+      (chikuda2004). Until this is resolved, no quantitative model of the CNP arm - including any
+      model used to reason about vosoritide dose-response - has a validated effector step.
+    what_is_known: >-
+      Prkg2 loss expands the plate through an accumulated intermediate layer of postmitotic,
+      ALP-negative, collagen X-negative chondrocytes (chikuda2004); Npr2 or Nppc loss shrinks it
+      (nakao2015). cGKI (Prkg1) is co-expressed in the same compartment at HIGHER zonal enrichment
+      than cGKII - 5.9-fold versus 4.4-fold by micro-dissection microarray (agoston2007). Both
+      chikuda2004 and agoston2007 independently name cGKI as the unexcluded alternative and both
+      propose the double knockout as the resolving experiment. PKG also has at least one substrate
+      arm outside SOX9/GSK-3beta: chondrocyte-specific Trpm7 ablation abolishes CNP-driven bone
+      growth via a PKG-BK channel-TRPM7-CaMKII route (miyazaki2022).
+    what_is_missing: >-
+      The double knockout has not been made in cartilage, in any species, in the 22 years since it
+      was first proposed. No study has measured cGKI protein by zone in growth plate. No study has
+      asked which of the two kinases carries the Trpm7-dependent arm.
+    nearest_evidence: [chikuda2004, agoston2007, nakao2015, pfeifer1996, miyazaki2022]
+    discriminating_experiment: >-
+      Generate Col2a1-Cre;Prkg1(fl/fl);Prkg2(fl/fl) mice alongside each single conditional and a
+      Col2a1-Cre;Npr2(fl/fl) control, all on one background, and measure proximal tibial growth plate
+      total height, type X collagen-positive hypertrophic layer height and BrdU index at 2 weeks.
+      Prediction if cGKI compensates within a single linear chain: the double knockout thins the
+      plate and reduces the hypertrophic layer toward the Npr2-knockout value (~23% of control),
+      resolving the sign conflict. Prediction if PKG-II acts on a separate proliferation-to-hypertrophy
+      switch that is not the route by which CNP promotes growth: the double knockout retains or
+      worsens the EXPANDED postmitotic non-hypertrophic intermediate layer, which would mean the CNP
+      growth signal reaches the plate through an effector other than either cGK - the Trpm7 arm being
+      the leading candidate.
+    tractability: 3
+    search_log_ref: g_l2d_001
+
+  - gap_id: g_l2d_002
+    question: >-
+      Which primary study actually demonstrates that GC-B (NPR2) protein is restricted to
+      prehypertrophic chondrocytes in the growth plate, and does any study map GC-B protein
+      separately across resting, proliferative and hypertrophic zones?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      The prehypertrophic-restricted GC-B map is load-bearing: it is one half of the contradiction
+      recorded on npr2_receptor, and it is the reason the field believes receptor distribution cannot
+      explain the zonal partition of the CNP effect. The atlas attributed it to nakao2015. It is not
+      data in that paper - nakao2015 cites it to the group's earlier work and uses GC-B
+      immunohistochemistry only to confirm knock-down. A claim that anchors a contradiction and cannot
+      be traced to a primary is a grade X claim.
+    what_is_known: >-
+      nakao2015 states that "CNP and GC-B are expressed in nonhypertrophic and prehypertrophic
+      chondrocyte layers of the growth plate, respectively" as a citation, not a result. agoston2007
+      reports Npr2 mRNA at similar levels across resting/proliferative (COMBINED), hypertrophic and
+      mineralized compartments of micro-dissected mouse tibia, and therefore makes no
+      resting-versus-proliferative statement at all. tamura2004, the GC-B null paper, reports receptor
+      mRNA expression in bone without a zonal map. (tamura2004 = PMID 15572448 is registered in the
+      bibliography shard atlas/sources/shards/l2daudit.yaml and is omitted from nearest_evidence only
+      because the shard is not yet merged into the canonical bibliography.)
+    what_is_missing: >-
+      Any primary with a zonal GC-B protein figure. Also, no antibody-validation control (GC-B IHC on
+      Npr2-null tissue) is reported anywhere the atlas has reached, which matters because the commercial
+      antibody used in nakao2015 (Santa Cruz sc-16870) is used there only as a relative knock-down readout.
+    nearest_evidence: [nakao2015, agoston2007]
+    discriminating_experiment: >-
+      Zonal immunohistochemistry or, better, RNAscope for Npr2 on postnatal mouse proximal tibia at
+      2 weeks with resting, proliferative, prehypertrophic and hypertrophic zones scored separately,
+      run in parallel on Col2a1-Cre;Npr2(fl/fl) tissue as the antibody/probe specificity control.
+      Prediction under the Kyoto model: signal is prehypertrophic-restricted and near-absent in RZ/PZ.
+      Prediction under the agoston2007 model: signal is uniform across RZ, PZ and HZ. The two cannot
+      both be true, and the experiment costs one mouse line the field already has.
+    tractability: 5
+    search_log_ref: g_l2d_002
+
+  - gap_id: g_l2d_003
+    question: >-
+      Do achondroplasia and thanatophoric FGFR3 mutants show INCREASED or DECREASED c-Cbl-mediated
+      ubiquitination, and does the answer depend on the cell background or on the ligand-exposure
+      regime?
+    type: contradiction
+    layer: L3
+    why_it_matters: >-
+      The failed-termination arm of achondroplasia pathogenesis rests on this sign. If mutant FGFR3 is
+      under-ubiquitinated it escapes lysosomal degradation, which is the model in the atlas and in
+      reviews. If it is over-ubiquitinated the receptor accumulates for a different reason and the
+      therapeutic logic of degradation-promoting strategies inverts. The two published answers are
+      opposite and both come from competent labs.
+    what_is_known: >-
+      cho2004 reports REDUCED ubiquitination of ACH and TDII FGFR3 in Cos-7 and RCJ cells, greater for
+      TDII than ACH, with coexpressed wild-type c-Cbl more than doubling wild-type receptor
+      ubiquitination while having little effect on the mutants. Monsonego-Ornan et al. 2004 report
+      INCREASED ubiquitination. cho2004 names the disparity and attributes it to four differences -
+      Cos-7 versus HEK293, steady-state FGF2 versus 30 min-6 h FGF9, retroviral versus transient
+      expression, and the resulting receptor level - and states it cannot exclude the alternative.
+      c-Cbl recruitment to FGFR is indirect, via FRS2alpha and Grb2, and FRS2alpha binds FGFR1 far
+      more strongly than FGFR3.
+    what_is_missing: >-
+      No experiment has measured FGFR3 ubiquitination in chondrocytes expressing the receptor from its
+      endogenous locus, which is the only context in which receptor level is not an experimental
+      variable. No study has tested whether the sign flips with expression level within one cell system.
+    nearest_evidence: [cho2004, monsonegoornan2000, sarabipour2016]
+    discriminating_experiment: >-
+      In primary rib or growth plate chondrocytes from Fgfr3(G380R/+) knock-in mice and wild-type
+      littermates - endogenous locus, endogenous level - immunoprecipitate FGFR3 and blot for
+      ubiquitin at 0, 15, 60 and 240 min of FGF2, with and without Cbl knockdown, and run the same
+      protocol in parallel at three titrated overexpression levels in HEK293. Prediction under
+      cho2004: mutant/wild-type ubiquitination ratio is below 1 at endogenous level and stays below 1
+      as expression rises. Prediction if the disparity is an overexpression artefact: the ratio is
+      below 1 at endogenous level and crosses above 1 as the degradation pathway saturates, which
+      would reconcile both papers and retire the contradiction.
+    tractability: 4
+    search_log_ref: g_l2d_003
+
+  - gap_id: g_l2d_004
+    question: >-
+      Which specific PPP-family phosphatase catalyses FGF-driven dephosphorylation of NPR2 in growth
+      plate chondrocytes - PPP1, PPP2/PP2A, PPP4 or PPP5 - and which regulatory subunit targets it to
+      the receptor?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      This is the single unnamed step in the best-characterised convergence point in L3, and it is
+      directly druggable - LB-100, a broad PP2A-family inhibitor, already synergises with vosoritide
+      on long bone growth in mice. A broad phosphatase inhibitor is not a viable chronic paediatric
+      therapy; a subunit-selective one might be. Without the identity there is no target.
+    what_is_known: >-
+      shuhaibar2017 shows FGF lowers growth plate cGMP in intact newborn mouse tibia by NPR2
+      dephosphorylation and that 100 uM cantharidin blocks it - a dose that inhibits PPP1, PPP2/PP2A,
+      PPP4 and PPP5 together, so the result identifies a family, not an enzyme. The same group's
+      ovarian follicle work reaches the same family-level resolution for the LH-driven case.
+      robinson2017 establishes the dephosphorylation itself in rat chondrosarcoma cells.
+    what_is_missing: >-
+      No knockdown, knockout or subunit-mapping experiment has been done in chondrocytes. Whether the
+      growth plate enzyme is the same one as in the follicle is untested.
+    nearest_evidence: [shuhaibar2017, robinson2017, wagner2021]
+    discriminating_experiment: >-
+      siRNA or CRISPR knockdown of each catalytic subunit (Ppp1ca/cb/cc, Ppp2ca, Ppp4c, Ppp5c)
+      individually in rat chondrosarcoma cells carrying the cGMP biosensor, scoring rescue of
+      FGF2-induced loss of CNP-stimulated cGMP; then confirm the hit in intact tibia from a
+      chondrocyte-specific conditional. Prediction: exactly one catalytic subunit restores
+      FGF-resistance to the level seen with the NPR2-7E phosphomimetic; if none does singly, the
+      enzyme is redundant across the family and subunit-selective inhibition is not a viable strategy,
+      which is itself the decision-relevant answer.
+    tractability: 4
+    search_log_ref: g_l2d_004
+
+  - gap_id: g_l2d_005
+    question: >-
+      Does IHH itself, as opposed to Hedgehog pathway activity in general, drive the PTHrP-independent
+      hypertrophy and periarticular-differentiation arms - and does the Ihh-to-periarticular-Pthlh arm
+      act directly on periarticular chondrocytes or through a perichondrial relay?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      Every quantitative statement the atlas can ever make about the loop - range, decay length, gain -
+      depends on which molecule is the signal and on whether there is an intervening cell layer. A
+      perichondrial relay inserts a second diffusion step and a second cell type between source and
+      target, and would make any single-morphogen gradient model of the loop wrong in kind, not just
+      in parameter.
+    what_is_known: >-
+      mak2008 establishes the PTHrP-independent hypertrophy arm by raising Hh signalling with Shh
+      protein, Ihh overexpression and Ptch1 inactivation, and by blocking it with cyclopamine and Smo
+      removal - pathway-level manipulations, only one of which uses Ihh. tsiairis2008 establishes the
+      Disp1 range requirement in embryos rescued through early somite stages by EXOGENOUS
+      non-cholesterol-modified Shh, so a second Hh ligand is present in the system when the shortened
+      loop is scored. stjacques1999 raises the perichondrial relay hypothesis; koziel2004 argues for
+      direct long-range action. Neither is formally excluded.
+    what_is_missing: >-
+      No experiment separates Ihh from pathway activity in the PTHrP-independent arms with an
+      Ihh-specific reagent in a system free of exogenous Shh. No experiment blocks Hh reception
+      selectively in perichondrium while leaving it intact in periarticular chondrocytes.
+    nearest_evidence: [mak2008, tsiairis2008, stjacques1999, kobayashi2005, koziel2004]
+    discriminating_experiment: >-
+      Delete Smo selectively in perichondrium (using a perichondrium-restricted Cre) versus selectively
+      in periarticular chondrocytes, in each case scoring periarticular Pthlh transcript by in situ
+      hybridisation and column length. Prediction under direct long-range action: periarticular Smo
+      deletion abolishes Pthlh upregulation and shortens columns while perichondrial deletion does not.
+      Prediction under the relay: the reverse. Run the tsiairis2008 Disp1 experiment again in a
+      conditional that avoids the N-Shh rescue to remove the confounding ligand.
+    tractability: 3
+    search_log_ref: g_l2d_005
+
+  - gap_id: g_l2d_006
+    question: >-
+      Is the resting-zone division budget that sets growth plate senescence actually finite and
+      conserved across growth-inhibited periods, given that resting-zone chondrocytes acquire
+      self-renewing stem cell behaviour after secondary ossification centre formation?
+    type: contradiction
+    layer: L2
+    why_it_matters: >-
+      The finite-capacity model is the atlas's explanation for catch-up growth, for the shape of the
+      human growth velocity curve, and for why growth-inhibiting illness is partly recoverable. If the
+      resting zone self-renews, the budget is not fixed and the model needs a different limiting
+      quantity - niche exhaustion, clonal drift, or matrix change - with different clinical predictions
+      about how much catch-up is recoverable and for how long.
+    what_is_known: >-
+      marino2008 shows hypothyroidism delays functional, structural and molecular senescence markers in
+      rat, but catch-up growth was statistically INCOMPLETE at final measurement for body mass, tail
+      length and tibia length, and the authors give two explanations that both entail imperfect
+      conservation. That study also suppressed the gonadal axis incompletely (uterine mass ~0.16 g
+      against ~0.1 g ovariectomised, ~0.5 g intact), leaving oestrogen present. Independently,
+      mizuhashi2018 and newton2019 show PTHrP+ resting-zone chondrocytes switch to self-renewing
+      clonal behaviour after secondary ossification centre formation.
+    what_is_missing: >-
+      No study has measured resting-zone clone number or clone size in a growth-inhibited animal and
+      compared it with an age-matched control at the same body size - which is the measurement the
+      conservation claim asserts. The two literatures have never been run in the same animal.
+    nearest_evidence: [marino2008, schrier2006, gafni2001, baron1994, mizuhashi2018, newton2019]
+    discriminating_experiment: >-
+      Multicolour clonal lineage tracing (Pthrp-CreER;Confetti) in rats or mice made hypothyroid for
+      8 weeks and then released, versus untreated age-matched and size-matched controls, scoring
+      resting-zone clone number, clone size and column output at release and at the point of matched
+      body size. Prediction under strict conservation: at MATCHED BODY SIZE the treated and control
+      plates have indistinguishable clone counts and clone sizes - the budget was spent, not aged.
+      Prediction under partial conservation, which is what the incomplete catch-up in marino2008
+      implies: treated plates show fewer surviving clones or smaller clone output at matched size,
+      quantifying the leak. Include an ovariectomised arm to remove the oestrogen confound that
+      marino2008 could not.
+    tractability: 3
+    search_log_ref: g_l2d_006
+
+  - gap_id: g_l2d_007
+    question: >-
+      What is the genetic mechanism silencing the paternal PTH1R allele in the reported Blomstrand
+      chondrodysplasia patient, and is Blomstrand generally a biallelic-mutation disorder or does it
+      commonly involve monoallelic mutation plus allelic silencing?
+    type: known_unknown
+    layer: L11
+    why_it_matters: >-
+      The atlas and the field describe Blomstrand as biallelic PTH1R loss and use it as the
+      loss-of-function pole of a clean human dose-response series against Jansen. The single most
+      cited primary reports a HETEROZYGOUS point mutation with the paternal allele unexpressed by an
+      unexplained mechanism. If allelic silencing rather than a second coding mutation is the common
+      route, carrier risk counselling and variant interpretation for PTH1R are both wrong.
+    what_is_known: >-
+      jobert1998 (n=1) found a maternal G-to-A substitution at nucleotide 1176 creating a novel splice
+      site that deletes the first 11 residues of exon M5; the resulting receptor is expressed in COS-7
+      but binds neither PTH nor PTHrP and generates neither cAMP nor inositol phosphate. The paternal
+      allele was not expressed, and no explanation was determined. The paper is a scanned PMC deposit
+      with no machine-readable body.
+    what_is_missing: >-
+      No allele-specific expression, methylation or structural-variant analysis was reported for the
+      paternal allele. No subsequent series has systematically asked how many Blomstrand cases carry
+      two coding mutations versus one plus silencing.
+    nearest_evidence: [jobert1998, schipani1995, schipani1997, lanske1999]
+    discriminating_experiment: >-
+      Allele-specific RNA-seq plus long-read genomic sequencing and targeted methylation analysis of
+      the PTH1R locus across a Blomstrand case series, ascertained through the existing skeletal
+      dysplasia registries. Prediction if the disorder is straightforwardly biallelic: two coding
+      loss-of-function alleles in essentially all cases and jobert1998 is an outlier. Prediction if
+      allelic silencing is a recurrent mechanism: a substantial fraction carry one coding allele plus
+      promoter methylation, a structural variant, or a deep intronic change abolishing expression -
+      which would also predict recurrence risks that differ from the assumed autosomal recessive 25%.
+    tractability: 2
+    search_log_ref: g_l2d_007
+
+  - gap_id: g_l2d_008
+    question: >-
+      Do p38 and ERK act in opposite directions on chondrocyte hypertrophy downstream of the same
+      upstream receptors, and what is the ratio of their activities across growth plate zones in situ?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      The atlas treats "the MAPK branch" of FGFR3 as one thing and equates it with ERK. But the same
+      family contains an arm that CNP requires in order to expand the hypertrophic zone. If p38 and
+      ERK oppose each other on hypertrophy, then any intervention described as MAPK inhibition has an
+      undefined net sign, which directly affects how MEK-inhibitor and pan-MAPK strategies for
+      achondroplasia should be read.
+    what_is_known: >-
+      murakami2004 shows constitutively active MEK1 (ERK arm) blocks hypertrophy with no change in
+      proliferation, and suppresses Fgfr3-null overgrowth. agoston2007 shows that in micro-dissected
+      mouse tibia, p38 inhibition with SB202190 prevents CNP from achieving and maintaining the
+      expanded hypertrophic zone, while CNP simultaneously inhibits ERK - so the same ligand
+      up-regulates one MAPK arm and down-regulates the other, with opposite consequences for
+      hypertrophy. ozasa2005 locates the CNP block on ERK at RAF-1.
+    what_is_missing: >-
+      No in situ measurement of phospho-ERK and phospho-p38 by zone in any growth plate, in any
+      species. No experiment manipulates the two arms combinatorially in one system.
+    nearest_evidence: [murakami2004, agoston2007, ozasa2005, shuhaibar2017]
+    discriminating_experiment: >-
+      Quantitative multiplexed immunofluorescence for phospho-ERK1/2 and phospho-p38 with zonal
+      segmentation on postnatal mouse proximal tibia, wild type versus Fgfr3(G380R/+) versus
+      CNP-treated, plus explant culture with SB202190, a MEK inhibitor and both together, scoring
+      hypertrophic zone height. Prediction if the arms oppose: p38 inhibition shrinks the hypertrophic
+      zone, MEK inhibition expands it, and the combination is intermediate rather than additive -
+      meaning pan-MAPK inhibition in achondroplasia buys less than the ERK-only model predicts.
+    tractability: 4
+    search_log_ref: g_l2d_008

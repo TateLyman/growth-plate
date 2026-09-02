@@ -1,0 +1,78 @@
+id: endocrine_disrupting_chemicals
+name: Endocrine disrupting chemicals and growth
+type: process
+aliases:
+- EDCs
+- bisphenol A and phthalate exposure
+summary: Endocrine disrupting chemicals are the exposure most often asserted to act on the growth plate
+  through the estrogen receptor and least often demonstrated to do so. The human evidence is on pubertal
+  timing, not on stature or on cartilage. In 1424 Korean children and adolescents (Korea Environmental
+  Exposure and Health Survey) with blood lead, mercury and cadmium and urinary bisphenol A and phthalate
+  metabolites, precocious puberty was identified in 50 (3.5%) and delayed puberty in 54 (3.8%); a higher
+  mono-benzyl phthalate concentration was associated with delayed puberty in girls (OR 2.75, 95% CI 1.34-5.66),
+  and in quantile g-computation mixture models the BPA-plus-phthalate mixture was associated with precocious
+  puberty in boys and delayed puberty in both sexes (choe2025). Because pubertal timing sets both the
+  growth spurt and epiphyseal fusion, any real effect on puberty is an effect on adult height. The proposed
+  molecular entry points - ERalpha (L4 estrogen_receptor_alpha) and aromatase (L4 aromatase_cyp19a1) -
+  are biologically apt, since estrogen is the fusion signal and BPA is a weak ER agonist. But a targeted
+  literature search returns no study in which a bisphenol or phthalate was applied to growth plate chondrocytes
+  with an ERalpha or aromatase readout in any mammal; the cartilage work that exists is zebrafish craniofacial
+  or adult articular osteoarthritis. This is registered as a search-established gap.
+quantitative:
+- parameter: odds ratio for delayed puberty in girls per higher mono-benzyl phthalate concentration
+  value: '2.75'
+  unit: odds ratio
+  conditions: 1424 Korean children and adolescents, single-exposure logistic model adjusted for age, BMI,
+    siblings, urban residence and socioeconomic status
+  species: human
+  source_ref: choe2025
+  uncertainty: 95% CI 1.34-5.66
+- parameter: prevalence of precocious puberty in the cohort
+  value: '3.5'
+  unit: '%'
+  conditions: 50 of 1424 participants, self-measured Tanner staging
+  species: human
+  source_ref: choe2025
+  uncertainty: cross-sectional; Tanner staging self-assessed
+- parameter: prevalence of delayed puberty in the cohort
+  value: '3.8'
+  unit: '%'
+  conditions: 54 of 1424 participants
+  species: human
+  source_ref: choe2025
+  uncertainty: cross-sectional; Tanner staging self-assessed
+localization:
+- 'human SYS: urinary BPA and phthalate metabolites; blood lead, mercury, cadmium'
+- 'human growth plate: no EDC exposure has ever been coupled to a physeal ERalpha or aromatase readout'
+human_evidence: direct
+human_evidence_note: Human biomonitoring cohort with measured urinary and blood exposure biomarkers and
+  Tanner-staged pubertal outcomes.
+species_basis:
+- human
+translation_risk: unknown
+translation_risk_reason: There is no animal growth plate EDC experiment to translate from; the zebrafish
+  cartilage literature concerns craniofacial rather than endochondral growth.
+confidence: D
+claim_grades:
+- claim: Phthalate and bisphenol exposure is associated with altered pubertal timing in children.
+  grade: D
+  basis: Single cross-sectional national survey with self-measured Tanner staging and 50-54 cases per
+    outcome (choe2025).
+- claim: EDCs act on the growth plate via ERalpha or aromatase.
+  grade: X
+  basis: Universally asserted; a targeted Europe PMC search returns no mammalian growth plate study with
+    an ERalpha or aromatase readout under EDC exposure. Logged as g_l10env_011.
+key_refs:
+- ref_id: choe2025
+  pmid: '41474814'
+  first_author: Choe SA
+  year: 2025
+  type: primary
+  one_line_finding: In 1424 Korean children, mono-benzyl phthalate was associated with delayed puberty
+    in girls (OR 2.75, 95% CI 1.34-5.66), and BPA-phthalate mixtures with precocious puberty in boys and
+    delayed puberty in both sexes.
+open_questions:
+- g_l10env_011
+layer: L10
+stub: false
+last_verified: '2026-08-05'

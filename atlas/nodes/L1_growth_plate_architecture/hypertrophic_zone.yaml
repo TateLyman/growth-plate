@@ -1,0 +1,121 @@
+id: hypertrophic_zone
+name: Hypertrophic zone
+aliases:
+- HZ
+- zone of hypertrophy
+- zone of cell enlargement
+type: tissue_structure
+layer: L1
+stub: false
+summary: 'The hypertrophic zone is where most longitudinal elongation is generated, by chondrocytes increasing
+  their volume roughly ten-fold and their axial height roughly four-fold within laterally confining matrix
+  channels. In rat proximal tibia the enlargement is accompanied by two- to five-fold increases in rough
+  endoplasmic reticulum surface area, Golgi membrane and mitochondrial volume, so these are metabolically
+  active cells rather than dying ones, a point confirmed by time-lapse imaging of living terminal hypertrophic
+  chondrocytes in situ. The zone turns over fast and on a fixed schedule: the hypertrophic phase lasts
+  approximately two days in rat regardless of whether the animal is growing quickly or slowly, and in
+  mouse the entire hypertrophic column is replaced in about 24 h, with roughly 12 h spent enlarging and
+  12 h at terminal size. Counterintuitively, hypertrophic zone height by itself is a poor predictor of
+  growth rate: in mouse histomorphometry it does not correlate with tibial growth rate, whereas total
+  plate width, total height and resting-zone height do. Height of the zone is a product of cell height
+  and cell number, and those two can trade off.'
+quantitative:
+- parameter: duration of the hypertrophic phase
+  value: '2'
+  unit: days
+  conditions: rat proximal tibia; constant across 21-, 35- and 80-day-old animals with widely different
+    growth rates
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: approximate, as stated
+- parameter: increase in rough endoplasmic reticulum surface area, Golgi membranes and mitochondrial volume
+  value: 2-5
+  unit: fold
+  conditions: proliferative to late hypertrophic chondrocyte, rat proximal tibia
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: range across organelle compartments
+- parameter: time for the whole hypertrophic column to turn over
+  value: '24'
+  unit: h
+  conditions: mouse; ~12 h enlarging plus ~12 h at terminal size
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: correlation of hypertrophic zone height with tibial growth rate
+  value: no significant linear correlation
+  unit: qualitative
+  conditions: mouse proximal tibia, neonate to young adult
+  species: mouse
+  source_ref: wilson2021
+  uncertainty: explicitly contrasted with total height, resting zone height and plate width, which did
+    correlate
+- parameter: direction of hypertrophic zone height change with age
+  value: decreasing
+  unit: qualitative
+  conditions: human rib, birth to adolescence
+  species: human
+  source_ref: byers2000
+  uncertainty: absolute values not available from abstract
+- parameter: cartilage septae number in hypertrophic zone across age
+  value: no significant change
+  unit: qualitative
+  conditions: human rib, birth to adolescence, in contrast to the proliferative zone
+  species: human
+  source_ref: byers2000
+  uncertainty: not reported
+localization:
+- 'rat HZ: stereology and ultrastructural morphometry (hunziker1987)'
+- 'human HZ: zone height and septal architecture measured in rib (byers2000)'
+human_evidence: direct
+human_evidence_note: Human hypertrophic zone height and cartilage septal architecture have been measured
+  across age in rib specimens (byers2000) and hypertrophic cell heights reported in an in vitro human
+  labelling study (thurston1985).
+species_basis:
+- rat
+- mouse
+- human
+- porcine
+translation_risk: moderate
+translation_risk_reason: Zone-level architecture is measured in humans, but the cell-level volume kinetics
+  that make the zone the engine of elongation are rodent-only.
+confidence: B
+key_refs:
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: Late hypertrophic rat chondrocytes show 4-fold height, 10-fold volume and 2-5 fold
+    organelle increases.
+- ref_id: hunziker1989
+  pmid: '2607442'
+  first_author: Hunziker EB
+  year: 1989
+  type: primary
+  one_line_finding: The duration of the hypertrophic phase is fixed at approximately 2 days across widely
+    different rat growth rates.
+- ref_id: farnum1990
+  pmid: '2201757'
+  first_author: Farnum CE
+  year: 1990
+  type: primary
+  one_line_finding: Time-lapse DIC imaging shows terminal hypertrophic chondrocytes are living, viable
+    cells up to the chondro-osseous junction.
+- ref_id: wilson2021
+  pmid: '31997656'
+  first_author: Wilson K
+  year: 2021
+  type: primary
+  one_line_finding: Hypertrophic zone height alone does not correlate with tibial growth rate in mouse,
+    unlike total height and plate width.
+- ref_id: byers2000
+  pmid: '11033444'
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: Human rib hypertrophic zone height decreases with age while septal number is unchanged.
+open_questions:
+- g_l1arch_008
+- g_l1arch_009
+last_verified: '2026-08-05'

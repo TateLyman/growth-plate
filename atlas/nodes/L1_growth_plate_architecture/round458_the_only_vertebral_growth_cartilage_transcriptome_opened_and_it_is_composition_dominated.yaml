@@ -1,0 +1,90 @@
+id: round458_the_only_vertebral_growth_cartilage_transcriptome_opened_and_it_is_composition_dominated
+name: 'R458 - the only vertebral growth-cartilage RNA-seq in existence, downloaded and analysed: the caudal-1 versus
+  caudal-6 contrast is COMPOSITION-DOMINATED in BOTH species (Col2a1 spans 20-fold, Mki67 13-fold between groups),
+  so it cannot be read as an elongation contrast without correction - and what survives that is the first demonstration
+  that the AXIAL plate has the same receptor-local, ligand-systemic CNP configuration as the limb plate'
+aliases:
+- R458
+- GSE299515
+- vertebral growth cartilage
+- jerboa
+- caudal vertebra
+- NPPC in vertebra
+- composition confound
+type: dataset
+layer: L1
+stub: false
+confidence: C
+last_verified: '2026-08-27'
+species_basis:
+- mouse
+human_evidence: absent
+human_evidence_note: Mouse and jerboa caudal vertebrae. R455 established by direct GEO query that no paediatric
+  or adolescent human vertebral growth-plate dataset exists in any repository.
+translation_risk: high
+translation_risk_reason: Rodent tail vertebrae at P7 and P16, and the jerboa reads were mapped by the depositors
+  to the MOUSE transcriptome, which biases toward conserved sequence. Absolute CPM in the jerboa arm should be treated
+  as relative within that arm only.
+summary: 'R455 established that GSE299515 - mouse and jerboa cranial growth cartilage of caudal vertebrae 1 and
+  6 - is the ONLY vertebral growth-cartilage transcriptome that exists anywhere. R458 downloaded it (2 MB of transcript-level
+  counts, 16 samples) and ran a 49-gene panel of this atlas''s own targets against the cd1-versus-cd6 contrast in
+  both species. Data and per-sample CPM in atlas/data/round458/.
+
+
+  ONE - THE CONTRAST IS COMPOSITION, IN BOTH SPECIES, AND IT IS LARGE. In mouse P7, Acan runs 857 to 2,206 CPM in
+  cd1 against 3,803 to 8,624 in cd6, while Mki67 runs 2,314 to 3,089 against 268 to 448 - complete group separation
+  both ways. In jerboa P16 it is starker: Col2a1 35,365 versus 201,742 CPM mean, a 5.7-fold difference with one
+  gene reaching a fifth of the transcriptome in cd6, and Mki67 2,624 versus 204. THE cd1 SAMPLES CARRY FAR MORE
+  PROLIFERATIVE, NON-CARTILAGE TISSUE AND THE cd6 SAMPLES ARE CARTILAGE-DOMINATED. That is CORR-339''s shape - a
+  contrast whose largest movers are markers of how much of which tissue is in the tube.
+
+  CONSEQUENCE: the raw cd1-versus-cd6 contrast in this dataset CANNOT be read as an elongation contrast. Anyone
+  mining it must carry a composition control. ⚠ I have NOT read the depositors'' methods and make no claim about
+  whether their published analysis corrected for this - the warning is about the deposited counts, which is what
+  a later round would use.
+
+  AND THE OBVIOUS CORRECTION DOES NOT WORK EITHER: normalising each sample to its own Acan drives nearly every gene
+  in the panel negative, because Acan is itself a maturation marker rather than a neutral cartilage-content marker.
+  A usable composition control for this tissue does not currently exist.
+
+
+  TWO - AND WHAT SURVIVES THE CONFOUND IS A PRESENCE RESULT THAT HAS NEVER BEEN SHOWN. In mouse vertebral growth
+  cartilage NPPC is 0.5 and 0.06 CPM - effectively ABSENT - while NPR2 is robustly present at 49 to 90 CPM and NPR3
+  at 12 to 14. In jerboa, NPR2 87 to 120 and NPR3 8 to 42. THE RECEPTOR-LOCAL, LIGAND-SYSTEMIC CONFIGURATION THIS
+  FILE ESTABLISHED FOR THE LIMB PLATE ON TWO HUMAN PLATFORMS NOW HOLDS IN THE AXIAL COMPARTMENT AS WELL. A presence
+  call needs no contrast and is unaffected by the composition problem. It bears directly on whether a systemically
+  dosed CNP analogue can act on a vertebral plate at all - the receptor is there and the ligand is not made locally.
+
+
+  THREE - AND ONE GENE MOVES IN A WAY CONSISTENT WITH THE PUBLISHED PHENOTYPE. NPR3 rises 8.1 to 42.1 CPM in jerboa
+  cd6 with complete group separation, tracking the cartilage fraction. weber2025 reports that Npr3 is the only gene
+  common to all five of its limb and vertebral proportion analyses, and that Npr3 loss disproportionately elongates
+  proximal and mid-tail vertebrae through an increase in hypertrophic cell size. The expression is consistent with
+  that; it does not test it.
+
+
+  WHAT THIS DOES NOT DO. It produces no lever and no new target. Its products are a WARNING attached to the only
+  dataset that exists for the compartment holding this subject''s residual centimetres, one presence result in that
+  compartment, and a per-sample CPM table for 49 atlas targets that any later round can query without re-downloading
+  anything.'
+quantitative:
+- parameter: NPPC, NPR2 and NPR3 in mouse vertebral growth cartilage
+  value: NPPC 0.5 (cd1) and 0.06 (cd6); NPR2 49 and 90; NPR3 12 and 14
+  unit: CPM, mean of 4 samples per group, mouse P7 caudal vertebra cranial growth cartilage
+  species: mouse
+  source_ref: weber2025
+  note: computed in R458 from GSE299515. THE RECEPTOR IS PRESENT AND THE LIGAND IS NOT MADE LOCALLY, in the AXIAL
+    compartment - the same configuration this file established for the limb plate on GSE9160 and GSE288028. A presence
+    call, unaffected by the composition confound
+- parameter: magnitude of the composition confound in the cd1 versus cd6 contrast
+  value: mouse Acan 857-2206 vs 3803-8624 and Mki67 2314-3089 vs 268-448; jerboa Col2a1 35365 vs 201742 and Mki67
+    2624 vs 204
+  unit: CPM, complete group separation in every case
+  species: mouse
+  source_ref: weber2025
+  note: computed in R458. The contrast is dominated by how much cartilage versus proliferative tissue is in the
+    sample. Normalising to Acan does not fix it, because Acan is itself a maturation marker
+key_refs:
+- ref_id: weber2025
+open_questions:
+- g_l1_455a

@@ -1,0 +1,93 @@
+id: piezo2_channel
+name: PIEZO2
+type: protein
+aliases:
+- Piezo2
+- FAM38B
+summary: 'PIEZO2 is repeatedly listed as a growth plate mechanotransducer but the supporting experiments
+  were done elsewhere. Chondrocyte-specific Piezo2 inactivation with Col2a1-Cre produced no growth plate
+  or endochondral ossification phenotype and did not protect against surgically induced osteoarthritis,
+  in the same study in which Piezo1 deletion did both. In inducible Aggrecan-Cre mice, Piezo2 deletion
+  reduced pain behaviour and preserved activity after destabilisation of the medial meniscus but failed
+  to protect cartilage, and separately reduced trabecular bone volume, thickness and density independent
+  of injury - a bone rather than physis effect. The best-characterised PIEZO2 mechanism in skeletal tissue
+  is neuronal: in dorsal root ganglion neurons, PIEZO2 activation by abnormal mechanical stress releases
+  CGRP, which acts through RAMP1 on cartilage endplate cells to drive IL-6 and IL-1beta, degrading the
+  endplate. No experiment has localised or deleted PIEZO2 in a growth plate with a growth-rate readout,
+  and there is no human growth plate PIEZO2 data at all. Human PIEZO2 loss-of-function causes distal arthrogryposis
+  and proprioceptive loss, with skeletal consequences that are plausibly secondary to absent fetal movement
+  rather than to a chondrocyte-autonomous defect.'
+quantitative:
+- parameter: growth plate / endochondral phenotype in Piezo2 Col2a1-Cre mice
+  value: none detected
+  unit: qualitative
+  conditions: compared with the overt phenotype of Piezo1 Col2a1-Cre littermates
+  species: mouse
+  source_ref: brylka2024
+  uncertainty: negative result reported in abstract
+- parameter: trabecular bone volume, thickness and density in Acan-CreERT2 Piezo2 cKO
+  value: decreased
+  unit: qualitative (micro-CT)
+  conditions: independent of DMM injury, 28 weeks
+  species: mouse
+  source_ref: ely2025
+  uncertainty: effect sizes not reported in abstract
+localization:
+- 'mouse articular chondrocytes: functional evidence (ely2025)'
+- 'rat dorsal root ganglion innervating cartilage endplate: confirmed (xu2026_2)'
+- 'mouse growth plate: no localisation study located'
+- 'human growth plate: no data located'
+human_evidence: absent
+human_evidence_note: No human growth plate PIEZO2 expression or function data exist; human PIEZO2 phenotypes
+  are neuromuscular and arthrogrypotic.
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: The growth plate role is asserted by extension from articular cartilage and sensory
+  neurons; the one direct test in the growth plate lineage was negative.
+confidence: D
+key_refs:
+- ref_id: brylka2024
+  pmid: '38395992'
+  first_author: Brylka LJ
+  year: 2024
+  type: primary
+  one_line_finding: Chondrocyte Piezo2 deletion produced no endochondral ossification phenotype, unlike
+    Piezo1
+- ref_id: ely2025
+  pmid: '40684207'
+  first_author: Ely EV
+  year: 2025
+  type: primary
+  one_line_finding: Piezo2 cKO reduced OA pain without protecting cartilage and reduced trabecular bone
+    parameters
+- ref_id: xu2026_2
+  pmid: '41990255'
+  first_author: Xu H
+  year: 2026
+  type: primary
+  one_line_finding: PIEZO2 in DRG neurons drives a CGRP-RAMP1-IL6 loop degrading the cartilage endplate
+open_questions:
+- g_l6mech_007
+contradicts:
+- piezo1_channel
+layer: L6
+stub: false
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: Strong negative node - states that PIEZO2 is repeatedly listed as a growth plate mechanotransducer
+  but the supporting experiments were done elsewhere, and relocates the best-characterised mechanism to
+  DRG neurons.
+reanalysis_observations:
+- observation: PIEZO2 is represented by six probe sets and is detected in neither human donor in any of
+    the five compartments, in the same samples where PIEZO1 is an order of magnitude above background.
+  interpretation: PIEZO2 is the lower-priority target for human physeal mechanotransduction on this evidence,
+    consistent with the mouse result that Piezo2 deletion does nothing comparable to Piezo1.
+  caveats: Transcript only, two donors.
+  reanalysis: p8_01_gse9160_human_zonal
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'

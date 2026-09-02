@@ -1,0 +1,208 @@
+id: npr3_selectivity_computed_from_structure
+name: COMPUTED, NOT FETCHED - the NPR-B selectivity question attacked from receptor structure, and the
+  three framings do not agree
+aliases:
+- can an NPR3 antagonist spare NPR-B
+- NPR-B selectivity structural argument
+- is NPR1 selectivity a proxy for NPR2 selectivity
+- computational experiments on the NPR3 route
+type: hypothesis
+layer: L12
+stub: false
+summary: 'CORR-156 ESTABLISHED THAT THE NPR-B SELECTIVITY NUMBER DOES NOT EXIST IN ANY DATABASE OR PAPER.
+  It is an experiment nobody has run, so it cannot be fetched. THIS NODE ASKS WHETHER IT CAN BE COMPUTED
+  INSTEAD, from the receptor sequences and from the one solved structure of NPR-C with a natriuretic
+  peptide bound. It partly can, the answer is mildly favourable, and the disagreement between framings is
+  the most honest part of the result.
+  THE SETUP. Both candidate molecules are RING-LESS LINEAR MIMICS OF ONE ANP SEGMENT. PDB 1YK0 is the
+  NPR-C extracellular dimer with ANP bound, and the bound fragment reads SCFGGRMDRIGAQSGLGCNSF. The
+  Nishizawa pharmacophore - Cys-Cha-Gly-Gly-Arg-Ile-Asp-Arg-Ile-Gly - maps onto CFGGRMDRIG residue for
+  residue with Cha for Phe and Ile for Met. The M372049 core, Ile-Asp-Arg-Ile-amide, maps onto the MDRI
+  sub-segment. SO THE CANDIDATES OCCUPY A DEFINED, VISIBLE EPITOPE and the conservation of that epitope
+  across the three receptors is computable.
+  FRAMING ONE - WHOLE EXTRACELLULAR DOMAIN. Pairwise identity of the three human ECDs: NPR-A against NPR-B
+  45.8 per cent, NPR-A against NPR-C 37.5, NPR-B against NPR-C 33.9. The two cyclase receptors cluster
+  together and NPR-B is the MOST divergent from NPR-C. On this framing, discriminating NPR-C from NPR-A is
+  the harder job and NPR-B selectivity should follow for free. FAVOURABLE.
+  FRAMING TWO - THE WHOLE ANP BINDING SITE, AND IT INVERTS THE ANSWER. Taking every NPR-C residue within
+  4.5 angstrom of the bound peptide across both protomers gives 30 contact positions. Identity to NPR-A is
+  42.9 per cent and to NPR-B is 50.0 per cent - NPR-B is now the CLOSER of the two, not the further. The
+  inversion is robust and it STRENGTHENS as the site is defined more tightly: at 4.0 angstrom it is 45.8
+  against 60.0 per cent. Only at 8 angstrom, which is a second-sphere shell rather than a binding site, do
+  the two converge. UNFAVOURABLE.
+  FRAMING THREE - THE SUB-SITE EACH CANDIDATE ACTUALLY OCCUPIES, WHICH IS THE ONE THAT SHOULD DECIDE. For
+  the Nishizawa core CFGGRMDRIG the contacts are 55.0 per cent identical to NPR-A and 50.0 to NPR-B. For
+  the M372049 core MDRI they are 75.0 per cent identical to NPR-A and 64.3 to NPR-B. BOTH RUN THE SAME WAY
+  AND BOTH RUN FAVOURABLE: at the epitope the actual molecules bind, NPR-A is the MORE similar receptor
+  and therefore the HARDER discrimination - and that is the discrimination compound 23 already achieves at
+  more than 12,600-fold, 0.079 nM against greater than 1000 nM.
+  WHY FRAMING TWO DISAGREES, AND WHY IT IS PROBABLY THE WRONG FRAME HERE. The whole-site count includes
+  contacts made by the ANP DISULFIDE RING and by the C-terminal tail, neither of which a ring-less
+  11-mer or a pentapeptide occupies. Those extra contacts are where NPR-C and NPR-B happen to resemble
+  each other. Judging a minimised ligand by contacts it does not make is the wrong measurement - but that
+  is a JUDGEMENT about which frame applies, not a result, and the disagreement is recorded rather than
+  resolved by preference.
+  AND THERE IS A MEASURED ANCHOR FOR THE UNDERLYING PRINCIPLE. Ring deletion is the established route to
+  NPR-C selectivity: C-ANP(4-23), the ring-less prototype, is greater than 1000 nM at NPR1 and 0.51 nM at
+  NPR3 in the same assay - more than 2000-fold, from removing the ring alone. NPR-A and NPR-B both REQUIRE
+  the intact 17-residue ring for activation; NPR-C does not. So the selectivity mechanism is structural
+  and general rather than compound-specific. WHAT IS STILL MISSING IS THE SAME THING: nobody has measured
+  a ring-less ANP fragment against NPR-B either, so even the prototype selectivity is NPR1-only.
+  THE HONEST BOTTOM LINE. Two of three framings, including the two that model what the candidate molecules
+  actually touch, predict that NPR-B selectivity will be AT LEAST AS GOOD as the measured NPR-A
+  selectivity. One framing predicts the opposite. This raises the prior; it does not settle it; and it is
+  grade E because it is sequence and structure inference, not binding data. THE EXPERIMENT REMAINS ONE
+  COUNTER-SCREEN.'
+quantitative:
+- parameter: 'RECEPTOR DIVERGENCE AT THREE LEVELS OF RESOLUTION - AND THE ANSWER FLIPS BETWEEN THEM'
+  value: 'WHOLE ECD identity: NPR-A/NPR-B 45.8 per cent, NPR-A/NPR-C 37.5, NPR-B/NPR-C 33.9.
+    WHOLE ANP BINDING SITE (30 NPR-C residues within 4.5 angstrom of bound peptide, both protomers):
+    NPR-C/NPR-A 42.9 per cent (12/28), NPR-C/NPR-B 50.0 per cent (15/30).
+    CUTOFF SENSITIVITY for the binding site, NPR-C/NPR-A against NPR-C/NPR-B: 4.0 A 45.8 vs 60.0;
+    4.5 A 42.9 vs 50.0; 5.0 A 41.9 vs 48.5; 6.0 A 38.9 vs 44.7; 8.0 A 43.8 vs 42.4.
+    SUB-SITE OF THE NISHIZAWA CORE (CFGGRMDRIG): NPR-C/NPR-A 55.0 per cent (11/20), NPR-C/NPR-B 50.0
+    (11/22). SUB-SITE OF THE M372049 CORE (MDRI): NPR-C/NPR-A 75.0 per cent (9/12), NPR-C/NPR-B 64.3
+    (9/14)'
+  unit: per cent amino-acid identity
+  conditions: 'COMPUTED BY THIS ATLAS 2026-08-09. Human UniProt P16066 (NPR-A, ECD 33-473), P20594
+    (NPR-B, ECD 23-458), P17342 (NPR-C, ECD 27-481). Global Needleman-Wunsch, BLOSUM62, gap open -11
+    extend -1, Biopython PairwiseAligner. Contacts from PDB 1YK0, NPR-C extracellular dimer with ANP,
+    chains A and B against peptide chain E; PDB numbering mapped to UniProt by local alignment.'
+  species: human
+  source_ref: pdb_1yk0
+  atlas_derived: true
+  uncertainty: 'THE THREE FRAMINGS DISAGREE AND THAT IS THE RESULT, NOT A FLAW IN IT. Whole-ECD and
+    sub-site framings favour NPR-B selectivity; the whole-binding-site framing opposes it. The likely
+    reason is that the whole-site count includes contacts made by the ANP DISULFIDE RING and C-terminal
+    tail, which neither candidate occupies, and those are the contacts where NPR-C and NPR-B resemble each
+    other. THAT EXPLANATION IS A JUDGEMENT, NOT A MEASUREMENT.
+    LIMITS THAT APPLY TO ALL THREE. Sequence identity at aligned positions is a crude proxy for binding
+    energetics - a single non-conservative substitution in a hot spot outweighs many conservative ones,
+    and no energetic calculation was attempted. There is NO SOLVED NPR-B STRUCTURE WITH LIGAND, so NPR-B
+    contacts are inferred by alignment onto the NPR-C structure rather than observed. 1YK0 is NPR-C with
+    ANP, not with either candidate molecule, so the assumption that a minimised mimic occupies the same
+    sub-site in the same pose is untested. Small n - 12 to 30 positions - so a few residues move the
+    percentages materially. AND THE WHOLE ANALYSIS PREDICTS BINDING, NOT FUNCTION: NPR-B is a guanylyl
+    cyclase and what matters clinically is whether the ligand ACTIVATES it, which sequence identity cannot
+    address at all.'
+- parameter: 'THE MEASURED ANCHOR FOR THE SELECTIVITY MECHANISM - RING DELETION, AND ITS BLIND SPOT'
+  value: 'C-ANP(4-23), the ring-less ANP fragment prototype, binds hNPR3 at IC50 0.51 nM and hNPR1 at
+    greater than 1000 nM - more than 2000-fold selectivity from removing the disulfide ring alone. Native
+    hANP for comparison is hNPR1 0.094 nM and hNPR3 0.058 nM, essentially non-selective. Compound 23
+    reaches hNPR3 0.079 nM against hNPR1 greater than 1000 nM'
+  unit: IC50 in nM
+  conditions: nishizawa2017 Table 1, radioligand displacement, human receptors. NPR-A and NPR-B both
+    require the intact 17-residue disulfide ring for activation; NPR-C does not, which is the structural
+    basis of the selectivity.
+  species: human
+  source_ref: nishizawa2017
+  uncertainty: 'THIS IS THE STRONGEST PART OF THE ARGUMENT BECAUSE IT IS MEASURED RATHER THAN COMPUTED, AND
+    IT HAS THE SAME BLIND SPOT AS EVERYTHING ELSE ON THIS ROUTE. Ring deletion converts a non-selective
+    ligand into a greater than 2000-fold NPR-C-selective one, so the mechanism is structural and general
+    rather than a property of one compound. BUT NOBODY HAS RUN THE RING-LESS PROTOTYPE AGAINST NPR-B
+    EITHER. Every selectivity number in this literature, for every compound, is NPR3 against NPR1. The
+    generalisation from NPR1 to NPR2 is exactly what this node computes and cannot measure.'
+- parameter: 'EXPOSURE IS NOT THE LIMITING FACTOR ON THIS ROUTE, WHICH SEPARATES IT FROM THE PHOSPHATASE ARM'
+  value: 'Interpolating the farnum2006 partition anchors (about 100 per cent of free plasma at 332 Da,
+    60 per cent at 3 kDa, 10 per cent at 10 kDa): M372049 at 887 Da partitions at about 82 per cent,
+    compound 23 at about 1358 Da at about 74 per cent, vosoritide at about 4.1 kDa at about 47 per cent,
+    mature osteocrin at 5.6 kDa at about 34 per cent. Applying that to the only measured in vivo blood
+    levels - compound 23 at 10.1 nM (300 nmol/kg/day) and 40.5 nM (1000 nmol/kg/day) - gives plate
+    concentrations of about 7.5 and 30 nM, which are 95-fold and 381-fold its own NPR3 IC50 of 0.079 nM'
+  unit: per cent partition; nM; fold over IC50
+  conditions: COMPUTED BY THIS ATLAS 2026-08-09 by log-linear interpolation between the three published
+    farnum2006 anchors. Compound 23 molecular weight 1357.5 Da is computed from the published sequence,
+    not read. Blood levels from nishizawa2017 Table 3.
+  species: mouse
+  source_ref: farnum2006
+  atlas_derived: true
+  uncertainty: 'THE CONTRAST WITH THE PHOSPHATASE ARM IS THE POINT AND IT IS LARGE. That route closes with
+    a 2.6 to 3.2-fold exposure margin; this one has 95 to 381-fold headroom over its target IC50 at doses
+    already administered to mice. Exposure is not what gates the NPR3 route.
+    THE INTERPOLATION IS CRUDE AND SHOULD NOT BE OVER-READ. farnum2006 is a TRACER series and the curve is
+    being applied BY SIZE ALONE across only three anchor points; both candidates are NEUTRAL at pH 7.4 -
+    M372049 carries one Arg against one Asp, confirmed by structure - so no Donnan term applies, but that
+    also means neither gets the enhancement this atlas argues a CATIONIC molecule would. Steric hindrance,
+    binding to matrix, and the fact that a growth plate is not the tissue farnum2006 measured are all
+    unmodelled. AND FREE FRACTION IS NOT KNOWN for either compound, so plasma total was used where free
+    was wanted.'
+- parameter: 'PHYSICOCHEMISTRY OF M372049, AND THE PROPERTY CLASH IT REVEALS'
+  value: 'M372049 computed from the PubChem structure: molecular weight 887.0, 64 heavy atoms, cLogP 0.07,
+    topological polar surface area 336.4 square angstrom, 9 hydrogen-bond donors, 11 acceptors, 23
+    rotatable bonds, net formal charge ZERO at pH 7.4 (one arginine guanidine against one aspartate
+    carboxylate)'
+  unit: Da, log units, square angstrom, counts
+  conditions: COMPUTED BY THIS ATLAS 2026-08-09 with RDKit from the PubChem CID 59787819 canonical SMILES.
+  species: not_applicable
+  source_ref: pubchem_m372049
+  atlas_derived: true
+  uncertainty: 'THESE NUMBERS SIT FAR OUTSIDE ORAL DRUG SPACE - TPSA 336 against a conventional ceiling
+    near 140, 23 rotatable bonds against a ceiling near 10, 9 donors against 5 - WHICH SITS AWKWARDLY
+    AGAINST THE PATENT CLAIM OF PROMISING ORAL ACTIVITY. Either that claim is modest in absolute terms,
+    or absorption is carrier-mediated, or it is optimistic; the patent text read does not resolve it, and
+    this atlas should not assume oral dosing is available.
+    THE SAME PROPERTIES ARE NEUTRAL-TO-FAVOURABLE FOR THE ACTUAL TARGET, and that reconciliation is worth
+    stating. Cartilage is a hydrated polyanionic gel, not a lipid barrier, and NPR3 is a CELL-SURFACE
+    receptor, so a highly polar, membrane-impermeant, neutral solute has no penalty to pay for reaching
+    it - the properties that make this a poor oral drug do not make it a poor cartilage-penetrating
+    extracellular ligand. That is an argument, not a measurement; no growth-plate concentration exists for
+    this or any other agent in this atlas.'
+localization:
+- 'the analysis is of the receptor extracellular domain, which is where all three receptors bind ligand'
+- 'relevance is to the growth plate for NPR-B-sparing and to the vasculature for the liability being avoided'
+human_evidence: indirect
+human_evidence_note: 'The sequences and the structure are human, but the output is a computed prediction
+  about binding selectivity, not a human measurement. The only measured selectivity anywhere on this route
+  is NPR3 against NPR1.'
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: The analysis is of human receptor sequences and a human receptor structure; the
+  risk here is not species translation but the gap between sequence identity and binding energetics.
+confidence: E
+claim_grades:
+- claim: Selectivity for NPR3 over NPR1 can be extrapolated to selectivity over NPR2/NPR-B.
+  grade: E
+  basis: 'COMPUTED, NOT MEASURED. Two of three structural framings support it - whole ECD (NPR-B most
+    divergent from NPR-C) and, more importantly, the sub-sites the candidate molecules actually occupy
+    (Nishizawa core 55.0 vs 50.0 per cent, M372049 core 75.0 vs 64.3 per cent, NPR-A the harder
+    discrimination in both). One framing opposes it - the whole ANP binding site, where NPR-B is the
+    closer receptor at 50.0 against 42.9 per cent, robustly across cutoffs. Sequence identity is a proxy
+    for binding energetics and cannot address whether a ligand ACTIVATES a cyclase receptor. Raises the
+    prior, settles nothing.'
+- claim: Ring deletion is the structural basis of NPR-C selectivity in this chemotype.
+  grade: C
+  basis: 'Measured rather than computed - C-ANP(4-23) is >1000 nM at hNPR1 and 0.51 nM at hNPR3 in one
+    assay, against native hANP at 0.094 and 0.058, so ring removal buys >2000-fold. NPR-A and NPR-B both
+    require the intact ring for activation and NPR-C does not. Graded C not B because it rests on one
+    table in one paper and, like everything else here, was never run against NPR-B.'
+- claim: Exposure limits the NPR3 route.
+  grade: X
+  basis: 'It does not, on the arithmetic available. Compound 23 reaches 95 to 381-fold over its own NPR3
+    IC50 at the growth plate at doses already given to mice, against a 2.6 to 3.2-fold margin for the
+    phosphatase arm. The interpolation is crude and free fraction is unknown, but the conclusion is not
+    close to the boundary.'
+key_refs:
+- ref_id: pdb_1yk0
+  year: 2006
+  type: dataset
+  role: the only solved structure of NPR-C with a natriuretic peptide bound, and the source of every
+    contact position used here
+- ref_id: nishizawa2017
+  year: 2017
+  type: primary
+  role: the measured NPR3-over-NPR1 selectivity for compound 23 and for the ring-less prototype
+    C-ANP(4-23), and the in vivo blood levels used in the exposure arithmetic
+- ref_id: pubchem_m372049
+  year: 2026
+  type: dataset
+  role: the structure from which M372049 mass, charge and physicochemistry were computed
+- ref_id: farnum2006
+  year: 2006
+  type: primary
+  role: the cartilage partition-versus-size anchors used to convert blood concentration to plate
+    concentration
+open_questions:
+- g_l12_npr_b_counterscreen_missing
+contradicts: []
+last_verified: '2026-08-09'

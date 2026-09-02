@@ -1,0 +1,335 @@
+id: hypertrophic_volume_increase
+name: Hypertrophic chondrocyte volume increase
+aliases:
+- chondrocyte enlargement
+- hypertrophic swelling
+- three-phase hypertrophy
+type: process
+layer: L1
+stub: false
+summary: 'Terminal chondrocyte enlargement is the largest single contributor to longitudinal elongation and the parameter
+  that correlates best with growth rate across mammals. Quantitative phase microscopy of live dissociated mouse chondrocytes
+  resolves the enlargement into three phases with distinct biophysics. Phase 1 is true hypertrophy: volume rises from
+  about 600 fl to 2000 fl with dry mass density held at 0.183 pg/fl, the normal value for healthy cells. Phase 2 is
+  swelling: volume rises from about 2000 fl to 8000 fl while dry mass production continues at a lower relative rate,
+  so density falls to about 0.07 pg/fl, a roughly 60% dilution confirmed independently by tomographic phase microscopy.
+  Phase 3 resumes proportional growth at the new low density, taking mouse proximal tibial cells from 8000 fl to about
+  14,000 fl. Which phases a plate executes determines its growth rate: the slow mouse proximal radius truncates phase
+  2 at about 5000 fl and omits phase 3 entirely, the jerboa metatarsal extends phase 3 to about 23,000 fl, and Igf1-deficient
+  cells stop at about 7000 fl. Volume increase is fast and time-boxed: proximal tibial cell height more than triples
+  within roughly 12 h and cells then sit at terminal size for roughly another 12 h before being removed at the chondro-osseous
+  junction. Stereologically, the rat proximal tibia shows a 4-fold height and 10-fold volume increase from proliferative
+  to late hypertrophic stage. None of this has been measured in human cells.'
+quantitative:
+- parameter: HUMAN terminal hypertrophic cell height, and whether it varies with age
+  value: 29-38 across birth to 13 years, NO AGE DEPENDENCE; 33 +/- 5 at ages 5-8
+  unit: um
+  conditions: human distal femur, 12 necropsy subjects; maximum dimension of the cell spaces in the direction of growth,
+    five groups of ten cells per specimen along the metaphyseal border; celloidin, 15 um sections, 13% linear processing
+    shrinkage measured and corrected
+  species: human
+  source_ref: kember1976
+  uncertainty: 'ADDED 2026-08-06. THIS NODE PREVIOUSLY RECORDED human_evidence AS ABSENT while the human measurement
+    had existed since 1976. The finding that matters is the NULL: across the whole of human childhood the parameter
+    this node calls the largest single contributor to elongation does not move. The only departures are the two 14-year-olds
+    with closure in progress (39 um male, 25 um female). n = 12 subjects, 1-2 per age, so this bounds a trend loosely
+    rather than tightly.'
+- parameter: RAT terminal cell size and whether it varies with age
+  value: yes - lower hypertrophic zone cells reach 40 um at 2-4 weeks and are ABSENT in old rats
+  unit: um
+  conditions: Wistar rat femur and tibia, ages 2-16 weeks against 62-80 weeks; growth plate height maximal at 2 and
+    4 weeks
+  species: rat
+  source_ref: roach2003
+  uncertainty: THE SPECIES DISSOCIATION IS THE POINT. In old rats all growth plate cells are the size of the PROLIFERATIVE
+    cells of young plates - the capacity for volume increase is lost - and the authors conclude that absence of the
+    volume increase is the main factor associated with deceleration and eventually cessation of growth. In human the
+    same parameter is flat from birth to 13 years while growth velocity varies several-fold. THE VARIABLE THAT SHUTS
+    GROWTH DOWN IN THE RAT IS THE ONE THE HUMAN HOLDS CONSTANT. Recorded as contradiction C-L1-09.
+- parameter: terminal cell size across nine bird species, against their growth rates
+  value: 10 to 18 um (22 um in one chicken), with NO CLEAR TREND against growth rate
+  unit: um, mean diameter in the plane of growth
+  conditions: 68 growth plates - tarsometatarsus and a phalangeal bone - across a range of avian species including
+    rhea, Abdim's stork and budgerigar, with growth rates from serial external measurement [schema vocabulary has
+    no "bird"; the literal basis is nine avian species]
+  species: multiple
+  source_ref: kember1990
+  uncertainty: PRIMARY, AND IT IS THE CLEANEST TEST OF THIS NODE'S CENTRAL CLAIM THAT THE ATLAS HOLDS. The authors
+    state the variation in terminal cell size was NOT a major cause of differences in growth rate and that the differences
+    seen were within biological variation, sampling error and processing shrinkage; labelling percentage was likewise
+    similar at 10-15%; and the major cause of between-species growth rate differences was THE SIZE OF THE FLAT CELL
+    ZONE. Birds also have SMALLER hypertrophic cells than mammals while growing faster. Growth rate per flat cell
+    did not scale with adult body weight (r = -0.22, n = 6, not significant), so cycle time appears independent of
+    body size and metabolic rate. Between-clade comparison of a shrinkage-sensitive measurement.
+- parameter: a dwarfing mutation that acts on terminal cell height ALONE
+  value: 'Type I cn: hypertrophic cell height reduced, proliferation-zone cell number hardly reduced, mitotic rate
+    normal'
+  unit: qualitative
+  conditions: achondroplastic (cn) homozygous mice aged 16-34 days against normal littermates; tritiated thymidine
+    1 h before cull, labelling profiles from >=100 labelled cells per profile, heights of 100 hypertrophic cells per
+    section. Normal mouse labelling index 9-13%
+  species: mouse
+  source_ref: thurston1985cn
+  uncertainty: THE OTHER DIRECTION OF C-L1-09 AND IT MATTERS. Human development does not vary terminal cell height,
+    and across bird species it does not track growth rate - but BREAKING it is sufficient to dwarf an animal with
+    proliferation untouched. Invariance under physiology is not the same as irrelevance under perturbation, and this
+    node should not be read as saying h_term does not matter. The same paper reports a Type II phenotype in which
+    proliferation-zone cell size, mitotic index AND hypertrophic cell height are all reduced, and the two types cannot
+    be told apart by body size - so the mutation's expressivity is itself heterogeneous and the authors attribute
+    this to a second unidentified factor in some colonies.
+- parameter: chondrocyte volume at start of enlargement
+  value: '600'
+  unit: fl
+  conditions: proximal tibia, postnatal mouse, dissociated live cells, diffraction phase microscopy
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate value as stated
+- parameter: dry mass density, phase 1 (true hypertrophy)
+  value: '0.183'
+  unit: pg/fl
+  conditions: mouse proximal tibia chondrocytes 600-2000 fl
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: reference healthy-cell density 0.182 pg/fl
+- parameter: volume at end of phase 1
+  value: '2000'
+  unit: fl
+  conditions: mouse proximal tibia; ~3-fold increase from 600 fl at constant density
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: volume at end of phase 2 (swelling)
+  value: '8000'
+  unit: fl
+  conditions: mouse proximal tibia; ~4-fold increase from 2000 fl
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: dry mass density at end of phase 2
+  value: '0.07'
+  unit: pg/fl
+  conditions: mouse proximal tibia hypertrophic chondrocytes
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate; ~60% fall confirmed by tomographic phase microscopy
+- parameter: fall in dry mass density in the largest cells
+  value: '60'
+  unit: '% reduction'
+  conditions: mouse proximal tibia, regularized tomographic phase microscopy
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: final volume, fast plate
+  value: '14000'
+  unit: fl
+  conditions: mouse proximal tibia, end of phase 3
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: final volume, slow plate
+  value: '5000'
+  unit: fl
+  conditions: mouse proximal radius; phase 2 truncated, phase 3 absent; density ~0.10 pg/fl
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: final volume, mouse distal metatarsal
+  value: '8000'
+  unit: fl
+  conditions: phases 1 and 2 complete, phase 3 truncated
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: final volume, jerboa distal metatarsal
+  value: '23000'
+  unit: fl
+  conditions: phase 3 extended; ~40-fold increase from initial volume
+  species: multiple
+  source_ref: cooper2013
+  uncertainty: approximate; jerboa (Jaculus jaculus), species term not in controlled vocabulary
+- parameter: hypertrophic cell height increase, jerboa vs mouse metatarsal
+  value: '58'
+  unit: '% taller'
+  conditions: homologous distal metatarsal growth plates
+  species: multiple
+  source_ref: cooper2013
+  uncertainty: not reported
+- parameter: final volume, Igf1-deficient
+  value: '7000'
+  unit: fl
+  conditions: HoxB6-Cre conditional Igf1 deletion, mouse hindlimb; phase 3 absent
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: reduction in hypertrophic cell height, Igf1 null
+  value: '30'
+  unit: '% shorter'
+  conditions: direction of elongation; Igf1-null mice are 35% smaller with unchanged hypertrophic cell number
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: not reported
+- parameter: time to triple cell height after leaving the proliferative pool
+  value: '12'
+  unit: h
+  conditions: mouse proximal tibia, BrdU pulse-chase
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: dwell time at terminal size before chondro-osseous junction turnover
+  value: '12'
+  unit: h
+  conditions: mouse proximal tibia
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: mean cell height increase, proliferative to late hypertrophic
+  value: '4'
+  unit: fold
+  conditions: proximal tibia, rat, stereology on optimally fixed tissue
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: hunziker1987 is by
+    the same laboratory and uses the same stereological estimators as hunziker1989, whose Methods state that vertical
+    cell height ''cannot be determined by direct measurement on histological sections'' and cite cruzorive1986 for
+    a super-egg / oblate-spheroid model in its place, and which further states that some of its 35-day estimators
+    had already appeared in hunziker1987. So ANY CELL HEIGHT FIGURE FROM THIS SOURCE IS A SHAPE-MODEL OUTPUT, not
+    a measurement, and inherits the biases set out in CORR-009 - height computed as volume divided by a width second
+    moment at a fixed unmeasured shape exponent, with opposite-signed tilt bias on height and width in the hypertrophic
+    zone. NOT VERIFIED AGAINST hunziker1987''s OWN METHODS SECTION: its full text has never been obtained (the PDF
+    supplied 2026-08-06 was a Literature Abstracts listing page). The inheritance is inferred from hunziker1989 and
+    cruzorive1986, and is graded accordingly. VOLUME figures from this source are not affected - that estimator is
+    unbiased.'
+- parameter: mean cell volume increase, proliferative to late hypertrophic
+  value: '10'
+  unit: fold
+  conditions: proximal tibia, rat
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: not reported
+- parameter: mean matrix volume per cell increase
+  value: '3'
+  unit: fold
+  conditions: proximal tibia, rat
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: not reported
+- parameter: correlation of final hypertrophic volume with elongation rate
+  value: '0.98'
+  unit: Pearson r
+  conditions: four growth plates, 21- and 35-day-old hooded rats
+  species: rat
+  source_ref: breur1991
+  uncertainty: r as reported
+- parameter: correlation of final hypertrophic volume with elongation rate
+  value: '0.83'
+  unit: Pearson r
+  conditions: four growth plates, 21- and 35-day-old Yucatan pigs
+  species: porcine
+  source_ref: breur1991
+  uncertainty: r as reported; regression slope differs from rat
+localization:
+- 'mouse HZ: measured on dissociated live cells (cooper2013)'
+- 'rat HZ: measured by stereology (hunziker1987)'
+- 'human HZ: unmeasured'
+human_evidence: direct
+human_evidence_note: UPGRADED FROM ABSENT 2026-08-06 on reading kember1976 in full. Human terminal hypertrophic cell
+  height is 29-38 um from birth to 13 years with no detectable age dependence, 33 +/- 5 um at ages 5-8, measured directly
+  in the direction of growth with a measured shrinkage correction. The human evidence is therefore a NULL on the age
+  axis, which is the opposite of what the rodent literature in this node would predict.
+species_basis:
+- chicken
+- human
+- mouse
+- multiple
+- porcine
+- rat
+translation_risk: high
+translation_risk_reason: Every number in this node is rodent (or jerboa). The mammalian volume-versus-growth-rate
+  relationship already fails in birds (barreto1994) and has a species-specific slope between rat and pig (breur1991),
+  so the mouse volume set points cannot be applied to human plates without measurement.
+confidence: C
+key_refs:
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: Three phases of chondrocyte enlargement, including a dry-mass-diluting swelling phase; phase 3
+    duration is IGF-dependent and sets differential growth.
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: 4-fold height and 10-fold volume increase from proliferative to late hypertrophic chondrocyte
+    in rat proximal tibia.
+- ref_id: breur1991
+  pmid: '2010838'
+  first_author: Breur GJ
+  year: 1991
+  type: primary
+  one_line_finding: Linear relationship between final hypertrophic volume and elongation rate in rat and pig, with
+    species-specific slope.
+- ref_id: breur1994
+  pmid: '7943757'
+  first_author: Breur GJ
+  year: 1994
+  type: primary
+  one_line_finding: Serial-section and stereological reconstruction localises where in the plate the chondrocyte volume
+    and shape change begins and ends.
+- ref_id: barreto1994
+  pmid: '8146454'
+  first_author: Barreto C
+  year: 1994
+  type: primary
+  one_line_finding: In ducklings and chicks the mammalian hypertrophic-volume/growth-rate relationship does not hold,
+    showing it is not a universal amniote rule.
+- ref_id: roach2003
+  pmid: '12588965'
+  first_author: Roach HI
+  year: 2003
+  type: primary
+  one_line_finding: Rat growth ceases while the physis persists; loss of the large hydrated lower-hypertrophic cells
+    is the main correlate of deceleration and cessation.
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: Human terminal hypertrophic cell height 29-38 um with no age dependence, birth to 13 years.
+- ref_id: kember1990
+  pmid: '2267417'
+  first_author: Kember NF
+  year: 1990
+  type: primary
+  one_line_finding: Across nine bird species terminal cell size shows no trend against growth rate; flat cell zone
+    size is the main driver.
+- ref_id: kember1987
+  pmid: '3502931'
+  first_author: Kember NF
+  year: 1987
+  type: primary
+  one_line_finding: 'Chicken: ~1000 um/day on 15 um terminal cells.'
+- ref_id: thurston1985cn
+  pmid: '3840788'
+  first_author: Thurston MN
+  year: 1985
+  type: primary
+  one_line_finding: Type I achondroplastic (cn) mice are dwarfed with reduced hypertrophic cell height alone - normal
+    proliferative cell number and normal mitotic rate.
+open_questions:
+- g_l1arch_008
+- g_l1arch_009
+- g_l1arch_010
+contradicts:
+- barreto1994
+last_verified: '2026-08-06'
+confidence_note: 'HELD AT C on 2026-08-06. Adding a human measurement does not raise the grade because the human measurement
+  is a null in 12 subjects and the node''s positive claims remain rodent. What it does is bound the node''s transferability:
+  the claim that terminal cell enlargement is the largest single contributor to elongation is well supported across
+  mammals as a BETWEEN-species and between-site regression, and is not supported as a WITHIN-human developmental variable,
+  because in humans it does not vary. Further constrained 2026-08-06 by kember1990 and kember1987: across nine bird
+  species terminal cell size does not track growth rate, and a chicken plate elongates about 26 times faster than
+  a human distal femur on cells less than half the height. The node''s claim now stands as a BETWEEN-SITE and WITHIN-species-and-age
+  regression in mammals, and is contradicted as a general determinant of growth rate both across birds and across
+  human development.'

@@ -1,0 +1,68 @@
+id: estrogen_low_dose_therapy
+name: Low-dose oestrogen therapy
+aliases: [low-dose estradiol, oestrogen priming, Turner syndrome oestrogen replacement]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Oestrogen has a biphasic action on the growth plate: at low concentrations it supports
+  the pubertal growth spurt, at higher and more sustained concentrations it drives
+  epiphyseal fusion. Low-dose oestrogen therapy exploits the first arm while trying to
+  avoid the second, and its main clinical arena is Turner syndrome, where the same patients
+  also receive rhGH. The therapeutic problem is a scheduling one that the biphasic
+  pharmacology creates directly: oestrogen must be introduced late enough not to truncate
+  the GH-driven height gain and early enough to allow normally timed puberty and bone
+  mineral accrual. This makes low-dose oestrogen the clearest human demonstration that
+  growth plate closure is a dose- and duration-dependent pharmacological endpoint rather
+  than a fixed developmental clock. The evidence base is dominated by protocolised
+  cohorts and consensus guidance rather than randomised dose-ranging: current management
+  reviews describe rhGH plus timed low-dose oestrogen as standard, but do not provide a
+  randomised comparison of oestrogen introduction ages with attained adult height as
+  outcome. The complementary experiment - deliberately high-dose oestrogen given to reduce
+  excessive height in constitutionally tall adolescents - has largely been abandoned in
+  practice, removing the upper arm of the dose-response from contemporary human data.
+quantitative:
+  - parameter: randomised comparisons of oestrogen introduction age with attained adult height as endpoint in Turner syndrome
+    value: '0'
+    unit: trials identified
+    conditions: Europe PMC search 2026-08-05; retrieved material is protocolised cohorts, reviews and consensus guidance
+    species: human
+    source_ref: turner2025
+    uncertainty: absence established by search - see gap g_l12b_018
+localization:
+  - "human growth plate: oestrogen receptor alpha in chondrocytes is the presumed mediator of both the spurt and fusion; not measured in treated patients"
+human_evidence: direct
+human_evidence_note: >-
+  Low-dose oestrogen with rhGH is standard, guideline-endorsed practice in Turner syndrome
+  with published height outcomes, though not from randomised dose-ranging trials.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  Human clinical practice and human outcome data throughout. The biphasic
+  concentration-response is inferred from clinical dosing behaviour and from the natural
+  experiments of aromatase and oestrogen receptor deficiency rather than from a
+  dose-ranging trial.
+confidence: C
+claim_grades:
+  - claim: Oestrogen acts biphasically on human linear growth, supporting the spurt at low exposure and driving fusion at higher exposure.
+    grade: B
+    basis: Coherent with aromatase-inhibitor and oestrogen-resistance human data; not demonstrated by a dose-ranging trial with plate readouts.
+  - claim: Timing of low-dose oestrogen introduction materially affects adult height in Turner syndrome.
+    grade: C
+    basis: Guideline and cohort evidence; no randomised comparison of introduction ages with attained adult height.
+key_refs:
+  - ref_id: turner2025
+    pmid: '40971503'
+    first_author: Turner HE
+    year: 2025
+    type: review
+    one_line_finding: Current clinical approach to Turner syndrome including rhGH plus timed low-dose oestrogen and the timing trade-off.
+  - ref_id: guzzetti2024
+    pmid: '39857834'
+    first_author: Guzzetti C
+    year: 2024
+    type: review
+    one_line_finding: rhGH is licensed to improve adult height in Turner syndrome, the population in which oestrogen timing is managed.
+open_questions: [g_l12b_018]
+contradicts: []
+last_verified: '2026-08-05'

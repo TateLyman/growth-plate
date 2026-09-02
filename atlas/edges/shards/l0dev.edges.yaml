@@ -1,0 +1,439 @@
+edges:
+
+- edge_id: e00001
+  source: hox_code_limb
+  target: site_specific_growth_rate
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'metacarpal elongation 49% and proliferation per column 46% of proximal tibia at 1 week (mouse); Hoxd13/Shox/Tbx5 differ between those plates age-independently'
+  context: mouse and rat postnatal growth plate, phalanx/metacarpal versus tibia/femur; both sexes not separated
+  evidence_tier: T1
+  refs:
+  - lui2018
+  - pineault2015
+  confidence: speculative
+  gap_id: g_l0dev_001
+  notes: >-
+    The atlas's central L0 claim and the one most often assumed. What is demonstrated: positional
+    genes are still differentially transcribed inside postnatal plates of different sites, and
+    Hox11 loss slows zeugopod elongation. What is NOT demonstrated: that the HOX code sets the
+    rate. lui2018 attributes the rate difference to differential progression of growth plate
+    senescence and does not test HOX. No manipulation of a HOX gene has ever been read out as an
+    elongation rate at two different sites in the same animal.
+
+- edge_id: e00002
+  source: hoxa11_gene
+  target: growth_plate_height
+  relation: required_for
+  sign: '+'
+  magnitude: 'growth plate height reduced and senescence premature in Hoxa11/Hoxd11 compound mutants retaining one wild-type allele'
+  context: mouse radius and ulna (zeugopod), postnatal; stylopod unaffected
+  evidence_tier: T1
+  refs:
+  - pineault2015
+  confidence: C
+  notes: >-
+    Region-restricted. Proliferation in the resting and proliferative zones was HIGHER in mutants,
+    so the reduced height is not a proliferation deficit but is read by the authors as premature
+    depletion of the progenitor pool.
+
+- edge_id: e00003
+  source: hoxa11_gene
+  target: lepr_positive_stromal_cell
+  relation: precedes
+  sign: unknown
+  magnitude: 'Hoxa11-CreERT2 lineage gives rise to LepR-Cre and Osx-CreER marked populations'
+  context: mouse zeugopod, embryonic through adult; Hoxa11-EGFP restricted to zeugopod marrow MSCs
+  evidence_tier: T1
+  refs:
+  - pineault2019
+  - rux2016
+  confidence: C
+  notes: >-
+    Places an embryonic patterning gene upstream of the postnatal skeletal stem cell hierarchy of
+    L2, and does so region-specifically. rux2016 reports adult Hoxa11-EGFP as exclusive to marrow
+    MSCs, which is in tension with rux2021 finding Hoxa11 in zeugopod articular chondrocytes.
+
+- edge_id: e00004
+  source: hoxd11_gene
+  target: growth_velocity_longitudinal
+  relation: required_for
+  sign: '+'
+  magnitude: 'radial and ulnar elongation rate reduced and terminal bone length shorter in Hox11 compound mutants'
+  context: mouse forelimb zeugopod, postnatal; Hoxa11/Hoxd11 act as a paralogue group
+  evidence_tier: T1
+  refs:
+  - pineault2015
+  - song2020
+  confidence: C
+  notes: >-
+    The adult conditional Hoxd11 deletion (song2020) shows the requirement persists in a fully
+    formed skeleton, acting on osteoblast maturation rather than on stem cell number.
+
+- edge_id: e00005
+  source: hoxa13_gene
+  target: metacarpal_plate
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'human HOXA13 mutation gives short first metacarpal and small distal phalanges; no growth plate parameter measured'
+  context: human hand-foot-genital syndrome; mouse autopod
+  evidence_tier: T1
+  refs:
+  - mortlock1997
+  - lui2018
+  confidence: speculative
+  gap_id: g_l0dev_001
+  notes: >-
+    The human phenotype is size-restricted rather than count-restricted, which makes HOXA13 a
+    candidate for the autopod plate's distinctive slow, early-senescing programme. Nobody has
+    measured a growth plate in a HOXA13 carrier or a Hoxa13 mutant.
+
+- edge_id: e00006
+  source: hoxd13_gene
+  target: site_specific_growth_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'Hoxd13 expression in 1-week phalangeal plate differs from both 1-week and 4-week tibial plate, i.e. age-independent'
+  context: mouse and rat, laser-capture proliferative and hypertrophic zones, 1 and 4 weeks
+  evidence_tier: T1
+  refs:
+  - lui2018
+  confidence: D
+  notes: >-
+    The single strongest datum that positional identity is still readable inside a postnatal growth
+    plate and is not merely a proxy for how senescent that plate is. Bulk zonal RNA-seq only; no in
+    situ localization and no human tissue.
+
+- edge_id: e00007
+  source: apical_ectodermal_ridge
+  target: growth_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'AER Fgf4/Fgf8 allelic reduction deletes proximal skeletal elements; Fgf10 loss gives limbless newborns'
+  context: mouse limb bud E9.5-E12.5, both sexes
+  evidence_tier: T1
+  refs:
+  - mariani2008
+  - min1998
+  confidence: C
+  notes: >-
+    Necessity for the existence of skeletal elements, hence of their growth plates. No AER
+    manipulation has been carried to a postnatal growth plate measurement.
+
+- edge_id: e00008
+  source: zone_of_polarizing_activity
+  target: metacarpal_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'ZPA grafting produces mirror-image digit duplication; SHH is sufficient to reproduce it'
+  context: chick limb bud anteroposterior axis; mouse equivalent
+  evidence_tier: T1
+  refs:
+  - riddle1993
+  confidence: C
+  notes: >-
+    Sets digit number and identity, therefore which autopod growth plates exist. It does not set
+    the rate at which they run, and no such experiment has been done.
+
+- edge_id: e00009
+  source: zrs_enhancer
+  target: metacarpal_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'single-nucleotide ZRS changes 1 Mb from SHH add preaxial digits in humans'
+  context: human preaxial polydactyly pedigrees; conserved in mouse and chick
+  evidence_tier: T1
+  refs:
+  - lettice2003
+  confidence: B
+  notes: >-
+    A non-coding element determines how many autopod elements, and therefore how many growth
+    plates, a hand contains. The worked example of modular cis-regulatory control that any L8
+    genetic account of stature has to operate within.
+
+- edge_id: e00010
+  source: limb_bud_initiation
+  target: growth_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'Fgf10-null mice are limbless; human TBX5 loss confines malformation to the upper limb'
+  context: mouse and human, limb field specification
+  evidence_tier: T1
+  refs:
+  - min1998
+  - basson1997
+  confidence: B
+
+- edge_id: e00011
+  source: tbx5_gene
+  target: distal_radius_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'human TBX5 haploinsufficiency causes radial ray defects with normal lower limbs'
+  context: human Holt-Oram syndrome, both sexes
+  evidence_tier: T1
+  refs:
+  - basson1997
+  confidence: B
+  notes: >-
+    Establishes in humans that forelimb and hindlimb skeletons are separately programmed from the
+    limb-field stage, which is the developmental precondition for arm and leg plates behaving
+    differently.
+
+- edge_id: e00012
+  source: pitx1_gene
+  target: proximal_tibia_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'Pitx1-null hindlimb defects with partial transformation toward forelimb morphology; forelimb spared'
+  context: mouse hindlimb field, embryonic
+  evidence_tier: T1
+  refs:
+  - szeto1999
+  confidence: C
+
+- edge_id: e00013
+  source: mesenchymal_condensation
+  target: resting_chondrocyte
+  relation: differentiates_into
+  sign: unknown
+  magnitude: 'Fgfr3-creER condensation-stage cells populate the DORSAL resting and proliferative zones exclusively'
+  context: mouse limb condensation stage traced to postnatal growth plate; dorsoventral compartment
+  evidence_tier: T1
+  refs:
+  - wu2025
+  confidence: D
+  notes: >-
+    The most direct L0-to-L1/L2 inheritance edge in this layer: the postnatal plate carries a
+    dorsoventral compartment map fixed before cartilage exists. Single study, two inducible Cre
+    lines, mouse only; the dorsoventral organisation of the human plate is unexamined.
+
+- edge_id: e00014
+  source: mesenchymal_condensation
+  target: growth_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'diphtheria-toxin ablation of Fgfr3+ condensation-stage cells severely disrupts long bone development'
+  context: mouse, condensation stage
+  evidence_tier: T1
+  refs:
+  - wu2025
+  confidence: D
+
+- edge_id: e00015
+  source: sox9_chondrogenic_commitment
+  target: growth_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'Sox9-null cells excluded from condensations; Sox9 heterozygotes have hypoplastic primordia and premature mineralization'
+  context: mouse chimeras and conditional deletion; human campomelic dysplasia is SOX9 haploinsufficiency
+  evidence_tier: T1
+  refs:
+  - bi1999
+  - bi2001
+  - akiyama2002
+  confidence: B
+  notes: >-
+    Dose-sensitive: halving SOX9 gives both a smaller starting template and faster conversion to
+    bone, the two quantities the postnatal plate has to work with.
+
+- edge_id: e00016
+  source: interzone_formation
+  target: growth_plate
+  relation: required_for
+  sign: '+'
+  magnitude: 'Gdf5-lineage interzone cells build joint tissues but not growth plate chondrocytes; the two lineages separate here'
+  context: mouse presumptive joint sites from E12.5
+  evidence_tier: T1
+  refs:
+  - koyama2008
+  - shwartz2016
+  confidence: B
+  notes: >-
+    Interzone position defines where one element ends, and therefore how much length each plate is
+    responsible for. The joint and plate lineages diverge at this point, which is why articular and
+    growth plate chondrocytes are not interchangeable postnatally.
+
+- edge_id: e00017
+  source: gdf5_gene
+  target: elongation_budget
+  relation: required_for
+  sign: '+'
+  magnitude: 'activating GDF5 mutation abolishes the interphalangeal joint and fuses phalanges into one longer element; inactivating mutation shortens the middle phalanx'
+  context: human symphalangism and brachydactyly type A2
+  evidence_tier: T1
+  refs:
+  - seemann2005
+  confidence: B
+  notes: >-
+    Bidirectional human mendelian evidence that one gene sets both whether a segmentation boundary
+    is placed and how long the flanking elements become.
+
+- edge_id: e00018
+  source: primary_ossification_center
+  target: growth_plate
+  relation: precedes
+  sign: unknown
+  magnitude: 'stage 4a of a 16-stage sequence, before cartilage canals (stage 7) and the secondary centre (stages 9-10)'
+  context: rabbit staged histology; conserved in mouse and human
+  evidence_tier: T1
+  refs:
+  - rivas2002
+  - long2013
+  confidence: B
+  notes: >-
+    Splitting one cartilage rod into two plates fixes each plate's polarity for life. Which ends of
+    an element form a plate at all is patterned here, not later (reno2025).
+
+- edge_id: e00019
+  source: primary_ossification_center
+  target: resting_zone
+  relation: required_for
+  sign: '+'
+  magnitude: 'Pthlh marks the reserve zone only at the growth-plate-forming end of the mouse metatarsal; the other end has no PTHrP+ reserve zone and shows premature Ihh'
+  context: mouse metatarsal and pisiform, fetal and early postnatal
+  evidence_tier: T1
+  refs:
+  - reno2025
+  confidence: C
+  notes: >-
+    Makes the presence of a PTHrP+ reserve pool the operational definition of a growth plate and
+    puts its patterning in L0. Directly relevant to L2, where PTHrP marks the candidate resting
+    zone stem cell.
+
+- edge_id: e00020
+  source: vascular_invasion_poc
+  target: chondro_osseous_junction
+  relation: required_for
+  sign: '+'
+  magnitude: 'Osterix+ precursors, not mature osteoblasts, enter along invading vessels and become trabecular osteoblasts'
+  context: mouse diaphysis E14.5-E15.5
+  evidence_tier: T1
+  refs:
+  - maes2010
+  confidence: C
+
+- edge_id: e00021
+  source: bone_collar_formation
+  target: perichondrial_ring_lacroix
+  relation: precedes
+  sign: unknown
+  magnitude: 'Ihh-null mice form no bone collar and show disorganised proliferation with premature hypertrophy'
+  context: mouse midshaft perichondrium from E14.5
+  evidence_tier: T1
+  refs:
+  - stjacques1999
+  confidence: C
+  notes: >-
+    The perichondrium that lays down the collar persists at the plate periphery as the groove of
+    Ranvier and the ring of LaCroix, so the collar is the developmental antecedent of the plate's
+    lateral mechanical restraint and of a postnatal progenitor reservoir.
+
+- edge_id: e00022
+  source: endochondral_ossification
+  target: growth_plate
+  relation: precedes
+  sign: unknown
+  magnitude: 'embryonic chondrocytes form clusters perpendicular to the growth axis; ordered columns appear postnatally'
+  context: mouse Confetti clonal analysis, embryonic versus postnatal
+  evidence_tier: T1
+  refs:
+  - rubin2024
+  - long2013
+  confidence: C
+  notes: >-
+    Important negative inheritance: columnar architecture, the defining feature of the postnatal
+    plate, is NOT inherited from the embryonic plate but acquired. Whatever the embryonic plate
+    hands over, it is not its geometry.
+
+- edge_id: e00023
+  source: secondary_ossification_center
+  target: resting_zone_niche
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'PTHrP+ colony-forming self-renewal rises between a P9 and a P12 pulse, described as coinciding with SOC development'
+  context: mouse proximal tibia and distal femur, P9-P12; humans form SOCs bone-by-bone across years
+  evidence_tier: T1
+  refs:
+  - mizuhashi2018
+  - newton2019
+  - funaki2020
+  confidence: speculative
+  gap_id: g_l2stem_003
+  notes: >-
+    Temporal coincidence only, in one species. The developmental timing side, which is this layer's
+    contribution, actively strains the hypothesis: in humans SOC appearance is staggered across
+    years and bones (distal femur 30-35 weeks gestation, proximal tibia later, most other centres
+    postnatal), so a SOC-triggered switch would have to produce bone-by-bone acquisition of
+    resting-zone stemness at widely separated ages. Nobody has tested that. Note that SOC-delaying
+    tools are already validated (axitinib at P18; Prx-Cre:GnasR201H, xie2020), so the missing
+    element is a stemness readout, not a method.
+
+- edge_id: e00024
+  source: secondary_ossification_center
+  target: chondrocyte_apoptosis_hz
+  relation: inhibits
+  sign: '-'
+  magnitude: '40% chondrocyte death at 1 N load without SOC versus tolerance of a tenfold higher load with SOC; delaying SOC in vivo raises hypertrophic zone TUNEL'
+  context: rat P10 (SOC-) versus mouse P30 (SOC+) tibia ex vivo loading, n=3; plus axitinib and Prx-Cre:GnasR201H in vivo
+  evidence_tier: T1
+  refs:
+  - xie2020
+  confidence: C
+  notes: >-
+    The best-evidenced function of the SOC, and it is mechanical rather than stem-cell-related.
+    Epiphyseal cartilage stiffness was unchanged by axitinib (8.1 vs 10.5 kPa, p=0.37), so the
+    protection is structural, not matrix-mediated.
+
+- edge_id: e00025
+  source: secondary_ossification_center
+  target: physeal_stress_in_vivo
+  relation: inhibits
+  sign: '-'
+  magnitude: 'finite element analysis shows SOC reduces octahedral shear stress in the hypertrophic region and stiffens the epiphysis'
+  context: in silico model of amniote versus anamniote epiphyseal geometry at 3 MPa supraphysiological load
+  evidence_tier: T1
+  refs:
+  - xie2020
+  confidence: D
+  notes: >-
+    In silico with physical validation by nanoindentation and ex vivo loading. Archosaur ossified
+    protrusions reduce the same stress without stiffening the joint, so two evolutionary solutions
+    exist for the same problem.
+
+- edge_id: e00026
+  source: intramembranous_ossification
+  target: appositional_growth
+  relation: required_for
+  sign: '+'
+  magnitude: 'distinct regulatory network from endochondral ossification in human embryos'
+  context: human embryo 5-11 post-conception weeks; mouse perichondrial bone collar
+  evidence_tier: T1
+  refs:
+  - to2024
+  - long2013
+  confidence: B
+  notes: >-
+    Width is built intramembranously and length endochondrally, in the same bone, by different
+    regulatory programmes. Any account of why length stops but width does not has to start here.
+
+- edge_id: e00027
+  source: suture_mesenchyme_stem_cell
+  target: rz_depletion_causes_fusion
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'Gli1+ suture stem cell ablation causes craniosynostosis and arrests skull growth'
+  context: mouse calvaria versus mouse/rabbit growth plate; the analogy is between structures, not within one
+  evidence_tier: T1
+  refs:
+  - zhao2015
+  - maruyama2016
+  confidence: speculative
+  gap_id: g_l0dev_011
+  notes: >-
+    The contrast case that makes the growth plate's evidential gap visible. At the suture, the
+    claim "loss of the resident stem cell pool terminates growth and fuses the structure" has been
+    tested by ablating the cells and observing synostosis. At the growth plate the equivalent claim
+    rests on correlation between resting zone depletion and fusion. This edge asserts only that the
+    suture is the tested analogue, not that the mechanisms are shared - sutures are intramembranous
+    and have no cartilage to consume.

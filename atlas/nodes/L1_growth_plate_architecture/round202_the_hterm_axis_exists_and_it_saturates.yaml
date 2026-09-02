@@ -1,0 +1,268 @@
+id: round202_the_hterm_axis_exists_and_it_saturates
+name: ROUND 202 - terminal cell height CAN be raised, a division is worth a fifth of a hypertrophy, and
+  the somatotropic axis buys almost all of its h_term in the first step and then only spends reserve
+type: hypothesis
+layer: L1
+aliases:
+- h_term axis
+- the exchange rate
+- NPR3 raises terminal cell height
+- hunziker as a dose response
+- round 202
+stub: false
+summary: 'THE QUESTION THIS ROUND ANSWERS WAS PICKED BY ENUMERATION, NOT BY INTEREST. Round 198 made the
+  objective function adult height = RESERVE x TERMINAL CELL HEIGHT. That makes h_term the only axis on
+  which a gain is free, because a taller terminal cell adds length without consuming a division. The
+  atlas then never audited it, and its own gap said the axis might not exist -
+  g_l1_raise_terminal_cell_volume records that there is "no evidence the parameter can be pushed upward
+  at all rather than only downward, and every manipulation on record LOWERS it". If that held, the free
+  axis was imaginary and the programme reduced to preserving reserve.
+
+  IT DOES NOT HOLD, AND THE COUNTEREXAMPLE IS MEASURED THE WAY CORR-189 DEMANDS. weber2025, Npr3-null
+  mice against wild-type siblings, tail vertebrae at P7: maximum hypertrophic chondrocyte height IN THE
+  DIRECTION OF ELONGATION is approximately 20 PER CENT GREATER. The cell is measured axially and reported
+  SEPARATELY from the zone it sits in, which is exactly the measurement the atlas has been unable to find
+  for any agent on the CNP axis. This is the first intervention in the file to RAISE terminal cell height
+  rather than lower it.
+
+  BUT THE SAME FIGURE SAYS h_term IS THE MINORITY OF THE EFFECT. The hypertrophic zone is nearly TWICE as
+  tall at TV6 while the cells are only 1.2 times taller, which implies about 1.67 times more cells per
+  column. Roughly two thirds of the zone expansion is extra cells and one third is bigger cells. NPR3
+  loss is mostly a cells-per-column agent. AND WHERE THE EXTRA CELLS COME FROM IS THE WHOLE QUESTION
+  UNDER A FIXED RESERVE - the proliferative zone is not significantly taller in three of the four
+  cartilages, THE Npr3 ARM OF THIS PAPER CARRIES NO CALCEIN AND NO EdU, and Npr3 mice are independently
+  reported to have DELAYED ENDOCHONDRAL OSSIFICATION. Extra hypertrophic cells from extra divisions spend
+  reserve; extra hypertrophic cells from delayed clearance do not. Nobody has measured which.
+
+  THE SECOND FINDING IS THE EXCHANGE RATE, AND IT IS THE NUMBER THAT JUSTIFIES THE WHOLE AXIS. weber2025
+  states it with citations - the doubling of an individual flattened proliferative chondrocyte adds JUST
+  8 TO 9 MICROMETRES to the axis of elongation, whereas that same cell adds UP TO 40 TO 50 MICROMETRES as
+  it proceeds through hypertrophic enlargement. A division is the cheap part of the transaction and the
+  expensive part of the budget. It costs one unit of an exhaustible reserve and returns about a fifth of
+  what the hypertrophy of the same cell returns for nothing.
+
+  THE THIRD FINDING IS THE UNCOMFORTABLE ONE AND IT CAME FROM DATA THE ATLAS HAS HELD SINCE ROUND 172.
+  hunziker1994 is normally read as four treatments. Read instead as a DOSE-RESPONSE in pool consumption,
+  it says h_term SATURATES WHILE POOL CONSUMPTION DOES NOT. Going from saline to IGF-I buys 40 PER CENT
+  of the terminal cell height for a TRIPLING of pool consumption. Every step after that buys almost
+  nothing and keeps spending - from IGF-I to fully normal, pool consumption rises another 3.3-fold to buy
+  a further 9 per cent of h_term. GH sits at twice the pool consumption of IGF-I and delivers 2.9 per
+  cent LESS terminal cell height, though at n = 6 that difference is noise and no ordering between the
+  two agents is claimed here.
+
+  WHAT IS NOT NOISE IS THE SHAPE. Under adult height = reserve x h_term, a saturating benefit against a
+  linear cost has an optimum, and it is not at the top. THE SOMATOTROPIC DOSE THAT MAXIMISES ADULT HEIGHT
+  IS THE LOWEST ONE THAT SATURATES h_term, NOT THE HIGHEST TOLERATED ONE - which is the opposite of how
+  the axis is dosed in practice and the opposite of what this stack assumed.
+
+  AND THE STACK MAY CONTAIN THREE AGENTS FIGHTING OVER ONE TERM. cooper2013 assigns h_term to IGF-1
+  directly - Igf1-deficient mice have THE SAME NUMBER of hypertrophic chondrocytes, each 30 per cent
+  shorter axially, and removing IGF1 ABOLISHES the between-bone difference in cell height. hunziker1994
+  gives GH 1.36x h_term. weber2025 gives the CNP/NPR3 axis 1.20x h_term. If they act on the same
+  saturating term, two h_term agents are SUB-ADDITIVE by construction and the second is paid for at full
+  reserve cost for a fraction of the benefit. NOBODY HAS MEASURED TERMINAL CELL HEIGHT UNDER A
+  COMBINATION.
+
+  A THIRD INDEPENDENT LINE AGAINST RATE AGENTS ALSO FELL OUT. weber2025 measured the 2-hour EdU
+  proliferation index in growth cartilages differing MORE THAN TWOFOLD in calcein-measured daily
+  elongation rate, in two species, and the fraction of S-phase chondrocytes is NOT significantly
+  different. Faster bones are not built by faster division.'
+quantitative:
+- parameter: the exchange rate between a division and a hypertrophy
+  value: one doubling of a flattened proliferative chondrocyte adds 8 to 9 micrometres to the axis of
+    elongation; the same cell then adds up to 40 to 50 micrometres through hypertrophic enlargement,
+    a ratio of about 4.4 to 6.3
+  unit: micrometres of axial length per cell per event
+  conditions: author-stated in weber2025's introduction, citing the comparative growth-plate literature;
+    mammalian long bone and vertebral growth cartilage
+  species: mouse
+  source_ref: weber2025
+  uncertainty: 'AUTHOR-STATED WITH CITATIONS RATHER THAN MEASURED IN THAT PAPER, and the 40 to 50 figure
+    is given as an upper bound ("up to"). THE DIRECTION IS ROBUST AND IT IS WHAT MATTERS - a division
+    returns a small fraction of what the hypertrophy of the same cell returns, and only the division is
+    deducted from an exhaustible reserve'
+- parameter: terminal hypertrophic cell height under loss of NPR3
+  value: approximately 20 per cent greater in Npr3-/- than in wild-type siblings, with hypertrophic cells
+    similarly sized between mutant TV1 and TV6
+  unit: maximum hypertrophic chondrocyte height in the direction of bone elongation, micrometres
+  conditions: mouse tail vertebrae TV1 and TV6, cranial and caudal growth cartilages, P7; Welch's
+    two-tailed t-test; n = 3 per group and n = 4 for Npr3-/- TV6; mixed male and female
+  species: mouse
+  source_ref: weber2025
+  uncertainty: 'THE FIRST INTERVENTION IN THIS ATLAS TO RAISE h_term, AND IT SATISFIES CORR-189 because
+    the cell is measured axially and reported separately from the zone. Author-stated as "approximately
+    20 per cent" rather than as a value with a spread; n = 3 to 4; a constitutive null rather than a drug
+    in a wild-type plate, and Npr3-/- mice carry kyphosis and connective-tissue abnormalities, so this is
+    not a healthy-plate demonstration'
+- parameter: decomposition of the Npr3-null hypertrophic zone expansion
+  value: hypertrophic zone nearly 2.0x taller at TV6 against cell height 1.2x, implying about 1.67x more
+    hypertrophic cells per column; proliferative zone height significantly different in only 1 of 4
+    cartilages
+  unit: ratio of mutant to wild-type
+  conditions: same animals and test as the row above
+  species: mouse
+  source_ref: weber2025
+  uncertainty: 'DERIVED BY DIVISION from two author-stated ratios, one of which ("nearly twice") is
+    approximate, so the 1.67 is indicative rather than exact. THE UNRESOLVED HALF IS THE DECISIVE HALF -
+    extra hypertrophic cells arising from extra divisions SPEND reserve, extra cells arising from delayed
+    clearance at the chondro-osseous junction DO NOT, the Npr3 arm carries no calcein and no EdU, and
+    Npr3 mice are independently reported to show delayed endochondral ossification'
+- parameter: h_term saturation against pool consumption in the somatotropic axis
+  value: 'saline to IGF-I, h_term +40.0 per cent for a 3.00x rise in pool consumption; IGF-I to GH,
+    h_term -2.9 per cent for a further 2.00x; GH to normal, h_term +12.5 per cent for a further 1.67x.
+    Absolute terminal cell heights 19.5, 27.3, 26.5 and 29.8 micrometres against pool consumption of
+    1, 3, 6 and 10 cells per column per day'
+  unit: per cent change in terminal cell height per fold change in pool consumption rate
+  conditions: hunziker1994, hypophysectomised rat proximal tibia, 8-day minipump, four groups of six;
+    every input value author-stated, in the same animals
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: 'THE RATIOS ARE DERIVED; THE INPUTS ARE NOT. THE SHAPE IS THE FINDING and the ordering of
+    GH against IGF-I is NOT - 26.5 against 27.3 micrometres at n = 6 is noise. Doses were not matched for
+    equipotency, so if both agents lie on ONE dose-response curve the only surviving claim is the
+    saturation, which is still the actionable one. Hypophysectomised background, and the rat does not
+    fuse so there is no adult-height endpoint here'
+- parameter: proliferation index against elongation rate across growth cartilages
+  value: the fraction of EdU-positive S-phase chondrocytes is NOT significantly different between TV6 and
+    TV1 in either species, across cartilages whose calcein-measured daily elongation differs more than
+    twofold
+  unit: fraction of EdU-positive cells per region of interest, 2-hour pulse
+  conditions: mouse P7 and jerboa P16, cranial and caudal growth cartilages of TV1 and TV6; n = 9 mouse
+    and n = 8 jerboa cartilages
+  species: mouse
+  source_ref: weber2025
+  uncertainty: 'A THIRD INDEPENDENT LINE AGAINST RATE AGENTS, and a strong one because the contrast is
+    more than twofold in the endpoint that matters. A 2-hour pulse measures the instantaneous S-phase
+    fraction and cannot exclude a difference in cell-cycle length that leaves the S-phase fraction
+    unchanged'
+- parameter: attained height and body proportion under human biallelic NPR3 loss of function
+  value: proband 205.1 cm at 14.7 years, +3.93 SDS, with NORMAL sitting-height-to-height ratio and arm
+    span; three affected males at +3.03, +3.9 and +3.93 SDS
+  unit: centimetres and height SDS
+  conditions: lauffer2022, biallelic NPR3 loss of function, untreated
+  species: human
+  source_ref: lauffer2022
+  uncertainty: 'DECISIVE FOR THIS CASE AND IT POINTS AWAY FROM A SPINE-SELECTIVE READING. The mouse data
+    show DISPROPORTIONATE elongation of proximal and mid-tail vertebrae under Npr3 loss, but the human
+    gain is PROPORTIONATE. moffatt2025 reports tall stature WITH SCOLIOSIS, which is a spine phenotype and
+    sits in tension with normal proportions; neither is a segment-resolved growth measurement'
+localization:
+- 'the terminal hypertrophic chondrocyte - the last 40 to 50 micrometres of every division ever spent'
+- 'the chondro-osseous junction, where clearance rate sets how many hypertrophic cells stand at once'
+human_evidence: indirect
+human_evidence_note: 'The two mechanistic results are mouse (weber2025) and rat (hunziker1994). The human
+  contribution is the NPR3 loss-of-function phenotype, which anchors the direction and the magnitude in
+  people but carries NO cellular measurement - no human terminal cell height exists under any
+  intervention, and g_l1arch_009 records that no human hypertrophic cross-sectional area exists at all.'
+species_basis:
+- mouse
+- rat
+- human
+translation_risk: high
+translation_risk_reason: 'The h_term measurements are rodent, one is a constitutive null with a
+  connective-tissue phenotype and the other is a hypophysectomised background. The saturation shape rests
+  on four groups of six from 1994 with unmatched doses. What transfers most safely is the exchange rate
+  and the qualitative shape, not the coefficients.'
+confidence: C
+claim_grades:
+- claim: terminal hypertrophic cell height can be raised rather than only lowered
+  grade: C
+  basis: one mouse genetic model, n = 3 to 4 per group, measured correctly and axially; a constitutive
+    null rather than a drug in a healthy plate, and not replicated
+- claim: a division contributes roughly a fifth of the axial length that the subsequent hypertrophy of
+    the same cell contributes
+  grade: B
+  basis: author-stated with citations to the comparative growth-plate literature, consistent with the
+    independent decomposition in hunziker1994 and with cooper2013; the upper figure is given as a bound
+- claim: NPR3 loss expands the hypertrophic zone mainly by adding cells rather than by enlarging them
+  grade: C
+  basis: derived by dividing two author-stated ratios, one approximate; the direction is secure and the
+    1.67x is indicative
+- claim: the extra hypertrophic cells under NPR3 loss are paid for out of the proliferative reserve
+  grade: E
+  basis: NOT ESTABLISHED AND NOT ASSUMED. No calcein and no EdU in the Npr3 arm; the unchanged
+    proliferative zone height and the independently reported delayed endochondral ossification both point
+    the other way, toward delayed clearance
+- claim: terminal cell height saturates against somatotropic drive while pool consumption does not
+  grade: D
+  basis: one study, four groups of six, doses not matched for equipotency, hypophysectomised rat; the
+    shape is consistent across three consecutive steps but rests on a single experiment
+- claim: IGF-I buys terminal cell height at a lower reserve cost than GH
+  grade: E
+  basis: NOT CLAIMED. 27.3 against 26.5 micrometres at n = 6 is noise, and the doses were not matched.
+    Recorded only because the direction is the opposite of the stack's working assumption and deserves a
+    powered test
+- claim: differential elongation between growth cartilages is not achieved by a higher S-phase fraction
+  grade: B
+  basis: two species, more than twofold contrast in the measured endpoint, n = 8 to 9 cartilages per
+    species, consistent with the same negative in the mouse limb literature
+key_refs:
+- ref_id: weber2025
+  year: 2025
+  type: primary
+  role: NEW TO THIS ATLAS - the exchange rate, the first intervention that raises terminal cell height,
+    the Npr3 decomposition, and the negative on proliferation index
+- ref_id: hunziker1994
+  year: 1994
+  type: primary
+  role: RE-READ, NOT RE-FOUND - the only experiment carrying growth rate, terminal cell height, cycle
+    time and cells per column in the same animals, and read here as a dose-response for the first time
+- ref_id: cooper2013
+  year: 2013
+  type: primary
+  role: assigns h_term to IGF-1 - same hypertrophic cell number, 30 per cent shorter cells, and removing
+    IGF1 abolishes the between-bone height difference; the reason the stack may contain two agents on one
+    term
+- ref_id: lauffer2022
+  year: 2022
+  type: primary
+  role: the human anchor - 205.1 cm at 14.7 years under biallelic NPR3 loss, with NORMAL body proportions,
+    which argues the NPR3 route is not spine-selective
+- ref_id: moffatt2025
+  year: 2025
+  type: primary
+  role: the tension with lauffer2022 - tall stature WITH scoliosis, a spine phenotype
+- ref_id: abubakar2022
+  year: 2022
+  type: primary
+  role: the only pharmacological handle on hypertrophic cell volume in the file - NHE1 and AE2 inhibition
+    cut ex vivo rat bone growth about 11 per cent and shortened the hypertrophic zone, which shows the ion
+    arm is load-bearing but only in the downward direction
+- ref_id: weise2001
+  year: 2001
+  type: primary
+  role: the reason h_term is the axis worth auditing - fusion is exhaustion, so only a term that does not
+    consume divisions is free
+open_questions:
+- g_l1_raise_terminal_cell_volume
+- g_l1_are_the_hterm_agents_in_the_stack_additive_or_saturating
+- g_l1_do_the_extra_hypertrophic_cells_under_npr3_loss_cost_divisions
+- g_l1arch_009
+- g_l2_what_is_the_second_signal_that_converts_an_alerted_pool_into_columns
+contradicts:
+- 'OVERTURNS THE STANDING TEXT OF g_l1_raise_terminal_cell_volume, which reads that there is "no evidence
+  the parameter can be pushed upward at all rather than only downward, and every manipulation on record
+  LOWERS it". weber2025 raises it by about 20 per cent. The gap is not closed - it asked for a NON-DISEASED
+  plate and for the cost to be measured, and a constitutive null with kyphosis answers neither - but its
+  central negative premise is now false and the field of candidate agents is no longer empty.'
+- 'CONTRADICTS THE STACK''S WORKING ASSUMPTION THAT MORE SOMATOTROPIC DRIVE IS BETTER. Under a fixed
+  reserve, a saturating benefit against a linear cost has an interior optimum. hunziker1994 read as a
+  dose-response puts 40 per cent of the available h_term in the first tripling of pool consumption and
+  9 per cent in the next 3.3-fold. The dose that maximises adult height is therefore the lowest one that
+  saturates h_term. This does not say GH is harmful and it does not license an IGF-I substitution; it
+  says the dose-finding question has never been asked in the right currency.'
+- 'QUALIFIES ROUND 199 AND ROUND 201 RATHER THAN OVERTURNING THEM. Both treated pool expansion as the
+  route worth working. The exchange rate says a division returns about a fifth of what a hypertrophy
+  returns, so even a solved second-signal problem buys length at the least efficient point in the
+  transaction. h_term should be worked in parallel, not after.'
+- 'SITS IN TENSION WITH ITSELF ON THE SPINE, WHICH MATTERS FOR THIS CASE. weber2025 finds Npr3 loss
+  DISPROPORTIONATELY elongates proximal and mid-tail vertebrae in mouse; lauffer2022 finds human biallelic
+  NPR3 loss gives a PROPORTIONATE gain with a normal sitting-height ratio; moffatt2025 finds tall stature
+  WITH scoliosis. CORRECTED 2026-08-10 (CORR-196) - an earlier draft of this node said no segment-resolved
+  human measurement exists under a CNP-axis agent. IT DOES. cnpmeta2026 pools 4 RCTs, n = 326, and finds
+  the upper-to-lower segment ratio UNCHANGED, MD -0.02 (95 per cent CI -0.04 to +0.01), P = 0.17, I-squared
+  0; rua2025 finds sitting height SDS gaining MORE than arm span (+0.79 against +0.32) while the ULS ratio
+  shifts -0.10 leg-favouring and the sitting-height-to-height ratio does not move, two proportion measures
+  disagreeing inside one cohort. THE POOLED RANDOMISED ANSWER IS PROPORTIONATE GROWTH, which is the
+  favourable answer for a case with several open sites rather than one.'
+last_verified: '2026-08-10'

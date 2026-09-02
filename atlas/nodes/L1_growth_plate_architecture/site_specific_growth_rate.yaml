@@ -1,0 +1,135 @@
+id: site_specific_growth_rate
+name: Site-specific growth rate (differential growth)
+aliases:
+- differential growth
+- plate-specific elongation rate
+type: phenotype
+layer: L1
+stub: false
+summary: 'Every growth plate in an individual runs at its own velocity at the same moment, and it is this
+  differential growth that produces limb proportions. In the human lower limb the distal femoral physis
+  supplies about 70% of femoral length and the proximal tibial physis about 57% of tibial length, and
+  these proportions themselves shift with age - the distal femoral share rises from 60% at age 7 to 90%
+  at 14 in girls and from 55% at 7 to 90% at 16 in boys. In the upper limb the proximal humeral physis
+  supplies about 80% of humeral length, the distal radius about 80% and the distal ulna about 85%, with
+  the distal-dominant proportion increasing through childhood. Mechanistically, differential growth is
+  not explained by any single parameter. Wilsman and colleagues showed that eight independent chondrocytic
+  variables are involved and that seven of them vary between plates of one 28-day-old rat; cell cycle
+  time differs 2.5-fold with the variation almost entirely in G1; final hypertrophic cell volume correlates
+  with rate at r=0.98; and the relative contribution of hypertrophy falls from 59% to 44% as plates get
+  slower, with matrix synthesis taking up the difference. In mouse the site difference maps onto whether
+  the IGF-dependent third phase of enlargement is executed or truncated. Differential growth is not present
+  from the beginning: in rat it emerges postnatally.'
+quantitative:
+- parameter: distal femoral share of femoral growth
+  value: '70'
+  unit: '% of femoral length'
+  conditions: human, overall across ages 7 to maturity
+  species: human
+  source_ref: pritchett1992
+  uncertainty: n = 244 children; range 55-90% depending on age and sex
+- parameter: proximal tibial share of tibial growth
+  value: '57'
+  unit: '% of tibial length'
+  conditions: human, overall across ages 7 to maturity
+  species: human
+  source_ref: pritchett1992
+  uncertainty: range 50-80% depending on age and sex
+- parameter: proximal humeral share of humeral growth
+  value: '80'
+  unit: '% of humeral length'
+  conditions: human, overall; <75% before age 2, 85% at 8, 90% after 11
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200 subjects
+- parameter: distal radial share of radial growth
+  value: '80'
+  unit: '% of radial length'
+  conditions: human, overall; 85% at age 5, 90% by age 8
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200
+- parameter: distal ulnar share of ulnar growth
+  value: '85'
+  unit: '% of ulnar length'
+  conditions: human, overall; 90% by age 5, 95% after age 8
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200
+- parameter: number of independent chondrocytic variables involved in differential growth
+  value: '8'
+  unit: variables
+  conditions: 28-day-old rat, four growth plates; seven of the eight vary between plates
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: authors' model, validated by the match between calculated cell production and loss
+- parameter: spread in proliferative cell cycle time between plates of one animal
+  value: '2.5'
+  unit: fold (30.9 to 76.3 h)
+  conditions: 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: difference significant at p<0.05
+- parameter: age at which differential growth first appears
+  value: postnatal
+  unit: qualitative
+  conditions: rat, four plates sampled at 24 time points from gestational day 17
+  species: rat
+  source_ref: wilsman2008
+  uncertainty: onset described as postnatal, correlated with hypertrophic volume and cell production changes
+localization:
+- 'human: per-plate contributions measured radiographically (pritchett1992, pritchett1991)'
+- 'rat: mechanistic decomposition (wilsman1996, wilsman1996a, wilsman2008)'
+- 'mouse: phase-3 truncation as the site-specific switch (cooper2013)'
+human_evidence: direct
+human_evidence_note: Per-plate contributions to limb segment length have been measured directly in two
+  human radiographic cohorts of 244 and 200 children followed to skeletal maturity (pritchett1992, pritchett1991).
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: moderate
+translation_risk_reason: The human proportions are solid human data, but every mechanistic explanation
+  of why plates differ is rodent, and the rodent explanation itself is a multi-variable model rather than
+  a single lever.
+confidence: B
+key_refs:
+- ref_id: pritchett1992
+  pmid: '1735225'
+  first_author: Pritchett JW
+  year: 1992
+  type: primary
+  one_line_finding: Distal femur supplies ~70% of femoral and proximal tibia ~57% of tibial growth in
+    244 children, with age- and sex-dependent shifts.
+- ref_id: pritchett1991
+  pmid: '2060215'
+  first_author: Pritchett JW
+  year: 1991
+  type: primary
+  one_line_finding: Proximal humerus ~80%, distal radius ~80% and distal ulna ~85% of their segment's
+    growth in 200 subjects.
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Differential growth requires eight independent chondrocytic variables, seven of which
+    vary between plates of one animal.
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: Whether the IGF-dependent third phase of enlargement is executed or truncated distinguishes
+    fast from slow plates in mouse.
+- ref_id: wilsman2008
+  pmid: '18404738'
+  first_author: Wilsman NJ
+  year: 2008
+  type: primary
+  one_line_finding: Differential growth among rat growth plates emerges postnatally and tracks hypertrophic
+    volume and cell production.
+open_questions:
+- g_l1arch_010
+- g_l1arch_001
+last_verified: '2026-08-05'

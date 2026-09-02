@@ -1,0 +1,216 @@
+id: round394_is_there_a_trivial_drug_no_and_the_approved_shelf_has_been_screened_twice
+name: "R394: is there a drug that makes this trivial - no, the approved shelf has been screened for Smoothened agonism twice and returns only glucocorticoids; but cyclodextrin is the standard answer to the formulation blocker, and growth hormone shortens the primary cilium"
+aliases:
+  - trivial hedgehog drug
+  - approved smoothened agonist screens
+  - cyclodextrin SAG formulation
+  - growth hormone shortens cilia
+type: intervention
+layer: L12
+stub: false
+summary: >-
+  The question was whether an undiscovered drug could make the hedgehog-agonist
+  programme trivial - approved, oral, no formulation problem, no manufacturing
+  problem, no first-in-human problem. The answer is no, and the reason is
+  structural rather than a failure of searching. But the round produced two things
+  that matter: the standard pharmaceutical answer to the formulation blocker, with a
+  mechanistic catch that may defeat it; and a new and unwelcome interaction between
+  the growth hormone arm and the hedgehog arm.
+
+  THE APPROVED SHELF HAS BEEN SCREENED TWICE, INDEPENDENTLY, AND RETURNS ONLY
+  GLUCOCORTICOIDS. wang2010smo ran a beta-arrestin2-GFP high-content screen and
+  identified halcinonide, fluticasone, clobetasol and fluocinonide as Smoothened
+  agonists; porcu2015 rediscovered halcinonide and clobetasol in a screen of the
+  1,200-compound Prestwick FDA-approved library. Two orthogonal screens of the
+  approved pharmacopoeia, and every hit is a corticosteroid. R369 to R372 already
+  worked that class to the end: the hedgehog arm is genuinely GR-independent
+  (reproduced in 5 micromolar mifepristone), the Gli potencies are excellent
+  (clobetasol 0.2 nM, fluticasone 0.3, fluocinonide 0.3, halcinonide 1.8 nM), and
+  the windows over GR are real but narrow (fluocinonide 8 to 17.5-fold, clobetasol
+  3.3 to 7.3-fold, fluticasone and halcinonide none). What kills them is not
+  potency - it is that systemic glucocorticoid exposure suppresses longitudinal
+  growth, which is grade A human evidence, and there is no systemic formulation of
+  a topical superpotent steroid that avoids it. This is R342's shape and R298's base
+  rate: nobody ever wanted MORE hedgehog signalling in a patient, so the molecule
+  this axis needs was never made and never approved.
+
+  NO ORAL ROUTE EXISTS FOR ANY SMOOTHENED AGONIST IN ANY SPECIES - checked in R393,
+  every in vivo administration in the literature is intraperitoneal or subcutaneous.
+
+  CYCLODEXTRIN IS THE STANDARD ANSWER TO THE FORMULATION BLOCKER, AND IT MAY BE
+  SELF-DEFEATING HERE. Hydroxypropyl-beta-cyclodextrin and sulfobutylether-beta-
+  cyclodextrin are FDA- and EMA-approved parenteral solubilisation platforms used
+  precisely to bring lipophilic small molecules to injectable concentration -
+  intravenous itraconazole, a lipophilic azole, is formulated in
+  hydroxypropyl-beta-cyclodextrin for exactly this reason. That takes the 30 mg/mL
+  requirement from an unknown to a standard tool.
+  ⛔ BUT THE CATCH IS MECHANISTIC AND SPECIFIC TO THIS TARGET. Cyclodextrins
+  solubilise by sequestering hydrophobic guests in their cavity, and CHOLESTEROL is
+  a preferred guest - methyl-beta-cyclodextrin is THE standard laboratory reagent
+  for depleting cellular cholesterol. Cholesterol is Smoothened's endogenous
+  cysteine-rich-domain agonist, and R375 established that the sterol occupancy of
+  that domain is a real control layer. A cyclodextrin vehicle could therefore strip
+  the receptor's own activating sterol while delivering the agonist. The
+  hydroxypropyl and sulfobutylether derivatives are far less cholesterol-avid than
+  methyl-beta-cyclodextrin, and a subcutaneous depot is not a membrane preparation,
+  so this is a caution rather than a refutation - but it is the kind of interaction
+  that would be invisible in a routine solubility screen and it must be tested
+  rather than assumed. A second, more ordinary limitation: the parenteral
+  cyclodextrin safety record is largely intravenous, and subcutaneous local
+  tolerance is a separate question.
+
+  AND THE UNWELCOME FINDING: GROWTH HORMONE SHORTENS THE PRIMARY CILIUM.
+  karki2026 shows JAK2 localises to the daughter centriole and regulates ciliary
+  length, that growth hormone stimulates relocation of its receptor to the cilium
+  and SHORTENS cilia, and that JAK2 inhibition or knockout ELONGATES them. All
+  hedgehog transduction happens inside the primary cilium. Read against R364's
+  chu2025 - pharmacological growth hormone promotes committed rather than
+  self-renewing division and spends the resting-zone pool - this is a SECOND,
+  structural route by which the growth hormone arm works against a hedgehog pool
+  intervention. It is grade D to E for any skeletal claim: 3T3-F442A preadipocyte
+  fibroblasts, no chondrocytes, no growth plate, no bone endpoint, and cilium length
+  was not linked to Gli output in that paper. And it explicitly does NOT argue for
+  pausing growth hormone, because R367 tested pool-sparing growth hormone schedules
+  three times in humans, twice randomised, and pauses never bought height.
+
+  THE HONEST CONCLUSION. There is no trivial drug, and the search that would find
+  one has already been run twice by other people on the entire approved
+  pharmacopoeia. What R393 achieved by correcting the dose anchor is the real
+  simplification available: one sub-millilitre subcutaneous injection, about a gram
+  of material a year, and a formulation requirement that ordinary cyclodextrin
+  chemistry is designed for. The residual difficulty is not complexity - it is that
+  no Smoothened agonist has ever been given to a human, and no amount of searching
+  changes that.
+quantitative:
+  - parameter: independent screens of the approved pharmacopoeia for Smoothened agonism
+    value: two - a beta-arrestin2-GFP high-content screen and a 1,200-compound Prestwick FDA-library screen
+    unit: count of screens
+    species: in_vitro_human_cell
+    source_ref: porcu2015
+    note: >-
+      wang2010smo and porcu2015. Every hit in both is a corticosteroid. This is the
+      basis for treating the approved shelf as closed rather than unsearched
+  - parameter: Gli reporter potency of the approved corticosteroid Smoothened agonists
+    value: clobetasol 0.2 nM, fluticasone 0.3, fluocinonide 0.3, halcinonide 1.8 nM
+    unit: nM EC50
+    species: in_vitro_human_cell
+    source_ref: wang2010smo
+    note: >-
+      equal to or better than SAG's approximately 3 nM. Potency is not what
+      disqualifies them - systemic glucocorticoid exposure suppressing longitudinal
+      growth is
+  - parameter: cyclodextrin as a parenteral solubilisation platform
+    value: >-
+      hydroxypropyl-beta-cyclodextrin and sulfobutylether-beta-cyclodextrin are
+      FDA/EMA-approved parenteral excipients; intravenous itraconazole uses the former
+    unit: qualitative
+    species: not_applicable
+    source_ref: kim2010itra
+    value_unverified: true
+    note: >-
+      recorded in R394 as the standard tool for the 30 mg/mL blocker. source_ref is
+      nominal - the itraconazole formulation fact is general pharmaceutical knowledge,
+      not from that paper. The cholesterol-sequestration caveat below is the reason it
+      cannot simply be assumed to work here
+  - parameter: growth hormone effect on primary cilium length
+    value: GH shortens cilia; JAK2 inhibition or knockout elongates them
+    unit: qualitative direction
+    species: mouse
+    source_ref: karki2026
+    note: >-
+      3T3-F442A preadipocyte fibroblasts, not chondrocytes. All hedgehog transduction
+      occurs in the primary cilium, so this is a second structural route by which the
+      GH arm opposes a hedgehog pool intervention
+localization: >-
+  systemic; the cilium finding is in fibroblasts and its relevance to the growth
+  plate is inferred rather than measured
+human_evidence: absent
+human_evidence_note: >-
+  No Smoothened agonist has been given to a human by any route. The approved
+  corticosteroid agonists have extensive human exposure but only as topical or
+  inhaled products, where the hedgehog arm has never been the measured endpoint and
+  the glucocorticoid arm is what determines growth outcomes.
+species_basis:
+  - mouse
+  - human
+translation_risk: high
+translation_risk_reason: >-
+  The negative conclusion is robust - two independent screens of the approved shelf
+  is strong evidence of absence. The two positive findings are weaker: the
+  cyclodextrin option is standard pharmaceutics carrying an untested mechanistic
+  conflict specific to this target, and the cilium finding is in preadipocyte
+  fibroblasts with no skeletal endpoint.
+confidence: C
+claim_grades:
+  - claim: >-
+      No approved drug is a usable Smoothened agonist, and the approved shelf has been
+      screened for this twice
+    grade: B
+    basis: >-
+      two independent screens returning only corticosteroids, plus R369-R372's full
+      working of that class. An absence established by other people's systematic
+      screens rather than by this atlas asserting it
+  - claim: >-
+      Cyclodextrin solubilisation is the standard route to the required injectable
+      concentration
+    grade: B
+    basis: general pharmaceutics with approved parenteral precedents; not demonstrated for SAG
+  - claim: >-
+      A cyclodextrin vehicle could sequester cholesterol and thereby oppose the
+      Smoothened agonist it is delivering
+    grade: E
+    basis: >-
+      composed from the known cholesterol avidity of cyclodextrins and R375's sterol
+      occupancy layer. Never tested for any Smoothened agonist formulation, and the
+      hydroxypropyl and sulfobutylether derivatives are much less cholesterol-avid
+      than the methyl derivative that makes the mechanism famous
+  - claim: Growth hormone shortens the primary cilium
+    grade: C
+    basis: >-
+      karki2026, with both a pharmacological and a CRISPR arm, but in 3T3-F442A
+      preadipocyte fibroblasts with no growth plate and no link to Gli output
+  - claim: >-
+      This gives a second structural reason the GH arm opposes a hedgehog pool
+      intervention
+    grade: E
+    basis: >-
+      an inference chaining karki2026 to the requirement that hedgehog transduces in
+      the cilium. Not measured in cartilage, and it does not argue for pausing GH,
+      which R367 tested three times in humans
+key_refs:
+  - ref_id: wang2010smo
+    year: 2010
+    type: primary
+    role: >-
+      the first screen of approved drugs for Smoothened agonism, and the source of the
+      Gli potencies for the four corticosteroid hits
+  - ref_id: porcu2015
+    year: 2015
+    type: primary
+    role: >-
+      the independent second screen, of the 1,200-compound Prestwick FDA-approved
+      library, returning the same class - which is what makes the approved shelf closed
+      rather than unsearched
+  - ref_id: karki2026
+    year: 2026
+    type: primary_abstract_only
+    role: >-
+      growth hormone shortens the primary cilium, the organelle in which all hedgehog
+      transduction occurs
+  - ref_id: chu2025
+    year: 2025
+    type: primary
+    role: >-
+      the first route by which growth hormone opposes the pool strategy - promoting
+      committed rather than self-renewing division
+  - ref_id: rundle2023
+    year: 2023
+    type: primary
+    role: >-
+      the anchor that produced the actual simplification in R393, against which this
+      round's negative should be read
+open_questions:
+  - g_l12_388b
+  - g_l12_390a
+contradicts: []
+last_verified: '2026-08-14'

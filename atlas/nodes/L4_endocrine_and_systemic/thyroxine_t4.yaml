@@ -1,0 +1,55 @@
+id: thyroxine_t4
+name: Thyroxine (T4)
+aliases:
+- T4
+- levothyroxine
+- prohormone T4
+type: hormone
+layer: L4
+stub: false
+summary: 'T4 is the quantitatively dominant secretory product of the thyroid and is essentially a prohormone:
+  it has low affinity for thyroid hormone receptors and must be 5''-deiodinated to T3 by DIO1 or DIO2
+  to act. Because DIO2 and DIO3 are expressed locally in skeletal tissue, T4 sets a systemic supply while
+  local deiodinase balance sets the T3 concentration each tissue actually sees - the reason serum T4 and
+  tissue thyroid status can dissociate. Clinically T4 (levothyroxine) is the replacement given in congenital
+  hypothyroidism, and in the neonatal-screening era it restores final height to normal, exceeding target
+  height in a 215-patient 20-year cohort (delvecchio2015). Notably in that cohort neither age at diagnosis
+  nor starting levothyroxine dose predicted final height, which argues the growth endpoint saturates once
+  replacement is adequate. In THRA-mutant children free T4 is characteristically low with normal or only
+  mildly raised TSH (jorge2025), an unusual pattern that is easily misread as central hypothyroidism.'
+quantitative:
+- parameter: height gain on rhGH added to levothyroxine in a THRA-mutant child
+  value: '2.5'
+  unit: SDS
+  conditions: patient P1, heterozygous THRA missense variant, treated to adult height
+  species: human
+  source_ref: jorge2025
+  uncertainty: single patient; n=3 in the series, 2 rhGH-treated
+localization:
+- 'human SYS: thyroid follicular cell -> serum, largely protein-bound'
+- 'growth plate: local conversion to T3 by DIO2 presumed but not quantified in human physis'
+human_evidence: direct
+human_evidence_note: Levothyroxine replacement in human congenital and acquired hypothyroidism restores
+  linear growth and final height - interventional human evidence.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Human interventional and cohort data are the primary evidence.
+confidence: A
+key_refs:
+- ref_id: delvecchio2015
+  first_author: Delvecchio M
+  year: 2015
+  type: primary
+  one_line_finding: Final height was normal (-0.1 SDS) and independent of age at diagnosis or starting
+    LT4 dose in 215 screened patients.
+  pmid: '26511640'
+- ref_id: jorge2025
+  first_author: Jorge AAL
+  year: 2025
+  type: primary
+  one_line_finding: THRA-mutant children have low free T4 with variable TSH, short stature, and respond
+    well to levothyroxine plus rhGH.
+  pmid: '38744258'
+last_verified: '2026-08-05'

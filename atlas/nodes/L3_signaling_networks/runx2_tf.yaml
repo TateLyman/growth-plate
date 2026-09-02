@@ -1,0 +1,75 @@
+id: runx2_tf
+name: RUNX2
+aliases:
+- CBFA1
+- AML3
+- RUNX2
+type: protein
+layer: L3
+stub: false
+summary: 'RUNX2 is the transcription factor that licenses chondrocyte hypertrophy and osteoblast differentiation.
+  Human heterozygous RUNX2/CBFA1 loss of function causes cleidocranial dysplasia with clavicular hypoplasia, delayed
+  fontanelle closure, supernumerary teeth and short stature (Mundlos 1997), giving this node direct human dose evidence.
+  In mouse, chondrocyte maturation is delayed in Runx2-null animals but still occurs; only Runx2;Runx3 double nulls
+  show a complete absence of maturation, and limb length falls in proportion to the combined Runx2 and Runx3 gene
+  dose (Yoshida 2004). The same study shows RUNX2 binds the Ihh promoter directly and induces Ihh, so RUNX2 sits upstream
+  of the IHH/PTHrP loop as well as downstream of it - a feedback the linear textbook cascade omits. RUNX2 activity
+  is restrained post-translationally rather than only transcriptionally: HDAC4 binds and inhibits RUNX2 (Vega 2004),
+  ZFP521 antagonises RUNX2 through an HDAC4-dependent mechanism downstream of PTHrP (Correa 2010), and SOX9 keeps
+  Runx2 expression in check (Dy 2012).'
+quantitative:
+- parameter: Limb length reduction with Runx2/Runx3 gene dose
+  value: dose-dependent
+  unit: qualitative ordering across Runx2/Runx3 allele combinations
+  conditions: E18.5 mouse limbs, Runx2 and Runx3 allelic series
+  species: mouse
+  source_ref: yoshida2004
+  uncertainty: no numeric values reported in the abstract; figure values not read
+  value_unverified: true
+localization:
+- 'mouse PHZ/HZ: confirmed (vega2004, yoshida2004)'
+- 'human: inferred from cleidocranial dysplasia haploinsufficiency (mundlos1997)'
+human_evidence: direct
+human_evidence_note: Human RUNX2 haploinsufficiency causes cleidocranial dysplasia including short stature.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Concordant human haploinsufficiency and mouse null phenotypes; both affect endochondral and
+  intramembranous bone.
+confidence: A
+key_refs:
+- ref_id: mundlos1997
+  pmid: '9182765'
+  first_author: Mundlos S
+  year: 1997
+  type: primary
+  one_line_finding: CBFA1/RUNX2 mutations cause human cleidocranial dysplasia.
+- ref_id: yoshida2004
+  pmid: '15107406'
+  first_author: Yoshida CA
+  year: 2004
+  type: primary
+  one_line_finding: Runx2 and Runx3 are jointly essential for chondrocyte maturation and RUNX2 directly induces Ihh
+    by binding its promoter.
+- ref_id: vega2004
+  pmid: '15537544'
+  first_author: Vega RB
+  year: 2004
+  type: primary
+  one_line_finding: HDAC4 binds and inhibits RUNX2 in prehypertrophic chondrocytes.
+- ref_id: dy2012
+  pmid: '22421045'
+  first_author: Dy P
+  year: 2012
+  type: primary
+  one_line_finding: SOX9 keeps Runx2 expression in check to prevent premature prehypertrophy and osteoblastic conversion.
+open_questions:
+- g_l3rest_012
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Runx2;Runx3 double done and limb length falls in proportion to COMBINED gene dose (yoshida2004)
+  - a dose-response across two paralogs. Human RUNX2 haploinsufficiency supplies the
+  gene-selective human arm.

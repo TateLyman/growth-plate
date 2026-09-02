@@ -1,0 +1,84 @@
+id: chemotherapy_growth_plate_toxicity
+name: Chemotherapy and growth plate toxicity
+aliases: [methotrexate osteopathy, treatment-related growth failure, cancer survivor short stature]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Cytotoxic chemotherapy damages the growth plate through several partly separable routes,
+  and childhood cancer survivorship is the human dataset in which they can be told apart.
+  High-dose methotrexate has direct antiproliferative and pro-apoptotic effects on
+  chondrocytes and osteoblasts and produces a recognised osteopathy; a prospective
+  observational cohort in juvenile idiopathic arthritis has examined its effect on growth
+  plate development at conventional low doses. Platinum agents such as cisplatin induce
+  oxidative stress, apoptosis and pro-inflammatory responses in chondrocytes in vitro.
+  Distinct from direct cytotoxicity are the endocrine routes: cranial and total body
+  irradiation produce growth hormone deficiency, and the nationwide Japanese survey of
+  growth hormone therapy after haematopoietic cell transplantation exists precisely because
+  the post-transplant plate is both hormonally deprived and directly damaged. That
+  combination is the reason growth hormone replacement only partially rescues these
+  children: an irradiated plate is a damaged effector, so restoring the systemic signal
+  cannot restore the response. Quantifying the split between direct plate injury and
+  endocrine deficiency in an individual survivor remains unsolved, and no study measures
+  cytotoxic drug concentration within human growth plate cartilage.
+quantitative:
+  - parameter: measurements of cytotoxic drug concentration within human growth plate cartilage
+    value: '0'
+    unit: studies identified
+    conditions: Europe PMC search 2026-08-05 for growth plate tissue drug concentration - see gap g_l12b_002 search log
+    species: human
+    source_ref: sokhan2026
+    uncertainty: absence established by search
+localization:
+  - "human growth plate: direct cytotoxic injury to proliferative chondrocytes is the proposed mechanism for antimetabolites and platinums"
+  - "human hypothalamic-pituitary axis: irradiation-induced GH deficiency is a separate and additive route to growth failure"
+human_evidence: direct
+human_evidence_note: >-
+  Growth failure in childhood cancer survivors is documented at population scale, and a
+  prospective cohort has examined methotrexate and growth plate development in JIA.
+species_basis: [human, in_vitro_human_cell]
+translation_risk: moderate
+translation_risk_reason: >-
+  The clinical growth failure is human and unambiguous, but the cellular mechanisms
+  (cisplatin-induced chondrocyte apoptosis, methotrexate antiproliferation) come from
+  in vitro and animal work, and the relative contribution of each route in a treated child
+  has not been apportioned.
+confidence: C
+claim_grades:
+  - claim: Childhood cancer treatment causes growth failure that persists into survivorship.
+    grade: A
+    basis: Population-scale survivorship data and the existence of dedicated GH replacement programmes after transplantation.
+  - claim: Methotrexate has a direct adverse effect on growth plate development at therapeutic doses.
+    grade: C
+    basis: A prospective observational cohort in JIA plus a narrative review of bone metabolism effects; not randomised.
+  - claim: Growth hormone replacement incompletely rescues growth after irradiation because the plate itself is damaged.
+    grade: C
+    basis: Consistent with post-transplant GH cohorts but not formally partitioned between effector damage and residual endocrine deficit.
+key_refs:
+  - ref_id: ahirwar2025
+    pmid: '41393467'
+    first_author: Ahirwar S
+    year: 2025
+    type: primary
+    one_line_finding: Prospective observational cohort on methotrexate use in juvenile idiopathic arthritis and its impact on growth plate development.
+  - ref_id: sokhan2026
+    pmid: '41732177'
+    first_author: Sokhan A
+    year: 2026
+    type: review
+    one_line_finding: Narrative review of the effects of high-dose methotrexate on bone metabolism.
+  - ref_id: shimomura2026
+    pmid: '42244940'
+    first_author: Shimomura M
+    year: 2026
+    type: primary
+    one_line_finding: Nationwide survey and longitudinal cohort of GH therapy after childhood haematopoietic cell transplantation.
+  - ref_id: ferrari2026
+    pmid: '42041544'
+    first_author: Ferrari V
+    year: 2026
+    type: review
+    one_line_finding: Endocrine late effects of targeted and immune-based therapies in paediatric oncology.
+open_questions: [g_l12b_022, g_l12b_002]
+contradicts: []
+last_verified: '2026-08-05'

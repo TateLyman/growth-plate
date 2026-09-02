@@ -1,0 +1,83 @@
+id: pth1r_gene
+name: PTH1R
+aliases:
+- PTH/PTHrP receptor gene
+- PTHR1
+type: gene
+layer: L8
+stub: false
+summary: |-
+  PTH1R is a bidirectional human dose experiment on the PTHrP-IHH feedback loop that sets the pace of
+  chondrocyte hypertrophy. Schipani 1995 identified a heterozygous His223Arg substitution in the
+  first intracellular loop in Jansen-type metaphyseal chondrodysplasia and showed it produces
+  constitutive, ligand-independent cAMP accumulation in COS-7 cells - a gain-of-function receptor
+  that delays hypertrophic differentiation and gives short-limbed dwarfism with ligand-independent
+  hypercalcaemia and hypophosphataemia. Jobert 1998 supplied the opposite pole: in Blomstrand
+  chondrodysplasia the patient was heterozygous for a maternally inherited point mutation creating a
+  novel splice site that deletes 11 amino acids of the fifth transmembrane domain; the mutant
+  receptor was well expressed but bound neither PTH nor PTHrP and produced no cAMP or inositol
+  phosphate response, and critically the paternal allele was not expressed, so the chondrocytes had
+  functionally zero receptor. Blomstrand chondrodysplasia is lethal with advanced endochondral bone
+  maturation. The two disorders therefore bracket the receptor: constitutive activation delays
+  hypertrophy and shortens limbs; total absence accelerates ossification and is lethal. Because the
+  Blomstrand case achieved nullizygosity through allele-specific silencing rather than biallelic
+  mutation, the human evidence for the null state is a single carefully dissected patient, and that
+  is the weak link on this node.
+quantitative:
+- parameter: constitutive ligand-independent cAMP accumulation, PTH1R H223R
+  value: present
+  unit: qualitative
+  conditions: COS-7 cells transfected with mutant vs wild-type receptor; absent in wild type
+  species: in_vitro_human_cell
+  source_ref: schipani1995
+  uncertainty: magnitude not reported in abstract
+- parameter: PTH and PTHrP binding, Blomstrand PTH1R mutant
+  value: absent
+  unit: qualitative
+  conditions: COS-7 expression of the exon-M5-deleted receptor; no cAMP or inositol phosphate
+    response
+  species: in_vitro_human_cell
+  source_ref: jobert1998
+  uncertainty: no quantitative binding constant reported
+localization:
+- 'human: germline; receptor acts on proliferative/prehypertrophic chondrocytes and on kidney
+  and bone'
+human_evidence: direct
+human_evidence_note: Gain- and loss-of-function human patients with matched in vitro receptor
+  assays.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human mutations with human-cell functional assays; no rodent inference.
+confidence: B
+claim_grades:
+- claim: Constitutive PTH1R activation causes Jansen metaphyseal chondrodysplasia with short limbs
+    and hypercalcaemia.
+  grade: A
+  basis: Human mutation plus matched in vitro constitutive-activity assay (schipani1995), phenotype
+    replicated in later Jansen kindreds.
+- claim: Complete absence of functional PTH1R accelerates endochondral maturation and is lethal.
+  grade: D
+  basis: Single patient (jobert1998); the null state arose from allele-specific non-expression
+    rather than biallelic mutation and has not been replicated by that route.
+key_refs:
+- ref_id: schipani1995
+  pmid: '7701349'
+  doi: 10.1126/science.7701349
+  first_author: Schipani E
+  year: 1995
+  type: primary
+  one_line_finding: A heterozygous PTH1R His223Arg substitution causes constitutive ligand-independent
+    cAMP accumulation and Jansen-type metaphyseal chondrodysplasia.
+- ref_id: jobert1998
+  pmid: '9649554'
+  doi: 10.1172/jci2918
+  first_author: Jobert AS
+  year: 1998
+  type: primary
+  one_line_finding: In Blomstrand chondrodysplasia a splice-altering PTH1R mutation gives a receptor
+    that binds neither PTH nor PTHrP, with the paternal allele unexpressed.
+open_questions:
+- g_l8gen_003
+last_verified: '2026-08-05'

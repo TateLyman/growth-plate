@@ -1,0 +1,100 @@
+id: menarche_growth_remaining
+name: Menarche and remaining growth
+type: phenotype
+layer: L7
+stub: false
+aliases:
+- postmenarcheal growth
+summary: |
+  The clinical rule of thumb that a girl grows about 5-7 cm after menarche is both approximately
+  right on average and dangerously wrong as a prediction for an individual. In 793 healthy
+  term-born Swedish girls from the GrowUp 1990 Gothenburg cohort, mean age at menarche was 13.0
+  years (SD 1.3, range 8.2-17.2) and postmenarcheal growth averaged 8.0 cm (SD 4.9) - but ranged
+  from 0.2 cm to 31.1 cm, and decreased with later menarche (grdstedtbergho2024). A standard
+  deviation of 4.9 cm on a mean of 8.0 cm means the between-individual variance is comparable in
+  magnitude to the quantity being predicted; the tail extends to more than 30 cm of remaining
+  growth in the earliest-maturing girls. Menarche occurred at 71.6% (SD 18.8) of the specific
+  pubertal growth function in the QEPS model, so menarche is a fixed fraction of the spurt on
+  average but with a wide individual spread. Data available at the start of puberty explained
+  44% of the variance in menarcheal age, on average 3.2 years before it occurred
+  (grdstedtbergho2024). Postmenarcheal growth decreased with later menarche in the same
+  cohort, so the same chronological menarcheal age carries different residual growth depending on
+  how far skeletal maturation has already advanced (grdstedtbergho2024). For prediction, menarcheal status is worth including: Tanner-Whitehouse Mark I intervals narrow
+  from plus or minus 5-6 cm premenarcheal to plus or minus 3-4 cm postmenarcheal at the same ages
+  (tanner1975).
+quantitative:
+- parameter: postmenarcheal height gain
+  value: '8.0'
+  unit: cm
+  conditions: 793 healthy term-born Swedish girls, GrowUp 1990 Gothenburg cohort, QEPS modelling
+  species: human
+  source_ref: grdstedtbergho2024
+  uncertainty: SD 4.9 cm; observed range 0.2 to 31.1 cm
+- parameter: age at menarche
+  value: '13.0'
+  unit: years
+  conditions: same cohort
+  species: human
+  source_ref: grdstedtbergho2024
+  uncertainty: SD 1.3 years; range 8.2-17.2 years
+- parameter: proportion of the QEPS specific pubertal growth function completed at menarche
+  value: '71.6'
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: grdstedtbergho2024
+  uncertainty: SD 18.8 percentage points
+- parameter: variance in menarcheal age explained by data available at start of pubertal growth
+  value: '44'
+  unit: percent
+  conditions: multivariable model, on average 3.2 years before menarche
+  species: human
+  source_ref: grdstedtbergho2024
+  uncertainty: rising to 45% at midpuberty; 8% at age 7 y; 1% at birth
+- parameter: narrowing of 95% adult height prediction interval with menarcheal status
+  value: plus or minus 5 (premenarcheal, age 12) to plus or minus 4 (postmenarcheal, age 12)
+  unit: cm
+  conditions: TW Mark I equations
+  species: human
+  source_ref: tanner1975
+  uncertainty: 95% interval; at age 13 the figures are plus or minus 4 and plus or minus 3 cm
+localization:
+- 'SYS: whole-body stature; the residual contribution after menarche is dominated by spine and remaining open long-bone plates'
+human_evidence: direct
+human_evidence_note: >-
+  Longitudinal community-based measurement in 793 girls with model-derived and observed
+  postmenarcheal increments.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype measured directly; menarche has no growth plate analogue in mice.
+confidence: A
+key_refs:
+- ref_id: grdstedtbergho2024
+  pmid: '39210984'
+  first_author: Gårdstedt-Berghog J
+  year: 2024
+  type: primary
+  one_line_finding: >-
+    Postmenarcheal growth averaged 8.0 cm (SD 4.9) but ranged from 0.2 to 31.1 cm in 793 healthy
+    Swedish girls, decreasing with later menarche.
+- ref_id: tanner1975
+  pmid: '164838'
+  first_author: Tanner JM
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    Adult height prediction is substantially more accurate in postmenarcheal than premenarcheal
+    girls at the same chronological age.
+- ref_id: cole2014
+  pmid: '24313626'
+  first_author: Cole TJ
+  year: 2014
+  type: primary
+  one_line_finding: >-
+    Menarche is one of six pubertal markers whose ages at peak velocity correlate 0.8-0.92 in
+    girls, indicating a coherent tempo trait.
+open_questions:
+- g_l7fuse_013
+contradicts: []
+last_verified: '2026-08-05'

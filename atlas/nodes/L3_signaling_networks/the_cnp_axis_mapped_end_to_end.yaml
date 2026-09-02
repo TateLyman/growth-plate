@@ -1,0 +1,332 @@
+id: the_cnp_axis_mapped_end_to_end
+name: The CNP axis mapped end to end against human growth plate expression - the ligand is absent, the receptor and the whole cilostazol chain are present, and that decides which agent belongs
+aliases:
+- the axis solved
+- why the clearance strategies fail in humans
+- cilostazol is a cGMP drug not a cAMP drug
+type: pathway
+layer: L3
+stub: false
+summary: 'THIS NODE CLOSES THE AXIS BY PUTTING EVERY COMPONENT AGAINST HUMAN EXPRESSION AND AGAINST A
+  DIRECT MEASUREMENT OF WHICH SECOND MESSENGER MOVES. TWO THINGS RESOLVE AT ONCE AND BOTH REVERSE
+  POSITIONS THIS ATLAS HELD LAST WEEK. FIRST, THE SECOND-MESSENGER QUESTION, SETTLED BY MEASUREMENT
+  RATHER THAN BY REASONING FROM ENZYME NOMENCLATURE. kawabe2025 read in full: cilostazol at 3 micromolar
+  for 30 minutes on femoral bone slices raised cGMP ABOUT 1.7-FOLD WHILE cAMP REMAINED UNCHANGED, with
+  milrinone giving the same pattern. They measured cAMP, in the right tissue, and it did not move. The
+  authors explain it - PDE3B hydrolyses both nucleotides but its cAMP activity is attenuated by elevated
+  cGMP, so in resting growth plate chondrocytes PDE3B is functioning as a cGMP enzyme. THAT REFUTES THE
+  CORR-095 HAZARD, which supposed cilostazol would raise cAMP, activate CREB, and trap the resting-zone
+  pool. IT ALSO REFUTES THE ROUND-96 CLAIM in the other direction, that cilostazol competes with a CNP
+  analogue for the cAMP/PKA arm. Cilostazol is a cGMP drug. It shares the second messenger and the kinase
+  with CNP arm one and it does NOT reach CNP arm two. SECOND, THE HUMAN EXPRESSION CHECK, WHICH THIS
+  ATLAS COULD HAVE RUN AT ANY POINT AND DID NOT. Against the four human growth plates of GSE288028:
+  THE ENTIRE CILOSTAZOL CHAIN IS PRESENT IN ALL FOUR DONORS - PDE3A 4/4, PDE3B 4/4, PRKG2 4/4, KCNMA1
+  4/4, TRPM7 4/4, with TRPM7 and KCNMA1 among the best-detected genes checked. THE CNP LIGAND IS NOT.
+  NPPC sits at 0.21, 0.21, 0.04 and 0.52 per cent of cells - DETECTED IN ZERO OF FOUR DONORS - while its
+  receptor NPR2 is present in all four. THE CONSEQUENCE IS DECISIVE FOR AGENT CHOICE AND IT INVERTS ROUND
+  95. Both clearance strategies - osteocrin or any NPR3 blocker, and sacubitril blocking neprilysin -
+  work by SPARING A LIGAND THE TISSUE MAKES. If human growth plate chondrocytes make essentially no CNP,
+  there is nothing local to spare, and both strategies depend entirely on protecting CIRCULATING CNP. A
+  CNP ANALOGUE HAS NO SUCH DEPENDENCE - it supplies the ligand, and the receptor is there to receive it.
+  Round 95 called sacubitril the affordable route to the same endpoint; the endpoint requires local
+  substrate and the substrate is missing. AND THE MOST IMPORTANT ROW IS A CONTROL AGAINST MY OWN
+  REASONING. PDE5A is detected in 4/4 donors and PDE10A in 4/4 - and wang2018 showed tadalafil does
+  nothing to bone length, and kawabe2025 showed the PDE10 inhibitor MP10 does nothing. TWO WELL-EXPRESSED
+  PDEs IN HUMAN GROWTH PLATE WHOSE INHIBITORS ARE INERT. Expression is necessary and emphatically not
+  sufficient, so the presence of PDE3A and PDE3B does NOT establish that cilostazol works in a human.'
+quantitative:
+- parameter: 'THE MEASUREMENT THAT SETTLES WHICH MESSENGER CILOSTAZOL MOVES'
+  value: cGMP up about 1.7-fold, cAMP UNCHANGED
+  unit: fold change over vehicle
+  conditions: kawabe2025 - femoral bone slices enriched in growth plate chondrocytes, cilostazol 3
+    micromolar for 30 minutes, cyclic nucleotides quantified by ELISA (Enzo ADI-900-066A for cAMP and
+    ADI-900-014 for cGMP) after TCA homogenisation and ether extraction. The same pattern was seen with
+    milrinone. The authors' account is that PDE3B hydrolyses both nucleotides but its cAMP hydrolytic
+    activity is attenuated by elevated cGMP, so PDE3B mainly maintains resting cGMP in this tissue
+  species: mouse
+  source_ref: kawabe2025
+  uncertainty: 'THIS IS A DIRECT MEASUREMENT OF THE THING TWO ROUNDS OF THIS ATLAS ARGUED ABOUT FROM
+    ENZYME NOMENCLATURE, AND IT SETTLES IT AGAINST BOTH ARGUMENTS. CORR-095 predicted cilostazol would
+    raise cAMP and activate CREB in the resting zone; round 96 predicted cilostazol and a CNP analogue
+    would compete for the cAMP arm. Neither survives - cAMP did not move. LIMITS: 30 minutes is an acute
+    exposure and chronic dosing could differ; the slices are MOUSE and enriched for PROLIFERATING
+    chondrocytes, so a cAMP change confined to the hypertrophic or resting zone would be diluted or
+    missed; and a bulk ELISA on a slice cannot exclude a compartmentalised cAMP pool, which is how cAMP
+    signalling is generally organised. The refutation is of the simple version of the hazard, not of every
+    version.'
+- parameter: 'THE HUMAN EXPRESSION CHECK - the whole cilostazol chain is present, the CNP ligand is not'
+  value: 'PDE3A 4/4, PDE3B 4/4, PRKG2 4/4, KCNMA1 4/4, TRPM7 4/4, NPR2 4/4 - against NPPC 0/4 and OSTN 0/4'
+  unit: donors of four with the gene detected in at least 1 per cent of cells
+  conditions: 'GSE288028, four human epiphysiodesis needle biopsies from children in puberty stages B2-B4,
+    computed by this atlas. Per-donor detection percentages: PDE3A 28.05/6.37/11.38/9.66; PDE3B
+    19.87/30.25/5.24/4.18; PRKG2 16.77/3.92/48.44/8.62; KCNMA1 37.26/18.38/73.42/19.58; TRPM7
+    53.73/49.62/32.11/27.94; NPR2 2.91/2.49/8.68/8.36. Against NPPC 0.21/0.21/0.04/0.52 and OSTN
+    0.11/0.50/0.01/0.00. Clearance targets: MME 3/4 at 3.27/6.01/0.86/9.92, NPR3 2/4 at
+    0.38/0.42/1.61/2.35.'
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE DONORS ARE NOT TYPICAL CHILDREN AND IT PROPAGATES INTO EVERY NUMBER - these are
+    constitutionally very tall adolescents whose plates were being deliberately ablated to PREVENT tall
+    stature, and there is no normal-stature paediatric growth-plate scRNA-seq to compare against. Detection
+    rate in droplet scRNA-seq is driven by sequencing depth as much as by biology, so compare within a
+    donor and require agreement across donors, never average. ABSENCE IS THE WEAK DIRECTION AND NPPC IS AN
+    ABSENCE CLAIM: droplet protocols under-detect small secreted peptides, terminal hypertrophic
+    chondrocytes are systematically lost, and CNP could be supplied by perichondrium or circulation rather
+    than by chondrocytes - OSTN reading 0/4 is almost certainly this, since watanabetakano2021 places its
+    source in PERIOSTEAL OSTEOBLASTS which a needle biopsy of the plate would not capture. So the NPPC
+    result should be checked by in situ hybridisation or ELISA before it is treated as settled. It is
+    consistent across four donors, which is why it is recorded at all.'
+- parameter: 'THE CONTROL THAT DISCIPLINES THE WHOLE TABLE - two well-expressed PDEs whose inhibitors do
+    nothing'
+  value: PDE5A 4/4 and PDE10A 4/4, both with inert inhibitors on bone growth
+  unit: donors detected, against a length endpoint
+  conditions: PDE5A detected in 4/4 human donors (9.92/15.30/1.28/10.44) and PDE10A in 4/4
+    (23.38/7.84/10.70/4.44). wang2018 - tadalafil at paediatric-comparable doses raised tissue cGMP 52
+    per cent in rat with confirmed target engagement and left long bone length UNALTERED. kawabe2025 - the
+    PDE10 inhibitor MP10 had NO effect on cultured bone elongation, and the PDE2 inhibitor BAY-60-7550
+    likewise
+  species: human
+  source_ref: wang2018
+  uncertainty: 'THIS IS THE ROW THAT SHOULD BE READ BEFORE ANY OTHER IN THE TABLE. Two phosphodiesterases
+    are well expressed in the human growth plate and their inhibitors do nothing to bone length - one of
+    them WITH CONFIRMED TARGET ENGAGEMENT, which makes it a sufficiency failure rather than a delivery
+    failure. EXPRESSION IS NECESSARY AND NOT SUFFICIENT, and the temptation this table creates - to read
+    PDE3A and PDE3B at 4/4 as support for cilostazol in humans - is exactly the inference these two rows
+    forbid. What the human table legitimately does is REMOVE ONE WAY THE DRUG COULD FAIL, by showing the
+    target and its downstream chain are transcribed in the right tissue. It does not add positive evidence
+    that the drug works.'
+- parameter: 'THE CONSEQUENCE FOR AGENT CHOICE - a ligand-supplying agent does not depend on local
+    substrate and a clearance blocker does'
+  value: NPR2 present in 4/4 while NPPC is present in 0/4
+  unit: qualitative, with the donor counts
+  conditions: Osteocrin and any NPR3 antagonist, and sacubitril blocking neprilysin, all act by SPARING
+    endogenous CNP from removal. A CNP analogue such as vosoritide supplies the ligand directly. The human
+    plate expresses the receptor in all four donors and the ligand in none
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THIS INVERTS ROUND 95, WHICH CALLED SACUBITRIL THE AFFORDABLE ROUTE TO THE OSTEOCRIN
+    ENDPOINT. The endpoint requires local substrate to protect, and the substrate is at the detection
+    floor in every donor. Both clearance strategies would have to work by protecting CIRCULATING CNP
+    instead, which is a different and weaker proposition - and the atlas already holds that the growth
+    plate is avascular, so a circulating peptide must partition into matrix, which is the constraint that
+    puts vosoritide at about 4 kDa partway down the delivery curve in the first place. THE ARGUMENT IS
+    NOT DECISIVE AND MUST NOT BE STATED AS IF IT WERE, because the NPPC absence is the weak direction of
+    a droplet assay. But it reverses the ORDERING: on current evidence a CNP analogue is the better bet
+    than a clearance blocker in a human, which is the opposite of what round 95 concluded, and the
+    cheapest way to overturn it is one in situ hybridisation for NPPC on a human growth plate.'
+- parameter: 'THE ZONAL MAP - the whole cilostazol chain peaks in the PROLIFERATIVE zone and is weakest
+    in the resting zone'
+  value: 'PDE3A 20.3 / 38.6 / 21.6 / 9.2 and PRKG2 8.0 / 26.5 / 12.4 / 6.9 across stem, proliferative,
+    prehypertrophic, hypertrophic'
+  unit: per cent of cells expressing, mean of donors 1 and 2
+  conditions: 'GSE288028 by zone, computed by this atlas 2026-08-08. DONORS 3 AND 4 DROPPED AND THE DROP
+    IS DECLARED - donor3 reads COL10A1 at 83-98 per cent in EVERY zone so its zone labels fail the
+    positive control, and donor4 has no proliferative-zone column. Positive controls pass in donors 1 and
+    2: COL10A1 maximal in hypertrophic (22.5 and 19.6 against 4-8 elsewhere), COL2A1 above 95 per cent in
+    every zone, MKI67 15.6 and 14.4 in proliferative against 1.1 and 0.3 in hypertrophic. Chain by zone -
+    PDE3A 20.3/38.6/21.6/9.2; PDE3B 21.7/31.4/19.8/23.9; PRKG2 8.0/26.5/12.4/6.9; KCNMA1
+    30.7/45.0/35.4/19.2; TRPM7 54.7/60.5/57.5/48.1; NPR2 4.2/4.4/2.8/2.8. Against MME 9.5/2.8/4.9/6.7 and
+    NPR3 1.1/0.5/0.3/0.5, both peaking in the STEM zone.'
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE ZONAL PATTERN IS COHERENT AND IT KILLS THE LAST VERSION OF THE CORR-095 HAZARD. Every
+    component of the kawabe chain peaks in the PROLIFERATIVE zone, and PRKG2 - the effector - is 3.3-fold
+    LOWER in the resting zone than in the proliferative zone. So even setting aside that cilostazol does
+    not raise cAMP at all, the resting zone is where its machinery is least present. It also matches the
+    experiment: kawabe2025 used epiphyseal slices ENRICHED IN PROLIFERATING CHONDROCYTES, and NPR2 peaks
+    in the same zone, consistent with hirota2022 placing GC-B in proliferative and prehypertrophic cells.
+    A SECOND OBSERVATION CUTS AGAINST SACUBITRIL: MME peaks in the STEM zone at 9.5 and falls to 2.8 in
+    the proliferative zone, so neprilysin is most present where NPR2 is least - the drug would protect CNP
+    in the zone least able to respond to it. LIMITS: two donors, both constitutionally tall children being
+    ablated; detection rate is depth-driven; and zone assignment in scRNA-seq is a clustering call, not a
+    dissection.'
+- parameter: 'THE HUMAN CNP EVIDENCE, AND IT WEAKENS THE ROUND-98 ABSENCE ARGUMENT'
+  value: NTproCNP is measurable, raised at baseline in hypochondroplasia, and SUPPRESSED by vosoritide
+  unit: qualitative, plus SD scores
+  conditions: 'kanakatti2026 (JCEM) - vosoritide 15 micrograms/kg/day for 12 months in prepubertal
+    hypochondroplasia after a 6-month baseline observation: NTproCNP was RAISED at baseline and DECLINED
+    on treatment, significantly lower at months 6 and 12; change in height SD and AGV were NOT correlated
+    with either NTproCNP or IGF-1. carroll2025 (JBMR) - 73 children across 7 skeletal dysplasias with
+    plasma BIOACTIVE CNP and NTproCNP measured against annualised height velocity; in osteogenesis
+    imperfecta both fell in proportion to severity with the reduction in bioactive CNP EXCEEDING that in
+    NTproCNP, implying a measurable clearance rate.'
+  species: human
+  source_ref: kanakatti2026
+  uncertainty: 'THIS IS THE CHECK ROUND 98 ASKED FOR AND IT COMES BACK AGAINST THE STRONG READING OF THE
+    scRNA-seq. Circulating CNP and its propeptide ARE measurable in children and the system is active
+    enough to be raised in disease and suppressed by treatment. SO NPPC AT 0/4 DONORS DOES NOT MEAN THERE
+    IS NO CNP AT THE PLATE - it means CHONDROCYTES may not be the source, which is a different and much
+    weaker claim, and is exactly the same artefact that put OSTN at 0/4 when its source is periosteal.
+    THE ROUND-98 ARGUMENT AGAINST CLEARANCE BLOCKERS IS THEREFORE DOWNGRADED, not withdrawn: if CNP
+    arrives from endothelium, perichondrium or circulation, then sparing it from degradation is coherent
+    after all. AND A NEW COMPLICATION APPEARS: exogenous vosoritide SUPPRESSES endogenous NTproCNP, so the
+    system has negative feedback that will oppose a ligand-supplying strategy - which is an argument for a
+    clearance blocker over an analogue, the reverse of round 98. Neither strategy escapes the feedback
+    question, and no experiment held here measures it against a length endpoint.'
+- parameter: 'THE 2x2 STILL DOES NOT EXIST - but the closest experiment argues FOR redundancy'
+  value: 'CNP-53 transcriptome positively correlated with U0126-responsive genes at genome-wide scale,
+    p < 0.001'
+  unit: GSEA correlation
+  conditions: 'hirota2018. CNP-53 dose-dependently grew BOTH CNP-KO and WILD-TYPE rats (0.15 and 0.5
+    mg/kg/day, continuous subcutaneous, 4 weeks from 4 weeks of age), with CNP-KO more sensitive. CNP-KO
+    rats showed EARLY GROWTH PLATE CLOSURE at 8 weeks in distal tibia and calcaneus and CNP-53 PREVENTED
+    it. In organ culture of fetal WT tibiae, the MEK1/2 inhibitor U0126 at 20 micromolar SIGNIFICANTLY
+    STIMULATED growth. Microarray plus GSEA on hypertrophic-zone RNA found the CNP-53 gene-expression
+    profile positively correlated with U0126-responsive genes, especially those downregulated by U0126
+    (p < 0.001). THE TWO AGENTS WERE RUN IN SEPARATE GENOTYPES AND COMPARED TRANSCRIPTOMICALLY; THEY WERE
+    NEVER GIVEN TOGETHER.'
+  species: rat
+  source_ref: hirota2018
+  uncertainty: 'THIS IS NOW THE STRONGEST REDUNDANCY EVIDENCE THE ATLAS HOLDS AND IT IS STRONGER THAN THE
+    LABEL-MECHANISM ARGUMENT THAT STARTED THE QUESTION. A genome-wide transcriptome correlation between a
+    CNP analogue and a MEK inhibitor is a much harder thing to explain away than two drug labels citing
+    RAF-1. IT IS ALSO NOT THE EXPERIMENT: the CNP arm was run in CNP-KO explants and the U0126 arm in WT
+    explants, so the comparison is across genotypes, and a factorial was never performed. THE PART THAT
+    SURVIVES FOR SEPARABILITY IS hirota2022 - the PKA/hypertrophic arm is MAPK-independent by
+    construction, so a transcriptome dominated by MAPK-convergent changes would not capture it, and the
+    GSEA was run on HYPERTROPHIC-ZONE RNA where that arm should be most visible, which cuts the other way
+    again. WHAT THIS PAPER DOES MAKE POSSIBLE IS THE ACTUAL EXPERIMENT, IN ONE PLATE: U0126 and CNP-53
+    both grow fetal rat tibial explants in the same published system, so adding a four-arm factorial -
+    vehicle, U0126, CNP-53, both - to that exact protocol needs no new model, no new reagent and no new
+    animal, and it would settle in three days a question this atlas has argued about for eleven rounds.'
+- parameter: 'THE LARGEST PATHWAY-INTACT EFFECT IN THIS ATLAS, AND IT IS THE CNP ARM'
+  value: '+10.6 per cent of final body length, +33.8 per cent of the 4-week growth increment, in a
+    WILD-TYPE rat'
+  unit: per cent
+  conditions: 'hirota2018 Table 2, female WT rats, CNP-53 by continuous subcutaneous osmotic minipump for
+    4 weeks from 4 weeks of age. Body length increment: vehicle 6.5 +/- 0.3 cm (n=7), 0.15 mg/kg/day
+    6.8 +/- 0.1 (n=4, ns), 0.5 mg/kg/day 8.7 +/- 0.5 (n=6, P<0.01). Final length 19.8 against 21.9 cm.
+    BODY WEIGHT GAIN DID NOT DIFFER in WT (87.1, 90.9, 94.4 g, ns) - so the effect is skeletal, not
+    general growth. Table 3, WT growth plate thickness at 0.5 mg/kg against vehicle: femur proximal
+    110.4 to 249.3, femur distal 283.0 to 655.6, tibia proximal 309.2 to 424.7, TIBIA DISTAL 117.9 TO
+    835.9, calcaneus 120.1 to 252.0 micrometres, all P<0.05 or better. In CNP-KO vehicle animals distal
+    tibia and calcaneus thickness were ZERO - the plates had closed - and CNP-53 restored them to 477.6
+    and 213.5.'
+  species: rat
+  source_ref: hirota2018
+  uncertainty: 'RANKED AGAINST EVERY OTHER WILD-TYPE RESULT THIS ATLAS HOLDS, ON A COMMON BASIS OF PER
+    CENT OF FINAL BODY LENGTH: CNP-53 +10.6, TYRA-300 at 14 mg/kg +7.3, sacubitril 2-3, cilostazol +1.8.
+    THE CNP ARM IS THE LARGEST, AND IT IS LARGER THAN THE FGFR ARM. THREE THINGS MUST TRAVEL WITH THAT.
+    FIRST, THE ROUTE: continuous subcutaneous infusion by osmotic minipump, chosen because CNP has a very
+    short plasma half-life. This is not a daily injection and the result may not transfer to one - which
+    is a direct argument for a SUSTAINED-RELEASE CNP over a daily bolus. SECOND, THE DOSE GAP: 0.5
+    mg/kg/day here against vosoritide clinically at 15 micrograms/kg/day, a 33-FOLD DIFFERENCE. The
+    molecules and routes differ so the comparison is not a potency ratio, but it is the same
+    under-dosing pattern this atlas found on the FGFR arm, and it means the human CNP arm has never been
+    tested near the exposure that produces large animal effects. THIRD, AND IT IS THE COST: growth plate
+    thickness rose 2.3-fold at the proximal femur and SEVEN-FOLD at the distal tibia. williams2001 has
+    ultimate tensile stress falling linearly with plate thickness, and a seven-fold thicker plate is the
+    mechanical-failure configuration that produced the human kyphoscoliosis and the SCFE series. This is
+    a large effect bought at the exact structural price the atlas has been tracking.'
+- parameter: 'THE ZONAL PREDICTION FROM HUMAN EXPRESSION, CONFIRMED IN THE MOUSE FIGURE - cilostazol
+    does NOT reach the hypertrophic zone'
+  value: round and columnar zone size both significantly increased; HYPERTROPHIC zone NOT significant
+  unit: zone size, cell density and alcian-blue area by zone
+  conditions: 'kawabe2025 Figure 2b, cultured metatarsals, cilostazol 10 micromolar, n=6-7. ZONE SIZE -
+    round INCREASED (P<0.05), columnar INCREASED (P<0.05), HYPERTROPHIC UNCHANGED (no asterisk). CELL
+    DENSITY - round and columnar both DECREASED (P<0.05). ALCIAN BLUE POSITIVE AREA - only COLUMNAR
+    significant. Figure 2a, length over 4 days: vehicle about 1.72 to 2.00 mm, cilostazol 1 micromolar to
+    about 2.06, 10 micromolar to about 2.12, both P<0.05, dose-dependent.'
+  species: mouse
+  source_ref: kawabe2025
+  uncertainty: 'THIS ATLAS PREDICTED THIS FROM INDEPENDENT HUMAN DATA AND THE FIGURE CONFIRMS IT. The
+    round-99 zonal analysis of GSE288028 put PDE3A at 38.6 per cent of cells in the proliferative zone and
+    9.2 per cent in the hypertrophic - a four-fold gradient away from the zone where terminal cell volume
+    is set. The prediction was that cilostazol should act on the proliferative compartment and not on
+    h_term, and Figure 2b shows exactly that: round and columnar zones expand, the hypertrophic zone does
+    not. IT ALSO EXPLAINS THE ONE DISCREPANCY THE ATLAS WAS CARRYING - kawabe2025 measured cAMP as
+    unchanged while hirota2022 found CNP raising PKA in hypertrophic chondrocytes. Both are right,
+    because cilostazol cannot act where PDE3A is scarce, and kawabe used proliferating-enriched slices.
+    THE CONSEQUENCE IS A CORRECTION TO THE COVERAGE AUDIT: h_term has been recorded as HIT BY CILOSTAZOL
+    since round 86, and it is not. Cilostazol is a proliferative-zone and matrix agent. h_term is empty.
+    Read off a published figure by this atlas rather than from reported numbers, so the values are
+    approximate and the significance calls are the authors.'
+- parameter: 'CNP AND MEK INHIBITION SHARE 3 GENES OUT OF 100 - the redundancy claim does not survive the
+    gene lists'
+  value: 'CNP-up vs U0126-up: 2 shared. CNP-down vs U0126-down: 1 shared. Discordant: 1.'
+  unit: genes shared between top-50 lists
+  conditions: 'hirota2018 Supplementary Tables S2-S5, transcribed and intersected by this atlas. CONCORDANT
+    OVERLAP IS 3 GENES OUT OF 100 PAIRWISE SLOTS - Gpx2 and LOC498316 both up, Ccl19 both down, with
+    Rhbdd1 discordant. Against a chance expectation of 0.10 genes per comparison on a 25,000-probe array,
+    3 concordant is about 15-fold enrichment - so the authors GSEA at p<0.001 is real. AND THE CHARACTER
+    OF THE TWO SIGNATURES IS ENTIRELY DIFFERENT. CNP-up carries an ion-channel and calcium-handling block:
+    Atp2b3 (plasma membrane Ca2+ ATPase, 30.1-fold), Clcn4 (voltage-sensitive chloride channel, 23.3),
+    Cnga1 (CYCLIC NUCLEOTIDE-GATED channel, 17.1), Camk2d (CaMKII delta, 16.0), Kcnj9 (inward-rectifier
+    potassium channel, 14.3) - plus Sox9 (14.0), Ptch2 (29.7) and Wnt8a (14.0). U0126-up is solute
+    carriers (Slc6a1, Slc38a11, Slc30a10, Slc7a11), metabolism and muscle; U0126-down is angiogenic
+    (Flt1, Dll4, Gja4, Ephb1) and inflammatory (Tnf, Il1a, Ccl6, Ccl19, Ccl20, Ifi204, C7).'
+  species: rat
+  source_ref: hirota2018
+  uncertainty: 'THIS REVERSES WHAT ROUND 99 RECORDED FROM THE AUTHORS FRAMING. Round 99 called the GSEA
+    the strongest redundancy evidence the atlas holds. Both statements are true and they are not in
+    conflict: GSEA tests a distributional shift across all genes and can be highly significant while the
+    extremes barely intersect, which is exactly what happened. WHAT THE GENE LISTS ADD is that AT THE
+    EXTREMES THE TWO AGENTS REGULATE ALMOST ENTIRELY DIFFERENT GENES, and the CNP signature is
+    specifically the kawabe chain written out in transcripts - a cyclic-nucleotide-gated channel, a
+    potassium channel, a calcium pump and CaMKII, which is cGMP to K+ to Ca2+ to CaMKII. MEK inhibition
+    does none of that. LIMITS THAT MATTER: top-50-by-fold-change from a microarray is a noisy statistic
+    dominated by low-expressors - the CNP lists are full of olfactory receptors, which is the signature of
+    that noise - and the two arms were run in DIFFERENT GENOTYPES, CNP-KO for CNP and WT for U0126, so
+    the baselines differ. This does not establish additivity. It establishes that the mechanism-level
+    case for redundancy, which was always the reason the CNP arm was dropped, is much weaker than the
+    atlas has been treating it.'
+localization:
+- 'human growth plate, bulk needle biopsy: PDE3A, PDE3B, PRKG2, KCNMA1, TRPM7, NPR2 all present; NPPC and
+  OSTN absent'
+- 'periosteum: where OSTN is actually made, and outside the biopsied tissue'
+human_evidence: direct
+human_evidence_note: The expression table is human growth plate from four donors. The second-messenger
+  measurement and the whole kawabe mechanism are mouse.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The mechanism is mouse and the expression check is human, which is the right way
+  round; but the PDE5A and PDE10A controls show that expression in human tissue does not predict that an
+  inhibitor works, and no PDE3 inhibitor has ever been given to a human for growth.
+confidence: B
+claim_grades:
+- claim: Cilostazol raises cGMP and not cAMP in growth plate chondrocytes.
+  grade: B
+  basis: Direct ELISA measurement of both nucleotides in mouse femoral bone slices, replicated with a
+    second PDE3 inhibitor. Acute exposure, proliferating-zone-enriched, bulk assay that cannot exclude a
+    compartmentalised cAMP pool.
+- claim: The entire cilostazol signalling chain is transcribed in human growth plate.
+  grade: B
+  basis: Four of four donors for every component, computed here from GSE288028. Bulk biopsy rather than
+    zonal, and the donors are constitutionally tall children.
+- claim: Human growth plate chondrocytes make essentially no CNP.
+  grade: C
+  basis: NPPC below 1 per cent of cells in all four donors. An absence claim in a droplet assay that
+    under-detects small secreted peptides, unconfirmed by in situ or ELISA.
+- claim: A CNP analogue is a better bet than a clearance blocker in humans.
+  grade: D
+  basis: Follows from the receptor being present and the ligand absent. Depends entirely on the NPPC
+    absence claim, which is graded C.
+key_refs:
+- ref_id: kawabe2025
+  year: 2025
+  type: primary
+  one_line_finding: Cilostazol raised cGMP about 1.7-fold in growth plate chondrocytes while cAMP remained
+    UNCHANGED; the chain is PKG to BK channel to TRPM7 to CaMKII, and cilostazol also worked in Fgfr3
+    transgenic achondroplasia-model bones.
+- ref_id: chu2026
+  type: dataset
+  one_line_finding: Four human pubertal growth plates by scRNA-seq - the resource this atlas used to check
+    every component of the axis for presence in the target tissue.
+- ref_id: wang2018
+  year: 2018
+  type: primary
+  one_line_finding: Tadalafil raised tissue cGMP 52 per cent with confirmed engagement and did NOT
+    increase long bone length - the sufficiency failure that disciplines every expression argument here.
+- ref_id: hirota2022
+  year: 2022
+  type: primary
+  one_line_finding: CNP activates PKA predominantly in hypertrophic chondrocytes - the arm cilostazol does
+    not reach.
+open_questions:
+- g_l3_cnp_plus_fgfr_blockade_in_wildtype
+- g_l3_neprilysin_window
+- g_l12_cilostazol_bone_age_effect
+contradicts: []
+last_verified: '2026-08-08'

@@ -1,0 +1,120 @@
+graph LR
+  protein_intake_growth["Dietary protein intake and linear growth"]
+  igf1_systemic["Systemic (hepatic) IGF-1"]
+  milk_consumption_height["Cow's milk intake and linear growth"]
+  insulin_hormone["Insulin"]
+  igfbp3["IGFBP-3"]
+  mtorc1_chondrocyte["mTORC1 signalling in chondrocytes"]
+  amino_acid_sensing_chondrocyte["Amino acid sensing in chondrocytes"]
+  energy_availability_growth["Energy availability and linear growth"]
+  leptin_hormone["Leptin"]
+  zinc_deficiency_growth["Zinc deficiency and linear growth"]
+  iodine_deficiency_growth["Iodine deficiency and linear growth"]
+  thyroid_hormone_t3["Triiodothyronine (T3)"]
+  thra_receptor["Thyroid hormone receptor alpha (THRA / TRalpha)"]
+  vitamin_d_deficiency_rickets["Vitamin D deficiency and nutritional rickets"]
+  vitamin_d_calcitriol["1,25-dihydroxyvitamin D (calcitriol)"]
+  phosphate_homeostasis["Phosphate homeostasis"]
+  calcium_intake_growth["Dietary calcium intake and linear growth"]
+  calcium_homeostasis["Calcium homeostasis"]
+  vitamin_a_growth["Vitamin A status and linear growth"]
+  inflammation_growth_suppression["Inflammatory suppression of linear growth"]
+  stat5b_tf["STAT5B"]
+  socs2_protein["SOCS2"]
+  gh_receptor["Growth hormone receptor (GHR)"]
+  igf1_receptor["IGF-1 receptor (IGF1R)"]
+  mek1_erk_chondrocyte["MEK1/ERK in chondrocytes"]
+  glucocorticoid_receptor["Glucocorticoid receptor (NR3C1 / GR)"]
+  infection_burden_growth["Infection burden and linear growth"]
+  environmental_enteric_dysfunction["Environmental enteric dysfunction"]
+  stunting["Stunting"]
+  gut_microbiome_growth["Gut microbiome and juvenile growth"]
+  microbiome_igf1_axis["Microbiome-IGF-1 axis"]
+  growth_hormone["Growth hormone (GH1 / somatotropin)"]
+  altitude_hypoxia_growth["High altitude and growth"]
+  hif1a_chondrocyte["HIF1A in chondrocytes"]
+  hypoxic_gradient_signaling["Hypoxic gradient across the growth plate"]
+  secular_trend_height["Secular trend in adult height"]
+  endocrine_disrupting_chemicals["Endocrine disrupting chemicals and growth"]
+  estrogen_receptor_alpha["Estrogen receptor alpha (ESR1 / ERalpha)"]
+  aromatase_cyp19a1["Aromatase (CYP19A1)"]
+  gnrh_hormone["GnRH (gonadotropin-releasing hormone)"]
+  lead_exposure_growth["Lead exposure and linear growth"]
+  psychosocial_dwarfism["Psychosocial short stature"]
+  gh_secretion_pulsatility["GH secretion pulsatility"]
+  preterm_birth_growth["Preterm birth and linear growth"]
+  intrauterine_growth_restriction["Intrauterine growth restriction"]
+  placental_function_growth["Placental function and fetal growth"]
+  pappa2_protease["PAPP-A2 (pappalysin-2)"]
+  maternal_nutrition_offspring_height["Maternal nutrition and offspring height"]
+  igf2_hormone["IGF-2"]
+  dutch_hunger_winter["Dutch Hunger Winter natural experiment"]
+  dohad_hypothesis["Developmental origins of health and disease"]
+  small_for_gestational_age["Small for gestational age"]
+  sga_catch_up["Catch-up growth after small-for-gestational-age birth"]
+  population_height_variation["Between-population variation in height"]
+  secular_trend_reversal["Reversal of the secular height trend"]
+  socioeconomic_gradient_height["Socioeconomic gradient in height"]
+  migration_studies_height["Migrant population height studies"]
+  netherlands_tallest_population["The Dutch height plateau"]
+  ncd_risc_height_dataset["NCD-RisC pooled height database"]
+  klotho_beta_cofactor["Beta-Klotho"]
+  fgfr1_receptor["FGFR1"]
+  protein_intake_growth -->|"activates (A)"| igf1_systemic
+  milk_consumption_height -->|"activates (A)"| igf1_systemic
+  milk_consumption_height -->|"activates (A)"| insulin_hormone
+  milk_consumption_height -->|"activates (B)"| igfbp3
+  protein_intake_growth -.->|"hypothesized_link (speculative)"| mtorc1_chondrocyte
+  protein_intake_growth -.->|"hypothesized_link (speculative)"| amino_acid_sensing_chondrocyte
+  energy_availability_growth -->|"correlates_with (E)"| leptin_hormone
+  zinc_deficiency_growth -.->|"hypothesized_link (speculative)"| igf1_systemic
+  iodine_deficiency_growth --x|"inhibits (A)"| thyroid_hormone_t3
+  iodine_deficiency_growth --x|"inhibits (A)"| igf1_systemic
+  iodine_deficiency_growth -.->|"hypothesized_link (speculative)"| thra_receptor
+  vitamin_d_deficiency_rickets --x|"inhibits (A)"| vitamin_d_calcitriol
+  vitamin_d_deficiency_rickets --x|"inhibits (B)"| phosphate_homeostasis
+  calcium_intake_growth -->|"activates (A)"| calcium_homeostasis
+  vitamin_a_growth -->|"correlates_with (A)"| igf1_systemic
+  inflammation_growth_suppression --x|"inhibits (C)"| stat5b_tf
+  inflammation_growth_suppression -->|"activates (C)"| socs2_protein
+  inflammation_growth_suppression --x|"inhibits (C)"| gh_receptor
+  inflammation_growth_suppression --x|"inhibits (D)"| igf1_receptor
+  inflammation_growth_suppression --x|"inhibits (D)"| mek1_erk_chondrocyte
+  inflammation_growth_suppression --x|"inhibits (A)"| igf1_systemic
+  inflammation_growth_suppression -->|"activates (A)"| glucocorticoid_receptor
+  infection_burden_growth -->|"activates (A)"| inflammation_growth_suppression
+  infection_burden_growth --x|"inhibits (A)"| igf1_systemic
+  environmental_enteric_dysfunction --x|"inhibits (B)"| igf1_systemic
+  environmental_enteric_dysfunction -->|"activates (B)"| inflammation_growth_suppression
+  stunting -->|"correlates_with (A)"| igf1_systemic
+  gut_microbiome_growth -->|"activates (C)"| igf1_systemic
+  microbiome_igf1_axis -->|"activates (C)"| igf1_systemic
+  microbiome_igf1_axis -.->|"hypothesized_link (speculative)"| growth_hormone
+  gut_microbiome_growth -->|"correlates_with (C)"| stunting
+  altitude_hypoxia_growth -.->|"hypothesized_link (speculative)"| hif1a_chondrocyte
+  altitude_hypoxia_growth -.->|"hypothesized_link (speculative)"| hypoxic_gradient_signaling
+  altitude_hypoxia_growth -->|"correlates_with (A)"| secular_trend_height
+  endocrine_disrupting_chemicals -.->|"hypothesized_link (speculative)"| estrogen_receptor_alpha
+  endocrine_disrupting_chemicals -.->|"hypothesized_link (speculative)"| aromatase_cyp19a1
+  endocrine_disrupting_chemicals -->|"correlates_with (D)"| gnrh_hormone
+  lead_exposure_growth --x|"inhibits (D)"| igf1_systemic
+  lead_exposure_growth -.->|"hypothesized_link (speculative)"| igf1_receptor
+  psychosocial_dwarfism --x|"inhibits (D)"| gh_secretion_pulsatility
+  preterm_birth_growth -->|"activates (D)"| glucocorticoid_receptor
+  intrauterine_growth_restriction --x|"inhibits (B)"| igf1_systemic
+  placental_function_growth -.->|"hypothesized_link (speculative)"| pappa2_protease
+  maternal_nutrition_offspring_height -.->|"hypothesized_link (speculative)"| igf2_hormone
+  dutch_hunger_winter -->|"correlates_with (B)"| dohad_hypothesis
+  dutch_hunger_winter -->|"activates (A)"| intrauterine_growth_restriction
+  small_for_gestational_age -->|"precedes (A)"| sga_catch_up
+  intrauterine_growth_restriction -->|"precedes (A)"| small_for_gestational_age
+  secular_trend_height -->|"correlates_with (A)"| population_height_variation
+  secular_trend_reversal --x|"inhibits (A)"| secular_trend_height
+  socioeconomic_gradient_height -->|"activates (A)"| stunting
+  migration_studies_height -->|"correlates_with (A)"| netherlands_tallest_population
+  ncd_risc_height_dataset -->|"required_for (A)"| secular_trend_height
+  stunting -->|"correlates_with (A)"| energy_availability_growth
+  environmental_enteric_dysfunction -->|"activates (A)"| stunting
+  energy_availability_growth -->|"activates (C)"| klotho_beta_cofactor
+  energy_availability_growth -->|"activates (D)"| fgfr1_receptor
+  stunting -.->|"hypothesized_link (speculative)"| klotho_beta_cofactor

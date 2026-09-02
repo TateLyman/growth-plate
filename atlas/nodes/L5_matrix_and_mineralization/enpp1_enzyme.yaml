@@ -1,0 +1,90 @@
+id: enpp1_enzyme
+name: ENPP1 (ectonucleotide pyrophosphatase/phosphodiesterase 1)
+aliases:
+- ENPP1
+- NPP1
+- PC-1
+- ttw mouse
+type: protein
+layer: L5
+stub: false
+summary: 'ENPP1 is the ectoenzyme that generates extracellular PPi by hydrolysing ATP to AMP plus PPi.
+  It is the opposing arm to TNAP, and the two act on the same pool. The 2022 revision of the model made
+  ENPP1 more central, not less: since ANKH exports ATP rather than PPi, ENPP1 is downstream of every known
+  cellular PPi source, and Enpp1-/- mouse bone contains under 2.5% of wild-type PPi. Enpp1-/- mice and
+  the ttw mouse are hypermineralized, and deleting Enpp1 genetically rescues the hypomineralization of
+  Akp2(Alpl)-/- mice, the cleanest demonstration that the phenotype of TNAP loss is caused by PPi excess
+  rather than Pi deficiency. In humans, biallelic ENPP1 loss of function causes generalized arterial calcification
+  of infancy, and the SAME alleles cause autosomal recessive hypophosphatemic rickets type 2 - so ENPP1
+  deficiency simultaneously produces ectopic calcification (from PPi deficiency) and defective growth
+  plate mineralization (from FGF23-driven phosphate wasting). ENPP1 protein has been detected at the mineralization-promoting
+  growth plate-metaphysis interface in human tissue.'
+quantitative:
+- parameter: Bone PPi content, Enpp1-/- versus wild-type mouse
+  value: <2.5
+  unit: '% of wild type'
+  conditions: whole bone PPi assay
+  species: mouse
+  source_ref: szeri2022
+  uncertainty: upper bound
+- parameter: Relative severity of hypermineralization, Enpp1-/- versus ank/ank
+  value: Enpp1-/- > ank/ank
+  unit: rank order
+  conditions: side-by-side skeletal and soft-tissue mineral assessment
+  species: mouse
+  source_ref: harmey2004
+  uncertainty: qualitative comparison; NPP1 but not ANK localises to matrix vesicles
+localization:
+- 'mouse matrix vesicles: NPP1 present, ANK absent (harmey2004)'
+- 'human growth plate-metaphysis interface: ENPP1 detected by spatial proteomics (xie2025)'
+human_evidence: direct
+human_evidence_note: Biallelic human ENPP1 loss-of-function is directly characterised as GACI and as ARHR2,
+  both with skeletal phenotypes.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Human and mouse loss-of-function phenotypes agree, and the human allelic series
+  covers both vascular and skeletal manifestations.
+confidence: A
+key_refs:
+- ref_id: szeri2022
+  pmid: '35147247'
+  first_author: Szeri F
+  year: 2022
+  type: primary
+  one_line_finding: ANKH exports ATP, not PPi; Enpp1-/- mouse bone contains <2.5% of wild-type PPi, so
+    ENPP1 is required for all ANK-attributable PPi, i.e. PPi arising downstream of ANKH ATP export
+- ref_id: harmey2004
+  pmid: '15039209'
+  first_author: Harmey D
+  year: 2004
+  type: primary
+  one_line_finding: TNAP, NPP1 and ANK coordinately set extracellular PPi and osteopontin; Enpp1 or ank
+    loss genetically rescues Akp2-/- hypomineralization
+- ref_id: rutsch2003
+  pmid: '12881724'
+  first_author: Rutsch F
+  year: 2003
+  type: primary_abstract_only
+  one_line_finding: ENPP1 mutations cause idiopathic infantile arterial calcification (GACI)
+- ref_id: lorenzdepiereu2010
+  pmid: '20137773'
+  first_author: Lorenz-Depiereux B
+  year: 2010
+  type: primary_abstract_only
+  one_line_finding: The same ENPP1 loss-of-function alleles cause GACI and autosomal recessive hypophosphatemic
+    rickets type 2
+- ref_id: xie2025
+  pmid: '40781081'
+  first_author: Xie C
+  year: 2025
+  type: primary
+  one_line_finding: Human growth plate AFM modulus 130.7 MPa (RZ) and 416.2 MPa (HZ); SPP1/AHSG mark the
+    mineralization-inhibiting epiphyseal boundary and ENPP1/ALPL the promoting metaphyseal boundary
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Post-CORR-001. ABCC6 is quantified against ANKH numerically (60-70% versus ~25% of plasma PPi),
+  so the relative-abundance question for the transporter arm is answered with numbers.

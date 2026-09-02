@@ -1,0 +1,176 @@
+id: fgfr3_npr2_crosstalk
+name: FGFR3-NPR2 crosstalk
+type: process
+layer: L3
+stub: false
+summary: 'This is the best-characterised convergence point in the layer, and the answer to whether FGFR3
+
+  reduces NPR2 output transcriptionally or post-translationally is: post-translationally, with no
+
+  demonstrated transcriptional component. Ozasa 2005 showed in mouse ATDC5 chondrogenic cells that
+
+  FGF2 and FGF18 markedly reduce CNP-dependent cGMP production and that MAPK inhibitors reverse this,
+
+  while Western blotting showed GC-B protein levels were unchanged - so the receptor is inactivated,
+
+  not removed. Robinson 2017 identified the mechanism in rat chondrosarcoma cells: FGF causes rapid,
+
+  potent and reversible dephosphorylation of the seven regulatory juxtamembrane serines and
+
+  threonines of GC-B, and a 7-glutamate phosphomimetic GC-B is completely FGF-resistant. Shuhaibar
+
+  2017 confirmed this in intact mouse tibia using an in vivo cGMP biosensor, showing FGF lowers growth
+
+  plate cGMP through a PPP-family phosphatase and that non-dephosphorylatable NPR2 increases bone
+
+  elongation. Wagner 2021 closed the genetic loop in mouse, but more narrowly than the
+
+  headline suggests: the cross is HOMOZYGOUS GC-B(7E/7E) into HOMOZYGOUS FGFR3-G380R (human
+
+  achondroplasia is heterozygous), it restores femur and tibia length and hypertrophic zone area to
+
+  wild-type values while leaving midface hypoplasia and macrocephaly entirely unrescued, and the
+
+  2-week effects are strongly sex-specific - G380R shortened bones and reduced hypertrophic zone area
+
+  in MALES only, GC-B(7E) lengthened bones in FEMALES only, and the hypertrophic-zone rescue was
+
+  therefore demonstrated in males. The interaction is genuine rather than merely additive, because the
+
+  femur gain from GC-B(7E) was 12.6% (male) and 7.9% (female) in the G380R background against 4.3% and
+
+  5.0% in wild-type FGFR3. Critically, NPR2 phosphorylation state has NEVER been measured in a G380R
+
+  growth plate: the chain FGFR3-G380R to phosphatase to NPR2-dephospho has not been observed
+
+  end-to-end in one system, and Wagner 2021 states it cannot rule out other FGFR3-activated pathways.
+
+  Nor is the phosphatase identified - Shuhaibar 2017 infers only a PPP-family phosphatase, unnamed, from
+
+  100 uM cantharidin, which inhibits PPP1, PPP2/PP2A, PPP4 and PPP5 together (g_l2d_004). Receptor
+
+  specificity is also weak in the mechanistic papers: Robinson 2017 applied FGF2 to rat chondrosarcoma
+
+  cells that express FGFR2 as well as FGFR3, with no receptor-specific manipulation, and Shuhaibar
+
+  2017 applied FGF rather than an FGFR3-selective perturbation to intact tibia. The reverse arm is also post-translational: CNP and
+
+  8-Br-cGMP inhibit FGF-induced ERK phosphorylation at RAF-1 without changing FGFR3 protein levels or
+
+  STAT1 phosphorylation (Ozasa 2005), which is why CNP overexpression rescues FGFR3-Ach mice (Yasoda
+
+  2004). Human confirmation is phenotypic rather than molecular: vosoritide, a CNP analogue, raises
+
+  annualised growth velocity by 1.57 cm/yr in children with achondroplasia (Savarirayan 2020). No
+
+  molecular measurement of NPR2 phosphorylation state has ever been made in human tissue.
+
+  '
+quantitative:
+- parameter: femur length gain from homozygous GC-B(7E) expression, FGFR3-G380R/G380R background
+  value: 12.6 (male), 7.9 (female)
+  unit: '%'
+  conditions: 16 weeks of age; compare 4.3% (male) and 5.0% (female) in a wild-type FGFR3 background,
+    which is what makes the interaction more than additive
+  species: mouse
+  source_ref: wagner2021
+  uncertainty: n=4-23 mice per genotype; significance by letter-grouping at P<0.05
+- parameter: growth plate hypertrophic zone cross-sectional area gain from GC-B(7E), FGFR3-G380R/G380R
+    males
+  value: '70.2'
+  unit: '% increase'
+  conditions: femoral growth plate, 2 weeks of age, male; the same comparison in a wild-type FGFR3 background
+    gave 29.6% (P=0.11, not significant)
+  species: mouse
+  source_ref: wagner2021
+  uncertainty: P=0.003; final hypertrophic zone not significantly different from double-wild-type (P=0.80)
+- parameter: cranial length rescue by GC-B(7E) in FGFR3-G380R/G380R mice
+  value: '0'
+  unit: detectable rescue
+  conditions: midface hypoplasia and macrocephaly persist; cranial length 24.15 vs 23.00 mm
+  species: mouse
+  source_ref: wagner2021
+  uncertainty: post-hoc power 36%; the authors state ~50 mice per group would be needed for 80% power,
+    so this is an UNDERPOWERED null, not a demonstrated absence of effect
+  value_unverified: true
+- parameter: annualised growth velocity gain from pharmacological reactivation of the NPR2 arm in FGFR3
+    gain-of-function
+  value: '1.57'
+  unit: cm/yr
+  conditions: vosoritide 15 ug/kg/day sc for 52 weeks, children with achondroplasia aged 5 to <18 y
+  species: human
+  source_ref: savarirayan2020
+  uncertainty: 95% CI 1.22-1.93; n=121
+localization:
+- 'mouse growth plate, in vivo cGMP biosensor: FGF-driven cGMP reduction confirmed (shuhaibar2017)'
+- 'rat chondrosarcoma cells: GC-B dephosphorylation confirmed (robinson2017)'
+- 'mouse ATDC5: GC-B protein unchanged by FGF, cGMP output reduced (ozasa2005)'
+- 'human growth plate: NPR2 phosphorylation state never measured'
+- 'FGFR3-G380R mouse growth plate: NPR2 phosphorylation state also never measured - the genetic rescue
+  is epistasis, not a molecular observation of the proposed intermediate'
+human_evidence: indirect
+human_evidence_note: Human evidence is the therapeutic epistasis - a CNP analogue partially rescues the
+  growth phenotype of FGFR3 gain-of-function - not a molecular measurement of the interaction in human
+  tissue.
+species_basis:
+- mouse
+- rat
+- in_vitro_animal_cell
+- human
+translation_risk: moderate
+translation_risk_reason: Molecular mechanism is entirely rodent, but the predicted therapeutic consequence
+  was tested and confirmed in a randomised human trial, which constrains the translation risk substantially.
+confidence: B
+key_refs:
+- ref_id: ozasa2005
+  pmid: '15869918'
+  first_author: Ozasa A
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: FGF2/FGF18 reduce CNP-dependent cGMP via MAPK without changing GC-B protein level;
+    CNP reciprocally blocks ERK at RAF-1 without affecting STAT1.
+- ref_id: robinson2017
+  pmid: '28964968'
+  first_author: Robinson JW
+  year: 2017
+  type: primary
+  one_line_finding: FGF2 causes rapid, potent, reversible dephosphorylation of GC-B in rat chondrosarcoma
+    cells - which express FGFR2 as well as FGFR3, with no receptor-specific manipulation performed; a
+    7E phosphomimetic is FGF-resistant.
+- ref_id: shuhaibar2017
+  pmid: '29199951'
+  first_author: Shuhaibar LC
+  year: 2017
+  type: primary
+  one_line_finding: FGF lowers growth plate cGMP in intact newborn mouse tibia via NPR2 dephosphorylation
+    blocked by 100 uM cantharidin, implicating an UNIDENTIFIED PPP-family phosphatase (PPP1/PPP2/PPP4/PPP5
+    are inhibited together at that dose); NPR2-7E is FGF-resistant and lengthens bone.
+- ref_id: wagner2021
+  pmid: '33784257'
+  first_author: Wagner BM
+  year: 2021
+  type: primary
+  one_line_finding: Homozygous GC-B(7E/7E) crossed into HOMOZYGOUS FGFR3-G380R restores femur/tibia length
+    and hypertrophic zone area to wild-type, with strong sex-specificity at 2 weeks; midface hypoplasia
+    and macrocephaly are NOT rescued; NPR2 phosphorylation state in the G380R growth plate was not measured.
+- ref_id: yasoda2004
+  pmid: '14702637'
+  first_author: Yasoda A
+  year: 2004
+  type: primary_abstract_only
+  one_line_finding: CNP overexpression rescues achondroplasia in FGFR3-Ach mice via MAPK inhibition.
+- ref_id: savarirayan2020
+  pmid: '32891212'
+  first_author: Savarirayan R
+  year: 2020
+  type: primary_abstract_only
+  one_line_finding: Vosoritide increases annualised growth velocity by 1.57 cm/yr in children with achondroplasia.
+open_questions:
+- g_l3core_004
+- g_l2d_004
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. robinson2017, shuhaibar2017 and wagner2021 read
+  in FULL (wagner2021 pending_source cleared). Verdict SCOPED - homozygosity, sex-specificity, cranial
+  non-rescue and the never-measured NPR2 phosphorylation state in G380R growth plate all added.
+last_verified: '2026-08-05'

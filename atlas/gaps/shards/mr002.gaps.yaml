@@ -1,0 +1,134 @@
+gaps:
+  - gap_id: g_mr002_h2
+    question: >-
+      Does the concentration of a CNP analogue inside growth plate cartilage saturate as
+      plasma exposure rises, such that plate concentration plateaus regardless of plasma AUC?
+    type: method_blocked
+    layer: L12
+    why_it_matters: >-
+      This is the atlas's own 0-of-12 finding acting as a competing explanation for the
+      atlas's own exposure-duration observation. If the avascular, diffusion-limited plate
+      imposes a concentration ceiling, then two agents with 300-fold different plasma
+      exposure would converge on the same plate concentration and the same effect - with no
+      downstream gating required. H2 and H1 are indistinguishable from any plasma-side
+      measurement, and every dose-selection decision in this field currently assumes H2 is
+      false without testing it.
+    what_is_known: >-
+      No compound in the audited set has a published growth plate tissue concentration in
+      any species. Navepegritide shows within-trial dose-dependence up to 100 ug/kg/week;
+      vosoritide exposure predicts urine cGMP but not growth. Both are consistent with H2.
+    what_is_missing: >-
+      Paired plasma and intra-plate concentration at multiple plasma exposure levels, in
+      any species, for any CNP analogue.
+    nearest_evidence: [savarirayan2023, galetaki2026]
+    discriminating_experiment: >-
+      Administer a CNP analogue to a large-animal model with a plate of human-comparable
+      thickness (pig or sheep; rodent plates are too thin for diffusion limitation to be
+      measurable) at three plasma exposure levels spanning at least a 10-fold range. Measure
+      intra-plate drug concentration by MALDI imaging mass spectrometry on frozen sections,
+      resolved by zone, with paired plasma PK. Readout: plate concentration versus plasma
+      AUC. Under H2 the relationship saturates and the resting zone plateaus at a small
+      fraction of plasma level, predicting that dose escalation past that point cannot
+      work. Under free equilibration the relationship stays linear and H2 is excluded,
+      leaving H1 and H3.
+    tractability: 3
+    search_log_ref: g_mr002_h2
+
+  - gap_id: g_mr002_h3
+    question: >-
+      Was the approved vosoritide dose selected on an efficacy plateau or on a blood-pressure
+      / tolerability limit, and does efficacy continue to rise above the tolerability cap?
+    type: known_unknown
+    layer: L12
+    why_it_matters: >-
+      CNP is vasoactive. If dosing is capped by hypotension rather than by an efficacy
+      plateau, then both agents sit BELOW their biological ceiling and would appear
+      equivalent regardless of whether any downstream gating exists. This single fact
+      discriminates H3 from H1 and it is answerable from documents that already exist.
+    what_is_known: >-
+      The vosoritide label states the cGMP response is saturated at the approved dose.
+      ACcomplisH reported no symptomatic hypotension at navepegritide 100 ug/kg/week, which
+      argues against a tolerability cap being binding for that agent at that dose.
+    what_is_missing: >-
+      The FDA clinical pharmacology review and dose-justification section, which states the
+      basis on which the dose was chosen. The label alone does not distinguish "saturated"
+      from "as high as we dared go".
+    nearest_evidence: [savarirayan2020, savarirayan2023]
+    discriminating_experiment: >-
+      Documentary first: retrieve the FDA clinical pharmacology/biopharmaceutics review for
+      NDA 214938 and read the dose-selection rationale. If efficacy plateaued, H3 is
+      excluded. If the dose was tolerability-limited, H3 is live and the experimental test
+      is efficacy at supra-cap doses under blood-pressure support, or in a model lacking the
+      vascular liability (e.g. a CNP analogue engineered for reduced NPR2 activity in
+      vasculature versus cartilage).
+    tractability: 5
+    search_log_ref: g_mr002_h3
+
+  - gap_id: g_mr002_h1
+    question: >-
+      At saturating versus sub-saturating NPR2 occupancy, does growth plate cGMP or PKG-II
+      activity continue to rise, or does the downstream response saturate before the
+      receptor does?
+    type: species_gap
+    layer: L12
+    why_it_matters: >-
+      H1 is the hypothesis the atlas originally asserted. It is testable and has not been
+      tested. It also connects to L3 contradiction C-L3-03: NPR2 is reported at similar
+      levels across all three zones while PKG-I/II is far higher in hypertrophic cells, so
+      the transducer, not the receptor, may set the zonal ceiling.
+    what_is_known: >-
+      Vosoritide exposure predicts urine cGMP (a systemic readout) but not growth. No
+      growth-plate cGMP or PKG-II measurement exists at defined receptor occupancy.
+    what_is_missing: >-
+      A zone-resolved downstream readout in plate tissue across a receptor-occupancy range.
+    nearest_evidence: [galetaki2026]
+    discriminating_experiment: >-
+      In a large-animal or mouse model, dose a CNP analogue across a range spanning
+      sub-saturating to saturating NPR2 occupancy (occupancy confirmed by receptor binding
+      or phospho-NPR2), then measure zone-resolved plate cGMP and PKG-II substrate
+      phosphorylation (e.g. phospho-VASP) by immunostaining on the same sections.
+      Under H1 the downstream readout plateaus while occupancy is still rising, and it
+      plateaus at a lower occupancy in the resting zone than the hypertrophic zone.
+      Under a simple receptor-limited model, the downstream readout tracks occupancy
+      throughout and H1 is excluded.
+    tractability: 3
+    search_log_ref: g_mr002_h1
+
+  - gap_id: g_mr002_allele
+    question: >-
+      What is the potency of infigratinib, and of FGFR3 inhibitors generally, against
+      G380R-activated FGFR3 - the transmembrane allele that actually causes achondroplasia -
+      as opposed to the kinase-domain alleles on which all published potency data rest?
+    type: search_established
+    layer: L12
+    why_it_matters: >-
+      Every FGFR3-inhibitor programme in achondroplasia targets G380R, a TRANSMEMBRANE
+      variant that activates the receptor by altered dimerisation and impaired
+      downregulation. All located potency data are on KINASE-DOMAIN alleles: K650E and K650M
+      (the 89-fold potency inversion) and N540K (the hypochondroplasia low-dose work).
+      Whether an inhibitor's potency rank order transfers across a different activation
+      mechanism is an assumption, not a finding. It matters in both directions: the
+      non-monotonicity argument AGAINST simple dose-down reasoning is also allele-limited,
+      so the therapeutic case is neither as weak nor as strong as either side's data implies.
+    what_is_known: >-
+      Infigratinib IC50 0.5 nM (K650E) vs 44.4 nM (K650M). Low-dose infigratinib is
+      effective in a hypochondroplasia (N540K) model. Separately, biochemical activation
+      ordering K650E > G380R DOES match phenotypic ordering thanatophoric > achondroplasia,
+      so activation and severity track across that comparison - non-monotonicity is specific
+      to the K650E/K650M kinase-domain pair.
+    what_is_missing: >-
+      Any published IC50 or cellular potency measurement against G380R-activated FGFR3 for
+      infigratinib or any other FGFR3 inhibitor.
+    nearest_evidence: [demuynck2025, ye2026]
+    discriminating_experiment: >-
+      Parallel cellular potency assay in isogenic lines expressing FGFR3 G380R, K650E, K650M
+      and N540K at matched receptor density, reading out phospho-ERK and phospho-STAT1 dose-
+      response for each inhibitor, plus a chondrocyte differentiation readout in the same
+      lines. Under transferable potency the IC50 rank order is preserved across activation
+      mechanisms and the kinase-domain data can be used to guide G380R dosing. Under
+      mechanism-specific potency, G380R sits outside the kinase-domain rank order - which
+      would mean current dose selection for achondroplasia rests on the wrong allele.
+      Regulatory submissions and patents are the most likely existing source of this data
+      and should be requested before the experiment is run.
+    tractability: 4
+    search_log_ref: g_mr002_allele

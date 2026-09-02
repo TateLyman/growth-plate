@@ -1,0 +1,2452 @@
+=== PAGE 1 ===
+https://doi.org/10.1177/19476035241302954
+CARTILAGE
+© The Author(s) 2024
+DOI: 10.1177/19476035241302954
+journals.sagepub.com/home/CAR
+Creative Commons CC BY: This article is distributed under the terms of the Creative Commons Attribution 4.0 License  
+(https://creativecommons.org/licenses/by/4.0/) which permits any use, reproduction and distribution of  
+the work without further permission provided the original work is attributed as specified on the SAGE and Open Access pages  
+(https://us.sagepub.com/en-us/nam/open-access-at-sage).
+Original Article
+1302954 CARXXX10.1177/19476035241302954CARTILAGEZhang et al.
+research-article20242024
+Genomic Effects of Biomechanical  
+Loading in Adolescent Human Growth  
+Plate Cartilage: A Pilot Study
+Zhengpei Zhang1 , Nageswara Rao Boggavarapu2 ,  
+Laila Sara Arroyo Muhr3 , Ainhoa Garcia-Serrango3 , Tim RJ Aeppli1 ,  
+Tobia Sebastiano Nava4, Yunhan Zhao1 , Elena M. Gutierrez-Farewik4,  
+Artem Kulachenko5, Lars Sävendahl1*, and Farasat Zaman1*
+Abstract
+Objective. The genomic effects of biomechanical loading on human growth plate cartilage are unknown so far. To address 
+this, we used rare human growth plate biopsies obtained from children undergoing epiphysiodesis and exposed them to 
+precisely controlled mechanical loading using a microloading device. The biopsies were cultured 24 hours after mechanical 
+loading, followed by RNA-sequencing analyses to decipher the genomic regulation. Design. We conducted RNA-seq analysis 
+of human growth plate cartilage obtained from three patients cultured ex vivo and subjected to cyclical mechanical loading 
+with peak 0.4 N with frequency 0.77 Hz during a 30-second duration, using a specialized microloading device. Results. Gene 
+ontology analysis revealed novel data showing three significantly upregulated signaling pathways, including notch, oxytocin, 
+and tight junction, and three significantly downregulated signaling pathways, including lysosome, sphingolipid metabolism, and 
+peroxisome proliferator-activated receptor (PPAR) in human growth plate cartilage. Moreover, we found 15 significantly 
+regulated genes within these signaling pathways from all three patients. These genes included PSEN2, HEY1, and NCOR2 
+from the notch signaling; CACNB1 and PPP3R2 from the oxytocin signaling; ACTR3C, WHAMM, and ARHGEF18 from 
+the tight junction signaling; ARSA, SMPD1, and CD68 from the lysosome signaling; ARSA and SMPD1 from the sphingolipid 
+metabolism signaling; and SLC27A4 and AQP7 from the PPAR signaling pathway. In addition, 20 significantly upregulated 
+genes and six significantly downregulated genes shared between two patient samples were identified. Conclusion. Our 
+study provides the first-ever transcriptomic data of mechanical loading of human growth plate cartilage. These findings can 
+potentially provide genetic targets for future investigations in physiological and pathological bone growth conditions.
+Keywords
+genomic, biomechanical loading, human growth plate, RNA-seq, chondrocytes
+1Division of Paediatric Endocrinology, Department of Women’s and Children’s Health, Karolinska Institutet, Solna, Sweden
+2Division of Obstetrics and Gynaecology, Department of Women’s and Children’s Health, Karolinska University Hospital, Karolinska Institutet, 
+Stockholm, Sweden
+3Center for Cervical Cancer Elimination, Department of Clinical Science, Intervention and Technology, Karolinska University Hospital, Stockholm, 
+Sweden
+4KTH MoveAbility Lab, Department of Engineering Mechanics, KTH Royal Institute of Technology, Stockholm, Sweden
+5Material and Structural Mechanics, Department of Engineering Mechanics, KTH Royal Institute of Technology, Stockholm, Sweden
+*Share senior authorship.
+Supplementary material for this article is available on the Cartilage website at http://cart.sagepub.com/supplemental.
+Corresponding Authors:
+Zhengpei Zhang, Division of Pediatric Endocrinology, Department of Women’s and Children’s Health, Karolinska Institutet, 171 65 Stockholm, 
+Sweden. 
+Email: zhengpei.zhang@ki.se
+Farasat Zaman, Division of Pediatric Endocrinology, Department of Women’s and Children’s Health, Karolinska Institutet, 171 65 Stockholm, Sweden. 
+Email: farasat.zaman@ki.se
+2026, Vol. 17(3) 829–844
+=== PAGE 2 ===
+830 CARTILAGE 17(3)
+Introduction
+Longitudinal bone growth, or linear growth, occurs at the 
+growth plate, where chondrocytes proliferate and differenti-
+ate into mineralized bone tissue.1 The growth plate serves as 
+a center for bone growth and is governed by the delicate 
+interplay of numerous factors, primarily genes, hormones, 
+and mechanical loading.2
+Mechanical loading, which involves the application of 
+forces on the skeletal system, emerges as a key factor in 
+modulating longitudinal bone growth. 3 The impact of 
+mechanical loading on longitudinal bone growth depends 
+on the intensity; moderate mechanical loading helps to 
+maintain the integrity of the growth plate, but disuse or 
+overuse can result in growth plate degradation. 4 
+Importantly, mechanical loading has been found to 
+increase human bone mineral values, 5 bone mineral den-
+sity,6 cartilage development and composition, 7 and skele-
+tal development. 8 A previous study reported that cyclical 
+mechanical loading with peak force 0.4 N at a low fre-
+quency of 0.77 Hz significantly stimulated bone growth in 
+rat embryonic femur bones cultured ex vivo.9 Furthermore, 
+subjecting one leg in mice to loading of 0.5 N at a high 
+frequency of 20 Hz has also been reported to significantly 
+increase femur length in the loaded leg compared with the 
+contralateral leg. 10 This growth-promoting effect in the 
+femur was associated with increased growth plate height 
+and number of chondrocytes.
+Coordinated proliferation and differentiation of chon-
+drocytes are essential for the continuous elongation of the 
+epiphyseal growth plate. Numerous signaling pathways, 
+including bone morphogenetic protein (BMP) signaling, 11 
+transforming growth factor-beta (TGF- E) signaling, 12 
+Indian hedgehog (Ihh), 13 Wnt/ E-catenin signaling  
+pathway,14 notch signaling, 15 peroxisome proliferator-
+activated receptor (PPAR) signaling, 16 oxytocin signal-
+ing, and insulin-like growth factor 1 (IGF-1) 17,18 play 
+critical roles in this process. Tight junction signaling is 
+known to help to maintain the chondrocyte layer’s struc-
+tural and functional integrity. Interestingly, it is also regu-
+lated by IGF-1, a key player in the coordination of 
+chondrocyte proliferation and differentiation. 19 In addi-
+tion, lysosomal exocytosis participates in the regulation 
+of chondrocyte function and cartilage remodeling within 
+the growth plate. 20 Furthermore, a recent study has high-
+lighted the significance of sphingolipid metabolism in 
+skeleton development. 21
+Previously, we identified that applying a mechanical 
+loading of 0.4 N at 0.77 Hz significantly enhanced the lon-
+gitudinal bone growth of embryonic femur bones cultured 
+ex vivo.9 In this study, we aim to elucidate the gene expres-
+sion and signaling pathway alterations associated with lon-
+gitudinal bone growth in human growth plate cartilage 
+subjected to the same mechanical loading. Currently, there 
+are no data on the impact of mechanical loading on signal-
+ing pathways and genes involved in longitudinal bone 
+growth within human growth plate cartilage. This study 
+aims to address this gap in knowledge and will contribute to 
+a deeper understanding of the connection between mechani-
+cal loading and the regulation of genes involved in longitu-
+dinal bone growth.
+Material and Methods
+Culture of Human Growth Plate Biopsies
+The collection of human growth plate biopsies was 
+approved by the local human ethics committee (Karolinska 
+Institutet Research Ethics Committee North at the 
+Karolinska University Hospital, Stockholm, Sweden). 
+Informed consent was obtained from all subjects and their 
+parents, which was documented in the original hospital 
+records. We collected the growth plate biopsies from the 
+distal femur and proximal tibial growth plates simultane-
+ously in adolescent patients with familial tall stature (two 
+girls, one boy; age range: 12-15 years) undergoing epi-
+physiodesis surgery. This is a condition characterized by an 
+individual growing significantly taller than average with-
+out any underlying medical disorders affecting growth. 
+Immediately after collection, the biopsies were sliced and 
+cultured in Dulbecco’s modified Eagle’s medium/nutrient 
+mixture F-12 Ham (DMEM-F12) medium containing 
+gentamycin (10 Pg/ml), 0.2% bovine serum albumin 
+(BSA), 1 mM beta-glycerophosphate, and ascorbic acid 
+(50 Pg/ml), as previously described. 22
+Application of Mechanical Loading  
+on Human Growth Plates
+As previously described, we used an easy-to-operate micro-
+loading device capable of applying dynamic mechanical 
+loading via a controller and frame. 9 The design of this 
+device facilitates loading in both ex vivo cultured bones and 
+in vivo conditions while minimizing the risk of sample dam-
+age, as the force control is verified in the software accom-
+panying the controller. Before applying mechanical load, 
+the microloading device is clamped to a table and connected 
+to the laptop controller and router. This small mobile device 
+can be used at room temperature.
+The main components of the device include a linear 
+actuator, actuator controller, wireless broadband router, and 
+mounting frame and computer. The loading instruments 
+consist of an indenter with a convex elastomer cover, a flat 
+indenter, and 3D-printed needle attachments. The device 
+can apply forces ranging from 0.05 to 5 N, with repetitive 
+impacts (30-180 reps) and continuous sinusoidal loading 
+(5-20 Hz). In addition, the adjustable tool height (min. 80 
+=== PAGE 3 ===
+Zhang et al. 831
+mm) improves sample positioning, further reducing the risk 
+of damage9 (Fig. 1).
+The force control was verified using the controller’s 
+software, with the first cycle dedicated to adjustments to 
+ensure the maximum force was not exceeded. Subsequent 
+load cycles were repeatable and accurately followed the 
+target profile while maintaining a low level of noise. The 
+pressure range achieved through mechanical loading at 
+various levels was confirmed using pressure-sensitive 
+film, which indicated that color intensity on the contact 
+surface increased with load. This suggests that the 0.1 
+MPa threshold is surpassed at approximately 0.5 N. 
+Mechanical loading of 0.4 N at 0.77 Hz was used in this 
+study, as it was identified to significantly enhanced the 
+longitudinal bone growth of embryonic femur bones cul-
+tured ex vivo.
+Fresh growth plate biopsies were under light micros-
+copy excised into small pieces, which were immediately 
+transferred to a Petri dish containing culture medium. 
+Thereafter, six biopsies (one biopsy per well in a 24-well 
+plate) from each patient were randomly allocated into two 
+groups: the mechanical loading group ( n = 3) and the con-
+trol group ( n = 3), with biopsies from all three patients 
+included in both groups. Each biopsy fragment from the 
+single patient was treated as an individual observation, as 
+each piece undergoes independent exposure to mechanical 
+loading and is cultured separately, including RNA extrac-
+tion. This methodology mirrors that of fetal rat embryonic 
+metatarsal bones derived from the same embryos, where 
+each bone is treated as a distinct observation due to sepa-
+rate treatment. 23 Before applying mechanical loading, the 
+growth plate tissue specimen was vertically positioned on 
+the indenter to transmit the force laterally through the 
+growth plate. In the loading group, we administered 
+mechanical loading at 0.4 N with 0.77 Hz over 30 seconds. 
+This regimen, as previously established in our research, 
+has been shown to facilitate bone growth and was applied 
+using our customized microloading device. 9 In the control 
+group, we followed the same procedure, but no mechanical 
+loading was applied. Mechanical loading was immediately 
+applied to the biopsies after their random allocation into 
+the 24-well plate (Fig. 2).
+RNA Preparation From Human Growth Plate 
+Biopsies Exposed to Mechanical Loading
+After 24 hours of culture, RNA was extracted from loaded 
+and unloaded biopsies using the Quick-RNATM Microprep 
+Kit (Zymo Research, USA), according to the manufactur-
+ers’ instructions. Briefly, each biopsy was lysed by adding 
+300 Pl lysis buffer to a cryotube containing ZR Bashing 
+beads (Zymo Research) and homogenized using the 
+Disruptor Genie (Zymo Research). Each biopsy was then 
+incubated with DNase I (5 Pl 1U/Pl DNase mixed with 35 
+Pl DNA digestion buffer) at room temperature for 15 min-
+utes and washed with 400 Pl RNA prep buffer, 700 Pl 
+RNA wash buffer and another 400 Pl RNA wash buffer; 15 
+Pl DNase/RNase-free water was added, so that, RNA from 
+each biopsy was extracted and stored at −80 °C until fur-
+ther use.
+RNA-seq Library Preparation and Analysis
+RNA libraries for next-generation sequencing were con-
+structed individually from all the samples using the well-
+established Smart-seq2 protocol. A total of 1 ng of total 
+RNA was subjected to reverse transcription.24 Tagmentation 
+was performed in all individual cDNA libraries using the 
+Nextera XT kit (Illumina Inc., USA), using dual index bar-
+codes (IDT technologies, Belgium). 25 The final amplified 
+libraries were purified with Ampure XP beads (Beckman 
+Coulter, USA) in a ratio of 1:1.
+Figure 1. Customized microloading device from sketch to reality. The microloading device can specifically deliver repetitive loading 
+to ex vivo cultured tissue.9
+=== PAGE 4 ===
+832 CARTILAGE 17(3)
+All individual libraries were validated, normalized, 
+pooled, denatured, and diluted. The pool was sequenced 
+paired-end (151 + 151 cycles), using the Illumina Novaseq 
+6000 (Novogene [UK] company limited). The processing 
+and analysis of raw sequencing data were performed using 
+the Partek ® Flow ® platform (Partek Inc., USA). Briefly, 
+Illumina adapters were trimmed from all the sequencing 
+reads, and the adaptor-trimmed sequencing reads were 
+aligned to the human genome GRCh38 (hg38) using the 
+STAR aligner with default parameters. Reads were then 
+quantified against GENCODE human genes release 35. 
+Mitochondrial, ribosomal, and genes detected with expres-
+sion levels < 1 in at least 80% of the samples were filtered 
+out.
+Statistical Analysis
+Differential analysis was performed between the groups 
+using the DESeq2 tool, considering genes and effects as sta-
+tistically significant when they had a P value < 0.05 and a 
+fold change (FC) threshold of ≤ −2 or ≥ 2. Pathway analysis 
+was conducted using the KEGG database, and pathways 
+with a p value < 0.05 were considered significant biologi-
+cal signaling pathways.
+Results
+Significantly Regulated Genes by Mechanical 
+Loading in Individual Patients
+We identified notable genes that responded to mechanical 
+loading in three patients. Patient 1 exhibited 250 genes with 
+significant upregulation and 685 genes showing 
+downregulation. For patient 2, we observed 980 genes with 
+significant upregulation and 174 genes with downregula-
+tion. Regarding patient 3, 134 genes upregulated signifi-
+cantly and 111 genes downregulated significantly (Fig. 3).
+Significantly Regulated Genes Shared  
+Among Individual Patients
+A Venn diagram illustrates upregulated (Fig. 4A) and down-
+regulated genes ( Fig. 4B ) shared across three individual 
+patients. Among the upregulated genes, six genes, including 
+activating transcription factor 3 (ATF3), FP236383.4, 
+FP236383.5, FP236383.6, mitochondrially encoded tRNA 
+glutamic acid (MT-TE), and period circadian regulator 
+(PER1) are shared between patients 1 and 2, and 14 genes, 
+including AP001437.2, dynein axonemal heavy chain 10 
+(DNAH10), EMC3 antisense RNA 1 (EMC3-AS1), 
+LINC01503, mitochondrial methionyl-tRNA formyltrans-
+ferase (MTFMT), NK2 homeobox 5(NKX2-5), SEC14 like 
+binding 3 (SEC14L3), tumor protein translationally con-
+trolled 1 pseudogene 8 (TPT1P8), tubulin tyrosine ligase-
+like 3 (TTLL3), V AC14 antisense RNA 1 (V AC14-AS1), 
+Z99129.3, zinc finger protein 66 (ZNF66), zinc finger pro-
+tein 99 (ZNF90), and zinc finger protein 555 (ZNF555) are 
+shared between patients 2 and 3 (Tables 1 and 2). However, 
+no upregulated genes are shared between patients 1 and 3. 
+Regarding the downregulated genes, two genes, including 
+aquaporin 9 (AQP9) and stathmin 1 (STMN1) are shared 
+between patients 1 and 2, 4 genes, including AC107208.1, 
+family with sequence similarity 66, member C (FAM66C), 
+harbinger transposase-derived 1 (HARBI1), and ring finger 
+protein, transmembrane 2 (RNFT2) are shared between 
+patients 1 and 3 (Tables 3 and 4).  There are no shared 
+Figure 2. Experimental setup for studying mechanical loading effects on human growth plate cartilage. Briefly, human growth plate 
+tissue samples collected from children after epiphysiodesis surgeries were carefully isolated from bone structures. These samples 
+were then cut into small pieces (marked with yellow stripe lines) and randomly assigned into two groups: one group was subjected to 
+one-time mechanical loading in a computer-controlled micro-mechanical loader and another one (control group) was sham-loaded. 
+The biopsies were thereafter cultured for 24 hours followed by RNA sequencing.
+=== PAGE 5 ===
+Zhang et al. 833
+downregulated genes between patients 2 and 3. In addition, 
+no upregulated or downregulated genes are shared across 
+all three patients.
+Identification of Signaling Pathways and  
+Genes Affected by Mechanical Loading
+Analysis of all samples together (load group n = 9, control 
+group n = 9, replicates) revealed a total of six distinct sig-
+naling pathways significantly affected by mechanical load-
+ing. Our data revealed significant regulatory patterns within 
+these pathways, with three pathways showing significant 
+upregulation: notch (P = 0.003), oxytocin (P = 0.039), and 
+tight junction signaling pathways ( P = 0.043) ( Table 5). 
+Conversely, three pathways displayed downregulation: lys-
+osome (P = 0.003), sphingolipid metabolism (P = 0.023), 
+and PPAR signaling pathways ( P = 0.042) ( Table 6). An 
+overview of these six signaling pathways significantly reg-
+ulated by mechanical loading is shown in Figure 5 . The 
+neural network analysis also highlights genes within these 
+six signaling pathways affected significantly by mechanical 
+loading (Fig. 6). Neural network figures included all signal-
+ing pathways, both significant and non-significant, showing 
+downregulation (Supplementary Fig. 1A, B), and upregu-
+lation (Supplementary Fig. 2A, B).
+In addition, we identified a total of 15 significantly regu-
+lated genes from the signaling pathways in the loaded growth 
+plate group compared with the untreated group. These include 
+PSEN2 (presenilin-2), HEY1 (hairy/enhancer-of-split related 
+to YRPW motif protein 1), and NCOR2 (human nuclear 
+receptor co-repressor 2) from the notch signaling pathway; 
+CACNB1(calcium voltage-gated channel auxiliary subunit 
+beta 1), and PPP3R2 (protein phosphatase 3 regulatory sub-
+unit B, beta), PPP1R12C (protein phosphatase 1 regulatory 
+subunit 12C) from the oxytocin signaling pathway; ACTR3C 
+(actin-related protein 2/3 complex), WHAMM (WASP 
+homolog associated with actin, Golgi membranes and micro-
+tubules), and ARHGEF18 (Rho/Rac guanine nucleotide 
+exchange factor 18) from the tight junction signaling path-
+way; MAN2B1 (mannosidase alpha class 2B member 1), 
+ARSA (arylsulfatase A), SMPD1 (sphingomyelin phospho-
+diesterase 1), and CD68 (cluster differentiation 68) from the 
+lysosome signaling pathway; ARSA and SMPD1 from sphin-
+golipid metabolism signaling pathway; and SLC27A4 (sol-
+ute carrier family 27 member 4) and AQP7 (aquaporin-7) 
+from the PPAR signaling pathway (Fig. 7).
+Discussion
+Significantly Upregulated Genes Shared  
+Across Two Patients
+Six upregulated genes, including ATF3, FP236383.4, 
+FP236383.5, FP236383.6, MT-TE, and PER1 are found to 
+Figure 3. Volcano plot-based profiling of mechanically 
+regulated genes in individual patients. The red dots denote 
+upregulated genes, the blue dots denote downregulated genes, 
+and the black dots denote non-significant genes.
+=== PAGE 6 ===
+834 CARTILAGE 17(3)
+be shared across patients 1 and 2. ATF3 has been shown to 
+be directly responsive to mechanical loading,26 PER1 could 
+influence the adaption to mechanical loading through circa-
+dian regulation of physiological processes 27,28 and MT-TE 
+could support the energy demands during mechanical load-
+ing process via its role in mitochondrial function. 29,30 
+Collectively, these genes could help chondrocytes to 
+respond and manage mechanical loading, maintaining carti-
+lage health and function. However, there are no current data 
+regarding the regulation of mechanical loading on genes 
+FP236383.4, FP236383.5, and FP236383.6.
+Fourteen upregulated genes, including AP001437.2, 
+DNAH10, EMC3-AS1, LINC01503, MTFMT, NKX2-5, 
+SEC14L3, TPT1P8, TTLL3, V AC14-AS1, Z99129.3, ZNF66, 
+ZNF90, and ZNF555, are found to be shared across patients 2 
+and 3. NKX2-5 is known to be regulated by mechanical load-
+ing in bone and heart tissues.31,32 In this study, we identified 
+that NKX2-5 is also regulated by mechanical loading in  
+cartilage tissue. AP001437.2, EMC3-AS1, LINC01503,  
+and V AC14-AS are noncoding RNAs, which are known to 
+modulate chondrocyte differentiation, proliferation, and 
+extracellular matrix production.33 Importantly, MTFMT may 
+be upregulated to meet the increased energy demands due to 
+heightened mitochondrial activity required during mechanical 
+loading.34,35 Structural genes, such as DNAH10 and TTLL3, 
+are essential for maintaining cytoskeletal integrity and intra-
+cellular transport, which is crucial for chondrocyte function 
+under mechanical stimuli.36,37 SEC14L3 may influence lipid 
+signaling and membrane dynamics, which is important for 
+maintaining cell membrane stability and signaling under 
+mechanical loading.38,39 ZNF66, ZNF90, and ZNF555 are 
+zinc finger proteins, which are known to be regulated by 
+mechanical loading, ensuring proper cellular adaption. 40,41 
+However, the roles of TPT1P8 and Z99129.3 remain largely 
+unexplored.
+Significantly Downregulated Genes Shared 
+Across Two Patients
+Two downregulated genes, including AQP9 and STMN1, 
+are shared between patients 2 and 3. AQP9 can facilitate 
+water and solute transport to manage osmotic balance and 
+Figure 4. Venn diagram illustrating significantly (A) upregulated and (B) downregulated common genes upon mechanical loading 
+shared between each patient.
+Table 1. A List of Six Significantly Upregulated Genes in the Human Growth Plate Cartilage of Both Patients 1 and 2.
+Gene Name Patient 1 Fold Change Patient 1 P value Patient 2 Fold Change Patient 2 P Value
+ATF3 2.722 0.015 3.311 0.041
+FP236383.4 2.009 0.004 3.436 0.026
+FP236383.5 2.187 0.001 3.554 0.021
+FP671120.6 2.156 0.002 3.552 0.021
+MT-TE 2.708 0.013 5.205 0.021
+PER1 2.467 0.045 3.929 0.027
+=== PAGE 7 ===
+Zhang et al. 835
+hydration,42 while STMN1 modulates microtubule dynam-
+ics to maintain cytoskeletal integrity. 43 Together, these 
+adjustments support cartilage maintenance, function, and 
+enable chondrocytes to adapt to mechanical loading.
+Four downregulated genes, including AC107208.1, 
+FAM66C, HARBI1, and RNFT2, are shared between 
+patients 1 and 3. FAM66C, as a noncoding RNA, could 
+regulate chondrocyte differentiation, proliferation, and 
+extracellular matrix production. 33 However, there are no 
+specific data regarding the regulation of mechanical loading 
+on HARBI1, RNFT2, and AC107208.1.
+It is noteworthy that we observed commonly shared 
+upregulated or downregulated genes only between two 
+patients, rather than among all three patients. This occur-
+rence is attributed to instances where a gene is found upreg-
+ulated in one or two patients but downregulated in the other 
+patient(s).
+Signaling Pathways Activated by  
+Mechanical Loading
+Notch signaling pathway. Our data showed that the notch 
+signaling pathway was significantly upregulated ( P = 
+0.003) in human growth plate cartilage exposed to mechani-
+cal loading (Table 5).
+The notch signaling pathway is a cell-to-cell communi-
+cation pathway involved in various cellular and tissue pro-
+cesses in skeletal development and homeostasis. 44 
+Mechanical loading has previously been linked to the notch 
+signaling pathway. For example, decreased mechanical 
+loading was reported to reduce notch-1 signaling in the 
+mandibular condylar cartilage of growing rabbits. 45 
+Throughout chondrogenesis, notch signaling has been dem-
+onstrated to have context-dependent functions. 46 
+Specifically, notch signaling inhibits early chondrogenic 
+Table 2. A List of 14 Significantly Upregulated Genes in the Human Growth Plate Cartilage of Both Patients 2 and 3.
+Gene Name Patient 2 Fold Change Patient 2 P value Patient 3 Fold Change Patient 3 P Value
+AP001437.2 4.785 0.039 2.161 0.041
+DNAH10 5.944 0.006 2.402 0.036
+EMC3-AS1 3.134 0.041 2.057 0.027
+LINC01503 4.112 0.038 3.629 0.006
+MTFMT 4.470 0.014 2.922 0.039
+NKX2-5 9.461 0.012 2.448 0.039
+SEC14L3 4.412 0.017 2.627 0.018
+TPT1P8 6.753 0.018 2.359 0.045
+TTLL3 3.108 0.029 2.125 0.005
+VAC14-AS1 4.206 0.031 2.000 0.032
+Z99129.3 8.395 0.008 2.249 0.014
+ZNF66 3.014 0.047 2.033 0.030
+ZNF90 6.706 0.005 2.050 0.005
+ZNF555 2.833 0.014 2.050 0.019
+Table 3. A List of Two Significantly Downregulated Genes in the Human Growth Plate Cartilage of Both Patients 1 and 2.
+Gene Name Patient 1 Fold Change Patient 1 P value Patient 2 Fold Change Patient 2 P Value
+AQP9 −4.646 0.031 −3.014 0.014
+STMN1 −2.319 0.014 −2.018 0.037
+Table 4. A List of Four Significantly Downregulated Genes in the Human Growth Plate Cartilage of Both Patients 1 and 3.
+Gene Name Patient 1 Fold Change Patient 1 P value Patient 3 Fold Change Patient 3 P Value
+AC107208.1 −10.900 0.016 −2.296 0.020
+FAM66C −9.090 0.013 −2.068 0.024
+HARBI1 −13.219 0.010 −2.227 0.031
+RNFT2 −9.197 0.013 −2.274 0.034
+=== PAGE 8 ===
+836 CARTILAGE 17(3)
+cell differentiation via SOX9 and proliferation independent 
+of RBPJk; however, it stimulates mesenchymal stem cells 
+by inhibiting their differentiation and hypertrophy.46-48
+Recent studies have indicated a beneficial effect of acti-
+vating notch signaling in bone. 49 Activation of notch in 
+osteocytes can initiate a beneficial bone-building response 
+in mature bones.50 Likewise, disruptions in notch signaling 
+can lead to skeletal abnormalities and growth disorders, 
+such as spondylocostal dysostosis and short-trunk dwarfism 
+characterized by impaired vertebrae and ribs.51 In our study, 
+we identified three genes within the notch signaling path-
+way: PSEN2, a feedback regulator on notch, exhibited 
+Table 5. Significantly Upregulated Signaling Pathways in Cultured Human Growth Plate Cartilage ( n = 3 From Each of Three 
+Patients) Treated With Mechanical Force 0.4 N at 0.77 Hz Over 30 Seconds.
+Description Enrichment Score P Value
+Notch signaling pathway 3.401 0.003
+Oxytocin signaling pathway 3.257 0.039
+Tight junction signaling pathway 3.140 0.043
+Table 6. Significantly Downregulated Signaling Pathways in Human Growth Plate Cartilage ( n = 9) Exposed to Mechanical Loading 
+0.4 N at 0.77 Hz Over 30 Seconds.
+Description Enrichment Score P Value
+Lysosome signaling pathway 5.844 0.003
+Sphingolipid metabolism signaling pathway 3.746 0.023
+PPAR signaling pathway 3.172 0.042
+Figure 5. Overview of chondrocyte signaling pathways significantly regulated upon mechanical loading (0.4 N, 0.77 Hz, 30 seconds) 
+of cultured human growth plate cartilage in three patients.
+=== PAGE 9 ===
+Zhang et al. 837
+notable downregulation. Conversely, NCOR2 and HEY1, 
+both serving as transcription factors in the notch signaling 
+pathway, demonstrated significant gene upregulation in 
+human growth plate cartilage exposed to mechanical load-
+ing (Fig. 7). These findings highlight the potential relevance 
+of these gene targets for further investigation into the role of 
+the notch signaling pathway in bone growth modulation 
+through mechanical loading.
+Oxytocin signaling pathway. Our analysis revealed a notable 
+upregulation (P = 0.039) of the oxytocin signaling pathway 
+in human growth plate cartilage upon exposure to mechani-
+cal loading (Table 5).
+Emerging studies have investigated the role of oxytocin 
+in cartilage and chondrocyte biology. Chondrocytes have 
+been found to express oxytocin receptors in animals and 
+humans, suggesting their responsiveness to oxytocin. 52,53 
+The presence of these receptors suggests that oxytocin may 
+directly influence chondrocyte function. Indeed, previous 
+reports have shown that oxytocin treatment promotes chon-
+drocyte proliferation, suggesting a role in the regulation of 
+cartilage growth and repair.53 In addition, oxytocin has been 
+shown to enhance the differentiation of chondrocytes, lead-
+ing to the production of cartilage-specific extracellular 
+matrix components.52
+In animal models of cartilage injury or osteoarthritis, 
+oxytocin treatment has been reported to promote cartilage 
+repair and reduce degenerative changes. Furthermore, 
+oxytocin has been reported to stimulate the synthesis of 
+cartilage matrix molecules and enhance the regenerative 
+capacity of chondrocytes. 54 It is well-known that chondro-
+cytes can release inflammatory mediators, contributing to 
+cartilage inflammation and degradation in conditions, 
+such as osteoarthritis. 55 Oxytocin has been found to exert 
+anti-inflammatory effects on chondrocytes by suppressing 
+the production of pro-inflammatory molecules. 56 This 
+anti-inflammatory action of oxytocin may help mitigate 
+the inflammatory processes associated with cartilage 
+damage.
+In addition, a previous study in mice showed bone ana-
+bolic effects of oxytocin, including increased bone forma-
+tion and improved bone microarchitecture. 57 Similarly, a 
+Figure 6. Neural graph network displaying the six signaling pathways that were detected as significantly regulated, along with the 
+genes within these pathways that were significantly affected by mechanical loading (0.4 N at 0.77 Hz, 30 seconds) in cultured human 
+growth plate cartilage across three patients.
+=== PAGE 10 ===
+838 CARTILAGE 17(3)
+study in rats reported that intraperitoneal injection of oxyto-
+cin increased osteoprotegerin levels and bone remodeling, 
+indicating a beneficial effect of oxytocin on bone 
+formation.58
+Besides the significant activation of the oxytocin signal-
+ing pathway in response to mechanical loading, we identi-
+fied genes, such as CACNB1, PPP3R2, and PPP1R12C, 
+which respond to changes in intercellular calcium levels, 
+indirectly interact with the oxytocin signaling pathway and 
+are upregulated in response to mechanical loading (Fig. 7). 
+Collectively, our findings establish a connection between 
+mechanical loading and the oxytocin signaling pathway in 
+human growth plate cartilage. Considering the known influ-
+ence of mechanical loading on bone growth, 9,10 our data 
+present a plausible mechanism involving the oxytocin sig-
+naling pathway. Furthermore, there is potential speculation 
+that pivotal genes within the oxytocin signaling pathway 
+could serve as viable targets, thereby shedding light on the 
+impact of mechanical loading on the development of longi-
+tudinal bone growth.
+Tight junction signaling pathway. Our findings indicate a sig-
+nificant upregulation ( P = 0.043) ( Table 5) of the tight 
+junction signaling pathway in human growth plate cartilage 
+after exposure to mechanical loading. Tight junctions are 
+intercellular adhesion complexes in epithelia and endothelia 
+that define tissue spaces and control the selective move-
+ment of solutes across the epithelium. 59 Studies have dem-
+onstrated that mechanical loading can modulate the 
+arrangement and organization of tight junction proteins, 
+resulting in changes in barrier permeability.60 For example, 
+cyclic stretching of epithelial cells has been observed to 
+increase the permeability of the tight junctions, potentially 
+affecting the transport of molecules across the tissue.61 Fur-
+thermore, mechanical loading can activate intracellular sig-
+naling pathways that modulate tight junction integrity. 
+These pathways involve various molecules, including 
+mechanosensitive proteins and cytoskeletal components. 
+For instance, the activation of Rho GTPases, which are 
+involved in cytoskeletal organization, can impact tight junc-
+tion assembly and function of tight junction in response to 
+mechanical cues.62
+Mechanical loading can induce tissue remodeling pro-
+cesses, such as cell migration and tissue repair. Tight junc-
+tions may undergo dynamic changes during these processes 
+to facilitate cell movement and tissue restructuring. For 
+example, shock waves which regulate mechanotransduc-
+tion, not only open tight junctions,60 but also prevent vismo-
+degib-induced growth retardation.63 Similarly, in epithelial 
+wound healing, the rearrangement of tight junction proteins 
+Figure 7. Heatmap illustrating genes within the significantly upregulated and downregulated signaling pathway affected by mechanical 
+loading (0.4 N at 0.77 Hz, 30 seconds) among cultured human growth plate cartilage in three patients.
+=== PAGE 11 ===
+Zhang et al. 839
+allows for cell migration and resealing of the epithelial 
+barrier.64
+Dysregulation of tight junctions is associated with vari-
+ous diseases, including inflammatory bowel diseases,65 can-
+cer,66 and cardiovascular disorders.67 However, few studies 
+have investigated whether mechanical loading can regulate 
+skeletal development through tight junctions. A transcrip-
+tomic analysis in small and large breed dogs reported 
+height-related differences in the tight junction pathway, 
+linking this pathway to skeletal development.68 In addition, 
+claudin, known as tight junction proteins, is a family of pro-
+teins suggested to be involved in bone remodeling. 69 
+Furthermore, bone loss was reported in claudin-18 knock-
+out mice, which further linked the tight junction signaling 
+pathway to skeletal development.70
+In alignment with our observed upregulation of the tight 
+junction, ACTR3C, WHAMM, and ARHGEF18, which are 
+regulators of cytoskeletal dynamics, also exhibited signifi-
+cant upregulation upon mechanical loading ( Fig. 7 ). 
+Collectively, these findings contribute valuable insights 
+into the effect of mechanical loading on human growth 
+plate cartilage.
+Signaling Pathways Suppressed  
+by Mechanical Loading
+Lysosome signaling pathway. Our data revealed a notable 
+downregulation (P = 0.003) (Table 6) of the lysosome sig-
+naling pathway within human growth plate cartilage fol-
+lowing exposure to mechanical loading. Lysosomes are 
+membrane-bound organelles found within cells involved in 
+the degradation and recycling of cellular waste, including 
+proteins, lipids, and organelles. 71 Mechanical loading can 
+affect the generation and accumulation of these waste prod-
+ucts72, which, in turn, may influence lysosomal function 
+and cellular homeostasis.
+It is known that lysosomal exocytosis is a repair mecha-
+nism for patching ruptured membranes, for example, 
+under conditions of increased biomechanical load. 73 
+Following membrane disruption, the F-actin network 
+undergoes depolymerization due to a rapid equilibration 
+of intracellular Ca 2+, triggering lysosome accumulation 
+and lysosomal fusion to reseal the perforation. This pro-
+cess is essential for cells to survive in mechanically active 
+environments. 74-78 During skeletal development, it has 
+also been demonstrated that destructive hydrolases are 
+released via lysosomal exocytosis from hypertrophic 
+growth plate chondrocytes. 20
+While understanding the specific effects of mechanical 
+loading on lysosomes is still evolving, we made a novel 
+finding that mechanical loading significantly suppressed 
+the lysosome signaling pathway within human growth plate 
+cartilage. Furthermore, our investigation identified a cluster 
+of genes within the lysosome signaling pathway that is 
+downregulated in response to mechanical loading. This 
+cluster includes MAN2B1, ARSA, SMPD1, and CD68 
+(Fig. 7 ). Altogether, our findings in human growth plate 
+cartilage support earlier data suggesting a link between the 
+lysosome signaling pathway and mechanical loading.
+Sphingolipid metabolism signaling pathway. We also found 
+that sphingolipid metabolism was significantly downregu-
+lated (P = 0.023) (Table 6) in human growth plate cartilage 
+after being exposed to mechanical loading.
+Sphingolipid metabolism refers to the biochemical path-
+ways involved in the synthesis, degradation, and intercon-
+version of sphingolipids. 79 One particular sphingolipid, 
+ceramides, has been linked to the regulation of longitudinal 
+bone growth.21,80 Specifically, C2-ceramide is suggested to 
+inhibit proliferation and induce apoptosis in growth plate 
+chondrocytes.80
+Mechanical loading has been shown to induce ceramide 
+production and the subsequent activation of stress-respon-
+sive signaling pathways, such as apoptosis and inflamma-
+tion.81 The level of pro-apoptotic ceramides can be 
+influenced by mechanical loading-induced changes in 
+sphingolipid metabolism, leading to the activation of cell 
+death pathways.81 Conversely, mechanical loading can also 
+affect the production of anti-apoptotic sphingolipids, such 
+as sphingosine-1-phosphate, which may promote cell sur-
+vival.82 Sphingolipids have also been implicated in tissue 
+remodeling processes in which mechanical loading plays a 
+crucial role. 83 In the skeleton system, the sphingomyelin 
+phosphodiesterase 3 (SMPD3) is a crucial factor in sphin-
+golipid metabolism.21 Interestingly, a study has found that 
+GW4869-mediated inhibition of SMPD3 function can 
+accelerate the mineralization of chondrogenic ATDC5 cul-
+tures, suggesting that sphingolipids may contribute to chon-
+drocyte activities.84
+While the specific effects of mechanical loading on 
+sphingolipid metabolism are not yet fully understood, our 
+study presents novel insights: several genes within the 
+sphingolipid metabolism pathway, including ARSA and 
+SMPD1 ( Fig. 7 ), exhibited downregulation following the 
+exposure of human growth plate chondrocytes to mechani-
+cal loading. Notably, chondrocytes express cerebroside-
+sulfatase (also known as ARSA), a factor involved in 
+sulfatide degradation within the extracellular matrix.85,86 In 
+addition, phospholipase C contributes to chondrocyte pro-
+liferation.87 Nonetheless, further investigation is needed to 
+elucidate the precise implications of these genes within the 
+interactions between sphingolipid metabolism and loading 
+in chondrocytes.
+PPAR signaling pathway. We observed PPAR signaling path-
+way undergoes a significant downregulation ( P = 0.042) 
+(Table 6) within human growth plate cartilage following 
+exposure to mechanical loading.
+=== PAGE 12 ===
+840 CARTILAGE 17(3)
+The PPAR signaling is a crucial regulatory pathway 
+involved in various cellular processes, including inflamma-
+tion88 where it has been reported to have anti-inflammatory 
+properties and can regulate the expression of inflammatory 
+genes.89 Mechanical loading can also impact inflammatory 
+processes, and PPARs may play a role in this modulation. 
+Indeed, PPARJ is expressed in growth plate chondrocytes, 
+and the activation of PPAR promotes adipogenic trans-dif-
+ferentiation of growth plate chondrocytes, suggesting that 
+the PPAR signaling pathway is critical for chondrocytes and 
+bone growth.16,90
+Furthermore, we found that SLC27A4 and AQP7 were 
+downregulated ( Fig. 7 ). Within chondrocytes, SLC27A4 
+plays a pivotal role in regulating the metabolism of fatty 
+acids, which are integral constituents of cell membranes 
+and energy storage.91 Significantly, fatty acids assume cru-
+cial functions in modulating the expression of specific 
+genes in chondrocytes, thereby influencing their activities 
+and contributing to cartilage homeostasis.92 AQP7 serves to 
+facilitate the transport of glycerol across cell membranes 
+and glycerol, in turn, exerts influence over diverse cellular 
+processes in chondrocytes, including extracellular matrix 
+synthesis, cellular signaling, and the maintenance of carti-
+lage homeostasis.93,94
+Briefly, our investigation has revealed significant inhibi-
+tion of the PPAR signaling pathway by mechanical loading, 
+along with the downregulation of the genes SLC27A4 and 
+AQP7. These findings provide insights into the involve-
+ment of the PPAR signaling pathway within human growth 
+plate cartilage. Further studies are imperative to investigate 
+the specific roles of the PPAR signaling pathway concern-
+ing the impact of different levels of mechanical loading in 
+human growth plate cartilage.
+Physiological and Pathological Loading
+Physiological loading on the growth plate involves the 
+application of mechanical forces that mimic natural levels 
+of physical activity. These forces vary based on body 
+weight, movement type, and tissue condition and are crucial 
+for bone growth. In humans, evidence of physiological 
+loading is seen in professional tennis players, who exhibit 
+wider bones in their playing-side arms. 95 Specifically, the 
+playing-side ulna and second metacarpal were found to be 
+3% and 3.7% longer, respectively, compared with the con-
+tralateral side. Control subjects, on the other hand, showed 
+no measurable differences in bone length between their 
+dominant and non-dominant arms. Another study reported 
+that mechanical loading applied to mice at a frequency of 
+20 Hz and 0.5 N significantly increased femur length. 10 In 
+juvenile mice, 100 compressive loading cycles at 5 N and a 
+frequency of 2 Hz (mimicking ambulation) accelerated lon-
+gitudinal bone growth. 96 Similarly, the loading regime 
+applied (0.4 N at a frequency of 0.77 Hz) in the present 
+study has previously been shown to increase bone growth in 
+rat embryonic femur bones cultured ex vivo.9
+In contrast, mechanical loading with excessive force 
+(pathological condition) can have detrimental effects, such 
+as knee osteoarthritis associated with obesity.97,98 A study in 
+rats showed that applying an excessive force of 17 N at a 
+frequency of 2 Hz resulted in a 4% reduction in ulna 
+length.99 Mechanistically, excessive mechanical forces have 
+been reported to trigger cell death and collagen damage in 
+bovine cartilage explants subjected to a single impact load 
+of 15-20 megapascals (MPa). 100 Similarly, in canine carti-
+lage explant, loading of 5 MPa at 0.3 Hz has been shown to 
+cause collagen damage and chondrocyte necrosis and 
+apoptosis.101,102
+Limitations
+There are several limitations in our study. First, the number 
+of growth plate samples used in this study is low, and the 
+RNA extracted from the whole growth plate, including rest-
+ing, proliferating, and hypertrophic chondrocytes is small 
+due to their scarce availability. Consequently, this scarcity 
+hinders our capacity to validate our findings through addi-
+tional functional experiments. Due to the limited availability 
+of growth plate biopsies, we combined samples from the dis-
+tal femur and proximal tibia. While we randomized the allo-
+cation of these samples into control and loading groups to 
+balance potential site-specific effects, we acknowledge that 
+inherent anatomical and biomechanical differences between 
+these sites could have influenced gene expression responses. 
+This could potentially contribute to the variability observed 
+in our results. Future studies with larger sample sizes should 
+consider analyzing these sites separately to account for ana-
+tomical variations. Second, these biopsies were collected 
+from adolescents (two girls and one boy) of varying ages 
+(12-15 years). The growth plates from these tall-stature-ado-
+lescents, defined as a height of more than 2 standard devia-
+tion above average for same sex of age, 103 may exhibit 
+differences in growth plate biology, stages of puberty, and 
+genetic background. These factors could explain why com-
+monly shared upregulated and downregulated genes were 
+identified in only two patients rather than all three.
+Moreover, children with constitutional tall stature gener-
+ally show normal length at birth but experience accelerated 
+growth velocity in early childhood. 104 Their growth trajec-
+tory runs parallel to, but above, standard growth curves, and 
+they continue growing along this higher percentile until 
+puberty.105,106 While recent studies suggest that increased 
+expression of the growth hormone receptor gene may con-
+tribute to their distinctive growth pattern,107 limited research 
+has explored the underlying biology of their growth plates. 
+In our study, deviations from typical growth trajectories in 
+these adolescents could affect how their growth plates 
+respond to mechanical load in ex vivo studies. Finally, we 
+=== PAGE 13 ===
+Zhang et al. 841
+have conducted tests solely on a single magnitude of 
+mechanical loading, primarily due to the scarcity of this tis-
+sue. Nevertheless, these unique and rare human growth 
+plate tissues offer us an opportunity to enhance our under-
+standing of the genomic effects.
+Conclusion
+Our analysis has revealed noteworthy differential regula-
+tion of signaling pathways in response to mechanical load-
+ing in human growth plate cartilage, never reported before. 
+Specifically, three signaling pathways, such as notch, oxy-
+tocin, and tight junction, displayed significant upregulation, 
+while another three signaling pathways, namely lysosome, 
+sphingolipid metabolism, and PPAR, exhibited marked 
+downregulation. Furthermore, 15 significantly regulated 
+genes were found within these six signaling pathways. 
+Notably, we also identified upregulated and downregulated 
+common genes shared across two patients, which have 
+never been reported for their association with mechanical 
+loading in human growth plate cartilage. These novel 
+genetic insights contribute to an enhanced understanding of 
+transcriptomic response to mechanical loading in human 
+growth plate cartilage. Overall, these findings hold promise 
+in illuminating the intricate interplay between mechanical 
+stimuli and growth plate cartilage, potentially advancing 
+our comprehension of longitudinal bone growth under path-
+ological and non-pathological conditions.
+Author Contributions
+ZZ, NRB, TRA, TSN, EMG, AK, LS, and FZ are responsible for 
+study conception and design; ZZ, NRB, TSN, FZ, AGS, LS, and 
+LSAM are responsible for acquisition and analysis of data; ZZ, 
+NRB, LSAM, AGS, TRA, TSN, YZ, EMG, AK, LS, and FZ are 
+responsible for discussions and interpretation of data; and ZZ, 
+NRB, TRA, TSN, YZ, EMG, AK, LS, and FZ are responsible for 
+drafting the article. All authors were involved in the article criti-
+cally for important intellectual content, and all authors approved 
+the final version to be published.
+Acknowledgments and Funding
+The authors would like to thank Efthalia Preka for engaging dis-
+cussion on RNA-sequencing analysis. This work was financially 
+supported by the Swedish Research Council (2020-02025), Region 
+Stockholm (ALF), Märta och Gunnar V Philipsons Stiftelse, the 
+Swedish Childhood Cancer Foundation, Åke Wibergs Stiftelse, 
+Sällskapet Barnavård, the Promobilia Foundation (21300), the 
+Royal Institute of Technology (2018-00750), and the China 
+Scholarship Council (CSC).
+Declaration of Conflicting Interests
+The author(s) declared no potential conflicts of interest with 
+respect to the research, authorship, and/or publication of this 
+article.
+Ethical Approval
+The collection of human growth plate biopsies was approved by 
+the local human ethics committee (Karolinska Institutet Research 
+Ethics Committee North at the Karolinska University Hospital, 
+Stockholm, Sweden). Informed consent was obtained from all 
+subjects and their parents, which was documented in the original 
+hospital records.
+ORCID iDs
+Zhengpei Zhang  https://orcid.org/0009-0009-9208-4398
+Nageswara Rao Boggavarapu  https://orcid.org/0000-0002- 
+8588-8445
+Laila Sara Arroyo Muhr  https://orcid.org/0000-0003-2498- 
+5206
+Ainhoa Garcia-Serrango  https://orcid.org/0000-0003- 
+1763-4053
+Tim RJ Aeppli  https://orcid.org/0000-0002-5499-4763
+Yunhan Zhao  https://orcid.org/0000-0002-3002-8296
+Availability of Data and Material
+The data used to support the results of this study are available from 
+public databases GEO (bulk RNA-sequencing data: GSE246390) 
+database.
+References
+ 1. Ağırdil Y. The growth plate: a physiologic overview. EFORT 
+Open Rev. 2020;5(8):498-507.
+ 2. Gkiatas I, Lykissas M, Kostas-Agnantis I, Korompilias A, 
+Batistatou A, Beris A. Factors affecting bone growth. Am J 
+Orthop (Belle Mead NJ). 2015;44:61-7.
+ 3. Berendsen AD, Olsen BR. Bone development. Bone. 
+2015;80:14-8.
+ 4. Sun HB. Mechanical loading, cartilage degradation, and 
+arthritis. Ann N Y Acad Sci. 2010;1211:37-50.
+ 5. Jürimäe J, Gruodyte-Raciene R, Baxter-Jones ADG. Effects 
+of gymnastics activities on bone accrual during growth: a sys-
+tematic review. J Sports Sci Med. 2018;17(2):245-58.
+ 6. Grimston SK, Willows ND, Hanley DA. Mechanical loading 
+regime and its relationship to bone mineral density in chil-
+dren. Med Sci Sports Exerc. 1993;25(11):1203-10.
+ 7. Mikic B, Isenstein AL, Chhabra A. Mechanical modulation of 
+cartilage structure and function during embryogenesis in the 
+chick. Ann Biomed Eng. 2004;32(1):18-25.
+ 8. Shwartz Y, Farkas Z, Stern T, Aszódi A, Zelzer E. Muscle 
+contraction controls skeletal morphogenesis through regu-
+lation of chondrocyte convergent extension. Dev Biol. 
+2012;370:154-63.
+ 9. Zhang Z, Zaman F, Nava TS, Aeppli TRJ, Gutierrez-Farewik 
+EM, Kulachenko A,  et al . Micromechanical loading stud-
+ies in ex vivo cultured embryonic rat bones enabled by a 
+newly developed portable loading device. Ann Biomed Eng. 
+2023;51(10):2229-36.
+ 10. Zhang P, Hamamura K, Turner CH, Yokota H. Lengthening 
+of mouse hindlimbs with joint loading. J Bone Miner Metab. 
+2010;28(3):268-75.
+=== PAGE 14 ===
+842 CARTILAGE 17(3)
+ 11. Mailhot G, Yang M, Mason-Savas A, Mackay CA, Leav I, 
+Odgren PR. BMP-5 expression increases during chondrocyte 
+differentiation in vivo and in vitro and promotes proliferation 
+and cartilage matrix synthesis in primary chondrocyte cul-
+tures. J Cell Physiol. 2008;214(1):56-64.
+ 12. Li TF, O’Keefe RJ, Chen D. TGF-beta signaling in chondro-
+cytes. Front Biosci. 2005;10:681-8.
+ 13. Ohba S. Hedgehog signaling in skeletal development: roles 
+of Indian hedgehog and the mode of its action. Int J Mol Sci. 
+2020;21(18):6665.
+ 14. Oichi T, Otsuru S, Usami Y, Enomoto-Iwamoto M, Iwamoto 
+M. Wnt signaling in chondroprogenitors during long bone 
+development and growth. Bone. 2020;137:115368.
+ 15. Zanotti S, Canalis E. Notch signaling and the skeleton. Endocr 
+Rev. 2016;37:223-53.
+ 16. Wang L, Shao YY, Ballock RT. Peroxisome proliferator-acti-
+vated receptor-gamma promotes adipogenic changes in growth 
+plate chondrocytes in vitro. PPAR Res. 2006;2006:67297.
+ 17. Yasuda K, Sakamoto K. Oxytocin promotes heat stress tol-
+erance via insulin signals in. Biosci Biotechnol Biochem. 
+2019;83(10):1858-66.
+ 18. Racine HL, Serrat MA. The actions of IGF-1 in the growth 
+plate and its role in postnatal bone elongation. Curr Osteoporos 
+Rep. 2020;18(3):210-27.
+ 19. Hatakeyama N, Kojima T, Iba K, Murata M, Thi MM, Spray 
+DC, et al . IGF-I regulates tight-junction protein claudin-1 
+during differentiation of osteoblast-like MC3T3-E1 cells via a 
+MAP-kinase pathway. Cell Tissue Res. 2008;334(2):243-54.
+ 20. Bastow ER, Last K, Golub S, Stow JL, Stanley AC, Fosang 
+AJ. Evidence for lysosomal exocytosis and release of aggre-
+can-degrading hydrolases from hypertrophic chondrocytes, in 
+vitro and in vivo. Biol Open. 2012;1:318-28.
+ 21. Khavandgar Z, Murshed M. Sphingolipid metabolism 
+and its role in the skeletal tissues. Cell Mol Life Sci. 
+2015;72(5):959-69.
+ 22. Zaman F, Chrysis D, Huntjens K, Chagin A, Takigawa M, 
+Fadeel B, et al. Dexamethasone differentially regulates Bcl-2 
+family proteins in human proliferative chondrocytes: role of 
+pro-apoptotic Bid. Toxicol Lett. 2014;224:196-200.
+ 23. Ramesh S, Zaman F, Madhuri V, Savendahl L. Radial extra-
+corporeal shock wave treatment promotes bone growth and 
+chondrogenesis in cultured fetal rat metatarsal bones. Clin 
+Orthop Relat Res. 2020;478:668-78.
+ 24. Hahaut V, Picelli S. Full-length single-cell RNA-sequencing 
+with FLASH-seq. Methods Mol Biol. 2023;2584:123-64.
+ 25. Picelli S, Faridani OR, Björklund AK, Winberg G, Sagasser 
+S, Sandberg R. Full-length RNA-seq from single cells using 
+Smart-seq2. Nat Protoc. 2014;9(1):171-81.
+ 26. Koivisto E, Jurado Acosta A, Moilanen AM, Tokola H, Aro J, 
+Pennanen H, et al. Characterization of the regulatory mecha-
+nisms of activating transcription factor 3 by hypertrophic stim-
+uli in rat cardiomyocytes. PLoS ONE. 2014;9(8):e105168.
+ 27. Ding SL, Zhang TW, Zhang QC, Ding W, Li ZF, Han GJ,  
+et al . Excessive mechanical strain accelerates intervertebral 
+disc degeneration by disrupting intrinsic circadian rhythm. 
+Exp Mol Med. 2021;53:1911-23.
+ 28. Ding SL, Zhang TW, Zhang QC, Ding W, Li ZF, Han GJ, et al. 
+Author correction: excessive mechanical strain accelerates 
+intervertebral disc degeneration by disrupting intrinsic circa-
+dian rhythm. Exp Mol Med. 2022;54(8):1306-7.
+ 29. Wang CM, Zhang XJ, Ma YJ, Li X. Mutational analysis of 
+mitochondrial tRNA genes in patients with asthma. Iran J 
+Public Health. 2017;46(5):620-5.
+ 30. Touron J, Perrault H, Maisonnave L, Patrac V, Walrand S, 
+Malpuech-Brugere C,  et al . Effects of exercise-induced 
+metabolic and mechanical loading on skeletal muscle mito-
+chondrial function in male rats. J Appl Physiol (1985). 
+2022;133:611-21.
+ 31. Mantila Roosa SM, Liu Y, Turner CH. Gene expression pat-
+terns in bone following mechanical loading. J Bone Miner 
+Res. 2011;26(1):100-12.
+ 32. Pelaez D, Acosta Torres Z, Ng TK, Choy KW, Pang CP, 
+Cheung HS. Cardiomyogenesis of periodontal ligament-
+derived stem cells by dynamic tensile strain. Cell Tissue Res. 
+2017;367(2):229-41.
+ 33. Razmara E, Bitaraf A, Yousefi H, Nguyen TH, Garshasbi M, 
+Cho ECS, et al. Non-coding RNAs in cartilage development: 
+an updated review. Int J Mol Sci. 2019;20(18):4475.
+ 34. D’Souza AR, Minczuk M. Mitochondrial transcription and 
+translation: overview. Essays Biochem. 2018;62:309-20.
+ 35. Tucker EJ, Hershman SG, Köhrer C, Belcher-Timme CA, 
+Patel J, Goldberger OA, et al. Mutations in MTFMT underlie 
+a human disorder of formylation causing impaired mitochon-
+drial translation. Cell Metab. 2011;14:428-34.
+ 36. Zukas R, Chang AJ, Rice M, Springer AL. Structural analy-
+sis of flagellar axonemes from inner arm dynein knockdown 
+strains of Trypanosoma brucei. Biocell. 2012;36(3):133-41.
+ 37. Andersson PS, Montán S, Persson T, Svanberg S, Tapper S, 
+Karlsson SE. Fluorescence endoscopy instrumentation for 
+improved tissue characterization. Med Phys. 1987;14(4):633-6.
+ 38. Hishikawa D, Shindou H, Harayama T, Ogasawara R, Suwabe 
+A, Shimizu T. Identification of Sec14-like 3 as a novel lipid-
+packing sensor in the lung. FASEB J. 2013;27(12):5131-40.
+ 39. Gong B, Li Z, Xiao W, Li G, Ding S, Meng A, et al. Sec14l3 
+potentiates VEGFR2 signaling to regulate zebrafish vasculo-
+genesis. Nat Commun. 2019;10:1606.
+ 40. Laity JH, Lee BM, Wright PE. Zinc finger proteins: new 
+insights into structural and functional diversity. Curr Opin 
+Struct Biol. 2001;11(1):39-46.
+ 41. Datta HK, Kringen MK, Tuck SP, Salpingidou G, Olstad 
+OK, Gautvik KM, et al. Mechanical-stress-related epigenetic 
+regulation of transcription factor in the etiology of postmeno-
+pausal osteoporosis. Int J Mol Sci. 2022;23(6):2957.
+ 42. Madeira A, Moura TF, Soveral G. Aquaglyceroporins: impli-
+cations in adipose biology and obesity. Cell Mol Life Sci. 
+2015;72(4):759-71.
+ 43. Gagliardi D, Pagliari E, Meneri M, Melzi V, Rizzo F, Comi 
+GP, et al. Stathmins and motor neuron diseases: pathophysiol-
+ogy and therapeutic targets. Biomedicines. 2022;10(3):711.
+ 44. Pakvasa M, Haravu P, Boachie-Mensah M, Jones A, Coalson 
+E, Liao J, et al. Notch signaling: its essential roles in bone and 
+craniofacial development. Genes Dis. 2021;8(1):8-24.
+ 45. Yan F, Feng J, Yang L, Shi C. The effect induced by 
+alternated mechanical loading on Notch-1 in mandibu-
+lar condylar cartilage of growing rabbits. Bone Joint Res. 
+2021;10(7):437-44.
+=== PAGE 15 ===
+Zhang et al. 843
+ 46. Zieba JT, Chen YT, Lee BH, Bae Y. Notch signaling in skeletal 
+development, homeostasis and pathogenesis. Biomolecules. 
+2020;10(2):332.
+ 47. Watanabe N, Tezuka Y, Matsuno K, Miyatani S, Morimura 
+N, Yasuda M, et al. Suppression of differentiation and prolif-
+eration of early chondrogenic cells by Notch. J Bone Miner 
+Metab. 2003;21(6):344-52.
+ 48. Dong Y, Jesse AM, Kohn A, Gunnell LM, Honjo T, Zuscik 
+MJ, et al . RBPjkappa-dependent Notch signaling regu-
+lates mesenchymal progenitor cell proliferation and dif-
+ferentiation during skeletal development. Development. 
+2010;137(9):1461-71.
+ 49. Ramasamy SK, Kusumbe AP, Wang L, Adams RH. 
+Endothelial Notch activity promotes angiogenesis and osteo-
+genesis in bone. Nature. 2014;507:376-80.
+ 50. Liu P, Ping Y, Ma M, Zhang D, Liu C, Zaidi S, et al. Anabolic 
+actions of Notch on mature bone. Proc Natl Acad Sci U S A. 
+2016;113:E2152-E1261.
+ 51. Matsumoto K, Luther KB, Haltiwanger RS. Diseases related 
+to Notch glycosylation. Mol Aspects Med. 2021;79:100938.
+ 52. Feixiang L, Yanchen F, Xiang L, Yunke Z, Jinxin M, 
+Jianru W,  et al . The mechanism of oxytocin and its recep-
+tors in regulating cells in bone metabolism. Front Pharmacol. 
+2023;14:1171732.
+ 53. Ferrero S, Amri EZ, Roux CH. Relationship between oxy-
+tocin and osteoarthritis: hope or despair? Int J Mol Sci. 
+2021;22:11784.
+ 54. Wu Y, Wu T, Xu B, Xu X, Chen H, Li X. Oxytocin prevents 
+cartilage matrix destruction via regulating matrix metallopro-
+teinases. Biochem Biophys Res Commun. 2017;486:601-6.
+ 55. Chenoufi HL, Diamant M, Rieneck K, Lund B, Stein GS, 
+Lian JB. Increased mRNA expression and protein secretion 
+of interleukin-6 in primary human osteoblasts differenti-
+ated in vitro from rheumatoid and osteoarthritic bone. J Cell 
+Biochem. 2001;81(4):666-78.
+ 56. Liu S, Deng Z, Chen K, Jian S, Zhou F, Yang Y,  et al . 
+Cartilage tissue engineering: from proinflammatory and anti-
+inflammatory cytokines to osteoarthritis treatments (Review). 
+Mol Med Rep. 2022;25(3):99.
+ 57. Colaianni G, Sun L, Zaidi M, Zallone A. Oxytocin 
+and bone. Am J Physiol Regul Integr Comp Physiol. 
+2014;307:R970-R197.
+ 58. Roux C, Pisani DF, Yahia HB, Djedaini M, Beranger GE, 
+Chambard JC,  et al . Chondrogenic potential of stem cells 
+derived from adipose tissue: a powerful pharmacological tool. 
+Biochem Biophys Res Commun. 2013;440:786-91.
+ 59. Anderson JM, Van Itallie CM. Physiology and func-
+tion of the tight junction. Cold Spring Harb Perspect Biol. 
+2009;1:a002584.
+ 60. Wei T, Zhou M, Gu L, Zhou Y, Li M. How shockwaves open 
+tight junctions of blood-brain barrier: comparison of three 
+biomechanical effects. J Phys Chem B. 2022;126:5094-102.
+ 61. Samak G, Gangwar R, Crosby LM, Desai LP, Wilhelm K, 
+Waters CM,  et al . Cyclic stretch disrupts apical junctional 
+complexes in Caco-2 cell monolayers by a JNK-2-, c-Src-, 
+and MLCK-dependent mechanism. Am J Physiol Gastrointest 
+Liver Physiol. 2014;306:G947-G9158.
+ 62. Abiko H, Fujiwara S, Ohashi K, Hiatari R, Mashiko T, 
+Sakamoto N, et al. Rho guanine nucleotide exchange factors 
+involved in cyclic-stretch-induced reorientation of vascular 
+endothelial cells. J Cell Sci. 2015;128:1683-95.
+ 63. Ramesh S, Savendahl L, Madhuri V, Zaman F. Radial shock 
+waves prevent growth retardation caused by the clinically 
+used drug vismodegib in ex vivo cultured bones. Sci Rep. 
+2020;10:13400.
+ 64. de Vallière C, Vidal S, Clay I, Jurisic G, Tcymbarevich I, 
+Lang S, et al. The pH-sensing receptor OGR1 improves bar-
+rier function of epithelial cells and inhibits migration in an 
+acidic environment. Am J Physiol Gastrointest Liver Physiol. 
+2015;309:G475-G490.
+ 65. Gong Y, Li H, Li Y. Effects of bacillus subtilis on epithelial 
+tight junctions of mice with inflammatory bowel disease. J 
+Interferon Cytokine Res. 2016;36(2):75-85.
+ 66. Nehme Z, Roehlen N, Dhawan P, Baumert TF. Tight junction 
+protein signaling and cancer biology. Cells. 2023;12(2):243.
+ 67. Yang C, Hawkins KE, Doré S, Candelario-Jalil E. 
+Neuroinflammatory mechanisms of blood-brain barrier 
+damage in ischemic stroke. Am J Physiol Cell Physiol. 
+2019;316:C135-C153.
+ 68. Teunissen M, Riemers FM, van Leenen D, Groot Koerkamp 
+MJA, Meij BP, Alblas J, et al. Growth plate expression profil-
+ing: large and small breed dogs provide new insights in endo-
+chondral bone formation. J Orthop Res. 2018;36(1):138-48.
+ 69. Alshbool FZ, Mohan S. Emerging multifunctional roles 
+of Claudin tight junction proteins in bone. Endocrinology. 
+2014;155(7):2363-76.
+ 70. Alshbool FZ, Alarcon C, Wergedal J, Mohan S. A high-cal-
+cium diet failed to rescue an osteopenia phenotype in clau-
+din-18 knockout mice. Physiol Rep. 2014;2:e00200.
+ 71. Mahapatra KK, Mishra SR, Behera BP, Patil S, Gewirtz DA, 
+Bhutia SK. The lysosome as an imperative regulator of autoph-
+agy and cell death. Cell Mol Life Sci. 2021;78(23):7435-49.
+ 72. Klein- Nulend J, Nijweide PJ, Burger EH. Osteocyte and bone 
+structure. Curr Osteoporos Rep. 2003;1:5-10.
+ 73. Gerasimenko JV, Gerasimenko OV, Petersen OH. Membrane 
+repair: Ca(2 +)-elicited lysosomal exocytosis. Curr Biol. 
+2001;11:R971-R974.
+ 74. Andrews NW. Lysosomes and the plasma membrane: 
+trypanosomes reveal a secret relationship. J Cell Biol. 
+2002;158:389-94.
+ 75. Jaiswal JK, Andrews NW, Simon SM. Membrane proximal 
+lysosomes are the major vesicles responsible for calcium-
+dependent exocytosis in nonsecretory cells. J Cell Biol. 
+2002;159:625-35.
+ 76. Meldolesi J. Surface wound healing: a new, general function 
+of eukaryotic cells. J Cell Mol Med. 2003;7(3):197-203.
+ 77. McNeil PL. Repairing a torn cell surface: make way, lyso-
+somes to the rescue. J Cell Sci. 2002;115:873-9.
+ 78. Reddy A, Caler EV, Andrews NW. Plasma membrane repair 
+is mediated by Ca(2 +)-regulated exocytosis of lysosomes. 
+Cell. 2001;106:157-69.
+ 79. Gault CR, Obeid LM, Hannun YA. An overview of sphin-
+golipid metabolism: from synthesis to breakdown. Adv Exp 
+Med Biol. 2010;688:1-23.
+=== PAGE 16 ===
+844 CARTILAGE 17(3)
+ 80. MacRae VE, Burdon T, Ahmed SF, Farquharson C. Ceramide 
+inhibition of chondrocyte proliferation and bone growth is 
+IGF-I independent. J Endocrinol. 2006;191(2):369-77.
+ 81. López-Montero I, Monroy F, Vélez M, Devaux PF. Ceramide: 
+from lateral segregation to mechanical stress. Biochim 
+Biophys Acta. 2010;1798(7):1348-56.
+ 82. Dobrosak C, Gooi JH. Increased sphingosine-1-phosphate 
+production in response to osteocyte mechanotransduction. 
+Bone Rep. 2017;7:114-20.
+ 83. Wang XQ, Mao LJ, Fang QH, Kobayashi T, Kim HJ, Sugiura 
+H, et al. Sphingosylphosphorylcholine induces D-smooth mus-
+cle actin expression in human lung fibroblasts and fibroblast-
+mediated gel contraction via S1P2 receptor and Rho/Rho-kinase 
+pathway. Prostaglandins Other Lipid Mediat. 2014;108:23-30.
+ 84. Kakoi H, Maeda S, Shinohara N, Matsuyama K, Imamura 
+K, Kawamura I,  et al . Bone morphogenic protein (BMP) 
+signaling up-regulates neutral sphingomyelinase 2 to sup-
+press chondrocyte maturation via the Akt protein signaling 
+pathway as a negative feedback mechanism. J Biol Chem. 
+2014;289:8135-50.
+ 85. Schwartz ER, Adamy L. Effect of ascorbic acid on arylsul-
+fatase A and B activities in human chondrocyte cultures. 
+Connect Tissue Res. 1976;4(4):211-8.
+ 86. Fujita K, Teramura N, Hattori S, Irie S, Mitsunaga-Nakatsubo 
+K, Akimoto Y,  et al . Mammalian arylsulfatase A functions 
+as a novel component of the extracellular matrix. Connect 
+Tissue Res. 2010;51(5):388-96.
+ 87. Kim MK, Lee HY, Kwak JY, Park JI, Yun J, Bae YS. 
+Sphingosine-1-phosphate stimulates rat primary chondrocyte 
+proliferation. Biochem Biophys Res Commun. 2006;345:67-73.
+ 88. Wang S, Dougherty EJ, Danner RL. PPAR J signaling and 
+emerging opportunities for improved therapeutics. Pharmacol 
+Res. 2016;111:76-85.
+ 89. Christofides A, Konstantinidou E, Jani C, Boussiotis VA. The 
+role of peroxisome proliferator-activated receptors (PPAR) in 
+immune responses. Metabolism. 2021;114:154338.
+ 90. Wang L, Shao YY, Ballock RT. Peroxisome proliferator 
+activated receptor-gamma (PPARgamma) represses thy-
+roid hormone signaling in growth plate chondrocytes. Bone. 
+2005;37(3):305-12.
+ 91. Gimeno RE. Fatty acid transport proteins. Curr Opin Lipidol. 
+2007;18:271-6.
+ 92. Abshirini M, Ilesanmi-Oyelere BL, Kruger MC. Potential 
+modulatory mechanisms of action by long-chain polyunsatu-
+rated fatty acids on bone cell and chondrocyte metabolism. 
+Prog Lipid Res. 2021;83:101113.
+ 93. de Maré SW, Venskutonytė R, Eltschkner S, de Groot BL, 
+Lindkvist-Petersson K. Structural basis for glycerol efflux and 
+selectivity of human Aquaporin 7. Structure. 2020;28:215-23.
+ 94. Theerathanagorn T, Klangjorhor J, Sakulsombat M, 
+Pothacharoen P, Pruksakorn D, Kongtawelert P,  et al . 
+In vitro human chondrocyte culture on plasma-treated 
+poly(glycerol sebacate) scaffolds. J Biomater Sci Polym Ed. 
+2015;26(18):1386-401.
+ 95. Krahl H, Michaelis U, Pieper HG, Quack G, Montag M. 
+Stimulation of bone growth through sports. Am J Sports 
+Med. 1994;22(6):751-7.
+ 96. McGarry S, Kover K, Heruth DP, Dallas M, Jin X, Wu 
+S, et al . Intermittent mechanical loading on mouse tibia 
+accelerates longitudinal bone growth by inducing PTHrP 
+expression in the female tibial growth plate. Physiol Rep. 
+2024;12(15):e16168.
+ 97. Lohmander LS, Gerhardsson de Verdier M, Rollof J, 
+Nilsson PM, Engström G. Incidence of severe knee and hip 
+osteoarthritis in relation to different measures of body mass: 
+a population-based prospective cohort study. Ann Rheum 
+Dis. 2009;68(4):490-6.
+ 98. Coggon D, Reading I, Croft P, McLaren M, Barrett D, 
+Cooper C. Knee osteoarthritis and obesity. Int J Obes Relat 
+Metab Disord. 2001;25:622-7.
+ 99. Robling AG, Duijvelaar KM, Geevers JV, Ohashi N, Turner 
+CH. Modulation of appositional and longitudinal bone 
+growth in the rat ulna by applied static and dynamic force. 
+Bone. 2001;29(2):105-13.
+ 100. Torzilli PA, Grigiene R, Borrelli J Jr, Helfet DL. Effect 
+of impact load on articular cartilage: cell metabolism 
+and viability, and matrix water content. J Biomech Eng. 
+1999;121(5):433-41.
+ 101. Chen CT, Burton-Wurster N, Lust G, Bank RA, Tekoppele 
+JM. Compositional and metabolic changes in damaged 
+cartilage are peak-stress, stress-rate, and loading-duration 
+dependent. J Orthop Res. 1999;17(6):870-9.
+ 102. Chen CT, Burton-Wurster N, Borden C, Hueffer K, Bloom 
+SE, Lust G. Chondrocyte necrosis and apoptosis in impact 
+damaged articular cartilage. J Orthop Res. 2001;19(4): 
+703-11.
+ 103. Albuquerque EVA, Scalco RC, Jorge AAL. Management of 
+endocrine disease: diagnostic and therapeutic approach of 
+tall stature. Eur J Endocrinol. 2017;176(6):R339-R353.
+ 104. Leung AKC, Leung AAC, Hon KL. Tall stature in children. 
+Adv Pediatr. 2019;66:161-76.
+ 105. Barstow C, Rerucha C. Evaluation of short and tall stature in 
+children. Am Fam Physician. 2015;92:43-50.
+ 106. Davies JH, Cheetham T. Investigation and management of 
+tall stature. Arch Dis Child. 2014;99(8):772-7.
+ 107. Pagani S, Radetti G, Meazza C, Bozzola M. Analysis of 
+growth hormone receptor gene expression in tall and short 
+stature children. J Pediatr Endocrinol Metab. 2017;30:427-30.
+=== PAGE 17 ===
+Exercise mitigates the stunting effect of cold temperature on limb elongation
+in mice by increasing solute delivery to the growth plate
+Maria A. Serrat, 1,2 Rebecca M. Williams, 3 and Cornelia E. Farnum 2
+1Department of Anatomy and Pathology, Joan C. Edwards School of Medicine, Marshall University, Huntington, West
+Virginia; and Departments of 2Biomedical Sciences and 3Biomedical Engineering, Cornell University, Ithaca, New York
+Submitted 30 August 2010; accepted in ﬁnal form 5 October 2010
+Serrat MA, Williams RM, Farnum CE.Exercise mitigates the stunting
+effect of cold temperature on limb elongation in mice by increasing solute
+delivery to the growth plate.J Appl Physiol 109: 1869 –1879, 2010. First
+published October 7, 2010; doi:10.1152/japplphysiol.01022.2010.—
+Ambient temperature and physical activity modulate bone elongation
+in mammals, but mechanisms underlying this plasticity are a century-
+old enigma. Longitudinal bone growth occurs in cartilaginous plates,
+which receive nutritional support via delivery of solutes from the
+vasculature. We tested the hypothesis that chronic exercise and warm
+temperature promote bone lengthening by increasing solute delivery
+to the growth plate, measured in real time using in vivo multiphoton
+microscopy. We housed 68 weanling female mice at cold (16°C) or
+warm (25°C) temperatures and allowed some groups voluntary access
+to a running wheel. We show that exercise mitigates the stunting
+effect of cold temperature on limb elongation after 11 days of wheel
+running. All runners had signiﬁcantly lengthened limbs, regardless of
+temperature, while nonrunning mice had shorter limbs that correlated
+with housing temperature. Tail length was impacted only by temper-
+ature, indicating that the exercise effect was localized to limb bones
+and was not a systemic endocrine reaction. In vivo multiphoton
+imaging of ﬂuoresceinated tracers revealed enhanced solute delivery
+to tibial growth plates in wheel-running mice, measured under anes-
+thesia at rest. There was a minimal effect of rearing temperature on
+solute delivery when measured at an intermediate room temperature
+(20°C), suggesting that a lasting increase in solute delivery is an
+important factor in exercise-mediated limb lengthening but may not
+play a role in temperature-mediated limb lengthening. These results
+are relevant to the study of skeletal evolution in mammals from
+varying environments and have the potential to fundamentally ad-
+vance our understanding of bone elongation processes.
+bone; cartilage; nutrient supply; phenotypic plasticity; multiphoton
+microscopy
+ASSESSMENT OF LIMB LENGTH VARIATION among mammals, includ-
+ing humans, requires an understanding of the extent to which a
+growing bone can plastically respond to its external environ-
+ment. Although bones have an intrinsic growth potential (37,
+66), extrinsic variables, such as ambient temperature and phys-
+ical activity, can modulate the skeleton’s genetic blueprint and
+elicit permanent changes in limb length. Warm temperature
+and exercise promote longer limb growth, whereas relatively
+cooler temperatures and less active behavior produce shorter
+limbs (6, 11, 80, 83, 90, 106); the mechanisms by which they
+do so have remained elusive for over a century.
+Longitudinal growth occurs at the ends of long bones in
+cartilaginous growth plates (35). Unlike many other organs,
+growth plate cartilage does not have a penetrating blood supply
+(20). Growth plates receive nutritional support via delivery of
+solutes from the vasculature located in and around the adjacent
+bone (17, 105). Exercise and temperature can alter the volume
+and velocity of blood ﬂow to bone (43, 77, 80, 83, 91), but it
+is unclear how these changes translate to growth plates where
+nutrients are transferred from the bloodstream. Developments
+in imaging technology offer a new opportunity to investigate
+this problem with the advent of methods for measuring solute
+delivery to growth plate cartilage in vivo (36, 82, 102). These
+tools are a key advancement in skeletal biology research
+because they allow us to revisit many long-standing research
+questions about how environmental variables, such as ambient
+temperature and voluntary exercise, inﬂuence bone elongation
+in mammals.
+Exercise and Temperature Effects on Limb Elongation
+As early as 1896, Beyer (12) noted enhanced linear growth
+in young Navy cadets who underwent regimented gymnasium
+exercise compared with cadets under normal conditions. Ad-
+ams (2) later found that adult women who performed manual
+labor during adolescence were taller than their nonlaboring
+peers. Many others have since reported a positive relationship
+between increased activity and increased bone length in humans
+(21, 62) and animals in natural and controlled experimental
+contexts (53, 59, 90). These ﬁndings are not limited to mammals,
+as Losos and colleagues (60) were able to experimentally induce
+longer limb growth in lizards by varying their perch size during
+growth. They found that this within-generation increase in limb
+length parallels the morphology of natural-dwelling lizards
+from different habitats (60, 61). At the other extreme, lower
+activity levels result in decreased limb length (11, 13, 93, 106),
+similar to an effect of low rearing temperature.
+Sumner (85) ﬁrst documented the impact of ambient tem-
+perature on extremity size in laboratory mice over a century
+ago. Subsequent experimental work has clearly demonstrated
+that warm rearing temperature increases, and cold decreases,
+limb elongation (3, 6, 48, 49, 80, 99). This interesting pattern
+closely resembles the ecogeographical trend, described in
+“Allen’s rule,” that extremities are shorter in animals naturally
+occupying colder climates (4).
+Role of the Vasculature in Exercise- and Temperature-
+Modulated Growth
+Evidence suggests that environmental temperature and ex-
+ercise may modify extremity growth by inducing changes in
+limb vasculature (17, 94). Processes of bone elongation depend
+on the delivery of nutrients and hormones from the blood-
+stream (17, 63, 94). High temperature, exercise, and stimulated
+muscle contractions increase blood supply to bone (38, 43, 56,
+Address for reprint requests and other correspondence: M. A. Serrat, Dept.
+of Anatomy and Pathology, Joan C. Edwards School of Medicine, Marshall
+Univ., 1542 Spring Valley Dr., Huntington, WV 25704 (e-mail: serrat
+@marshall.edu).
+J Appl Physiol 109: 1869–1879, 2010.
+First published October 7, 2010; doi:10.1152/japplphysiol.01022.2010.
+8750-7587/10 Copyright © 2010 the American Physiological Societyhttp://www.jap.org 1869
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 18 ===
+59, 63, 64, 77, 91), while cold temperature and muscle disuse
+decrease bone perfusion (14, 20, 25, 42, 43, 45, 77, 80, 87).
+Increased or decreased blood supply can enhance (17–19, 68,
+95) or restrict (16, 46, 89) bone elongation, respectively,
+suggesting that some of the growth effects common to activity
+and temperature could stem from changes in the vasculature.
+The purpose of this study is to test the hypothesis that chronic
+wheel-running exercise and warm rearing temperature promote
+bone lengthening by increasing solute delivery to cartilage
+growth plates.
+Cold Rearing Temperature as a Natural Experimental Model
+Cold rearing temperature presents a unique model to evalu-
+ate the interaction between exercise, solute delivery, and limb
+elongation. Previous work has shown that low rearing temper-
+ature causes a marked reduction in limb length and vascular
+supply in the absence of pharmacological or surgical interven-
+tion and with no impact on body mass (78, 80). This creates a
+well-suited model to assess the growth-promoting effects of
+exercise beyond those that might occur within the normal
+constraints of physiology and genetics (57). By simply lower-
+ing ambient temperature, the potential of a direct impact of
+exercise on bone length and vascular supply can be tested in a
+model where these factors are naturally reduced. The hypoth-
+esis that solute delivery mediates the exercise-induced increase
+in limb elongation predicts that growth plate solute delivery
+and limb length should be increased by exercise in the cold.
+The cold phenotype should be at least partially reversed by
+exercise.
+Growth Plate Imaging Using Multiphoton Microscopy
+Measurement of solute delivery to skeletal growth plates of
+a living animal is a nontrivial technological challenge. Classic
+in vivo bone and cartilage imaging is conducted on a macro-
+scopic level and lacks the resolution required for visualization
+of the growth plate in detail (22, 34, 107). High-resolution
+methods preserve excellent cellular detail and vascular struc-
+ture in postmortem samples, but with a loss of physiological
+integrity (30, 41, 51, 104). To bridge these dynamic and static
+approaches, our laboratory developed a novel platform for
+imaging tibial growth plates of live young mice using mul-
+tiphoton microscopy (MPM) (36, 102). This three-dimensional
+resolved form of microscopy renders optical sections of tissues
+from a live intact animal in unprecedented detail (31, 98, 110).
+We are the ﬁrst group to use these pioneering methods to
+obtain high-resolution images up to 150 /H9262m deep into the
+growth plate of a living animal with all surrounding vascula-
+ture intact (36, 82, 102).
+We employ the distinct powers of MPM to measure solute
+delivery to cartilage in vivo by imaging ﬂuorescent tracers as
+they enter the tibial growth plate from the vasculature in real
+time. We follow a rigorous protocol to quantify tracer amount
+based on ﬂuorescence intensity at a deﬁned focal depth, and we
+standardize growth plate intensities to those in the vasculature
+to enable comparisons between animals (82). Among the key
+advantages of this system is second-harmonic generation from
+collagen, a unique feature of nonlinear microscopy that enables
+identiﬁcation of the perichondrium as a surrounding landmark
+of the growth plate (103, 109). Localization of the perichon-
+drium is critical, because it allows consistent imaging in a
+deﬁned growth plate region at a speciﬁed depth. The relatively
+long-wavelength excitation of the multiphoton laser alleviates
+tissue scattering and damage, allowing visualization of cellu-
+larly resolved detail 150 /H9262m into the growth plate (36, 102).
+The integrity of the intact animal is maintained by examination
+of these skeletal tissues in vivo, enabling the assessment of
+responses to experimental conditions in real time (82).
+We previously described a protocol that used an acute temper-
+ature model of warming a single limb to examine the effect of
+short-term (/H113494 h) temperature exposure on solute delivery to
+tibial growth plates of live young mice (82). Here we apply this
+established methodology to study the impact of chronic temper-
+ature exposure and voluntary wheel-running exercise in mice
+over an 11-day period. We deﬁne chronic as continuous treat-
+ment over multiple days, as opposed to acute exposure, which
+lasts only several minutes or hours. We tested the hypothesis
+that exercise and warm rearing temperature promote bone
+lengthening by increasing solute delivery to the growth plate.
+Solute delivery is quantitatively deﬁned here by the total
+amount of intravenous tracer entry in mouse tibial growth
+plates, analyzed using in vivo multiphoton imaging (82). Rel-
+ative availability of this low-molecular-weight tracer is ex-
+pected to be proportional to that of soluble nutrients and
+essential growth factors from the bloodstream. We housed
+weanling mice at warm (25°C) or cold (16°C) temperatures,
+with and without access to a running wheel, during an 11-day
+period that is characterized by exceptionally rapid growth in
+mice (8, 54, 78, 81). We tested three a priori predictions:
+1) cold rearing temperature decreases solute delivery to the
+growth plate; 2) exercise increases solute delivery to the
+growth plate; and 3) exercise rescues the cold limb phenotype.
+MATERIALS AND METHODS
+Animals and Treatment
+All procedures were submitted to and approved by the Institutional
+Animal Care and Use Committee at Cornell University (protocol
+2007-0179). Female C57BL/6J mice ( n /H1100568) were received from
+Jackson Laboratories at 21 days of age. After a 72-h shipping
+acclimation period, 24-day-old mice were individually caged and
+randomly assigned to four experimental groups (Table 1): warm
+(25°C) wheel (WW), warm no wheel (WN), cold (16°C) wheel (CW),
+and cold no wheel (CN). We previously showed that temperature has
+a gradient-like effect on limb lengthening (78, 80); therefore, rather
+than designating one speciﬁc temperature as “control,” we emphasize
+the cold-warm differential. We do, however, suggest that warm
+temperature without exercise can generally be considered the standard
+with which the other groups are compared, since this reﬂects normal
+animal housing conditions.
+Female mice were selected, because they are known for reliable
+exercise wheel usage, running farther and longer than their male
+counterparts (5). Treatments lasted for 11 days, and mice were
+euthanized by anesthesia overdose after multiphoton imaging at 35
+days of age. This was the end point, because 5 wk is the optimal age
+for in vivo imaging (36, 102). All mice were housed in standard
+plastic cages with corn cob bedding, 12:12-h light-dark cycle, and ad
+libitum access to food and water.
+Mice in the cold temperature groups were housed in a 26-ft 3
+commercial refrigerator (model MK-26GD, Koolaire) modiﬁed at
+Cornell University to provide an operating temperature of 16°C and
+approximately four air changes per minute via connection to in-house
+ventilation. Temperature was regulated using a refrigeration temper-
+ature controller (model T4031, Honeywell) and monitored using a
+wireless thermometer/hygrometer (model RMS300, Oregon Scien-
+1870 EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 19 ===
+tiﬁc). The refrigeration unit had a glass panel front door and was
+equipped with a ﬂuorescent lamp to provide the same light quantity as
+the warm-temperature mice housed in the same room.
+The exercise groups were provided continuous free access to
+running wheels (Fast-Trac, Bio-Serv) equipped with digital bicycle
+counters (model BC-906, Sigma Sport) to assess wheel usage. Wheels
+were ﬁtted with high-power magnets (Power Magnet, Sigma Sport)
+that could be positioned up to 20 mm away from the counter, enabling
+placement of the counting device outside the cage. Since the mouse
+wheels (471 mm) were smaller than the minimum wheel size entry
+accepted in the cycle computer, wheel circumference was set to 1,413
+mm, and output data were corrected by 1/3 to obtain actual distance
+run in kilometers.
+In Vivo Multiphoton Imaging
+We followed our previously described methods for measuring
+solute delivery in growth plates using MPM (82). We quantitatively
+assessed rates of entry and movement of systemically delivered
+ﬂuorescent tracers from the vasculature into the proximal tibial
+growth plate of 35-day-old mice. All animals were subjected to
+identical conditions (39) of anesthesia (1.5% isoﬂurane) and room
+temperature (20°C), regardless of prior wheel or temperature treat-
+ment (see Caveats and Technical Considerations ).
+Tibial growth plates were exposed through a minor surgical
+incision in the superﬁcial fascia of the biceps femoris and gastroc-
+nemius muscles between the medial collateral ligament and saphe-
+nous vessels, as previously described (36, 82). For water-immer-
+sion imaging using a /H1100320/0.95 numerical aperture objective
+(Olympus XLUMPlanFl), limbs were bathed in lactated Ringer so-
+lution that was warmed to 34°C to maintain physiological limb
+temperature (10), while body core and respiration were held constant
+at 36°C and 120 breaths/min. After identiﬁcation of a standard
+imaging depth in the growth plate (50 /H9262m below the deepest edge of
+the perichondrium), mice were given an intracardiac injection of
+ﬂuorescein tracer (50 /H9262l, 0.5%), and time-lapse multiphoton images
+(880 nm wavelength) were captured every /H110116 s spanning 10 min.
+Image collection did not continue beyond 10 min, because our prior
+work (36, 82) showed that the ﬂuorescein accumulation curves plateau
+by /H110118 min after injection. We collected data beyond this point until
+10 min to verify that the growth plate and surrounding vasculature
+were fully saturated.
+After in vivo imaging was completed, all image processing and
+subsequent analyses were done blind to group to prevent experimenter
+bias. Fluorescence was quantiﬁed in sample regions within the growth
+plate and vasculature at 1-min intervals using ImageJ (version 1.37,
+National Institutes of Health) and was evaluated at time points
+midway (5 min) and at the end (10 min) of the series following our
+published methods (82). To facilitate interanimal comparisons, ﬂuo-
+rescence in the growth plate was standardized to peak ﬂuorescence in
+the metaphyseal vasculature by calculation of a ratio of average
+growth plate ﬂuorescence to average vascular ﬂuorescence measured
+8 min after tracer injection (82). This time point marked a plateau in
+the accumulation curves among the groups (see Fig. 3 B), ensuring that
+peak levels in the vascular compartment had been attained across
+groups.
+Morphometry
+Body mass and tail length were recorded for each mouse at the start
+(24 days) and end (35 days) of the treatment period following methods
+from a prior study (78). Quadriceps muscles were dissected from the
+right femur after death and weighed to the nearest 0.001 g following
+published methods (47). Long bones were dissected and measured
+from digital images acquired using a ﬂatbed scanner (Perfection V30,
+Epson) following published methods (108) (Fig. 1). As with image
+processing, all postmortem measurements were done blind to group to
+prevent experimenter bias. Total lengths of the humerus, radius,
+femur, and tibia were recorded. Humerus length was deﬁned by the
+distance between the most proximal and distal articular surfaces;
+radius length was the distance between the head and distal point on the
+styloid process; femur length was measured from the most proximal
+point on the greater trochanter to the most distal point on the medial
+condyle in a line running parallel to the shaft; and tibia length was
+measured as the distance between the proximal articular surface and
+the most distal point on the medial malleolus. Some mice ( n /H110056) were
+euthanized at 24 days without wheel or temperature treatment to
+obtain average representative starting limb length. All measurements
+were made in ImageJ (version 1.37).
+Statistical Analysis
+Statistical analyses were performed using SPSS 11.0 software, with
+/H9251/H110050.05 for all procedures. Data were evaluated using one- and
+two-way ANOVA designs. A two-way factorial model with temper-
+ature and exercise as ﬁxed factors was employed to identify main
+effects of these variables and their potential interaction. One-way
+ANOVA with group (WW, WN, CW, and CN) as the independent
+Table 1. Body mass, quadriceps mass, and long bone lengths after 11 days of treatment
+Warm (25°C) Cold (16°C)
+Pairwise Differences*Wheel ( n /H1100515) No wheel ( n /H1100516) Wheel ( n /H1100516) No wheel ( n /H1100515)
+Body mass, g 15.90 (0.92) 15.15 (0.81) 16.31 (0.68) 15.36 (0.85) WW /H11022WN
+CW /H11022WN
+CW /H11022CN
+Quadriceps mass, g 0.103 (0.01) 0.085 (0.01) 0.096 (0.01) 0.084 (0.01) WW /H11022WN
+WW /H11022CN
+CW /H11022WN
+CW /H11022CN
+Femur length, mm 12.88 (0.20) 12.71 (0.18) 12.82 (0.21) 12.58 (0.18) WW /H11022WN
+WW /H11022CN
+CW /H11022CN
+Tibia length, mm 15.45 (0.34) 15.30 (0.26) 15.46 (0.32) 15.19 (0.21) WW /H11022CN
+CW /H11022CN
+Humerus length, mm 10.07 (0.14) 9.97 (0.12) 10.14 (0.21) 10.02 (0.15) CW /H11022WN
+Radius length, mm 9.90 (0.11) 9.83 (0.15) 9.85 (0.24) 9.62 (0.63) WW /H11022CN
+WN /H11022CN
+CW /H11022CN
+Values are means (SD). WW, warm wheel; WN, warm no wheel; CW, cold wheel; CN, cold no wheel. * P /H110210.05 by 1-way ANOVA and Tukey’s honestly
+signiﬁcant difference test.
+1871EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 20 ===
+variable was also used to more clearly distinguish differences among
+the four separate treatments. Tukey’s honestly signiﬁcant difference
+multiple comparison test was used to identify signiﬁcant pairwise
+differences. Independent comparisons between groups and treatments
+were performed as appropriate using Student’s t-test. Relationships
+among variables were assessed using Pearson’s product-moment cor-
+relation.
+RESULTS
+Warm Temperature and Exercise Increase Limb Length
+Compared with their cold and nonexercised counterparts,
+warm temperature and wheel exercise increased limb length in
+mice after the 11-day treatment period (Fig. 1). Average long
+bone lengths measured from digital images (Table 1) were, in
+general, as follows: WW /H11015CW /H11022WN /H11022CN. Two-way
+ANOVA revealed no effect of exercise on tail elongation ( F /H11005
+1.4, P /H110050.25) but showed a signiﬁcant and sizable temperature
+effect (F /H11005216.3, P /H110210.001). Change in tail length in the cold
+mice measured only half of that in the warm groups, regardless
+of exercise (Fig. 2 A). Femur length, by contrast, varied with
+temperature and exercise (Figs. 1 and 2 B). With the exception
+of radius length, there was no temperature-by-exercise inter-
+action in any of the variables (all F /H113490.6, P /H113500.45). The
+temperature-by-exercise interaction approached signiﬁcance in
+the radius ( F /H110053.1, P /H110050.09), with more pronounced
+shortening in CN mice (Table 1). There were signiﬁcant ( P /H11021
+0.05, 1-tailed) effects of temperature and exercise on femur
+length (temperature: F /H110054.2, P /H110050.02; exercise: F /H1100518.3,
+P /H110210.001) and radius length (temperature: F /H110058.5, P /H11005
+0.002; exercise: F /H1100510.4, P /H110050.001). There was a large main
+effect of exercise on body mass ( F /H1100516.4, P /H110210.001),
+quadriceps mass (F /H1100531.4, P /H110210.001), and lengths of the tibia
+(F /H110058.7, P /H110050.003) and humerus ( F /H110057.4, P /H110050.005), but
+the temperature effect on these variables was not signiﬁcant
+when tested with a two-by-two factorial ANOVA.
+To more clearly distinguish among the four treatment
+groups, we next applied one-way ANOVA and Tukey’s post
+hoc test ( P /H110210.05). Table 1 lists signiﬁcant pairwise differ-
+ences for each variable. Both exercise groups had increased
+body mass and quadriceps muscle mass. On average, mice in
+the WW group had the longest limb bones, with the exception
+of the humerus, which was slightly longer in the CW group.
+In summary, mice with exercise wheels were larger, more
+muscular, and had signiﬁcantly longer limbs than those without
+wheels, regardless of temperature. CN mice had the shortest
+limbs, conﬁrming the predicted temperature effect (Table 1).
+Tail length was increased by temperature but was unaffected
+by wheel running, indicating that the exercise effect occurred
+directly on the weight-bearing limbs.
+Wheel Exercise Increases Fluorescein Tracer Intensities in
+and Around the Growth Plate
+MPM was used to image solute delivery to the growth plate
+using ﬂuorescein, a low-molecular-weight tracer, as a proxy for
+soluble factors in the bloodstream. Timed accumulation curves
+showed that exercise, but not temperature, increased ﬂuores-
+cein arrival and entry into the growth plate (Fig. 3 A). Within 5
+min after tracer injection, absolute ﬂuorescein intensities were
+/H110111.5-fold greater in the growth plates of the wheel-running
+than non-wheel-running mice, regardless of temperature. This
+Fig. 1. Temperature effects on femur length in wheel-running and non-wheel-
+running mice housed at warm (25°C) and cold (16°C) temperatures. Cold
+housing without an exercise wheel decreased bone length, but wheel exercise
+increased limb length at both temperatures. All long bone lengths measured
+from digital images were, in general, as follows: WW /H11015CW /H11022WN /H11022CN,
+where WW is warm wheel, CW is cold wheel, WN is warm no wheel, and CN
+is cold no wheel. Scale bar, 1 mm.
+Fig. 2. Temperature effects on tail and femur length in wheel-running and non-wheel-running mice. A: tail lengths conﬁrmed previous ﬁndings that extremities
+are shorter at cold temperatures. There was a signiﬁcant and sizable temperature effect on tail elongation (2-way ANOVA: F /H11005216.3, P /H110210.001) but no effect
+of wheel-running exercise. Change in tail length in the cold mice measured only half of that in the warm groups, regardless of exercise. B: femur length varied
+with temperature and exercise. Conclusion is that the exercise effect was localized to limb bones and was not a systemic or endocrine reaction. Femur i s plotted
+as change in length from a common baseline starting point, determined by average femur length of 8 mice at 24 days age. Tail is plotted as change in length
+from the start, measured for each individual mouse. Values are group means /H11006SE. Statistically signiﬁcant ( P /H110210.05) by 1-way ANOVA and Tukey’s test for
+multiple independent comparisons: *WW and WN vs. CW and CN in pairwise comparisons; /H11001WW /H11022WN and WW /H11022CN; /H11001/H11001CW /H11022CN.
+1872 EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 21 ===
+difference, however, only approached signiﬁcance due to large
+within-group variation (wheel vs. nonwheel, temperatures
+pooled: Student’s t /H110051.4, P /H110050.08). The wheel-no wheel
+difference declined slightly over time, but at 10 min there was
+still, on average, /H110111.3-fold more tracer in the growth plates of
+the wheel groups.
+Also, more tracer was measured in the metaphyseal vascu-
+lature adjacent to the growth plate in the wheel-running mice
+(Fig. 3B): /H110221.3 times more ﬂuorescein had accumulated in the
+metaphyseal vasculature of the runners by 5 min (temperatures
+pooled), indicating enhanced tracer delivery into and around
+the growth plates of exercised mice. Fluorescein intensities in
+the growth plate were nearly the same between the two exer-
+cised groups (Fig. 3 A); however, there was more ﬂuorescein in
+the metaphyseal vasculature of the CW mice than the other
+groups (Fig. 3 B). These differences, however, were not statis-
+tically signiﬁcant because of large variation in the measure-
+ment (CW vs. CN at 5 min: Student’s t /H110051.1, P /H110050.14).
+In summary, exercise markedly increased ﬂuorescein tracer
+intensities in the growth plate and metaphyseal vasculature of
+wheel-running mice. There was no appreciable effect of tem-
+perature on ﬂuorescein levels in the growth plate or vascula-
+ture. Because of marked variation in absolute ﬂuorescence
+values among individuals, a standardization factor was applied
+to enable more rigorous among-group comparisons.
+Wheel Exercise Increases Relative Fluorescein Accumulation
+in the Growth Plate
+Measured ﬂuorescence intensities can vary among individ-
+uals as a function of imaging conditions (82), rendering abso-
+lute values difﬁcult to interpret. Fluorescein intensities in the
+growth plate were therefore standardized to peak local vascular
+intensities in each mouse for additional comparisons (Fig. 4).
+This standardization ensured that the intergroup differences in
+absolute intensities were not an artifact of imaging quality,
+since growth plate and vascular intensities were always highly
+correlated in each individual (Pearson’s r /H110050.85, P /H110210.001).
+In other words, when imaging conditions rendered lower in-
+tensities in the growth plate, a similar lower intensity was
+found in the adjacent metaphyseal vasculature of the same
+animal.
+Two-way ANOVA applied to standardized data at the 5-min
+time point (Fig. 4) revealed a signiﬁcant exercise effect ( F /H11005
+4.3, P /H110050.02) and conﬁrmed the apparent absence of a
+temperature effect on relative ﬂuorescein accumulation in the
+growth plate ( F /H110050.02, P /H110220.80). Multiple independent
+comparisons using Student’s t-test showed signiﬁcantly more
+ﬂuorescein in growth plates of the WW group than the WN
+(t /H110051.8, P /H110210.05) and CN ( t /H110051.8, P /H110210.05) groups.
+Although visibly greater, standardized values in the CW mice
+were not statistically different from those in the CN ( t /H110051.3,
+P /H110050.10) and WN ( t /H110051.2, P /H110050.12) groups, likely due to
+increased vascular levels in the CW group (Fig. 3 B), which
+slightly skewed the ratios. Relative growth plate ﬂuorescence
+did not differ by temperature between WW and CW ( t /H110050.2,
+P /H110220.86) or between WN and CN ( t /H110050.03, P /H110220.98)
+groups, as indicated by ANOVA.
+In summary, standardized ﬂuorescein values in the growth
+plate were elevated in the wheel-running mice compared with
+Fig. 3. Timed accumulation curves of ﬂuorescein
+(FL) tracer in the growth plate and metaphyseal
+vasculature. A: exercise signiﬁcantly increased FL
+arrival and entry into the growth plate. Within 5 min
+after tracer injection, absolute FL concentrations
+were /H110111.5-fold greater in the growth plates of the
+wheel-running than nonrunning groups, independent
+of temperature. B: there was also more tracer in the
+adjacent metaphyseal vasculature of the wheel-run-
+ning groups: /H110221.3 times more FL had accumulated
+in the metaphyseal region of the runners by 5 min
+(temperatures pooled), indicating enhanced tracer
+delivery into and around the growth plates of exer-
+cised mice. These differences in absolute values,
+however, were not statistically signiﬁcant because
+of within-group variation. Group means are shown
+without error bars to facilitate viewing.
+Fig. 4. Plot of relative growth plate ﬂuorescence measured 5-min after
+ﬂuorescein tracer injection. Fluorescein levels in the growth plate were
+standardized to peak concentrations in the metaphyseal bone region to account
+for variation in imaging conditions between mice (36, 82). Two-way ANOVA
+applied to these standardized data revealed a signiﬁcant exercise effect ( F /H11005
+4.3, P /H110050.02) and conﬁrmed the apparent absence of a temperature effect on
+relative ﬂuorescein accumulation in the growth plate. Values are group means/H11006
+SE. /H11001Statistical signiﬁcance ( P /H110210.05) by 1-way ANOVA and Tukey’s test
+for multiple independent comparisons: WW /H11022WN and WW /H11022CN.
+1873EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 22 ===
+their nonrunning counterparts, but there was no difference due
+to temperature. Exercise was the main effect.
+Variation in Wheel Usage Relates to Differences in Limb
+Length and Solute Delivery
+There was considerable variation in voluntary wheel usage
+among mice. Daily distances ranged from 5 to 25 km/day (Fig. 5),
+but there was no signiﬁcant difference between cold and warm
+groups (Student’s t /H110051.5, P /H110050.15). Given that exercise
+impacts limb elongation, this ﬁvefold range in average daily
+distance could account for the increased variation in other data
+collected (Table 1, Fig. 4). Standard errors were consistently
+elevated in the wheel groups for nearly every variable mea-
+sured, but tests for homogeneity of variances indicated that
+these were nonsigniﬁcant.
+There appeared to be a slight positive relationship between
+distance run and femur length (Fig. 5), but this was not a
+statistically signiﬁcant correlation (Pearson’s r /H110050.1, P /H11005
+0.28). However, three outliers had unusually long femurs
+compared with any other mouse in the sample ( /H1102213.2 mm),
+and one mouse exhibited extremely high wheel-running activ-
+ity ( /H1102225 km/day). The three mice with the unusually long
+femurs were also among the largest animals at the start of the
+experiments, suggesting a potential unintended sampling bias.
+We therefore omitted these outliers on scientiﬁc grounds for an
+additional analysis to better assess the relationship between the
+variables. Excluding these outliers yielded a stronger positive
+correlation between femur length and distance run (Pearson’s
+r /H110050.3, P /H110050.03), suggesting that there may be a trend
+between amount of wheel running and limb lengthening.
+Since we were interested in the relationship between exer-
+cise-mediated limb lengthening and solute delivery to growth
+plate cartilage, we applied partial correlation analysis to ac-
+count for variation in amount of wheel running. When we
+controlled for distance run, partial correlation analysis of
+relative growth plate ﬂuorescence and femur length yielded a
+moderate, although nonsigniﬁcant, positive correlation ( r /H11005
+0.3, P /H110050.09).
+In summary, wheel usage varied among mice and showed a
+positive, yet nonsigniﬁcant, relationship with femur length and
+ﬂuorescein tracer intensity in the growth plate.
+DISCUSSION
+Warm Temperature and Exercise Increase Limb Length
+We used an experimental system that integrated warm and
+cold rearing temperatures with wheel-running exercise in
+young mice to examine their individual and combined effects
+on bone elongation. We used warm temperature without a
+wheel as a comparison standard, because this is the normal
+housing condition for mice in our facility. We avoid the term
+“control,” however, because the temperature effect on limb
+elongation follows a gradient pattern, and the presence of a
+temperature differential is the point of importance (78, 80).
+After an 11-day treatment period of naturally rapid growth in
+mice (8, 54, 78, 81), we found that cold housing temperature
+decreased and exercise increased limb elongation as predicted.
+When combined, wheel exercise compensated for the shorten-
+ing effect of cold temperature. All wheel-running mice had
+similarly lengthened limbs, regardless of temperature, while
+nonrunning mice had shorter limbs that correlated with housing
+temperature. Femurs were, on average, 0.3 mm longer in the
+WW than CN group (Fig. 2). While this may seem minimal,
+consider that total femur length in the WW mice only increased
+by /H110112 mm from the 24-day starting point. The 0.3-mm
+intergroup difference, therefore, represents a substantial 15%
+of the total length obtained during the study.
+The bone most affected by temperature was the radius,
+which was distinctly shorter in CN mice. WW mice had the
+longest radii, illustrating a signiﬁcant temperature-by-exercise
+interaction. We hypothesize this is because /H1102270% of radius
+lengthening occurs at the wrist (29, 70, 71), and so this growth
+plate had greatest exposure to ambient temperature by virtue of
+its anatomic location in the distal forelimb. Indeed, others have
+shown a similar proximal-to-distal gradient in appendage
+lengthening, temperature, and blood ﬂow (3, 27, 65, 67, 78,
+92). The differential impact of exercise on the radius also is not
+surprising, since its active growth plate is at a primary weight-
+bearing site of the mouse forelimb. We did not image the distal
+radius growth plate because of methodological constraints;
+however, we focused multiphoton imaging on the proximal
+(knee) growth plate of the tibia, where /H1101160% of its lengthen-
+ing occurs at a high-impact site (29).
+The individual effects of temperature and exercise are con-
+sistent with prior work (3, 80, 83, 90); however, their combined
+effects on limb length are a novel result of this study. Inter-
+estingly, we found no impact of exercise on tail elongation, yet
+tail length was signiﬁcantly reduced at cold temperature, as
+shown previously (Fig. 2) (80). Others have also reported that
+exercise does not impact tail elongation (33), and we suspect
+that this is because the tail does not experience an impact load.
+For instance, moderate compression of articular cartilage has
+an anabolic effect on chondrocytes by stimulating changes in
+cell matrix, ﬂuid ﬂow, and biochemical activity (72). Since
+Fig. 5. Relationship between femur length and wheel-running distance.
+A: voluntary wheel usage varied from 5 to 25 km/day, but there was no
+signiﬁcant difference in average distance between cold and warm groups.
+There was a slight positive correlation between distance run and femur length
+(Pearson’s r /H110050.3, P /H110050.03, outliers excluded as denoted by # and ##),
+suggesting that the amount of wheel running could be related to degree of limb
+lengthening. This 5-fold range in average daily distance may also account for
+increased variation in other data collected (see Figs. 2 and 4). #Mice with
+unusually long femurs; ##mouse with extremely high running activity.
+1874 EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 23 ===
+growth plate cartilage is composed of the same resident cell
+type, it is possible that increased compression of the long bones
+stimulates the same changes in growth plate cartilage to en-
+hance its growth potential, whereas temperature acts through
+alternate mechanisms (80). The tail, therefore, absent loading
+on its articular disks, served as an exquisite control variable for
+the temperature effect.
+Although exercise and warm temperature can increase levels
+of systemic factors, such as growth hormone (40, 97), our
+observations using the tail as a temperature control support the
+concept that exercise affects the limbs directly, rather than
+generally promoting growth through systemic mechanisms.
+This direct, local effect is especially likely, since exercise can
+also increase circulating levels of stress hormones (84), which
+are known to inhibit bone elongation (24). We found that body
+mass was greater in mice in the exercise groups than in their
+counterparts without wheels, which we attribute in part to
+increased muscle mass. Mice with wheels had signiﬁcantly
+larger quadriceps muscles (Table 1), and we qualitatively noted
+that these animals were leaner and more muscular overall. The
+increased muscle mass, therefore, could be expected to exert
+larger loads on the skeleton (47), especially the weight-bearing
+sites. Since the tail does not experience load bearing and its
+length was not affected by wheel running, the conclusion is
+that the exercise effect was localized to the weight-bearing
+skeleton and was not a general systemic response to heightened
+activity. The ability to discriminate a local vs. systemic reac-
+tion to exercise has key relevance to studies on skeletal loading
+and mechanotransduction in bone (55, 74, 96).
+Wheel Exercise Increases Fluorescein Tracer Intensity
+in the Growth Plate
+Since our results indicated that the exercise response was
+localized to limb bones, we used in vivo multiphoton imaging
+to test the hypothesis that exercise promotes bone elongation
+by enhancing solute delivery to the growth plate. We used
+ﬂuorescein as a proxy for solutes in the bloodstream, because
+it is a nontoxic, low-molecular-weight tracer that enters the
+growth plate with relative ease (36, 82, 102). We measured
+ﬂuorescein in the proximal tibial growth plate after an
+intracardiac injection to determine whether solute delivery
+differed in groups exposed to chronic temperature and/or
+exercise treatment. Fluorescein levels in the growth plates
+and adjacent metaphyseal vasculature of wheel-running
+mice were increased as predicted. However, there were no
+temperature differences as hypothesized. This suggests that
+exercise has the primary effect on solute delivery.
+The absence of a temperature effect on solute delivery in
+nonrunning mice was surprising, because their limb lengths
+were affected by housing temperature (Figs. 1 and 2). In a prior
+study using microspheres to measure total bone blood ﬂow in
+warm- and cold-housed mice, Serrat et al. (80) described a
+threshold response to temperature. They found that bone per-
+fusion was only reduced in mice housed at their coldest study
+temperature (7°C) and did not differ between two warmer-
+housed groups (21°C and 27°C), even though limb lengths
+differed. It is possible that the temperatures used in the present
+study (16°C and 25°C) were above a similar cold threshold that
+maintains normal solute delivery to cartilage. In fact, the 16°C
+cold temperature in our experiments was mild compared with
+0 –10°C in other studies (3, 6, 9, 85). Importantly, 16°C was
+sufﬁcient to induce a differential growth response relative to
+the 25°C warm-housed mice (note tails in Fig. 2). If the
+threshold idea is correct, then it suggests that exercise must
+induce physiological changes to increase solute delivery above
+this normal threshold.
+Mechanistically, one way to increase solute delivery to the
+growth plate would be to increase the total volume of blood
+arriving at a bone by increasing ﬂow rate, enlarging vessel
+diameter (vasodilation), and/or increasing vessel numbers (an-
+giogenesis). Our results complement published data that show
+that total bone blood ﬂow is increased with exercise (43, 56,
+59, 63, 64, 91) and are especially relevant in light of the known
+correlation between increased blood ﬂow and bone elongation
+(17–19, 68, 95). Our data are a key advancement, because we
+illustrate for the ﬁrst time that these exercise effects can occur
+locally in growth plate cartilage. These data could not be
+obtained using other methods.
+Fluorescein Tracer Intensities Differ in Growth Plate
+and Vasculature
+It is interesting and unexpected that the WW mice had
+slightly lower levels of ﬂuorescein in the vasculature, yet their
+relative growth plate levels did not differ from their CW
+counterparts. Vascular ﬂuorescein levels were measured as the
+ﬂuorescence intensity in the region of the metaphyseal bone
+adjacent to the growth plate, which contains a rich network of
+blood vessels (20). One potential explanation is that cold-
+reared mice have bones that are less dense, causing the ﬂuo-
+rescein concentrations to appear higher in that region because
+of decreased bone density. Delahunty and colleagues (28)
+found a seasonal reduction in femur mineral content in female
+mice in the winter, suggesting that bone density could indeed
+be lower in the cold-reared mice. Radial bone expansion peaks
+during this stage of rapid postnatal growth (3–5 wk of age in
+mice) (23), and so bone density changes might be expected in
+our experiments. We are currently investigating bone mineral
+density from micro-CT scans to address this possibility, and
+our preliminary results show a temperature effect despite the
+relatively short treatment period (unpublished data). Steinberg
+and Trueta (83) detected bone loss in comparable-aged rats as
+early as 1 wk following hindlimb immobilization, supporting
+the idea that the growing skeleton responds rapidly to changes
+in mechanical stimuli.
+Variation in Wheel Usage Relates to Differences in Limb
+Length and Solute Delivery
+Running distances in both groups ranged from 5 to 25
+km/day, with an average of /H1101112 km/day. This is consistent
+with ranges published by others (5, 52), with the variation
+expected since the activity was voluntary. We hypothesize that
+variation in wheel-running activity may, in part, account for the
+increased variation we detected in other variables (see error
+bars in Figs. 2 and 4). Indeed, using the same strain of mice,
+Isaksson et al. (52) reported increased within-group variation
+in bone mechanical properties and collagen networks of the
+animals that voluntarily ran on wheels. We found a slight
+positive correlation between femur length and running dis-
+tance, suggesting that variation in wheel usage could account
+for some of the variation in limb length. However, the corre-
+1875EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 24 ===
+lation was only marginally signiﬁcant when several outliers
+were removed on scientiﬁc grounds (see above), and so these
+results need further conﬁrmation. Future studies using deﬁned
+exercise regimens could clarify this issue by eliminating the
+variation introduced by voluntary exercise. However, deﬁned
+exercise must be employed cautiously because of the potential
+for a negative physiological impact of overstimulation (32,
+58, 73).
+Caveats and Technical Considerations
+While our study provides fundamental data regarding the
+role of solute delivery in exercise-mediated limb lengthening,
+our results must be considered in light of several technical
+constraints. Most important for discussion is the length of
+treatment and the difference between rearing and imaging
+temperatures.
+Length of treatment. While a longer treatment period would
+have been favorable to reveal greater intergroup differences,
+the 35-day end point was speciﬁc to the requirements of this
+study. We started with 24-day weanlings purchased from a
+commercial vendor to ensure that age- and sex-matched co-
+horts were available for regular weekly imaging. We previ-
+ously found that 35 days of age is optimal for visualization of
+the proximal tibial growth plate in vivo (36, 82, 102), since
+growth plate size and growth rate decline substantially there-
+after in mice (8).
+It is essential to note that the 11-day treatment occurred
+during a period of naturally rapid growth in mice, in terms of
+body size (54) and growth plate activity (8, 81). Animals in this
+study showed a 55% increase in body mass (10 g at start to
+15.5 g at end point). It is therefore impressive, but not surpris-
+ing, that the bone elongation differences emerged within this
+relatively short time period. These data support previous ideas
+that the postnatal skeleton is especially responsive to external
+stimuli during a critical postparturition window of heightened
+sensitivity (79).
+Rearing and imaging temperatures. Temperature change
+was one of the most difﬁcult aspects of our experiments to
+control. Mice were reared chronically at cold and warm tem-
+peratures of 16°C and 25°C, respectively. Multiphoton imag-
+ing was done at a standard intermediate temperature of 20°C.
+Mice reared in the cold experienced short-term (up to several
+hours) acute warming when brought to the imaging facility,
+while the warm-reared mice experienced acute cooling. It was
+logistically not possible to avoid these temperature changes
+because of the sensitive nature of the microscopy equipment.
+However, maintaining the mice at the same neutral imaging
+temperature was the best way to ensure that we were investi-
+gating a permanent chronic change in solute delivery, rather
+than a transient effect of room temperature.
+To minimize experimentally induced variation, we main-
+tained rigorous control over core and limb temperature during
+imaging and otherwise subjected all mice to the same condi-
+tions (82). Published data suggest that any impact of imaging
+conditions may actually only be minimal. Serrat (78) used
+microspheres to measure bone blood supply in cold- and
+warm-reared mice and found that surgical room temperature
+did not signiﬁcantly affect bone perfusion results. Others have
+shown that anesthesia minimally impacts bone blood ﬂow if
+normal core body temperature is maintained (1). Furthermore,
+acute exercise effects on bone blood supply are known to
+persist fo r 1 h after rest (91), and chronic changes have even
+been shown in the resting state (56, 87). We were interested in
+detecting a chronic change that could account for differences in
+bone elongation rate, and so we believe these methods are
+appropriate to the research question.
+Summary and Implications
+Using an experimental model that combines effects of tem-
+perature and wheel-running exercise on skeletal growth in
+mice, this study is the ﬁrst to provide evidence for a role of
+solute delivery in exercise-augmented limb elongation. We
+found that limb length varied with temperature and exercise but
+tail length varied with temperature alone. This demonstrates
+that exercise effects were limited to the weight-bearing skele-
+ton. Such effects were manifested in a long-term increase in
+solute delivery to the growth plate, which was clearly evident
+in the resting state. These results indicate that exercise may
+modulate limb growth by permanently enhancing availability
+of essential nutrients and soluble factors in the growth plate. It
+is signiﬁcant, then, that temperature impacted extremity growth
+without altering solute delivery to the growth plate, suggesting
+that temperature effects on limb elongation occur through other
+physiological mechanisms (80).
+Our data demonstrate that in vivo multiphoton imaging is a
+reliable tool for measuring chronic changes in solute delivery
+to tibial growth plates of mice. These analytic methods will be
+useful for assessing the role of nutrient transport in natural and
+experimental models of growth plate dysfunction, particularly
+chondrodysplasias, where defects in the extracellular matrix
+could impede molecular transport in cartilage, leading to im-
+paired bone growth (see review in Ref. 82).
+These ﬁndings are relevant for assessing skeletal variation
+among mammals in different environmental contexts, particu-
+larly those where temperature and exercise could have a dual
+effect on morphology. For example, in an analysis of body
+shape in humans from two archaeological sites in Alaska with
+marked differences in winter temperatures (Point Hope vs.
+Kodiak Island), Holliday and Hilton (50) found that the groups
+had similar limb proportions, despite a 14°C difference in
+January high temperatures. They had expected to ﬁnd rela-
+tively shorter limbs in the colder-dwelling Point Hope sample,
+on the basis of the prediction that their more extreme climate
+would have driven selection for a more cold-adapted body
+shape (50). While genetic and environmental components must
+be considered, one speculation for their similarity in body form
+could be that heightened physical activity characteristic of both
+circumpolar groups mitigated some of the impact of cold
+temperature on limb length. Although this developmental plas-
+ticity hypothesis cannot be directly tested in fossils, the work
+presented here sheds important light on what remains a per-
+plexing issue in human and mammalian evolution.
+By illuminating exercise and temperature effects on bone
+elongation in a controlled setting, these laboratory experiments
+make evolutionary scenarios regarding the heritability of limb
+length problematic when viewed as simple adaptations for
+thermoregulation (69, 76, 86, 88) and/or performance (15, 75).
+On the other hand, if these environmentally induced morphol-
+ogies do confer an evolutionary advantage, they could poten-
+1876 EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 25 ===
+tially become ﬁxed in a population through natural selection
+and/or genetic assimilation (7, 26, 44, 80).
+Building on the classic genetic assimilation work of Wad-
+dington and Baldwin, West-Eberhard (100, 101) elegantly
+described how morphologically plastic traits could evolve
+through the process of natural selection. Indeed, if exercise- or
+temperature-induced developmental lability could produce ad-
+vantageous traits in the context of a challenging environment
+(7, 26, 44, 60, 61, 86), it is likely that the underlying mecha-
+nisms could be under intense natural selection and, ultimately,
+become ﬁxed in a population after many generations (80).
+Indeed, West-Eberhard (100) suggested that environmentally
+driven phenotypic plasticity could actually have greater evo-
+lutionary potential than random mutation in terms of natural
+selection. Since skeletal material is often the sole reference for
+reconstructing an animal’s biology and behavior, it is critical
+that we continue forging efforts to understand the causes and
+extent of this intriguing bone elongation plasticity. These
+efforts will be key to making better-informed assessments of
+skeletal adaptations among animals in our remote and distant
+past.
+ACKNOWLEDGMENTS
+The authors thank W. Zipfel and J. McMullen for assistance with the
+multiphoton microscope; S. Allen, R. Barrier, R. Combs, and Cornell Labo-
+ratory Animal Services for animal housing and husbandry; B. Linnehan for
+research aid; and E. Donnelly and S. Chang for technical advice and critical
+suggestions.
+GRANTS
+This work was made possible by National Institute of Arthritis and Mus-
+culoskeletal and Skin Diseases Grant RO1 AR-052003-05 to C. E. Farnum.
+M. A. Serrat is an American Association of Anatomists Scholar, and this
+research was in part funded by a postdoctoral fellowship from the American
+Association of Anatomists (www.anatomy.org).
+DISCLOSURES
+No conﬂicts of interest, ﬁnancial or otherwise, are declared by the authors.
+DISCLAIMER
+The funders had no role in study design, data collection and analysis,
+decision to publish, or preparation of the manuscript.
+REFERENCES
+1. Aardal NP, Svanes K, Egenberg KE. Effect of hypothermia and
+pentobarbital anaesthesia on the distribution of cardiac output in rabbits.
+Eur Surg Res 5: 372, 1973.
+2. Adams EH. A comparative anthropometric study of hard labor during
+youth as a stimulator of physical growth of young colored women. Res Q
+9: 102–108, 1938.
+3. Al-Hilli F, Wright EA. The effects of changes in the environmental
+temperature on the growth of bones in the mouse: radiological and
+morphological study. Br J Exp Pathol 64: 43–52, 1983.
+4. Allen JA. The inﬂuence of physical conditions in the genesis of species.
+Radical Rev 1: 108 –140, 1877.
+5. American Physiological Society. Resource Book for the Design of
+Animal Exercise Protocols . Bethesda, MD: Am. Physiol. Soc., 2006.
+6. Ashoub MA. Effect of two extreme temperatures on growth and tail-
+length of mice. Nature 181: 284, 1958.
+7. Badyaev AV. Evolutionary signiﬁcance of phenotypic accommodation
+in novel environments: an empirical test of the Baldwin effect. Phil Trans
+R Soc Lond B Biol Sci 364: 1125–1141, 2009.
+8. Bailón-Plaza A, Lee AO, Veson EC, Farnum CE, van der Meulen
+MCH. BMP-5 deﬁciency alters chondrocytic activity in the mouse
+proximal tibial growth plate. Bone 24: 211–216, 1999.
+9. Barnett SA, Scott SG. Some effects of cold and of hybridity on the
+growth of mice. J Embryol Exp Morphol 11: 35–51, 1963.
+10. Becher C, Springer J, Feil S, Cerulli G, Paessler HH. Intra-articular
+temperatures of the knee in sports—an in-vivo study of jogging and
+alpine skiing. BMC Musculoskelet Disord 9: 46, 2008.
+11. Bertram JE, Greenberg LS, Miyake T, Hall BK. Paralysis and long
+bone growth in the chick: growth shape trajectories of the pelvic limb.
+Growth Dev Aging 61: 51–60, 1997.
+12. Beyer HG. The inﬂuence of exercise on growth. J Exp Med 1: 546 –558,
+1896.
+13. Biewener AA, Bertram JEA. Structural response of growing bone to
+exercise and disuse. J Appl Physiol 76: 946 –955, 1994.
+14. Bloomﬁeld SA. Does altered blood ﬂow to bone in microgravity impact
+on mechanotransduction? J Musculoskelet Neuronal Interact 6: 324 –
+326, 2006.
+15. Bramble DM, Lieberman DE. Endurance running and the evolution of
+Homo. Nature 432: 345–352, 2004.
+16. Brashear HR. Epiphyseal avascular necrosis and its relation to longitu-
+dinal bone growth. J Bone Joint Surg Am 45: 1423–1438, 1963.
+17. Brodin H. Longitudinal bone growth and nutrition of the epiphyseal
+cartilages and the local blood supply: an experimental study in the rabbit.
+Acta Orthop Scand Suppl 20: 9 –92, 1955.
+18. Brookes M. Blood supply of developing bone and its possible bearing on
+malformation of the limbs and face in congenital haemangiomatous
+disorders. Proc R Soc Med 65: 597–599, 1972.
+19. Brookes M, May KU. The inﬂuence of temperature on bone growth in
+the chick. J Anat 111: 351–363, 1972.
+20. Brookes M, Revell WJ. Blood Supply of Bone: Scientiﬁc Aspects . New
+York: Springer, 1998.
+21. Buskirk ER, Andersen KL, Brozek J. Unilateral activity and bone and
+muscle development in the forearm. Res Q 27: 127–131, 1956.
+22. Cairns R. Magnetic resonance imaging of the growth plate: pictorial
+essay. Can Assoc Radiol J 54: 234 –242, 2003.
+23. Callewaert F, Venken K, Kopchick JJ, Torcasio A, van Lenthe GH,
+Boonen S, Vanderschueren D. Sexual dimorphism in cortical bone size
+and strength but not density is determined by independent and time-
+speciﬁc actions of sex steroids and IGF-1: evidence from pubertal mouse
+models. J Bone Miner Res 25: 617–626, 2010.
+24. Chagin AS, Karimian E, Sundström K, Eriksson E, Sävendahl L.
+Catch-up growth after dexamethasone withdrawal occurs in cultured
+postnatal rat metatarsal bones. J Endocrinol 204: 21–29, 2010.
+25. Colleran PN, Wilkerson MK, Bloomﬁeld SA, Suva LJ, Turner RT,
+Delp MD. Alterations in skeletal perfusion with simulated microgravity:
+a possible mechanism for bone remodeling. J Appl Physiol 89: 1046 –
+1054, 2000.
+26. Crispo E. The Baldwin effect and genetic assimilation: revisiting two
+mechanisms of evolutionary change mediated by phenotypic plasticity.
+Evolution 61: 2469 –2479, 2007.
+27. De Neve W, Van Der Elst J, Geerts F, Van Loon R, De Clerck V,
+Storme G. The inﬂuence of ambient temperature on tumor growth,
+metastasis and survival in mice. Clin Exp Metastasis 6: 213–219, 1988.
+28. Delahunty K, Horton L, Coombs H, Shultz K, Svenson K, Marion M,
+Holick M, Beamer W, Rosen CJ. Gender- and compartment-speciﬁc
+bone loss in C57BL/6J mice: correlation to season? J Clin Densitom 12:
+89 –94, 2009.
+29. Digby KH. The measurement of diaphyseal growth in proximal and
+distal directions. J Anat Physiol 50: 187–188, 1916.
+30. Draenert K, Draenert Y. The role of the vessels in the growth plate:
+morphological examination. Scann Electron Microsc 1: 339 –344, 1985.
+31. Dunn KW, Sutton TA. Functional studies in living animals using
+multiphoton microscopy. ILAR J 49: 66 –77, 2008.
+32. Duyar I. Growth patterns and physical plasticity in adolescent laborers.
+Coll Antropol 32: 403–412, 2008.
+33. Erich WB, Peltenberg AL, Minkhorst J, VanDessel B, Biersteker-
+Hubben MW, Zonderland ML, Huisveld IA. The inﬂuence of physical
+exercise on growth and sexual maturation in young female rats. Growth
+49: 131–140, 1985.
+34. Etchebehere E, Caron M, Pereira JA, Lima M, Santos AO, Ramos
+CD, Barros FB, Sanches A, Santos-Jesus R, Belangero W, Camargo
+EE. Activation of the growth plates on three-phase bone scintigraphy: the
+explanation for the overgrowth of fractured femurs. Eur J Nucl Med 28:
+72–80, 2001.
+35. Farnum CE. Postnatal growth of ﬁns and limbs through endochondral
+ossiﬁcation. In: Fins Into Limbs: Evolution, Development, and Transfor-
+mation. Chicago: University of Chicago Press, 2007, p. 118 –151.
+1877EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 26 ===
+36. Farnum CE, Lenox M, Zipfel W, Horton W, Williams R. In vivo
+delivery of ﬂuoresceinated dextrans to the murine growth plate: imaging
+of three vascular routes by multiphoton microscopy. Anat Rec A Discov
+Mol Cell Evol Biol 288: 91–103, 2006.
+37. Felts WJ. Transplantation studies of factors in skeletal organogenesis. I.
+The subcutaneously implanted immature long-bone of the rat and mouse.
+Am J Phys Anthropol 17: 201–215, 1959.
+38. Feucht BL, Richardson AW, Hines HM. Effect of hot foments on
+volume of blood ﬂow in extremities of dogs. Arch Phys Med Rehabil 30:
+687–690, 1949.
+39. Flesken-Nikitin A, Williams RM, Zipfel W, Webb WW, Nikitin AY.
+Use of multiphoton imaging for studying cell migration in the mouse.
+Methods Mol Biol 294: 335–345, 2005.
+40. Ftaiti F, Jemni M, Kacem A, Zaouali M, Tabka Z, Zbidi A, Grélot L.
+Effect of hyperthermia and physical activity on circulating growth
+hormone. Appl Physiol Nutr Metab 35: 350 –357, 2008.
+41. Garofalo S, Vuorio E, Metsaranta M, Rosati R, Toman D, Vaughan
+J, Guillermina L, Mayne R, Ellard J, Horton W, De Crombrugghe B.
+Reduced amounts of cartilage collagen ﬁbrils and growth plate anomalies
+in transgenic mice harboring a glycine-to-cysteine mutation in the mouse
+type II procollagen /H92511-chain gene. Proc Natl Acad Sci USA 88: 9648 –
+9652, 1991.
+42. Geiser M, Trueta J. Muscle action, bone rarefaction and bone forma-
+tion: an experimental study. J Bone Joint Surg Br 40: 282–311, 1958.
+43. Genant HK, Bautovich GJ, Singh M, Lathrop KA, Harper PV.
+Bone-seeking radionucleotides: an in vivo study of factors affecting
+skeletal uptake. Radiology 113: 373–382, 1974.
+44. Ghalambor CK, McKay JK, Carroll SP, Reznick DN. Adaptive
+versus non-adaptive phenotypic plasticity and the potential for contem-
+porary adaptation in new environments. Funct Ecol 21: 394 –407, 2007.
+45. Greyson ND, Tepperman PS. Three-phase bone studies in hemiplegia
+with reﬂex sympathetic dystrophy and the effect of disuse. J Nucl Med
+25: 423–429, 1984.
+46. Haas SL. The relation of the blood supply to the longitudinal growth of
+bone. Am J Orthop Surg 15: 157–171, 1917.
+47. Hamrick MW, McPherron AC, Lovejoy CO, Hudson J. Femoral
+morphology and cross-sectional geometry of adult myostatin-deﬁcient
+mice. Bone 27: 343–349, 2000.
+48. Harland SC. Effect of temperature on growth in weight and tail-length
+of inbred and hybrid mice. Nature 186: 446, 1960.
+49. Harrison GA. Environmental modiﬁcation of mammalian morphology.
+Man 60: 3–6, 1960.
+50. Holliday TW, Hilton CE. Body proportions of circumpolar peoples as
+evidenced from skeletal data: Ipiutak and Tiagra (Point Hope) versus
+Kodiak Island Inuit. Am J Phys Anthropol 142: 287–302, 2010.
+51. Hunter WL, Arsenault AL. Vascular invasion of the epiphyseal growth
+plate: analysis of metaphyseal capillary ultrastructure and growth dynam-
+ics. Anat Rec 227: 223–231, 1990.
+52. Isaksson H, Tolvanen V, Finnilä MAJ, Iivarinen J, Tuukkanen J,
+Seppänen K, Arokoski JPA, Brama PA, Jurvelin JS, Helminen HJ.
+Physical exercise improves properties of bone and its collagen network in
+growing and maturing mice. Calcif Tissue Int 85: 247–256, 2009.
+53. Iwamoto J, Shimamura C, Takeda T, Abe H, Ichimura S, Sato Y,
+Toyama Y. Effects of treadmill exercise on bone mass, bone metabo-
+lism, and calciotropic hormones in young growing rats. J Bone Miner
+Metab 22: 26 –31, 2004.
+54. Jackson Laboratory. Body Weight Information for Jax Mice Strain
+C57BL/6J. Bar Harbor, ME: Jackson Laboratory, 2010.
+55. Jee WSS. The past, present, and future of bone morphometry: its
+contribution to an improved understanding of bone biology. J Bone
+Miner Metab 23 Suppl: 1–10, 2005.
+56. Jurvelin J, Lahtinen T, Kiviranta I, Arnala I, Lappalainen R, Tammi
+M, Helminen HJ. Blood ﬂow, histomorphology and elemental compo-
+sition of the canine femur after physical training or immobilization. Acta
+Physiol Scand 132: 385–389, 1988.
+57. Karsenty G, Kronenberg HM, Settembre C. Genetic control of bone
+formation. Annu Rev Cell Dev Biol 25: 629 –648, 2009.
+58. Kiiskinen A. Physical training and connective tissues in young mice:
+physical properties of Achilles tendons and long bones. Growth 41:
+123–137, 1977.
+59. Kiiskinen A, Suominen H. Blood circulation of long bones in trained
+growing rats and mice. Eur J Appl Physiol 34: 303–309, 1975.
+60. Losos JB, Creer DA, Glossip D, Goellner R, Hampton A, Roberts G,
+Haskell N, Taylor P, Ettling J. Evolutionary implications of phenotypic
+plasticity in the hindlimb of the lizard Anolis sagrei. Evolution 54:
+301–305, 2000.
+61. Losos JB, Schoener TW, Warheit KI, Creer D. Experimental studies
+of adaptive differentiation in Bahamian Anolis lizards. Genetica 112–
+113: 399 –415, 2001.
+62. Malina RM. Exercise as an inﬂuence upon growth. Review and critique
+of current concepts. Clin Pediatr 8: 16 –26, 1969.
+63. McDonald F, Pitt Ford TR. Blood ﬂow changes in the tibia during
+external loading. J Orthop Res 11: 36 –48, 1994.
+64. Mohr T, Akers TK, Wessman HC. Effect of high voltage stimulation
+on blood ﬂow in the rat. Phys Ther 67: 526 –533, 1987.
+65. Mostafa A, Attar SE, Mili F, Wright EA. The effect of environmental
+temperature on the rate of healing of fractures in tail vertebrae of mice.
+J Bone Joint Surg Br 62: 102–103, 1980.
+66. Murray PDF, Selby D. Intrinsic and extrinsic factors in the primary
+development of the skeleton. Dev Genes Evol 122: 629 –662, 1930.
+67. Nakano T, Thompson JR, Christopherson RJ, Aherne FX. Blood
+ﬂow distribution in hind limb bones and joint cartilage from young
+growing pigs. Can J Vet Res 50: 96 –100, 1986.
+68. Noel JF, Wright EA. The growth of transplanted mouse vertebrae:
+effects of transplantation under the renal capsule, and the relationship
+between the rate of growth of the transplant and the age of the host. J
+Embryol Exp Morphol 28: 633–645, 1972.
+69. Nudds RL, Oswald SA. An interspeciﬁc test of Allen’s rule: evolution-
+ary implications for endothermic species. Evolution 61: 2839 –2848,
+2007.
+70. Payton CG. The growth in length of the long bones in the madder-fed
+pig. J Anat 66: 414 –425, 1932.
+71. Pritchett JW. Growth plate activity in the upper extremity. Clin Orthop
+Relat Res 268: 235–242, 1991.
+72. Ramage L, Nuki G, Salter DM. Signalling cascades in mechanotrans-
+duction: cell-matrix interactions and mechanical loading. Scand J Med
+Sci Sports 19: 457–469, 2009.
+73. Reich A, Jaffe N, Tong A, Lavelin I, Genina O, Pines M, Sklan D,
+Nussinovitch A, Monsonego-Ornan A. Weight loading young chicks
+inhibits bone elongation and promotes growth plate ossiﬁcation and
+vascularization. J Appl Physiol 98: 2381–2389, 2005.
+74. Robling AG, Turner CH. Mechanical signaling for bone modeling and
+remodeling. Crit Rev Eukaryotic Gene Expr 19: 319 –338, 2009.
+75. Ruff C. Variation in human body size and shape. Annu Rev Anthropol
+31: 211–232, 2002.
+76. Ruff CB. Morphological adaptation to climate in modern and fossil
+hominids. Yearbook Phys Anthropol 37: 65–107, 1994.
+77. Schoutens A, Bergmann P, Verhas M. Bone ﬂood ﬂow measured by
+85Sr microspheres and bone seeker clearances in the rat. Am J Physiol
+Heart Circ Physiol 236: H1–H6, 1979.
+78. Serrat MA. Environmentally-Determined Tissue Temperature Modu-
+lates Extremity Growth in Mammals: A Potential Comprehensive Expla-
+nation of Allen’s Rule (Ph.D. thesis). Kent, OH: Kent State University,
+2007.
+79. Serrat MA, Farnum CE, Williams RM, Lovejoy CO. Environment
+inﬂuences bone elongation during a critical period of postnatal growth
+(Abstract). Am J Phys Anthropol Suppl 44: 364, 2009.
+80. Serrat MA, King D, Lovejoy CO. Temperature regulates limb length in
+homeotherms by directly modulating cartilage growth. Proc Natl Acad
+Sci USA 105: 19347–19352, 2008.
+81. Serrat MA, Lovejoy CO, King D. Age- and site-speciﬁc decline in
+insulin-like growth factor-I receptor expression is correlated with differ-
+ential growth plate activity in the mouse hindlimb. Anat Rec 290:
+375–381, 2007.
+82. Serrat MA, Williams RM, Farnum CE. Temperature alters solute
+transport in growth plate cartilage measured by in vivo multiphoton
+microscopy. J Appl Physiol 106: 2016 –2025, 2009.
+83. Steinberg ME, Trueta J. Effects of activity on bone growth and
+development in the rat. Clin Orthop Relat Res 156: 52–60, 1981.
+84. Stuempﬂe KJ, Nindl BC, Kamimori GH. Stress hormone responses to
+ultraendurance race in the cold. Wilderness Environ Med 21: 22–27,
+2010.
+85. Sumner FB. Some effects of external conditions upon the white mouse.
+J Exp Zool 7: 97–155, 1909.
+86. Symonds MR, Tattersall GJ. Geographical variation in bill size across
+bird species provides evidence for Allen’s rule. Am Nat 176: 188 –197,
+2010.
+1878 EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.
+=== PAGE 27 ===
+87. Thorp BH, Duff SRI. Effect of exercise on the vascular pattern in the
+bone extremities of broiler fowl. Res Vet Sci 45: 72–77, 1988.
+88. Tilkens MJ, Wall-Schefﬂer C, Weaver TD, Steudel-Numbers K. The
+effects of body proportions on thermoregulation: an experimental assess-
+ment of Allen’s rule. J Hum Evol 53: 286 –291, 2007.
+89. Tomita Y, Tsai TM, Steyers C, Ogden L, Jupiter JB, Kutz JE. The
+role of the epiphyseal and metaphyseal circulations on longitudinal
+growth in the dog: an experimental study. J Hand Surg [Am] 11:
+375–382, 1986.
+90. Tomljenovic Borer K, Kuhns LR. Radiographic evidence for acceler-
+ation of skeletal growth in adult hamsters by exercise. Growth 41: 1–13,
+1977.
+91. Tøndevold E, Bülow J. Bone blood ﬂow in conscious dogs at rest and
+during exercise. Acta Orthop Scand 54: 53–57, 1983.
+92. Tothill P, MacPherson JN. The distribution of blood ﬂow to the whole
+skeleton in dogs, rabbits and rats measured with microspheres. Clin Phys
+Physiol Meas 7: 117–123, 1986.
+93. Trueta J. Skeletal shape and muscle power. Bull Hosp Joint Dis 21:
+332–345, 1960.
+94. Trueta J. Studies of the Development and Decay of the Human Frame .
+Philadelphia: Saunders, 1968.
+95. Trueta J. The inﬂuence of the blood supply in controlling bone growth.
+Bull Hosp Joint Dis 14: 147–157, 1953.
+96. Turner CH, Warden SJ, Bellido T, Plotkin LI, Kumar N, Jasiuk I,
+Danzig J, Robling AG. Mechanobiology of the skeleton. Sci Signal 28:
+pt 3, 2009.
+97. Vendelbo MH, Jørgensen J, Pedersen S, Gormsen L, Lund S,
+Schmitz O, Jessen N, Møller N. Exercise and fasting activate growth
+hormone-dependent myocellular signal transducer and activator of tran-
+scription-5b phosphorylation and insulin-like growth factor-I messenger
+ribonucleic acid expression in humans. J Clin Endocrinol Metab 95:
+E64 –E68, 2010.
+98. Wang BG, Konig K, Halbhuber KJ. Two-photon microscopy of deep
+intravital tissues and its merits in clinical research. J Microsc 238: 1–20,
+2010.
+99. Weaver ME, Ingram DL. Morphological changes in swine associated
+with environmental temperature. Ecology 50: 710 –713, 1969.
+100. West-Eberhard MJ. Developmental plasticity and the origin of species
+differences. Proc Natl Acad Sci USA 102: 6543–6549, 2005.
+101. West-Eberhard MJ. Phenotypic plasticity and the origins of diversity.
+Annu Rev Ecol Syst 20: 249 –278, 1989.
+102. Williams RM, Zipfel WR, Tinsley ML, Farnum CE. Solute transport
+in growth plate cartilage: in vitro and in vivo. Biophys J 93: 1039 –1050,
+2007.
+103. Williams RM, Zipfel WR, Webb WW. Interpreting second-har-
+monic generation images of collagen I ﬁbrils. Biophys J 88: 1377–
+1386, 2005.
+104. Wilsman NJ, Farnum CE, Leiferman EM, Fry M, Barreto C. Dif-
+ferential growth by growth plates as a function of multiple parameters of
+chondrocyte kinetics. J Orthop Res 14: 927–936, 1996.
+105. Wirth T, Syed Ali MM, Rauer C, Süss D, Griss P, Syed Ali S. The
+blood supply of the growth plate and the epiphysis: a comparative
+scanning electron microscopy and histological experimental study in
+growing sheep. Calcif Tissue Int 70: 312–319, 2002.
+106. Wisely SM, Santymire RM, Livieri TM, Marinari PE, Kreeger JS,
+Wildt DE, Howard J. Environment inﬂuences morphology and devel-
+opment for in situ and ex situ populations of the black-footed ferret
+(Mustela nigripes ). Anim Conserv 8: 321–328, 2005.
+107. Yang KTA, Yang AD. Evaluation of activity of epiphyseal plates in
+growing males and females. Calcif Tissue Int 78: 348 –356, 2006.
+108. Young NM, Hallgrímsson B. Serial homology and the evolution of
+mammalian limb covariation structure. Evolution 59: 2691–2704,
+2002.
+109. Zipfel WR, Williams RM, Christie R, Nikitin AY, Hyman BT, Webb
+WW. Live tissue intrinsic emission microscopy using multiphoton-
+excited native ﬂuorescence and second harmonic generation. Proc Natl
+Acad Sci USA 100: 7075–7080, 2003.
+110. Zipfel WR, Williams RM, Webb WW. Nonlinear magic: multiphoton
+microscopy in the biosciences. Nat Biotechnol 21: 1369 –1377, 2003.
+1879EXERCISE INCREASES SOLUTE DELIVERY TO THE GROWTH PLATE
+J Appl Physiol • VOL 109 • DECEMBER 2010 • www.jap.org
+Downloaded from journals.physiology.org/journal/jappl (2603:6000:B204:C900:44F4:6237:F79E:7252) on August 27, 2026.

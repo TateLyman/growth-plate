@@ -1,0 +1,205 @@
+id: yield_is_amplification_not_cell_size
+name: THE YIELD DECOMPOSED - 88 per cent of it is AMPLIFICATION, not terminal cell size, so yield is a
+  control point in its own right and nothing in this atlas touches it
+aliases:
+- yield decomposition
+- amplification versus h_term
+- is yield just h_term renamed
+- divisions per progenitor
+- cells produced per resting zone cell
+- round 174
+type: hypothesis
+layer: L2
+stub: false
+summary: 'YIELD IS NOW THE PRIMARY OBJECTIVE OF THIS ATLAS, AND THE FIRST THING IT NEEDED WAS A TEST OF
+  WHETHER IT IS A REAL CONTROL POINT OR AN EXISTING ONE UNDER A NEW NAME. IT IS REAL.
+
+  THE TEST. A length-yield is a PRODUCT of two independent things:
+  micrometres of bone per resting-zone cell = (hypertrophic cells produced per resting-zone cell spent) x
+  (micrometres of bone per hypertrophic cell), or YIELD = AMPLIFICATION x TERMINAL CELL HEIGHT. The atlas
+  already has an arm on the second factor - the CNP axis, which nakao2015 partitions onto the hypertrophic
+  zone and which vosoritide drives. So IF the tenfold yield gap between a bone that fuses and one that
+  does not were mostly terminal cell height, yield would be h_term wearing a different name and there
+  would be no new lever. IT IS NOT.
+
+  THE RESULT, IN MOUSE, OVER THE 2-3 WEEK INTERVAL ON WHICH THE YIELD WAS COMPUTED. Femur against
+  metacarpal - the bone that never fuses against the bone that fuses at 2-3 weeks - yield ratio 10.4x
+  (published interval 6.1-17.3), TERMINAL CELL HEIGHT RATIO ONLY 1.32x (bootstrap 1.15-1.55), leaving an
+  AMPLIFICATION RATIO OF 7.9x. EIGHTY-EIGHT PER CENT OF THE LOG GAP IS AMPLIFICATION AND TWELVE PER CENT
+  IS CELL SIZE. Tibia against metacarpal gives 93 per cent and 7 per cent. The direction does not depend
+  on which non-fusing bone is used.
+
+  AND THE RAT REPLICATES THE HALF THAT CAN BE REPLICATED. lui2018 carries an independent rat series.
+  Femur-to-metacarpal terminal cell height there is 1.45, 1.46, 1.75, 1.47 and 1.69 across 1, 2, 4, 8 and
+  12 weeks. TERMINAL HYPERTROPHIC CELL HEIGHT IS CONSERVED TO WITHIN ABOUT TWOFOLD BETWEEN BONES WHOSE
+  FUSION TIMES DIFFER BY AN ORDER OF MAGNITUDE, IN TWO SPECIES. It is not the variable that distinguishes
+  a plate with years left from one about to close.
+
+  WHAT THE MOUSE TIME COURSE ADDS, AND IT SHARPENS THE TARGET. Cell production per column per day -
+  calcein growth rate divided by terminal cell height, which needs no width convention - runs 10.80, 10.60
+  and 8.33 in the femur at 1, 2 and 3 weeks while the metacarpal COLLAPSES 6.58, 3.35, 1.02 over the same
+  weeks. Its resting zone falls 78.2 to 48.7 to 24.1 cells per 500 micrometres. Terminal cell height in
+  the metacarpal holds at 23.1 and 24.5 and only drops at 3 weeks, to 15.9. SO AT FUSION BOTH TERMS FAIL,
+  BUT AMPLIFICATION FAILS FIRST AND FAILS HARDER. Cell size is a late casualty; amplification is the
+  variable that is already gone.
+
+  WHAT THIS MEANS FOR THE STACK, STATED PLAINLY. The CNP axis acts on the factor that varies by 1.3-fold
+  between a fusing and a non-fusing bone. The factor that varies by nearly eightfold - the number of
+  amplifying divisions a progenitor yields before its progeny hypertrophy - HAS NO AGENT IN THIS STACK AND
+  NO AGENT ANYWHERE IN THIS ATLAS. That is the target.
+
+  ONE CANDIDATE ALREADY IN THE STACK, RAISED AS A HYPOTHESIS AND NOT AS A FINDING. Amplification is, in
+  physical terms, the number of transit-amplifying divisions in the proliferative column before a cell
+  commits to hypertrophy - so its natural readout is PROLIFERATIVE-ZONE output, not hypertrophic-zone
+  output. kot2026 reports infigratinib increasing femur length AND PROLIFERATIVE-ZONE growth plate height,
+  which is the amplification signature rather than the h_term signature, and the atlas ledger already
+  separates the two agents on exactly that zone basis. Whether FGFR inhibition raises amplification per
+  progenitor - as opposed to raising proliferation without changing the yield per progenitor consumed -
+  IS NOT ESTABLISHED BY THAT OBSERVATION and is the first question of the next round.
+
+  A SPECIES ERROR WAS MADE AND CAUGHT, AND IT IS THE REASON THESE NUMBERS CAN BE TRUSTED. lui2018 S1 Data
+  holds mouse and rat in one workbook with only one sheet naming either. The first run of the tool divided
+  a mouse yield by a rat terminal cell height. Corrected to mouse throughout, with rat demoted to the
+  independent replication it should always have been. Logged as CORR-185. The contaminated answer was 7.2x
+  and the corrected one is 7.9x - the conclusion survived, which is luck rather than method.'
+quantitative:
+- parameter: fraction of the femur-to-metacarpal log yield gap attributable to AMPLIFICATION rather than
+    terminal cell size
+  value: '88'
+  unit: '%'
+  conditions: mouse, 2-3 week interval; yield ratio 10.4x against a terminal-cell-height ratio of 1.32x,
+    leaving an amplification ratio of 7.9x. Femur never fuses; metacarpal fuses at 2-3 weeks
+  species: mouse
+  source_ref: lui2018
+  uncertainty: THIS ATLAS'S ARITHMETIC on published per-animal values, value_unverified. Yield interval
+    6.1-17.3 from the published bounds; terminal-cell-height ratio bootstrap 1.15-1.55 (n=12 vs 10)
+- parameter: same decomposition, tibia against metacarpal
+  value: '93'
+  unit: '%'
+  conditions: mouse, 2-3 week interval; yield ratio 17.6x against terminal-cell-height ratio 1.22x,
+    amplification ratio 14.5x
+  species: mouse
+  source_ref: lui2018
+  uncertainty: the tibial yield interval is very wide (5.4-231.2), so this row corroborates the direction
+    and adds nothing to the magnitude
+- parameter: terminal hypertrophic cell height, femur relative to metacarpal - INDEPENDENT RAT REPLICATION
+  value: 1.45, 1.46, 1.75, 1.47, 1.69
+  unit: fold
+  conditions: rat, at 1, 2, 4, 8 and 12 weeks respectively; the mouse value over 2-3 weeks is 1.32x.
+    Terminal cell height is conserved to within about twofold between bones whose fusion times differ by an
+    order of magnitude, in both species
+  species: rat
+  source_ref: lui2018
+  uncertainty: rat series identified from FigS3, which names both species with matching age sets - see
+    CORR-185
+- parameter: cell production per column per day, femur against metacarpal across the fusion window
+  value: femur 10.80 / 10.60 / 8.33 versus metacarpal 6.58 / 3.35 / 1.02
+  unit: cells per column per day
+  conditions: mouse at 1, 2 and 3 weeks; computed as calcein growth rate divided by terminal cell height,
+    which requires no plate-width convention. Over the same weeks the metacarpal resting zone falls 78.2 to
+    48.7 to 24.1 cells per 500 micrometres
+  species: mouse
+  source_ref: lui2018
+  uncertainty: 'AMPLIFICATION FAILS FIRST AND HARDER THAN CELL SIZE: metacarpal terminal cell height holds
+    at 23.1 and 24.5 before dropping to 15.9 only at 3 weeks, by which point production has already fallen
+    sixfold'
+localization:
+- 'the proliferative column: amplification is the number of transit-amplifying divisions between a
+  resting-zone cell leaving the pool and its progeny committing to hypertrophy'
+- 'the hypertrophic zone: terminal cell height, the other factor - the one the CNP axis acts on, and the
+  one that barely varies between bones'
+human_evidence: absent
+human_evidence_note: 'Entirely rodent. No human growth plate has ever had a yield, an amplification factor
+  or a resting-zone consumption rate measured, and the human terminal hypertrophic cell height is known
+  only from small autopsy and epiphysiodesis series. The between-bone design that makes this computable -
+  comparing a fusing to a non-fusing bone in one animal - has no human equivalent because human bones all
+  fuse.'
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: 'The whole construction rests on a mouse contrast between a bone that fuses and a
+  bone that never does, and no human bone behaves like the mouse femur. What transfers is the
+  DECOMPOSITION and the demonstration that the two factors are separable and unequal - not the numbers.'
+confidence: C
+claim_grades:
+- claim: The yield is a product of amplification and terminal cell height, and these are separable.
+  grade: B
+  basis: 'It is an identity, not a finding - micrometres of bone per progenitor spent must equal cells
+    produced per progenitor times micrometres per cell. What the data add is that the two factors are
+    EMPIRICALLY separable, because lui2018 measures terminal cell height and bone elongation independently
+    in the same animals at the same ages.'
+- claim: Most of the between-bone yield difference is terminal cell size, so yield is h_term under another
+    name.
+  grade: X
+  basis: 'NO, AND THIS IS THE POINT OF THE NODE. Terminal cell height differs between a fusing and a
+    non-fusing bone by only 1.32x in mouse (bootstrap 1.15-1.55) against a 10.4x yield gap, leaving 88 per
+    cent of the log gap to amplification. The rat series independently confirms the cell-height half at
+    1.45-1.75x across five ages. The CNP axis acts on the factor that barely varies.'
+- claim: Amplification - the number of hypertrophic cells obtained per resting-zone progenitor consumed -
+    is the variable that distinguishes a plate with years left from one about to close.
+  grade: C
+  basis: 'Supported by the decomposition (7.9x amplification against 1.32x cell size) and by the mouse time
+    course, where metacarpal production per column collapses 6.58 to 1.02 cells per day over 1-3 weeks
+    while terminal cell height is still holding. C not B because every value is this atlas re-analysing
+    another group''s summary data, the yields are upper bounds (net rather than gross resting-zone loss),
+    and it is two rodent species with no human counterpart.'
+- claim: Terminal hypertrophic cell height is broadly conserved between bones within a species.
+  grade: B
+  basis: 'Two species, independently. Mouse femur-to-metacarpal 1.32x over 2-3 weeks; rat 1.45, 1.46, 1.75,
+    1.47 and 1.69 at 1, 2, 4, 8 and 12 weeks. Across bones whose fusion times differ by an order of
+    magnitude, the terminal cell varies by well under twofold. Consistent with cooper2013 treating cell
+    enlargement as a graded modulator of proportion rather than a switch.'
+- claim: FGFR inhibition, already in the stack, is an amplification agent.
+  grade: E
+  basis: 'HYPOTHESIS ONLY, RAISED SO IT IS TESTED RATHER THAN ASSUMED. Amplification should read out as
+    PROLIFERATIVE-zone output, and kot2026 reports infigratinib increasing femur length together with
+    proliferative-zone growth plate height, which is that signature rather than the hypertrophic one. But
+    raising proliferation is NOT the same as raising the number of divisions obtained PER PROGENITOR
+    CONSUMED - an agent could do the first while spending the pool faster and leave the yield unchanged or
+    worse. Nothing in kot2026 measures the resting-zone denominator. First question of the next round.'
+- claim: Anything in the current stack targets amplification.
+  grade: X
+  basis: 'NOT DEMONSTRATED FOR ANY AGENT. Vosoritide acts on terminal cell size (the 1.3x factor).
+    Anastrozole is an exchange-rate agent on bone age. Growth hormone drives committed division of the
+    progenitors, which spends the denominator rather than raising the quotient (chu2025). FGFR inhibition
+    is the only candidate and it is graded E above.'
+key_refs:
+- ref_id: lui2018
+  year: 2018
+  type: primary
+  role: the per-animal open workbook that makes the decomposition computable - and the source of the
+    mouse/rat trap logged as CORR-185
+- ref_id: schrier2006
+  year: 2006
+  type: primary
+  role: where the yield term was first forced, by excluding both observable state variables of the pool
+- ref_id: nilsson2014
+  year: 2014
+  type: primary
+  role: the restatement - fewer proliferative replications per lost resting-zone chondrocyte under
+    oestrogen
+- ref_id: nakao2015
+  year: 2015
+  type: primary
+  role: partitions the CNP axis onto the hypertrophic zone, which is why the decomposition had to be done
+    before yield could be called a new control point
+- ref_id: cooper2013
+  year: 2013
+  type: primary
+  role: terminal cell enlargement as a graded modulator of proportion, consistent with the conservation
+    found here
+- ref_id: kot2026
+  year: 2026
+  type: primary
+  role: infigratinib raising PROLIFERATIVE-zone height - the amplification signature, and the reason the
+    FGFR arm is the first hypothesis to test
+open_questions:
+- g_l2_raise_the_yield_per_progenitor
+- g_l2_what_sets_amplification_in_the_proliferative_column
+contradicts:
+- 'NARROWS the_exchange_rate_between_growth_and_pool_depletion without contradicting it. That node
+  established height = pool x yield and estimated the yield. This node shows the yield is itself a product
+  and that only one of its two factors carries the between-bone difference - so "raise the yield" means
+  "raise amplification", not "raise terminal cell size", and the atlas already has an arm on the wrong one.'
+last_verified: '2026-08-09'

@@ -1,0 +1,67 @@
+id: visceral_organ_growth
+name: Visceral organ growth
+type: process
+layer: L9
+stub: false
+summary: 'Internal organs do not grow on the skeletal schedule, and organ weight references are the quantitative
+  record of that. The largest contemporary single-centre reference derives LMS-smoothed 5th to 95th centile
+  weight charts for heart, lungs, liver, spleen, kidneys, pancreas, thymus and adrenals from 1190 of 1525
+  consecutive infant autopsies over 14 years (pryce2014). Two of those organs are the strongest counterexamples
+  to a common growth clock: the thymus is largest in absolute terms in early childhood and involutes from
+  puberty onward, and the adrenal cortex loses its fetal zone in the first postnatal months and regrows
+  a functionally distinct zona reticularis at adrenarche. So within a single individual, at the moment
+  the growth plate is accelerating toward peak height velocity, at least one organ is regressing. This
+  is an organism-level constraint rather than a plate mechanism, but it bounds what a systemic signal
+  can be: no circulating factor whose concentration rises through puberty can be the sole driver of organ
+  size, because organ responses at that time have opposite signs. Postnatal organ weight references beyond
+  infancy were not located in this sweep and are logged as a gap.'
+quantitative:
+- parameter: infant autopsies analysed for the organ weight reference
+  value: '1525'
+  unit: cases
+  conditions: consecutive over 14 years at a single tertiary centre
+  species: human
+  source_ref: pryce2014
+  uncertainty: 1190 used for the final regression and LMS models
+- parameter: organs with published centile charts
+  value: '8'
+  unit: organs
+  conditions: heart, lungs, liver, spleen, kidneys, pancreas, thymus, adrenals
+  species: human
+  source_ref: pryce2014
+  uncertainty: 5th, 25th, 50th, 75th and 95th centiles each
+- parameter: age range covered
+  value: infancy
+  unit: not_applicable
+  conditions: the reference does not extend into childhood or adolescence
+  species: human
+  source_ref: pryce2014
+  uncertainty: stated scope
+localization:
+- 'human viscera: fresh organ weights at autopsy'
+human_evidence: direct
+human_evidence_note: Consecutive human infant autopsy series with measured fresh organ weights.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human autopsy measurements.
+confidence: B
+claim_grades:
+- claim: Contemporary LMS-smoothed organ weight centiles exist for eight organs across infancy
+  grade: A
+  basis: Direct measurement in 1190 modelled cases from 1525 consecutive autopsies.
+- claim: Some organs regress while the skeleton is still growing
+  grade: E
+  basis: Stated here as an inference from established thymic involution and adrenal zone remodelling rather
+    than from a measured within-individual series; flagged as inference and logged as gap g_l9organism_015.
+key_refs:
+- ref_id: pryce2014
+  pmid: '24822034'
+  first_author: Pryce JW
+  year: 2014
+  type: primary
+  one_line_finding: LMS-smoothed reference centiles for eight infant organ weights from over 1000 consecutive
+    autopsies.
+open_questions:
+- g_l9organism_015
+last_verified: '2026-08-05'

@@ -1,0 +1,73 @@
+id: pericellular_matrix
+name: Pericellular matrix (PCM)
+aliases:
+- PCM
+- pericellular capsule
+type: tissue_structure
+layer: L5
+stub: false
+summary: 'The pericellular matrix is the 2-4 um shell immediately surrounding each chondrocyte, distinguished
+  from the interterritorial matrix by containing collagen VI, perlecan, hyaluronan-CD44 coats, high collagen
+  IX and XI on thin fibrils, and little or no collagen II fibril bulk. It is mechanically distinct and
+  SOFTER than the surrounding matrix: in situ AFM stiffness mapping gives a PCM:ECM modulus ratio of about
+  0.35 in human, porcine and murine articular cartilage, consistent with earlier measurements on mechanically
+  isolated chondrons. That compliance is functional - it converts tissue-level strain into a cell-level
+  strain and fluid-flow signal - and the PCM is also a signalling reservoir, with FGF-2 stored bound to
+  perlecan heparan sulphate and released on mechanical loading. In the growth plate the PCM is additionally
+  the structural unit of the column: chondrons are tubular rather than spherical, and under compression
+  they bend and kink preferentially at the reserve/proliferative interface. The PCM:ECM modulus ratio
+  of the growth plate specifically, as distinct from articular cartilage, has not been measured.'
+quantitative:
+- parameter: PCM:ECM elastic modulus ratio, articular cartilage in situ
+  value: ~0.35
+  unit: ratio
+  conditions: AFM force-volume stiffness mapping on sectioned middle/deep zone cartilage
+  species: multiple
+  source_ref: darling2010
+  uncertainty: consistent across human, porcine and murine samples
+localization:
+- 'articular cartilage middle/deep zone: PCM softer than ECM (darling2010)'
+- 'growth plate: chondron PCM present around PZ and HZ columns; modulus not measured'
+human_evidence: direct
+human_evidence_note: Human articular cartilage PCM modulus was measured directly in the same study as
+  porcine and murine; human growth plate PCM has not been.
+species_basis:
+- human
+- porcine
+- mouse
+translation_risk: moderate
+translation_risk_reason: Human articular data exist, but transferring an articular PCM:ECM ratio to the
+  physis is unvalidated.
+confidence: B
+key_refs:
+- ref_id: darling2010
+  pmid: '20550897'
+  first_author: Darling EM
+  year: 2010
+  type: primary
+  one_line_finding: In situ AFM stiffness mapping gives PCM:ECM modulus ratio ~0.35 in human, porcine
+    and murine articular cartilage
+- ref_id: vincent2007
+  pmid: '17368052'
+  first_author: Vincent TL
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: FGF-2 is bound to perlecan heparan sulphate in the articular cartilage pericellular
+    matrix and released on load
+- ref_id: vendra2018
+  pmid: '29783204'
+  first_author: Vendra BB
+  year: 2018
+  type: primary_abstract_only
+  one_line_finding: Growth plate chondrons bend and kink at the reserve/proliferative interface under
+    20-40% compression, explaining nonuniform strain fields
+- ref_id: matsumoto2009
+  pmid: '19633173'
+  first_author: Matsumoto K
+  year: 2009
+  type: primary
+  one_line_finding: Loss of hyaluronan synthesis destroys the pericellular coat and disorganises growth
+    plate columns
+open_questions:
+- g_l5matrix_001
+last_verified: '2026-08-05'

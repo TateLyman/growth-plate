@@ -1,0 +1,1647 @@
+# Cross-layer edge shard: l12l7seam
+# Seams written here: L11->L3, L11->L4, L11->L5, L12->L3, L12->L4, L3->L7, L4->L7, L2->L7
+# Rule applied throughout: mice do not complete epiphyseal fusion, so any mechanism->fusion
+# edge whose only support is murine is written as hypothesized_link + confidence speculative
+# with a gap_id. Rabbit fusion data are treated as genuine fusion-endpoint evidence.
+
+edges:
+
+# =====================================================================
+# SEAM L11 -> L3 : each disease is a human perturbation OF a named pathway
+# ---- FGFR3 allelic series ----
+# =====================================================================
+
+  - edge_id: e00001
+    source: achondroplasia
+    target: fgfr3_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      G380R (c.1138G>A on 15/16 and G>C on 1/16 achondroplasia chromosomes). Constitutive but WEAK:
+      quantitative FRET in plasma membrane vesicles shows the only measurable effect is increased
+      unliganded dimerisation propensity, with no effect on ligand-bound dimer configuration; the
+      dominant defect is failed termination - selective resistance to ligand-mediated internalisation
+      and down-regulation via disrupted c-Cbl ubiquitination, diverting active receptor from lysosome
+      to recycling. Weaker constitutive activation than K650E.
+    context: >-
+      human, heterozygous germline FGFR3 transmembrane-domain allele; receptor biochemistry in
+      transfected human and animal cell lines and in transgenic mouse growth plate; zone-resolved
+      receptor activity has never been measured in a living achondroplasia patient
+    timescale: constitutive from fetal life; height-SDS loss accrues almost entirely within the first 2 postnatal years
+    evidence_tier: T1
+    refs: [shiang1994, naski1996, sarabipour2016, monsonegoornan2000, cho2004]
+    confidence: A
+    notes: >-
+      Severity ordering across DOMAINS holds: K650E (kinase domain, lethal) activates more strongly
+      than G380R (transmembrane, viable). It does NOT hold within the K650 pair - see e00004.
+
+  - edge_id: e00002
+    source: hypochondroplasia
+    target: fgfr3_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      N540K (8/14 unrelated patients in the original screen; 50-70% of all cases) plus a rarer K650N/K650Q
+      class producing weaker constitutive kinase activation than the K650E and K650M substitutions
+    context: >-
+      human, heterozygous germline FGFR3 proximal-kinase-domain allele; no human growth plate histology
+      has ever been reported for hypochondroplasia
+    timescale: constitutive from fetal life
+    evidence_tier: T1
+    refs: [bellus1995, bellus2000]
+    confidence: A
+    notes: >-
+      The weak allele of the series and therefore the human dose control for achondroplasia: same
+      molecular lesion class, smaller magnitude, adult stature overlapping the lower normal range.
+
+  - edge_id: e00003
+    source: thanatophoric_dysplasia
+    target: fgfr3_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      TD2 = K650E in the kinase activation loop (16/16 cases); TD1 = R248C (22/39) or S371C creating an
+      unpaired extracellular cysteine that drives ligand-independent covalent dimerisation. K650E
+      constitutive activation exceeds G380R.
+    context: >-
+      human, de novo heterozygous FGFR3 alleles; the only member of the series in which the human growth
+      plate has actually been examined (91 registry cases with matched genotype, radiology and histopathology)
+    timescale: constitutive from fetal life; perinatally lethal, so no postnatal integration
+    evidence_tier: T1
+    refs: [tavormina1995, naski1996, wilcox1998]
+    confidence: A
+    notes: >-
+      Critically non-monotonic at the tissue level: K650E growth plates were BETTER preserved than R248C
+      and Y373C plates, so severity of receptor activation and severity of growth plate disorganisation
+      are not monotonically related.
+
+  - edge_id: e00004
+    source: saddan_syndrome
+    target: fgfr3_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      K650M produces approximately 3-fold the constitutive kinase activity of K650E in transient
+      transfection, yet is survivable (4/4 individuals survived past infancy) whereas K650E is lethal
+    context: >-
+      human, de novo heterozygous FGFR3 A1949T; kinase activity measured in transiently transfected cells;
+      no SADDAN growth plate histology and no systematic adult height series exist
+    timescale: constitutive from fetal life
+    evidence_tier: T1
+    refs: [tavormina1999]
+    confidence: B
+    notes: >-
+      LOAD-BEARING SCOPE LIMIT for every FGFR3-inhibitor edge in this atlas: phenotype severity is NOT
+      monotonic in kinase output within the K650E/K650M pair, even though it is monotonic across
+      K650E vs G380R. Reducing scalar kinase output is therefore not by itself predictive of benefit.
+
+  - edge_id: e00005
+    source: achondroplasia
+    target: fgfr3_mapk_branch
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      G380R strongly activates ERK in a cell-free kinase assay and in RCS chondrocytes; ERK activation
+      correlated with inhibition of chondrocyte proliferation. All six dysplasia alleles tested
+      (G380R, N540K, R248C, Y373C, K650M, K650E) activated ERK strongly.
+    context: >-
+      human FGFR3 alleles expressed in rat chondrosarcoma (RCS) chondrocytes, HeLa and 293T; constitutively
+      active MEK1 in mouse chondrocytes reproduces achondroplasia-like dwarfism and suppresses Fgfr3-null
+      overgrowth. No ERK measurement exists in human growth plate tissue.
+    timescale: minutes (kinase signalling); phenotypic integration over the first 2 postnatal years
+    evidence_tier: T1
+    refs: [krejci2008, murakami2004]
+    confidence: B
+    gap_id: g_l3core_008
+
+  - edge_id: e00006
+    source: thanatophoric_dysplasia
+    target: fgfr3_mapk_branch
+    relation: activates
+    sign: "+"
+    magnitude: K650E, R248C and Y373C all strongly activate ERK in RCS chondrocytes, HeLa and 293T
+    context: human FGFR3 alleles in non-cartilage and rat chondrosarcoma cell backgrounds
+    timescale: minutes (kinase signalling)
+    evidence_tier: T1
+    refs: [krejci2008]
+    confidence: B
+
+  - edge_id: e00007
+    source: hypochondroplasia
+    target: fgfr3_mapk_branch
+    relation: activates
+    sign: "+"
+    magnitude: N540K activates ERK strongly, comparably to the lethal alleles, despite the mildest clinical phenotype of the series
+    context: human FGFR3 N540K expressed in RCS chondrocytes, HeLa and 293T
+    timescale: minutes (kinase signalling)
+    evidence_tier: T1
+    refs: [krejci2008]
+    confidence: B
+    notes: >-
+      ERK activation strength does not order the clinical series either - N540K (mildest) activates ERK
+      comparably to K650E (lethal). Whatever grades the phenotype is not scalar ERK output alone.
+
+  - edge_id: e00008
+    source: thanatophoric_dysplasia
+    target: fgfr3_stat1_branch
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      K650E is one of only two of six dysplasia alleles that phosphorylate STAT1(Y701) in a cell-free
+      kinase assay and in RCS, HeLa and 293T cells; in cultured human TD type I fetal chondrocytes STAT1
+      is ligand-independently activated with nuclear STAT1 detectable in hypertrophic chondrocytes
+    context: >-
+      human TD alleles; the only human-tissue arm is TD type I fetal chondrocyte culture (legeaimallet1998),
+      not the human growth plate in situ
+    timescale: minutes (kinase signalling)
+    evidence_tier: T1
+    refs: [su1997, legeaimallet1998, krejci2008]
+    confidence: B
+    gap_id: g_l12l7_005
+    notes: >-
+      CONTRADICTION: krejci2008 found the TD1 allele R248C does NOT activate STAT1 in RCS/293T, whereas
+      legeaimallet1998 reported ligand-independent STAT1 activation in human TD1 fetal chondrocytes.
+      The disagreement is cell-background versus human-cell and is unresolved.
+
+  - edge_id: e00009
+    source: achondroplasia
+    target: fgfr3_stat1_branch
+    relation: correlates_with
+    sign: unknown
+    magnitude: >-
+      NULL RESULT: G380R produced no activatory STAT1(Y701) phosphorylation in a cell-free kinase assay,
+      and no STAT1 activation in RCS chondrocytes or 293T (weak in HeLa only)
+    context: human FGFR3 G380R expressed in RCS chondrocytes, HeLa and 293T; not tested in human growth plate tissue
+    timescale: minutes (kinase assay readout)
+    evidence_tier: T1
+    refs: [krejci2008]
+    confidence: D
+    gap_id: g_l12l7_005
+    notes: >-
+      Negative evidence. The STAT1 arm must NOT be assumed engaged by the achondroplasia allele; STAT1
+      activation appears restricted to K650E/K650M, which together account for a small minority of
+      FGFR3-related skeletal dysplasia. Recorded as an unsigned correlation so it is not traversed
+      as a signed mechanism.
+
+  - edge_id: e00010
+    source: saddan_syndrome
+    target: fgfr3_stat1_branch
+    relation: activates
+    sign: "+"
+    magnitude: K650M is one of the two alleles of six that strongly phosphorylate STAT1(Y701)
+    context: human FGFR3 K650M in a cell-free kinase assay and in RCS, HeLa and 293T cells; single study
+    timescale: minutes (kinase signalling)
+    evidence_tier: T1
+    refs: [krejci2008]
+    confidence: D
+    notes: >-
+      Relevant to the K650E/K650M lethality dissociation: both alleles activate STAT1 and both activate
+      ERK, so neither branch's on/off state explains why K650M is survivable and K650E is not.
+
+  - edge_id: e00011
+    source: achondroplasia
+    target: npr2_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      FGF-driven, PPP-family-phosphatase-dependent dephosphorylation of the seven juxtamembrane
+      serines/threonines of GC-B; crossing a non-dephosphorylatable GC-B(7E/7E) allele into FGFR3-G380R
+      restored long bone length and hypertrophic zone area to wild-type values
+    context: >-
+      mouse Fgfr3-G380R knock-in, intact mouse tibia with an in vivo cGMP biosensor, and rat chondrosarcoma
+      cells. NOT demonstrated in human tissue - no human growth plate NPR2 phosphorylation measurement exists.
+    timescale: minutes (rapid and reversible dephosphorylation); phenotypic integration over postnatal growth
+    evidence_tier: T1
+    refs: [wagner2021, robinson2017, shuhaibar2017]
+    confidence: C
+    gap_id: g_l12l7_008
+    notes: >-
+      Crosstalk is post-translational only - GC-B protein levels are unchanged - which is why the receptor
+      is still present to be agonised by CNP analogues in achondroplasia.
+
+# ---- CNP / NPR2 / cGMP dosage series ----
+
+  - edge_id: e00012
+    source: acromesomelic_dysplasia_maroteaux
+    target: npr2_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      biallelic loss of function; 21 distinct NPR2 lesions in 21 families (4 nonsense, 4 frameshift,
+      2 splice-site, 11 missense); 3 of the missense alleles tested were markedly deficient in
+      guanylyl cyclase activity
+    context: human, biallelic; functional assay in transfected cells; no AMDM growth plate has ever been described histologically
+    timescale: constitutive, lifelong
+    evidence_tier: T1
+    refs: [bartels2004]
+    confidence: A
+    notes: The zero point of the human CNP dosage series and the mechanistic negative control for vosoritide.
+
+  - edge_id: e00013
+    source: acromesomelic_dysplasia_maroteaux
+    target: cgmp_second_messenger
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      guanylyl cyclase activity markedly deficient for the tested alleles; the AMDM proband had very high
+      plasma CNP and NT-proCNP with low IGF-I and GH resistance, i.e. ligand accumulates because the
+      receptor cannot transduce or clear it. Heterozygous carriers were biochemically normal.
+    context: human proband plus in vitro cyclase assay; cGMP has never been measured in a human growth plate
+    timescale: constitutive, lifelong
+    evidence_tier: T1
+    refs: [bartels2004, olney2006]
+    confidence: B
+
+  - edge_id: e00014
+    source: npr2_heterozygous_short_stature
+    target: npr2_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      one lost allele costs approximately 1.4 SDS of height: 16 heterozygous carriers -1.8 +/- 1.1 SDS
+      versus 23 non-carrier relatives -0.4 +/- 0.8 SDS in the same family (P<0.0005); 7 heterozygous
+      variants in 192 short-stature patients versus 0 in 192 height-normal controls; ~3% yield in
+      SHOX-negative Leri-Weill referrals
+    context: human, heterozygous, both sexes; within-family design controls for shared environment and background
+    timescale: lifelong; the deficit is present through childhood and worsens with age
+    evidence_tier: T1
+    refs: [olney2006, wang2015, hisadooliva2015, bartels2004]
+    confidence: A
+
+  - edge_id: e00015
+    source: npr2_gain_of_function_tall
+    target: npr2_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      three mechanistically distinct activating classes: V883M (cyclase domain) generates cGMP with no CNP
+      present; R655C (kinase homology domain) amplifies the CNP response and its ATP stabilisation and
+      heterodimerises dominantly with wild-type receptor; plus an activating submembrane deletion
+    context: human, heterozygous, three-generation family for V883M; single probands for the others
+    timescale: constitutive, lifelong
+    evidence_tier: T1
+    refs: [miura2012, hannema2013, lauffer2020, wang2015]
+    confidence: B
+    notes: >-
+      V883M (tall WITH scoliosis and macrodactyly) and R655C (tall WITHOUT skeletal deformity) show that
+      ligand-independent basal signalling and amplified ligand-dependent signalling are not interchangeable
+      in the growth plate. No pooled effect size in cm or SDS exists for NPR2 gain of function.
+
+  - edge_id: e00016
+    source: npr2_gain_of_function_tall
+    target: cgmp_second_messenger
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      blood cGMP elevated in affected members of the V883M family; mutant receptor generated cGMP in
+      HEK293A cells in the complete absence of CNP where wild type did not. In the R655C proband plasma
+      NT-proCNP was REDUCED, i.e. augmented receptor activity feeds back onto ligand production.
+    context: >-
+      human blood (not growth plate) plus transfected human cell line; the only setting in which the
+      transducer and the stature phenotype have been measured in the same people
+    timescale: constitutive, lifelong
+    evidence_tier: T1
+    refs: [miura2012, hannema2013]
+    confidence: B
+
+  - edge_id: e00017
+    source: nppc_duplication_tall_stature
+    target: cnp_protein
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      plasma CNP 2-fold above five controls in the de novo t(2;7)(q37.1;q21.3) proband with a breakpoint
+      adjacent to NPPC, with substantially raised NPPC expression in the proband's fibroblasts; an
+      independent t(1;2)(q41;q37.1) with a breakpoint 200,365 bp downstream of NPPC raised serum NT-proCNP
+    context: human, two independent de novo balanced translocations at the same locus, same phenotype, same biomarker
+    timescale: constitutive, lifelong
+    evidence_tier: T1
+    refs: [bocciardi2007, ko2015]
+    confidence: A
+
+  - edge_id: e00018
+    source: nppc_duplication_tall_stature
+    target: npr2_receptor
+    relation: activates
+    sign: "+"
+    magnitude: not quantified - ligand concentration was measured, receptor output was not
+    context: >-
+      human; inferred from ligand dosage. Supported independently from the clearance side: biallelic NPR3
+      loss of function, which raises local CNP without changing NPPC, causes tall stature with skeletal overgrowth.
+    timescale: constitutive, lifelong
+    evidence_tier: T1
+    refs: [bocciardi2007, lauffer2022, hisadooliva2018]
+    confidence: C
+    notes: >-
+      Written at C rather than A because no receptor-level or cGMP measurement exists in NPPC-duplication
+      patients; the ligand-to-receptor step is inferred from the dose-response of the series as a whole.
+
+# ---- PTH1R: the matched activating/inactivating human pair ----
+
+  - edge_id: e00019
+    source: jansen_metaphyseal_chondrodysplasia
+    target: pth1r_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      ligand-independent cAMP accumulation from heterozygous activating alleles; H223R in 18/24 patients
+      in the natural-history series, plus T410P, T410R (father and two sons), I458R and I458K
+    context: >-
+      human, heterozygous, both sexes; cAMP measured in COS-7 cells expressing the mutant receptor.
+      The growth plate itself remains undescribed in living patients; bone histomorphometry exists in 2 children.
+    timescale: constitutive from fetal life
+    evidence_tier: T1
+    refs: [schipani1995, saito2018]
+    confidence: A
+    notes: HALF 1 OF 2 of the matched human PTH1R pair. Partner edge e00020 carries the opposite sign.
+
+  - edge_id: e00020
+    source: blomstrand_chondrodysplasia
+    target: pth1r_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      homozygous P132L abolishes both PTH- and PTHrP-stimulated cAMP accumulation and radioligand binding
+      while the mutant protein still reaches the cell surface of the affected infant's OWN growth plate
+      chondrocytes - so the defect is binding, not trafficking; an independent exon-M5 splice allele
+      abolished PTH-induced inositol phosphate accumulation as well as cAMP
+    context: >-
+      human, biallelic, perinatally lethal; receptor pharmacology in COS-1/COS-7 cells plus direct
+      immunolocalisation in patient growth plate chondrocytes
+    timescale: constitutive from fetal life; lethal in the perinatal period
+    evidence_tier: T1
+    refs: [karaplis1998, jobert1998]
+    confidence: A
+    notes: >-
+      HALF 2 OF 2 of the matched human PTH1R pair. Jansen and Blomstrand are the same receptor perturbed
+      in opposite directions in humans, and together they establish the direction of the timing control
+      without requiring any animal model.
+
+  - edge_id: e00021
+    source: jansen_metaphyseal_chondrodysplasia
+    target: pthrp_ihh_feedback_loop
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      constitutive PTH1R signalling holds chondrocytes in the proliferative state and DELAYS exit into
+      hypertrophy, giving markedly delayed and disorganised metaphyseal mineralisation with severe short stature
+    context: >-
+      human, heterozygous; the mouse counterpart (targeted expression of the Jansen H223R receptor in
+      growth plate) reproduces delayed hypertrophic differentiation
+    timescale: years - the phenotype is the integral of a per-cycle timing shift over childhood
+    evidence_tier: T1
+    refs: [schipani1995, saito2018, schipani1997]
+    confidence: B
+
+  - edge_id: e00022
+    source: blomstrand_chondrodysplasia
+    target: pthrp_ihh_feedback_loop
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      extremely ADVANCED endochondral bone maturation - the exact phenotypic mirror of Jansen -
+      lethal in the perinatal period
+    context: human, biallelic; matches the mouse Pthlh-null and Pth1r-null acceleration of hypertrophy
+    timescale: fetal; the whole phenotype is expressed before birth
+    evidence_tier: T1
+    refs: [jobert1998, karaplis1998]
+    confidence: B
+    notes: >-
+      Read against e00021, the pair establishes in humans what the mouse knockouts establish in mice:
+      PTH1R signalling sets the timing of the proliferative-to-hypertrophic transition, more signal delays
+      it and less signal advances it, and stature is the integral of that timing decision.
+
+  - edge_id: e00023
+    source: pseudohypoparathyroidism
+    target: pthrp_ihh_feedback_loop
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      brachydactyly, most characteristically of the fourth and fifth metacarpals, produced by PREMATURE
+      closure of the affected growth plates, with only mild overall short stature
+    context: >-
+      human; the lesion is in GNAS (Gs-alpha) or its imprinting, one step DISTAL to an intact PTH1R, so
+      this edge represents loss of pathway output rather than loss of receptor. Partial and tissue-restricted
+      by imprinting, which is why the phenotype is site-selective rather than lethal.
+    timescale: childhood - selective plates close early while others continue
+    evidence_tier: T1
+    refs: [yang2026, portalescastil2025]
+    confidence: B
+    notes: >-
+      The third member of the human PTH1R series: reduced PTHrP-PTH1R-cAMP signalling accelerates exit
+      of proliferative chondrocytes into hypertrophy, the exact opposite of Jansen.
+
+# ---- RAS/MAPK, TGF-beta and RUNX2 ----
+
+  - edge_id: e00024
+    source: noonan_syndrome
+    target: mek1_erk_chondrocyte
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      germline gain-of-function PTPN11 (commonest), SOS1, RAF1 and RIT1 raise RAS/MAPK flux; birth length
+      is usually normal and growth failure is postnatal, with adult height approaching the lower limit of
+      normal rather than falling into the skeletal dysplasia range
+    context: >-
+      human, heterozygous germline, both sexes; MAPK flux has been measured in patient-derived non-cartilage
+      cells only, never in human growth plate. Family-based cohorts carry a polygenic confounder - in a
+      101-patient genotyped cohort the fathers were themselves -0.33 SDS.
+    timescale: postnatal, accruing over childhood
+    evidence_tier: T1
+    refs: [jirova2026, klar2025]
+    confidence: B
+    notes: >-
+      Mechanistically adjacent to achondroplasia - the same cascade - and it bounds how much of the
+      achondroplasia phenotype scalar MAPK activation alone can explain: raising RAS/MAPK flux germline
+      costs roughly 1-2 SDS, not the 6 SDS of achondroplasia.
+
+  - edge_id: e00025
+    source: marfan_syndrome
+    target: tgfb_signaling_chondrocyte
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      tall stature with dolichostenomelia - reduced upper:lower segment ratio and arm span exceeding
+      height, i.e. the long-bone plates overgrow relative to the vertebral plates
+    context: >-
+      human, heterozygous FBN1; the increased-free-TGF-beta model rests on the microfibril-sequestration
+      role of fibrillin-1 and has NOT been demonstrated in human cartilage or growth plate tissue
+    timescale: childhood through adolescence
+    evidence_tier: T1
+    refs: [gregorova2025, sada2024]
+    confidence: D
+    notes: >-
+      Sign is opposite to every other structural-matrix disorder in L11. Consistent in direction with the
+      mouse result that the canonical TGF-beta arm restrains terminal differentiation, so more signal
+      should delay hypertrophy and lengthen the growth period - but that chain is inferred, not measured.
+
+  - edge_id: e00026
+    source: loeys_dietz_syndrome
+    target: tgfbr2_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      heterozygous TGFBR1, TGFBR2, SMAD3, TGFB2 or TGFB3 mutations giving marfanoid habitus with skeletal
+      overgrowth, arachnodactyly and scoliosis
+    context: >-
+      human, heterozygous; no growth plate specimen from a Loeys-Dietz patient has been assayed, and the
+      human phenotype is dominated by aortic rather than skeletal disease
+    timescale: childhood through adolescence
+    evidence_tier: T1
+    refs: [ko2015, sada2024]
+    confidence: C
+    notes: >-
+      The receptor-level control for Marfan, and it exposes an unresolved paradox: receptor loss-of-function
+      produces an overgrowth phenotype resembling ligand excess. One human double perturbation is on record -
+      the t(1;2)(q41;q37.1) patient carried both an NPPC gain and TGFB2 haploinsufficiency, so that
+      individual's overgrowth cannot be attributed to either lesion alone.
+
+  - edge_id: e00027
+    source: cleidocranial_dysplasia
+    target: runx2_tf
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      heterozygous loss by point mutation, whole-gene deletion, or a 4.2 kb deletion of the 3' untranslated
+      region; intramembranous bone (clavicle, cranial vault) severely affected while endochondral long bones
+      are comparatively spared and stature is only mildly to moderately reduced
+    context: human, heterozygous, both sexes
+    timescale: constitutive; the skeletal distribution is fixed developmentally
+    evidence_tier: T1
+    refs: [mundlos1997, mijovic2025]
+    confidence: A
+    notes: >-
+      The asymmetric dose sensitivity is the point: one functional RUNX2 allele is nearly sufficient for
+      the hypertrophic transition in the growth plate while being clearly insufficient for intramembranous
+      bone, in the same individual.
+
+# =====================================================================
+# SEAM L11 -> L5 : disease onto matrix protein
+# =====================================================================
+
+  - edge_id: e00028
+    source: acan_related_short_stature
+    target: aggrecan_acan
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      heterozygous loss of function: adult height median -2.8 SDS (range -5.9 to -0.9) versus childhood
+      height -2.0 SDS in the same 103 individuals from 20 families, with bone age advanced by a median
+      +1.3 years (range 0 to +3.7)
+    context: human, heterozygous, 57 female and 46 male; variants cosegregated perfectly with phenotype
+    timescale: >-
+      lifelong; the adult deficit EXCEEDS the childhood deficit because growth stops early, so the plate
+      both grows less per year and exhausts sooner
+    evidence_tier: T1
+    refs: [gkourogianni2017, tatsi2017]
+    confidence: A
+    notes: >-
+      Dissociates height from skeletal maturation. Advanced bone age is not obligate - ACAN mutations also
+      occur in nonfamilial short stature without accelerated skeletal maturation. The cellular mechanism
+      (reduced matrix and impaired hypertrophy with proliferation spared) is MOUSE only.
+
+  - edge_id: e00029
+    source: schmid_metaphyseal_chondrodysplasia
+    target: collagen_type_x
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      COL10A1 mutations concentrated in the C-terminal NC1 trimerisation domain prevent normal trimer
+      assembly; the modern mechanism is ER stress from misfolded collagen X retained in hypertrophic
+      chondrocytes rather than simple haploinsufficiency
+    context: >-
+      human, heterozygous; COL10A1 is expressed ONLY by hypertrophic chondrocytes, so the phenotype is a
+      pure hypertrophic-zone readout - irregular cupped metaphyses with normal epiphyses and normal spine
+    timescale: childhood; adult height usually only mildly reduced
+    evidence_tier: T1
+    refs: [mcintosh1994]
+    confidence: B
+    notes: >-
+      Abstract-only source for the mutation series. The structure-function mapping is among the sharpest
+      in human skeletal genetics: the zone in which a matrix gene is expressed predicts which radiographic
+      compartment fails. Eliminating a hypertrophic-zone matrix protein costs surprisingly little final height.
+
+# =====================================================================
+# SEAM L11 -> L4 : disease onto endocrine node (GH-IGF axis and sex steroids)
+# =====================================================================
+
+  - edge_id: e00030
+    source: laron_syndrome
+    target: gh_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      biallelic GHR mutation (homozygous change at codon 180 of exon 6 in the large Ecuadorian cohort)
+      abolishes GH signal transduction; circulating GH is normal or high, biologically normal and
+      completely ineffective
+    context: human, biallelic, both sexes, n=201 adults with carrier and non-carrier relative controls
+    timescale: lifelong
+    evidence_tier: T1
+    refs: [guevaraaguirre2025]
+    confidence: A
+
+  - edge_id: e00031
+    source: laron_syndrome
+    target: igf1_systemic
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      IGF-I low to undetectable; in 201 adults serum IGF-I correlated positively (logarithmically) with
+      every body measurement and NEGATIVELY with head-circumference/height. GH-insensitive adults had the
+      LOWEST lower-segment/height and the HIGHEST upper-segment/height ratios.
+    context: human, biallelic GHR deficiency, both sexes, adults
+    timescale: lifelong
+    evidence_tier: T1
+    refs: [guevaraaguirre2025]
+    confidence: A
+    notes: >-
+      GH-IGF-I loss produces DISproportionate growth, contradicting the textbook assumption that the axis
+      scales the body uniformly - it acts preferentially on the long bones of the lower limb.
+
+  - edge_id: e00032
+    source: laron_syndrome
+    target: jak2_kinase
+    relation: inhibits
+    sign: "-"
+    magnitude: not measured in any Laron patient
+    context: >-
+      human; flagged inference from the canonical GHR-JAK2-STAT5B architecture. JAK2 activation has never
+      been assayed in GHR-deficient human tissue.
+    timescale: lifelong
+    evidence_tier: T1
+    refs: [guevaraaguirre2025, hwa2005]
+    confidence: E
+
+  - edge_id: e00033
+    source: stat5b_deficiency
+    target: stat5b_tf
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      homozygous single-nucleotide insertion in STAT5B exon 10 causing frameshift, early termination and
+      complete absence of immunodetectable STAT5b protein; a separate natural A630P SH2-domain allele
+      functions neither as a signal transducer nor as a transcription factor
+    context: human, biallelic, consanguineous pedigree; case-level (n=1 index patient plus a second allele)
+    timescale: lifelong
+    evidence_tier: T1
+    refs: [hwa2005]
+    confidence: A
+    notes: >-
+      Places the lesion one step below the GH receptor and shows the entire growth-promoting output of GH
+      runs through a single transcription factor. STAT5B deficiency is also an immunodeficiency - the
+      pleiotropy is a mechanistic clue, not noise.
+
+  - edge_id: e00034
+    source: stat5b_deficiency
+    target: igf1_systemic
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      serum IGF-I 7.2 ng/mL against a quoted normal range of 242-600, with no rise on an IGF-I generation
+      test despite normal-to-elevated GH and GH-binding protein; height 114 cm at 16.4 years = -7.8 SDS
+    context: human, biallelic STAT5B null, female index patient
+    timescale: lifelong
+    evidence_tier: T1
+    refs: [hwa2005]
+    confidence: A
+
+  - edge_id: e00035
+    source: stat5b_deficiency
+    target: igfbp3
+    relation: inhibits
+    sign: "-"
+    magnitude: serum IGFBP-3 543 ng/mL against a quoted normal range of 2500-4800
+    context: human, biallelic STAT5B null, single patient
+    timescale: lifelong
+    evidence_tier: T1
+    refs: [hwa2005]
+    confidence: A
+
+  - edge_id: e00036
+    source: stat5b_deficiency
+    target: als_igfals
+    relation: inhibits
+    sign: "-"
+    magnitude: serum acid-labile subunit 1.22 ug/mL against a quoted normal range of 5.6-16
+    context: human, biallelic STAT5B null, single patient
+    timescale: lifelong
+    evidence_tier: T1
+    refs: [hwa2005]
+    confidence: A
+    notes: >-
+      With e00034 and e00035 this shows STAT5b drives the whole ternary complex, not IGF-I alone -
+      which is why the circulating IGF-I deficit is not simply correctable by giving IGF-I.
+
+  - edge_id: e00037
+    source: aromatase_deficiency_human
+    target: aromatase_cyp19a1
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      biallelic CYP19A1 mutation; estradiol and estrone below 7 pg/mL with testosterone 2015 ng/dL in the
+      index 24 3/12-year-old man, i.e. substrate accumulates unconverted
+    context: human, biallelic, affected in XX as well as XY individuals
+    timescale: lifelong
+    evidence_tier: T1
+    refs: [morishima1995, carani1997]
+    confidence: A
+
+  - edge_id: e00038
+    source: estrogen_resistance_esr1
+    target: estrogen_receptor_alpha
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      homozygous C-to-T at codon 157 giving a premature stop in exon 2; six months of transdermal estrogen
+      producing a 10-fold rise in free estradiol had NO detectable effect, with serum estradiol and estrone
+      already elevated at baseline
+    context: human, biallelic, n=1 male, 28 years old
+    timescale: lifelong; the 6-month challenge is the interventional test
+    evidence_tier: T1
+    refs: [smith1994, smith2008]
+    confidence: B
+    notes: >-
+      The receptor-side counterpart of aromatase deficiency; rules out the alternative that aromatase
+      deficiency acts through some non-estrogenic product of the enzyme.
+
+  - edge_id: e00039
+    source: igf1r_mutation_human
+    target: igf1_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      two distinct mechanisms giving the same phenotype: compound heterozygous R108Q/K115N reduced receptor
+      FUNCTION in cultured fibroblasts; a nonsense R59X allele reduced receptor NUMBER. Neither class was
+      present in 43 birth-weight-normal controls.
+    context: human, two children; IUGR followed by poor postnatal growth WITH high circulating IGF-I
+    timescale: prenatal and postnatal
+    evidence_tier: T1
+    refs: [abuzzahab2003]
+    confidence: B
+    notes: >-
+      Fewer receptors versus worse receptors producing the same phenotype is the human demonstration that
+      IGF-I signalling CAPACITY, not receptor identity, sets prenatal and postnatal skeletal growth.
+
+  - edge_id: e00040
+    source: pappa2_deficiency
+    target: pappa2_protease
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      homozygous p.D643fs25* and p.A1033V both abolish PAPP-A2 proteolytic activity against IGFBP-3 and
+      IGFBP-5 in vitro; total IGF-I, IGF-II, IGFBP-3, IGFBP-5 and ALS are all ELEVATED while FREE IGF-I is
+      DECREASED, with more IGF-I retained in the ternary complex on size-exclusion chromatography
+    context: human, biallelic, members of two unrelated families
+    timescale: progressive postnatal growth failure
+    evidence_tier: T1
+    refs: [dauber2016]
+    confidence: B
+    notes: >-
+      The cleanest human demonstration that the growth plate responds to FREE rather than total IGF-I -
+      a distinction invisible to every routine assay.
+
+# =====================================================================
+# SEAM L12 -> L3 : every agent is a targeted human perturbation OF a pathway
+# =====================================================================
+
+  - edge_id: e00041
+    source: vosoritide
+    target: cgmp_second_messenger
+    relation: correlates_with
+    sign: "+"
+    magnitude: >-
+      urinary cGMP response near saturation at 15 ug/kg/day, the approved dose, and the endochondral
+      ossification marker CXM is also maximal there. CRITICALLY, in a PK/PD analysis drug exposure
+      correlated with urine cGMP but did NOT correlate with growth outcome within the treated cohort.
+    context: >-
+      human, achondroplasia, ages 5-14 y at screening; the measurement is URINE, not growth plate.
+      cGMP has never been measured in a human growth plate.
+    timescale: urinary cGMP responds within days of dosing; the growth endpoint is read at 52 weeks
+    evidence_tier: T2
+    refs: [fda_voxzogo_label_2025, galetaki2026]
+    confidence: B
+    gap_id: g_mr002_h3
+    notes: >-
+      Exposure predicts systemic target ENGAGEMENT but not EFFECT. This is one of the three legs of
+      contradiction C-L3-03 and must not be read as showing the gating question is settled.
+
+  - edge_id: e00042
+    source: vosoritide
+    target: pkg2_kinase
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: never measured
+    context: >-
+      human dosing; PKG-II activity has not been measured in any treated human or animal. NPR2 protein is
+      reported at similar levels across all three growth plate zones whereas PKG-I/II is strongly
+      hypertrophic-biased (mouse), so receptor occupancy and pathway output need not be co-located.
+    timescale: unknown
+    evidence_tier: T2
+    refs: [agoston2007, fda_voxzogo_label_2025]
+    confidence: speculative
+    gap_id: g_mr002_h1
+    notes: >-
+      One of three competing hypotheses for why CNP-analogue efficacy may be gated DOWNSTREAM of the
+      receptor the drug binds (contradiction C-L3-03). This edge asserts the link is UNTESTED, not that
+      it is absent.
+
+  - edge_id: e00043
+    source: navepegritide
+    target: pkg2_kinase
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: never measured
+    context: >-
+      human dosing, achondroplasia aged 2-11 y; as for vosoritide, no PKG-II readout exists in any species
+      after CNP-analogue exposure
+    timescale: unknown
+    evidence_tier: T2
+    refs: [fda_yuviwel_label_2026, agoston2007]
+    confidence: speculative
+    gap_id: g_mr002_h1
+
+  - edge_id: e00044
+    source: navepegritide
+    target: cgmp_second_messenger
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      dose-dependent plasma cGMP rise across 0.006-0.1 mg/kg/week; released CNP steady-state Cmax
+      36.0 pmol/L and weekly AUC 4410 h*pmol/L at 0.1 mg/kg/week
+    context: human, achondroplasia, ages 2-11 y, weekly subcutaneous; plasma, not growth plate
+    timescale: steady state reached after approximately three weekly doses; released-CNP half-life 5.3 days
+    evidence_tier: T2
+    refs: [fda_yuviwel_label_2026, nct05598320]
+    confidence: A
+
+  - edge_id: e00045
+    source: npr2_agonist_class
+    target: npr2_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      pooled placebo-controlled class effect on annualised growth velocity 1.36 cm/yr (95% CI 1.05-1.68),
+      4 RCTs, n=326; the ceiling has not moved across a ~300-fold change in exposure duration
+    context: >-
+      human, genetically confirmed achondroplasia, children under 18 y. FGFR3-to-NPR2 crosstalk is
+      post-translational only, so an FGFR3 gain-of-function allele does not reduce NPR2 transcript and the
+      receptor is present to be agonised - which is why the class works at all.
+    timescale: 52 weeks per pivotal trial; no final adult height data exist for any agent in the class
+    evidence_tier: T4
+    refs: [cnpmeta2026, fda_voxzogo_label_2025, fda_yuviwel_label_2026, ozasa2005]
+    confidence: A
+
+  - edge_id: e00046
+    source: vosoritide
+    target: fgfr3_mapk_branch
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      cGMP/PKG inhibition at the RAF-1 step: CNP and 8-Br-cGMP dose-dependently block FGF2- and
+      FGF18-induced ERK phosphorylation without affecting STAT1 phosphorylation or FGFR3 protein levels
+    context: >-
+      mouse ATDC5 chondrogenic cells and chondrocyte-targeted CNP rescue of FGFR3-Ach mice; the human step
+      is asserted by the approved label and inferred from the clinical growth effect, not measured
+    timescale: minutes in vitro; 52-week clinical readout
+    evidence_tier: T1
+    refs: [ozasa2005, yasoda2004, fda_voxzogo_label_2025]
+    confidence: C
+    notes: >-
+      This is a DOWNSTREAM BYPASS, not a correction of the causal receptor: it does not reduce FGFR3
+      signalling, it opposes its output.
+
+  - edge_id: e00047
+    source: cnp_analog_pk_challenge
+    target: npr2_receptor
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      no measurement of CNP-analogue concentration inside growth plate cartilage exists in any species,
+      for any agent in the class
+    context: >-
+      human; the entire dose-selection rationale for both approved agents rests on plasma exposure. Within
+      cohort, navepegritide showed a dose-dependent AGV effect with only the 100 ug/kg arm separating from
+      placebo (5.42 vs 4.35 cm/yr, p=0.0218), so the drug is NOT saturated below its top dose; against that,
+      vosoritide exposure did not correlate with growth within the treated cohort.
+    timescale: unknown
+    evidence_tier: T2
+    refs: [fda_yuviwel_label_2026, savarirayan2020, fda_voxzogo_label_2025]
+    confidence: speculative
+    gap_id: g_mr002_h2
+
+  - edge_id: e00048
+    source: soluble_fgfr3_decoy
+    target: fgfr3_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      NO measurable growth effect in humans: ratio of observed to expected change in standing height was
+      1.0 at month 12 in EVERY arm (1 mg/kg weekly, 2 mg/kg twice weekly, 1.5 mg/kg daily) with 95% CIs
+      spanning 0.8-1.1, i.e. growth indistinguishable from the untreated reference population
+    context: >-
+      human, achondroplasia, phase 2 NCT04638153 (n=60) plus open-label extension NCT05116046 (n=35),
+      both terminated 18 November 2022; registry whyStopped reads "terminated due to lack of efficacy at
+      any of the tested doses ... not related to a safety concern"
+    timescale: 12 months
+    termination_reason: scientific_null
+    evidence_tier: T2
+    refs: [nct04638153, nct05116046, rignol2022]
+    confidence: D
+    gap_id: g_l12l7_007
+    notes: >-
+      NEGATIVE EVIDENCE ABOUT THE TARGET, and admissible as such because the stop was a scientific null,
+      not strategic or logistical. A ligand trap can only work if the mutant receptor still requires
+      ligand, so the failure means either (a) FGFR3-G380R signalling in the human growth plate is
+      substantially ligand-INDEPENDENT - consistent with the FRET finding that G380R raises unliganded
+      dimerisation - or (b) a ~100 kDa glycoprotein cannot reach chondrocytes inside avascular,
+      proteoglycan-dense cartilage. These were never distinguished because plate exposure was never measured.
+
+  - edge_id: e00049
+    source: fgfr3_tyrosine_kinase_inhibitor
+    target: fgfr3_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      allele-specific and NOT ordered by clinical severity. Infigratinib IC50: 0.66 nM wild-type,
+      0.5 nM K650E (lethal TD2 allele), 44.4 nM K650M (survivable SADDAN allele, ~89-fold weaker despite
+      ~3-fold HIGHER kinase activity), 505.9 nM V555M gatekeeper; 1.0 nM at ATP = Km in a mobility-shift
+      assay. NO IC50 against G380R has been published.
+    context: >-
+      in vitro human kinase panels on KINASE-DOMAIN alleles (K650E, K650M, N540K). Achondroplasia is caused
+      by G380R, a TRANSMEMBRANE-domain variant that activates the receptor by a different mechanism, so
+      potency measured on kinase-domain alleles does not automatically govern the clinical case.
+    timescale: minutes (enzymatic assay)
+    evidence_tier: T3
+    refs: [ryu2022, chembl_infigratinib, tavormina1999]
+    confidence: D
+    gap_id: g_mr002_allele
+    notes: >-
+      The class rests on a premise the human genetics does not support - that phenotype severity tracks
+      kinase output monotonically. See e00004.
+
+  - edge_id: e00050
+    source: infigratinib_growth
+    target: fgfr3_mapk_branch
+    relation: inhibits
+    sign: "-"
+    magnitude: not measured in any treated human or in growth plate tissue in any species
+    context: >-
+      human, achondroplasia, 0.25 mg/kg/day oral, ages 3-17 y; flagged inference from the ATP-competitive
+      mechanism and from the fact that ERK is the branch all six dysplasia alleles activate
+    timescale: 52 weeks (clinical readout)
+    evidence_tier: T1
+    refs: [savarirayan2026infig, krejci2008]
+    confidence: E
+
+  - edge_id: e00051
+    source: infigratinib_growth
+    target: fgfr1_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: infigratinib is a pan-FGFR1-3 ATP-competitive inhibitor by design; no FGFR1 IC50 tabulated in this atlas
+    context: >-
+      human dosing. In human embryo-fetal long bone, FGFR1 transcripts are restricted to perichondrium and
+      periosteum and are absent from growth plate chondrocytes, so the off-target compartment is
+      perichondrial and osteoprogenitor rather than columnar.
+    timescale: chronic daily oral dosing across the growth period
+    evidence_tier: T1
+    refs: [ryu2022, delezoide1998]
+    confidence: D
+    notes: >-
+      Relevant to the imatinib growth-toxicity precedent: chronic ATP-competitive kinase inhibition across
+      childhood cost -0.5 height Z overall and -0.8 Z when started prepubertally, attributed to off-target
+      PDGFR/KIT inhibition. The net effect of an FGFR3 TKI is an on-target gain minus an off-target loss
+      that no achondroplasia trial has run long enough to separate.
+
+  - edge_id: e00052
+    source: infigratinib_growth
+    target: fgfr2_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: pan-FGFR1-3 inhibition; no FGFR2 IC50 tabulated in this atlas
+    context: >-
+      human dosing. FGFR2 in the human fetal skeleton is restricted to perichondrium, periosteum and
+      periarticular cartilage and is absent from columnar and hypertrophic chondrocytes, so the exposed
+      compartment includes the periarticular reservoir that supplies the plate.
+    timescale: chronic daily oral dosing across the growth period
+    evidence_tier: T1
+    refs: [ryu2022, delezoide1998]
+    confidence: D
+
+  - edge_id: e00053
+    source: meclizine_repurposing
+    target: fgfr3_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      MOUSE: 2 mg/kg/day, 5 days/week from P7 to P56 reduced death or paralysis and increased body, cranial
+      and long-bone length in Fgfr3-ach mice of both sexes. HUMAN: 26 weeks at 12.5-25 mg/day with
+      concomitant GH moved height velocity from 4.35 +/- 1.36 to 4.46 +/- 1.54 cm/yr, i.e. +0.11 cm/yr,
+      with only 1 of 9 children reaching the 6 cm/yr threshold - despite Cmax 167 ng/mL, AUC0-24
+      1170 ng*h/mL and terminal half-life 7.4 h at 12.5 mg/day.
+    context: >-
+      human, achondroplasia, ages 5-10 y, open-label single-arm phase 2 (n=9) with a 14-day phase 1b PK
+      cohort (n=12); mouse Fgfr3-ach model
+    timescale: 26 weeks (human); P7-P56 (mouse)
+    evidence_tier: T1
+    refs: [matsushita2025, matsushita2023, funahashi2024]
+    confidence: D
+    notes: >-
+      An agent with documented adequate systemic exposure and no toxicity that still produced no
+      measurable human linear-growth effect. The single-arm design cannot exclude a small effect, and the
+      arm-span/height dissociation (6/9 exceeding 6 cm/yr for arm span versus 1/9 for height) is
+      uninterpretable at this sample size.
+
+  - edge_id: e00054
+    source: abaloparatide
+    target: pthrp_ihh_feedback_loop
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: never tested - 0 paediatric trials with any growth endpoint
+    context: >-
+      human; abaloparatide is a PTHrP(1-34) analogue and therefore the most direct pharmacological mimic of
+      the plate's own pace-setting signal available as an approved drug, yet the FDA label bars use in
+      paediatric patients with open epiphyses on osteosarcoma grounds. The barrier is regulatory and
+      oncological, not evidence of unresponsiveness.
+    timescale: unknown
+    evidence_tier: T2
+    refs: [fda_tymlos_label_2025, hppner2025]
+    confidence: speculative
+    gap_id: g_l12l7_006
+
+  - edge_id: e00055
+    source: teriparatide
+    target: pthrp_ihh_feedback_loop
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      no trial with a linear-growth endpoint in a growth indication. The nearest human datum is a secondary
+      analysis of PTH(1-34) therapy in paediatric hypoparathyroidism (n=27, mean baseline age 13.7 +/- 5.5 y)
+      in which height-for-age Z rose in the CaSR-activating group but stayed below 0 in the APS-1 group
+      (age-by-group interaction P<0.0001)
+    context: >-
+      human; both PTH1R agonists are barred from the growing skeleton, so the human growth plate has never
+      been probed with a PTH1R agonist under conditions that would test whether pharmacological PTH1R
+      activation delays hypertrophic differentiation in vivo
+    timescale: unknown; the hypoparathyroidism cohort was followed over years of PTH exposure
+    evidence_tier: T1
+    refs: [winer2025, fda_forteo_label_2025, tantivit2026]
+    confidence: speculative
+    gap_id: g_l12l7_006
+    notes: >-
+      The near-miss datum is confounded by two different underlying diseases with different intrinsic
+      growth trajectories and has no untreated control, so it cannot be read as a PTH1R growth effect.
+
+# =====================================================================
+# SEAM L12 -> L4 : agent onto endocrine node
+# =====================================================================
+
+  - edge_id: e00056
+    source: recombinant_human_gh
+    target: stat5b_tf
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      not measured in rhGH-treated children. The human evidence for this edge is the loss-of-function
+      phenotype: STAT5B nulls have normal-to-elevated GH and GHBP, IGF-I 7.2 ng/mL and -7.8 height SDS.
+    context: >-
+      human; the edge direction is established by human genetics running backwards, not by a
+      pharmacodynamic measurement in treated patients
+    timescale: minutes (signalling); years (growth response)
+    evidence_tier: T1
+    refs: [hwa2005, martn2026]
+    confidence: B
+
+  - edge_id: e00057
+    source: recombinant_human_gh
+    target: jak2_kinase
+    relation: activates
+    sign: "+"
+    magnitude: not measured in treated children
+    context: human; flagged inference from the canonical GHR-JAK2-STAT5B architecture
+    timescale: minutes (signalling)
+    evidence_tier: T1
+    refs: [hwa2005]
+    confidence: E
+
+  - edge_id: e00058
+    source: recombinant_human_gh
+    target: igf1_systemic
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      IGF-1 SDS is the only routinely used pharmacodynamic biomarker and rises dose-dependently
+      (0.17 SDS per 0.02 mg/kg/week for the weekly prodrug). Downstream growth: +3.0 to +5.0 cm/yr velocity
+      and +0.3 to +0.9 height SDS across indications (20 studies, 21,812 participants).
+    context: human, children 0-18 y, mixed indications; requires open epiphyses for a skeletal effect
+    timescale: IGF-1 responds within days; velocity read at 1 year; height SDS over years
+    evidence_tier: T2
+    refs: [fda_skytrofa_label_2026, martn2026]
+    confidence: A
+
+  - edge_id: e00059
+    source: transcon_growth_hormone
+    target: gh_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      0.24 mg hGH/kg/week subcutaneous; the released hormone is chemically identical to daily somatropin,
+      so the construct is a controlled test of exposure pattern rather than of a different ligand
+    context: human, paediatric GHD, patients >=1 y weighing >=11.5 kg
+    timescale: once weekly; 52-week efficacy readout
+    evidence_tier: T2
+    refs: [fda_skytrofa_label_2026, ying2026]
+    confidence: A
+
+  - edge_id: e00060
+    source: transcon_growth_hormone
+    target: igf1_systemic
+    relation: activates
+    sign: "+"
+    magnitude: 0.17 IGF-1 SDS per 0.02 mg/kg/week (weekly average IGF-1 SDS)
+    context: human, paediatric GHD
+    timescale: weekly dosing; IGF-1 SDS averaged across the dosing interval
+    evidence_tier: T2
+    refs: [fda_skytrofa_label_2026]
+    confidence: A
+
+  - edge_id: e00061
+    source: transcon_growth_hormone
+    target: gh_pulse_pattern_hypothesis
+    relation: correlates_with
+    sign: unknown
+    magnitude: >-
+      weekly dosing abolishes GH pulsatility yet gave annualised height velocity 10.66 +/- 0.22 cm/yr
+      versus 9.75 +/- 0.26 cm/yr on daily somatropin, a difference of +0.91 cm/yr (95% CI 0.37-1.45,
+      p=0.0010), meeting BOTH non-inferiority and superiority; height SDS +1.01 versus +0.83 at 52 weeks
+    context: >-
+      human, n=153 treatment-naive prepubertal children with GHD, 17 sites in China, 52 weeks,
+      randomised 2:1; class meta-analysis of 16 RCTs (2435 children) finds only modest differences
+      between long-acting and daily preparations
+    timescale: 52 weeks
+    evidence_tier: T1
+    refs: [ying2026, shen2026, nct02413138]
+    confidence: A
+    notes: >-
+      Evidence AGAINST a requirement for pulsatile GH delivery at the plate; sign left unknown because the
+      target is a hypothesis node and the relation is evidential, not mechanistic. COUNTERWEIGHT: somavaratan,
+      a different long-acting GH construct, was terminated because "the primary endpoint of non-inferiority
+      to daily therapy was not achieved" (termination_reason scientific_null), so long-acting GH is not
+      automatically equivalent and this result is construct-specific.
+
+  - edge_id: e00062
+    source: igf1_gh_combination_therapy
+    target: igf1_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      adding rhIGF-1 to a full rhGH dose gave year-1 mean height velocities of 9.3 cm/yr (rhGH 45 ug/kg/day
+      alone), 10.1 (+50 ug/kg), 9.7 (+100) and 11.2 (+150) - a real but NON-MONOTONIC increment of roughly
+      1-2 cm/yr that narrowed to ~0.7 cm/yr spread by year 4 (7.7 / 8.1 / 8.4 / 8.3)
+    context: >-
+      human, n=106 children with short stature and IGF-1 deficiency, 6-year open-label randomised
+      multicentre dose-selection trial NCT00572156
+    timescale: years 1-4; the adult height endpoint was never reached
+    termination_reason: strategic
+    evidence_tier: T2
+    refs: [nct00572156, ramonkrauel2026]
+    confidence: B
+    notes: >-
+      The trial was stopped for "strategic reasons", which carries NO evidential content about the biology.
+      A six-year dataset with a positive interim signal exists and appears unanalysed for the separability
+      question. This must never be cited as a negative result.
+
+  - edge_id: e00063
+    source: pegvisomant
+    target: igf1_systemic
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      lowers serum IGF-1, free IGF-1, IGFBP-3 and the acid-labile subunit; dosing is titrated to IGF-1 and
+      never to GH, which RISES during treatment
+    context: >-
+      human; adult PK (Tmax 33-77 h, bioavailability ~57% for a 20 mg subcutaneous dose). Paediatric use is
+      off-label and the human paediatric growth evidence is case-level (n=1 carried to final height in
+      X-linked acrogigantism).
+    timescale: days (slow absorption); months to years for the growth effect
+    evidence_tier: T2
+    refs: [fda_somavert_label_2025, burren2023]
+    confidence: A
+    notes: >-
+      Runs the growth axis backwards and is the only agent in L12 used deliberately to REDUCE growth. With
+      octreotide it dissects source suppression from receptor blockade: X-linked acrogigantism responds
+      poorly to somatostatin analogues but is controlled by GH receptor blockade, so the two are not
+      interchangeable in humans.
+
+  - edge_id: e00064
+    source: aromatase_inhibitor_anastrozole
+    target: aromatase_cyp19a1
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      1.0 mg/day produced SMALLER deviations in testosterone, oestradiol, IGF-1, growth velocity and bone
+      age advance than letrozole 2.5 mg/day over 3 years - a roughly threefold weaker biochemical effect -
+      yet there was NO difference between the drugs in change in predicted adult height (combined 3-year
+      gain +1.3 cm)
+    context: human, 79 pubertal boys >=10 y with idiopathic short stature, bone age <=14 y, open-label randomised
+    timescale: 3 years
+    evidence_tier: T1
+    refs: [zegarra2024, cui2025]
+    confidence: A
+    notes: >-
+      The dissociation is the finding: a threefold difference in the intensity of oestrogen suppression
+      bought no additional predicted height, which argues that oestrogen suppression is not the
+      rate-limiting variable for height gain in this population.
+
+  - edge_id: e00065
+    source: aromatase_inhibitor_letrozole
+    target: estradiol_hormone
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      2.5 mg/day gave lower oestradiol and higher testosterone than anastrozole 1.0 mg/day, with slower
+      growth velocity and slower bone age advance - the intended biochemical and skeletal-maturation profile
+    context: human, pubertal boys with ISS, up to 3 years
+    timescale: 3 years; the year-1 predicted-adult-height gain did NOT persist at years 2 and 3
+    evidence_tier: T1
+    refs: [zegarra2024]
+    confidence: A
+    notes: The clearest example in L12 of an interim surrogate gain that does not convert.
+
+  - edge_id: e00066
+    source: aromatase_inhibitor_anastrozole
+    target: estradiol_hormone
+    relation: inhibits
+    sign: "-"
+    magnitude: 1.0 mg/day; smaller oestradiol suppression than letrozole 2.5 mg/day in a head-to-head trial
+    context: human, pubertal boys with ISS and boys with 21-hydroxylase-deficiency congenital adrenal hyperplasia
+    timescale: 3 years
+    evidence_tier: T1
+    refs: [zegarra2024, alrayess2025]
+    confidence: A
+
+  - edge_id: e00067
+    source: oxandrolone
+    target: androgen_receptor
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      androgen therapy overall increased measured final adult height by +1.78 cm (95% CI 0.47-3.08,
+      p=0.0076) and final height Z by +0.24 (95% CI 0.07-0.41) across 13 retrospective cohorts and 803 boys.
+      Testosterone - which IS aromatised - outperformed oxandrolone by +2.64 cm (95% CI 1.44-3.80).
+      Low-dose regimens gave the largest gain (+1.88 cm); medium and high doses were not significant.
+    context: human, boys with constitutional delay of growth and puberty; oxandrolone is poorly aromatised to oestrogen
+    timescale: short courses outperformed long courses (+2.70 cm, 95% CI 1.30-4.09)
+    evidence_tier: T4
+    refs: [wang2026]
+    confidence: B
+    notes: >-
+      The non-aromatisable androgen was the WEAKER agent, which is the opposite of what a pure-androgen
+      model predicts and is human pharmacological evidence for a genuine oestrogen requirement in the
+      pubertal height gain.
+
+  - edge_id: e00068
+    source: estrogen_low_dose_therapy
+    target: estrogen_receptor_alpha
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      not dose-ranged against an attained-height endpoint: 0 randomised comparisons of oestrogen
+      introduction age with attained adult height in Turner syndrome were identified
+    context: >-
+      human, girls with Turner syndrome co-treated with rhGH; the evidence base is protocolised cohorts
+      and consensus guidance
+    timescale: years - the therapeutic problem is entirely one of scheduling
+    evidence_tier: T5
+    refs: [turner2025, guzzetti2024]
+    confidence: C
+    notes: >-
+      The clearest clinical demonstration that plate closure is a dose- and duration-dependent
+      pharmacological endpoint rather than a fixed developmental clock. The complementary upper arm of the
+      dose-response - high-dose oestrogen to reduce excessive height - has been abandoned in practice,
+      removing it from contemporary human data.
+
+  - edge_id: e00069
+    source: chemotherapy_growth_plate_toxicity
+    target: growth_hormone
+    relation: inhibits
+    sign: "-"
+    magnitude: not quantified as an effect size in this atlas
+    context: >-
+      human childhood cancer survivors; cranial and total body irradiation produce growth hormone deficiency,
+      which is an ENDOCRINE route distinct from the direct antiproliferative and pro-apoptotic effects of
+      high-dose methotrexate and platinum agents on chondrocytes
+    timescale: years after exposure
+    evidence_tier: T1
+    refs: [ahirwar2025, shimomura2026]
+    confidence: C
+    notes: >-
+      The reason GH replacement only partially rescues these children: an irradiated plate is a damaged
+      EFFECTOR, so restoring the systemic signal cannot restore the response. Quantifying the split between
+      direct plate injury and endocrine deficiency in an individual survivor remains unsolved.
+
+# =====================================================================
+# SEAM L3 -> L7 and L4 -> L7 : mechanism onto fusion
+# SPECIES RULE: mice do not complete fusion. Any mechanism whose only support is murine
+# is written hypothesized_link + speculative + gap_id. Rabbit fusion data are not.
+# =====================================================================
+
+  - edge_id: e00070
+    source: hif1a_chondrocyte
+    target: hypoxia_necrosis_at_fusion
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      never measured at fusion. The single reported human fusing growth plate showed electron-microscopic
+      signs of hypoxia and necrosis, disorganised large chondrocytes surrounded by a border of dense
+      cortical-like bone, and ZERO TUNEL-positive cells - but no HIF1A, lactate, pimonidazole adduct or
+      necroptosis marker has ever been measured in a fusing human plate.
+    context: >-
+      human, late pubertal, n=1 fusing plate, unreplicated. HIF1A function in the growth plate is
+      mouse-only: chondrocyte-restricted Hif1a deletion kills cells in the plate INTERIOR, lowers p57 and
+      raises BrdU incorporation.
+    timescale: unknown
+    evidence_tier: T1
+    refs: [emons2009, schipani2001]
+    confidence: speculative
+    gap_id: g_l12l7_003
+
+  - edge_id: e00071
+    source: vegfa_growth_plate
+    target: bony_bridge_formation
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      mouse: sequestering VEGF with a soluble receptor chimera suppresses blood vessel invasion of
+      hypertrophic cartilage, expands the hypertrophic zone and is reversible on withdrawal. Human: VEGF
+      mRNA and protein are present in growth plate specimens with protein rising across pubertal
+      development, but no human bridge has been linked to a vessel.
+    context: >-
+      SPECIES GAP. Mice form hundreds of transphyseal bridges (495 +/- 45 per wild-type tibial plate) yet
+      never complete fusion, so no murine experiment can report a fusion endpoint. Nobody has imaged the
+      vasculature of a human growth plate at or approaching fusion.
+    timescale: unknown
+    evidence_tier: T1
+    refs: [gerber1999, emons2010, haines1975, samvelyan2022]
+    confidence: speculative
+    gap_id: g_l12l7_004
+    notes: >-
+      The morphological basis in humans is classical: mineralisation demarcated by tide lines spreads
+      inward from BOTH plate surfaces, first union is by mineralised cartilage as a form of metaplastic
+      bone, and only afterwards is a restricted region perforated and replaced by bone and marrow.
+
+  - edge_id: e00072
+    source: runx2_tf
+    target: bony_bridge_formation
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: never tested in any species
+    context: >-
+      RUNX2 licenses chondrocyte hypertrophy and osteoblast differentiation, with human dose evidence
+      (cleidocranial dysplasia) and a mouse Runx2/Runx3 combined-dose series in which limb length falls in
+      proportion to gene dose. Whether RUNX2 is required to build the transphyseal bone column that fuses a
+      human plate has never been asked, in humans or in a fusing animal.
+    timescale: unknown
+    evidence_tier: T1
+    refs: [mundlos1997, yoshida2004, samvelyan2022]
+    confidence: speculative
+    gap_id: g_l12l7_010
+
+  - edge_id: e00073
+    source: estrogen_receptor_alpha
+    target: epiphyseal_fusion
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      HUMAN: a homozygous ESR1 premature stop at codon 157 gave 204 cm with incomplete epiphyseal closure
+      and continued linear growth into adulthood, with bone age advancing only 15 -> 17.5 years over
+      3.5 years and no response to 6 months of transdermal oestrogen at a 10-fold rise in free estradiol
+      (n=1 male, 28 y). MOUSE: old ERalpha-null females keep growing (tibiae +8.3%, P<0.01; plate height
+      +18%, P<0.05), whereas ERalphaAF-1-deleted mice have SHORTER tibiae (-4.9%, P<0.01) and closed
+      proximal tibial plates in 100% of animals versus 0% of wild type.
+    context: human n=1 male plus mouse genetics, both sexes; a fusion endpoint is expressible in both
+    timescale: years
+    evidence_tier: T1
+    refs: [smith1994, smith2008, brjesson2012]
+    confidence: B
+    notes: >-
+      Growth plate closure is driven by ERalpha functions that do NOT require AF-1 and is actively OPPOSED
+      by AF-1 - a rare case where a mouse experiment makes a mechanistic prediction that the human
+      experiments of nature then match phenotypically. Not marked speculative because the human loss-of-
+      function phenotype is itself a direct fusion-endpoint observation.
+
+  - edge_id: e00074
+    source: aromatase_cyp19a1
+    target: epiphyseal_fusion
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      untreated aromatase-deficient men reach 188-204 cm with bone age 14 years at chronological age
+      24.25 years and continue slow linear growth into the third decade despite severely impaired GH
+      secretion; transdermal estradiol - not testosterone - advances bone maturation and closes the plates
+    context: human, biallelic CYP19A1, XY and XX individuals; a true interventional human fusion experiment
+    timescale: months to years of adequate estradiol exposure before closure
+    evidence_tier: T1
+    refs: [morishima1995, carani1997, rochira2010, lanfranco2008]
+    confidence: A
+    notes: >-
+      With e00073 this is the only fusion mechanism in the atlas with direct human interventional evidence,
+      and it rests on a handful of individuals.
+
+  - edge_id: e00075
+    source: estradiol_hormone
+    target: epiphyseal_fusion
+    relation: activates
+    sign: "+"
+    magnitude: >-
+      THRESHOLD-GATED, not dose-graded: in a man with compound heterozygous CYP19A1 mutations followed for
+      five years on poorly compliant transdermal estradiol, neither bone age nor plate appearance changed
+      while serum estradiol stayed low-but-detectable; closure, BMD normalisation and bone-turnover
+      normalisation were achieved only once estradiol exceeded 73 pmol/L (~20 pg/mL) (n=1). Independent
+      non-pathological support: at genital Tanner 5, obese boys at median 34.8 pg/mL had bone age ~18 y
+      with fused epiphyses while lean boys at 15.7 pg/mL had bone age ~16 y with epiphyses still unfused.
+    context: human, males; the only quantitative human dose parameter for fusion in this atlas
+    timescale: five years of sub-threshold exposure produced no change; closure followed adequate dosing
+    evidence_tier: T1
+    refs: [lanfranco2008, rochira2015, albin2012, albin2013]
+    confidence: D
+    notes: >-
+      The stimulating and terminating actions of estradiol are separated by well under one order of
+      magnitude - half-maximal pubertal growth acceleration at 20 pmol/L in girls and 6.5 pmol/L in boys,
+      against a closure threshold near 73 pmol/L. This defines the exposure a growth-sparing therapy must
+      stay below. Confidence D because the threshold rests on n=1.
+
+# =====================================================================
+# SEAM L2 -> L7 : progenitor biology onto fusion
+# =====================================================================
+
+  - edge_id: e00076
+    source: clonal_exhaustion
+    target: growth_cessation
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      mouse: after a single P6 PTHrP-creER pulse the number of labelled columns falls progressively until
+      about six months of chase and then PLATEAUS; roughly 2-3% of PTHrP+ colony-forming cells show
+      long-term self-renewal (12.5% of secondary colonies from a P12 pulse passageable nine times).
+      Behaves like neutral drift with a surviving minority, not synchronous failure of a compartment.
+    context: >-
+      SPECIES GAP. Mouse lineage tracing only; no clonal measurement of any kind exists in a human growth
+      plate, and lineage tracing is not performable in humans.
+    timescale: "mouse: months of chase; human equivalent unknown"
+    evidence_tier: T1
+    refs: [mizuhashi2018, newton2019, chu2025]
+    confidence: speculative
+    gap_id: g_l12l7_001
+
+  - edge_id: e00077
+    source: clonal_exhaustion
+    target: stem_cell_exhaustion_fusion
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      not measured in any fusing species. Growth hormone reduces the slow-cycling label-retaining
+      population by pushing cells into transit-amplifying differentiation, i.e. interventions that consume
+      the pool accelerate clonal loss - in mouse.
+    context: >-
+      SPECIES GAP. The mouse plate never completes fusion, so a murine result about clonal loss cannot be
+      a result about fusion.
+    timescale: unknown
+    evidence_tier: T1
+    refs: [mizuhashi2018, newton2019]
+    confidence: speculative
+    gap_id: g_l12l7_001
+
+  - edge_id: e00078
+    source: rz_depletion_causes_fusion
+    target: epiphyseal_fusion
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      rabbit (a FUSING species): oestrogen accelerated the normal age-related loss of resting-zone
+      chondrocytes, the loss was maintained 5 weeks after oestrogen withdrawal and did not appear apoptotic,
+      and transient oestrogen exposure hastened fusion. Structural parameters stayed irreversibly advanced
+      while functional parameters (growth rate, proliferation rate, hypertrophic cell size) normalised.
+    context: >-
+      juvenile ovariectomised rabbit; the causal direction is NOT established. Against causation: rodent
+      plates senesce to near-cessation without fusing at all, so depletion is not sufficient for fusion in
+      every mammal; and oestrogen simultaneously SLOWS resting-zone proliferation, the opposite of what a
+      pure proliferation-consumption model predicts.
+    timescale: 5 weeks of exposure plus 5 weeks of withdrawal
+    evidence_tier: T1
+    refs: [nilsson2014, weise2001, schrier2006]
+    confidence: speculative
+    gap_id: g_l12l7_001
+    notes: >-
+      Two readings of the same correlation compete: depletion CAUSES fusion, or depletion is the state of
+      the plate at an independently triggered (in humans, oestrogen-driven) fusion event. No human
+      resting-zone count at fusion exists to discriminate.
+
+  - edge_id: e00079
+    source: pthrp_positive_resting_chondrocyte
+    target: stem_cell_exhaustion_fusion
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      mouse: PTHrP+ resting chondrocytes appear at P3, expand between P6 and P9, are markedly less
+      proliferative than the cells below (6.1% vs 30.5% EdU+ at P9) and generate clonal columns for at
+      least a year; only ~2-3% behave as long-term stem cells
+    context: >-
+      SPECIES GAP, and a sharp one: no equivalent cell has been identified in human growth plate. Human
+      single-cell and spatial profiling of early-pubertal plates instead found a PTHLH-NEGATIVE stem-like
+      "root" population in a WNT- and TGF-beta-low niche. The marker that defines the mouse cell does not
+      define the human one.
+    timescale: unknown in human
+    evidence_tier: T1
+    refs: [mizuhashi2018, chu2026]
+    confidence: speculative
+    gap_id: g_l12l7_002
+
+  - edge_id: e00080
+    source: human_resting_zone_chondrocyte
+    target: stem_cell_exhaustion_fusion
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      not measured. Human specimens establish that a subset of resting chondrocytes is functionally
+      quiescent in vivo (predominantly nuclear mRNA, abundant heterochromatin, able to exit G0 ex vivo) and
+      resolve two stem-like resting populations, but self-renewal, clonal output and lifespan of any human
+      resting cell remain formally untested.
+    context: >-
+      human, rare surgical specimens from healthy adolescents and early-pubertal children. METHOD-BLOCKED:
+      lineage tracing is impossible in humans, so the standard assay for the claim cannot be run.
+    timescale: unknown
+    evidence_tier: T1
+    refs: [chu2026, avijgan2025, avijgan2026]
+    confidence: speculative
+    gap_id: g_l12l7_002
+
+  - edge_id: e00081
+    source: soc_formation_triggers_stemness
+    target: stem_cell_exhaustion_fusion
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      entirely temporal coincidence in two mouse studies: PTHrP-creER colony-forming cells acquire robust
+      in vitro self-renewal between a P9 pulse (17/518 secondary colonies, none passageable) and a P12
+      pulse (16/98, 2/16 passageable nine times), "when the secondary ossification centre actively develops".
+      Neither study manipulated the SOC.
+    context: >-
+      SPECIES GAP plus an untested causal step. A targeted search for any experiment that ablates, blocks
+      or delays SOC formation and then assays resting-zone stemness returned zero records.
+    timescale: mouse postnatal week 2; no human timing established
+    evidence_tier: T1
+    refs: [mizuhashi2018, newton2019, muruganandan2022]
+    confidence: speculative
+    gap_id: g_l2stem_003
+    notes: Load-bearing for fusion models in L7 and must be cited as a hypothesis, not a mechanism.
+
+  - edge_id: e00082
+    source: finite_proliferative_capacity_model
+    target: growth_cessation
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: >-
+      rabbit and rat: senescence is intrinsic, local and division-denominated. Local intra-plate
+      glucocorticoid in rabbit produces catch-up confined to the TREATED plate, excluding a systemic
+      explanation; dexamethasone-suppressed rabbits and propylthiouracil-treated hypothyroid rats resume
+      growth with plates structurally and functionally LESS senescent than age-matched controls.
+    context: >-
+      rabbit and rat. The model's simplest molecular version was falsified by its own authors: rabbit
+      resting-zone chondrocyte population doublings in culture do not depend on donor age, so the in vivo
+      limit is not a Hayflick limit carried by the cells. The proposed replacement is progressive loss of
+      DNA methylation tracking slow in vivo resting-zone division.
+    timescale: weeks of growth inhibition conserve a corresponding amount of capacity
+    evidence_tier: T1
+    refs: [baron1994, gafni2001, schrier2006, nilsson2005]
+    confidence: speculative
+    gap_id: g_l12l7_009
+    notes: >-
+      Unresolved tension with mouse clonal tracing showing progenitors ACQUIRE self-renewal postnatally
+      rather than only spending down a fixed budget.
+
+  - edge_id: e00083
+    source: replicative_senescence_chondrocyte
+    target: growth_cessation
+    relation: correlates_with
+    sign: unknown
+    magnitude: >-
+      NEGATIVE RESULT: rabbit resting-zone chondrocytes harvested from young and old animals achieved the
+      SAME number of population doublings in culture. Global DNA methylation declined with in vivo
+      senescence but not during rapid in vitro proliferation nor across the resting-to-hypertrophic
+      transition.
+    context: rabbit resting-zone chondrocytes, young versus old donors, explanted
+    timescale: culture lifespan, donor-age-independent
+    evidence_tier: T1
+    refs: [nilsson2005, nilsson2004]
+    confidence: D
+    notes: >-
+      The decisive test of cell-autonomous replicative senescence in the growth plate was done and it
+      failed. "Growth plate chondrocytes undergo replicative senescence" should be treated as UNSUPPORTED
+      in its cell-autonomous form despite being routinely re-asserted as positive in secondary literature.
+
+  - edge_id: e00084
+    source: telomere_attrition_chondrocyte
+    target: growth_cessation
+    relation: correlates_with
+    sign: unknown
+    magnitude: >-
+      no qualifying primary measurement exists. A targeted search for telomere length or telomerase
+      activity in human growth plate or resting-zone chondrocytes as a function of age returned no
+      qualifying primary study; hits are osteoarthritis cartilage, general skeletal-ageing reviews and
+      rodent work.
+    context: >-
+      human claim, murine nearest datum (mTert-GFP marks a transitional skeletal progenitor whose
+      expression peaks during adolescent growth rather than persisting). The nearest NEGATIVE datum is that
+      rabbit resting-zone replicative capacity in vitro does not decline with donor age.
+    timescale: not determinable
+    evidence_tier: T5
+    refs: [carlone2021, nilsson2005]
+    confidence: X
+    gap_id: g_l2stem_007
+    notes: >-
+      Grade X: commonly repeated in reviews, untraceable to primary data in its human form. Recorded so
+      that the claim is visible and marked, not so that it can be traversed.
+
+  - edge_id: e00085
+    source: delayed_senescence_hypothesis
+    target: epiphyseal_fusion
+    relation: inhibits
+    sign: "-"
+    magnitude: >-
+      dexamethasone-induced growth suppression in juvenile rabbits DELAYED the senescent decline in growth
+      rate and in proliferative, hypertrophic and total plate height AND DELAYED EPIPHYSEAL FUSION, after
+      which catch-up growth occurred
+    context: >-
+      juvenile rabbit, systemic dexamethasone. The rabbit COMPLETES fusion as humans do, so this is a
+      genuine fusion-endpoint result and not a rodent surrogate - which is why it is not marked speculative.
+      The human counterpart has never been tested prospectively.
+    timescale: weeks of suppression, with fusion delayed by a corresponding interval
+    evidence_tier: T1
+    refs: [gafni2001, baron1994]
+    confidence: C
+    notes: >-
+      The reciprocal of the oestrogen experiment: oestrogen accelerates the senescent decline and fusion
+      occurs earlier, glucocorticoid slows it and fusion occurs later. Together they support a
+      proliferation-counting clock rather than a chronological one - in rabbit.
+
+  - edge_id: e00086
+    source: chondrocyte_apoptosis_hz
+    target: apoptosis_at_fusion
+    relation: correlates_with
+    sign: unknown
+    magnitude: >-
+      NEGATIVE IN HUMAN: zero TUNEL-positive cells anywhere in the one reported human fusing growth plate;
+      only a few TUNEL-positive chondrocytes in unfused plates. Bcl-2, Bcl-XL, Bax, Bad and cleaved
+      caspase-3 were detectable in all zones with no change in intensity across pubertal progression, and
+      in the fusing plate only Bad was detected among the pro-apoptotic proteins. Electron microscopy
+      found no apoptosis or autophagy.
+    context: human, growth plates across pubertal stages including one late-pubertal fusing plate; n=1 fusing specimen, unreplicated
+    timescale: single time point at fusion
+    evidence_tier: T1
+    refs: [emons2009, emons2011]
+    confidence: D
+    notes: >-
+      The only one of the six candidate fusion mechanisms that has been tested in human fusing tissue, and
+      it failed. Directly contradicts the apoptosis-centred account that dominates the rodent hypertrophic-
+      chondrocyte literature. No second human fusing plate has ever been reported, so it cannot be replicated.

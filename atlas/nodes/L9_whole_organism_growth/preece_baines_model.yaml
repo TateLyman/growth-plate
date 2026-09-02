@@ -1,0 +1,94 @@
+id: preece_baines_model
+name: Preece-Baines growth model
+aliases:
+- PB1
+- Preece-Baines model 1
+type: method
+layer: L9
+stub: false
+summary: 'Preece and Baines derived a family of growth functions from the differential equation dh/dt
+  = s(t)(h1 - h), where h1 is adult size and s(t) a time-varying rate function; different choices of s(t)
+  generate different family members (preece1978). Model 1, with five parameters, is the version in universal
+  use for pubertal height; it fits an individual curve from age 2 to maturity with a residual SD of 6-7
+  mm, the benchmark against which later models are judged (cole2010, which independently reproduces 0.79
+  cm in 3245 boys). Derived quantities - peak height velocity, age at peak height velocity, age at take-off
+  - are read off the fitted curve rather than from raw increments, which makes them far more stable than
+  difference-based estimates, and a published erratum supplies the direct algebraic expressions for them
+  (sayers2013). Two documented failures constrain use: the function contains no term capable of representing
+  the mid-growth spurt, and fitted to Fels serial data it places pubertal-spurt onset earlier, the spurt
+  longer and the velocity rise slower than kernel regression or a triple-logistic model on the same children
+  (guo1992). The residual SD of 6-7 mm is the operative number for this atlas: it is comparable to diurnal
+  stature variation, so a plate-level model that claims to reproduce individual height to better than
+  about 7 mm is fitting measurement structure rather than biology.'
+quantitative:
+- parameter: residual SD of an individually fitted PB curve for height in puberty
+  value: 6-7
+  unit: mm
+  conditions: individual fits to serial height, ages ~9-19
+  species: human
+  source_ref: cole2010
+  uncertainty: quoted as the median RSD for PB curves; reproduced at 0.79 cm in 3245 boys
+- parameter: number of estimated parameters in PB model 1
+  value: '5'
+  unit: parameters
+  conditions: fits stature from age 2 to maturity
+  species: human
+  source_ref: preece1978
+  uncertainty: exact
+- parameter: age range over which PB model 1 is valid
+  value: 2 to maturity
+  unit: years
+  conditions: longitudinal stature
+  species: human
+  source_ref: preece1978
+  uncertainty: stated scope; the model cannot be extended into infancy
+localization:
+- 'human whole organism: serial standing height'
+human_evidence: direct
+human_evidence_note: Constructed and validated on human longitudinal stature series only.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human curve-fitting method.
+confidence: A
+claim_grades:
+- claim: PB model 1 fits individual pubertal height with residual SD 6-7 mm
+  grade: A
+  basis: Stated in the original derivation and independently reproduced as 0.79 cm in 3245 boys with 129508
+    measurements (cole2010).
+- claim: PB cannot represent the mid-growth spurt and biases pubertal spurt parameters relative to nonparametric
+    fits
+  grade: B
+  basis: Direct comparison of PB, triple logistic and kernel regression on 227 Fels participants (guo1992);
+    one cohort only.
+key_refs:
+- ref_id: preece1978
+  pmid: '646321'
+  first_author: Preece MA
+  year: 1978
+  type: primary
+  one_line_finding: Derives the PB family; model 1 with five parameters fits stature from age 2 to maturity
+    better than earlier models.
+- ref_id: sayers2013
+  pmid: '23461542'
+  first_author: Sayers A
+  year: 2013
+  type: primary
+  one_line_finding: Erratum giving direct algebraic calculation of peak height velocity, age at take-off
+    and related quantities from PB parameters.
+- ref_id: cole2010
+  pmid: '20647267'
+  first_author: Cole TJ
+  year: 2010
+  type: primary
+  one_line_finding: Quotes and reproduces the PB residual SD of 6-7 mm as the benchmark that SITAR matches.
+- ref_id: guo1992
+  pmid: '28524403'
+  first_author: Guo S
+  year: 1992
+  type: primary
+  one_line_finding: PB places pubertal spurt onset earlier and the velocity rise slower than kernel regression
+    on the same Fels children and cannot describe the midgrowth spurt.
+open_questions:
+- g_l9organism_002
+last_verified: '2026-08-05'

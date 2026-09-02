@@ -1,0 +1,98 @@
+id: immunohistochemistry_cartilage_artifact
+name: Artefact modes of cartilage immunohistochemistry
+aliases:
+- IHC in decalcified cartilage
+type: method
+summary: |
+  Most of what is asserted about protein localisation in the HUMAN growth plate rests on
+  immunohistochemistry, and the human growth plate is close to a worst case for that method.
+  The matrix is a dense polyanionic proteoglycan gel that binds cationic antibodies non-
+  specifically; decalcification, required wherever the hypertrophic zone or chondro-osseous
+  junction is included, degrades epitopes and the effect is agent- and duration-dependent; and
+  antigen retrieval protocols that work in soft tissue must be re-optimised for cartilage. The
+  field's own record shows the consequence. Estrogen receptor localisation in the human growth
+  plate was described as "controversial" in the paper that set out to resolve it
+  (nilsson2003): one group reported ER-alpha and ER-beta restricted to hypertrophic
+  chondrocytes (egerbacher2002), while another, counting positive cells across zones in 24
+  donors, found 64% ER-alpha positivity in resting and proliferative zones against 38% in the
+  hypertrophic zone - the opposite gradient (nilsson2003). Both used polyclonal antibodies of
+  the era on epiphysiodesis tissue. The discrepancy has never been resolved by an orthogonal
+  method in human tissue, because the orthogonal methods - zonal transcriptomics with in situ
+  validation, or spatial proteomics - have been applied to human physis in only two studies
+  (gse9160, xie2025). The practical rule this atlas applies: a human zonal localisation
+  supported only by IHC, without a stated antibody validation and without an independent
+  method, does not exceed grade D.
+quantitative:
+- parameter: ER-alpha positive chondrocytes, resting and proliferative zones, human
+  value: '64'
+  unit: '% of chondrocytes'
+  conditions: proximal tibia, 16 boys + 8 girls, Tanner 1-5, image analysis counting
+  species: human
+  source_ref: nilsson2003
+  uncertainty: SEM 2%
+- parameter: ER-alpha positive chondrocytes, hypertrophic zone, human
+  value: '38'
+  unit: '% of chondrocytes'
+  conditions: same cohort and assay
+  species: human
+  source_ref: nilsson2003
+  uncertainty: SEM 3%
+- parameter: androgen receptor positive chondrocytes, resting zone, human
+  value: '65'
+  unit: '% of chondrocytes'
+  conditions: same cohort; proliferative zone 41%, hypertrophic 58%
+  species: human
+  source_ref: nilsson2003
+  uncertainty: SEM 3%
+localization:
+- 'human RZ: ER-alpha reported positive by nilsson2003 and negative by egerbacher2002 - unresolved'
+human_evidence: direct
+human_evidence_note: The contradiction is between two human-tissue immunohistochemistry studies,
+  so the evidence at issue is human throughout.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A methodological property of human tissue staining; nothing is transferred
+  across species.
+confidence: B
+claim_grades:
+- claim: Human growth plate ER-alpha zonal distribution is reported in mutually exclusive ways by
+    two IHC studies.
+  grade: A
+  basis: Both primary reports read; quantitative gradient in nilsson2003 versus hypertrophic-only
+    restriction in egerbacher2002.
+- claim: The discrepancy is caused by antibody and decalcification artefact.
+  grade: E
+  basis: Plausible and consistent with the known chemistry, but not experimentally demonstrated.
+key_refs:
+- ref_id: nilsson2003
+  first_author: Nilsson O
+  year: 2003
+  type: primary
+  one_line_finding: ER-alpha and ER-beta more frequent in resting and proliferative than hypertrophic
+    zone, quantified across 24 donors.
+- ref_id: egerbacher2002
+  first_author: Egerbacher M
+  year: 2002
+  type: primary
+  one_line_finding: ER-alpha and ER-beta immunostaining restricted to hypertrophic chondrocytes in
+    four epiphysiodesis donors.
+- ref_id: nilsson1999
+  first_author: Nilsson LO
+  year: 1999
+  type: primary
+  one_line_finding: ER-beta positive only in hypertrophic chondrocytes in four female pubertal donors
+    - agreeing with egerbacher2002 and not with nilsson2003.
+- ref_id: gse9160
+  first_author: Mougey EB
+  year: 2007
+  type: dataset
+  one_line_finding: Zone-resolved human transcriptome that could adjudicate zonal expression claims
+    at the RNA level.
+open_questions: []
+contradicts:
+- nilsson2003
+- egerbacher2002
+layer: L13
+stub: false
+last_verified: '2026-08-05'

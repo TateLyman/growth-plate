@@ -1,0 +1,63 @@
+id: hypertrophic_chondrocyte_survival
+name: Hypertrophic chondrocyte survival at the chondro-osseous junction
+type: process
+summary: 'The classical model has terminal hypertrophic chondrocytes dying, with osteoblasts arriving
+  from the perichondrium with the invading vasculature. Inducible lineage tracing overturned the exclusivity
+  of that model: a substantial fraction of hypertrophic chondrocytes survive the cartilage-to-bone transition,
+  downregulate the chondrocyte programme and become osteogenic cells that persist into adulthood. The
+  two fates therefore coexist and their relative weights are the interesting quantity - roughly 60% of
+  young mouse trabecular osteoblasts are chondrocyte-derived, so survival is not a rare escape event.
+  Cells at the growth plate periphery behave differently again: borderline chondrocytes, aligned perpendicular
+  to the columns adjacent to the perichondrium, behave as transient mesenchymal precursors rather than
+  long-term stem cells. The mechanism licensing survival is not settled; candidate regulators reported
+  in the mouse include Wnt/beta-catenin and mechanotransductive signalling, and none has been tested in
+  human tissue.'
+quantitative:
+- parameter: Lower bound on hypertrophic chondrocyte survival, inferred from osteoblast output
+  value: '60'
+  unit: '% of young trabecular osteoblasts are chondrocyte-derived'
+  conditions: 3-4 week mouse femur
+  species: mouse
+  source_ref: zhou2014a
+  uncertainty: approximate; not a direct survival measurement
+localization:
+- 'mouse chondro-osseous junction and primary spongiosa: confirmed (yang2014, zhou2014a)'
+- 'mouse growth plate periphery (borderline chondrocytes): transient precursor behaviour (mizuhashi2019)'
+- 'human: unconfirmed'
+human_evidence: absent
+human_evidence_note: No human study has traced the fate of individual hypertrophic chondrocytes.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Depends on inducible genetic labelling; human hypertrophic chondrocyte fate is
+  inferred entirely by analogy.
+confidence: C
+key_refs:
+- ref_id: yang2014
+  pmid: '25092332'
+  doi: 10.1073/pnas.1302703111
+  first_author: Yang L
+  year: 2014
+  type: primary_abstract_only
+  one_line_finding: Hypertrophic chondrocytes survive the cartilage-to-bone transition and become osteoblasts
+    and osteocytes
+- ref_id: zhou2014a
+  pmid: '25474590'
+  doi: 10.1371/journal.pgen.1004820
+  first_author: Zhou X
+  year: 2014
+  type: primary
+  one_line_finding: Quantifies the resulting osteoblast contribution at ~60%
+- ref_id: mizuhashi2019
+  pmid: '30888720'
+  doi: 10.1002/jbmr.3719
+  first_author: Mizuhashi K
+  year: 2019
+  type: primary_abstract_only
+  one_line_finding: Borderline chondrocytes at the plate periphery are transient mesenchymal precursors,
+    not stem cells
+open_questions:
+- g_l2stem_002
+layer: L2
+stub: false
+last_verified: '2026-08-05'

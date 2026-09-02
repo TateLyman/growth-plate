@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+
+# Round 18 acquisition sweep: 1.8 GB of raw third-party data.
+# Manifests, indices and derived tables are committed under query/acquisition/;
+# the payloads are re-downloadable with atlas/tools/{geo,ctg,epmc}_*.py
+acquire/
+
+# Round 256: GSE288028 h5 matrices, 105 MB of re-downloadable third-party data.
+# Re-fetch with the URLs in atlas/tools/round256_retinoid_and_sost_in_the_human_plate.py
+# docstring; the derived table is committed at atlas/data/round256_retinoid_sost_query.txt
+atlas/data/round256_h5/
+atlas/data/supplied_2026_08_12/*.gz
+atlas/data/supplied_2026_08_12/*.rpt
+atlas/data/supplied_2026_08_12/*.ontology
+atlas/data/supplied_2026_08_12/*.tar
+atlas/data/supplied_2026_08_12/spatial_bone_growth/
+
+# Bulk supplied data 2026-08-13 - manifest committed, binaries not (GitHub 100MB limit)
+atlas/data/supplied_2026_08_13/*.tsv
+atlas/data/supplied_2026_08_13/*.tar
+atlas/data/supplied_2026_08_13/*.xlsx
+atlas/data/supplied_2026_08_13/*.gz
+atlas/data/supplied_2026_08_13/*.txt
+atlas/data/supplied_2026_08_13/*.yaml
+
+# R478: 1000 Genomes phase 3 EUR PLINK LD reference panel (MRC IEU), ~1.1 GB of
+# re-downloadable third-party data. Re-fetch with:
+#   curl -sS "http://fileserve.mrcieu.ac.uk/ld/1kg.v3.tgz" \
+#     | tar -xz --wildcards -C atlas/data/ld '*EUR*'
+# NOTE: the origin server's HTTPS certificate has EXPIRED; plain http:// works.
+atlas/data/ld/

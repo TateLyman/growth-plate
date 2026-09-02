@@ -1,0 +1,158 @@
+# Search log for L3 shard l3core.
+# Every query below was run against the Europe PMC REST search endpoint:
+#   https://www.ebi.ac.uk/europepmc/webservices/rest/search
+#     ?query=<exact_query_string>&format=json&pageSize=25&resultType=lite
+# Field prefixes (TITLE_ABS:, TITLE:, AUTH:) are Europe PMC query syntax.
+searches:
+
+  - gap_id: g_l3core_006
+    database: Europe PMC
+    exact_query_string: 'TITLE_ABS:"phosphodiesterase" AND TITLE_ABS:"growth plate"'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit, no publication-type limit'
+    date_run: '2026-08-05'
+    hit_count: 14
+    screened_count: 14
+    reason_none_qualified: >-
+      Of 14 records, 9 concern alkaline phosphatase / nucleotide pyrophosphatase-phosphodiesterase
+      (ENPP1) and matrix-vesicle mineralisation, not cyclic-nucleotide PDEs. Two are the mouse PDE3
+      work (Kawabe 2025, journal article and its abstract duplicate), one is a rat PDE5/tadalafil
+      study (Wang 2018), one is a human growth plate physicochemical niche paper with no PDE data,
+      and one is a 1986 PTH/alkaline phosphatase study. None reports cyclic-nucleotide PDE isoform
+      localisation by zone in human growth plate.
+
+  - gap_id: g_l3core_006
+    database: Europe PMC
+    exact_query_string: '(TITLE_ABS:"PDE3A" OR TITLE_ABS:"PDE3B" OR TITLE_ABS:"PDE5A" OR TITLE_ABS:"PDE9A" OR TITLE_ABS:"PDE1C") AND (TITLE_ABS:"growth plate" OR TITLE_ABS:"physis" OR TITLE_ABS:"epiphyseal")'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 2
+    screened_count: 2
+    reason_none_qualified: >-
+      The two hits are Kawabe 2025 (mouse PDE3B pharmacology, no zonal localisation, no human tissue)
+      and Reyes 2020 (a review of non-GNAS brachydactyly mentioning PDE3A, no growth plate tissue
+      data). Neither reports a named cGMP-hydrolysing PDE isoform localised to a growth plate zone in
+      any species, and neither uses human growth plate tissue.
+
+  - gap_id: g_l3core_006
+    database: Europe PMC
+    exact_query_string: '(phosphodiesterase OR PDE3B OR PDE5A OR PDE9A) AND ("growth plate" OR physis) AND human AND (immunohistochemistry OR "in situ hybridisation" OR "in situ hybridization" OR "laser capture" OR "single-cell")'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit; first 25 of 201 screened by title and abstract'
+    date_run: '2026-08-05'
+    hit_count: 201
+    screened_count: 25
+    reason_none_qualified: >-
+      The 201 hits are dominated by ENPP1/pyrophosphatase, bone marrow adipose and osteoarthritis
+      papers; the term "phosphodiesterase" matches ENPP1 nomenclature. Of the 25 top-ranked records
+      screened, none reports cyclic-nucleotide PDE isoform expression localised to a growth plate
+      zone in human tissue. The only relevant records (Hirota 2022, Miyazaki 2022) are mouse and
+      concern PKA/Ca2+ rather than PDE localisation.
+
+  - gap_id: g_l3core_006
+    database: Europe PMC
+    exact_query_string: 'PDE9A AND (cartilage OR chondrocyte OR bone OR skeletal)'
+    filters: 'format=json, pageSize=20, resultType=lite, no date limit; first 20 of 234 screened'
+    date_run: '2026-08-05'
+    hit_count: 234
+    screened_count: 20
+    reason_none_qualified: >-
+      All screened records are neurological, cardiovascular, oncological or medicinal-chemistry
+      papers in which PDE9 and a skeletal term co-occur incidentally. No record reports PDE9A in
+      cartilage or growth plate. This is consistent with the review conclusion that PDE6, PDE9 and
+      PDE11 family genes are not expressed in skeletal tissue.
+
+  - gap_id: g_l3core_006
+    database: Europe PMC
+    exact_query_string: 'PDE1C AND (cartilage OR chondrocyte OR "growth plate")'
+    filters: 'format=json, pageSize=20, resultType=lite, no date limit; first 20 of 59 screened'
+    date_run: '2026-08-05'
+    hit_count: 59
+    screened_count: 20
+    reason_none_qualified: >-
+      Hits are dominated by circular-RNA studies in osteoarthritis in which "circ-PDE1C" is a
+      transcript name rather than a study of the enzyme, plus cardiac PDE1 reviews. No record
+      reports PDE1C protein or activity in growth plate cartilage in any species.
+
+  - gap_id: g_l3core_005
+    database: Europe PMC
+    exact_query_string: '(TITLE_ABS:"PTHrP" OR TITLE_ABS:"PTHLH" OR TITLE_ABS:"PTH1R") AND (TITLE_ABS:"C-type natriuretic peptide" OR TITLE_ABS:"CNP" OR TITLE_ABS:"NPR2" OR TITLE_ABS:"Nppc" OR TITLE_ABS:"guanylyl cyclase-B")'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 8
+    screened_count: 8
+    reason_none_qualified: >-
+      All eight records were screened. Four are reviews or gene-panel papers listing both pathways as
+      separate causes of short stature (Vasques-type panels, SHOX second-hit papers, a signalling
+      review, and a novel-genetic-causes review). One is a vascular smooth muscle homocysteine study.
+      One is a GWAS/expression synthesis. One (Huang 2003, PMID 12827032) tests adrenomedullin, CNP
+      and PTHrP effects in parallel on cultured cells with no combination arm and no growth plate
+      tissue. None reports an experimental test of whether either pathway regulates the other.
+
+  - gap_id: g_l3core_005
+    database: Europe PMC
+    exact_query_string: '(PTHrP OR "parathyroid hormone-related protein") AND (Nppc OR NPR2 OR "C-type natriuretic peptide") AND (chondrocyte OR "growth plate") AND (crosstalk OR "cross-talk" OR converge OR epistasis OR "double mutant" OR "compound")'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit; first 25 of 58 screened'
+    date_run: '2026-08-05'
+    hit_count: 58
+    screened_count: 25
+    reason_none_qualified: >-
+      Every screened record is a narrative review, a clinical short-stature overview, or a study of
+      one pathway that mentions the other in its introduction. No compound mutant, no epistasis
+      experiment, and no measurement of cGMP under PTH1R manipulation (or cAMP under NPR2
+      manipulation) in growth plate cartilage was found.
+
+  - gap_id: g_l3core_001
+    database: Europe PMC
+    exact_query_string: '(PTHrP OR PTHLH) AND ("Indian hedgehog" OR Ihh) AND ("growth plate" OR chondrocyte) AND ("loop gain" OR "feedback gain" OR "quantitative model" OR "mathematical model" OR "diffusion coefficient" OR "signalling range" OR "signaling range")'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit; first 25 of 38 screened'
+    date_run: '2026-08-05'
+    hit_count: 38
+    screened_count: 25
+    reason_none_qualified: >-
+      The modelling papers found (Stoop 2025 continuum particle model; Campbell 2024 osteochondral
+      regeneration model; reaction-diffusion and Turing-pattern papers from 2009-2013; Kerkhofs
+      gene-network models) all parameterise PTHrP and Ihh transport with assumed or fitted constants;
+      none reports a measured diffusion coefficient, decay length or loop gain. No experimental paper
+      in the set measures the loop as a control system.
+
+  - gap_id: g_l3core_001
+    database: Europe PMC
+    exact_query_string: 'TITLE_ABS:"Ihh" AND TITLE_ABS:("long-range" OR "range of") AND (chondrocyte OR "growth plate" OR skeletal OR cartilage)'
+    filters: 'format=json, pageSize=20, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 22
+    screened_count: 22
+    reason_none_qualified: >-
+      The two directly relevant records are Koziel 2004 (Ext1 hypomorph EXPANDS the Ihh range) and
+      Tsiairis 2008 (Disp1 mutants establish the loop over a SHORTER distance). Both describe range
+      change ordinally, by comparing the extent of Ptch1/Gli1 expression domains between genotypes;
+      neither reports a distance in micrometres, a diffusion coefficient, or a source strength. The
+      remainder concern heparan sulfate structure, MPS models, or craniofacial development.
+
+  - gap_id: g_l3core_003
+    database: Europe PMC
+    exact_query_string: '("growth plate" OR physis OR epiphyseal) AND human AND ("single-cell RNA" OR "single cell RNA" OR scRNA-seq OR "spatial transcriptom") AND (zone OR zonal OR resting OR hypertrophic)'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit; first 25 of 458 screened'
+    date_run: '2026-08-05'
+    hit_count: 458
+    screened_count: 25
+    reason_none_qualified: >-
+      Screened for any human growth plate zone-resolved dataset that could partition a CNP/NPR2
+      effect between hypertrophic volume, matrix synthesis and proliferation. The human-tissue
+      records found concern growth hormone action on human growth plate stem cells and hPSC-derived
+      cartilage; the zone-resolved atlases are murine. No human dataset measures zonal response to
+      CNP-pathway perturbation.
+
+  - gap_id: g_l3core_011
+    database: Europe PMC
+    exact_query_string: 'TITLE_ABS:NPR2 AND TITLE_ABS:"short stature" AND (heterozygous OR carrier)'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit; first 25 of 49 screened'
+    date_run: '2026-08-05'
+    hit_count: 49
+    screened_count: 25
+    reason_none_qualified: >-
+      Twenty-five records were screened for a standardised activity-versus-height regression. Every
+      cohort reports either cGMP assays on a handful of novel variants (typically 1-8) in a
+      laboratory-specific construct, or height SDS, but never both across a variant panel under one
+      protocol. Wang 2015 comes closest, functionally testing 16 variants, but reports prevalence and
+      direction rather than a regression of activity on height. No study reports the shape of the
+      activity-to-height dose-response.

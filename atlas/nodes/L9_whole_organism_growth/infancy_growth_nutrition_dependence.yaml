@@ -1,0 +1,105 @@
+id: infancy_growth_nutrition_dependence
+name: Nutrition dependence of infant growth
+type: process
+layer: L9
+stub: false
+summary: 'Infant linear growth is the fastest and the least hormonally buffered phase of postnatal life.
+  In the ICP framework the infancy component is driven by nutrition and insulin rather than by growth
+  hormone, and growth hormone only becomes a significant regulator when the childhood component switches
+  on between 6 and 12 months (karlberg1987, karlberg1990). The strongest evidence for that boundary is
+  negative and human: untreated GH-deficient infants show no infancy-childhood spurt at all, whereas their
+  infancy-component growth is intact, and a delayed spurt occurs in 30-50% of infants in a deprived environment
+  as well as in 30-50% of children with growth disorders (karlberg1990). The corollary for a mechanistic
+  atlas is that the postnatal growth plate operates under two different control regimes within its first
+  three years, and a model calibrated on the childhood or pubertal plate cannot be assumed to apply to
+  the infant plate. The WHO multicentre data set the ceiling on how much of infant growth variation is
+  environmental at the population level: under growth-permitting conditions, site explains only about
+  3% of variance in length while individuals within sites explain about 70% (who2006), so nutrition dominates
+  the difference between deprived and non-deprived populations but not the difference between healthy
+  individuals.'
+quantitative:
+- parameter: age window of the infancy-to-childhood control switch
+  value: 6-12
+  unit: months
+  conditions: onset of the childhood component
+  species: human
+  source_ref: karlberg1990
+  uncertainty: range as stated
+- parameter: infants in a deprived environment with a delayed infancy-childhood spurt
+  value: 30-50
+  unit: percent
+  conditions: poor area of a developing country
+  species: human
+  source_ref: karlberg1990
+  uncertainty: range as stated; denominator not given in the abstract
+- parameter: variance in early linear growth attributable to site under growth-permitting conditions
+  value: '3'
+  unit: percent
+  conditions: six MGRS sites
+  species: human
+  source_ref: who2006
+  uncertainty: approximately
+- parameter: variance in early linear growth attributable to individuals within sites
+  value: '70'
+  unit: percent
+  conditions: six MGRS sites
+  species: human
+  source_ref: who2006
+  uncertainty: approximately
+- parameter: share of adult height attained in the first year of life
+  value: '15'
+  unit: percent
+  conditions: healthy term infants
+  species: human
+  source_ref: pridik2026
+  uncertainty: stated in the introduction of a prospective birth cohort report
+localization:
+- 'human whole organism: recumbent length, birth to 3 years'
+human_evidence: direct
+human_evidence_note: Human longitudinal length data from clinical cohorts and from a six-country prospective
+  study with prescriptive inclusion criteria.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: All quantities are measured in human infants.
+confidence: B
+claim_grades:
+- claim: Growth hormone becomes a significant regulator of linear growth only from 6-12 months
+  grade: C
+  basis: Inferred from the absence of the infancy-childhood spurt in untreated GH deficiency and its delay
+    in deprived infants (karlberg1990); no direct measurement of GH action on the infant growth plate
+    exists in any species.
+- claim: Under growth-permitting conditions, population of origin explains almost none of the variance
+    in infant length
+  grade: A
+  basis: Formal variance decomposition in a six-country prospective study (who2006).
+key_refs:
+- ref_id: karlberg1990
+  pmid: '2220375'
+  first_author: Karlberg J
+  year: 1990
+  type: primary
+  one_line_finding: The infancy-childhood spurt is absent in untreated GHD and delayed in 30-50% of deprived
+    or growth-disordered infants.
+- ref_id: karlberg1987
+  pmid: '3589247'
+  first_author: Karlberg J
+  year: 1987
+  type: primary
+  one_line_finding: Assigns nutrition/insulin control to the infancy component and GH control to the childhood
+    component.
+- ref_id: who2006
+  pmid: '16817679'
+  first_author: WHO Multicentre Growth Reference Study Group
+  year: 2006
+  type: primary
+  one_line_finding: Site explains about 3% and individuals about 70% of variance in early linear growth.
+- ref_id: pridik2026
+  pmid: '41921027'
+  first_author: Pridik C
+  year: 2026
+  type: primary
+  one_line_finding: Prospective birth cohort quantifying infant growth velocity and its hormonal determinants.
+open_questions:
+- g_l9organism_003
+last_verified: '2026-08-05'

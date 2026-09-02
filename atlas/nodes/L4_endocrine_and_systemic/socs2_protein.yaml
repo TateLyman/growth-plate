@@ -1,0 +1,54 @@
+id: socs2_protein
+name: SOCS2
+aliases:
+- suppressor of cytokine signalling 2
+- CIS2
+type: protein
+layer: L4
+stub: false
+summary: SOCS2 is a STAT5B-induced SH2-domain protein that binds phosphorylated GHR tyrosines and, via
+  its SOCS box and an elongin-cullin-RING E3 complex, ubiquitinates the receptor - a delayed negative
+  feedback loop on GH signalling. Its physiological weight is shown by the Socs2-null mouse, which is
+  markedly larger than wild type across the skeleton despite normal circulating GH and IGF-1, and whose
+  overgrowth is GH-dependent (metcalf2000). SOCS2 is therefore the clearest example in this axis of a
+  gain of stature produced by removing a brake rather than adding a ligand, which implies whole-body growth
+  is not saturated at physiological GH concentrations. No human SOCS2 loss-of-function overgrowth syndrome
+  has been established, and SOCS2's zonal role inside the growth plate has not been mapped in any species.
+quantitative:
+- parameter: body/skeletal size increase in Socs2-null mice
+  value: 30-40
+  unit: '%'
+  conditions: Socs2-/- vs wild-type littermates, adult; circulating GH and IGF-1 normal
+  species: mouse
+  source_ref: metcalf2000
+  uncertainty: abstract read only; exact effect size and CI not confirmed at source
+  value_unverified: true
+localization:
+- 'mouse SYS: liver and other GH targets'
+- 'growth plate: SOCS2 protein not localised by zone in any species'
+human_evidence: absent
+human_evidence_note: No confirmed human SOCS2 loss-of-function overgrowth phenotype; the case for SOCS2
+  in human stature rests on mouse genetics and on SOCS2's position as a direct STAT5B target.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: A large size effect in mouse with no human counterpart is exactly the pattern
+  that should not be assumed to transfer; the human GH axis has different pulse structure and feedback
+  set points. The effect size itself is abstract-only (paywalled figures), so it is recorded value_unverified
+  and the node's confidence is dropped one grade.
+confidence: D
+key_refs:
+- ref_id: metcalf2000
+  first_author: Metcalf D
+  year: 2000
+  type: primary
+  one_line_finding: Socs2-null mice show gigantism with normal GH and IGF-1, identifying SOCS2 as a brake
+    on GH-GHR signalling.
+  pmid: '10890450'
+pending_source: metcalf2000
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  SOCS1/SOCS3/CIS are present and demonstrably do not compensate - the Socs2-null gigantism occurs
+  with normal circulating GH and IGF-1 (metcalf2000).

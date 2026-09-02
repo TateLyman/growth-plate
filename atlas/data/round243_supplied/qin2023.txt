@@ -1,0 +1,791 @@
+ORGAN REGENERATION
+A population of stem cells with strong regenerative
+potential discovered in deer antlers
+Tao Qin1†, Guokun Zhang2†, Yi Zheng3†, Shengyou Li3†, Yuan Yuan1†, Qingjie Li4†, Mingliang Hu1,
+Huazhe Si5, Guanning Wei6, Xueli Gao1, Xinxin Cui1, Bing Xia3, Jing Ren2, Kun Wang1, Hengxing Ba2,
+Zhen Liu2, Rasmus Heller7, Zhipeng Li5*, Wen Wang1,8*, Jinghui Huang3*, Chunyi Li2,9*, Qiang Qiu1*
+The annual regrowth of deer antlers provides a valuable model for studying organ regeneration in
+mammals. We describe a single-cell atlas of antler regrowth. The earliest-stage antler initiators were
+mesenchymal cells that express the paired related homeobox 1 gene (PRRX1+ mesenchymal cells). We
+also identified a population of “antler blastema progenitor cells” (ABPCs) that developed from the PRRX1+
+mesenchymal cells and directed the antler regeneration process. Cross-species comparisons identified
+ABPCs in several mammalian blastema. In vivo and in vitro ABPCs displayed strong self-renewal ability
+and could generate osteochondral lineage cells. Last, we observed a spatially well-structured pattern of
+cellular and gene expression in antler growth center during the peak growth stage, revealing the cellular
+mechanisms involved in rapid antler elongation.
+L
+ower vertebrates have a remarkable capa-
+city to heal in a scar-free manner and
+regenerate lost appendages, even at the
+adult stage (1–5). By contrast, mammals
+have largely lost the capacity for append-
+age or organ regeneration (6). However, deer
+antler offers a singular model to study sponta-
+neous regeneration in mammals because its
+regeneration is similar and clinically relevant to
+mammalian long-bone development (7–9).
+Every year in early spring, hard antlers are
+cast from their pedicles, then both antler
+bone and cartilage are regenerated from
+the pedicle periosteum located in the pedi-
+cle stumps. In late spring and early sum-
+mer, antlers grow and calcify in about 3 to
+4 months with a growth rate of 2.75 cm/day
+and a mineral apposition rate of 3.2 mm/day,
+the highest among medium- to large-sized
+mammals (10, 11). At the end of the summer,
+the antlers lose their velvet skin cover,
+leaving dead bone ready for fighting during
+the rut. Antlers are cast in the next spring,
+and then a new round of their regeneration
+starts. Studies on antler regeneration have
+mainly focused on histological (12) and mor-
+phological (13) aspects of the regeneration
+process. Previous findings identified some
+positively selected genes, regulatory elements,
+and highly expressed genes associated with
+rapid antler growth (14), but the detailed cel-
+lular and molecular mechanisms involved in
+antler regeneration remain unclear.
+To address this fundamental question, we
+set out to investigate in detail the cellular com-
+position and gene expression dynamics of
+antler tissue throughout its regeneration cycle
+using single-cell transcriptome sequencing
+(scRNA-seq), then used in vivo and in vitro
+experiments to assess the potency and func-
+tionality of key populations of stem cells.
+Single-cell transcriptomic atlas of
+antler regeneration
+During antler regeneration, cartilage and bone
+are fully regenerated annually at a rapid rate
+(11). To comprehensively assess the gene tran-
+scription dynamics and cell type changes that
+occur during antler regeneration, we applied
+scRNA-seq of sika deer (Cervus nippon) antlers
+at various stages of the regeneration process
+(10 days before casting, and 0, 2, 5, 10, 45, 60,
+and 90 days after casting) (Fig. 1A and fig. S1,
+A and B) (15). To ensure the accuracy and
+reliability of the subsequent analysis, we gen-
+erated a chromosome-level genome assembly
+of a male sika deer (fig. S2 and tables S1 and
+S2), providing a solid foundation for the
+scRNA-seq analysis.
+In total, we analyzed 74,730 cells covering the
+critical stages of antler regeneration (Fig. 1B and
+table S2). Cells from all samples were pooled and
+visualized so that the cells could be assigned to
+eight putative cell populations (Fig. 1B). These
+populations (associated markers in parenthe-
+ses) are PRRX1+ mesenchymal cells (PMCs;
+PRRX1, POSTN, and LUM), SOX9+ chondro-
+blasts (SOX9 and SOX6), PHEX+ osteoblasts
+(PHEX), COL3A1+ fibroblasts (COL3A1 and
+COL12A1), CHAD+ chondrocytes(CHAD, SCRG1),
+ACTA2+ pericytes (ACTA2 and MYLK), PECAM1+
+endothelial cells (PECAM1 and VWF), and
+PTPRC+ immune cells (PTPRC and LCP1) (Fig. 1D
+and table S3). Of these, PMCs were particularly
+abundant in the samples (fig. S1, C and D). Cells
+of this type are reportedly crucial during limb
+regeneration in frog (16) and axolotl (2), as well
+as digit tip regeneration in mouse (17), support-
+ing a key role in antler regeneration.
+Next, we explored the lineage relationships
+among cell subtypes (Fig. 1C and fig. S1E) (15).
+This regeneration trajectory was dominated by
+PMCs, chondroblasts, and chondrocytes, with a
+general trend of progressive change from PMCs
+to chondroblasts and chondrocytes (Fig. 1C).
+Concomitantly, genes highly expressed in PMCs
+(such as POSTN and PRRX1) were gradually
+down-regulated, whereas characteristic genes in
+chondroblasts (such as SOX6) and chondrocytes
+(for example, CHAD, ACAN, and COL2A1) were
+up-regulated upon terminal differentiation (Fig.
+1C). The samples from 10 days before casting
+and 0 days after casting had a highly similar cell
+composition, and PMCs were already present in
+the periosteum at the preregeneration time
+point (10 days before casting), suggesting that
+PMCs are permanently present in the antler-
+generating tissues and are not formed by
+dedifferentiation (fig. S1B). This is in sharp
+contrast to the process observed in axolotl
+limb regeneration (2), in which the PRRX1+ cell
+population first undergoes dedifferentiation
+to form progenitor cells and subsequently
+redifferentiates to form a PRRX1+ cell popu-
+lation. The reconstructed regeneration trajec-
+tory suggests that the annual cycle of antler
+regeneration is based on PMCs, in accordance
+with the notion that organ regeneration is a
+stem cell–based process in mammals (6, 18).
+Cell population dynamics during
+antler regeneration
+To analyze the osteochondral regeneration pro-
+cess in detail, we performed a subclassification
+analysis of the annotated cell types (Fig. 2A,
+fig. S3A, and table S3). As described above,
+in the pedicle periosteum at 10 days before
+casting (preregeneration) and 0 days after
+casting, the PMCs were abundant and repre-
+sented a major periosteal cell population
+(Fig. 2B and fig. S3B), appearing to be the
+key cells for antler osteochondral regener-
+ation. We thus analyzed the cellular com-
+position of PMCs and found three subtypes:
+periosteal stromal cells (SFRP2+ cell po-
+pulation; PMC1), periosteal mesenchymal
+progenitor cells (PMF1+ cell population; PMC2),
+and chemotactic periosteal cells (CXCL14+
+cell population; PMC3) (Fig. 2A). These cells
+were immunohistochemically confirmed to
+reside simultaneously in the pedicle perios-
+teum (fig. S3C).
+RESEARCH
+Qin et al., Science 379, 840–847 (2023)
+24 February 2023
+1 of 8
+1School of Ecology and Environment, Northwestern
+Polytechnical University, Xi’an 710072, China. 2Institute of
+Antler Science and Product Technology, Changchun Sci-Tech
+University, Changchun, China. 3Department of Orthopaedics,
+Xijing Hospital, Fourth Military Medical University, Xi’an
+710032, China. 4Research Center of Traditional Chinese
+Medicine, The Affiliated Hospital to Changchun University of
+Chinese Medicine, Changchun 130021, China. 5College of
+Animal Science and Technology, Jilin Agricultural University,
+Changchun, China. 6School of Life Sciences, Jilin University,
+Changchun 130012, Jilin, China. 7Section for Computational
+and RNA Biology, Department of Biology, University of
+Copenhagen, N 2200 Copenhagen, Denmark. 8Center for
+Excellence in Animal Evolution and Genetics, Chinese
+Academy of Sciences, Kunming 650223, China. 9College of
+Traditional Chinese Medicine, Jilin Agricultural University,
+Changchun, China.
+*Corresponding author. Email: qiuqiang@lzu.edu.cn (Q.Q.);
+lichunyi1959@163.com (C.L.); huangjh@fmmu.edu.cn (J.H.);
+wenwang@nwpu.edu.cn (W.W.); zhipengli@jlau.edu.cn (Z.L.)
+†These authors contributed equally to this work.
+
+In addition to the three mesenchymal sub-
+types detected at 10 days before casting and
+0 days after casting, another type of PMC
+(denoted PMC4, expressing TNN), as well as
+small proportions of chondrogenic cells, were
+observed at 5 days after casting (Fig. 2B),
+indicating that cellular heterogeneity had
+increased and chondrogenic differentiation
+had begun by 5 days after casting. Because
+PMCs were abundant at both 0 and 5 days after
+casting (Fig. 2B), we compared the ability of cell
+masses at these two points to generate antlers
+ectopically in nude mice (15). In contrast to cell
+masses at 0 days after casting, which generated
+fibrous connective tissue, cell masses at 5 days
+after casting successfully differentiated into
+an antler-like structure (with cartilage and
+bone) by 45 days after transplantation (Fig. 2C
+and fig. S4A), confirming their ectopic antler
+generation capacity. We further transplanted
+cell masses at 5 days after casting into the
+heads of tdTOMATO (red fluorescent pro-
+tein)-labeled nude mice. No red fluorescence
+was visualized in the regenerated cartilage
+and chondrocytes (fig. S5A), and the single-
+cell atlas showed that the chondrocytes did
+not express the tdTOMATO (fig. S5, B and C),
+confirming that the regenerated cartilage
+was derived from the tissue transplanted 5
+days after casting and not from the host cells.
+The PMC4 cells at 5 days after casting highly
+expressed multiple genes that support regen-
+eration, including PTN, TNC, TNN, and DLX5,
+which are associated mainly with chondro-
+genesis and limb development (Fig. 2, D and
+E, and fig. S4). A pseudotime analysis showed
+that regenerating cartilage in both antlers and
+nude mouse heads was formed by differenti-
+ation of PMC4 (fig. S4E and fig. S5, D and E)
+(15), corroborating that they are the key cell
+population for antler regeneration.
+We further delineated the origin of the
+PMC4 cell population. Because PMC1, PMC2,
+and PMC3 were present at earlier time points
+(10 days before casting and 0 days after cast-
+ing) than PMC4 (5 days after casting), we in-
+itially compared the transcriptomic similarities
+of PMC4 to other PMCs. The gene expression
+Qin et al., Science 379, 840–847 (2023)
+24 February 2023
+2 of 8
+Fig. 1. An integrated develop-
+ing cell atlas of regenerating
+antlers. (A) Schematic of the
+workflow of scRNA-seq–based
+antler regeneration analysis,
+using samples collected from
+sites (outlined with black dotted
+lines) during indicated phases
+of the process. dbc, days before
+casting; dac, days after casting.
+(B) Uniform manifold approxi-
+mation and projection (UMAP)
+atlas of color-coded cell classes
+involved in antler regeneration
+based on the scRNA-seq data.
+(C) (Left) Developmental tra-
+jectory of PRRX1+ mesenchymal
+cells (PMCs) to chondroblasts
+and chondrocytes inferred by
+Monocle 2 and colored by cell
+clusters (left panel). (Right)
+Plots showing the relative
+expression of differentially
+expressed genes in pseudotime
+order. Each dot indicates a
+single cell, with color coding
+showing cell clusters. (D) Dot
+plot showing cell class–level
+marker gene expression.
+RESEARCH
+|
+RESEARCH ARTICLE
+
+Qin et al., Science 379, 840–847 (2023)
+24 February 2023
+3 of 8
+Fig. 2. Cellular dynamic atlas of antler regeneration and identification of
+critical regenerative progenitor cells. (A) UMAP atlas of antler regeneration
+with color-coded cell types, annotated by means of scRNA-seq analysis of cell-
+lineage specific markers. (B) Proportions of cell types at indicated time points.
+(C) Schematic illustration of ectopic antler-generation assays. Cell masses
+collected at 0 and 5 days after casting were transplanted onto heads of nude
+mice. The former remained fibrous connective tissue, but the latter had
+differentiated into an antler-like structure by 45 days after transplantation.
+(D) UMAP atlas based on scRNA-seq data of mesenchymal cells present in
+tissues sampled at 0 to 5 days after casting (green) and PMC4 [defined as
+antler blastema progenitor cells (ABPCs)] specifically expressed in tissues
+sampled at 5 days after casting (yellow). Feature plots to the right (blue)
+visualize expression of PMC4 marker genes (PTN, TNC, TNN, and DLX5).
+(E) Longitudinal sections of (top) pedicle periosteum at 0 days after casting and
+(bottom) regenerating antler tissues at 5 days after casting, stained with
+hematoxylin and eosin and selective marker genes. The boxed areas correspond
+to the higher-magnification views. (F) UMAP atlas based on integrated single-
+cell analysis of antler blastema (blue) and mouse regenerative digit tip (P3)
+(red). ABPC-like cells are circled with a dashed line. The arrow indicates the
+differentiation direction of ABPC-like cells toward osteochondral cells. Feature
+plots to the right visualize expression of ABPC marker genes (PTN, TNC,
+TNN, and DLX5). (G to I) UMAP atlas based on (G) integrated single-cell analysis
+of antler blastema (blue) and axolotl limb (orange), (H) zebrafish caudal fin
+(orange), and (I) mouse nonregenerative digit tip (P2) (orange). ABPCs are
+circled with a dashed line. Feature plots to the right visualize expression of ABPC
+marker genes (PTN, TNC, TNN, and DLX5).
+RESEARCH
+|
+RESEARCH ARTICLE
+
+Qin et al., Science 379, 840–847 (2023)
+24 February 2023
+4 of 8
+Fig. 3.
+RESEARCH
+|
+RESEARCH ARTICLE
+
+profile of PMC4 showed higher correlation to
+PMC2 than to PMC1 and PMC3 (fig. S6A). The
+Gene Ontology functional enrichment results
+indicated that the highly expressed genes in
+PMC2 were involved mainly in skeletal system
+development (fig. S6B and table S4). The pseu-
+dotime analysis further identified a major traj-
+ectory from PMC2 to PMC4 (fig. S6) (15). In vivo
+lineage tracing of cell differentiation would
+provide further insights into this process, but
+carrying out such controlled experiments in a
+large wild animal is not possible. Overall, our
+data suggests that PMC2 might be a population
+of resting stem cells residing in the periosteum
+before regeneration, which becomes activated
+and starts to form PMC4 by 5 days after casting,
+when the antler regeneration process starts.
+Concomitantly, expression of the suppressor
+genes (SFRP1, SFRP2, and SFRP4) of the Wnt
+pathwaydeclined,whereasexpressionof WNT5B,
+TGFBI, and TGFB1 genes increased (fig. S6E),
+suggesting that the Wnt and TGFb pathways
+might be involved in PMC4 formation.
+In addition, proliferating pericytes and
+endothelial cells (TOP2A and MKI67) were also
+found at 5 days after casting (fig. S3D), which
+could be related to formation of the vascular
+network involved in antler growth (19). We also
+observed a increase in macrophages (CD86),
+which are required for wound healing or epi-
+morphic regeneration in mammals and am-
+phibians, at 5 days after casting (Fig. 2B). This
+indicates that the immune system also plays
+an important role in antler regeneration, sim-
+ilar to its reported involvement in amphibian
+appendage regeneration (20).
+The cell populations at 5 days after casting
+meet the definition of a blastema. This is a cell
+mass that, through migration and prolifera-
+tion, transiently forms at an injury plane and
+is endowed with the morphogenetic infor-
+mation required to regenerate an organ (21).
+Because PMC4 was identified as the key cell
+population for antler regeneration, we refer to
+these cells as “antler blastema progenitor
+cells” (ABPCs). We further compared the cellu-
+lar composition in the blastema across species
+[deer antler, mouse regenerative digit tip (distal
+phalanx, P3), axolotl limb, and zebrafish caudal
+fin] using data from this and previous studies
+(fig. S7) (3, 22, 23). Although the blastema cell
+composition varies greatly among species,
+PRRX1+ cells were the most abundant cell
+type across species. We identified several con-
+served marker genes, such as POSTN and DCN,
+which suggests a conserved core mechanism in
+the process of appendage regeneration (fig. S7G).
+We identified a specific subtype of PRRX1+ cells
+in the mouse digit tip (P3) blastema with gene
+expression profiles similar to those of ABPCs
+but not to those of nonregenerative digit tip
+(middle phalanx, P2), axolotl limb, and zebra-
+fish caudal fin blastema (Fig. 2, F to I; figs. S7
+and S8; and tables S5 and S6). These findings
+indicate the potential existence of a cell pop-
+ulation across mammals that is essential and
+specificformammalianappendageregeneration.
+We observed greater heterogeneity of cellu-
+lar populations at 10 days after casting than at
+the earlier time points, with large proportions
+of ABPCs (4.53%), chondroblasts (6.75%), chon-
+drocytes (30.78%), and osteoblasts (8.16%) (Fig.
+2B). We also observed increases in the expres-
+sion of chondrogenic genes such as SOX6,
+ACAN, and CHAD (fig. S3E), indicating that
+cartilage had developed rapidly by 10 days after
+casting. At 45, 60, and 90 days after casting, the
+proportion of chondrocytes and osteoblasts
+had increased further (Fig. 2B). Furthermore,
+expression of genes involved in ossification
+(PAPSS2, PHOSPHO1, and IBSP) had increased
+(fig. S3E), indicating that the endochondral
+ossification processes of antler development
+had started at this stage.
+At this stage, we have focused mostly on the
+bone regeneration process in antler regrowth.
+However, antler regrowth also requires the
+proliferation of other cell types, such as the
+extracellular matrix of cartilage. Concordantly,
+we identified three fibroblastic cell clusters,
+denoted fibroblast 1, fibroblast 2, and fibro-
+blast 3 (Fig. 2A and fig. S9A). During antler
+regeneration, we found that fibroblast 1 together
+with PMC2 were already present in periosteum
+before regeneration (10 days before casting) (Fig.
+2B). Fibroblast 2 and 3 cells started to appear at
+10 days after casting, were maintained at high
+levels during mid-regeneration stages (10 to
+45 days after casting), and substantially declined
+during the antler ossification period (60 to
+90 days after casting) (Fig. 2B). The pseudotime
+analysis showed a differentiation trajectory from
+fibroblast 1 to fibroblasts 2 and 3 (fig. S9B),
+which potentially secrete the large amounts of
+collagen needed to form the extracellular ma-
+trix of cartilage during antler regeneration.
+Phenotypic and functional characterization of
+ABPCs at 5 days after casting
+ABPCs in the blastema at 5 days after casting
+play a crucial role in antler regeneration. We
+isolated ABPCs for further phenotypic and
+functional characterization (Fig. 3A). We iden-
+tified a cluster of genes enriched in ABPCs (fig.
+S10A and table S7). Two cell surface markers
+(CX43 and FGFR2) were highly and differen-
+tially expressed in ABPCs (Fig. 3B and fig.
+S10B). Subsequently, CX43+FGFR2+ ABPCs
+were sorted with flow cytometry for func-
+tional analysis (Fig. 3B).
+The colonies formed by CX43+FGFR2+ cells
+could clonally expand and be serially passaged,
+generating secondary and tertiary colonies that
+maintained the immunophenotypes, indicating
+their self-renewal ability. Moreover, these cells
+had a much higher colony-formation efficiency
+and generated much larger colonies than did
+CX43+FGFR2−, CX43−FGFR2+, and CX43−
+FGFR2−cells (Fig. 3, C and D). Next, we sub-
+jected clonal cultures to in vitro differentiation
+assays. The CX43+FGFR2+ cells showed strong
+osteogenic and chondrogenic, but not adipo-
+genic, differentiation capability (Fig. 3E and
+fig. S10C). This differs markedly from the
+trilineage differentiation of bone marrow
+stromal cells (BMSCs), currently the most
+widely used stem cells in bone regenerative
+medicine (24). In addition, under the same
+conditions, the CX43+FGFR2+ cells showed
+stronger osteochondrogenic differentiation
+ability than did BMSCs, manifested by higher
+expression levels of osteogenesis markers
+(RUNX2 and SP7) and chondrogenesis markers
+(SOX9 and COL2A1) but not adipogenesis
+markers (ADIPOQ and PPARG) (Fig. 3F). Thus,
+deer antler CX43+FGFR2+ cells maintain self-
+renewal capability and have strong potency
+Qin et al., Science 379, 840–847 (2023)
+24 February 2023
+5 of 8
+Fig. 3. Phenotypic and functional characterization of ABPCs (CX43+FGFR2+
+cells). (A) Experimental scheme of CX43+FGFR2+ cells isolation and character-
+ization in vitro. (B) (Top) Flow cytometric analysis detected expression of
+CX43 and FGFR2 in ABPCs. (Bottom) Flow cytometry gating strategies for
+sorting CX43+FGFR2+ cells at 5 days after casting. (C) Representative crystal
+violet staining of fibroblast colony-forming unit (CFU-F) colonies from
+populations sorted with flow cytometry. (D) Numbers and mean diameters of
+the CFU-F colonies. **P < 0.01; ***P < 0.001 versus CX43+FGFR2+ cells.
+(E) Representative (top) oil red O, (middle) alizarin red, and (bottom) alcian
+blue stainings after adipogenic, osteogenic, and chondrogenic differentiation
+of clonally expanded CX43+FGFR2+ cells and BMSCs. Scale bar, 100 mm.
+(F) Results of reverse transcription polymerase chain reaction analyses of
+adipogenic, osteogenic, and chondrogenic marker genes in clonally expanded
+CX43+FGFR2+ cells and BMSCs before and after in vitro differentiation.
+***P < 0.001 versus BMSCs. (G) Experimental scheme of CX43+FGFR2+ cells
+characterization in vivo. (H) Results of histological analysis of subcapsular
+xenografts 8 weeks after implantation of Matrigel, BMSCs, CX43+FGFR2+
+cells, and GFP-labeled CX43+FGFR2+ cells in immunodeficient mice. Scale bar,
+100 mm. (I) Bone areas formed in renal subcapsular layers 8 weeks after
+implantation of CX43+FGFR2+ cells and BMSCs. ***P < 0.001 versus BMSCs.
+(J) Results of micro–computed tomography analysis of femoral condyle
+defects repair by means of local transplantation of CX43+FGFR2+ cells and
+BMSCs in rabbits. (K) CX43+FGFR2+ cells achieved higher bone-volume
+fractions [bone volume/total volume (BV/TV)] and trabecular numbers
+(Tb.N) than that of BMSCs in repairs of femoral condyle defects in rabbit.
+###P < 0.001 versus Defect; ***P < 0.001 versus BMSCs.
+RESEARCH
+|
+RESEARCH ARTICLE
+
+towardosteochondrogenicdifferentiation,high-
+lighting their potential utility in cell-based the-
+rapy for bone and cartilage regeneration.
+To further assess the in vivo differentiation
+potentialofCX43+FGFR2+ cells, we transplanted
+cell cultures into renal capsules of immuno-
+deficient mice (Fig. 3G). Eight weeks after trans-
+plantation, the CX43+FGFR2+ cells showed a
+strong osteochondral differentiation capacity
+(Fig. 3H). They formed significantly greater
+areas of new cartilage and bone than did
+BMSCs (Fig. 3I). Furthermore, the regener-
+ated cartilage and bone were derived from the
+CX43+FGFR2+ cells labeled with green fluores-
+cence (Fig. 3H). To further assess their potential
+Qin et al., Science 379, 840–847 (2023)
+24 February 2023
+6 of 8
+Fig. 4. Spatial cellular and genetic heterogeneity in rapid antler growth.
+(A) (Left) Antler in the rapid growth period, with an antler growth center (AGC)
+circled by a dashed line. (Middle) The distinct AGC morphology. (Right) Histological
+section of AGC. (B) UMAP atlas of merged scRNA-seq data from mesenchyme
+layers, precartilage layers, cartilage layers, prehypertrophic cartilage layers
+(PH cartilage layers), and hypertrophic cartilage layers (n = 30,045 cells). Each
+dot indicates a single cell and is colored according to its layers. (C) UMAP atlas of
+the AGC with color-coded cell-types identified with scRNA-seq analysis. (D) (Left)
+Fuzzy c-means clustering identifying general patterns of gene expression across the
+five tissue layers in AGC. (Right) Heatmap of gene expression levels from distal
+to proximal AGC cell layers. The gene details are shown in table S9. (E) Schematic
+diagram of shared highly expressed genes in AGC and mouse embryonic limb.
+RESEARCH
+|
+RESEARCH ARTICLE
+
+therapeutic value in regenerative medicine
+and bone remodeling, CX43+FGFR2+ cells were
+used to repair femoral condyle defects in rab-
+bit, with BMSCs as controls. After 8 weeks,
+both BMSCs and CX43+FGFR2+ cells had filled
+the cavities with newly formed bone, but the
+CX43+FGFR2+ cells generated higher numbers
+of new trabecular bone (Fig. 3, J and K, and fig.
+S10). Thus, CX43+FGFR2+ cells have a strong
+capacity to promote bone formation in vivo,
+with potential for cell-based therapies to pro-
+mote bone regeneration (for example, for bone
+or cartilage injuries, nonunion fractures, and
+osteoporosis). In contrast to other stem cell
+types, CX43+FGFR2+ cells have advantages
+including superior proliferative and osteo-
+chondral differentiation ability and ex vivo
+expansion. Nevertheless, we stress that many
+concerns about the use of deer CX43+FGFR2+
+cells in the clinic remain to be addressed in
+future studies, including their detailed mo-
+lecular regulation mechanisms and the safety
+hazards involved in their use, as well as ethical
+and legal concerns.
+Spatial cellular and genetic heterogeneity
+during rapid antler growth
+The rate of bone growth in deer antler is the
+highest recorded for any animal (10). The antler
+growth process is spatially well organized, with
+an antler growth center (AGC) forming at the
+antler tip (12) (Fig. 4A). The AGC becomes the
+primary growth center for rapid antler elon-
+gation and recapitulates the growth center of
+the embryonic long bone histologically (10). To
+characterize its spatial heterogeneity at cellular
+and gene expression levels, we applied scRNA-
+seq and bulk RNA-seq analyses to AGC tissue
+layers at 60 days after casting, around the time
+point when antlers grow most rapidly in sika
+deer (Fig. 4A and table S2).
+The single-cell mapping matched the histo-
+logical spatial location distribution (Fig. 4B,
+fig. S11A, and table S8). The mesenchyme layer
+at the most distal part of the antler tip was
+composed mainly of perichondral cells (29.68%)
+and ABPCs (49.96%) (Fig. 4, B and C, and fig.
+S11), suggesting that the ABPCs that formed by
+5 days after casting persist at the tip as a stem
+cell pool for antler growth. The precartilage
+layer was dominated by chondroblasts (51.90%),
+which are key cells for chondrogenesis, and a
+smaller proportion of ABPCs (20.52%) (Fig. 4,
+B and C, and fig. S11). The cartilage and pre-
+hypertrophic cartilage (PH cartilage) layers
+were dominated by chondrocytes (61.47%)
+(Fig. 4, B and C, and fig. S11). The hypertrophic
+cartilage layers consisted mainly of osteoblasts
+(63.87%) (Fig. 4, B and C, and fig. S11), which
+is in line with the histological findings that
+hypertrophic cartilage is being replaced by
+spongy bone (10). The spatial heterogeneity
+of cell composition in the AGC was confirmed
+with histology (fig. S11). We reconstructed the
+spatial cellular atlas of the AGC from distal to
+proximal layers, expanding our understand-
+ing of the spatial locations of major cell pop-
+ulations during the rapid elongation of deer
+antler.
+Next, we assessed the global variation in
+gene expression across the AGC tissue layers,
+using the bulk RNA-seq data (table S2). Prin-
+cipal components analysis (PCA) revealed a
+gradient of layer samples that matched their
+positions along a proximal–distal axis of the
+AGC (fig. S11E), suggesting that the gene ex-
+pression variation trajectory follows a pat-
+tern similar to that found in the AGC tissue
+layers. Highly expressed genes in mesenchyme
+layers were found to be involved in cell pro-
+liferation (for example, IGF1, IGFBP2, and
+IGFBP4) and stem cell maintenance (such as
+SFRP1 and SFRP2) (Fig. 4D and table S9). This
+is expected because the rapid cell proliferation
+in antlers presumably requires factors that not
+only stimulate rapid cell proliferation but also
+maintain the stemness of ABPCs and control
+the cell cycle. Genes highly expressed specif-
+ically in the precartilage layers (for example,
+WNT10B, WNT10A, and WNT6) were associ-
+ated with the Wnt pathway (Fig. 4D and table
+S9), suggesting that this signaling pathway
+could be involved in early differentiation of
+stem cells toward chondrogenesis. The highly
+expressed genes in the cartilage layers and
+PH cartilage layers were related to cartilage
+development (such as SOX6 and SOX9) and
+extracellular matrix organization (such as
+COL2A1) (Fig. 4D and table S9). The highly
+expressed genes in the hypertrophic carti-
+lage layers were related to chondrocyte min-
+eralization (such as MMP9 and MMP12) (Fig.
+4D and table S9).
+The histology of deer AGCs resembles the
+growth plates of developing long bone in
+mammals (10), suggesting that they may share
+similar growth mechanisms. To test this hy-
+pothesis, we reanalyzed the scRNA-seq pro-
+files of mouse embryonic limbs and compared
+them with AGCs (25). We found that they
+shared 151 highly expressed genes (table S10)
+primarily related to extracellular matrix orga-
+nization, skeletal system development, cartilage
+development, and cell proliferation (table S10).
+Several core genes of the mitogen-activated
+protein kinase (MAPK) signal pathway (FGFR2,
+FGFR3, MAP2K2, FOS, and JUN), bone mor-
+phogenetic protein (BMP) signal pathway
+(BMP2 and BMP4), and transforming growth
+factor–b (TGFb) signal pathway (TGFB1 and
+TGFB2) were highly expressed in both AGCs
+and mouse neonatal growth plates (26, 27). The
+marker genes (PRRX1, TNC, DLX5, PTN, and
+SOX4) for ABPCs were also identified during
+rapid limb development in mice, suggesting
+potential roles of those genes for rapid skeleton
+development in mammals (Fig. 4E, fig. S11,
+and table S10). Moreover, we detected multiple
+angiogenesis-related genes (VAV3, ANGPTL2,
+MYH9, and ACTG1) in AGC (table S10), most
+likely related to the highly vascularized carti-
+lage in deer antlers (19). This is a distinctive
+feature of antler growth, which differs sharply
+from the avascular chondrogenesis in mice and
+human tissues and serves the high metabolic
+demands of rapidly growing antler tissue (14).
+Conclusion
+We present a spatiotemporal cellular atlas of
+antler regeneration, which provides a useful
+genetic and histological resource for mam-
+malian organ regeneration. Our results show
+that antler regeneration is consistent with a
+conceptual stem cell–based regenerative pro-
+cess. We provide evidence for the existence of a
+blastema-like structure that is present during
+antler regeneration and is similar to the struc-
+ture involved in amphibian limb regeneration,
+suggesting that the blastema is a conserved
+biological feature in vertebrate tissue regen-
+eration. We further identified a population of
+regenerative progenitor cells, ABPCs, in the
+antler blastema, with impressive capacities for
+self-renewal, osteogenic–chondrogenic differ-
+entiation, and bone-tissue repair. This provides
+a cellular basis for understanding antler regen-
+eration and extends the catalog of known
+mammalian stem cell systems. Cross-species
+comparison showed that a cell type similar to
+ABPCs is present in mouse regenerative digit
+tip (P3) but not in mouse nonregenerative
+digit tip (P2), axolotl limb, or zebrafish caudal
+fin. This suggests the existence of relatively con-
+served cellular and molecular mechanisms for
+the only two known cases of regenerative ca-
+pacity in mammalian appendage organs.
+Our in vitro and in vivo results suggest that
+deer ABPCs may have an application in clin-
+ical bone repair. Beyond this, induction of reg-
+ular human mesenchymal or other cells into
+ABPC-like cells through activation of key char-
+acteristic genes could potentially be used in
+regenerative medicine for skeletal injuries or
+limb regeneration.
+REFERENCES AND NOTES
+1.
+J. A. Goldman, K. D. Poss, Nat. Rev. Genet. 21, 511–525 (2020).
+2.
+T. Gerber et al., Science 362, eaaq0681 (2018).
+3.
+Y. Hou et al., Sci. Adv. 6, eaba2084 (2020).
+4.
+J. Godwin, BioEssays 36, 861–871 (2014).
+5.
+J. P. Brockes, A. Kumar, Nat. Rev. Mol. Cell Biol. 3, 566–574
+(2002).
+6.
+S. E. Iismaa et al., NPJ Regen. Med. 3, 6 (2018).
+7.
+R. J. Goss, Anat. Rec. 241, 291–302 (1995).
+8.
+C. Li, H. Zhao, Z. Liu, C. McMahon, Int. J. Biochem. Cell Biol.
+56, 111–122 (2014).
+9.
+U. Kierdorf, H. Kierdorf, T. Szuwart, J. Morphol. 268, 726–738
+(2007).
+10. J. S. Price, S. Allen, C. Faucheux, T. Althnaian, J. G. Mount,
+J. Anat. 207, 603–618 (2005).
+11. T. Landete-Castillejos et al., Bone 128, 115046 (2019).
+12. C. Li, J. M. Suttie, D. E. Clark, Anat. Rec. A Discov. Mol. Cell.
+Evol. Biol. 282A, 163–174 (2005).
+13. C. Li, J. M. Suttie, D. E. Clark, J. Morphol. 262, 731–740 (2004).
+14. Y. Wang et al., Science 364, eaav6335 (2019).
+15. Materials and methods are available as supplementary
+materials.
+Qin et al., Science 379, 840–847 (2023)
+24 February 2023
+7 of 8
+RESEARCH
+|
+RESEARCH ARTICLE
+
+16. T.-Y. Lin et al., Dev. Cell 56, 1541–1551.e6 (2021).
+17. G. L. Johnson, E. J. Masias, J. A. Lehoczky, Dev. Cell 52,
+525–540.e5 (2020).
+18. C. Li, Birth Defects Res. C Embryo Today 96, 51–62 (2012).
+19. D. E. Clark, C. Li, W. Wang, S. K. Martin, J. M. Suttie, Anat. Rec.
+A Discov. Mol. Cell. Evol. Biol. 288A, 973–981 (2006).
+20. J. W. Godwin, A. R. Pinto, N. A. Rosenthal, Proc. Natl. Acad. Sci.
+U.S.A. 110, 9415–9420 (2013).
+21. A. W. Seifert, K. Muneoka, Dev. Biol. 433, 190–199 (2018).
+22. M. A. Storer et al., Dev. Cell 52, 509–524.e9 (2020).
+23. H. Li et al., Protein Cell 12, 57–66 (2021).
+24. A. Arthur, S. Gronthos, Int. J. Mol. Sci. 21, 9759 (2020).
+25. N. H. Kelly, N. P. T. Huynh, F. Guilak, Matrix Biol. 89, 1–10
+(2020).
+26. L.-A. Stanton, T. M. Underhill, F. Beier, Dev. Biol. 263, 165–175
+(2003).
+27. E. Kozhemyakina, A. B. Lassar, E. Zelzer, Development 142,
+817–831 (2015).
+ACKNOWLEDGMENTS
+We thank P. Fennessy for critical reading of the manuscript and
+Jilin Dong Ao Deer Industry Group Co. for providing deer antler
+samples. We also thank Z. Wang, Q. Guan, J. Li, S. Wang, and
+D. Wang from the Institute of Antler Science and Product Technology
+for their help in single-cell separation. Funding: This study was
+supported by the National Key Research and Development Program
+of China (grant 2021YFA0805000), the National Natural Science
+Foundation of China (grants 32225009, 31970392, 82122043,
+32030016, 32122083, and U20A20403), the Strategic Priority
+Research Program of the Chinese Academy of Sciences (grant
+ref. XDA16010105), the Talents Team Construction Fund of
+Northwestern Polytechnical University, the Research Funds for
+Interdisciplinary Subject (grant NWPU 19SH030408), and the 1000
+Talents Project of Shaanxi Province. Author contributions: Q.Q.,
+C.L., J.H., and W.W. designed this project and research aspects.
+Z. Li, Q.L., H.S., T.Q., Z. Liu, and G.Z. performed sample collection
+and sequencing library construction. M.H. and Y.Y. performed
+data analysis including genome assembly and annotation. S.L. and
+Y.Z. performed flow cytometry. Y.Z., S.L., G.W., G.Z., X.C., J.R., B.X.,
+H.B., and X.G. performed functional experiments. T.Q. and Y.Y.
+performed scRNA-seq analysis. K.W., G.W., and T.Q. contributed to
+figure design. T.Q., Q.Q., W.W., Z. Li, and J.H. wrote the manuscript.
+W.W. and R.H. amended it. Competing interests: Q.Q., J.H., T.Q.,
+Y.Z., and W.W. are inventors on a patent application related to
+this work filed by Northwestern Polytechnical University and Fourth
+Military Medical University (patent application no. CN202211737365.3).
+Data and materials availability: All sequencing data and
+genome assemblies have been deposited in the NCBI database
+(accession ID: PRJNA831044). All other data needed to evaluate
+conclusions in the paper are present in the paper and/or
+supplementary materials. Additional data related to this paper may
+be requested from the authors. License information: Copyright
+© 2023 the authors, some rights reserved; exclusive licensee
+American Association for the Advancement of Science. No claim to
+original US government works. https://www.science.org/about/
+science-licenses-journal-article-reuse
+SUPPLEMENTARY MATERIALS
+science.org/doi/10.1126/science.add0488
+Materials and Methods
+Figs. S1 to S11
+Tables S1 to S11
+References (28–54)
+MDAR Reproducibility Checklist
+Submitted 17 May 2022; resubmitted 16 November 2022
+Accepted 10 January 2023
+10.1126/science.add0488
+Qin et al., Science 379, 840–847 (2023)
+24 February 2023
+8 of 8
+RESEARCH
+|
+RESEARCH ARTICLE

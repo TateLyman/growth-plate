@@ -1,0 +1,93 @@
+id: bidirectional_vascular_invasion
+name: Bidirectional vascular invasion at fusion
+type: hypothesis
+layer: L7
+stub: false
+aliases:
+- transphyseal vessel invasion
+- epiphyseal and metaphyseal vascular convergence
+summary: |
+  Mechanism 3 of 6. Claim: fusion is executed by blood vessels and their accompanying
+  osteoprogenitors invading the plate from BOTH sides - epiphyseal and metaphyseal - rather than
+  by the unidirectional metaphyseal invasion that drives ordinary endochondral growth; where the
+  two fronts meet, a bony bridge forms and the plate is perforated. The morphological basis is
+  classical human and canine histology: as union approaches, mineralisation demarcated by tide
+  lines spreads inward from both plate surfaces, engulfing the cartilage columns; first union is
+  by that mineralised cartilage, and only afterwards is a restricted region perforated and
+  replaced by new bone and marrow, the perforation then enlarging until all cartilage is
+  destroyed (haines1975, human and dog). The molecular link to estrogen is only partly built:
+  VEGF protein was down-regulated by ovariectomy and restored by estradiol in rat growth plates,
+  estradiol dose-dependently stimulated VEGF-121 and VEGF-189 (but not VEGF-164) in the rat
+  chondrocyte line RCJ3.1C5.18, and VEGF mRNA and protein were present in human growth plate
+  specimens with protein levels rising across pubertal development (emons2010, rat and human).
+  Nobody has imaged the vasculature of a human growth plate at fusion. Discriminating experiment:
+  contrast-enhanced or synchrotron phase-contrast 3D vascular imaging of human physeal specimens
+  or of rabbit plates at defined stages, scoring the direction of vessel ingrowth relative to the
+  first bridge. Under this hypothesis bridges initiate where epiphyseal and metaphyseal canals
+  meet and precede chondrocyte loss; under the exhaustion and senescence hypotheses chondrocyte
+  loss precedes and permits vascular ingrowth; under the apoptosis hypothesis dying chondrocytes
+  are found ahead of, not behind, the vascular front.
+quantitative:
+- parameter: number of perforations through the plate at union, by epiphysis size
+  value: single perforation in small early-uniting epiphyses; multiple in large late-uniting epiphyses
+  unit: qualitative histological count
+  conditions: human and dog epiphyses at various stages of union
+  species: human
+  source_ref: haines1975
+  uncertainty: descriptive series; specimen numbers not tabulated
+- parameter: VEGF isoforms stimulated by estradiol in growth plate chondrocytes
+  value: VEGF-121 and VEGF-189 stimulated; VEGF-164 not
+  unit: isoform-resolved expression
+  conditions: RCJ3.1C5.18 rat chondrocyte line, dose-dependent estradiol
+  species: rat
+  source_ref: emons2010
+  uncertainty: cell line; dose range not reported in abstract
+localization:
+- 'human growth plate: mineralisation front advances from both epiphyseal and metaphyseal surfaces before union (haines1975)'
+- 'human growth plate: VEGF protein present and increasing with pubertal development (emons2010)'
+- 'rat growth plate: VEGF protein estrogen-dependent (emons2010)'
+human_evidence: indirect
+human_evidence_note: >-
+  Human histology shows bidirectional mineralisation and perforation at union (haines1975) and
+  VEGF protein rising through puberty (emons2010), but no human study has visualised vessels
+  crossing the plate at fusion.
+species_basis:
+- human
+- rat
+- in_vitro_animal_cell
+translation_risk: moderate
+translation_risk_reason: >-
+  The morphological claim is human; the mechanistic (VEGF/estrogen) claim is rat and rat cell
+  line with only a human protein-abundance correlate. Rodents do not fuse, so the rat VEGF data
+  cannot address the fusion step itself.
+confidence: D
+key_refs:
+- ref_id: haines1975
+  pmid: '1184450'
+  first_author: Haines RW
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    Mineralisation spreads from both plate surfaces before union in human and dog epiphyses;
+    union is completed by perforation and enlargement of the perforation.
+- ref_id: emons2010
+  pmid: '20093283'
+  first_author: Emons J
+  year: 2010
+  type: primary
+  one_line_finding: >-
+    Growth plate VEGF is estrogen-regulated in rat and increases at protein level across human
+    pubertal development.
+- ref_id: emons2009
+  pmid: '19730156'
+  first_author: Emons J
+  year: 2009
+  type: primary
+  one_line_finding: >-
+    The one human fusing growth plate showed morphological signs of hypoxia and necrosis,
+    consistent with a perfusion change at fusion.
+open_questions:
+- g_l7fuse_009
+- g_l7fuse_002
+contradicts: []
+last_verified: '2026-08-05'

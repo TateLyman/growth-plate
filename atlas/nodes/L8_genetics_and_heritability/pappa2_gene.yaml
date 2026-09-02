@@ -1,0 +1,93 @@
+id: pappa2_gene
+name: PAPPA2
+aliases:
+- pregnancy-associated plasma protein A2 gene
+- PAPP-A2 gene
+type: gene
+layer: L8
+stub: false
+summary: |-
+  PAPPA2 encodes the metalloproteinase that liberates IGF-1 from IGFBP-3 and IGFBP-5, and its human
+  loss-of-function phenotype is the cleanest available demonstration that free rather than total
+  IGF-1 drives growth. Dauber 2016 found two different homozygous PAPPA2 mutations, p.D643fs25* and
+  p.Ala1033Val, in multiple members of two unrelated families with progressive growth failure,
+  moderate microcephaly, thin long bones and mildly decreased bone density. The biochemical signature
+  is inverted relative to every other short-stature endocrinopathy: circulating total IGF-1, IGFBP-3,
+  IGFBP-5, acid-labile subunit and IGF-II were all elevated, not reduced. In vitro both mutations
+  abolished PAPP-A2 proteolytic activity entirely, size-exclusion chromatography showed a significant
+  increase in IGF-1 held within the ternary complex, and free IGF-1 concentrations were decreased.
+  The gene therefore separates two quantities that are normally measured as one: total IGF-1 goes up
+  while the growth-relevant fraction goes down, and the child gets shorter. Any clinical inference
+  that reads total serum IGF-1 as a proxy for IGF-1 action is falsified by this locus. Its
+  therapeutic corollary - that recombinant IGF-1 bypasses the block - has been tested in these
+  patients, and PAPPA2 deficiency now sits in the growth-plate basket of the vosoritide RASopathy
+  trial programme alongside ACAN and NPR2.
+quantitative:
+- parameter: distinct homozygous PAPPA2 mutations identified
+  value: '2'
+  unit: mutations
+  conditions: p.D643fs25* and p.Ala1033Val in two unrelated families
+  species: human
+  source_ref: dauber2016
+  uncertainty: not applicable (count)
+- parameter: PAPP-A2 proteolytic activity, both mutant alleles
+  value: '0'
+  unit: '% of wild type'
+  conditions: in vitro IGFBP-3 and IGFBP-5 cleavage assay
+  species: in_vitro_human_cell
+  source_ref: dauber2016
+  uncertainty: complete absence of activity as reported
+- parameter: direction of change in total circulating IGF-1
+  value: elevated
+  unit: qualitative
+  conditions: patients versus reference; IGFBP-3, IGFBP-5, ALS and IGF-II also elevated
+  species: human
+  source_ref: dauber2016
+  uncertainty: no numeric fold-change given in abstract
+- parameter: direction of change in free IGF-1
+  value: decreased
+  unit: qualitative
+  conditions: same patients; size-exclusion chromatography showed increased ternary-complex-bound
+    IGF-1
+  species: human
+  source_ref: dauber2016
+  uncertainty: no numeric value given in abstract
+localization:
+- 'human: germline; protease acts in the circulation and in the pericellular space'
+human_evidence: direct
+human_evidence_note: Two unrelated consanguineous families with homozygous mutations, full IGF-axis
+  biochemistry and matched in vitro proteolysis assays.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human loss-of-function families with human-protein enzymology.
+confidence: B
+claim_grades:
+- claim: Loss of PAPP-A2 proteolytic activity causes short stature despite elevated total IGF-1.
+  grade: A
+  basis: Two unrelated families with independent mutations and concordant inverted biochemistry
+    (dauber2016).
+- claim: The proximate cause of the growth failure is reduced free IGF-1 rather than another PAPP-A2
+    substrate.
+  grade: C
+  basis: Supported by the chromatography and free-IGF-1 measurements in dauber2016 but not tested
+    against an alternative-substrate hypothesis; single study.
+key_refs:
+- ref_id: dauber2016
+  pmid: '26902202'
+  doi: 10.15252/emmm.201506106
+  first_author: Dauber A
+  year: 2016
+  type: primary
+  one_line_finding: Two homozygous PAPPA2 mutations abolish IGFBP proteolysis, raising total but
+    lowering free IGF-1 and causing progressive growth failure in two unrelated families.
+- ref_id: dauber2026
+  pmid: '41967490'
+  doi: 10.1210/clinem/dgag157
+  first_author: Dauber A
+  year: 2026
+  type: primary
+  one_line_finding: Vosoritide basket trial enrolling children with ACAN and NPR2 deficiency and
+    RASopathies, the therapeutic context in which these growth-plate genotypes are now grouped.
+last_verified: '2026-08-05'

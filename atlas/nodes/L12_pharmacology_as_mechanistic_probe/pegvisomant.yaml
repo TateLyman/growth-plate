@@ -1,0 +1,90 @@
+id: pegvisomant
+name: Pegvisomant
+aliases: [B2036-PEG, SOMAVERT, GH receptor antagonist]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Pegvisomant is a pegylated analogue of human growth hormone engineered as a competitive
+  GH receptor antagonist: it binds the receptor at site 1 but cannot productively engage
+  site 2, so it blocks receptor dimerisation and signal transduction rather than
+  activating it. Its pharmacological readout is the fall in serum IGF-1, free IGF-1,
+  IGFBP-3 and the acid-labile subunit, and dosing is titrated to IGF-1 rather than to GH,
+  which rises during treatment. It is a mechanistic probe running the growth axis
+  backwards, and unlike almost every other agent in this layer it is used deliberately to
+  reduce growth. In X-linked acrogigantism, pegvisomant monotherapy has been carried
+  through to final height in a paediatric patient, demonstrating that blocking the GH
+  receptor is sufficient to arrest pathological linear overgrowth in a human with open
+  epiphyses. The FDA label states that safety and effectiveness in paediatric patients
+  have not been established, so all paediatric use is off-label and the human paediatric
+  evidence is case-level. Pharmacokinetics are slow: peak serum concentration is not
+  reached until 33-77 hours after subcutaneous dosing and absolute bioavailability of a
+  20 mg dose is about 57% relative to intravenous.
+quantitative:
+  - parameter: time to peak serum concentration after subcutaneous dosing
+    value: '33-77'
+    unit: hours
+    conditions: adult pharmacokinetics; loading dose 40 mg then 10-30 mg once daily
+    species: human
+    source_ref: fda_somavert_label_2025
+    uncertainty: range as stated in the label
+  - parameter: relative bioavailability of a 20 mg subcutaneous dose vs 10 mg intravenous
+    value: '57'
+    unit: percent
+    conditions: adult pharmacokinetics
+    species: human
+    source_ref: fda_somavert_label_2025
+    uncertainty: mean, no CI in label
+  - parameter: paediatric patients with reported final height on pegvisomant monotherapy
+    value: '1'
+    unit: patients
+    conditions: X-linked acrogigantism, long-term monotherapy carried to final height
+    species: human
+    source_ref: burren2023
+    uncertainty: single case report
+  - parameter: labelled dose range in adults
+    value: 10-30
+    unit: mg/day
+    conditions: after a 40 mg loading dose; titrated in 5 mg steps to age-adjusted normal IGF-1, never to GH concentration
+    species: human
+    source_ref: fda_somavert_label_2025
+    uncertainty: label range
+localization:
+  - "human growth plate: no direct measurement; effect on the plate is inferred from arrest of linear overgrowth"
+human_evidence: direct
+human_evidence_note: >-
+  Large adult acromegaly cohorts including the full ACROSTUDY dataset, plus case-level
+  paediatric use carried to final height.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  All pharmacology and outcome data are human. The paediatric growth claim rests on case
+  reports rather than a cohort, which is a sample-size limit rather than a species one.
+confidence: B
+claim_grades:
+  - claim: Pegvisomant blocks GH receptor signalling and lowers serum IGF-1 in a dose-dependent way.
+    grade: A
+    basis: Mechanism and IGF-1 titration are the basis of the approved label and of the full ACROSTUDY cohort.
+  - claim: GH receptor blockade is sufficient to arrest pathological linear overgrowth in a child with open epiphyses.
+    grade: D
+    basis: Demonstrated to final height in a single X-linked acrogigantism patient; no paediatric cohort exists and the label states paediatric effectiveness is not established.
+key_refs:
+  - ref_id: fda_somavert_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: GH receptor antagonist, Tmax 33-77 h, 57% relative bioavailability; paediatric safety and effectiveness not established.
+  - ref_id: burren2023
+    pmid: '37908565'
+    first_author: Burren CP
+    year: 2023
+    type: primary
+    one_line_finding: Pegvisomant monotherapy carried to final height in paediatric X-linked acrogigantism.
+  - ref_id: yuen2026
+    pmid: '41984268'
+    first_author: Yuen KCJ
+    year: 2026
+    type: primary
+    one_line_finding: Final ACROSTUDY data on long-term safety and efficacy of pegvisomant monotherapy in acromegaly.
+open_questions: [g_l12b_014]
+contradicts: []
+last_verified: '2026-08-05'

@@ -1,0 +1,135 @@
+id: round435_the_whole_lin28_chain_is_drugged_and_every_node_points_backwards
+name: Is there a drug that moves the LIN28 axis the right way - no, and the same structural reason four
+  times in one chain
+aliases:
+- R435
+- CORR-360
+- the permanent-cartilage shelf
+- the LIN28 chain obtainability pass
+type: hypothesis
+layer: L12
+stub: false
+confidence: C
+last_verified: '2026-08-14'
+species_basis:
+- human
+- mouse
+- multiple
+human_evidence: absent
+human_evidence_note: No human has received any agent aimed at this chain for a growth endpoint. The obtainability
+  pass is a statement about what medicinal chemistry exists and which direction it was built to push,
+  verified by targeted query rather than asserted.
+translation_risk: high
+translation_risk_reason: Every compound named here was developed for a different tissue with an opposite
+  design goal - oncology for LIN28/let-7/HMGA2, articular cartilage regeneration for the chondrogenic
+  inducers. None has a growth-plate or bone-length endpoint in any species.
+summary: 'THE QUESTION: is there any obtainable agent that moves LIN28/let-7 in the direction R434 identified
+  - MORE LIN28, LESS let-7? The answer is NO, and what makes it worth recording is that the chain has
+  FOUR druggable nodes, ALL FOUR have real chemical matter, and ALL FOUR point backwards for the same
+  structural reason: every molecule was built for an indication whose goal is the opposite of this one.
+
+
+  NODE 1 - LIN28. Want it RAISED. What exists is INHIBITORS ONLY: C1632, LI71, published computer-aided-design
+  programmes for novel Lin28 inhibitors, and - the cleanest demonstration - a published screening platform
+  titled ''Cell-based assay to detect small molecules RESTORING levels of let-7 miRNAs''. The entire space
+  exists because LIN28 is an oncogene.
+
+
+  NODE 2 - let-7. Want it LOWERED. Therapeutic programmes are let-7 MIMICS and restorers, because let-7
+  is one of the major tumour-suppressor microRNA families. Anti-let-7 antagomirs exist only as laboratory
+  reagents.
+
+
+  NODE 3 - HMGA2, the mediator jouan2022 proved is REQUIRED by siRNA knockdown. Want it RAISED. Every
+  programme is an INHIBITION programme, because HMGA2 is the canonical uterine-fibroid and lipoma driver.
+
+
+  NODE 4 - SOX9 AND CHONDROGENESIS, THE ACTIONABLE END OF THE CHAIN, AND THIS IS WHERE THE ROUND EARNS
+  ITSELF. There ARE potent small-molecule chondrogenic inducers - KARTOGENIN and TD-198946 - and this
+  atlas had ZERO nodes, ZERO references and ZERO CLAUDE.md mentions of either. Both act through the same
+  axis (kartogenin disrupts filamin A / CBF-beta, freeing CBF-beta to partner RUNX1 and raise SOX9). They
+  look like exactly what the LIN28 chain wants at its business end.
+
+
+  AND TD-198946 IS DISQUALIFIED IN ITS AUTHORS'' OWN WORDS, WHICH IS WHY THIS IS A KILL AND NOT A GAP.
+  yano2013 states the design goal of the field explicitly - a successful tissue-engineering approach requires
+  not only induction of chondrogenic differentiation but also SUPPRESSION OF SUBSEQUENT ENDOCHONDRAL OSSIFICATION
+  - and reports that TD-198946 INDUCED CHONDROGENIC DIFFERENTIATION WITHOUT PROMOTING ENDOCHONDRAL OSSIFICATION,
+  reconstructing permanent cartilage in mouse and canine knee defects WITH NO EVIDENCE OF CHONDROCYTE
+  HYPERTROPHY.
+
+
+  CORR-360 - THE GENERALISABLE FORM, AND IT IS A NEW SHELF. ENDOCHONDRAL OSSIFICATION IS LONGITUDINAL
+  BONE GROWTH, AND HYPERTROPHY IS ROUGHLY 80 PER CENT OF IT. Cartilage regenerative medicine is built
+  to produce PERMANENT cartilage - a joint surface that must never hypertrophy and must never ossify.
+  The growth plate is TRANSIENT cartilage whose entire output depends on doing both. THE TWO FIELDS WANT
+  OPPOSITE TISSUES, so every compound optimised for cartilage regeneration is selected AGAINST the exact
+  step that produces height. That is why ''chondrogenic'' compounds keep looking attractive to this project
+  and keep being wrong, and it is R342''s inhibitor-shelf shape on a completely different shelf. It is
+  also CORR-290''s rule - same pathway and same nominal direction is not the same lever; match the zone
+  decomposition or it is a different intervention.
+
+
+  WHAT SURVIVES, AND IT IS TWO THINGS.
+
+  ONE - AN ANTI-let-7 OLIGONUCLEOTIDE IS THE ONLY ROUTE IN THE RIGHT DIRECTION, and its position is exactly
+  SAG''s: the modality is proven to reach the tissue (R376, posey2017 delivered PS-ASO gapmers to growth-plate
+  cartilage in vivo, and the Donnan exclusion argument does not apply to a protein-bound endocytosed phosphorothioate),
+  anti-let-7 antagomirs are catalogue research reagents so material exists, and NOBODY HAS EVER GIVEN
+  ONE TO A BONE. What blocks it is not discovery and not delivery; it is that no such agent has been made
+  to any standard for this purpose, and that lowering let-7 is oncogene activation by definition.
+
+  TWO - KARTOGENIN IS THE ONE CHONDROGENIC SMALL MOLECULE WHOSE GROWTH-PLATE DIRECTION IS GENUINELY UNKNOWN.
+  Its entire indexed literature is articular repair, osteoarthritis and delivery vehicles; a targeted
+  query against growth plate, physis, bone length, longitudinal growth and stature returns nothing on
+  any of those endpoints. It shares TD-198946''s RUNX1 mechanism, so the prior is that it inherits the
+  same anti-hypertrophic disqualification - but that specific result was not found for kartogenin and
+  is not asserted here. Under R302''s rule the missing endpoint is a GAP; under CORR-290 the burden is
+  on the compound to show the SPIN4-type zone decomposition rather than the permanent-cartilage one.'
+quantitative:
+- parameter: LIN28 chemical matter, direction
+  value: inhibitors only - C1632, LI71, computer-aided Lin28 inhibitor design programmes, and a published
+    screening platform for small molecules RESTORING let-7
+  unit: direction
+  species: human
+  source_ref: lin28screen2024
+  note: Want LIN28 RAISED. Everything that exists lowers it, because LIN28 is an oncogene.
+- parameter: HMGA2 chemical matter, direction
+  value: inhibition programmes only (uterine fibroid, cancer); no activator found
+  unit: direction
+  species: human
+  source_ref: jouan2022
+  note: HMGA2 is the mediator jouan2022 proved REQUIRED by siRNA knockdown, and it is the canonical lipoma
+    and leiomyoma driver.
+- parameter: TD-198946, the explicit disqualification
+  value: induced chondrogenic differentiation WITHOUT promoting endochondral ossification; permanent cartilage
+    reconstructed in mouse and canine knee defects with NO EVIDENCE OF CHONDROCYTE HYPERTROPHY
+  unit: qualitative
+  species: multiple
+  source_ref: yano2013
+  note: Endochondral ossification IS longitudinal growth and hypertrophy is ~80% of it. The compound was
+    selected for suppressing exactly the step that makes height.
+- parameter: kartogenin growth-plate evidence
+  value: zero - entire indexed literature is articular repair, osteoarthritis and delivery vehicles; targeted
+    query against growth plate, physis, bone length, longitudinal growth and stature returns no endpoint
+  unit: studies
+  species: multiple
+  source_ref: kartogenin2025rev
+  note: Same RUNX1 axis as TD-198946, so the prior is inheritance of the same problem, but the anti-hypertrophic
+    result was not found for kartogenin and is not asserted.
+- parameter: atlas coverage of the chondrogenic-inducer class before this round
+  value: kartogenin 0 nodes / 0 refs / 0 CLAUDE.md; TD-198946 0 / 0 / 0
+  unit: files
+  species: not_applicable
+  source_ref: yano2013
+  note: The two best-known chondrogenic small molecules in the field, never once named in this atlas.
+key_refs:
+- ref_id: yano2013
+- ref_id: kartogenin2025rev
+- ref_id: lin28screen2024
+- ref_id: jouan2022
+- ref_id: zhu2010
+- ref_id: posey2017
+- ref_id: thakore2026
+open_questions:
+- g_l12_435a

@@ -1,0 +1,64 @@
+id: cytoskeletal_tension_chondrocyte
+name: Chondrocyte cytoskeletal tension
+type: process
+summary: 'Cytoskeletal tension is the proximate variable that most mechanotransduction models assume the
+  chondrocyte actually reads. In the growth plate there is one hard structural result: the actin- and
+  adhesion-dependent 90-degree rotation of daughter chondrocytes that builds a column is driven by integrin
+  beta-1 and antagonised by N-cadherin, so cytoskeletal force generation is directly responsible for growth
+  plate architecture rather than merely reporting on it. The complementary measurement is deformation
+  rather than force: hypertrophic chondrocytes in stress-controlled explant compression accumulate lateral
+  and volumetric strain under static but not dynamic loading at the same mean stress and the same axial
+  strain, showing that the cell''s mechanical state is set by the viscoelastic history of the matrix,
+  not by instantaneous load. The chondron pericellular matrix that mediates this is itself built mechanoresponsively.
+  Beyond this, the F-actin/RhoA/ROCK evidence in cartilage comes from articular chondrocytes and dedifferentiation
+  studies, and no measurement of actual cytoskeletal tension (traction force, FRET tension sensor) has
+  been made in a growth plate chondrocyte in any species.'
+quantitative:
+- parameter: lateral and volumetric hypertrophic chondrocyte strain, static vs dynamic compression
+  value: higher under static
+  unit: p<0.001 lateral, p<=0.015 volumetric
+  conditions: stress-controlled compression, pre-pubertal rat proximal tibial growth plate explants, axial
+    strain equal between conditions
+  species: rat
+  source_ref: zimmermann2017
+  uncertainty: confocal cell tracking; absolute strains not reported here
+localization:
+- 'mouse growth plate proliferative zone: adhesion-dependent rotation confirmed (greer2024)'
+- 'rat hypertrophic zone: cell strain measured (zimmermann2017)'
+- 'human growth plate: no data'
+human_evidence: absent
+human_evidence_note: No human growth plate cytoskeletal or cell-strain measurement located.
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: Explant and conditional-knockout data only; no human tissue is available for
+  live cell-mechanics measurement.
+confidence: D
+key_refs:
+- ref_id: greer2024
+  pmid: '38294852'
+  first_author: Greer SE
+  year: 2024
+  type: primary
+  one_line_finding: Adhesion-driven chondrocyte rotation, an actively force-generating process, builds
+    growth plate columns
+- ref_id: zimmermann2017
+  pmid: '28365062'
+  first_author: Zimmermann EA
+  year: 2017
+  type: primary
+  one_line_finding: Hypertrophic chondrocyte lateral and volumetric strain depends on loading waveform,
+    not mean stress
+- ref_id: lee2025
+  pmid: '40315311'
+  first_author: Lee D
+  year: 2025
+  type: primary
+  one_line_finding: The chondron pericellular matrix transmitting load to the chondrocyte is mechanoresponsively
+    assembled
+open_questions:
+- g_l6mech_008
+layer: L6
+stub: false
+last_verified: '2026-08-05'

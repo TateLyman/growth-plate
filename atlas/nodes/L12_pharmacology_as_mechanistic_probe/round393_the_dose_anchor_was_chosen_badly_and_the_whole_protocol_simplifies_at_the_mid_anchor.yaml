@@ -1,0 +1,210 @@
+id: round393_the_dose_anchor_was_chosen_badly_and_the_whole_protocol_simplifies_at_the_mid_anchor
+name: "R393: the complexity was downstream of one badly chosen dose anchor - the atlas imported the dose from the study whose effect size CORR-203 had already excluded, and at the better-justified mid anchor the protocol becomes one injection under a millilitre"
+aliases:
+  - the simplified SAG protocol
+  - dose anchor correction
+  - one injection SAG
+  - rundle2023 anchor
+type: intervention
+layer: L12
+stub: false
+summary: >-
+  R388 through R392 scaled every human number from li2021's 20 mg/kg. That is the
+  HIGHEST dose in the published effective range, and it was chosen for one reason:
+  li2021 is the study with a stature endpoint. But CORR-203 already excludes
+  li2021's effect size as a prediction, because it is restoration in an Ihh-ablated
+  dysplasia rather than elevation above normal. So this atlas imported the DOSE from
+  a study whose EFFECT it had already discounted - and then let the entire practical
+  burden follow from that single choice: gram-scale custom synthesis, a 30 mg/mL
+  aqueous formulation that does not exist, and multi-site injections.
+
+  Three anchors exist in the literature, all systemic, all demonstrably engaging the
+  pathway, spanning forty-fold.
+
+  LOW, 0.5 mg/kg (lee2016colitis): a 2.8-fold Gli1 rise in the colon of adult mice,
+  with colitis and colitis-associated tumour burden both reduced, dosed in PBS.
+  Human-equivalent 2.4 mg at 60 kg - 2.8 mg of salt, 28 mg per pulse, 112 mg per
+  year. A 1 mL injection would need 2.8 mg/mL, which is a trivial solubility target.
+  At that scale the material is an ordinary catalogue purchase rather than a
+  synthesis contract, and the entire formulation and manufacturing problem
+  disappears. Against it: the only measurement at that dose is in colon, not
+  cartilage.
+
+  MID, 5 mg/kg (rundle2023): increased PTCH1, GLI1 and SOX9 IN CHONDROCYTES in vivo,
+  systemic, over three weeks - and the authors state that 5 to 20 mg/kg/day is the
+  effective systemic range for activating SHH signalling in mice. Human-equivalent
+  24.3 mg at 60 kg, which is 27.9 mg of salt and 0.93 mL at 30 mg/mL - ONE
+  injection site, and every body weight from 50 to 80 kg stays at one site. 245 mg
+  per pulse under the escalate-plateau-taper shape, and about 1 g per year.
+
+  HIGH, 20 mg/kg (li2021): the stature correction, and the L3 vertebra at plus 32.1
+  percent. Human-equivalent 97.3 mg at 60 kg, 3.73 mL, two to three sites, 877 mg
+  per pulse, 3.5 g per year.
+
+  THE MID ANCHOR IS BOTH SIMPLER AND BETTER JUSTIFIED. rundle2023 measured target
+  engagement in vivo in the RIGHT CELL TYPE - chondrocytes - at a quarter of
+  li2021's dose. li2021's only claim to being the anchor was its stature endpoint,
+  and that endpoint is already disqualified from predicting anything here. Moving to
+  the mid anchor cuts drug 3.6-fold, brings every dose to a single sub-millilitre
+  injection, relaxes the formulation requirement from 30 mg/mL to about 28 mg/mL for
+  a 1 mL dose (and 10 mg/mL still gives an ordinary 2.8 mL), shortens the escalation
+  from four steps to three, and reduces the annual material from 3.5 g to about 1 g.
+
+  THE HONEST COUNTERWEIGHT, WHICH MUST NOT BE BURIED: BOTH GROWTH-PLATE RESULTS SIT
+  AT THE TOP OF THE RANGE. trompet2024's 61 percent pool expansion was at 25 mg/kg
+  and li2021's stature at 20 mg/kg. Nobody has tested a lower dose at a growth plate
+  in any species. Starting at the mid anchor is a bet that costs one six-month
+  readout cycle if it is wrong, and saves the whole manufacturing and formulation
+  burden if it is right. The escalation structure means the protocol shape is
+  identical either way, and pulse two can be anchored higher if the six-month
+  readout is flat.
+
+  ONE ARGUMENT IN FAVOUR OF THE PLATE NEEDING LESS, recorded as grade E because it
+  is an inference. lee2016colitis attributes its modest 2.8-fold colonic Gli1 rise
+  to constitutive epithelial hedgehog ligand keeping basal stromal Gli1 high - the
+  colon is a hard tissue to move proportionally. The growth plate at bone age 16 is
+  a tissue whose hedgehog output is declining, which is the entire premise of the
+  intervention. A tissue with lower basal tone should be easier to move.
+
+  WHAT DOES NOT SIMPLIFY, and must not be read as simplified away: the blackout
+  list, which is about receptor occupancy and not dose; the taper, because the
+  adaptation argument is dose-independent; contraception counselling, because
+  teratogenicity is not a high-dose-only property; the surveillance, especially
+  upper-gastrointestinal symptoms and any hip or knee pain; the one-pulse-then-read
+  discipline; and the three real blockers - no pharmaceutical-grade material, no
+  aqueous formulation demonstrated at any concentration for SAG itself, and no
+  Smoothened agonist ever given to a human by any route.
+
+  ONE ROUTE WAS CHECKED AND IS NOT AVAILABLE: no oral administration of SAG,
+  purmorphamine or any Smoothened agonist was found in any species. Every in vivo
+  route in the literature is intraperitoneal or subcutaneous. Oral would remove the
+  injections entirely and is a genuine gap, not a shortcut.
+quantitative:
+  - parameter: the three published systemic dose anchors and their human equivalents at 60 kg
+    value: >-
+      LOW 0.5 mg/kg -> 2.4 mg; MID 5 mg/kg -> 24.3 mg; HIGH 20 mg/kg -> 97.3 mg
+      (free-base equivalent)
+    unit: mg/kg mouse and mg human
+    species: not_applicable
+    source_ref: rundle2023
+    value_unverified: true
+    note: >-
+      derived in R393 by FDA body-surface-area allometry, Km 3 and 37. The anchors
+      are lee2016colitis, rundle2023 and li2021 respectively; rundle2023 also states
+      5 to 20 mg/kg/day as the effective systemic range in mice
+  - parameter: what the mid anchor changes at 60 kg
+    value: >-
+      27.9 mg salt per dose, 0.93 mL at 30 mg/mL, ONE injection site, 245 mg per
+      10-dose pulse, about 1 g per year
+    unit: mg, mL and sites
+    species: not_applicable
+    source_ref: rundle2023
+    value_unverified: true
+    note: >-
+      derived in R393. Against the high anchor's 111.8 mg per dose, 3.73 mL, two to
+      three sites, 877 mg per pulse and 3.5 g per year - a 72 percent reduction in
+      drug and a collapse from multi-site to single-site injection
+  - parameter: what the low anchor would change
+    value: 2.8 mg salt per dose, 28 mg per pulse, 112 mg per year, 2.8 mg/mL for a 1 mL injection
+    unit: mg and mg/mL
+    species: not_applicable
+    source_ref: lee2016colitis
+    value_unverified: true
+    note: >-
+      derived in R393. At this scale the material is a catalogue purchase and the
+      formulation requirement is trivial, but the only measurement at that dose is
+      in colon rather than cartilage
+  - parameter: target engagement in chondrocytes at the mid anchor
+    value: increased PTCH1, GLI1 and SOX9 in chondrocytes, systemic 5 mg/kg/day for three weeks
+    unit: qualitative
+    species: mouse
+    source_ref: rundle2023
+    note: >-
+      the measurement that justifies moving the anchor - it is in the right cell type,
+      in vivo, at a quarter of li2021's dose
+localization: systemic subcutaneous
+human_evidence: absent
+human_evidence_note: >-
+  No Smoothened agonist has been given to a human by any route. No oral
+  administration of any Smoothened agonist was found in any species either - every in
+  vivo route in the literature is intraperitoneal or subcutaneous.
+species_basis:
+  - mouse
+translation_risk: high
+translation_risk_reason: >-
+  The dose anchors are all mouse, scaled by a convention rather than by
+  pharmacokinetics. The mid anchor rests on pathway-marker induction in chondrocytes
+  rather than on any length or stature endpoint, and both endpoints that do exist at
+  a growth plate sit at the top of the range, so moving down is a genuine bet on
+  potency rather than a free simplification.
+confidence: C
+claim_grades:
+  - claim: >-
+      The atlas imported its dose from the one study whose effect size CORR-203 had
+      already excluded
+    grade: A
+    basis: >-
+      a statement about this file's own reasoning. R388-R392 scaled from li2021 while
+      simultaneously recording that CORR-203 governs li2021's effect sizes absolutely
+  - claim: >-
+      rundle2023's 5 mg/kg is a better-justified anchor because it measured pathway
+      induction in chondrocytes
+    grade: C
+    basis: >-
+      PTCH1, GLI1 and SOX9 induction in chondrocytes is target engagement in the right
+      cell type, but it is a marker rather than a length or pool endpoint, and it was
+      measured in a fracture-defect model rather than a normal growth plate
+  - claim: >-
+      At the mid anchor every body weight from 50 to 80 kg is a single sub-millilitre
+      injection and annual material falls to about 1 g
+    grade: A
+    basis: arithmetic on the scaled dose against a conventional 2 mL per-site limit
+  - claim: Both growth-plate results sit at the top of the range, so moving down is a bet
+    grade: A
+    basis: >-
+      trompet2024 at 25 mg/kg and li2021 at 20 mg/kg are the only growth-plate
+      results; no lower dose has been tested at a plate in any species
+  - claim: The growth plate may be easier to move proportionally than the colon
+    grade: E
+    basis: >-
+      inference from lee2016colitis's own explanation of its modest colonic Gli1 rise -
+      high basal tone from constitutive epithelial ligand - applied to a tissue whose
+      hedgehog output is declining. Never tested
+  - claim: No oral route exists for any Smoothened agonist in any species
+    grade: B
+    basis: >-
+      a targeted query returning only intraperitoneal and subcutaneous in vivo
+      administration. An absence from one search, so recorded as a gap rather than a
+      proof
+key_refs:
+  - ref_id: rundle2023
+    year: 2023
+    type: primary
+    role: >-
+      the new anchor - 5 mg/kg systemic with PTCH1, GLI1 and SOX9 induction in
+      chondrocytes, plus the explicit statement that 5 to 20 mg/kg/day is the effective
+      systemic range in mice
+  - ref_id: li2021
+    year: 2021
+    type: primary
+    role: >-
+      the old anchor, and the reason the correction was needed - its stature endpoint
+      is excluded by CORR-203, so it should never have supplied the dose either
+  - ref_id: lee2016colitis
+    year: 2016
+    type: primary
+    role: >-
+      the low anchor, and the demonstration that a Smoothened agonist can be dosed
+      systemically in an aqueous vehicle at a dose in that range
+  - ref_id: trompet2024
+    year: 2024
+    type: primary
+    role: >-
+      the counterweight - the only pool result in a normal animal sits at 25 mg/kg,
+      at the top of the range
+open_questions:
+  - g_l12_390a
+  - g_l12_388a
+  - g_l12_388b
+contradicts: []
+last_verified: '2026-08-14'

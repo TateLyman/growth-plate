@@ -1,0 +1,213 @@
+id: fgfr3_receptor
+name: FGFR3
+aliases:
+- fibroblast growth factor receptor 3
+type: protein
+layer: L3
+stub: false
+summary: 'FGFR3 is the brake on the growth plate: Fgfr3-null mice show skeletal overgrowth with
+  expanded
+
+  proliferative and hypertrophic zones (Colvin 1996; Deng 1996), and in human embryo-fetal long
+  bones
+
+  FGFR3 is the only one of the three receptors expressed in growth plate chondrocytes, FGFR1 and
+  FGFR2
+
+  being restricted to perichondrium and periosteum (Delezoide 1998). The achondroplasia allele
+  G380R
+
+  sits in the transmembrane domain, and the mechanism is best described as both ligand-independent
+
+  activation and failed termination; which component dominates is NOT settled. Naski 1996 and
+  Webster 1996
+
+  showed graded ligand-independent kinase activation with thanatophoric alleles stronger than
+
+  achondroplasia; Monsonego-Ornan 2000 showed that G380R dimerisation and activation are predominantly
+
+  ligand-dependent but that the mutant receptor is selectively resistant to ligand-mediated
+
+  internalisation and down-regulation, producing an expanded FGFR3 immunoreactive domain in transgenic
+
+  mouse growth plate; Cho 2004 attributed the defect to reduced c-Cbl-mediated ubiquitination
+
+  diverting active receptor from lysosome to recycling - but this is contested in SIGN, not merely
+  in
+
+  detail: Monsonego-Ornan et al. 2004 report INCREASED ubiquitination of the same mutants, and
+  Cho
+
+  2004 names the disparity, attributes it to Cos-7 versus HEK293, steady-state FGF2 versus pulsed
+
+  FGF9 and retroviral versus transient expression, and states it cannot exclude the alternative
+
+  (g_l2d_003). c-Cbl also does not bind FGFR3 directly: recruitment is via FRS2alpha and Grb2,
+  and
+
+  FRS2alpha binds FGFR1 far more strongly than FGFR3, so the recruitment step for this receptor
+  is
+
+  weakly established. Quantitative FRET adjudicates the DIMERISATION question only: G380R does
+  not
+
+  change ligand-bound dimer configuration and increases unliganded dimerisation propensity by
+
+  -1.8 kcal/mol (Sarabipour 2016). That experiment cannot speak to the down-regulation model,
+  because
+
+  the construct is FGFR3 extracellular + transmembrane domain with the ENTIRE INTRACELLULAR KINASE
+
+  DOMAIN REPLACED by a fluorescent protein, in CHO-derived vesicles - the machinery the competing
+
+  mechanism runs on is structurally absent from the assay. The same paper reports that chemical
+
+  cross-linking with Western blot did NOT detect increased G380R dimerisation, and that chemically
+
+  produced vesicles gave ~0.5 rather than 1.8 kcal/mol. The defensible reading is that G380R is
+  a weak
+
+  constitutive activator that also fails to be switched off, with the relative weight of the two
+
+  contributions still unresolved.
+
+  '
+quantitative:
+- parameter: change in unliganded FGFR3 dimerisation free energy due to G380R
+  value: '-1.8'
+  unit: kcal/mol
+  conditions: FGFR3 extracellular+transmembrane construct with the intracellular kinase domain
+    replaced by a fluorescent protein; osmotically derived plasma membrane vesicles from CHO cells;
+    quantitative FRET
+  species: in_vitro_human_cell
+  source_ref: sarabipour2016
+  uncertainty: chemically produced vesicles gave ~0.5 kcal/mol for the same mutation; chemical
+    cross-linking with Western blot detected no significant increase in dimerisation
+localization:
+- 'human fetal growth plate, mature chondrocytes: confirmed by ISH (delezoide1998)'
+- 'human thanatophoric dysplasia cartilage: abundant perinuclear FGFR3 immunoreactivity (legeaimallet1998)'
+- 'mouse growth plate: FGFR3 immunoreactive domain expanded in G380R transgenics (monsonegoornan2000)'
+human_evidence: direct
+human_evidence_note: FGFR3 expression and pathology have been examined directly in human fetal
+  growth plate and in thanatophoric dysplasia cartilage, and the achondroplasia allele is the
+  commonest human skeletal dysplasia mutation.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: low
+translation_risk_reason: The receptor, its expression domain and the pathogenic allele are all
+  documented in human tissue; mouse models reproduce the human phenotype.
+confidence: B
+key_refs:
+- ref_id: shiang1994
+  pmid: '7913883'
+  first_author: Shiang R
+  year: 1994
+  type: primary_abstract_only
+  one_line_finding: Achondroplasia is caused by a recurrent G380R substitution in the FGFR3 transmembrane
+    domain.
+- ref_id: naski1996
+  pmid: '8640234'
+  first_author: Naski MC
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: Achondroplasia and thanatophoric FGFR3 mutations give graded ligand-independent
+    activation.
+- ref_id: webster1996
+  pmid: '8599935'
+  first_author: Webster MK
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: G380R constitutively activates FGFR3 kinase without ligand.
+- ref_id: monsonegoornan2000
+  pmid: '10611230'
+  first_author: Monsonego-Ornan E
+  year: 2000
+  type: primary
+  one_line_finding: G380R activation is predominantly ligand-dependent; the mutation uncouples
+    activation from down-regulation.
+- ref_id: cho2004
+  pmid: '14699054'
+  first_author: Cho JY
+  year: 2004
+  type: primary
+  one_line_finding: In Cos-7 and RCJ cells, ACH and TDII FGFR3 show REDUCED c-Cbl-mediated ubiquitination
+    and diversion from lysosome to recycling endosome - the opposite sign to Monsonego-Ornan 2004,
+    which Cho 2004 reports and cannot exclude. c-Cbl recruitment to FGFR is indirect, via FRS2alpha/Grb2.
+- ref_id: sarabipour2016
+  pmid: '27040652'
+  first_author: Sarabipour S
+  year: 2016
+  type: primary
+  one_line_finding: 'Quantitative FRET on an FGFR3 EC+TM construct whose intracellular kinase
+    domain is replaced by a fluorescent protein: G380R increases unliganded dimerisation by -1.8
+    kcal/mol and does not change ligand-bound Intrinsic FRET. Cross-linking/Western disagreed;
+    chemical vesiculation gave ~0.5 kcal/mol.'
+- ref_id: colvin1996
+  pmid: '8630492'
+  first_author: Colvin JS
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: Fgfr3-null mice show skeletal overgrowth with expanded proliferative and hypertrophic
+    zones.
+- ref_id: delezoide1998
+  pmid: '9784595'
+  first_author: Delezoide AL
+  year: 1998
+  type: primary_abstract_only
+  one_line_finding: In human fetal long bone FGFR3 is expressed in growth plate chondrocytes while
+    FGFR1/2 are perichondrial and periosteal.
+- ref_id: deng1996
+  pmid: '8601314'
+  first_author: Deng C
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: Fgfr3-null mice show enhanced long bone growth, establishing FGFR3 as a negative
+    regulator.
+- ref_id: toydemir2006
+  pmid: '17033969'
+  doi: 10.1086/508433
+  first_author: Toydemir RM
+  year: 2006
+  type: primary
+  one_line_finding: FGFR3 p.R621H causes partial loss of kinase function and CATSHL syndrome with
+    tall stature, supplying the human loss-of-function arm that matches the Fgfr3-null mouse.
+open_questions:
+- g_l3core_008
+- g_l2d_003
+contradicts:
+- cho2004
+audited: '2026-08-05'
+audit_note: Phase 2d canonical-mechanism audit, shard l2daudit. sarabipour2016, monsonegoornan2000
+  and cho2004 read in FULL. Verdict SCOPED - sarabipour2016 was being used to adjudicate a mechanism
+  its construct cannot test (kinase domain absent), and an unrecorded sign contradiction on FGFR3
+  ubiquitination was found. No claim retracted; scope narrowed.
+last_verified: '2026-08-05'
+claim_grades:
+- claim: 'FGFR3 is a negative regulator of longitudinal bone growth: increasing its signalling
+    shortens bone and reducing it lengthens bone.'
+  grade: A
+  basis: Human gain of function across four graded disorders (shiang1994, bellus1995, tavormina1995)
+    and human partial loss of function giving tall stature in CATSHL syndrome (toydemir2006),
+    concordant with Fgfr3-null mouse overgrowth (colvin1996, deng1996). Both directions are now
+    human.
+- claim: The achondroplasia allele acts primarily by ligand-independent constitutive kinase activation.
+  grade: D
+  basis: Contested. naski1996 and webster1996 report ligand-independent activation; monsonegoornan2000
+    reports G380R activation is predominantly ligand-DEPENDENT with failed down-regulation. Unresolved.
+- claim: The G380R receptor escapes degradation through reduced c-Cbl-mediated ubiquitination.
+  grade: D
+  basis: 'Contradicted in SIGN: cho2004 reports reduced ubiquitination, Monsonego-Ornan et al.
+    2004 report increased ubiquitination of the same mutants. Logged as g_l2d_003. This is the
+    claim that sets the node grade.'
+- claim: FGFR3 is the only FGF receptor expressed in human growth plate chondrocytes.
+  grade: C
+  basis: Single human fetal long-bone expression study (delezoide1998), abstract only, not replicated.
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  FGFR1/2 are absent from human growth plate chondrocytes by ISH (delezoide1998), so
+  non-overlapping expression does the work a double knockout would; the cross-reactive agonist
+  FGF2 is already flagged in the node as unassignable without genetic confirmation, and that
+  confirmation exists (colvin1996, deng1996, toydemir2006).

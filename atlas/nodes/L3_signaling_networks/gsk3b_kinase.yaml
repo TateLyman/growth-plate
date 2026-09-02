@@ -1,0 +1,86 @@
+id: gsk3b_kinase
+name: GSK3B
+aliases:
+- glycogen synthase kinase 3 beta
+- GSK-3beta
+type: protein
+layer: L3
+stub: false
+summary: 'GSK3B is the destruction-complex kinase that phosphorylates beta-catenin on the N-terminal degron and targets
+  it for beta-TrCP-mediated degradation; WNT-receptor engagement inhibits this activity and lets beta-catenin accumulate.
+  In chondrocytes, pharmacological GSK3 inhibition with lithium chloride raises beta-catenin and drives terminal differentiation
+  markers together with oxidative DNA damage and matrix remodelling in human OA chondrocytes in vitro (Guidotti 2015),
+  which is a chemical-genetics mirror of the beta-catenin gain-of-function mouse phenotype. GSK3B is not chondrocyte-specific
+  and sits downstream of many inputs, so any perturbation of it is a blunt instrument: it also regulates glycogen
+  metabolism, mTOR-adjacent signalling and microtubule dynamics in the same cell. LiCl is also non-selective in a
+  second, sharper sense: it does not distinguish GSK3B from its paralogue GSK3A at any concentration, and no
+  ATP-competitive GSK3 inhibitor with meaningful GSK3A/B selectivity exists. The genetics say the distinction matters.
+  A chondrocyte-restricted Gsk3b conditional knockout HAS been reported and is phenotypically NORMAL except for
+  elevated GSK3A protein - the paralogue upregulates to compensate - whereas the tamoxifen-inducible
+  cartilage-specific Gsk3a/Gsk3b DOUBLE knockout causes precocious growth plate remodelling with loss of cellular and
+  proteoglycan components, decreased SOX9, increased osteoclast recruitment and apoptosis, shorter long bones and
+  growth retardation (Bali 2021, mouse). Gsk3a-null alone and Gsk3b-heterozygous alone are likewise near-normal while
+  the compound is dwarfed, and the redundant chondrocyte function runs through RelA Thr-254 phosphorylation
+  INDEPENDENTLY of Wnt/beta-catenin (Itoh 2012, mouse). No chondrocyte phenotype is therefore assignable to GSK3B
+  specifically: selective genetic removal of GSK3B does nothing, and non-selective chemical removal of both does
+  something. No human growth plate GSK3B measurement exists (g_para_008).'
+localization:
+- 'in_vitro_human_cell (OA chondrocytes): activity manipulated pharmacologically (guidotti2015)'
+- 'human growth plate: unconfirmed'
+- 'mouse growth plate zonal distribution: unconfirmed'
+human_evidence: indirect
+human_evidence_note: Human evidence is in vitro pharmacology on cultured human articular chondrocytes, not growth
+  plate tissue.
+species_basis:
+- in_vitro_human_cell
+translation_risk: high
+translation_risk_reason: Lithium is a promiscuous inhibitor, the cells were articular and diseased, and no in vivo
+  physeal genetics exist.
+confidence: D
+key_refs:
+- ref_id: guidotti2015
+  pmid: '26618897'
+  first_author: Guidotti S
+  year: 2015
+  type: primary
+  one_line_finding: LiCl-dependent GSK3 inactivation in human chondrocytes links oxidative DNA damage to matrix remodelling
+    and terminal differentiation.
+- ref_id: akiyama2004
+  pmid: '15132997'
+  first_author: Akiyama H
+  year: 2004
+  type: primary
+  one_line_finding: Establishes that the level of beta-catenin - the GSK3B substrate - is what chondrocytes read.
+- ref_id: bali2021
+  pmid: '33609145'
+  first_author: Bali SK
+  year: 2021
+  type: primary
+  one_line_finding: >-
+    Tamoxifen-inducible cartilage-specific Gsk3a/Gsk3b DOUBLE knockout causes precocious growth plate
+    remodeling, loss of cellular and proteoglycan components, decreased SOX9, increased osteoclast
+    recruitment and apoptosis, shorter long bones and growth retardation. States that cartilage-specific
+    Gsk3b SINGLE knockout mice are NORMAL except for elevated GSK3A protein - the paralog compensates by
+    upregulating.
+- ref_id: itoh2012
+  pmid: '22761446'
+  first_author: Itoh S
+  year: 2012
+  type: primary
+  one_line_finding: >-
+    GSK-3alpha and GSK-3beta act with functional redundancy in early chondrocyte differentiation via
+    RelA Thr-254 phosphorylation, INDEPENDENTLY of Wnt/beta-catenin. Gsk3a(-/-) alone or Gsk3b(+/-)
+    alone does not significantly affect skeletal development; the compound Gsk3a(-/-);Gsk3b(+/-) causes
+    dwarfism with impaired chondrocyte differentiation.
+open_questions:
+- g_para_008
+- g_l3rest_005
+last_verified: '2026-08-05'
+paralog_audit: at_risk
+paralog_audit_date: '2026-08-05'
+paralog_risk: >-
+  GSK3A and GSK3B are functionally redundant in chondrocytes via RelA Thr-254, independently of
+  Wnt/beta-catenin (itoh2012), and the cartilage-specific Gsk3b SINGLE knockout is phenotypically
+  normal with compensatory GSK3A upregulation (bali2021). The only positive chondrocyte evidence
+  is LiCl, which does not distinguish the two isoforms at any concentration and for which no
+  isoform-selective probe exists. See g_para_008.

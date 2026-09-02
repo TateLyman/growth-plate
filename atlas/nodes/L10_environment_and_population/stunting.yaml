@@ -1,0 +1,104 @@
+id: stunting
+name: Stunting
+type: phenotype
+aliases:
+- height-for-age Z-score below -2
+- linear growth faltering
+summary: 'Stunting is height-for-age below -2 SD of the WHO standard and is the population-scale phenotype
+  this layer has to connect to the growth plate. Its proximate biochemical correlate in humans is a low
+  circulating IGF-1: in 740 stunted Ugandan children aged 12-59 months (mean HAZ -3.02, SD 0.74) median
+  serum IGF-1 was 37.4 ug/L (IQR 24.2-53.3), inflammation markers were the strongest negative correlates
+  of IGF-1, and a positive malaria test was associated with -4.7 ug/L (95% CI -7.8 to -1.6) before inflammation
+  adjustment (madigan2026). In the same cohort plasma concentrations of 18 of 21 amino acids were lower
+  in children with elevated inflammatory markers (larnkjr2026), which puts substrate limitation and inflammatory
+  GH resistance on the same node rather than in competition. Supplementation moves the phenotype only
+  slightly: pooled across 15 randomised trials of small-quantity lipid-based nutrient supplements in 10
+  countries (n=36970) the effect on length-for-age Z was +0.15 (95% CI 0.12-0.17), equal to 12 days of
+  height-age (95% CI 9-14) and 11% of the maximal attainable benefit (95% CI 9.4-12; between-trial I2
+  = 90%) (watson2025). That 11% is the most important number about stunting: the deficit is overwhelmingly
+  not closed by adding energy and micronutrients to the diet.'
+quantitative:
+- parameter: median serum IGF-1 in stunted children
+  value: '37.4'
+  unit: ug/L
+  conditions: 740 Ugandan children aged 12-59 months, mean HAZ -3.02
+  species: human
+  source_ref: madigan2026
+  uncertainty: IQR 24.2-53.3
+- parameter: serum IGF-1 difference associated with a positive malaria test
+  value: '-4.7'
+  unit: ug/L
+  conditions: stunted Ugandan children, Tobit regression, before inflammation adjustment
+  species: human
+  source_ref: madigan2026
+  uncertainty: 95% CI -7.8 to -1.6
+- parameter: effect of small-quantity lipid-based nutrient supplements on length-for-age Z
+  value: '0.15'
+  unit: z-score
+  conditions: pooled 15 RCTs, 10 LMICs, n=36970
+  species: human
+  source_ref: watson2025
+  uncertainty: 95% CI 0.12-0.17
+- parameter: proportion of maximal attainable linear growth benefit achieved by SQ-LNS
+  value: '11'
+  unit: '%'
+  conditions: 12 comparisons, n=19768
+  species: human
+  source_ref: watson2025
+  uncertainty: 95% CI 9.4-12; between-trial I2 = 90%
+localization:
+- 'human SYS: whole-organism phenotype, no zonal localization'
+human_evidence: direct
+human_evidence_note: Human anthropometry with paired serum IGF-1 and inflammatory markers, plus pooled
+  randomised supplementation trials.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A human phenotype defined against a human growth reference.
+confidence: A
+claim_grades:
+- claim: Stunted children have low circulating IGF-1 and inflammation is its strongest negative correlate.
+  grade: A
+  basis: Cross-sectional human cohort n=740 with measured IGF-1, CRP, AGP and malaria testing (madigan2026).
+- claim: Nutrient supplementation recovers about one tenth of the attainable linear growth deficit.
+  grade: A
+  basis: Pooled 15 RCTs, n=36970, prespecified proportion-of-maximal-benefit metric (watson2025).
+- claim: The low circulating IGF-1 acts by reducing IGF1R occupancy on growth plate chondrocytes.
+  grade: E
+  basis: No human growth plate measurement in stunted children exists; inferred from IGF1R biology in
+    other systems.
+key_refs:
+- ref_id: madigan2026
+  pmid: '41093111'
+  first_author: Madigan E
+  year: 2026
+  type: primary
+  one_line_finding: In 740 stunted Ugandan children median serum IGF-1 was 37.4 ug/L, inflammation markers
+    were the strongest negative correlates and malaria positivity was associated with -4.7 ug/L.
+- ref_id: watson2025
+  pmid: '41125609'
+  first_author: Watson KM
+  year: 2025
+  type: meta_analysis
+  one_line_finding: SQ-LNS raised length-for-age Z by 0.15 across 15 RCTs (n=36970), equal to 12 days
+    of height-age and 11% of the maximal attainable benefit.
+- ref_id: victora2008
+  pmid: '18206223'
+  first_author: Victora CG
+  year: 2008
+  type: systematic_review
+  one_line_finding: Undernutrition indices in five LMIC birth cohorts were strongly associated with shorter
+    adult height, less schooling and lower income.
+- ref_id: larnkjr2026
+  pmid: '42002262'
+  first_author: Larnkjær A
+  year: 2026
+  type: primary
+  one_line_finding: In 711-730 stunted Ugandan children plasma concentrations of 18 of 21 amino acids
+    were lower in those with elevated inflammatory markers.
+open_questions:
+- g_l10env_003
+- g_l10env_008
+layer: L10
+stub: false
+last_verified: '2026-08-05'

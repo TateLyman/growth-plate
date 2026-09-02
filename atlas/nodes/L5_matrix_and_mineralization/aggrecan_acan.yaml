@@ -1,0 +1,98 @@
+id: aggrecan_acan
+name: Aggrecan (ACAN)
+aliases:
+- ACAN
+- cartilage-specific proteoglycan core protein
+- CSPG1
+type: protein
+layer: L5
+stub: false
+summary: 'Aggrecan is the large chondroitin-sulphate/keratan-sulphate proteoglycan that carries essentially
+  all of the fixed negative charge of cartilage and therefore all of its osmotic swelling pressure. Its
+  N-terminal G1 domain binds hyaluronan, the interaction is stabilised by link protein (HAPLN1), and up
+  to a hundred monomers decorate a single hyaluronan filament to form the aggregate that is immobilised
+  inside the collagen network. In the growth plate aggrecan is synthesised across all zones but with a
+  strong zonal gradient of metabolism: in bovine distal tibial growth plate explants both synthesis and
+  breakdown rates are highest in the resting/proliferative third and lowest in the lower hypertrophic
+  third, and about 90% of newly synthesised proteoglycan is aggregation-competent. Aggrecan is removed
+  from the hypertrophic zone before mineralization, but not by MMPs: mice engineered with aggrecan resistant
+  to MMP cleavage at the N341-F342 interglobular-domain site grow normally and do not accumulate aggrecan,
+  which excludes MMP aggrecanolysis as the removal mechanism and leaves ADAMTS cleavage at Glu373-Ala374
+  and simple dilution as the surviving candidates. Human ACAN haploinsufficiency is one of the commonest
+  monogenic causes of idiopathic short stature.'
+quantitative:
+- parameter: Fraction of newly synthesised growth plate proteoglycan competent to aggregate
+  value: ~90
+  unit: '%'
+  conditions: bovine distal tibial growth plate explants, Sepharose CL2B chromatography
+  species: bovine
+  source_ref: shapses1994
+  uncertainty: not reported
+- parameter: Zonal rank order of aggrecan synthesis and breakdown rate
+  value: RZ/PZ > upper HZ > lower HZ
+  unit: rank order of 35S-sulphate incorporation and release
+  conditions: bovine distal tibia, fetal and calf explants, 3 day culture
+  species: bovine
+  source_ref: shapses1994
+  uncertainty: rank order reported; absolute rates not extracted
+- parameter: Aggrecan large-monomer half-life
+  value: '3.4'
+  unit: years
+  conditions: adult human articular cartilage, aspartate racemization, A1D1 fraction
+  species: human
+  source_ref: maroudas1998
+  uncertainty: turnover constant 0.206/year; articular not physeal cartilage
+- parameter: Free G1 (hyaluronan-binding region) half-life
+  value: '25'
+  unit: years
+  conditions: adult human articular cartilage, aspartate racemization
+  species: human
+  source_ref: maroudas1998
+  uncertainty: turnover constant 0.027/year
+localization:
+- 'bovine growth plate RZ/PZ: highest aggrecan synthesis and turnover (shapses1994)'
+- 'bovine growth plate lower HZ: reduced aggrecan gene expression adjacent to the calcification zone (shapses1994)'
+- 'human growth plate: aggrecan present in all zones; zonal turnover rates not measured'
+human_evidence: direct
+human_evidence_note: Heterozygous ACAN loss-of-function is a directly measured human short-stature syndrome
+  with height SDS data in >100 individuals; the zonal biochemistry is bovine.
+species_basis:
+- bovine
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The human genetics is direct, but every quantitative statement about zonal aggrecan
+  metabolism comes from bovine explants and every turnover half-life from adult human articular cartilage
+  rather than physis.
+confidence: B
+key_refs:
+- ref_id: shapses1994
+  pmid: '8061922'
+  first_author: Shapses SA
+  year: 1994
+  type: primary
+  one_line_finding: Aggrecan synthesis and breakdown are both fastest in the resting/proliferative zone
+    of bovine growth plate
+- ref_id: little2005
+  pmid: '15798221'
+  first_author: Little CB
+  year: 2005
+  type: primary
+  one_line_finding: MMP-resistant aggrecan mice grow normally and do not accumulate aggrecan, excluding
+    MMP aggrecanolysis
+- ref_id: maroudas1998
+  pmid: '9466821'
+  first_author: Maroudas A
+  year: 1998
+  type: primary
+  one_line_finding: Aggrecan monomer half-life 3.4 years, free G1 half-life 25 years in adult human articular
+    cartilage
+- ref_id: gkourogianni2017
+  pmid: '27870580'
+  first_author: Gkourogianni A
+  year: 2017
+  type: primary
+  one_line_finding: ACAN heterozygotes reach median adult height -2.8 SDS with advanced bone age
+open_questions:
+- g_l5matrix_007
+last_verified: '2026-08-05'

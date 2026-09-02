@@ -1,0 +1,216 @@
+id: cnp_protein
+name: C-type natriuretic peptide
+aliases:
+- CNP
+- NPPC
+type: protein
+layer: L3
+stub: false
+summary: 'CNP is encoded by NPPC, translated as proCNP and cleaved by furin at a tetrabasic site to CNP-53,
+
+  which is further processed to CNP-22 (Wu 2003). In the growth plate CNP is made by non-hypertrophic
+
+  chondrocytes and acts locally: cartilage-specific Nppc deletion in mouse reproduces essentially the
+
+  whole systemic-knockout dwarfism, so the autocrine/paracrine pool, not circulating CNP, is the
+
+  physiological driver (Nakao 2015). Nppc-null mice are severely dwarfed and die early (Chusho 2001).
+
+  The effect is zone-partitioned but GRADED, not exclusive: in cartilage-specific Nppc-null mice the
+
+  type X collagen-positive hypertrophic layer falls to 34.6% of control thickness whereas the
+
+  non-hypertrophic layer falls only to 76.7%, and the BrdU index merely trends lower - but in the
+
+  matched cartilage-specific Npr2-null the same index is SIGNIFICANTLY reduced, and the summary
+
+  given by the authors is that the proliferative layer and its proliferation are moderately reduced in
+  both
+
+  (Nakao 2015, n=5 per group). In mouse tibia organ culture CNP acts largely by expanding the
+
+  hypertrophic zone and zonal microarray shows far more CNP-regulated genes in hypertrophic than in
+
+  the combined resting/proliferative compartment (Agoston 2007); the hypertrophic-zone expansion in
+
+  that system requires p38, while CNP simultaneously inhibits ERK. Downstream of NPR2 the effector
+
+  assignment is unsettled: the PKG-II zonal explanation has been retracted (CORR-003), and CNP-driven
+
+  bone growth in tibia explant is abolished by chondrocyte-specific Trpm7 ablation, placing a
+
+  PKG-BK channel-TRPM7-CaMKII arm alongside SOX9/GSK-3beta (Miyazaki 2022).
+
+  Human dosage evidence runs in both directions: heterozygous NPPC ring-domain mutations cause
+
+  autosomal dominant short stature with small hands (Hisado-Oliva 2018), while balanced translocations
+
+  clustering at 2q37.1 that overexpress NPPC cause a Marfanoid overgrowth syndrome with roughly doubled
+
+  plasma CNP (Bocciardi 2007; Moncla 2007).
+
+  '
+quantitative:
+- parameter: hypertrophic zone thickness, cartilage-specific Nppc knockout vs control
+  value: '34.6'
+  unit: '% of control'
+  conditions: proximal tibia, 2 weeks of age, Col2a1-Cre;Nppc fl/fl, type X collagen IHC
+  species: mouse
+  source_ref: nakao2015
+  uncertainty: significant vs control; n=5 per group (figure legend)
+- parameter: non-hypertrophic (type II collagen+) layer thickness, cartilage-specific Nppc knockout
+  value: '76.7'
+  unit: '% of control'
+  conditions: proximal tibia, 2 weeks of age, Col2a1-Cre;Nppc fl/fl
+  species: mouse
+  source_ref: nakao2015
+  uncertainty: n=5 per group (figure legend)
+- parameter: tibia length, cartilage-specific Nppc knockout vs control
+  value: '65.9'
+  unit: '% of control'
+  conditions: 10 weeks of age, soft x-ray morphometry
+  species: mouse
+  source_ref: nakao2015
+  uncertainty: significant vs control; n=5 per group (figure legend)
+- parameter: plasma CNP concentration, NPPC-translocation overgrowth proband vs controls
+  value: '2'
+  unit: fold
+  conditions: de novo balanced t(2;7)(q37.1;q21.3), young female proband
+  species: human
+  source_ref: bocciardi2007
+  uncertainty: n=1 proband vs n=5 controls
+- parameter: annualised growth velocity gain, vosoritide (CNP analogue) vs placebo
+  value: '1.57'
+  unit: cm/yr
+  conditions: children with achondroplasia aged 5 to <18 y, 15 ug/kg/day sc, 52 weeks
+  species: human
+  source_ref: savarirayan2020
+  uncertainty: 95% CI 1.22-1.93; n=121 randomised (60 vosoritide, 61 placebo)
+- parameter: NPPC transcript detection, human growth plate, percentile within array
+  value: 60-70
+  unit: percentile
+  conditions: 'P8-02: GSE22855 59.9 (not detected), GSE32398 69.8 (detected), GSE18338 67.8 (detected);
+    three platforms, whole-plate bulk. SUPERSEDES the P8-01 row that recorded NPPC as below background
+    on GPL570.'
+  species: human
+  source_ref: gse9160
+  uncertainty: reanalysis p8_02_independent_corroboration; CORR-005 reverses the P8-01 negative
+localization:
+- 'mouse non-hypertrophic chondrocyte layers (RZ/PZ): confirmed by IHC and cartilage-specific KO (nakao2015).
+  The CNP IHC in that paper demonstrates knock-down; it is not a quantitative zonal map'
+- 'mouse HZ: CNP-regulated transcriptome strongly enriched, confirmed by zonal microarray (agoston2007)'
+- 'human growth plate: zonal CNP protein distribution unconfirmed'
+human_evidence: direct
+human_evidence_note: Human NPPC loss-of-function causes dominant short stature and human NPPC overexpression
+  causes overgrowth with measured plasma CNP; a CNP analogue increases growth velocity in a randomised
+  human trial.
+species_basis:
+- mouse
+- human
+translation_risk: low
+translation_risk_reason: Both directions of the human dosage series are documented and a human interventional
+  trial of a CNP analogue reproduces the predicted direction and magnitude.
+confidence: B
+key_refs:
+- ref_id: chusho2001
+  pmid: '11259675'
+  first_author: Chusho H
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Nppc-null mice are dwarfed with severely shortened long bones and early death.
+- ref_id: nakao2015
+  pmid: '26014585'
+  first_author: Nakao K
+  year: 2015
+  type: primary
+  one_line_finding: Cartilage-specific Nppc deletion reproduces systemic knockout dwarfism; hypertrophic
+    layer falls to 34.6% of control while non-hypertrophic layer falls only to 76.7%.
+- ref_id: agoston2007
+  pmid: '17374144'
+  first_author: Agoston H
+  year: 2007
+  type: primary
+  one_line_finding: CNP grows mouse tibia largely by expanding the hypertrophic zone; zonal microarray
+    shows hypertrophic chondrocytes are the main CNP target.
+- ref_id: miyazaki2022
+  pmid: '35287796'
+  first_author: Miyazaki Y
+  year: 2022
+  type: primary
+  one_line_finding: CNP-facilitated bone growth in mouse tibia explant is abolished by chondrocyte-specific
+    Trpm7 ablation, via PKG acting on the BK channel to drive TRPM7 Ca2+ entry and CaMKII.
+- ref_id: hisadooliva2018
+  pmid: '28661490'
+  first_author: Hisado-Oliva A
+  year: 2018
+  type: primary_abstract_only
+  one_line_finding: Heterozygous NPPC ring-domain mutations cause autosomal dominant short stature with
+    small hands.
+- ref_id: bocciardi2007
+  pmid: '17373680'
+  first_author: Bocciardi R
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: A balanced t(2;7) near NPPC doubles plasma CNP and causes Marfanoid overgrowth.
+- ref_id: moncla2007
+  pmid: '17676597'
+  first_author: Moncla A
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Two further 2q37.1 translocations overexpress NPPC and reproduce the overgrowth phenotype.
+- ref_id: wu2003
+  pmid: '12736257'
+  first_author: Wu C
+  year: 2003
+  type: primary_abstract_only
+  one_line_finding: Furin cleaves proCNP to CNP-53.
+- ref_id: savarirayan2020
+  pmid: '32891212'
+  first_author: Savarirayan R
+  year: 2020
+  type: primary_abstract_only
+  one_line_finding: Vosoritide increased annualised growth velocity by 1.57 cm/yr versus placebo in achondroplasia.
+- ref_id: zhou2024
+  pmid: '39443661'
+  first_author: Zhou Z
+  year: 2024
+  type: primary
+  one_line_finding: Corin- and Nppa(ANP)-null mice have impaired chondrocyte differentiation and SHORTENED
+    limb long bones with reduced adult bone density; ANP acts IN CHONDROCYTES via cGMP-dependent protein
+    kinase G to inhibit MAPK phosphorylation and raise phospho-GSK-3beta and beta-catenin - a genetic
+    requirement for the NPR1/GC-A ligand arm in the same cGMP-PKG readout the atlas attributes wholly
+    to CNP/NPR2.
+open_questions:
+- g_para_001
+- g_l3core_003
+- g_l2d_001
+audited: '2026-08-05'
+audit_note: Phase 2d canonical-mechanism audit, shard l2daudit. nakao2015, agoston2007 and miyazaki2022
+  read in FULL (nakao2015 pending_source cleared - full text retrieved, n=5 per group recovered from figure
+  legends). Verdict SCOPED - the zonal partition is graded, not exclusive.
+last_verified: '2026-08-05'
+paralog_audit: at_risk
+paralog_audit_date: '2026-08-05'
+paralog_risk: ANP is genetically required for chondrocyte differentiation via chondrocyte cGMP-PKG (zhou2024);
+  the Nppc-cKO-versus-Npr2-cKO severity gap is currently explained by residual extra-cartilage CNP alone,
+  with the ANP arm unexcluded. No Nppa;Nppc compound cartilage mutant exists. See g_para_001.
+reanalysis_observations:
+- observation: WITHDRAWN AND REVERSED (CORR-005). P8-01 reported that NPPC transcript is not detectable
+    in human growth plate. P8-02 tested that on three independent human growth-plate series with no donor
+    or platform shared with GSE9160, and NPPC is DETECTED at roughly the 70th percentile of the array
+    in GSE32398 (Affymetrix GPL9828, 5 prepubertal donors) and GSE18338 (Agilent, tibia through puberty),
+    surviving every stringency tested. It is not detected in GSE22855 (Illumina, 2 donors, 60th percentile).
+    CNP TRANSCRIPT IS DETECTABLE IN HUMAN GROWTH PLATE.
+  interpretation: 'The P8-01 negative rested on the single NPPC probe set that HG-U133 Plus 2.0 carries
+    (221348_at). One oligonucleotide failing is indistinguishable from a transcript being absent until
+    a second platform is asked, and the second and third platforms disagree with it. The species discrepancy
+    P8-01 raised against the mouse cartilage-specific Nppc knockout is therefore removed: local CNP message
+    is present in human plate, as in mouse.'
+  caveats: Transcript, not peptide. Whole-plate bulk, so no zonal information. None of the three platforms
+    has a validated positive control for its detection rule - see P8-02 RESULTS section 4.
+  reanalysis: p8_02_independent_corroboration
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'
+  supersedes: p8_01_gse9160_human_zonal NPPC non-detection

@@ -1,0 +1,178 @@
+id: inflammation_growth_suppression
+name: Inflammatory suppression of linear growth
+type: process
+aliases:
+- cytokine-induced GH resistance
+- inflammatory growth failure
+summary: 'Chronic inflammation suppresses linear growth through two mechanistically distinct and independently
+  demonstrated routes. The hepatic route is SOCS-mediated interruption of GH signalling: LPS pretreatment
+  abolished GH-induced STAT5 activation in wild-type and TNFR1-null mice but not in IL-6-null mice, GHR
+  abundance was unchanged, and the loss of STAT5 activation was temporally coupled to STAT3 phosphorylation
+  and upregulation of CIS and SOCS-3 protein (denson2003). The plate-intrinsic route is direct cytokine
+  interference with IGF-I signalling in chondrocytes: in the RCJ3.1C5.18 rat chondrogenic line, IL-1beta
+  (10 ng/mL), IL-6 (100 ng/mL) or TNF-alpha (50 ng/mL) co-incubated with IGF-I cut IGF-I-driven proliferation
+  by 50% without altering baseline proliferation, attenuated IGF-I-induced AKT phosphorylation by 30-50%
+  and ERK phosphorylation by 50-75%, and blocked IGF-I-enhanced differentiation (choukair2014). At the
+  organ level, 8 days of IL-1beta or TNF-alpha reduced murine metatarsal growth by 71% and 45% respectively,
+  with an additive 110% reduction in combination; a 2-day single-cytokine exposure was fully reversible,
+  but the combination left growth 59% below control after 6 days of recovery (macrae2006). SOCS2 is the
+  specific brake: TNF-alpha exposure of growth plate chondrocytes increased SOCS2 protein (macrae2009),
+  SOCS2 is the only SOCS induced by GH in chondrocytes and its loss increases chondrocyte STAT1/3/5 phosphorylation,
+  growth plate width and bone growth rate (pass2012), and Socs2-null mice are protected from the skeletal
+  effects of DSS colitis (dobie2018). The therapeutic irony is quantified: 4-6 years of inhaled budesonide
+  from age 5-13 left adult height 1.2 cm lower (95% CI -1.9 to -0.5) in 943 CAMP participants (kelly2012).'
+quantitative:
+- parameter: inhibition of IGF-I-driven chondrocyte proliferation by IL-1beta, IL-6 or TNF-alpha
+  value: '50'
+  unit: '%'
+  conditions: RCJ3.1C5.18 chondrogenic line; IL-1beta 10 ng/mL, IL-6 100 ng/mL, TNF-alpha 50 ng/mL, co-incubated
+    with IGF-I
+  species: in_vitro_animal_cell
+  source_ref: choukair2014
+  uncertainty: baseline proliferation unaltered
+- parameter: attenuation of IGF-I-induced AKT phosphorylation by pro-inflammatory cytokines
+  value: 30-50
+  unit: '%'
+  conditions: same cell line and cytokine concentrations
+  species: in_vitro_animal_cell
+  source_ref: choukair2014
+  uncertainty: range across the three cytokines
+- parameter: attenuation of IGF-I-induced ERK phosphorylation by pro-inflammatory cytokines
+  value: 50-75
+  unit: '%'
+  conditions: same cell line and cytokine concentrations
+  species: in_vitro_animal_cell
+  source_ref: choukair2014
+  uncertainty: range across the three cytokines
+- parameter: reduction in metatarsal growth after 8 days of IL-1beta
+  value: '71'
+  unit: '%'
+  conditions: postnatal murine metatarsal organ culture
+  species: mouse
+  source_ref: macrae2006
+  uncertainty: P<0.05 vs control
+- parameter: reduction in metatarsal growth after 8 days of TNF-alpha
+  value: '45'
+  unit: '%'
+  conditions: postnatal murine metatarsal organ culture
+  species: mouse
+  source_ref: macrae2006
+  uncertainty: P<0.05 vs control
+- parameter: residual growth deficit after 2-day IL-1beta plus TNF-alpha exposure and 6-day washout
+  value: '59'
+  unit: '%'
+  conditions: murine metatarsal organ culture; single-cytokine exposures recovered fully
+  species: mouse
+  source_ref: macrae2006
+  uncertainty: P<0.01 vs control
+- parameter: adult height deficit after 4-6 years of inhaled budesonide 400 ug/day started at age 5-13
+  value: '-1.2'
+  unit: cm
+  conditions: Childhood Asthma Management Program, adult height measured at 24.9 +/- 2.7 y, 943 of 1041
+    participants
+  species: human
+  source_ref: kelly2012
+  uncertainty: 95% CI -1.9 to -0.5; P=0.001
+- parameter: dose-dependence of the inhaled glucocorticoid height effect
+  value: '-0.1'
+  unit: cm per ug/kg/day
+  conditions: daily inhaled glucocorticoid dose in the first 2 years
+  species: human
+  source_ref: kelly2012
+  uncertainty: P=0.007
+localization:
+- 'mouse growth plate: TNF-alpha increases SOCS2 protein in growth plate chondrocytes (macrae2009)'
+- 'mouse growth plate: SOCS2 loss increases phospho-STAT5-positive hypertrophic chondrocytes (pass2012)'
+- 'human growth plate: no cytokine, SOCS or phospho-STAT5 measurement in human physeal tissue exists'
+human_evidence: indirect
+human_evidence_note: Human evidence is the association of inflammatory markers with low IGF-1 in stunted
+  children and the randomised adult-height cost of inhaled glucocorticoid; the SOCS/STAT5 and chondrocyte
+  signalling steps are rodent and rodent-cell-line only.
+species_basis:
+- mouse
+- rat
+- in_vitro_animal_cell
+- human
+translation_risk: high
+translation_risk_reason: Every mechanistic step - SOCS3/CIS induction, STAT5 blockade, AKT/ERK attenuation,
+  metatarsal growth arrest - is rodent. Mice do not fuse their growth plates, so the irreversibility observed
+  in metatarsal culture cannot be mapped onto human final height.
+confidence: B
+claim_grades:
+- claim: IL-6 is required for endotoxin-induced loss of hepatic GH-STAT5 signalling, and the loss is mediated
+    by CIS and SOCS-3 rather than by GHR downregulation.
+  grade: C
+  basis: Mouse genetic dissection with IL-6-null and TNFR1-null strains, immunoblot, EMSA and RT-PCR (denson2003);
+    no human replication.
+- claim: Pro-inflammatory cytokines halve IGF-I-driven chondrocyte proliferation and attenuate AKT and
+    ERK phosphorylation.
+  grade: D
+  basis: Single study in one rat chondrogenic cell line (choukair2014).
+- claim: Combined IL-1beta and TNF-alpha exposure produces growth suppression that does not fully recover
+    after withdrawal.
+  grade: C
+  basis: Murine metatarsal organ culture with washout design (macrae2006); not tested in vivo or in human
+    tissue.
+- claim: SOCS2 is the specific negative regulator of GH action in growth plate chondrocytes.
+  grade: C
+  basis: Socs2-null mouse genetics with metatarsal culture, growth plate histomorphometry and phospho-STAT
+    quantification (pass2012, macrae2009, dobie2015, dobie2018).
+- claim: Suppressing childhood inflammation with inhaled glucocorticoid costs about 1.2 cm of adult height.
+  grade: A
+  basis: Randomised trial with adult height measured in 943 of 1041 participants and a dose-response (kelly2012).
+key_refs:
+- ref_id: denson2003
+  pmid: '12519742'
+  first_author: Denson LA
+  year: 2003
+  type: primary
+  one_line_finding: LPS abolished GH-induced hepatic STAT5 activation in wild-type and TNFR1-null but
+    not IL-6-null mice, with unchanged GHR and upregulated CIS and SOCS-3.
+- ref_id: choukair2014
+  pmid: '24941214'
+  first_author: Choukair D
+  year: 2014
+  type: primary
+  one_line_finding: IL-1beta, IL-6 and TNF-alpha each cut IGF-I-driven chondrocyte proliferation by 50%
+    and attenuated IGF-I-induced AKT (30-50%) and ERK (50-75%) phosphorylation.
+- ref_id: macrae2006
+  pmid: '16648299'
+  first_author: MacRae VE
+  year: 2006
+  type: primary
+  one_line_finding: IL-1beta and TNF-alpha reduced murine metatarsal growth by 71% and 45% over 8 days,
+    additively by 110%, with incomplete recovery (59% deficit) after combined exposure.
+- ref_id: pass2012
+  pmid: '22228213'
+  first_author: Pass C
+  year: 2012
+  type: primary
+  one_line_finding: SOCS2, not SOCS1 or SOCS3, is GH-induced in chondrocytes; its deletion increases chondrocyte
+    STAT1/3/5 phosphorylation, growth plate width, chondrocyte proliferation and bone growth rate.
+- ref_id: macrae2009
+  pmid: '18803233'
+  first_author: Macrae VE
+  year: 2009
+  type: primary
+  one_line_finding: TNF-alpha exposure of growth plate chondrocytes for 48 h increased SOCS2 protein;
+    Socs2-null mice were 6% longer with 24% wider growth plates.
+- ref_id: dobie2018
+  pmid: '29343614'
+  first_author: Dobie R
+  year: 2018
+  type: primary
+  one_line_finding: Socs2 deletion protected mouse trabecular bone from DSS colitis, placing SOCS2 in
+    the inflammation-to-skeleton pathway.
+- ref_id: kelly2012
+  pmid: '22938716'
+  first_author: Kelly HW
+  year: 2012
+  type: primary
+  one_line_finding: Budesonide 400 ug/day for 4-6 years in childhood lowered adult height by 1.2 cm (95%
+    CI -1.9 to -0.5) in 943 CAMP participants, with a dose-response of -0.1 cm per ug/kg/day.
+open_questions:
+- g_l10env_004
+- g_l10env_009
+layer: L10
+stub: false
+last_verified: '2026-08-05'

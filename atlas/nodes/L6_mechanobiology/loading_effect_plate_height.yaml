@@ -1,0 +1,109 @@
+id: loading_effect_plate_height
+name: Loading effect on growth plate height and zonal structure
+type: phenotype
+summary: 'Sustained compression thins the growth plate and the thinning is zonally specific. In rat caudal
+  vertebrae under 0.2 MPa for two weeks, static loading significantly reduced total plate thickness, the
+  number of proliferative chondrocytes per column and hypertrophic chondrocyte height, whereas dynamic
+  loading at the same mean stress produced the same growth-rate reduction with none of these histological
+  changes. Under four weeks of ~60% body weight compression, hypertrophic zone height fell to 87% of control,
+  mean hypertrophic cell height to 85%, and the increment in cell height along the growth direction to
+  78%; distraction changed none of these significantly, which is why compression and tension are not mirror
+  images. Across species, altered plate height correlates with altered growth rate but explains it only
+  partly: proliferative cell number per unit width and maximum hypertrophic cell height together account
+  for the growth change with correlation coefficients of 0.38 and 0.56. Plate thinning is reversible -
+  height returned to sham within 10 days of unloading. Plate thickness is also the single most influential
+  parameter in finite-element models of how the plate adapts its shape to the local mechanical environment.'
+quantitative:
+- parameter: hypertrophic zone height under sustained compression
+  value: '87'
+  unit: '% of control'
+  conditions: rat tail vertebra, 4 weeks at ~60% body weight
+  species: rat
+  source_ref: stokes2002
+  uncertainty: significantly less than control
+- parameter: mean hypertrophic chondrocyte height under sustained compression
+  value: '85'
+  unit: '% of control'
+  conditions: same
+  species: rat
+  source_ref: stokes2002
+  uncertainty: significant; r2=0.23 vs growth rate, p=0.06
+- parameter: increment in chondrocyte height along the growth direction under compression
+  value: '78'
+  unit: '% of control'
+  conditions: same
+  species: rat
+  source_ref: stokes2002
+  uncertainty: significant
+- parameter: correlation of proliferative cell number per unit width with growth rate
+  value: '0.38'
+  unit: r
+  conditions: pooled rat, rabbit, calf, loaded and control
+  species: multiple
+  source_ref: stokes2007
+  uncertainty: overall correlation coefficient
+- parameter: correlation of maximum hypertrophic cell height with growth rate
+  value: '0.56'
+  unit: r
+  conditions: same
+  species: multiple
+  source_ref: stokes2007
+  uncertainty: overall correlation coefficient
+- parameter: recovery of growth plate height after unloading
+  value: complete by 10
+  unit: days
+  conditions: after 15 days of 0.2 MPa static or dynamic compression, rat caudal vertebra
+  species: rat
+  source_ref: mnard2015
+  uncertainty: no significant difference from sham
+human_evidence: absent
+human_evidence_note: Human growth plate height under known load has not been measured; paediatric MRI
+  physeal thickness studies do not control applied stress.
+species_basis:
+- rat
+- rabbit
+- bovine
+translation_risk: high
+translation_risk_reason: Histomorphometry requires sacrifice, so all zonal data are animal; human physeal
+  thickness data are cross-sectional imaging without a load variable.
+confidence: C
+key_refs:
+- ref_id: stokes2002
+  pmid: '12377917'
+  first_author: Stokes IA
+  year: 2002
+  type: primary
+  one_line_finding: Compression reduced hypertrophic zone height to 87% and cell height to 85% of control
+    while distraction changed neither
+- ref_id: valteau2011
+  pmid: '21784187'
+  first_author: Valteau B
+  year: 2011
+  type: primary
+  one_line_finding: Only static loading reduced plate thickness, proliferative cells per column and hypertrophic
+    cell height
+- ref_id: stokes2007
+  pmid: '17532281'
+  first_author: Stokes IA
+  year: 2007
+  type: primary
+  one_line_finding: Proliferative cell number and hypertrophic cell height correlate with growth rate
+    at r=0.38 and 0.56
+- ref_id: mnard2015
+  pmid: '26416149'
+  first_author: Menard AL
+  year: 2015
+  type: primary
+  one_line_finding: Plate height recovered fully within 10 days of load removal
+- ref_id: rodrguez2025
+  pmid: '40475877'
+  first_author: Rodriguez DQ
+  year: 2025
+  type: primary
+  one_line_finding: In FE models of endochondral growth, plate thickness is the most influential parameter
+    for mechanically driven shape change
+open_questions:
+- g_l6mech_002
+layer: L6
+stub: false
+last_verified: '2026-08-05'

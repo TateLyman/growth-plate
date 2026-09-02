@@ -1,0 +1,119 @@
+id: final_adult_height_endpoint
+name: Final adult height as a trial endpoint
+aliases: [near-adult height, NAH, attained adult height]
+type: method
+layer: L12
+stub: false
+summary: |
+  Final adult height is the only endpoint in this layer that cannot be gamed by
+  redistribution: it integrates everything the growth plate did before it closed. It is
+  also the endpoint almost no growth-promoting drug programme has reached. Across the
+  whole layer, attained final or near-adult height has been reported for GnRH agonists in
+  central precocious puberty (+3.5 to +4.5 cm), androgens in constitutional delay
+  (+1.78 cm, 95% CI 0.47-3.08), rhIGF-1 in severe primary IGF-1 deficiency (+0.9 height
+  SDS, 1.4 in treatment-naive prepubertal patients), aromatase inhibitors with rhGH in
+  ISS boys, and - as a negative - inhaled budesonide (-1.2 cm, 95% CI -1.9 to -0.5). It
+  has not been reported for any CNP analogue, for any FGFR3 inhibitor, or for any
+  long-acting growth hormone. The two categories must be kept apart in this atlas. Where
+  attained height is available, the interventions cluster at 1-4 cm, an order of magnitude
+  smaller than the cumulative integral of the velocity gains that preceded them. That
+  systematic shrinkage - most starkly in the aromatase inhibitor trial where a year-1
+  predicted-height gain vanished by years 2-3 - is the strongest available evidence that
+  the growth plate has a largely fixed total elongation capacity that pharmacology
+  redistributes in time more readily than it expands.
+quantitative:
+  - parameter: final adult height gain, GnRH agonist in central precocious puberty
+    value: '+3.5 to +4.5'
+    unit: cm
+    conditions: systematic review of 20 studies, 21,812 participants
+    species: human
+    source_ref: martn2026
+    uncertainty: range across studies; moderate-to-serious risk of bias
+  - parameter: final adult height gain, androgen therapy in constitutional delay
+    value: '+1.78'
+    unit: cm
+    conditions: meta-analysis of 13 retrospective cohorts, 803 boys
+    species: human
+    source_ref: wang2026
+    uncertainty: 95% CI 0.47-3.08, p=0.0076
+  - parameter: near-adult height gain, rhIGF-1 in severe primary IGF-1 deficiency
+    value: '+0.9'
+    unit: height SDS
+    conditions: 102 registry patients reaching near-adult height; 1.4 SDS in treatment-naive prepubertal patients
+    species: human
+    source_ref: ramonkrauel2026
+    uncertainty: SD 1.1
+  - parameter: adult height change, inhaled budesonide 400 ug/day in childhood
+    value: '-1.2'
+    unit: cm
+    conditions: CAMP randomised trial, adult height in 943 participants at mean age 24.9 y
+    species: human
+    source_ref: kelly2012
+    uncertainty: 95% CI -1.9 to -0.5, p=0.001
+  - parameter: CNP analogue and FGFR3 inhibitor programmes reporting attained final or near-adult height
+    value: '0'
+    unit: programmes
+    conditions: as of 2026-08-05; extension studies NCT03424018, NCT03989947 and NCT05145010 are active and have not reported
+    species: human
+    source_ref: nct05145010
+    uncertainty: absence established by search - see gaps g_l12pharm_001 and g_l12b_001
+localization:
+  - "not applicable: whole-organism endpoint"
+human_evidence: direct
+human_evidence_note: >-
+  Attained final or near-adult height has been measured in randomised trials, registries
+  and meta-analyses for several interventions in this layer, and not at all for others.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: >-
+  A human endpoint with no animal counterpart - mice do not undergo epiphyseal fusion, so
+  final adult height cannot be modelled in the standard preclinical species at all.
+confidence: A
+claim_grades:
+  - claim: Interventions with attained-height data cluster at 1-4 cm of gain.
+    grade: A
+    basis: Direct comparison of the meta-analytic and registry estimates listed above.
+  - claim: No CNP analogue or FGFR3 inhibitor has reported attained final or near-adult height.
+    grade: A
+    basis: Established by search across Europe PMC and ClinicalTrials.gov; the relevant extensions are registered as active.
+  - claim: Adult height gains are systematically smaller than the cumulative integral of the velocity gains that produced them.
+    grade: B
+    basis: Consistent across the interventions with both measures - most clearly the aromatase inhibitor trial where a year-1 predicted gain did not persist - but no intervention has both a velocity integral and an attained height measured in the same cohort with a control arm.
+key_refs:
+  - ref_id: martn2026
+    pmid: '42187530'
+    first_author: Martín Pérez IM
+    year: 2026
+    type: systematic_review
+    one_line_finding: GnRHa final adult height +3.5 to +4.5 cm across 20 studies, 21,812 participants.
+  - ref_id: wang2026
+    pmid: '41933328'
+    first_author: Wang L
+    year: 2026
+    type: meta_analysis
+    one_line_finding: Androgen therapy in constitutional delay +1.78 cm final adult height (95% CI 0.47-3.08).
+  - ref_id: ramonkrauel2026
+    pmid: '40626687'
+    first_author: Ramon-Krauel M
+    year: 2026
+    type: primary
+    one_line_finding: rhIGF-1 near-adult height gain 0.9 HtSDS in 102 registry patients.
+  - ref_id: kelly2012
+    pmid: '22938716'
+    first_author: Kelly HW
+    year: 2012
+    type: primary
+    one_line_finding: The only randomised trial in this layer with attained adult height as the endpoint - and it measures a loss, not a gain.
+  - ref_id: zegarra2024
+    pmid: '39262574'
+    first_author: Zegarra W
+    year: 2024
+    type: primary
+    one_line_finding: Year-1 predicted adult height gain did not persist to years 2-3 - the clearest documented non-conversion of an interim gain.
+  - ref_id: nct05145010
+    year: 2026
+    type: trial_registry
+    one_line_finding: The FGFR3-inhibitor extension registered as the designed route to final height data, not yet reporting.
+open_questions: [g_l12b_001, g_l12pharm_001]
+contradicts: []
+last_verified: '2026-08-05'

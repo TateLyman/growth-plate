@@ -1,0 +1,113 @@
+id: collagen_type_ix
+name: Collagen type IX (COL9A1/2/3)
+aliases:
+- COL9A1
+- COL9A2
+- COL9A3
+- FACIT collagen IX
+type: protein
+layer: L5
+stub: false
+summary: 'Collagen IX is a FACIT collagen that sits on the surface of the collagen II/XI fibril, covalently
+  attached by lysyl-oxidase-derived pyridinoline and divalent crosslinks at at least six identified sites
+  distributed across the alpha1(IX), alpha2(IX) and alpha3(IX) chains, all of which are occupied in matrix-resident
+  collagen IX. Its NC4 globular domain and COL3 domain project away from the fibril surface, so collagen
+  IX acts as a covalently anchored molecular projection from the fibril rather than as a load-bearing
+  lattice element. It is enriched on the thinnest fibrils of the pericellular basket. Functionally it
+  is not required for fibril formation: Col9a1-null mice have grossly normal skeletal development and
+  only develop non-inflammatory degenerative joint disease from about four months. It is required for
+  correct assembly of the fibril surface, since matrilin-3 fails to integrate normally into cartilage
+  matrix in collagen IX-null mice. In humans, COL9A1/2/3 mutations cause multiple epiphyseal dysplasia
+  (mild short stature and early osteoarthritis) rather than a lethal chondrodysplasia, which matches the
+  mouse: collagen IX is a fibril-surface organiser rather than a load-bearing element.'
+quantitative:
+- parameter: Collagen IX mass fraction, young growth cartilage
+  value: '>=10'
+  unit: '% of fibrillar collagen'
+  conditions: foetal/young growth cartilage
+  species: bovine
+  source_ref: eyre2002
+  uncertainty: lower bound
+  value_unverified: true
+- parameter: Collagen IX mass fraction, adult articular cartilage
+  value: ~1
+  unit: '% of fibrillar collagen'
+  conditions: adult articular cartilage
+  species: human
+  source_ref: eyre2002
+  uncertainty: not reported
+  value_unverified: true
+- parameter: Identified covalent crosslinking sites within the collagen IX molecule
+  value: '>=6'
+  unit: sites per molecule
+  conditions: peptide mapping of matrix-extracted collagen IX
+  species: bovine
+  source_ref: eyre2002
+  uncertainty: stated as at least six; all occupied in the matrix pool
+  value_unverified: true
+- parameter: Age at onset of degenerative joint disease in Col9a1-null mice
+  value: '4'
+  unit: months
+  conditions: Col9a1 null, both sexes
+  species: mouse
+  source_ref: fssler1994
+  uncertainty: not reported
+localization:
+- 'human growth plate: collagen IX present on fibrils of all diameters in all zones (keene1995)'
+- cartilage fibril surface, enriched on thin pericellular fibrils (eyre2002, hagg1998)
+human_evidence: indirect
+human_evidence_note: 'Human evidence is genetic: COL9A1/2/3 mutations cause multiple epiphyseal dysplasia;
+  no direct human growth plate biochemistry.'
+species_basis:
+- mouse
+- bovine
+- human
+translation_risk: moderate
+translation_risk_reason: Mouse null phenotype (late osteoarthritis, normal growth) and human MED (mild
+  short stature plus early OA) agree in kind, but the human quantitative growth deficit is not explained
+  by any mouse measurement.
+confidence: B
+key_refs:
+- ref_id: fssler1994
+  pmid: '8197187'
+  first_author: Fassler R
+  year: 1994
+  type: primary_abstract_only
+  one_line_finding: Col9a1-null mice have normal skeletal development but develop non-inflammatory degenerative
+    joint disease
+- ref_id: eyre2002
+  pmid: '11879535'
+  doi: 10.1186/ar380
+  first_author: Eyre D
+  year: 2002
+  type: review
+  one_line_finding: Young growth cartilage fibrils are <=80% collagen II, >=10% IX, >=10% XI by mass;
+    mature articular cartilage is >=90% II, ~1% IX, ~3% XI
+- ref_id: budde2005
+  pmid: '16287859'
+  first_author: Budde B
+  year: 2005
+  type: primary
+  one_line_finding: Matrilin-3 fails to integrate into cartilage matrix in collagen IX-null mice
+- ref_id: hagg1998
+  pmid: '9660881'
+  first_author: Hagg R
+  year: 1998
+  type: primary
+  one_line_finding: Decorin and collagen IX occupy biochemically distinct fibril subpopulations within
+    the same cartilage
+- ref_id: keene1995
+  pmid: '7560887'
+  first_author: Keene DR
+  year: 1995
+  type: primary
+  one_line_finding: In human juvenile rib growth plate collagen XI is restricted to fibrils <25 nm; hypertrophic
+    zone fibrils are thin, resting zone fibrils thick, proliferative zone mixed
+open_questions:
+- g_l5matrix_003
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  All three COL9A chains have independent human MED phenotypes; mass fractions measured against
+  the other fibrillar collagens.

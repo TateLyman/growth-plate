@@ -1,0 +1,75 @@
+id: finite_element_model_physis
+name: Finite element models of the physis
+aliases:
+- FE model growth plate mechanics
+type: method
+summary: |
+  Finite element modelling is how mechanical stress inside a growth plate is estimated,
+  because it cannot be measured in a living human (g_l6mech_003). Models have been used to
+  compute how tension-band plates alter mechanical loading of the femoral physis during guided
+  growth for coronal-plane deformity (hucke2023), how mechanical stimuli shape growth plate
+  morphology and trabecular adaptation (rodrguez2025), and how gait modification such as
+  changing foot progression angle alters hip contact forces and physeal mechanics
+  (koller2026). The models are only as good as three inputs, and each is weak for human
+  physis. Geometry is usually derived from clinical MRI or CT, which resolves plate thickness
+  but not zonal boundaries (mri_physis_imaging). Material properties are taken from animal
+  testing - porcine unconfined compression (sergerie2009), rabbit heterogeneous properties
+  (eckstein2022), ovine tensile properties (williams2001) - because zonal human physeal moduli
+  have never been measured, which is exactly gap g_l5matrix_001. And boundary conditions
+  require joint contact forces that are themselves modelled rather than measured. The output
+  stress fields are therefore best read as relative comparisons between surgical
+  configurations in the same model, not as absolute stresses in a real child's physis.
+quantitative:
+- parameter: human zonal physeal elastic moduli available for FE material assignment
+  value: '0'
+  unit: published values
+  conditions: hydrated human growth plate, per zone
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: see gap g_l5matrix_001
+localization:
+- 'in_silico RZ/PZ/HZ: zonal material properties assigned from animal data'
+human_evidence: indirect
+human_evidence_note: Human geometry is used, human material properties are not available and are
+  substituted from animal testing.
+species_basis:
+- in_silico
+- porcine
+- rabbit
+- ovine
+- human
+translation_risk: high
+translation_risk_reason: Absolute stress predictions depend on material constants that are animal-derived;
+  only relative comparisons within a model are defensible.
+confidence: C
+key_refs:
+- ref_id: hucke2023
+  first_author: Hucke K
+  year: 2023
+  type: primary
+  one_line_finding: Tension-band plates modelled to alter femoral growth plate loading during guided
+    growth.
+- ref_id: rodrguez2025
+  first_author: Rodriguez-Florez N
+  year: 2025
+  type: primary
+  one_line_finding: Mechanical stimuli modelled against growth plate morphology and trabecular adaptation.
+- ref_id: koller2026
+  first_author: Koller W
+  year: 2026
+  type: primary
+  one_line_finding: Foot progression angle modification alters hip contact forces and femoral growth
+    plate mechanics in silico.
+- ref_id: sergerie2009
+  first_author: Sergerie K
+  year: 2009
+  type: primary
+  one_line_finding: Porcine growth plate zonal mechanical properties - a standard source for FE material
+    assignment.
+open_questions:
+- g_l6mech_003
+- g_l5matrix_001
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

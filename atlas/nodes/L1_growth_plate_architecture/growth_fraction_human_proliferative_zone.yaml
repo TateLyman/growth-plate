@@ -1,0 +1,184 @@
+id: growth_fraction_human_proliferative_zone
+name: The human growth fraction - the unmeasured variable with the largest unexploited leverage
+type: process
+layer: L1
+stub: false
+summary: 'Cell production per column is the product of TWO quantities that a labelling percentage cannot separate:
+  how many proliferative-zone cells are in the division cycle at all (the GROWTH FRACTION) and how fast those cells
+  cycle. The human growth plate labels far below every other species measured - 4.4% and 3.4% of proliferative-zone
+  nuclei against 10-15% across nine bird species and comparable or higher figures in rat and rabbit - and this atlas,
+  on 2026-08-06, converted that into the claim that human chondrocytes cycle roughly ten to fifteen times more slowly
+  than rodent ones. THAT CONVERSION IS NOT SAFE, and the person who supplies the human number says so himself: the
+  low human labelling percentage is not unequivocal evidence that the dividing cells cycle more slowly, because the
+  human growth fraction may be low, and the cells actually in cycle could be dividing as fast as in rodents. The two
+  readings cannot currently be told apart, because THE DURATION OF S PHASE IN HUMAN GROWTH CARTILAGE HAS NEVER BEEN
+  MEASURED, and every route from a labelling percentage to a proliferation rate needs it. The distinction is not academic
+  and it is the reason this node exists. If human chondrocytes cycle intrinsically slowly, raising growth means speeding
+  up the rate-limiting biochemistry of the cell cycle in a differentiated cell - hard, and with no precedent. If instead
+  the growth fraction is low, then most of the human proliferative zone is idle at any moment and RECRUITMENT is the
+  lever: a multiplicative term currently sitting far below one, in a compartment that is known to be releasable, because
+  human resting zone cells held out of cycle in vivo re-enter it within days of explant. NOBODY HAS MEASURED IT, IN
+  EITHER DIRECTION, IN A HUMAN.'
+quantitative:
+- parameter: GROWTH FRACTION, MEASURED - the experiment this node called for, done in rat
+  value: 0.99 proximal tibia, 0.99 distal radius, 0.98 distal tibia, 0.89 proximal radius
+  unit: fraction of proliferative-zone chondrocytes in the division cycle
+  conditions: 28-day Long-Evans rats; CONTINUOUS bromodeoxyuridine from an implanted osmotic pump (20 mg/ml, 1 ul/h),
+    two rats culled at each of 12, 24, 48 and 72 h, four growth plates each. The labelling index rises to a plateau
+    and the plateau IS the growth fraction. Proximal tibia 43% at 12 h, 81% at 24 h, 99% at 48 h; proximal radius
+    15%, 37%, 69%, 89%
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'THIS IS THE DECISIVE COMPARATOR AND IT WAS ALREADY IN THE LITERATURE. In rat there is essentially
+    NO IDLE POOL - 89 to 99% of proliferative-zone chondrocytes are cycling, and the one plate below 99% is the slowest-growing
+    one, which is the direction a depletable-recruitment model would predict. It also validates the design this atlas
+    nominated for human tissue: continuous labelling to plateau, which is exactly the protocol avijgan2026br already
+    run on human biopsies in a shorter form. Maximum labelled nuclei over total; two animals per time point.'
+- parameter: 'DERIVED: duration of S phase in human growth cartilage'
+  value: 16 to 21 (about 8 to 32 carrying the source uncertainty)
+  unit: hours
+  conditions: 'derived by this atlas 2026-08-06 from the identity LABELLING INDEX = S / T_turn, where T_turn is the
+    mean inter-division time averaged over ALL proliferative-zone cells. The growth fraction CANCELS from this identity.
+    Inputs: human proliferative-zone labelling index 3.4-4.4% (kember1993) and human zone turnover time 20 days =
+    480 h (kember1976). Validated on rat, where the same identity with T_turn = 30.9/0.99 = 31.2 h and S = 3.4-6.1
+    h predicts a labelling index of 11-20%, matching the 9-15% reported in rodents'
+  species: human
+  source_ref: kember1993
+  uncertainty: 'GRADE E - THIS IS AN INFERENCE BY THIS ATLAS, NOT A MEASUREMENT, and it is recorded because it produces
+    a TENSION rather than a number. Against rat S phase of 3.4-6.1 h (wilsman1996a), 16-21 h is three to six times
+    longer. THE TENSION: if human S phase were rat-like at about 5 h, the same identity forces a zone turnover time
+    of about 114 h - roughly 5 days, not 20 - which is outside kember1976''s own +/-50% band. So at least one of three
+    things is true and the atlas does not choose: (a) human S phase really is long; (b) the 20-day turnover time is
+    an overestimate by about fourfold; (c) the 3.4-4.4% labelling index is an overestimate, which is plausible because
+    it comes from IN VITRO labelling of AMPUTATION SPECIMENS, tissue that may be reactive. ASSUMPTIONS: steady state,
+    the labelling index is a true S-phase fraction, and the two inputs describe comparable tissue - they do not, being
+    different bones and different specimens.'
+- parameter: WHY A SINGLE-PULSE LABELLING INDEX CAN NEVER SETTLE THE HUMAN GROWTH FRACTION
+  value: the growth fraction cancels out of the identity
+  unit: none
+  conditions: labelling index = growth fraction x S / cycle time = S / (cycle time / growth fraction) = S / T_turn
+  species: not_applicable
+  source_ref: wilsman1996
+  uncertainty: 'A STRUCTURAL POINT, NOT A FINDING, and it is why the nominated experiment stands. Every human proliferative
+    measurement ever made is a single-pulse labelling index, and no combination of single-pulse indices with a turnover
+    time can recover the growth fraction, because the two enter as a ratio. ONLY CUMULATIVE LABELLING TO PLATEAU SEPARATES
+    THEM - which is precisely what wilsman1996 did in rat and what nobody has done in human. The arithmetic does put
+    a FLOOR on the human growth fraction: since S cannot exceed the cycle time, the growth fraction must be at least
+    the labelling index, about 4%; and an S phase occupying no more than about a third of the cycle would put it above
+    roughly 15%.'
+- parameter: labelling percentage in the human proliferative zone
+  value: 4.4 and 3.4
+  unit: '% of nuclei labelled'
+  conditions: in vitro tritiated-thymidine labelling of a small number of amputation specimens from children; two
+    labelling profiles reported
+  species: human
+  source_ref: kember1993
+  uncertainty: TAKEN FROM A REVIEW FIGURE, NOT FROM THE PRIMARY - kember1993 reproduces these profiles from an earlier
+    report this atlas has not obtained, and the review states that knowledge of human growth plate labelling 'is largely
+    limited to these few specimens'. n is not given precisely. The number is recorded because it is the only human
+    labelling measurement the atlas has any access to, and it is graded accordingly. Amputation specimens are not
+    normal limbs.
+- parameter: labelling percentage in nine bird species, for comparison
+  value: 10 to 15 average, maxima 20
+  unit: '% of nuclei labelled in the proliferation zone'
+  conditions: 68 growth plates from a range of avian species including rhea, Abdim's stork and budgerigar; tritiated
+    thymidine, in vivo and in vitro [species recorded as "multiple" to stay inside the schema vocabulary; the literal
+    basis is nine BIRD species - rhea, Abdim's stork, budgerigar and others]
+  species: multiple
+  source_ref: kember1990
+  uncertainty: PRIMARY. The authors' point is that this quantity does NOT vary widely across species with very different
+    growth rates, which they read as general similarity of division rate; they are explicit that labelling percentage
+    and division rate are proportional only if S-phase duration does not differ greatly between species - the same
+    untested assumption that blocks the human comparison. THE HUMAN FIGURE IS ROUGHLY THREE TIMES LOWER THAN THE LOWEST
+    BIRD FIGURE.
+- parameter: DURATION OF S PHASE IN HUMAN GROWTH CARTILAGE
+  value: never measured
+  unit: hours
+  conditions: required to convert a labelling percentage into a proliferation rate by either thymidine or bromodeoxyuridine
+  species: human
+  source_ref: kember1993
+  uncertainty: RECORDED AS AN ABSENCE AND IT IS THE LOAD-BEARING ONE. Without it, a human labelling percentage bounds
+    the product of growth fraction and cycle speed and neither factor separately. Everything the atlas says about
+    human proliferative kinetics passes through this gap.
+- parameter: precision of the method that produced the human 20-day cycle time
+  value: about +/- 50; changes below 20 are undetectable
+  unit: '%'
+  conditions: 'the Sissons chain: growth rate = new cells per column per day x mean hypertrophic cell height, then
+    cell production rate = number of proliferating cells x their division rate'
+  species: not_applicable
+  source_ref: kember1993
+  uncertainty: 'THE AUTHOR''S OWN ASSESSMENT OF HIS OWN METHOD, and this atlas quoted the 20-day figure on 2026-08-06
+    without it. Twenty days +/- 50% is 10 to 30 days. The second clause matters just as much and in a different place:
+    if kinetic changes below 20% are beyond detection, then kember1976''s finding of ''no age dependence'' in human
+    terminal cell height means no trend LARGER THAN ROUGHLY 20% was detectable in twelve subjects - not that the parameter
+    is fixed. Corrected in CORR-014.'
+- parameter: is the human proliferative compartment releasable
+  value: yes in the resting zone, within days, ex vivo
+  unit: qualitative
+  conditions: intact human growth plate biopsies cultured with EdU overnight then IdU then CldU on subsequent days;
+    few resting zone cells took EdU, but IdU and CldU were incorporated
+  species: human
+  source_ref: avijgan2026br
+  uncertainty: 'This is the observation that makes a low growth fraction interesting rather than merely possible:
+    cells held out of cycle IN A PERSON re-enter it when the tissue is removed from its niche. IT IS NOT A GROWTH
+    FRACTION MEASUREMENT and must not be quoted as one - it is the resting zone rather than the proliferative zone,
+    it is release by explanting rather than by any agent, and no fraction is reported. What it establishes is that
+    the arrest is reversible and that the assay to measure the fraction already runs on human tissue.'
+localization:
+- proliferative zone of the human growth plate
+human_evidence: indirect
+human_evidence_note: There is no human growth fraction measurement. The human labelling percentages exist but come
+  to this atlas through a review, from few amputation specimens, and cannot be decomposed without an S-phase duration
+  nobody has measured. The node is a statement about what is not known, with the size of the consequence attached.
+species_basis:
+- chicken
+- human
+- rat
+translation_risk: high
+translation_risk_reason: The whole point of the node is that a rodent-to-human transfer already made in this atlas
+  was unsafe. Any further transfer of proliferative kinetics across species carries the same unresolved factor.
+confidence: D
+confidence_note: 'D. The human labelling numbers are second-hand from a review of few specimens; the central claim
+  is a statement that two hypotheses cannot be distinguished; and the only supporting human observation (reversible
+  arrest ex vivo) is in the wrong zone and reports no fraction. D is right and the node is worth holding at D because
+  the QUESTION is well posed, the measurement is now feasible in human tissue, and the difference between the two
+  answers is the difference between a hard target and an open one. REVISED 2026-08-06 after reading wilsman1996 in
+  full. The node is stronger and still D. Stronger because the comparator is now a MEASUREMENT rather than an assumption
+  - rat growth fraction is 0.89-0.99, so the rodent plate has essentially no idle pool, and any human deficit is a
+  real species difference rather than a methodological one. Still D because the human side is unchanged: a review-sourced
+  labelling index from few amputation specimens, and a derived S phase graded E that resolves into a three-way tension
+  rather than a value.'
+key_refs:
+- ref_id: kember1993
+  pmid: '8219479'
+  first_author: Kember NF
+  year: 1993
+  type: review
+  one_line_finding: States that the low human labelling percentage is not unequivocal evidence of slow cycling because
+    the growth fraction may be low, that human S-phase duration has never been measured, and that the cell-production
+    method is about +/-50% precise.
+- ref_id: kember1990
+  pmid: '2267417'
+  first_author: Kember NF
+  year: 1990
+  type: primary
+  one_line_finding: Avian labelling percentage 10-15% across nine species with little variation, against 4.4/3.4%
+    in human.
+- ref_id: avijgan2026br
+  pmid: '42552306'
+  first_author: Avijgan M
+  year: 2026
+  type: primary
+  one_line_finding: Human resting zone cells held out of cycle in vivo re-enter it within days of explant - reversible
+    arrest, in human tissue.
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Growth fraction measured by continuous BrdU at 0.89-0.99 across four rat growth plates - the rodent
+    plate has essentially no idle proliferative pool.
+open_questions:
+- g_l1arch_human_growth_fraction
+- g_l1arch_human_s_phase
+last_verified: '2026-08-06'

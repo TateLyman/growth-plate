@@ -1,0 +1,123 @@
+id: secular_trend_height
+name: Secular trend in adult height
+type: process
+aliases:
+- secular increase in stature
+- positive secular trend
+summary: 'Between the 1896 and 1996 birth cohorts, mean adult height rose in almost every country for
+  which measured data exist, and the size of that rise is the tightest empirical bound the atlas has on
+  how much of human stature is environmentally set. In a Bayesian pooled reanalysis of 1472 population-based
+  studies with measured (not self-reported) height on 18.6 million adults in 200 countries, the largest
+  century-scale gains were +20.2 cm in South Korean women (95% CrI 17.5-22.7) and +16.5 cm in Iranian
+  men (13.3-19.7) - about 2.0 and 1.65 cm per decade sustained for a hundred years (ncd2016). The rate
+  is not constant: in German armed-forces conscripts born 1865-1975 it moved from 0.45 mm/yr before 1916
+  to 2.15 mm/yr in 1916-1933, 1.87 mm/yr in the early Federal Republic, 1.45 mm/yr in the late Federal
+  Republic, and 4 mm/yr in East German conscripts after 1989 (scheffler2025), so the trend tracks political
+  and economic discontinuities rather than a smooth nutritional ramp. The trend is also age-structured:
+  in the Zurich Longitudinal Studies (n=236, born 1978-1993) height rose 0.35-0.46 SD per decade at ages
+  4, 9 and 14 but was no longer detectable at age 18 (eichelberger2024), so part of the secular change
+  is tempo rather than final size. No study has measured the growth plate, the GH-IGF axis or any chondrocyte
+  parameter across a secular gradient, so the route from a population''s improving environment to a longer
+  femur is an inference, not an observation.'
+quantitative:
+- parameter: largest century-scale gain in mean adult height, any population
+  value: '20.2'
+  unit: cm
+  conditions: South Korean women, 1896 vs 1996 birth cohorts
+  species: human
+  source_ref: ncd2016
+  uncertainty: 95% credible interval 17.5-22.7
+- parameter: largest century-scale gain in mean adult height, men
+  value: '16.5'
+  unit: cm
+  conditions: Iranian men, 1896 vs 1996 birth cohorts
+  species: human
+  source_ref: ncd2016
+  uncertainty: 95% credible interval 13.3-19.7
+- parameter: implied maximum sustained secular rate
+  value: '2.0'
+  unit: cm/decade
+  conditions: South Korean women; derived by dividing the reported 100-year gain by 10, not a measured
+    decadal slope
+  species: human
+  source_ref: ncd2016
+  uncertainty: range implied by the 17.5-22.7 cm credible interval is 1.75-2.27 cm/decade
+- parameter: secular rate, German male conscripts, born before 1916
+  value: '0.45'
+  unit: mm/yr
+  conditions: German armed forces conscripts
+  species: human
+  source_ref: scheffler2025
+  uncertainty: not reported
+- parameter: secular rate, German male conscripts, 1916-1933
+  value: '2.15'
+  unit: mm/yr
+  conditions: German armed forces conscripts
+  species: human
+  source_ref: scheffler2025
+  uncertainty: not reported
+- parameter: secular rate, East German male conscripts after 1989 reunification
+  value: '4'
+  unit: mm/yr
+  conditions: post-reunification East German conscripts
+  species: human
+  source_ref: scheffler2025
+  uncertainty: not reported
+- parameter: secular trend in height at ages 4 / 9 / 14 / 18
+  value: 0.35 / 0.46 / 0.38 / not detectable
+  unit: SD per decade
+  conditions: Zurich Longitudinal Studies, n=236, born 1978-1993
+  species: human
+  source_ref: eichelberger2024
+  uncertainty: n=236; significance as reported by the authors
+localization:
+- 'human SYS: population-level phenotype, not zone-localized'
+human_evidence: direct
+human_evidence_note: 'Entirely human: 18.6 million measured adult heights across 200 countries and 100
+  birth cohorts, plus national conscript and longitudinal cohort series.'
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A human population measurement; no animal extrapolation is involved.
+confidence: B
+claim_grades:
+- claim: Mean adult height rose by up to about 20 cm over the 20th century in the fastest-changing populations.
+  grade: A
+  basis: 1472 measured-height studies, 18.6M participants, Bayesian pooled estimates with credible intervals
+    (ncd2016).
+- claim: The rate of secular gain changes step-wise with political and economic regime rather than smoothly.
+  grade: B
+  basis: German conscript series 1865-1975 with period-specific slopes and coherence analysis (scheffler2025);
+    single country, ecological design.
+- claim: The secular gain is transduced through the GH-IGF axis acting at the growth plate.
+  grade: E
+  basis: No measurement of GH, IGF-1, bone age or growth plate morphology across a secular gradient exists;
+    inference from nutrition-IGF-1 intervention studies.
+key_refs:
+- ref_id: ncd2016
+  pmid: '27458798'
+  first_author: NCD Risk Factor Collaboration (NCD-RisC).
+  year: 2016
+  type: primary
+  one_line_finding: Pooled 1472 measured-height studies (18.6M adults, 200 countries, 1896-1996 birth
+    cohorts); largest gains +20.2 cm in South Korean women and +16.5 cm in Iranian men.
+- ref_id: scheffler2025
+  pmid: '40589335'
+  first_author: Scheffler C
+  year: 2025
+  type: primary
+  one_line_finding: 'German conscript height slopes by period: 0.45, 2.15, 1.87, 1.45 and 4 mm/yr, with
+    the largest increments in periods of political upheaval.'
+- ref_id: eichelberger2024
+  pmid: '38741909'
+  first_author: Eichelberger DA
+  year: 2024
+  type: primary
+  one_line_finding: In 236 Zurich Longitudinal Study participants the positive secular trend in height
+    was present at ages 4-14 (0.35-0.46 SD/decade) but absent at age 18.
+open_questions:
+- g_l10env_005
+- g_l10env_008
+layer: L10
+stub: false
+last_verified: '2026-08-05'

@@ -1,0 +1,94 @@
+id: mesenchymal_condensation
+name: Mesenchymal condensation
+aliases:
+- precartilage condensation
+- cartilage anlage formation
+type: process
+summary: 'Every endochondral element begins as a local aggregation of limb bud mesenchyme that raises cell
+  density and turns on SOX9. The single most load-bearing recent result for this atlas is that the condensation
+  is already spatially partitioned in a way the postnatal growth plate inherits: Fgfr3-creER pulsed at the
+  condensation stage in mouse marks cells that contribute exclusively to hypertrophic chondrocytes and to the
+  DORSAL side of the resting and proliferative zones, and their descendants remain dorsally restricted through
+  growth plate chondrocytes, trabecular and cortical osteoblasts and marrow stroma; diphtheria-toxin ablation
+  of these cells at the condensation stage severely disrupts long bone development (wu2025). The postnatal
+  plate is therefore not a homogeneous field seeded at random - it carries a dorsoventral compartment map laid
+  down before cartilage exists. A second, older claim is repeated widely and is NOT supported by a measurement:
+  that all long bone condensations start at a similar size and diverge only later. It is cited as such (lui2018
+  citing Hall and Miyake), but no study retrieved reports condensation cell number, volume or density measured
+  across elements that end up 10-20 fold different in length. That quantitative hole is logged as g_l0dev_003.'
+quantitative:
+- parameter: published measurements of condensation cell number or volume compared across skeletal elements
+    of different final length
+  value: '0'
+  unit: studies retrieved
+  conditions: Europe PMC 2026-08-05, query in search log g_l0dev_003
+  species: not_applicable
+  source_ref: lui2018
+  uncertainty: null result of a literature search, not a measurement
+  value_unverified: true
+localization:
+- 'mouse limb bud E11.5-E12.5 condensation: Fgfr3-creER marks dorsally restricted progenitors (wu2025)'
+- 'human embryo 5-11 post-conception weeks: condensation-stage osteoprogenitor trajectories resolved by snRNA/snATAC
+  and spatial transcriptomics (to2024)'
+human_evidence: indirect
+human_evidence_note: Human condensation-stage cells have been profiled transcriptionally and spatially in 5-11
+  post-conception week embryos (to2024), but no human lineage tracing or ablation is possible, so no human
+  cell-fate claim can be made.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: The compartment-inheritance result is a single mouse study using two inducible Cre
+  lines; humans cannot be lineage traced and the dorsoventral compartmentalisation of the human plate is unexamined.
+confidence: D
+claim_grades:
+- claim: Condensation-stage progenitors are spatially compartmentalised and their descendants occupy restricted
+    territories of the postnatal growth plate
+  grade: D
+  basis: single mouse study with Fgfr3-creER and Dlx5-creER lineage tracing plus DTA ablation (wu2025)
+- claim: Condensation is required for long bone formation
+  grade: B
+  basis: condensation-stage DTA ablation abolishes normal long bone development in mouse; Sox9-null cells excluded
+    from condensations never form cartilage
+- claim: All long bone condensations start at similar size and diverge later
+  grade: X
+  basis: repeated in reviews and in the introduction of lui2018 but no primary measurement across elements
+    was retrievable
+key_refs:
+- ref_id: wu2025
+  pmid: '40581360'
+  doi: 10.1093/jbmr/zjaf086
+  first_author: Wu S
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: Fgfr3-creER condensation-stage cells contribute exclusively to hypertrophic chondrocytes
+    and the dorsal resting/proliferative zones, and their ablation disrupts long bone development
+- ref_id: to2024
+  pmid: '39567793'
+  doi: 10.1038/s41586-024-08189-z
+  first_author: To K
+  year: 2024
+  type: primary
+  one_line_finding: Human embryonic multi-omic atlas resolves condensation-stage chondro- and osteoprogenitor
+    trajectories at 5-11 post-conception weeks
+- ref_id: bi1999
+  pmid: '10319868'
+  first_author: Bi W
+  year: 1999
+  type: primary_abstract_only
+  one_line_finding: Sox9-null cells are excluded from mesenchymal condensations and never form cartilage in
+    mouse chimeras
+- ref_id: lui2018
+  pmid: '30036371'
+  doi: 10.1371/journal.pbio.2005263
+  first_author: Lui JC
+  year: 2018
+  type: primary
+  one_line_finding: States, citing review literature, that long bone condensations are of similar size and
+    diverge only in later growth
+open_questions:
+- g_l0dev_003
+- g_l0dev_008
+layer: L0
+stub: false
+last_verified: '2026-08-05'

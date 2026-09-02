@@ -1,0 +1,797 @@
+# Gap shard for Layer L11 (pathology as natural experiment).
+# Merged into atlas/gaps/gaps.yaml by atlas/tools/merge_shards.py
+gaps:
+- gap_id: g_l11path_001
+  question: Within genetically confirmed achondroplasia, does the specific FGFR3 allele (c.1138G>A
+    vs c.1138G>C, both G380R; and the rarer non-G380R achondroplasia alleles) explain any of the
+    residual variance in adult height?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: Achondroplasia is presented as a single-allele disorder with a fixed adult height
+    of ~132/124 cm, yet the reported variability around that mean is as wide as in the general population.
+    If part of that variance is allelic rather than polygenic, then vosoritide and infigratinib trials
+    are pooling responders and non-responders, and the field's baseline expectation for an individual
+    patient is wrong. It also determines whether FGFR3 output is a graded rheostat across the whole
+    series or only between the named syndromes.
+  what_is_known: The two nucleotide changes at position 1138 both produce G380R and are conventionally
+    treated as equivalent. Naski 1996 shows K650E > G380R in constitutive activity, establishing
+    that graded activation exists ACROSS syndromes. Merker 2018 reports adult height 132 cm (M) /
+    124 cm (F) in 466 European children with variability comparable to the general population, but
+    does not stratify by allele.
+  what_is_missing: No published cohort reports adult height stratified by achondroplasia genotype.
+    No study partitions achondroplasia height variance into allelic, parental-height (polygenic)
+    and environmental components.
+  nearest_evidence:
+  - merker2018
+  - naski1996
+  - shiang1994
+  discriminating_experiment: Take an existing genotyped achondroplasia registry with attained adult
+    heights (LIAISE, ACHieve, or the European growth-reference cohort), stratify by c.1138G>A vs
+    c.1138G>C vs non-G380R alleles, and regress adult height on allele with mid-parental height as
+    a covariate. Under the 'single allele, fixed phenotype' hypothesis the allele term is null and
+    mid-parental height carries the variance; under a graded-rheostat hypothesis the non-G380R alleles
+    separate by >1 SD and the two G380R nucleotide changes do not.
+  tractability: 4
+  search_log_ref: search_log_l11path_001
+- gap_id: g_l11path_002
+  question: Has the growth plate of any living person with achondroplasia, hypochondroplasia or SADDAN
+    ever been described histologically?
+  type: search_established
+  layer: L11
+  why_it_matters: Every mechanistic claim in the atlas about which zone FGFR3 acts on in humans -
+    shortened proliferative columns, truncated hypertrophic zone, disrupted resting-zone turnover
+    - is currently imported from mouse models or from autopsy material of the LETHAL variants. If
+    the non-lethal FGFR3 disorders differ zonally from the lethal ones (and Wilcox 1998 already shows
+    that K650E plates are better preserved than R248C plates, so zonal phenotype is not monotonic
+    in severity), the whole zonal model for achondroplasia rests on an extrapolation from a different
+    allele class.
+  what_is_known: Wilcox 1998 read growth plate histopathology in 91 thanatophoric dysplasia cases
+    from the International Skeletal Dysplasia Registry and found genotype-dependent differences in
+    preservation. Mouse Fgfr3 models give detailed zonal data, most recently resting-zone turnover
+    disruption via CREB. Human iliac and physeal tissue is obtainable at guided-growth and limb-lengthening
+    surgery, which achondroplasia patients undergo frequently.
+  what_is_missing: No histological description of a growth plate from a living achondroplasia, hypochondroplasia
+    or SADDAN patient. Limb lengthening and epiphysiodesis are performed routinely in this population
+    and the resected or biopsied physeal tissue is not being characterised.
+  nearest_evidence:
+  - wilcox1998
+  - horike2026
+  - merker2018
+  discriminating_experiment: Consent a prospective series of achondroplasia patients undergoing guided
+    growth or limb lengthening for physeal biopsy at the osteotomy site, with age- and site-matched
+    control physeal tissue from trauma or leg-length-discrepancy surgery. Read zone heights, column
+    organisation, proliferative index (Ki67) and collagen X extent. Under the mouse-derived model
+    the proliferative zone is selectively shortened with an intact resting zone; under the CREB/resting-zone-turnover
+    model the resting zone is depleted and the proliferative deficit is secondary.
+  tractability: 3
+  search_log_ref: search_log_l11path_002
+- gap_id: g_l11path_003
+  question: What is the adult height distribution of genetically confirmed hypochondroplasia, in
+    cm by sex, and does the FGFR3 N540K genotype differ from the non-N540K genotypes?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: Hypochondroplasia is the intermediate rung of the FGFR3 dose ladder and is the
+    rung with no number. Without a cohort adult height for hypochondroplasia the ladder has a value
+    at the achondroplasia rung (132/124 cm), a value at the lethal rung (no adult height), and a
+    hole in between, so the human dose-response for FGFR3 activation cannot be drawn. Hypochondroplasia
+    is also the indication now being pursued for infigratinib, and a trial without a natural-history
+    endpoint cannot demonstrate benefit on adult height.
+  what_is_known: N540K accounts for 50-70 percent of hypochondroplasia; K650N and K650Q give hypochondroplasia-like
+    disease with weaker kinase activation than the thanatophoric alleles. A 20-patient N540K series
+    reports mean age, follow-up, genu varum and macrocephaly frequencies and GH response but not
+    attained adult height by sex. A six-patient GH series reports a baseline height SDS of -3.43
+    and concludes final height remained inadequate.
+  what_is_missing: No published adult height in cm with SD and n for hypochondroplasia, and no comparison
+    of attained height between N540K and non-N540K genotypes.
+  nearest_evidence:
+  - bellus1995
+  - bellus2000
+  - kim2023
+  discriminating_experiment: Assemble genotyped hypochondroplasia patients who have reached adult
+    height from the existing European and Asian skeletal dysplasia registries; report height in cm
+    by sex with SD and n, stratified by N540K versus other FGFR3 alleles, excluding GH-treated patients
+    or analysing them separately. Under a graded FGFR3 rheostat, N540K sits between achondroplasia
+    and normal and the non-N540K alleles spread around it in the order predicted by their in vitro
+    kinase activity; under a threshold model all hypochondroplasia genotypes converge on one height.
+  tractability: 4
+  search_log_ref: search_log_l11path_003
+- gap_id: g_l11path_004
+  question: Why is FGFR3 K650M (SADDAN) survivable when K650E (thanatophoric dysplasia type II) is
+    lethal, despite K650M producing roughly three times the constitutive receptor kinase activity?
+  type: contradiction
+  layer: L11
+  why_it_matters: This is the single observation that falsifies the simplest model of the whole FGFR3
+    series - that phenotype severity is a monotonic function of receptor activation strength. If
+    the scalar model is wrong, then drug development premised on 'reduce FGFR3 kinase output' (infigratinib,
+    TYRA-300) is targeting a quantity that does not by itself determine outcome, and the relevant
+    variable is pathway bias, receptor localisation or tissue distribution.
+  what_is_known: Tavormina 1999 measured ~3-fold greater constitutive kinase activity for K650M than
+    for K650E in transient transfection, and reported four unrelated K650M individuals surviving
+    past infancy without prolonged life support. Bellus 2000 showed the same codon generates weakly
+    activating alleles (K650N, K650Q) that cause hypochondroplasia-like disease. Wilcox 1998 independently
+    found that K650E growth plates are BETTER preserved than R248C and Y373C plates, a second non-monotonicity
+    in the same series.
+  what_is_missing: No study has compared downstream pathway usage (MAPK/ERK vs STAT1 vs PLCgamma),
+    receptor trafficking, or ligand dependence between K650M and K650E in chondrocytes rather than
+    in generic transfected cells. Lethality in thanatophoric dysplasia is respiratory, driven by
+    thoracic cage and cranial base geometry, and no study has asked whether the two alleles differ
+    in their effect on those specific skeletal elements rather than on the long bones.
+  nearest_evidence:
+  - tavormina1999
+  - bellus2000
+  - wilcox1998
+  discriminating_experiment: Express K650M and K650E FGFR3 at matched levels in human iPSC-derived
+    chondrocytes and in a costal-cartilage explant model; quantify phospho-ERK, phospho-STAT1 and
+    receptor surface residence, and measure rib and cranial base growth in matched knock-in mouse
+    alleles. Under the scalar model K650M shows uniformly greater signalling and worse growth on
+    every readout; under a pathway-bias model K650M exceeds K650E on ERK but not on STAT1, and STAT1
+    output tracks the lethal thoracic phenotype.
+  tractability: 3
+- gap_id: g_l11path_005
+  question: Has the growth plate of any patient with an NPR2 or NPPC dosage disorder - AMDM, NPR2
+    haploinsufficiency, NPR2 gain of function, or NPPC overexpression - ever been examined histologically?
+  type: search_established
+  layer: L11
+  why_it_matters: The CNP axis is the target of an approved drug (vosoritide) and of several agents
+    in trials, and the entire mechanistic rationale - that CNP/NPR2/cGMP/PKG-II acts on proliferative
+    and hypertrophic chondrocytes - is derived from mouse, rat, dog and in vitro systems. AMDM is
+    the human null and its growth plate has never been read. Without human tissue there is no way
+    to know whether the human growth plate uses the same zonal distribution of NPR2 as the mouse,
+    which is the assumption every dose calculation for vosoritide rests on.
+  what_is_known: Npr2- and Nppc-deficient mice and rats, the cn/cn dwarf mouse corresponding to AMDM,
+    and Dalmatian dogs with a PRKG2 nonsense mutation all have detailed growth plate histomorphometry.
+    In humans, Bartels 2004 established biallelic NPR2 loss of function in 21 families with in vitro
+    guanylyl cyclase assays; Olney 2006 measured plasma CNP and NT-proCNP in an AMDM proband and
+    in carriers. None of these studies examined human cartilage.
+  what_is_missing: No human growth plate histology, immunohistochemistry or in situ hybridisation
+    in any NPR2 or NPPC dosage disorder, and no human zonal map of NPR2 protein in a normal growth
+    plate against which a patient could be compared.
+  nearest_evidence:
+  - bartels2004
+  - olney2006
+  - hisadooliva2015
+  discriminating_experiment: AMDM patients undergo corrective osteotomy and limb lengthening; consent
+    a biopsy protocol at those procedures and compare against age- and site-matched physeal tissue
+    from trauma surgery. Stain for NPR2, phospho-VASP (a PKG activity reporter) and collagen X, and
+    measure zone heights. Under the mouse-derived model the proliferative and hypertrophic zones
+    are both shortened with reduced hypertrophic cell volume; under a matrix-synthesis model the
+    cell numbers are preserved and only the matrix per cell is reduced.
+  tractability: 3
+  search_log_ref: search_log_l11path_005
+- gap_id: g_l11path_006
+  question: What is the effect size in cm or SDS of NPR2 gain of function and of NPPC overexpression
+    on adult height, and does it scale with the measured increase in cGMP?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: The CNP axis is the only human growth pathway with documented loss-of-function
+    AND gain-of-function alleles AND a measurable circulating second messenger (blood cGMP) AND an
+    approved agonist drug. That combination would make it the first human signalling axis in the
+    skeleton with a complete dose-response curve from receptor output to adult height - which is
+    precisely the curve needed to predict how much height a CNP analogue can deliver. Half the curve
+    is quantified and half is not.
+  what_is_known: 'The loss-of-function arm is quantified: NPR2 heterozygotes are -1.8 +/- 1.1 SDS
+    versus -0.4 +/- 0.8 in non-carrier relatives, a ~1.4 SD effect per lost allele. The gain-of-function
+    arm is described only per individual: ''tall stature'' with V883M, ''extremely tall'' with R655C,
+    ''marfanoid habitus'' with the NPPC translocations. Blood cGMP was elevated in the V883M family
+    and plasma NT-proCNP was reduced in the R655C proband, so the transducer has been measured in
+    the same people whose height was not tabulated.'
+  what_is_missing: No pooled adult height in cm or SDS, with sex and n, for any NPR2 gain-of-function
+    allele or NPPC overexpression rearrangement; and no regression of height SDS on circulating cGMP
+    or NT-proCNP across the reported carriers.
+  nearest_evidence:
+  - olney2006
+  - miura2012
+  - hannema2013
+  - bocciardi2007
+  discriminating_experiment: Recontact the published NPR2 gain-of-function and NPPC-rearrangement
+    pedigrees (V883M three-generation family, R655C proband, the submembrane-deletion family, the
+    t(2;7) and t(1;2) probands, and the NPR3 loss-of-function tall-stature families), collect adult
+    heights in cm with sex and mid-parental height, and pair them with plasma cGMP and NT-proCNP.
+    Under a linear cGMP-to-height model the height SDS regresses monotonically on cGMP across loss
+    and gain alleles alike; under a saturating model the gain-of-function alleles gain much less
+    height than the loss-of-function alleles lose.
+  tractability: 4
+- gap_id: g_l11path_007
+  question: Has the growth plate in Laron syndrome or any other form of severe GH insensitivity ever
+    been examined histologically in a human?
+  type: search_established
+  layer: L11
+  why_it_matters: 'The Ecuadorian GHR-deficiency cohort shows that loss of GH-IGF-I signalling produces
+    DISproportionate growth - the lowest lower-segment/height and the highest head-circumference/height
+    ratios - contradicting the standard assumption that the axis scales the skeleton uniformly. That
+    result demands a cellular explanation: either GH/IGF-I acts differently on different growth plates,
+    or the growth plates are the same and the difference arises from differing baseline growth rates.
+    Human tissue is the only way to distinguish them, and it has never been obtained despite a geographically
+    clustered cohort of over 100 affected individuals followed for decades.'
+  what_is_known: Guevara-Aguirre 2025 characterised body proportions in 201 adults and showed serum
+    IGF-I correlates positively with all body measurements and negatively with head-circumference/height.
+    Ghr-null mice have detailed growth plate histology showing reduced hypertrophic chondrocyte size.
+    STAT5B-null and IGF1-null humans exist with full endocrine phenotyping but no cartilage sampling.
+  what_is_missing: No histology, immunohistochemistry or zonal measurement of a human growth plate
+    in GH receptor deficiency, STAT5B deficiency, IGF1 deficiency, IGF1R deficiency or PAPP-A2 deficiency.
+  nearest_evidence:
+  - guevaraaguirre2025
+  - hwa2005
+  - dauber2016
+  discriminating_experiment: In the Ecuadorian or Israeli GHR-deficiency cohorts, obtain physeal
+    tissue at orthopaedic procedures already being performed (or post mortem with consent) and compare
+    zone heights and hypertrophic chondrocyte volume against site-matched controls from the same
+    population. Under a uniform-scaling model all zones are proportionally reduced at every site;
+    under the disproportionality data the femoral/tibial hypertrophic zone is selectively reduced
+    relative to the vertebral one.
+  tractability: 2
+  search_log_ref: search_log_l11path_007
+- gap_id: g_l11path_008
+  question: In humans, what fraction of growth plate elongation is driven by circulating (hepatic)
+    IGF-I versus locally produced IGF-I within the growth plate?
+  type: known_unknown
+  layer: L11
+  why_it_matters: This determines whether systemic IGF-I concentration is a valid target or merely
+    a biomarker. Laron syndrome (no GH signal anywhere), STAT5B deficiency (no IGF1 transcription),
+    IGF1 biallelic deletion (no ligand at all) and PAPP-A2 deficiency (normal total but low free
+    IGF-I) form a natural human series that in principle separates the two sources, because they
+    differ in whether local IGF-I production is preserved. Getting this wrong means mecasermin dosing
+    is targeted at the wrong compartment.
+  what_is_known: The four human disorders and their biochemical signatures are established. PAPP-A2
+    deficiency in particular shows that total IGF-I can be HIGH while free IGF-I is low and growth
+    fails, proving that the bioavailable fraction rather than the measured total is the growth-relevant
+    variable. Liver-specific Igf1 knockout mice grow almost normally despite a large fall in circulating
+    IGF-I, which is the strongest argument for the local source - but it is a mouse result.
+  what_is_missing: No human condition selectively removes hepatic IGF-I while preserving local growth
+    plate IGF-I, so the mouse dissociation has no human counterpart; and no measurement of IGF-I
+    protein or transcript in human growth plate tissue from any of these disorders exists.
+  nearest_evidence:
+  - dauber2016
+  - hwa2005
+  - guevaraaguirre2025
+  - woods1996
+  discriminating_experiment: 'Combine two readouts: (i) in PAPP-A2 deficiency, measure the height
+    velocity response to rhIGF-1 (which raises free IGF-I systemically) against the response to recombinant
+    PAPP-A2 (which liberates IGF-I from existing complexes); (ii) quantify IGF1 transcript in physeal
+    biopsies from GHR-deficient versus control humans. Under a dominant endocrine model both interventions
+    give equal velocity gain and physeal IGF1 transcript is unchanged in GHR deficiency; under a
+    dominant local model physeal IGF1 transcript is markedly reduced in GHR deficiency and systemic
+    free IGF-I correlates poorly with velocity.'
+  tractability: 2
+- gap_id: g_l11path_009
+  question: What is the upper bound of human growth plate elongation - how tall can a growth plate
+    driven by lifelong GH excess from infancy actually make a person, and what terminates it?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: X-LAG provides a human experiment that starts GH excess in infancy and runs it
+    for the entire growth period, which is the maximal possible drive on a structurally normal growth
+    plate. The resulting adult heights define the ceiling of human longitudinal growth capacity,
+    which is the number every growth-promoting therapy is implicitly trying to approach. It also
+    tests whether the growth plate has a finite proliferative reserve (Layer L2) or whether elongation
+    is limited only by fusion timing.
+  what_is_known: Rostomyan 2015 characterised 208 pituitary gigantism patients with an inclusion
+    criterion of final height >2 SD above country means; median onset of rapid growth was 13 years
+    overall, but every X-LAG patient had onset in early childhood while no non-duplicated patient
+    presented before age 5. Trivellin 2014 established the Xq26.3/GPR101 mechanism in 13 of 43 gigantism
+    patients.
+  what_is_missing: No published analysis relating attained adult height in gigantism to age at onset
+    of GH excess and to duration of exposure, and no test of whether X-LAG patients (earliest onset,
+    longest exposure) reach greater adult heights than later-onset gigantism after adjusting for
+    treatment and for age at biochemical control.
+  nearest_evidence:
+  - rostomyan2015
+  - trivellin2014
+  discriminating_experiment: Within the existing international gigantism cohort, regress attained
+    adult height on age at onset of GH excess, duration of uncontrolled excess and age at epiphyseal
+    fusion, stratified by genetic cause (X-LAG, AIP, McCune-Albright, sporadic). Under a fusion-limited
+    model adult height rises with duration of exposure without plateau until fusion; under a proliferative-reserve
+    model height plateaus despite continued exposure, and the earliest-onset X-LAG patients gain
+    no more than later-onset patients with the same fusion age.
+  tractability: 3
+- gap_id: g_l11path_010
+  question: Has a growth plate from a person with ACAN haploinsufficiency ever been examined, and
+    does the human lesion match the impaired-hypertrophy mechanism found in the Acan+/- mouse?
+  type: search_established
+  layer: L11
+  why_it_matters: ACAN haploinsufficiency is common enough to account for a meaningful share of idiopathic
+    short stature and it is the disorder that dissociates height from bone age, so it is the human
+    system in which the coupling between growth and maturation could be mechanistically resolved.
+    The only mechanistic account - reduced extracellular matrix with impaired chondrocyte HYPERTROPHY
+    and largely preserved proliferation, mediated by Camk1D suppression of Akt - is entirely mouse.
+    If the human lesion is instead a proliferative one, then the advanced bone age and the early
+    growth cessation require a different explanation and GH therapy expectations change.
+  what_is_known: Gkourogianni 2017 gives adult height -2.8 SDS, childhood height -2.0 SDS and bone
+    age +1.3 years in 103 carriers from 20 families. Bendre 2025 provides the Acan+/- mouse histomorphometry
+    and single-cell transcriptomics. ACAN patients frequently undergo osteochondritis dissecans surgery
+    and joint procedures at which cartilage is removed.
+  what_is_missing: No human growth plate or physeal cartilage from an ACAN mutation carrier has been
+    described. No human study distinguishes whether the height deficit arises from reduced growth
+    per unit time or from a shortened growth period, despite the childhood-versus-adult SDS difference
+    implying the latter contributes.
+  nearest_evidence:
+  - gkourogianni2017
+  - bendre2025
+  - tatsi2017
+  discriminating_experiment: Obtain physeal or peri-physeal cartilage at surgery from ACAN-mutation
+    carriers (a population already over-represented in paediatric orthopaedic clinics for osteochondritis
+    dissecans) and measure zone heights, hypertrophic cell volume, Ki67 index and aggrecan content
+    against site-matched controls. Under the mouse-derived model hypertrophic cell volume and matrix
+    content fall while the proliferative index is preserved; under a proliferative model the proliferative
+    zone is short and hypertrophic cell size is normal.
+  tractability: 3
+  search_log_ref: search_log_l11path_010
+- gap_id: g_l11path_011
+  question: Do short stature and advanced bone age share a single cause in aggrecan deficiency, or
+    does bone age advance independently of the height deficit?
+  type: known_unknown
+  layer: L11
+  why_it_matters: Height and skeletal maturation are normally so tightly coupled that bone age is
+    used as a proxy for remaining growth potential. ACAN deficiency breaks the coupling, and X-linked
+    hypophosphatemia breaks it in the opposite direction (short with DELAYED bone age). If the two
+    variables are separable, then predicting adult height from bone age is invalid in an unknown
+    fraction of short children, and any therapy that improves velocity must be evaluated against
+    its effect on maturation independently.
+  what_is_known: In 103 ACAN carriers, bone age was advanced by a median 1.3 years and adult height
+    (-2.8 SDS) was worse than childhood height (-2.0 SDS), consistent with early growth cessation
+    adding to a per-year deficit. Critically, Tatsi 2017 showed ACAN mutations also occur in short
+    stature WITHOUT accelerated skeletal maturation, so the two features dissociate within the same
+    gene. In XLH, bone age is delayed and the child is still short.
+  what_is_missing: No study has stratified an ACAN cohort into advanced-bone-age and normal-bone-age
+    carriers and compared their adult heights, which is the direct test of whether the maturation
+    advance costs additional height beyond the per-year growth deficit.
+  nearest_evidence:
+  - gkourogianni2017
+  - tatsi2017
+  - soto2026
+  discriminating_experiment: In a pooled ACAN cohort with serial bone ages and attained adult heights,
+    model adult height SDS as a function of childhood height SDS plus bone-age advance. Under a single-cause
+    model bone-age advance adds no information once childhood height is known; under a two-mechanism
+    model bone-age advance carries an independent negative coefficient of the order of 0.3-0.5 SDS
+    per year of advance. Compare against XLH, where the coefficient should have the opposite sign.
+  tractability: 4
+- gap_id: g_l11path_012
+  question: Do the growth plates of Jansen and Blomstrand chondrodysplasia show reciprocal shifts
+    in the position of the proliferative-to-hypertrophic transition in human tissue?
+  type: known_unknown
+  layer: L11
+  why_it_matters: Jansen (constitutively active PTH1R) and Blomstrand (inactive PTH1R) are a matched
+    activating/inactivating pair at one receptor in one species, and together they are the only direct
+    human test of the PTHrP-IHH negative-feedback loop that governs when a proliferative chondrocyte
+    becomes hypertrophic. The loop is the central control element in the mouse growth plate model
+    that the whole atlas depends on. Confirming reciprocity in human tissue would convert that model
+    from a mouse inference into a human fact; failing to confirm it would be one of the most consequential
+    negative results available.
+  what_is_known: Schipani 1995 established ligand-independent cAMP for H223R; Saito 2018 characterised
+    24 patients across five activating alleles. Karaplis 1998 showed the homozygous P132L Blomstrand
+    receptor reaches the surface of the affected infant's own growth plate chondrocytes - the single
+    existing human growth plate observation in either disorder - and Jobert 1998 showed loss of both
+    cAMP and inositol phosphate signalling. Blomstrand is defined radiographically by ADVANCED endochondral
+    maturation and Jansen by DELAYED metaphyseal mineralisation, which is the reciprocity at the
+    tissue level. Pereira 2025 provides bone histomorphometry in two Jansen patients.
+  what_is_missing: No side-by-side histological comparison of a Jansen and a Blomstrand human growth
+    plate. Blomstrand material exists (it is a perinatally lethal disorder with autopsies performed)
+    and Jansen patients undergo orthopaedic surgery, so the tissue is in principle available but
+    has never been analysed with the same protocol.
+  nearest_evidence:
+  - schipani1995
+  - karaplis1998
+  - jobert1998
+  - pereira2025
+  discriminating_experiment: 'Apply one histological protocol to archived Blomstrand autopsy physes
+    and to Jansen surgical physeal tissue, with age-matched controls: measure the fraction of the
+    plate occupied by proliferative versus hypertrophic cells, and stain for PTHrP, IHH, collagen
+    X and Ki67. Under the reciprocal-loop model Blomstrand shows a collapsed proliferative zone with
+    premature collagen X expression and Jansen shows an expanded proliferative zone with delayed
+    collagen X; under a non-reciprocal model both are disorganised in the same direction and the
+    difference is in mineralisation rather than in cell fate timing.'
+  tractability: 2
+- gap_id: g_l11path_013
+  question: What serum estradiol concentration is required in humans to close an epiphysis, and is
+    the same threshold sufficient in both sexes?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: Aromatase deficiency, ESR1 resistance and aromatase excess bracket the estrogen
+    requirement for epiphyseal fusion in humans from both directions, and the aromatase-deficient
+    men treated with transdermal estradiol constitute an unintentional dose-titration experiment
+    - including one patient whose poor compliance produced low but detectable estradiol levels and
+    therefore incomplete maturation. Knowing the threshold converts every aromatase-inhibitor height
+    trial from empirical to mechanistic, and it is the number needed to predict whether a given AI
+    dose will actually delay fusion.
+  what_is_known: Aromatase-deficient patients have undetectable estradiol, absent pubertal growth
+    spurt, delayed bone age, unfused epiphyses and continued growth; estradiol but not testosterone
+    closed the epiphyses in a treated man. ESR1 resistance gives the same skeletal phenotype at 204
+    cm with normal or elevated estrogen, proving the receptor rather than the ligand is the transducer.
+    Aromatase excess produces the opposite - accelerated maturation and short adult stature.
+  what_is_missing: No published dose-response relating measured serum estradiol to rate of bone age
+    advance or to epiphyseal closure in the aromatase-deficient patients who were titrated, and no
+    comparison of the required concentration between XX and XY aromatase-deficient individuals.
+  nearest_evidence:
+  - morishima1995
+  - carani1997
+  - smith1994
+  - giannopoulou2024
+  discriminating_experiment: 'Pool the published aromatase deficiency case series in which transdermal
+    estradiol was given with serial serum estradiol and serial bone age, and fit rate of bone-age
+    advance against measured estradiol. Under a threshold model bone age advance is near-zero below
+    a concentration and maximal above it; under a graded model the relationship is continuous. Compare
+    XX and XY patients: equal thresholds support a sex-independent growth plate estrogen requirement.
+    Note that the fusion mechanism itself is analysed in Layer L7.'
+  tractability: 3
+- gap_id: g_l11path_014
+  question: How many centimetres of adult height are attributable to SHOX dosage alone, and does
+    the estimate derived from sex-chromosome aneuploidy match the estimate from isolated SHOX deletions?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: SHOX is the largest-effect common contributor to human height variation and the
+    gene through which Turner syndrome, Klinefelter syndrome and Leri-Weill dyschondrosteosis all
+    act. A single number in centimetres per SHOX copy, validated across two independent designs,
+    would anchor the whole genetics-to-stature translation in Layers L8 and L11. The aneuploidy design
+    gives a dosage estimate confounded by all other PAR1 and X/Y genes; the isolated-deletion design
+    gives a gene-specific estimate confounded by ascertainment.
+  what_is_known: Berry 2025, using 928,605 individuals including 1,225 sex-chromosome aneuploidy
+    adults, found that one extra Y adds 3.1 cm (95% CI 1.9-4.3) more than one extra inactive X, and
+    that this asymmetry explains 22.6 percent of the 13 cm male-female height difference - consistent
+    with reduced SHOX expression from the inactive X. Untreated Turner growth references exist from
+    259 Brazilian and 842 Turkish girls.
+  what_is_missing: No study reconciles the aneuploidy-derived per-copy SHOX estimate with the height
+    deficit seen in isolated heterozygous SHOX deletion (Leri-Weill dyschondrosteosis) or in SHOX
+    duplication; and no analysis separates the SHOX component of Turner short stature from the component
+    attributable to estrogen deficiency and to the other X-linked escape genes.
+  nearest_evidence:
+  - berry2025
+  - carpinidantas2025
+  - darendeliler2015
+  discriminating_experiment: 'Estimate height per SHOX copy in three designs in parallel: sex-chromosome
+    aneuploidy dosage modelling, isolated SHOX deletions and duplications, and Turner patients stratified
+    by karyotype (45,X versus Xp deletions of differing extent versus Xq deletions that spare SHOX).
+    Under a pure SHOX model all three converge on one cm-per-copy value; under a multi-gene PAR1/escape-gene
+    model the aneuploidy estimate substantially exceeds the isolated-deletion estimate, and the excess
+    quantifies the non-SHOX contribution.'
+  tractability: 4
+- gap_id: g_l11path_015
+  question: Does growth hormone work in RASopathies and in ACAN deficiency by overcoming a growth-plate-intrinsic
+    block, or does it merely borrow height from the remaining growth period?
+  type: known_unknown
+  layer: L11
+  why_it_matters: GH is licensed or used off-label in Noonan syndrome, ACAN deficiency, Prader-Willi
+    syndrome, ISS and SGA - conditions in which the GH axis is not the primary lesion. If GH raises
+    velocity by accelerating maturation as well, the adult height gain is smaller than the velocity
+    gain implies, exactly as suspected for CNP analogues (see the L12 gap on vosoritide and final
+    height). This is the single most consequential unresolved question about current practice in
+    paediatric endocrinology and it applies across half the disorders in this layer.
+  what_is_known: Noonan cohorts followed to final height exist (67 Turkish patients; 23 of 101 in
+    a genotyped multicentre cohort), and parental heights in those cohorts are themselves below average,
+    confounding the apparent treatment effect. In ACAN deficiency, a 3-year prospective rhGH study
+    in 10 treatment-naive children reported height SDS and velocity gains, and an extended-family
+    study reported a mean gain of 1.3 SDS with bone age reported as not accelerating. In idiopathic
+    GHD, treated adult heights exceed untreated adult heights in the same cohort - the positive control.
+  what_is_missing: No trial in a non-GH-deficient indication reports adult height together with a
+    prespecified, standardised measure of bone age progression, so velocity gain and maturation advance
+    cannot be separated. ACAN deficiency is the ideal test case because bone age is already advanced
+    at baseline.
+  nearest_evidence:
+  - muthuvel2024
+  - jirova2026
+  - klar2025
+  - zhao2025
+  discriminating_experiment: 'Run GH treatment in ACAN deficiency and in Noonan syndrome to adult
+    height with two coprimary endpoints: attained adult height versus untreated genotype-matched
+    relatives, and change in the bone-age-to-chronological-age ratio measured by a single automated
+    reader. Under a true growth-plate-rescue model height increases and the bone age ratio is unchanged;
+    under a borrowing model velocity rises, the bone age ratio rises proportionally, and adult height
+    gain is a fraction of the velocity gain.'
+  tractability: 4
+- gap_id: g_l11path_016
+  question: What is the adult height distribution, in cm by sex and genotype, for the marfanoid overgrowth
+    disorders - Marfan syndrome, Loeys-Dietz syndrome and classical homocystinuria?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: These three disorders reach the same tall, dolichostenomelic endpoint by three
+    different molecular routes - fibrillin-1 microfibril loss with excess TGF-beta, TGF-beta receptor
+    mutation, and homocysteine-mediated disruption of matrix cross-linking. Because they converge,
+    comparing their effect sizes is the only way to ask whether the routes are quantitatively equivalent
+    or whether one dominates. It also matters clinically, because tall stature triage in adolescence
+    rests on habitus rather than on measured deviation.
+  what_is_known: The qualitative phenotype - tall stature, arm span exceeding height, reduced upper-to-lower
+    segment ratio, arachnodactyly, scoliosis - is consistently described in all three. Cytogenetic
+    and monogenic anomalies dominate NON-familial tall stature, which is the population these patients
+    are drawn from. Homocystinuria is frequently misdiagnosed as Marfan syndrome, which is itself
+    evidence that the habitus does not discriminate.
+  what_is_missing: No disorder-specific growth reference or adult height distribution with SD and
+    n for Marfan syndrome, Loeys-Dietz syndrome or untreated classical homocystinuria; no comparison
+    of segment ratios between them; and no stratification of Marfan height by FBN1 mutation class
+    (haploinsufficiency versus dominant-negative).
+  nearest_evidence:
+  - gregorova2025
+  - wanninayake2026
+  - ko2015
+  discriminating_experiment: Assemble adult heights, arm spans and upper-to-lower segment ratios
+    from existing genotyped Marfan, Loeys-Dietz and homocystinuria registries, adjusting for mid-parental
+    height. Under a common-pathway model all three produce the same segment-ratio signature and similar
+    height excesses; under distinct-mechanism models the TGF-beta disorders share a signature that
+    homocystinuria does not, and FBN1 dominant-negative alleles exceed FBN1 haploinsufficiency alleles.
+  tractability: 4
+- gap_id: g_l11path_017
+  question: Is the 11p15.5 imprinting dose-response for stature symmetric - does gain of IGF2 dosage
+    add as much adult height as loss of IGF2 dosage subtracts?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: Silver-Russell and Beckwith-Wiedemann syndromes are a reciprocal human dosage experiment
+    at one imprinted locus, which is rare. Symmetry or asymmetry of the response tells you whether
+    IGF2 acts on the growth plate on the steep part of a dose-response curve or near saturation,
+    which in turn bears on whether raising IGF signalling pharmacologically can add height in a normal
+    child. It is also the clearest available test of whether prenatal and postnatal growth read IGF2
+    dosage the same way.
+  what_is_known: Both syndromes are molecularly defined by opposite methylation and copy-number changes
+    at the same 11p15.5 domain, with additional subtypes (mUPD7 in SRS; CDKN1C mutation and KCNQ1OT1
+    loss of methylation in BWS). SRS shows prenatal-onset growth failure with no catch-up and EARLY
+    puberty, so the growth period is shortened as well; BWS overgrowth is prominent in infancy and
+    childhood and attenuates with age, so adult heights are less extreme than childhood SDS predicts.
+    Paternally inherited IGF2 missense variants also cause SRS, localising causality to IGF2 within
+    the domain.
+  what_is_missing: No study reports adult heights for molecularly subtyped SRS and BWS patients on
+    the same scale, and no analysis regresses adult height on the direction and magnitude of the
+    11p15 methylation or copy-number change.
+  nearest_evidence:
+  - lokulosodipe2020
+  - saal1993
+  - gregorova2025
+  discriminating_experiment: Pool molecularly subtyped SRS (11p15 LOM, mUPD7, IGF2 variant) and BWS
+    (11p15 GOM, pUPD11, CDKN1C, KCNQ1OT1 LOM) cohorts and compare adult height SDS against mid-parental
+    height, with pubertal timing as a covariate. Under a symmetric dosage model the height excess
+    in BWS equals the deficit in SRS in absolute SDS; under a saturating model the BWS excess is
+    markedly smaller, and adjusting for early puberty in SRS does not close the gap.
+  tractability: 3
+- gap_id: g_l11path_018
+  question: Is the zone in which a cartilage matrix gene is expressed a general predictor of which
+    radiographic compartment fails when that gene is mutated?
+  type: known_unknown
+  layer: L11
+  why_it_matters: 'Schmid metaphyseal chondrodysplasia (COL10A1, expressed only in hypertrophic chondrocytes,
+    metaphyseal disease with normal epiphyses and spine) and the type II collagenopathies (COL2A1,
+    expressed throughout hyaline cartilage, epiphyseal and vertebral disease with relatively spared
+    metaphyses) suggest a rule: expression domain predicts failure domain. If the rule generalises,
+    then the radiographic pattern of any new skeletal dysplasia predicts the expression domain of
+    the causal gene, which is a powerful and testable diagnostic heuristic. If it fails, the atlas
+    needs a different organising principle for the matrix disorders.'
+  what_is_known: COL10A1 was confirmed as the Schmid locus by an early multi-mutation series, and
+    collagen X expression is restricted to hypertrophic chondrocytes. COL2A1 disorders span achondrogenesis
+    type II through SEDC to Stickler syndrome with epiphyseal and vertebral involvement. COMP disorders
+    (pseudoachondroplasia, MED1) are epiphyseal and metaphyseal and COMP is expressed in the territorial
+    matrix throughout. MATN3 and COL9 disorders are epiphyseal.
+  what_is_missing: No systematic test of the correspondence across the full set of matrix-gene dysplasias,
+    and no human growth plate expression atlas of the relevant genes against which to score it. The
+    rule has never been stated as a falsifiable claim and tested.
+  nearest_evidence:
+  - mcintosh1994
+  - richmond1993
+  - zhan2025
+  - ni2026
+  discriminating_experiment: 'Score every matrix-gene skeletal dysplasia in the current nosology
+    on two axes: the zonal expression domain of the causal gene in HUMAN growth plate (measured by
+    spatial transcriptomics on normal human physeal tissue, not inferred from mouse) and the radiographic
+    compartment of failure. Under the rule the two axes correlate strongly; deviations identify genes
+    whose disease mechanism is proteostatic (ER retention causing chondrocyte-autonomous death regardless
+    of where the protein is needed) rather than structural - pseudoachondroplasia being the predicted
+    deviant.'
+  tractability: 3
+- gap_id: g_l11path_019
+  question: Why do some COMP alleles spare adult stature (multiple epiphyseal dysplasia) while others
+    in the same domain cost 4-6 SD (pseudoachondroplasia)?
+  type: known_unknown
+  layer: L11
+  why_it_matters: COMP is the clearest case in which one gene produces both a severe chondrodysplasia
+    and a joint disease with near-normal height, and 830 patients have been genotyped, so the human
+    dose-response is unusually well populated. Understanding which property of the allele determines
+    whether the growth plate output is destroyed or preserved would generalise to every proteostatic
+    matrix disorder, including the COL2A1 and COL10A1 series.
+  what_is_known: In 830 PSACH/EDM1 patients with 224 COMP variants, in-frame variants and especially
+    the hotspot c.1417_1419del (p.Asp473del) are PSACH-specific, whereas missense changes in T3 subdomains
+    4 and 5 associate with EDM1; 87.7 percent of probands have a T3-domain variant. Separately, a
+    22-patient MED series found COMP mutations previously assigned to PSACH producing typical MED1
+    or intermediate phenotypes, so the genotype-phenotype boundary is not absolute. In MED, 15 children
+    followed to ages 11-18 had height normal or at the lower limit.
+  what_is_missing: No measurement of the amount of retained mutant COMP or of the ER stress response
+    in patient chondrocytes as a function of allele class, so the hypothesis that PSACH alleles retain
+    more protein than EDM1 alleles is untested in human cells.
+  nearest_evidence:
+  - ni2026
+  - taner2026
+  discriminating_experiment: Introduce a panel of PSACH-specific (p.Asp473del and other in-frame)
+    and EDM1-specific (T3-4/T3-5 missense) COMP alleles into isogenic human iPSC-derived chondrocytes;
+    quantify intracellular COMP retention, the unfolded protein response, apoptosis and secreted
+    matrix. Under a retention-dose model PSACH alleles retain more protein and kill more chondrocytes
+    in a graded fashion that predicts height SDS; under a matrix-function model retention is equal
+    and the alleles differ in the assembly competence of the secreted protein.
+  tractability: 3
+- gap_id: g_l11path_020
+  question: In osteogenesis imperfecta and the mucopolysaccharidoses, how much of the adult height
+    deficit is lost growth plate output and how much is mechanical loss from deformity, fracture
+    and vertebral compression?
+  type: method_blocked
+  layer: L11
+  why_it_matters: These two disorders are the atlas's warning that adult height is not a clean readout
+    of growth plate function. In OI the growth plate is comparatively normal and the bone it produces
+    fails; in MPS the matrix is progressively degraded from within. Attributing their height deficit
+    to the growth plate would corrupt any cross-disorder comparison of growth plate output, and it
+    would make interventions aimed at the physis look ineffective when they were never targeting
+    the right compartment.
+  what_is_known: OI severity by type tracks fracture burden and deformity, and a large national registry
+    documents the gradient. In MPS, growth is near-normal for the first one to two years and then
+    decelerates, with divergent trajectories between MPS IVA and MPS IIIA. Bisphosphonates in OI
+    alter vertebral morphology and craniofacial growth, adding an iatrogenic term.
+  what_is_missing: Standing height cannot distinguish a short bone that grew less from a short bone
+    that grew normally and then bowed or collapsed. No study in either disorder reports a deformity-corrected
+    height - for example, summed segmental bone lengths from radiographs or whole-body imaging -
+    alongside standing height.
+  nearest_evidence:
+  - mordenti2026
+  - carmon2026
+  discriminating_experiment: In OI and MPS cohorts, measure standing height, sitting height and radiographic
+    long-bone lengths (femur, tibia) plus vertebral body heights on the same day, and compute a 'geometric
+    height' as the sum of the segments corrected for angulation. Under a pure-mechanical model geometric
+    height is normal or near-normal while standing height is reduced; under a growth-plate model
+    both are reduced equally. The difference between them is the mechanical component, and it can
+    then be subtracted before comparing these disorders with the chondrodysplasias.
+  tractability: 4
+- gap_id: g_l11path_021
+  question: Why is bone age DELAYED in X-linked hypophosphatemia but ADVANCED in aggrecan deficiency,
+    when both produce short stature?
+  type: known_unknown
+  layer: L11
+  why_it_matters: Bone age is the clinical proxy for remaining growth potential and is used to predict
+    adult height in every short child. Two common monogenic causes of short stature move it in opposite
+    directions, which means the proxy is not measuring a single underlying variable. Resolving what
+    bone age actually reports - the mineralisation of epiphyseal cartilage, the differentiation state
+    of the chondrocytes, or the cumulative estrogen exposure - would repair or retire a century-old
+    clinical instrument.
+  what_is_known: In XLH, FGF23 excess causes hypophosphataemia, impaired hypertrophic chondrocyte
+    apoptosis and failure of mineralisation at the zone of provisional calcification; bone age is
+    delayed and short stature is present pre-pubertally. In ACAN deficiency, matrix is reduced, hypertrophy
+    is impaired in the mouse model, bone age is advanced by a median 1.3 years, and adult height
+    is worse than childhood height. Both are short; the maturation clocks run opposite.
+  what_is_missing: No study measures, in the same framework, whether bone age in these two disorders
+    is dissociated from the true differentiation state of the growth plate. Radiographic bone age
+    reports MINERALISED epiphyseal area, so a mineralisation defect (XLH) would delay it artefactually
+    while cartilage differentiation proceeded normally, and a matrix defect (ACAN) could accelerate
+    apparent ossification without accelerating differentiation.
+  nearest_evidence:
+  - soto2026
+  - liang2025
+  - gkourogianni2017
+  - bendre2025
+  discriminating_experiment: Compare radiographic bone age with an MRI-based assessment of epiphyseal
+    cartilage volume and secondary ossification centre differentiation in matched XLH and ACAN cohorts.
+    Under the artefact hypothesis MRI shows equivalent cartilage differentiation in both while radiographic
+    bone age diverges; under a true-maturation hypothesis MRI confirms the divergence and bone age
+    is measuring a real biological difference in the rate of chondrocyte differentiation.
+  tractability: 3
+- gap_id: g_l11path_022
+  question: In systemic paediatric disease, what are the relative weights of inflammation, glucocorticoid
+    exposure, undernutrition and acquired GH resistance in producing the height deficit?
+  type: scale_gap
+  layer: L11
+  why_it_matters: 'Chronic kidney disease, juvenile idiopathic arthritis, coeliac disease and Cushing
+    syndrome each combine several of these four mechanisms, and clinical practice treats them as
+    interchangeable causes of ''chronic disease growth failure''. They are not: nutritional arrest
+    is fully reversible with catch-up growth (coeliac disease), glucocorticoid exposure is only partly
+    reversible, and inflammation acts locally as well as systemically. Without weights, no rational
+    sequencing of interventions is possible, and the field cannot tell whether biologic cytokine
+    blockade removes the inflammatory term or merely the steroid term by allowing steroid withdrawal.'
+  what_is_known: 'Coeliac disease demonstrates the reversible extreme: antigen withdrawal restores
+    growth with catch-up, implying no loss of proliferative capacity during the arrest. Cushing syndrome
+    demonstrates the partly irreversible extreme: growth failure with weight gain, and incomplete
+    recovery after cure. In paediatric dialysis, growth failure associates with parathyroid hormone
+    levels - a fifth mechanism converging on PTH1R, the same receptor perturbed genetically in Jansen
+    and Blomstrand chondrodysplasia. In JIA, local joint inflammation can either accelerate (hyperaemia,
+    limb overgrowth) or destroy an adjacent physis, so the local sign is not fixed.'
+  what_is_missing: No study measures inflammatory burden, cumulative glucocorticoid dose, nutritional
+    status, PTH and IGF-I bioactivity in the same children and partitions the height deficit between
+    them. The catch-up capacity after each mechanism is removed has not been compared on a common
+    scale.
+  nearest_evidence:
+  - imaizumi2026
+  - fjelstad2026
+  - ahirwar2025
+  - lodish2018
+  discriminating_experiment: In a multi-disease paediatric cohort (CKD, JIA, coeliac disease, inflammatory
+    bowel disease) with serial height, CRP/IL-6, cumulative prednisolone-equivalent dose, height-for-weight
+    trajectory, PTH and free IGF-I, fit a mixed model of height velocity on the four exposures with
+    disease as a random effect. Under an inflammation-dominant model CRP/IL-6 carries most of the
+    variance and steroid dose little once inflammation is controlled; under a steroid-dominant model
+    the reverse holds and biologic-treated children with controlled inflammation but continuing steroids
+    still grow poorly.
+  tractability: 4
+- gap_id: g_l11path_023
+  question: Does the human growth plate chondrocyte depend on MCT8 for T3 uptake, or does it use
+    an alternative transporter?
+  type: species_gap
+  layer: L11
+  why_it_matters: 'MCT8 deficiency produces a state that no other human condition can: high serum
+    T3 with tissue-level hypothyroidism restricted to MCT8-dependent cells. If chondrocytes are MCT8-dependent,
+    patients are locally hypothyroid at the growth plate despite thyrotoxic serum, and thyromimetic
+    therapy (TRIAC, which enters cells independently of MCT8) should rescue growth. If chondrocytes
+    are MCT8-independent, they are exposed to the elevated serum T3 and are effectively thyrotoxic,
+    which advances maturation and would predict a shortened growth period - the opposite therapeutic
+    implication.'
+  what_is_known: 'MCT8 deficiency gives high T3, low-normal T4 and normal or mildly raised TSH, with
+    severe neurological disease and impaired growth and weight gain. Congenital hypothyroidism shows
+    what complete absence of thyroid hormone action does to the growth plate: arrest of terminal
+    hypertrophy and epiphyseal dysgenesis with profoundly delayed bone age. Alternative thyroid hormone
+    transporters (OATP1C1, MCT10) have tissue-specific distributions established largely in rodents.'
+  what_is_missing: No study localises MCT8, MCT10 or OATP1C1 protein or transcript in human growth
+    plate cartilage, and no systematic auxology of MCT8-deficient patients reports height SDS and
+    bone age together, which is the phenotypic discriminator.
+  nearest_evidence:
+  - li2026
+  - karimian2024
+  - kochar2025
+  discriminating_experiment: 'Two steps: (i) map MCT8, MCT10 and OATP1C1 in normal human physeal
+    tissue by immunohistochemistry and spatial transcriptomics; (ii) in an MCT8-deficiency cohort,
+    report height SDS with bone age and follow the response to TRIAC. Under chondrocyte MCT8-dependence,
+    bone age is DELAYED despite high serum T3, and TRIAC accelerates growth and maturation; under
+    MCT8-independence, bone age is ADVANCED by the high serum T3 and TRIAC does not change it.'
+  tractability: 3
+- gap_id: g_l11path_024
+  question: Is there a single quantitative function relating cumulative estrogen exposure to adult
+    height across the human disorders of pubertal timing?
+  type: quantitative_gap
+  layer: L11
+  why_it_matters: Central precocious puberty, constitutional delay, congenital adrenal hyperplasia,
+    aromatase deficiency, aromatase excess and ESR1 resistance are six human perturbations of one
+    variable - how much estrogen the growth plate sees and when. If one function fits all six, then
+    adult height becomes predictable from an estrogen exposure integral and every timing intervention
+    (GnRH analogues, aromatase inhibitors, sex steroid priming) can be dosed against it. If it does
+    not fit, then timing and amplitude of exposure act separately and must be modelled separately.
+  what_is_known: 'The endpoints of the range are established: no estrogen action gives unfused epiphyses
+    and 204 cm (ESR1 resistance) or continued adult growth (aromatase deficiency); excess estrogen
+    gives premature fusion and short adult stature (aromatase excess, and CAH via aromatised adrenal
+    androgen). GnRH analogue suppression preserves adult height in girls with precocious puberty
+    when started early enough, and androgen therapy in constitutional delay has been meta-analysed
+    against final adult height. CDGP itself shows that delayed exposure preserves adult height because
+    delayed fusion compensates for delayed velocity.'
+  what_is_missing: No study places these disorders on a common estrogen-exposure axis. Cumulative
+    estradiol exposure is not measured in any of them, and adult height is reported against chronological
+    age at pubertal onset rather than against an exposure integral.
+  nearest_evidence:
+  - bahar2025
+  - wang2026
+  - navardauskaite2026
+  - smith1994
+  discriminating_experiment: Construct a cumulative estradiol exposure metric (area under the serial
+    serum estradiol curve, or a validated surrogate such as bone age advance per year) for cohorts
+    of CPP, CDGP, CAH and aromatase deficiency patients with attained adult heights, and fit adult
+    height SDS against the metric. Under a single-function model all disorders fall on one curve
+    regardless of the cause of the altered exposure; under a timing-specific model, patients with
+    the same integral but different timing (early-high versus late-high) have systematically different
+    adult heights, and the residual quantifies the timing term.
+  tractability: 3
+- gap_id: g_l11path_025
+  question: Has anyone compared an irradiated with a non-irradiated growth plate within the same
+    patient, using recorded radiation dosimetry, to separate direct physeal damage from radiation-induced
+    GH deficiency?
+  type: search_established
+  layer: L11
+  why_it_matters: Therapeutic irradiation is the only spatially targeted, dose-quantified, deliberately
+    applied perturbation of the human growth plate that exists. In craniospinal irradiation the vertebral
+    physes are inside the field and the femoral and tibial physes are not, so a single patient contains
+    both an exposed and an unexposed physis under an identical endocrine environment. That is a within-subject
+    control no genetic disorder provides, and it would yield a dose-response curve for direct radiation
+    injury to the human growth plate. The clinical stake is that GH replacement is offered on the
+    assumption that the deficit is endocrine, which is only partly true.
+  what_is_known: Craniospinal irradiation is known to reduce sitting height disproportionately to
+    leg length; response to GH after radiotherapy is reported to depend on the location of irradiation;
+    total body irradiation before haematopoietic transplantation causes generalised growth loss and
+    GH therapy after transplantation has been characterised nationally. An aromatase inhibitor study
+    in 92 GH-deficient male survivors compared final adult height with and without adjuvant aromatase
+    inhibition.
+  what_is_missing: No study links recorded radiation dose to the individual physis with the segment-specific
+    growth outcome of that physis in the same patient. Sitting height and leg length are rarely both
+    recorded in survivorship follow-up, and modern treatment-planning dosimetry - which gives the
+    dose to each vertebral body and to each long bone - is not being joined to auxology.
+  nearest_evidence:
+  - pollock2024
+  discriminating_experiment: Retrospectively link radiotherapy treatment-planning dosimetry to serial
+    sitting height and subischial leg length in a childhood cancer survivor cohort, and model each
+    segment's growth against the dose delivered to its own physes with GH status as a covariate.
+    Under a purely endocrine model both segments are affected equally and dose to the individual
+    physis adds nothing once GH status is known; under a direct-damage model segment growth falls
+    with local physeal dose in a graded way, and the slope of that relationship is the human physeal
+    radiation dose-response.
+  tractability: 4
+  search_log_ref: search_log_l11path_025

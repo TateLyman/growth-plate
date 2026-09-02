@@ -1,0 +1,165 @@
+# Controlled vocabulary for the Human Growth System Atlas.
+# Any value used in a node or edge file MUST appear here.
+# To extend: add the term here first, then use it. The validator enforces this.
+
+node_types:
+  - gene
+  - protein
+  - metabolite
+  - cell_type
+  - tissue_structure
+  - process
+  - pathway
+  - hormone
+  - phenotype
+  - intervention
+  - dataset
+  - method
+  - hypothesis
+
+layers:
+  L0:  developmental_origin
+  L1:  growth_plate_architecture
+  L2:  stem_and_progenitor_biology
+  L3:  signaling_networks
+  L4:  endocrine_and_systemic
+  L5:  matrix_and_mineralization
+  L6:  mechanobiology
+  L7:  fusion_and_cessation
+  L8:  genetics_and_heritability
+  L9:  whole_organism_growth
+  L10: environment_and_population
+  L11: pathology_as_natural_experiment
+  L12: pharmacology_as_mechanistic_probe
+  L13: methods_and_data
+
+relations:
+  - activates
+  - inhibits
+  - phosphorylates
+  - transcribes
+  - required_for
+  - sufficient_for
+  - differentiates_into
+  - secretes
+  - binds
+  - degrades
+  - correlates_with
+  - precedes
+  - hypothesized_link
+
+signs:
+  - "+"
+  - "-"
+  - biphasic
+  - unknown
+
+confidence:
+  A: replicated in humans with direct measurement or interventional data
+  B: strong animal mechanism + consistent human correlative/genetic support
+  C: animal only, replicated, no human contradiction
+  D: single study, or in vitro only, or conflicting reports
+  E: plausible inference from adjacent biology; explicitly flagged as inference
+  X: commonly repeated in reviews but not traceable to primary data (log in audit/contradictions.md)
+  speculative: hypothesized_link edges only; requires a linked gap_id
+
+human_evidence:
+  - direct
+  - indirect
+  - absent
+
+translation_risk:
+  - low
+  - moderate
+  - high
+  - unknown
+  - not_applicable   # for nodes that are inherently human (e.g. human phenotypes)
+
+evidence_tier:
+  T1: primary research article, data figures read
+  T2: regulatory dossier (FDA SBA/EMA EPAR), trial registry record, patent
+  T3: public dataset (GEO/SRA/ArrayExpress/HCA/GTEx/HPA/GWAS Catalog/ChEMBL/PDB)
+  T4: systematic review or meta-analysis
+  T5: narrative review, textbook, conference abstract, thesis
+  T6: preprint (bioRxiv/medRxiv) - unrefereed
+
+ref_types:
+  - primary
+  - primary_abstract_only    # only the abstract was read; flagged per source_policy
+  - regulatory
+  - trial_registry
+  - patent
+  - dataset
+  - systematic_review
+  - meta_analysis
+  - review
+  - textbook
+  - conference_abstract
+  - thesis
+  - preprint
+
+# MR-002 item 4. Only `scientific_null` may be cited as negative evidence about
+# biology. A strategic or logistical stop carries NO evidential content about the
+# mechanism, and treating one as a negative result is a defect.
+termination_reason:
+  scientific_null: stopped on evidence of no effect - IS evidence about biology
+  strategic: stopped for portfolio/commercial reasons - NOT evidence about biology; data may exist unanalysed
+  logistical: stopped for supply, recruitment or operational reasons - no evidential content whatsoever
+  ongoing: not terminated
+  completed: ran to completion
+
+gap_types:
+  - known_unknown
+  - search_established
+  - contradiction
+  - species_gap
+  - method_blocked
+  - scale_gap
+  - quantitative_gap
+
+# Species tags used in localization / species_basis / quantitative rows.
+species:
+  - human
+  - mouse
+  - rat
+  - rabbit
+  - non_human_primate   # added round 204: wendt2015 is a cynomolgus monkey study and
+                        # the vocabulary had no primate term, which would have forced a
+                        # mislabelled species on the only primate data in the file
+  - bovine
+  - porcine
+  - ovine
+  - canine        # added round 45: the FDA BALVERSA toxicology is a rat AND DOG package and
+                  # the vocabulary had no way to say "dog", which would have forced a two-species
+                  # regulatory finding to be typed `multiple` and lose the species it names
+  - chicken
+  - zebrafish
+  - xenopus
+  - cervid        # added round 241: the antler arm of the root-cell register rests on three sika deer
+                  # datasets, and the vocabulary had no cervid term, which would have forced the only
+                  # comparator species that regenerates an endochondral organ to be typed `multiple`
+                  # and lose the species it names - a direct breach of the every-claim-carries-species rule
+  - in_vitro_human_cell
+  - in_vitro_animal_cell
+  - ipsc_derived
+  - organoid
+  - in_silico
+  - multiple
+  - not_applicable
+
+# Growth plate zones - canonical short codes used in `localization` and edge `context`.
+zones:
+  RZ:   resting/reserve zone
+  PZ:   proliferative zone
+  PHZ:  prehypertrophic zone
+  HZ:   hypertrophic zone
+  ZPC:  zone of provisional calcification
+  BZ:   borderline/transition zone
+  POC:  primary ossification center
+  SOC:  secondary ossification center
+  GOR:  groove of Ranvier
+  PRL:  perichondrial ring of LaCroix
+  PC:   primary spongiosa / chondro-osseous junction
+  PERI: perichondrium
+  PERIOST: periosteum
+  SYS:  systemic (not zone-localized)

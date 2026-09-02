@@ -1,0 +1,146 @@
+# Search log shard for Layer L12, shard l12b.
+# Every search_established gap in l12b.gaps.yaml has an entry here.
+searches:
+- gap_id: g_l12b_001
+  database: Europe PMC
+  exact_query_string: >-
+    (infigratinib OR "FGFR3 inhibitor" OR vosoritide OR navepegritide) AND ("final adult
+    height" OR "near-adult height" OR "final height" OR "adult height attained")
+  filters: 'format=json, pageSize=25, resultType=core, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 51
+  screened_count: 25
+  reason_none_qualified: >-
+    No hit reports attained final or near-adult height in any patient treated with an FGFR3
+    inhibitor or a CNP analogue. The nearest candidates were screened at title/abstract level
+    and excluded: two conference abstracts describing the PROPEL, PROPEL 2 and PROPEL OLE
+    infigratinib studies report DESIGN AND STATUS only, with no height outcome; the vosoritide
+    systematic reviews and the CNP-analogue meta-analysis report annualised growth velocity,
+    height Z-score, standing height and upper-to-lower segment ratio; the ACHieve natural history
+    paper reports untreated velocity trajectories, not treated adult height; a phase 2
+    hypochondroplasia vosoritide trial reports velocity; the remainder are limb-surgery
+    integration studies, Delphi expert-opinion papers, weight-band population-PK modelling,
+    spine morphometry and narrative reviews. The absence tracks trial design rather than
+    reporting failure - the relevant extensions (NCT05145010 infigratinib, NCT03424018 and
+    NCT03989947 vosoritide) are registered as active or enrolling by invitation and their
+    cohorts have not reached skeletal maturity.
+  additional_source_checked: >-
+    ClinicalTrials.gov API v2, query.term=infigratinib achondroplasia, 2026-08-05: five studies,
+    of which NCT06164951 (phase 3, n=114) is COMPLETED and NCT05145010 (n=300) is
+    ENROLLING_BY_INVITATION; no posted results for either. Query.term=navepegritide returned
+    NCT05598320 COMPLETED with posted results whose outcome measures are AGV and height Z-score
+    at week 52 only.
+
+- gap_id: g_l12b_002
+  database: Europe PMC
+  exact_query_string: >-
+    ("growth plate" OR physis OR "epiphyseal cartilage") AND (("drug concentration" OR "tissue
+    concentration" OR "mass spectrometry imaging" OR MALDI) AND (penetration OR diffusion OR
+    distribution))
+  filters: 'format=json, pageSize=25, resultType=core, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 253
+  screened_count: 25
+  reason_none_qualified: >-
+    No hit reports a measured drug concentration inside growth plate cartilage. The screened
+    set contains the relevant methods but applied elsewhere: spatial mass spectrometry imaging
+    of subchondral bone in osteoarthritis, spatial lipidomics of mouse joint tissue including
+    growth plate (endogenous lipids, not drugs), multimodal imaging mass spectrometry of
+    Staphylococcus aureus osteomyelitis, and a randomised porcine study of
+    cefepime/enmetazobactam target-tissue pharmacokinetics in periprosthetic joint infection
+    (bone and soft tissue, not physis). Two hits are drug-delivery engineering rather than
+    measurement: retinoid-impregnated nanoparticles for site-specific modulation of endochondral
+    ossification in mice, and microneedle transdermal systems for metabolic bone disease. The
+    technique to answer this question demonstrably exists and has not been pointed at the growth
+    plate with a therapeutic agent.
+  additional_source_checked: >-
+    openFDA drug label API, 2026-08-05: structured labelling retrieved for VOXZOGO (NDA 214938),
+    YUVIWEL (NDA 219164), INCRELEX (BLA 021839), SKYTROFA (BLA 761177), FORTEO (NDA 021318),
+    TYMLOS (NDA 208743), SOMAVERT (BLA 021106) and EMFLAZA (NDA 208684/208685). All eight give
+    plasma pharmacokinetics; none reports tissue distribution to cartilage or growth plate.
+    ClinicalTrials.gov posted results for NCT04638153 (recifercept) and NCT05598320
+    (navepegritide) contain no tissue pharmacokinetic outcome measure.
+
+- gap_id: g_l12b_007
+  database: Europe PMC
+  exact_query_string: >-
+    (statin OR meclizine OR meclozine) AND (achondroplasia OR "FGFR3") AND (trial OR children
+    OR patients)
+  filters: 'format=json, pageSize=25, resultType=core, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 248
+  screened_count: 25
+  reason_none_qualified: >-
+    No hit reports a statin administered to a human with an FGFR3 skeletal dysplasia with any
+    growth endpoint. The only human interventional statin-adjacent material is the 2014 iPSC and
+    mouse study itself, which contains no human in vivo arm. Meclizine human material is limited
+    to the phase 1b pharmacokinetic study (n=12) and the 26-week open-label single-arm phase 2
+    (n=9, with concomitant growth hormone); no placebo-controlled meclizine trial and no
+    meclizine monotherapy growth trial was retrieved. The remaining hits are mouse studies of
+    meclozine, reviews of achondroplasia therapy that list statins as a preclinical candidate,
+    and unrelated statin pharmacology. A contemporary review of achondroplasia treatments in
+    children aged 5 and older lists only vosoritide, infigratinib and navepegritide as clinical
+    agents, with statins absent from the clinical landscape entirely.
+
+- gap_id: g_l12b_012
+  database: Europe PMC
+  exact_query_string: >-
+    ("mecasermin rinfabate" OR "iPlex" OR "rhIGF-1/rhIGFBP-3" OR "IGF-I/IGFBP-3 complex") AND
+    (height OR stature OR "growth velocity")
+  filters: 'format=json, pageSize=25, resultType=core, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 865
+  screened_count: 25
+  reason_none_qualified: >-
+    No hit reports height velocity or adult height in children treated with the
+    rhIGF-1/rhIGFBP-3 complex for short stature. The retrievable literature on the complex has
+    migrated entirely to other indications: a phase 2b protocol and phase 2 randomised trial of
+    OHB-607 for bronchopulmonary dysplasia prevention in preterm neonates, continuous infusion
+    feasibility and pharmacokinetic modelling studies in extremely preterm infants, a post-hoc
+    brain injury analysis, and an open-label trial in myotonic dystrophy type 1. The term "iPlex"
+    now retrieves the unrelated MassARRAY iPLEX genotyping assay, which is why the query
+    hit-count is high and the yield zero. The single on-topic retrieval is a 2006 narrative
+    appraisal of the efficacy and safety of mecasermin rinfabate, which is a review rather than
+    a growth-outcome cohort and is queued for hand retrieval.
+
+- gap_id: g_l12b_014
+  database: Europe PMC
+  exact_query_string: >-
+    (pegvisomant OR octreotide OR lanreotide OR pasireotide) AND (gigantism OR "GH-secreting")
+    AND (children OR pediatric OR paediatric OR adolescent) AND ("final height" OR "adult height")
+  filters: 'format=json, pageSize=25, resultType=core, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 36
+  screened_count: 19
+  reason_none_qualified: >-
+    Exactly one hit reports attained final height under a growth-limiting drug, and it is a
+    single patient: pegvisomant monotherapy carried to final height in paediatric X-linked
+    acrogigantism. Every other hit is a case report, a small surgical series, a genetics review
+    or a case-series-plus-literature-review of McCune-Albright syndrome; none reports final
+    height in a cohort treated primarily with a somatostatin analogue, and none compares
+    somatostatin analogue against GH receptor blockade on any height endpoint. One hit describes
+    the clinical profile and therapeutic responses of X-linked acrogigantism, the syndrome in
+    which somatostatin analogues are known to respond poorly, but without a final-height
+    comparison. The absence is a sample-size problem in an ultra-rare disease, not a reporting
+    failure, which is why the discriminating experiment proposed is a registry rather than a trial.
+
+- gap_id: g_l12b_018
+  database: Europe PMC
+  exact_query_string: >-
+    (estrogen OR oestrogen OR estradiol) AND "Turner syndrome" AND (timing OR "age at
+    initiation") AND ("adult height" OR "final height") AND (randomized OR randomised OR trial)
+  filters: 'format=json, pageSize=25, resultType=core, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 132
+  screened_count: 19
+  reason_none_qualified: >-
+    No hit is a randomised comparison of oestrogen introduction age or dose with attained adult
+    height as the endpoint. The screened set consists of retrospective single-centre cohorts of
+    growth hormone and near-final height in Turner syndrome and SHOX deficiency, a 25-year
+    single-centre lifespan experience, the Turner syndrome clinical practice guidelines, a
+    systematic review of hormonal treatments in growth disorders that pools GnRHa and rhGH but
+    not oestrogen timing, surveys of available oestradiol and progestogen preparations for
+    puberty induction, and a proposal for earlier lower-dose oestrogen for pubertal induction in
+    Turner syndrome without gonadal function - which argues the case but reports no randomised
+    height comparison. Sex-steroid priming for GH stimulation testing appears but concerns
+    diagnostic priming, not growth outcome.

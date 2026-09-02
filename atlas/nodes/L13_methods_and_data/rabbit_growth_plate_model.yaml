@@ -1,0 +1,76 @@
+id: rabbit_growth_plate_model
+name: Rabbit growth plate model
+aliases:
+- oryctolagus physis model
+type: process
+summary: |
+  The rabbit is the small mammal that actually fuses, and that single fact makes it the most
+  under-used model in this field. Estrogen treatment accelerates growth plate senescence and
+  brings on fusion in rabbits, and the fusion event is abrupt, with remaining chondrocytes
+  rapidly replaced by bone (weise2001); estrogen hastens fusion by exhausting the
+  proliferative capacity of the plate rather than by acting acutely (nilsson2014). The rabbit
+  also supplied the foundational catch-up growth experiments: glucocorticoid-induced growth
+  suppression is followed by delayed senescence and catch-up (baron1994, gafni2001), and
+  resting zone chondrocytes are depleted as senescence proceeds (schrier2006), with senescence
+  accompanied by loss of DNA methylation (nilsson2005). Rabbit growth is continuous rather
+  than saltatory when measured directly (klein1994), which is the animal counterweight to the
+  human saltation-and-stasis claim (lampl1992). Limits: the rabbit plate is thin relative to
+  human, growth is complete within months, and no conditional genetics exist, so the rabbit
+  can test whether an endpoint occurs but not which cell produced it. Translation risk score
+  used in this layer runs 1 (lowest) to 5 (highest) and is the mean of four sub-scores, each
+  1-5: (A) fusion competence - can the species express epiphyseal fusion at all; (B) plate
+  architecture - columnar organisation and secondary ossification centre; (C) scale - plate
+  thickness and hypertrophic cell volume relative to human; (D) tempo - proliferative cycle
+  time and growth duration relative to human. Rabbit scores A=1, B=2, C=3, D=3, mean 2.25,
+  giving translation_risk moderate - the lowest of any tractable laboratory mammal.
+quantitative:
+- parameter: rabbit translation risk score (this layer, 1-5)
+  value: '2.25'
+  unit: score
+  conditions: mean of fusion competence 1, architecture 2, scale 3, tempo 3
+  species: rabbit
+  source_ref: weise2001
+  uncertainty: ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is
+    defined in mouse_model_translation_risk and the axis scores are this atlas's judgement.
+    source_ref names the anchor primary for the model (weise2001); that paper does not contain
+    this number and must not be cited for it.
+  atlas_derived: true
+localization:
+- 'rabbit RZ: progenitor depletion demonstrated during senescence'
+human_evidence: indirect
+human_evidence_note: Rabbit results are supported in humans only by correlative endocrine data; no
+  human interventional counterpart exists.
+species_basis:
+- rabbit
+translation_risk: moderate
+translation_risk_reason: Rabbit expresses true epiphyseal fusion and estrogen-driven senescence,
+  matching the human endpoint; scale and tempo still differ substantially and no lineage tools exist.
+confidence: B
+key_refs:
+- ref_id: weise2001
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: Estrogen accelerates growth plate senescence and produces abrupt fusion in rabbits.
+- ref_id: nilsson2014
+  first_author: Nilsson O
+  year: 2014
+  type: primary
+  one_line_finding: Estrogen hastens fusion by exhausting proliferative capacity rather than acting
+    acutely.
+- ref_id: gafni2001
+  first_author: Gafni RI
+  year: 2001
+  type: primary
+  one_line_finding: Catch-up growth in rabbits is associated with delayed growth plate senescence.
+- ref_id: schrier2006
+  first_author: Schrier L
+  year: 2006
+  type: primary
+  one_line_finding: Resting zone chondrocytes are depleted during rabbit growth plate senescence.
+open_questions:
+- g_l7fuse_001
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

@@ -1,0 +1,92 @@
+searches:
+  - gap_id: g_l2stem_001
+    database: Europe PMC
+    exact_query_string: >-
+      (human) AND ("growth plate" OR physis OR "resting zone") AND ("lineage tracing" OR "clonal
+      tracing" OR "somatic mutation" OR "clonal lineage")
+    filters: 'resultType=lite, pageSize=8 inspected of full hit list, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 726
+    screened_count: 40
+    reason_none_qualified: >-
+      Top-ranked and all screened records are either murine lineage tracing, reviews of murine
+      work, or human descriptive transcriptomics (chu2026, avijgan2025, avijgan2026). No record
+      reports clonal or lineage tracing performed on human growth plate cells. The two human
+      primary studies retrieved (chu2026, 41984930; the systematic review 41795828) explicitly
+      state that human growth plate stem cells had not previously been demonstrated and rely on
+      mouse tracing of a transcriptionally matched population for the functional claim.
+
+  - gap_id: g_l2stem_002
+    database: Europe PMC
+    exact_query_string: >-
+      (human) AND (osteoblast) AND ("chondrocyte-derived" OR "chondrocyte origin" OR
+      transdifferentiation) AND (bone) AND ("lineage" OR "fate mapping" OR "somatic")
+    filters: 'resultType=lite, pageSize=8 inspected of full hit list, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 1466
+    screened_count: 40
+    reason_none_qualified: >-
+      All screened records are murine lineage tracing, in vitro models, deer antler, or reviews.
+      No study quantifies the fraction of human osteoblasts derived from hypertrophic
+      chondrocytes; the human-tissue hits (Achilles heterotopic ossification, 42143563) describe
+      an endochondral sequence histologically without lineage resolution.
+
+  - gap_id: g_l2stem_003
+    database: Europe PMC
+    exact_query_string: >-
+      ("secondary ossification cent*") AND (ablat* OR block* OR prevent* OR delay*) AND ("resting
+      zone" OR "stem cell" OR self-renewal) AND (mouse OR mice)
+    filters: 'resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 0
+    screened_count: 0
+    reason_none_qualified: >-
+      Zero records. No published experiment manipulates secondary ossification centre formation
+      and then assays resting-zone stem cell behaviour. The SOC-triggers-stemness claim rests
+      entirely on temporal coincidence reported in mizuhashi2018 and newton2019.
+
+  - gap_id: g_l2stem_005
+    database: Europe PMC
+    exact_query_string: >-
+      (human) AND ("growth plate" OR physis) AND ("resting zone" OR "reserve zone") AND (clonal OR
+      "self-renewal" OR "proliferative capacity" OR "replicative capacity")
+    filters: 'resultType=lite, pageSize=25 inspected, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 213
+    screened_count: 25
+    reason_none_qualified: >-
+      Screened records are murine primary studies (41748604, 41289405, 41253754, 39549120),
+      reviews (41096725, 40838219, 39463341, 40104770), or human transcriptomic description
+      (41984930). None measures proliferative or clonal capacity of human resting zone
+      chondrocytes; the closest, avijgan2025, shows only that a subset can exit G0 ex vivo.
+
+  - gap_id: g_l2stem_007
+    database: Europe PMC
+    exact_query_string: >-
+      (human) AND ("growth plate" OR "resting zone" OR physis) AND (telomere length OR telomerase
+      activity) AND (chondrocyte OR cartilage) AND (age OR ageing OR aging)
+    filters: 'resultType=lite, pageSize=25 inspected, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 218
+    screened_count: 25
+    reason_none_qualified: >-
+      Every screened record concerns osteoarthritic articular cartilage senescence, general
+      skeletal ageing reviews, or rodent models (e.g. 39571160 Lmna progeria mouse, 33438789
+      mouse mTert). No primary measurement of telomere length or telomerase activity in human
+      growth plate chondrocytes at any age was retrieved.
+
+  - gap_id: g_l2stem_009
+    database: Europe PMC
+    exact_query_string: >-
+      (PDPN OR podoplanin) AND (CD164) AND (CD73) AND ("resting zone" OR "reserve zone" OR PTHrP
+      OR PTHLH)
+    filters: 'resultType=lite, pageSize=15 inspected of full hit list, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 36
+    screened_count: 15
+    reason_none_qualified: >-
+      All screened records are reviews of skeletal stem cell heterogeneity or primary studies of
+      periosteal (39405183) and marrow populations. None applies the PDPN+CD146-CD73+CD164+ panel
+      to the resting zone of a human growth plate, so the discrepancy between the mouse
+      resting-zone localisation and the human pre-hypertrophic/hypertrophic localisation
+      (chan2018) is untested.

@@ -1,0 +1,81 @@
+id: hmga2_gene
+name: HMGA2
+aliases:
+- high mobility group AT-hook 2
+- rs1042725
+type: gene
+layer: L8
+stub: false
+summary: 'HMGA2 was the first common variant reproducibly associated with normal human height and remains
+  the cleanest example of the effect size the common-variant regime actually delivers. Weedon 2007 found
+  rs1042725 in 4,921 individuals, replicated it in 19,064 adults from four further studies (overall P
+  = 4e-16), and confirmed it in 6,827 children and a tall/short case-control sample: the C allele adds
+  approximately 0.4 cm of adult height and the variant explains about 0.3% of population height variance.
+  That is the scale at which the polygenic architecture operates - about 1/25th of the effect of a rare
+  coding variant of the kind catalogued in this layer, and it took ~30,000 individuals to establish. HMGA2
+  is also a strong biological candidate rather than a statistical accident, because severe rare lesions
+  in the gene alter body size in both mouse and human, and rare aggregate variation proximal to the related
+  HMGA1 locus is worth ~5 cm in whole-genome sequencing. The gene reappears in the rare-disease direction
+  as a cause of Silver-Russell syndrome, so HMGA2 spans the full allelic spectrum from a 0.4 cm common
+  variant to a syndromic growth disorder - which is the argument that the common/rare divide in height
+  genetics is one of allele frequency, not of biology. What HMGA2 does not yet have in this atlas is a
+  growth plate mechanism: no human growth-plate localization or chondrocyte-level function was retrieved.'
+quantitative:
+- parameter: per-allele adult height effect of rs1042725 (C allele)
+  value: '0.4'
+  unit: cm
+  conditions: European-ancestry adults, additive model
+  species: human
+  source_ref: weedon2007
+  uncertainty: approximate; overall association P = 4e-16 across ~31,000 individuals
+- parameter: population height variance explained by rs1042725
+  value: '0.3'
+  unit: '%'
+  conditions: same samples
+  species: human
+  source_ref: weedon2007
+  uncertainty: estimate; CI not reported in abstract
+- parameter: replication sample size for the HMGA2 height association
+  value: '19064'
+  unit: adults
+  conditions: four further studies beyond the 4,921-individual discovery scan; plus 6,827 children
+  species: human
+  source_ref: weedon2007
+  uncertainty: not applicable (count)
+localization:
+- 'human: germline; no growth plate expression or chondrocyte function data retrieved'
+human_evidence: direct
+human_evidence_note: Discovery and replication in ~31,000 humans with measured adult height plus 6,827
+  children.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human association genetics; the mouse body-size data are cited only as candidate-gene
+  support.
+confidence: A
+claim_grades:
+- claim: rs1042725 near HMGA2 raises adult height by ~0.4 cm per allele.
+  grade: A
+  basis: Discovery plus four independent replications and a childhood sample (weedon2007).
+- claim: HMGA2 exerts this effect through the growth plate chondrocyte.
+  grade: E
+  basis: No growth-plate expression, eQTL or functional data for HMGA2 were retrieved.
+key_refs:
+- ref_id: weedon2007
+  pmid: '17767157'
+  doi: 10.1038/ng2121
+  first_author: Weedon MN
+  year: 2007
+  type: primary
+  one_line_finding: rs1042725 near HMGA2 is the first reproducibly replicated common height variant, worth
+    ~0.4 cm per allele and ~0.3% of height variance.
+- ref_id: hawkes2024
+  pmid: '39362880'
+  doi: 10.1038/s41467-024-52579-w
+  first_author: Hawkes G
+  year: 2024
+  type: primary
+  one_line_finding: Rare aggregate non-coding variation proximal to the related HMGA1 locus is associated
+    with 5 cm taller height, showing the same gene family spans the frequency spectrum.
+open_questions: []
+last_verified: '2026-08-05'

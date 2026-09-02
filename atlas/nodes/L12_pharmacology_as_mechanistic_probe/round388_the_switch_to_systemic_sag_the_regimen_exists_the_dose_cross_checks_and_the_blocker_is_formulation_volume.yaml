@@ -1,0 +1,259 @@
+id: round388_the_switch_to_systemic_sag_the_regimen_exists_the_dose_cross_checks_and_the_blocker_is_formulation_volume
+name: "R388: the switch to systemic SAG - the regimen already exists, two independent mouse studies cross-check to one gram per pulse, and the only real blocker is formulation volume"
+aliases:
+  - systemic SAG regimen
+  - li2021 dosing arms
+  - SAG subcutaneous every other day
+  - the systemic hedgehog route
+type: intervention
+layer: L12
+stub: false
+summary: >-
+  The local intraosseous SAG depot specified in R373-R375 and detailed in R385-R387 is
+  buildable but operationally heavy: image-guided percutaneous cannulation of four
+  epiphyses, a fibrin dual-barrel applicator that sets in 10-30 seconds, sub-milligram
+  spiking arithmetic, and an instrument passing within millimetres of an open physis.
+  This round takes the systemic route seriously instead, and the finding is that the
+  regimen is already published and this atlas had never extracted it.
+
+  li2021 is the only systemic SAG study that carries a stature endpoint, a formulation,
+  a schedule and a toxicity screen together. Read in full (PMC8591400) it gives:
+  20 micrograms per gram body weight, which is 20 mg/kg, SUBCUTANEOUS, EVERY OTHER DAY,
+  from postnatal day 7 or 14 through day 30, a 16-23 day course. The vehicle is SAG
+  dissolved in DMSO to 5 mM and then diluted into normal saline. Body length went from
+  117.2 plus or minus 6.9 to 133.2 plus or minus 6.1 mm; femur plus 67.4 percent, tibia
+  plus 33.1 percent, THIRD LUMBAR VERTEBRA PLUS 32.1 PERCENT, skull plus 18.5 percent.
+  Viscera - spleen, liver, heart, kidney, lung, intestine - were inspected with no
+  abnormality or tumorigenesis reported, and intestinal hyperplasia occurred in 6.1
+  percent. CORR-203 governs the effect sizes absolutely: this is restoration in an
+  Ihh-ablated dysplasia, not elevation above normal. What transfers is dose, route,
+  schedule, formulation, the toxicity screen, and the fact that it reached the axial
+  skeleton.
+
+  Scaled by FDA body-surface-area allometry (Km 3 mouse, 37 human) the human-equivalent
+  dose is 1.62 mg/kg per administration - 81, 97 and 114 mg at 50, 60 and 70 kg. Held to
+  the three-week pulse that the depot's own bead life sets, every other day is eleven
+  doses, so 0.89 to 1.25 grams of drug substance per pulse.
+
+  The cross-check is the strongest part. trompet2024's systemic arm is a completely
+  independent regimen - 25 mg/kg intraperitoneal ONCE DAILY for seven days, in NORMAL
+  wild-type mice, which raised the resting-zone stem-cell pool 61 percent. Scaled the
+  same way it gives 0.85 g per pulse at 60 kg against li2021's 1.07 g, a ratio of 1.26.
+  Two laboratories, two routes, two durations, two models and two different endpoints
+  converge on roughly one gram per three-week pulse in a 60 kg human. The two are also
+  complementary rather than redundant: trompet2024 supplies the pool mechanism in a
+  NORMAL animal, which CORR-203 cannot touch, and li2021 supplies the practical regimen
+  and the only vertebral measurement on this axis.
+
+  The intensity question resolves in favour of the lower-intensity schedule. mao2026sag
+  flags 25 mg/kg as anti-proliferative with delayed G0/G1 after a single intraperitoneal
+  dose. li2021's 20 mg/kg every other day is half the cumulative exposure of a 25 mg/kg
+  daily arm, and it is the arm that carries both the stature result and the clean viscera.
+
+  The real blocker is neither biology nor schedule - it is formulation volume, and it is
+  arithmetic. li2021's 5 mM DMSO stock is 2.45 mg/mL of free base. A 97 mg human dose in
+  that vehicle is 39.7 mL, against 204 microlitres for a 25 g mouse: trivial in the mouse
+  and impossible in a human, because subcutaneous volume is limited to roughly 1-2 mL per
+  site. The requirement is therefore an aqueous formulation of SAG DIHYDROCHLORIDE at 30
+  mg/mL or better, which puts a 60 kg dose at 3.2 mL across two sites. That is formulation
+  development - solubility, tonicity, pH, stability - and not a scientific unknown; the
+  dihydrochloride salt exists precisely because the free base is cLogP 6.79. The DMSO
+  vehicle must not be scaled.
+
+  Material cost inverts the usual argument. One pulse at 60 kg is about 1.07 g and four
+  pulses a year is 4.28 g. At catalogue research-reagent prices that is the wrong way to
+  buy it entirely; at gram scale one commissions synthesis of a 490 Da molecule with a
+  published route, which is an ordinary contract job. Once a custom batch is being made
+  anyway, the INCREMENTAL cost of taking it to pharmaceutical grade with an impurity and
+  endotoxin package is far smaller than qualifying material on top of nothing. The
+  systemic route's larger dose makes the qualification problem easier to justify, not
+  harder - which is the opposite of what the local route's microgram payload implied.
+
+  On the ledger, systemic wins decisively on compartment. The residual at bone age 16 is
+  trunk-dominant, a knee depot cannot reach a vertebral plate at all, and li2021 measured
+  a lumbar vertebra at plus 32.1 percent. It also removes the procedure entirely - no
+  cannula, no sedation, no fluoroscopy, no instrument near a physis, and the
+  instrumentation-driven slipped-epiphysis risk disappears - uses the same subcutaneous
+  route as the growth hormone arm, treats every plate simultaneously, and is reversible
+  day to day in a way a set depot is not. Systemic loses on drug quantity (about 400-fold
+  more than the depot's 2.70 mg pulse), on systemic hedgehog exposure being the exact
+  hazard the local route was designed to avoid, on the 6.1 percent intestinal hyperplasia
+  which is the one finding that is not clean, and on the fact that the only true length
+  endpoint in a NORMAL animal belongs to the depot.
+
+  The single largest remaining gap is unchanged and must not be restated as a negative:
+  no systemic SAG regimen has produced a bone-length endpoint in a normal animal.
+  trompet2024's own systemic length arm is uninformative rather than null - seven days of
+  drug read two days later, n=7 versus 5, with a 95 percent confidence interval of minus
+  2.03 to plus 6.23 mm on a 12.7 mm bone, and a point estimate in the favourable
+  direction. That is an unrun experiment.
+quantitative:
+  - parameter: SAG systemic dose in mouse, the regimen with a stature endpoint
+    value: 20 micrograms per gram body weight = 20 mg/kg, subcutaneous, every other day, P7 or P14 to P30
+    unit: mg/kg per administration
+    species: mouse
+    source_ref: li2021
+    note: full text read R388 from PMC8591400; vehicle is SAG in DMSO to 5 mM then diluted with normal saline
+  - parameter: body length in the Ihh-ablated mouse, vehicle versus SAG
+    value: 117.2 +/- 6.9 to 133.2 +/- 6.1
+    unit: mm
+    species: mouse
+    source_ref: li2021
+    note: CORR-203 applies - restoration in a deficient model, not elevation above normal
+  - parameter: third lumbar vertebra length gain under systemic SAG
+    value: '+32.1'
+    unit: percent
+    species: mouse
+    source_ref: li2021
+    note: >-
+      the compartment result - a systemic route reached the axial skeleton, which no local
+      epiphyseal depot can. Femur +67.4 percent, tibia +33.1 percent, skull +18.5 percent
+      in the same animals
+  - parameter: intestinal hyperplasia incidence under systemic SAG
+    value: '6.1'
+    unit: percent of treated animals
+    species: mouse
+    source_ref: li2021
+    note: >-
+      the one finding that is not clean; spleen, liver, heart, kidney, lung and intestine
+      were otherwise reported without abnormality or tumorigenesis
+  - parameter: human-equivalent dose by FDA body-surface-area allometry
+    value: 1.62 mg/kg per administration, giving 81 / 97 / 114 mg at 50 / 60 / 70 kg
+    unit: mg/kg and mg
+    species: not_applicable
+    source_ref: li2021
+    value_unverified: true
+    note: >-
+      derived in R388 by this atlas (atlas/tools/round388_systemic_sag_regimen.py), Km
+      mouse 3.0 and human 37.0; source_ref is the mouse regimen the scaling starts from,
+      the human number is not from any paper
+  - parameter: drug substance required per three-week pulse at 60 kg, every other day
+    value: '1.07'
+    unit: grams
+    species: not_applicable
+    source_ref: li2021
+    value_unverified: true
+    note: >-
+      derived in R388; eleven doses of 97 mg. Against the local depot's 2.70 mg per pulse
+      this is roughly 400-fold more drug
+  - parameter: cross-check - trompet2024's independent systemic regimen scaled the same way
+    value: 0.85 g per pulse at 60 kg versus li2021's 1.07 g, ratio 1.26
+    unit: grams per pulse
+    species: not_applicable
+    source_ref: trompet2024
+    value_unverified: true
+    note: >-
+      derived in R388 from 25 mg/kg intraperitoneal once daily for 7 days in NORMAL mice.
+      Two laboratories, two routes, two durations, two models converge on about one gram
+  - parameter: formulation volume required if li2021's vehicle is scaled naively
+    value: 39.7 mL of 5 mM DMSO stock for a 97 mg dose, against 204 microlitres for a 25 g mouse
+    unit: mL
+    species: not_applicable
+    source_ref: li2021
+    value_unverified: true
+    note: >-
+      derived in R388; 5 mM free base is 2.45 mg/mL. Subcutaneous volume is limited to
+      roughly 1-2 mL per site, so the DMSO vehicle cannot be scaled
+  - parameter: aqueous concentration of SAG dihydrochloride required for a feasible subcutaneous dose
+    value: 30 mg/mL or better, giving 3.2 mL over two sites at 60 kg
+    unit: mg/mL
+    species: not_applicable
+    source_ref: li2021
+    value_unverified: true
+    note: >-
+      derived in R388 using the dihydrochloride molecular weight 562.98 against free base
+      490.06. This is a formulation development task, not a scientific unknown
+localization: systemic - subcutaneous administration reaching every growth plate including the axial skeleton
+human_evidence: absent
+human_evidence_note: >-
+  No Smoothened agonist has ever been given to a human by any route. A re-query of
+  clinicaltrials.gov in R375 returned zero Smoothened-agonist studies; every registered
+  hedgehog entry is an antagonist. Both regimens scaled here are mouse.
+species_basis:
+  - mouse
+translation_risk: high
+translation_risk_reason: >-
+  Body-surface-area allometry is the standard first-in-human bridge but it is an
+  approximation, and no pharmacokinetic data exist for SAG in any species at these
+  exposures. li2021's effect sizes are restoration in a deficient model and CORR-203
+  excludes them from any prediction of gain in a normal subject. The one systemic length
+  arm in a normal animal is statistically uninformative. And the subject is at bone age
+  16, far past the postnatal window in which either mouse regimen was run.
+confidence: C
+claim_grades:
+  - claim: >-
+      A published systemic SAG regimen exists with a stature endpoint, a formulation, a
+      schedule and a toxicity screen - 20 mg/kg subcutaneous every other day
+    grade: B
+    basis: single primary paper read in full, mouse, deficient model
+  - claim: >-
+      Systemic SAG reached the axial skeleton, third lumbar vertebra plus 32.1 percent,
+      which no local epiphyseal depot can do
+    grade: B
+    basis: >-
+      measured in li2021; the compartment claim itself is a geometric fact about depot
+      placement, not an experimental one
+  - claim: >-
+      Two independent mouse regimens scale to roughly one gram of drug substance per
+      three-week human pulse
+    grade: C
+    basis: >-
+      derived by this atlas from body-surface-area allometry; robust in the sense that
+      two unrelated designs agree within 1.26-fold, but allometry is not pharmacokinetics
+  - claim: >-
+      The binding practical obstacle to the systemic route is formulation volume, and it
+      is solved by an aqueous dihydrochloride formulation at 30 mg/mL or better
+    grade: C
+    basis: >-
+      arithmetic on published concentrations plus the standard subcutaneous volume limit;
+      no aqueous SAG formulation at that concentration has been demonstrated
+  - claim: >-
+      Systemic SAG in a NORMAL animal expands the resting-zone stem-cell pool
+    grade: B
+    basis: trompet2024, wild-type mice, pool plus 61 percent with divisions observed
+  - claim: >-
+      No systemic SAG regimen has produced a bone-length endpoint in a normal animal
+    grade: A
+    basis: >-
+      trompet2024's systemic length arm is uninformative rather than null - 95 percent
+      confidence interval minus 2.03 to plus 6.23 mm on a 12.7 mm bone. Under R302's rule
+      this is a gap, not a disqualification
+key_refs:
+  - ref_id: li2021
+    year: 2021
+    type: primary
+    role: >-
+      the regimen - the only systemic SAG study carrying dose, route, schedule,
+      formulation, a stature endpoint, a toxicity screen and a vertebral measurement
+      together; full text read in R388 and its dosing arms extracted for the first time
+  - ref_id: trompet2024
+    year: 2024
+    type: primary
+    role: >-
+      the independent cross-check and the normal-animal arm - 25 mg/kg intraperitoneal
+      daily for seven days in wild-type mice raised the resting-zone pool 61 percent, and
+      scaled by the same allometry it lands within 1.26-fold of li2021's total dose
+  - ref_id: mao2026sag
+    year: 2026
+    type: primary
+    role: >-
+      the intensity ceiling - 25 mg/kg as a single intraperitoneal dose reduced
+      proliferation and delayed G0/G1, which is why the lower-intensity every-other-day
+      schedule is the one to copy
+  - ref_id: heine2011sag
+    year: 2011
+    type: primary
+    role: >-
+      the tolerability precedent for a systemic pulse in a developing mammal - one week of
+      systemic SAG in neonatal animals was well tolerated and did not promote tumour
+      formation
+  - ref_id: chen2002smo
+    year: 2002
+    type: primary
+    role: the potency the dose is aimed at - Smoothened Kd 59 nM, Gli reporter EC50 about 3 nM
+open_questions:
+  - g_l12_388a
+  - g_l12_388b
+  - g_l7_368a
+contradicts: []
+last_verified: '2026-08-14'

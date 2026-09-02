@@ -1,0 +1,179 @@
+id: the_hypertrophic_zone_is_the_diffusion_limited_one
+name: MEASURED PARAMETERS REVERSE ROUND 122 - the zone CNP acts on is the one that is diffusion-limited and
+  the one that never equilibrates with a short plasma pulse
+aliases:
+- growth plate diffusion coefficient
+- Thiele modulus with real parameters
+- does the hypertrophic zone equilibrate
+- human growth plate thickness
+type: process
+layer: L5
+stub: false
+summary: 'ROUND 122 MODELLED THE TRANSPORT ASYMMETRY OVER GUESSED PARAMETERS AND CONCLUDED IT PROBABLY
+  FAILS. TWO PAPERS SUPPLIED BY THE PROJECT OWNER REPLACE EVERY GUESS WITH A MEASUREMENT, AND FOR THE ZONE
+  THAT MATTERS THE CONCLUSION REVERSES.
+  THE LENGTH. yun2018 measured human knee physes by 3D MRI in 31 peripubertal children, two blinded
+  radiologists, high intraclass reliability: femoral plate thickness 0.8 plus or minus 0.1 mm in boys and
+  0.9 plus or minus 0.1 in girls, tibial 0.7 plus or minus 0.1 and 0.8 plus or minus 0.1. So the
+  half-thickness that sets the diffusion distance is about 400 micrometres. Round 122 named this number as
+  worth more than any other datum and the atlas did not hold it; now it does.
+  THE DIFFUSIVITY, AND IT PASSES ITS OWN CONSISTENCY CHECK. williams2007 measured solute transport in
+  growth plate cartilage by two independent methods. Ex vivo multiphoton photobleaching gave solution
+  diffusion coefficients of 265 plus or minus 30, 88 plus or minus 10 and 55 plus or minus 8 square
+  micrometres per second for fluorescein, 10 kDa dextran and 45 kDa ovalbumin, with matrix hindrance
+  estimated by Mackie-Meares from fractional fluid volume at 7.1 in the resting zone, 2.1 in the
+  proliferative zone and 21 IN THE HYPERTROPHIC ZONE. In vivo, tracers of 10 kDa and below saturate a
+  mouse growth plate about 300 micrometres across within 5 minutes. THOSE TWO ROUTES AGREE: the in vivo
+  saturation time implies an effective diffusivity of 38 square micrometres per second, and the ex vivo
+  FRAP value divided by the proliferative hindrance gives 42. Agreement within about ten per cent across
+  completely different methods is the check that makes these parameters usable.
+  THE RESULT, AND IT IS ZONE-SPECIFIC. Scaling to a 4 kDa peptide by the molecular-weight-to-the-minus-one-
+  third dependence the paper itself verifies, and using the human half-thickness of 400 micrometres:
+  in the PROLIFERATIVE zone the Thiele modulus runs 0.23 to 1.80 across local consumption half-lives of
+  600 down to 10 minutes - transitional at worst. IN THE HYPERTROPHIC ZONE IT RUNS 0.74 TO 5.70, and at a
+  30-minute local half-life it is 3.29, which is squarely diffusion-limited: centre concentration falls to
+  7 per cent of the surface value and a tenfold cut in local clearance buys 8.45-fold.
+  AND THE HYPERTROPHIC ZONE IS EXACTLY WHERE THE CNP AXIS ACTS. nakao2015 partitions it there -
+  cartilage-specific Npr2 deletion takes the type X collagen layer to 23.0 per cent of control while the
+  non-hypertrophic layer falls only to 71.1 per cent. So the target zone is simultaneously the least
+  permissive zone, by a factor of ten against the proliferative zone.
+  THE SECOND RESULT IS ARGUABLY LARGER THAN THE FIRST. Equilibration time scales as length squared over
+  diffusivity. For the human plate that is about 23 minutes in the proliferative zone and ABOUT 234
+  MINUTES - close to four hours - IN THE HYPERTROPHIC ZONE, against a vosoritide plasma half-life of 27.9
+  minutes. THE HYPERTROPHIC ZONE CANNOT EQUILIBRATE WITH A PLASMA PULSE THAT SHORT. It sees a heavily
+  attenuated and delayed shadow of Cmax, which supplies a mechanical explanation for a finding the atlas
+  already held and could not explain - that vosoritide exposure correlates with urine cGMP, a systemic
+  readout, but NOT with growth outcome within the treated cohort. Systemic Cmax is simply not a proxy for
+  what the target zone receives.
+  WHAT THIS DOES TO THE THREAD. It restores the transport asymmetry for the zone that matters, which
+  restores the therapeutic-index argument for both a dual-resistant CNP analogue and a
+  cartilage-local clearance blocker. It ALSO argues, independently of clearance, that EXPOSURE DURATION
+  beats peak concentration on this axis - which is an argument for the sustained-release agent on transport
+  grounds rather than on convenience grounds, and it is testable.
+  THE HONEST COUNTERWEIGHT, WHICH BIASES MY OWN NUMBERS THE WRONG WAY. williams2007 found that fitting
+  diffusion ALONE gave abnormally high coefficients and inconsistent fits, and that FLOW had to be
+  included: overall flow is directed FROM the two vascularised junctions INTO the cartilage. Inward
+  advection delivers ligand faster than diffusion alone and therefore REDUCES the effective Thiele
+  modulus. Every phi above is a pure-diffusion figure and is consequently an OVERESTIMATE by an unquantified
+  amount. The paper also reports diffusion coefficients fivefold higher at the axial centre than at the two
+  junctions, so the resistance sits at the ENTRY faces rather than in the interior - which is the opposite
+  of the geometry a simple consumption model assumes.
+  SUPERSEDED ON THE CENTRAL POINT, ROUND 127 - READ the_plate_is_advection_fed_not_diffusion_limited
+  WITH THIS NODE. The hypertrophic diffusivity used here, 5.7 square micrometres per second, came from
+  the THEORETICAL Mackie-Meares hindrance of 21. williams2007 Figure 3d MEASURES it directly by
+  photobleaching recovery against axial position and the axial variation is two to threefold, not
+  tenfold - about 41 for a 4 kDa peptide at the metaphyseal end. The Thiele modulus therefore falls to
+  0.62 to 2.13, and Figure 4f supplies flow rates giving a Peclet number of 6 to 25 and a Damkohler
+  number of 0.015 to 0.185. The plate is advection-fed and is NOT consumption-limited. CORR-120.'
+quantitative:
+- parameter: 'HUMAN GROWTH PLATE THICKNESS BY MRI - THE LENGTH THAT DOMINATES THE THIELE MODULUS'
+  value: 'femoral 0.8 plus or minus 0.1 mm (boys) and 0.9 plus or minus 0.1 mm (girls); tibial 0.7 plus or
+    minus 0.1 and 0.8 plus or minus 0.1 - half-thickness about 400 micrometres'
+  unit: millimetres, perpendicular 1D thickness at the midway point
+  conditions: 'yun2018. 31 children (17 boys, 14 girls) under evaluation for growth retardation, mean bone
+    age 11.7 years in boys and 10.7 in girls. Sagittal T1-weighted VIBE MRI of the knee, 14 cm field of
+    view, 288 by 288 matrix, 3 mm slices with no interslice gap; the slice with the most complete view of
+    the posterior cruciate ligament was used. Measured by two independent blinded radiologists with high
+    intraclass reliability. Thickness did NOT change over 6 months in either sex while plate DIAMETER
+    increased significantly.'
+  species: human
+  source_ref: yun2018
+  uncertainty: 'THREE LIMITS. The children were under evaluation for GROWTH RETARDATION rather than being
+    a random paediatric sample, so the thickness may not represent a normally growing plate. The 3 mm
+    slice thickness is between three and four times the structure being measured, so partial-volume
+    averaging is a real concern for an 0.8 mm object even with in-plane resolution far finer. And MRI
+    physeal signal does not map exactly onto the histological cartilage disc. The number is good enough to
+    replace a guessed order of magnitude, which is what it is used for, and not good enough to carry a
+    two-fold argument.'
+- parameter: 'THIELE MODULUS FOR A 4 kDa PEPTIDE IN THE HUMAN PLATE, BY ZONE, AND WHAT CUTTING LOCAL
+    CLEARANCE TENFOLD WOULD BUY'
+  value: 'proliferative zone phi 0.23 to 1.80; HYPERTROPHIC ZONE phi 0.74 to 5.70, and 3.29 at a 30-minute
+    local consumption half-life, where centre concentration is 7 per cent of surface and a tenfold cut in
+    clearance buys 8.45-fold'
+  unit: dimensionless Thiele modulus, and fold change in centre concentration
+  conditions: 'Computed in atlas/tools/plate_transport_model.py from measured inputs. L = 400 micrometres
+    from yun2018. D for 4 kDa scaled from the williams2007 in-cartilage 10 kDa value of about 42 square
+    micrometres per second by the MW-to-the-minus-one-third dependence the paper verifies, giving 57 in
+    the proliferative zone; the hypertrophic value of 5.7 follows from the Mackie-Meares hindrance ratio
+    of 21 against 2.1. Local consumption half-life swept 10 to 600 minutes because it remains unmeasured.
+    EQUILIBRATION TIMES on the same parameters: 23 minutes proliferative, 234 minutes hypertrophic.'
+  species: human
+  source_ref: williams2007
+  uncertainty: 'THE REMAINING UNMEASURED INPUT IS LOCAL CONSUMPTION, AND IT SPANS THE WHOLE ANSWER - at a
+    600-minute local half-life even the hypertrophic zone falls to phi 0.74 and the gain to 1.25-fold.
+    THE MODEL ALSO IGNORES ADVECTION, WHICH williams2007 SHOWS IS REAL AND INWARD, so every phi here is an
+    overestimate by an unquantified amount and the reversal is weaker than the numbers alone suggest. The
+    hypertrophic hindrance of 21 is a Mackie-Meares estimate from fractional fluid volume 0.36, not a
+    direct FRAP measurement of a 4 kDa peptide in that zone. The mouse-to-human step assumes the same
+    matrix hindrance applies at both scales. And the closed form assumes a uniform slab, whereas the same
+    paper reports diffusivity varying fivefold across the axis.'
+localization:
+- 'the answer is zone-specific and the zones differ tenfold: proliferative matrix hindrance 2.1 against
+  hypertrophic 21, with the CNP/NPR2 axis partitioned onto the hypertrophic zone by nakao2015 - so the
+  target zone and the least permissive zone are the same zone'
+human_evidence: direct
+human_evidence_note: The thickness is human MRI. The diffusivity and the in vivo saturation time are mouse,
+  and the scaling to a human plate is explicit inference rather than measurement.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The dominant length is human and the transport physics is species-neutral, but
+  the diffusivity and hindrance come from mouse cartilage and are assumed to carry across, and the
+  consumption term is measured in neither species.
+confidence: C
+claim_grades:
+- claim: Human peripubertal knee growth plate is about 0.7 to 0.9 mm thick, giving a half-thickness near
+    400 micrometres.
+  grade: B
+  basis: Direct MRI measurement in 31 children by two blinded radiologists with high intraclass
+    reliability. Graded B not A because the cohort was under evaluation for growth retardation and the
+    3 mm slice thickness invites partial-volume error on a sub-millimetre structure.
+- claim: The ex vivo and in vivo transport measurements in williams2007 are mutually consistent.
+  grade: A
+  basis: The in vivo observation that 10 kDa tracers saturate a 300 micrometre mouse plate within 5
+    minutes implies an effective diffusivity of 38 square micrometres per second; ex vivo FRAP gives 88
+    in solution against a proliferative-zone hindrance of 2.1, i.e. 42. Two independent methods agreeing
+    within about ten per cent.
+- claim: In the hypertrophic zone the human plate is diffusion-limited, so removing a local sink raises
+    local concentration disproportionately.
+  grade: D
+  basis: 'It follows from the measured length and diffusivity at any local consumption half-life under
+    about two hours, and the target zone being the hindered zone makes it the relevant case. It stays at D
+    because local consumption is unmeasured and spans the entire answer, and because ignoring the inward
+    advection that williams2007 demonstrates biases the calculation toward exactly this conclusion.'
+- claim: Round 122's conclusion that the transport asymmetry probably fails should be withdrawn.
+  grade: C
+  basis: 'It should be NARROWED rather than withdrawn. Round 122 swept a grid without a measured length or
+    diffusivity and concluded the asymmetry was the minority case. With measured parameters it holds in
+    the hypertrophic zone and is marginal in the proliferative zone - so the conclusion was wrong for the
+    zone that matters and roughly right for the other one. The advection caveat, which round 122 did not
+    know about, cuts back in the original direction.'
+- claim: A short plasma half-life is a transport liability independent of clearance-receptor engineering.
+  grade: C
+  basis: 'Equilibration of the hypertrophic zone is estimated at about 234 minutes against a vosoritide
+    plasma half-life of 27.9 minutes, so the target zone cannot track the plasma pulse and sees an
+    attenuated, delayed shadow of Cmax. This gives a mechanism for the otherwise puzzling within-cohort
+    finding that vosoritide exposure predicts urine cGMP but not growth. It is an inference from scaled
+    mouse diffusivity, not an observation, and the confound is that navepegritide with a 300-fold longer
+    release half-life did not produce a correspondingly larger effect.'
+key_refs:
+- ref_id: yun2018
+  year: 2018
+  type: primary
+  role: the human physeal thickness that round 122 named as the missing dominant parameter
+- ref_id: williams2007
+  year: 2007
+  type: primary
+  role: the diffusivity, the zone-specific matrix hindrance, the in vivo saturation time that validates
+    them, and the inward advection that qualifies the whole calculation
+open_questions:
+- g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature
+contradicts:
+- 'REVERSES the_transport_asymmetry_probably_fails FOR THE HYPERTROPHIC ZONE AND LEAVES IT STANDING FOR THE
+  PROLIFERATIVE ZONE. That node swept guessed parameters and found the asymmetry in only 21 per cent of the
+  grid. With yun2018 supplying the length and williams2007 the diffusivity, the hypertrophic zone - which
+  is where nakao2015 puts the CNP axis - lands at phi 3.3 at a plausible consumption rate. The reversal is
+  partial and is itself qualified by inward advection, which williams2007 documents and neither node
+  models.'
+last_verified: '2026-08-08'

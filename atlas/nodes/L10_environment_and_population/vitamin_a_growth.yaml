@@ -1,0 +1,63 @@
+id: vitamin_a_growth
+name: Vitamin A status and linear growth
+type: process
+summary: Vitamin A supplementation does not increase linear growth, and this negative result is a useful
+  boundary on the nutrition-to-plate story. In a meta-analysis of 12 randomised controlled trials in 6340
+  children aged 0-14 years in low- and middle-income countries, vitamin A supplementation alone had no
+  significant effect on height-for-age Z, weight-for-age Z or weight-for-height Z; in the same analysis
+  vitamin D3 alone also failed to change height-for-age Z (Z=0.43, P=0.67), improving only weight-for-age
+  Z (Z=2.72, P=0.007) (peng2025). Vitamin A is nevertheless the one micronutrient with an unambiguous
+  pharmacological effect on the growth plate at supraphysiological doses, since retinoids act through
+  nuclear RAR/RXR receptors that repress SOX9-driven chondrogenesis - but the atlas carries no RAR or
+  RXR node in L3 or L4, and no study has shown that a dietary vitamin A deficit reaches the plate through
+  those receptors. The honest position is that vitamin A deficiency has a molecular receptor system in
+  principle and no demonstrated dietary entry point at the human growth plate, while the randomised evidence
+  says supplementation does not make children taller.
+quantitative:
+- parameter: effect of vitamin A supplementation alone on height-for-age Z
+  value: no significant effect
+  unit: z-score
+  conditions: meta-analysis of RCTs in children aged 0-14 y in LMICs, 12 RCTs and 6340 children in total
+  species: human
+  source_ref: peng2025
+  uncertainty: reported as no significant impact on HAZ, WAZ or WHZ
+- parameter: effect of vitamin D3 supplementation alone on height-for-age Z
+  value: no significant effect
+  unit: z-score
+  conditions: same meta-analysis
+  species: human
+  source_ref: peng2025
+  uncertainty: Z=0.43, P=0.67
+localization:
+- 'human SYS: retinol status'
+- 'human growth plate: RAR/RXR present in principle but never assayed under dietary vitamin A manipulation'
+human_evidence: direct
+human_evidence_note: Randomised controlled supplementation trials pooled across 6340 children with anthropometric
+  endpoints.
+species_basis:
+- human
+translation_risk: unknown
+translation_risk_reason: No animal dietary vitamin A restriction experiment with a growth plate readout
+  is available to translate from.
+confidence: B
+claim_grades:
+- claim: Vitamin A supplementation does not improve linear growth in children in LMIC settings.
+  grade: A
+  basis: Meta-analysis of RCTs, 6340 children, prespecified HAZ endpoint (peng2025).
+- claim: Dietary vitamin A status reaches the growth plate through RAR/RXR signalling.
+  grade: E
+  basis: Retinoid receptor biology is established in other systems; no study links dietary vitamin A status
+    to a receptor-level readout at the plate. Logged as g_l10env_007.
+key_refs:
+- ref_id: peng2025
+  pmid: '41502896'
+  first_author: Peng L
+  year: 2025
+  type: meta_analysis
+  one_line_finding: Vitamin A supplementation alone had no significant effect on HAZ, WAZ or WHZ; vitamin
+    D3 alone did not change HAZ (Z=0.43, P=0.67) but modestly improved WAZ (12 RCTs, 6340 children).
+open_questions:
+- g_l10env_007
+layer: L10
+stub: false
+last_verified: '2026-08-05'

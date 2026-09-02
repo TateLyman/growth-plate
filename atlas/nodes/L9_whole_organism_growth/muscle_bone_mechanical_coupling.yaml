@@ -1,0 +1,125 @@
+id: muscle_bone_mechanical_coupling
+name: Muscle-bone mechanical coupling
+aliases:
+- functional muscle-bone unit
+- mechanostat coupling
+type: process
+layer: L9
+stub: false
+summary: 'The mechanostat predicts that bone strength is a consequence of the loads muscle imposes, so
+  muscle growth should lead bone growth in time. Rauch and colleagues tested the prediction directly with
+  longitudinal DXA in 70 boys and 68 girls through puberty. Peak whole-body lean mass accrual preceded
+  peak bone mineral content accrual by 0.36 years in boys and 0.51 years in girls; in the arms the interval
+  was 0.63 and 0.71 years and in the legs 0.48 and 0.22 years (rauch2004). The temporal ordering therefore
+  holds at every site but with a site-specific lag - the arm lag is roughly three times the girls'' leg
+  lag - which a single systemic driver does not predict. The stronger result is the regression: peak lean
+  mass velocity, but not peak height velocity and not sex, was independently associated with peak bone
+  mineral content velocity, explaining 50% of the variance for the total body, 61% for the arms and 41%
+  for the legs. Longitudinal bone growth is thus statistically dissociable from bone mineral accrual:
+  whatever sets peak height velocity is not what sets peak bone mineral accrual. The authors are explicit
+  that the data cannot exclude the alternative that muscle and bone development are independently determined
+  genetically and merely correlated.'
+quantitative:
+- parameter: lead of peak lean mass velocity over peak bone mineral content velocity, total body, boys
+  value: '0.36'
+  unit: years
+  conditions: 70 boys, longitudinal DXA through puberty
+  species: human
+  source_ref: rauch2004
+  uncertainty: mean interval
+- parameter: lead of peak lean mass velocity over peak bone mineral content velocity, total body, girls
+  value: '0.51'
+  unit: years
+  conditions: 68 girls
+  species: human
+  source_ref: rauch2004
+  uncertainty: mean interval
+- parameter: lead in the arms, girls
+  value: '0.71'
+  unit: years
+  conditions: same cohort
+  species: human
+  source_ref: rauch2004
+  uncertainty: mean interval
+- parameter: lead in the arms, boys
+  value: '0.63'
+  unit: years
+  conditions: same cohort
+  species: human
+  source_ref: rauch2004
+  uncertainty: mean interval
+- parameter: lead in the lower extremities, girls
+  value: '0.22'
+  unit: years
+  conditions: same cohort
+  species: human
+  source_ref: rauch2004
+  uncertainty: mean interval
+- parameter: lead in the lower extremities, boys
+  value: '0.48'
+  unit: years
+  conditions: same cohort
+  species: human
+  source_ref: rauch2004
+  uncertainty: mean interval
+- parameter: variance in total-body peak BMC velocity explained by peak lean mass velocity
+  value: '50'
+  unit: percent
+  conditions: multiple regression including peak height velocity and sex, both non-significant
+  species: human
+  source_ref: rauch2004
+  uncertainty: r-squared 0.50, p<0.001
+- parameter: variance in arm peak BMC velocity explained by arm peak lean mass velocity
+  value: '61'
+  unit: percent
+  conditions: same model applied regionally
+  species: human
+  source_ref: rauch2004
+  uncertainty: r-squared 0.61, p<0.001
+- parameter: variance in leg peak BMC velocity explained by leg peak lean mass velocity
+  value: '41'
+  unit: percent
+  conditions: same model applied regionally
+  species: human
+  source_ref: rauch2004
+  uncertainty: r-squared 0.41, p<0.001
+- parameter: independent association of peak height velocity with peak BMC velocity
+  value: none
+  unit: not_applicable
+  conditions: after adjustment for peak lean mass velocity and sex
+  species: human
+  source_ref: rauch2004
+  uncertainty: explicitly not significant
+localization:
+- 'human whole body, arms and legs: DXA lean mass and bone mineral content'
+human_evidence: direct
+human_evidence_note: Longitudinal DXA in 138 healthy children measured through the pubertal spurt.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human longitudinal measurement.
+confidence: A
+claim_grades:
+- claim: Peak lean mass accrual precedes peak bone mineral accrual at every site measured
+  grade: A
+  basis: Directly measured intervals at three anatomical levels in 138 children.
+- claim: Muscle growth causes bone mineral accrual
+  grade: D
+  basis: The temporal precedence and the regression are compatible with causation but the authors state
+    explicitly that independent genetic determination of both is not excluded; no interventional human
+    data.
+- claim: Longitudinal growth and bone mineral accrual are driven by different variables
+  grade: B
+  basis: Peak height velocity had no independent association with peak BMC velocity once lean mass velocity
+    was in the model (rauch2004); one cohort.
+key_refs:
+- ref_id: rauch2004
+  pmid: '15121007'
+  first_author: Rauch F
+  year: 2004
+  type: primary
+  one_line_finding: Peak lean mass velocity precedes and predicts peak bone mineral content velocity while
+    peak height velocity does not.
+open_questions:
+- g_l9organism_013
+last_verified: '2026-08-05'

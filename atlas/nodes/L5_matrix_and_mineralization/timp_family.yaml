@@ -1,0 +1,84 @@
+id: timp_family
+name: TIMPs (tissue inhibitors of metalloproteinases)
+aliases:
+- TIMP-1
+- TIMP-2
+- TIMP-3
+- TIMP-4
+type: protein
+layer: L5
+stub: false
+summary: 'The four TIMPs are the endogenous stoichiometric inhibitors that set net proteolysis in cartilage.
+  They are not interchangeable. TIMP-3 is the only member that inhibits the aggrecanases: its N-terminal
+  inhibitory domain blocks ADAMTS4 and ADAMTS5 with sub-nanomolar Ki, whereas TIMP-1, TIMP-2 and TIMP-4
+  are weak or inactive against ADAMTS4. TIMP-3 is also unique in binding to the extracellular matrix through
+  its C-terminal domain rather than circulating freely, so it is retained where it is made. Because TIMP-3
+  is the only aggrecanase inhibitor and aggrecanase activity is not required for normal murine skeletal
+  development, the physiological role of TIMP-3 in the growth plate specifically is unresolved. Human
+  TIMP3 mutations cause Sorsby fundus dystrophy, a retinal not skeletal disease, so there is no human
+  genetic evidence linking TIMPs to longitudinal growth.'
+quantitative:
+- parameter: TIMP-3 N-terminal domain Ki against ADAMTS4 and ADAMTS5
+  value: sub-nanomolar
+  unit: nM
+  conditions: bacterially expressed N-TIMP-3, recombinant human aggrecanases
+  species: in_vitro_human_cell
+  source_ref: kashiwagi2001
+  uncertainty: described as sub-nanomolar; exact values not extracted
+- parameter: Relative ADAMTS4 inhibition by TIMP-1, -2, -4 versus TIMP-3
+  value: weak or inactive
+  unit: qualitative rank
+  conditions: side-by-side inhibition assay
+  species: in_vitro_human_cell
+  source_ref: hashimoto2001
+  uncertainty: as reported
+localization:
+- 'human growth plate: TIMP-1 present in all zones plus osteoblasts and osteoclasts; TIMP-2 in hypertrophic
+  chondrocytes and osteoblasts (haeusler2005)'
+- 'cartilage extracellular matrix: TIMP-3 is matrix-bound via its C-terminal domain (kashiwagi2001)'
+- 'human growth plate zonal TIMP expression: not established'
+human_evidence: indirect
+human_evidence_note: Human TIMP3 mutations cause Sorsby fundus dystrophy with no skeletal phenotype; no
+  human growth plate TIMP data were located.
+species_basis:
+- in_vitro_human_cell
+- mouse
+translation_risk: high
+translation_risk_reason: All quantitative data are recombinant enzyme kinetics; no in vivo growth plate
+  role has been demonstrated in any species.
+confidence: D
+key_refs:
+- ref_id: kashiwagi2001
+  pmid: '11278243'
+  first_author: Kashiwagi M
+  year: 2001
+  type: primary
+  one_line_finding: The N-terminal domain of TIMP-3 inhibits ADAMTS4 and ADAMTS5 with sub-nanomolar Ki
+- ref_id: hashimoto2001
+  pmid: '11311239'
+  first_author: Hashimoto G
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: TIMP-3 inhibits ADAMTS4 while TIMP-1, -2 and -4 are weak or inactive
+- ref_id: majumdar2007
+  pmid: '17968948'
+  first_author: Majumdar MK
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Adamts4/Adamts5 double knockout mice are physiologically normal and protected from
+    surgical osteoarthritis
+- ref_id: haeusler2005
+  pmid: '15868281'
+  first_author: Haeusler G
+  year: 2005
+  type: primary
+  one_line_finding: 'Human child and adolescent growth plate: MMP-14 most prominent and present in all
+    zones; MMP-1/9/10/11/13 and VEGF in hypertrophic chondrocytes; TIMP-1 in all zones, TIMP-2 in hypertrophic
+    chondrocytes'
+open_questions: []
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Differential inhibition constants measured across all four paralogs - TIMP-3 sub-nanomolar Ki
+  against ADAMTS4/5, TIMP-1/-2/-4 weak or inactive (kashiwagi2001, hashimoto2001).

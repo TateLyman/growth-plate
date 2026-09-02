@@ -1,0 +1,78 @@
+id: environmental_enteric_dysfunction
+name: Environmental enteric dysfunction
+type: phenotype
+aliases:
+- EED
+- environmental enteropathy
+- tropical enteropathy
+summary: 'Environmental enteric dysfunction is subclinical small-intestinal inflammation with increased
+  permeability, and it is the proposed reason that water, sanitation and hygiene interventions improve
+  infection rates without improving height. The Indonesian Action Against Stunting Hub birth cohort provides
+  the mechanistic chain in humans: faecal myeloperoxidase, faecal alpha-1 antitrypsin and plasma intestinal
+  fatty-acid binding protein (IFABP) were measured at 6 months with anthropometry at 6 and 12 months,
+  elevated EED markers were present in more than 80% of infants, and structural equation modelling showed
+  IFABP positively associated with soluble CD14 and CD14 negatively associated with IGF-1, with maternal
+  height, birth weight and IGF-1 the significant determinants of length-for-age Z at 12 months (htet2026).
+  The pathway is therefore gut barrier failure -> microbial translocation -> systemic inflammation ->
+  suppressed IGF-1 -> shorter children, with each link measured rather than assumed. A systematic review
+  of 81 studies covering 31996 children found all EED domains - intestinal damage and repair, absorption
+  and permeability, microbial translocation, intestinal inflammation and systemic inflammation - associated
+  with linear growth, while noting that the measured association depends strongly on which biomarker is
+  used (lowe2025). The last step, from suppressed IGF-1 to the chondrocyte, remains inferential.'
+quantitative:
+- parameter: prevalence of elevated EED markers in the cohort
+  value: '>80'
+  unit: '%'
+  conditions: Indonesian infants at 6 months of age, faecal myeloperoxidase, alpha-1 antitrypsin and plasma
+    IFABP
+  species: human
+  source_ref: htet2026
+  uncertainty: as reported
+- parameter: studies and children in the EED-linear growth systematic review
+  value: 81 studies / 31996 children
+  unit: count
+  conditions: children 0-5 years in low- and middle-income countries, literature to 31 December 2024
+  species: human
+  source_ref: lowe2025
+  uncertainty: not applicable
+localization:
+- 'human small intestine: barrier damage and inflammation'
+- 'human SYS: soluble CD14 -> suppressed circulating IGF-1'
+human_evidence: direct
+human_evidence_note: Human longitudinal birth cohort with faecal and plasma EED biomarkers, systemic inflammatory
+  markers, IGF-1 and serial anthropometry.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: Every measured link in the chain is human; only the final chondrocyte step is
+  extrapolated.
+confidence: B
+claim_grades:
+- claim: EED influences linear growth indirectly, through systemic inflammation and suppressed IGF-1.
+  grade: B
+  basis: Structural equation modelling in a single longitudinal human cohort with measured mediators (htet2026);
+    the mediation model is one cohort, not replicated.
+- claim: All measured EED domains are associated with child linear growth.
+  grade: A
+  basis: Systematic review of 81 studies and 31996 children (lowe2025).
+key_refs:
+- ref_id: htet2026
+  pmid: '42132033'
+  first_author: Htet MK
+  year: 2026
+  type: primary
+  one_line_finding: In an Indonesian birth cohort, IFABP was positively associated with CD14 and CD14
+    negatively with IGF-1; IGF-1, maternal height and birth weight determined LAZ at 12 months, with >80%
+    of infants showing elevated EED markers.
+- ref_id: lowe2025
+  pmid: '41177769'
+  first_author: Lowe C
+  year: 2025
+  type: systematic_review
+  one_line_finding: Systematic review of 81 studies (31996 children) finding all EED domains associated
+    with child linear growth, with the association depending on biomarker choice.
+open_questions:
+- g_l10env_004
+layer: L10
+stub: false
+last_verified: '2026-08-05'

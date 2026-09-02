@@ -1,0 +1,91 @@
+id: wolff_law
+name: Wolff's law (as applied to the physis)
+type: hypothesis
+aliases:
+- Wolff's law
+- mechanostat
+- Frost chondral modeling theory
+summary: 'Wolff''s law is a statement about bone: trabecular architecture and cortical mass adapt to the
+  direction and magnitude of habitual loading. Frost''s mechanostat recast it as a set-point controller
+  in which modelling is switched on above roughly 1000-1500 microstrain of peak strain and remodelling
+  removes bone below a lower threshold, so bone responds to peak intermittent strain rather than to mean
+  stress. Frost''s chondral modeling theory extended the same logic to cartilage and explicitly predicted
+  the opposite dependence to Hueter-Volkmann: intermittent, dynamic loading drives cartilage growth, while
+  static compression is the suppressive stimulus. The two laws are therefore not variants of each other
+  and are distinguished experimentally by the loading waveform, not the tissue. Where Hueter-Volkmann
+  is measured with mean stress held constant for days, Frost''s prediction concerns the peak-to-trough
+  excursion and the number of loading cycles; the static/dynamic experiments in the growth plate are the
+  direct test, and they partly support Frost (dynamic loading preserves growth plate histology at stresses
+  that static loading damages) while partly contradicting him (at matched mean stress, dynamic loading
+  in rat caudal vertebrae suppressed growth just as much as static). Frost''s writings are narrative theory,
+  not primary data; the numerical thresholds he quotes are for bone strain, and no equivalent threshold
+  has been measured for physeal cartilage in any species.'
+quantitative:
+- parameter: bone modelling threshold (mechanostat), peak strain
+  value: 1000-1500
+  unit: microstrain
+  conditions: Frost's synthesis for cortical bone; not a growth plate measurement
+  species: multiple
+  source_ref: frost2004
+  uncertainty: theoretical range asserted in a narrative review; primary derivation not reproduced
+  value_unverified: true
+localization:
+- 'bone cortex and trabeculae: the domain of the original law'
+- 'growth plate cartilage: extension by analogy only (frost1979, frost2001)'
+human_evidence: indirect
+human_evidence_note: Human evidence for the bone form of the law is abundant (loading asymmetry in racquet-sport
+  athletes, disuse osteopenia); for the cartilage/physis form there is no human strain-threshold measurement
+  at all.
+species_basis:
+- human
+- multiple
+translation_risk: moderate
+translation_risk_reason: The bone statement generalises well across species; the cartilage extension is
+  a theoretical proposal by one author and its numerical thresholds have never been measured in physeal
+  cartilage.
+confidence: D
+key_refs:
+- ref_id: frost1979
+  pmid: '92358'
+  first_author: Frost HM
+  year: 1979
+  type: review
+  one_line_finding: 'Proposed the chondral modeling theory: intermittent rather than static loading governs
+    cartilage growth and modelling'
+- ref_id: frost2001
+  pmid: '11393568'
+  first_author: Frost HM
+  year: 2001
+  type: review
+  one_line_finding: Applies the Utah paradigm to longitudinal growth, treating the physis as a load-bearing
+    organ tuned to peak intermittent strain
+- ref_id: frost2004
+  pmid: '15038485'
+  first_author: Frost HM
+  year: 2004
+  type: review
+  one_line_finding: Restates Wolff's law as the mechanostat with strain-defined modelling and remodelling
+    thresholds in bone
+- ref_id: valteau2011
+  pmid: '21784187'
+  doi: 10.1016/j.bone.2011.07.008
+  first_author: Valteau B
+  year: 2011
+  type: primary
+  one_line_finding: At matched mean stress, dynamic loading suppressed rat caudal vertebral growth as
+    much as static loading, contradicting a pure Frost prediction
+- ref_id: sergerie2011
+  pmid: '21337387'
+  doi: 10.1002/jor.21282
+  first_author: Sergerie K
+  year: 2011
+  type: primary
+  one_line_finding: Dynamic compression preserved matrix synthesis and zonal proportions in swine growth
+    plate explants where static compression destroyed them
+open_questions:
+- g_l6mech_004
+contradicts:
+- hueter_volkmann_law
+layer: L6
+stub: false
+last_verified: '2026-08-05'

@@ -1,0 +1,136 @@
+id: soluble_fgfr3_decoy
+name: Soluble FGFR3 decoy (recifercept)
+aliases:
+- recifercept
+- TA-46
+- PF-07256472
+- sFGFR3
+type: intervention
+layer: L12
+stub: false
+summary: 'Recifercept is a recombinant soluble FGFR3 extracellular domain designed to act as a
+
+  ligand trap, sequestering FGF ligands before they can activate mutant FGFR3 at the cell
+
+  surface. It is the cleanest available human test of the ligand-dependence of
+
+  achondroplasia, because a decoy can only work if the mutant receptor still requires
+
+  ligand. It failed. The phase 2 trial (NCT04638153, n=60) and its open-label extension
+
+  (NCT05116046, n=35) were both terminated on 18 November 2022, with the registry
+
+  whyStopped field reading "terminated due to lack of efficacy at any of the tested doses
+
+  ... not related to a safety concern". Posted results show the ratio of observed to
+
+  expected height change was 1.0 at month 12 in every arm - 1 mg/kg weekly, 2 mg/kg twice
+
+  weekly and 1.5 mg/kg daily - with 95% CIs spanning 0.8-1.1, i.e. growth indistinguishable
+
+  from the untreated reference. The accompanying natural-history study (NCT03794609) and a
+
+  Chinese phase 1 (NCT05061277) were terminated and withdrawn alongside it. The failure is
+
+  informative in two independent directions: either FGFR3-G380R signalling in the human
+
+  growth plate is substantially ligand-independent, or a ~100 kDa glycoprotein cannot reach
+
+  chondrocytes inside avascular, proteoglycan-dense cartilage at a useful concentration.
+
+  These were not distinguished, because plate exposure was never measured.
+
+  '
+quantitative:
+- parameter: ratio of observed to expected change in standing height, month 12
+  value: '1.0'
+  unit: ratio
+  conditions: NCT04638153 phase 2, recifercept 1 mg/kg weekly (n=7 with TEAEs reported), 2 mg/kg twice
+    weekly and 1.5 mg/kg daily; ratio 1.0 means growth equal to the untreated reference population
+  species: human
+  source_ref: nct04638153
+  uncertainty: 95% CI 0.8-1.1 in all three arms
+- parameter: ratio of observed to expected change in standing height, month 3, high-dose arm
+  value: '0.6'
+  unit: ratio
+  conditions: 1.5 mg/kg daily arm at first assessment; the lowest value observed and below 1.0
+  species: human
+  source_ref: nct04638153
+  uncertainty: 95% CI 0.3-0.9
+- parameter: participants enrolled before termination, phase 2 plus extension
+  value: '95'
+  unit: participants
+  conditions: 60 in NCT04638153 plus 35 in NCT05116046; both terminated 18 Nov 2022
+  species: human
+  source_ref: nct05116046
+  uncertainty: not applicable (count)
+- parameter: recifercept concentration achieved in growth plate cartilage
+  value: not measured
+  unit: not applicable
+  conditions: no tissue exposure measurement was published for the failed programme
+  species: not_applicable
+  source_ref: nct04638153
+  uncertainty: unmeasured - the failure cannot be attributed between mechanism and delivery
+  value_unverified: true
+localization:
+- 'human growth plate: intended target; no measured penetration of a ~100 kDa decoy into avascular cartilage'
+- 'mouse cranial base synchondrosis: recifercept prevented premature ossification in Fgfr3-ach/+ mice'
+human_evidence: direct
+human_evidence_note: Two terminated interventional trials in children with achondroplasia with posted
+  results and an explicit registry statement of lack of efficacy at all tested doses.
+species_basis:
+- human
+- mouse
+translation_risk: high
+translation_risk_reason: The mouse data were positive - recifercept prevented premature synchondrosis
+  closure in Fgfr3-ach/+ mice - and the human trials were null at every dose. This is a documented mouse-to-human
+  translation failure, and the reason for it was not established because target-tissue exposure was never
+  measured in either species.
+confidence: A
+claim_grades:
+- claim: Recifercept did not increase growth at any tested dose in children with achondroplasia.
+  grade: A
+  basis: Posted phase 2 results, observed/expected height ratio 1.0 (95% CI 0.8-1.1) at month 12 in all
+    arms, and an explicit registry termination statement.
+- claim: The failure shows FGFR3-G380R signalling in the human growth plate is ligand-independent.
+  grade: E
+  basis: One of two competing explanations; not distinguishable from a delivery failure without tissue
+    exposure data.
+- claim: Soluble FGFR3 decoys engage FGF ligands in growth plate cartilage in vivo.
+  grade: C
+  basis: Supported only by mouse synchondrosis histology, not by any human or large-animal tissue measurement.
+key_refs:
+- ref_id: nct04638153
+  year: 2022
+  type: trial_registry
+  one_line_finding: TERMINATED for lack of efficacy at any tested dose; posted observed/expected height
+    ratio 1.0 (95% CI 0.8-1.1) at month 12.
+- ref_id: nct05116046
+  year: 2022
+  type: trial_registry
+  one_line_finding: Open-label extension terminated the same day for the same reason, explicitly not safety-related.
+- ref_id: nct05061277
+  year: 2022
+  type: trial_registry
+  one_line_finding: Healthy-volunteer PK study withdrawn with zero enrolment for strategic reasons.
+- ref_id: nct03794609
+  year: 2022
+  type: trial_registry
+  one_line_finding: The programme's observational natural-history study was terminated on the same date.
+- ref_id: rignol2022
+  pmid: '35229060'
+  first_author: Rignol G
+  year: 2022
+  type: primary
+  one_line_finding: Recifercept prevented premature ossification of skull base synchondroses in Fgfr3-ach/+
+    mice - the positive animal result that did not translate.
+open_questions:
+- g_l12b_006
+- g_l12b_002
+contradicts:
+- rignol2022
+last_verified: '2026-08-05'
+termination_reason: scientific_null
+termination_note: Recifercept NCT04638153/NCT05116046 stopped for "lack of efficacy at any of the tested
+  doses"; posted observed/expected height ratio 1.0 (95% CI 0.8-1.1) in all three arms. This IS negative
+  evidence about soluble FGFR3 decoys.

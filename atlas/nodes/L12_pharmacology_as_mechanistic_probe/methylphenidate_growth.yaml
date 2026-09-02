@@ -1,0 +1,85 @@
+id: methylphenidate_growth
+name: Methylphenidate and growth suppression
+aliases: [stimulant growth suppression, MPH]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Methylphenidate is a dopamine and noradrenaline reuptake inhibitor and the first-line
+  drug for ADHD, given daily for years across the exact window in which linear growth is
+  accrued. It is therefore an unintentional but very large human experiment on whether
+  chronic central stimulant exposure constrains growth. A meta-analysis of 33 studies
+  (16 rated high quality) finds methylphenidate monotherapy associated with a reduction in
+  height Z score of -0.13 (95% CI -0.18 to -0.09), weight Z of -0.25 (95% CI -0.36 to
+  -0.15) and BMI Z of -0.26 (95% CI -0.32 to -0.20), with substantial heterogeneity
+  (I-squared 91-97%) that subgroup and regression analysis could not explain. The
+  magnitude ordering is informative: the weight deficit is roughly twice the height
+  deficit, which is the signature of an appetite-mediated nutritional mechanism acting on
+  the plate rather than a direct pharmacological action on chondrocytes. No stimulant
+  concentration has been measured in growth plate tissue, and none would be expected to
+  matter if the pathway is nutritional. The unresolved question is whether the height Z
+  deficit persists to adult height or is recovered after discontinuation, which the
+  meta-analysis does not address.
+quantitative:
+  - parameter: change in height Z score with methylphenidate monotherapy
+    value: '-0.13'
+    unit: Z-score
+    conditions: >-
+      meta-analysis of 33 studies in children and adolescents with ADHD on methylphenidate
+      monotherapy, pre- versus post-treatment; 16 high quality, 17 moderate quality
+    species: human
+    source_ref: cao2026
+    uncertainty: 95% CI -0.18 to -0.09; I-squared 91.1%, p<0.001
+  - parameter: change in weight Z score
+    value: '-0.25'
+    unit: Z-score
+    conditions: same meta-analysis
+    species: human
+    source_ref: cao2026
+    uncertainty: 95% CI -0.36 to -0.15; I-squared 96.8%
+  - parameter: change in BMI Z score
+    value: '-0.26'
+    unit: Z-score
+    conditions: same meta-analysis; absolute mean BMI showed no significant difference
+    species: human
+    source_ref: cao2026
+    uncertainty: 95% CI -0.32 to -0.20; I-squared 96.3%
+  - parameter: ratio of weight Z deficit to height Z deficit
+    value: '~1.9'
+    unit: ratio
+    conditions: derived from the two pooled estimates; consistent with an appetite-mediated rather than direct chondrocyte mechanism
+    species: human
+    source_ref: cao2026
+    uncertainty: derived quantity, no CI
+    value_unverified: true
+localization:
+  - "human growth plate: no direct drug action demonstrated; the plausible route is reduced energy intake acting on the systemic growth axis"
+human_evidence: direct
+human_evidence_note: >-
+  Meta-analysis of 33 clinical studies with pre- and post-treatment anthropometry in
+  children and adolescents receiving methylphenidate monotherapy.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: >-
+  A human pharmacoepidemiological finding in humans; there is no animal claim being carried across.
+confidence: A
+claim_grades:
+  - claim: Methylphenidate monotherapy is associated with a small reduction in height Z score of about 0.13.
+    grade: A
+    basis: Meta-analysis of 33 studies with consistent direction, though I-squared 91% and unexplained heterogeneity.
+  - claim: The growth effect is mediated by reduced appetite and energy intake rather than by a direct action on the growth plate.
+    grade: E
+    basis: Flagged inference from the weight-to-height deficit ratio; not directly tested in any of the pooled studies.
+  - claim: The height deficit persists to adult height.
+    grade: X
+    basis: Widely debated but not addressed by this meta-analysis, which reports only on-treatment Z scores.
+key_refs:
+  - ref_id: cao2026
+    pmid: '42199906'
+    first_author: Cao M
+    year: 2026
+    type: meta_analysis
+    one_line_finding: 33 studies - height Z -0.13 (95% CI -0.18 to -0.09), weight Z -0.25, BMI Z -0.26 on methylphenidate monotherapy.
+open_questions: [g_l12b_021]
+contradicts: []
+last_verified: '2026-08-05'

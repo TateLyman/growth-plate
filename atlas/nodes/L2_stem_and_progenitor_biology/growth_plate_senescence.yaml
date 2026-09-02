@@ -1,0 +1,117 @@
+id: growth_plate_senescence
+name: Growth plate senescence
+aliases:
+- programmed growth plate senescence
+- growth plate maturation
+type: process
+summary: 'Growth plate senescence is the coordinated, age-related decline in plate function: falling chondrocyte
+  proliferation rate, decreasing plate height, fewer resting zone cells per unit area, reduced hypertrophic
+  cell size and altered matrix - not cellular senescence in the p16/SASP sense. It is intrinsic and local
+  rather than systemic, demonstrated by local catch-up growth after local glucocorticoid in rabbit, and
+  it is division-dependent rather than time-dependent, demonstrated by the PARTIAL conservation of growth
+  potential during growth-inhibited periods in rabbit and rat. Partial is the operative word and is
+  frequently dropped: in the rat propylthiouracil model that carries this claim, catch-up growth was
+  statistically INCOMPLETE at final measurement for body mass, tail length and tibia length, and the
+  authors offer two explanations for the shortfall, both of which entail that the stem-cell division
+  budget is not perfectly conserved (marino2008). That study also suppressed the gonadal axis only
+  incompletely - uterine mass ~0.16 g against ~0.1 g ovariectomised and ~0.5 g intact - leaving
+  oestrogen, the leading alternative driver of plate senescence, present and potentially unequal
+  between arms. It is molecularly accompanied by progressive loss
+  of global DNA methylation in resting zone chondrocytes, an effect specific to slow in vivo resting-zone
+  proliferation. Ageing also acts on the progenitor compartment more broadly, though on a DIFFERENT compartment:
+  aged (24-month) mouse marrow and periosteal skeletal stem cells lose bone and cartilage potential and
+  produce an inflammatory, pro-resorptive stroma not reversed by heterochronic parabiosis (ambrosi2021).
+  Those are not growth plate resting-zone chondrocytes, and in that study growth plate attenuation appears
+  only as a descriptive ageing correlate, so this evidence bounds the systemic niche, not the clock
+  internal to the plate. The division economy of the resting zone is now in question from the other direction: PTHrP+
+  resting-zone chondrocytes acquire self-renewing stem cell behaviour after secondary ossification centre
+  formation (mizuhashi2018, newton2019), which is hard to reconcile with a strictly fixed, finite division
+  budget and has never been tested against the senescence model. The species
+  boundary is critical: rodent plates senesce nearly to cessation without fusing, so senescence and fusion
+  are separable processes, and human growth plate senescence has been characterised histologically but
+  never functionally.'
+quantitative: []
+localization:
+- 'rabbit and rat growth plate: measured across age (schrier2006, marino2008)'
+- 'human growth plate: histological description only'
+human_evidence: indirect
+human_evidence_note: Human evidence is the clinical growth-velocity curve and its response to removing
+  growth-inhibiting conditions; there are no direct human measurements of plate proliferative kinetics
+  across age.
+species_basis:
+- rabbit
+- rat
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: 'The phenomenon is cross-species and matches human growth curves, but its endpoint
+  differs: rodents never fuse, so the terminal phase of human senescence has no faithful model.'
+confidence: B
+key_refs:
+- ref_id: schrier2006
+  pmid: '16614378'
+  doi: 10.1677/joe.1.06489
+  first_author: Schrier L
+  year: 2006
+  type: primary_abstract_only
+  one_line_finding: Quantifies age-related decline in rabbit resting zone proliferation and cell number
+- ref_id: nilsson2005
+  pmid: '16002553'
+  doi: 10.1677/joe.1.06016
+  first_author: Nilsson O
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: Links senescence to progressive loss of DNA methylation in resting zone chondrocytes
+- ref_id: marino2008
+  pmid: '18174286'
+  doi: 10.1210/en.2007-0993
+  first_author: Marino R
+  year: 2008
+  type: primary
+  one_line_finding: Hypothyroidism delays functional, structural and molecular growth plate senescence
+    in rat, but catch-up growth was INCOMPLETE at final measurement and gonadal suppression by leuprolide
+    was incomplete
+- ref_id: ambrosi2021
+  pmid: '34381212'
+  doi: 10.1038/s41586-021-03795-7
+  first_author: Ambrosi TH
+  year: 2021
+  type: primary
+  one_line_finding: Aged (24-month) mouse MARROW/PERIOSTEAL skeletal stem cells lose osteochondrogenic
+    potential and build an inflammatory pro-resorptive niche not reversed by heterochronic parabiosis;
+    growth plate attenuation is a descriptive correlate only, not the studied compartment
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary_abstract_only
+  one_line_finding: PTHrP+ resting zone chondrocytes are a distinct skeletal stem cell class that forms
+    columnar clones after secondary ossification centre formation - a self-renewal behaviour hard to
+    reconcile with a strictly fixed, finite division budget
+- ref_id: newton2019
+  pmid: '30814736'
+  first_author: Newton PT
+  year: 2019
+  type: primary_abstract_only
+  one_line_finding: Chondroprogenitors are depleted during fetal and neonatal growth but then ACQUIRE
+    self-renewal postnatally, forming large stable monoclonal columns - capacity is gained, not only spent
+- ref_id: emons2011
+  pmid: '21540578'
+  doi: 10.1159/000327788
+  first_author: Emons J
+  year: 2011
+  type: review
+  one_line_finding: Reviews maturation and fusion and stresses the rodent/human species difference
+open_questions:
+- g_l2stem_005
+- g_l2stem_006
+- g_l2stem_008
+- g_l2d_006
+layer: L2
+stub: false
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. marino2008 and ambrosi2021 read in FULL; schrier2006
+  and nilsson2005 are not open access and remain abstract only. Verdict SCOPED - conservation of growth
+  potential is partial, not complete, and ambrosi2021 has been scoped to the marrow/periosteal compartment.
+last_verified: '2026-08-05'

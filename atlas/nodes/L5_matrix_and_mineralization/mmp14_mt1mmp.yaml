@@ -1,0 +1,81 @@
+id: mmp14_mt1mmp
+name: MT1-MMP (MMP14)
+aliases:
+- MMP14
+- MT1-MMP
+- membrane-type 1 matrix metalloproteinase
+type: protein
+layer: L5
+stub: false
+summary: 'MT1-MMP is the membrane-anchored collagenase whose loss produces the most severe skeletal phenotype
+  of any single matrix metalloproteinase: Mmp14-null mice develop dwarfism, osteopenia, generalised arthritis
+  and connective tissue disease attributed directly to inadequate collagen turnover, with defective secondary
+  ossification and soft tissue fibrosis. That contrast is the informative part of this layer''s protease
+  section. Deleting the secreted collagenase MMP-13 gives an expanded hypertrophic zone; deleting the
+  vascular-invasion gelatinase MMP-9 gives a transient eight-fold plate; deleting the two aggrecanases
+  together gives a physiologically normal mouse; but deleting the membrane-tethered collagenase gives
+  frank dwarfism. Pericellular, membrane-localised proteolysis is therefore the non-redundant activity.
+  MT1-MMP also has substrates beyond collagen relevant to growth: it cleaves PTH1R in the chondrocyte-derived
+  osteoblast lineage, curbing PTH signalling intensity, and chondrocyte-specific deletion in adult mice
+  does NOT reproduce the inflammatory arthritis of the global null, so much of the phenotype is non-chondrocytic.'
+quantitative:
+- parameter: Skeletal phenotype of global Mmp14 null mouse
+  value: dwarfism with osteopenia and arthritis
+  unit: qualitative; magnitude not extracted
+  conditions: constitutive null, both sexes
+  species: mouse
+  source_ref: holmbeck1999
+  uncertainty: fold reduction in bone length not extracted from abstract
+localization:
+- 'human all zones: MMP-14 is the most prominent MMP in the human child/adolescent growth plate and is
+  present in reserve, proliferative and hypertrophic zones (haeusler2005)'
+- 'mouse chondrocytes and osteoblasts: MT1-MMP expressed; chondrocyte-specific deletion does not phenocopy
+  global null (holmbeck1999, xia2023)'
+- 'human growth plate: not localised in this sweep'
+human_evidence: indirect
+human_evidence_note: Human MMP14 biallelic loss causes Winchester syndrome/multicentric osteolysis with
+  skeletal dysplasia, but no human growth plate data were retrieved here.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: All quantitative statements are murine and the tissue of origin of the dwarfism
+  has not been resolved even in the mouse.
+confidence: C
+key_refs:
+- ref_id: holmbeck1999
+  pmid: '10520996'
+  first_author: Holmbeck K
+  year: 1999
+  type: primary_abstract_only
+  one_line_finding: MT1-MMP (Mmp14) null mice develop dwarfism, osteopenia and arthritis from inadequate
+    collagen turnover
+- ref_id: xia2023
+  pmid: '37598898'
+  first_author: Xia XD
+  year: 2023
+  type: primary_abstract_only
+  one_line_finding: Global but not chondrocyte-specific MT1-MMP deficiency causes inflammatory arthritis
+    in adult mice
+- ref_id: chu2023
+  pmid: '36892459'
+  first_author: Chu TL
+  year: 2023
+  type: primary_abstract_only
+  one_line_finding: MMP14 cleaves PTH1R in the chondrocyte-derived osteoblast lineage, limiting PTH signalling
+    intensity
+- ref_id: haeusler2005
+  pmid: '15868281'
+  first_author: Haeusler G
+  year: 2005
+  type: primary
+  one_line_finding: 'Human child and adolescent growth plate: MMP-14 most prominent and present in all
+    zones; MMP-1/9/10/11/13 and VEGF in hypertrophic chondrocytes; TIMP-1 in all zones, TIMP-2 in hypertrophic
+    chondrocytes'
+open_questions: []
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  MMP-14 is the most prominent MMP in human growth plate and present in all zones (haeusler2005);
+  the node bounds its own claim by noting the chondrocyte-specific deletion does not phenocopy the
+  global null (xia2023).

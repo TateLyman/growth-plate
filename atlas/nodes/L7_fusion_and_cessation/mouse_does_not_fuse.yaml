@@ -1,0 +1,122 @@
+id: mouse_does_not_fuse
+name: Mice do not undergo epiphyseal fusion
+type: phenotype
+layer: L7
+stub: false
+aliases:
+- murine growth plate persistence
+- absence of physeal closure in Mus musculus
+summary: |
+  The mouse growth plate is never replaced by bone. In mice examined by SEM/energy-dispersive
+  X-ray spectroscopy and immunohistochemistry, the growth plate at 55 weeks of age was still a
+  discrete cartilaginous band: mineral (Ca, P) content of the hypertrophic zone had risen and
+  the mineralised area had expanded relative to 10 weeks, but the plate remained calcified
+  cartilage rather than bone, and aggrecan glycosaminoglycan was still detectable across it
+  (yu2025, mouse). The differentiation machinery required to complete endochondral replacement
+  was switched off rather than up: type X collagen and MMP-13 were present in the hypertrophic
+  zone at 10 weeks but absent at 55 weeks, and type II collagen and aggrecan protein were only
+  sparsely detectable at 55 weeks (yu2025, mouse). This is not "nothing happens": mice do form
+  discrete transphyseal bony bridges countable by micro-CT, and their number and density are
+  genotype-sensitive (wild-type sham tibiae 495 bridges at density 1.2; Socs2-/- 187 bridges at
+  density 14.4) (samvelyan2022, mouse). Murine bridging is therefore a real, quantifiable,
+  partial process that never proceeds to the complete cartilage-to-bone replacement and loss of
+  a continuous cartilaginous plate that defines human epiphyseal fusion; a 2026 human growth
+  plate study states the contrast directly (chu2026). The consequence is structural: no murine
+  experiment can report the endpoint "epiphyseal fusion", so every murine claim about fusion
+  mechanism is an inference from a surrogate (plate height, bridge count, proliferation rate),
+  and the surrogate-to-endpoint step has never been validated in any species.
+quantitative:
+- parameter: age at which mouse growth plate remains unfused calcified cartilage
+  value: '55'
+  unit: weeks
+  conditions: mouse tibia/femur, SEM-EDS and IHC, latest timepoint examined
+  species: mouse
+  source_ref: yu2025
+  uncertainty: observational; only two timepoints (W10, W55) examined
+- parameter: type X collagen and MMP-13 immunoreactivity in hypertrophic zone
+  value: present at W10, absent at W55
+  unit: qualitative IHC
+  conditions: aged mouse growth plate
+  species: mouse
+  source_ref: yu2025
+  uncertainty: not reported
+- parameter: growth plate bony bridge number, wild-type mouse tibia (sham)
+  value: '495'
+  unit: bridges per growth plate
+  conditions: wild-type, sham surgery, micro-CT
+  species: mouse
+  source_ref: samvelyan2022
+  uncertainty: SD 45
+- parameter: growth plate bony bridge density, wild-type mouse tibia (sham)
+  value: '1.2'
+  unit: bridges per unit area (study-defined)
+  conditions: wild-type, sham surgery, micro-CT
+  species: mouse
+  source_ref: samvelyan2022
+  uncertainty: SD 0.5
+- parameter: growth plate bony bridge density, Socs2-/- mouse tibia (sham)
+  value: '14.4'
+  unit: bridges per unit area (study-defined)
+  conditions: Socs2-/- (de-repressed GH signalling), sham surgery, micro-CT
+  species: mouse
+  source_ref: samvelyan2022
+  uncertainty: SD 0.7
+localization:
+- 'mouse growth plate: persists as calcified cartilage to at least 55 weeks (yu2025)'
+- 'mouse HZ: type X collagen and MMP-13 lost by 55 weeks (yu2025)'
+- 'mouse growth plate: discrete transphyseal bony bridges quantifiable by micro-CT (staines2018, samvelyan2022)'
+human_evidence: absent
+human_evidence_note: >-
+  This node is a statement about mice. The human side of the contrast rests on human histology
+  showing complete cartilage-to-bone replacement (haines1975) and on direct assertion within a
+  human growth plate study (chu2026); no study has processed human and mouse fusing plates in
+  the same assay.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: >-
+  Reverse-direction risk: this node is what makes every murine node in the atlas high-risk.
+  Because the mouse cannot express the endpoint, murine mechanism data can only be transferred
+  to humans by assuming that the sub-fusion processes mice do show (plate thinning, bridging,
+  senescent decline) are the processes that terminate the human plate. That assumption is untested.
+confidence: C
+key_refs:
+- ref_id: yu2025
+  pmid: '40478277'
+  first_author: Yu X
+  year: 2025
+  type: primary
+  one_line_finding: >-
+    Mouse growth plate calcifies with age but remains calcified cartilage at 55 weeks, losing
+    type X collagen and MMP-13, and is never replaced by bone.
+- ref_id: samvelyan2022
+  pmid: '35272487'
+  first_author: Samvelyan HJ
+  year: 2022
+  type: primary
+  one_line_finding: >-
+    Micro-CT quantification of growth plate bony bridges in wild-type and Socs2-/- mouse tibiae;
+    bridge density differs ~12-fold by genotype.
+- ref_id: staines2018
+  pmid: '29417047'
+  first_author: Staines KA
+  year: 2018
+  type: primary
+  one_line_finding: >-
+    Synchrotron X-ray microtomography method for non-destructive 3D quantification of growth
+    plate bone bridging with micron-scale finite element modelling.
+- ref_id: chu2026
+  pmid: '41984930'
+  first_author: Chu NTL
+  year: 2026
+  type: primary_abstract_only
+  one_line_finding: >-
+    States as premise of a human growth plate single-cell study that the plate closes after
+    puberty in humans but remains open throughout life in mice.
+open_questions:
+- g_l7fuse_001
+- g_l7fuse_004
+- g_l7fuse_011
+contradicts: []
+last_verified: '2026-08-05'

@@ -1,0 +1,57 @@
+id: stadiometry_measurement_error
+name: Stadiometry measurement error
+aliases:
+- standing height measurement precision
+type: method
+summary: |
+  Every clinical statement about human growth velocity is a difference between two stadiometer
+  readings, so the measurement error propagates directly into the velocity and does so
+  amplified by the reciprocal of the interval. Two systematic sources dominate and both are
+  biological rather than instrumental. Stature varies diurnally: human height falls measurably
+  across the waking day and recovers with recumbency (reilly1984), so a morning and an
+  afternoon measurement are not measurements of the same quantity, and diurnal loss originates
+  partly in vertebral and epiphyseal cartilage (see gap g_l6mech_014). Posture and stretch
+  technique alter the reading by a comparable amount. The practical consequence is
+  quantitative: with a typical technical error of measurement of a few millimetres, a three-
+  month interval implies a velocity uncertainty of order centimetres per year - which is the
+  same order as the treatment effects routinely reported in growth-promoting trials. This is
+  why knemometry exists, why growth velocity is conventionally computed over intervals of at
+  least six months (growth_velocity_measurement_interval), and why single-visit velocity
+  claims should be treated as uninterpretable regardless of how they are reported.
+quantitative:
+- parameter: diurnal variation in human stature
+  value: measurable loss across the waking day with recovery on recumbency
+  unit: qualitative
+  conditions: adult subjects, repeated stadiometry
+  species: human
+  source_ref: reilly1984
+  uncertainty: magnitude not extracted here; see access_queue
+localization:
+- 'human SYS: whole-body measurement, no zonal resolution'
+human_evidence: direct
+human_evidence_note: Stadiometry is a human clinical measurement and the error sources are documented
+  in human subjects.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical measurement.
+confidence: B
+key_refs:
+- ref_id: reilly1984
+  first_author: Reilly T
+  year: 1984
+  type: primary
+  one_line_finding: Human stature varies circadianly, falling across the waking day and recovering
+    with recumbency.
+- ref_id: ahmed1995
+  first_author: Ahmed SF
+  year: 1995
+  type: primary
+  one_line_finding: Precision of two knemometric techniques compared in childhood - the response
+    to stadiometric imprecision.
+open_questions:
+- g_l6mech_014
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

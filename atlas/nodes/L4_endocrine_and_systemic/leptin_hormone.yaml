@@ -1,0 +1,56 @@
+id: leptin_hormone
+name: Leptin
+aliases:
+- LEP
+- ob protein
+type: hormone
+layer: L4
+stub: false
+summary: 'Leptin is a 16 kDa adipocyte-derived cytokine whose circulating concentration is proportional
+  to fat mass and which functions as the permissive energy-sufficiency signal for the reproductive and
+  growth axes. Below a threshold of adiposity, leptin falls, hypothalamic kisspeptin output drops and
+  puberty is delayed or arrested - the mechanism underlying pubertal delay in anorexia nervosa, athletic
+  amenorrhoea and undernutrition. Human congenital leptin deficiency proves the necessity: in a 145-child
+  cohort with LEP, LEPR or MC4R deficiency, LEP-deficient children had 26% mortality and LEPR-deficient
+  9%, mainly from infection, with hypogonadotropic hypogonadism in survivors; recombinant leptin restores
+  puberty (saeed2023). At the plate itself leptin has a reported local action - it stimulates aromatase
+  in the growth plate, which has been proposed to limit catch-up growth efficiency - but that is rodent
+  work and the direct chondrocyte effect has not been demonstrated in human tissue.'
+quantitative:
+- parameter: mortality in untreated congenital leptin deficiency
+  value: '26'
+  unit: '%'
+  conditions: children with biallelic LEP deficiency within a 145-child LEP/LEPR/MC4R cohort, Pakistan
+  species: human
+  source_ref: saeed2023
+  uncertainty: retrospective cross-sectional; denominator is the LEP-deficient subgroup
+- parameter: mortality in untreated congenital leptin receptor deficiency
+  value: '9'
+  unit: '%'
+  conditions: children with biallelic LEPR deficiency in the same cohort
+  species: human
+  source_ref: saeed2023
+  uncertainty: retrospective cross-sectional
+localization:
+- 'human SYS: adipocyte -> serum -> hypothalamic arcuate nucleus'
+- 'rodent growth plate: leptin stimulates local aromatase (not confirmed in human tissue)'
+human_evidence: direct
+human_evidence_note: Congenital human leptin deficiency causes hypogonadotropic hypogonadism reversed
+  by recombinant leptin - an interventional human experiment.
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: moderate
+translation_risk_reason: The energy-sufficiency gate is human-proven; the local growth plate aromatase
+  action is rodent-only.
+confidence: B
+key_refs:
+- ref_id: saeed2023
+  first_author: Saeed S
+  year: 2023
+  type: primary
+  one_line_finding: Untreated congenital LEP (26% mortality) and LEPR (9%) deficiency in a 145-child cohort,
+    with hypogonadotropic hypogonadism in survivors.
+  pmid: '37659411'
+last_verified: '2026-08-05'

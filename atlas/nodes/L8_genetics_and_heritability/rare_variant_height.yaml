@@ -1,0 +1,120 @@
+id: rare_variant_height
+name: Rare variant contribution to height
+aliases:
+- low-frequency coding variants and height
+- rare non-coding variants and height
+type: process
+layer: L8
+stub: false
+summary: |-
+  Rare variation contributes to height in a way that is quantitatively bounded and mechanistically
+  distinct from common variation. Marouli 2017 reported 83 height-associated coding variants with
+  minor allele frequencies of 0.1-4.8% and effects up to 2 cm per allele - more than ten times the
+  average common-variant effect - in genes including IHH, STC2, AR and CRISPLD2, and showed
+  functionally that rare height-increasing STC2 alleles compromise proteolytic inhibition of PAPP-A
+  and increase IGFBP-4 cleavage, raising IGF bioavailability. Those 83 variants overlap genes mutated
+  in monogenic growth disorders, so the rare-coding tier is partly the same gene set as the Mendelian
+  tier at lower allelic severity. Hawkes 2024 extended the search to non-coding regulatory regions
+  using whole-genome sequencing in 333,100 individuals across UK Biobank, TOPMed and All of Us, and
+  found 29 independent rare associations at P < 6e-10 after conditioning on known signals, with
+  effects from -7 cm to +4.7 cm, plus a replicated aggregate signal near HMGA1 worth about 5 cm.
+  Wainschtein 2026 then bounded the whole tier: across 34 traits in 347,630 UK Biobank whole genomes,
+  rare variants (MAF < 1%) account for about 20% of pedigree heritability and common variants about
+  68%, and of the rare-variant component 21% is coding and 79% non-coding. The rare tier is
+  therefore real, contains the largest individual effects outside Mendelian disease, and is mostly
+  regulatory rather than protein-altering.
+quantitative:
+- parameter: height-associated low-frequency coding variants
+  value: '83'
+  unit: variants
+  conditions: minor allele frequency 0.1-4.8%, exome-array meta-analysis
+  species: human
+  source_ref: marouli2017
+  uncertainty: not applicable (count)
+- parameter: maximum per-allele effect, rare coding variants
+  value: '2'
+  unit: cm
+  conditions: e.g. IHH, STC2, AR, CRISPLD2
+  species: human
+  source_ref: marouli2017
+  uncertainty: '>10x the average common-variant effect'
+- parameter: per-allele effect of rare STC2 height-increasing alleles
+  value: 1-2
+  unit: cm
+  conditions: functional follow-up shows compromised PAPP-A inhibition and increased IGFBP-4 cleavage
+  species: human
+  source_ref: marouli2017
+  uncertainty: range as reported
+- parameter: independent rare non-coding height associations
+  value: '29'
+  unit: variants
+  conditions: WGS of 333,100 individuals (UK Biobank 200,003; TOPMed 87,652; All of Us 45,445),
+    MAF < 0.1%, P < 6e-10 conditional
+  species: human
+  source_ref: hawkes2024
+  uncertainty: not applicable (count)
+- parameter: effect-size range, rare non-coding height variants
+  value: -7 to +4.7
+  unit: cm
+  conditions: same analysis
+  species: human
+  source_ref: hawkes2024
+  uncertainty: range across the 29 signals
+- parameter: share of pedigree heritability from rare variants (MAF < 1%)
+  value: '20'
+  unit: '%'
+  conditions: 347,630 UK Biobank whole genomes, average across 34 complex traits
+  species: human
+  source_ref: wainschtein2026
+  uncertainty: common variants contribute 68%; total WGS capture ~88%
+- parameter: share of rare-variant heritability that is non-coding
+  value: '79'
+  unit: '%'
+  conditions: same analysis
+  species: human
+  source_ref: wainschtein2026
+  uncertainty: coding accounts for the remaining 21%
+localization:
+- 'human: germline, genome-wide'
+human_evidence: direct
+human_evidence_note: Three independent large human sequencing analyses with measured stature and
+  explicit variance partitions.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human sequencing and heritability partitioning.
+confidence: A
+key_refs:
+- ref_id: marouli2017
+  pmid: '28146470'
+  doi: 10.1038/nature21039
+  first_author: Marouli E
+  year: 2017
+  type: primary
+  one_line_finding: 83 low-frequency coding variants alter height by up to 2 cm per allele; rare
+    STC2 alleles act by compromising PAPP-A inhibition and raising IGF bioavailability.
+- ref_id: hawkes2024
+  pmid: '39362880'
+  doi: 10.1038/s41467-024-52579-w
+  first_author: Hawkes G
+  year: 2024
+  type: primary
+  one_line_finding: 29 independent rare non-coding height associations with effects from -7 cm
+    to +4.7 cm in 333,100 whole genomes, plus a replicated ~5 cm aggregate signal near HMGA1.
+- ref_id: wainschtein2026
+  pmid: '41225014'
+  doi: 10.1038/s41586-025-09720-6
+  first_author: Wainschtein P
+  year: 2026
+  type: primary
+  one_line_finding: Rare variants account for ~20% and common variants ~68% of pedigree heritability
+    across 34 traits; 79% of the rare-variant component is non-coding.
+- ref_id: depope2026
+  pmid: '41713425'
+  doi: 10.1016/j.xgen.2026.101162
+  first_author: Depope A
+  year: 2026
+  type: primary
+  one_line_finding: Joint WGS modelling identifies 59 rare variants and gene burden scores for
+    height and achieves ~46% polygenic prediction accuracy.
+last_verified: '2026-08-05'

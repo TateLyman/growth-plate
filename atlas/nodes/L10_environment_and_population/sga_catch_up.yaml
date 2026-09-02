@@ -1,0 +1,83 @@
+id: sga_catch_up
+name: Catch-up growth after small-for-gestational-age birth
+type: process
+summary: Catch-up growth after SGA birth is fast, early and mostly complete, and its timing constrains
+  any mechanism proposed for it. In a Goteborg population series, 82.9% of SGA infants showed catch-up
+  during the first 6 months and 94.3% reached a final height within the normal range; of the 66 infants
+  still short at 6 months (21 SGA and 45 non-SGA), 10 (15.2%) remained short into adulthood while 56 caught
+  up spontaneously - which led the authors to argue that fetal growth should be defined by body size at
+  6 months rather than at birth (karlberg2002). In the larger 3650-child cohort, catch-up in length-defined
+  SGA infants occurred during the first 6 months, cutting the proportion below -2 SDS to 13.4% by 1 year
+  and 7.9% by 18 years, and the magnitude of catch-up depended on mid-parental target height and on birth
+  length but not on birth weight or BMI at birth (karlberg1995). Two features matter mechanistically.
+  Catch-up is essentially over before the infancy-to-childhood transition, so it is completed while growth
+  is still nutrition- and IGF-dependent rather than GH-dependent. And it is target-height dependent, meaning
+  the recovering child grows towards a set point rather than simply growing fast - which is the phenotype
+  the L2 catch_up_growth and delayed_senescence_hypothesis nodes have to explain at the level of the plate.
+quantitative:
+- parameter: proportion of SGA infants showing catch-up in the first 6 months
+  value: '82.9'
+  unit: '%'
+  conditions: healthy children, Goteborg, Sweden
+  species: human
+  source_ref: karlberg2002
+  uncertainty: abstract only; denominator not stated in the abstract
+- parameter: proportion of SGA infants reaching a final height within the normal range
+  value: '94.3'
+  unit: '%'
+  conditions: same series
+  species: human
+  source_ref: karlberg2002
+  uncertainty: abstract only
+- parameter: proportion of infants still short at 6 months who remained short into adulthood
+  value: '15.2'
+  unit: '%'
+  conditions: 66 short infants at 6 months (21 SGA, 45 non-SGA); 10 of 66
+  species: human
+  source_ref: karlberg2002
+  uncertainty: abstract only; small denominator
+localization:
+- 'human SYS: postnatal growth velocity, first 6 months'
+- 'human growth plate: never sampled during catch-up'
+human_evidence: direct
+human_evidence_note: Population-based Swedish longitudinal growth series with measured serial length and
+  final height.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human longitudinal growth data.
+confidence: B
+claim_grades:
+- claim: Catch-up growth after SGA birth is largely complete by 6 months of age.
+  grade: B
+  basis: Two population-based Swedish series (karlberg1995, karlberg2002); the 6-month figures come from
+    an abstract-only record.
+- claim: The magnitude of catch-up depends on mid-parental target height and on birth length, not on birth
+    weight or BMI at birth.
+  grade: A
+  basis: Multiple linear regression in the 3650-child cohort with final height (karlberg1995).
+- claim: Catch-up reflects a growth plate that retains proliferative capacity because senescence was delayed
+    during restriction.
+  grade: E
+  basis: The delayed-senescence account is an L2 hypothesis; no human growth plate has been examined during
+    or after catch-up.
+key_refs:
+- ref_id: karlberg2002
+  pmid: '12510975'
+  first_author: Karlberg J
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: 82.9% of SGA infants caught up within 6 months and 94.3% reached a normal final height;
+    15.2% of infants still short at 6 months remained short into adulthood (abstract only).
+- ref_id: karlberg1995
+  pmid: '8552442'
+  first_author: Karlberg J
+  year: 1995
+  type: primary
+  one_line_finding: Catch-up occurred during the first 6 months; the magnitude depended on target height
+    and birth length but not on birth weight or BMI at birth.
+open_questions:
+- g_l10env_008
+layer: L10
+stub: false
+last_verified: '2026-08-05'

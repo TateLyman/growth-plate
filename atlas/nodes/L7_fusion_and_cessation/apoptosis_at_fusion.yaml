@@ -1,0 +1,87 @@
+id: apoptosis_at_fusion
+name: Apoptosis at fusion
+type: hypothesis
+layer: L7
+stub: false
+aliases:
+- programmed chondrocyte death model
+summary: |
+  Mechanism 4 of 6, and the only one that has been tested in human fusing tissue and failed.
+  Claim: the terminal chondrocytes of the growth plate die by classical apoptosis, clearing the
+  cartilage for bony replacement. Direct human test: growth plate tissues were collected across
+  pubertal stages including one late-pubertal plate that was about to fuse. In the unfused
+  plates only a few chondrocytes were TUNEL-positive. In the fusing plate there was not a single
+  TUNEL-positive cell. Anti-apoptotic Bcl-2 and Bcl-XL and pro-apoptotic Bax, Bad and cleaved
+  caspase-3 were detectable in all growth plate zones with no change in intensity across pubertal
+  progression; in the fusing plate the anti-apoptotic proteins were present but of the
+  pro-apoptotic proteins only Bad was detected. Electron microscopy found no typical signs of
+  apoptosis or autophagy in any plate, but did show morphological signs of hypoxia and necrosis
+  (emons2009, human). The authors concluded that classical apoptosis is not likely to be involved
+  in human growth plate fusion. This is a negative result on n=1 fusing specimen and has not been
+  replicated, because no second human fusing plate has been reported. It nonetheless directly
+  contradicts the apoptosis-centred account that dominates the rodent hypertrophic-chondrocyte
+  literature, and it is why this node is retained as a competing hypothesis with negative human
+  evidence rather than as an established process. Discriminating experiment: cleaved-caspase-3
+  and TUNEL plus RIPK3/MLKL (necroptosis) and LC3/p62 (autophagy) staining on a series of human
+  physeal specimens obtained at epiphysiodesis and at fusion. Under this hypothesis apoptotic
+  cells concentrate at the bridging front; under the hypoxia/necrosis alternative necroptotic or
+  necrotic markers dominate and caspase-3 stays uncleaved.
+quantitative:
+- parameter: TUNEL-positive chondrocytes in the human fusing growth plate
+  value: '0'
+  unit: cells detected
+  conditions: single late-pubertal human growth plate about to fuse
+  species: human
+  source_ref: emons2009
+  uncertainty: n=1 specimen; absolute count reported as none
+- parameter: pro-apoptotic proteins detected in the human fusing growth plate
+  value: Bad only (Bax and cleaved caspase-3 not detected)
+  unit: immunohistochemical detection
+  conditions: single human fusing growth plate
+  species: human
+  source_ref: emons2009
+  uncertainty: n=1 specimen
+localization:
+- 'human growth plate all zones: Bcl-2, Bcl-XL, Bax, Bad and cleaved caspase-3 present without pubertal change (emons2009)'
+- 'human fusing plate: no TUNEL-positive cells, only Bad among pro-apoptotic proteins (emons2009)'
+human_evidence: direct
+human_evidence_note: >-
+  Directly tested in human growth plate tissue including one fusing plate; the human result is
+  negative for classical apoptosis.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: >-
+  The decisive evidence here is human. The limitation is sample size, not species.
+confidence: D
+key_refs:
+- ref_id: emons2009
+  pmid: '19730156'
+  first_author: Emons J
+  year: 2009
+  type: primary
+  one_line_finding: >-
+    No TUNEL-positive cells and no ultrastructural apoptosis or autophagy in a human fusing
+    growth plate; hypoxia and necrosis were seen instead.
+- ref_id: nilsson2014
+  pmid: '24708243'
+  first_author: Nilsson O
+  year: 2014
+  type: primary
+  one_line_finding: >-
+    Estrogen-accelerated loss of rabbit resting zone chondrocytes did not appear to be due to
+    apoptosis.
+- ref_id: emons2011
+  pmid: '21540578'
+  first_author: Emons J
+  year: 2011
+  type: review
+  one_line_finding: >-
+    Lists apoptosis as one of four candidate final steps in fusion, alongside autophagy,
+    transdifferentiation and hypoxia.
+open_questions:
+- g_l7fuse_006
+- g_l7fuse_002
+contradicts:
+- estrogen_accelerated_senescence
+last_verified: '2026-08-05'

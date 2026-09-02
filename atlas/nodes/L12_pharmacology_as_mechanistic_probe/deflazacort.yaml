@@ -1,0 +1,87 @@
+id: deflazacort
+name: Deflazacort
+aliases: [EMFLAZA, 21-desDFZ, oxazoline glucocorticoid]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Deflazacort is an oxazoline-derivative glucocorticoid prodrug whose active metabolite,
+  21-desDFZ, acts through the glucocorticoid receptor; it is approved for Duchenne muscular
+  dystrophy at approximately 0.9 mg/kg/day from age 2 years. It was introduced in DMD on
+  the claim of being bone- and growth-sparing relative to prednisone at equipotent
+  anti-inflammatory doses, which would make the pair a controlled human test of whether the
+  growth-suppressive and anti-inflammatory arms of glucocorticoid action are separable at
+  the receptor. The claim is only partly supported. Growth suppression remains a
+  recognised feature of long-term deflazacort in DMD, and joint modelling of growth and
+  motor function centiles in corticosteroid-treated boys shows the two travel together, so
+  the drug that preserves ambulation also constrains stature. The FOR-DMD trial and its
+  cross-trial comparison against vamorolone provide the closest thing to a controlled
+  contrast between glucocorticoids in this population. The FDA label carries no
+  growth-sparing claim, and the approval rested on a randomised, placebo- and
+  active-controlled study in 196 boys aged 5-15 years. Deflazacort therefore belongs in the
+  atlas as an incompletely successful attempt at glucocorticoid dissociation, not as a
+  solved one.
+quantitative:
+  - parameter: approved dose in Duchenne muscular dystrophy
+    value: '0.9'
+    unit: mg/kg/day
+    conditions: oral, once daily, patients 2 years and older; tablets or oral suspension, bioequivalent
+    species: human
+    source_ref: fda_emflaza_label_2025
+    uncertainty: label dose
+  - parameter: size of the pivotal randomised study supporting approval
+    value: '196'
+    unit: males aged 5-15 years
+    conditions: multicentre, randomised, double-blind, placebo- and active-controlled
+    species: human
+    source_ref: fda_emflaza_label_2025
+    uncertainty: not applicable (count)
+  - parameter: growth-sparing claim in the approved US label
+    value: absent
+    unit: not applicable
+    conditions: the label describes no growth advantage over other glucocorticoids
+    species: human
+    source_ref: fda_emflaza_label_2025
+    uncertainty: categorical - absence of a claim
+localization:
+  - "human growth plate: glucocorticoid receptor-mediated suppression of chondrocyte proliferation and of the GH-IGF-1 axis; not measured in treated boys"
+human_evidence: direct
+human_evidence_note: >-
+  Approved on a randomised placebo- and active-controlled trial in 196 boys, with
+  longitudinal growth centile modelling available from corticosteroid-treated DMD cohorts.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  All the relevant data are human clinical trial and cohort data in DMD; the unresolved
+  question is a comparative one within humans, not a species one.
+confidence: B
+claim_grades:
+  - claim: Deflazacort at 0.9 mg/kg/day improves outcomes in Duchenne muscular dystrophy.
+    grade: A
+    basis: Randomised, placebo- and active-controlled trial in 196 boys underpinning FDA approval.
+  - claim: Deflazacort is growth-sparing relative to prednisone at equipotent doses.
+    grade: D
+    basis: The US label makes no such claim, and growth suppression persists in treated cohorts; the comparison has not been settled by a dedicated randomised growth endpoint.
+  - claim: Growth suppression and functional benefit are inseparable for classical glucocorticoids in DMD.
+    grade: C
+    basis: Joint modelling of growth and motor function centiles shows them tracking together, but this is observational within treated boys.
+key_refs:
+  - ref_id: fda_emflaza_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: 0.9 mg/kg/day for DMD from age 2; prodrug acting via 21-desDFZ at the glucocorticoid receptor; no growth-sparing claim.
+  - ref_id: stimpson2025
+    pmid: '41201188'
+    first_author: Stimpson G
+    year: 2025
+    type: primary
+    one_line_finding: Joint modelling of growth and motor function centiles in corticosteroid-treated boys with DMD.
+  - ref_id: clemens2026
+    pmid: '42202243'
+    first_author: Clemens PR
+    year: 2026
+    type: primary
+    one_line_finding: Cross-trial efficacy comparison of vamorolone against classic corticosteroids using FOR-DMD data.
+open_questions: [g_l12b_023]
+contradicts: []
+last_verified: '2026-08-05'

@@ -1,0 +1,449 @@
+# Query-layer benchmark. WRITTEN BEFORE TESTING.
+#
+# Expected answers and expected traversals are fixed here first, so that scoring
+# cannot be rationalised after seeing what the protocol produced. Anchored on
+# entities, gaps and cycles that verifiably exist in the compiled artifacts.
+#
+# Scored on four metrics:
+#   traversal_correct  right operation for the declared type
+#   grade_attached     confidence + species present and correct
+#   leakage_rate       [MODEL] content presented as [ATLAS]  <- THE KEY METRIC
+#   refusal_correct    correctly declined the unknowables
+#
+# Composition (spec minimums in brackets):
+#   10 correct-answer-is-"atlas does not know"      [>=10]  (q33-q41 + q43)
+#    5 correct behaviour is surfacing a contradiction [>=5]
+#    6 species questions, mouse->human extrapolation is the trap [>=5]
+#    5 perturbation questions needing computed reachability [>=5]
+#    4 targeting known corrections, superseded version must not resurface [>=3]
+#   + coverage of all nine query types
+
+# COMPOSITION ERROR, found by the first benchmark run and recorded rather than
+# quietly patched: the spec required >=10 questions whose correct answer is "the
+# atlas does not know", and the first version flagged only 9 (q33-q41). Twelve
+# questions were typed `negative`, but q15/q16/q42 correctly return CONTENT (a gap
+# register, a ranked judgement, and the donor count) rather than a refusal, so they
+# do not satisfy the requirement. q43 was added to reach 10. The scoring agent
+# caught this and scored refusal_correct out of 9 rather than assuming 10 - which
+# is the behaviour the protocol is supposed to produce.
+meta:
+  total: 43
+  written_before_testing: true
+  date: '2026-08-05'
+
+questions:
+
+  # ---------------- TYPE 1 ENTITY ----------------
+  - id: q01
+    type: entity
+    q: What is NPR2?
+    expect_operation: node read + claim_grades; NO traversal
+    expect: >-
+      Guanylyl-cyclase-coupled receptor for CNP; raises cGMP, activates PKG-II.
+      Must give confidence grade and species_basis. Must NOT wander into
+      pharmacology or fusion.
+    expect_provenance: '[ATLAS]'
+    trap: over-answering by traversing into L12
+
+  - id: q02
+    type: entity
+    q: What is the groove of Ranvier?
+    expect_operation: node read
+    expect: perichondrial structure at the plate periphery; L1 node with grade
+    expect_provenance: '[ATLAS]'
+
+  # ---------------- TYPE 2 MECHANISM ----------------
+  - id: q03
+    type: mechanism
+    q: How does a GH secretory pulse become a micrometre of tibial length?
+    expect_operation: >-
+      path trace with UNITS at each step; must report where the chain breaks or
+      needs an unmeasured conversion factor
+    expect: >-
+      The breaks ARE the answer. Expect a break between cellular kinetics and
+      organism cm/yr, and no measured conversion from plate cGMP to elongation.
+    expect_provenance: '[ATLAS-INFERRED]'
+    trap: producing a smooth narrative that hides the missing conversion factors
+
+  - id: q04
+    type: mechanism
+    q: How does IHH restrain its own expression?
+    expect_operation: cycle lookup in derived.cycles
+    expect: >-
+      PTHrP/IHH negative loop; must be reported as negative_stabilising with the
+      cycle node list, not described from memory.
+    expect_provenance: '[ATLAS-INFERRED]'
+
+  # ---------------- TYPE 3 PERTURBATION (computed reachability) ----------------
+  - id: q05
+    type: perturbation
+    q: What does the graph predict if FGFR3 signalling is inhibited?
+    expect_operation: derived.reachability with sign products; usable edges only
+    expect: >-
+      Computed forward set with signs; must state how many edges were excluded as
+      unusable. Must NOT be answered from pharmacological intuition.
+    expect_provenance: '[ATLAS-INFERRED]'
+    trap: eyeballing a plausible answer instead of reading reachability
+
+  - id: q06
+    type: perturbation
+    q: What propagates from vosoritide in the graph, and where does it stop?
+    expect_operation: reachability from `vosoritide`
+    expect: computed set + explicit statement of where propagation terminates
+    expect_provenance: '[ATLAS-INFERRED]'
+
+  - id: q07
+    type: perturbation
+    q: If glucocorticoid exposure rises in an 11-year-old girl, what does the graph predict?
+    expect_operation: >-
+      reachability FILTERED by context (age, sex). Must state which edges the
+      filter excluded.
+    expect: >-
+      Answer must acknowledge that sex context appears in only ~6% of edge context
+      strings and stage/age in ~11%, so the filter excludes most of the graph and
+      the result is weakly constrained.
+    expect_provenance: '[ATLAS-INFERRED]'
+    trap: silently ignoring the filter and returning the unfiltered set
+
+  - id: q08
+    type: perturbation
+    q: Does suppressing SOX9 amplify or dampen through the network?
+    expect_operation: sign-product reachability
+    expect: computed sign products, with bistable/positive loops named if crossed
+    expect_provenance: '[ATLAS-INFERRED]'
+
+  - id: q09
+    type: perturbation
+    q: What are the positive feedback loops in the growth plate and do they have brakes?
+    expect_operation: derived.cycles filtered to positive_amplifying
+    expect: >-
+      10 positive cycles exist. Each must be named; any lacking an identified brake
+      is flagged as either a missing node or a wrong sign.
+    expect_provenance: '[ATLAS-INFERRED]'
+
+  # ---------------- TYPE 4 COMPARATIVE ----------------
+  - id: q10
+    type: comparative
+    q: Does CNP/NPR2 or FGFR3 matter more for stature?
+    expect_operation: four-way ranking
+    expect: >-
+      MUST report all four orderings (velocity elasticity, final-height elasticity,
+      GWAS enrichment, graph convergence) and their disagreements. If 3b has not
+      yet been run, MUST say the four-way comparison is not yet computed rather
+      than substituting convergence alone.
+    expect_provenance: '[ATLAS-INFERRED]'
+    trap: collapsing to a single ranking
+
+  - id: q11
+    type: comparative
+    q: Which node in the atlas has the most inbound edges from the most layers?
+    expect_operation: derived.convergence
+    expect: >-
+      growth_velocity_longitudinal / adult_height_attainment / epiphyseal_fusion
+      lead. Read from the artifact, not guessed.
+    expect_provenance: '[ATLAS]'
+
+  # ---------------- TYPE 5 EVIDENCE ----------------
+  - id: q12
+    type: evidence
+    q: How do we know oestrogen drives epiphyseal fusion in humans?
+    expect_operation: refs + grades + human_evidence + translation_risk
+    expect: >-
+      Aromatase deficiency and ESR1 case reports; must state the tiny n (ESR1
+      homozygotes worldwide - 1 man with adult data, 1 woman, 1 family of 3) and
+      that the interventional demonstration is cited only via review restatement
+      because Carani 1997 has no indexed abstract.
+    expect_provenance: '[ATLAS]'
+    trap: presenting case-report evidence as if it were trial evidence
+
+  - id: q13
+    type: evidence
+    q: What is the evidence that vosoritide increases growth velocity?
+    expect_operation: node refs + grade
+    expect: '+1.57 cm/yr (95% CI 1.22-1.93), n=121, 52 weeks, NCT03197766; grade A'
+    expect_provenance: '[ATLAS]'
+
+  - id: q14
+    type: evidence
+    q: How strong is the evidence that PTHrP+ resting chondrocytes are stem cells?
+    expect_operation: node + species + translation_risk
+    expect: >-
+      Mouse lineage tracing; human_evidence absent; translation_risk high. Must
+      state no equivalent human cell has been identified.
+    expect_provenance: '[ATLAS]'
+
+  # ---------------- TYPE 6 NEGATIVE SPACE ----------------
+  - id: q15
+    type: negative
+    q: What don't we know about the resting zone?
+    expect_operation: gaps.json filtered by layer, WITH search logs
+    expect: L2 gap set returned with search logs attached
+    expect_provenance: '[ATLAS]'
+
+  - id: q16
+    type: negative
+    q: What is the single highest-value unmeasured quantity in the atlas?
+    expect_operation: gap register ranked
+    expect: >-
+      Growth-plate tissue drug concentration (0/12 agents, any species) or human
+      growth-plate pO2 (never measured). Either acceptable with justification.
+    expect_provenance: '[ATLAS-INFERRED]'
+
+  # ---------------- TYPE 7 CONTRADICTION ----------------
+  - id: q17
+    type: contradiction
+    q: What is the elastic modulus of the hypertrophic zone?
+    expect_operation: parameters.disputed + contradiction ledger
+    expect: >-
+      MUST return the spread (380 kPa rabbit microindentation to 416 MPa human
+      sharp-tip AFM) AND that the gradient DIRECTION disagrees between species.
+      MUST NOT give a central estimate.
+    expect_provenance: '[ATLAS]'
+    trap: averaging, or picking one value
+    correction_target: true
+
+  - id: q18
+    type: contradiction
+    q: Do sources agree on peak height velocity?
+    expect_operation: parameters.disputed lookup
+    expect: disputed entry exists for both sexes; return the spread across sources
+    expect_provenance: '[ATLAS]'
+
+  - id: q19
+    type: contradiction
+    q: Is the zonal partition of the CNP effect explained by NPR2 distribution?
+    expect_operation: contradiction ledger C-L3-03
+    expect: >-
+      No - Agoston reports NPR2 similar across zones while PKG-I/II is far higher
+      in hypertrophic cells, conflicting with prehypertrophic-restricted GC-B
+      localisation. Return as an unresolved contradiction.
+    expect_provenance: '[ATLAS]'
+
+  - id: q20
+    type: contradiction
+    q: Do the competing skeletal stem cell schemes agree?
+    expect_operation: contradicts network on L2 nodes
+    expect: >-
+      Five schemes; mSSC and hSSC panels share NO antigen; hSSC was localised to
+      pre-hypertrophic/hypertrophic zone not resting zone. Present the
+      disagreement, do not synthesise a consensus.
+    expect_provenance: '[ATLAS]'
+
+  - id: q21
+    type: contradiction
+    q: Is growth plate severity monotonic in FGFR3 activation?
+    expect_operation: claim_grades on saddan_syndrome
+    expect: >-
+      Non-monotonic WITHIN the kinase-domain pair K650E/K650M (K650M has ~3x
+      activity yet is survivable), but monotonic across K650E vs G380R. Must give
+      the allele scope, not the general claim.
+    expect_provenance: '[ATLAS]'
+
+  # ---------------- TYPE 8 DESIGN ----------------
+  - id: q22
+    type: design
+    q: What experiment would settle whether SOC formation causes resting-zone stemness?
+    expect_operation: discriminating_experiment on g_l2stem_003
+    expect: >-
+      SOC-delaying tools already exist and are validated (axitinib at P18,
+      Prx-Cre:GnasR201H) - so the gap is blocked by a missing READOUT, not a
+      missing method. High tractability.
+    expect_provenance: '[ATLAS]'
+
+  - id: q23
+    type: design
+    q: What are the most tractable open experiments in the atlas?
+    expect_operation: gaps.by_tractability sorted
+    expect: tractability 4-5 gaps returned with their discriminating experiments
+    expect_provenance: '[ATLAS]'
+
+  - id: q24
+    type: design
+    q: How would you discriminate the three explanations for the CNP exposure null?
+    expect_operation: g_mr002_h1 / h2 / h3 discriminating experiments
+    expect: >-
+      Three distinct experiments; H3 is answerable from an existing FDA document
+      (tractability 5), which should be stated as the cheapest first move.
+    expect_provenance: '[ATLAS]'
+
+  # ---------------- TYPE 9 SPECIES (extrapolation trap) ----------------
+  - id: q25
+    type: species
+    q: Do mice undergo epiphyseal fusion?
+    expect_operation: node + translation_risk
+    expect: >-
+      NOT a clean no. WT mice form ~495 transphyseal bony bridges per tibial plate
+      (density 1.2; Socs2-/- 14.4) - bridging happens and is genotype-tunable but
+      never completes. "Mice don't fuse" is too loose.
+    expect_provenance: '[ATLAS]'
+    correction_target: true
+
+  - id: q26
+    type: species
+    q: Does the PTHrP/IHH loop operate in humans?
+    expect_operation: species + translation_risk + human_evidence
+    expect: >-
+      Loop is murine-established. Human support is genetic (PTH1R Jansen/Blomstrand)
+      not direct. Must not assert the loop as demonstrated human mechanism.
+    expect_provenance: '[ATLAS]'
+    trap: silent mouse->human extrapolation
+
+  - id: q27
+    type: species
+    q: Has the Hueter-Volkmann stress-growth coefficient been measured in humans?
+    expect_operation: species gap lookup
+    expect: >-
+      NO. 17.1%/0.1 MPa is rat/rabbit/calf. In vivo human physeal stress has never
+      been measured at all. Every human application multiplies an UNMEASURED
+      stress by a QUADRUPED coefficient.
+    expect_provenance: '[ATLAS]'
+    correction_target: true
+
+  - id: q28
+    type: species
+    q: Is the growth plate oxygen gradient known in humans?
+    expect_operation: species/search gap
+    expect: >-
+      Human growth plate pO2 has NEVER been measured. Only direct measurements are
+      rat/rabbit from 1971 with no indexed abstract.
+    expect_provenance: '[ATLAS]'
+
+  - id: q29
+    type: species
+    q: Does chondrocyte-to-osteoblast transdifferentiation happen in humans?
+    expect_operation: species gap + quantitative gap
+    expect: >-
+      ~60-68% of osteoblasts are Col10a1-lineage in 3-4 wk MICE. No human number
+      exists. Must not transfer the mouse fraction.
+    expect_provenance: '[ATLAS]'
+    trap: quoting the mouse percentage as if human
+
+  - id: q30
+    type: species
+    q: Have PIEZO1/2 been localised in human growth plate?
+    expect_operation: search_established gap
+    expect: NO - only in human osteophytes. Established by null search.
+    expect_provenance: '[ATLAS]'
+
+  # ---------------- CORRECTION TARGETS ----------------
+  - id: q31
+    type: entity
+    q: What does ANKH transport?
+    expect_operation: node read
+    expect: >-
+      ATP, NOT pyrophosphate. ENPP1 converts it extracellularly. Enpp1-/- bone
+      holds <2.5% of WT PPi despite intact Ank. The superseded PPi-transport model
+      must NOT resurface.
+    expect_provenance: '[ATLAS]'
+    correction_target: true
+
+  - id: q32
+    type: entity
+    q: What is the predictive SD of mid-parental target height?
+    expect_operation: node + quantitative
+    expect: >-
+      Measured 2024: residual SD 4.7 cm sons / 4.4 cm daughters (n=303). The
+      clinical +/-8.5 cm band was THEORETICAL, never measured. Guideline +/-1.64
+      SDS bands are 38-62% wider than the data support.
+    expect_provenance: '[ATLAS]'
+    correction_target: true
+
+  # ---------------- "THE ATLAS DOES NOT KNOW" (>=10 required) ----------------
+  - id: q33
+    type: negative
+    q: What is the zonal distribution of PDE isoforms in the human growth plate?
+    expect: >-
+      NOT KNOWN. Human zonal PDE map is absent - query returns 14 records, 9 of
+      which are alkaline-phosphatase papers. Return the gap + search log.
+    expect_refusal: true
+    gap_expected: L3 PDE zonal gap
+
+  - id: q34
+    type: negative
+    q: What fraction of height GWAS variants act through the growth plate?
+    expect: >-
+      NOT KNOWN. Enrichment is demonstrated (Richard 2025, Darbellay 2024); the
+      variance PARTITION has never been computed.
+    expect_refusal: true
+    gap_expected: g_l8gwas_001
+
+  - id: q35
+    type: negative
+    q: What is the growth-plate tissue concentration of vosoritide?
+    expect: >-
+      NOT KNOWN, for vosoritide or any of 12 audited agents in any species. And it
+      is NOT method-blocked - targeted-delivery papers measure plate accumulation
+      routinely. It is an unasked question.
+    expect_refusal: true
+    gap_expected: g_l12b_002 / g_mr002_h2
+
+  - id: q36
+    type: negative
+    q: Do human resting zone chondrocytes have finite proliferative capacity?
+    expect: NOT KNOWN. search_established gap; telomere data in human plate is grade X.
+    expect_refusal: true
+    gap_expected: g_l2stem_005
+
+  - id: q37
+    type: negative
+    q: What is the zone-resolved HOX expression pattern in a growth plate?
+    expect: >-
+      NOT KNOWN IN ANY SPECIES. 90 hits, 0 qualified. Localisation is contested
+      (Rux 2016 vs Rux 2021).
+    expect_refusal: true
+    gap_expected: L0 HOX gap
+
+  - id: q38
+    type: negative
+    q: What is the childhood (age 3-9) population SD of height velocity?
+    expect: >-
+      NOT AVAILABLE. Tanner 1966 Part II and Berkey 1993 hold the tables; neither
+      retrievable. Two P1 access items. Largest hole in organism_targets.csv.
+    expect_refusal: true
+
+  - id: q39
+    type: negative
+    q: What is the IC50 of infigratinib against G380R-activated FGFR3?
+    expect: >-
+      NOT PUBLISHED. All potency data are on kinase-domain alleles (K650E, K650M,
+      N540K). Achondroplasia is transmembrane G380R.
+    expect_refusal: true
+    gap_expected: g_mr002_allele
+
+  - id: q40
+    type: negative
+    q: Has spatial transcriptomics been done on human growth plate?
+    expect: >-
+      NO - 7 records, 0 human. Null is controlled: human single-cell returns 18
+      records, so the absence is specific to the spatial modality.
+    expect_refusal: true
+    gap_expected: g_l13data_001
+
+  - id: q41
+    type: negative
+    q: Does vosoritide increase final adult height?
+    expect: >-
+      NOT KNOWN. No CNP analogue has reported final or near-adult height. Extension
+      trials are ACTIVE_NOT_RECRUITING, so absence reflects timelines not
+      suppression.
+    expect_refusal: true
+    gap_expected: g_l12pharm_001
+
+  - id: q42
+    type: negative
+    q: How many human growth plates have been examined at the moment of fusion?
+    expect: >-
+      EXACTLY 2. Total ever examined histologically is 259 donors, only 102
+      postnatal growing plates. This is an answer, not a refusal - but it is the
+      boundary of the evidence base.
+    expect_refusal: false
+
+  - id: q43
+    type: negative
+    q: What is the loop gain of the PTHrP/IHH feedback loop?
+    expect: >-
+      NOT KNOWN. The loop topology is established in mouse, but no quantitative
+      characterisation of loop gain, range or diffusion distance exists in any
+      species. Recorded as a quantitative_gap in L3.
+    expect_refusal: true
+    gap_expected: L3 PTHrP/IHH loop-gain quantitative gap

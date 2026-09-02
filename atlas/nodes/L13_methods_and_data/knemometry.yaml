@@ -1,0 +1,76 @@
+id: knemometry
+name: Knemometry
+aliases:
+- lower leg length measurement
+- mini-knemometry
+type: method
+summary: |
+  Knemometry measures lower leg length - knee to heel - with a purpose-built device, at a
+  precision high enough to detect growth over days to weeks rather than months, which is what
+  standing-height stadiometry cannot do. Its clinical use is as a short-term growth bioassay:
+  it is more sensitive to the systemic effects of inhaled corticosteroids in asthmatic
+  children than 24-hour urinary cortisol excretion (chawes2017), and it is the standard
+  readout in two-week corticosteroid growth-suppression crossover trials (wolthers2017). Two
+  knemometric techniques have been formally compared for precision in childhood (ahmed1995),
+  and mini-knemometry has been applied in premature infants (keller2004) and in field settings
+  outside a clinic (urlacher2016). The limits that matter for this atlas are three. It
+  measures ONE segment, the tibia, so it does not report whole-stature growth and cannot
+  detect differential segment growth. Its precision is purchased by immobilising the leg and
+  applying a defined axial force, so soft-tissue compression is part of the signal. And it is
+  a tissue-level output measure: it tells you the plate elongated, never which zone did it,
+  which is the general limitation of every non-invasive human growth measurement
+  (g_l1arch_014).
+quantitative:
+- parameter: sensitivity of knemometry to inhaled corticosteroid systemic effect
+  value: greater than 24-hour urinary cortisol excretion
+  unit: comparative
+  conditions: children with asthma
+  species: human
+  source_ref: chawes2017
+  uncertainty: direct comparison within the same trial
+- parameter: typical knemometric trial duration for corticosteroid growth suppression
+  value: '2'
+  unit: weeks
+  conditions: randomised placebo-controlled crossover
+  species: human
+  source_ref: wolthers2017
+  uncertainty: design parameter
+localization:
+- 'human SYS: tibial segment length only'
+human_evidence: direct
+human_evidence_note: Knemometry is exclusively a human clinical measurement.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical measurement.
+confidence: A
+key_refs:
+- ref_id: chawes2017
+  first_author: Chawes B
+  year: 2017
+  type: primary
+  one_line_finding: Knemometry more sensitive to systemic corticosteroid effect than 24-hour urinary
+    cortisol in asthmatic children.
+- ref_id: wolthers2017
+  first_author: Wolthers OD
+  year: 2017
+  type: primary
+  one_line_finding: Two-week randomised placebo-controlled crossover knemometry of short-term growth
+    under fluticasone furoate.
+- ref_id: ahmed1995
+  first_author: Ahmed SF
+  year: 1995
+  type: primary
+  one_line_finding: Precision of two knemometric techniques compared in childhood.
+- ref_id: urlacher2016
+  first_author: Urlacher SS
+  year: 2016
+  type: primary
+  one_line_finding: Knemometry applied to measure childhood short-term growth in a field population.
+open_questions:
+- g_l1arch_014
+- g_l1arch_006
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

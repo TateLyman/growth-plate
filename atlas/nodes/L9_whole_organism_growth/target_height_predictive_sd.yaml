@@ -1,0 +1,167 @@
+id: target_height_predictive_sd
+name: Predictive SD of mid-parental target height
+aliases:
+- target height range
+- target height residual SD
+type: phenotype
+layer: L9
+stub: false
+summary: 'The number a clinician needs from target height is not the point estimate but its predictive
+  SD, because that SD defines what counts as an abnormal deviation. The value in routine use, ''mid-parental
+  height plus or minus 8.5 cm'', was not measured: Tanner and colleagues derived it from theoretical considerations
+  as the 3rd-to-97th centile band (tanner1970, as documented by zeevi2024), later revised it to +/-9 cm
+  for girls and +/-10 cm for boys, and other authorities recommend +/-1.64 SDS, which under CDC standards
+  is +/-10.6 cm for girls and +/-11.7 cm for boys. These three bands imply predictive SDs of about 4.5,
+  4.8-5.3 and 6.5-7.1 cm respectively for the same quantity. The direct empirical measurement, made only
+  in 2024, gives the residual SD of adult child height about the fully corrected target height as 4.7
+  cm for sons and 4.4 cm for daughters pooled across families, and 4.5 +/- 0.9 cm and 4.2 +/- 0.8 cm within
+  families (zeevi2024, n=303 adult children from 23 families with 7-16 children each). The independent
+  population-based estimate is wider: Luo and colleagues report a 95% prediction interval of about +/-10
+  cm around the regression estimate in 2402 Swedes, implying a predictive SD near 5.1 cm (luo1998). So
+  the honest number is a predictive SD of 4.4-5.1 cm, and the widely quoted +/-8.5 cm is best read as
+  a theoretically derived ~1.9 SD band, not the 2 SD band it is usually assumed to be. The residual dispersion
+  is not larger for taller parents (zeevi2024, r=0.38, p=0.08), consistent with the population-based finding,
+  so a single SD can be used across the height range once the mean is corrected.'
+quantitative:
+- parameter: residual SD of adult son height about corrected target height (pooled)
+  value: '4.7'
+  unit: cm
+  conditions: 303 adult children, 23 large nuclear families, Israeli/US Jewish, sex correction x1.08
+  species: human
+  source_ref: zeevi2024
+  uncertainty: pooled across all families
+- parameter: residual SD of adult daughter height about corrected target height (pooled)
+  value: '4.4'
+  unit: cm
+  conditions: same cohort
+  species: human
+  source_ref: zeevi2024
+  uncertainty: pooled across all families
+- parameter: within-family residual SD, sons
+  value: '4.5'
+  unit: cm
+  conditions: mean over 23 families
+  species: human
+  source_ref: zeevi2024
+  uncertainty: SD across families 0.9 cm
+- parameter: within-family residual SD, daughters
+  value: '4.2'
+  unit: cm
+  conditions: mean over 23 families
+  species: human
+  source_ref: zeevi2024
+  uncertainty: SD across families 0.8 cm
+- parameter: 95% prediction interval of target height from the mid-parental regression
+  value: +/-10
+  unit: cm
+  conditions: population-based Swedish sample n=2402
+  species: human
+  source_ref: luo1998
+  uncertainty: implies a predictive SD near 5.1 cm
+- parameter: proportion of children within 1.5 SDS of mid-parental height SDS
+  value: '90'
+  unit: percent
+  conditions: 419 representatively sampled UK children aged 8-9 y
+  species: human
+  source_ref: wright1999
+  uncertainty: predicted and confirmed in the survey sample
+- parameter: probability that a child is at least 10 cm shorter than corrected target height, boys
+  value: '1.5'
+  unit: percent
+  conditions: normal approximation using the measured residual SD
+  species: human
+  source_ref: zeevi2024
+  uncertainty: derived from SD 4.7 cm
+- parameter: probability that a child is at least 10 cm shorter than corrected target height, girls
+  value: '1.0'
+  unit: percent
+  conditions: normal approximation using the measured residual SD
+  species: human
+  source_ref: zeevi2024
+  uncertainty: derived from SD 4.4 cm
+- parameter: clinically quoted target range (Tanner, theoretically derived)
+  value: +/-8.5
+  unit: cm
+  conditions: asserted to correspond to the 3rd and 97th centiles
+  species: human
+  source_ref: zeevi2024
+  uncertainty: implies a predictive SD of about 4.5 cm if read as a 1.88 SD band, about 4.3 cm if misread
+    as 2 SD
+- parameter: later Tanner revision of the target range
+  value: +/-9 (girls), +/-10 (boys)
+  unit: cm
+  conditions: subsequent editions
+  species: human
+  source_ref: zeevi2024
+  uncertainty: as documented in the zeevi2024 introduction
+- parameter: guideline target range at +/-1.64 SDS under CDC standards
+  value: +/-10.6 (girls), +/-11.7 (boys)
+  unit: cm
+  conditions: recommended by GH Research Society, LWPES and ESPE for idiopathic short stature
+  species: human
+  source_ref: zeevi2024
+  uncertainty: implies a predictive SD of 6.5-7.1 cm, ~50 percent wider than measured
+- parameter: dependence of residual dispersion on parental height
+  value: none detected
+  unit: not_applicable
+  conditions: 23 families; correlation of residual SD with mid-parental height
+  species: human
+  source_ref: zeevi2024
+  uncertainty: r=0.38, p=0.08; consistent with the population-based result
+localization:
+- 'human whole organism: adult standing height, offspring versus parents'
+human_evidence: direct
+human_evidence_note: Directly measured adult heights of 303 adult children with both parents measured,
+  plus a population-based sample of 2402.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A human clinical prediction interval.
+confidence: B
+claim_grades:
+- claim: The empirical predictive SD of corrected target height is 4.4-4.7 cm
+  grade: B
+  basis: One direct measurement in a genetically and geographically narrow sample (23 large Jewish nuclear
+    families, Israel and US); internally replicated within and across families but not in a second population.
+- claim: The clinically quoted +/-8.5 cm band was a theoretical derivation, not an empirical measurement
+  grade: A
+  basis: 'Documented explicitly against the primary source: ''Tanner et al. used theoretical considerations
+    to estimate that the child''s final adult height should fall within +/-8.5 cm of mid-parental height''
+    (zeevi2024, citing tanner1970).'
+- claim: Guideline bands of +/-1.64 SDS (+/-10.6 to +/-11.7 cm) are about 50 percent wider than the measured
+    predictive SD justifies
+  grade: C
+  basis: Arithmetic comparison of the guideline band against a single empirical SD estimate; a second
+    empirical estimate (luo1998, SD ~5.1 cm) narrows but does not close the discrepancy.
+key_refs:
+- ref_id: zeevi2024
+  pmid: '39201851'
+  first_author: Zeevi D
+  year: 2024
+  type: primary
+  one_line_finding: Measured residual SD of adult child height about corrected target height is 4.7 cm
+    (sons) and 4.4 cm (daughters), and documents the +/-8.5 cm band as a theoretical derivation.
+- ref_id: luo1998
+  pmid: '9773847'
+  first_author: Luo ZC
+  year: 1998
+  type: primary
+  one_line_finding: 95% prediction interval of about +/-10 cm around the mid-parental regression estimate
+    in 2402 individuals.
+- ref_id: wright1999
+  pmid: '10451401'
+  first_author: Wright CM
+  year: 1999
+  type: primary
+  one_line_finding: 90% of 419 children fell within 1.5 SDS of mid-parental height SDS, but the predictor
+    fails at parental height extremes.
+- ref_id: tanner1970
+  pmid: '5491878'
+  first_author: Tanner JM
+  year: 1970
+  type: primary
+  one_line_finding: Source of the +/-8.5 cm target range.
+open_questions:
+- g_l9organism_004
+- g_l9organism_005
+last_verified: '2026-08-05'

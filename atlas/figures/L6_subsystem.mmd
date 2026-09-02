@@ -1,0 +1,66 @@
+graph LR
+  primary_cilium_chondrocyte["Primary cilium of the growth plate chondrocyte"]
+  primary_cilium_mechanosensing["Primary cilium mechanosensing in the growth plate"]
+  hueter_volkmann_law["Hueter-Volkmann law"]
+  mechanical_modulation_growth["Mechanical modulation of longitudinal growth"]
+  loading_effect_plate_height["Loading effect on growth plate height and zonal structure"]
+  static_vs_dynamic_loading["Static versus dynamic loading of the growth plate"]
+  strain_rate_dependence["Strain rate dependence"]
+  strain_magnitude_dependence["Strain magnitude dependence of growth modulation"]
+  strain_frequency_dependence["Strain frequency dependence"]
+  wolff_law["Wolff's law (as applied to the physis)"]
+  piezo1_channel["PIEZO1"]
+  trpv4_channel["TRPV4"]
+  integrin_beta1_chondrocyte["Integrin beta-1 (ITGB1) in growth plate chondrocytes"]
+  cytoskeletal_tension_chondrocyte["Chondrocyte cytoskeletal tension"]
+  focal_adhesion_kinase["Focal adhesion kinase (FAK/PTK2)"]
+  yap_taz_chondrocyte["YAP/TAZ in growth plate chondrocytes"]
+  piezo2_channel["PIEZO2"]
+  guided_growth_tension_band["Guided growth (tension band plating)"]
+  physeal_stress_in_vivo["In vivo physeal stress"]
+  scoliosis_vertebral_growth["Scoliosis and vertebral growth modulation"]
+  blount_disease["Blount disease (tibia vara)"]
+  physeal_bar_formation["Physeal bar formation"]
+  epiphysiodesis["Epiphysiodesis"]
+  distraction_rate_dose_response["Distraction rate and rhythm dose-response"]
+  distraction_osteogenesis["Distraction osteogenesis"]
+  gravity_posture_spinal_loading["Gravity, posture and spinal loading"]
+  diurnal_stature_variation["Diurnal stature variation"]
+  spaceflight_microgravity_growth["Spaceflight, microgravity and growth"]
+  disuse_growth_effect["Disuse and longitudinal growth"]
+  sport_specific_loading_human["Sport-specific mechanical loading effects on the human skeleton"]
+  gymnastics_stature_effect["Gymnastics and stature"]
+  bed_rest_growth_human["Bed rest as a human unloading experiment"]
+  primary_cilium_chondrocyte -.->|"hypothesized_link (speculative)"| primary_cilium_mechanosensing
+  hueter_volkmann_law -->|"required_for (C)"| mechanical_modulation_growth
+  mechanical_modulation_growth -->|"precedes (C)"| loading_effect_plate_height
+  static_vs_dynamic_loading -->|"correlates_with (C)"| loading_effect_plate_height
+  strain_rate_dependence -->|"required_for (C)"| static_vs_dynamic_loading
+  strain_magnitude_dependence -->|"correlates_with (C)"| mechanical_modulation_growth
+  strain_frequency_dependence -->|"correlates_with (D)"| mechanical_modulation_growth
+  wolff_law -.->|"hypothesized_link (speculative)"| static_vs_dynamic_loading
+  primary_cilium_mechanosensing -->|"required_for (C)"| mechanical_modulation_growth
+  piezo1_channel ---|"binds (D)"| primary_cilium_mechanosensing
+  piezo1_channel -->|"required_for (C)"| mechanical_modulation_growth
+  trpv4_channel -->|"required_for (C)"| mechanical_modulation_growth
+  integrin_beta1_chondrocyte -->|"required_for (C)"| loading_effect_plate_height
+  cytoskeletal_tension_chondrocyte -->|"required_for (D)"| integrin_beta1_chondrocyte
+  focal_adhesion_kinase -.->|"hypothesized_link (speculative)"| cytoskeletal_tension_chondrocyte
+  yap_taz_chondrocyte -.->|"hypothesized_link (speculative)"| mechanical_modulation_growth
+  piezo2_channel -.->|"hypothesized_link (speculative)"| mechanical_modulation_growth
+  hueter_volkmann_law -->|"required_for (A)"| guided_growth_tension_band
+  guided_growth_tension_band -->|"correlates_with (D)"| physeal_stress_in_vivo
+  hueter_volkmann_law -->|"required_for (D)"| scoliosis_vertebral_growth
+  hueter_volkmann_law -->|"required_for (C)"| blount_disease
+  physeal_bar_formation --x|"inhibits (B)"| guided_growth_tension_band
+  physeal_bar_formation -->|"correlates_with (A)"| epiphysiodesis
+  distraction_rate_dose_response -->|"required_for (C)"| distraction_osteogenesis
+  gravity_posture_spinal_loading -->|"required_for (A)"| diurnal_stature_variation
+  gravity_posture_spinal_loading -->|"required_for (B)"| spaceflight_microgravity_growth
+  disuse_growth_effect --x|"inhibits (C)"| primary_cilium_mechanosensing
+  sport_specific_loading_human -->|"correlates_with (D)"| gymnastics_stature_effect
+  sport_specific_loading_human -->|"correlates_with (C)"| mechanical_modulation_growth
+  physeal_stress_in_vivo -->|"required_for (D)"| hueter_volkmann_law
+  scoliosis_vertebral_growth -->|"activates (C)"| piezo1_channel
+  bed_rest_growth_human -->|"correlates_with (D)"| disuse_growth_effect
+  static_vs_dynamic_loading -->|"correlates_with (D)"| distraction_rate_dose_response

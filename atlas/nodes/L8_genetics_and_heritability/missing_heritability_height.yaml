@@ -1,0 +1,182 @@
+id: missing_heritability_height
+name: Missing heritability of height
+aliases:
+- heritability gap
+type: process
+layer: L8
+stub: false
+summary: '"Missing heritability" named the early-GWAS gap between family-based
+
+  heritability estimates (~80%) and the variance captured by genome-wide
+
+  significant SNPs (a few percent in the first height GWAS). For height the gap
+
+  has since largely closed, and it closed for methodological rather than
+
+  biological reasons. Yang 2015 showed with GREML-LDMS on ~17 million imputed
+
+  variants in 44,126 unrelated individuals that 56% (SE 2.3%) of height variance
+
+  is tagged once variants are stratified by linkage-disequilibrium and minor
+
+  allele frequency, and argued true heritability is 60-70% - so the residual gap
+
+  against family estimates is small and is plausibly explained by imperfect
+
+  imputation of rare variants plus overestimation in family designs. Yengo 2022
+
+  closed the discovery side by resolving 12,111 independent SNPs capturing nearly
+
+  all common-SNP heritability. Height is therefore the trait where the missing
+
+  heritability problem was effectively solved, which makes it the reference case
+
+  against which other traits are judged. The residuum that remains is
+
+  concentrated in rare and structural variation and in the fact that
+
+  heritability estimated in one population does not transfer to another.
+
+
+  Wainschtein 2026 closed the remaining accounting. Whole-genome sequencing of 347,630
+
+  European-ancestry UK Biobank participants, covering 40 million single-nucleotide and short indel
+
+  variants with MAF above 0.01%, captures on average about 88% of pedigree-based narrow-sense
+
+  heritability across 34 complex traits: 68% from common variants (MAF >= 1%) and 20% from rare
+
+  variants, with 79% of the rare-variant component sitting in non-coding rather than coding sequence.
+
+  Fifteen of the 34 traits showed no significant difference between WGS-based and pedigree-based
+
+  estimates at all. The gap that motivated a decade of theorising about epistasis and gene-environment
+
+  interaction was therefore mostly rare, mostly regulatory variation that genotyping arrays never
+
+  assayed - not a failure of the additive model. One residual is now well characterised rather
+  than
+
+  merely absent: Sidorenko 2024 shows sibling linkage signals colocalise with GWAS loci and that
+  the
+
+  heritability still unaccounted for by GWAS-identified variants is polygenic and enriched near
+  those
+
+  same loci, implying allelic heterogeneity at known loci rather than undiscovered biology.'
+quantitative:
+- parameter: variance explained by first-generation genome-wide significant height SNPs
+  value: '5'
+  unit: '%'
+  conditions: approximate figure for the earliest height GWAS era, cited as the motivation for
+    the missing-heritability problem
+  species: human
+  source_ref: yang2015
+  uncertainty: approximate; value_unverified pending retrieval of the primary early-GWAS figure
+  value_unverified: true
+- parameter: residual gap between molecular and family-based heritability
+  value: 4-14
+  unit: percentage points
+  conditions: 56% tagged (SE 2.3%) versus inferred true 60-70%
+  species: human
+  source_ref: yang2015
+  uncertainty: derived from the reported range, not a stated CI
+- parameter: fraction of pedigree heritability captured by whole-genome sequencing
+  value: '88'
+  unit: '%'
+  conditions: 347,630 UK Biobank European-ancestry whole genomes, 40M variants MAF>0.01%, mean
+    across 34 traits
+  species: human
+  source_ref: wainschtein2026
+  uncertainty: 15 of 34 traits showed no significant WGS-pedigree difference
+- parameter: share of pedigree heritability from common variants (MAF >= 1%)
+  value: '68'
+  unit: '%'
+  conditions: same analysis
+  species: human
+  source_ref: wainschtein2026
+  uncertainty: cross-trait mean
+- parameter: share of pedigree heritability from rare variants (MAF < 1%)
+  value: '20'
+  unit: '%'
+  conditions: same analysis
+  species: human
+  source_ref: wainschtein2026
+  uncertainty: cross-trait mean
+- parameter: share of rare-variant heritability that is non-coding
+  value: '79'
+  unit: '%'
+  conditions: same analysis; coding accounts for the remaining 21%
+  species: human
+  source_ref: wainschtein2026
+  uncertainty: cross-trait mean
+- parameter: height heritability, sibling IBD design
+  value: '0.76'
+  unit: proportion of variance
+  conditions: 119,000 sibling pairs
+  species: human
+  source_ref: sidorenko2024
+  uncertainty: SE 0.05
+localization:
+- 'human: population-level, not tissue-localized'
+human_evidence: direct
+human_evidence_note: Human molecular and family-based variance decomposition; the entire question
+  is a human-population one.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Population-genetic parameter specific to human cohorts.
+confidence: A
+key_refs:
+- ref_id: yang2015
+  pmid: '26323059'
+  first_author: Yang J
+  year: 2015
+  type: primary
+  one_line_finding: Stratifying imputed variants by LD and MAF recovers 56% of height variance,
+    leaving negligible missing heritability.
+- ref_id: yengo2022
+  pmid: '36224396'
+  first_author: Yengo L
+  year: 2022
+  type: primary
+  one_line_finding: 12,111 independent SNPs account for nearly all common-SNP heritability, closing
+    the discovery side of the gap.
+- ref_id: wainschtein2026
+  pmid: '41225014'
+  doi: 10.1038/s41586-025-09720-6
+  first_author: Wainschtein P
+  year: 2026
+  type: primary
+  one_line_finding: 'WGS in 347,630 individuals captures ~88% of pedigree heritability across
+    34 traits: 68% common, 20% rare, with 79% of the rare component non-coding.'
+- ref_id: sidorenko2024
+  pmid: '39375568'
+  doi: 10.1038/s41588-024-01940-2
+  first_author: Sidorenko J
+  year: 2024
+  type: primary
+  one_line_finding: Residual heritability not captured by GWAS-identified loci is polygenic and
+    enriched near those same loci, indicating allelic heterogeneity rather than unknown biology.
+- ref_id: hawkes2024
+  pmid: '39362880'
+  doi: 10.1038/s41467-024-52579-w
+  first_author: Hawkes G
+  year: 2024
+  type: primary
+  one_line_finding: 29 independent rare non-coding height signals with effects from -7 cm to +4.7
+    cm demonstrate that the missing component is reachable by sequencing.
+open_questions: []
+contradicts: []
+last_verified: '2026-08-05'
+claim_grades:
+- claim: The missing heritability of height is largely accounted for by rare and non-coding variation
+    not assayed on genotyping arrays.
+  grade: B
+  basis: One very large WGS variance partition (wainschtein2026) plus concordant discovery of
+    large-effect rare non-coding signals (hawkes2024); the 88% figure is a cross-trait average
+    not independently replicated at that precision.
+- claim: Common SNP discovery for height is saturated.
+  grade: A
+  basis: 12,111 independent SNPs capture nearly all common-SNP heritability in 5.4M individuals
+    (yengo2022), consistent with the 68% common-variant share measured by WGS (wainschtein2026).

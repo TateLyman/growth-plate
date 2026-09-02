@@ -1,0 +1,173 @@
+id: dental_development_clock
+name: Dental development as an independent maturity clock
+aliases:
+- dental age
+- dental maturity
+type: method
+layer: L9
+stub: false
+summary: Dental development is the only widely used maturity indicator that runs independently of skeletal
+  maturation, and that independence is a hard constraint on any theory that a single systemic signal drives
+  maturation. Demirjian and colleagues measured five maturity indicators in 50 French-Canadian girls -
+  menarche, peak height velocity, 75% skeletal maturity, appearance of the ulnar sesamoid and 90% dental
+  maturity - and found that ages at peak height velocity, menarche and 75% skeletal maturity were significantly
+  intercorrelated, while age at 90% dental maturity showed no significant relationship with any of them;
+  they concluded that the mechanisms controlling dental development are independent of somatic and sexual
+  maturation (demirjian1985). The dissociation is largest exactly where a single systemic signal would
+  predict coupling. In isolated GH deficiency, bone age is delayed by 1.99 years before treatment while
+  dental age is delayed by only 0.31 years, and critically the two delays are uncorrelated within individuals
+  (torliskawalkow2026, 48 GHD children versus 48 controls). Children born small for gestational age with
+  persistent short stature show delayed skeletal maturation and specific craniofacial hypoplasia but no
+  dental delay (van1998). Stunting in a Peruvian school population shifted neither dental nor skeletal
+  maturity stage (floresmir2005). Correlations between dental and skeletal stage in unselected populations
+  are nonetheless moderate to high (r = 0.85 in Peruvian schoolchildren; Spearman 0.78-0.79 against cervical
+  vertebral maturation in Iranian orthodontic patients), so dental and skeletal clocks share chronological
+  age as a common driver but not the endocrine perturbations that move one of them.
+quantitative:
+- parameter: correlation of age at 90% dental maturity with age at peak height velocity
+  value: not significant
+  unit: Pearson r
+  conditions: 50 French-Canadian girls followed longitudinally
+  species: human
+  source_ref: demirjian1985
+  uncertainty: stated as no significant relationship; coefficient not given
+- parameter: correlation of age at 90% dental maturity with age at menarche
+  value: not significant
+  unit: Pearson r
+  conditions: same 50 girls
+  species: human
+  source_ref: demirjian1985
+  uncertainty: stated as no significant relationship
+- parameter: correlation of age at 90% dental maturity with age at 75% skeletal maturity
+  value: not significant
+  unit: Pearson r
+  conditions: same 50 girls
+  species: human
+  source_ref: demirjian1985
+  uncertainty: stated as no significant relationship, in contrast to the significant PHV-menarche-skeletal
+    correlations in the same girls
+- parameter: bone age delay in untreated isolated GH deficiency
+  value: '1.99'
+  unit: years
+  conditions: 48 children with GHD, mean age 10.57 +/- 2.24 y, hand-wrist radiographs
+  species: human
+  source_ref: torliskawalkow2026
+  uncertainty: before treatment; falls to 1.32 y during treatment
+- parameter: dental age delay in untreated isolated GH deficiency
+  value: '0.31'
+  unit: years
+  conditions: same 48 GHD children, clinical dental examination
+  species: human
+  source_ref: torliskawalkow2026
+  uncertainty: versus +0.41 y advance in 48 healthy controls, p=0.024
+- parameter: dissociation between bone age delay and dental age delay in GHD
+  value: '1.68'
+  unit: years
+  conditions: difference between the 1.99 y skeletal delay and the 0.31 y dental delay in the same children
+  species: human
+  source_ref: torliskawalkow2026
+  uncertainty: derived by subtraction from the reported values
+- parameter: correlation between extent of dental age delay and extent of bone age delay in GHD
+  value: not significant
+  unit: Pearson r
+  conditions: same cohort
+  species: human
+  source_ref: torliskawalkow2026
+  uncertainty: explicitly reported as no significant correlation
+- parameter: dental age in short children born SGA
+  value: not delayed
+  unit: years
+  conditions: 48 subjects aged 2-32 y with skeletal maturation delay and craniofacial hypoplasia
+  species: human
+  source_ref: van1998
+  uncertainty: dental delay score approximately zero; skeletal maturation delayed in the same subjects
+- parameter: correlation between dental and skeletal maturity stage in unselected schoolchildren
+  value: '0.85'
+  unit: Pearson r
+  conditions: 280 Peruvian children aged 9.5-16.5 y, 140 stunted and 140 controls
+  species: human
+  source_ref: floresmir2005
+  uncertainty: 0.855 stunted, 0.863 controls; 0.809 boys, 0.892 girls
+- parameter: correlation between dental and skeletal maturity in delayed maturers
+  value: '0.751'
+  unit: Pearson r
+  conditions: same Peruvian cohort, delayed-maturer subgroup
+  species: human
+  source_ref: floresmir2005
+  uncertainty: versus 0.903 advanced and 0.895 average maturers
+- parameter: effect of stunting on dental development stage
+  value: none detected
+  unit: not_applicable
+  conditions: 280 Peruvian schoolchildren
+  species: human
+  source_ref: floresmir2005
+  uncertainty: p=0.497
+- parameter: effect of stunting on skeletal maturation stage
+  value: none detected
+  unit: not_applicable
+  conditions: same cohort
+  species: human
+  source_ref: floresmir2005
+  uncertainty: p=0.134
+localization:
+- 'human whole organism: panoramic radiography or clinical dental examination compared with hand-wrist
+  or cervical-vertebral skeletal staging'
+human_evidence: direct
+human_evidence_note: All comparisons are direct within-individual measurements of dental and skeletal
+  maturity in human children.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human maturity indicators; rodent molars erupt on a fixed schedule not comparable
+  to the human dentition.
+confidence: A
+claim_grades:
+- claim: Dental maturation dissociates from skeletal maturation under endocrine perturbation, by about
+    1.7 years in untreated GH deficiency
+  grade: A
+  basis: Direct within-individual measurement of both clocks in 48 GHD children against 48 controls, with
+    the delays explicitly uncorrelated (torliskawalkow2026); corroborated in an independent SGA cohort
+    (van1998).
+- claim: Dental maturity is uncorrelated with somatic and sexual maturity indicators in healthy girls
+  grade: B
+  basis: A single longitudinal cohort of 50 girls with five indicators measured in the same individuals
+    (demirjian1985); not replicated in a comparable design, and unselected cross-sectional samples show
+    moderate-to-high dental-skeletal correlation driven by shared chronological age.
+- claim: Neither dental nor skeletal maturation is shifted by chronic undernutrition sufficient to cause
+    stunting
+  grade: D
+  basis: One cross-sectional Peruvian school study with 140 stunted children; null results, no power calculation
+    reported.
+key_refs:
+- ref_id: demirjian1985
+  pmid: '3864376'
+  first_author: Demirjian A
+  year: 1985
+  type: primary
+  one_line_finding: Age at 90% dental maturity is uncorrelated with peak height velocity, menarche and
+    75% skeletal maturity in the same 50 girls.
+- ref_id: torliskawalkow2026
+  pmid: '42524818'
+  first_author: Torlinska-Walkowiak N
+  year: 2026
+  type: primary
+  one_line_finding: In GH deficiency bone age is delayed 1.99 y but dental age only 0.31 y, and the two
+    delays do not correlate.
+- ref_id: van1998
+  pmid: '9753823'
+  first_author: Van Erum R
+  year: 1998
+  type: primary
+  one_line_finding: Short children born SGA have delayed skeletal maturation and craniofacial hypoplasia
+    with normal dental age.
+- ref_id: floresmir2005
+  pmid: '16448234'
+  first_author: Flores-Mir C
+  year: 2005
+  type: primary
+  one_line_finding: Dental and skeletal maturity stages correlate at r=0.85 and neither differs by stunting
+    status in 280 Peruvian schoolchildren.
+open_questions:
+- g_l9organism_009
+- g_l9organism_010
+last_verified: '2026-08-05'

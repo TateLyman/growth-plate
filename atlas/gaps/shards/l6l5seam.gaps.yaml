@@ -1,0 +1,624 @@
+gaps:
+
+  - gap_id: g_l6l5_001
+    question: >-
+      When a known compressive stress is applied across a HUMAN physis, do the zonal architectural
+      parameters - hypertrophic zone height, final hypertrophic cell height, proliferative cells per
+      column - change in the same proportions as in rat (87%, 85%, and reduced respectively at
+      approximately 0.1-0.2 MPa), or does the human plate partition the response differently between
+      proliferation and hypertrophy?
+    type: species_gap
+    layer: L6
+    why_it_matters: >-
+      The Hueter-Volkmann coefficient (17.1% growth change per 0.1 MPa) is the design parameter for
+      guided growth, vertebral body tethering and every scoliosis progression simulation, and it is
+      applied to children on the strength of rat, rabbit and calf data. Even if the aggregate
+      coefficient transferred, the ARCHITECTURAL route matters clinically: suppression through
+      reduced hypertrophic cell height is reversible on unloading within 10 days in rat, whereas
+      suppression through loss of proliferative cells consumes finite proliferative capacity and is
+      not. Guided growth is prescribed on the assumption that it is the reversible kind.
+    what_is_known: >-
+      In rat caudal vertebra under sustained compression, hypertrophic zone height falls to 87% of
+      control, mean hypertrophic cell height to 85% and the cell-height increment along the growth
+      axis to 78% (stokes2002); pooled across rat, rabbit and calf, final hypertrophic cell height
+      carries r=0.56 and proliferative cells per unit width r=0.38 of the growth-rate variance
+      (stokes2007). Static but not dynamic loading reduces proliferative cells per column
+      (valteau2011). Rat plate height and growth rate recover completely within 10 days of unloading
+      (mnard2015). Human physes are demonstrably modulable - 68.7% of 313 children reached a neutral
+      mechanical axis with tension-band plates (tolk2026) - but no human histology exists from a
+      plate under a measured load.
+    what_is_missing: >-
+      Any zonal histomorphometry of a human growth plate whose applied stress is known. Human
+      physeal tissue is available only from epiphysiodesis, amputation, polydactyly and autopsy
+      (259 donors across 30 studies, 157 of them fetal/perinatal), and none of those specimens
+      carries a measured mechanical history.
+    nearest_evidence: [stokes2002, stokes2007, valteau2011, mnard2015, tolk2026]
+    discriminating_experiment: >-
+      Guided-growth patients already have an implant that tethers one side of a physis while the
+      other is free, and a subset undergo implant removal with a small physeal biopsy at the screw
+      track. Model system: children undergoing tension-band hemiepiphysiodesis of the distal femur,
+      with an instrumented plate or strain-gauged screw giving the tether force and a
+      subject-specific finite element model converting it to physeal stress. Readout: paired zonal
+      histomorphometry (hypertrophic zone height, mean and terminal hypertrophic cell height,
+      proliferative cells per column, column density) from tethered and untethered quadrants of the
+      same physis at implant removal, blinded to side. Expected results - if the human plate matches
+      rat, the tethered side shows hypertrophic cell height at 80-90% of the free side with
+      proliferative cells per column preserved under dynamic gait loading; if the human plate
+      instead suppresses through proliferation, proliferative cells per column falls and hypertrophic
+      cell height is preserved, which would predict incomplete rebound after implant removal and
+      would change the indication window for the operation.
+    tractability: 3
+    search_log_ref: g_l6l5_001
+
+  - gap_id: g_l6l5_002
+    question: >-
+      Does static or dynamic compression at matched mean strain disrupt growth plate columnar
+      architecture? In vivo rat says static; in vitro swine explant says dynamic. Which sign is
+      right, and is the difference explained by explant boundary conditions or by duration?
+    type: contradiction
+    layer: L6
+    why_it_matters: >-
+      The entire clinical argument for dynamic rather than static tethering rests on the claim that
+      dynamic loading is architecture-sparing. If the explant result is the correct one, dynamic
+      tethering devices are being designed on an inverted premise.
+    what_is_known: >-
+      In vivo, rat caudal vertebra at 0.2 MPa mean for 2 weeks: static and dynamic (0.1 Hz, +/-30%)
+      suppressed growth equally (19% each) but only STATIC reduced plate thickness, proliferative
+      cells per column and hypertrophic cell height (p<0.01 static vs dynamic; hypertrophic cell
+      height p=0.014) (valteau2011). In vitro, 4-week-old swine ulnar explants for 48 h at matched
+      mean strain: DYNAMIC (7-13% at 0.1 Hz) caused severe loss of columnar arrangement in
+      proliferative and hypertrophic zones, while STATIC (10%) preserved columns with only slight
+      deviation from the growth axis - and dynamic loading increased aggrecan and collagen II while
+      static depleted them (sergerie2011). Separately, explant chondrocyte viability falls with
+      frequency and amplitude, with proliferative and hypertrophic zones most sensitive (kaviani2015),
+      and static loading produces higher lateral and volumetric hypertrophic cell strain than dynamic
+      at equal mean stress (zimmermann2017).
+    what_is_missing: >-
+      A single experimental series that applies matched static and dynamic protocols to the same
+      species and site in vivo AND ex vivo, with identical architectural scoring. The two studies
+      differ in species (rat vs swine), site (caudal vertebra vs ulna), duration (2 weeks vs 48 h),
+      loading control (stress vs strain), and boundary conditions (intact vs cut explant), so no
+      single explanation can currently be assigned.
+    nearest_evidence: [valteau2011, sergerie2011, kaviani2015, zimmermann2017]
+    discriminating_experiment: >-
+      Model system: skeletally immature pigs, distal ulnar physis, with one forelimb instrumented for
+      in vivo static compression and the contralateral for dynamic at matched mean stress, plus
+      explants from a third cohort of the same animals loaded in a bioreactor with the identical
+      waveforms for 48 h and for 2 weeks. Readout: blinded column-deviation angle, proliferative
+      cells per column, hypertrophic zone height, and aggrecan/collagen II quantified by
+      immunoblot rather than immunohistochemistry. Expected results - if the discrepancy is a
+      duration artefact, the 48 h explant and 48 h in vivo arms agree with each other and both differ
+      from the 2-week arms; if it is a boundary-condition artefact, the in vivo arms agree at both
+      durations and both explant arms differ; if the sign truly inverts between rodent caudal and
+      large-animal appendicular plates, the pig in vivo arm reproduces the swine explant result and
+      the rat literature is site-specific rather than wrong.
+    tractability: 4
+
+  - gap_id: g_l6l5_003
+    question: >-
+      Does sustained mechanical loading of a growth plate change its mineralization machinery -
+      TNAP activity, extracellular pyrophosphate, matrix vesicle number or cargo - at the zone of
+      provisional calcification, independently of the change in hypertrophic cell size?
+    type: search_established
+    layer: L6
+    why_it_matters: >-
+      Compression thins the hypertrophic zone and suppresses collagen X (sergerie2011), and the
+      hypertrophic zone is where TNAP is confined and where matrix vesicles bud. If load also shifts
+      the Pi/PPi balance, then mechanical modulation would alter not just how fast a plate elongates
+      but the quality of the mineralized scaffold it hands to the primary spongiosa - which would be
+      a mechanism for the trabecular abnormalities seen under tethering that is currently attributed
+      entirely to reduced growth rate. It would also predict that guided growth changes metaphyseal
+      bone quality, which is not currently monitored.
+    what_is_known: >-
+      TNAP activity in growth cartilage is restricted to the hypertrophic and calcifying zones
+      (vnnen1980) and coincides with maximal organically bound phosphorus in pig (althoff1982).
+      Matrix vesicles bud into the longitudinal septa of the lower hypertrophic zone (wuthier1992).
+      Extracellular Pi drives terminal differentiation via Pit-1 (kim2010). Compression reduces
+      collagen X expression in swine explants at 48 h (sergerie2011). PIEZO1 activation under
+      compression accelerates pathological OSSIFICATION of the vertebral plate via ferroptosis
+      (chen2025a) - the closest existing link, but it is a cell-death route, not a measurement of
+      mineralization chemistry.
+    what_is_missing: >-
+      Any measurement of TNAP activity, PPi concentration, matrix vesicle yield or vesicle cargo in a
+      growth plate subjected to a controlled mechanical load, in any species.
+    nearest_evidence: [sergerie2011, chen2025a, kim2010, vnnen1980, althoff1982]
+    discriminating_experiment: >-
+      Model system: swine ulnar growth plate explants under the established static (10% strain) and
+      dynamic (7-13%, 0.1 Hz) protocols for 48 h, below the viability threshold established by
+      kaviani2015. Readouts: (a) TNAP enzymatic activity per unit wet weight and by zonal in situ
+      histochemistry, (b) extracellular PPi by the standard enzymatic assay on medium and on tissue
+      extracts, (c) matrix vesicle yield by collagenase digestion and differential centrifugation
+      with PHOSPHO1 and TNAP immunoblot on the vesicle fraction. Expected results - if load acts only
+      through cell size, TNAP activity per hypertrophic cell and vesicle cargo composition are
+      unchanged and only total activity falls in proportion to hypertrophic zone height; if load acts
+      on the mineralization programme itself, TNAP activity per cell falls and the PPi/Pi ratio rises
+      under static compression, predicting a hypomineralized primary spongiosa under tethering.
+    tractability: 4
+    search_log_ref: g_l6l5_003
+
+  - gap_id: g_l6l5_004
+    question: >-
+      Does sustained mechanical loading change collagen crosslink density (hydroxylysyl pyridinoline
+      per collagen molecule) or lysyl oxidase activity in growth plate cartilage?
+    type: search_established
+    layer: L6
+    why_it_matters: >-
+      Pyridinoline crosslinks are what carry tensile load in the collagen II network, and the growth
+      plate's tensile strength is the property that determines whether a physis fails by fracture
+      under the loads that guided growth and vertebral tethering impose. Crosslink density is also
+      the slowest-adapting matrix property, so if it is load-responsive it would be the mechanism by
+      which a physis remembers its loading history - the missing explanation for why growth
+      modulation escapes load-dependence after two to four weeks of tethering (g_l6mech_005).
+    what_is_known: >-
+      Cartilage collagen II is crosslinked head-to-tail by hydroxylysyl pyridinoline at two
+      telopeptide sites (eyre2002), crosslink content of human articular cartilage rises with age
+      (eyre1988), and Phospho1-/- bone shows altered DHLNL/HLNL and pyridinoline/deoxypyridinoline
+      ratios (huesa2011), establishing that physeal crosslinking is measurable and perturbable.
+      Bovine physeal tensile strength varies 33% by anatomic site and with strain rate (williams2001).
+      Lox-null mice die perinatally of aortic rupture before any physeal readout (mki2002).
+    what_is_missing: >-
+      Any measurement of crosslink density or lysyl oxidase activity in a mechanically loaded growth
+      plate, in any species. A Europe PMC sweep returns only articular cartilage, muscle, bone and
+      cardiovascular work.
+    nearest_evidence: [eyre2002, eyre1988, huesa2011, williams2001, mki2002]
+    discriminating_experiment: >-
+      Model system: rat caudal vertebrae under the established 8-day 0.1-0.2 MPa static and dynamic
+      apparatus, with contralateral sham. Readout: HPLC quantification of hydroxylysyl pyridinoline
+      and deoxypyridinoline per mole of collagen hydroxyproline on microdissected physeal cartilage,
+      plus lysyl oxidase activity by the amplex-red assay, at 8 days and at 28 days. Expected results
+      - if crosslinking is load-responsive, pyridinoline per collagen rises under sustained
+      compression by 28 days and not at 8 days, matching the timescale on which growth modulation
+      escapes load dependence; if it is not, crosslink density is indistinguishable from sham at both
+      timepoints and the escape must be explained by cellular adaptation or by implant creep instead.
+    tractability: 4
+    search_log_ref: g_l6l5_004
+
+  - gap_id: g_l6l5_005
+    question: >-
+      What is the zonal elastic modulus of a hydrated, weight-bearing HUMAN growth plate measured at
+      tissue scale, and does stiffness rise or fall from the resting zone to the hypertrophic zone?
+    type: quantitative_gap
+    layer: L5
+    why_it_matters: >-
+      Every finite element model of a human physis - guided growth planning, scoliosis progression,
+      fracture risk - requires zonal material properties, and the available values differ by three
+      orders of magnitude and disagree on the SIGN of the gradient. A model that assumes the reserve
+      zone is stiffest predicts strain concentration in the hypertrophic zone; a model that assumes
+      the opposite predicts it at the resting/proliferative interface, which is where chondrons are
+      observed to kink. The two assumptions give opposite predictions about where a physis fails and
+      about which zone a tether actually loads.
+    what_is_known: >-
+      Tissue-scale hydrated microindentation of 9-week rabbit proximal tibia: Hertz reduced modulus
+      380-690 kPa with the peak in the upper hypertrophic zone (eckstein2022). Rabbit cranial base
+      AFM microindentation: 0.57 +/- 0.05 MPa in reserve zone rising monotonically to 1.41 +/- 0.19
+      MPa in the mineralizing zone, with longitudinal/transverse anisotropy of 0.77 vs 0.57 MPa
+      (radhakrishnan2004). Newborn porcine distal ulna unconfined compression: RESERVE zone stiffest,
+      proliferative and hypertrophic 0.5x axially and 0.33x transversely, permeability 3x higher
+      (sergerie2009). Human phalangeal and tibial growth plate sharp-tip AFM on hydrated cryosections:
+      130.7 +/- 36.6 MPa resting zone, 416.2 +/- 107.2 MPa hypertrophic zone (xie2025). Human capital
+      femoral physis tensile strength is about half that of bovine proximal tibial physis
+      (williams2001).
+    what_is_missing: >-
+      A tissue-scale, hydrated, zonally resolved modulus measurement on a human weight-bearing physis
+      with a stated loading rate and constitutive model. The 4-5 order-of-magnitude spread is
+      generated by length scale (9 nm sharp tip vs millimetre indenter), hydration state, loading
+      rate and constitutive model, and no study controls all four.
+    nearest_evidence: [eckstein2022, radhakrishnan2004, sergerie2009, xie2025, williams2001]
+    discriminating_experiment: >-
+      Model system: human proximal tibial or distal femoral physis from limb-salvage amputation
+      specimens (the only weight-bearing human source), tested within hours, never frozen, kept in
+      isotonic PBS. Readout: paired measurement on the SAME specimen of (a) spherical-tip
+      microindentation at 100 um scale with a poroelastic fit at three loading rates spanning three
+      decades, and (b) sharp-tip AFM at the identical zonal locations, plus confined compression to
+      obtain permeability. Expected results - if the discrepancy is purely length scale, the two
+      methods on the same specimen reproduce the 300-1000x ratio and both show the same gradient
+      DIRECTION, resolving the sign question in favour of whichever they agree on; if they disagree
+      in direction on the same tissue, then the gradient is genuinely method-defined and finite
+      element models must report which measurement they consume.
+    tractability: 2
+    search_log_ref: g_l6l5_005
+
+  - gap_id: g_l6l5_006
+    question: >-
+      By what proteolytic or non-proteolytic mechanism is aggrecan removed from the hypertrophic zone
+      before mineralization, given that neither MMP cleavage at N341-F342 nor combined ADAMTS4/ADAMTS5
+      activity is required for normal skeletal growth?
+    type: known_unknown
+    layer: L5
+    why_it_matters: >-
+      Aggrecan carries essentially all the fixed charge of cartilage and must be cleared for apatite
+      to propagate; sulphur falls from 3.5% to 0.3% of dry mass across the mineralization front. The
+      clearance step is therefore a required gate on mineralization, and it is the one step in the
+      mineralization module with no identified enzyme. Every therapeutic argument that targets
+      aggrecanases to modify skeletal growth rests on an assumption that two independent genetic
+      experiments have already falsified.
+    what_is_known: >-
+      Extracellular sulphur falls from 3.5% to 0.3% of dry mass on mineralization in pig growth plate
+      (althoff1982). Aggrecan synthesis and breakdown are both fastest in the resting/proliferative
+      third and slowest in the lower hypertrophic third of bovine growth plate (shapses1994). Mice
+      with aggrecan made resistant to MMP cleavage at N341-F342 grow normally and do NOT accumulate
+      aggrecan (little2005). Adamts4/Adamts5 double-knockout mice are physiologically normal
+      (majumdar2007). ADAMTS cleavage at Glu373-Ala374 generates the ARGS neoepitope and is the
+      surviving candidate, as is simple dilution by matrix expansion during hypertrophy.
+    what_is_missing: >-
+      A genetic or pharmacological manipulation that blocks aggrecan clearance from the hypertrophic
+      zone and produces a growth plate phenotype. No experiment has yet made the hypertrophic zone
+      retain its aggrecan.
+    nearest_evidence: [little2005, majumdar2007, shapses1994, althoff1982]
+    discriminating_experiment: >-
+      Model system: knock-in mouse carrying aggrecan with the Glu373-Ala374 aggrecanase site mutated
+      (the reciprocal of the little2005 MMP-site knock-in), crossed onto an Adamts4/Adamts5 double
+      null to remove redundancy, alongside a dilution-control cohort in which hypertrophic volume
+      increase is genetically limited. Readout: ARGS neoepitope immunostaining and total sulphated
+      GAG per unit volume across zones by quantitative histochemistry, plus mineralization front
+      position and primary spongiosa architecture by micro-CT. Expected results - if ADAMTS cleavage
+      at Glu373 is the removal mechanism, the site-mutant retains aggrecan in the hypertrophic zone,
+      the mineralization front is displaced metaphyseally and the plate widens; if clearance is by
+      dilution, the site-mutant is indistinguishable from wild type and only the hypertrophy-limited
+      cohort retains aggrecan, which would make aggrecan removal a passive consequence of cell
+      enlargement rather than an enzymatic step.
+    tractability: 3
+
+  - gap_id: g_l6l5_007
+    question: >-
+      What is the turnover half-life of aggrecan in HUMAN growth plate matrix, as opposed to the 3.4
+      years measured in adult human articular cartilage?
+    type: scale_gap
+    layer: L5
+    why_it_matters: >-
+      The only human proteoglycan turnover numbers in this atlas come from adult articular cartilage
+      and are quoted in reviews as though they described cartilage generally. A rat proximal tibial
+      column destroys one transverse septum per three cells per hour - eight per column per day - so
+      the entire matrix of a growth plate column is synthesised, transited and destroyed on a
+      timescale of days. A 3.4-year monomer half-life and a days-long tissue residence cannot both be
+      true of the same matrix, and the mismatch is three orders of magnitude. Any model that inherits
+      articular turnover parameters for a growth plate is wrong by that factor.
+    what_is_known: >-
+      Adult human articular cartilage: aggrecan large-monomer half-life 3.4 years, free G1 half-life
+      25 years, by aspartate racemization (maroudas1998). Bovine growth plate explants: synthesis and
+      breakdown both fastest in the resting/proliferative third, about 90% of newly synthesised
+      proteoglycan aggregation-competent, by 35S-sulphate pulse-chase (shapses1994). Rat proximal
+      tibia: one septum removed per 3 cells per hour per column (hunziker1987).
+    what_is_missing: >-
+      Any measurement of aggrecan or total proteoglycan turnover in human growth plate tissue.
+      Aspartate racemization requires a pool old enough to racemize measurably, which a growth plate
+      by definition does not have, so the method that produced the human articular numbers cannot be
+      applied to a physis at all - the gap is methodological as well as empirical.
+    nearest_evidence: [maroudas1998, shapses1994, hunziker1987]
+    discriminating_experiment: >-
+      Model system: human growth plate explants from epiphysiodesis or limb-salvage specimens
+      (the format in which the only human physeal loading experiments have been done), cultured with
+      35S-sulphate or stable-isotope-labelled amino acid pulse-chase; validated in parallel in
+      porcine explants where the tissue is not limiting. Readout: zonal 35S incorporation and release
+      rates by microdissection of resting, proliferative and hypertrophic thirds, converted to a
+      matrix residence time, and compared with the independently measured chondrocyte transit time
+      through the same plate. Expected results - if physeal aggrecan turns over on the transit
+      timescale, matrix residence time and cell transit time agree within a factor of two and the
+      articular half-lives are simply inapplicable; if physeal aggrecan turns over far more slowly
+      than the cells transit, the matrix a chondrocyte inherits was largely made by its ancestors,
+      which would make the plate a conveyor of old matrix rather than a synthesiser of new.
+    tractability: 2
+
+  - gap_id: g_l6l5_008
+    question: >-
+      Is the fluid-driven swelling phase of chondrocyte hypertrophy, which dilutes cellular dry mass
+      by about 60%, driven by cell-autonomous intracellular solute accumulation or by a change in
+      the fixed charge density and osmotic pressure of the matrix immediately around the cell?
+    type: known_unknown
+    layer: L5
+    why_it_matters: >-
+      Hypertrophic volume increase is the single largest contributor to longitudinal elongation and
+      the parameter that correlates best with growth rate across mammals, and it is also the
+      parameter that mechanical loading acts on most strongly (regression coefficient 1.39, r=0.56).
+      If swelling is osmotically driven by the matrix, then every matrix gene in L5 that changes fixed
+      charge density is a direct growth-rate gene and mechanical compression acts by changing matrix
+      osmotic pressure; if it is cell-autonomous, matrix is a passive confinement and load acts
+      through the cell. These two models make opposite predictions about which interventions can
+      accelerate growth.
+    what_is_known: >-
+      Mammalian chondrocytes undergo three distinct phases of volume increase, the middle one being
+      massive swelling with significant dilution of cellular dry mass (approximately 60% reduction in
+      density), by quantitative phase microscopy (cooper2013). Cartilage fixed charge density is
+      -0.19 to -0.35 M by sodium NMR (lesperance1992) and in situ osmotic pressure is about one third
+      of the ideal Donnan prediction (zimmerman2021). Growth plate chondrons bend and kink under
+      compression rather than deforming uniformly (vendra2018). Aggrecan deficiency impairs
+      hypertrophy directly (bendre2025).
+    what_is_missing: >-
+      A measurement in the same specimen of intracellular osmolyte content and of pericellular matrix
+      fixed charge density across the prehypertrophic-to-hypertrophic transition. The cell-side and
+      matrix-side measurements exist in different tissues, different species and different decades.
+    nearest_evidence: [cooper2013, lesperance1992, zimmerman2021, bendre2025, vendra2018]
+    discriminating_experiment: >-
+      Model system: mouse proximal tibial growth plate, live, in metatarsal or tibial explant culture
+      with a controllable bath osmolarity. Readout: paired quantitative phase microscopy of single
+      cell dry mass and volume through the swelling phase while (a) bath osmolarity is stepped, and
+      (b) matrix fixed charge is enzymatically reduced by localised chondroitinase ABC digestion, with
+      sodium MRI or fluorescent Donnan-partition probes reporting local fixed charge density.
+      Expected results - if swelling is matrix-driven, chondroitinase digestion around
+      prehypertrophic cells abolishes or reduces the swelling phase without changing dry mass
+      accumulation, and the swelling rate scales with local fixed charge density; if it is
+      cell-autonomous, swelling persists after matrix charge is removed and scales only with bath
+      osmolarity, which would make aggrecan's role in hypertrophy indirect.
+    tractability: 3
+
+  - gap_id: g_l6l5_009
+    question: >-
+      Does mechanical unloading in true microgravity change longitudinal growth rate at an OPEN human
+      physis, and in which direction?
+    type: species_gap
+    layer: L6
+    why_it_matters: >-
+      Microgravity is the only intervention that removes the sustained axial load from a whole human
+      skeleton, and it is the natural counterpart to the compression arm of Hueter-Volkmann. If
+      unloading accelerates longitudinal growth, that is the strongest possible evidence that
+      habitual gravitational load is a chronic brake on human stature; if it does not, the
+      Hueter-Volkmann relation is asymmetric in humans as it appears to be in rat, where distraction
+      gives 113% of control growth (not significant) while compression gives 52% (p=0.002).
+    what_is_known: >-
+      Nine ISS crew members gained up to 3% of stature early in flight, then plateaued, then returned
+      to preflight values after landing, with segment circumferences falling up to 11% (young2023).
+      All were adults with closed physes, so the gain is spinal unloading and disc rehydration and
+      contains no endochondral component. In mice, simulated microgravity unloading reverses
+      PIEZO1-overexpression-driven growth plate ossification (chen2026), and spaceflight alters
+      rodent spinal column tissues (veres2026). Rat compression is reversible within 10 days of
+      unloading (mnard2015). On Earth, disuse in children with cerebral palsy gives smaller and
+      thinner long bones (hodgson2025, zimmermann2025), but nutrition, muscle traction and the
+      neurological disorder are inseparable confounders.
+    what_is_missing: >-
+      Any human with an open physis has ever been in microgravity. There is no paediatric spaceflight
+      and none is planned, so the direct experiment is unavailable rather than merely undone.
+    nearest_evidence: [young2023, chen2026, mnard2015, hodgson2025, zimmermann2025]
+    discriminating_experiment: >-
+      Since the direct experiment is unavailable, the discriminating terrestrial design is
+      head-down-tilt bed rest with knemometry: model system, healthy adolescents with open physes in
+      a 21-day 6-degree head-down bed rest protocol (the standard terrestrial microgravity analogue),
+      with an ambulatory control group matched for energy intake and sleep. Readout: lower-leg length
+      by knemometry (0.1-0.2 mm resolution, immune to the spinal disc artefact that dominates
+      stature), measured at fixed time of day, plus serum markers of bone formation. Expected results
+      - if gravitational load is a chronic brake on physeal output, lower-leg growth velocity rises
+      measurably above the ambulatory control within 21 days; if the human relation is asymmetric like
+      the rat's, unloading produces no detectable acceleration despite the same protocol producing
+      well-documented bone resorption, which would mean the growth-suppressive arm of
+      Hueter-Volkmann has no matching growth-promotive arm in humans.
+    tractability: 2
+
+  - gap_id: g_l6l5_010
+    question: >-
+      What fraction of the 19.3 mm diurnal human stature loss occurs at the vertebral growth plates
+      rather than at the intervertebral discs, and does the vertebral physis experience a diurnal
+      cycle of compression and fluid loss?
+    type: method_blocked
+    layer: L6
+    why_it_matters: >-
+      The human vertebral column carries more than 130 growth plates that collectively generate the
+      trunk segment of stature, and gravity acting through upright posture is the largest sustained
+      mechanical variable acting on them. If the physes participate in the diurnal cycle, then every
+      child experiences roughly 16 hours of daily physeal compression and 8 hours of recovery - a
+      dynamic loading protocol with a 0.67 duty cycle, which in rat is exactly the variable that
+      dissociates growth suppression from architectural damage (12 h/day loading gives 90-93% of
+      control growth vs 82% for 24 h/day). It would also mean growth measurement and growth biology
+      share the same confounder.
+    what_is_known: >-
+      Mean circadian stature variation is 19.3 mm in adults (1.1% of stature), 54% of the loss occurs
+      in the first hour after rising and 70% is regained in the first half of the night (tyrrell1985);
+      shrinkage rate rises nonlinearly with static shoulder loads from 2.5 to 40 kg. In 12-14 year old
+      boys, 4.6 mm is lost over 7 hours, of which 2.8 mm is sitting height (whitehouse1974). Children
+      with idiopathic scoliosis lose 7 mm standing (0.43%) and 7 mm sitting (0.79%) height over a day
+      (czaprowski2019). Stature rises up to 3% in microgravity and fully reverses (young2023). Every
+      one of these measurements is of the whole spinal column.
+    what_is_missing: >-
+      No measurement partitions the diurnal change between disc and vertebral physis. MRI operates at
+      one to two orders of magnitude coarser than the cells it would need to resolve, though at 7 T
+      it does resolve LAYERS within growth cartilage in children up to age 13 (dymerska2018), and MR
+      T1 mapping measures physeal water content to 97.3% accuracy against freeze-drying
+      (shiguetomimedi2013). The partition has simply not been attempted.
+    nearest_evidence: [tyrrell1985, whitehouse1974, czaprowski2019, dymerska2018, shiguetomimedi2013]
+    discriminating_experiment: >-
+      Model system: healthy adolescents aged 10-14 with open vertebral physes, scanned at 7 T (or 3 T
+      with quantitative T1/T2 mapping) at 07:00 after overnight recumbency and again at 19:00 after a
+      normal upright day, same subject, same coil position, same session-independent landmarks.
+      Readout: vertebral body height, disc height and physeal cartilage T1 (water content) measured
+      separately for three consecutive lumbar levels, with the total change reconciled against
+      simultaneous stadiometry. Expected results - if the diurnal loss is entirely discal, disc height
+      falls and physeal cartilage T1 and thickness are unchanged, and the sum of disc height changes
+      accounts for the stadiometric loss; if the physes participate, physeal cartilage T1 falls
+      measurably (dehydration) and physeal thickness decreases, and the disc changes alone
+      under-account for the stadiometric loss - which would establish a daily loading-unloading cycle
+      on 130 human growth plates that no growth model currently includes.
+    tractability: 3
+
+  - gap_id: g_l6l5_011
+    question: >-
+      Is focal adhesion kinase required for the integrin-beta1-dependent chondrocyte rotation that
+      builds growth plate columns?
+    type: known_unknown
+    layer: L6
+    why_it_matters: >-
+      Integrin beta-1 is one of only two structures shown to be required for the 90-degree rotation
+      that converts a transverse daughter pair into a column, and the column is the functional unit
+      of longitudinal growth. FAK is the obligatory kinase downstream of integrin engagement in every
+      tissue where it has been tested, so it is the presumed transducer. If FAK is NOT required, then
+      integrin beta-1 acts on rotation mechanically (adhesion and traction) rather than by signalling,
+      which would redirect the entire search for the column-formation pathway.
+    what_is_known: >-
+      Conditional Itgb1 deletion disrupts the 90-degree rotation, and defective rotation in a Cdh2
+      mutant is rescued by heterozygous loss of Itgb1 (greer2024). Beta1-null chondrocytes have
+      abnormal shape, fail to arrange into columns, lose adhesion to collagen II, bind and spread
+      poorly on fibronectin and have abnormal F-actin organisation, plus a G1/S and cytokinesis defect
+      (aszodi2003). Load-activated beta-1 integrins and FGFR target distinct, non-overlapping
+      chondrocyte mechano-response gene sets (dietmar2025). No FAK experiment has been done in a
+      growth plate in any species.
+    what_is_missing: >-
+      A cartilage-specific conditional Ptk2 (FAK) allele with a column-formation readout. The reagents
+      exist; the experiment has not been reported.
+    nearest_evidence: [greer2024, aszodi2003, dietmar2025]
+    discriminating_experiment: >-
+      Model system: Col2a1-CreERT2;Ptk2fl/fl mouse cranial base explants, the same system in which
+      integrin beta-1 and N-cadherin were resolved, with live time-lapse confocal imaging of
+      individual daughter pairs. Readout: elevation angle of the daughter-pair axis over time
+      (fraction of divisions completing 60-90 degrees of rotation), matched to the published control
+      values of approximately 36-40% complete rotations within columns. Expected results - if FAK is
+      the transducer, Ptk2 deletion phenocopies Itgb1 deletion with rotation completion falling below
+      the 60%-failure threshold at which clones become clusters; if rotation is preserved despite FAK
+      loss, integrin beta-1 acts through adhesion and traction rather than through FAK signalling,
+      and the downstream search should move to talin/kindlin and Rho-ROCK rather than to kinase
+      cascades.
+    tractability: 4
+
+  - gap_id: g_l6l5_012
+    question: >-
+      Do YAP and TAZ transduce matrix stiffness or cytoskeletal tension into the chondrocyte
+      hypertrophy programme in a postnatal growth plate?
+    type: known_unknown
+    layer: L6
+    why_it_matters: >-
+      Hypertrophy is where load exerts most of its effect on growth rate, and YAP/TAZ are the
+      canonical stiffness- and tension-responsive transcriptional co-activators in every other
+      mesenchymal lineage. The growth plate presents a steep zonal stiffness gradient and a
+      stereotyped position-dependent differentiation programme, which is precisely the configuration
+      in which YAP/TAZ act elsewhere. If YAP/TAZ do read the gradient, the disputed direction of that
+      gradient (g_l6l5_005) becomes a functionally decisive question rather than a modelling nuisance.
+    what_is_known: >-
+      YAP/TAZ nuclear localisation tracks cytoskeletal tension in mesenchymal cells generally. In
+      skeletal tissue their best-documented in vivo roles are outside the physis. Mechanical stimulus
+      drives cartilage growth and matrix biosynthesis via TRPV4 in embryonic limb explants
+      (khatib2023). No study reports zonal YAP/TAZ localisation in a growth plate or a
+      cartilage-specific conditional deletion with a hypertrophy readout.
+    what_is_missing: >-
+      Zonal immunolocalisation of nuclear versus cytoplasmic YAP/TAZ across resting, proliferative,
+      prehypertrophic and hypertrophic zones in any species, and a cartilage-specific Yap/Taz double
+      conditional with hypertrophic zone height and terminal cell volume as readouts.
+    nearest_evidence: [khatib2023, coveney2022]
+    discriminating_experiment: >-
+      Model system: Acan-CreERT2;Yapfl/fl;Tazfl/fl juvenile mice, with a loading arm (increased
+      physiological load) and an unloading arm (limb immobilisation) matching the design that
+      established the cilium as mechanical in coveney2022. Readout: hypertrophic zone height and
+      terminal hypertrophic cell volume by stereology, zonal nuclear:cytoplasmic YAP/TAZ ratio by
+      quantitative immunofluorescence, and longitudinal growth rate by calcein double labelling.
+      Expected results - if YAP/TAZ read the stiffness gradient, the nuclear ratio changes
+      monotonically across zones in controls, deletion blunts the load-induced change in hypertrophic
+      zone height, and immobilisation abolishes the difference between genotypes; if the nuclear ratio
+      is flat across zones and deletion has no loading-dependent effect, YAP/TAZ can be removed from
+      the physeal mechanotransduction candidate list, which currently carries them on analogy alone.
+    tractability: 4
+
+  - gap_id: g_l6l5_013
+    question: >-
+      What is the growth plate phenotype of cartilage-specific lysyl oxidase deletion, and does
+      collagen crosslinking set physeal tensile strength and zonal stiffness?
+    type: method_blocked
+    layer: L5
+    why_it_matters: >-
+      Lysyl oxidase initiates every covalent collagen crosslink, and pyridinoline crosslinks are what
+      carry tensile load in the collagen II network. Physeal tensile failure is the mechanism of
+      Salter-Harris fracture and of slipped capital femoral epiphysis, and human capital femoral
+      physis tensile strength is only about half that of bovine proximal tibial physis. Crosslink
+      density is the obvious candidate determinant, and it is completely untested in a physis.
+    what_is_known: >-
+      Cartilage collagen II is crosslinked head-to-tail by hydroxylysyl pyridinoline at two telopeptide
+      sites (eyre2002). Human articular crosslink content rises with age (eyre1988). Bovine physeal
+      tensile strength varies 33% by anatomic site and with strain rate, and human capital femoral
+      physis is about half as strong as bovine proximal tibia (williams2001). Lox-null mice die
+      perinatally from aortic aneurysm and diaphragmatic defects (mki2002), before any postnatal
+      physeal readout is possible. Phospho1-/- bone shows altered crosslink ratios and reduced elastic
+      modulus and hardness by nanoindentation (huesa2011), showing the crosslink-to-stiffness link is
+      real in mineralized tissue.
+    what_is_missing: >-
+      A conditional Lox allele in cartilage. The global null is lethal for cardiovascular reasons that
+      have nothing to do with the skeleton, so the block is technical and removable.
+    nearest_evidence: [mki2002, eyre2002, eyre1988, williams2001, huesa2011]
+    discriminating_experiment: >-
+      Model system: Col2a1-Cre;Loxfl/fl mice, with Acan-CreERT2 induction postnatally as a second arm
+      to separate developmental from postnatal requirement. Readout: HPLC pyridinoline per mole
+      collagen on microdissected physeal cartilage, zonal modulus by tissue-scale hydrated
+      microindentation at a stated loading rate, physeal tensile strength to failure in a mechanical
+      testing rig, and growth plate histomorphometry. Expected results - if crosslinking sets physeal
+      mechanics, pyridinoline falls, zonal modulus falls proportionally and the plate fails at lower
+      tensile stress with fracture propagating through the hypertrophic zone as it does clinically;
+      if modulus and strength are unchanged despite reduced crosslinks, physeal mechanics are carried
+      by proteoglycan osmotic pressure and fibril architecture rather than by covalent crosslinking,
+      which would explain why the physis is far weaker in tension than adult cartilage despite
+      similar collagen content.
+    tractability: 4
+
+  - gap_id: g_l6l5_014
+    question: >-
+      Has the matrix composition of a HUMAN growth plate ever been measured under a known applied
+      mechanical load?
+    type: search_established
+    layer: L6
+    why_it_matters: >-
+      The whole L6-to-L5 seam - whether load changes aggrecan, collagen II, collagen X, crosslinking
+      or mineralization chemistry in a physis - rests on a single 48-hour swine explant study read out
+      by immunohistochemistry. If no human measurement exists, then every statement about how a
+      tethered human physis remodels its matrix is a two-species extrapolation stacked on a
+      semi-quantitative method, and that should be stated wherever guided growth is discussed
+      mechanistically.
+    what_is_known: >-
+      Human growth plate explants have been mechanically loaded: biopsies from three epiphysiodesis
+      patients were loaded at 0.4 N and 0.77 Hz for 30 minutes, which is the only human physeal
+      loading experiment on record and is a transcriptional rather than a matrix-composition study.
+      The swine explant contrast at matched mean strain (sergerie2011) supplies the only matrix
+      readout in any species. Human physeal matrix HAS been characterised without load, by proteomics
+      and elemental mapping in ten paediatric donors (xie2025) and by ToF-SIMS (zoehrer2025).
+    what_is_missing: >-
+      Any study in which human physeal tissue under a known load is assayed for aggrecan, collagen,
+      glycosaminoglycan or mineral content. A Europe PMC sweep returns only articular cartilage,
+      intervertebral disc, tissue-engineered constructs and clinical fracture-fixation series.
+    nearest_evidence: [sergerie2011, xie2025, zoehrer2025, kaviani2016]
+    discriminating_experiment: >-
+      Model system: human growth plate explants from epiphysiodesis and limb-salvage specimens, loaded
+      in the established bioreactor protocol at magnitudes below the viability threshold defined in
+      swine (kaviani2015), with paired unloaded explants from the same donor as the internal control.
+      Readout: quantitative rather than immunohistochemical assays - dimethylmethylene blue for
+      sulphated GAG, hydroxyproline for collagen, targeted mass spectrometry for collagen II and X
+      peptides - on microdissected zonal fractions. Expected result under the swine-derived hypothesis:
+      static compression depletes sulphated GAG and collagen II relative to the paired unloaded
+      control while dynamic compression at matched mean strain preserves or increases them; a null
+      result would mean the swine explant finding does not transfer and the mechanistic account of
+      guided growth loses its only matrix component.
+    tractability: 2
+    search_log_ref: g_l6l5_014
+
+  - gap_id: g_l6l5_015
+    question: >-
+      How does the fixed negative charge of growth plate matrix affect the diffusion of the charged
+      solutes that avascular chondrocytes depend on, and does zonal water content vary enough to
+      change transport across the plate?
+    type: known_unknown
+    layer: L5
+    why_it_matters: >-
+      The growth plate is avascular, aneural and alymphatic, so every solute a chondrocyte needs -
+      glucose, oxygen, phosphate, sulphate for proteoglycan synthesis - crosses a dense polyanionic
+      gel by diffusion, and every waste product leaves the same way. Fixed charge density of -0.19 to
+      -0.35 M is high enough to partition anions and cations differently by Donnan equilibrium, which
+      means phosphate and sulphate supply to the mineralizing zone is charge-limited in a way that
+      neutral-solute models do not capture. Water is the medium and its zonal distribution is the
+      least quantified variable in the entire matrix layer.
+    what_is_known: >-
+      Fixed charge density -0.28 +/- 0.03 M in calf articular cartilage and -0.19 to -0.35 M in calf
+      cartilage generally, by sodium NMR (lesperance1992); in situ osmotic pressure is about one third
+      of the ideal Donnan prediction (zimmerman2021). Porcine growth plate microprobe work ASSUMES 66%
+      tissue fluid rather than measuring it zonally (althoff1982). MR T1 mapping measures physeal and
+      cartilage water content to 97.3% accuracy against freeze-drying but has not been applied zonally
+      (shiguetomimedi2013). Oxygen gradients across the plate have been mapped by electrode. Aggrecan
+      carries essentially all the fixed charge.
+    what_is_missing: >-
+      A zonally resolved measurement of water content and of fixed charge density in the same growth
+      plate, and any measurement of charged-solute diffusivity in physeal as opposed to articular
+      matrix.
+    nearest_evidence: [lesperance1992, zimmerman2021, althoff1982, shiguetomimedi2013]
+    discriminating_experiment: >-
+      Model system: porcine distal ulnar growth plate, fresh, tested hydrated at tissue scale.
+      Readout: paired zonal measurement on the same specimen of (a) water content by MR T1 mapping
+      validated against freeze-drying, (b) fixed charge density by sodium MRI or by
+      equilibrium-partition of a fluorescent anionic tracer, and (c) effective diffusivity of a
+      charged tracer (fluorescein, anionic) versus a size-matched neutral tracer through each zone by
+      fluorescence recovery after photobleaching. Expected results - if transport is charge-limited,
+      the anionic tracer's diffusivity is depressed relative to the neutral tracer in proportion to
+      local fixed charge density and the depression is greatest in the resting and proliferative zones
+      where aggrecan content is highest, predicting that phosphate delivery to the mineralizing zone
+      depends on aggrecan clearance; if the two tracers behave alike, transport is governed by water
+      content and tortuosity alone and the Donnan argument can be dropped from physeal transport
+      models.
+    tractability: 3

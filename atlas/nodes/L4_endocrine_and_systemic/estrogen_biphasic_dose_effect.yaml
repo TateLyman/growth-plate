@@ -1,0 +1,148 @@
+id: estrogen_biphasic_dose_effect
+name: Biphasic dose-dependent estrogen effect on growth
+aliases:
+- low-dose estrogen stimulation / high-dose fusion
+- estrogen U-shaped growth response
+type: process
+layer: L4
+stub: false
+summary: 'Estrogen accelerates growth at low concentration and terminates it at high concentration, and
+  the two limbs are separated by less than an order of magnitude. The only direct human dose-response
+  experiment is small and old but decisive: five prepubertal or early pubertal boys received 4-day intravenous
+  estradiol infusions at 4, 20 and 90 ug/day in double-blind randomised order, with three-week ulnar growth
+  velocity measured before and after each and allowed to return to baseline between infusions. Growth
+  velocity rose significantly ONLY at the lowest dose (0.45 +/- 0.11 to 1.38 +/- 0.51 mm/3 weeks, P<0.05,
+  serum estradiol 10 +/- 2.3 pg/mL); the 20 ug/day and 90 ug/day infusions produced smaller, non-significant
+  increments despite serum estradiol of 16 and 96 pg/mL, and somatomedin-C rose only at the two higher
+  doses (carusonicolett1985). The same group had previously described a biphasic ethinyl estradiol dose-response
+  in Turner syndrome. Physiologically, the ascending limb is quantified in healthy children: half-maximal
+  growth acceleration at morning estradiol 20 pmol/L in girls (95% CI 13-31) and 6.5 pmol/L in boys (3.2-13),
+  with under 25% of potential pubertal growth remaining above the Tanner B2 range of 10-51 pmol/L (albin2012,
+  albin2013). Long-term pharmacology matches: in the 149-girl randomised Turner trial, childhood ultra-low-dose
+  ethinyl estradiol (25 ng/kg/day ages 5-8, 50 ng/kg/day ages >8-12) added 0.32 SDS on top of GH but,
+  given alone, produced an adult height WORSE than placebo (-3.39 vs -2.81 SDS) (ross2011, quigley2014).
+  The descending limb''s mechanism is senescence acceleration rather than direct ossification: estradiol
+  cypionate 70 ug/kg/week in ovariectomised juvenile rabbits accelerated the decline in growth rate, proliferation,
+  plate height and chondrocyte numbers, and fusion occurred abruptly once proliferation approached zero
+  (weise2001). No single experiment has ever traced a complete dose-response curve spanning both limbs
+  to a linear-growth endpoint in humans.'
+quantitative:
+- parameter: 3-week ulnar growth velocity before and after 4-day iv estradiol at 4 ug/day
+  value: 0.45 -> 1.38
+  unit: mm per 3 weeks
+  conditions: 5 prepubertal/early pubertal boys, double-blind randomised crossover; mean serum estradiol
+    during infusion 10 +/- 2.3 pg/mL (~37 pmol/L)
+  species: human
+  source_ref: carusonicolett1985
+  uncertainty: SEM +/-0.11 and +/-0.51; P<0.05
+- parameter: 3-week ulnar growth velocity before and after 4-day iv estradiol at 20 ug/day
+  value: 0.49 -> 1.0
+  unit: mm per 3 weeks
+  conditions: same 5 boys; mean serum estradiol 16 +/- 2.3 pg/mL (~59 pmol/L)
+  species: human
+  source_ref: carusonicolett1985
+  uncertainty: SEM +/-0.11 and +/-0.4; not significant
+- parameter: 3-week ulnar growth velocity before and after 4-day iv estradiol at 90 ug/day
+  value: 0.46 -> 0.84
+  unit: mm per 3 weeks
+  conditions: same 5 boys; mean serum estradiol 96 +/- 12 pg/mL (~352 pmol/L)
+  species: human
+  source_ref: carusonicolett1985
+  uncertainty: SEM +/-0.1 and +/-0.12; not significant
+- parameter: morning estradiol at half-maximal pubertal growth acceleration (girls)
+  value: '20'
+  unit: pmol/L
+  conditions: 27 healthy girls, 37 24-h profiles, ultrasensitive extraction RIA
+  species: human
+  source_ref: albin2012
+  uncertainty: 95% CI 13-31 pmol/L
+- parameter: adult height in Turner syndrome, childhood ultra-low-dose estrogen alone vs placebo
+  value: -3.39 vs -2.81
+  unit: SDS
+  conditions: randomised double-blind trial, n=40 estrogen-alone vs 39 double-placebo, adult height at
+    mean 17.0 +/- 1.0 y
+  species: human
+  source_ref: ross2011
+  uncertainty: SD 0.74 and 0.85; overall group comparison P<0.001
+- parameter: adult height gain from childhood ultra-low-dose estrogen ADDED to GH
+  value: '0.32'
+  unit: SDS (2.1 cm)
+  conditions: GH+estrogen (n=35) vs GH alone (n=35), Turner syndrome
+  species: human
+  source_ref: ross2011
+  uncertainty: SE +/-0.17; P=0.059
+- parameter: childhood ethinyl estradiol dose used in the Turner trial
+  value: 25 (ages 5-8) then 50 (ages >8-12)
+  unit: ng/kg/day
+  conditions: oral EE2; escalating from 100 ng/kg/day after age 12
+  species: human
+  source_ref: quigley2014
+  uncertainty: dose halved for early breast development, early menarche or undue bone age advance
+- parameter: extra height from early very low-dose depot estradiol plus GH vs GH alone
+  value: '3.5'
+  unit: cm
+  conditions: Turner girls, depot estradiol 0.2 mg/month i.m. plus GH 0.05 mg/kg/day, first 2 years
+  species: human
+  source_ref: rosenfield2005
+  uncertainty: n=7 per arm; P<0.01
+- parameter: estradiol cypionate dose that accelerates growth plate senescence and fusion
+  value: '70'
+  unit: ug/kg per week i.m.
+  conditions: juvenile ovariectomised female rabbits; proximal tibia, distal tibia, distal femur at 2,
+    4, 6, 8 weeks
+  species: rabbit
+  source_ref: weise2001
+  uncertainty: single dose level; no dose-response tested
+localization:
+- 'rabbit RZ: high-dose estrogen irreversibly depletes resting zone progenitor number (nilsson2014_2)'
+- 'rabbit whole plate: fusion occurs abruptly when proliferation rate approaches zero (weise2001)'
+- 'human growth plate: neither limb of the curve has been localised to a zone'
+human_evidence: direct
+human_evidence_note: A double-blind randomised crossover of three intravenous estradiol doses with a direct
+  linear-growth readout (knemometric ulnar growth) exists in humans, though n=5 and short-term; the physiological
+  ascending limb is separately fitted from 24-h profiles and the long-term consequences from randomised
+  Turner trials.
+species_basis:
+- human
+- rabbit
+translation_risk: moderate
+translation_risk_reason: Human data anchor both limbs but never in one experiment; the cellular mechanism
+  of the descending limb comes from ovariectomised rabbits at a single supraphysiological dose.
+confidence: A
+key_refs:
+- ref_id: carusonicolett1985
+  first_author: Caruso-Nicoletti M
+  year: 1985
+  type: primary
+  one_line_finding: Only the lowest estradiol dose (4 ug/day) significantly accelerated ulnar growth in
+    boys; 20 and 90 ug/day did not - the direct human biphasic demonstration.
+  pmid: '4044777'
+- ref_id: albin2012
+  first_author: Albin AK
+  year: 2012
+  type: primary
+  one_line_finding: EC50 20 pmol/L estradiol for half-maximal pubertal growth in girls; <25% of growth
+    remains above the Tanner B2 range.
+  pmid: '23075676'
+- ref_id: ross2011
+  first_author: Ross JL
+  year: 2011
+  type: primary
+  one_line_finding: Ultra-low-dose childhood estrogen alone lowered adult height below placebo but added
+    0.32 SDS on top of GH in Turner syndrome.
+  pmid: '21449786'
+- ref_id: weise2001
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: Estradiol cypionate 70 ug/kg/week accelerated every senescence parameter in ovariectomised
+    rabbits; fusion followed proliferative exhaustion.
+  pmid: '11381135'
+- ref_id: rosenfield2005
+  first_author: Rosenfield RL
+  year: 2005
+  type: primary
+  one_line_finding: Early very low-dose depot estradiol plus GH gave 3.5 cm more growth over 2 years than
+    GH alone.
+  pmid: '16189255'
+last_verified: '2026-08-05'

@@ -1,0 +1,60 @@
+id: gli2_tf
+name: GLI2
+type: protein
+layer: L3
+stub: false
+summary: 'GLI2 is the principal Hedgehog-dependent transcriptional activator in the GLI family. In the
+  growth
+
+  plate its activator role is largely dispensable relative to GLI3 repressor: the cartilage phenotype
+
+  of Ihh-null mice is rescued by removing Gli3 rather than by restoring GLI activator function,
+
+  indicating that the dominant Ihh output in chondrocytes is derepression (Hilton 2005; Koziel 2005).
+
+  GLI2 and GLI3 act together to mediate Hedgehog-TGF-beta crosstalk in mesenchymal progenitors that
+
+  feed the skeletal lineage (Zhou 2026). Human GLI2 loss causes Culler-Jones/holoprosencephaly-spectrum
+
+  disease dominated by pituitary and midline defects, so the human phenotype confounds a growth plate
+
+  readout with GH deficiency and cannot be used as a clean test of chondrocyte GLI2 function.
+
+  '
+localization:
+- 'mouse PZ/PHZ: inferred from Gli reporter and genetic epistasis (hilton2005)'
+- 'human growth plate: unconfirmed'
+human_evidence: indirect
+human_evidence_note: Human GLI2 mutations cause pituitary/midline disease with short stature, but the
+  growth defect is confounded by GH deficiency rather than being demonstrably chondrocyte-intrinsic.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Mouse epistasis only; the human GLI2 phenotype is endocrine-confounded.
+confidence: C
+key_refs:
+- ref_id: hilton2005
+  pmid: '16141219'
+  first_author: Hilton MJ
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: Gli3 deletion rescues Ihh-null cartilage, placing derepression above activator gain.
+- ref_id: koziel2005
+  pmid: '16284117'
+  first_author: Koziel L
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: Gli3 acts downstream of Ihh at two separable steps of chondrocyte differentiation.
+- ref_id: zhou2026
+  pmid: '41813653'
+  first_author: Zhou T
+  year: 2026
+  type: primary_abstract_only
+  one_line_finding: GLI2 and GLI3 synergistically mediate Hedgehog-TGF-beta crosstalk in skeletal mesenchymal
+    progenitors.
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Same epistasis; node correctly refuses to use the human GLI2 phenotype as a chondrocyte test
+  because pituitary/midline defects confound it with GH deficiency.

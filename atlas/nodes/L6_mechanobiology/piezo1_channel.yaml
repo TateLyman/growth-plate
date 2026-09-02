@@ -1,0 +1,122 @@
+id: piezo1_channel
+name: PIEZO1
+type: protein
+aliases:
+- Piezo1
+- FAM38A
+summary: 'PIEZO1 is the only mechanosensitive channel with loss-of-function evidence obtained inside the
+  growth plate rather than in articular cartilage. Col2a1-Cre inactivation in mice produces near-absence
+  of trabecular bone beneath the growth plate postnatally and multiple rib fractures adjacent to the physes
+  by day 7, while linear skeletal growth is only mildly affected - so the channel is required for the
+  bone that the plate produces more than for the plate''s own output. Col10a1-Cre deletion restricted
+  to hypertrophic chondrocytes gives an osteopenic phenotype with increased osteoclast number in the primary
+  spongiosa, mediated by RANKL repression and OPG induction, without altering hypertrophic apoptosis or
+  chondrocyte-to-osteoblast transdifferentiation. Under applied compression, PIEZO1 is upregulated in
+  vertebral growth plate chondrocytes and drives GPX4 loss and ferroptosis; Col2a1-CreERT;Piezo1fl/fl
+  deletion or local pharmacological blockade slowed scoliosis progression in mice. PIEZO1 colocalises
+  with the primary cilium in mouse growth plate chondrocytes and its stress response requires IFT88. Human
+  data are thin: increased PIEZO1 protein has been shown in cartilaginous zones of human osteophytes,
+  but no study has localised PIEZO1 in human growth plate tissue.'
+quantitative:
+- parameter: rib fracture penetrance in chondrocyte-specific Piezo1 deletion
+  value: '100'
+  unit: '% of animals at 7 days'
+  conditions: Piezo1 Col2a1-Cre mice, fractures adjacent to growth plates
+  species: mouse
+  source_ref: brylka2024
+  uncertainty: n not extracted from abstract
+- parameter: compressive stress applied to induce PIEZO1 upregulation in vivo
+  value: '10'
+  unit: kPa
+  conditions: mouse caudal compression model, 8 weeks
+  species: mouse
+  source_ref: chen2025
+  uncertainty: device-applied nominal value
+- parameter: compressive stress applied to primary growth plate chondrocytes in vitro
+  value: '100'
+  unit: kPa
+  conditions: custom loading device, P5 mouse growth plate chondrocytes
+  species: mouse
+  source_ref: chen2025
+  uncertainty: nominal
+- parameter: cilia-positive chondrocytes after chloral hydrate disruption
+  value: 97.2 -> 16.6
+  unit: '%'
+  conditions: mouse growth plate chondrocytes in vitro
+  species: mouse
+  source_ref: chen2025
+  uncertainty: p<0.001
+localization:
+- 'mouse growth plate chondrocytes (all zones, Col2a1 domain): confirmed by conditional deletion phenotype
+  (brylka2024)'
+- 'mouse hypertrophic zone: confirmed by Col10a1-Cre deletion phenotype (tschaffonmller2026)'
+- 'mouse growth plate chondrocyte primary cilium: colocalised with acetylated alpha-tubulin (chen2025)'
+- 'human osteophyte cartilage: PIEZO1 protein increased (brylka2024)'
+- 'human growth plate: unconfirmed - no localisation study located'
+human_evidence: absent
+human_evidence_note: The only human PIEZO1 protein data in cartilage come from osteophytes in osteoarthritis;
+  PIEZO1 has not been localised or functionally tested in human physeal tissue.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Entirely conditional-knockout mouse biology; human physeal expression is unestablished
+  and mice do not undergo epiphyseal fusion.
+confidence: C
+key_refs:
+- ref_id: brylka2024
+  pmid: '38395992'
+  first_author: Brylka LJ
+  year: 2024
+  type: primary
+  one_line_finding: Chondrocyte Piezo1 but not Piezo2 deletion abolished trabecular bone under the growth
+    plate and caused peri-physeal rib fractures
+- ref_id: tschaffonmller2026
+  pmid: '42157948'
+  first_author: Tschaffon-Muller MEA
+  year: 2026
+  type: primary
+  one_line_finding: Hypertrophic-chondrocyte Piezo1 deletion raised osteoclast number in the primary spongiosa
+    via RANKL/OPG
+- ref_id: chen2025a
+  pmid: '40714837'
+  first_author: Chen F
+  year: 2025
+  type: primary
+  one_line_finding: Compression-induced PIEZO1 drives GPX4 loss and ferroptosis in vertebral growth plate
+    chondrocytes; deletion slowed scoliosis
+- ref_id: chen2025
+  pmid: '41194970'
+  first_author: Chen F
+  year: 2025
+  type: primary
+  one_line_finding: PIEZO1 colocalises with the primary cilium in growth plate chondrocytes and requires
+    IFT88 for its stress response
+- ref_id: chen2026
+  pmid: '42082502'
+  first_author: Chen F
+  year: 2026
+  type: primary
+  one_line_finding: Simulated microgravity unloading reverses PIEZO1-overexpression-driven growth plate
+    ossification
+open_questions:
+- g_l6mech_007
+- g_l6mech_008
+layer: L6
+stub: false
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: brylka2024 deleted Piezo1 AND Piezo2 in the same Col2a1-Cre system - a matched head-to-head
+  paralog comparison in which the paralog single null is phenotypically silent for this readout.
+reanalysis_observations:
+- observation: PIEZO1 is detected in all five compartments of both human donors. Probe set 202771_at reads
+    8,986-24,442 units in donor 1 and 8,572-16,411 in donor 2, an order of magnitude above the array-specific
+    background threshold in every compartment.
+  interpretation: The transcript-level precondition for the mouse PIEZO1 physeal work transferring to
+    humans is met. The protein question remains, but is now sharply pointed rather than open.
+  caveats: Transcript only; the gap asks about protein and is left open as partially_informed.
+  reanalysis: p8_01_gse9160_human_zonal
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'

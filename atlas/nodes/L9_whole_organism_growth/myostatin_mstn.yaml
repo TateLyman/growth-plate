@@ -1,0 +1,72 @@
+id: myostatin_mstn
+name: Myostatin (MSTN, GDF8)
+aliases:
+- MSTN, GDF8
+type: protein
+layer: L9
+stub: false
+summary: 'Myostatin is a TGF-beta superfamily ligand secreted by skeletal muscle that signals through
+  ActRIIB and restrains muscle mass. The human evidence is a single reported case: a child with a loss-of-function
+  MSTN mutation and gross muscle hypertrophy (schuelke2004). The organism-level significance for this
+  atlas is what did not happen in that child - the phenotype reported is muscular, not skeletal, so a
+  pathway that doubles muscle mass does not correspondingly change stature. That dissociates the myostatin
+  axis from the growth plate and constrains the mechanostat account of longitudinal growth: if increased
+  muscle force drove bone elongation, myostatin loss should lengthen bones, and no such report exists.
+  Pharmacological confirmation runs the same way in adults: blocking the receptor with bimagrumab increases
+  thigh muscle volume in men recovering from casting-induced atrophy (rooks2017) without any claim on
+  bone length. The full text of the index human case was not retrieved in this sweep, so no genotype detail
+  or muscle-mass quantity is asserted here.'
+quantitative:
+- parameter: reported human MSTN loss-of-function cases with gross muscle hypertrophy
+  value: '1'
+  unit: case
+  conditions: index paediatric case report
+  species: human
+  source_ref: schuelke2004
+  uncertainty: single case; no abstract available in Europe PMC, full text queued
+- parameter: effect of pharmacological ActRIIB blockade on thigh muscle volume
+  value: increase
+  unit: not_applicable
+  conditions: adult men after casting-induced atrophy, randomised
+  species: human
+  source_ref: rooks2017
+  uncertainty: direction only; magnitude not extracted
+localization:
+- 'human skeletal muscle: secreted ligand'
+- human serum
+human_evidence: direct
+human_evidence_note: A single human loss-of-function case plus a randomised human pharmacological blockade
+  study of the receptor.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: The claims recorded here are human; murine myostatin biology is extensive but
+  not relied on for these statements.
+confidence: D
+claim_grades:
+- claim: Human MSTN loss of function causes gross muscle hypertrophy
+  grade: D
+  basis: One published case (schuelke2004); no abstract retrievable and the full text was not obtained
+    in this sweep.
+- claim: Myostatin-axis manipulation increases muscle mass without a reported effect on stature
+  grade: E
+  basis: 'An argument from absence: no skeletal-length phenotype is reported in the human case or the
+    blockade trial. Absence of report is not absence of effect, and the point is flagged as inference.'
+key_refs:
+- ref_id: schuelke2004
+  pmid: '15215484'
+  first_author: Schuelke M
+  year: 2004
+  type: primary_abstract_only
+  one_line_finding: Reports a myostatin mutation associated with gross muscle hypertrophy in a child.
+- ref_id: rooks2017
+  pmid: '28905498'
+  first_author: Rooks DS
+  year: 2017
+  type: primary
+  one_line_finding: Bimagrumab, an ActRIIB blocker, increases thigh muscle volume in adult men after casting-induced
+    atrophy.
+open_questions:
+- g_l9organism_012
+pending_source: schuelke2004
+last_verified: '2026-08-05'

@@ -1,0 +1,169 @@
+======================================================================================
+PART 1  avijgan2026 - WHAT Fig 2f CAN AND CANNOT SUPPORT
+======================================================================================
+
+The published text says only that IdU and CldU 'were present in RZ cells'.
+The figure says something much stronger and something much weaker, and it
+matters which is which.
+
+[1a] THE EXPOSURE WINDOWS ARE NOT EQUAL, AND NOBODY NORMALISES FOR IT
+    analogue dosing                   present       exposure
+    EdU    day 1, overnight         day 1-2         0.7 d
+    IdU    days 3 and 6             day 3-8         5.0 d
+    CldU   days 9, 11, 13 and 15    day 9-17        8.0 d
+    A cumulative label given for 8 days will mark more cells than the same
+    label given for 16 hours EVEN IF NOTHING CHANGED. The panel is drawn as
+    though the three are comparable. THEY ARE NOT.
+
+[1b] PER-DONOR VALUES READ FROM THE 900 dpi RENDER, AND THE RATE THEY IMPLY
+    zone  analogue donors                  mean %   per day
+    RZ    EdU    [14.9, 6.6, 0.8]           7.4     10.6%
+    PZ    EdU    [75.4, 48.4, 24.2]        49.3     70.5%
+    HZ    EdU    [29.8, 22.2, 1.4]         17.8     25.4%
+    RZ    IdU    [77.0, 50.0, 0.0]         42.3      8.5%
+    PZ    IdU    [41.5, 2.3, 1.0]          14.9      3.0%
+    HZ    IdU    [19.0, 0.0, 0.0]           6.3      1.3%
+    RZ    CldU   [68.9, 51.8, 45.2]        55.3      6.9%
+    PZ    CldU   [36.9, 19.4, 9.7]         22.0      2.8%
+    HZ    CldU   [24.8, 7.8, 0.0]          10.9      1.4%
+
+[1c] THE RESULT THAT KILLS THE SIMPLE READING
+    RZ:   10.6 %/day at day 0-1  ->    6.9 %/day at day 9-17   (0.65x)
+    PZ:   70.5 %/day at day 0-1  ->    2.8 %/day at day 9-17   (0.04x)
+    HZ:   25.4 %/day at day 0-1  ->    1.4 %/day at day 9-17   (0.05x)
+    THE RESTING ZONE'S LABELLING RATE PER DAY DOES NOT RISE. What happens
+    is that THE PROLIFERATIVE ZONE COLLAPSES. The apparent 'RZ overtakes PZ'
+    in the CldU panel is produced by PZ shutdown plus an 11x longer exposure
+    window, not by resting-zone recruitment.
+
+[1d] AND THE AXIS ITSELF FORBIDS ABSOLUTE ARITHMETIC
+    The printed y-axes run to 150% and down to -100%. A raw fraction of
+    labelled cells cannot exceed 100 or fall below 0. The quantity plotted
+    is therefore NORMALISED OR BACKGROUND-CORRECTED, not a labelling index.
+    Everything in [1b] and [1c] is therefore a RATIO ARGUMENT ONLY - it is
+    valid for comparing zones and timepoints on one axis, and INVALID as a
+    statement about what fraction of resting-zone cells divided.
+    THE HONEST BOUND: Fig 2f establishes a paired SIGN FLIP - RZ below PZ
+    at day 0-1 (P < 0.05) and RZ above PZ at day 9-17 (P < 0.001),
+    with the intermediate window not significant (P = 0.0989).
+    n = {'RZ': 646, 'PZ': 1227, 'HZ': 505} cells from 3 patients.
+    IT DOES NOT ESTABLISH A RE-ENTRY FRACTION.
+
+[1e] Fig 2g IS ON AN INTERPRETABLE SCALE AND IT SURVIVES THE OBJECTION
+    poly(A) per nucleus, MEDIANS, author-stated, as a percentage of maximum:
+    zone   uncultured   cultured    delta   relative
+    RZ          26.25      46.53   +20.28     +77.3%
+    PZ          62.71      69.26    +6.56     +10.5%
+    HZ          81.21      69.52   -11.70     -14.4%
+    THE GAIN IS SPECIFIC TO THE RESTING ZONE. The PZ moves +10%, the HZ
+    FALLS 14% - so this is not a global culture artefact lifting every
+    nucleus, and it cannot be produced by proliferative-zone exhaustion.
+    A compartment defined by LOW transcriptional output nearly doubles it
+    once the tissue is removed from the body. THAT is the reactivation
+    result, and it rests on Fig 2g rather than on Fig 2f.
+
+[1f] THE PROLONGED-G1 ALTERNATIVE THE AUTHORS COULD NOT EXCLUDE
+    They write that they cannot exclude a prolonged G1 rather than true G0.
+    FOR THIS ATLAS THE DISTINCTION DOES NOT CHANGE THE ANSWER. Under either
+    reading the same thing is true: the compartment's output is set by its
+    position in the body and rises when that position is removed. Arrest
+    versus very slow cycling is a question about the mechanism of the
+    ceiling, not about whether the ceiling is imposed. IT IS IMPOSED.
+======================================================================================
+PART 2  chu2026 - THE GH NULL IN THE RESTING ZONE IS NOT A NULL
+======================================================================================
+
+2 months of culture, EdU+/DAPI+ per cent, 7 vehicle and 6 GH donors,
+each donor the average of 2-4 explants. Author-stated test: ONE-WAY ANOVA
+WITH TUKEY ACROSS ALL FOUR GROUPS.
+
+    zone   veh mean  GH mean   fold  Tukey P   unadj p     MDD  MD fold
+    RZ        0.453    1.270  2.80x    0.790     0.248    1.81    5.00x
+    PZ        1.234    3.878  3.14x    0.013     0.019    2.45    2.99x
+    (unadjusted p by Welch t on the reconstructed per-donor values, exact)
+
+[2a] WHAT THAT TABLE SAYS
+    The resting-zone point estimate is 2.8x, IN THE SAME DIRECTION
+    as the proliferative zone. The study could only have detected a
+    5.0x rise at 80% power. IT COULD NOT HAVE DETECTED THE EFFECT
+    IT OBSERVED.
+    P = 0.79 is a Tukey-corrected figure across four groups; the unadjusted
+    two-sample comparison on the same points is around p = 0.2.
+    THIS IS AN UNINFORMATIVE NULL, NOT EVIDENCE OF ABSENCE.
+
+[2b] AND THE SIGNALLING DATA POINT THE OTHER WAY
+    chu2026 measured where GH signal actually lands: phospho-STAT5 rose
+    PREDOMINANTLY IN THE RESTING ZONE, P = 0.034, on short-term treatment.
+    So the receptor arm is engaged in the RZ and the proliferative readout
+    in the RZ is underpowered. Any claim that GH bypasses the human resting
+    zone is unsupported by this paper.
+
+[2c] WHAT chu2026 DOES ESTABLISH, WHICH IS STILL USEFUL
+    (i) the human plate survives 2 months ex vivo with intact histology and
+        Safranin O proteoglycan, BECAUSE it is avascular and diffusion-fed;
+    (ii) BONE DOES NOT EXPAND ex vivo - the authors' own reading is that
+        vascularisation is dispensable for chondrogenesis and essential for
+        ossification;
+    (iii) GH raised PZ proliferation 3.2x, P = 0.013, and produced a
+        measurable expansion of the cartilage - BUT NOT IN EVERY DONOR.
+======================================================================================
+PART 3  THE COST OF REACTIVATION, WHICH ONLY APPEARS WHEN THE TWO PAPERS
+        ARE READ TOGETHER
+======================================================================================
+
+    avijgan2026 : culture RAISES resting-zone transcriptional output 77%
+    chu2026     : culture DESTROYS the root population's identity -
+                  cluster GP1 is effectively lost, CYTL1 falling from 175
+                  to 4 reads per positive cell, IGF1 absent, and CYTL1 and
+                  RAMP3 begin appearing in the same cells and in the
+                  hypertrophic layer where they do not belong.
+
+    THESE ARE THE SAME EVENT DESCRIBED FROM TWO SIDES. The niche signal is
+    withdrawn; the cells wake up; the identity that made them a reserve goes
+    with it. Explant reactivation is not a clean pool expansion.
+
+    AND THE MOUSE ALREADY SHOWED THIS PHENOTYPE UNDER A DEFINED LESION.
+    newton2019, Tsc1 ablation (constitutive mTORC1) in the resting zone:
+    CD73 zone height up (P = 0.0025), clone size up (P = 0.0342), EdU+
+    epiphyseal stem cells 24.7 -> 62.4 (P = 0.014), PAR3 shifted toward
+    symmetric division - and 'neither proliferation of chondroprogenitors
+    nor their recruitment into the proliferative layer changed detectably',
+    with a DISORDERED resting zone expressing NO ColX and NO Ihh.
+
+    THE EXPLANT PHENOTYPE AND THE Tsc1 PHENOTYPE ARE THE SAME PHENOTYPE:
+    the pool wakes, and it does not make columns.
+======================================================================================
+PART 4  THE RELEASE SIGNAL - WHAT EXPLANTING ACTUALLY REMOVES
+======================================================================================
+
+    input                                status                            
+    mechanical load                      removed                           
+        -> cannot be excluded; no loaded-explant arm exists
+    systemic hormones incl. oestrogen    removed (serum-free medium)       
+        -> oestrogen withdrawal predicts SLOWER senescence, not faster re-entry, so it does not fit the 17-day timescale
+    the vascular/SOC border signal       removed or cut                    
+        -> newton2019 shows the SOC BUILDS the niche, so removing it should SHRINK the pool, not wake it - argues against
+    the intact paracrine field           removed                           
+        -> avijgan2026's own chondron-level heterogeneity in CHRDL2/SFRP5 is consistent with local antagonist control; UNTESTED
+    diffusion limitation                 relieved (1-mm slice, 2 ml medium, both faces)
+        -> the only removed input with a named downstream node: nutrient sufficiency is the canonical mTORC1 input
+
+    rodgers2014 (mouse, Nature): mTORC1 is NECESSARY AND SUFFICIENT for
+    quiescent stem cells to leave G0 for G(Alert), a primed state that is
+    NOT yet division - cells enter the cycle faster once a second signal
+    arrives. cMet is also required.
+
+    G(Alert) IS THE MISSING TERM, AND IT RETROSPECTIVELY EXPLAINS TWO
+    STANDING PUZZLES IN THIS ATLAS:
+      newton2019  : mTORC1 on -> bigger pool, NO change in recruitment.
+                    That is alerting without the second signal.
+      trompet2024 : intra-articular SAG raised Pthrp-tdTomato+ cells from
+                    65.5 to 139.8 per mm2 (n = 5, P = 0.017) ENTIRELY WITHIN
+                    THE RESTING ZONE, with NO change in proliferation.
+                    Same shape: pool without flux.
+
+    THE PROGRAMME CONSEQUENCE, STATED PLAINLY: every pool-expanding
+    intervention this atlas has found produces G(Alert) and stops there.
+    THE ATLAS HAS NEVER IDENTIFIED THE SECOND SIGNAL. That, not pool size,
+    is now the binding constraint on the reserve route.
+======================================================================================

@@ -1,0 +1,68 @@
+id: height_sds_z_score
+name: Height standard deviation score
+aliases:
+- height SDS
+- height z-score
+- LMS method
+type: method
+layer: L9
+stub: false
+summary: 'Height SDS expresses a measurement as the number of reference SDs from the age- and sex-specific
+  median, and it is the currency in which every organism-level growth claim in this atlas is denominated.
+  Because childhood height is not normally distributed at every age, SDS is computed by the LMS method,
+  which fits three smooth age-varying curves - the Box-Cox power L, the median M and the coefficient of
+  variation S - and normalises through a Box-Cox transform (cole1992). Two properties matter mechanistically.
+  First, an SDS is a rank statement about a reference population, not a physical quantity: the same SDS
+  corresponds to a different number of centimetres at each age because S varies with age, so an unchanged
+  SDS during treatment does not mean an unchanged centimetre deficit. Second, SDS is reference-dependent:
+  a child scored against the WHO prescriptive standard and against the CDC descriptive reference receives
+  different values, and the two disagree most at the tails and in infancy (de2011). Any conversion of
+  a plate-level model output into SDS therefore requires the reference to be named, and any target number
+  recorded in SDS in this atlas carries the reference with it.'
+quantitative:
+- parameter: smooth curves fitted by the LMS method
+  value: '3'
+  unit: curves
+  conditions: L (Box-Cox power), M (median), S (coefficient of variation), each a function of age
+  species: human
+  source_ref: cole1992
+  uncertainty: exact
+- parameter: fitting criterion
+  value: penalized likelihood
+  unit: not_applicable
+  conditions: equivalent degrees of freedom chosen for each of L, M and S
+  species: human
+  source_ref: cole1992
+  uncertainty: as published
+- parameter: agreement between WHO and US reference length increments at outer percentiles
+  value: poor
+  unit: not_applicable
+  conditions: 2- and 3-month length increments, birth to 24 months
+  species: human
+  source_ref: de2011
+  uncertainty: US percentiles converge to a narrower range than WHO with increasing age; medians agree
+    more closely
+localization:
+- 'human whole organism: any anthropometric measurement expressed against an age- and sex-specific reference'
+human_evidence: direct
+human_evidence_note: A statistical method developed on and applied only to human reference data.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A human measurement convention.
+confidence: A
+key_refs:
+- ref_id: cole1992
+  pmid: '1518992'
+  first_author: Cole TJ
+  year: 1992
+  type: primary
+  one_line_finding: 'Defines the LMS method: reference centiles as three smooth age-varying curves fitted
+    by penalized likelihood.'
+- ref_id: de2011
+  pmid: '21708799'
+  first_author: de Onis M
+  year: 2011
+  type: primary
+  one_line_finding: WHO and US velocity references disagree systematically, most at the lower percentiles.
+last_verified: '2026-08-05'

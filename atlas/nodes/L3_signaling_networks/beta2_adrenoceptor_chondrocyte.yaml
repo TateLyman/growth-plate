@@ -1,0 +1,132 @@
+id: beta2_adrenoceptor_chondrocyte
+name: Beta-2 adrenoceptor in chondrocytes
+aliases:
+- ADRB2
+- beta2-AR
+- b2-adrenoceptor
+- adrenergic input to the growth plate
+- sympathetic input to the physis
+- catecholamine signalling in cartilage
+type: protein
+layer: L3
+stub: false
+summary: 'The atlas had NO autonomic or neural input to the growth plate at all - the strings ''adrenergic''
+  and ''catecholamine'' resolved to zero nodes across 614 - and no gap asserted the absence. The Phase
+  7 falsification run found the hole (item P08) and it was logged as a coverage gap; this node closes
+  it with the primary that motivated the search.
+
+  Chondrocyte-specific deletion of the beta-2 adrenoceptor in mouse REDUCES long bone growth, and the
+  authors attribute it to a FASTER transition of proliferative to hypertrophic chondrocytes rather than
+  to a proliferation deficit - which places catecholamine input on the same control variable (time spent
+  proliferating before hypertrophy) that thyroid hormone, CNP and glucocorticoid act on. Tibiae and femora
+  were analysed at 6, 12 and 40 weeks in both sexes. Older knockouts additionally showed an osteopenic
+  phenotype with reduced osteoblast number, and fracture healing was delayed with reduced cartilage area
+  at an intermediate time point. An in vitro expression experiment implicated WNT and TGF-beta signalling
+  (kuhn2026).
+
+  The wider context is that systemic and osteoblast-specific beta-2 adrenoceptor knockouts INCREASE bone
+  mass, so the cartilage-specific effect is not the same sign as the skeletal one and cannot be inferred
+  from it - which is exactly why a chondrocyte-specific allele was needed.
+
+  ANSWERED R337, IN BOTH DIRECTIONS, AND THE ANSWER IS NO FOR THIS STACK. (1) THE MOUSE RESULT IS STRONGER
+  THAN THIS NODE RECORDED: kuhn2026 read in full gives femur AND tibia significantly reduced at 6, 12 AND
+  40 weeks in BOTH sexes - six groups, one direction - with increased Collagen 10+ and Collagen 2+ chondrocytes
+  and unchanged Runx2+. Effect sizes remain FIGURE-ONLY and the driver is Col2a1-Cre, i.e. embryonic-onset
+  (CORR-299). Grade D to C. (2) THE RECEIVER TEST PASSES CLEANLY: in GSE288028, 14 postnatal human growth
+  plates, ADRB2 is 12/14 at 8.4 CPM in up to 21.4 per cent of cells and is THE ONLY ADRENOCEPTOR PRESENT
+  (ADRB1 0/14, ADRB3 0/14, ADRA1A 1/14, ADRA2A 4/14), with GNAS 564.8 CPM in 97 per cent of cells downstream;
+  and the plate makes NO CATECHOLAMINE OF ITS OWN (TH 0/14, DBH 0/14, PNMT 0/14, SLC6A2 1/14), reproducing
+  the NPPC/NPR2 configuration in which the receptor is local and the ligand systemic. (3) THE HUMAN QUESTION
+  THIS NODE OPENED HAS IN FACT BEEN ASKED, REPEATEDLY, IN THE INFANTILE HAEMANGIOMA LITERATURE, AND IT
+  IS NULL FOR LINEAR GROWTH: giese2021 followed 185 infants on propranolol with MONTHLY prospective heights
+  against WHO normative data and found no growth impairment; lin2023propranolol reproduced the height null
+  in 51 children; a 2025 JAAD report finds none at age 4. Months of systemic beta-blockade during the fastest
+  growth phase of human life moved no height, so the axis is not RATE-LIMITING in humans - though blockade
+  being harmless does not strictly exclude agonism being useful.
+
+  WHY IT IS STILL NOT AN ADDITION, and the first reason is decisive. STEP 0: ADRB2 is Gs-coupled, so it
+  runs to cAMP, PKA and CREB - and R307/R309 built three independent lines against raising cAMP in this
+  case (Jansen''s at the gain end, horike2026''s CREB jam of the resting zone, ACRDYS2''s raised pCREB at
+  -4.81 SDS). Erdafitinib''s contribution to this stack IS lowering CREB, so a beta-2 agonist pushes the
+  node the lead drug exists to suppress. Second, ADRB2 returns ZERO rows in kosmicki2026''s burden table
+  - no human height genetics. Third, chronic GPCR agonism self-limits: beta-2 agonists desensitise and
+  downregulate their receptor within days to weeks, which is a poor match for an indication needing years
+  of tonic drive - a worked instance of R306''s conclusion that the entry point is production or degradation,
+  not receptor agonism.'
+quantitative:
+- parameter: long bone growth, chondrocyte-specific Adrb2 knockout vs control
+  value: reduced
+  unit: qualitative
+  conditions: tibia and femur, 6/12/40 weeks, both sexes
+  species: mouse
+  source_ref: kuhn2026
+  uncertainty: direction reported in the abstract; effect size not extracted - full text not retrieved
+localization:
+- 'mouse growth plate chondrocyte: functional requirement demonstrated by conditional deletion (kuhn2026)'
+- 'postnatal human growth plate: ADRB2 detected in 12 of 14 samples at 8.4 CPM in up to 21.4 per cent of
+  cells and is the ONLY adrenoceptor present; catecholamine synthesis machinery (TH, DBH, PNMT) absent'
+human_evidence: indirect
+human_evidence_note: 'Two human strands added R337. Expression - ADRB2 is present in the postnatal human
+  growth plate and is the only adrenoceptor there, while the plate synthesises no catecholamine of its own.
+  Pharmacology - systemic beta-blockade in infancy does not impair linear growth (giese2021 n=185 with monthly
+  heights; lin2023propranolol n=51; a 2025 four-year follow-up), which is the closest human test of this
+  axis and runs against translation of the mouse phenotype. No human genetics: ADRB2 is absent from kosmicki2026''s
+  burden table.'
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: A single mouse conditional knockout, with the additional complication that the
+  systemic and osteoblast-specific knockouts of the same receptor move bone mass in the OPPOSITE direction.
+  Nothing licenses transferring the cartilage-specific sign to humans.
+confidence: C
+claim_grades:
+- claim: Beta-2 adrenoceptor signalling in chondrocytes is required for normal long bone growth.
+  grade: C
+  basis: 'UPGRADED FROM D ON FULL TEXT (R337). kuhn2026 gives femur AND tibia significantly reduced at 6,
+    12 AND 40 weeks in BOTH sexes - six groups, one direction - with increased Collagen 10+ and Collagen
+    2+ chondrocytes and unchanged Runx2+. Not higher because effect sizes are FIGURE-ONLY, the driver is
+    Col2a1-Cre and therefore embryonic-onset rather than an inducible postnatal deletion (CORR-299), and
+    there is no independent replication.'
+- claim: A beta-2 agonist is an addition to this stack.
+  grade: X
+  basis: 'FOUR INDEPENDENT REASONS (R337), the first decisive. Step 0 - ADRB2 is Gs-coupled and runs to
+    cAMP, PKA and CREB, which erdafitinib exists to lower and which R307/R309 gave three separate reasons
+    not to raise. The human test is null - systemic beta-blockade in infancy impairs no height. No human
+    height genetics - zero rows in kosmicki2026. And chronic beta-2 agonism desensitises and downregulates
+    its own receptor within days to weeks, which is the wrong pharmacology for years of tonic drive.'
+- claim: The mechanism is a faster proliferative-to-hypertrophic transition rather than reduced proliferation.
+  grade: D
+  basis: Author interpretation of the same single study; stated as "most likely" in the source and not
+    independently tested.
+- claim: Sympathetic tone or beta-blockade affects human longitudinal growth.
+  grade: D
+  basis: 'ANSWERED IN THE NEGATIVE R337 - and the premise of the old X grade was wrong, because the question
+    HAS been asked, in the infantile haemangioma literature. giese2021 (185 infants, monthly prospective
+    heights against WHO normative data), lin2023propranolol (51 children, paired Wilcoxon on height, P greater
+    than 0.05) and a 2025 four-year follow-up all find no linear-growth impairment on systemic propranolol.
+    Graded D rather than higher because none was designed as a growth study, all are infants rather than
+    adolescents, and propranolol is non-selective for beta-1 versus beta-2.'
+key_refs:
+- ref_id: giese2021
+  year: 2021
+  type: primary
+  one_line_finding: 185 infants on propranolol with monthly prospective heights showed no deviation from
+    WHO normative data - the human test of this axis, and it is null for linear growth.
+- ref_id: lin2023propranolol
+  year: 2023
+  type: primary
+  one_line_finding: Independent 51-child replication of the propranolol linear-growth null (paired Wilcoxon
+    on height, P greater than 0.05).
+- ref_id: kuhn2026
+  pmid: '41809686'
+  first_author: Kuhn MR
+  year: 2026
+  type: primary
+  one_line_finding: Chondrocyte-specific beta-2 adrenoceptor knockout reduces long bone growth in mouse,
+    attributed to faster proliferative-to-hypertrophic transition; osteopenia at 40 weeks and delayed
+    fracture healing.
+open_questions: []
+last_verified: '2026-08-13'
+provenance_note: Created by the FINAL-01 item H sweep of the query layer's own coverage-gap backlog. The
+  gap was generated by the Phase 7 falsification run, not by a human noticing it.

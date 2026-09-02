@@ -1,0 +1,72 @@
+id: mecasermin_rinfabate
+name: Mecasermin rinfabate (rhIGF-1/rhIGFBP-3 complex)
+aliases: [iPlex, IGF-1/IGFBP-3 binary complex, OHB-607]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Mecasermin rinfabate is recombinant IGF-1 pre-complexed 1:1 with recombinant IGFBP-3.
+  The design rationale is pharmacokinetic and directly relevant to the growth plate: free
+  IGF-1 has a half-life of minutes and causes hypoglycaemia, whereas binary complex with
+  IGFBP-3 extends the circulating half-life and buffers acute insulin-like effects,
+  permitting once-daily rather than twice-daily dosing. It was approved in the US in the
+  mid-2000s for severe primary IGF-1 deficiency and then withdrawn from that indication;
+  the surviving literature on the complex is almost entirely about other diseases
+  (myotonic dystrophy type 1, and now bronchopulmonary dysplasia in preterm neonates as
+  OHB-607). A systematic search finds no cohort reporting adult or near-adult height in
+  children treated with the complex for short stature. This node is therefore a record of
+  a growth-plate pharmacological probe that was built, licensed and then lost for
+  non-scientific reasons, leaving the central question - whether buffering free IGF-1 with
+  its binding protein changes the growth response or only the hypoglycaemia risk -
+  unanswered in humans.
+quantitative:
+  - parameter: published cohorts reporting adult or near-adult height on mecasermin rinfabate for short stature
+    value: '0'
+    unit: cohorts
+    conditions: Europe PMC search 2026-08-05, see search log for gap g_l12b_012
+    species: human
+    source_ref: kemp2006
+    uncertainty: absence established by search, not by a negative result
+  - parameter: molar ratio of the complex
+    value: '1:1'
+    unit: IGF-1 to IGFBP-3
+    conditions: binary complex formulation; rationale is extension of circulating IGF-1 half-life and reduction of hypoglycaemia
+    species: human
+    source_ref: kemp2006
+    uncertainty: formulation property
+localization:
+  - "human growth plate: no data; the complex was never studied with a growth plate readout"
+human_evidence: indirect
+human_evidence_note: >-
+  The compound was licensed on paediatric growth-failure data but the primary efficacy
+  reports are not retrievable through the current indexed literature and no adult-height
+  cohort was ever published.
+species_basis: [human]
+translation_risk: unknown
+translation_risk_reason: >-
+  There is no current human growth dataset to translate from or to. Contemporary
+  development of the same molecule is in preterm neonatal lung disease, where the endpoint
+  is not linear growth at all.
+confidence: X
+claim_grades:
+  - claim: Complexing IGF-1 with IGFBP-3 extends its circulating half-life and permits once-daily dosing.
+    grade: C
+    basis: Formulation rationale supported by pharmacokinetic reasoning and contemporaneous review; the underlying human PK comparison is not retrievable.
+  - claim: Mecasermin rinfabate improves adult height in children with IGF-1 deficiency.
+    grade: X
+    basis: Widely asserted in the historical literature but traceable to no published adult-height cohort; see gap g_l12b_012.
+key_refs:
+  - ref_id: kemp2006
+    pmid: '16610982'
+    first_author: Kemp SF
+    year: 2006
+    type: review
+    one_line_finding: Contemporaneous appraisal of the efficacy and safety of mecasermin rinfabate around its short-lived approval.
+  - ref_id: fda_increlex_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: The surviving IGF-1 product is uncomplexed mecasermin dosed twice daily - the complexed alternative is absent from current labelling.
+open_questions: [g_l12b_012]
+contradicts: []
+pending_source: kemp2006
+last_verified: '2026-08-05'

@@ -1,0 +1,96 @@
+id: tyrosine_kinase_inhibitor_growth_toxicity
+name: Tyrosine kinase inhibitor growth toxicity
+aliases: [imatinib growth deceleration, TKI short stature, paediatric CML growth]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Children treated with imatinib for chronic myeloid leukaemia are the natural experiment
+  that constrains the entire FGFR3-inhibitor programme, because they are humans given a
+  chronic ATP-competitive kinase inhibitor across the whole growth period. In one of the
+  longest follow-ups reported (13 patients diagnosed before age 13 and followed to skeletal
+  maturity, median imatinib duration 14.3 years, IQR 14.2-16, 184.4 patient-years), mean
+  height Z score fell from -0.6 +/- 1.2 at diagnosis to -1.1 +/- 0.9 at maturity (p=0.04).
+  The effect was timing-dependent: in those started before the pubertal growth spurt the
+  decline was significant (-0.5 +/- 0.6 to -1.3 +/- 0.6, p=0.03), whereas in those started
+  after it there was no significant change (p=0.60). Crucially, adolescent catch-up growth
+  occurred and was insufficient - final height Z remained reduced. The mechanism is
+  attributed to off-target inhibition of PDGFR and KIT in growth plate chondrocytes and
+  osteoblasts rather than to BCR-ABL. This matters directly for infigratinib and the FGFR3
+  TKI class: the same drug class, the same chronic paediatric dosing, and the same
+  prepubertal window of susceptibility - but the intended target is now a growth brake
+  rather than a growth driver, so the net effect is the sum of an on-target gain and an
+  off-target loss that no achondroplasia trial has yet run long enough to separate.
+quantitative:
+  - parameter: change in height Z score from diagnosis to skeletal maturity on imatinib
+    value: '-0.5'
+    unit: Z-score
+    conditions: >-
+      13 patients with chronic-phase CML diagnosed before age 13 and followed to skeletal
+      maturity; mean height Z -0.6 +/- 1.2 at diagnosis to -1.1 +/- 0.9 at maturity
+    species: human
+    source_ref: sadanand2026
+    uncertainty: p=0.04; n=13, single centre, cross-sectional at enrolment
+  - parameter: change in height Z score, imatinib started before the pubertal growth spurt
+    value: '-0.8'
+    unit: Z-score
+    conditions: subgroup started prepubertally; -0.5 +/- 0.6 to -1.3 +/- 0.6
+    species: human
+    source_ref: sadanand2026
+    uncertainty: p=0.03
+  - parameter: change in height Z score, imatinib started after the pubertal growth spurt
+    value: not significant
+    unit: Z-score
+    conditions: subgroup started post-spurt
+    species: human
+    source_ref: sadanand2026
+    uncertainty: p=0.60
+  - parameter: median duration of imatinib therapy in the cohort
+    value: '14.3'
+    unit: years
+    conditions: IQR 14.2-16; 184.4 patient-years of follow-up
+    species: human
+    source_ref: sadanand2026
+    uncertainty: IQR given
+localization:
+  - "human growth plate: off-target PDGFR and KIT inhibition in chondrocytes and osteoblasts is the proposed mechanism; not measured in treated children"
+human_evidence: direct
+human_evidence_note: >-
+  A cohort of children treated with a kinase inhibitor from before puberty to skeletal
+  maturity with attained final height Z scores.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: Human exposure with a human final-height endpoint.
+confidence: B
+claim_grades:
+  - claim: Prepubertal initiation of imatinib reduces final height Z score by roughly 0.8 despite adolescent catch-up.
+    grade: B
+    basis: Long follow-up to skeletal maturity but n=13, single centre, no untreated CML control.
+  - claim: Growth toxicity of kinase inhibitors is confined to prepubertal initiation.
+    grade: C
+    basis: The post-spurt subgroup showed no significant change, but that subgroup is small and a null in a small subgroup is weak evidence of absence.
+  - claim: Chronic FGFR3 inhibition in achondroplasia carries the same off-target growth toxicity risk.
+    grade: E
+    basis: Flagged inference by class and by dosing pattern; infigratinib is more FGFR-selective than imatinib and no long-term paediatric height data exist.
+key_refs:
+  - ref_id: sadanand2026
+    pmid: '42223406'
+    first_author: Sadanand R
+    year: 2026
+    type: primary
+    one_line_finding: 13 children on imatinib to skeletal maturity - height Z -0.6 to -1.1, decline significant only with prepubertal initiation.
+  - ref_id: ferrari2026
+    pmid: '42041544'
+    first_author: Ferrari V
+    year: 2026
+    type: review
+    one_line_finding: Review of endocrine late effects of targeted and immune-based therapies in paediatric oncology, including TKI effects on growth.
+  - ref_id: savarirayan2026infig
+    pmid: '42370681'
+    first_author: Savarirayan R
+    year: 2026
+    type: primary
+    one_line_finding: The FGFR3 TKI now given chronically to growing children with achondroplasia, with 52-week rather than final-height follow-up.
+open_questions: [g_l12b_005, g_l12b_021]
+contradicts: []
+last_verified: '2026-08-05'

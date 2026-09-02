@@ -1,0 +1,86 @@
+id: mmp9_protease
+name: MMP-9 (gelatinase B)
+aliases:
+- MMP9
+- gelatinase B
+- 92 kDa gelatinase
+type: protein
+layer: L5
+stub: false
+summary: 'MMP-9 is not made by chondrocytes. It is supplied by invading cells of bone marrow origin -
+  the chondroclasts/septoclasts at the chondro-osseous junction - and it acts at the last septum of the
+  hypertrophic zone to release matrix-bound angiogenic activity and permit vascular invasion. The Mmp9-null
+  mouse is the cleanest demonstration: hypertrophic chondrocytes still differentiate normally, but apoptosis,
+  vascularisation and ossification are all delayed and the growth plate lengthens progressively to about
+  EIGHT TIMES normal. The phenotype is transient - after three weeks postnatal, compensatory apoptosis
+  and vascularisation remodel the enlarged plate and adult skeletal appearance is normal - so MMP-9 controls
+  the timing of cartilage removal, not whether it happens. That the defect is cell-extrinsic to cartilage
+  is shown directly by rescue with wild-type bone marrow transplantation, and Mmp9-null growth plates
+  in culture show delayed release of an angiogenic activator. No human MMP9 deficiency syndrome is known,
+  so this is a mouse-only mechanism with no human genetic anchor.'
+quantitative:
+- parameter: Growth plate length in Mmp9-null mice relative to wild type
+  value: ~8
+  unit: fold
+  conditions: progressive lengthening before 3 weeks postnatal
+  species: mouse
+  source_ref: vu1998
+  uncertainty: not reported
+- parameter: Age at which compensatory remodelling normalises the Mmp9-null growth plate
+  value: '>3'
+  unit: weeks postnatal
+  conditions: aberrant apoptosis, vascularisation and ossification compensate
+  species: mouse
+  source_ref: vu1998
+  uncertainty: not reported
+localization:
+- 'human HZ: MMP-9 immunopositive in hypertrophic chondrocytes and osteoblasts, and in osteoclasts, in
+  growth plates of two prepubertal and four pubertal children (haeusler2005)'
+- 'mouse chondro-osseous junction: MMP-9 expressed by invading marrow-derived chondroclasts, not by chondrocytes
+  (vu1998)'
+- 'human growth plate zonal MMP-9: not established'
+human_evidence: indirect
+human_evidence_note: No human MMP9 loss-of-function skeletal phenotype is known and no zonal MMP-9 localisation
+  in human growth plate was located in this sweep.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Entirely murine; the eight-fold phenotype is dramatic but the mouse growth plate
+  never fuses, so the compensation observed may not have a human analogue.
+confidence: C
+key_refs:
+- ref_id: vu1998
+  pmid: '9590175'
+  first_author: Vu TH
+  year: 1998
+  type: primary_abstract_only
+  one_line_finding: Mmp9-null mice have a growth plate lengthened to about eight times normal with delayed
+    apoptosis, vascularisation and ossification, rescued by wild-type bone marrow transplantation
+- ref_id: haeusler2005
+  pmid: '15868281'
+  first_author: Haeusler G
+  year: 2005
+  type: primary
+  one_line_finding: 'Human child and adolescent growth plate: MMP-14 most prominent and present in all
+    zones; MMP-1/9/10/11/13 and VEGF in hypertrophic chondrocytes; TIMP-1 in all zones, TIMP-2 in hypertrophic
+    chondrocytes'
+- ref_id: stickens2004
+  pmid: '15539485'
+  first_author: Stickens D
+  year: 2004
+  type: primary
+  one_line_finding: >-
+    Independent Mmp13-null line: chondrocytes differentiate normally but their exit from the plate is
+    delayed, severity peaks at ~5 weeks and COMPLETELY RESOLVES by 12 weeks - contradicting inada2004
+    persistence into adult life. Collagen II and aggrecan confirmed as in vivo MMP-13 substrates.
+    Mmp9;Mmp13 DOUBLE nulls have severely impaired endochondral bone with drastically shortened bones:
+    MMP-13 works SYNERGISTICALLY with MMP-9.
+open_questions:
+- g_para_004
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Gene-selective null PLUS wild-type bone marrow transplant rescue establishing the cellular
+  source - a stronger control than paralog exclusion. The Mmp9;Mmp13 double (stickens2004) is
+  consistent with and does not undermine the single-null attribution.

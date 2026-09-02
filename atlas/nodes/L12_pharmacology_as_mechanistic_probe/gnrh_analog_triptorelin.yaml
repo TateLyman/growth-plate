@@ -1,0 +1,75 @@
+id: gnrh_analog_triptorelin
+name: Triptorelin
+aliases: [triptorelin pamoate, Decapeptyl, GnRH agonist]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Triptorelin pamoate is a depot GnRH agonist used interchangeably with leuprolide acetate
+  to suppress central precocious puberty. Because the two drugs share a mechanism but
+  differ in peptide sequence, depot formulation and release kinetics, head-to-head studies
+  are a controlled test of whether the growth plate cares about the shape of gonadotrophin
+  suppression or only about its completeness. Direct comparisons at 3-monthly dosing find
+  comparable suppression and comparable growth outcomes, and a comparison in overweight and
+  obese girls likewise found the two effective. Quarterly versus monthly triptorelin has
+  also been compared over 12 months in Chinese girls without a signal that the less
+  frequent schedule is inferior. The consistent picture across formulations is that within
+  the range that achieves gonadotrophin suppression, the height outcome is insensitive to
+  the dosing schedule - the same pattern seen with CNP analogues and with long-acting
+  growth hormone, and evidence that these endocrine interventions operate at the top of a
+  saturating exposure-response curve. Final adult height data specific to triptorelin, as
+  opposed to the GnRH agonist class, remain sparse.
+quantitative:
+  - parameter: class-level improvement in final adult height, GnRH agonists in central precocious puberty
+    value: '+3.5 to +4.5'
+    unit: cm
+    conditions: systematic review of 20 studies, 21,812 participants; not disaggregated by agent
+    species: human
+    source_ref: martn2026
+    uncertainty: range across studies; triptorelin-specific final height not separately pooled
+  - parameter: comparability of 3-monthly leuprolide and triptorelin on suppression and growth
+    value: comparable
+    unit: not applicable
+    conditions: direct comparison of 3-monthly depot formulations in children with central precocious puberty
+    species: human
+    source_ref: thaneetrakool2025
+    uncertainty: no clinically meaningful difference reported; equivalence not formally powered
+localization:
+  - "human pituitary gonadotroph: site of action"
+  - "human growth plate: no direct action; effect is mediated entirely by withdrawal of gonadal sex steroids"
+human_evidence: direct
+human_evidence_note: >-
+  Multiple comparative clinical studies in children with central precocious puberty,
+  including head-to-head against leuprolide and quarterly-versus-monthly dosing.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  All human. The interpretive limit is that most triptorelin studies report interim
+  auxology and bone age rather than attained adult height.
+confidence: B
+claim_grades:
+  - claim: Triptorelin suppresses central puberty as effectively as leuprolide at equivalent dosing intervals.
+    grade: B
+    basis: Direct comparative studies at 3-monthly dosing, but not formally powered equivalence trials.
+  - claim: Height outcome is insensitive to GnRH agonist dosing schedule once suppression is achieved.
+    grade: C
+    basis: Consistent across quarterly-versus-monthly and agent-versus-agent comparisons, all of which are observational and use interim endpoints.
+  - claim: Triptorelin specifically increases final adult height.
+    grade: C
+    basis: Inherited from class-level pooled data; triptorelin-specific attained-height cohorts are sparse.
+key_refs:
+  - ref_id: thaneetrakool2025
+    pmid: '39533736'
+    first_author: Thaneetrakool T
+    year: 2025
+    type: primary
+    one_line_finding: 3-monthly leuprolide acetate and triptorelin pamoate compared directly for central precocious puberty.
+  - ref_id: martn2026
+    pmid: '42187530'
+    first_author: Martín Pérez IM
+    year: 2026
+    type: systematic_review
+    one_line_finding: Class-level GnRHa final adult height gain +3.5 to +4.5 cm; agents not disaggregated.
+open_questions: [g_l12b_016, g_l12b_017]
+contradicts: []
+last_verified: '2026-08-05'

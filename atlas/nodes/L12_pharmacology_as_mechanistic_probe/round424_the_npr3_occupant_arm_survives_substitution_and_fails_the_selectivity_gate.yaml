@@ -1,0 +1,237 @@
+id: round424_the_npr3_occupant_arm_survives_substitution_and_fails_the_selectivity_gate
+name: >-
+  R424: the NPR3 occupant arm worked to a decision. It SURVIVES the substitution test - and not for the
+  reason expected, because the atlas's own bibliography filed a combination result under a pairing it does
+  not test. It then FAILS the selectivity gate: the only two candidates report selectivity over NPR1, which
+  is the wrong receptor, while NPR2 is constrained and -2.75 cm on loss, so the downside per unit of
+  off-target engagement EXCEEDS the upside. HELD, not added. The usable output is free and needs no molecule
+aliases:
+  - NPR3 occupant decision
+  - cANF compound 23 selectivity gate
+  - osteocrin loading is an NPR3 intervention
+  - NPR3 NPR2 constraint asymmetry
+type: hypothesis
+layer: L12
+stub: false
+summary: >-
+  R421 corrected NPR3's compartment from -4.12 percent trunk to 59.2 percent at P=4.9e-90 and used it only
+  to argue that NPR3 is unrepresentative of the CNP axis. An external re-audit pointed out that the other
+  half of the inference was never drawn - if NPR3's compartment does not represent the axis, it represents
+  the compartment in which blocking NPR3 has leverage, because clearance is what sets local ligand
+  concentration. R424 works that arm to a decision, in the order the guards demand.
+
+  ⭐ ONE - THE SUBSTITUTION TEST, RUN FIRST, AND IT DOES NOT CLOSE THE ROUND. The question is whether NPR3
+  occupancy is the same step as sacubitril, because `hakata2024` showed sacubitril is NOT ADDITIVE with a
+  CNP analogue in a four-arm design and delivers about half what CNP does.
+  · FOR them being the same step - both raise the endogenous ligand pool acting at NPR2, one by blocking
+    enzymatic degradation and one by blocking receptor-mediated clearance.
+  · AGAINST - the two targets are in different places. MME, sacubitril's target, is CONTAMINANT-LEANING in
+    the postnatal human growth plate at purity ratio 0.17, so sacubitril necessarily works on the
+    circulating pool. NPR3 is at least present locally at ratio 1.42.
+  ⛔ AND THE ATLAS'S OWN ENTRY OVERSTATES THE EVIDENCE. `nishizawa2017`'s bibliography line says its
+  combination result "ANSWERS THE PAIRING QUESTION PHARMACOLOGICALLY". IT DOES NOT. The additive result is
+  compound 23 plus mANP, read out on BLOOD cGMP. mANP is an NPR1 ligand. The pairing that matters here is
+  an NPR3 blocker plus a CNP analogue read on BONE LENGTH, and that experiment has never been done in any
+  species. CORR-309's shape inside our own bibliography - a result filed under a conclusion it does not
+  carry.
+  → VERDICT: the additivity question is genuinely OPEN, not answered either way. The round does not close
+  here.
+
+  ⛔⛔ TWO - IT CLOSES ON THE SELECTIVITY GATE, AND THE ASYMMETRY IS QUANTIFIED. The full burden table,
+  read out of `atlas/data/round300/s6_burden_effects.json` rather than the single pLoF row CLAUDE.md
+  quotes:
+  · NPR3, CONSTRAINED = 0. Best-powered row pLoF+deleterious missense <0.5 percent, +1.910 cm at
+    P=1.42e-61 across 3,727 carriers; all missense +0.942 at P=3.76e-55 across 14,092.
+  · NPR2, CONSTRAINED = 1, an OMIM height gene. Best-powered row pLoF+deleterious missense <0.1 percent,
+    -2.750 cm at P=5.88e-96 across 2,835 carriers; deleterious missense <0.01 percent -2.820.
+  ⭐ SO THE DOWNSIDE PER UNIT OF NPR2 ENGAGEMENT (-2.75 cm) EXCEEDS THE UPSIDE PER UNIT OF NPR3 ENGAGEMENT
+  (+1.91 cm), IN THE SAME DATASET AND THE SAME UNITS. Selectivity is therefore not a refinement of this
+  arm - it is the arm. A molecule with modest NPR2 cross-reactivity is predicted to net NEGATIVE.
+  ⛔ AND NEITHER CANDIDATE HAS THE NUMBER.
+  · `nishizawa2017` compound 23 - hNPR3 IC50 0.079 nM against hNPR1 >1000 nM, i.e. >12,600-fold. THAT IS
+    SELECTIVITY OVER NPR1, THE ANP RECEPTOR. NPR2, THE CNP RECEPTOR, IS NOT REPORTED.
+  · cANF(4-23) - hNPR3 0.51 nM, and again no NPR2 number in anything this atlas holds.
+  → The one thing that decides the arm is a two-receptor binding assay that nobody has published, and it is
+  the same gap R151 named. It has not moved.
+
+  ⚠ THREE - AND THE TISSUE ARGUMENT MUST BE GRADED DOWN, WHICH THE BRIEF ANTICIPATED AS A KILL CRITERION.
+  Purity-corrected postnatal human growth plate (R344, 12 human samples):
+  NPR3 pure 2.62 CPM at purity ratio 1.42 · NPR2 pure 13.01 CPM at ratio 2.90 · NPPC 0.09 at 0.18 ·
+  MME 2.69 at 0.17 · against calibrators ACAN 4.65, COL2A1 8.92, IHH 72.45, AGTR1 0.03.
+  → NPR3 IS PRESENT BUT NOT CHONDROCYTE-ENRICHED, AND IS FIVE-FOLD LESS ABUNDANT THAN THE SIGNALLING
+  RECEPTOR. It is not an absence like AGTR1 or NPPC, so CORR-327 does not kill it - but a ratio of 1.42
+  against ACAN's 4.65 is not a gene the tissue is investing in.
+  ⭐ AND THAT RESOLVES A PARADOX R421 LEFT: how can lowering NPR3 be 59.2 percent trunk when lowering NPR2,
+  which NPR3 acts through, is 29.8 percent? If NPR3's action were local and ran through plate NPR2, the two
+  coordinates should agree. They do not, and the expression data say why - NPR3 is not concentrated in the
+  plate, and its best-known biology is vascular, adipose and renal. THE 59.2 PERCENT IS THEREFORE MOST
+  LIKELY A SYSTEMIC COORDINATE, and the inference that it is where a drug's growth effect would land is
+  weaker than it looks. In GSE9160 the zone-resolved picture agrees - NPR2 is robust and PZ/PHZ-peaked on
+  both probes in both donors (up to 1,262) while NPR3's three probes disagree on zone WITHIN a donor and
+  sit near background on one of them.
+
+  ⛔ FOUR - AND THE ONLY LENGTH ENDPOINT IS A LOADING MODEL, NOT A PHARMACOLOGICAL ONE. `watanabetakano2021`
+  identifies periosteal-osteoblast-derived OSTEOCRIN as the mechanotransducer of LOAD-INDUCED long bone
+  growth - load acts on periosteal osteoblasts, which secrete OSTN, which occupies NPR3 as a decoy and
+  spares local CNP for NPR2. That is the brief's own kill criterion four, met: THE ARM HAS NO
+  PHARMACOLOGICAL BONE-LENGTH ENDPOINT IN ANY SPECIES. R151's leading objection stands untouched.
+
+  ✓ FIVE - ONE LIABILITY RUNS BACKWARDS FOR THIS COMPOUND CLASS, AND IT IS THE PRINCIPAL ONE.
+  `aubdool2025`: NPR-C-null mice have elongated stature and long digits AND a dilated ascending aorta at
+  baseline - so the GENETIC loss gives both the growth phenotype and the aortic one. But the selective
+  NPR-C AGONIST cANF(4-23), at 0.4 mg/kg/day by osmotic pump for 28 days, SIGNIFICANTLY REDUCED ascending
+  and abdominal aortic expansion in wild-type mice, while the ANTAGONIST M372049 ABOLISHED CNP's protection
+  in human aortic smooth muscle cells. → For an occupant that SIGNALS, the aortic liability is predicted to
+  run protective rather than harmful. That is a real and favourable correction to this arm's main safety
+  objection, and it is why the spec is an occupant-that-signals rather than an antagonist.
+
+  ⭐⭐ SIX - THE OUTPUT THAT IS ACTUALLY USABLE, AND IT NEEDS NO MOLECULE. Read `watanabetakano2021`
+  forwards rather than as a caveat: MECHANICAL LOAD IS AN ENDOGENOUS NPR3 INTERVENTION. Load on periosteal
+  osteoblasts raises OSTN, which is the endogenous NPR3 decoy, which spares local CNP for NPR2 and
+  lengthens bone. The atlas has held both halves of that - 18 node files on osteocrin and a full
+  mechanical layer - and has NEVER framed the loading prescription as an NPR3 intervention or drawn the
+  measurement.
+  ⚠ AND THE MODALITY MATTERS AND THE ATLAS ALREADY KNOWS IT: this is PERIOSTEAL AND MUSCULAR loading, and
+  it runs in the OPPOSITE direction to quasi-static AXIAL COMPRESSION, which engages the Hueter-Volkmann
+  arm and suppresses growth. So the prescription is muscular and periosteal loading, explicitly NOT axial
+  compression.
+  ⭐ And it is measurable today: osteocrin/musclin has published paediatric serum reference values, and
+  this atlas has never drawn one. That is the same class as the untaken HOMA-IR, serum sulfate and
+  ultrasensitive-oestradiol items, and it is the only NPR3-directed thing that can be done now.
+
+  ⭐ SEVEN - OBTAINABILITY, UNDER R401's RULE, STATED SO A CATALOGUE LISTING DOES NOT READ AS AVAILABILITY.
+  cANF(4-23) - CATALOGUE REAGENT. `nishizawa2017` compound 23 - a published research peptide, not
+  catalogued as a product, delivered in its own study by IMPLANTED OSMOTIC PUMP over 7 days. Recombinant
+  osteocrin - CATALOGUE REAGENT. NONE is GMP material, none is an investigational drug, none is an approved
+  medicine, and no human has received any of them. Under CORR-347: chemical matter EXISTS for NPR3 - two
+  characterised peptides with sub-nanomolar affinity - while clinical maturity is ZERO. Those are different
+  questions and this arm is unusual in the file for having the first and none of the second.
+
+  ⛔ THE VERDICT. HELD, NOT ADDED, and the file should say so once and stop re-opening it. The arm has the
+  best human genetics of any target here at 14,092 carriers on an unconstrained gene, the atlas's own
+  derived compound spec, CORR-300's class rule, and two real peptides - and it fails on ONE unrun
+  two-receptor binding assay, compounded by a local expression level that does not support the compartment
+  inference and by having no pharmacological length endpoint anywhere. R151's verdict was "worth one
+  experiment and not a place in the stack." That is still exactly right, and R424's contribution is to name
+  the experiment precisely: cANF(4-23) and compound 23 against hNPR2 alongside hNPR3, in one assay.
+quantitative:
+  - parameter: the constraint asymmetry, full burden rows
+    value: >-
+      NPR3 constrained=0, pLoF+deleterious missense <0.5% +1.910 cm at P=1.42e-61 (3,727 carriers), all
+      missense +0.942 at P=3.76e-55 (14,092); NPR2 constrained=1 and an OMIM height gene,
+      pLoF+deleterious missense <0.1% -2.750 cm at P=5.88e-96 (2,835), deleterious missense <0.01% -2.820
+    unit: cm per allele
+    species: human
+    source_ref: kosmicki2026
+    value_unverified: true
+    note: >-
+      the downside per unit of NPR2 engagement exceeds the upside per unit of NPR3 engagement, in one
+      dataset and one unit. That is why selectivity is the gate. CLAUDE.md quoted only pLoF +2.35 cm at 224
+      carriers, understating the carrier base about 63-fold and omitting the constraint flags entirely
+  - parameter: NPR3 versus NPR2 in the postnatal human growth plate, purity-corrected
+    value: >-
+      NPR3 2.62 CPM at purity ratio 1.42; NPR2 13.01 CPM at ratio 2.90; NPPC 0.09 at 0.18; MME 2.69 at
+      0.17; calibrators ACAN 4.65, COL2A1 8.92, IHH 72.45, AGTR1 0.03
+    unit: CPM and purity ratio
+    species: human
+    source_ref: kosmicki2026
+    value_unverified: true
+    note: >-
+      NPR3 is present but NOT chondrocyte-enriched and is fivefold below the signalling receptor, which
+      grades down the inference that the 59.2 percent trunk coordinate reports where a drug would act
+  - parameter: selectivity of the two candidate occupants, and the receptor that is missing
+    value: >-
+      compound 23 hNPR3 IC50 0.079 nM versus hNPR1 >1000 nM (>12,600-fold), serum residual 107 percent at
+      2 h; cANF(4-23) hNPR3 0.51 nM with 4.0 percent serum residual at 30 min. NPR2 SELECTIVITY IS NOT
+      REPORTED FOR EITHER
+    unit: nM
+    species: in_vitro_human_cell
+    source_ref: nishizawa2017
+    value_unverified: true
+    note: >-
+      the reported selectivity is over NPR1, the ANP receptor. NPR2 is the CNP receptor and the one that
+      matters, and the number does not exist
+  - parameter: the aortic liability runs backwards for an occupant that signals
+    value: >-
+      cANF(4-23) 0.4 mg/kg/day by osmotic pump for 28 days significantly REDUCED ascending and abdominal
+      aortic expansion in wild-type mice; the antagonist M372049 ABOLISHED CNP's protection in human aortic
+      smooth muscle cells; NPR-C-null mice have elongated stature AND a dilated ascending aorta at baseline
+    unit: qualitative
+    species: multiple
+    source_ref: aubdool2025
+    value_unverified: true
+    note: >-
+      genetic loss gives both phenotypes, but the pharmacological agonist protects. This is the reason the
+      spec is an occupant that signals rather than an antagonist
+localization: >-
+  NPR3 is present but not enriched in the postnatal human growth plate (2.62 CPM, ratio 1.42) and its
+  zone assignment is probe-inconsistent within a donor in GSE9160; NPR2 is enriched and PZ/PHZ-peaked
+human_evidence: direct
+human_evidence_note: >-
+  The burden effects, the constraint flags and the tissue expression are human. The compound
+  pharmacology, the aortic result and the loading mechanism are mouse or recombinant.
+species_basis:
+  - human
+  - mouse
+translation_risk: high
+translation_risk_reason: >-
+  No pharmacological bone-length endpoint in any species, and the deciding selectivity number does not
+  exist for either candidate.
+confidence: C
+claim_grades:
+  - claim: NPR3 occupancy is the same step as sacubitril and is therefore a substitution
+    grade: E
+    basis: >-
+      NOT ESTABLISHED EITHER WAY. hakata2024's non-additivity is about sacubitril, whose target is
+      contaminant-leaning locally; nishizawa2017's additive result pairs an NPR3 blocker with an NPR1
+      ligand and reads blood cGMP, which is a different pairing and a different endpoint
+  - claim: Human NPR3 loss is tolerated and raises height while NPR2 loss is constrained and lowers it
+    grade: A
+    basis: >-
+      35 rows each in the same burden table, NPR3 constrained=0 at +1.910 cm P=1.42e-61, NPR2
+      constrained=1 at -2.750 cm P=5.88e-96
+  - claim: Selectivity over NPR2 is the gate, and neither candidate has the number
+    grade: A
+    basis: >-
+      both report selectivity over NPR1; NPR2 is not reported for either, and the NPR2 downside exceeds
+      the NPR3 upside in the same units
+  - claim: The 59.2 percent trunk coordinate reports where an NPR3 drug would act
+    grade: D
+    basis: >-
+      graded down. NPR3 is not chondrocyte-enriched, so the coordinate is most likely systemic, and it
+      disagrees with NPR2's 29.8 percent despite acting through it
+  - claim: The arm has a pharmacological bone-length endpoint
+    grade: X
+    basis: >-
+      NO. watanabetakano2021 is a LOADING model. No NPR-C ligand has a bone endpoint in any species, which
+      is R151's leading objection and it has not moved
+  - claim: Periosteal and muscular loading is an endogenous NPR3 intervention
+    grade: C
+    basis: >-
+      watanabetakano2021's own mechanism - load raises periosteal osteoblast OSTN, which occupies NPR3 and
+      spares local CNP. Mouse, and the atlas has never joined the two halves or drawn a serum osteocrin
+key_refs:
+  - ref_id: nishizawa2017
+    year: 2017
+    type: primary
+    role: >-
+      the potent serum-stable NPR3 occupant, and the source of the selectivity gap - NPR1 reported, NPR2
+      not
+  - ref_id: aubdool2025
+    year: 2025
+    type: primary
+    role: the aortic liability runs backwards for an occupant that signals
+  - ref_id: watanabetakano2021
+    year: 2021
+    type: primary
+    role: >-
+      osteocrin is the endogenous NPR3 decoy and the mechanotransducer of load-induced bone growth - a
+      loading model, so not a pharmacological length endpoint
+  - ref_id: hakata2024
+    year: 2024
+    type: primary
+    role: the non-additivity precedent that the substitution test had to be argued against
+open_questions:
+  - g_l12_npr3_agonist_vs_antagonist_at_the_aorta
+contradicts: []
+last_verified: '2026-08-14'

@@ -1,0 +1,65 @@
+id: glucocorticoid_receptor
+name: Glucocorticoid receptor (NR3C1 / GR)
+aliases:
+- NR3C1
+- GR
+- GRalpha
+type: protein
+layer: L4
+stub: false
+summary: 'GR is a cytoplasmic nuclear receptor that, on ligand binding, sheds HSP90, dimerises and either
+  transactivates GRE-containing promoters or transrepresses AP-1 and NF-kB. It is the obligatory mediator
+  of glucocorticoid action, so it is the natural test of whether glucocorticoid growth suppression is
+  chondrocyte-autonomous. The genetic test in mouse gave a null result: tamoxifen-inducible chondrocyte-specific
+  GR knockout mice, with deletion induced at several postnatal ages, had knee joint architecture, cartilage
+  structure, growth plates, intervertebral discs, long bone length and bone microarchitecture indistinguishable
+  from controls at all ages, although metaphyseal (not diaphyseal) fracture healing was impaired (tu2014).
+  Endogenous glucocorticoid signalling in chondrocytes is therefore dispensable for normal longitudinal
+  growth in mouse, which does not contradict the rabbit local-infusion result (a pharmacological excess)
+  but does mean the two experiments answer different questions. No study has measured GR protein abundance,
+  ligand occupancy or transcriptional output by zone in human growth plate tissue.'
+localization:
+- 'mouse growth plate: GR deletion in chondrocytes has no structural effect (tu2014)'
+- 'human growth plate: GR protein and occupancy not measured by zone'
+human_evidence: absent
+human_evidence_note: No human study localises GR expression or occupancy within the growth plate; human
+  NR3C1 generalised glucocorticoid resistance presents with hyperandrogenism and hypertension rather than
+  with a defined statural phenotype.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: The only clean genetic test is a mouse conditional knockout with a null skeletal
+  result, which is hard to reconcile with the clinical potency of glucocorticoid growth suppression in
+  children.
+confidence: C
+key_refs:
+- ref_id: tu2014
+  first_author: Tu J
+  year: 2014
+  type: primary
+  one_line_finding: Chondrocyte-specific inducible GR knockout mice had normal cartilage and bone development
+    but impaired metaphyseal fracture healing.
+  pmid: '25193158'
+- ref_id: baron1992
+  first_author: Baron J
+  year: 1992
+  type: primary
+  one_line_finding: Pharmacological glucocorticoid acts locally on the plate, the effect GR would have
+    to mediate.
+  pmid: '1415528'
+contradicts:
+- glucocorticoid_cortisol
+last_verified: '2026-08-05'
+reanalysis_observations:
+- observation: NR3C1 is detected in all five compartments of both human donors on 4 of 5 probe sets, and
+    peaks in the HYPERTROPHIC zone in both donors independently (fold range 2.9 and 4.2). NR3C2 is not
+    detected. Neither HSD11B1 nor HSD11B2 is detected.
+  interpretation: Glucocorticoid receptor is present throughout the human physis with modest hypertrophic-zone
+    enrichment; mineralocorticoid receptor is not a plausible mediator; and there is no detectable local
+    11beta-HSD gate, so the tissue sees what the circulation delivers.
+  caveats: Transcript only. Says nothing about receptor occupancy at any cortisol exposure.
+  reanalysis: p8_01_gse9160_human_zonal
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'

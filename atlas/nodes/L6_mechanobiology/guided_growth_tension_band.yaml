@@ -1,0 +1,96 @@
+id: guided_growth_tension_band
+name: Guided growth (tension band plating)
+type: intervention
+aliases:
+- hemiepiphysiodesis
+- eight-Plate
+- tension-band plate
+- growth modulation
+summary: 'Guided growth is the therapeutic application of Hueter-Volkmann: a two-hole plate with divergent
+  screws is placed extraperiosteally across one side of a physis, tethering that side while the other
+  continues to grow, so the bone angulates. It is the largest human dataset on mechanically modulated
+  physeal growth. In 654 growth modulations in 313 children the mean correction rate was 0.67 +/- 0.55
+  degrees/month for the distal femur (mLDFA) and 0.43 +/- 0.38 degrees/month for the proximal tibia (mMPTA);
+  a neutral mechanical axis was achieved in 68.7% overall, 78.2% in idiopathic and 66.3% in non-idiopathic
+  aetiologies, and older age at surgery and varus deformity predicted slower correction. The very wide
+  standard deviations - roughly 80-90% of the mean - are the important number: the human response to a
+  nominally identical mechanical intervention is far more variable than the tight animal stress-growth
+  relation would predict. The mechanical dose is unknown: the only estimate comes from personalised finite
+  element models of four human distal femoral epiphyses under gait loads, which show the implant locally
+  imposes static stress and removes cyclic loading at the insertion site while raising tensile stress
+  on the contralateral side, so the plate acts through both arms of the static/dynamic distinction, not
+  by compression alone. Correction is not always permanent; rebound after implant removal is recognised.'
+quantitative:
+- parameter: correction rate, distal femur (mLDFA)
+  value: '0.67'
+  unit: degrees/month
+  conditions: 654 growth modulations in 313 children, tension band plates, 2009-2021
+  species: human
+  source_ref: tolk2026
+  uncertainty: SD 0.55
+- parameter: correction rate, proximal tibia (mMPTA)
+  value: '0.43'
+  unit: degrees/month
+  conditions: same cohort
+  species: human
+  source_ref: tolk2026
+  uncertainty: SD 0.38
+- parameter: proportion achieving neutral mechanical axis
+  value: '68.7'
+  unit: '%'
+  conditions: same cohort
+  species: human
+  source_ref: tolk2026
+  uncertainty: idiopathic 78.2% vs non-idiopathic 66.3%, p=0.02
+- parameter: site distribution of modulations
+  value: 55.4 distal femur / 44.6 proximal tibia
+  unit: '%'
+  conditions: same cohort
+  species: human
+  source_ref: tolk2026
+  uncertainty: 42.2% of children had both
+localization:
+- 'human distal femoral and proximal tibial physes: direct clinical measurement (tolk2026)'
+human_evidence: direct
+human_evidence_note: Thousands of human physes have been mechanically modulated with radiographically
+  measured angular outcomes; only the applied stress is unmeasured.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical intervention.
+confidence: A
+key_refs:
+- ref_id: tolk2026
+  pmid: '41696355'
+  first_author: Tolk JJ
+  year: 2026
+  type: primary
+  one_line_finding: Mean correction 0.67 deg/month (femur) and 0.43 deg/month (tibia) with 68.7% reaching
+    a neutral axis, varying strongly by aetiology
+- ref_id: hucke2023
+  pmid: '37415789'
+  first_author: Hucke L
+  year: 2023
+  type: primary
+  one_line_finding: Personalised FE models show the plate imposes local static stress and removes cyclic
+    loading at insertion while raising contralateral tension
+- ref_id: roelen2026
+  pmid: '42299327'
+  first_author: Roelen MCR
+  year: 2026
+  type: review
+  one_line_finding: Current-concepts review grounding guided growth explicitly in the Hueter-Volkmann
+    observation
+- ref_id: coskun2026
+  pmid: '41178588'
+  first_author: Coskun E
+  year: 2026
+  type: primary
+  one_line_finding: Guided growth outcomes in juvenile and adolescent Blount disease, a high-load failure
+    setting
+open_questions:
+- g_l6mech_003
+- g_l6mech_012
+layer: L6
+stub: false
+last_verified: '2026-08-05'

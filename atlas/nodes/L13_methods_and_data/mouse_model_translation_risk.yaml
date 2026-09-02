@@ -1,0 +1,94 @@
+id: mouse_model_translation_risk
+name: Mouse model translation risk
+aliases:
+- murine growth plate transferability
+type: process
+summary: |
+  The mouse supplies roughly 90% of growth plate mechanism and cannot express the endpoint
+  that defines human growth: the mouse growth plate is never replaced by bone. At 55 weeks the
+  murine plate is still a discrete cartilaginous band with raised mineral content but retained
+  aggrecan glycosaminoglycan, and with type X collagen and MMP-13 - present at 10 weeks - now
+  absent, so the terminal differentiation programme is switched off rather than completed
+  (yu2025). Mice do form countable transphyseal bridges (495 at density 1.2 in wild-type sham
+  tibiae; 187 at density 14.4 in Socs2-/-), so bridging is real and quantifiable but never
+  proceeds to plate destruction (samvelyan2022). Tempo diverges as sharply: the proliferative
+  chondrocyte cycle time is about 2 days in rodent against about 20 days inferred in human
+  (kember1976), a tenfold difference in the rate constant that every model of column kinetics
+  uses. Scale diverges too - a murine plate is a few hundred micrometres thick against 1-10 mm
+  in human. Translation risk score used in this layer runs 1 (lowest) to 5 (highest) and is
+  the mean of four sub-scores, each 1-5: (A) fusion competence - can the species express
+  epiphyseal fusion at all; (B) plate architecture - columnar organisation and secondary
+  ossification centre; (C) scale - plate thickness and hypertrophic cell volume relative to
+  human; (D) tempo - proliferative cycle time and growth duration relative to human. Mouse
+  scores A=5, B=2, C=4, D=5, mean 4.0, giving translation_risk high. The one compensating
+  strength is decisive and should not be understated: mouse is the only species in which
+  conditional genetics and lineage tracing are available, so it is the only place mechanism
+  can be established at all - which is exactly why the transfer problem cannot be avoided by
+  choosing a different species.
+quantitative:
+- parameter: mouse translation risk score (this layer, 1-5)
+  value: '4.0'
+  unit: score
+  conditions: mean of fusion competence 5, architecture 2, scale 4, tempo 5
+  species: mouse
+  source_ref: yu2025
+  uncertainty: ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is defined
+    in this node and the axis scores are this atlas's judgement. source_ref names the anchor
+    primary for the model (yu2025); that paper does not contain this number and must not
+    be cited for it.
+  atlas_derived: true
+- parameter: proliferative chondrocyte cycle time, rodent vs human
+  value: 2 vs 20
+  unit: days
+  conditions: rodent literature value quoted against the human estimate derived in the same paper
+  species: multiple
+  source_ref: kember1976
+  uncertainty: human value derived, not directly measured
+- parameter: mouse growth plate status at 55 weeks
+  value: persistent calcified cartilage, no bony replacement
+  unit: qualitative
+  conditions: SEM/EDX and immunohistochemistry
+  species: mouse
+  source_ref: yu2025
+  uncertainty: observational
+localization:
+- 'mouse HZ: type X collagen and MMP-13 present at 10 weeks, absent at 55 weeks'
+human_evidence: absent
+human_evidence_note: The node is about transferability; the human comparator facts come from human
+  histology and imaging, not from mouse.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Mice cannot fuse, so no murine experiment can be an experiment about fusion;
+  tempo and scale differ by roughly an order of magnitude in the same direction.
+confidence: A
+key_refs:
+- ref_id: yu2025
+  first_author: Yu X
+  year: 2025
+  type: primary
+  one_line_finding: Mouse growth plate persists as calcified cartilage at 55 weeks with loss of collagen
+    X and MMP-13.
+- ref_id: samvelyan2022
+  first_author: Samvelyan HJ
+  year: 2022
+  type: primary
+  one_line_finding: Countable transphyseal bridges in mouse tibiae that never complete plate replacement.
+- ref_id: kember1976
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: Human proliferative cycle time about 20 days against 2 days in rodent; explicit
+    warning against extrapolation.
+- ref_id: mizuhashi2018
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Murine conditional genetics established the resting zone stem cell, an experiment
+    impossible in human.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

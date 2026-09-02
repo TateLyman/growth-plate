@@ -1,0 +1,80 @@
+id: skeletal_stem_cell
+name: Skeletal stem cell (SSC)
+aliases:
+- SSC
+- bone-cartilage-stroma stem cell
+type: cell_type
+summary: '''Skeletal stem cell'' names an operational result, not a single cell: a cell that self-renews
+  and generates bone, cartilage and hematopoiesis-supportive stroma in a transplantation or lineage-tracing
+  assay. At least five mutually incompatible definitions are in current use - the FACS-defined mouse mSSC
+  hierarchy, PTHrP+/FoxA2+ resting-zone chondrocytes, Grem1+ osteochondroreticular cells, LepR+ perisinusoidal
+  stroma, and CTSK-lineage periosteal stem cells - and they disagree on anatomy, markers, adipogenic potential
+  and developmental window. The disagreements are not semantic. Whether the SSC makes marrow adipocytes
+  separates the CD146+ adventitial-reticular-cell definition (yes) from the mSSC/Grem1 definitions (no).
+  Whether the growth plate SSC lies in the resting zone (mouse tracing) or in the pre-hypertrophic/hypertrophic
+  zone (human FACS/scRNA homology mapping) is a straight contradiction in anatomy. Dual-recombinase fate
+  mapping showed that even the dominant osteoblast source changes with age, from chondrocytes before adolescence
+  to LepR+ stroma after - so ''the'' skeletal stem cell is time-dependent as well as site-dependent. Human
+  work rests on xenotransplantation of prospectively sorted cells, never on in-situ tracing.'
+quantitative: []
+localization:
+- 'mouse growth plate: mSSC phenotype enriched (chan2015)'
+- 'mouse metaphysis: Grem1+ OCR cells concentrated, not perisinusoidal (worthley2015)'
+- 'mouse perisinusoidal marrow: LepR+ stroma (zhou2014)'
+- 'mouse periosteum: CTSK-lineage PSC (debnath2018)'
+- 'human fetal pre-hypertrophic/hypertrophic zone: hSSC enriched (chan2018)'
+human_evidence: indirect
+human_evidence_note: Human SSCs are defined by prospective sorting followed by renal-capsule xenotransplantation
+  in immunodeficient mice; their behaviour in situ in a human skeleton is inferred, not observed.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: The mouse and human panels share no marker, and mouse assays are in-situ genetic
+  while human assays are ectopic transplantation - two different questions given the same name.
+confidence: D
+key_refs:
+- ref_id: chan2015
+  pmid: '25594184'
+  doi: 10.1016/j.cell.2014.12.002
+  first_author: Chan CK
+  year: 2015
+  type: primary
+  one_line_finding: Defines mSSC as CD45- Ter119- Tie2- AlphaV(CD51)+ Thy(CD90)- 6C3- CD105- CD200+ at
+    the apex of an eight-population hierarchy
+- ref_id: chan2018
+  pmid: '30241615'
+  doi: 10.1016/j.cell.2018.07.029
+  first_author: Chan CKF
+  year: 2018
+  type: primary
+  one_line_finding: Defines hSSC as CD45- CD235a- TIE2- CD31- PDPN+ CD146- CD73+ CD164+, sorted from human
+    fetal growth plate
+- ref_id: bianco2015
+  pmid: '25758217'
+  doi: 10.1242/dev.102210
+  first_author: Bianco P
+  year: 2015
+  type: review
+  one_line_finding: Argues the bona fide SSC is the CD146+ marrow adventitial reticular cell, which does
+    make adipocytes
+- ref_id: shu2021
+  pmid: '34499868'
+  doi: 10.1016/j.stem.2021.08.010
+  first_author: Shu HS
+  year: 2021
+  type: primary_abstract_only
+  one_line_finding: Osteoblast source switches from chondrocytes to LepR+ stroma at adolescence, so no
+    single SSC accounts for postnatal bone
+open_questions:
+- g_l2stem_004
+- g_l2stem_009
+contradicts:
+- mouse_skeletal_stem_cell_hierarchy
+- human_skeletal_stem_cell
+- lepr_positive_stromal_cell
+- gremlin1_lineage_cell
+- periosteal_stem_cell
+layer: L2
+stub: false
+last_verified: '2026-08-05'

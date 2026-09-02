@@ -1,0 +1,979 @@
+edges:
+  # ---------- GH axis ----------
+  - edge_id: e00001
+    source: ghrh_hormone
+    target: growth_hormone
+    relation: activates
+    sign: "+"
+    magnitude: "biallelic GHRHR null causes severe isolated GH deficiency with proportionate dwarfism"
+    context: "human, hypothalamo-pituitary, all ages; Itabaianinha kindred"
+    evidence_tier: T1
+    refs: [aguiaroliveira2021]
+    confidence: A
+    notes: "GH remains pulsatile at minimal amplitude in GHRHR-null humans, so GHRH is not the pulse generator."
+
+  - edge_id: e00002
+    source: somatostatin_hormone
+    target: growth_hormone
+    relation: inhibits
+    sign: "-"
+    magnitude: "octreotide abolished GH-stimulated but not IGF-I-stimulated tibial growth"
+    context: "hypophysectomised rat, systemic; human evidence from acromegaly pharmacology"
+    evidence_tier: T1
+    refs: [zapf2002]
+    confidence: B
+
+  - edge_id: e00003
+    source: ghrelin_hormone
+    target: ghsr_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "acyl-ghrelin activates Gq/11-coupled GHS-R1a"
+    context: "rat and human, pituitary somatotroph and hypothalamic arcuate neurons"
+    evidence_tier: T1
+    refs: [hornsby2025]
+    confidence: A
+
+  - edge_id: e00004
+    source: ghsr_receptor
+    target: gh_secretion_pulsatility
+    relation: activates
+    sign: "+"
+    magnitude: "meal-feeding tripled GH secretion and added 2 bursts/day; effect absent without GHS-R"
+    context: "male rats, automated meal-feeding vs grazing at matched intake; human arm used nasogastric bolus vs continuous feed"
+    evidence_tier: T1
+    refs: [hornsby2025]
+    confidence: B
+
+  - edge_id: e00005
+    source: gh_secretion_pulsatility
+    target: growth_hormone
+    relation: secretes
+    sign: "+"
+    magnitude: "13.7-13.8 bursts/24 h, ~88% of total output pulsatile"
+    context: "healthy middle-aged humans, 10-min sampling for 24 h, deconvolution"
+    evidence_tier: T1
+    refs: [van2016, roelfsema2016]
+    confidence: A
+
+  - edge_id: e00006
+    source: growth_hormone
+    target: gh_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "rotates preformed GHR dimer transmembrane helices into a left-handed crossover"
+    context: "human GHR, reconstituted and cell systems"
+    evidence_tier: T1
+    refs: [brooks2014]
+    confidence: A
+
+  - edge_id: e00007
+    source: gh_receptor
+    target: jak2_kinase
+    relation: activates
+    sign: "+"
+    magnitude: "separation of JAK2 pseudokinase domains relieves trans-inhibition of the kinase domains"
+    context: "human GHR-JAK2, cell and biophysical systems"
+    evidence_tier: T1
+    refs: [brooks2014]
+    confidence: A
+
+  - edge_id: e00008
+    source: jak2_kinase
+    target: stat5b_tf
+    relation: phosphorylates
+    sign: "+"
+    magnitude: "Y699 phosphorylation; loss of STAT5B phenocopies GHR deficiency biochemically"
+    context: "human hepatocyte and T lymphocyte; inferred at the chondrocyte"
+    evidence_tier: T1
+    refs: [kofoed2003, hwa2005]
+    confidence: A
+
+  - edge_id: e00009
+    source: stat5b_tf
+    target: igf1_systemic
+    relation: transcribes
+    sign: "+"
+    magnitude: "human STAT5B null: very low IGF-1 and IGFBP-3 with high GH"
+    context: "human hepatocyte, all ages"
+    evidence_tier: T1
+    refs: [kofoed2003, hwa2005]
+    confidence: A
+
+  - edge_id: e00010
+    source: stat5b_tf
+    target: als_igfals
+    relation: transcribes
+    sign: "+"
+    magnitude: "ALS is GH/STAT5B-dependent; collapses in STAT5B and GHR deficiency"
+    context: "human hepatocyte"
+    evidence_tier: T1
+    refs: [hwa2005, domen2009]
+    confidence: B
+
+  - edge_id: e00011
+    source: stat5b_tf
+    target: socs2_protein
+    relation: transcribes
+    sign: "+"
+    magnitude: "SOCS2 is a direct STAT5B target forming a delayed negative feedback loop"
+    context: "mouse liver; inferred in human"
+    evidence_tier: T1
+    refs: [metcalf2000]
+    confidence: C
+
+  - edge_id: e00012
+    source: socs2_protein
+    target: gh_receptor
+    relation: degrades
+    sign: "-"
+    magnitude: "Socs2-null mice overgrow ~30-40% with normal circulating GH and IGF-1"
+    context: "mouse, whole body, adult; no human counterpart identified"
+    evidence_tier: T1
+    refs: [metcalf2000]
+    confidence: C
+
+  - edge_id: e00013
+    source: growth_hormone
+    target: resting_zone
+    relation: activates
+    sign: "+"
+    magnitude: "GH increases the NUMBER of chondrocytes recruited into proliferation, not the labelling index"
+    context: "hypophysectomised and GH-deficient dwarf rat, proximal tibial growth plate"
+    evidence_tier: T1
+    refs: [ohlsson1992, gevers1996a]
+    confidence: C
+
+  - edge_id: e00014
+    source: growth_hormone
+    target: igf1_local_growth_plate
+    relation: activates
+    sign: "+"
+    magnitude: "GH raised the number of IGF-1-immunoreactive chondrocytes in the germinal/proliferative zone"
+    context: "hypophysectomised rat growth plate"
+    evidence_tier: T1
+    refs: [nilsson1986, schlechter1986]
+    confidence: C
+
+  - edge_id: e00015
+    source: sleep_dependent_gh_release
+    target: gh_secretion_pulsatility
+    relation: correlates_with
+    sign: "+"
+    magnitude: "GH pulse rate in N2 vs slow-wave sleep IRR 0.56 (95% CI 0.32-0.97); total overnight pulsatile GH unchanged"
+    context: "14 healthy pubertal children aged 11.3-14.1 y, crossover polysomnography with SWS disruption"
+    evidence_tier: T1
+    refs: [calvert2022]
+    confidence: A
+    notes: "The compensation is the informative part: fragmenting SWS redistributes bursts rather than reducing output."
+
+  - edge_id: e00016
+    source: gh_pulse_pattern_hypothesis
+    target: growth_velocity_longitudinal
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: "rat: 2.1 vs 1.1 g/day weight gain for added pulsatile vs added continuous GH at matched dose"
+    context: "GH-deficient dwarf rat, patterned iv infusion; no human test at matched exposure"
+    evidence_tier: T1
+    refs: [gevers1996, gevers1996a]
+    confidence: speculative
+    gap_id: g_l4endo_002
+
+  # ---------- IGF axis ----------
+  - edge_id: e00017
+    source: igf1_systemic
+    target: igf1_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "free IGF-1 is <1% of total; stature tracks the free fraction in PAPP-A2 deficiency"
+    context: "human, systemic; bioactive/total ratio 1.23% healthy median vs 0.09-0.32% in PAPP-A2 deficiency"
+    evidence_tier: T1
+    refs: [dauber2016]
+    confidence: A
+
+  - edge_id: e00018
+    source: igf1_local_growth_plate
+    target: igf1_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "not quantified; local IGF-1 concentration in growth plate interstitium never measured"
+    context: "rat growth plate germinal/proliferative zone; human unmeasured"
+    evidence_tier: T1
+    refs: [nilsson1986, lui2019]
+    confidence: C
+
+  - edge_id: e00019
+    source: igf1_receptor
+    target: proliferative_zone
+    relation: required_for
+    sign: "+"
+    magnitude: "cartilage-targeted IGF-1 fusion raised growth plate height in GH-deficient lit mice"
+    context: "mouse, subcutaneous alternate-day dosing of a cartilage-binding antibody-IGF-1 fusion"
+    evidence_tier: T1
+    refs: [lui2019]
+    confidence: C
+
+  - edge_id: e00020
+    source: als_igfals
+    target: igf_ternary_complex
+    relation: required_for
+    sign: "+"
+    magnitude: "human IGFALS null: near-absent circulating IGF-1 and IGFBP-3 with only mild short stature"
+    context: "human, all ages; mouse Igfals-null concordant with sex-specific effects"
+    evidence_tier: T1
+    refs: [domen2004, domen2009, courtland2010]
+    confidence: A
+
+  - edge_id: e00021
+    source: igfbp3
+    target: igf_ternary_complex
+    relation: required_for
+    sign: "+"
+    magnitude: "IGFBP-3 carries the majority of circulating IGF-1 into the 150 kDa complex"
+    context: "human serum"
+    evidence_tier: T1
+    refs: [dauber2016, domen2004]
+    confidence: A
+
+  - edge_id: e00022
+    source: igfbp5
+    target: igf_ternary_complex
+    relation: binds
+    sign: "+"
+    magnitude: "serum IGFBP-5 rose to 645-997 ug/L in PAPP-A2 deficiency (Tanner I reference 211-707)"
+    context: "human serum; matrix-bound IGFBP-5 in physis not measured"
+    evidence_tier: T1
+    refs: [dauber2016]
+    confidence: B
+
+  - edge_id: e00023
+    source: pappa2_protease
+    target: igfbp3
+    relation: degrades
+    sign: "-"
+    magnitude: "both human mutant PAPP-A2 proteins showed complete loss of IGFBP-3/-4/-5 cleavage in vitro"
+    context: "human, transfected-cell media, radiolabelled IGFBP cleavage assay"
+    evidence_tier: T1
+    refs: [dauber2016]
+    confidence: A
+
+  - edge_id: e00024
+    source: pappa2_protease
+    target: igfbp5
+    relation: degrades
+    sign: "-"
+    magnitude: "loss of PAPP-A2 raises serum IGFBP-5 above the paediatric reference range"
+    context: "human, homozygous PAPPA2 loss of function"
+    evidence_tier: T1
+    refs: [dauber2016]
+    confidence: A
+
+  - edge_id: e00025
+    source: pappa_protease
+    target: igfbp4
+    relation: degrades
+    sign: "-"
+    magnitude: "strictly IGF-dependent cleavage; STC2 blocks it by excluding IGFBP-4 binding"
+    context: "human protein in vitro; cartilage requirement shown in mouse and zebrafish"
+    evidence_tier: T1
+    refs: [kobber2022, harboe2024]
+    confidence: B
+
+  - edge_id: e00026
+    source: stanniocalcin2
+    target: pappa_protease
+    relation: inhibits
+    sign: "-"
+    magnitude: "2:2 complex locked by an intersubunit disulfide; active site remains accessible"
+    context: "human proteins, cryo-EM at 3.1 A for the STC2 subunit and PAPP-A N-terminal ~1000 residues"
+    evidence_tier: T1
+    refs: [kobber2022]
+    confidence: A
+
+  - edge_id: e00027
+    source: stanniocalcin2
+    target: pappa2_protease
+    relation: inhibits
+    sign: "-"
+    magnitude: "circulating STC2 and PAPP-A2 both associate with total IGF-1 in human adults"
+    context: "human adult population study; direct STC2-PAPP-A2 structure not solved"
+    evidence_tier: T1
+    refs: [nimptsch2024, gemes2024]
+    confidence: B
+
+  - edge_id: e00028
+    source: igf_ternary_complex
+    target: igf1_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: "bioactive/total IGF fell to 0.09-0.32% when ternary complex could not be cleaved (healthy median 1.23%)"
+    context: "human, homozygous PAPPA2 loss of function, n=5"
+    evidence_tier: T1
+    refs: [dauber2016]
+    confidence: A
+
+  - edge_id: e00029
+    source: pappa_protease
+    target: chondrocyte_column_formation
+    relation: required_for
+    sign: "+"
+    magnitude: "Pappa-null mice: reduced femur length and disorganised chondrocyte columns; zebrafish phenocopy rescued by rhIGF-I"
+    context: "mouse growth plate and zebrafish Meckel's cartilage"
+    evidence_tier: T1
+    refs: [harboe2024]
+    confidence: C
+
+  - edge_id: e00030
+    source: insulin_hormone
+    target: igf1_receptor
+    relation: activates
+    sign: "+"
+    magnitude: "insulin's trophic cartilage effect in vivo required IGF-I"
+    context: "rat, in vivo cartilage growth"
+    evidence_tier: T1
+    refs: [alarid1992]
+    confidence: C
+
+  - edge_id: e00031
+    source: insulin_hormone
+    target: igf_ternary_complex
+    relation: inhibits
+    sign: "-"
+    magnitude: "prepubertal children with obesity have high free IGF-1 and accelerated growth despite reduced pappalysins"
+    context: "human, prepubertal obesity cohort"
+    evidence_tier: T1
+    refs: [martnrivada2025]
+    confidence: B
+
+  # ---------- thyroid ----------
+  - edge_id: e00032
+    source: thyroxine_t4
+    target: thyroid_hormone_t3
+    relation: precedes
+    sign: "+"
+    magnitude: "T4 is a prohormone requiring 5'-deiodination; DIO2 generates intracellular T3"
+    context: "human and rodent, systemic and tissue-local"
+    evidence_tier: T1
+    refs: [delvecchio2015, van2022]
+    confidence: A
+
+  - edge_id: e00033
+    source: mct8_transporter
+    target: thyroid_hormone_t3
+    relation: required_for
+    sign: "+"
+    magnitude: "MCT8 deficiency: serum T3 4.58 nmol/L with cerebral hypothyroidism; Triac lowered it to 1.66 nmol/L"
+    context: "human, 67 patients, median 2.2 y treatment"
+    evidence_tier: T1
+    refs: [van2022]
+    confidence: A
+
+  - edge_id: e00034
+    source: thyroid_hormone_t3
+    target: thra_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "TRalpha1 is T3-binding; dominant-negative THRA variants cause human short stature and delayed bone age"
+    context: "human, heterozygous THRA variants; rat growth plate TRalpha localised to RZ/PZ"
+    evidence_tier: T1
+    refs: [jorge2025, robson2000]
+    confidence: A
+
+  - edge_id: e00035
+    source: thyroid_hormone_t3
+    target: thrb_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "all T3 responses abolished in TRbeta-deficient mouse rib chondrocytes; human RTHbeta is not short-statured"
+    context: "mouse primary neonatal rib chondrocyte culture; contradicts the human THRA phenotype"
+    evidence_tier: T1
+    refs: [rabier2006]
+    confidence: D
+    gap_id: g_l4endo_007
+
+  - edge_id: e00036
+    source: thyroid_hormone_t3
+    target: chondrocyte_hypertrophy
+    relation: activates
+    sign: "+"
+    magnitude: "T3 induced alkaline phosphatase, collagen X mRNA and matrix within 7 days while inhibiting clonal expansion"
+    context: "rat tibial growth plate chondrocytes, agarose suspension culture, 21-day-old donors"
+    evidence_tier: T1
+    refs: [robson2000, stevens2000]
+    confidence: B
+
+  - edge_id: e00037
+    source: thyroid_hormone_t3
+    target: proliferative_zone
+    relation: inhibits
+    sign: "-"
+    magnitude: "T3 inhibited clonal expansion and cell proliferation of growth plate chondrocytes"
+    context: "rat growth plate chondrocytes in suspension culture"
+    evidence_tier: T1
+    refs: [robson2000]
+    confidence: B
+
+  - edge_id: e00038
+    source: thyroid_hormone_t3
+    target: igf1_local_growth_plate
+    relation: activates
+    sign: "+"
+    magnitude: "T3-driven chondrocyte growth and differentiation requires IGF-1 modulation of beta-catenin"
+    context: "mouse/rat growth plate chondrocytes"
+    evidence_tier: T1
+    refs: [wang2010]
+    confidence: C
+
+  - edge_id: e00039
+    source: dio3_deiodinase
+    target: thyroid_hormone_t3
+    relation: degrades
+    sign: "-"
+    magnitude: "inner-ring deiodination inactivates T3 and T4; shields fetal skeleton from premature T3"
+    context: "fetal rodent skeleton and placenta; human evidence is genomic (imprinted 14q32 DLK1-DIO3 domain)"
+    evidence_tier: T1
+    refs: [dauber2017]
+    confidence: D
+
+  # ---------- glucocorticoid ----------
+  - edge_id: e00040
+    source: glucocorticoid_cortisol
+    target: growth_velocity_longitudinal
+    relation: inhibits
+    sign: "-"
+    magnitude: "77% reduction in ipsilateral proximal tibial growth rate on local intra-plate dexamethasone infusion"
+    context: "5-week-old male rabbits, 80 ng/uL at 1 uL/h into one plate, vehicle contralateral, P<0.0001"
+    evidence_tier: T1
+    refs: [baron1992]
+    confidence: B
+
+  - edge_id: e00041
+    source: glucocorticoid_cortisol
+    target: resting_zone
+    relation: inhibits
+    sign: "-"
+    magnitude: "dexamethasone slowed resting zone chondrocyte proliferation and their numerical depletion"
+    context: "rabbit growth plate, continuous BrdU labelling"
+    evidence_tier: T1
+    refs: [schrier2006]
+    confidence: C
+
+  - edge_id: e00042
+    source: glucocorticoid_cortisol
+    target: catch_up_growth
+    relation: precedes
+    sign: "+"
+    magnitude: "catch-up after local glucocorticoid was confined to the treated plate, excluding a neuroendocrine sizostat"
+    context: "rabbit, unilateral intra-plate infusion then withdrawal"
+    evidence_tier: T1
+    refs: [baron1994]
+    confidence: B
+
+  - edge_id: e00043
+    source: glucocorticoid_receptor
+    target: growth_plate_height
+    relation: required_for
+    sign: unknown
+    magnitude: "chondrocyte-specific inducible GR deletion produced NO change in growth plate or long bone length"
+    context: "tamoxifen-inducible Col2-CreERT2 x GR-flox mouse, deletion at several postnatal ages"
+    evidence_tier: T1
+    refs: [tu2014]
+    confidence: C
+    notes: "Recorded as a negative result. It conflicts with the rabbit local-infusion potency; see gap g_l4endo_011."
+
+  - edge_id: e00044
+    source: hsd11b1_enzyme
+    target: glucocorticoid_cortisol
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "no measurement of 11beta-HSD1 in growth plate chondrocytes exists in any species"
+    context: "growth plate, species unknown; inferred from osteoblast 11beta-HSD1 activity"
+    evidence_tier: T1
+    refs: [baron1992]
+    confidence: speculative
+    gap_id: g_l4endo_005
+
+  # ---------- sex steroids ----------
+  - edge_id: e00045
+    source: aromatase_cyp19a1
+    target: estradiol_hormone
+    relation: activates
+    sign: "+"
+    magnitude: "male serum estradiol, almost entirely aromatase-derived, rises from <4 to 32 pmol/L across puberty"
+    context: "human boys, 62 24-h profiles, ultrasensitive extraction RIA"
+    evidence_tier: T1
+    refs: [ankarberglindg2008, albin2013]
+    confidence: A
+
+  - edge_id: e00046
+    source: testosterone_hormone
+    target: aromatase_cyp19a1
+    relation: binds
+    sign: "+"
+    magnitude: "EC50 for growth velocity: testosterone 3.1 nmol/L and aromatised estradiol 6.5 pmol/L in the same boys"
+    context: "26 healthy boys, 24-h profiles fitted against individually modelled growth curves"
+    evidence_tier: T1
+    refs: [albin2013]
+    confidence: A
+
+  - edge_id: e00047
+    source: estradiol_hormone
+    target: estrogen_biphasic_dose_effect
+    relation: activates
+    sign: biphasic
+    magnitude: "only the lowest iv dose (4 ug/day, serum E2 10 pg/mL) significantly raised ulnar growth; 20 and 90 ug/day did not"
+    context: "5 prepubertal/early pubertal boys, double-blind randomised 4-day infusions, 3-week ulnar growth velocity"
+    evidence_tier: T1
+    refs: [carusonicolett1985, albin2012]
+    confidence: B
+
+  - edge_id: e00048
+    source: estradiol_hormone
+    target: estrogen_receptor_alpha
+    relation: binds
+    sign: "+"
+    magnitude: "ERalpha-null female mice keep growing (tibia +8.3%, plate height +18%)"
+    context: "16-19 month old female mice"
+    evidence_tier: T1
+    refs: [brjesson2012]
+    confidence: A
+
+  - edge_id: e00049
+    source: estrogen_receptor_alpha
+    target: growth_plate_senescence
+    relation: activates
+    sign: "+"
+    magnitude: "ERalphaAF-1-null mice closed all proximal tibial plates while all wild-type plates stayed open"
+    context: "16-19 month old female mice; AF-1 opposes closure, so closure is an AF-1-independent ERalpha function"
+    evidence_tier: T1
+    refs: [brjesson2012]
+    confidence: B
+
+  - edge_id: e00050
+    source: estradiol_hormone
+    target: resting_zone
+    relation: inhibits
+    sign: "-"
+    magnitude: "estradiol cypionate irreversibly depleted resting zone progenitor number; structural senescence stayed advanced 5 weeks after withdrawal"
+    context: "juvenile ovariectomised female rabbits, 5 weeks treatment then 5 weeks off"
+    evidence_tier: T1
+    refs: [nilsson2014, weise2001]
+    confidence: B
+
+  - edge_id: e00051
+    source: gper1_receptor
+    target: proliferative_zone
+    relation: activates
+    sign: "+"
+    magnitude: "GPER1 promotes pubertal growth plate chondrocyte proliferation via PTHrP/Ihh"
+    context: "female pubertal mice"
+    evidence_tier: T1
+    refs: [chou2021, chou2025]
+    confidence: C
+
+  - edge_id: e00052
+    source: gper1_receptor
+    target: estrogen_biphasic_dose_effect
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: "two-receptor explanation (GPER1 low-dose stimulation vs ERalpha high-dose fusion) never tested across a dose range in one animal"
+    context: "mouse growth plate; human untested"
+    evidence_tier: T1
+    refs: [chou2021, carusonicolett1985]
+    confidence: speculative
+    gap_id: g_l4endo_004
+
+  - edge_id: e00053
+    source: androgen_receptor
+    target: growth_velocity_longitudinal
+    relation: required_for
+    sign: unknown
+    magnitude: "AR agonists and antagonists produced NO change in longitudinal growth of cultured fetal rat metatarsals"
+    context: "rat fetal metatarsal organ culture"
+    evidence_tier: T1
+    refs: [chagin2009, van2002]
+    confidence: C
+    notes: "Recorded as a negative result supporting the aromatisation route over direct androgen action."
+
+  - edge_id: e00054
+    source: estrogen_gh_axis_amplification
+    target: gh_secretion_pulsatility
+    relation: activates
+    sign: "+"
+    magnitude: "estradiol addback under gonadal clamp raised basal, pulsatile and total nocturnal GH by 60-70%"
+    context: "74 healthy men aged 57-77, degarelix clamp plus testosterone and anastrozole, 10-min overnight sampling"
+    evidence_tier: T1
+    refs: [roelfsema2018, veldhuis2008]
+    confidence: A
+
+  # ---------- puberty timing ----------
+  - edge_id: e00055
+    source: kisspeptin_kiss1
+    target: kiss1r_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "biallelic KISS1R loss of function causes normosmic hypogonadotropic hypogonadism"
+    context: "human, consanguineous kindreds; two independent 2003 reports"
+    evidence_tier: T1
+    refs: [seminara2003, de2003]
+    confidence: A
+
+  - edge_id: e00056
+    source: kiss1r_receptor
+    target: gnrh_hormone
+    relation: activates
+    sign: "+"
+    magnitude: "absent KISS1R signalling gives no pubertal sex steroid rise, hence no spurt and delayed fusion"
+    context: "human GnRH neuron"
+    evidence_tier: T1
+    refs: [seminara2003, de2003]
+    confidence: A
+
+  - edge_id: e00057
+    source: mkrn3_gene
+    target: kisspeptin_kiss1
+    relation: inhibits
+    sign: "-"
+    magnitude: "paternally inherited MKRN3 loss of function in 5 of 15 central precocious puberty families"
+    context: "human whole-exome sequencing of 40 individuals; mouse arcuate Mkrn3 falls immediately before puberty"
+    evidence_tier: T1
+    refs: [abreu2013, abreu2020]
+    confidence: A
+
+  - edge_id: e00058
+    source: dlk1_gene
+    target: gnrh_hormone
+    relation: inhibits
+    sign: "-"
+    magnitude: "paternally inherited DLK1 deletion causes familial central precocious puberty"
+    context: "human, imprinted 14q32 DLK1-DIO3 domain"
+    evidence_tier: T1
+    refs: [dauber2017]
+    confidence: A
+
+  - edge_id: e00059
+    source: lin28b_gene
+    target: pubertal_growth_spurt
+    relation: correlates_with
+    sign: "-"
+    magnitude: "each major allele at rs314276: 0.12 y earlier menarche (95% CI 0.08-0.16) and shorter adult height"
+    context: "human GWAS, 4,714 discovery plus 16,373 replication women; 17,274 women and 9,840 men for height"
+    evidence_tier: T1
+    refs: [ong2009, widn2010, zhu2010]
+    confidence: A
+
+  - edge_id: e00060
+    source: leptin_hormone
+    target: leptin_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "congenital LEP deficiency: 26% mortality untreated, hypogonadotropic hypogonadism reversed by recombinant leptin"
+    context: "human, 145-child LEP/LEPR/MC4R cohort"
+    evidence_tier: T1
+    refs: [saeed2023]
+    confidence: A
+
+  - edge_id: e00061
+    source: leptin_receptor
+    target: kisspeptin_kiss1
+    relation: activates
+    sign: "+"
+    magnitude: "energy-sufficiency gating of the reproductive axis; leptin-deficient humans have hypogonadotropic hypogonadism"
+    context: "human and mouse hypothalamic arcuate nucleus"
+    evidence_tier: T1
+    refs: [saeed2023]
+    confidence: B
+
+  - edge_id: e00062
+    source: pubertal_growth_spurt
+    target: peak_height_velocity
+    relation: precedes
+    sign: "+"
+    magnitude: "growth velocity reaches half its maximum increment at estradiol 20 pmol/L (girls) / testosterone 3.1 nmol/L (boys)"
+    context: "healthy children, 24-h hormone profiles fitted against individually modelled growth curves"
+    evidence_tier: T1
+    refs: [albin2012, albin2013]
+    confidence: A
+
+  - edge_id: e00063
+    source: adrenarche
+    target: dheas_hormone
+    relation: secretes
+    sign: "+"
+    magnitude: "zona reticularis maturation from age 6-8 y; premature adrenarche advances bone age without lowering predicted adult height"
+    context: "human children; primate-restricted phenomenon with no rodent counterpart"
+    evidence_tier: T1
+    refs: [kanniainen2025]
+    confidence: A
+
+  # ---------- mineral axis ----------
+  - edge_id: e00064
+    source: vitamin_d_calcitriol
+    target: vitamin_d_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "receptor-dependent 1,25(OH)2D action required for normal growth plate maturation in Npt2a-null mice"
+    context: "mouse growth plate"
+    evidence_tier: T1
+    refs: [miedlich2010, sabbagh2005]
+    confidence: A
+
+  - edge_id: e00065
+    source: phosphate_homeostasis
+    target: chondrocyte_apoptosis_hz
+    relation: required_for
+    sign: "+"
+    magnitude: "hypophosphataemia blocks caspase-9-mediated apoptosis of terminal hypertrophic chondrocytes, producing rickets"
+    context: "mouse; three models (VDR-null, diet-induced hypophosphataemia, Phex-mutant) isolate phosphate as the common variable"
+    evidence_tier: T1
+    refs: [sabbagh2005]
+    confidence: B
+
+  - edge_id: e00066
+    source: fgf23_hormone
+    target: phosphate_homeostasis
+    relation: inhibits
+    sign: "-"
+    magnitude: "burosumab (anti-FGF23) added 0.085 (children) and 0.121 (adolescents) height Z-score/year in 641 XLH participants"
+    context: "human XLH, ages 2-17 y, real-world observational, median 3.3 y follow-up"
+    evidence_tier: T1
+    refs: [fukumoto2026]
+    confidence: A
+
+  - edge_id: e00067
+    source: klotho_alpha
+    target: fgf23_hormone
+    relation: required_for
+    sign: "+"
+    magnitude: "alpha-Klotho is the obligate co-receptor converting FGFR1c into a high-affinity FGF23 receptor"
+    context: "human and mouse renal proximal tubule"
+    evidence_tier: T1
+    refs: [fukumoto2026]
+    confidence: A
+
+  - edge_id: e00068
+    source: vitamin_d_receptor
+    target: fgf23_hormone
+    relation: activates
+    sign: "+"
+    magnitude: "chondrocyte VDR regulates osteoblast FGF23 production and osteoclastogenesis"
+    context: "mouse growth plate and metaphysis"
+    evidence_tier: T1
+    refs: [masuyama2006]
+    confidence: C
+
+  - edge_id: e00069
+    source: parathyroid_hormone
+    target: vitamin_d_calcitriol
+    relation: activates
+    sign: "+"
+    magnitude: "PTH induces renal CYP27B1, raising calcitriol and hence intestinal mineral absorption"
+    context: "human and mouse kidney"
+    evidence_tier: T1
+    refs: [sabbagh2005]
+    confidence: A
+
+  - edge_id: e00070
+    source: calcium_homeostasis
+    target: parathyroid_hormone
+    relation: inhibits
+    sign: "-"
+    magnitude: "CASR-mediated suppression of PTH secretion within minutes of a rise in ionised calcium"
+    context: "human parathyroid chief cell"
+    evidence_tier: T1
+    refs: [sabbagh2005]
+    confidence: A
+
+  # ---------- environmental / temporal ----------
+  - edge_id: e00071
+    source: seasonality_growth_velocity
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: "+"
+    magnitude: "0.146 cm/yr per daylight hour (GH treatment year 1); summer-winter amplitude ~13% of mean velocity in infants"
+    context: "2,277 US GH-treated prepubertal children; 9,409 Japanese infants; 760 Danish 8-11 year olds"
+    evidence_tier: T1
+    refs: [shulman2013, narumi2020, dalskov2016]
+    confidence: A
+    notes: "Phase disagrees between cohorts (summer peak in Japanese infants vs January-April in Danish schoolchildren); see gap g_l4endo_008."
+
+  - edge_id: e00072
+    source: circadian_growth_regulation
+    target: growth_plate
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: "no running BMAL1/PER oscillation demonstrated in human growth plate chondrocytes"
+    context: "human physis; the only functional physeal clock evidence is mouse (artificial light at night, BMAL1-driven collagen hydroxylation)"
+    evidence_tier: T1
+    refs: [chen2023, van2016]
+    confidence: speculative
+    gap_id: g_l4endo_006
+
+  - edge_id: e00073
+    source: igf1_local_growth_plate
+    target: igf1_systemic
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: "relative contribution to chondrocyte IGF1R occupancy never partitioned in any species"
+    context: "human growth plate; mouse liver-knockout genetics cannot separate source from concentration at the receptor"
+    evidence_tier: T1
+    refs: [yakar1999, sjgren1999, yakar2002]
+    confidence: speculative
+    gap_id: g_l4endo_001
+
+  # ---------- connecting remaining L4 nodes ----------
+  - edge_id: e00074
+    source: somatomedin_hypothesis
+    target: igf1_systemic
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: "falsified in its strong form by two liver-specific Igf1 deletions; a threshold form survives (LID+ALSKO)"
+    context: "mouse; no human experiment separates hepatic from local IGF-1"
+    evidence_tier: T1
+    refs: [yakar1999, sjgren1999, yakar2002]
+    confidence: speculative
+    gap_id: g_l4endo_001
+
+  - edge_id: e00075
+    source: dual_effector_hypothesis
+    target: igf1_local_growth_plate
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "GH recruits resting zone cells and induces local IGF-1 which then drives clonal expansion"
+    context: "hypophysectomised and dwarf rat growth plate; untested in human tissue"
+    evidence_tier: T1
+    refs: [nilsson1986, schlechter1986, ohlsson1992]
+    confidence: speculative
+    gap_id: g_l4endo_001
+
+  - edge_id: e00076
+    source: dihydrotestosterone
+    target: androgen_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "roughly 5-10 fold higher AR affinity than testosterone; no effect on longitudinal growth in metatarsal culture"
+    context: "rat fetal metatarsal organ culture and rat growth plate AR expression"
+    evidence_tier: T1
+    refs: [chagin2009, van2002]
+    confidence: D
+
+  - edge_id: e00077
+    source: estradiol_hormone
+    target: estrogen_receptor_beta
+    relation: binds
+    sign: "+"
+    magnitude: "no human ESR2 loss-of-function growth phenotype; Esr2-null mice have near-normal longitudinal growth"
+    context: "rodent growth plate chondrocytes; human phenotype absent"
+    evidence_tier: T1
+    refs: [brjesson2012]
+    confidence: D
+
+  - edge_id: e00078
+    source: dio2_deiodinase
+    target: thyroid_hormone_t3
+    relation: activates
+    sign: "+"
+    magnitude: "outer-ring deiodination of T4 to T3; not quantified with zonal resolution in any growth plate"
+    context: "rodent bone; human physis unmeasured"
+    evidence_tier: T1
+    refs: [robson2000]
+    confidence: E
+
+  - edge_id: e00079
+    source: hsd11b2_enzyme
+    target: glucocorticoid_cortisol
+    relation: degrades
+    sign: "-"
+    magnitude: "cortisol-to-cortisone inactivation; no measurement in growth plate chondrocytes in any species"
+    context: "human placenta/kidney established; physis unmeasured"
+    evidence_tier: T1
+    refs: [baron1992]
+    confidence: E
+
+  - edge_id: e00080
+    source: insulin_hormone
+    target: insulin_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "biallelic INSR loss (Donohue syndrome) causes severe pre- and postnatal growth failure despite hyperinsulinaemia"
+    context: "human, all ages"
+    evidence_tier: T1
+    refs: [alarid1992]
+    confidence: A
+
+  - edge_id: e00081
+    source: insulin_receptor
+    target: igf1_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "INSR/IGF1R hybrid receptors make insulin and IGF signalling pharmacologically inseparable at the chondrocyte surface"
+    context: "human, ubiquitous; hybrid abundance in physis not quantified"
+    evidence_tier: T1
+    refs: [alarid1992]
+    confidence: C
+
+  - edge_id: e00082
+    source: igfbp1
+    target: igf1_systemic
+    relation: binds
+    sign: "-"
+    magnitude: "insulin-suppressed, fasting-induced; a within-hours brake on free IGF-1, never measured in physeal tissue"
+    context: "human hepatocyte and serum; growth plate unmeasured"
+    evidence_tier: T1
+    refs: [nimptsch2024]
+    confidence: D
+
+  - edge_id: e00083
+    source: igfbp2
+    target: igf1_systemic
+    relation: binds
+    sign: "-"
+    magnitude: "not GH-dependent; rises in GH deficiency and catabolic states, opposite in direction to IGFBP-3"
+    context: "human serum"
+    evidence_tier: T1
+    refs: [nimptsch2024]
+    confidence: D
+
+  - edge_id: e00084
+    source: igfbp6
+    target: igf2_hormone
+    relation: binds
+    sign: "-"
+    magnitude: "roughly 20-100 fold preference for IGF-2 over IGF-1; relevant because IGF-2 stays abundant in adult humans but not mice"
+    context: "in vitro binding biochemistry; no growth plate data"
+    evidence_tier: T1
+    refs: [dauber2016]
+    confidence: D
+
+  - edge_id: e00085
+    source: igf2_hormone
+    target: igf1_receptor
+    relation: binds
+    sign: "+"
+    magnitude: "serum IGF-2 in PAPP-A2 deficiency 759-1264 ug/L against a Tanner I reference of 495-911 ug/L"
+    context: "human, homozygous PAPPA2 loss of function"
+    evidence_tier: T1
+    refs: [dauber2016]
+    confidence: A
+
+  - edge_id: e00086
+    source: igfbp4
+    target: igf1_receptor
+    relation: inhibits
+    sign: "-"
+    magnitude: "pure inhibitor with no potentiating activity; inert until PAPP-A cleaves the complex"
+    context: "human protein in vitro; PAPP-A requirement shown in mouse and zebrafish cartilage"
+    evidence_tier: T1
+    refs: [kobber2022, harboe2024]
+    confidence: C
+
+  - edge_id: e00087
+    source: adrenarche
+    target: pubertal_growth_spurt
+    relation: precedes
+    sign: "+"
+    magnitude: "adrenarche precedes gonadarche by roughly 2 years and advances bone age without lowering predicted adult height"
+    context: "human children; primate-restricted, no rodent model"
+    evidence_tier: T1
+    refs: [kanniainen2025]
+    confidence: B

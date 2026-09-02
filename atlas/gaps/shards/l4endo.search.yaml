@@ -1,0 +1,159 @@
+searches:
+  - gap_id: g_l4endo_001
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis OR "epiphyseal cartilage") AND ("IGF-1" OR "IGF-I") AND
+      (microdialysis OR "interstitial fluid" OR "tissue concentration") AND (human OR
+      paediatric OR pediatric)
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 62
+    screened_count: 25
+    reason_none_qualified: >-
+      No hit reports an IGF-1 concentration measured in growth plate tissue or interstitial
+      fluid, in humans or in any species. The top 25 are reviews of bone-vascular crosstalk,
+      cartilage tissue engineering, mechanobiology and osteoarthritis, plus one relevant
+      review of GH/IGF-1 mouse models (Yakar) that restates the liver-knockout genetics
+      without a tissue concentration. The one primary hit measuring growth factors in
+      cartilage is a calf costochondral junction profile, not a partition between local and
+      circulating IGF-1. The gap is therefore total absence of the measurement, not a
+      quantitative refinement.
+
+  - gap_id: g_l4endo_002
+    database: Europe PMC
+    exact_query_string: >-
+      "growth hormone" AND (pulsatile OR "pulse pattern") AND ("matched dose" OR "equal total
+      dose" OR isodose) AND (growth OR stature OR "height velocity")
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 9
+    screened_count: 9
+    reason_none_qualified: >-
+      All nine hits are irrelevant - two acromegaly/Nelson syndrome narrative reviews and
+      seven conference abstract supplements and meeting programmes matched on incidental
+      wording. No human study delivers GH in two temporal patterns at matched integrated dose
+      with a linear-growth endpoint. A companion broader search
+      ('(pulsatile OR intermittent) AND continuous AND "growth hormone" AND (body growth OR
+      longitudinal bone growth OR tibial) AND (rat OR hypophysectomized)', PubMed, 34 hits)
+      returned only rodent infusion studies (Gevers 1996 x2, Clark 1995, Bick 1992), which is
+      the evidence base cited in what_is_known. No search returned any measurement of the GH
+      concentration-time profile inside growth plate tissue in any species.
+
+  - gap_id: g_l4endo_003
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis) AND ("glucocorticoid receptor" OR NR3C1) AND human AND
+      (immunohistochemistry OR expression OR zonal OR occupancy)
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 208
+    screened_count: 25
+    reason_none_qualified: >-
+      Every screened hit that measured GR did so in bone marrow adipocytes, osteoblasts,
+      osteoprogenitors (Osterix-expressing cells) or skeletal stem cells, all in mouse; the
+      one single-cell study of dexamethasone toxicity in developing bone is also murine.
+      Remaining hits are narrative reviews of glucocorticoids in paediatric rheumatic disease
+      and Duchenne muscular dystrophy that discuss growth suppression clinically without any
+      tissue measurement. No study reports GR abundance, isoform composition or target-gene
+      induction by zone in human growth plate.
+
+  - gap_id: g_l4endo_004
+    database: Europe PMC
+    exact_query_string: >-
+      (estradiol) AND ("dose-response curve" OR "dose-response relationship") AND ("growth
+      velocity" OR "height velocity") AND (biphasic OR "inverted U" OR bimodal OR
+      "stimulatory and inhibitory")
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 24
+    screened_count: 25
+    reason_none_qualified: >-
+      This search REVISED the gap. It surfaced the one direct human dose-response experiment
+      (Caruso-Nicoletti 1985, PMID 4044777): 4-day iv estradiol at 4, 20 and 90 ug/day in five
+      boys, double-blind and randomised, with 3-week ulnar growth velocity rising
+      significantly only at the lowest dose. That paper was added to the bibliography and the
+      node rewritten around it, so the gap is no longer "no human dose-response exists" but
+      "the only human dose-response has n=5, three doses, a 1985 estradiol assay, and no
+      significant difference BETWEEN doses". The remaining 20+ screened hits are conference
+      abstract supplements (ECTS, EASD, EHA, ISTH) and one relevant narrative review on
+      manipulating skeletal maturation for height gain; none reports a multi-point estradiol
+      dose-response against a growth endpoint.
+
+  - gap_id: g_l4endo_005
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis OR "epiphyseal cartilage") AND (HSD11B1 OR HSD11B2 OR
+      "11beta-hydroxysteroid dehydrogenase") AND (chondrocyte OR zonal OR expression)
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 37
+    screened_count: 25
+    reason_none_qualified: >-
+      All 25 screened hits measure 11beta-HSD1 or 11beta-HSD2 in osteoblasts, osteoclasts,
+      bone marrow adipocytes, osteochondroprogenitor cell lines or non-skeletal tissue; the
+      cartilage-adjacent hits are osteoarthritis and articular cartilage studies. A separate
+      PubMed search ('(11beta-hydroxysteroid dehydrogenase OR HSD11B1 OR HSD11B2) AND
+      (chondrocyte OR "growth plate")', 4 hits) returned an intrauterine-programming
+      osteoarthritis model, an MSC transcriptome, an antirheumatic-drug chondrocyte screen and
+      a meeting report - none measuring physeal 11beta-HSD. No expression, protein or activity
+      measurement of either isoenzyme in growth plate chondrocytes exists in any species.
+
+  - gap_id: g_l4endo_006
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis) AND (BMAL1 OR ARNTL OR PER2 OR "circadian clock") AND
+      (chondrocyte) AND (human OR "longitudinal bone growth")
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 105
+    screened_count: 25
+    reason_none_qualified: >-
+      This search REVISED the gap from "no functional growth plate clock evidence exists"
+      (which would have been false) to "the evidence is rodent only". It surfaced Chen 2023
+      (Cell Death Differ, PMID 37029304), in which artificial light at night suppressed
+      developmental growth plate cartilage formation in mice by inhibiting BMAL1-driven
+      collagen hydroxylation - added to the bibliography. The other 24 screened hits are
+      articular cartilage or temporomandibular joint osteoarthritis models, mesenchymal stem
+      cell chondrogenesis, bone regeneration reviews, or cancer chronotherapy. No hit
+      demonstrates a running oscillator in human growth plate chondrocytes or links clock
+      disruption to human linear growth.
+
+  - gap_id: g_l4endo_009
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis OR "epiphyseal cartilage") AND (IGFBP OR "IGF binding
+      protein") AND ("resting zone" OR "proliferative zone" OR "hypertrophic zone") AND human
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 134
+    screened_count: 25
+    reason_none_qualified: >-
+      No screened hit localises any IGFBP by zone in human growth plate tissue. The two
+      mechanistically relevant hits are rodent/zebrafish - Harboe 2024 (PAPP-A required for
+      IGF-dependent chondrocyte differentiation and columnar organisation; added to the
+      bibliography) and a GH-and-growth-plate-stem-cell study. The remainder are clinical
+      serum-biomarker studies in short stature, systematic reviews of hormonal treatment,
+      herbal-extract rat growth studies and osteoarthritis IGFBP3 work. A companion search
+      ('(IGFBP OR "IGF binding protein") AND ("growth plate" OR "epiphyseal cartilage") AND
+      (human OR zone OR localization OR immunohistochemistry)', PubMed, 73 hits) returned the
+      same pattern - rodent nutraceutical growth studies and serum work, no human zonal
+      localisation.
+
+  - gap_id: g_l4endo_010
+    database: Europe PMC
+    exact_query_string: >-
+      SOCS2 AND (human OR patient*) AND ("tall stature" OR overgrowth OR gigantism OR
+      "increased height") AND (loss-of-function OR "loss of function" OR mutation OR deletion)
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 134
+    screened_count: 25
+    reason_none_qualified: >-
+      No hit reports a human individual or cohort with SOCS2 loss of function and overgrowth
+      or increased stature. The SOCS2-specific hits concern macrophage inflammatory responses,
+      silkworm virology, fetal overgrowth in gestational diabetes (an expression correlation,
+      not a genetic phenotype), SOCS2-SH2 structural pharmacology, and a mouse study of
+      accelerated growth plate fusion in Socs2-null animals in the context of osteoarthritis
+      vulnerability. A companion PubMed search on 'SOCS2 AND height AND (variant OR mutation)'
+      returned only the mouse literature and the Metcalf 2000 gigantism paper. The human
+      counterpart of the mouse phenotype remains unreported.

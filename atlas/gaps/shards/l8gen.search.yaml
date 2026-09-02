@@ -1,0 +1,84 @@
+searches:
+- gap_id: g_l8gen_001
+  database: Europe PMC
+  exact_query_string: (height OR stature) AND ("genome-wide association") AND ("pathway enrichment" OR
+    "gene-set enrichment" OR "tissue enrichment") AND (somatotropic OR "growth hormone receptor" OR GHR
+    OR STAT5B OR IGFALS)
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 114
+  screened_count: 25
+  reason_none_qualified: No hit performs a human height GWAS pathway-enrichment analysis that returns
+    the somatotropic/GH-IGF axis as an enriched set. Hits are dominated by livestock GWAS (deer antler
+    weight, goat body conformation, cattle body conformation, sheep growth), unrelated human traits (asthma,
+    obesity subtyping, placental biology), and one relevant but non-enrichment human paper (rare CNVs
+    in GH/IGF-1 insensitivity, 2020). A parallel search substituting "pathway enrichment" with the individual
+    axis gene names returned the same pattern. The negative is therefore established at the level of the
+    published enrichment lists, not at the level of a formal test.
+- gap_id: g_l8gen_004
+  database: Europe PMC
+  exact_query_string: SHOX AND ("growth plate" OR physis OR chondrocyte) AND (human) AND (immunohistochemistry
+    OR "in situ hybridization" OR expression) AND (zone OR zonal OR resting OR proliferative OR hypertrophic)
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 135
+  screened_count: 25
+  reason_none_qualified: 'No hit reports zone-resolved SHOX localization in human growth plate cartilage.
+    The 25 screened records are clinical short-stature genetics (SHOX rearrangement families, ISS gene
+    panels, aggrecanopathy, ANKRD11, WASHC3), non-human comparative work (shark shox/shox2 subfunctionalization,
+    axolotl limb regeneration), and growth-plate biology papers that do not concern SHOX. The absence
+    is expected: SHOX has no rodent orthologue, so the usual murine ISH route is unavailable, and human
+    growth plate tissue is scarce (see human_growth_plate_tissue_scarcity).'
+- gap_id: g_l8gen_005
+  database: Europe PMC
+  exact_query_string: COL2A1 AND ("height SDS" OR "height standard deviation score" OR "adult height")
+    AND (missense OR "glycine substitution") AND (haploinsufficiency OR deletion)
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 44
+  screened_count: 25
+  reason_none_qualified: All qualifying hits are small case series, mixed-gene short-stature panels or
+    narrative reviews. None reports adult height stratified by COL2A1 mutation class. The largest relevant
+    series (Zhan 2025, n=7 families; Turkish series n=6) give childhood heights or GH responses only.
+    The COL10A1 equivalent analysis (Meng 2025, n=128) has no COL2A1 counterpart.
+- gap_id: g_l8gen_011
+  database: Europe PMC
+  exact_query_string: ("assortative mating" OR homogamy) AND height AND (heritability OR "genetic variance")
+    AND (bias OR inflation OR overestimat)
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 378
+  screened_count: 25
+  reason_none_qualified: Hits are dominated by educational-attainment assortment, method papers on admixture
+    and population structure, and general assortative-mating theory. Several confirm the qualitative direction
+    (assortment raises genetic variance and relative similarity) but none reports a height-specific inflation
+    factor for heritability, nor a corrected-versus-uncorrected twin heritability comparison for stature.
+    Sunde 2024 comes closest and is used as the nearest evidence.
+- gap_id: g_l8gen_013
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis) AND ("DNA methylation" OR methylome OR "methylation array")
+    AND (human) AND (chondrocyte) AND (FIRST_PDATE:[2005-01-01 TO 2026-12-31])
+  filters: resultType=core, pageSize=25, date-limited 2005-2026
+  date_run: '2026-08-05'
+  hit_count: 306
+  screened_count: 25
+  reason_none_qualified: The screened hits are osteoarthritis articular-cartilage methylation studies,
+    reviews of epigenetics in skeletal disease, and rodent work (for example Dnmt1 and bone length in
+    mouse growth plate chondrocytes, 2025). The only human growth-plate-relevant methylome is McDonnell
+    2024, which covers 7-21 post-conception weeks only. No dataset covers the human postnatal physis.
+    Human growth plate tissue scarcity is the proximate cause.
+- gap_id: g_l8gen_014
+  database: Europe PMC
+  exact_query_string: ("epigenetic clock" OR "DNA methylation age" OR "epigenetic age acceleration") AND
+    ("bone age" OR "skeletal age" OR "Greulich" OR "epiphyseal fusion" OR "growth plate closure")
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 33
+  screened_count: 25
+  reason_none_qualified: 'None of the 33 hits relates an epigenetic clock to radiographic bone age or
+    epiphyseal fusion in humans. The set comprises non-human clocks (common dolphin, marsupials), forensic
+    age estimation, adult bone-aging twin studies, a 6-month GH-treatment epigenetic-age study in GH-deficient
+    children without a bone-age endpoint, and general longevity reviews. NOTE: a broader query on the
+    same day did return two genuine growth-endpoint primaries (Simpkin 2017 height and Kim 2024 peak height
+    velocity), which is why this gap is scoped to the skeletal-maturation endpoints specifically and why
+    the epigenetic_clock_growth node was re-graded from X to D.'

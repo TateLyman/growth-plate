@@ -1,0 +1,78 @@
+id: laron_syndrome
+name: Laron syndrome (growth hormone receptor deficiency)
+aliases:
+- GHRD
+- GH insensitivity syndrome
+- primary IGF-I deficiency
+type: phenotype
+layer: L11
+stub: false
+summary: |
+  Laron syndrome is the human GH-receptor knockout and the experiment that separates GH from
+  IGF-I. Biallelic GHR mutations - in the large Ecuadorian cohort a homozygous change at
+  codon 180 of exon 6 - abolish GH signal transduction, so circulating GH is normal or high,
+  biologically normal and completely ineffective, while IGF-I is low to undetectable. The
+  molecular consequence is failure of hepatic and local IGF-I generation; the growth plate
+  consequence has never been described histologically in a human. The most mechanistically
+  surprising human result is not the shortness but the shape: in 201 adults, GH-insensitive
+  individuals had the LOWEST lower-segment/height and the HIGHEST upper-segment/height and
+  head-circumference/height ratios, and serum IGF-I correlated positively (logarithmically) with
+  every body measurement while correlating negatively with head-circumference/height. GH-IGF-I
+  loss therefore produces DISproportionate growth, contradicting the textbook assumption that
+  the axis scales the body uniformly - it acts preferentially on the long bones of the lower
+  limb. Adult heights in the classic series fall in the 120-130 cm range with childhood height
+  SDS of -6 to -12, but that range is stated in secondary sources rather than as a primary
+  cohort mean with SD, which is a quantitative gap. rhIGF-1 replacement partially rescues
+  growth: in the global registry only 10.5 percent of Laron patients reached near-adult height
+  within the normal range.
+quantitative:
+- parameter: adults in the Ecuadorian GHR-deficiency anthropometry cohort
+  value: '201'
+  unit: adults
+  conditions: GHI individuals plus carrier relatives, non-carrier relatives and unrelated controls
+  species: human
+  source_ref: guevaraaguirre2025
+  uncertainty: n=201
+- parameter: lower-segment/height ratio in GH-insensitive adults
+  value: lowest of four groups
+  unit: ratio
+  conditions: GHI vs carrier relatives vs non-carrier relatives vs unrelated controls
+  species: human
+  source_ref: guevaraaguirre2025
+  uncertainty: direction reported; numeric ratios not in abstract
+- parameter: head-circumference/height ratio in GH-insensitive adults
+  value: highest of four groups
+  unit: ratio
+  conditions: same cohort; negatively correlated with serum IGF-I
+  species: human
+  source_ref: guevaraaguirre2025
+  uncertainty: direction reported; numeric ratios not in abstract
+localization:
+- 'human growth plate: no published histology in Laron syndrome (gap g_l11path_007)'
+human_evidence: direct
+human_evidence_note: A geographically clustered homozygous GHR cohort with anthropometry in 201 adults
+  and internal carrier and non-carrier controls.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: B
+key_refs:
+- ref_id: guevaraaguirre2025
+  pmid: '39607890'
+  first_author: Guevara-Aguirre J
+  year: 2025
+  type: primary
+  one_line_finding: '201 adults: GHR deficiency causes DISproportionate growth - lowest lower-segment/height,
+    highest head-circumference/height.'
+- ref_id: zhao2025
+  pmid: '40225070'
+  first_author: Zhao Q
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: Adult height in treated vs untreated GH-axis deficiency (idiopathic GHD comparator
+    cohort, n=169).
+open_questions:
+- g_l11path_007
+- g_l11path_008
+last_verified: '2026-08-05'

@@ -1,0 +1,74 @@
+id: gh_pulse_pattern_hypothesis
+name: GH pulse pattern versus integrated exposure at the plate
+aliases:
+- pattern-dependence of GH action
+- pulse-encoded GH signalling
+type: hypothesis
+layer: L4
+stub: false
+summary: 'The hypothesis is that the growth plate reads the SHAPE of the GH signal - burst amplitude,
+  interburst trough depth and frequency - and not merely the 24-hour integral, and that pattern information
+  is decoded at the chondrocyte via the kinetics of JAK2-STAT5B phosphorylation and SOCS2-mediated receptor
+  turnover. The rat evidence is strong and quantitative: at matched total dose, adding a pulsatile component
+  to a patterned infusion raised weight gain from 1.1 to 2.1 g/day while adding an equal continuous component
+  did nothing, and pulsatile versus continuous dose-response curves were non-parallel; hepatic GHR and
+  GHBP showed the mirror-image dependence on the trough component (gevers1996). At the tissue level, pulsatile
+  but not continuous GH narrowed the resting zone while both widened proliferative and hypertrophic zones
+  (gevers1996a) - the only existing zonal readout of pattern-dependence. Independently, meal-feeding versus
+  grazing at matched intake tripled GH secretion, added two bursts per day and preserved tibial epiphyseal
+  plate width in a ghrelin/GHS-R-dependent way (hornsby2025). No human experiment has varied GH pattern
+  at matched exposure with a growth endpoint, and no measurement of the GH concentration-time profile
+  in growth plate interstitium exists in any species.'
+quantitative:
+- parameter: weight gain, all-pulsatile versus mixed pulsatile+continuous GH at matched total dose
+  value: 2.1 vs 1.1
+  unit: g/day
+  conditions: 'GH-deficient dwarf rats, patterned iv hGH: 72 ug/day as pulses vs 36 ug/day pulses + 36
+    ug/day continuous'
+  species: rat
+  source_ref: gevers1996
+  uncertainty: SEM +/-0.2 both arms; P<0.01
+- parameter: resting zone width response to pulsatile versus continuous GH
+  value: narrowed by pulsatile only
+  unit: qualitative zonal effect
+  conditions: GH-deficient dwarf rats, 7 days continuous or pulsatile rhGH, in situ enzyme histochemistry
+  species: rat
+  source_ref: gevers1996a
+  uncertainty: continuous GH had no effect on RZ width; both patterns widened PZ and HZ
+localization:
+- 'rat RZ: pattern-dependent narrowing demonstrated (gevers1996a)'
+- 'human growth plate: GH concentration-time profile never measured'
+human_evidence: absent
+human_evidence_note: No human study manipulates GH pattern at matched integrated exposure with a linear
+  growth endpoint; the human data are limited to showing that the endogenous pattern exists and is modulated.
+species_basis:
+- rat
+translation_risk: high
+translation_risk_reason: Rat GH profiles are far more sharply pulsatile and more sexually dimorphic than
+  human ones, so pattern-dependence magnitudes almost certainly differ; the long-acting human GH analogues
+  now in use deliberately flatten the profile, which makes this an open clinical question, not an academic
+  one.
+confidence: C
+key_refs:
+- ref_id: gevers1996
+  first_author: Gevers EF
+  year: 1996
+  type: primary
+  one_line_finding: Growth tracks the pulse component and hepatic GHR/GHBP the trough component of a patterned
+    GH infusion at matched dose.
+  pmid: '8603568'
+- ref_id: gevers1996a
+  first_author: Gevers EF
+  year: 1996
+  type: primary
+  one_line_finding: Pulsatile but not continuous GH narrowed the resting zone; both widened the proliferative
+    and hypertrophic zones.
+  pmid: '8854246'
+- ref_id: hornsby2025
+  first_author: Hornsby AK
+  year: 2025
+  type: primary
+  one_line_finding: Feeding pattern changed GH burst number and height and preserved tibial epiphyseal
+    plate width via ghrelin/GHS-R.
+  pmid: '40168099'
+last_verified: '2026-08-05'

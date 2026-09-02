@@ -1,0 +1,80 @@
+id: gh_receptor
+name: Growth hormone receptor (GHR)
+aliases:
+- GHR
+- somatotropin receptor
+- GHBP (shed ectodomain)
+type: protein
+layer: L4
+stub: false
+summary: GHR is a single-pass class I cytokine receptor that exists as a preformed, ligand-independent
+  dimer. Ligand binding does not dimerise the receptor; it rotates the two transmembrane helices from
+  a parallel arrangement into a left-handed crossover, separating the juxtamembrane regions and pulling
+  apart the two JAK2 pseudokinase domains that had been holding each other's kinase domains inhibited,
+  which permits trans-activation (brooks2014). Proteolytic shedding of the ectodomain generates GH-binding
+  protein (GHBP). GHR mRNA and protein are present across rat growth plate zones with the strongest signal
+  in the germinal and proliferative zones (gevers2002), the anatomical basis for a direct plate action.
+  Ghr-null mice show disproportionate skeletal shortening and markedly reduced bone mineral content (sjgren2000);
+  in humans, biallelic GHR loss of function is Laron syndrome, with severely reduced untreated adult stature
+  and only partial rescue by recombinant IGF-1 (laron2015, guevaraaguirre2025). Hepatic GHR abundance
+  is set by the trough rather than the peak of the GH profile in rat (gevers1996); the equivalent regulation
+  in chondrocytes has never been measured.
+quantitative:
+- parameter: hepatic GHR and plasma GHBP response to the pulsatile component of a patterned GH infusion
+  value: '0'
+  unit: fold change (no response across the tested pulsatile dose range)
+  conditions: GH-deficient dwarf rats, patterned iv hGH; GHR/GHBP responded only to the continuous component
+  species: rat
+  source_ref: gevers1996
+  uncertainty: qualitative null within the tested dose range
+localization:
+- 'rat RZ/PZ: GHR mRNA and protein confirmed, highest signal (gevers2002)'
+- 'rat HZ: GHR present at lower level (gevers2002)'
+- 'human growth plate: GHR protein not localised by zone'
+human_evidence: direct
+human_evidence_note: Biallelic human GHR loss of function (Laron syndrome) causes severe GH-insensitive
+  short stature with high GH and low IGF-1, establishing the receptor's necessity for human stature.
+species_basis:
+- human
+- rat
+- mouse
+- in_vitro_human_cell
+translation_risk: moderate
+translation_risk_reason: The requirement for GHR is human-proven; the activation mechanism comes from
+  structural and biophysical work in cell systems and the zonal distribution is rat-only.
+confidence: A
+key_refs:
+- ref_id: brooks2014
+  first_author: Brooks AJ
+  year: 2014
+  type: primary
+  one_line_finding: GH rotates the preformed GHR dimer's transmembrane helices into a left-handed crossover,
+    separating JAK2 pseudokinase domains.
+  pmid: '24833397'
+- ref_id: gevers2002
+  first_author: Gevers EF
+  year: 2002
+  type: primary
+  one_line_finding: GHR and GHBP localised across rat growth plate zones with highest germinal/proliferative
+    signal.
+  pmid: '12162495'
+- ref_id: sjgren2000
+  first_author: Sjögren K
+  year: 2000
+  type: primary
+  one_line_finding: Ghr-null mice show disproportionate skeletal growth and markedly decreased bone mineral
+    content.
+  pmid: '10631109'
+- ref_id: laron2015
+  first_author: Laron Z
+  year: 2015
+  type: review
+  one_line_finding: 'Fifty-year Laron syndrome cohort: untreated GHR-deficient adults reach markedly reduced
+    stature.'
+  pmid: '26401581'
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Gene-selective across species (Ghr-null mouse, human Laron); zonal rat data available
+  (gevers2002).

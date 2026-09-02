@@ -1,0 +1,302 @@
+id: elongation_budget
+name: Partition of elongation among proliferation, matrix synthesis, and hypertrophy
+aliases:
+- elongation budget
+- chondrocytic kinetic partition
+- growth partition
+type: process
+layer: L1
+stub: false
+summary: 'Longitudinal elongation of a growth plate is the sum of three separable contributions: the axial displacement
+  produced by chondrocyte division, the axial displacement produced by interstitial matrix synthesis, and the axial
+  displacement produced by the volume and shape change of chondrocytes during hypertrophy. The only study that has
+  closed this budget quantitatively is Wilsman et al. 1996, which used oxytetracycline labelling for elongation rate
+  and bromodeoxyuridine plus unbiased stereology for cell kinetics in four growth plates of 28-day-old Long-Evans
+  rats: in the fast proximal tibia the split is 9% division, 32% matrix synthesis, 59% hypertrophic enlargement, and
+  in the slow proximal radius the hypertrophic share falls to 44% while matrix synthesis rises to 49%. In the same
+  study the calculated number of chondrocytes produced per day matched the number lost at the chondro-osseous junction,
+  which is the internal consistency check that makes the partition credible. Hunziker and Schenk reached a compatible
+  conclusion in rat by a different route: net matrix production per cell is nearly invariant across growth rates and
+  ages, so acceleration is achieved by modulating final chondrocyte height rather than by making more matrix. The
+  partition is therefore not a constant of the tissue but a site- and rate-dependent quantity: slower plates lean
+  more on matrix and less on hypertrophy. No equivalent measurement exists for any human growth plate, and the human
+  proliferative cell cycle appears to be one to two orders of magnitude slower than the rat''s, so the rat partition
+  cannot be assumed to transfer.'
+quantitative:
+- parameter: contribution of cell division to elongation
+  value: '9'
+  unit: '% of elongation'
+  conditions: proximal tibia, 28-day-old male Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'not reported; derived from stereology + oxytetracycline labelling PROVENANCE FLAG, added 2026-08-06
+    by the transitive method audit: THIS IS A CALCULATED PARTITION, NOT A MEASUREMENT, and the paper states its assumptions
+    plainly - ''the calculation of the relative contributions to elongation ... requires making two assumptions. First,
+    we continue to assume steady-state kinetics over a short time span (24 hours). Second, we assume that the growth
+    plate is modeled as a two-compartment system (cells and matrix).'' The proliferative zones are further ''modeled
+    as circular cylinders of diameter 1''. THE THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they are one volume budget
+    divided three ways and sum to 100% by construction, and matrix volume per cell is obtained as the COMPLEMENT of
+    the cell volume fraction, (1 - Vv) x V_total / N, rather than measured. Any error in the cell volume or numerical
+    density moves all three shares together. Nothing downstream may treat them as three independent measurements or
+    propagate independent uncertainties on them.'
+- parameter: contribution of matrix synthesis to elongation
+  value: '32'
+  unit: '% of elongation'
+  conditions: proximal tibia, 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: THIS IS A CALCULATED
+    PARTITION, NOT A MEASUREMENT, and the paper states its assumptions plainly - ''the calculation of the relative
+    contributions to elongation ... requires making two assumptions. First, we continue to assume steady-state kinetics
+    over a short time span (24 hours). Second, we assume that the growth plate is modeled as a two-compartment system
+    (cells and matrix).'' The proliferative zones are further ''modeled as circular cylinders of diameter 1''. THE
+    THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they are one volume budget divided three ways and sum to 100% by construction,
+    and matrix volume per cell is obtained as the COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N,
+    rather than measured. Any error in the cell volume or numerical density moves all three shares together. Nothing
+    downstream may treat them as three independent measurements or propagate independent uncertainties on them.'
+- parameter: contribution of hypertrophic cell enlargement to elongation
+  value: '59'
+  unit: '% of elongation'
+  conditions: proximal tibia (fastest of four plates), 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: THIS IS A CALCULATED
+    PARTITION, NOT A MEASUREMENT, and the paper states its assumptions plainly - ''the calculation of the relative
+    contributions to elongation ... requires making two assumptions. First, we continue to assume steady-state kinetics
+    over a short time span (24 hours). Second, we assume that the growth plate is modeled as a two-compartment system
+    (cells and matrix).'' The proliferative zones are further ''modeled as circular cylinders of diameter 1''. THE
+    THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they are one volume budget divided three ways and sum to 100% by construction,
+    and matrix volume per cell is obtained as the COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N,
+    rather than measured. Any error in the cell volume or numerical density moves all three shares together. Nothing
+    downstream may treat them as three independent measurements or propagate independent uncertainties on them.'
+- parameter: contribution of hypertrophic cell enlargement to elongation
+  value: '44'
+  unit: '% of elongation'
+  conditions: proximal radius (slowest of four plates), 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: THIS IS A CALCULATED
+    PARTITION, NOT A MEASUREMENT, and the paper states its assumptions plainly - ''the calculation of the relative
+    contributions to elongation ... requires making two assumptions. First, we continue to assume steady-state kinetics
+    over a short time span (24 hours). Second, we assume that the growth plate is modeled as a two-compartment system
+    (cells and matrix).'' The proliferative zones are further ''modeled as circular cylinders of diameter 1''. THE
+    THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they are one volume budget divided three ways and sum to 100% by construction,
+    and matrix volume per cell is obtained as the COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N,
+    rather than measured. Any error in the cell volume or numerical density moves all three shares together. Nothing
+    downstream may treat them as three independent measurements or propagate independent uncertainties on them.'
+- parameter: contribution of matrix synthesis to elongation
+  value: '49'
+  unit: '% of elongation'
+  conditions: proximal radius, 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: THIS IS A CALCULATED
+    PARTITION, NOT A MEASUREMENT, and the paper states its assumptions plainly - ''the calculation of the relative
+    contributions to elongation ... requires making two assumptions. First, we continue to assume steady-state kinetics
+    over a short time span (24 hours). Second, we assume that the growth plate is modeled as a two-compartment system
+    (cells and matrix).'' The proliferative zones are further ''modeled as circular cylinders of diameter 1''. THE
+    THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they are one volume budget divided three ways and sum to 100% by construction,
+    and matrix volume per cell is obtained as the COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N,
+    rather than measured. Any error in the cell volume or numerical density moves all three shares together. Nothing
+    downstream may treat them as three independent measurements or propagate independent uncertainties on them.'
+- parameter: new chondrocytes produced per day per growth plate
+  value: '16400'
+  unit: cells/day
+  conditions: proximal tibia, 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: not reported
+- parameter: new chondrocytes produced per day per growth plate
+  value: '3700'
+  unit: cells/day
+  conditions: proximal radius, 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: not reported
+- parameter: contribution of cell division to elongation
+  value: '7'
+  unit: '% of elongation'
+  conditions: proximal radius (slowest plate, 47 um/day), 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'as stated in the text; the value computed from the paper''s own Tables 5 and 6 is 8.1% PROVENANCE
+    FLAG, added 2026-08-06 by the transitive method audit: THIS IS A CALCULATED PARTITION, NOT A MEASUREMENT, and
+    the paper states its assumptions plainly - ''the calculation of the relative contributions to elongation ... requires
+    making two assumptions. First, we continue to assume steady-state kinetics over a short time span (24 hours).
+    Second, we assume that the growth plate is modeled as a two-compartment system (cells and matrix).'' The proliferative
+    zones are further ''modeled as circular cylinders of diameter 1''. THE THREE SHARES ARE NOT INDEPENDENT ESTIMATES:
+    they are one volume budget divided three ways and sum to 100% by construction, and matrix volume per cell is obtained
+    as the COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N, rather than measured. Any error in the
+    cell volume or numerical density moves all three shares together. Nothing downstream may treat them as three independent
+    measurements or propagate independent uncertainties on them.'
+- parameter: elongation partition across all four plates (division / matrix / enlargement)
+  value: 9/32/59, 9/32/58, 9/41/50, 8/49/43
+  unit: '% of elongation'
+  conditions: proximal tibia (396 um/day), distal radius (269), distal tibia (138), proximal radius (47); 28-day-old
+    Long-Evans rat, unit-cylinder model
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'DERIVED BY THIS ATLAS from the paper''s Tables 5 and 6 - the text states only the two extreme plates
+    (9/32/59 and 7/49/44) and Figure 1 carries the middle two. Computed as division = T5 cell volume / T6 total, matrix
+    = T6 matrix / T6 total, enlargement = (T6 cell - T5 cell) / T6 total. The derivation reproduces the paper''s independently
+    reported hypertrophic volume fractions (0.685 / 0.675 / 0.595 / 0.504) to within rounding, which is the check
+    that it is the intended decomposition. Middle two plates carry no published dispersion. PROVENANCE FLAG, added
+    2026-08-06 by the transitive method audit: THIS IS A CALCULATED PARTITION, NOT A MEASUREMENT, and the paper states
+    its assumptions plainly - ''the calculation of the relative contributions to elongation ... requires making two
+    assumptions. First, we continue to assume steady-state kinetics over a short time span (24 hours). Second, we
+    assume that the growth plate is modeled as a two-compartment system (cells and matrix).'' The proliferative zones
+    are further ''modeled as circular cylinders of diameter 1''. THE THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they
+    are one volume budget divided three ways and sum to 100% by construction, and matrix volume per cell is obtained
+    as the COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N, rather than measured. Any error in the
+    cell volume or numerical density moves all three shares together. Nothing downstream may treat them as three independent
+    measurements or propagate independent uncertainties on them.'
+- parameter: cell share of the volume removed at the chondro-osseous junction
+  value: 68.5, 67.8, 59.3, 51.4
+  unit: '% of elongation'
+  conditions: proximal tibia, distal radius, distal tibia, proximal radius; equals division plus enlargement, i.e.
+    all of the removed volume that is cell rather than matrix
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'DERIVED as division + enlargement from the rows above; matches the paper''s directly measured hypertrophic
+    volume fractions 0.685/0.675/0.595/0.504. THIS IS THE QUANTITY TO COMPARE A MEASURED TERMINAL CELL HEIGHT AGAINST,
+    not the 44-59% enlargement figure - a histological cell height includes the volume the cell already had on leaving
+    the proliferative zone. It is also a LOWER bound on the axial-height share, because longitudinal septal matrix
+    adds volume without adding axial length. PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: THIS
+    IS A CALCULATED PARTITION, NOT A MEASUREMENT, and the paper states its assumptions plainly - ''the calculation
+    of the relative contributions to elongation ... requires making two assumptions. First, we continue to assume
+    steady-state kinetics over a short time span (24 hours). Second, we assume that the growth plate is modeled as
+    a two-compartment system (cells and matrix).'' The proliferative zones are further ''modeled as circular cylinders
+    of diameter 1''. THE THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they are one volume budget divided three ways
+    and sum to 100% by construction, and matrix volume per cell is obtained as the COMPLEMENT of the cell volume fraction,
+    (1 - Vv) x V_total / N, rather than measured. Any error in the cell volume or numerical density moves all three
+    shares together. Nothing downstream may treat them as three independent measurements or propagate independent
+    uncertainties on them.'
+- parameter: partition of PHYSIOLOGICAL growth acceleration (21 to 35 days) among cell parameters
+  value: height +23, diameter -14, volume -13, matrix/cell 0, turnover 0, hyp duration 0
+  unit: '% change'
+  conditions: rat proximal tibia, suckling (21 d) to pre-pubertal growth spurt (35 d), n=6 per age; growth rate +20%;
+    stereology plus fluorochrome labelling plus 3H-thymidine autoradiography
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'A 20% rise in growth rate is accompanied by a 23% rise in terminal cell HEIGHT (31.2 -> 38.5 um, P<0.02),
+    a 14% FALL in lateral diameter (29.9 -> 25.6 um, P<0.03) and a 13% FALL in final cell VOLUME (P<0.03), with matrix
+    per cell, cell turnover per column and hypertrophic-phase duration all unchanged. Coefficients of error 3.7-14.3%
+    between animals. DOWNGRADED IN READING 2026-08-06 (CORR-009): this row was described here as the single most direct
+    test of which variable carries physiological growth change. IT IS NOT A DIRECT TEST. Only the volume, surface-area
+    and numerical-density figures come from unbiased estimators; height and diameter are shape-model outputs (cruzorive1986),
+    with height computed AS volume divided by a width second moment, so the +23% and the -13% are not independent
+    observations. The unbiased part of the row - volume FALLING while growth rises - is what stands. See C-L1-08.'
+- parameter: cell cycle time and growth fraction move together and cancel
+  value: T_c -33, growth fraction -33, turnover 0
+  unit: '% change'
+  conditions: rat proximal tibia, 21 to 35 days; cycle time 81 -> 54 h, proliferating cells per column 27 -> 18
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: A 33% fall in cycle time is offset by a 33% fall in the columnar growth fraction, so cells produced
+    per column per day is UNCHANGED. The only data on the joint behaviour of N_p and T_c say they are ANTICORRELATED
+    and their ratio is conserved. Any model that samples them independently overstates the uncertainty of their product
+    - which is what flow_model.py does.
+- parameter: partition of physiological growth deceleration (35 to 80 days)
+  value: height -53, diameter +13, volume -56, matrix/cell 0, turnover -50, growth fraction -50
+  unit: '% change'
+  conditions: rat proximal tibia, pre-pubertal (35 d) to mature (80 d); growth rate -75%
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: deceleration is NOT the mirror image of acceleration - here height AND volume AND turnover all fall
+    together, whereas acceleration moved height alone. Matrix per cell is again unchanged, in both directions.
+- parameter: duration of the hypertrophic activity phase
+  value: 45-51
+  unit: h
+  conditions: rat proximal tibia at 21, 35 and 80 days (51, 45, 48 h); unchanged across a 4-fold range of growth rate
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'CE 4.1-8.7% between six animals. An invariant of the system: the terminal cell takes about two days
+    to do its work regardless of how fast the bone is growing.'
+- parameter: proliferative cells per column (columnar growth fraction)
+  value: 27, 18, 9
+  unit: cells
+  conditions: rat proximal tibia at 21, 35 and 80 days respectively
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: CE 6.3-13.1%, n=6 per age. Directly measured by 3H-thymidine autoradiography rather than inferred from
+    a rabbit ratio, which is how the human figure (24) is obtained.
+- parameter: cell cycle time of a proliferating chondrocyte
+  value: 81, 54, 54
+  unit: h
+  conditions: rat proximal tibia at 21, 35 and 80 days respectively
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: CE 9.5-14.3%, n=6 per age
+- parameter: range of elongation rates across the four plates compared
+  value: 50-400
+  unit: um/24 h
+  conditions: proximal tibia, distal radius, distal tibia, proximal radius; 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: approximate range as stated by authors
+- parameter: chondrocytes lost per column at the chondro-osseous junction
+  value: '8'
+  unit: cells/day (one every 3 h)
+  conditions: proximal tibia, rat in steady-state growth
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: not reported
+localization:
+- 'rat proximal tibia PZ+HZ: measured by stereology (wilsman1996)'
+- 'human: unmeasured'
+human_evidence: absent
+human_evidence_note: No human study partitions elongation among division, matrix synthesis and hypertrophy; a targeted
+  PubMed search returned four records, none of which does so (see search log g_l1arch_001).
+species_basis:
+- rat
+- pig
+- mouse
+translation_risk: high
+translation_risk_reason: The canonical 9/32/59 partition is from four growth plates in 28-day-old rats elongating
+  at 50-400 um/day. Human plates elongate at roughly 40 um/day with a proliferative cycle inferred to be ~20 days
+  rather than ~31 h, and the rat data themselves show the partition shifts substantially (hypertrophy 59% to 44%)
+  across a 8-fold range of growth rate within one animal.
+confidence: C
+key_refs:
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: 'Closed the elongation budget in rat: 9% division, 32% matrix, 59% hypertrophy in proximal tibia;
+    hypertrophy falls to 44% and matrix rises to 49% in the slow proximal radius.'
+- ref_id: hunziker1989
+  pmid: '2607442'
+  first_author: Hunziker EB
+  year: 1989
+  type: primary
+  one_line_finding: Growth acceleration in rat is achieved almost entirely by increased final cell height; net matrix
+    production per cell and longitudinal proliferation rate are unchanged.
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: 'Rat proximal tibia: 4-fold height, 10-fold volume and 3-fold per-cell matrix increase from proliferative
+    to late hypertrophic stage; one cell lost per column every 3 h.'
+- ref_id: breur1991
+  pmid: '2010838'
+  first_author: Breur GJ
+  year: 1991
+  type: primary
+  one_line_finding: Final hypertrophic chondrocyte volume varies linearly with elongation rate (r=0.98 rat, r=0.83
+    pig) with a species-specific slope.
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: Hypertrophic volume increase occurs in three phases; the duration of the IGF-dependent third phase
+    is what differs most between fast and slow plates.
+open_questions:
+- g_l1arch_001
+- g_l1arch_009
+- g_l1arch_010
+contradicts:
+- barreto1994
+last_verified: '2026-08-05'

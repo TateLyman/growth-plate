@@ -1,0 +1,61 @@
+id: hif1a_chondrocyte
+name: HIF1A in chondrocytes
+aliases:
+- hypoxia-inducible factor 1 alpha
+type: protein
+layer: L3
+stub: false
+summary: 'HIF1A is the oxygen-labile subunit of HIF-1, hydroxylated by PHDs and destroyed by the VHL ubiquitin ligase
+  when oxygen is available. Schipani 2001 provided the first evidence that the mammalian growth plate is developmentally
+  hypoxic and, critically, that the hypoxia is in its INTERIOR rather than at its periphery; chondrocyte-restricted
+  Hif1a deletion in mouse kills cells in that interior, lowers the CDK inhibitor p57 and raises BrdU incorporation,
+  i.e. HIF1A enforces both survival and growth arrest. VEGF expression in the plate is only partly HIF1A-dependent:
+  around dying cells VEGF rises HIF1A-independently and drives ectopic angiogenesis (Schipani 2001, mouse). Deleting
+  the negative regulator Vhlh has the reciprocal effect - stabilised HIF1A, dwarfism, reduced proliferation, increased
+  matrix - and the Vhlh;Hif1a double null resembles the Hif1a single null, placing HIF1A downstream (Pfander 2004,
+  mouse). Human evidence is absent: there is no HIF1A staining series or oxygen measurement from human growth plate
+  reported.'
+localization:
+- 'mouse growth plate interior: hypoxic and HIF1A-dependent for survival (schipani2001)'
+- 'human growth plate: unconfirmed - no published HIF1A zonal staining series'
+human_evidence: absent
+human_evidence_note: No human growth plate HIF1A measurement; the human hypoxic-gradient claim is an extrapolation
+  from mouse.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Human growth plates are far thicker than mouse and vascularised differently at the epiphyseal
+  cartilage canal level, so the diffusion geometry that produces the mouse gradient may not scale.
+confidence: C
+key_refs:
+- ref_id: schipani2001
+  pmid: '11691837'
+  first_author: Schipani E
+  year: 2001
+  type: primary
+  one_line_finding: The developing mouse growth plate is hypoxic in its interior; Hif1a-null interior chondrocytes
+    die and lose p57-dependent growth arrest.
+- ref_id: pfander2004
+  pmid: '15128677'
+  first_author: Pfander D
+  year: 2004
+  type: primary
+  one_line_finding: Vhlh deletion stabilises HIF1A and causes dwarfism; the Vhlh;Hif1a double null resembles the Hif1a
+    null.
+- ref_id: yao2020
+  pmid: '32768687'
+  first_author: Yao Q
+  year: 2020
+  type: primary_abstract_only
+  one_line_finding: HIF1A-dependent suppression of mitochondrial oxygen consumption lowers intracellular hypoxia and
+    is required for hypoxic chondrocyte survival.
+open_questions:
+- g_l3rest_011
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  HIF2A is bounded without being deleted: the Vhlh;Hif1a double null resembles the Hif1a single
+  null (pfander2004), which it could not if HIF2A carried a substantial share. schipani2001
+  additionally shows VEGF induction around dying cells is HIF1A-INDEPENDENT, so VEGF is not
+  over-attributed.

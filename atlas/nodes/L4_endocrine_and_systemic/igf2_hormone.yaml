@@ -1,0 +1,48 @@
+id: igf2_hormone
+name: IGF-2
+aliases:
+- IGF2
+- insulin-like growth factor 2
+type: hormone
+layer: L4
+stub: false
+summary: 'IGF-2 is a paternally expressed imprinted growth factor that dominates fetal growth and is the
+  most abundant IGF in adult human serum (roughly 3-5 fold higher than IGF-1 by mass), unlike in mouse
+  where Igf2 is largely silenced postnatally - a species difference that undermines direct transfer of
+  mouse IGF-2 data to humans. It signals through IGF1R and the insulin receptor A isoform; IGF2R (cation-independent
+  mannose-6-phosphate receptor) is a clearance receptor. Human dosage disorders make the growth role unambiguous:
+  loss of IGF2 expression at 11p15 (or maternal uniparental disomy 7 / ICR1 hypomethylation) produces
+  Silver-Russell syndrome with severe pre- and postnatal growth restriction, and IGF2 gain of dosage produces
+  Beckwith-Wiedemann overgrowth. In PAPP-A2 deficiency circulating IGF-2 is elevated alongside IGF-1 because
+  both are trapped in ternary complexes (dauber2016), which shows that IGF-2 shares the same bioavailability
+  control layer.'
+quantitative:
+- parameter: serum total IGF-2 in PAPP-A2-deficient children
+  value: 759-1264
+  unit: ug/L
+  conditions: affected children of two families; laboratory Tanner I reference 495-911 ug/L
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values, n=9 subjects reported
+localization:
+- 'human SYS: circulating, largely ternary-complex bound'
+- 'human growth plate: IGF-2 protein not quantified by zone'
+human_evidence: direct
+human_evidence_note: Human imprinting disorders at 11p15 (Silver-Russell, Beckwith-Wiedemann) provide
+  bidirectional dosage evidence that IGF2 sets human body size.
+species_basis:
+- human
+- mouse
+translation_risk: high
+translation_risk_reason: Postnatal IGF-2 expression differs qualitatively between human (high) and mouse
+  (largely silenced), so mouse Igf2 data cannot be read as human postnatal biology.
+confidence: B
+key_refs:
+- ref_id: dauber2016
+  first_author: Dauber A
+  year: 2016
+  type: primary
+  one_line_finding: Circulating IGF-2 as well as IGF-1 is elevated in PAPP-A2 deficiency, showing shared
+    ternary-complex control.
+  pmid: '26902202'
+last_verified: '2026-08-05'

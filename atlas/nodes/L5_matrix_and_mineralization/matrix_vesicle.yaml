@@ -1,0 +1,86 @@
+id: matrix_vesicle
+name: Matrix vesicle
+aliases:
+- MV
+- extracellular matrix vesicle
+type: tissue_structure
+layer: L5
+stub: false
+summary: 'Matrix vesicles are 30-200 nm membrane-bounded structures budded from the plasma membrane of
+  hypertrophic chondrocytes into the longitudinal septa of the lower hypertrophic zone, and they are where
+  the first apatite crystal in the growth plate forms. They are functionally defined by their cargo: PHOSPHO1
+  inside, generating Pi from phosphocholine and phosphoethanolamine; TNAP and NPP1 GPI-anchored or bound
+  on the outer leaflet; PiT-1 phosphate transporters to import extravesicularly generated Pi; annexins
+  and ion channels to admit Ca; and a nucleational core of calcium-acidic-phospholipid-phosphate complexes
+  on the inner leaflet. Mineralization is therefore a two-stage process with genetically separable steps.
+  Stage one is intravesicular crystal initiation, which requires PHOSPHO1 and Pi influx and which still
+  occurs normally in Alpl-/- mice. Stage two is rupture of the vesicle membrane and propagation of mineral
+  onto the collagen scaffold, which requires TNAP to hold extravesicular PPi low and which is exactly
+  the step that fails in Alpl-/- growth plate by high-resolution TEM. This is why Phospho1/Alpl double
+  nulls have no skeletal mineral at all while each single null retains some. NPP1 localises to matrix
+  vesicles but ANK does not, which explains why ANK deficiency cannot rescue the Alpl-/- phenotype even
+  though it lowers systemic PPi.'
+quantitative:
+- parameter: Skeletal mineral in Phospho1-/-;Alpl-/- double null mice
+  value: '0'
+  unit: detectable mineral
+  conditions: perinatal lethal double null
+  species: mouse
+  source_ref: yadav2011
+  uncertainty: complete absence as described
+- parameter: Site of mineral initiation failure in Alpl-/- growth plate
+  value: extravesicular
+  unit: qualitative localisation by high-resolution TEM
+  conditions: 10-day-old TNAP knockout mouse tibial growth plate
+  species: mouse
+  source_ref: anderson2004
+  uncertainty: intravesicular crystals present and normal
+localization:
+- 'mouse/chick/rat lower HZ longitudinal septa: matrix vesicles concentrated here (wuthier1992, anderson2004)'
+- 'human growth plate matrix vesicles: not quantified in this sweep'
+human_evidence: indirect
+human_evidence_note: Matrix vesicle biology is animal and in vitro; the human link is that hypophosphatasia
+  shows the same failure of perivesicular mineral propagation described in Alpl-/- mice.
+species_basis:
+- mouse
+- chicken
+- rat
+translation_risk: moderate
+translation_risk_reason: The genetic dissection is entirely murine, but the human hypophosphatasia histology
+  is consistent with the same two-stage model.
+confidence: B
+key_refs:
+- ref_id: wuthier1992
+  pmid: '1377071'
+  first_author: Wuthier RE
+  year: 1992
+  type: primary_abstract_only
+  one_line_finding: Growth plate matrix vesicles contain ion channels and a nucleational core of calcium-acidic
+    phospholipid-phosphate complexes
+- ref_id: anderson2004
+  pmid: '14982838'
+  first_author: Anderson HC
+  year: 2004
+  type: primary
+  one_line_finding: In Alpl-/- growth plate mineral initiates inside matrix vesicles but fails to propagate
+    beyond the vesicle membrane
+- ref_id: yadav2011
+  pmid: '20684022'
+  first_author: Yadav MC
+  year: 2011
+  type: primary
+  one_line_finding: PHOSPHO1 supplies intravesicular Pi and TNAP the extravesicular PPi hydrolysis; double
+    ablation abolishes skeletal mineralization
+- ref_id: roberts2007
+  pmid: '17227223'
+  first_author: Roberts S
+  year: 2007
+  type: primary
+  one_line_finding: PHOSPHO1 resides in matrix vesicles and is required for matrix-vesicle-mediated mineralization
+- ref_id: harmey2004
+  pmid: '15039209'
+  first_author: Harmey D
+  year: 2004
+  type: primary
+  one_line_finding: TNAP, NPP1 and ANK coordinately set extracellular PPi and osteopontin levels
+last_verified: '2026-08-05'

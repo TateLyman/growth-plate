@@ -1,0 +1,93 @@
+id: alpha1_acid_glycoprotein
+name: Alpha-1-acid glycoprotein (orosomucoid, ORM1/ORM2)
+aliases:
+- AGP
+- orosomucoid
+- ORM1
+type: protein
+layer: L4
+stub: false
+summary: 'A hepatic acute-phase plasma glycoprotein that carries basic and neutral lipophilic drugs. It
+  is in this atlas for one reason: it is the single molecule that sits on both sides of the growth stack
+  at once, and the two literatures that measure it have never been read against each other. On the endocrine
+  side, in a cross-sectional cohort of 740 children, C-reactive protein and AGP were the strongest negative
+  correlates of IGF-1 - stronger than the nutritional markers (madigan2026). On the pharmacology side,
+  erdafitinib is 99.7% plasma-bound and binds preferentially to AGP, with a mean unbound fraction of 0.51%
+  in healthy subjects against 0.32% in cancer patients (fda_balversa_review_2019). Because only unbound
+  drug can diffuse into avascular cartilage, an inflammatory episode raises AGP and thereby lowers BOTH
+  the growth signal and the free concentration of the agent intended to protect it. Neither field would
+  surface that interaction: paediatric nutrition treats AGP as an inflammation marker to adjust micronutrient
+  cutoffs, and oncology clinical pharmacology treats it as a covariate on volume of distribution. THE
+  CONSEQUENCE THAT MATTERS FOR DOSING. The applicant population model found that a 50% fall in AGP raises
+  total clearance by 50% and volume by 38.8% but leaves FREE clearance unchanged. Free exposure therefore
+  translates from the oncology population to a healthy adolescent on a milligram basis, while a total-concentration
+  assay in that adolescent reads about 44-48% lower and would be misread as underdosing. AGP concentration
+  has never been measured in healthy adolescents for this purpose (g_l12_agp_free_fraction_in_adolescents).'
+quantitative:
+- parameter: erdafitinib fraction bound to plasma protein, preferentially AGP
+  value: '99.7'
+  unit: '%'
+  conditions: patients, FDA prescribing information
+  species: human
+  source_ref: fda_balversa_label_2025
+  uncertainty: none stated
+- parameter: erdafitinib unbound fraction, healthy versus cancer
+  value: 0.51 versus 0.32
+  unit: '%'
+  conditions: FDA multidisciplinary review; CV 39.4% and 64.0% respectively
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: 1.6-fold ratio; the difference is attributed by the applicant to AGP concentration
+- parameter: effect of a 50% fall in AGP on erdafitinib FREE clearance
+  value: '0'
+  unit: percent change
+  conditions: applicant population PK model; the same fall raises total CL/F by 50% and V2tot/F by 38.8%
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: model estimate rather than a measurement
+localization:
+- 'plasma: hepatic acute-phase protein, not expressed in the growth plate'
+- 'growth plate: absent; AGP acts on this system entirely by controlling what reaches the plate'
+human_evidence: direct
+human_evidence_note: Both legs are human - a paediatric field cohort with measured CRP, AGP and IGF-1,
+  and human clinical pharmacology from a regulatory dossier.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Both supporting datasets are human; no animal extrapolation is involved. The
+  untested step is the adolescent population, not the species.
+confidence: B
+claim_grades:
+- claim: AGP is among the strongest negative correlates of circulating IGF-1 in children.
+  grade: B
+  basis: One large cross-sectional human cohort (n=740) with measured CRP, AGP, IGF-1 and malaria testing;
+    cross-sectional and therefore correlational.
+- claim: AGP sets the unbound fraction of erdafitinib, and free clearance is invariant to AGP so free
+    exposure translates across populations on a milligram basis.
+  grade: B
+  basis: Human clinical pharmacology in a regulatory dossier including a population model; the invariance
+    is a model output, and no healthy adolescent has been dosed.
+- claim: An inflammatory episode therefore reduces growth signal and free drug simultaneously through
+    one protein.
+  grade: E
+  basis: Inference from the two claims above. No study has measured both endpoints in the same subjects,
+    and the direction of net effect on growth has never been tested.
+key_refs:
+- ref_id: madigan2026
+  first_author: Madigan
+  year: 2026
+  type: primary
+  one_line_finding: In 740 children, CRP and AGP were the strongest negative correlates of IGF-1.
+- ref_id: fda_balversa_review_2019
+  year: 2019
+  type: regulatory
+  one_line_finding: Erdafitinib binds preferentially to AGP; unbound fraction 0.51% healthy versus 0.32%
+    cancer; free clearance invariant to a 50% AGP change.
+- ref_id: fda_balversa_label_2025
+  year: 2025
+  type: regulatory
+  one_line_finding: Erdafitinib protein binding 99.7%, primarily to alpha-1-acid glycoprotein.
+open_questions:
+- g_l12_agp_free_fraction_in_adolescents
+contradicts: []
+last_verified: '2026-08-07'

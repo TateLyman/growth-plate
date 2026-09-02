@@ -1,0 +1,96 @@
+id: mineralization_front
+name: Mineralization front / zone of provisional calcification
+aliases:
+- ZPC
+- zone of provisional calcification
+- chondro-osseous junction mineral front
+type: tissue_structure
+layer: L5
+stub: false
+summary: 'The mineralization front is the sharp boundary in the lower hypertrophic zone where the longitudinal
+  septa between chondrocyte columns become mineralized while the transverse septa do not, converting cartilage
+  into the scaffold that osteoblasts subsequently coat. Human data now show that the growth plate is mineralization-polarised,
+  not merely mineralization-terminated: the growth plate-epiphysis interface shows a sharp step in tissue
+  modulus and is an active mineralization INHIBITION zone enriched in SPP1 (osteopontin) and AHSG (fetuin-A),
+  whereas the growth plate-metaphysis interface shows a gradual modulus rise and is a mineralization PROMOTION
+  zone enriched in ENPP1 and ALPL alongside the same inhibitors. Both boundaries therefore carry inhibitors;
+  what differs is whether TNAP and ENPP1 are present to override them. The same polarity has been reproduced
+  ex vivo in bovine osteochondral explants, where the superficial cartilage layer actively suppresses
+  calcification of the deep layer while expressing higher FGF18, PTHLH and MGP, and the deep layer expresses
+  ALPL, COL10A1 and IHH. Compositionally the front is marked by loss of matrix sulphur, a proxy for sulphated
+  proteoglycan, from about 3.5% to 0.3% of dry mass on mineralization in pig growth plate.'
+quantitative:
+- parameter: Tissue modulus step across the human GP-epiphysis interface
+  value: 130.70 -> 11920
+  unit: MPa (RZ cartilage -> epiphyseal bone)
+  conditions: AFM, sharp tip, 150 um hydrated cryosections, human phalangeal and tibial growth plates
+  species: human
+  source_ref: xie2025
+  uncertainty: SD 36.56 MPa and 6.60 GPa respectively; n=3 per interface, 4 areas each, 10 donors
+- parameter: Tissue modulus step across the human GP-metaphysis interface
+  value: 416.20 -> 3220
+  unit: MPa (HZ cartilage -> metaphyseal bone)
+  conditions: same method and donors
+  species: human
+  source_ref: xie2025
+  uncertainty: SD 107.18 MPa and 1.53 GPa respectively
+- parameter: Extracellular sulphur (sulphated proteoglycan proxy) across the mineralization front
+  value: 3.5 -> 0.3
+  unit: '% dry mass'
+  conditions: electron microprobe, porcine growth plate, unmineralized zones vs fully mineralized region
+  species: porcine
+  source_ref: althoff1982
+  uncertainty: authors caution that dry-mass normalisation exaggerates the fall
+localization:
+- 'human GP-metaphysis interface: mineralization promotion zone, ENPP1 and ALPL present (xie2025)'
+- 'human GP-epiphysis interface: mineralization inhibition zone, SPP1 and AHSG enriched (xie2025)'
+- 'bovine osteochondral explants: superficial layer suppresses deep-layer calcification (xu2026)'
+human_evidence: direct
+human_evidence_note: Modulus, elemental and spatial proteomic mapping of both growth plate-bone interfaces
+  has been performed on human paediatric growth plate tissue.
+species_basis:
+- human
+- porcine
+- bovine
+translation_risk: low
+translation_risk_reason: The defining observations are human; animal data are corroborative.
+confidence: B
+key_refs:
+- ref_id: xie2025
+  pmid: '40781081'
+  first_author: Xie C
+  year: 2025
+  type: primary
+  one_line_finding: 'Human growth plate: sharp modulus step at the epiphyseal boundary with SPP1/AHSG
+    inhibitors, gradual rise at the metaphyseal boundary with ENPP1/ALPL, and ACP-to-apatite transformation
+    at the front'
+- ref_id: althoff1982
+  pmid: '7107329'
+  first_author: Althoff J
+  year: 1982
+  type: primary
+  one_line_finding: 'Porcine growth plate microprobe: extracellular Ca constant ~0.7% dry mass across
+    zones, rising to 1% at first mineralization foci; sulphur falls from 3.5% to 0.3% on mineralization'
+- ref_id: xu2026
+  pmid: '41624248'
+  first_author: Xu J
+  year: 2026
+  type: primary
+  one_line_finding: In bovine osteochondral explants the superficial layer inhibits deep-layer calcification
+    while expressing more FGF18, PTHLH and MGP
+- ref_id: boskey1993
+  pmid: '8251766'
+  first_author: Boskey AL
+  year: 1993
+  type: primary_abstract_only
+  one_line_finding: Osteopontin inhibits hydroxyapatite formation and growth in a gelatin gel in vitro
+- ref_id: luo1997
+  pmid: '9052783'
+  first_author: Luo G
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: Mgp-/- mice calcify their growth plate cartilage and arteries and die within two months,
+    with short stature and osteopenia
+open_questions:
+- g_l5matrix_004
+last_verified: '2026-08-05'

@@ -1,0 +1,372 @@
+id: every_axis_checked_against_the_stack
+name: Every axis in the height equation, checked one at a time against the four-drug stack - what is hit, what is not, and what compound hits the rest
+aliases:
+- the coverage audit
+- is the lever maxed
+- unhit axes and their compounds
+type: hypothesis
+layer: L12
+stub: false
+summary: 'THE QUESTION IS WHETHER THE STACK - erdafitinib, growth hormone, anastrozole, cilostazol - IS
+  THE WHOLE LEVER OR PART OF IT, AND THE ANSWER IS PART. This node is a coverage audit, not a new finding.
+  It takes the height equation term by term, enumerates every input the atlas holds for each term, and
+  marks each input HIT, PARTIAL or UNHIT. THE DECOMPOSITION USED, which is the atlas own and is stated so
+  the audit can be checked rather than trusted: adult height is the integral of growth rate over time
+  until fusion, summed across sites, plus non-endochondral height, gated by delivery. Growth rate at a
+  plate factorises as POOL x AMPLIFICATION x h_term, where amplification is terminal cells produced per
+  progenitor spent and h_term is the height of each terminal cell. THE HEADLINE RESULT OF THE AUDIT.
+  Of eight terms the stack hits three well (amplification via FGFR3, duration via oestrogen, delivery),
+  hits one weakly (h_term via cilostazol, on one mouse study - CORRECTED ROUND 101, SEE CORR-098: cilostazol
+  does NOT reach h_term, so that term is EMPTY), and does not touch four: POOL, SITE,
+  NON-ENDOCHONDRAL, and the ABSORPTIVE term - the tissue that has to carry the growth. Within the terms
+  it does hit, three named control points are unoccupied and each has a specific molecule attached.
+  ROUND 89 ADDS A TERM-4 ENTRY THAT OUTRANKS EVERYTHING PREVIOUSLY LISTED THERE: gp130/STAT3, where
+  POSTNATAL CHONDROCYTE-SPECIFIC deletion costs proliferation AND closes the plate (liu2022gp130) - the
+  only axis found that moves the pool term and the duration term together, with a small molecule that
+  exists and whose direction is contested. See gp130_stat3_controls_pool_and_fusion.
+  THE FOUR STRONGEST UNHIT ITEMS, IN ORDER OF EVIDENCE PER UNIT OF NOVELTY. (1) PP2A INHIBITION AT THE
+  FGFR3-NPR2 NODE. shuhaibar2017 showed FGF lowers growth plate cGMP by dephosphorylating NPR2 through a
+  PPP-family phosphatase; shuhaibar2021 then showed LB-100 plus a CNP analogue raised mean hypertrophic
+  cell area 32 per cent over the CNP analogue alone with 16 per cent more elongation. CORRECTED ROUND 89 ON THE FULL TEXT (CORR-083): the combination is
+  ADDITIVE, NOT SUPRA-ADDITIVE - BMN-111 alone 1.78x vehicle, LB-100 alone 1.30x, combined 2.06x, against
+  an additive prediction of 2.08 and a multiplicative one of 2.31. It is still the only place in this
+  audit where a combination beat its own monotherapy on a length endpoint, and LB-100 ALONE at 1.30x is
+  the number that matters for a stack containing an FGFR inhibitor rather than a CNP analogue. But it is
+  E16.5 FETAL femur in 6-day organ culture in an Fgfr3 mutant, and LB-100 stated mechanism -
+  counteracting FGF-INDUCED NPR2 dephosphorylation - may be largely redundant with an FGFR inhibitor that
+  has already removed the FGF signal. (2) THE HEDGEHOG
+  POOL AXIS. trompet2024 is the only pool intervention with a LENGTH endpoint: intra-articular SAG gave
+  +3.63 per cent femur and +1.65 per cent whole leg in rat. Small, but it is the only arm that adds a
+  progenitor rather than redistributing a fixed budget - and herrmann2002 proves the budget, not fusion,
+  is what finally stops growth. (3) THE ABSORPTIVE TERM. rauch2004: peak LEAN MASS velocity, not peak
+  height velocity, predicts peak bone mineral content velocity, explaining 50 to 61 per cent of variance
+  and LEADING it by 0.36 years. Every drug in the stack drives length; nothing drives lean mass; the one
+  catastrophic human outcome on this axis was spinal. (4) THE MECHANICAL TERM, WHICH IS FREE. Axial load
+  restrains elongation through mTOR (caetanosilva2021), the remaining reserve at bone age 16 is spinal
+  (costa2021), and the spine is the most loaded compartment. WHAT THE AUDIT ALSO SAYS, AND IT IS THE
+  UNCOMFORTABLE HALF: the ceiling on this entire pharmacological class is bracketed by two men at 197 and
+  204 cm who had ZERO lifetime oestrogen signal - one of whom stopped growing at 24 with plates still
+  anatomically open. Adding axes inside the plate rearranges a budget that a human natural experiment has
+  already shown to be finite. The only intervention held here that is not inside that budget is
+  distraction osteogenesis, which works after fusion and is limited by consolidation and morbidity rather
+  than by biology.'
+quantitative:
+- parameter: 'TERM 1 - DURATION (time until fusion). Hit, and its ceiling is measured'
+  value: 'HIT by anastrozole. UNHIT input on the same term: proliferative exhaustion, for which nothing
+    exists. CEILING: 197-204 cm'
+  unit: cm, and hit/unhit by input
+  conditions: 'INPUTS ENUMERATED. Oestradiol-ESR1 - HIT (anastrozole; smith1994 ESR1-null 204 cm with
+    unfused epiphyses at 28). Aromatase - HIT, same agent. Androgen/AR - NOT A FUSION INPUT, dissociated
+    by smith1994 where masculinisation was intact and plates stayed open. Upstream pubertal timing
+    (kisspeptin, MKRN3, LIN28B, leptin) - COVERED DOWNSTREAM, anastrozole acts at the ligand. Thyroid T3 -
+    UNHIT and relevant only as a floor; T3 drives chondrocytes out of proliferation into hypertrophy, so
+    supraphysiological T3 costs duration. Glucocorticoid - not present, and would subtract. PROLIFERATIVE
+    EXHAUSTION - UNHIT, NO AGENT EXISTS IN ANY SPECIES.'
+  species: human
+  source_ref: herrmann2002
+  uncertainty: 'THE DURATION TERM IS THE BEST-EVIDENCED AND THE MOST NEARLY EXHAUSTED. herrmann2002 is the
+    experiment nobody would be allowed to run: lifetime aromatase deficiency, plates left open into the
+    late twenties, and GROWTH STOPPED ANYWAY AT 24, at about 197 cm, with a hand radiograph three years
+    later still showing open epiphyses. Removing every oestrogen brake does not remove the ceiling. So
+    additional duration agents - a more complete aromatase blockade, an ESR antagonist - are predicted to
+    buy little, and the atlas already has the confirming null: letrozole gave lower oestradiol and slower
+    bone age advance than anastrozole and produced NO predicted-height advantage, the combined 3-year gain
+    being +1.3 cm. CAVEATS: n=1 for spontaneous cessation, the cessation age is a history statement rather
+    than a measurement series, and every other oestrogen-null man is right-censored because clinicians
+    close them on diagnosis. The ceiling is bracketed, not measured.'
+- parameter: 'TERM 2 - AMPLIFICATION (terminal cells per progenitor). Carries 86 per cent of natural
+    variation. Hit at one control point of at least six'
+  value: 86 per cent
+  unit: share of the tenfold mouse metacarpal-versus-femur yield gap carried by amplification rather than
+    terminal cell size
+  conditions: 'INPUTS ENUMERATED. FGFR3-MAPK/ERK - HIT (erdafitinib). FGFR4 - HIT incidentally,
+    chondrocyte-exclusive and inhibition predicted pro-growth, erdafitinib IC50 5.7 nM. FGFR1 - HIT IN THE
+    WRONG DIRECTION AND MORE POTENTLY THAN THE TARGET: erdafitinib IC50 1.20 nM against FGFR3 3.00 nM, and
+    FGFR1 is the most widely detected FGFR in human growth plate by this atlas own GSE288028 re-analysis
+    at 23-43 per cent of cells in four of four donors, with chondrocyte-specific deletion SHORTENING
+    tibiae (karolak2015). PTHrP-PTH1R/Ihh feedback, the master proliferation-versus-differentiation clock
+    - UNHIT. Ihh-Gli proliferative capacity - UNHIT. GH-IGF1-PI3K/AKT - HIT (GH) but weakly justified;
+    lui2018 reports long-bone chondrocytes already at ceiling for IGF and BMP, and erdaseries2025 patient
+    2 grew at 10 cm/year with IGF-1 at -3.8 SDS and no GH. IGF BIOAVAILABILITY (PAPP-A2, STC2, IGFBP-3/5,
+    ALS) - UNHIT, and human-genetics-anchored on both sides. SOCS2 - UNHIT. Wnt/beta-catenin - UNHIT and
+    dose-dependent with opposite phenotypes at the extremes. mTORC1 division-mode control - UNHIT and the
+    needed direction is ACTIVATION, which no approved drug provides. HDAC4/SIK3/MEF2C differentiation
+    timing - UNHIT.'
+  species: mouse
+  source_ref: lui2018
+  uncertainty: 'THE 86 PER CENT IS THIS ATLAS OWN RE-ANALYSIS OF lui2018 PER-ANIMAL VALUES AND IS GRADED
+    AS A RE-ANALYSIS, NOT AS THE AUTHORS RESULT. It says amplification is what NATURE varies between a
+    bone that fuses early and one that does not - which is a statement about the source of variation, NOT
+    a statement that amplification is the most movable term pharmacologically. Those are different claims
+    and the atlas has conflated them before. THE HONEST READING OF THE ENUMERATION: the stack occupies one
+    control point on this term and possibly damages a second. The unhit entries are not equivalent - PTHrP
+    and Ihh are the strongest by mechanism and the weakest by druggability, IGF bioavailability is the
+    best-anchored in human genetics, and mTORC1 points the wrong way for every marketed agent.'
+- parameter: 'TERM 3 - h_term (terminal hypertrophic cell height). Enters linearly with elasticity 1,
+    is flat across human childhood, and is the term with a demonstrated supra-additive combination'
+  value: '+32 per cent hypertrophic cell area and +16 per cent elongation over CNP-analogue monotherapy'
+  unit: per cent over monotherapy
+  conditions: 'shuhaibar2021, E16.5 Fgfr3-Y367C/+ mouse femur culture for 6 days: LB-100, a PP2A
+    inhibitor, added to BMN-111 raised mean hypertrophic cell area 32 per cent over BMN-111 alone to near
+    wild-type, with bone elongation 16 per cent greater and bone-and-cartilage area 27 per cent greater.
+    The mechanistic basis is shuhaibar2017 - FGF lowers growth plate cGMP by NPR2 DEPHOSPHORYLATION, and
+    the phosphatase is a PPP-family enzyme. INPUTS ENUMERATED. CNP-NPR2-PKG - HIT if vosoritide is
+    included, but it duplicates erdafitinib at the RAF-1 step. PDE3 - HIT (cilostazol), on one mouse study
+    which measured plate length and matrix area, NOT h_term. PP2A/NPR2 phosphorylation state - UNHIT.
+    Osmotic swelling, which is the LARGEST component of the enlargement - phase 2 takes the cell from
+    about 2000 to 8000 femtolitres while dry mass density falls to about 0.07 pg/fl, roughly 60 per cent
+    dilution - UNHIT, no agent, no aquaporin or proteoglycan lever held. T3-driven hypertrophic
+    conversion - UNHIT. UPDATED ROUND 104: THE PHRASE "no aquaporin or proteoglycan lever held" WAS
+    ACCURATE ABOUT THIS ATLAS AND WRONG ABOUT THE LITERATURE. The transport machinery of the swelling is
+    identified and quantified - bush2010 removed about 35 per cent of rat metatarsal elongation with a
+    single NKCC inhibitor while hypertrophic CELL NUMBER stayed at 193 against 192, and reached 80 per
+    cent with an anion-exchange inhibitor added; abubakar2022 replicates the direction with NHE1. The
+    atlas held 1230 references and none of them. THE CORRECTED STATUS OF THIS SUB-TERM IS NOT "UNHIT" BUT
+    "ONLY EVER SWITCHED OFF": every experiment on it in every species is an inhibitor, because the
+    clinical demand on this machinery has always been to REDUCE swelling. See
+    the_swelling_machinery_has_only_ever_been_switched_off.'
+  species: mouse
+  source_ref: shuhaibar2021
+  uncertainty: 'THIS IS THE MOST ACTIONABLE UNHIT ITEM IN THE AUDIT AND ALSO THE ONE MOST LIKELY TO BE
+    OVERSOLD, SO THE LIMITS COME FIRST. It is EX VIVO EMBRYONIC MOUSE FEMUR CULTURE FOR SIX DAYS, in an
+    Fgfr3 GAIN-OF-FUNCTION background, with LB-100 added to a CNP ANALOGUE and not to an FGFR inhibitor -
+    which is the combination the stack would actually need, and it has not been run. LB-100 is a
+    clinical-stage oncology PP2A inhibitor, PP2A is a tumour suppressor, and no bone length endpoint in a
+    live animal is held here for it. WHAT MAKES IT WORTH NAMING ANYWAY: it is the only entry in this
+    entire audit where two agents were combined and the combination BEAT the better single agent on a
+    length endpoint, and it acts on h_term, which the atlas argues is large, movable, several-fold
+    variable across mammals, held flat across human childhood, and achieved largely by taking on water -
+    i.e. it buys micrometres without spending the pool that fusion is waiting on. THE OBVIOUS OBJECTION
+    IS THE RIGHT ONE: an invariant parameter may be invariant because nothing varies it, or because
+    something DEFENDS it. This audit asserts the first and cannot exclude the second.'
+- parameter: 'TERM 4 - POOL (resting-zone progenitors). Completely unhit, and it is the only term that
+    moves the ceiling rather than redistributing within it'
+  value: +3.63 per cent femur, +1.65 per cent whole leg
+  unit: per cent over contralateral/vehicle at 6 months
+  conditions: 'trompet2024, intra-articular SAG beads in rat, the ONLY pool intervention in the atlas with
+    a bone LENGTH endpoint. INPUTS ENUMERATED. Hedgehog/SMO agonism - UNHIT; newton2019 and cheng2025 put
+    Hedgehog on proliferative capacity, and SAG SUPPRESSED stem-cell activity given early postnatally but
+    ENHANCED it given LATER, which is the favourable age direction for this case. mTORC1 control of
+    division MODE - UNHIT; Tsc1 ablation shifts toward symmetric division and expands colony-forming
+    gpSSCs with NO change in proliferation rate, but the needed direction is mTORC1 activation. External
+    Gli1+/Pdgfra+ reservoir recruitment via p21-style cell-cycle arrest (qu2025) - UNHIT.'
+  species: rat
+  source_ref: trompet2024
+  uncertainty: 'THE STRATEGIC ARGUMENT FOR THIS TERM IS THE STRONGEST IN THE AUDIT AND THE PHARMACOLOGY IS
+    THE WEAKEST. herrmann2002 shows that with every brake removed growth still stops, so yield levers and
+    duration levers are both rearranging a fixed budget and only the pool term adds to it. Against that:
+    every result in the term except trompet2024 is a marker-defined population rather than a bone, the
+    length effect that does exist is 1.65 per cent of leg, ALL THREE CONTROL POINTS ARE TUMOUR-SUPPRESSOR
+    ADJACENT (SMO, mTORC1, the PDGFRA-positive perichondrium), and newton2019 places the founding of the
+    self-renewing pool at secondary ossification centre formation - a moment a bone-age-16 subject passed
+    years ago. The one encouraging detail is that the age direction runs the RIGHT way for late starts:
+    genetic Ptch1 deletion expands clones age-independently and systemic SAG worked better later.'
+- parameter: 'TERM 5 - SITE. Unhit, and no agent in existence selects a site'
+  value: spine 4-6 years behind the hand at bone age 16
+  unit: years of skeletal maturity
+  conditions: costa2021, thoracolumbar ring apophysis at stage 1 of 4 in 15-year-old males against a
+    near-mature hand-wrist reading; sun2025, 227 adolescents, knee MRI bone age correlated BETTER with
+    chronological age (rs 0.816) than hand-wrist did (rs 0.763), so the hand is the least representative
+    site to be reading
+  species: human
+  source_ref: costa2021
+  uncertainty: 'UPDATED ROUND 110 - THERE IS NOW ONE SITE-SELECTIVE LEVER, AND IT IS NOT A COMPOUND.
+    Local limb warming raises growth-plate solute entry (10 kDa tracer up about 150 per cent from 22 to 34
+    degrees C) and lengthens the treated side about 1-1.5 per cent with the contralateral limb as control,
+    persisting to skeletal maturity. It is site-selective BY CONSTRUCTION because it can only reach a
+    superficial compartment that is normally cool - and serrat2015 supplies the internal proof, since the
+    warmer humerus did not respond in four independent trials while the ipsilateral femur and tibia did.
+    That runs the RIGHT WAY for this case: it adds limb length without adding spinal drive, which is the
+    failure mode this entry was written to describe. The human knee sits 3-4 degrees below core, so the
+    compartment with thermal headroom is the same one with growth reserve. AGAINST IT: every length result
+    is post-weaning mouse, serrat2013 shows temperature sensitivity is confined to the rapid-growth phase,
+    and no human has been warmed with any skeletal endpoint. See
+    local_limb_warming_is_a_free_delivery_and_growth_lever.
+    THE REST OF THIS ENTRY STANDS. THIS IS AN IDENTIFIED, QUANTIFIED, ALMOST UNTOUCHED TERM AND THERE IS
+    NO COMPOUND TO NAME. Every systemic agent drives every open endochondral plate at once, in proportion to what each
+    has left - which at bone age 16 means the output is routed preferentially into the vertebral column,
+    the compartment with the most reserve and the least capacity to absorb it. THAT IS NOT A SIDE EFFECT
+    OF THE SITE TERM, IT IS THE SITE TERM: the tissue with the most to gain is the tissue that failed in
+    erdachild2024. Local delivery is the only route that would separate them and nothing held here does
+    it for the spine; trompet2024 is intra-articular into a knee.'
+- parameter: 'TERM 6 - NON-ENDOCHONDRAL and MECHANICAL. Unhit, free, and one part of it is an order of
+    magnitude larger than every drug in the audit'
+  value: 6.08 per cent ulnar elongation from unloading; several centimetres per segment from distraction
+  unit: per cent, and centimetres
+  conditions: 'caetanosilva2021, murine embryonic metatarsals under quasi-static hydrogel load: SIGNIFICANT
+    concentration-dependent RESTRICTION of longitudinal growth over 14 days with retained viability, and
+    the restriction was REVERSED by mTOR compounds which had NO effect unloaded. eom2026, one dog with a
+    non-weight-bearing forelimb: 6.08 per cent ulnar elongation against its own contralateral side.
+    giorgino2025: adult aesthetic limb lengthening routinely achieves several centimetres per segment and
+    requires no growth plate at all. Diurnal stature variation held by this atlas: sitting height falls
+    2.0-2.8 mm across a day under load.'
+  species: multiple
+  source_ref: caetanosilva2021
+  uncertainty: 'TWO SEPARATE THINGS ARE BUNDLED HERE AND THEY DESERVE DIFFERENT VERDICTS. THE UNLOADING
+    LEVER IS FREE, REVERSIBLE AND MEASURABLE and the prescription that falls out is specific - LOAD THE
+    LIMBS AND UNLOAD THE SPINE, because loading drives lean mass and therefore mineral where the limbs
+    need it, while the spine is where the remaining growth is and load is what restrains elongation. But
+    the evidence is embryonic mouse metatarsals in a dish under a hydrogel, quasi-static rather than
+    intermittent, plus ONE DOG confounded by pathology whose own authors call the overgrowth paradoxical.
+    It is a pointer, not a protocol. DISTRACTION IS A DIFFERENT CATEGORY ENTIRELY: it is the only
+    intervention held here that adds large human height, it works AFTER fusion so it is not inside the
+    fixed budget herrmann2002 defines, and its limit is consolidation time and morbidity rather than
+    biology - a referral series reports 23 per cent hardware failure and 45 per cent mal- or nonunion,
+    though that series is SELECTED for complications and is not an incidence estimate.'
+- parameter: 'TERM 7 - DELIVERY. Adequately hit for the small molecules and partly missed for the peptide'
+  value: fluorescein about 100 per cent, 3 kDa 60 per cent, 10 kDa 10 per cent, 40 kDa zero
+  unit: partition into growth plate matrix, per cent
+  conditions: erdafitinib 447 Da and cilostazol 369.5 Da both sit on the plateau of the partition curve;
+    vosoritide at about 4 kDa is partway down the slope; GH at 22 kDa is essentially excluded from the
+    matrix and acts through hepatic and local IGF-1 rather than by entering. Erdafitinib is 99.7 per cent
+    AGP-bound with free fraction 0.51 per cent in health against 0.32 per cent in cancer, and free
+    clearance is invariant to AGP
+  species: not_applicable
+  source_ref: fda_balversa_review_2019
+  uncertainty: 'THE GATE IS OPEN FOR THE TWO ORAL AGENTS AND THAT IS THE MAIN THING THE TERM NEEDED TO
+    SAY. The residual issue is that free plasma concentration is not intracellular kinase-site
+    concentration in cartilage, and NO OCCUPANCY MEASUREMENT IN CARTILAGE EXISTS FOR ANY AGENT IN THIS
+    AUDIT - which is why no two of these drugs can be placed on a common exposure axis and why the phrase
+    "full blockade" has no definition here.'
+- parameter: 'TERM 8 - THE ABSORPTIVE TERM. Unhit, and it is where the one catastrophic human outcome came
+    from'
+  value: 50 to 61 per cent of variance, leading by 0.36 years
+  unit: per cent of variance in peak bone mineral content velocity; years of lead
+  conditions: 'rauch2004, 70 boys and 68 girls followed longitudinally by DXA through puberty - peak LEAN
+    MASS velocity, but NOT peak height velocity and not sex, was independently associated with peak bone
+    mineral content velocity, explaining 50 per cent of variance for total body, 61 per cent for arms and
+    41 per cent for legs, with peak lean mass velocity LEADING peak BMC velocity by 0.36 years. ROUND 104
+    ADDS A SECOND SUBSTRATE TO THIS TERM AND IT IS THE STRONGEST HUMAN EVIDENCE IN THE WHOLE AUDIT:
+    CIRCULATING SULFATE. scherer2025 shows per-variant effects on plasma sulfate correlate r=0.70 with
+    per-variant effects on standing height across 466,907 UK Biobank participants, through an allelic
+    series in the two renal transporters that set the circulating level. Sulfate is the substrate for
+    proteoglycan sulfation, which sets the matrix fixed charge density that drives the osmotic swelling
+    of TERM 3 - so this single item connects the absorptive term to h_term. It is the ONLY entry in this
+    audit with a subject-specific blood readout of whether the lever is engaged at all (reference range
+    0.3-0.5 mM, not measured in routine practice), and the only one that is not tumour-suppressor
+    adjacent. It is also entirely a DESCENDING-limb result - no human observation exists above the normal
+    range. See the_swelling_machinery_has_only_ever_been_switched_off and
+    g_l5_does_sulfate_supply_have_headroom_above_normal.'
+  species: human
+  source_ref: rauch2004
+  uncertainty: 'THIS IS THE TERM THE AUDIT ADDS THAT A PURE GROWTH-MECHANISM ENUMERATION WOULD MISS, AND
+    IT IS NOT A SAFETY FOOTNOTE - IT IS HEIGHT-NEGATIVE. If length velocity is driven pharmacologically
+    while lean mass is not, mineral accrual does not follow, because it tracks lean mass rather than
+    height. That builds long, relatively under-mineralised bone, which is the same direction williams2001
+    gives for the plate itself, where ultimate tensile stress falls linearly with thickness. And
+    kyphoscoliosis does not merely injure - it CONVERTS VERTICAL GROWTH INTO CURVE, so the deformity eats
+    the gain it was produced by. The configuration in erdachild2024 was the worst possible one: maximal
+    length in a critically ill, cachectic child, with erdaseries2025 recording "lack of BMI increase" in
+    its other patient. THIS IS AN INFERENCE ACROSS FOUR SOURCES, NOT A MEASUREMENT, and the counter is
+    real - the same children showed ENHANCED metaphyseal mineralisation and metaphyseal sclerosis
+    radiographically, which reversed on stopping, so the mineral picture under FGFR blockade may be
+    deranged rather than simply deficient.'
+- parameter: 'THE AXIS DELIBERATELY REJECTED - slowing resorption at the chondro-osseous junction works
+    and its output IS the harm'
+  value: expanded hypertrophic zone, impaired trabecular bone formation, reversible on withdrawal
+  unit: qualitative
+  conditions: Gerber 1999, mouse - sequestering VEGF with a soluble receptor chimera in growing mice
+    suppresses blood vessel invasion of hypertrophic cartilage, EXPANDS the hypertrophic zone and impairs
+    trabecular bone formation, reversing on withdrawal
+  species: mouse
+  source_ref: gerber1999
+  uncertainty: 'INCLUDED BECAUSE AN AUDIT THAT ONLY LISTS AXES WORTH ADDING IS NOT AN AUDIT. Plate
+    thickness is set by production at the top MINUS resorption at the bottom, so slowing resorption
+    thickens the plate and would read as growth on a radiograph. It is a real, dose-reversible,
+    pharmacologically accessible axis. IT IS ALSO EXACTLY THE MECHANISM OF THE HARM: an expanded
+    hypertrophic zone with impaired trabecular bone underneath is the williams2001 configuration in which
+    ultimate tensile stress falls linearly with thickness, and it is what the growth-plate WIDENING seen
+    in both erdafitinib series already represents. Adding an agent that does this deliberately would add
+    the failure mode without the length. NAMED AND REJECTED, not overlooked.'
+localization:
+- 'growth plate: terms 1 to 5 and 8 all terminate here'
+- 'spine: where terms 5 and 8 intersect, and where the stack is simultaneously most promising and most
+  dangerous'
+- 'systemic: term 1 is set by circulating oestrogen; term 8 by lean mass and mineral substrate'
+human_evidence: indirect
+human_evidence_note: The ceiling argument, the duration term, the site term and the absorptive term rest
+  on human data. The pool term, the h_term combination and the mechanical term are mouse or rat, and one
+  of them is a single dog.
+species_basis:
+- human
+- mouse
+- rat
+- dog
+translation_risk: high
+translation_risk_reason: Three of the four unhit items with named compounds - PP2A inhibition, Hedgehog
+  agonism, mTORC1 activation - have no human bone-length data of any kind, and two of the three act on
+  tumour suppressors. The audit ranks them by evidence per unit of novelty precisely because none of them
+  is close to established.
+confidence: C
+claim_grades:
+- claim: The stack leaves four of eight terms of the height equation untouched.
+  grade: B
+  basis: An enumeration against the atlas own node inventory rather than an experimental result. The
+    decomposition is stated explicitly so the enumeration can be checked; the grade reflects that a
+    different decomposition would produce a different count, not that any individual entry is doubtful.
+- claim: PP2A inhibition is the highest-value unoccupied control point, because it is the only combination
+    in the audit that has been run and beaten its own monotherapy on a length endpoint.
+  grade: D
+  basis: One ex vivo embryonic mouse femur culture over six days in an Fgfr3 gain-of-function background,
+    combined with a CNP analogue rather than with an FGFR inhibitor. No in vivo length endpoint.
+- claim: The ceiling on the entire intra-plate pharmacological class sits near 197-204 cm.
+  grade: C
+  basis: Two human natural experiments with lifetime absent oestrogen signal, one of whom ceased growing
+    spontaneously at 24 with plates still open. n=1 for the cessation, which is a history statement rather
+    than a measurement series, and every comparable case is right-censored by treatment.
+- claim: The osmotic swelling machinery of hypertrophy is the largest unoccupied item in this audit.
+  grade: C
+  basis: 'It sits on h_term, which this atlas argues is the largest free term; about 80 per cent of
+    longitudinal growth is hypertrophic volume increase; ONE transporter carries about a third of
+    elongation with hypertrophic cell number unchanged (bush2010), which is the largest single-target
+    effect measured anywhere in this atlas; its components are expressed in 4 of 4 human growth-plate
+    donors; its components are human height loci (PIEZO1 0.935, SLC12A2 0.776, STK39 0.741 against
+    positive controls topping at LCORL 0.919); and NOT ONE AGENT HAS EVER BEEN GIVEN IN THE UPWARD
+    DIRECTION in any species. GRADED C AND NOT HIGHER because the mechanism data are neonatal rat organ
+    culture with non-selective inhibitor concentrations, the association scores are curated aggregates
+    rather than effect sizes, and an absence of upward experiments is equally consistent with the term
+    being homeostatically defended. THE ROUND-104 VERSION OF THIS CLAIM NAMED CIRCULATING SULFATE INSTEAD,
+    ON A BROKEN QUERY - see CORR-100. Sulfate remains a real parallel thread on scherer2025 own strength
+    and is the only item in this audit with a subject-specific blood readout.'
+- claim: The absorptive term is height-negative rather than merely hazardous, because spinal deformity
+    converts vertical growth into curve.
+  grade: D
+  basis: An inference chaining rauch2004's lean-mass regression, williams2001's thickness-strength
+    relation, and the two erdafitinib series. No study has measured height lost to drug-induced spinal
+    deformity.
+key_refs:
+- ref_id: herrmann2002
+  type: primary
+  one_line_finding: Aromatase-deficient man grew until 24 and stopped at about 197 cm with epiphyses still
+    open at 27 - the proof that the budget rather than fusion is the final constraint.
+- ref_id: shuhaibar2021
+  type: primary
+  one_line_finding: LB-100 plus a CNP analogue raised hypertrophic cell area 32 per cent and elongation
+    16 per cent over the CNP analogue alone.
+- ref_id: trompet2024
+  type: primary
+  one_line_finding: Intra-articular SAG gave +3.63 per cent femur and +1.65 per cent whole leg in rat -
+    the only pool intervention with a length endpoint.
+- ref_id: scherer2025
+  type: primary
+  one_line_finding: Per-variant effects on plasma sulfate correlate r=0.70 with per-variant effects on
+    standing height across 466,907 UK Biobank participants - the substrate arm of the absorptive term.
+- ref_id: rauch2004
+  type: primary
+  one_line_finding: Peak LEAN MASS velocity, not peak height velocity, predicts peak bone mineral content
+    velocity and leads it by 0.36 years.
+- ref_id: caetanosilva2021
+  type: primary
+  one_line_finding: Quasi-static axial load restricts longitudinal growth ex vivo, reversibly, through
+    mTOR - the mechanical gate.
+- ref_id: costa2021
+  type: primary
+  one_line_finding: Thoracolumbar ring apophysis is at stage 1 of 4 in 15-year-old males, so spinal
+    reserve persists long after the hand reads mature.
+open_questions:
+- g_l7_residual_physeal_reserve_at_late_bone_age
+- g_l2_pool_preservation_versus_pool_expansion
+- g_l12_fgfr3_blockade_dose_response
+- g_l12_cilostazol_bone_age_effect
+contradicts: []
+last_verified: '2026-08-08'

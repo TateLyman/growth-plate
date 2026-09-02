@@ -1,0 +1,68 @@
+id: evc_evc2_complex
+name: EVC-EVC2 complex
+aliases:
+- EVC
+- EVC2
+- LIMBIN
+- EvC zone complex
+type: protein
+layer: L3
+stub: false
+summary: 'EVC and EVC2 form an obligate complex localised to a discrete compartment at the base of the primary cilium,
+  the ''EvC zone''. Evc-null mice reproduce an Ellis-van Creveld-like syndrome with short ribs, short limbs and dental
+  abnormalities; their growth plates show delayed bone collar formation and ADVANCED chondrocyte maturation, Ihh expression
+  is normal but the Ihh target genes Ptch1 and Gli1 are markedly reduced, cilia are present and Gli3 processing is
+  normal - so the lesion is downstream of SMO and independent of ciliogenesis itself (Ruiz-Perez 2007, mouse). Dorn
+  2012 supplies the biochemistry: Hedgehog agonists promote a SMO-EVC2 association restricted to the EvC zone, and
+  EVC2 mutants that still enter cilia but are displaced from that zone act as dominant inhibitors, blocking signalling
+  between SMO and PKA/SUFU before GLI activation. In human, EVC mutations cause recessive Ellis-van Creveld syndrome
+  (short limbs, short ribs, postaxial polydactyly, dysplastic nails and teeth, congenital heart defect in about 60%)
+  and heterozygous missense alleles cause dominant Weyers acrodental dysostosis, an allelic milder condition (Ruiz-Perez
+  2000). This node is the direct mechanical link between the cilium subsystem and the IHH subsystem.'
+quantitative:
+- parameter: Congenital cardiac defect frequency in Ellis-van Creveld syndrome
+  value: '60'
+  unit: '% of affected individuals'
+  conditions: clinical series across Amish and non-Amish pedigrees
+  species: human
+  source_ref: ruizperez2000
+  uncertainty: literature figure quoted in the source; no CI given
+localization:
+- 'mouse chondrocyte cilium base: confirmed by antibody staining (ruizperez2007)'
+- 'EvC zone at ciliary base: confirmed biochemically (dorn2012)'
+- 'human growth plate: inferred from Ellis-van Creveld phenotype'
+human_evidence: direct
+human_evidence_note: EVC and EVC2 mutations cause human Ellis-van Creveld syndrome (recessive) and Weyers acrodental
+  dysostosis (dominant).
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Human recessive and dominant allelic series, plus a concordant mouse null and cell-biological
+  mechanism.
+confidence: A
+key_refs:
+- ref_id: ruizperez2000
+  pmid: '10700184'
+  first_author: Ruiz-Perez VL
+  year: 2000
+  type: primary
+  one_line_finding: EVC mutations cause Ellis-van Creveld syndrome; heterozygous missense alleles cause allelic Weyers
+    acrodental dysostosis.
+- ref_id: ruizperez2007
+  pmid: '17660199'
+  first_author: Ruiz-Perez VL
+  year: 2007
+  type: primary
+  one_line_finding: Evc localises to the base of the chondrocyte cilium and is required for Ihh-dependent Ptch1/Gli1
+    induction downstream of Smo.
+- ref_id: dorn2012
+  pmid: '22981989'
+  first_author: Dorn KV
+  year: 2012
+  type: primary
+  one_line_finding: Hedgehog agonists drive a SMO-EVC2 complex confined to the EvC zone; EVC2 displaced from that
+    zone is a dominant inhibitor.
+open_questions:
+- g_l3rest_014
+last_verified: '2026-08-05'

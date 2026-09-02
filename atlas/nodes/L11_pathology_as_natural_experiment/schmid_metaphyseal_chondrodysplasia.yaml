@@ -1,0 +1,180 @@
+id: schmid_metaphyseal_chondrodysplasia
+name: Schmid metaphyseal chondrodysplasia
+aliases:
+- MCDS
+- COL10A1 mutation
+- metaphyseal chondrodysplasia Schmid type
+type: phenotype
+layer: L11
+stub: false
+summary: 'Schmid metaphyseal chondrodysplasia is the human collagen X experiment and localises
+  the lesion
+
+  to a single growth plate zone. COL10A1 encodes type X collagen, which is expressed ONLY by
+
+  hypertrophic chondrocytes; mutations - concentrated in the C-terminal NC1 trimerisation domain
+
+  and confirmed as the disease locus by an early multi-mutation series - prevent normal trimer
+
+  assembly. Because the gene is expressed nowhere else, the phenotype is a pure hypertrophic-zone
+
+  readout: irregular, widened, cupped metaphyses with normal epiphyses and a normal spine, coxa
+
+  vara, bowed legs and mild-to-moderate short stature. The contrast with type II collagen
+
+  disorders (spondyloepiphyseal dysplasia, where the epiphyses and spine are the affected
+
+  compartments) is one of the sharpest structure-function mappings in human skeletal genetics:
+  the
+
+  zone in which a matrix gene is expressed predicts which radiographic compartment fails. Modern
+
+  work shows the pathogenic mechanism is not simple haploinsufficiency but ER stress from
+
+  misfolded collagen X retained in hypertrophic chondrocytes, which is why carbamazepine, an
+
+  autophagy-inducing proteostasis modulator, has been proposed as a treatment. Adult height is
+
+  usually only mildly reduced, so Schmid also shows that eliminating a hypertrophic-zone matrix
+
+  protein costs surprisingly little final height.
+
+
+  Two independent designs establish the locus and then quantify it. Warman 1993 mapped a 13 bp
+
+  COL10A1 deletion segregating with the disorder in a large Mormon kindred at lod 18.2 (theta
+  = 0),
+
+  producing a frameshift that shortens the alpha-1(X) chain by nine residues in the conserved
+  NC1
+
+  domain. Meng 2025 assembled 4 new cases and 124 published ones and converted the locus into
+  a
+
+  dose-resolved phenotype: patients carrying missense variants had height Z of -3.62 +/- 1.95
+  versus
+
+  -1.99 +/- 1.28 for those with truncating variants (P = 0.013), and more metaphyseal irregularity
+  of
+
+  the distal radius and ulna (P = 0.019); NC1-domain variants presented at a median of 12 months
+
+  against 72 months for non-NC1 variants (P = 0.0014). Because truncating transcripts are removed
+  by
+
+  nonsense-mediated decay while missense alleles make a stable chain that disrupts trimerisation
+  of
+
+  the wild-type product - shown directly for p.W651fsX666 by Yang 2025 - this is the only place
+  in
+
+  the atlas where dominant-negative interference and haploinsufficiency at one locus have measured
+
+  stature effects in the same cohort, and interference costs about 1.6 SDS more.'
+localization:
+- 'human HZ: type X collagen is expressed exclusively by hypertrophic chondrocytes, and the radiographic
+  lesion is confined to the metaphysis, i.e. immediately distal to the hypertrophic zone'
+- 'human epiphysis and spine: spared, distinguishing COL10A1 from COL2A1 disorders'
+human_evidence: direct
+human_evidence_note: Human COL10A1 mutation series established the locus; the zone-specific expression
+  of collagen X and the metaphysis-restricted radiology are both human observations.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node; the ER-stress mechanism is supported by mouse models
+  and is flagged as such.
+confidence: A
+key_refs:
+- ref_id: mcintosh1994
+  pmid: '8004099'
+  first_author: McIntosh I
+  year: 1994
+  type: primary_abstract_only
+  one_line_finding: Additional COL10A1 mutations confirm COL10A1 as the Schmid metaphyseal chondrodysplasia
+    locus.
+- ref_id: richmond1993
+  pmid: '31633898'
+  first_author: Richmond CM
+  year: 1993
+  type: review
+  one_line_finding: 'GeneReviews: NC1-domain COL10A1 mutations, coxa vara, metaphyseal changes
+    and mild short stature.'
+- ref_id: warman1993
+  pmid: '8220429'
+  doi: 10.1038/ng0993-79
+  first_author: Warman ML
+  year: 1993
+  type: primary_abstract_only
+  one_line_finding: A 13 bp COL10A1 deletion segregates with autosomal dominant Schmid metaphyseal
+    chondrodysplasia at lod 18.2, truncating the conserved NC1 domain.
+- ref_id: meng2025
+  pmid: '41454937'
+  doi: 10.1007/s00223-025-01457-8
+  first_author: Meng L
+  year: 2025
+  type: primary
+  one_line_finding: In 128 COL10A1 cases, missense variants gave height Z -3.62 +/- 1.95 versus
+    -1.99 +/- 1.28 for truncating variants (P=0.013), with NC1-domain variants presenting earlier.
+- ref_id: yang2025
+  pmid: '40398448'
+  doi: 10.1093/hmg/ddaf071
+  first_author: Yang J
+  year: 2025
+  type: primary
+  one_line_finding: COL10A1 p.W651fsX666 impairs trimerisation of normal collagen X, demonstrating
+    a dominant-negative effect on the wild-type allele.
+open_questions:
+- g_l11path_018
+last_verified: '2026-08-05'
+quantitative:
+- parameter: height Z, COL10A1 missense (dominant-negative) variants
+  value: '-3.62'
+  unit: SDS
+  conditions: 128 MCDS cases (4 new plus 124 published), at first presentation
+  species: human
+  source_ref: meng2025
+  uncertainty: SD 1.95; P=0.013 versus truncating
+- parameter: height Z, COL10A1 truncating (haploinsufficiency) variants
+  value: '-1.99'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: meng2025
+  uncertainty: SD 1.28
+- parameter: age at onset, NC1-domain variants
+  value: '12'
+  unit: months
+  conditions: median, same cohort
+  species: human
+  source_ref: meng2025
+  uncertainty: P=0.0014 versus non-NC1
+- parameter: age at onset, non-NC1-domain variants
+  value: '72'
+  unit: months
+  conditions: median, same cohort
+  species: human
+  source_ref: meng2025
+  uncertainty: P=0.0014
+- parameter: linkage lod score for COL10A1 in the discovery kindred
+  value: '18.2'
+  unit: lod
+  conditions: large Mormon kindred, theta=0
+  species: human
+  source_ref: warman1993
+  uncertainty: not applicable (lod)
+claim_grades:
+- claim: COL10A1 mutations cause Schmid metaphyseal chondrodysplasia.
+  grade: A
+  basis: Single-kindred linkage at lod 18.2 with an identified 13 bp deletion (warman1993) and
+    an independent 128-case unrelated-patient mutation series (meng2025) - different designs,
+    different cohorts, different eras.
+- claim: COL10A1 missense variants reduce stature about 1.6 SDS more than truncating variants.
+  grade: B
+  basis: One pooled 128-case cohort with P=0.013 (meng2025), mechanistically corroborated by an
+    independent trimerisation assay (yang2025); the height comparison itself has not been repeated
+    in a second cohort.
+- claim: The phenotype is a pure hypertrophic-zone readout because collagen X is expressed only
+    there.
+  grade: B
+  basis: Inference from the restricted expression of collagen X plus the radiographic metaphyseal-only
+    distribution; no zone-resolved human MCDS growth plate has been examined.

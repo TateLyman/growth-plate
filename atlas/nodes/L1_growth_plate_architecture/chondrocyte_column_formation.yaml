@@ -1,0 +1,141 @@
+id: chondrocyte_column_formation
+name: Chondrocyte column formation
+aliases:
+- columnarisation
+- column morphogenesis
+type: process
+layer: L1
+stub: false
+summary: 'A proliferative chondrocyte divides with its cleavage plane perpendicular to the long bone axis,
+  so the two daughters initially sit side by side across the growth direction. To build a column the doublet
+  must rotate roughly 90 degrees before separating. Live imaging established that this is a rotation on
+  a dynamic cell-cell and cell-matrix adhesion surface, not the convergent-extension intercalation originally
+  inferred from static 2D sections; beta1 integrin, N-cadherin and alpha-parvin are each required. 3D
+  clonal analysis has since shown that the rotation is far less reliable than the textbook picture implies.
+  In E18.5 mouse growth plates only 17.6% (distal femur) and 19.4% (proximal tibia) of neighbouring clonal
+  cell pairs sit at the 60-90 degree elevation angle that indicates a completed rotation; most embryonic
+  clones are ellipsoidal clusters oriented orthogonal to the growth axis. Postnatally rotation improves
+  but is still imperfect: within P40 columns 39.5% (distal femur) and 36.4% (proximal tibia) of divisions
+  show complete rotation and fewer than 10% are near-perfect (80-90 degrees). A column therefore tolerates
+  about 60% incomplete rotations before the structure buckles sideways into a cluster. This reframes columns
+  as a postnatal, elongation-favouring configuration rather than a prerequisite for growth.'
+quantitative:
+- parameter: proportion of clonal doublets with completed rotation (60-90 degrees)
+  value: '17.6'
+  unit: '% of doublets'
+  conditions: E18.5 mouse distal femur, Col2a1-CreER:R26R-Confetti pulsed E14.5, 3D imaging
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 1044 doublets, 3 biologically independent samples, 9 independent experiments
+- parameter: proportion of clonal doublets with completed rotation (60-90 degrees)
+  value: '19.4'
+  unit: '% of doublets'
+  conditions: E18.5 mouse proximal tibia
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 805 doublets, 3 biologically independent samples
+- parameter: proportion of complete rotations within postnatal columns
+  value: '39.5'
+  unit: '% of divisions'
+  conditions: P40 mouse distal femur
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 737 columns
+- parameter: proportion of complete rotations within postnatal columns
+  value: '36.4'
+  unit: '% of divisions'
+  conditions: P40 mouse proximal tibia
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 512 columns
+- parameter: proportion of near-perfect rotations (80-90 degrees) within postnatal columns
+  value: '9.6'
+  unit: '% of divisions'
+  conditions: P40 mouse distal femur
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 737 columns
+- parameter: proportion of near-perfect rotations (80-90 degrees) within postnatal columns
+  value: '8.2'
+  unit: '% of divisions'
+  conditions: P40 mouse proximal tibia
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 512 columns
+- parameter: proportion of complete rotations within postnatal clusters
+  value: '15.5'
+  unit: '% of divisions'
+  conditions: P40 mouse distal femur clusters
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 1129 clusters
+- parameter: tolerance of a column for incomplete rotations
+  value: '60'
+  unit: '% of divisions'
+  conditions: P40 mouse; above this fraction the clone expands orthogonally and becomes a cluster
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: author-stated threshold based on elevation-angle analysis
+- parameter: clone long-axis to short-axis ratio, embryonic
+  value: '0.201'
+  unit: PC3/PC1 ratio (mean)
+  conditions: E18.5 mouse distal femur clones, principal component analysis
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: SD 0.109
+- parameter: clone long-axis to short-axis ratio, embryonic
+  value: '0.226'
+  unit: PC3/PC1 ratio (mean)
+  conditions: E18.5 mouse proximal tibia clones
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: SD 0.119
+localization:
+- 'mouse PZ: 3D clonal analysis (rubin2024); live-imaged rotation (romereim2014)'
+- 'human PZ: column cell counts measured (kember1976) but rotation never observed'
+human_evidence: indirect
+human_evidence_note: Human proliferative columns are described histologically and counted (24 cells per
+  column in distal femur), but the rotation mechanism has never been observed in human tissue.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: All mechanistic and quantitative data are from mouse live imaging and lineage
+  tracing. Human plates have longer columns and much slower cycling, so the geometry of stacking may differ.
+confidence: C
+key_refs:
+- ref_id: rubin2024
+  pmid: '39269144'
+  first_author: Rubin S
+  year: 2024
+  type: primary
+  one_line_finding: 3D Confetti clonal analysis shows fewer than 20% of embryonic doublets are correctly
+    stacked and that a column tolerates ~60% incomplete rotations.
+- ref_id: romereim2014
+  pmid: '24764078'
+  first_author: Romereim SM
+  year: 2014
+  type: primary
+  one_line_finding: Post-mitotic doublets rotate on a dynamic adhesion surface rather than intercalating
+    by convergent extension.
+- ref_id: aszodi2003
+  pmid: '14522949'
+  first_author: Aszodi A
+  year: 2003
+  type: primary
+  one_line_finding: Beta1 integrin is required for chondrocyte rotation, G1 progression and cytokinesis.
+- ref_id: greer2024
+  pmid: '38294852'
+  first_author: Greer SE
+  year: 2024
+  type: primary
+  one_line_finding: N-cadherin and beta1 integrin act coordinately to set growth plate column architecture.
+- ref_id: yuan2023
+  pmid: '37607905'
+  first_author: Yuan J
+  year: 2023
+  type: primary
+  one_line_finding: alpha-parvin is required for chondrocyte column formation and long bone development.
+open_questions:
+- g_l1arch_004
+last_verified: '2026-08-05'

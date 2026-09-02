@@ -1,0 +1,84 @@
+id: gremlin1_lineage_cell
+name: Grem1+ osteochondroreticular (OCR) stem cell
+aliases:
+- OCR stem cell
+- Gremlin1 lineage cell
+type: cell_type
+summary: Grem1-creER labels a population concentrated in the metaphysis immediately adjacent to the growth
+  plate and trabecular bone, not in the perisinusoidal space. Traced Grem1+ cells generate columns of
+  chondrocytes by P5, osteoblasts and reticular marrow stroma, self-renew, and are required for bone development,
+  remodelling and fracture repair - but they do not make adipocytes (0 of 19 single clones by oil red
+  O; polyclonal cultures also failed). About 40% of Grem1+ cells are CD105+, versus under 2% of Grem1-negative
+  CD45-CD31-Ter119- cells, and only 5.9% co-express Acta2-RFP. They are explicitly non-overlapping with
+  Nestin-GFP perisinusoidal MSCs. Two conflicts follow. First, Grem1+ OCR cells and LepR+ stroma disagree
+  on adipogenic output and on anatomical position for the same claimed role. Second, PTHrP+ resting chondrocytes
+  do not express Grem1, so the metaphyseal OCR cell and the resting-zone stem cell are different cells
+  even though both are said to supply growth plate chondrocytes.
+quantitative:
+- parameter: Grem1+ single clones producing adipocytes
+  value: '0'
+  unit: of 19 clones
+  conditions: oil red O staining, mouse
+  species: mouse
+  source_ref: worthley2015
+  uncertainty: polyclonal cultures also negative
+- parameter: Grem1+ cells that are CD105+
+  value: '40'
+  unit: '%'
+  conditions: CD45-Ter119-CD31- mouse marrow
+  species: mouse
+  source_ref: worthley2015
+  uncertainty: Grem1-negative comparison <2%
+- parameter: Grem1+ cells co-expressing Acta2-RFP
+  value: '5.9'
+  unit: '% (mean)'
+  conditions: adult mouse
+  species: mouse
+  source_ref: worthley2015
+  uncertainty: not reported
+localization:
+- 'mouse metaphysis adjacent to growth plate and trabecular bone: confirmed (worthley2015)'
+- 'mouse perisinusoidal space: absent (worthley2015)'
+- 'mouse resting zone PTHrP+ cells: negative for Grem1 (mizuhashi2018)'
+- 'mouse periosteum: a subset of CTSK-lineage cells expresses Gremlin1 (debnath2018)'
+human_evidence: absent
+human_evidence_note: No human GREM1+ skeletal stem cell has been identified or assayed.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Entirely dependent on an inducible mouse Cre driver; GREM1 expression in human
+  bone has not been mapped to a functional progenitor.
+confidence: C
+key_refs:
+- ref_id: worthley2015
+  pmid: '25594183'
+  doi: 10.1016/j.cell.2014.11.042
+  first_author: Worthley DL
+  year: 2015
+  type: primary
+  one_line_finding: Grem1+ metaphyseal OCR stem cells make bone, cartilage and reticular stroma but not
+    fat
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: PTHrP+ resting chondrocytes do not express Grem1, separating the two candidate growth
+    plate stem cells
+- ref_id: debnath2018
+  pmid: '30250253'
+  doi: 10.1038/s41586-018-0554-8
+  first_author: Debnath S
+  year: 2018
+  type: primary
+  one_line_finding: A subset of periosteal CTSK-lineage cells also expresses Gremlin1, blurring compartment
+    assignment
+open_questions:
+- g_l2stem_004
+contradicts:
+- lepr_positive_stromal_cell
+- pthrp_positive_resting_chondrocyte
+layer: L2
+stub: false
+last_verified: '2026-08-05'

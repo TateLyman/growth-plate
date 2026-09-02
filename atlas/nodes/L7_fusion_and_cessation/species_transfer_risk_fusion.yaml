@@ -1,0 +1,81 @@
+id: species_transfer_risk_fusion
+name: Species-transfer risk in fusion biology
+type: method
+layer: L7
+stub: false
+aliases:
+- translation risk rubric for L7
+summary: |
+  This node defines how translation_risk is graded for any claim about growth plate
+  termination in this atlas, and why the default grade is high. The rule follows from the
+  comparative facts: the endpoint "epiphyseal fusion" is expressible in human, dog, rabbit and
+  goat, and is not expressible in mouse or rat (comparative_fusion_across_species). A murine
+  or rat result therefore cannot be a result about fusion; it is at best a result about a
+  surrogate. Grading rule used here: (a) low - human tissue or human interventional data
+  measuring fusion or its imaging proxy directly; (b) moderate - rabbit data on the fusion
+  endpoint itself, or human genetic experiments of nature with radiographic fusion endpoints;
+  (c) high - mouse or rat data on any surrogate, or human correlative data whose mechanistic
+  interpretation rests on rodent work; (d) unknown - no data in any fusing species. Applying
+  this rule, the three best-evidenced human facts about fusion are all endocrine and none is
+  cellular: estrogen is required (smith1994, morishima1995, carani1997), a serum estradiol
+  threshold near 73 pmol/L is needed for closure (lanfranco2008), and fusion order and timing
+  are reproducible across imaging cohorts (kvist2021). Every cellular mechanism on offer -
+  senescence, progenitor exhaustion, vascular invasion, apoptosis, ECM change, epigenetic
+  drift - is graded moderate at best, and only two of the six have ever been examined in
+  human tissue at all (apoptosis, emons2009; VEGF, emons2010).
+quantitative: []
+localization:
+- 'SYS: applies to all L7 nodes and to any node whose evidence base is rodent growth plate'
+human_evidence: indirect
+human_evidence_note: >-
+  The rubric itself is a methodological convention; its inputs are the comparative species
+  data and the human case and imaging literature cited here.
+species_basis:
+- human
+- mouse
+- rat
+- rabbit
+translation_risk: not_applicable
+translation_risk_reason: >-
+  This node defines the grading scheme rather than carrying a transferred claim.
+confidence: B
+key_refs:
+- ref_id: emons2011
+  pmid: '21540578'
+  first_author: Emons J
+  year: 2011
+  type: review
+  one_line_finding: >-
+    Names the species barrier explicitly as the reason experimental study of fusion is
+    complicated, and lists apoptosis, autophagy, transdifferentiation and hypoxia as the four
+    competing hypotheses for the final step.
+- ref_id: yu2025
+  pmid: '40478277'
+  first_author: Yu X
+  year: 2025
+  type: primary
+  one_line_finding: >-
+    States and demonstrates that the mouse and rat growth plates do not fuse completely even
+    after sexual maturity, making fusion mechanism hard to study in these models.
+- ref_id: lanfranco2008
+  pmid: '18590994'
+  first_author: Lanfranco F
+  year: 2008
+  type: primary
+  one_line_finding: >-
+    In an aromatase-deficient man with poor compliance, epiphyseal closure occurred only once
+    serum estradiol exceeded 73 pmol/L.
+- ref_id: kvist2021
+  pmid: '33047349'
+  first_author: Kvist O
+  year: 2021
+  type: primary
+  one_line_finding: >-
+    MRI in 958 healthy subjects aged 14.0-21.5 y establishes site-specific fusion percentages
+    and an ascending foot-to-wrist order.
+open_questions:
+- g_l7fuse_001
+- g_l7fuse_002
+- g_l7fuse_003
+contradicts: []
+last_verified: '2026-08-05'

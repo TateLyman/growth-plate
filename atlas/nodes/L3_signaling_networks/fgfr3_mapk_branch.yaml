@@ -1,0 +1,97 @@
+id: fgfr3_mapk_branch
+name: FGFR3-MAPK/ERK branch
+type: pathway
+layer: L3
+stub: false
+summary: 'The RAS-RAF-MEK-ERK branch downstream of FGFR3 is the arm that suppresses chondrocyte hypertrophy.
+
+  Constitutively active MEK1 expressed in mouse chondrocytes produces achondroplasia-like dwarfism with
+
+  incomplete hypertrophy, reduced type X collagen, persistent Sox9 and a general delay in endochondral
+
+  ossification, while chondrocyte proliferation is unaffected; the same transgene suppresses the
+
+  overgrowth of Fgfr3-null mice, which the authors read as bone growth being regulated by FGFR3 "at
+
+  least in part" through MAPK (Murakami 2004). Note the logic: activating a downstream node and finding
+
+  it suppresses loss of the upstream node establishes SUFFICIENCY, not necessity, and the transgene is
+
+  a constitutively active MEK1 under a Col2a1 driver with mosaic expression, so the ERK amplitude tested
+
+  is supraphysiological and non-uniform rather than the amplitude FGFR3-G380R actually produces. The branch is also
+
+  the target of the CNP rescue: chondrocyte-targeted CNP overexpression rescues achondroplasia in
+
+  FGFR3-Ach mice through MAPK inhibition (Yasoda 2004), and CNP or 8-Br-cGMP dose-dependently blocks
+
+  FGF2- and FGF18-induced ERK phosphorylation at the level of RAF-1 without affecting STAT1
+
+  phosphorylation (Ozasa 2005). The MAPK branch additionally acts on NPR2 itself: FGF-driven, PPP-family
+
+  phosphatase-dependent dephosphorylation of NPR2 lowers growth plate cGMP (Shuhaibar 2017). Note also that "the MAPK branch" contains at least two
+
+  antagonistic arms, and only the ERK arm is in this node: in micro-dissected mouse tibia, CNP requires
+
+  p38 to achieve and maintain the expanded hypertrophic zone while simultaneously inhibiting ERK
+
+  (Agoston 2007), so p38 and ERK act in opposite directions on hypertrophy. The
+
+  branch weighting relative to STAT1 is contested - see fgfr3_stat1_branch and gap g_l3core_008.
+
+  '
+localization:
+- 'mouse PHZ/HZ: MEK1 transgene blocks hypertrophy, confirmed (murakami2004)'
+- 'human growth plate: ERK activation state by zone unconfirmed'
+human_evidence: indirect
+human_evidence_note: Human evidence is limited to accelerated ERK activation kinetics in cultured thanatophoric
+  dysplasia chondrocytes; no in situ measurement of ERK activity in human growth plate zones.
+species_basis:
+- mouse
+- in_vitro_animal_cell
+- in_vitro_human_cell
+translation_risk: moderate
+translation_risk_reason: Branch dissection is murine transgenic; human data are cultured fetal chondrocytes
+  only.
+confidence: B
+key_refs:
+- ref_id: murakami2004
+  pmid: '14871928'
+  first_author: Murakami S
+  year: 2004
+  type: primary
+  one_line_finding: Constitutively active MEK1 in chondrocytes blocks hypertrophy (reduced collagen X,
+    persistent Sox9, BrdU-labelled cells stalling prehypertrophically) with an UNCHANGED BrdU index, and
+    suppresses Fgfr3-null overgrowth; Stat1 loss restores proliferation in Fgfr3-ACH mice but rescues neither
+    the hypertrophic zone nor the phenotype.
+- ref_id: yasoda2004
+  pmid: '14702637'
+  first_author: Yasoda A
+  year: 2004
+  type: primary_abstract_only
+  one_line_finding: CNP overexpression rescues achondroplasia in FGFR3-Ach mice through a MAPK-dependent
+    pathway.
+- ref_id: ozasa2005
+  pmid: '15869918'
+  first_author: Ozasa A
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: CNP and 8-Br-cGMP inhibit FGF-induced ERK phosphorylation at RAF-1 without affecting
+    STAT1.
+- ref_id: shuhaibar2017
+  pmid: '29199951'
+  first_author: Shuhaibar LC
+  year: 2017
+  type: primary
+  one_line_finding: FGF-driven phosphatase-dependent NPR2 dephosphorylation lowers growth plate cGMP in
+    intact mouse tibia.
+open_questions:
+- g_l3core_008
+- g_l2d_008
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. murakami2004, shuhaibar2017 and agoston2007 read in
+  FULL. Verdict CONFIRMED - the proliferation/differentiation dissociation is exactly as stated, including
+  the BrdU-pulse-chase stall in the prehypertrophic region. Sufficiency-vs-necessity, mosaic supraphysiological
+  transgene and the antagonistic p38 arm recorded.
+last_verified: '2026-08-05'

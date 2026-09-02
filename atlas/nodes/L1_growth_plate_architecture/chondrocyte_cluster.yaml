@@ -1,0 +1,98 @@
+id: chondrocyte_cluster
+name: Chondrocyte cluster (non-columnar clone)
+aliases:
+- orthogonal clone
+- non-columnar clone
+- lateral clone
+type: tissue_structure
+layer: L1
+stub: false
+summary: 'A cluster is a clone of chondrocytes whose long axis lies at less than 60 degrees to the proximal-distal
+  bone axis, that is, a clone that failed to convert its divisions into a longitudinal stack. Clusters
+  are not an artefact or a pathological finding: in the E18.5 mouse growth plate they are the majority
+  clone type, with only 17.6% (distal femur) and 19.4% (proximal tibia) of doublets stacked at 60-90 degrees,
+  and they are elongated ellipsoids oriented orthogonal to the growth direction. Postnatally clusters
+  persist but retreat to the outer edges of the plate while the interior becomes columnar. Their proposed
+  function is bone widening rather than lengthening, and the evidence is correlative but quantitative:
+  the expansion-to-elongation ratio measured by micro-CT falls from 0.16-0.18 embryonically, when clusters
+  dominate, to 0-0.04 by P40, when columns dominate. Mechanistically a clone becomes a cluster when the
+  cumulative fraction of incomplete division-plane rotations exceeds about 60%. This entity is a recent
+  and mouse-only construct; whether human growth plates contain a comparable peripheral cluster compartment
+  is unexamined.'
+quantitative:
+- parameter: angular threshold separating clusters from columns
+  value: less than 60
+  unit: degrees between clone long axis and proximal-distal bone axis
+  conditions: mouse, 3D principal component analysis of Confetti clones
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: author-defined threshold
+- parameter: proportion of embryonic clones that are clusters
+  value: majority (>80% of doublets not stacked)
+  unit: '% of doublets'
+  conditions: E18.5 mouse distal femur and proximal tibia
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 1044 and 805 doublets
+- parameter: number of clusters analysed at P40
+  value: 1129 (distal femur), 1154 (proximal tibia)
+  unit: clusters
+  conditions: mouse, 3D imaging
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: sample sizes as reported
+- parameter: complete rotations within postnatal clusters
+  value: 15.5 (distal femur), 17.3 (proximal tibia)
+  unit: '% of divisions'
+  conditions: P40 mouse; versus 36-40% within columns
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 1129 and 1154 clusters
+- parameter: near-perfect rotations within postnatal clusters
+  value: 1.9 (distal femur), 3.0 (proximal tibia)
+  unit: '% of divisions'
+  conditions: P40 mouse
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: as reported
+- parameter: rotation-failure fraction above which a clone becomes a cluster
+  value: '60'
+  unit: '% of divisions'
+  conditions: P40 mouse distal femur and proximal tibia; above this cumulative fraction a clone expands
+    orthogonally
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: author-stated tolerance threshold
+localization:
+- 'mouse embryonic growth plate: clusters dominate throughout (rubin2024)'
+- 'mouse postnatal growth plate: clusters restricted to outer edges (rubin2024)'
+- 'human: not examined'
+human_evidence: absent
+human_evidence_note: Clusters have been defined and quantified only in mouse by 3D multicolour clonal
+  imaging; no human study has looked for them.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Defined entirely by mouse Confetti lineage tracing and 3D morphometry, a method
+  with no human counterpart, and reported in a single study.
+confidence: D
+key_refs:
+- ref_id: rubin2024
+  pmid: '39269144'
+  first_author: Rubin S
+  year: 2024
+  type: primary
+  one_line_finding: Defined clusters as clones oriented below 60 degrees to the growth axis, showed they
+    dominate the embryonic plate and retreat to the periphery postnatally, and correlated their abundance
+    with bone expansion.
+- ref_id: mizuhashi2019
+  pmid: '30888720'
+  first_author: Mizuhashi K
+  year: 2019
+  type: primary
+  one_line_finding: Independently identified a peripheral, perpendicularly oriented chondrocyte population
+    with mesenchymal precursor behaviour.
+open_questions:
+- g_l1arch_004
+- g_l1arch_013
+last_verified: '2026-08-05'

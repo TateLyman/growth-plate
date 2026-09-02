@@ -1,0 +1,142 @@
+id: hox_code_limb
+name: HOX code, proximodistal limb specification
+aliases:
+- posterior Hox 9-13 code
+- positional identity of limb segments
+type: pathway
+summary: 'Posterior HOX paralogue groups 9-13 assign proximodistal identity in the limb bud: Hox9/10 to the
+  stylopod, Hox11 to the zeugopod, Hox13 to the autopod. The atlas cares about this only because the identity
+  is not discarded at birth. Hoxa11/Hoxd11 compound mutants that retain one wild-type allele develop normally
+  to the newborn stage and then diverge: radial and ulnar elongation rate falls, growth plate height falls,
+  senescent involution is premature, and terminal bone length is reduced, while proliferation in the resting
+  and proliferative zones is paradoxically ELEVATED - the signature of accelerated consumption of a progenitor
+  pool rather than of a slow one (mouse, pineault2015). The mutant phenotype is region-restricted: Hox11 loss
+  impairs zeugopod fracture repair while stylopod fractures heal normally (mouse, rux2017), and Hox overexpression
+  restores periosteal stem cell behaviour only when the Hox gene matches the anatomical origin of the cell
+  (mouse, leclerc2023). Where the retained HOX protein actually sits is contested: Hoxa11-EGFP in the adult
+  mouse marks PDGFRa+CD51+ LepR-lineage marrow MSCs of the zeugopod and is reported as exclusive to them (rux2016),
+  whereas Hoxa11 is also maintained in zeugopod ARTICULAR chondrocytes to at least six months (rux2021). No
+  study has reported zone-resolved HOX expression inside a growth plate in any species, and none in human.
+  The correlative human-relevant link is that Hoxd13, Shox and Tbx5 are differentially expressed between one-week
+  phalangeal and tibial growth plates in a way that is age-INDEPENDENT, i.e. not explained by the differing
+  senescence state of the two plates (mouse and rat, lui2018). That is the closest anything comes to HOX identity
+  predicting growth rate, and it is an expression difference, not a demonstrated cause.'
+quantitative:
+- parameter: metacarpal bone elongation rate as fraction of proximal tibial rate
+  value: '49'
+  unit: '% of tibial rate'
+  conditions: 1-week-old C57BL/6 mouse, calcein double labelling
+  species: mouse
+  source_ref: lui2018
+  uncertainty: n=6 per group, mean +/- SEM reported in source S1 Table
+- parameter: metacarpal chondrocyte proliferation rate per column as fraction of tibial
+  value: '46'
+  unit: '% of tibial rate'
+  conditions: 1-week-old mouse, BrdU-labelled cells per column
+  species: mouse
+  source_ref: lui2018
+  uncertainty: n=6; per-CELL BrdU labelling index did not differ between bones
+- parameter: studies reporting zone-resolved HOX expression within a growth plate
+  value: '0'
+  unit: studies retrieved
+  conditions: Europe PMC 2026-08-05, query in search log g_l0dev_004
+  species: not_applicable
+  source_ref: rux2021
+  uncertainty: null result of a literature search, not a measurement
+  value_unverified: true
+localization:
+- 'mouse zeugopod marrow MSC: confirmed by Hoxa11-EGFP reporter (rux2016)'
+- 'mouse zeugopod articular cartilage: confirmed to 6 months (rux2021)'
+- 'mouse growth plate RZ/PZ/HZ: unreported in any species'
+- 'human growth plate: unreported'
+human_evidence: indirect
+human_evidence_note: Human evidence is limb-malformation genetics (HOXD13 synpolydactyly, HOXA13 hand-foot-genital,
+  HOXA11 radio-ulnar synostosis) plus the demonstration that adult human fibroblasts from 47 body sites retain
+  site-specific HOX expression; no human growth plate has been assayed for HOX.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Every functional statement rests on mouse Hox11 alleles in the zeugopod, a segment
+  whose two bones are yoked mechanically; humans have HOX limb malformation syndromes but no growth-rate phenotype
+  has ever been measured against HOX genotype.
+confidence: D
+claim_grades:
+- claim: Posterior HOX genes assign proximodistal segment identity in the limb bud
+  grade: B
+  basis: mouse paralogue-group knockouts plus congruent human limb malformation syndromes
+- claim: Hox11 function continues to be required postnatally and its loss slows zeugopod elongation
+  grade: C
+  basis: single mouse study (pineault2015), replicated in spirit by region-specific repair defects (rux2017)
+- claim: 'FIELD CLAIM, not asserted by this node: retained positional HOX identity is what sets site-specific
+    growth rate'
+  grade: E
+  basis: inference; the only supporting datum is age-independent Hoxd13/Shox/Tbx5 expression differences between
+    phalangeal and tibial plates (lui2018), with no manipulation
+- claim: 'FIELD CLAIM, not asserted by this node: HOX is expressed in postnatal growth plate chondrocytes'
+  grade: X
+  basis: asserted nowhere as a measurement; rux2016 reports adult Hoxa11 as exclusive to marrow MSCs, rux2021
+    finds it in articular chondrocytes, and no zonal growth plate data exist
+key_refs:
+- ref_id: pineault2015
+  pmid: '26500224'
+  doi: 10.1242/bio.012500
+  first_author: Pineault KM
+  year: 2015
+  type: primary
+  one_line_finding: Hox11 compound mutants slow postnatal radius/ulna elongation, lose growth plate height
+    and senesce early while proliferation in RZ and PZ rises
+- ref_id: rux2016
+  pmid: '27939685'
+  doi: 10.1016/j.devcel.2016.11.008
+  first_author: Rux DR
+  year: 2016
+  type: primary_abstract_only
+  one_line_finding: Adult Hoxa11-EGFP expression is reported as exclusive to zeugopod bone marrow MSCs, not
+    cartilage
+- ref_id: rux2021
+  pmid: '34010606'
+  doi: 10.1016/j.ydbio.2021.05.007
+  first_author: Rux D
+  year: 2021
+  type: primary_abstract_only
+  one_line_finding: Hoxa11 is maintained in zeugopod articular chondrocytes to 6 months and tracks postnatal
+    column formation in the tibial plateau
+- ref_id: rux2017
+  pmid: '28470721'
+  first_author: Rux DR
+  year: 2017
+  type: primary_abstract_only
+  one_line_finding: Hox11 loss impairs zeugopod but not stylopod fracture repair, showing region-restricted
+    postnatal function
+- ref_id: leclerc2023
+  pmid: '36912250'
+  doi: 10.1242/dev.201391
+  first_author: Leclerc K
+  year: 2023
+  type: primary_abstract_only
+  one_line_finding: Hox stem-cell-promoting activity in periosteal stem cells requires the Hox gene to match
+    the cell's anatomical origin
+- ref_id: lui2018
+  pmid: '30036371'
+  doi: 10.1371/journal.pbio.2005263
+  first_author: Lui JC
+  year: 2018
+  type: primary
+  one_line_finding: Hoxd13, Shox and Tbx5 differ between 1-week phalangeal and tibial growth plates independently
+    of age
+- ref_id: chang2002
+  pmid: '12297622'
+  first_author: Chang HY
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: Adult human fibroblasts from 47 topographic sites retain site-specific HOX expression
+open_questions:
+- g_l0dev_001
+- g_l0dev_004
+- g_l0dev_009
+contradicts:
+- rux2016
+layer: L0
+stub: false
+last_verified: '2026-08-05'

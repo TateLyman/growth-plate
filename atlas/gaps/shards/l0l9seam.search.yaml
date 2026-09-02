@@ -1,0 +1,65 @@
+searches:
+
+- gap_id: g_l0l9_001
+  database: Europe PMC
+  exact_query_string: '(("beta-klotho" OR KLB OR FGF21) AND (human) AND ("growth plate" OR physis OR "epiphyseal cartilage")) AND (expression OR immunohistochemistry OR localization)'
+  filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 166
+  screened_count: 25
+  reason_none_qualified: >-
+    Not one record reports beta-Klotho (KLB) detection in human growth plate cartilage. The
+    retrieved set is dominated by FGF21 metabolic biology, osteoarthritis and osteoporosis
+    reviews, and FGF19/FGFR4 cartilage work. The closest skeletal records are Chen 2025 (FGF19
+    disrupting cartilage development via FGFR4/beta-catenin, mouse) and a 2023 paper on FGF21-GH
+    receptor crosstalk in a non-physeal context. The only growth-plate-specific FGF21 papers
+    remain wu2012 and wu2013, both mouse, and both were retrieved by a separate targeted query
+    (`FGF21 AND chondrocyte AND "growth hormone" AND AUTH:"De Luca F"`, 2 hits, both screened and
+    both cited here).
+
+- gap_id: g_l0l9_003
+  database: Europe PMC
+  exact_query_string: '("growth plate" OR physis) AND (human) AND (methylome OR "DNA methylation" OR bisulfite OR "450K" OR EPIC) AND (chondrocyte OR cartilage OR zone)'
+  filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 490
+  screened_count: 25
+  reason_none_qualified: >-
+    No human growth plate methylation dataset at any resolution. The screened set splits into
+    osteoarthritis articular-cartilage methylation (the large majority), rodent growth plate work
+    (yanagihara2025 Dnmt1, and a mouse FLIM metabolic-quiescence paper), miRNA rather than
+    methylation regulation of growth plate cartilage, and general epigenetics reviews. The only
+    physis-specific methylation measurement retrieved anywhere in this sweep is nilsson2005, which
+    is rabbit. A companion query restricted to rabbit/human plus senescence returned the same
+    result.
+
+- gap_id: g_l0l9_004
+  database: Europe PMC
+  exact_query_string: '(imprinted OR imprinting OR "parent-of-origin") AND ("growth plate" OR physis OR "epiphyseal cartilage") AND (human) AND (expression OR allele-specific)'
+  filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 316
+  screened_count: 25
+  reason_none_qualified: >-
+    No allele-specific expression or imprinting-status measurement in human growth plate cartilage.
+    The nearest records are PLAGL1-IGF2 in postnatal mandibular condyle (not the long-bone physis
+    and not allele-resolved in human), GRB10 association with bone growth in canine and human
+    populations (association only, no physeal tissue), and clinical imprinting-disorder series
+    (Temple, Silver-Russell) that report stature but no tissue. All remaining hits are reviews of
+    IGF2 abnormalities or unrelated skeletal pathology.
+
+- gap_id: g_l0l9_007
+  database: Europe PMC
+  exact_query_string: '(("de novo mutation" OR "de novo variant") AND (height OR stature) AND (population OR cohort) AND (normal range OR general population)) AND (PUB_TYPE:"Journal Article" NOT PUB_TYPE:"Review")'
+  filters: 'format=json, pageSize=25, resultType=lite, primary research only, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 1172
+  screened_count: 25
+  reason_none_qualified: >-
+    Every screened record is a syndromic case report or small case series in which a de novo
+    variant causes a named disorder that includes short or tall stature - Robinow, Wiedemann-Steiner,
+    Rubinstein-Taybi, Kleefstra, Coffin-Siris, Noonan, Schmid metaphyseal chondrodysplasia,
+    trichorhinophalangeal syndrome and similar. Not one record estimates the contribution of de
+    novo mutation to normal-range stature, relates de novo burden to height SDS in a population
+    cohort, or tests paternal age against offspring height conditional on parental height. This
+    null is the basis for deleting the `de_novo_variant_growth` stub rather than researching it.

@@ -1,0 +1,126 @@
+id: canalization_growth
+name: Canalization of human growth
+aliases:
+- growth canalization
+- target-seeking growth
+type: process
+layer: L9
+stub: false
+summary: 'Canalization is the observation that a growing child perturbed off its height trajectory returns
+  to it, implying that the organism stores a target and can compute a deviation from it. Prader, Tanner
+  and von Harnack coined the term catch-up growth for the return phase and framed it explicitly as developmental
+  canalization in man (prader1963); Tanner generalised the target-seeking description to mammals (tanner1963).
+  The empirical content of the model is a trajectory, not just an endpoint: when height SDS minus target
+  height SDS is followed through recovery in adequately treated children it is well fitted by a monomolecular
+  (single-exponential approach-to-asymptote) function, which means catch-up has a rate constant k and
+  therefore a time constant 1/k (wit2021). The rate constant differs by disease - coeliac disease recovers
+  faster than juvenile hypothyroidism and GH deficiency (p=0.02 and p=0.004 respectively), while the asymptote
+  reached is the same - so the deficit and the recovery rate are separately controlled. Two mechanistic
+  accounts compete and are not resolved: a systemic neuroendocrine comparator, and a growth plate-intrinsic
+  model in which suppression delays the consumption of a finite proliferative capacity so the plate is
+  younger than its chronological age when the suppression lifts (delayed_senescence_hypothesis, L2). The
+  monomolecular fit failed in 10-17% of children because height SDS fell again after several measurements,
+  violating the assumption that catch-up is an irreversible one-way process (wit2021) - the clearest published
+  evidence that the target is not perfectly held.'
+quantitative:
+- parameter: proportion of catch-up episodes fitted by a monomolecular function
+  value: 83-90
+  unit: percent
+  conditions: prepubertal children with juvenile hypothyroidism (n=20) or GH deficiency (n=18) on adequate
+    treatment
+  species: human
+  source_ref: wit2021
+  uncertainty: failures were cases where height SDS decreased after several measurements
+- parameter: rate constant k of catch-up, coeliac disease versus juvenile hypothyroidism
+  value: higher in coeliac
+  unit: not_applicable
+  conditions: monomolecular fits of height SDS minus target height SDS
+  species: human
+  source_ref: wit2021
+  uncertainty: p=0.02; absolute k values not given in the abstract
+- parameter: rate constant k of catch-up, coeliac disease versus GH deficiency
+  value: higher in coeliac
+  unit: not_applicable
+  conditions: same modelling framework
+  species: human
+  source_ref: wit2021
+  uncertainty: p=0.004
+- parameter: height deficit at start of catch-up, juvenile hypothyroidism versus coeliac disease
+  value: larger in hypothyroidism
+  unit: SDS
+  conditions: adjusted height SDS at time zero
+  species: human
+  source_ref: wit2021
+  uncertainty: p=0.02; asymptotic end value similar between conditions
+- parameter: effect of GH dose (conventional versus high) on catch-up rate constant
+  value: not significant
+  unit: not_applicable
+  conditions: GHD subgroups within the same cohort
+  species: human
+  source_ref: wit2021
+  uncertainty: difference did not reach significance; n=18 total
+localization:
+- 'human whole organism: height SDS relative to target height SDS through a recovery episode'
+human_evidence: direct
+human_evidence_note: The canalization phenomenon and its kinetics are described directly from serial human
+  height measurement in clinical cohorts.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: The phenomenon as quantified here is measured in humans.
+confidence: B
+claim_grades:
+- claim: Human catch-up growth follows a single-exponential approach to an asymptote and therefore has
+    a definable time constant
+  grade: B
+  basis: Monomolecular fits succeed in 83-90% of episodes across three diseases (wit2021), but total n
+    is 38 children in the hypothyroid/GHD analysis and the model was developed on coeliac disease.
+- claim: The rate of catch-up and the size of the deficit are separately controlled
+  grade: C
+  basis: Different k with equal asymptote between coeliac disease and hypothyroidism in one modelling
+    study; not independently replicated.
+- claim: Growth is target-seeking, i.e. the organism stores a set point
+  grade: C
+  basis: Inference from the reproducibility of return to a prior centile (prader1963, tanner1963); no
+    comparator, signal or set-point has ever been identified, and 10-17% of episodes reverse.
+key_refs:
+- ref_id: prader1963
+  pmid: '13985887'
+  first_author: Prader A
+  year: 1963
+  type: primary_abstract_only
+  one_line_finding: Names catch-up growth after illness or starvation and frames it as developmental canalization
+    in man.
+- ref_id: tanner1963
+  pmid: '14079891'
+  first_author: Tanner JM
+  year: 1963
+  type: primary_abstract_only
+  one_line_finding: States the target-seeking model of size regulation in mammals.
+- ref_id: wit2021
+  pmid: '32936765'
+  first_author: Wit JM
+  year: 2021
+  type: primary
+  one_line_finding: Catch-up growth in juvenile hypothyroidism and GHD fits a monomolecular function with
+    a slower rate constant than coeliac disease but the same endpoint.
+- ref_id: wit2002
+  pmid: '12510974'
+  first_author: Wit JM
+  year: 2002
+  type: review
+  one_line_finding: Sets out the competing neuroendocrine and growth-plate-intrinsic models of catch-up
+    growth.
+- ref_id: emons2005
+  pmid: '16356444'
+  first_author: Emons JA
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: Tests the delayed growth plate senescence hypothesis of catch-up growth in humans;
+    abstract not available, full text queued.
+open_questions:
+- g_l9organism_006
+contradicts:
+- neuroendocrine_catchup_hypothesis
+pending_source: emons2005
+last_verified: '2026-08-05'

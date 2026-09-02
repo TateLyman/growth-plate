@@ -1,0 +1,77 @@
+id: satellite_cell
+name: Muscle satellite cell
+type: cell_type
+layer: L9
+stub: false
+summary: 'Satellite cells are the Pax7-positive resident stem cells of skeletal muscle, lying between
+  the myofibre plasma membrane and the basal lamina, and they are the only source of new myonuclei during
+  postnatal muscle growth. Their behaviour during growth is phasic and, in mouse, well quantified: satellite
+  cell number per EDL myofibre is about 14 at postnatal day 7 and falls to the adult level of about 5
+  by P21, exactly the point at which myonuclear addition to the growing fibre stops (white2010). Muscle
+  continues to enlarge after P21 without further nuclear accretion, so the satellite cell pool is not
+  rate-limiting for late hypertrophy in normal growth. The parallel with the growth plate resting zone
+  is structural rather than demonstrated: both are quiescent stem pools that contract as growth proceeds,
+  but no experiment has tested whether the two pools deplete on a shared schedule or respond to a shared
+  signal. In humans, satellite cell density has been counted mainly in pathology - contractured muscle
+  in cerebral palsy has reduced satellite cell number in situ (dayanidhi2015) - and no normal human developmental
+  series exists.'
+quantitative:
+- parameter: satellite cells per myofibre at P7
+  value: '14'
+  unit: cells
+  conditions: mouse EDL, Myf5nlacZ/+ reporter
+  species: mouse
+  source_ref: white2010
+  uncertainty: approximately
+- parameter: satellite cells per myofibre in the adult
+  value: '5'
+  unit: cells
+  conditions: mouse EDL, level reached by P21
+  species: mouse
+  source_ref: white2010
+  uncertainty: approximately
+- parameter: age at which satellite-cell-derived myonuclear addition ceases
+  value: '21'
+  unit: postnatal days
+  conditions: mouse EDL
+  species: mouse
+  source_ref: white2010
+  uncertainty: exact as reported
+- parameter: satellite cell number in contractured human muscle
+  value: reduced
+  unit: cells per fibre
+  conditions: children with cerebral palsy, in situ counts of contractured muscle versus comparison muscle
+  species: human
+  source_ref: dayanidhi2015
+  uncertainty: direction reported; absolute counts not extracted
+localization:
+- 'mouse EDL: sublaminar satellite cells counted on isolated fibres'
+- 'human contractured muscle: in situ counts (dayanidhi2015)'
+human_evidence: indirect
+human_evidence_note: Human satellite cell counts exist only in pathological muscle; there is no normal
+  human developmental series.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: The entire developmental trajectory of the satellite cell pool is murine and
+  compressed into three weeks; the human equivalent spans nearly two decades and is unmeasured.
+confidence: C
+key_refs:
+- ref_id: white2010
+  pmid: '20175910'
+  first_author: White RB
+  year: 2010
+  type: primary
+  one_line_finding: Satellite cells per mouse EDL fibre fall from about 14 at P7 to about 5 by P21, coincident
+    with the end of myonuclear addition.
+- ref_id: dayanidhi2015
+  pmid: '25732238'
+  first_author: Dayanidhi S
+  year: 2015
+  type: primary
+  one_line_finding: Satellite cell number is reduced in situ in muscular contractures from children with
+    cerebral palsy.
+open_questions:
+- g_l9organism_011
+last_verified: '2026-08-05'

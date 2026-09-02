@@ -1,0 +1,54 @@
+id: dxa_body_composition
+name: DXA body composition and skeletal measurement
+aliases:
+- dual-energy X-ray absorptiometry
+type: method
+summary: |
+  DXA measures areal bone mineral density, bone mineral content, lean mass and fat mass at low
+  radiation dose, which makes it the standard longitudinal skeletal measurement in paediatric
+  cohorts. Its relationship to the growth plate is entirely indirect and its principal failure
+  mode in growing children is well defined: areal BMD in g/cm2 is a projection, so it scales
+  with bone SIZE as well as with true volumetric density, and a short child is systematically
+  assigned a lower areal BMD for the same tissue-level mineralisation. Any DXA comparison
+  across children of different stature therefore confounds the exposure of interest - growth -
+  with the measurement. For this atlas the relevant uses are as covariates and as phenotype
+  anchors: body composition changes track pubertal stage, and lean mass is the strongest
+  correlate of bone mass accrual, which is one route by which mechanical loading enters
+  growth. DXA cannot see the physis: its in-plane resolution is millimetric and it produces no
+  cartilage signal at all, so it contributes nothing to zonal questions and should never be
+  used as evidence about growth plate mechanism.
+quantitative:
+- parameter: DXA sensitivity to growth plate cartilage
+  value: none
+  unit: qualitative
+  conditions: cartilage is radiolucent and unresolved at DXA in-plane resolution
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: categorical property of the modality
+localization:
+- 'human SYS: whole-body or regional bone mineral only'
+human_evidence: direct
+human_evidence_note: DXA is a human clinical measurement, used here only as a covariate and never
+  as growth plate evidence.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical measurement.
+confidence: B
+key_refs:
+- ref_id: hodgson2025
+  first_author: Hodgson S
+  year: 2025
+  type: primary
+  one_line_finding: Long bone size and thickness measured in children with cerebral palsy and other
+    neuromuscular conditions - an example of skeletal measurement used as a growth phenotype.
+- ref_id: geo_census_l13b_20260805
+  first_author: Human Growth System Atlas L13 sweep
+  year: 2026
+  type: dataset
+  one_line_finding: 'Modality coverage audit: DXA contributes no cartilage or zonal signal.'
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

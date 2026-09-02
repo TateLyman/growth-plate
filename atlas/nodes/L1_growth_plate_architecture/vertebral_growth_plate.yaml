@@ -1,0 +1,74 @@
+id: vertebral_growth_plate
+name: Vertebral growth plate
+aliases:
+- vertebral endplate physis
+- ring apophysis
+- vertebral body growth plate
+type: tissue_structure
+layer: L1
+stub: false
+summary: 'Each vertebral body grows in height from cartilaginous growth plates at its superior and inferior
+  surfaces, and the human vertebral column carries more than 130 such plates. Collectively they generate
+  the trunk component of standing height, and their behaviour is not linear with age: three distinct postnatal
+  phases are recognised, birth to 5 years, 5 to 10 years, and 10 years to skeletal maturity, with acceleration
+  and deceleration rather than a constant rate. The consequence for pathology is that the same asymmetric
+  load produces very different deformity depending on when it acts, which is the basis of the relationship
+  between remaining growth and progression risk in idiopathic scoliosis, and of growth-modulation surgery
+  such as vertebral body tethering. What is missing is resolution: the field measures segment lengths
+  radiographically rather than per-plate growth rates, so the contribution of an individual vertebral
+  physis, and how it compares between superior and inferior endplates or between thoracic and lumbar levels,
+  is unquantified in humans. No vertebral growth plate histomorphometry comparable to the appendicular
+  literature exists.'
+quantitative:
+- parameter: number of growth plates in the human vertebral column
+  value: more than 130
+  unit: growth plates
+  conditions: human spine
+  species: human
+  source_ref: dimeglio2020
+  uncertainty: as stated by the author
+- parameter: number of distinct postnatal phases of spinal growth
+  value: '3'
+  unit: phases
+  conditions: 'human: birth to 5 y, 5 to 10 y, 10 y to skeletal maturity'
+  species: human
+  source_ref: dimeglio2020
+  uncertainty: as stated
+- parameter: per-plate vertebral growth rate
+  value: not reported
+  unit: mm/year
+  conditions: human, any level
+  species: human
+  source_ref: dimeglio2020
+  uncertainty: null result; only segment-level rates are published
+localization:
+- 'human spine: plate count and phase structure described (dimeglio2020)'
+- 'human vertebral physis: no histomorphometry located in this sweep'
+human_evidence: direct
+human_evidence_note: Human spinal growth phases and the number of vertebral growth plates are described
+  from human radiographic series (dimeglio2020), but per-plate rates are not published.
+species_basis:
+- human
+- porcine
+translation_risk: low
+translation_risk_reason: The descriptive human data are human; the risk is not species but resolution,
+  since growth-modulation models are porcine and human data are segment-level.
+confidence: C
+key_refs:
+- ref_id: dimeglio2020
+  pmid: '32055613'
+  first_author: Dimeglio A
+  year: 2020
+  type: review
+  one_line_finding: The human vertebral column carries more than 130 growth plates and spinal growth proceeds
+    in three non-linear postnatal phases.
+- ref_id: byers2000
+  pmid: '11033444'
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: Provides the nearest human axial-skeleton growth plate histomorphometry, in rib rather
+    than vertebra.
+open_questions:
+- g_l1arch_011
+last_verified: '2026-08-05'

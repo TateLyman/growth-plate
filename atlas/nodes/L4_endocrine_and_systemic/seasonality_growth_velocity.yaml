@@ -1,0 +1,94 @@
+id: seasonality_growth_velocity
+name: Seasonality of growth velocity
+aliases:
+- seasonal growth rhythm
+- spring growth peak
+type: process
+layer: L4
+stub: false
+summary: 'Human linear growth velocity varies with season, and the effect replicates - but the phase and
+  the proposed driver do not agree across studies, which is itself the informative finding. In 11,587
+  three-month intervals from 2,277 prepubertal GH-treated children, height velocity scaled with the average
+  number of daylight hours in the interval: +0.146 cm/yr per daylight hour in the first treatment year
+  and +0.121 cm/yr per hour thereafter, with the effect increasing with latitude and no independent effect
+  of calendar month; total annual growth did not differ between latitudes (shulman2013). In 9,409 Japanese
+  infants tracked by a phone application, the winter-to-summer difference in length z-velocity was 0.0026
+  z/day (95% CI 0.0015-0.0036), about 13% of mean linear growth velocity at 6 months, with a summer peak
+  (narumi2020). In 760 Danish 8-11 year olds, however, height velocity peaked in January-April against
+  a 6.10 cm/yr mean, and - unlike earlier reports of a spring height peak with an autumn weight peak -
+  weight, BMI and fat-free mass index peaked coincidentally (dalskov2016). Daylight-hours, temperature
+  and nutritional-availability explanations have not been discriminated.'
+quantitative:
+- parameter: height velocity per additional daylight hour, GH treatment year 1
+  value: '0.146'
+  unit: cm/yr per daylight hour
+  conditions: 11,587 3-month intervals in 2,277 prepubertal children with idiopathic GHD, 31 US centres
+  species: human
+  source_ref: shulman2013
+  uncertainty: P<0.0001
+- parameter: height velocity per additional daylight hour, GH treatment years 2+
+  value: '0.121'
+  unit: cm/yr per daylight hour
+  conditions: same NCGS cohort, subsequent treatment years
+  species: human
+  source_ref: shulman2013
+  uncertainty: P<0.0001
+- parameter: summer-winter difference in length z-score velocity in infants
+  value: '0.0026'
+  unit: z-score/day
+  conditions: 9,409 Japanese infants, 20,007 delta-LAZ/day measurements, multilevel model adjusted for
+    age, sex, nutrition, birth season
+  species: human
+  source_ref: narumi2020
+  uncertainty: 95% CI 0.0015-0.0036; P<0.001
+- parameter: seasonal amplitude as a fraction of mean linear growth velocity
+  value: '13'
+  unit: '%'
+  conditions: 6-month-old Japanese infants
+  species: human
+  source_ref: narumi2020
+  uncertainty: derived from the z-velocity difference above
+- parameter: mean annual height velocity in Danish 8-11 year olds, with above-average velocity in January-April
+  value: '6.10'
+  unit: cm/yr
+  conditions: 760 children, >2,200 measurements September-June, change-score and semiparametric analyses
+  species: human
+  source_ref: dalskov2016
+  uncertainty: phase disagrees with the summer peak reported in infants
+localization:
+- 'human SYS: whole-body height velocity'
+- 'human growth plate: no seasonal tissue-level observation exists'
+human_evidence: direct
+human_evidence_note: Three independent large human cohorts (US GH-treated children, Japanese infants,
+  Danish schoolchildren) all show a seasonal signal in linear growth measured by direct anthropometry.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Purely human observational anthropometry.
+confidence: A
+key_refs:
+- ref_id: shulman2013
+  first_author: Shulman DI
+  year: 2013
+  type: primary
+  one_line_finding: Height velocity rose 0.146 cm/yr per daylight hour in GH-treated children, increasing
+    with latitude, with no independent month effect.
+  pmid: '23374591'
+- ref_id: narumi2020
+  first_author: Narumi S
+  year: 2020
+  type: primary
+  one_line_finding: Japanese infants showed a summer peak in length velocity worth ~13% of mean growth
+    velocity.
+  pmid: '33102789'
+- ref_id: dalskov2016
+  first_author: Dalskov SM
+  year: 2016
+  type: primary
+  one_line_finding: Danish 8-11 year olds showed a January-April height velocity peak with coincident
+    weight/BMI/FFMI peaks, unlike earlier reports.
+  pmid: '26488554'
+contradicts:
+- dalskov2016
+- narumi2020
+last_verified: '2026-08-05'

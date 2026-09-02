@@ -1,0 +1,78 @@
+id: mct8_transporter
+name: MCT8 (SLC16A2) thyroid hormone transporter
+aliases:
+- SLC16A2
+- MCT8
+- monocarboxylate transporter 8
+type: protein
+layer: L4
+stub: false
+summary: 'MCT8 is a 12-transmembrane facilitative transporter that carries T4 and, preferentially, T3
+  across plasma membranes; thyroid hormone is not freely membrane-permeant, so transporter expression
+  determines which cells can respond to a given serum concentration. Hemizygous SLC16A2 loss of function
+  in males causes MCT8 deficiency (Allan-Herndon-Dudley syndrome): severe psychomotor disability from
+  cerebral hypothyroidism combined with peripheral thyrotoxicosis, because tissues that do not require
+  MCT8 are exposed to the high serum T3 that results. The characteristic biochemistry is high T3, low-normal
+  T4, normal-to-mildly-raised TSH and a raised T3/T4 ratio. The growth-relevant consequence is being underweight
+  and poor somatic growth; the T3 analogue Triac, which enters cells independently of MCT8, lowered serum
+  T3 from 4.58 to 1.66 nmol/L over a median 2.2 years and improved body-weight-for-age by 0.72 SD versus
+  untreated historical controls (van2022). Whether growth plate chondrocytes depend on MCT8 or on alternative
+  transporters (OATP1C1, MCT10, LAT1/2) has not been established in any species.'
+quantitative:
+- parameter: serum T3 before and after Triac in MCT8 deficiency
+  value: 4.58 -> 1.66
+  unit: nmol/L
+  conditions: 67 patients across 33 sites, median baseline age 4.6 y, median treatment 2.2 y
+  species: human
+  source_ref: van2022
+  uncertainty: SD 1.11 -> 0.69; mean decrease 2.92 (95% CI 2.61-3.23), P<0.0001
+- parameter: body-weight-for-age on Triac versus untreated historical controls
+  value: '0.72'
+  unit: SD
+  conditions: MCT8-deficient patients, real-life retrospective cohort
+  species: human
+  source_ref: van2022
+  uncertainty: 95% CI 0.36-1.09; P=0.0002
+localization:
+- 'human SYS: brain endothelium, neurons, thyroid, liver, kidney'
+- 'human growth plate: MCT8 expression not reported'
+human_evidence: direct
+human_evidence_note: MCT8 deficiency is a well-characterised human X-linked disorder with a multi-site
+  treatment cohort and quantified biochemical and anthropometric endpoints.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Human genetic and interventional data dominate; the mouse Mct8-null does not
+  reproduce the human neurological phenotype, so mouse data are the weaker source here, not the stronger.
+confidence: B
+key_refs:
+- ref_id: van2022
+  first_author: van Geest FS
+  year: 2022
+  type: primary
+  one_line_finding: Triac lowered serum T3 from 4.58 to 1.66 nmol/L and improved weight-for-age by 0.72
+    SD in 67 MCT8-deficient patients.
+  pmid: '34679181'
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: Node lists its four competing transporters (OATP1C1, MCT10, LAT1/2) and states the
+  growth plate question is unresolved. The Triac intervention works BECAUSE it bypasses MCT8 - a mechanism-confirming
+  design.
+reanalysis_observations:
+- observation: WITHDRAWN AND REVERSED (CORR-005). P8-01 reported SLC16A2 (MCT8) undetectable in human
+    growth plate. P8-02 detects SLC16A2 in ALL THREE independent series - GSE22855 74.8th percentile,
+    GSE32398 63.1, GSE18338 59.9 - at every stringency tested. SLC16A10 is likewise detected in all three.
+    Both P8-01 negatives rested on a single probe set each.
+  interpretation: 'MCT8 transcript is present in human growth plate. What falls is the ARGUMENT FROM ITS
+    ABSENCE. The system-L alternative is untouched and stands on its own evidence: SLC7A5 is at the 78th-95th
+    percentile in all three series. The question of which transporter carries the flux is now open on
+    both sides rather than settled against MCT8.'
+  caveats: Transcript, not protein or transport. Whole-plate bulk. See P8-02 RESULTS section 4.
+  reanalysis: p8_02_independent_corroboration
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'
+  supersedes: p8_01_gse9160_human_zonal MCT8 non-detection

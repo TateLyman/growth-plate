@@ -1,0 +1,69 @@
+id: jpa2_model
+name: JPA-2 asymptotic growth model
+aliases:
+- Jolicoeur-Pontier-Abolfathi model
+- JPA2
+type: method
+layer: L9
+stub: false
+summary: 'JPA-2 is an asymptotic parametric model of human stature defined from birth rather than from
+  age 2, so it spans infancy and puberty in a single function (jolicoeur1992). It descends from JPA-1,
+  a lifetime asymptotic curve fitted to French longitudinal data (jolicoeur1988). Its value to this atlas
+  is coverage rather than accuracy: because it reaches back to birth it supplies one continuous velocity
+  function across the infancy-childhood transition, which Preece-Baines cannot reach at all and which
+  the ICP model reaches only by summing components across a switch-on discontinuity. No head-to-head residual
+  comparison of JPA-2 against Preece-Baines or against a nonparametric fit on the same individuals was
+  located in this sweep, so the frequently repeated claim that JPA-2 fits better over the overlapping
+  age range is at present untraceable to a primary and is graded X.'
+quantitative:
+- parameter: age range covered by the model
+  value: birth to adulthood
+  unit: not_applicable
+  conditions: longitudinal human stature
+  species: human
+  source_ref: jolicoeur1992
+  uncertainty: stated scope
+- parameter: parameters in the JPA-1 lifetime asymptotic curve
+  value: '7'
+  unit: parameters
+  conditions: French longitudinal height series
+  species: human
+  source_ref: jolicoeur1988
+  uncertainty: as published
+  value_unverified: true
+localization:
+- 'human whole organism: serial recumbent length and standing height from birth'
+human_evidence: direct
+human_evidence_note: Fitted only to human longitudinal stature series.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human curve-fitting method.
+confidence: D
+claim_grades:
+- claim: JPA-2 models human stature from birth to adulthood with an asymptotic parametric form
+  grade: A
+  basis: The published derivations (jolicoeur1992, jolicoeur1988).
+- claim: JPA-2 fits human stature better than Preece-Baines over the overlapping age range
+  grade: X
+  basis: Repeated in review literature; no head-to-head residual comparison on the same individuals located.
+    Logged as gap g_l9organism_002.
+key_refs:
+- ref_id: jolicoeur1992
+  pmid: '28524389'
+  first_author: Jolicoeur P
+  year: 1992
+  type: primary_abstract_only
+  one_line_finding: Presents asymptotic models (JPA family) for longitudinal human stature spanning birth
+    to maturity.
+- ref_id: jolicoeur1988
+  pmid: '3233262'
+  first_author: Jolicoeur P
+  year: 1988
+  type: primary_abstract_only
+  one_line_finding: JPA-1 lifetime asymptotic growth curve for human height fitted to French longitudinal
+    data.
+open_questions:
+- g_l9organism_002
+pending_source: jolicoeur1992
+last_verified: '2026-08-05'

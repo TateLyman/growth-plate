@@ -1,0 +1,52 @@
+id: iron_deficiency_growth
+name: Iron deficiency and linear growth
+type: process
+summary: 'Iron deficiency is the most prevalent single-nutrient deficiency in children and has the weakest
+  case of any classical micronutrient for a direct effect on the growth plate. Iron status is entangled
+  with the two factors that do have demonstrated entry points: chronic inflammation raises hepcidin and
+  lowers serum iron while independently suppressing IGF-1, and poor-quality diets that are iron-poor are
+  also protein-poor and zinc-poor. In the Ugandan stunting cohort (n=740), which measured iron, B12, folate
+  and vitamin A status alongside infections and animal-source-food intake as correlates of serum IGF-1,
+  inflammation markers were the strongest negative correlates of IGF-1 (madigan2026), so any iron-IGF-1
+  association must be adjusted for inflammation before it can be interpreted. No experiment in any species
+  has shown an iron-dependent step in chondrocyte proliferation, hypertrophy or matrix mineralisation
+  at physiologically attainable iron concentrations, and none of the candidate routes - prolyl hydroxylase
+  (an Fe(II)- and 2-oxoglutarate-dependent enzyme that destabilises HIF-1alpha, which L3 carries as hif1a_chondrocyte)
+  or the Fe-dependent lysyl hydroxylases of collagen crosslinking - has been tested under dietary iron
+  restriction with a growth plate readout. This node exists to name that absence rather than to assert
+  an epidemiological association without a mechanism.'
+localization:
+- 'human SYS: iron status confounded with inflammation and with diet quality'
+- 'human growth plate: no iron-dependent step demonstrated'
+human_evidence: indirect
+human_evidence_note: Human cohort data measure iron status alongside IGF-1 and inflammation in stunted
+  children, but no human study isolates an iron effect on linear growth from inflammation and diet quality.
+species_basis:
+- human
+translation_risk: unknown
+translation_risk_reason: There is no animal growth plate experiment on dietary iron restriction to translate
+  from.
+confidence: D
+claim_grades:
+- claim: Iron status is measured alongside, and confounded by, inflammation in stunted children.
+  grade: A
+  basis: Cross-sectional cohort of 740 stunted Ugandan children with iron, B12, folate, vitamin A, CRP,
+    AGP and IGF-1 (madigan2026).
+- claim: Iron deficiency has a demonstrated molecular entry point at the growth plate.
+  grade: X
+  basis: No primary experiment exists; the prolyl-hydroxylase/HIF and lysyl-hydroxylase routes are untested
+    under dietary iron restriction. Logged as g_l10env_007.
+key_refs:
+- ref_id: madigan2026
+  pmid: '41093111'
+  first_author: Madigan E
+  year: 2026
+  type: primary
+  one_line_finding: In 740 stunted Ugandan children iron, B12, folate and vitamin A status were assessed
+    as correlates of serum IGF-1 alongside infections; inflammation markers were the strongest negative
+    correlates.
+open_questions:
+- g_l10env_007
+layer: L10
+stub: false
+last_verified: '2026-08-05'

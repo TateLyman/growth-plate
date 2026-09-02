@@ -1,0 +1,594 @@
+gaps:
+  - gap_id: g_l6mech_001
+    question: >-
+      What is the growth-rate sensitivity to sustained mechanical stress of a human physis,
+      expressed as percent change in longitudinal growth rate per 0.1 MPa, and does it match the
+      17.1%/0.1 MPa measured in rat, rabbit and calf?
+    type: search_established
+    layer: L6
+    why_it_matters: >-
+      This single coefficient is the quantitative core of the Hueter-Volkmann law and the basis on
+      which guided growth, vertebral body tethering and the scoliosis vicious-cycle simulation are
+      planned and justified. It has been measured only in three quadruped species at two skeletal
+      sites over 8-day loading windows. If the human coefficient differs by even a factor of two,
+      every model-based prediction of deformity progression and of correction rate is
+      correspondingly wrong, and the wide correction-rate variance seen clinically (SD approximately
+      80-90% of the mean) would have a principled explanation.
+    what_is_known: >-
+      Growth-rate sensitivity is 17.1% per 0.1 MPa averaged across rat, rabbit and calf caudal
+      vertebrae and proximal tibiae, range 9.2-23.9%/0.1 MPa, 15.0%/0.1 MPa for vertebrae and
+      18.6%/0.1 MPa for proximal tibia, despite baseline growth rates spanning 30-366 um/day
+      (stokes2006). The relation is apparently linear over the stress range tested and asymmetric
+      between compression and distraction (stokes2002). Human physes are demonstrably modulable -
+      guided growth corrects at 0.67 deg/month at the distal femur (tolk2026) - but the applied
+      stress is never known.
+    what_is_missing: >-
+      Any human experiment or observation in which a known stress is applied across a physis and the
+      resulting longitudinal growth rate is measured. There is not even a human estimate with
+      uncertainty; the field substitutes the animal coefficient without adjustment.
+    nearest_evidence:
+      - stokes2006
+      - tolk2026
+      - hucke2023
+    discriminating_experiment: >-
+      Prospective cohort of children undergoing unilateral tension-band hemiepiphysiodesis of the
+      distal femur, in whom (a) implant strain is measured directly with an instrumented plate or
+      strain-gauged screw, giving the tether force, (b) subject-specific finite element models
+      driven by instrumented gait analysis and MRI geometry convert that force plus body loading
+      into physeal stress on the tethered and free sides, and (c) longitudinal growth on each side
+      is measured by serial low-dose EOS radiography or by implanted tantalum bead
+      radiostereometry. Regress percent growth difference on stress difference. Under the
+      hypothesis that the animal coefficient transfers, the slope is 15-19% per 0.1 MPa with the
+      animal-derived range covering the human confidence interval. Under the alternative that human
+      physes are less mechanosensitive - which the slow, variable clinical correction rates hint at
+      - the slope is substantially below 9%/0.1 MPa and the residual variance is dominated by
+      skeletal age rather than stress.
+    tractability: 3
+    search_log_ref: g_l6mech_001
+
+  - gap_id: g_l6mech_002
+    question: >-
+      Over what range of applied stress does the linear growth-stress relation hold, and where are
+      the upper and lower saturation points at which growth stops changing or the physis is damaged?
+    type: quantitative_gap
+    layer: L6
+    why_it_matters: >-
+      Linearity was demonstrated over roughly 0.02-0.2 MPa, a window chosen by apparatus design.
+      Clinical devices operate outside it: tension-band plates and vertebral tethers apply forces
+      whose physeal stress is unknown and probably higher, and Blount disease in an obese adolescent
+      almost certainly exceeds it. A saturating or non-monotonic relation would explain why guided
+      growth fails disproportionately in heavy, varus and non-idiopathic knees, and would change
+      device design from 'more tension is better' to a target window.
+    what_is_known: >-
+      Growth change is linear in stress over the tested range with a 17.1%/0.1 MPa slope
+      (stokes2006), maximum achieved change 53% (stokes2007). Above some threshold the response
+      becomes destructive rather than modulatory: 0.2 MPa mean at 1.0 Hz with +/-0.14 MPa amplitude
+      caused repeated inflammation and destroyed rat caudal plate integrity (mnard2014), and 10%
+      sustained compressive strain abolished aggrecan and collagen II/X expression in swine explants
+      (sergerie2011). In vivo tethering shows saturation in time rather than magnitude: high tether
+      tension gave 53% growth modulation at 2 weeks but only 14% at 2-4 weeks, indistinguishable
+      from low tension (halanski2026).
+    what_is_missing: >-
+      A dose-response curve extending to the failure point, with growth rate measured at five or
+      more stress levels including at least two above 0.3 MPa, in a single species and site, with
+      histology to separate modulation from damage.
+    nearest_evidence:
+      - stokes2006
+      - mnard2014
+      - halanski2026
+    discriminating_experiment: >-
+      Rat caudal vertebra or rabbit proximal tibia loaded for 14 days at 0.05, 0.1, 0.2, 0.4 and
+      0.8 MPa sustained compression, n>=8 per level, with fluorochrome double-labelling for growth
+      rate and paired histology for plate thickness, proliferative cells per column, hypertrophic
+      cell height and TUNEL. Under a pure linear model, growth rate falls proportionally to zero
+      near 0.6 MPa with proportional zonal changes. Under a saturating model, growth rate plateaus
+      above approximately 0.2-0.3 MPa while histological damage continues to rise, identifying a
+      therapeutic window with an upper bound.
+    tractability: 5
+    search_log_ref: g_l6mech_002
+
+  - gap_id: g_l6mech_003
+    question: >-
+      What is the compressive and tensile stress across a human growth plate during normal walking,
+      and how does it change with obesity, varus alignment and a tension-band implant?
+    type: method_blocked
+    layer: L6
+    why_it_matters: >-
+      Without this number the animal sensitivity coefficient cannot be converted into a human
+      prediction, so no clinical growth-modulation device can be dosed rationally. It is also the
+      missing term in every mechanical account of Blount disease and of scoliosis progression: both
+      hypotheses assert that a particular alignment raises physeal stress, and neither states by how
+      much.
+    what_is_known: >-
+      Personalised finite element models of four human distal femoral epiphyses driven by
+      instrumented gait analysis show heterogeneous, geometry-dependent physeal stress, with
+      implant-induced local static stress and loss of cyclic loading at the insertion and increased
+      tension contralaterally (hucke2023). The authors state their models are not fully
+      participant-specific in geometry or loading. FE work also shows plate geometry itself adapts
+      to the mechanical environment, so the model input is not fixed (rodrguez2025).
+    what_is_missing: >-
+      Any direct measurement, and any validated model whose predictions have been checked against a
+      physical measurement in a growth plate. No cadaveric paediatric physeal stress measurement was
+      located either.
+    nearest_evidence:
+      - hucke2023
+      - rodrguez2025
+      - stokes2006
+    discriminating_experiment: >-
+      Two-stage. Stage 1: instrumented cadaveric paediatric or juvenile large-animal knees with
+      thin-film pressure sensors placed across the physis under physiological joint loading, to
+      obtain ground-truth stress distributions and to validate a finite element pipeline. Stage 2:
+      apply the validated pipeline to children with dual-fluoroscopy or biplanar-radiograph
+      kinematics, MRI geometry and instrumented gait, comparing typically developing children,
+      obese children and children with tibia vara. Under the mechanical hypothesis for Blount
+      disease, medial physeal compressive stress in tibia vara exceeds the typically developing
+      value by a margin large enough to predict the observed growth asymmetry given the
+      17.1%/0.1 MPa coefficient. Under a primary-cartilage-defect hypothesis, medial stress is
+      only modestly raised and cannot account for the observed deformity rate.
+    tractability: 2
+    search_log_ref: g_l6mech_003
+
+  - gap_id: g_l6mech_004
+    question: >-
+      Do static and dynamic loading at equal mean stress suppress growth rate equally, or is dynamic
+      loading growth-sparing?
+    type: contradiction
+    layer: L6
+    why_it_matters: >-
+      The claim that dynamic loading preserves growth where static suppresses it is the stated
+      rationale for cyclically controlled vertebral tethers and for 'physiological' growth-modulation
+      implants. If dynamic loading suppresses growth just as much and only spares the tissue, then
+      such devices will still stunt the segment they are applied to, and the design goal should be
+      tissue preservation, not growth preservation.
+    what_is_known: >-
+      Duty cycle matters: reducing 0.1 MPa compression from 24 to 12 h/day raised rat vertebral
+      growth from 82% to 90-93% of control and tibial growth from 70% to 84-86% (stokes2005).
+      Waveform apparently does not: sinusoidal 0.2 MPa +/-30% at 0.1 Hz reduced rat caudal vertebral
+      growth by the same 19% as sustained 0.2 MPa, while sparing plate thickness, proliferative
+      cells per column and hypertrophic cell height (valteau2011). Explants tell the tissue-sparing
+      half of the story (sergerie2011, kaviani2015) and cell-strain measurements give the
+      viscoelastic explanation (zimmermann2017). Frost's chondral modeling theory predicts the
+      opposite of the valteau2011 result (frost1979).
+    what_is_missing: >-
+      A single experiment that varies duty cycle and waveform orthogonally at matched mean stress
+      with a growth-rate endpoint, so that 'intermittent' (load off part of the day) and 'dynamic'
+      (oscillating about a non-zero mean) are not conflated, as they routinely are in reviews.
+    nearest_evidence:
+      - stokes2005
+      - valteau2011
+      - sergerie2011
+    discriminating_experiment: >-
+      Rat caudal vertebra, 2x3 factorial, n>=8 per cell: duty cycle 24 h/day vs 12 h/day, crossed
+      with waveform sustained, 0.1 Hz sinusoid and 1.0 Hz sinusoid, all at 0.2 MPa time-averaged
+      stress, 14 days, fluorochrome growth rate plus histomorphometry. Under the growth-sparing
+      hypothesis, waveform has a main effect on growth rate. Under the mean-stress hypothesis, only
+      duty cycle affects growth rate while waveform affects only histomorphometry, which is what
+      valteau2011 and stokes2005 jointly imply.
+    tractability: 5
+
+  - gap_id: g_l6mech_005
+    question: >-
+      Why does mechanically modulated growth become load-independent after two to four weeks of
+      sustained tethering, and is the escape adaptation of the physis or creep of the tether?
+    type: known_unknown
+    layer: L6
+    why_it_matters: >-
+      Vertebral body tethering and guided growth both rely on sustained modulation over months to
+      years. If the physis adapts away from a fixed mechanical stimulus within weeks, then the
+      effective dose delivered over a treatment course is far smaller than the initial dose, which
+      would explain incomplete correction, would predict that intermittent re-tensioning outperforms
+      a single tightening, and would put a ceiling on what any passive implant can achieve.
+    what_is_known: >-
+      In kyphotic swine, single-level posterior tethering at high tension gave 53 +/- 43% growth
+      modulation in the first 2 weeks versus -1 +/- 15% at low tension, but at 2-4 weeks the two
+      were indistinguishable (14 +/- 11% vs 10 +/- 10%), and the authors conclude modulation becomes
+      load-independent with time (halanski2026). Separately, growth rate and plate height recover
+      fully within 10 days of unloading (mnard2015), so the physis is not permanently altered.
+    what_is_missing: >-
+      Simultaneous measurement of tether force and growth rate over the same interval. Every
+      published result measures one or the other, so tether relaxation, bone remodelling around the
+      anchors, and physeal desensitisation cannot be distinguished.
+    nearest_evidence:
+      - halanski2026
+      - mnard2015
+      - stokes2005
+    discriminating_experiment: >-
+      Porcine or lapine tethering with a strain-gauged, telemetered tether recording force
+      continuously for 8 weeks, combined with weekly fluorochrome labels for interval growth rate
+      and end-point micro-CT of anchor migration. Under tether creep or anchor loosening, force
+      decays with the same time constant as the modulation effect and re-tensioning restores it.
+      Under physeal adaptation, force is maintained while modulation decays, and re-tensioning to
+      the original force does not restore the original growth difference.
+    tractability: 4
+
+  - gap_id: g_l6mech_006
+    question: >-
+      What frequency and strain-rate range does the growing physis actually experience during human
+      locomotion, and does growth respond to loading frequency independently of magnitude?
+    type: quantitative_gap
+    layer: L6
+    why_it_matters: >-
+      Frost's chondral modeling theory makes peak intermittent strain, not mean stress, the
+      controlling variable, and the viscoelastic explanation of static-versus-dynamic differences
+      makes loading rate mechanistically central. Yet in vivo growth plate loading experiments have
+      only ever used 0.1 and 1.0 Hz, a band far below the strain rates of heel strike or of the
+      landing impacts that distinguish gymnastics from swimming.
+    what_is_known: >-
+      At 0.2 MPa mean, both 0.1 Hz and 1.0 Hz reduced rat caudal vertebral growth without
+      histomorphometric change, while 1.0 Hz combined with a larger amplitude destroyed the plate,
+      so frequency and amplitude interact (mnard2014). Higher-frequency dynamic compression produced
+      lower hypertrophic cell volumetric strain in explants (zimmermann2017). At fixed 1.0 mm/day,
+      raising distraction frequency from 1 to 4 to 60 steps/day monotonically improved regenerate
+      quality (ilizarov1989).
+    what_is_missing: >-
+      A measured or validated-model frequency and strain-rate spectrum at a human physis during
+      walking, running and landing, and any in vivo growth experiment above 1 Hz.
+    nearest_evidence:
+      - mnard2014
+      - zimmermann2017
+      - ilizarov1989
+    discriminating_experiment: >-
+      In vivo rat caudal vertebral loading at fixed 0.15 MPa mean and fixed peak-to-peak amplitude,
+      varying frequency at 0.1, 0.5, 2 and 10 Hz for 14 days, n>=8 per group, with fluorochrome
+      growth rate and histomorphometry, paired with a validated subject-specific model estimating
+      the human physeal strain-rate spectrum during gait and landing. Under a frequency-independent
+      mean-stress model, growth rate is identical across frequencies. Under Frost's peak-strain
+      model, growth rate rises with frequency at constant mean stress, and the crossover frequency
+      identifies the physiologically relevant band.
+    tractability: 4
+
+  - gap_id: g_l6mech_007
+    question: >-
+      Is PIEZO1 or PIEZO2 protein present in human growth plate tissue, and in which zones?
+    type: search_established
+    layer: L6
+    why_it_matters: >-
+      PIEZO1 is the leading candidate physeal mechanotransducer and is already being pursued as a
+      drug target for scoliosis, with mouse work showing that local PIEZO1 inhibition slows curve
+      progression. All of that rests on mouse conditional knockouts. If PIEZO1 is not expressed in
+      human growth plate chondrocytes, or is expressed in a different zone, the therapeutic
+      rationale collapses; the question is answerable with existing archival tissue and costs almost
+      nothing relative to what is being built on top of it.
+    what_is_known: >-
+      Chondrocyte-specific Piezo1 deletion in mice abolishes trabecular bone under the growth plate
+      and causes peri-physeal rib fractures, while Piezo2 deletion does nothing comparable
+      (brylka2024). Hypertrophic-chondrocyte Piezo1 deletion raises osteoclast number in the primary
+      spongiosa (tschaffonmller2026). Compression upregulates PIEZO1 in mouse vertebral growth plate
+      chondrocytes and deletion slows scoliosis (chen2025a); PIEZO1 colocalises with the primary
+      cilium there (chen2025). The only human cartilage PIEZO1 protein data are from osteophytes in
+      osteoarthritis (brylka2024).
+    what_is_missing: >-
+      Any immunohistochemical, in situ hybridisation, single-cell or spatial transcriptomic report
+      of PIEZO1 or PIEZO2 in human physeal tissue, resolved by zone.
+    nearest_evidence:
+      - brylka2024
+      - chen2025a
+      - chen2025
+    discriminating_experiment: >-
+      Immunohistochemistry and RNAscope for PIEZO1 and PIEZO2 on human growth plate tissue obtained
+      from epiphysiodesis, physeal bar resection, amputation or post-mortem specimens across at
+      least three age bands, scored by zone (RZ, PZ, PHZ, HZ), with mouse growth plate as a positive
+      control and PIEZO1-negative tissue as a specificity control; supplemented by reanalysis of
+      existing human growth plate single-cell and spatial datasets for PIEZO1/PIEZO2 counts. Under
+      marker transfer, PIEZO1 is detected in human proliferative and hypertrophic chondrocytes at
+      levels comparable with mouse. Under species divergence, PIEZO1 is absent or confined to
+      perichondrium and vasculature, which would place the mouse scoliosis target outside human
+      physeal cartilage.
+    tractability: 4
+    search_log_ref: g_l6mech_007
+
+  - gap_id: g_l6mech_008
+    question: >-
+      Which of the candidate mechanotransducers (PIEZO1, TRPV4, integrin beta-1, primary cilium,
+      YAP/TAZ, FAK) is required for the Hueter-Volkmann growth response, as opposed to being
+      required for cartilage homeostasis generally?
+    type: known_unknown
+    layer: L6
+    why_it_matters: >-
+      The literature routinely lists all six as growth plate mechanotransducers, but the load-plus-
+      genetics experiment that would establish requirement has been performed for only one of them.
+      Without it, drug development aimed at growth modulation is targeting molecules whose necessity
+      for the growth response is assumed. The distinction also matters for interpretation: a gene
+      whose deletion changes baseline growth is not thereby a mechanotransducer.
+    what_is_known: >-
+      Only the primary cilium has the complete design: cartilage-specific Ift88 deletion, increased
+      physiological loading in controls reproducing the phenotype, and limb immobilisation abolishing
+      it (coveney2022). PIEZO1 has compression plus conditional deletion but the readout is
+      ossification and scoliosis, not growth rate (chen2025a). TRPV4 has loading-dependent cartilage
+      growth in embryonic explants (khatib2023) plus human dysplasia genetics. Integrin beta-1 has a
+      growth plate architectural role but no loading challenge (greer2024). YAP/TAZ and FAK have no
+      growth plate loading experiment at all.
+    what_is_missing: >-
+      A common experimental frame: inducible chondrocyte-specific deletion of each candidate,
+      challenged with a calibrated in vivo compressive load, with longitudinal growth rate as the
+      primary readout and unloaded contralateral limbs as controls.
+    nearest_evidence:
+      - coveney2022
+      - chen2025a
+      - khatib2023
+    discriminating_experiment: >-
+      Acan-CreERT2 conditional knockouts of Piezo1, Trpv4, Itgb1, Ift88, Yap1/Wwtr1 and Ptk2, each
+      subjected to the same calibrated 0.2 MPa unilateral tibial or caudal vertebral compression for
+      14 days, with fluorochrome-measured growth rate on loaded and contralateral sides, n>=8 per
+      genotype. A genotype is a required mechanotransducer if it abolishes or significantly reduces
+      the loaded-versus-contralateral growth difference while leaving contralateral growth intact.
+      A genotype that changes baseline growth but preserves the load response is a growth regulator,
+      not a mechanotransducer.
+    tractability: 4
+
+  - gap_id: g_l6mech_009
+    question: >-
+      Do YAP and TAZ mediate any part of the growth plate response to mechanical load in vivo?
+    type: search_established
+    layer: L6
+    why_it_matters: >-
+      YAP/TAZ is the default mechanotransduction pathway invoked in reviews of growth plate
+      mechanobiology and in the design of stiffness-tuned cartilage scaffolds. If the in vivo
+      growth plate experiment has simply never been done, then a large body of secondary literature
+      is resting on an untested assumption, and this is a grade-X style situation worth flagging
+      rather than a settled mechanism.
+    what_is_known: >-
+      YAP and TAZ in osteoblast precursors couple precursor mobilisation to angiogenesis and
+      mechanoregulation in murine bone development; Yap/Taz direct chondrocyte differentiation fate
+      in fibrocartilage; substrate stiffness modulates hypertrophic chondrocyte phenotype in vitro;
+      and cyclic distraction-compression promotes regenerate bone through a Piezo1-YAP-beta-catenin
+      axis in distraction osteogenesis. None of these is a growth plate under controlled load.
+    what_is_missing: >-
+      Any chondrocyte-specific Yap1/Wwtr1 deletion combined with a physeal loading challenge and a
+      growth or growth plate readout, in any species; and any human growth plate YAP/TAZ
+      localisation.
+    nearest_evidence:
+      - chen2025a
+      - lee2025
+    discriminating_experiment: >-
+      Acan-CreERT2;Yap1fl/fl;Wwtr1fl/fl mice with unilateral calibrated tibial or caudal vertebral
+      compression at 0.2 MPa for 14 days, fluorochrome growth rate, plus nuclear/cytoplasmic YAP
+      immunostaining by zone in loaded versus contralateral plates. Under the YAP/TAZ hypothesis,
+      loading shifts YAP nuclear localisation in proliferative and prehypertrophic chondrocytes and
+      deletion abolishes the loaded-contralateral growth difference. Under the null, YAP
+      localisation is load-insensitive in the physis and deletion leaves the growth response intact,
+      which would demote a widely repeated claim.
+    tractability: 4
+    search_log_ref: g_l6mech_009
+
+  - gap_id: g_l6mech_010
+    question: >-
+      In young athletes, can the growth attenuation associated with high training volume be
+      separated into a mechanical component acting on the physis and an energetic/endocrine
+      component acting systemically?
+    type: known_unknown
+    layer: L6
+    why_it_matters: >-
+      The gymnastics debate has run for over thirty years without resolution because training
+      volume, energy deficit, later maturation and constitutional selection are perfectly
+      confounded in every published cohort. For this layer the specific question is narrower and
+      answerable: gymnastics loads the upper limb physes far outside the normal range while loading
+      the lower limb physes more conventionally, so a within-athlete site contrast can isolate
+      mechanics from systemic effects.
+    what_is_known: >-
+      Gymnasts training >18 h/wk had PHV 5.48 vs 8.0 cm/yr in swimmers with falling height SDS and
+      selective leg-length stunting (theintz1993); a within-sport dose gradient exists in sitting
+      height velocity (daly2005); spurts are present but about a year late and match short
+      late-maturing girls with short parents (thomis2005); and the FIG review concludes causality is
+      not established (malina2013). Site-specific load effects are demonstrated for the gymnast
+      wrist, where acquired positive ulnar variance shows the radius is locally shortened
+      (difiori2006).
+    what_is_missing: >-
+      A design that separates the two mechanisms rather than adjudicating between whole-body
+      correlations. No study has compared segment-specific growth at heavily loaded versus lightly
+      loaded physes within the same athletes while measuring energy availability.
+    nearest_evidence:
+      - theintz1993
+      - daly2005
+      - difiori2006
+    discriminating_experiment: >-
+      Prospective 3-year cohort of prepubertal artistic gymnasts, rhythmic gymnasts (comparable
+      energy restriction, far less upper-limb loading) and swimmers, with (a) segment-specific
+      growth measured at the distal radius, distal ulna, humerus, femur and tibia by serial
+      low-dose imaging, (b) upper- and lower-limb loading quantified by accelerometry and training
+      logs, and (c) energy availability, IGF-1, leptin and gonadotrophins measured every 6 months.
+      Under a mechanical mechanism, growth deficit is concentrated at the heavily loaded distal
+      radius and scales with limb-specific load while lower-limb growth tracks energy availability.
+      Under a purely systemic mechanism, all segments are attenuated proportionally and the deficit
+      tracks energy availability alone, with rhythmic gymnasts matching artistic gymnasts despite
+      much lower upper-limb loading.
+    tractability: 3
+
+  - gap_id: g_l6mech_011
+    question: >-
+      Has the 1 mm/day, 4-increments distraction prescription ever been dose-optimised in humans,
+      and does the optimum shift with age, segment and underlying diagnosis?
+    type: search_established
+    layer: L6
+    why_it_matters: >-
+      A single canine tibial series from 1989 sets the rate and rhythm used in essentially all human
+      limb lengthening and craniofacial distraction. The failure modes at either end are different
+      tissues - premature consolidation below the optimum, neurovascular and muscular injury above -
+      so the tolerable window should differ by segment and by patient, yet the same number is used
+      for a femur in an adolescent with achondroplasia and a mandible in an infant.
+    what_is_known: >-
+      In the canine tibia, 0.5 mm/day often caused premature consolidation, 2.0 mm/day often caused
+      soft-tissue injury, 1.0 mm/day was best, and higher frequency was monotonically better up to
+      60 increments/day (ilizarov1989); fixation stability and preservation of periosteum and marrow
+      set the conditions under which this holds (ilizarov1989a). Clinical series report healing
+      indices and complications at the inherited rate but do not randomise it.
+    what_is_missing: >-
+      A human randomised or systematically varied rate and rhythm study with a regenerate-quality
+      endpoint. No such trial was located.
+    nearest_evidence:
+      - ilizarov1989
+      - ilizarov1989a
+    discriminating_experiment: >-
+      Multicentre randomised trial in paediatric femoral or tibial lengthening with motorised
+      internal nails, which can deliver any rate and rhythm precisely: randomise to 0.75 vs 1.0 vs
+      1.25 mm/day, each at 4 vs continuous increments, stratified by diagnosis and segment, with
+      primary endpoint the bone healing index (days per cm to consolidation) and secondary endpoints
+      nerve conduction, joint contracture and complication rate. Under the inherited-optimum
+      hypothesis, 1.0 mm/day in continuous increments minimises the healing index across strata.
+      Under a diagnosis-dependent optimum, achondroplasia and congenital deficiency strata show
+      their optima at different rates, which would replace a universal prescription with a
+      stratified one.
+    tractability: 3
+    search_log_ref: g_l6mech_011
+
+  - gap_id: g_l6mech_012
+    question: >-
+      What determines whether a mechanically tethered human physis modulates its growth reversibly
+      or forms a permanent bony bar?
+    type: known_unknown
+    layer: L6
+    why_it_matters: >-
+      This is the safety boundary of every growth-modulation procedure. Guided growth is intended to
+      be reversible, epiphysiodesis is intended to be permanent, and physeal bar formation after
+      trauma is the accidental version of the same event. Clinically the boundary is crossed
+      unpredictably: transphyseal screws are described as reversible yet sometimes are not, and
+      growth arrest after physeal fracture is far commoner than textbooks state.
+    what_is_known: >-
+      Growth arrest occurred in 30.1% of 332 prospectively followed paediatric physeal fractures and
+      86% of distal femoral fractures, with older age and initial displacement associated
+      (hooper2024). In mice, Pdgfra- and Pdgfrb-lineage cells absent from the uninjured plate
+      migrate into a drill-hole defect and build the bar over 42 days (li2026_2). Non-idiopathic and
+      varus deformities correct more slowly and less completely with tension-band plates
+      (tolk2026, coskun2026). Purely mechanical modulation without physeal breach is reversible
+      within 10 days in rats (mnard2015).
+    what_is_missing: >-
+      Any measurement of the mechanical or biological threshold that converts modulation into
+      bridging - whether it is a stress magnitude, a breach of the physeal barrier allowing
+      metaphyseal vessels and Pdgfr-lineage cells across, or a duration.
+    nearest_evidence:
+      - hooper2024
+      - li2026_2
+      - mnard2015
+    discriminating_experiment: >-
+      Rabbit proximal tibial model with three arms: extraphyseal tension-band tethering (no plate
+      breach), transphyseal screw (breach without tissue loss) and drill-hole injury (breach with
+      tissue loss), each at matched tethering force, for 6 weeks, with Pdgfra/Pdgfrb lineage
+      reporters where available, micro-CT bar scoring and growth rate. Under a mechanical-threshold
+      model, bar formation scales with applied stress irrespective of breach. Under a barrier-breach
+      model, bars form only where the physeal barrier is crossed, independent of force, which would
+      make implant design rather than tension the determinant of reversibility.
+    tractability: 4
+
+  - gap_id: g_l6mech_013
+    question: >-
+      Does removing mechanical load from a growing human physis accelerate, slow, or leave unchanged
+      its longitudinal growth rate?
+    type: search_established
+    layer: L6
+    why_it_matters: >-
+      The Hueter-Volkmann law predicts that unloading should accelerate growth, and this prediction
+      is never tested because the only human unloading states are pathological. If unloading does
+      accelerate physeal growth, then immobilised and non-ambulant children should overgrow rather
+      than undergrow, which is the opposite of what is observed, and the discrepancy would bound how
+      far the law extends below physiological load.
+    what_is_known: >-
+      Children and adolescents with cerebral palsy and other neuromotor impairments have smaller and
+      thinner long bones (hodgson2025), and even ambulatory children with spastic cerebral palsy
+      show reduced bone area and trabecular deficits (zimmermann2025) - so chronic disuse is
+      associated with less bone, not more length. In mice, limb immobilisation abolished the
+      load-driven growth plate phenotype of Ift88 deletion, showing unloading is protective for that
+      phenotype rather than growth-promoting (coveney2022). Adult spaceflight raises stature up to
+      3% but reversibly and through the disc (young2023). No controlled paediatric bed rest study
+      with a height-velocity endpoint was located.
+    what_is_missing: >-
+      A human unloading exposure in growing children that is not confounded by illness, nutrition,
+      denervation or spasticity, with a segment-specific growth endpoint.
+    nearest_evidence:
+      - hodgson2025
+      - coveney2022
+      - young2023
+    discriminating_experiment: >-
+      Natural-experiment cohort using unilateral non-weight-bearing in otherwise healthy children -
+      for example prolonged protected weight-bearing after unilateral Perthes disease treatment or
+      after a unilateral lower-limb fracture treated non-operatively - with serial scanography of
+      both limbs and accelerometry-quantified limb loading, comparing the unloaded and loaded sides
+      within the same child so that nutrition and endocrine status are controlled. Under the
+      Hueter-Volkmann prediction, the unloaded limb overgrows relative to the loaded one in
+      proportion to the loading difference. Under a use-it-or-lose-it model, the unloaded limb grows
+      less, which would mean the law does not extend below the physiological load range and that
+      some minimum load is permissive for growth.
+    tractability: 3
+    search_log_ref: g_l6mech_013
+
+  - gap_id: g_l6mech_014
+    question: >-
+      How much of the measured diurnal stature loss originates in the vertebral endplate physes and
+      epiphyseal cartilage rather than in the intervertebral discs, in growing children?
+    type: quantitative_gap
+    layer: L6
+    why_it_matters: >-
+      Diurnal stature loss is 19.3 mm in adults and 2-7 mm across a day in children, which is of the
+      same order as several months of true growth and is routinely ignored in growth monitoring and
+      in clinical trials of growth-promoting drugs. It is universally attributed to disc creep, but
+      growth plate cartilage is itself viscoelastic and sits in series with the disc, and no study
+      has partitioned the two. If a measurable fraction is physeal, then the daily loading and
+      unloading cycle is a real mechanical stimulus to the physis and not merely measurement noise.
+    what_is_known: >-
+      Adult circadian stature variation is 19.3 mm, 1.1% of stature, with 54% lost in the first hour
+      after rising and about 70% regained in the first half of the night, and it scales with applied
+      load (tyrrell1985). Children aged 12-14 lose 2.0 mm by early afternoon and 4.6 mm by late
+      afternoon (whitehouse1974); children with idiopathic scoliosis lose about 7 mm standing and
+      sitting (czaprowski2019). Paediatric imaging confirms diurnal spine-length variation is large
+      enough to affect radiotherapy planning (meijer2024). The attribution to disc creep is
+      universal but rests on adult spine mechanics.
+    what_is_missing: >-
+      A morning-versus-evening measurement that resolves disc height and physeal/epiphyseal
+      cartilage thickness separately in the same growing children.
+    nearest_evidence:
+      - tyrrell1985
+      - whitehouse1974
+      - meijer2024
+    discriminating_experiment: >-
+      Paired morning and evening 3T MRI of the lumbar spine and of a peripheral growth plate (distal
+      femur) in 20-30 children aged 8-14, with quantitative segmentation of intervertebral disc
+      height, vertebral endplate cartilage thickness and distal femoral physeal thickness,
+      accompanied by stadiometry to 1 mm. Under the pure-disc model, the summed disc height loss
+      accounts for the whole stature loss and physeal thickness is unchanged. Under a
+      series-compliance model, a measurable fraction (say >10%) of the loss is physeal and
+      epiphyseal cartilage thinning, which would make the daily gravity cycle a genuine physeal
+      loading stimulus and would put a floor on how precisely growth can be measured at all.
+    tractability: 4
+  - gap_id: g_l6_does_unilateral_paediatric_fracture_raise_growth_in_the_uninjured_limb
+    question: After a unilateral long-bone fracture in a growing child, does the CONTRALATERAL uninjured limb
+      also grow faster - and does sitting height or stature rise - or is post-fracture overgrowth purely regional?
+    type: search_established
+    layer: L6
+    tractability: 1
+    why_it_matters: THIS IS THE CHEAPEST TEST OF THE MOST CONSEQUENTIAL IDEA IN ROUND 201. rodgers2014 shows quiescent
+      stem cells enter G(Alert) in response to INJURY-INDUCED SYSTEMIC SIGNALS - injury in one place alerts stem
+      cells elsewhere. The atlas already holds a human natural experiment with the right shape and files it under
+      local hyperaemia. cho2025 reports that after a tibial shaft fracture, 66 per cent of children overgrew the
+      IPSILATERAL UNFRACTURED FEMUR by a median of 1.0 mm, contributing a quarter of the final leg-length discrepancy.
+      A bone that was not fractured, not operated on and not immobilised in isolation grew faster because a DIFFERENT
+      bone broke. Regional hyperaemia is one explanation. Systemic alerting is another, and it predicts a bilateral
+      effect that hyperaemia does not. If injury alerts the growth plate reserve systemically in humans, then
+      a controlled alerting stimulus is a real lever, and the second-signal problem becomes the only thing standing
+      between this atlas and a usable route.
+    what_is_known: cho2025, human - 79 children under 14 with tibial shaft fracture, median age 8, median follow-up
+      20 months. Tibial overgrowth in 89 per cent, median 4.0 mm, 19 per cent exceeding 1 cm, with 4 per cent
+      showing retardation instead. Ipsilateral FEMORAL overgrowth in 66 per cent, median 1.0 mm, 44 per cent at
+      or above 1 mm, contributing 25 per cent of the discrepancy; its only risk factor was a distal tibial fracture
+      location. rodgers2014, mouse - the systemic alerting mechanism, demonstrated in satellite cells, requiring
+      mTORC1 and cMet. The atlas already notes elsewhere that regional hyperaemia is not monotonically pro-growth
+      in humans, since severe local hyperaemia can cause premature fusion.
+    what_is_missing: THE ABSENCE IS STRUCTURAL, NOT ACCIDENTAL, AND THAT IS THE POINT. Post-fracture growth is
+      universally reported as leg-length DISCREPANCY - a within-patient difference - which CANNOT DETECT a bilateral
+      or systemic effect by construction. Two logged Europe PMC queries for adult height or stature after childhood
+      fracture return ZERO records. What is missing is any study reporting ABSOLUTE limb length or stature against
+      normative or matched control data after unilateral paediatric fracture, and any study of upper-limb or spine
+      growth after a lower-limb fracture, where hyperaemia cannot reach and alerting can.
+    nearest_evidence:
+    - cho2025
+    - rodgers2014
+    - newton2019
+    nearest_evidence_note: cho2025 is the only human dataset with a remote-bone endpoint and it is ipsilateral,
+      so it cannot separate the two explanations. rodgers2014 supplies the systemic mechanism and is mouse muscle.
+      There is no cartilage entry.
+    discriminating_experiment: RETROSPECTIVE AND ESSENTIALLY FREE. In any paediatric trauma cohort with scanograms
+      or EOS imaging, measure ABSOLUTE femoral and tibial length bilaterally, plus sitting height where available,
+      before and after unilateral fracture, against age- and sex-matched normative data rather than against the
+      other leg. Hyperaemia predicts ipsilateral gain with the contralateral limb tracking normally. Systemic
+      alerting predicts a smaller but real CONTRALATERAL gain and, decisively, a gain in a segment the fracture
+      cannot perfuse - the spine or the upper limb. THE UPPER-LIMB ARM IS THE CLEAN DISCRIMINATOR, because no
+      vascular account reaches the humerus from a tibial fracture. A null there kills the systemic reading and
+      returns cho2025 to the hyperaemia file permanently.

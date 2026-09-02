@@ -1,0 +1,139 @@
+id: rat_growth_cessation_without_fusion
+name: Rat growth cessation without epiphyseal fusion
+type: phenotype
+layer: L7
+stub: false
+aliases:
+- rat physis persists
+summary: 'The rat is the intermediate case that is most often stated loosely. Rats stop growing but do
+
+  not fuse. In Wistar rats aged 62-80 weeks compared with rats aged 2-16 weeks, femoral and
+
+  tibial growth plates were still histologically present although longitudinal growth had
+
+  ceased (roach2003, rat). Four morphologies absent from young plates appeared in old plates:
+
+  a bone band running parallel to the metaphyseal edge that effectively sealed that edge;
+
+  extensive acellular areas resistant to resorption and remodelling; extensive remodelling and
+
+  bone formation within still-cellular regions of the plate; and direct bone formation by
+
+  former growth plate chondrocytes (roach2003, rat). Chondrocyte proliferation continued
+
+  sporadically, but loss of synchrony across the plate plus the sealed metaphyseal edge
+
+  prevented any net longitudinal expansion. This is a mechanistically distinct endpoint from
+
+  human fusion: in the rat the cartilage is walled off and functionally silenced while
+
+  remaining a recognisable plate, whereas in humans the cartilage is destroyed and the
+
+  epiphyseal and metaphyseal bone become continuous (haines1975, human). Statements that
+
+  "rodents do not fuse" (emons2011_2) are correct at the level of the endpoint but conceal that
+
+  the rat has its own terminal programme, whose relationship to human fusion has never been
+
+  tested.
+
+  '
+quantitative:
+- parameter: age at which rat growth plate is still histologically present with growth ceased
+  value: 62-80
+  unit: weeks
+  conditions: Wistar rat femur and tibia, histology
+  species: rat
+  source_ref: roach2003
+  uncertainty: age range as studied; n not stated in abstract
+- parameter: WHAT ACTUALLY DECELERATES RAT GROWTH - which zone carries the fall
+  value: loss of the LOWER hypertrophic zone and of the capacity for cell volume increase
+  unit: qualitative
+  conditions: Wistar rat femur and tibia; growth plate height maximal at 2 and 4 weeks, when the lower hypertrophic
+    zone is wide and contains cells up to 40 um in height; by 12 weeks that zone is largely gone; in old rats ALL
+    growth plate cells are the size of the proliferative cells of young plates
+  species: rat
+  source_ref: roach2003
+  uncertainty: ADDED 2026-08-06 ON READING THE FULL TEXT; the node previously held only the four old-plate morphologies
+    from the abstract. The authors' conclusion is explicit - absence of the volume increase appeared to be the main
+    factor associated with deceleration and, eventually, cessation of growth. They also say plainly that it is not
+    known what regulates the volume increase during active growth or what prevents it as growth slows.
+- parameter: what does NOT change while rat growth decelerates
+  value: proliferative zone height and proliferation rate, to at least 12 weeks
+  unit: qualitative, PCNA index
+  conditions: PCNA immunostaining at 2, 4, 12 weeks and in old rats; hypertrophic chondrocytes PCNA-negative throughout
+  species: rat
+  source_ref: roach2003
+  uncertainty: 'A DOUBLE DISSOCIATION WITHIN ONE STUDY: the hypertrophic side collapses while the proliferative side
+    holds. In OLD rats PCNA-positive cells could no longer be identified at all, so proliferation does eventually
+    fail - but after the deceleration, not during it. At 12 weeks PCNA-positive cells also appeared near the vascular
+    front in cells that looked hypertrophic, which the authors note without explaining.'
+- parameter: decomposition of rat elongation into its three sources
+  value: proximal tibia 9% division / 32% matrix / 59% enlargement; proximal radius 7% / 49% / 44%
+  unit: '% of longitudinal growth'
+  conditions: 'four growth plates in 28-day Long-Evans rats: proximal tibia (396 um/day), distal radius (269), distal
+    tibia (138), proximal radius (47). Contributions computed from daily renewed and turned-over volumes in the proliferative
+    and hypertrophic zones'
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: READ FROM THE PRIMARY 2026-08-06; it was previously quoted second-hand through roach2003 and quoted
+    FLAT. IT IS NOT A CONSTANT. The 59% belongs to the FASTEST plate. As elongation slows the contribution shifts
+    away from cell enlargement and toward matrix synthesis - 59% to 44% for enlargement, 32% to 49% for matrix - so
+    'chondrocyte enlargement supplies ~60% of elongation' is true of one rat plate and not of rat growth plates generally.
+    Division contributes 7-9% throughout, i.e. it is the SMALLEST term everywhere, which is the part of the decomposition
+    that does generalise within this study.
+- parameter: rabbit comparison - both arms fail, in a plate that does close
+  value: proliferating cells 55% at 5 weeks to 13% at 20 weeks; TUNEL-positive 3% to 26%
+  unit: '% of chondrocytes'
+  conditions: rabbit growth plate, cited by roach2003 from Aizawa et al. 1997
+  species: rabbit
+  source_ref: roach2003
+  uncertainty: SECOND-HAND, not read from the primary. Included because the rabbit is a plate that actually closes
+    and shows BOTH reduced proliferation and increased death, where the rat shows mainly loss of hypertrophy - so
+    the three rodent/lagomorph models do not agree with each other either, and the atlas should stop treating "the
+    animal data" as one thing.
+localization:
+- 'rat metaphyseal edge of growth plate: bone band sealing the edge in old animals (roach2003)'
+- 'rat growth plate: acellular areas resistant to resorption in old animals (roach2003)'
+human_evidence: absent
+human_evidence_note: No human counterpart of the rat's sealed-edge/acellular terminal morphology has been sought in
+  human physes; the only human fusing-plate histology series describes a different picture (disorganised large chondrocytes
+  bounded by dense cortical-like bone) (emons2009).
+species_basis:
+- rat
+translation_risk: high
+translation_risk_reason: The rat terminal phenotype is a different endpoint from human fusion, so rat mechanism data
+  about growth cessation cannot be read as data about fusion. Rat is also the source species for much endocrine growth
+  plate pharmacology.
+confidence: C
+key_refs:
+- ref_id: roach2003
+  pmid: '12588965'
+  first_author: Roach HI
+  year: 2003
+  type: primary
+  one_line_finding: Aged rat growth plates persist but growth ceases, via a metaphyseal bone band, acellular zones,
+    intraplate bone formation and direct chondrocyte-to-bone formation.
+- ref_id: emons2011
+  pmid: '21540578'
+  first_author: Emons J
+  year: 2011
+  type: review
+  one_line_finding: States that experimental study of fusion is complicated by humans and rabbits fusing their growth
+    plates while rodents do not.
+- ref_id: haines1975
+  pmid: '1184450'
+  first_author: Haines RW
+  year: 1975
+  type: primary
+  one_line_finding: In humans and dogs, union proceeds by mineralisation spreading from both plate surfaces, then
+    perforation, then complete destruction of residual cartilage.
+open_questions:
+- g_l7fuse_011
+contradicts: []
+last_verified: '2026-08-06'
+confidence_note: 'HELD AT C on 2026-08-06 after reading roach2003 in full. The study is one laboratory and one strain,
+  the key comparisons are qualitative and figure-based, and two of the new rows are quoted second-hand from primaries
+  this atlas has not read. What the full text adds is not certainty but SPECIFICITY: the rat''s deceleration is located
+  in the hypertrophic arm, and that is precisely the arm human data says does not vary. The Wilsman decomposition
+  is now read from the primary rather than through this paper, and it is plate-specific rather than constant.'

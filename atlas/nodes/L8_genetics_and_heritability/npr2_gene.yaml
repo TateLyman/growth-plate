@@ -1,0 +1,155 @@
+id: npr2_gene
+name: NPR2
+aliases:
+- NPR-B gene
+- guanylyl cyclase B gene
+- GUC2B
+type: gene
+layer: L8
+stub: false
+summary: 'NPR2 encodes the transmembrane guanylyl cyclase that converts GTP to cGMP on binding
+  C-type
+
+  natriuretic peptide, and it is the best human dosage series in the whole growth-plate atlas
+
+  because both directions of the dose axis have been measured. Bartels 2004 sequenced 21 families
+
+  with acromesomelic dysplasia type Maroteaux and found 21 NPR2 mutations (4 nonsense, 4 frameshift,
+
+  2 splice-site, 11 missense), with three tested missense alleles showing markedly deficient
+
+  guanylyl cyclase activity - biallelic loss gives severe acromesomelic dwarfism. The same paper
+
+  noted that obligate heterozygous carriers were below the matched-control mean. Olney 2006
+
+  quantified that: in a 39-member AMDM family the 16 NPR2 mutation carriers had height z-score
+
+  -1.8 +/- 1.1 versus -0.4 +/- 0.8 in 23 non-carriers (P < 0.0005), with no difference in body
+
+  proportion. Vasques 2013 found three novel heterozygous NPR2 mutations in 47 idiopathic
+
+  short-stature probands, all three failing to produce cGMP on CNP stimulation and showing a
+
+  dominant-negative reduction when co-transfected 1:1 with wild type. Hisado-Oliva 2015 screened
+  173
+
+  suspected Leri-Weill and 95 ISS cases negative for SHOX and found pathogenic NPR2 alleles in
+  ~3% of
+
+  the dyschondrosteosis referral group. Gain of function runs the other way: Miura 2012 reported
+
+  p.Val883Met producing ligand-independent cGMP and tall stature with macrodactyly across three
+
+  generations, and Hannema 2013 reported p.Arg655Cys in the kinase homology domain giving extreme
+
+  tall stature with no skeletal deformity. Loss and gain of the same cyclase therefore move human
+
+  stature in opposite directions, which is as close to a controlled human dose experiment as this
+
+  field gets.'
+quantitative:
+- parameter: height z-score, heterozygous NPR2 mutation carriers
+  value: '-1.8'
+  unit: SDS
+  conditions: n=16 carriers within a 39-member AMDM family
+  species: human
+  source_ref: olney2006
+  uncertainty: SD 1.1; P < 0.0005 vs 23 non-carriers
+- parameter: height z-score, non-carrier family members
+  value: '-0.4'
+  unit: SDS
+  conditions: n=23 within the same family
+  species: human
+  source_ref: olney2006
+  uncertainty: SD 0.8
+- parameter: NPR2 mutations identified in acromesomelic dysplasia type Maroteaux
+  value: '21'
+  unit: mutations
+  conditions: 21 families; 4 nonsense, 4 frameshift, 2 splice-site, 11 missense
+  species: human
+  source_ref: bartels2004
+  uncertainty: not applicable (count)
+- parameter: heterozygous NPR2 mutation yield in idiopathic short stature
+  value: '3'
+  unit: of 47 probands
+  conditions: direct sequencing of NPR2 coding region
+  species: human
+  source_ref: vasques2013
+  uncertainty: not applicable (count)
+- parameter: pathogenic NPR2 allele frequency in SHOX-negative Leri-Weill referrals
+  value: '3'
+  unit: '%'
+  conditions: n=173 suspected LWD referrals
+  species: human
+  source_ref: hisadooliva2015
+  uncertainty: approximate as reported
+localization:
+- 'human: germline; effector receptor localizes to growth plate chondrocytes'
+human_evidence: direct
+human_evidence_note: Human genotype-stature data at three dose levels (biallelic LoF, monoallelic
+  LoF, GoF), each with an independent cohort and in vitro cyclase confirmation.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: All stature claims rest on measured human height; the mouse Npr2 literature
+  is cited only in the protein node npr2_receptor.
+confidence: A
+claim_grades:
+- claim: Reduced NPR2 gene dosage lowers human adult stature and increased signalling raises it.
+  grade: A
+  basis: Loss-of-function height z-scores measured in a controlled family design (olney2006) plus
+    independent gain-of-function pedigrees (miura2012, hannema2013).
+- claim: The heterozygous effect size is about -1.4 SDS relative to non-carriers.
+  grade: B
+  basis: Single family (olney2006, 16 vs 23); not replicated at that precision in an independent
+    cohort.
+key_refs:
+- ref_id: bartels2004
+  pmid: '15146390'
+  doi: 10.1086/422013
+  first_author: Bartels CF
+  year: 2004
+  type: primary
+  one_line_finding: 21 NPR2 mutations across 21 AMDM families; tested missense alleles show markedly
+    deficient guanylyl cyclase activity and obligate carriers are below control mean height.
+- ref_id: olney2006
+  pmid: '16384845'
+  doi: 10.1210/jc.2005-1949
+  first_author: Olney RC
+  year: 2006
+  type: primary
+  one_line_finding: 16 heterozygous NPR2 carriers had height z -1.8 +/- 1.1 versus -0.4 +/- 0.8
+    in 23 non-carriers within one family (P < 0.0005).
+- ref_id: vasques2013
+  pmid: '24001744'
+  doi: 10.1210/jc.2013-2142
+  first_author: Vasques GA
+  year: 2013
+  type: primary_abstract_only
+  one_line_finding: Three novel heterozygous NPR2 mutations in 47 ISS probands, all abolishing
+    CNP-stimulated cGMP and reducing wild-type activity when co-expressed.
+- ref_id: hisadooliva2015
+  pmid: '26075495'
+  doi: 10.1210/jc.2015-1612
+  first_author: Hisado-Oliva A
+  year: 2015
+  type: primary
+  one_line_finding: Pathogenic NPR2 alleles in ~3% of SHOX-negative Leri-Weill dyschondrosteosis
+    referrals (n=173).
+- ref_id: miura2012
+  pmid: '22870295'
+  doi: 10.1371/journal.pone.0042180
+  first_author: Miura K
+  year: 2012
+  type: primary
+  one_line_finding: NPR2 p.Val883Met is constitutively active, raises blood cGMP and causes three-generation
+    tall stature with macrodactyly.
+- ref_id: hannema2013
+  pmid: '24057292'
+  doi: 10.1210/jc.2013-2358
+  first_author: Hannema SE
+  year: 2013
+  type: primary
+  one_line_finding: NPR2 p.Arg655Cys in the kinase homology domain markedly increases CNP-stimulated
+    cGMP and causes extreme tall stature without skeletal deformity.
+last_verified: '2026-08-05'

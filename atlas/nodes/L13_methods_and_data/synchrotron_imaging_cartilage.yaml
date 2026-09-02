@@ -1,0 +1,78 @@
+id: synchrotron_imaging_cartilage
+name: Synchrotron phase-contrast imaging of cartilage
+aliases:
+- SR phase contrast micro-CT
+type: method
+summary: |
+  Synchrotron X-ray phase-contrast microtomography is the only three-dimensional imaging
+  method that resolves individual chondrocytes inside intact, unsectioned cartilage. Human
+  knee cartilage from 49 deceased donors plus 4 arthroplasty patients was imaged at 2.75 um
+  voxel size with validation tomographs at 0.65 um, and chondrocytes were segmented
+  automatically with cell density, cell angle and cell shape recovered as functions of tissue
+  depth (b2026). A separate study segmented chondrocyte and osteocyte lacunae in calcified
+  cartilage and subchondral bone of human knees at 650 nm voxel (xu2024). Placed against the
+  dimensions that matter, 0.65-2.75 um voxels resolve a 10-20 um chondrocyte with 4-30 voxels
+  across its diameter, resolve zone heights of 100-1000 um trivially, and image a whole 1-10
+  mm plate only by mosaicking, since field of view trades against resolution. Two limits are
+  decisive for growth plate work. First, the technique is terminal: it requires excised,
+  usually fixed tissue, so it can never produce a longitudinal series in a living child.
+  Second, clustered cells were not reliably separated even at 2.75 um (b2026), which matters
+  because the chondrocyte cluster is exactly the structure that distinguishes a fusing human
+  plate from a growing one (white2008). No synchrotron study of a HUMAN growth plate, as
+  opposed to articular cartilage, was located in this sweep.
+quantitative:
+- parameter: synchrotron phase-contrast voxel size, human articular cartilage survey
+  value: '2.75'
+  unit: um
+  conditions: 49 deceased donors aged 18-85 plus 4 osteoarthritis patients
+  species: human
+  source_ref: b2026
+  uncertainty: validated against 0.65 um tomographs in 2 donors
+- parameter: synchrotron phase-contrast voxel size, human calcified cartilage and subchondral bone
+    lacunae
+  value: '0.65'
+  unit: um
+  conditions: human knee, 3D lacunar segmentation
+  species: human
+  source_ref: xu2024
+  uncertainty: stated resolution
+- parameter: synchrotron studies of human GROWTH PLATE located
+  value: '0'
+  unit: studies
+  conditions: Europe PMC sweep 2026-08-05
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: see search log g_l13b_004
+localization:
+- 'human PZ: chondrocyte-level 3D resolution demonstrated in articular cartilage, not yet in physis'
+human_evidence: direct
+human_evidence_note: Both cited studies imaged human cartilage; neither imaged a human growth plate.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Method description applied to human tissue.
+confidence: A
+key_refs:
+- ref_id: b2026
+  first_author: B Wrammerfors ET
+  year: 2026
+  type: primary
+  one_line_finding: Human articular cartilage imaged at 2.75 um voxel with 0.65 um validation; chondrocytes
+    segmented in 3D but clusters not separable.
+- ref_id: xu2024
+  first_author: Xu H
+  year: 2024
+  type: primary
+  one_line_finding: 650 nm synchrotron phase-contrast micro-CT segments chondrocyte and osteocyte
+    lacunae at the human osteochondral interface.
+- ref_id: white2008
+  first_author: White JR
+  year: 2008
+  type: primary
+  one_line_finding: Chondrocyte clustering with intervening acellular areas is the histological signature
+    of a closing human physis.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

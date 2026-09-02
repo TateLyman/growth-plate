@@ -1,0 +1,86 @@
+id: aromatase_cyp19a1
+name: Aromatase (CYP19A1)
+aliases:
+- CYP19A1
+- estrogen synthase
+- P450arom
+type: protein
+layer: L4
+stub: false
+summary: 'Aromatase is the cytochrome P450 that converts androstenedione to estrone and testosterone to
+  estradiol, the committed and rate-limiting step of estrogen synthesis. Its importance for the skeleton
+  is that it makes estrogen a locally producible hormone: aromatase is expressed in adipose, bone and
+  gonad, and in boys the great majority of circulating estradiol is aromatised from testosterone rather
+  than secreted. This is why androgen and estrogen effects on the growth plate are hard to separate pharmacologically
+  and why aromatase inhibitors are used clinically to delay fusion and increase predicted adult height.
+  Aromatase activity has been reported in growth plate tissue and is regulated there - leptin stimulates
+  aromatase in the growth plate, which has been proposed to limit the efficiency of catch-up growth. The
+  human loss-of-function experiments (CYP19A1 deficiency with continued growth and unfused epiphyses)
+  are covered in L7 and are not duplicated here; what belongs to L4 is that aromatase places the estrogen
+  dose-response of estrogen_biphasic_dose_effect under partly local, partly adipose-mass-dependent control.'
+localization:
+- 'human SYS: adipose, gonad, bone, placenta'
+- 'growth plate: aromatase expression reported in rodent physis; human physeal aromatase not quantified'
+human_evidence: direct
+human_evidence_note: Human CYP19A1 loss of function and aromatase excess syndrome both alter epiphyseal
+  fusion timing, and aromatase inhibitors change predicted adult height in randomised paediatric studies;
+  the case series themselves are held in L7.
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: low
+translation_risk_reason: The enzyme's role in human skeletal maturation is established by human genetics
+  and human pharmacology; only the local physeal expression data are rodent.
+confidence: A
+key_refs:
+- ref_id: albin2013
+  first_author: Albin AK
+  year: 2013
+  type: primary
+  one_line_finding: In boys, growth velocity tracks aromatised estradiol at EC50 6.5 pmol/L alongside
+    testosterone EC50 3.1 nmol/L.
+  pmid: '23988590'
+- ref_id: ankarberglindg2008
+  first_author: Ankarberg-Lindgren C
+  year: 2008
+  type: primary
+  one_line_finding: Male serum estradiol - almost entirely aromatase-derived - rises from <4 to 32 pmol/L
+    across puberty.
+  pmid: '18817534'
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: Single gene with tissue-specific promoters rather than paralogs; human CYP19A1 deficiency
+  and enzyme-selective inhibitors both gene-selective.
+reanalysis_observations:
+- observation: CYP19A1 is represented by seven probe sets and is not detected in either human donor in
+    any compartment (one marginal perichondrial call in donor 1). ESR1 is detected in resting, proliferative
+    and prehypertrophic zones and perichondrium, proliferative-maximal in both donors. ESR2 (6 probe sets)
+    is not detected. AR is detected in resting zone, prehypertrophic zone and perichondrium.
+  interpretation: There is no detectable local aromatase in the human growth plate at 11-13 years. Estrogen
+    action on the human physis therefore runs on circulating estrogen through ERalpha, not on estrogen
+    made in situ - which matters for how aromatase inhibitors are understood to act.
+  caveats: Transcript only; aromatase is a low-abundance enzyme and this is a bounded negative.
+  reanalysis: p8_01_gse9160_human_zonal
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'
+- observation: CORROBORATED across independent donors and platforms. CYP19A1 median percentile 42.7 /
+    20.2 / 25.9 across the three P8-02 series; ESR1, the internal control, is detected at every stringency
+    in every series (82.2 / 55.5 / 54.3). With P8-01 this is four datasets, four platform families and
+    roughly ten donors agreeing, with a working internal control on every one.
+  interpretation: 'The absence of local aromatase and of ERbeta in human growth plate is the one P8-01
+    negative that survived independent replication - the other three did not. Estrogen action at the human
+    physis runs through ERalpha on circulating hormone. Grade moves D -> C per the P8-02 preregistration:
+    replicated across independent donors and platforms, still transcript-only, and NOT to B, because a
+    non-detection in bulk tissue is neither human genetic nor interventional evidence.'
+  caveats: Aromatase is a low-abundance enzyme and bulk tissue can dilute a zonally-restricted transcript
+    below detection - NPR3 does exactly that in these same datasets. This is a bounded negative, not proof
+    of absence.
+  reanalysis: p8_02_independent_corroboration
+  source_ref: gse9160
+  species: human
+  grade: C
+  date: '2026-08-05'

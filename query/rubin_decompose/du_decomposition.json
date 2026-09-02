@@ -1,0 +1,77 @@
+{
+ "sample": "Nuclei_and_Cells_DU_S84_m3_wt",
+ "n_cells": 29162,
+ "bins": 40,
+ "pd_axis_convention": "row",
+ "pd_axis_in_raw_coords": [
+  0.92426,
+  -0.31712,
+  0.21258
+ ],
+ "validation": {
+  "first_half_axial_um": 10.134,
+  "hz_peak_axial_um": 27.548,
+  "expected_first_half": [
+   6.0,
+   13.0
+  ],
+  "expected_peak": [
+   20.0,
+   32.0
+  ],
+  "reproduced_published_profile": true
+ },
+ "fold_first_quarter_to_hz_peak": {
+  "axial_extent": 2.8925,
+  "intrinsic_long_axis": 2.1711,
+  "alignment": 1.7285,
+  "volume": 9.5843
+ },
+ "counterfactual_swap": {
+  "n_rz": 1841,
+  "n_hz": 456,
+  "rz_observed_um": 9.673,
+  "hz_shapes_with_rz_orientations_um": 18.678,
+  "rz_shapes_with_hz_orientations_um": 10.714,
+  "hz_observed_um": 19.102,
+  "fold_elongation_alone": 1.931,
+  "fold_realignment_alone": 1.1076,
+  "fold_observed": 1.9749,
+  "fold_interaction": 0.9234,
+  "log_share_elongation_pct": 96.7,
+  "log_share_realignment_pct": 15.02,
+  "log_share_interaction_pct": -11.72
+ },
+ "CAVEAT_ALIGNMENT": "|cos(PC1, P-D)| is entangled with cell shape CLASS: in an oblate (disc-shaped) cell the long axis is necessarily in the plane of the plate, so a low value is partly definitional rather than a statement about rotation. The counterfactual swap above does not have this problem - it exchanges whole orientation frames between zones while holding each cell's own radii fixed.",
+ "axis_length_folds": [
+  2.1711,
+  2.2727,
+  2.3783
+ ],
+ "cube_root_volume_fold": 2.1242,
+ "per_cell_allometry_hz": {
+  "slope_pc1": 0.3407,
+  "slope_pc2": 0.3522,
+  "slope_pc3": 0.4207,
+  "slope_axial_extent": 0.3263,
+  "isometric_prediction": 0.3333,
+  "r2_axial_on_volume": 0.4318,
+  "residual_r_with_alignment": 0.6637,
+  "residual_r_with_intrinsic_length": 0.0764
+ },
+ "axis_alignment_with_pd": {
+  "rz": [
+   0.3218,
+   0.4902,
+   0.6605
+  ],
+  "hz": [
+   0.3839,
+   0.472,
+   0.6249
+  ],
+  "note": "order is PC1 long, PC2 medium, PC3 short; 0.500 is the uniformly random value"
+ },
+ "SCOPE": "ONE growth plate - distal ulna DU_S84_m3_wt, the only sample in the rubin2021 Figshare deposit. This is a WITHIN-plate decomposition along the differentiation axis. It is NOT the three-plate predictor comparison that produced rubin2021's conclusion, and it cannot say whether the DU-vs-PT hypertrophic height difference is size or alignment. That needs the proximal and distal tibia samples.",
+ "WARNING": "A within-plate RZ-to-HZ contrast is a DIFFERENTIATION axis. hunziker1989's comparison is the same zone at two growth rates, and rubin2021's is between plates. Neither is this. What this establishes is only whether the orientation confound in the height metric is large enough to matter."
+}

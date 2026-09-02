@@ -1,0 +1,92 @@
+id: epiphyseal_fusion
+name: Epiphyseal fusion
+type: process
+layer: L7
+stub: false
+aliases:
+- physeal closure
+- epiphyseal union
+- synostosis
+summary: |
+  Epiphyseal fusion is the terminal, irreversible replacement of the cartilaginous growth
+  plate by bone, after which the epiphysis and metaphysis are in bony continuity and
+  longitudinal growth at that site is permanently over. The human histological sequence,
+  described from human and dog material, is: new cartilage is added to the epiphyseal surface
+  of the plate by chondrification of epiphyseal marrow as union approaches; column architecture
+  is preserved into early union; mineralisation then spreads inward from BOTH the epiphyseal
+  and metaphyseal surfaces, demarcated by tide lines, engulfing the cartilage columns; first
+  union is by this mineralised cartilage, a form of metaplastic bone; a restricted area of the
+  plate is then perforated and replaced by new bone and marrow, and the perforation enlarges
+  (single perforation in small, early-uniting epiphyses; multiple perforations in large,
+  late-uniting ones) until all cartilage is destroyed (haines1975, human and dog). The one
+  reported human growth plate caught in the act of fusing showed disorganised large chondrocytes
+  surrounded by a border of dense cortical-like bone, with no TUNEL-positive cells anywhere and
+  electron-microscopic signs of hypoxia and necrosis rather than apoptosis or autophagy
+  (emons2009, human, n=1 fusing plate). Fusion is estrogen-dependent in both sexes: it fails in
+  men with inactivating CYP19A1 or ESR1 mutations and is induced by estradiol replacement in the
+  CYP19A1 cases (estrogen_driven_fusion). What is not known is which cellular event is the
+  trigger; six mechanisms are still live and none has been discriminated in human tissue.
+quantitative:
+- parameter: number of human growth plates reported histologically at the moment of fusion
+  value: '1'
+  unit: specimens
+  conditions: 'late pubertal human growth plate "about to fuse", collected with a series of unfused plates'
+  species: human
+  source_ref: emons2009
+  uncertainty: single specimen; described by the authors as unique
+localization:
+- 'human growth plate: mineralisation advances from both epiphyseal and metaphyseal surfaces before union (haines1975)'
+- 'human fusing plate: disorganised large chondrocytes bounded by dense cortical-like bone (emons2009)'
+- 'human late-uniting epiphyses: multiple perforations, remnants persist as physeal scar (haines1975)'
+human_evidence: direct
+human_evidence_note: >-
+  Directly described in human autopsy/surgical material (haines1975) and in one human fusing
+  growth plate with immunohistochemistry and electron microscopy (emons2009); radiographic and
+  MRI timing data exist in cohorts of hundreds (kvist2021).
+species_basis:
+- human
+- rabbit
+translation_risk: not_applicable
+translation_risk_reason: >-
+  The endpoint as defined here is a human (and rabbit, dog, goat) phenotype; the risk attaches
+  to mechanism nodes, not to the existence of the process.
+confidence: A
+key_refs:
+- ref_id: haines1975
+  pmid: '1184450'
+  first_author: Haines RW
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    Stage-by-stage histology of human and dog epiphyseal union: bidirectional mineralisation,
+    metaplastic-bone union, perforation, then destruction of all residual cartilage.
+- ref_id: emons2009
+  pmid: '19730156'
+  first_author: Emons J
+  year: 2009
+  type: primary
+  one_line_finding: >-
+    A single human fusing growth plate contained no TUNEL-positive cells and showed hypoxia and
+    necrosis but no apoptosis or autophagy on electron microscopy.
+- ref_id: emons2011
+  pmid: '21540578'
+  first_author: Emons J
+  year: 2011
+  type: review
+  one_line_finding: >-
+    Sets out four candidate final steps in fusion - apoptosis, autophagy, transdifferentiation
+    and hypoxia - none of which is established.
+- ref_id: kvist2021
+  pmid: '33047349'
+  first_author: Kvist O
+  year: 2021
+  type: primary
+  one_line_finding: >-
+    MRI staging of wrist, knee and ankle in 958 healthy 14-21.5 year olds gives site-specific
+    completion percentages and an ascending foot-to-wrist order.
+open_questions:
+- g_l7fuse_002
+- g_l7fuse_003
+- g_l7fuse_006
+contradicts: []
+last_verified: '2026-08-05'

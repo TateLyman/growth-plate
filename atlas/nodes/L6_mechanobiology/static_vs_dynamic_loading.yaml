@@ -1,0 +1,122 @@
+id: static_vs_dynamic_loading
+name: Static versus dynamic loading of the growth plate
+type: process
+summary: 'The clinically important claim is that dynamic loading is growth-preserving where static compression
+  is suppressive. The evidence supports a weaker and more specific statement. Duty cycle matters: cutting
+  sustained 0.1 MPa compression from 24 h/day to 12 h/day raised rat vertebral growth from 82% to 90-93%
+  of control and tibial growth from 70% to 84-86%, with no difference between day and night loading. But
+  oscillation about a non-zero mean does not spare growth: sinusoidal 0.2 MPa +/- 30% at 0.1 Hz reduced
+  rat caudal vertebral growth by exactly the same 19% as sustained 0.2 MPa, while sparing plate histology
+  - only the static group lost plate thickness, proliferative cells per column and hypertrophic cell height.
+  In swine explants at matched compressive strain (10% static vs 7-13% at 0.1 Hz for 48 h) the static
+  group lost aggrecan, collagen II and collagen X while the dynamic group maintained the proliferative:hypertrophic
+  ratio and matrix synthesis but lost columnar alignment. The mechanical explanation is viscoelastic:
+  under stress control, static compression permits continued time-dependent creep, so hypertrophic chondrocytes
+  accumulate significantly greater lateral and volumetric strain than under dynamic loading at the same
+  mean stress and the same axial strain, and higher frequency reduces volumetric strain further. So mean
+  stress sets growth rate; the waveform sets tissue damage.'
+quantitative:
+- parameter: rat vertebral growth, 24 h/day vs 12 h/day compression
+  value: 82 vs 90-93
+  unit: '% of within-animal control'
+  conditions: nominally 0.1 MPa, 8 days, day-loading 93% and night-loading 90%
+  species: rat
+  source_ref: stokes2005
+  uncertainty: n=5 per group; sham 100%
+- parameter: rat proximal tibial growth, 24 h/day vs 12 h/day compression
+  value: 70 vs 84-86
+  unit: '% of within-animal control'
+  conditions: nominally 0.1 MPa, 8 days
+  species: rat
+  source_ref: stokes2005
+  uncertainty: n=5 per group; sham 89%
+- parameter: growth rate reduction, static vs dynamic at equal mean stress
+  value: 19 vs 19
+  unit: '% below sham'
+  conditions: 0.2 MPa sustained vs 0.2 MPa +/-30% at 0.1 Hz, 2 weeks, rat caudal vertebra Cd7
+  species: rat
+  source_ref: valteau2011
+  uncertainty: both p<0.001 vs sham; static-dynamic difference not significant
+- parameter: growth plate thickness and proliferative cells per column, static vs dynamic
+  value: significant reduction under static only
+  unit: qualitative (p<0.01 static vs dynamic)
+  conditions: same experiment
+  species: rat
+  source_ref: valteau2011
+  uncertainty: hypertrophic cell height difference p=0.014
+- parameter: applied strain in matched static vs dynamic explant compression
+  value: 10 static vs 7-13 dynamic
+  unit: '% compressive strain'
+  conditions: swine ulnar growth plate explants, 48 h, 0.1 Hz
+  species: porcine
+  source_ref: sergerie2011
+  uncertainty: matched mean strain by design
+- parameter: hypertrophic chondrocyte lateral and volumetric strain, static vs dynamic
+  value: higher under static
+  unit: p<0.001 lateral, p<=0.015 volumetric
+  conditions: stress-controlled compression of pre-pubertal rat proximal tibial explants; axial strain
+    equal
+  species: rat
+  source_ref: zimmermann2017
+  uncertainty: high-frequency dynamic lower volumetric strain than low-frequency, p=0.002
+human_evidence: absent
+human_evidence_note: No human study compares static with dynamic physeal loading; the tension-band plate
+  is the closest analogue and it is modelled, not measured.
+species_basis:
+- rat
+- porcine
+translation_risk: high
+translation_risk_reason: All comparisons are rodent tail vertebrae or swine explants; loading waveforms
+  used are far simpler than human gait.
+confidence: C
+key_refs:
+- ref_id: stokes2005
+  pmid: '15607892'
+  first_author: Stokes IA
+  year: 2005
+  type: primary
+  one_line_finding: Halving daily loading duration roughly halved growth suppression at both vertebral
+    and tibial sites
+- ref_id: valteau2011
+  pmid: '21784187'
+  first_author: Valteau B
+  year: 2011
+  type: primary
+  one_line_finding: Static and dynamic loading at equal mean stress reduced growth equally (19%) but only
+    static damaged plate histomorphometry
+- ref_id: sergerie2011
+  pmid: '21337387'
+  first_author: Sergerie K
+  year: 2011
+  type: primary
+  one_line_finding: At matched strain, static compression destroyed matrix protein expression while dynamic
+    preserved it but disordered columns
+- ref_id: zimmermann2017
+  pmid: '28365062'
+  first_author: Zimmermann EA
+  year: 2017
+  type: primary
+  one_line_finding: Static stress-controlled loading produces greater lateral and volumetric hypertrophic
+    cell strain than dynamic at equal mean stress
+- ref_id: mnard2014
+  pmid: '24902946'
+  first_author: Menard AL
+  year: 2014
+  type: primary
+  one_line_finding: Dynamic compression reduced growth rate without histomorphometric change unless both
+    magnitude and frequency were raised together
+- ref_id: kaviani2015
+  pmid: '26019113'
+  first_author: Kaviani R
+  year: 2015
+  type: primary
+  one_line_finding: Static compression reduced growth plate chondrocyte viability more than dynamic at
+    comparable loading
+open_questions:
+- g_l6mech_004
+- g_l6mech_005
+contradicts:
+- wolff_law
+layer: L6
+stub: false
+last_verified: '2026-08-05'

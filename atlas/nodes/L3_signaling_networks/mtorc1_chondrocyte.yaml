@@ -1,0 +1,68 @@
+id: mtorc1_chondrocyte
+name: mTORC1 signalling in chondrocytes
+aliases:
+- mechanistic target of rapamycin complex 1, growth plate
+type: pathway
+layer: L3
+stub: false
+summary: 'mTORC1 (mTOR-RAPTOR-mLST8) integrates amino acid, growth factor and energy availability and sets biosynthetic
+  capacity through S6K1 and 4E-BP1. In mouse limb cartilage mTORC1 signalling is active during development, and Prx1-Cre
+  deletion of either mTor or Raptor sharply reduces embryonic skeletal growth with delayed hypertrophy and bone formation.
+  The mechanism is specifically translational: proliferation and survival are NOT changed, but chondrocyte cell size
+  and cartilage matrix amount fall, and metabolic labelling shows a reduced protein synthesis rate in Raptor-deficient
+  chondrocytes (Chen and Long 2014). This makes mTORC1 the node that converts nutrient supply into the cell-size component
+  of longitudinal growth, distinct from the proliferation component set by IHH/PTHrP and FGFR3. mTORC1 also promotes
+  limb bud cell growth and chondrogenesis at an earlier stage (Jiang 2017, mouse), and rapamycin blunts chondrocyte
+  differentiation in vitro (Phornphutkul 2008). Zonally, mouse data show mTORC1 activity is LOW in resting and proliferating
+  chondrocytes and that forcing it on there (chondrocyte Tsc1 deletion) expands the resting zone and gives its cells
+  prehypertrophic character, reversibly with rapamycin (Hsieh 2021). No study has measured phospho-S6 or phospho-4E-BP1
+  zonally in HUMAN growth plate tissue, so the assumption that human hypertrophic chondrocytes are the high-mTORC1
+  compartment is untested.'
+localization:
+- 'mouse RZ/PZ: mTORC1 activity low in wild type (hsieh2021)'
+- 'mouse limb cartilage: mTORC1 activity confirmed during development (chen2014)'
+- 'human growth plate, zonal phospho-S6/phospho-4E-BP1: unmeasured'
+human_evidence: absent
+human_evidence_note: No human growth plate mTORC1 activity measurement; the closest human data are systemic - growth
+  retardation in children on mTOR inhibitors - which is not zone-resolved.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Mouse conditional genetics plus rodent cell lines; no human tissue read-out at any zone.
+confidence: C
+key_refs:
+- ref_id: chen2014
+  pmid: '24948603'
+  first_author: Chen J
+  year: 2014
+  type: primary
+  one_line_finding: mTOR or Raptor deletion in mouse limb cartilage reduces chondrocyte size and matrix via lower
+    protein synthesis, not lower proliferation.
+- ref_id: hsieh2021
+  pmid: '34365025'
+  first_author: Hsieh YL
+  year: 2021
+  type: primary
+  one_line_finding: mTORC1 activity is normally suppressed in resting and proliferating zone chondrocytes; de-repressing
+    it expands the resting zone.
+- ref_id: jiang2017
+  pmid: '27606668'
+  first_author: Jiang M
+  year: 2017
+  type: primary
+  one_line_finding: mTORC1 signalling promotes limb bud cell growth and chondrogenesis in mouse.
+- ref_id: phornphutkul2008
+  pmid: '18265001'
+  first_author: Phornphutkul C
+  year: 2008
+  type: primary
+  one_line_finding: mTOR signalling contributes to chondrocyte differentiation in vitro.
+- ref_id: chen2018
+  pmid: '29423330'
+  first_author: Chen J
+  year: 2018
+  type: review
+  one_line_finding: Synthesis of mTOR signalling in skeletal development, used here as an index to primaries.
+open_questions:
+- g_l3rest_010
+last_verified: '2026-08-05'

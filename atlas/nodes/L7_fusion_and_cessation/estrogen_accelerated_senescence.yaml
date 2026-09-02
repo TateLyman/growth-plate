@@ -1,0 +1,89 @@
+id: estrogen_accelerated_senescence
+name: Estrogen acceleration of growth plate senescence
+type: hypothesis
+layer: L7
+stub: false
+aliases:
+- senescence acceleration model
+summary: |
+  Mechanism 1 of 6. Claim: estrogen does not ossify the growth plate directly; it accelerates a
+  pre-existing developmental programme of growth plate senescence, so the plate reaches its
+  intrinsic terminus earlier. Evidence: in juvenile ovariectomised rabbits given 70 ug/kg
+  estradiol cypionate i.m. weekly and examined at 2, 4, 6 and 8 weeks, vehicle-treated animals
+  showed a gradual senescent decline in tibial growth rate, chondrocyte proliferation rate,
+  growth plate height, proliferative and hypertrophic cell number, terminal hypertrophic cell
+  size and column density; estradiol accelerated the decline in every one of these parameters,
+  and fusion occurred earlier and only once proliferation rate approached zero (weise2001,
+  rabbit). The reciprocal experiment supports a proliferation-counting clock rather than a
+  chronological one: dexamethasone-induced growth suppression in rabbits delayed the senescent
+  decline in growth rate and in proliferative, hypertrophic and total plate heights, and also
+  delayed epiphyseal fusion, after which catch-up growth occurred (gafni2001, rabbit).
+  Human evidence: none direct. The only human-side support is indirect and endocrine - fusion
+  fails without estrogen (estrogen_driven_fusion) - which is equally compatible with every other
+  mechanism in this list. Discriminating experiment: in a fusing species, block proliferation
+  pharmacologically without estrogen and ask whether fusion still occurs on schedule. Under this
+  hypothesis fusion follows proliferative exhaustion regardless of estrogen status; under the
+  direct-ossification alternative estrogen is required even when proliferation is already zero.
+quantitative:
+- parameter: estradiol cypionate dose accelerating growth plate senescence
+  value: '70'
+  unit: ug/kg per week, i.m.
+  conditions: juvenile ovariectomised rabbits, 2-8 weeks of treatment
+  species: rabbit
+  source_ref: weise2001
+  uncertainty: single dose level tested
+- parameter: chondrocyte proliferation rate at which epiphyseal fusion occurs
+  value: approaching zero
+  unit: proliferative labelling rate
+  conditions: senescent rabbit growth plate, proximal tibia / distal tibia / distal femur
+  species: rabbit
+  source_ref: weise2001
+  uncertainty: qualitative threshold; no numeric cut-off reported
+localization:
+- 'rabbit RZ/PZ/HZ: senescent decline in all zonal parameters, accelerated by estradiol (weise2001)'
+- 'human growth plate: not examined'
+human_evidence: indirect
+human_evidence_note: >-
+  No human growth plate has been examined for accelerated senescence under estrogen; the human
+  link is the clinical observation that estrogen deficiency prevents fusion and estrogen
+  replacement produces it.
+species_basis:
+- rabbit
+translation_risk: moderate
+translation_risk_reason: >-
+  The rabbit does express the fusion endpoint, so this is the strongest available non-human
+  evidence; but rabbit estrogen pharmacology, growth plate geometry and pubertal timing are not
+  validated against human, and no human tissue replication exists.
+confidence: C
+key_refs:
+- ref_id: weise2001
+  pmid: '11381135'
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: >-
+    Estradiol accelerated the senescent decline in every structural and functional growth plate
+    parameter in ovariectomised rabbits and brought fusion forward; fusion occurred when
+    proliferation approached zero.
+- ref_id: gafni2001
+  pmid: '11641457'
+  first_author: Gafni RI
+  year: 2001
+  type: primary
+  one_line_finding: >-
+    Dexamethasone-induced growth suppression in rabbits delayed growth plate senescence and
+    delayed epiphyseal fusion, supporting a replication-count clock.
+- ref_id: lui2018
+  pmid: '30036371'
+  first_author: Lui JC
+  year: 2018
+  type: primary
+  one_line_finding: >-
+    Senescent functional, structural and molecular changes occur earlier in growth plates of
+    small bones than of large bones, and this differential aging shapes skeletal proportions.
+open_questions:
+- g_l7fuse_001
+- g_l7fuse_012
+contradicts:
+- apoptosis_at_fusion
+last_verified: '2026-08-05'

@@ -1,0 +1,156 @@
+id: periosteum
+name: >-
+  The periosteum as an extrinsic constraint on longitudinal growth - releasing it lengthens the treated bone
+  in rat and in child, and the mechanism is NOT the tether the operation is named after
+aliases:
+- periosteal restraint
+- periosteal stripping and division
+- PSPD
+- periosteal tension hypothesis
+type: tissue_structure
+layer: L6
+stub: false
+summary: >-
+  THE PERIOSTEUM IS THE ONLY EXTRINSIC CONSTRAINT THIS ATLAS HAS FOUND WITH A HUMAN LENGTH ENDPOINT, AND ITS
+  ACCEPTED MECHANISM HAS BEEN TESTED AND REFUTED.
+
+  THE OBSERVATION. warrell1979 made vertical or circumferential periosteal incisions over ONE rat tibia,
+  supplemented by localised stripping in two of the groups, and measured tibial lengths five weeks later.
+  Circumferential periosteal DIVISION combined with periosteal ELEVATION produced the greatest ipsilateral
+  increase in length; vertical division alone produced no limb length asymmetry, but vertical division plus
+  stripping did. In the circumferential group the alignment of cortical blood vessels showed the periosteum
+  had SLID along the bone, which the authors read as a released tension. Their own interpretation was
+  deliberately double - both growth plate DECOMPRESSION and VASCULAR phenomena.
+
+  THE HUMAN VERSION. kitta2024 performed periosteal stripping and periosteal division on the short femur of
+  ten children with leg length discrepancy after proximal femoral intertrochanteric osteotomy for Perthes
+  disease, at the time of implant removal, with six children who declined the procedure as controls. Mean
+  age 9.4 years, mean baseline discrepancy 20.5 +/- 4.6 mm. At a mean 4.3 years the discrepancy had closed
+  by a mean 13.9 mm, against 3.2 mm in the controls at a mean 5.4 years. Logistic regression made age at
+  surgery a significant predictor of gaining more than 10 mm, with an ROC cutoff of 9.6 YEARS.
+
+  THE MECHANISM, AND THIS IS WHERE IT GETS INTERESTING. chaudhary2016 set out to confirm the accepted
+  explanation - that the periosteum is a mechanical restraint restricting physeal growth - and refuted it.
+  Second-harmonic-generation imaging of periosteum ON THE BONE in 30 seven-week-old New Zealand White
+  rabbits showed that the periosteal fibres adjacent to the physis are NOT aligned in the growing limb,
+  meaning not under tension, and that their alignment is UNCHANGED before and after a 1 cm metaphyseal
+  periosteal resection. The authors state that this calls the long-accepted tether role into question. What
+  the same experiments DID find is that stretching resected periosteal strips aligned their fibres
+  (p<0.0001) and raised relative mRNA for Ihh, PTHrP, Gli and Patched. The periosteum behaves like a
+  strain-driven hedgehog and PTHrP source sitting immediately outside the plate rather than like a strap
+  across it - which makes periosteal resection a LOCAL HEDGEHOG WITHDRAWAL, and round 251 identified
+  hedgehog withdrawal as the missing second signal that converts an expanded resting pool into columnar
+  output. That link is an inference across two papers in two species and is carried as speculative; the
+  decisive experiment - Gli1, Ptch1 and PTHrP in the physis before and after unilateral periosteal
+  resection, with the contralateral limb as control - has never been done.
+quantitative:
+- parameter: human leg length discrepancy correction after periosteal stripping and division
+  value: 13.9 against 3.2
+  unit: mm of discrepancy closed
+  conditions: >-
+    kitta2024. Ten treated children, mean age 9.4 years, mean baseline discrepancy 20.5 +/- 4.6 mm, mean
+    follow-up 4.3 years; six declining controls, mean age 10.2 years, mean baseline discrepancy 11.5 +/-
+    10.0 mm, mean follow-up 5.4 years. Full-length standing radiographs. Difference between groups
+    significant. ROC cutoff of 9.6 years of age for achieving more than 10 mm.
+  species: human
+  source_ref: kitta2024
+  uncertainty: >-
+    RETROSPECTIVE, NOT RANDOMISED, AND BASELINE-IMBALANCED IN THE DIRECTION THAT FAVOURS THE TREATED GROUP -
+    they started with nearly twice the discrepancy, so both regression to the mean and a larger available
+    deficit inflate the difference. Follow-up differs by a year. All are children with Perthes disease and a
+    prior femoral osteotomy, so what is released is CATCH-UP in a previously injured limb, not elevation
+    above a normal trajectory - the CORR-203 distinction.
+- parameter: periosteal fibre alignment adjacent to the physis, before and after resection
+  value: not aligned before, unchanged after
+  unit: collagen fibre alignment by second-harmonic generation, computed with CurveAlign
+  conditions: >-
+    chaudhary2016. Periosteum imaged on the bone at five regions in 30 seven-week-old New Zealand White
+    rabbits; six tibiae imaged before and after a 1 cm proximal tibial metaphyseal periosteal resection.
+    Separately, resected strips were stretched in a materials testing system to a range of strains, fixed
+    and imaged - increasing strain DID increase alignment, p<0.0001, with the exception of 10 per cent
+    strain on tibial periosteum which the authors attribute to fibre rupture.
+  species: rabbit
+  source_ref: chaudhary2016
+  uncertainty: >-
+    Fibre alignment is a proxy for tension; an unaligned fibre population can still transmit load, so "not
+    under tension" is an imaging inference rather than a stress measurement. The result is nonetheless a
+    direct test of the stated mechanism, performed by authors who expected the opposite.
+- parameter: hedgehog and PTHrP pathway transcripts in periosteum under physiological strain
+  value: increased
+  unit: relative mRNA for Ihh, PTHrP, Gli and Patched
+  conditions: >-
+    chaudhary2016. Resected rabbit periosteal strips loaded at physiological strains in a bioreactor; one-way
+    ANOVA.
+  species: rabbit
+  source_ref: chaudhary2016
+  uncertainty: >-
+    TRANSCRIPT LEVEL, IN ISOLATED STRIPS, IN A BIOREACTOR. No protein, no measurement of ligand reaching the
+    physis, and no measurement of physeal hedgehog signalling before or after resection. Fold changes are
+    not recoverable from the abstract-level record held here. This is the weakest measurement in the node
+    and it is the one the hedgehog-withdrawal interpretation depends on.
+localization:
+- 'rat tibial diaphysis and metaphysis: where circumferential division plus elevation lengthened the bone'
+- 'rabbit proximal tibial metaphysis: where the fibres were imaged and the strips were strained'
+- 'human femur: where stripping and division closed a leg length discrepancy'
+human_evidence: direct
+human_evidence_note: >-
+  kitta2024 is a human cohort with a radiographic length endpoint. Both mechanistic arms - the sliding
+  observation and the fibre imaging with its transcript panel - are animal.
+species_basis:
+- human
+- rat
+- rabbit
+translation_risk: high
+translation_risk_reason: >-
+  The human result is a catch-up correction in a previously operated limb in children with a mean age of
+  9.4 years, and the paper's own ROC analysis puts the cutoff for a meaningful gain at 9.6 years. Nothing
+  here has been shown to add length to a skeletally mature or nearly mature human, and the age dependence
+  is the steepest of any intervention in this atlas.
+confidence: C
+claim_grades:
+- claim: Releasing the periosteum increases the length of the treated bone.
+  grade: C
+  basis: >-
+    warrell1979 in rat with the contralateral tibia as an internal control, and kitta2024 in ten children
+    against six declining controls with radiographic endpoints at 4.3 years. Not B, because the human
+    cohort is retrospective with a large baseline imbalance favouring the treated group and because the
+    setting is catch-up after injury rather than elevation above normal.
+- claim: The periosteum restrains growth by acting as a mechanical tether across the physis.
+  grade: X
+  basis: >-
+    chaudhary2016 tested this directly and found the fibres adjacent to the physis are not aligned in the
+    growing limb and do not change alignment after resection, and states that the result calls the
+    long-accepted tether role into question.
+- claim: >-
+    Periosteal resection works by withdrawing a strain-driven hedgehog and PTHrP source, i.e. it performs
+    the second step of the two-step protocol round 251 identified.
+  grade: E
+  basis: >-
+    Inference from chaudhary2016's transcript panel in isolated strips plus round 251's vismodegib result.
+    Nobody has measured physeal hedgehog signalling before and after periosteal resection. The decisive
+    experiment is named in the node.
+key_refs:
+- ref_id: warrell1979
+  pmid: '422478'
+  year: 1979
+  type: primary
+  one_line_finding: >-
+    Circumferential periosteal division plus elevation gave the greatest ipsilateral increase in rat tibial
+    length at five weeks, with cortical vessel alignment showing the periosteum had slid
+- ref_id: kitta2024
+  pmid: '39502984'
+  year: 2024
+  type: primary
+  one_line_finding: >-
+    Leg length discrepancy closed by a mean 13.9 mm after periosteal stripping and division against 3.2 mm
+    in declining controls, with an ROC age cutoff of 9.6 years
+- ref_id: chaudhary2016
+  pmid: '27612440'
+  year: 2016
+  type: primary
+  one_line_finding: >-
+    Periosteal fibres next to the physis are not under tension and are unchanged by resection, refuting the
+    tether mechanism, while strain raises periosteal Ihh, PTHrP, Gli and Patched transcripts
+open_questions:
+- g_l6mech_011
+last_verified: '2026-08-11'

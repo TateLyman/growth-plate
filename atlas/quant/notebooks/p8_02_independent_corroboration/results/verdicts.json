@@ -1,0 +1,263 @@
+{
+ "datasets": {
+  "GSE22855": {
+   "platform": "Illumina HumanWG-6 v3",
+   "arrays_total": 13,
+   "growth_plate_arrays": 2,
+   "growth_plate_labels": [
+    "L1142 | Growth Plate",
+    "L1234 | Growth Plate"
+   ],
+   "donors": 2,
+   "or_probes": 437,
+   "thresholds": {
+    "L1142 | Growth Plate": 7.34,
+    "L1234 | Growth Plate": 7.33
+   },
+   "gate": {
+    "COL2A1": "DETECTED (2/2)",
+    "ACAN": "DETECTED (2/2)"
+   },
+   "status": "USED",
+   "secondary": {
+    "COL10A1": "DETECTED (2/2)",
+    "SOX9": "DETECTED (2/2)",
+    "IHH": "DETECTED (2/2)"
+   }
+  },
+  "GSE32398": {
+   "platform": "Affymetrix GPL9828",
+   "arrays_total": 13,
+   "growth_plate_arrays": 5,
+   "growth_plate_labels": [
+    "Growth plate cartilage sample 1 | Growth plate cartilage sample 1",
+    "Growth plate cartilage sample 2 | Growth plate cartilage sample 2",
+    "Growth plate cartilage sample 3 | Growth plate cartilage sample 3",
+    "Growth plate cartilage sample 4 | Growth plate cartilage sample 4",
+    "Growth plate cartilage sample 5 | Growth plate cartilage sample 5"
+   ],
+   "donors": 5,
+   "or_probes": 80,
+   "thresholds": {
+    "Growth plate cartilage sample 1 | Growth plate cartilage sample 1": 7.06,
+    "Growth plate cartilage sample 2 | Growth plate cartilage sample 2": 7.07,
+    "Growth plate cartilage sample 3 | Growth plate cartilage sample 3": 7.11,
+    "Growth plate cartilage sample 4 | Growth plate cartilage sample 4": 7.55,
+    "Growth plate cartilage sample 5 | Growth plate cartilage sample 5": 8.11
+   },
+   "gate": {
+    "COL2A1": "DETECTED (5/5)",
+    "ACAN": "DETECTED (5/5)"
+   },
+   "status": "USED",
+   "secondary": {
+    "COL10A1": "DETECTED (5/5)",
+    "SOX9": "DETECTED (5/5)",
+    "IHH": "NO_PROBE (0/5)"
+   }
+  },
+  "GSE18338": {
+   "platform": "Agilent GPL9324",
+   "arrays_total": 6,
+   "growth_plate_arrays": 6,
+   "growth_plate_labels": [
+    "Early puberty 1 | epiphyseal growth plate sample in early pubertal stage.",
+    "Early puberty 2 | epiphyseal growth plate sample in early pubertal stage.",
+    "Late puberty 1 | epiphyseal growth plate sample in late stage puberty",
+    "Late puberty 2 | epiphyseal growth plate sample in late stage puberty",
+    "Pre-puberty 1 | epiphyseal growth plate sample in prepubertal stage.",
+    "Pre-puberty 2 | epiphyseal growth plate sample in prepubertal stage."
+   ],
+   "donors": 1,
+   "or_probes": 78,
+   "thresholds": {
+    "Early puberty 1 | epiphyseal growth plate sample in early pubertal stage.": 7.2,
+    "Early puberty 2 | epiphyseal growth plate sample in early pubertal stage.": 7.34,
+    "Late puberty 1 | epiphyseal growth plate sample in late stage puberty": 7.29,
+    "Late puberty 2 | epiphyseal growth plate sample in late stage puberty": 7.29,
+    "Pre-puberty 1 | epiphyseal growth plate sample in prepubertal stage.": 7.5,
+    "Pre-puberty 2 | epiphyseal growth plate sample in prepubertal stage.": 7.33
+   },
+   "gate": {
+    "COL2A1": "DETECTED (6/6)",
+    "ACAN": "DETECTED (6/6)"
+   },
+   "status": "USED",
+   "secondary": {
+    "COL10A1": "DETECTED (6/6)",
+    "SOX9": "DETECTED (6/6)",
+    "IHH": "DETECTED (6/6)"
+   }
+  }
+ },
+ "claims": {
+  "N1_NPPC": {
+   "claim_verdict": "PARTIALLY_CORROBORATED",
+   "controls_held": {
+    "GSE22855": true,
+    "GSE32398": true,
+    "GSE18338": true
+   },
+   "genes": {
+    "NPPC": {
+     "verdict": "PARTIALLY_CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "NOT_DETECTED",
+      "GSE32398": "DETECTED",
+      "GSE18338": "DETECTED"
+     }
+    }
+   }
+  },
+  "N2_cGMP_PDE": {
+   "claim_verdict": "REFUTED",
+   "controls_held": {
+    "GSE22855": true,
+    "GSE32398": true,
+    "GSE18338": true
+   },
+   "genes": {
+    "PDE1A": {
+     "verdict": "PARTIALLY_CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    },
+    "PDE1B": {
+     "verdict": "PARTIALLY_CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    },
+    "PDE1C": {
+     "verdict": "CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "NOT_DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    },
+    "PDE2A": {
+     "verdict": "PARTIALLY_CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "DETECTED"
+     }
+    },
+    "PDE3A": {
+     "verdict": "CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "NOT_DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    },
+    "PDE3B": {
+     "verdict": "REFUTED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "DETECTED",
+      "GSE18338": "DETECTED"
+     }
+    },
+    "PDE5A": {
+     "verdict": "PARTIALLY_CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    },
+    "PDE9A": {
+     "verdict": "PARTIALLY_CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "DETECTED"
+     }
+    },
+    "PDE10A": {
+     "verdict": "CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "NOT_DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    },
+    "PDE11A": {
+     "verdict": "CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "NOT_DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    }
+   }
+  },
+  "N3_local_estrogen": {
+   "claim_verdict": "CORROBORATED",
+   "controls_held": {
+    "GSE22855": true,
+    "GSE32398": true,
+    "GSE18338": true
+   },
+   "genes": {
+    "CYP19A1": {
+     "verdict": "CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "NOT_DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    },
+    "ESR2": {
+     "verdict": "CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "NOT_DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "NOT_DETECTED"
+     }
+    }
+   }
+  },
+  "N4_TH_transport": {
+   "claim_verdict": "REFUTED",
+   "controls_held": {
+    "GSE22855": true,
+    "GSE32398": true,
+    "GSE18338": true
+   },
+   "genes": {
+    "SLC16A2": {
+     "verdict": "REFUTED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "DETECTED",
+      "GSE18338": "DETECTED"
+     }
+    },
+    "SLC16A10": {
+     "verdict": "REFUTED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "DETECTED",
+      "GSE18338": "DETECTED"
+     }
+    },
+    "SLCO1C1": {
+     "verdict": "PARTIALLY_CORROBORATED",
+     "by_dataset": {
+      "GSE22855": "DETECTED",
+      "GSE32398": "NOT_DETECTED",
+      "GSE18338": "DETECTED"
+     }
+    }
+   }
+  }
+ }
+}

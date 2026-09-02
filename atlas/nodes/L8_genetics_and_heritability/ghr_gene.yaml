@@ -1,0 +1,84 @@
+id: ghr_gene
+name: GHR
+aliases:
+- growth hormone receptor gene
+- Laron gene
+type: gene
+layer: L8
+stub: false
+summary: |-
+  GHR is the human experiment that separates growth hormone secretion from growth hormone action.
+  Godowski 1989 determined the nine-exon coding structure of the receptor gene on chromosome 5 and
+  showed that two of nine Laron-type dwarfism patients carried a deletion removing a large,
+  non-consecutive part of the extracellular hormone-binding domain. Amselem 1989 independently
+  demonstrated linkage of the disease trait to intragenic GHR markers in two consanguineous
+  Mediterranean families and identified a thymidine-to-cytosine substitution replacing phenylalanine
+  96 with serine in the extracellular domain, absent from seven unrelated Laron patients of other
+  population groups - so the disorder is genetically heterogeneous but locus-specific. The
+  phenotypic consequence of biallelic GHR loss is the largest monogenic stature effect in this
+  atlas: Laron syndrome patients in the 69-patient Israeli cohort span -4 to -10 height SDS, with
+  high circulating GH and low IGF-1, retarded bone age and delayed sexual development. Only
+  homozygotes express the disease. The mechanistic value of GHR is that it fixes the causal
+  direction of the somatomedin hypothesis in humans: abolishing the receptor while leaving the
+  ligand elevated produces near-complete growth failure, which no amount of GH can rescue and which
+  IGF-1 replacement partially does.
+quantitative:
+- parameter: adult height deficit, homozygous GHR loss of function (Laron syndrome)
+  value: -4 to -10
+  unit: SDS
+  conditions: 69-patient cohort followed >50 years; Jews of oriental origin, Muslims and Christians
+    of Middle Eastern/Mediterranean origin
+  species: human
+  source_ref: laron2015
+  uncertainty: range as reported across the cohort
+- parameter: Laron patients with a large GHR extracellular-domain deletion
+  value: '2'
+  unit: of 9 patients
+  conditions: gene-structure and Southern analysis of the GHR locus
+  species: human
+  source_ref: godowski1989
+  uncertainty: not applicable (count)
+- parameter: GHR coding sequence span on chromosome 5
+  value: '87'
+  unit: kb
+  conditions: nine coding exons plus additional 5-prime untranslated exons
+  species: human
+  source_ref: godowski1989
+  uncertainty: at least; lower bound as reported
+localization:
+- 'human: germline; receptor expressed in liver and in growth plate chondrocytes'
+human_evidence: direct
+human_evidence_note: Biallelic loss-of-function humans with measured height SDS across a 69-patient
+  cohort followed for over 50 years, plus two independent 1989 gene-level identifications.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human genotype-to-stature data; the Ghr-knockout mouse is not used to
+  support any claim here.
+confidence: A
+key_refs:
+- ref_id: godowski1989
+  pmid: '2813379'
+  doi: 10.1073/pnas.86.20.8083
+  first_author: Godowski PJ
+  year: 1989
+  type: primary
+  one_line_finding: The human GHR gene has nine coding exons over at least 87 kb of chromosome
+    5; two of nine Laron patients carry a deletion of the extracellular hormone-binding domain.
+- ref_id: amselem1989
+  pmid: '2779634'
+  doi: 10.1056/nejm198910123211501
+  first_author: Amselem S
+  year: 1989
+  type: primary
+  one_line_finding: Laron dwarfism segregates with intragenic GHR markers and a p.Phe96Ser substitution
+    in the extracellular domain in consanguineous Mediterranean families.
+- ref_id: laron2015
+  pmid: '26401581'
+  doi: 10.4158/ep15939.ra
+  first_author: Laron Z.
+  year: 2015
+  type: review
+  one_line_finding: 69-patient Laron syndrome cohort followed for over 50 years spans -4 to -10
+    height SDS with high GH and low IGF-1; only homozygotes express the disease.
+last_verified: '2026-08-05'

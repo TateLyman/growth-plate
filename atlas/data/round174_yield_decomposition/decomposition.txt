@@ -1,0 +1,75 @@
+==============================================================================
+IS THE YIELD GAP CELL SIZE, OR IS IT DIVISIONS PER PROGENITOR?
+lui2018 S1 Data re-analysis, mouse. value_unverified.
+==============================================================================
+
+TERMINAL HYPERTROPHIC CELL HEIGHT (um), mean +/- SD (n)
+age               femur           tibia      metacarpal         phalanx
+1wk        25.1+-1.2      24.4+-1.9      23.1+-2.2      21.1+-1.6 
+2wk        27.0+-2.7      23.8+-3.0      24.5+-3.1      21.8+-2.9 
+3wk        28.8+-0.6      27.6+-3.8      15.9+-1.4       9.8+-1.0 
+4wk        32.6+-5.3      30.4+-4.9                -               -
+8wk        19.8+-1.7      17.9+-1.1                -               -
+12wk        18.0+-1.6      16.3+-0.5                -               -
+
+DECOMPOSITION over the 2-3wk interval (the interval the yield was computed on)
+------------------------------------------------------------------------------
+
+FEMUR versus METACARPAL   (n_thc 12 vs 10)
+  yield ratio (length)      10.4x     [6.1, 17.3] from published intervals
+  THC height ratio          1.32x     [1.15, 1.55] bootstrap
+  -> AMPLIFICATION ratio     7.9x     (10.4 / 1.32)
+  fraction of the log gap explained by CELL SIZE: 12%
+  fraction explained by AMPLIFICATION:            88%
+
+TIBIA versus METACARPAL   (n_thc 12 vs 10)
+  yield ratio (length)      17.6x     [5.4, 231.2] from published intervals
+  THC height ratio          1.22x     [1.05, 1.44] bootstrap
+  -> AMPLIFICATION ratio    14.5x     (17.6 / 1.22)
+  fraction of the log gap explained by CELL SIZE: 7%
+  fraction explained by AMPLIFICATION:            93%
+
+SPECIES NOTE - THIS SCRIPT WAS WRONG ON ITS FIRST RUN AND THE FIX IS THE REASON
+IT IS TRUSTWORTHY NOW. lui2018 S1 Data holds BOTH a mouse and a rat series.
+Sheets Fig1C and Fig2B-G are MOUSE (ages E17, NB, 1, 2, 3, 4, 8, 12wk); sheet
+FigS2 is RAT (ages 1, 2, 4, 8, 12, 16wk), which sheet FigS3 confirms by naming
+the two series explicitly with exactly those age sets. The first run of this
+script divided a MOUSE yield by a RAT cell height. Everything below is
+single-species: mouse throughout, with the rat series used only as an
+INDEPENDENT REPLICATION of the between-bone THC comparison.
+
+==============================================================================
+PART 2 - IS TERMINAL CELL HEIGHT CONSERVED BETWEEN BONES? RAT REPLICATION
+==============================================================================
+
+age(wk)          femur        tibia   metacarpal      phalanx   fem/mc
+1                 38.3         35.9         26.5         26.0     1.45
+2                 35.9         35.9         24.6         23.1     1.46
+4                 34.3         32.7         19.6         18.9     1.75
+8                 25.7         25.8         17.6         13.6     1.47
+12                21.8         21.7         12.9            -     1.69
+16                20.8         18.5            -            -        -
+
+==============================================================================
+PART 3 - MOUSE ONLY: CELL PRODUCTION PER COLUMN AND THE POOL DRAW
+==============================================================================
+
+bone          age    growth     THC  cells/col  RZ cells
+               wk    um/day      um    per day    /500um
+--------------------------------------------------------
+femur           1       271    25.1      10.80     152.4
+femur           2       286    27.0      10.60      73.7
+femur           3       240    28.8       8.33      61.1
+femur           4       187    32.6       5.74      42.0
+femur           8        31    19.8       1.56      28.1
+tibia           1       313    24.4      12.83     173.8
+tibia           2       305    23.8      12.79      66.6
+tibia           3       279    27.6      10.10      58.3
+tibia           4       211    30.4       6.95      49.0
+tibia           8        23    17.9       1.28      26.8
+metacarpal      1       152    23.1       6.58      78.2
+metacarpal      2        82    24.5       3.35      48.7
+metacarpal      3        16    15.9       1.02      24.1
+phalanx         1       121    21.1       5.73      57.0
+phalanx         2        41    21.8       1.90      34.0
+phalanx         3         4     9.8       0.38       nan

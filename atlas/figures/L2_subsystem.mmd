@@ -1,0 +1,100 @@
+graph LR
+  resting_zone_niche["Resting zone as a stem cell niche"]
+  pthrp_positive_resting_chondrocyte["PTHrP+ (Pthlh+) resting zone chondrocyte"]
+  monoclonal_column_formation["Monoclonal column formation in the growth plate"]
+  chondrocyte_to_osteoblast_transdifferentiation["Chondrocyte-to-osteoblast transdifferentiation"]
+  hypertrophic_chondrocyte_survival["Hypertrophic chondrocyte survival at the chondro-osseous junction"]
+  chondrocyte_apoptosis_hz["Hypertrophic zone chondrocyte apoptosis"]
+  lepr_positive_stromal_cell["LepR+ bone marrow stromal cell"]
+  label_retaining_chondrocyte["Label-retaining resting chondrocyte (LRC)"]
+  chondroprogenitor_quiescence["Chondroprogenitor quiescence"]
+  foxa2_resting_chondrocyte["FoxA2+ resting zone chondrocyte"]
+  soc_formation_triggers_stemness["Hypothesis: secondary ossification centre formation triggers resting-zone stem cell acquisition"]
+  stem_cell_niche_vascular_coupling["Vascular coupling of the skeletal stem cell niche"]
+  clonal_exhaustion["Clonal exhaustion of growth plate progenitors"]
+  growth_plate_senescence["Growth plate senescence"]
+  finite_proliferative_capacity_model["Finite proliferative capacity model of growth plate lifespan"]
+  replicative_senescence_chondrocyte["Replicative (Hayflick) senescence of growth plate chondrocytes"]
+  telomere_attrition_chondrocyte["Telomere attrition in growth plate chondrocytes"]
+  delayed_senescence_hypothesis["Delayed-senescence explanation of catch-up growth"]
+  catch_up_growth["Catch-up growth"]
+  neuroendocrine_catchup_hypothesis["Neuroendocrine ('sizostat') explanation of catch-up growth"]
+  rz_depletion_causes_fusion["Hypothesis: resting zone stem cell depletion causes epiphyseal fusion"]
+  mouse_skeletal_stem_cell_hierarchy["Mouse skeletal stem cell (mSSC) hierarchy"]
+  bone_cartilage_stromal_progenitor["Bone, cartilage and stromal progenitor (BCSP)"]
+  human_skeletal_stem_cell["Human skeletal stem cell (hSSC)"]
+  marrow_stromal_cell["Bone marrow stromal cell (skeletal 'MSC')"]
+  gremlin1_lineage_cell["Grem1+ osteochondroreticular (OCR) stem cell"]
+  periosteal_stem_cell["Periosteal stem cell (PSC)"]
+  cxcl12_abundant_reticular_cell["CXCL12-abundant reticular (CAR) cell"]
+  prrx1_root_stem_cell["Prrx1+ 'root' resting zone stem cell"]
+  human_resting_zone_chondrocyte["Human resting zone chondrocyte"]
+  apoe_resting_zone_marker["ApoE as a pan-resting-zone chondrocyte marker"]
+  clonal_lineage_tracing["Clonal lineage tracing (genetic fate mapping)"]
+  confetti_reporter["Confetti / Rainbow multicolour clonal reporters"]
+  mtert_skeletal_progenitor["mTert+ transitional skeletal progenitor"]
+  skeletal_stem_cell["Skeletal stem cell (SSC)"]
+  growth_cessation["Growth cessation"]
+  stem_cell_exhaustion_fusion["Stem cell exhaustion model of fusion"]
+  epigenetic_drift_fusion["Epigenetic drift model of fusion"]
+  bony_bridge_formation["Bony bridge formation"]
+  epiphyseal_fusion["Epiphyseal fusion"]
+  beta_catenin_ctnnb1["beta-catenin (CTNNB1)"]
+  autophagy_chondrocyte["Autophagy in growth plate chondrocytes"]
+  hif1a_chondrocyte["HIF1A in chondrocytes"]
+  vegfa_growth_plate["VEGFA in the growth plate"]
+  sox9_tf["SOX9"]
+  glucocorticoid_cortisol["Cortisol / glucocorticoid excess"]
+  estrogen_receptor_alpha["Estrogen receptor alpha (ESR1 / ERalpha)"]
+  phosphate_homeostasis["Phosphate homeostasis"]
+  resting_zone_niche -->|"required_for (C)"| pthrp_positive_resting_chondrocyte
+  pthrp_positive_resting_chondrocyte -->|"sufficient_for (C)"| monoclonal_column_formation
+  pthrp_positive_resting_chondrocyte -->|"precedes (C)"| chondrocyte_to_osteoblast_transdifferentiation
+  hypertrophic_chondrocyte_survival -->|"required_for (C)"| chondrocyte_to_osteoblast_transdifferentiation
+  chondrocyte_apoptosis_hz --x|"inhibits (D)"| chondrocyte_to_osteoblast_transdifferentiation
+  chondrocyte_to_osteoblast_transdifferentiation -->|"precedes (C)"| lepr_positive_stromal_cell
+  label_retaining_chondrocyte -->|"correlates_with (C)"| chondroprogenitor_quiescence
+  resting_zone_niche -->|"required_for (C)"| chondroprogenitor_quiescence
+  foxa2_resting_chondrocyte -->|"differentiates_into (D)"| pthrp_positive_resting_chondrocyte
+  soc_formation_triggers_stemness -.->|"hypothesized_link (speculative)"| pthrp_positive_resting_chondrocyte
+  soc_formation_triggers_stemness -.->|"hypothesized_link (speculative)"| monoclonal_column_formation
+  stem_cell_niche_vascular_coupling -.->|"hypothesized_link (speculative)"| soc_formation_triggers_stemness
+  clonal_exhaustion -->|"required_for (C)"| growth_plate_senescence
+  finite_proliferative_capacity_model -.->|"hypothesized_link (speculative)"| growth_plate_senescence
+  replicative_senescence_chondrocyte --x|"inhibits (D)"| finite_proliferative_capacity_model
+  telomere_attrition_chondrocyte -.->|"hypothesized_link (speculative)"| replicative_senescence_chondrocyte
+  delayed_senescence_hypothesis -->|"required_for (B)"| catch_up_growth
+  neuroendocrine_catchup_hypothesis -.->|"hypothesized_link (speculative)"| catch_up_growth
+  growth_plate_senescence -.->|"hypothesized_link (speculative)"| rz_depletion_causes_fusion
+  mouse_skeletal_stem_cell_hierarchy -->|"differentiates_into (C)"| bone_cartilage_stromal_progenitor
+  pthrp_positive_resting_chondrocyte -->|"correlates_with (C)"| mouse_skeletal_stem_cell_hierarchy
+  human_skeletal_stem_cell -->|"differentiates_into (C)"| bone_cartilage_stromal_progenitor
+  human_skeletal_stem_cell -->|"correlates_with (D)"| mouse_skeletal_stem_cell_hierarchy
+  marrow_stromal_cell -->|"correlates_with (D)"| human_skeletal_stem_cell
+  gremlin1_lineage_cell -->|"correlates_with (C)"| pthrp_positive_resting_chondrocyte
+  lepr_positive_stromal_cell -->|"correlates_with (C)"| gremlin1_lineage_cell
+  periosteal_stem_cell -->|"correlates_with (C)"| mouse_skeletal_stem_cell_hierarchy
+  cxcl12_abundant_reticular_cell -->|"correlates_with (C)"| marrow_stromal_cell
+  chondrocyte_to_osteoblast_transdifferentiation -->|"differentiates_into (C)"| cxcl12_abundant_reticular_cell
+  prrx1_root_stem_cell -->|"differentiates_into (D)"| human_resting_zone_chondrocyte
+  apoe_resting_zone_marker -->|"correlates_with (D)"| resting_zone_niche
+  clonal_lineage_tracing -->|"required_for (C)"| monoclonal_column_formation
+  confetti_reporter -->|"required_for (C)"| clonal_lineage_tracing
+  growth_plate_senescence -->|"precedes (B)"| catch_up_growth
+  chondroprogenitor_quiescence --x|"inhibits (C)"| clonal_exhaustion
+  mtert_skeletal_progenitor -->|"correlates_with (D)"| skeletal_stem_cell
+  skeletal_stem_cell -->|"correlates_with (D)"| mouse_skeletal_stem_cell_hierarchy
+  resting_zone_niche --x|"inhibits (C)"| clonal_exhaustion
+  growth_plate_senescence -->|"precedes (C)"| growth_cessation
+  rz_depletion_causes_fusion -->|"correlates_with (C)"| stem_cell_exhaustion_fusion
+  epigenetic_drift_fusion -.->|"hypothesized_link (speculative)"| growth_plate_senescence
+  chondrocyte_to_osteoblast_transdifferentiation -.->|"hypothesized_link (speculative)"| bony_bridge_formation
+  growth_plate_senescence -->|"precedes (C)"| epiphyseal_fusion
+  beta_catenin_ctnnb1 -->|"activates (D)"| chondrocyte_to_osteoblast_transdifferentiation
+  autophagy_chondrocyte -->|"required_for (B)"| hypertrophic_chondrocyte_survival
+  hif1a_chondrocyte --x|"inhibits (C)"| chondrocyte_apoptosis_hz
+  vegfa_growth_plate --x|"inhibits (C)"| chondrocyte_apoptosis_hz
+  sox9_tf --x|"inhibits (C)"| chondrocyte_to_osteoblast_transdifferentiation
+  glucocorticoid_cortisol -->|"precedes (B)"| catch_up_growth
+  estrogen_receptor_alpha -->|"activates (B)"| growth_plate_senescence
+  phosphate_homeostasis -->|"required_for (B)"| chondrocyte_apoptosis_hz

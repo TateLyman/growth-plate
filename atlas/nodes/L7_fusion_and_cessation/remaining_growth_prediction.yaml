@@ -1,0 +1,130 @@
+id: remaining_growth_prediction
+name: Remaining growth prediction
+type: method
+layer: L7
+stub: false
+aliases:
+- predicted adult height
+- adult stature prediction
+summary: |
+  Predicting how much growth is left is the clinical purpose of this entire layer, and it is
+  accurate to roughly plus or minus 4-8 cm at 95% confidence - error large enough to swallow the
+  effect size of most growth-promoting interventions. Tanner-Whitehouse Mark I equations,
+  built on RUS bone age plus height in 116 boys and 95 girls, predicted within plus or minus 7 cm
+  in 95% of boys aged 4-12 and plus or minus 6 cm at 13-14; within plus or minus 6 cm for girls
+  aged 4-11; and improved to plus or minus 4 cm and plus or minus 3 cm for postmenarcheal girls
+  aged 12 and 13 (tanner1975). Mark II, refitted on a sample deliberately including very tall,
+  very short and very growth-delayed children, gave 95% intervals of plus or minus 8 cm at age 10
+  in boys, narrowing to plus or minus 6 cm at 15, or plus or minus 4 cm if the previous year's
+  height increment was known (tanner1983). The decisive observation for this atlas is how little
+  of that accuracy comes from bone age: the Khamis-Roche model predicts adult stature from
+  height, weight and midparent stature with no skeletal age at all, and its errors are only
+  slightly larger than the Roche-Wainer-Thissen model that uses skeletal age (khamis1994).
+  Method choice also introduces systematic error that dwarfs reader error: in 37 boys and 32
+  girls with constitutional delay, mean prediction errors ranged from -0.6 cm (RWT, boys) to
+  -7.3 cm (TW Mark I, boys), with different methods biased in opposite directions in the two
+  sexes (brmswig1990). The formal variance decomposition - how much of prediction error is bone
+  age reading error, how much is reference-standard displacement, how much is irreducible
+  biological variance in remaining growth at a given maturity - has not been published
+  (g_l7fuse_007).
+quantitative:
+- parameter: 95% prediction interval for adult height, TW Mark I, boys aged 4-12
+  value: plus or minus 7
+  unit: cm
+  conditions: height plus RUS bone age; 116 boys, 95 girls, Harpenden and London longitudinal series
+  species: human
+  source_ref: tanner1975
+  uncertainty: 95% interval; narrows to plus or minus 6 cm at ages 13-14
+- parameter: 95% prediction interval for adult height, TW Mark I, postmenarcheal girls aged 13
+  value: plus or minus 3
+  unit: cm
+  conditions: height plus RUS bone age plus menarcheal status
+  species: human
+  source_ref: tanner1975
+  uncertainty: 95% interval
+- parameter: 95% prediction interval for adult height, TW Mark II, boys aged 10 and 15
+  value: plus or minus 8 at age 10; plus or minus 6 at age 15; plus or minus 4 at 15 with previous height increment
+  unit: cm
+  conditions: refitted on a sample including very tall, very short and very growth-delayed children
+  species: human
+  source_ref: tanner1983
+  uncertainty: 95% interval
+- parameter: mean adult height prediction error by method, boys with constitutional delay
+  value: RWT -0.6; Bayley-Pinneau +3.1; TW Mark II -4.2; TW Mark I -7.3; target height +1.7
+  unit: cm (signed mean error)
+  conditions: 37 boys, first seen at mean age 14.80 (SD 1.70) y, adult height 170.4 (SD 5.4) cm
+  species: human
+  source_ref: brmswig1990
+  uncertainty: n=37
+- parameter: mean adult height prediction error by method, girls with constitutional delay
+  value: Bayley-Pinneau -0.8; TW Mark II -1.8; TW Mark I -2.1; RWT +2.3; target height +1.2
+  unit: cm (signed mean error)
+  conditions: 32 girls, first seen at mean age 12.87 (SD 2.56) y, adult height 157.8 (SD 4.2) cm
+  species: human
+  source_ref: brmswig1990
+  uncertainty: n=32
+- parameter: increase in prediction error from omitting skeletal age entirely
+  value: only slightly larger than the skeletal-age-based RWT model
+  unit: qualitative comparison of prediction errors
+  conditions: Khamis-Roche versus RWT, Fels Longitudinal Study, 223 white males and 210 white females
+  species: human
+  source_ref: khamis1994
+  uncertainty: numeric error difference not stated in the source abstract
+  value_unverified: true
+localization:
+- 'SYS: clinical prediction from height, bone age, midparent height and menarcheal status'
+human_evidence: direct
+human_evidence_note: >-
+  All prediction equations were built and validated on human longitudinal cohorts with observed
+  adult heights as the outcome.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical prediction problem with no animal analogue.
+confidence: A
+key_refs:
+- ref_id: tanner1975
+  pmid: '164838'
+  first_author: Tanner JM
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    TW Mark I equations predict adult height within plus or minus 7 cm in 95% of boys aged 4-12
+    and plus or minus 3 cm in postmenarcheal girls aged 13.
+- ref_id: tanner1983
+  pmid: '6639123'
+  first_author: Tanner JM
+  year: 1983
+  type: primary
+  one_line_finding: >-
+    TW Mark II gives 95% intervals of plus or minus 8 cm at boys aged 10, improving to plus or
+    minus 4 cm when the previous height increment is known.
+- ref_id: khamis1994
+  pmid: '7936860'
+  first_author: Khamis HJ
+  year: 1994
+  type: primary
+  one_line_finding: >-
+    Adult stature prediction without any skeletal age has errors only slightly larger than the
+    RWT model that uses skeletal age.
+- ref_id: brmswig1990
+  pmid: '2246686'
+  first_author: Brämswig JH
+  year: 1990
+  type: primary
+  one_line_finding: >-
+    Five height prediction methods gave mean errors from -7.3 to +3.1 cm in boys and -2.1 to
+    +2.3 cm in girls with constitutional delay, biased in opposite directions by sex.
+- ref_id: roche1975
+  pmid: '172855'
+  first_author: Roche AF
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    The RWT method, using recumbent length, weight, midparent stature and skeletal age, had
+    smaller prediction errors than Bayley-Pinneau.
+open_questions:
+- g_l7fuse_007
+- g_l7fuse_008
+contradicts: []
+last_verified: '2026-08-05'

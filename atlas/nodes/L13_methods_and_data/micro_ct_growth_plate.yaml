@@ -1,0 +1,83 @@
+id: micro_ct_growth_plate
+name: Micro-CT of the growth plate
+aliases:
+- microCT physis
+type: method
+summary: |
+  Micro-CT images mineral, and the growth plate is the one part of a long bone that is
+  deliberately not mineralised, so the modality reports the plate as a radiolucent gap bounded
+  by two mineralised surfaces. What it measures well is therefore the geometry of that gap and
+  the mineralised structures crossing it: transphyseal bony bridges in mouse tibiae have been
+  counted and their density quantified, giving 495 bridges at density 1.2 in wild-type sham
+  tibiae versus 187 bridges at density 14.4 in Socs2-/- (samvelyan2022). Against the
+  dimensions that matter, a laboratory micro-CT at 5-10 um voxel resolves plate thickness
+  (0.6-1.15 mm in the human fetal proximal tibia, rodriguez1992) and zone heights comfortably,
+  sits at the edge of resolving a chondrocyte lacuna (a human terminal hypertrophic cell is
+  about 5,900 um3, roughly 22 um equivalent diameter, white2008), and cannot resolve a cell
+  without contrast staining because soft cartilage generates almost no X-ray attenuation
+  contrast. Contrast-enhanced protocols (phosphotungstic acid, iodine, ionic contrast agents)
+  recover cartilage contrast but require fixation and full penetration, so they are terminal
+  and are not applicable in vivo. Clinical CT inherits none of this resolution: it images the
+  physis at sub-millimetre voxels at best and at a radiation dose that forbids serial
+  paediatric use, which is why growth plate imaging in living children is done by MRI or
+  ultrasound.
+quantitative:
+- parameter: transphyseal bony bridges counted by micro-CT, wild-type mouse sham tibia
+  value: '495'
+  unit: bridges
+  conditions: mouse tibia; bridge density 1.2
+  species: mouse
+  source_ref: samvelyan2022
+  uncertainty: as reported
+- parameter: transphyseal bony bridges counted by micro-CT, Socs2-/- mouse tibia
+  value: '187'
+  unit: bridges
+  conditions: mouse tibia; bridge density 14.4
+  species: mouse
+  source_ref: samvelyan2022
+  uncertainty: as reported
+- parameter: human fetal proximal tibial growth plate thickness (target dimension for micro-CT)
+  value: 1.15 falling to 0.6
+  unit: mm
+  conditions: 20th to 38th week of gestation, n=125 donors
+  species: human
+  source_ref: rodriguez1992
+  uncertainty: series means
+localization:
+- 'multiple ZPC: micro-CT resolves the mineralisation front directly'
+- 'multiple PZ: invisible without contrast agent'
+human_evidence: indirect
+human_evidence_note: Human physeal micro-CT is confined to ex vivo surgical or autopsy specimens;
+  the quantitative bridge data cited are murine.
+species_basis:
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: 'The physics is species-independent, but bridge counts and plate geometry
+  are not: the murine plate never completes bridging, so murine bridge metrics do not index human
+  fusion.'
+confidence: B
+key_refs:
+- ref_id: samvelyan2022
+  first_author: Samvelyan HJ
+  year: 2022
+  type: primary
+  one_line_finding: Transphyseal bony bridges counted and their density quantified by micro-CT in
+    mouse tibiae.
+- ref_id: rodriguez1992
+  first_author: Rodriguez JI
+  year: 1992
+  type: primary
+  one_line_finding: Human proximal tibial plate thickness falls from 1.15 mm to 0.6 mm across the
+    second half of gestation.
+- ref_id: white2008
+  first_author: White JR
+  year: 2008
+  type: primary
+  one_line_finding: Human terminal hypertrophic chondrocyte volume 5,900 um3 - the cellular target
+    dimension.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

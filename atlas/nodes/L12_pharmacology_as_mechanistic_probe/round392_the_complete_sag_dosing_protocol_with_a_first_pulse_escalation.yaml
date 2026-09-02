@@ -1,0 +1,257 @@
+id: round392_the_complete_sag_dosing_protocol_with_a_first_pulse_escalation
+name: "R392: the complete SAG dosing protocol - escalate, plateau, taper; ten doses over twenty-two days; and the blackout list is a set of direct pharmacological opponents rather than background contraindications"
+aliases:
+  - SAG dosing protocol
+  - the systemic SAG routine
+  - SAG escalation and taper
+  - hedgehog agonist blackout list
+type: intervention
+layer: L12
+stub: false
+summary: >-
+  R388 gave a flat eleven-dose pulse, R389 replaced it with a ten-dose taper, and
+  neither included the element that matters most given that no Smoothened agonist
+  has ever been given to a human by any route: a first-pulse DOSE ESCALATION. This
+  node is the complete protocol with every parameter computed. Run
+  atlas/tools/round392_sag_complete_dosing_protocol.py for the worked tables.
+
+  DOSE. The anchor is li2021's 20 mg/kg subcutaneous every other day in mouse.
+  FDA body-surface-area allometry (Km 3 mouse, 37 human) gives a target of 1.622
+  mg/kg per administration on a free-base-equivalent basis - 81.1, 97.3 and 113.5
+  mg at 50, 60 and 70 kg. The mass actually weighed out is the DIHYDROCHLORIDE,
+  which is 1.149 times heavier; getting that conversion backwards under-doses by 13
+  percent. The target is cross-checked independently: trompet2024's completely
+  separate systemic regimen scales to 0.85 g per pulse at 60 kg against li2021's
+  1.07 g, a ratio of 1.26, from different labs, routes, durations and endpoints.
+
+  SCHEDULE. Ten doses over twenty-two days, in three phases. Doses 1 to 4 are an
+  ESCALATION at 10, 25, 50 and 100 percent of target on days 1, 3, 5 and 7. Doses 5
+  to 8 are the PLATEAU at target on days 9, 11, 13 and 15. Doses 9 and 10 are the
+  TAPER, at 72 and then 96 hours, on days 18 and 22. At 60 kg that is 877 mg of
+  dihydrochloride per pulse, which is 29 percent LESS drug than R388's flat eleven
+  doses while being safer at both ends.
+
+  The escalation is not caution, it is the only defensible design: there is no
+  tolerated human dose, no human pharmacokinetics and no human adverse-event
+  profile for this class, and the published effective systemic range in mice spans
+  forty-fold with the growth-plate-effective point unmeasured inside it. Escalation
+  walks up that range rather than guessing a point in it, and it costs less drug
+  rather than more. The taper is R389's: the pathway adapts below Smoothened, HHIP
+  is a Gli target the agonist induces while Smoothened activation degrades HHIP
+  protein, so an abrupt stop is predicted to leave a rebound trough below baseline -
+  and six doses of a Smoothened ANTAGONIST fused a normal growth plate. The
+  dangerous moment is the stop.
+
+  FORMULATION. Aqueous SAG dihydrochloride at 30 mg/mL or better, isotonic, pH 4 to
+  6, sterile-filtered. At 30 mg/mL anyone above about 65 kg needs three injection
+  sites per dose, which is a real adherence cost over ten doses; specifying 50
+  mg/mL brings every relevant weight to two sites or fewer and is the single
+  cheapest improvement available. The DMSO vehicle must not be scaled - a 60 kg dose
+  in li2021's 5 mM stock is 46 mL of DMSO subcutaneously. If the dihydrochloride
+  cannot reach concentration, the named fallback is SAG21k, which is several-fold
+  more potent and has a demonstrated aqueous in vivo vehicle.
+
+  MATERIAL. About 0.88 g per pulse at 60 kg, 3.5 g for four pulses. At that scale
+  catalogue purchase is the wrong route - commission a custom synthesis of a 490 Da
+  molecule with a published route and specify the impurity, residual-solvent and
+  endotoxin package in the same order, because the incremental cost of
+  pharmaceutical grade on a batch already being made is far smaller than qualifying
+  material on top of nothing.
+
+  ADMINISTRATION. Subcutaneous, 27 to 30 gauge, abdomen and anterior thigh, splitting
+  any volume above 2 mL. Rotate against the growth hormone sites and not merely
+  within this drug, because two agents into one lipid depot risks lipohypertrophy
+  that changes absorption of both. First dose given where medical observation is
+  available with a two-hour observation, because it is a first-in-human event
+  regardless of framing. Missed dose under 24 hours late is given and the grid
+  resumes; over 24 hours it is skipped and never doubled - except during the taper,
+  where a late dose is given rather than skipped, since avoiding the abrupt stop is
+  the entire purpose of those two doses.
+
+  THE BLACKOUT LIST, WHICH IS THE PART MOST LIKELY TO BE UNDERWEIGHTED. During a
+  pulse these are not background contraindications - they are agents acting on the
+  same receptor in the opposite direction, and taking one wastes the pulse. Absolute:
+  Smoothened antagonists; itraconazole and posaconazole, which antagonise Smoothened
+  at ordinary antifungal exposure, with terbinafine or fluconazole as the
+  substitution; glucocorticoids by any route, because cortisol competes with
+  cholesterol at the Smoothened cysteine-rich domain, with fluticasone as the least
+  bad inhaled option; megadose vitamin D3; the DHCR7-inhibiting shelf, of which
+  hydroxyzine is a common antihistamine and fluoxetine, aripiprazole and trazodone
+  are routinely prescribed to adolescents; heparin, low-molecular-weight heparin,
+  pentosan polysulfate and sulodexide; and DNMT inhibitors. Statins are explicitly
+  fine, on human height data in 300 children, and because SAG binds the
+  seven-transmembrane site rather than the cysteine-rich domain.
+
+  THE HOLE THAT REMAINS INSIDE THE STACK: SAG's metabolic route is not published in
+  any species - no CYP identification, no transporter data, no protein binding -
+  while erdafitinib is about 39 percent CYP2C9 and 20 percent CYP3A4 and a P-gp
+  substrate. The interaction is unknown, and that is a genuine hole rather than a
+  reassurance.
+
+  PHARMACODYNAMICS, HONESTLY. There is no accessible readout at the growth plate and
+  nothing in blood reports on it. What is free is hair and taste: the antagonist
+  class produces alopecia and ageusia in humans at high incidence, so those are the
+  human tissues that visibly report hedgehog tone, and their mirror observation
+  under an agonist costs nothing. A GLI1 qPCR readout on a skin punch biopsy is the
+  obvious biochemical analogue but no validated protocol for the agonist direction
+  was found, so it is recorded as a gap rather than a recommendation.
+
+  COURSE. One pulse. Then the six-month readout - delta bone age over delta
+  chronological age by BoneXpert, standing AND sitting height at a fixed time of
+  day, knee and spine imaging for plate width and bar formation. Sitting height is
+  the endpoint that matters, because the trunk is the compartment this route was
+  chosen to reach and the depot could not. Interval to any second pulse is at least
+  three months and preferably six, derived and never measured. No continuous dosing,
+  ever. Do not schedule a second pulse before the first readout exists.
+quantitative:
+  - parameter: target dose per administration, free-base equivalent
+    value: 1.622 mg/kg, giving 81.1 / 97.3 / 113.5 mg at 50 / 60 / 70 kg
+    unit: mg/kg and mg
+    species: not_applicable
+    source_ref: li2021
+    value_unverified: true
+    note: >-
+      derived in R392 by FDA body-surface-area allometry from li2021's 20 mg/kg
+      mouse regimen, Km 3 and 37. Multiply by 1.149 for the dihydrochloride mass
+      actually weighed out
+  - parameter: the pulse - dose count, duration and total drug
+    value: >-
+      10 doses over 22 days (escalation 10/25/50/100 percent on days 1,3,5,7;
+      plateau days 9,11,13,15; taper at 72 h day 18 and 96 h day 22); 877 mg of
+      dihydrochloride at 60 kg
+    unit: doses, days and mg
+    species: not_applicable
+    source_ref: li2021
+    value_unverified: true
+    note: >-
+      derived in R392. 29 percent less total drug than R388's flat 11 doses at
+      target. Schedule interval from li2021, taper from R389, escalation new in R392
+  - parameter: injection volume and site count at 30 mg/mL
+    value: 3.73 mL over 2 sites at 60 kg; 3 sites needed above about 65 kg
+    unit: mL and sites
+    species: not_applicable
+    source_ref: li2021
+    value_unverified: true
+    note: >-
+      derived in R392 against a conventional 2 mL per subcutaneous site.
+      Specifying 50 mg/mL instead of 30 brings every relevant weight to two sites
+      or fewer
+  - parameter: material required
+    value: 0.88 g per pulse at 60 kg; about 3.5 g for four pulses
+    unit: grams
+    species: not_applicable
+    source_ref: li2021
+    value_unverified: true
+    note: >-
+      derived in R392. At this scale a custom synthesis with an impurity and
+      endotoxin package is the correct route, not catalogue purchase
+localization: systemic subcutaneous, with the trunk as the compartment the route was chosen for
+human_evidence: absent
+human_evidence_note: >-
+  No Smoothened agonist has been given to a human by any route, re-confirmed in R390
+  by three clinicaltrials.gov queries. Every parameter in this protocol is scaled or
+  derived from mouse, which is precisely why the first pulse is designed as an
+  escalation with a two-hour observation on the first dose.
+species_basis:
+  - mouse
+translation_risk: high
+translation_risk_reason: >-
+  Body-surface-area allometry is a convention for first-in-human starting doses, not
+  a law, and there is no pharmacokinetic data for SAG in any species to check it
+  against. Both mouse regimens are early-postnatal while the subject is at bone age
+  16, and no hedgehog agonist has been given to any animal at an equivalently late
+  skeletal stage. The formulation the protocol specifies has not been demonstrated
+  to exist. And the interaction with the existing stack is unknown because SAG's
+  metabolic route is unpublished.
+confidence: C
+claim_grades:
+  - claim: The target dose is 1.622 mg/kg per administration by BSA allometry from li2021
+    grade: C
+    basis: >-
+      standard allometric scaling from a single mouse regimen, cross-checked to
+      within 1.26-fold by an independent regimen. Conventional, but not
+      pharmacokinetics
+  - claim: >-
+      A first-pulse escalation is mandatory given zero human exposure, and costs less
+      drug than a flat schedule
+    grade: A
+    basis: >-
+      the absence of human exposure is established (R390); the drug arithmetic is
+      arithmetic. This is a design principle, not an empirical claim
+  - claim: >-
+      The tapered exit is preferable to an abrupt stop
+    grade: E
+    basis: >-
+      rests on R389's composed rebound prediction, which has never been measured in
+      any species. Free to do, and the empirical counterweight is trompet2024's local
+      pulse, whose gain kept widening after the signal was gone
+  - claim: >-
+      The blackout-list agents are direct pharmacological opponents during a pulse
+      rather than background contraindications
+    grade: C
+    basis: >-
+      each item has a primary showing it opposes hedgehog signalling, but none has
+      been tested against a Smoothened agonist in a co-administration experiment in
+      any species
+  - claim: The interaction between SAG and erdafitinib is unknown
+    grade: A
+    basis: >-
+      SAG's metabolic route is not published in any species. This is an absence, and
+      it is recorded as a hole rather than as reassurance
+key_refs:
+  - ref_id: li2021
+    year: 2021
+    type: primary
+    role: the dose, route, schedule and vehicle the whole protocol is scaled from
+  - ref_id: trompet2024
+    year: 2024
+    type: primary
+    role: >-
+      the independent cross-check on the dose, and the pool mechanism in a normal
+      animal that the protocol exists to reproduce
+  - ref_id: cohen2015
+    year: 2015
+    type: primary_abstract_only
+    role: the adaptation result that makes the taper rather than an abrupt stop the correct exit
+  - ref_id: newton2019
+    year: 2019
+    type: primary
+    role: >-
+      why the exit matters at all - six doses of a Smoothened antagonist fused a
+      normal growth plate
+  - ref_id: mao2026sag
+    year: 2026
+    type: primary
+    role: the teratogenicity that sets the contraception requirement
+  - ref_id: lu2025cortisol
+    year: 2025
+    type: primary
+    role: >-
+      the reason glucocorticoids are on the blackout list - cortisol competes with
+      cholesterol at the Smoothened cysteine-rich domain
+  - ref_id: kim2010itra
+    year: 2010
+    type: primary
+    role: >-
+      the reason itraconazole is absolute - Smoothened antagonism at ordinary
+      antifungal exposure, with terbinafine and fluconazole as the substitution
+  - ref_id: humphries2018
+    year: 2018
+    type: primary
+    role: >-
+      the one blackout candidate that was checked and cleared - statins do not
+      affect height in 300 children
+  - ref_id: lee2016colitis
+    year: 2016
+    type: primary
+    role: >-
+      the aqueous vehicle precedent and the fallback compound's systemic safety
+      record in adult animals
+open_questions:
+  - g_l12_390a
+  - g_l12_388a
+  - g_l12_388b
+  - g_l12_389a
+  - g_l12_389b
+contradicts: []
+last_verified: '2026-08-14'

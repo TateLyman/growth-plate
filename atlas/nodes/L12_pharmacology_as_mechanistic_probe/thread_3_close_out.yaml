@@ -1,0 +1,164 @@
+id: thread_3_close_out
+name: THREAD 3 CLOSE-OUT - eleven questions answered, five variables still open, and all five collapse
+  onto a single measurement
+aliases:
+- what is left on thread 3
+- thread 3 status
+- what closed and what opened
+- the finish line
+type: hypothesis
+layer: L12
+stub: false
+summary: 'THREAD 3 RAN FROM ROUND 116 TO 125. THIS NODE IS THE ACCOUNTING. It separates what is settled
+  from what is open, and the useful result of the accounting is that the FIVE remaining variables are not
+  five problems - they are one, because they all enter the answer only through the Thiele modulus, and one
+  measurement returns the Thiele modulus directly.
+  WHAT IS CLOSED, AND EACH ONE HAS A DOCUMENT BEHIND IT. (1) The CNP dose ceiling is an ANTICIPATORY
+  SYSTEMIC CARDIOVASCULAR MARGIN - the trial pre-specified a maximum of 200 micrograms per kilogram per
+  week and ran to 100, the cynomolgus cardiovascular NOAEL sits at exactly the clinical dose, and the
+  juvenile-rat off-target NOAEL is forty-fold above it. (2) It is NOT an efficacy plateau - the ACcomplisH
+  dose-response is monotonic and still rising at the top dose. (3) It is NOT observed human toxicity - no
+  grade 3/4 events and no symptomatic hypotension at any dose. (4) VOSORITIDE IS CLEARED BY NPR-C - stated
+  three times in the EMA assessment, with supraproportional rat PK and human ANP competition behind it.
+  (5) Vosoritide engineering did NOT improve NPR-C selectivity - 5.9 to 11.4-fold NPR-B-favouring against
+  native CNP-22 at 7.2 plus or minus 8.1-fold, same assay, overlapping ranges. (6) THE HUMAN PLATE DOES
+  NOT MAKE ITS OWN CNP - NPPC at array floor in all five microdissected compartments including
+  perichondrium, on a platform that detects PTHLH and GDF5. It is a consumer. (7) Human physeal
+  half-thickness is about 400 micrometres. (8) Cartilage diffusivity is measured, zone-resolved, and
+  internally validated against an in vivo saturation time. (9) The NPR-C-evading design is NOT novel - the
+  same sponsor patented it in 2009 - but was never reduced to practice and no comparative binding data for
+  those variants exists anywhere in the full patent text. (10) CONTINUOUS EXPOSURE IS NOT REQUIRED AT THE
+  RECEPTOR - one to two hours daily matched continuous exposure in chondrocytes. (11) The sub-picomolar
+  SPR affinity that round 121 built on is a 577-FOLD OUTLIER against three independent radioligand
+  sources and is withdrawn.
+  WHAT OPENED THAT WAS NOT ASKED AT THE START. The NPR2 allosteric modulator route was found, ranked first,
+  and then killed within two rounds by the consumer finding - a PAM amplifies where ligand meets receptor,
+  and with no local production the plate cannot carry more ligand than the blood. Advection was discovered
+  and never quantified. And a question the atlas should have asked years earlier surfaced: whether the
+  same SPR avidity artefact contaminates the carrier-bound navepegritide numbers from the same table.
+  THE FIVE OPEN VARIABLES, AND WHY THEY ARE ONE. Every remaining unknown enters the decision through a
+  single dimensionless group, phi = L times the square root of k over D. L and D are now measured. What is
+  left is k, and k is unmeasured because five things feeding it are unmeasured: NPR-C RECEPTOR DENSITY in
+  chondrocytes, which is a pure assumption and which two literature searches this round failed to find in
+  any species; the NPR-C INTERNALISATION RATE, likewise unfound; the HYPERTROPHIC CELL VOLUME FRACTION,
+  assumed at one half; the ADVECTION VELOCITY, which williams2007 measured but reported only in a figure
+  and which biases every phi in this atlas upward; and the SPLIT BETWEEN NPR-C AND MME as local sinks,
+  which npr3_clearance_receptor already names as unestablished.
+  BUT A DEPTH PROFILE RETURNS phi DIRECTLY, WITHOUT ANY OF THEM. Fit cosh(phi x over L) over cosh(phi) to
+  concentration against depth at steady plasma concentration and phi falls out as a single fitted
+  parameter. A flat profile means steric exclusion, small phi, and the ligand branch closes. A U-shaped
+  profile means consumption, and phi is read off. THAT IS THE FINISH LINE, and it makes all five variables
+  moot rather than requiring five measurements.
+  AND ONE EMPIRICAL ANCHOR FOR k WAS FOUND THIS ROUND, IN A CAVEAT PARAGRAPH. williams2007 reports that
+  their analysis was compromised because tracer was ACTIVELY TRANSPORTED INTO THE HYPERTROPHIC
+  CHONDROCYTES, an effect they call the major problem and describe as ESPECIALLY VISIBLE AFTER 5 MINUTES,
+  forcing them to restrict analysis to a 30-to-180-second window. That is fluid-phase endocytosis of an
+  inert dextran, in the hypertrophic zone, on a five-minute timescale. A receptor-targeted ligand would be
+  taken up at least as fast. It is not a rate constant, but it places k at the FAST end of the range swept
+  in local_consumption_rate_inferred, which is the end where the hypertrophic Thiele modulus exceeds 5 and
+  the transport asymmetry is large.
+  THE HONEST BOTTOM LINE. Whether the dual-resistant CNP analogue gains therapeutic index or is merely a
+  dose increase in disguise is the ONE thing still undecided, and it turns on phi. Everything else about
+  the thread is settled: there is real dose headroom, the cap is systemic and cardiovascular, the plate is
+  a starved consumer that destroys what arrives, the approved agents address proteolysis and not receptor
+  clearance, and the molecule that would address both is designable, patented and unbuilt.'
+quantitative:
+- parameter: 'THE ONLY EMPIRICAL ANCHOR ON LOCAL CONSUMPTION FOUND ANYWHERE - ACTIVE UPTAKE INTO
+    HYPERTROPHIC CHONDROCYTES ON A FIVE-MINUTE TIMESCALE'
+  value: 'tracer actively transported into hypertrophic chondrocytes, described as especially visible
+    after 5 minutes and severe enough to force analysis into a 30-to-180-second window'
+  unit: qualitative timescale
+  conditions: 'williams2007, caveat to the in vivo diffusion analysis. The authors state that differential
+    partitioning occurs due to BINDING AND ENDOCYTOSIS producing tracer that cannot move, that the major
+    problem is fluorescence actively transported into the hypertrophic chondrocytes giving a stronger
+    signal from that region, that the effect is especially visible after 5 minutes, and that normalisation
+    and thresholding both failed to remove it - so they restricted analysis to 30 to 180 seconds after
+    injection.'
+  species: mouse
+  source_ref: williams2007
+  uncertainty: 'THIS IS FLUID-PHASE UPTAKE OF AN INERT DEXTRAN, NOT RECEPTOR-MEDIATED CLEARANCE OF A
+    LIGAND, and the two need not share a rate. It is a timescale at which an effect becomes VISIBLE in an
+    imaging experiment, not a half-life, and it cannot be converted into one. The direction of the
+    inference is nonetheless defensible - receptor-mediated endocytosis of a targeted ligand is ordinarily
+    faster than fluid-phase uptake of an inert tracer, so a five-minute fluid-phase timescale argues that
+    the receptor-mediated k is not slow. It is mouse, and the hypertrophic zone is the zone droplet methods
+    under-recover, though that limitation does not apply to this imaging preparation.'
+- parameter: 'THE FIVE OPEN VARIABLES AND THE SINGLE MEASUREMENT THAT MAKES ALL OF THEM MOOT'
+  value: 'five unmeasured inputs to k, against one fitted parameter recoverable from a concentration-
+    versus-depth profile'
+  unit: count
+  conditions: 'OPEN: (1) NPR-C receptor density in chondrocytes - assumed 1e4 per cell, not measured in
+    any species, two Europe PMC searches this round returned nothing; (2) NPR-C internalisation rate -
+    assumed 0.01 to 0.05 per minute, not found for this receptor; (3) hypertrophic cell volume fraction -
+    assumed 0.5; (4) advection velocity in cartilage - measured by williams2007 but reported in a figure,
+    biases every phi in this atlas upward; (5) NPR-C versus MME share of local clearance - named
+    unestablished in npr3_clearance_receptor. ALL FIVE enter the decision only through phi, and fitting
+    cosh(phi x/L)/cosh(phi) to a depth profile returns phi as one parameter.'
+  species: not_applicable
+  source_ref: williams2007
+  uncertainty: 'THE COLLAPSE ARGUMENT ASSUMES THE SLAB MODEL IS THE RIGHT MODEL, and williams2007 shows it
+    is not exactly - diffusivity varies fivefold across the axis and there is inward advection from both
+    faces, so a fitted phi would be an effective lumped parameter rather than a clean Thiele modulus. That
+    is still the right quantity to make a decision on, because the decision depends on the lumped
+    behaviour, but it should not be reported as though the underlying geometry were uniform. The source_ref
+    is nominal - this row is bookkeeping over the thread rather than a claim from a paper.'
+localization:
+- 'the undecided question is specific to the hypertrophic zone - the zone the CNP axis acts on, the zone
+  with tenfold the matrix hindrance of the proliferative zone, and the zone williams2007 observed active
+  cellular uptake in'
+human_evidence: direct
+human_evidence_note: The closed items rest on human regulatory documents, human trials and human tissue
+  measurements. The open items are all rate parameters, none of which has been measured in any species.
+species_basis:
+- human
+- mouse
+- rat
+translation_risk: moderate
+translation_risk_reason: The settled conclusions are human and document-based. The one undecided question
+  turns on a rate constant estimated from rat binding data, mouse transport data and three assumptions.
+confidence: C
+claim_grades:
+- claim: Thread 3's central factual questions are answered.
+  grade: B
+  basis: Eleven listed items, each with a named primary or regulatory document behind it, most of them
+    human. Graded B rather than A because two of the eleven rest on values supplied by the project owner
+    from a document not retrieved in-session and flagged verify_by_hand.
+- claim: The five remaining open variables collapse onto one measurement.
+  grade: B
+  basis: 'Arithmetic on the model rather than an empirical claim - all five enter only through phi, and
+    phi is recoverable as a single fitted parameter from a concentration-versus-depth profile. The
+    qualification is that with fivefold axial variation in diffusivity and inward advection, the fitted
+    value is an effective lumped parameter rather than a clean Thiele modulus.'
+- claim: Local consumption is fast enough to put the hypertrophic zone in the diffusion-limited regime.
+  grade: D
+  basis: 'Supported by the central assumption set in local_consumption_rate_inferred and by the
+    williams2007 observation of active uptake into hypertrophic chondrocytes on a five-minute timescale,
+    and conservative in using the weakest available affinity and omitting MME. Still D because the anchor
+    is fluid-phase dextran uptake rather than receptor-mediated ligand clearance, and because advection
+    biases the calculation the other way by an unquantified amount.'
+- claim: The thread can be finished without new laboratory work.
+  grade: X
+  basis: 'NO. Every documentary and re-analysis route has now been run - trial protocol, two regulatory
+    assessments, the primary pharmacology paper, the full patent family text, two human transcriptomic
+    datasets, the transport literature and the radioligand literature. What remains is a measurement that
+    does not exist in any published form: a solute concentration profile across the depth of a growth
+    plate. It requires an experiment.'
+key_refs:
+- ref_id: williams2007
+  year: 2007
+  type: primary
+  role: supplies both the diffusivity that closed one variable and the endocytosis observation that is the
+    only empirical anchor on the one still open
+- ref_id: brown1992
+  year: 1992
+  type: primary
+  role: the radioligand affinity that withdrew the SPR claim and supplied the Kd for the rate inference
+- ref_id: ema_voxzogo_epar_2021
+  year: 2021
+  type: regulatory
+  role: the document that settled the dose-ceiling and clearance-pathway questions
+open_questions:
+- g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature
+- g_l12_does_a_small_molecule_accumulate_in_cartilage
+contradicts: []
+last_verified: '2026-08-08'

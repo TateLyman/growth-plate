@@ -1,0 +1,250 @@
+id: progenitor_reservoir_outside_the_plate
+name: The growth plate progenitor pool is refillable from outside the cartilage
+type: process
+layer: L2
+stub: false
+summary: 'Everything in this atlas about the division budget has assumed a closed system: a pool of resting-zone progenitors,
+  finite, spent by division, and gone when spent. qu2025 shows the system is not closed. THREE FINDINGS, IN ORDER
+  OF CONSEQUENCE. First, the long-lived cartilage progenitors that drive postnatal growth are NOT the fetal ones -
+  in fetuses and neonates reserve-zone progenitors do not self-renew, so a cell recruited into a column exhausts rapidly
+  and columns are short; at about three postnatal weeks, progenitors BEGIN to self-renew and long columns appear.
+  Second, those long-lived progenitors descend from Gli1+ cells that sit mostly DORMANT through fetal life. Third,
+  and decisively, when the cartilage is damaged - mosaic overexpression of p21, a genetic cell-cycle arrest - the
+  Gli1+ population EXPANDS INSIDE THE CARTILAGE, biased toward the resting zone, enriches the cycling fraction, and
+  RESTORES NORMAL GROWTH. And the reparative cells come from Pdgfra+ cells OUTSIDE the cartilage entirely. SO THERE
+  IS A RESERVOIR, IT LIVES IN THE SURROUNDING STROMA, AND DAMAGE TO THE PLATE RECRUITS IT. That is a mechanism for
+  adding to the budget rather than merely spending it more slowly, and it is the first thing in this atlas that could
+  do so. It also supplies a mechanism for catch-up growth that the atlas did not hold: catch-up may not be only a
+  paused clock, it may be a REFILLED POOL. The atlas already held the fact that makes this plausible and never used
+  it - nilsson2005 found that rabbit resting-zone chondrocytes from old and young donors undergo the SAME number of
+  population doublings in culture. THE PROLIFERATIVE LIMIT IS NOT CARRIED BY THE CELL. It is imposed by the plate.
+  A limit that is imposed can in principle be lifted; a limit carried in the cell cannot. THE HUMAN QUESTION HAS NOW
+  BEEN ASKED, BY THIS ATLAS, AND THE ANSWER IS SPLIT. Re-analysis of GSE288028 recovers a genuine human stromal population
+  beside the pubertal growth plate - COL1A1 573x enriched, PRRX1 13x, PDGFRA-positive in 78% of cells, COL2A1 at its
+  own libraries'' ambient floor, present in three donors. So the anatomical counterpart of the mouse reservoir is
+  there. BUT EVERY DIRECT HEDGEHOG TARGET IS DEPLETED IN IT, NOT ENRICHED: GLI1 0.30, PTCH1 0.08, HHIP 0.03. The mouse
+  reservoir is DEFINED by Gli1 - it is found, traced and recruited through Hedgehog responsiveness - and the human
+  population that matches it on every stromal marker does not match it on the property that makes it a reservoir.
+  In human, GLI1 instead sits INSIDE the cartilage, highest in the clusters carrying the resting-zone marker SFRP5.
+  AND THE SECOND HANDLE FAILS THE SAME WAY. A separate, prospectively declared prediction - that this population is
+  the groove-of-Ranvier counterpart and should therefore be AXIN2-positive and Wnt-RESPONSIVE even while Hedgehog-negative
+  - also failed: AXIN2 0.52, with NKD1 0.05 and TCF7 0.57 agreeing. Across a panel of five mouse stem markers taken
+  from the primaries that established them, ALL are depleted in the human stroma and enriched inside the cartilage
+  (PTHLH 0.10, FOXA2 0.01, CHRDL2 0.01, SFRP5 0.00, NT5E 0.65). What remains is a population that looks like ordinary
+  perichondrial fibroblast-lineage stroma carrying no known progenitor programme. THE REST OF THE ANSWER IS IN
+  stem_pool_size_versus_flux: even where a reservoir does exist, three mouse perturbations show pool size and bone
+  growth moving in OPPOSITE directions, so enlarging a pool is not by itself a route to height. The reservoir hypothesis
+  as posed does not transfer; the cells it would need do exist and carry none of its marks.'
+quantitative:
+- parameter: THE LONG-LIVED PROGENITORS THAT DRIVE POSTNATAL GROWTH ARE NOT PRESENT AT BIRTH
+  value: reserve-zone progenitors do not self-renew in fetus or neonate; self-renewal begins at about 3 postnatal
+    weeks
+  unit: qualitative
+  conditions: mouse; before self-renewal begins, a progenitor recruited into a proliferative column exhausts rapidly
+    and columns are short. After about three weeks - possibly in response to secondary ossification centre signals
+    - long clonal columns appear
+  species: mouse
+  source_ref: qu2025
+  uncertainty: THIS REFRAMES THE BUDGET. The pool that determines final height is CONSTITUTED postnatally, not inherited
+    from the embryo, so there is a window in which its size is being set rather than merely spent. The atlas's clonal_exhaustion
+    and stem_pool_population_asymmetry nodes both describe the spending and neither describes the constitution. Mouse,
+    and the mouse plate never closes.
+- parameter: DAMAGE TO THE PLATE RECRUITS A DORMANT RESERVE AND RESTORES NORMAL GROWTH
+  value: Gli1+ cells expand within the cartilage, biased to the resting zone, and growth is normal despite the arrest
+  unit: qualitative
+  conditions: cartilage-targeted mosaic overexpression of p21, which blocks the cell cycle in G1, using Pitx2-Cre
+    with Col2a1-rtTA and a Tigre Dragon-p21 allele; Gli1-lineage contribution rises in both resting and proliferative
+    zones with a resting-zone bias, and the Ki67+ cycling population becomes enriched in Gli1-lineage cells
+  species: mouse
+  source_ref: qu2025
+  uncertainty: THE COMPENSATION IS THE RESULT AND ITS NECESSITY WAS TESTED - the authors built a Gli1-targeted inducible
+    diphtheria toxin line to ask whether Gli1-derived chondrocytes are REQUIRED for it. This atlas has read the design
+    and has not read the outcome figures, so the requirement is recorded as TESTED, not as ESTABLISHED. The perturbation
+    is genetic and fetal; nothing here shows the reserve can be recruited pharmacologically, or postnatally, or in
+    a plate that closes.
+- parameter: WHERE THE RESERVE COMES FROM
+  value: Pdgfra+ cells OUTSIDE the cartilage
+  unit: none
+  conditions: lineage tracing from Gli1-CreER induced at E12.5 and E13.5, with reporter cells quantified inside and
+    outside the cartilage
+  species: mouse
+  source_ref: qu2025
+  uncertainty: THE MOST CONSEQUENTIAL SENTENCE IN THE PAPER FOR THIS ATLAS, because it means the growth plate's progenitor
+    supply is not a closed compartment. The surrounding stroma - the same anatomical neighbourhood as the groove of
+    Ranvier and the perichondrium, both of which this atlas already holds as nodes - is a source. WHETHER A HUMAN
+    EQUIVALENT EXISTS IS COMPLETELY UNKNOWN and no human tissue has been examined for it.
+- parameter: the proliferative limit is not carried by the cell
+  value: population doublings in culture do not depend on donor age
+  unit: none
+  conditions: rabbit resting-zone chondrocytes from young and old donors, expanded in vitro
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: 'HELD BY THIS ATLAS SINCE PHASE 1 AND NEVER PUT TO WORK. The finite-capacity model''s own authors falsified
+    its simplest version: the in vivo limit is NOT a Hayflick limit resident in the cell. Taken with qu2025 the implication
+    is that the limit is a property of the PLATE, not of the chondrocyte - and an imposed limit is a target in a way
+    an intrinsic one is not. The authors'' alternative proposal, a progressive loss of DNA methylation tracking slow
+    in vivo proliferation, remains untested sixteen years later and is the specific molecular hypothesis a reprogramming
+    experiment would address.'
+- parameter: A HUMAN STROMAL POPULATION EXISTS ALONGSIDE THE GROWTH PLATE — COL1A1+, PRRX1+, PDGFRA+, COL2A1-negative
+  value: 1,374 cells; COL1A1 572.8x enriched over chondrocytes, PRRX1 13.3x, PDGFRA 1.2x; COL2A1 at 3.6x its own donors'
+    ambient floor against 579 mean counts in chondrocytes
+  unit: fold enrichment
+  conditions: human distal femur growth plate biopsies, GSE288028, the four DIRECTLY PROCESSED libraries only (the
+    other ten are 24 h explant arms); 27,620 cells after QC; harmony batch correction on donor; leiden resolution 1.0,
+    28 clusters; the population is cluster 0 and carries three donors (797/495/82)
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE ANATOMICAL COUNTERPART OF THE MOUSE RESERVOIR EXISTS IN HUMAN TISSUE. This is re-analysis of a
+    public deposit by this atlas, not a published result, and is graded accordingly. Dissociated scRNA-seq infers "outside
+    the cartilage" from transcriptome, not position: these cells are COL2A1-negative and COL1A1-high, which is a cell
+    identity, and no image places them relative to the plate. PDGFRA enrichment is only 1.7x by mean, though 78% of
+    the cluster is PDGFRA-positive - PDGFRA is not what separates this population, COL1A1 and PRRX1 are. The enrichment
+    figures are lower than an earlier run reported (COL1A1 573x, PRRX1 13.3x) because the chondrocyte comparison group
+    now INCLUDES the resting zone, which an absolute COL2A1 threshold had excluded (CORR-022); the identity and the
+    direction are unchanged, and the comparison is now against the whole cartilage rather than part of it.'
+- parameter: BUT HEDGEHOG SIGNALLING IS OFF IN IT — THE MOUSE RESERVOIR'S DEFINING PROPERTY DOES NOT TRANSFER
+  value: 'stromal/chondrocyte expression ratio: GLI1 0.28, PTCH1 0.08, HHIP 0.02, GLI2 0.15, GLI3 0.88'
+  unit: ratio
+  conditions: same libraries and clustering; comparison restricted to the three donors with a measurable per-library
+    ambient floor; 1,374 stromal against 1,907 chondrocyte cells; GLI1 431 pooled counts, clearing a pre-declared 50-count
+    floor
+  species: human
+  source_ref: chu2026
+  uncertainty: 'EVERY DIRECT HEDGEHOG TARGET IS DEPLETED IN THE STROMAL POPULATION, NOT ENRICHED. qu2025''s reservoir
+    is defined by Gli1 - the mouse population is found, traced and recruited through Hedgehog responsiveness. The human
+    population that matches it on COL1A1, PRRX1 and PDGFRA does not match it on the property that defines it. The three
+    strongest reads are PTCH1 (0.08, 1,082 vs 8,710 counts) and HHIP (0.03) and GLI1 (0.30), which are the three genes
+    a Hedgehog-responsive cell must carry. THIS DOES NOT SHOW NO HUMAN RESERVOIR EXISTS - it shows that if one does,
+    GLI1 is the wrong handle on which to find or recruit it in human. Caveats carried: donor3, the most cartilage-rich
+    library, is EXCLUDED because it holds 9 immune cells and its ambient floor cannot be measured (CORR-021), which
+    cuts the chondrocyte comparison group to 890 cells; the biopsies are 12-14 y and Tanner 2-4, so this is the pubertal
+    plate and not the 3-week window in which the mouse reserve is constituted; and a population that is transcriptionally
+    Hedgehog-off at rest could still be Hedgehog-responsive on damage, which is the condition qu2025 actually tested
+    and no human sample can be taken under.'
+- parameter: AND SO IS EVERY OTHER MOUSE STEM MARKER — FIVE MARKERS, TWO PATHWAYS, ALL DEPLETED IN THE HUMAN STROMA
+  value: 'stromal/chondrocyte ratio for the pre-specified mouse marker panel: PTHLH 0.10, FOXA2 0.01, CHRDL2 0.01,
+    SFRP5 0.00, AXIN2 0.52, NT5E 0.65, APOE 5.08. Wnt-pathway readouts in the same comparison: NKD1 0.05, TCF7 0.57,
+    RSPO2 1.02, RSPO3 1.06, LGR5 below the count floor'
+  unit: ratio
+  conditions: 'same libraries, clustering and per-donor ambient reference; every gene declared BEFORE the numbers were
+    read, each taken from the primary lineage-tracing paper that established it - PTHLH mizuhashi2018, NT5E newton2019,
+    AXIN2 usami2019, FOXA2 muruganandan2022, APOE kodama2025. The pre-declared prediction was SPECIFIC: if this population
+    is the human groove-of-Ranvier counterpart it should be AXIN2-positive, Wnt-RESPONSIVE, even though it is Hedgehog-negative.
+    Genes below 50 pooled counts were not compared'
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE PREDICTION FAILED AND IT FAILED THE SAME WAY THE HEDGEHOG ONE DID. AXIN2 is 0.52 - not enriched
+    - and the two independent Wnt readouts agree, NKD1 at 0.05 and TCF7 at 0.57, so the population is not Wnt-responsive
+    either. Both mouse handles on a growth plate progenitor, Hedgehog and Wnt, are therefore negative in the same human
+    cells, tested separately and prospectively. Every resting-zone stem marker is DEPLETED in the stroma and enriched
+    inside the cartilage. APOE at 5.08 is the one enrichment and it is NOT read as evidence of stemness: APOE is a
+    high-expressing stromal and myeloid gene in any tissue, it is 11.15 in a neighbouring non-stromal cluster here,
+    and kodama2025 established it as a marker WITHIN growth plate cartilage, where its meaning does not carry outside.
+    WHAT THE PANEL LEAVES IS A POPULATION THAT LOOKS LIKE ORDINARY PERICHONDRIAL FIBROBLAST-LINEAGE STROMA - COL1A1,
+    PRRX1, PDGFRA - AND CARRIES NO KNOWN PROGENITOR PROGRAMME. This is a stronger negative than the Hedgehog row alone
+    because it is two prospectively declared predictions from unrelated pathways failing in the same direction, but
+    it remains a marker argument on one dataset: absence of a known programme is not absence of a progenitor.'
+- parameter: THE HUMAN RESTING ZONE PARTLY CARRIES THE MOUSE WNT-INHIBITORY NICHE MODULE, AND ONLY PARTLY
+  value: 'resting zone versus other chondrocyte clusters: SFRP5 10.29, WIF1 2.80, FZD6 1.45, SFRP1 1.25, DKK2 0.56;
+    NOTUM below the count floor. By the pre-declared 1.5-fold criterion, 1 of 4 testable module genes'
+  unit: ratio
+  conditions: module taken whole from hallett2021, which established it in mouse; resting-zone clusters identified
+    ONLY by PTHLH and CHRDL2 so that no module gene was used to define the compartment it is then tested in; SFRP5
+    is a module member and is the marker avijgan2026br used to call the human resting zone, so it was held out of identification
+    and reported separately
+  species: human
+  source_ref: chu2026
+  uncertainty: 'A MIXED RESULT REPORTED AT ITS PRE-DECLARED CRITERION RATHER THAN AT A FLATTERING ONE. Only WIF1 clears
+    1.5-fold among the four testable module genes; FZD6 at 1.45 falls just under; SFRP1 is flat; and DKK2 goes the
+    WRONG WAY at 0.56 on 972 counts, which is well powered and is a genuine miss. Held-out SFRP5 is the strongest signal
+    in the panel at 10.29. So the human resting zone is Wnt-inhibited by SFRP5 and WIF1 and not by DKK2 - the module
+    is PARTLY conserved, not transplanted. AN EARLIER RUN OF THIS TEST RETURNED 2 OF 2 AND WAS WRONG: it identified
+    the resting zone as cluster 12 because an absolute COL2A1 threshold had excluded the real resting-zone clusters
+    (CORR-022). The clean positive was an artefact of testing the wrong cells.'
+- parameter: IN HUMAN, HEDGEHOG RESPONSIVENESS SITS INSIDE THE CARTILAGE, WITH THE RESTING-ZONE MARKER
+  value: GLI1 mean by cluster - highest is cluster 6 at 0.289 (SFRP5 1.831) and cluster 12 at 0.283; the only two clusters
+    with SFRP5 above 0.08 are cluster 6 (1.831) and cluster 7 (4.279), and both are in the top four of 28 clusters
+    for GLI1; the stromal cluster is 0.053 and immune clusters run 0.004-0.052
+  unit: mean counts per cell
+  conditions: same clustering, retained donors, clusters of at least 20 cells
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE HEDGEHOG-RESPONSIVE COMPARTMENT IS THE RESTING ZONE ITSELF. Recorded as a DESCRIPTIVE ORDERING,
+    not a correlation: GLI1 is also high in cluster 12, a COL2A1-high cluster with SFRP5 at 0.074, so this is not a
+    clean GLI1-SFRP5 axis, and with 28 clusters a rank statistic on two SFRP5-positive clusters would be a weak test
+    that I have not run. What the table supports is the negative direction of the reservoir claim: whatever GLI1 marks
+    in the human pubertal plate, it is not the extra-cartilaginous stroma. avijgan2026br independently places SFRP5+
+    cells in the resting zone and finds them the least quiescent subset, which is consistent, and is a different sample
+    set and a different instrument.'
+- parameter: partial epigenetic reprogramming works in cartilage in vivo, without dedifferentiation
+  value: senescence and DNA methyltransferase expression markedly diminished; no increase in stemness genes
+  unit: qualitative
+  conditions: AAV-delivered Oct4, Sox2 and Klf4 expressed locally in the mouse knee joint; TET2 identified as the
+    pivotal mediator; cartilage integrity improved and fibrocartilage hyalinised
+  species: mouse
+  source_ref: osk2026
+  uncertainty: 'THE SAFETY RESULT MATTERS AS MUCH AS THE EFFICACY ONE: chondrocytes kept their identity and did not
+    upregulate stemness genes, which is the failure mode that makes in vivo reprogramming dangerous. BUT THIS IS ARTICULAR
+    CARTILAGE IN OSTEOARTHRITIS, NOT GROWTH PLATE, and the endpoint is joint integrity, not elongation. Nobody has
+    delivered OSK to a growth plate, and the two tissues differ in exactly the property at issue - the growth plate
+    is a proliferative, transient structure and articular cartilage is not. Recorded as a demonstrated TECHNIQUE in
+    the right tissue class, not as a growth result.'
+localization:
+- resting zone; and the stroma outside the cartilage, including the perichondrial neighbourhood
+human_evidence: direct
+human_evidence_note: 'The mechanism is mouse and rabbit; the human question has been asked by this atlas and answered
+  in one direction, twice, on two unrelated pathways. Human tissue HAS now been examined for a GLI1+/PDGFRA+ stromal population - re-analysis of the four
+  directly processed GSE288028 libraries, 27,620 cells, harmony-corrected, with a per-library ambient reference built
+  on immune cells, which cannot transcribe COL2A1. A COL1A1+/PRRX1+/PDGFRA+ COL2A1-negative population is present in
+  three donors, and it is Hedgehog-negative on all of GLI1, PTCH1, HHIP and GLI2. THE RE-ANALYSIS IS THIS ATLAS''S OWN
+  AND IS GRADED AS SUCH: the finding is D-grade on its own, and it does not license a claim that no human reservoir
+  exists - only that GLI1 does not mark one in the pubertal human plate. No human growth plate has been reprogrammed.
+  What no dissociated dataset can supply is position: "outside the cartilage" is inferred from transcriptome. avijgan2026br''s
+  spatial data covers the surrounding tissue but is too shallow for Hedgehog components - PTCH1 45 and GLI1 60 pooled
+  counts across 14 sections (CORR-019).'
+species_basis:
+- mouse
+- rabbit
+- human
+translation_risk: high
+translation_risk_reason: The demonstration is genetic, fetal, and in a species whose growth plate never closes; the
+  reservoir is recruited by damage, not by a drug. And the human test that has now been run cuts against the transfer -
+  the human stromal population beside the pubertal plate is Hedgehog-negative, so the marker by which the mouse reserve
+  is identified and recruited does not label its human counterpart.
+confidence: C
+confidence_note: C. qu2025 is a strong primary in Nature Communications with lineage tracing, a genetic perturbation,
+  a necessity test and an external-origin result, and osk2026 is a clean in vivo demonstration in the right tissue
+  class. It is not B because every element is mouse, the compensation is triggered genetically rather than pharmacologically,
+  this atlas has read the design of the necessity experiment but not its outcome figures, and the reprogramming work
+  is in articular cartilage with a joint endpoint. The node's value is that it identifies a mechanism by which the
+  budget could be ADDED TO, which nothing else in this atlas does. THE THREE HUMAN ROWS ARE THIS ATLAS'S OWN RE-ANALYSIS
+  AND ARE GRADED D INDIVIDUALLY, not C - one public dataset, four libraries of which one is excluded, no positional
+  information, no replication in an independent cohort, and no published cluster annotation to check against. They
+  do not raise the node's grade and they are not permitted to - a re-analysis is graded as anyone else's would be.
+  They change the node's REACH, from a mouse mechanism with no human counterpart examined to a mouse mechanism whose
+  human counterpart has been examined once and fails on its defining marker.
+key_refs:
+- ref_id: qu2025
+  pmid: '41253754'
+  first_author: Qu X
+  year: 2025
+  type: primary
+  one_line_finding: Gli1+ dormant precursors expand into the cartilage on damage and restore normal growth, and they
+    come from Pdgfra+ cells OUTSIDE the cartilage.
+- ref_id: nilsson2005
+  first_author: Nilsson O
+  year: 2005
+  type: primary
+  one_line_finding: Rabbit resting-zone chondrocyte population doublings do not depend on donor age - the proliferative
+    limit is not carried by the cell.
+- ref_id: osk2026
+  pmid: '41786976'
+  first_author: see title
+  year: 2026
+  type: primary
+  one_line_finding: AAV-OSK in mouse knee lowers chondrocyte senescence and DNMT expression via TET2 without inducing
+    stemness genes.
+open_questions:
+- g_l2_human_progenitor_reservoir
+- g_l2_recruit_reserve_pharmacologically
+last_verified: '2026-08-06'

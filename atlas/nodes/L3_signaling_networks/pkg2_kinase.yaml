@@ -1,0 +1,177 @@
+id: pkg2_kinase
+name: PKG-II
+aliases:
+- PRKG2
+- cGMP-dependent protein kinase II
+- cGKII
+type: protein
+layer: L3
+stub: false
+summary: 'PKG-II is a membrane-anchored cGMP-dependent protein kinase required for the growth-promoting
+
+  output of the CNP/NPR2 pathway, but it is not a sufficient account of that pathway and its
+ 
+  canonical zonal story does not survive the primary data. Prkg2-null mice and the naturally mutant KMI
+
+  rat are dwarfed with an EXPANDED growth plate - 665 +/- 47 um versus 255 +/- 34 um in wild type,
+
+  n=8 - built from an accumulated intermediate layer of postmitotic but non-hypertrophic chondrocytes,
+
+  so PKG-II couples the cessation of proliferation to the START of hypertrophy, mechanistically by
+
+  blocking nuclear entry of SOX9 (Chikuda 2004) and by phosphorylating GSK-3beta at Ser9 (Kawasaki
+
+  2008). Two things follow that reviews do not carry. First, the direction is opposite to CNP/NPR2
+
+  loss: cartilage-specific Npr2 deletion REDUCES the hypertrophic layer to 23.0% of control and thins
+
+  the whole plate (Nakao 2015), whereas Prkg2 loss expands it 2.6-fold - a linear
+
+  CNP-GC-B-cGMP-PKG-II chain predicts these phenocopy and they do not. Chikuda 2004, Nakao 2015 and
+
+  Agoston 2007 each name this conflict in their own discussion. Second, PKG-II protein by IHC is
+
+  predominantly in LATE PROLIFERATIVE AND PREHYPERTROPHIC chondrocytes, not hypertrophic ones (Chikuda
+
+  2004, rat); the hypertrophic enrichment widely quoted is Prkg2 mRNA (4.4-fold) from micro-dissected
+
+  mouse tibia whose compartments are resting/proliferative combined, hypertrophic and mineralized
+
+  (Agoston 2007). The decisive alternative has never been removed: cGKI (Prkg1) is co-expressed at
+
+  HIGHER zonal enrichment (5.9-fold) and both Chikuda 2004 and Agoston 2007 independently name the
+
+  cGKI/cGKII double knockout as the experiment needed, which has still not been done (g_l2d_001).
+
+  PKG also has at least one substrate arm outside SOX9/GSK-3beta: CNP-driven bone growth in tibia
+
+  explant is abolished by chondrocyte-specific Trpm7 ablation, via PKG acting on the BK channel to
+
+  drive TRPM7 Ca2+ entry and CaMKII (Miyazaki 2022). Human biallelic PRKG2 loss-of-function variants
+
+  cause an acromesomelic dysplasia phenotypically overlapping the NPR2 form (Diaz-Gonzalez 2022),
+
+  which remains the strongest evidence that PKG-II is required for the pathway output in humans;
+
+  nonsense PRKG2 alleles also cause disproportionate dwarfism in dogs.
+
+  '
+quantitative:
+- parameter: Growth plate height, Prkg2-mutant (KMI) rat vs wild type
+  value: 665 vs 255
+  unit: um
+  conditions: proximal tibia, 10 weeks of age, haematoxylin-eosin morphometry; the increase is an
+    intermediate layer of postmitotic, ALP-negative, collagen X-negative chondrocytes
+  species: rat
+  source_ref: chikuda2004
+  uncertainty: mean +/- SEM 47 and 34 respectively, n=8 per group
+- parameter: Prkg2 mRNA enrichment, hypertrophic vs resting/proliferative zone
+  value: '4.4'
+  unit: fold
+  conditions: micro-dissected mouse tibia organ culture, microarray; compartments are resting/proliferative
+    COMBINED, hypertrophic, and mineralized - not RZ/PZ/HZ
+  species: mouse
+  source_ref: agoston2007
+  uncertainty: microarray, three independent trials; mRNA only, contradicted at protein level by chikuda2004
+- parameter: Prkg1 (cGKI) mRNA enrichment, hypertrophic vs resting/proliferative zone
+  value: '5.9'
+  unit: fold
+  conditions: same microarray; cGKI is MORE zone-enriched than cGKII and has never been removed genetically
+    in this context
+  species: mouse
+  source_ref: agoston2007
+  uncertainty: microarray, three independent trials
+localization:
+- 'rat late PZ and PHZ: PKG-II PROTEIN by immunohistochemistry, predominant here and preceding the onset
+  of hypertrophy (chikuda2004) - this is the only protein-level zonal map that exists'
+- 'mouse HZ: Prkg1 (5.9-fold) and Prkg2 (4.4-fold) mRNA higher than in the combined resting/proliferative
+  compartment (agoston2007) - mRNA only, and the compartments are not RZ/PZ/HZ'
+- 'CONFLICT: protein (chikuda2004, rat, prehypertrophic) and mRNA (agoston2007, mouse, hypertrophic)
+  disagree; see CORR-003'
+- 'human growth plate: zonal PKG-II protein map unconfirmed'
+human_evidence: indirect
+human_evidence_note: Biallelic human PRKG2 loss-of-function causes acromesomelic dysplasia, but no human
+  growth plate tissue has been examined for PKG-II.
+species_basis:
+- mouse
+- rat
+- human
+translation_risk: moderate
+translation_risk_reason: Mechanism is rodent; the human evidence is a matching monogenic skeletal dysplasia
+  without tissue-level confirmation.
+confidence: C
+confidence_note: >-
+  Regraded B to C by the phase 2d audit. Animal-only mechanism with an unresolved internal conflict -
+  protein and mRNA zonal maps disagree, and the Prkg2-loss and Npr2-loss growth plate phenotypes are
+  opposite in sign. The human PRKG2 dysplasia supports requirement, not the zonal mechanism. Grade C
+  ('animal only, replicated') with an open contradiction is the correct grade; grade B implied a
+  coherent animal mechanism that does not exist yet.
+key_refs:
+- ref_id: chikuda2004
+  pmid: '15466490'
+  first_author: Chikuda H
+  year: 2004
+  type: primary
+  one_line_finding: PKG-II protein is predominantly in LATE PROLIFERATIVE and PREHYPERTROPHIC chondrocytes;
+    the Prkg2-mutant KMI rat growth plate is EXPANDED (665 +/- 47 vs 255 +/- 34 um, n=8) by a postmitotic
+    non-hypertrophic intermediate layer; PKG-II acts by blocking SOX9 nuclear entry; cGKI involvement
+    could not be excluded.
+- ref_id: pfeifer1996
+  pmid: '8953039'
+  first_author: Pfeifer A
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: Prkg2-null mice are dwarfed with an expanded hypertrophic zone.
+- ref_id: kawasaki2008
+  pmid: '18551195'
+  first_author: Kawasaki Y
+  year: 2008
+  type: primary_abstract_only
+  one_line_finding: PKG-II phosphorylates GSK-3beta Ser9 to promote hypertrophic differentiation.
+- ref_id: miyazaki2022
+  pmid: '35287796'
+  first_author: Miyazaki Y
+  year: 2022
+  type: primary
+  one_line_finding: CNP-facilitated bone growth in mouse tibia explant is abolished by chondrocyte-specific
+    Trpm7 ablation; the proposed chain is NPR2-cGMP-PKG-BK channel-TRPM7 Ca2+ entry-CaMKII, a PKG substrate
+    arm outside SOX9 and GSK-3beta.
+- ref_id: nakao2015
+  pmid: '26014585'
+  first_author: Nakao K
+  year: 2015
+  type: primary
+  one_line_finding: Cartilage-specific Npr2 deletion REDUCES the hypertrophic layer to 23.0% of control,
+    the opposite direction to the expanded Prkg2-mutant plate; the authors flag this as an unresolved problem.
+- ref_id: dazgonzlez2022
+  pmid: '33106379'
+  first_author: Díaz-González F
+  year: 2022
+  type: primary_abstract_only
+  one_line_finding: Biallelic PRKG2 variants cause a novel human acromesomelic dysplasia.
+- ref_id: agoston2007
+  pmid: '17374144'
+  first_author: Agoston H
+  year: 2007
+  type: primary
+  one_line_finding: Prkg1 (5.9-fold) and Prkg2 (4.4-fold) mRNA are enriched in the hypertrophic versus
+    the combined resting/proliferative compartment of micro-dissected mouse tibia; the authors state
+    the cGKII and CNP knockout cartilage phenotypes are NOT identical and call for a cGKI/cGKII double
+    knockout.
+open_questions:
+- g_l2d_001
+contradicts:
+- agoston2007
+- nakao2015
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. chikuda2004, agoston2007, nakao2015 and miyazaki2022
+  read in FULL. Verdict SUPERSEDED for the zonal-explanation claim; see atlas/audit/corrections.md CORR-003.
+last_verified: '2026-08-05'
+paralog_audit: superseded_prior_pass
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Re-read in the paralog audit; the SUPERSEDED verdict of CORR-003 stands and no further paralog exposure was
+  found on this node. Recorded for completeness: the upstream cGMP source is now also under an unexcluded-relative
+  question (NPR1/ANP, zhou2024, g_para_001), so the chain CNP-NPR2-cGMP-PKG-II has an untested alternative at the
+  receptor step as well as at the kinase step.

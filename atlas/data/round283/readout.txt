@@ -1,0 +1,63 @@
+chu2026 data file S1 - mouse GP1 vs GP2 DEG table: 14755 genes
+
+SIGN CALIBRATION (this must pass before any direction is reported)
+  root/resting   SFRP5     lfc  -2.363  padj 1.30e-16
+  root/resting   PTHLH     lfc  -1.454  padj 1.70e-01
+  root/resting   NT5E      lfc  -0.798  padj 3.50e-01
+  root/resting   GAS1      lfc  +3.063  padj 1.76e-10
+  differentiated COL10A1   lfc  +3.244  padj 1.19e-07
+  differentiated GDF10     lfc  +2.621  padj 3.28e-06
+  differentiated PRG4      lfc  +8.462  padj 2.85e-51
+  differentiated IBSP      lfc  +8.337  padj 3.91e-51
+
+  global skew among 1480 significant genes: 1039 positive, 441 negative (2.36:1)
+
+  *** CALIBRATION FAILS - DIRECTION WILL NOT BE ASSIGNED. ***
+  3/4 root markers negative, 4/4 differentiation markers positive.
+  The panels DISAGREE WITH EACH OTHER: SFRP5, PTHLH and NT5E run one way while
+  GAS1 - which round 241 records as a GP1 marker, and which is the quiescent
+  epiphyseal-stem-cell marker - runs the other way, strongly (padj 1.8e-10).
+  The global skew and GAS1 both point to POSITIVE = GP1; the resting-marker panel
+  points to NEGATIVE = GP1. THAT IS A REAL TENSION IN A DATASET THIS ATLAS HAS
+  BUILT FOUR ROUNDS ON, not a bug in this script - chu2026's RNA-velocity root
+  cluster is evidently NOT co-extensive with the canonical resting-zone marker
+  panel. Everything below is therefore reported DIRECTION-FREE: presence and
+  cluster-restriction only, with no compartment assigned.
+
+THE 17 kosmicki2026 SINGLETON-pLoF HEIGHT GENES IN THE MOUSE GROWTH PLATE
+gene        beta_cm   baseMean   log2FC       padj  call
+FBN1         +11.14       2.12   +0.804   1.14e-03  CLUSTER-RESTRICTED (direction unassigned)
+CHD8         +10.22       0.73   -0.666   3.84e-02  CLUSTER-RESTRICTED (direction unassigned)
+LCORL         +9.99       2.70   -0.046   5.51e-01  not cluster-restricted
+TET1          +8.32       0.45   +0.407   1.86e-01  not cluster-restricted
+ZFAT          +7.86       0.29   -0.139          -  not cluster-restricted
+NRK           +3.79       6.10   -0.565   4.55e-03  CLUSTER-RESTRICTED (direction unassigned)
+NF1           -5.55       3.41   +0.517   7.02e-03  CLUSTER-RESTRICTED (direction unassigned)
+SCUBE3        -7.18       0.12   -0.072          -  not cluster-restricted
+DTL           -7.34       0.53   +0.590   1.75e-01  not cluster-restricted
+IGF1R         -8.23       4.49   -0.282   1.41e-01  not cluster-restricted
+ADAMTS10      -8.24       0.40   +0.457   1.69e-01  not cluster-restricted
+ADAMTS6       -8.40       1.96   +1.295   1.05e-06  CLUSTER-RESTRICTED (direction unassigned)
+IGF2BP2       -8.68       0.77   -0.188   6.08e-01  not cluster-restricted
+EXT1          -8.70       9.15   -0.065   7.78e-01  not cluster-restricted
+COL1A1       -10.36      26.84   +3.643   1.66e-11  CLUSTER-RESTRICTED (direction unassigned)
+ANKRD11      -11.16       3.05   +0.572   5.39e-03  CLUSTER-RESTRICTED (direction unassigned)
+ACAN         -16.55      47.35   -0.191   1.43e-01  not cluster-restricted
+
+HEIGHT-INCREASING genes that are EXPRESSED AND CLUSTER-RESTRICTED in the mouse
+growth plate (padj < 0.05, direction deliberately not assigned): 3 of 6
+  NRK      beta +3.79 cm/allele | baseMean    6.10 | |log2FC| 0.565 | padj 4.55e-03
+  FBN1     beta +11.14 cm/allele | baseMean    2.12 | |log2FC| 0.804 | padj 1.14e-03
+  CHD8     beta +10.22 cm/allele | baseMean    0.73 | |log2FC| 0.666 | padj 3.84e-02
+
+For scale, baseMean in the same table: ACAN 47.35, COL2A1 783.51, FGFR3 2.30, NT5E 3.21.
+
+wrote /home/user/growth-plate/atlas/data/round283/height_genes_vs_root_cluster.tsv
+
+CAVEATS, STATED HERE SO THEY TRAVEL WITH THE OUTPUT:
+  - MOUSE clusters against HUMAN height genetics. Cross-species by construction.
+  - A GP1-vs-GP2 contrast is TWO clusters, not the whole plate: 'not enriched in GP1'
+    does not mean absent from the growth plate.
+  - Transcript abundance is not protein and not function (CORR-270).
+  - Direction of the human effect (LoF raises height) says nothing about which
+    compartment carries it; this cross only says where the gene is switched on.

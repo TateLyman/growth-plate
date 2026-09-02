@@ -1,0 +1,424 @@
+gaps:
+
+  - gap_id: g_l13b_001
+    question: >-
+      Does any catalogued, publicly accessible biobank of human growth plate tissue exist, and
+      if not, how much tissue is being discarded annually in paediatric orthopaedic practice
+      that could constitute one?
+    type: search_established
+    layer: L13
+    why_it_matters: >-
+      A donor census of the entire published literature finds at most 102 postnatal human
+      growth plates with stated donor counts, against 919 mouse records in GEO alone. If the
+      binding constraint on human growth plate biology were biological scarcity, nothing could
+      be done. But epiphysiodesis, guided-growth plating, polydactyly correction, limb
+      lengthening and amputation are routine procedures in which physeal tissue is discarded,
+      so the constraint may be aggregation rather than supply. Which of these it is determines
+      whether the human evidence base can be enlarged at all.
+    what_is_known: >-
+      Investigator-held single-centre collections exist and are visible only through the papers
+      that used them: a Stockholm epiphysiodesis series spanning nilsson1999, nilsson2003,
+      ramesh2022, zhang2024a and chu2026; a Vienna polydactyly series spanning walzer2014 and
+      zoehrer2025; and single-specimen holdings (white2008, wang2014, sales2009). Donor counts
+      per study range from 1 to 24.
+    what_is_missing: >-
+      Any public catalogue, consent framework or age- and site-annotated repository of human
+      physeal tissue; and any published estimate of the volume of physeal tissue discarded in
+      routine paediatric orthopaedic surgery.
+    nearest_evidence: [human_gp_donor_census_20260805, nilsson2003, walzer2014, gse288028]
+    discriminating_experiment: >-
+      Audit one year of theatre records at three tertiary paediatric orthopaedic centres,
+      counting procedures that resect or transect physeal cartilage (epiphysiodesis, guided
+      growth, polydactyly, limb reconstruction, tumour resection) and the mass of physeal
+      tissue discarded. Under hypothesis A (biological scarcity) the annual discarded tissue
+      across three centres is of the same order as the entire historical literature, roughly
+      100 plates, and no biobank is feasible. Under hypothesis B (aggregation failure) it
+      exceeds the entire historical literature by an order of magnitude in a single year, which
+      converts the field's central constraint from a fact of nature into a logistics problem.
+    tractability: 5
+    search_log_ref: g_l13b_001
+
+  - gap_id: g_l13b_002
+    question: >-
+      Why does no reference human tissue resource - Human Cell Atlas, GTEx or Human Protein
+      Atlas - contain growth plate or cartilage, and what specific downstream analyses are
+      foreclosed as a result?
+    type: search_established
+    layer: L13
+    why_it_matters: >-
+      Height is among the most-studied human quantitative traits and its GWAS has over 12,000
+      independent signals, but variant-to-function analysis requires expression and regulatory
+      data from the tissue that produces the trait. GTEx has 54 tissues, no cartilage and no
+      donors under 20, so growth plate colocalisation is not possible; the atlas gaps
+      g_l8gwas_001 and g_l8gwas_002 exist for this reason and cannot be closed with existing
+      reference resources. The same absence explains why human growth plate single-cell
+      clusters are annotated against murine references.
+    what_is_known: >-
+      The HCA organ vocabulary enumerated on 2026-08-05 contains bone marrow, bone tissue, bone
+      element, femur, hindlimb, limb, skeletal element and musculoskeletal system, and no
+      cartilage or growth plate term. GTEx contains 54 tissue sites of which the only skeletal
+      one is skeletal muscle. Human Protein Atlas normal-tissue profiling returns no cartilage
+      compartment. The one human resource with spatially resolved cartilage is the embryonic
+      limb atlas at 5-9 post-conception weeks (zhang2024_2), which predates the growth plate.
+    what_is_missing: >-
+      A paediatric, cartilage-containing reference expression and regulatory resource - the
+      growth plate equivalent of a GTEx tissue - with donors spanning the growing years.
+    nearest_evidence: [geo_census_l13b_20260805, zhang2024_2, gse9160, geo_census_20260805]
+    discriminating_experiment: >-
+      Assemble bulk RNA-seq plus ATAC-seq from 50 human growth plate biopsies spanning ages 5
+      to 16 and at least three anatomical sites, with donor genotypes, and test colocalisation
+      of height GWAS signals against growth plate eQTLs. Under the hypothesis that height
+      variants act in the growth plate, colocalisation rates should exceed those obtained in
+      any GTEx tissue by a clear margin; under the alternative that height acts systemically
+      through endocrine tissues, growth plate colocalisation should not outperform liver,
+      pituitary or adipose. The result determines whether the tissue-of-action assumption that
+      underlies most of this atlas is correct.
+    tractability: 3
+    search_log_ref: g_l13b_002
+
+  - gap_id: g_l13b_003
+    question: >-
+      What fraction of hypertrophic chondrocytes is lost during enzymatic dissociation of
+      growth plate for single-cell RNA-seq, and does the loss vary with donor age and zone?
+    type: quantitative_gap
+    layer: L13
+    why_it_matters: >-
+      Every statement of the form "population X constitutes Y% of growth plate cells" derived
+      from dissociated scRNA-seq is a statement about cells that survived dissociation. If
+      hypertrophic recovery is, say, 10% of true abundance, then the apparent rarity of
+      hypertrophic states in published datasets - and therefore inferences about the length of
+      the hypertrophic phase and about hypertrophic-to-osteoblast transition frequency - are
+      artefacts. The bias is directional and its magnitude is unknown, which is the worst
+      combination.
+    what_is_known: >-
+      Human terminal hypertrophic chondrocyte volume is about 5,900 um3, equivalent to roughly
+      22 um diameter (white2008), against a droplet-capture particle ceiling of roughly 40-50
+      um; hypertrophic cells sit in calcifying matrix requiring either longer digestion or
+      decalcification; and methodological reviews name mineralised-matrix dissociation as the
+      principal barrier to skeletal single-cell work (li2025, delos2026). No study measures the
+      loss.
+    what_is_missing: >-
+      A paired experiment reporting zonal cell composition by histology and by scRNA-seq in the
+      same growth plate, and therefore a per-zone recovery coefficient.
+    nearest_evidence: [white2008, li2025, delos2026, gse76157]
+    discriminating_experiment: >-
+      Take paired halves of the same growth plate (rat or pig, where paired tissue is
+      obtainable in quantity). Half A: stereological counting of cells per zone on serial
+      sections. Half B: standard enzymatic dissociation followed by scRNA-seq with zonal
+      assignment. Compute recovery per zone as scRNA-seq proportion divided by histological
+      proportion. Under the null of unbiased dissociation all zonal recovery coefficients are
+      1.0 within sampling error; under the hypertrophic-loss hypothesis the hypertrophic
+      coefficient falls well below 1 while resting and proliferative coefficients rise above 1.
+      Repeat with single-nucleus isolation to test whether nuclear protocols restore the ratio.
+    tractability: 4
+
+  - gap_id: g_l13b_004
+    question: >-
+      Has any high-resolution three-dimensional imaging method - synchrotron phase-contrast
+      tomography or equivalent - ever been applied to a human growth plate, and what would
+      chondrocyte-resolved 3D imaging of a human physis show that sections cannot?
+    type: search_established
+    layer: L13
+    why_it_matters: >-
+      Column architecture, clone geometry and the spatial pattern of bony bridging are
+      three-dimensional properties being inferred from two-dimensional sections. The one human
+      physis measured stereologically was a closing distal tibia in which cells were arranged
+      in clusters with intervening acellular areas and 46% of the central region was already
+      bridged (white2008) - a geometry that a section plane can easily misrepresent.
+      Synchrotron tomography resolves individual chondrocytes in intact human cartilage at
+      0.65-2.75 um and has simply never been pointed at a physis.
+    what_is_known: >-
+      Human articular cartilage from 49 donors imaged at 2.75 um voxel with 0.65 um validation
+      (b2026); human osteochondral interface lacunae segmented at 650 nm (xu2024). The one
+      human growth plate study using synchrotron-class facilities used nanoindentation, EDX and
+      proteomics instead (xie2025).
+    what_is_missing: >-
+      Any chondrocyte-resolved three-dimensional dataset from a human growth plate.
+    nearest_evidence: [b2026, xu2024, white2008, xie2025]
+    discriminating_experiment: >-
+      Image three human growth plate specimens obtained as surgical discard - one prepubertal,
+      one mid-pubertal, one closing - by synchrotron phase-contrast microtomography at 1-3 um
+      voxel with mosaicking across the full plate thickness, and segment chondrocytes in 3D.
+      Primary readout: whether columns are genuinely linear stacks or helical/branching
+      structures, and whether apparent clusters in closing plates are true 3D clusters or
+      section artefacts of oblique columns. Under the column hypothesis, cell centroids in the
+      proliferative zone lie on near-collinear axes; under the branching hypothesis they do
+      not, which would invalidate the one-progenitor-one-column model on which L2 rests.
+    tractability: 3
+    search_log_ref: g_l13b_004
+
+  - gap_id: g_l13b_005
+    question: >-
+      Has in situ hybridization ever been used to build a zone-resolved transcript map of the
+      HUMAN growth plate, and would a modern branched-probe survey reproduce the murine zonal
+      map?
+    type: search_established
+    layer: L13
+    why_it_matters: >-
+      The zonal transcript map that the field reasons with - Ihh prehypertrophic, PTHrP resting,
+      Col10a1 hypertrophic - was built by in situ hybridization in mouse. Human zonal transcript
+      data exist only from two donors by laser capture (gse9160), and human zonal PROTEIN data
+      come from immunohistochemistry whose artefact modes have already produced one unresolved
+      contradiction about estrogen receptor distribution. A human ISH survey would be the
+      cheapest possible test of whether the murine map transfers.
+    what_is_known: >-
+      Screened zonal ISH studies are murine or non-mammalian without exception. Branched-probe
+      chemistries tolerate degraded RNA far better than classical riboprobes, and decalcified
+      archival human physeal blocks exist in pathology departments.
+    what_is_missing: >-
+      A systematic human zonal ISH or RNAscope survey of the canonical zonal markers.
+    nearest_evidence: [gse9160, stjacques1999, nilsson2003, giger2026]
+    discriminating_experiment: >-
+      Run a 12-target RNAscope panel (PTHRP, IHH, PTH1R, COL2A1, COL10A1, SOX9, RUNX2, MMP13,
+      NPR2, NPPC, FGFR3, SPP1) on decalcified archival human physeal blocks from at least six
+      donors spanning prepubertal to peripubertal, with zone boundaries assigned on adjacent
+      H&E. Under the conservation hypothesis, each transcript occupies the zone predicted from
+      mouse; under the divergence hypothesis, at least one canonical marker occupies a
+      different zone, which would require re-derivation of every human zonal claim inherited
+      from mouse.
+    tractability: 4
+    search_log_ref: g_l13b_005
+
+  - gap_id: g_l13b_006
+    question: >-
+      Why has single-nucleus RNA-seq never been applied to human growth plate tissue, when it
+      is the standard solution to mineralised-matrix dissociation and would unlock archival
+      material?
+    type: search_established
+    layer: L13
+    why_it_matters: >-
+      The human growth plate single-cell corpus is four donors with withheld raw data
+      (gse288028). Single-nucleus sequencing works on frozen and archival tissue and does not
+      require the enzymatic digestion that destroys hypertrophic cells, so it converts the
+      binding constraint from fresh-tissue access to archive access - and archives are far
+      larger than the roughly 100 plates in the prospective literature. The absence is
+      therefore not explained by difficulty.
+    what_is_known: >-
+      Methodological reviews name snRNA-seq as the route around mineralised-matrix dissociation
+      in skeletal tissue (li2025, delos2026, giger2026). No human growth plate single-nucleus
+      dataset exists in GEO or in the literature. No zone-resolved human proteome exists either.
+    what_is_missing: >-
+      Any human growth plate single-nucleus dataset, and any zone-resolved human growth plate
+      proteome.
+    nearest_evidence: [li2025, delos2026, giger2026, gse288028]
+    discriminating_experiment: >-
+      Retrieve 20 archival decalcified human physeal blocks spanning ages 4-16 from paediatric
+      pathology, perform nuclear isolation and snRNA-seq, and compare the recovered zonal
+      composition with the dissociation-based composition in gse288028. Under the
+      dissociation-bias hypothesis, hypertrophic and prehypertrophic nuclei are recovered at
+      substantially higher proportion than hypertrophic cells were in the dissociated data;
+      under the null they match. Either result is informative, and the experiment
+      simultaneously multiplies the human donor base fivefold.
+    tractability: 4
+    search_log_ref: g_l13b_006
+
+  - gap_id: g_l13b_007
+    question: >-
+      Has proliferative kinetics ever been measured directly in a living human growth plate,
+      and if the answer is permanently no, what is the best achievable substitute?
+    type: search_established
+    layer: L13
+    why_it_matters: >-
+      The 20-day human proliferative cycle time used throughout this atlas is not a
+      measurement. It is 24 cells per column divided by a radiographic elongation rate of 1.4
+      cm/year (kember1976). Every model of column kinetics, every estimate of how many
+      divisions a resting-zone progenitor has left, and the whole finite-proliferative-capacity
+      framework in L2 inherit that derived number. If it is wrong by a factor of two, the
+      division budget in g_l2stem_008 is wrong by a factor of two.
+    what_is_known: >-
+      In vivo thymidine-analogue and tetracycline labelling are standard in animals
+      (farnum1993, wilsman1996a, farnum2003) and forbidden in children. The only human
+      labelling study located is in vitro tritiated thymidine on human and porcine tissue
+      (thurston1985). Rodent cycle time is about 2 days, tenfold shorter (kember1976).
+    what_is_missing: >-
+      Any direct measurement of human growth plate cell cycle time, growth fraction, or S-phase
+      duration; and any validated non-invasive surrogate.
+    nearest_evidence: [kember1976, thurston1985, farnum1993, wilsman1996a]
+    discriminating_experiment: >-
+      Two-arm approach. Arm 1: apply cumulative EdU labelling ex vivo to fresh human growth
+      plate explants from epiphysiodesis (the format already validated in gse246390 and
+      ramesh2022) across a 0-72 h series, fitting a labelled-fraction curve to recover S-phase
+      duration and growth fraction. Arm 2: exploit natural experiments - measure telomere
+      attrition or somatic mutation burden per cell across zones in human physeal tissue as a
+      division counter. Under the 20-day hypothesis, the ex vivo labelling index at 24 h is
+      about 5% of proliferative-zone cells; under a rodent-like 2-day cycle it approaches 50%,
+      and the two are trivially distinguishable in a single experiment on tissue that is
+      already being collected.
+    tractability: 4
+    search_log_ref: g_l13b_007
+
+  - gap_id: g_l13b_008
+    question: >-
+      Can a human iPSC-derived cartilage construct be driven to form stacked columnar
+      architecture with unidirectional elongation, and what boundary condition is missing -
+      oxygen gradient, mechanical constraint, or a perichondrial ring?
+    type: known_unknown
+    layer: L13
+    why_it_matters: >-
+      If a human growth plate could be built in vitro, every question in this layer that is
+      blocked by tissue scarcity becomes tractable, including allele-specific effects on column
+      formation and on the hypertrophic volume set point. The failure to build one is
+      informative in itself: it says that zonal organisation is not cell-autonomous and
+      requires a boundary condition that current protocols do not supply.
+    what_is_known: >-
+      Human iPSC protocols reliably generate hypertrophic chondrocytes that transdifferentiate
+      to osteoblasts and mineralise (kamakura2023, GSE219215), and region-specific skeletal
+      assembloids generate SP7+ growth plate chondrocytes via PRRX1+ limb-bud mesenchyme. No
+      protocol produces columnar zonal architecture; this is stated as an unmet challenge in
+      the field review (zhang2025_2).
+    what_is_missing: >-
+      Identification of the sufficient boundary condition for columnar organisation in a human
+      construct.
+    nearest_evidence: [zhang2025_2, kamakura2023, gse267139]
+    discriminating_experiment: >-
+      Culture human iPSC-derived chondroprogenitor constructs under a factorial combination of
+      three candidate boundary conditions: an imposed oxygen gradient (hypoxic at one face),
+      uniaxial mechanical confinement with a free elongation axis, and a perichondrium-like
+      collagen ring restricting lateral expansion. Readout: presence of stacked columns by
+      light-sheet or synchrotron imaging, and unidirectional length increase. Under the oxygen
+      hypothesis, columns require only the gradient; under the mechanical hypothesis, only
+      confinement; under the perichondrial hypothesis, only the ring. A null in all eight cells
+      of the factorial would indicate that column formation requires a clonal history that no
+      aggregate construct can supply, which would be a strong argument for the resting-zone
+      progenitor model.
+    tractability: 3
+
+  - gap_id: g_l13b_009
+    question: >-
+      Does the rat zone-resolved growth plate transcriptome predict the human one, gene by
+      gene, and what is the concordance coefficient?
+    type: quantitative_gap
+    layer: L13
+    why_it_matters: >-
+      Rodent zonal expression data are routinely substituted for human when interpreting human
+      genetics: height GWAS loci were prioritised by expression in rodent growth plate
+      microarrays (lui2012). Both datasets exist and have existed for over a decade - 35 rat
+      arrays (gse16981) and 10 human arrays across five zones (gse9160) - and the concordance
+      between them has never been published. This is a computation, not an experiment, and it
+      calibrates the single most common species-transfer step in the field.
+    what_is_known: >-
+      GSE9160 gives zone-assigned expression for two human donors across resting, proliferative,
+      prehypertrophic, hypertrophic and perichondrium, with 12,193-18,454 probe sets present.
+      GSE16981 gives the rat equivalent with 35 arrays. Both are public with raw data.
+    what_is_missing: >-
+      A published orthologue-matched, zone-matched correlation between the two, and a per-gene
+      list of the transcripts whose zonal assignment differs between species.
+    nearest_evidence: [gse9160, gse16981, lui2012]
+    discriminating_experiment: >-
+      Map probes to orthologous genes, quantile-normalise within platform, compute zone-wise
+      rank correlation between human and rat for the ~10,000 shared expressed orthologues, and
+      report both the global concordance and the tail of discordant genes. Under the
+      conservation hypothesis, zone-wise Spearman correlation exceeds 0.6 and the canonical
+      markers are concordant; under the divergence hypothesis it falls below 0.3 and the
+      discordant tail is enriched for signalling receptors, which would mean the rodent-based
+      prioritisation of height genes needs redoing. The n=2 human sample size bounds the
+      achievable precision and is itself the result to report.
+    tractability: 5
+
+  - gap_id: g_l13b_010
+    question: >-
+      Because no human growth plate can be sampled twice, every human dataset is
+      cross-sectional - what specific inferences does this foreclose, and can any within-subject
+      design substitute?
+    type: method_blocked
+    layer: L13
+    why_it_matters: >-
+      Sampling a growth plate destroys it, so the same plate cannot be observed at two times.
+      This makes trajectory an inference from a cross-section of different children, which
+      cannot distinguish a population that changes uniformly from one in which subgroups change
+      at different times - precisely the ambiguity at the centre of L7, where different plates
+      in the same individual fuse years apart (g_l7fuse_012). It also means that no human study
+      can establish that resting-zone depletion PRECEDES fusion rather than accompanying it
+      (g_l2stem_006).
+    what_is_known: >-
+      Exactly two within-subject human designs exist. Emons sampled the same girl at Tanner B2
+      and B3, obtaining two growth plate specimens from one donor (emons2011_2, gse18338). Wang
+      compared growth plates from limbs amputated before and 17 months after denosumab
+      treatment in one 9-year-old (wang2014). Both are n=1 and both were possible only because
+      of unusual clinical circumstances.
+    what_is_missing: >-
+      Any repeated-measures human growth plate dataset with more than one donor, and any
+      validated non-invasive in vivo readout of intra-plate state that could substitute.
+    nearest_evidence: [emons2011_2, wang2014, gse18338, dymerska2018]
+    discriminating_experiment: >-
+      Two routes, both feasible. Route A: bilateral asymmetric surgery - in children undergoing
+      staged bilateral epiphysiodesis, sample one side at the first operation and the
+      contralateral side at the second, giving a genuine within-subject two-timepoint series in
+      a paired plate. Route B: pair 7 T quantitative MRI of an intact contralateral physis with
+      histology of the resected side at the same visit, to calibrate a non-invasive proxy
+      against ground truth; if quantitative susceptibility or T1 maps track zone heights with
+      acceptable error, the proxy can then be applied longitudinally. Route B is the only
+      pathway to a true human growth plate time series.
+    tractability: 3
+
+  - gap_id: g_l13b_011
+    question: >-
+      How fast does RNA integrity fall in human physeal cartilage as a function of post-mortem
+      or post-resection interval and of decalcification protocol, and what is the maximum
+      interval compatible with spatial transcriptomics?
+    type: quantitative_gap
+    layer: L13
+    why_it_matters: >-
+      The single highest-value missing experiment identified in this layer - spatial
+      transcriptomics of a human growth plate (g_l13data_001) - is blocked by RNA quality, not
+      by platform availability. PolyA-capture spatial platforms require high RNA integrity, and
+      physeal tissue must usually be decalcified. Without a measured RIN-versus-interval and
+      RIN-versus-decalcifier curve for cartilage specifically, every attempt is a gamble, which
+      is a strong disincentive when the tissue is nearly irreplaceable.
+    what_is_known: >-
+      RNA-Rescue Spatial Transcriptomics was developed to recover spatial profiles from
+      low-integrity samples and is deposited with its benchmarking data (gse221571). Reviews of
+      spatial transcriptomics in bone identify decalcification and RNA integrity as the
+      principal barriers (giger2026, delos2026). Cartilage-specific degradation kinetics were
+      not located.
+    what_is_missing: >-
+      A cartilage-specific curve of RNA integrity against time-to-fixation and against
+      decalcification agent, concentration and duration, with the threshold RIN at which each
+      spatial platform still returns usable data.
+    nearest_evidence: [gse221571, giger2026, delos2026, gse9160]
+    discriminating_experiment: >-
+      Take porcine growth plate as the abundant surrogate. Vary time-to-fixation (0, 2, 6, 12,
+      24 h at 4 C and at room temperature) and decalcification (EDTA at two concentrations for
+      3, 7, 14 days; formic acid for 1, 2 days), measuring RIN and DV200 at every cell of the
+      design, then run Visium and a probe-based platform at three representative quality levels.
+      Readout: genes detected per spot against RIN. Under the hypothesis that decalcification
+      dominates, EDTA duration explains most of the variance and short-EDTA protocols suffice;
+      under the hypothesis that ischaemic time dominates, time-to-fixation dominates and the
+      operating room, not the histology laboratory, is where the protocol must change. Confirm
+      the winning protocol on two human specimens.
+    tractability: 5
+
+  - gap_id: g_l13b_012
+    question: >-
+      Is there any imaging modality, present or foreseeable, that resolves an individual
+      chondrocyte inside a living human growth plate?
+    type: method_blocked
+    layer: L13
+    why_it_matters: >-
+      The dimensional mismatch is the structural reason human growth plate biology is
+      cross-sectional and inferential. A chondrocyte is 10-20 um; zone heights are 100-1000 um;
+      a plate is 1-10 mm. Methods that resolve the cell (histology at 0.25 um, synchrotron at
+      0.65-2.75 um, AFM below 1 um) are all terminal. Methods that work in a living child (MRI,
+      ultrasound) resolve zones at best, and only at 7 T and only up to about age 13
+      (dymerska2018). Every cellular claim about a living human growth plate is therefore an
+      inference from tissue that was destroyed to make it.
+    what_is_known: >-
+      7 T phase imaging resolves veins and layers within human growth cartilage in children up
+      to 13 (dymerska2018); clinical MRI stages closure reliably but not cellular events
+      (kvist2020, kvist2021); micro-CT images the mineral boundary and requires contrast agents
+      and terminal preparation for cartilage; synchrotron resolves chondrocytes in intact human
+      cartilage at 0.65-2.75 um but ex vivo only (b2026, xu2024).
+    what_is_missing: >-
+      Any in vivo modality with cellular resolution at physeal depth, and any validated
+      non-invasive proxy for a cellular parameter such as zonal cell density or column length.
+    nearest_evidence: [dymerska2018, kvist2020, b2026, white2008]
+    discriminating_experiment: >-
+      Calibrate proxies rather than chase resolution. In children undergoing epiphysiodesis,
+      acquire 7 T quantitative susceptibility and high-resolution T2* of the target physis
+      immediately before surgery, then perform stereological histology on the resected tissue,
+      and regress histological zone heights and zonal cell densities on the imaging parameters
+      across at least 10 donors. Under the proxy hypothesis, at least one imaging parameter
+      predicts zone height with error small enough to detect the pubertal narrowing reported by
+      emons2011_2; under the null, no MRI parameter tracks zonal cellularity and the field must
+      accept that living human growth plates are observable only at the tissue scale.
+    tractability: 3

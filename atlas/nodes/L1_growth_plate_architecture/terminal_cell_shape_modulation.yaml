@@ -1,0 +1,660 @@
+id: terminal_cell_shape_modulation
+name: Terminal hypertrophic cell shape modulation (height vs diameter)
+aliases:
+- phenotype modulation
+- chondrocyte aspect ratio
+- cell-shape modelling
+type: process
+layer: L1
+stub: false
+summary: 'Physiological change in longitudinal growth rate is carried by a change in the SHAPE of the terminal hypertrophic
+  chondrocyte, not its size. In rat proximal tibia between 21 and 35 days, a 20% rise in growth rate is accounted
+  for almost entirely by a 23% rise in final cell height (31.2 to 38.5 um, P<0.02) accompanied by a 14% FALL in final
+  lateral diameter (29.9 to 25.6 um, P<0.03) and a 13% FALL in final cell volume (P<0.03). Matrix produced per cell,
+  cells produced per column per day, and the duration of the hypertrophic phase are all unchanged. Hunziker and Schenk
+  call this phenotype modulation, and it was until 2026-08-06 recorded here as the single most direct measurement
+  of which variable carries a physiological change in growth rate in any species. IT IS NOT A MEASUREMENT. Reading
+  the method paper it cites (cruzorive1986) shows the height is a super-egg model output, computed as cell VOLUME
+  divided by a cell-WIDTH second moment; hunziker1989 says so in its own Methods, and says that no unbiased model-free
+  estimator of vertical cell height exists. So the height and the volume in this node are not two independent observations
+  of the same cells, and the method paper further states that the height and width estimators carry opposite-signed
+  orientation bias in hypertrophic cells, with magnitudes set by a cell-tilt distribution nobody measured. See CORR-009.
+  What survives unchanged is the VOLUME result, which comes from an estimator the method paper calls unbiased irrespective
+  of cell shape or orientation. CORR-010, written the same day, reverses part of that. Terminal cell height HAS been
+  measured without any shape model: stokes2007 reads it directly off segmented profiles in 146 paired within-animal
+  comparisons across rat, rabbit and calf, with growth rate measured in the same specimen, and finds it tracks growth
+  (r=0.56, beta=1.39) better than proliferative cell number. And rubin2021, the study on the other side, is not the
+  direct 10^5-cell measurement recorded here: its predictor comparison spans three plate types, its growth values
+  come from previously published data on other animals, and its height is a bounding box on a fitted ellipsoid while
+  its volume is a direct mesh integral. In BOTH studies that compare the two variables volume is the better-estimated
+  one, which is how an estimator-quality difference would look. The live gap is not the age of the 1989 paper but
+  that HEIGHT AND VOLUME HAVE NEVER BEEN MEASURED AGAINST EACH OTHER BY ESTIMATORS OF EQUAL QUALITY. It matters because
+  it dissociates height from volume: the two move in OPPOSITE directions during acceleration, so the between-plate
+  correlation of final hypertrophic VOLUME with elongation rate (r=0.98 in rat, r=0.83 in pig, breur1991) cannot be
+  the causal relationship within a plate over time. Growth deceleration is not the mirror image - between 35 and 80
+  days height, volume, and cell turnover all fall together - so the system is asymmetric, and only acceleration isolates
+  shape as the lever. What sets the aspect ratio is unknown. The cell is a pressurised object inside a constraining
+  pericellular matrix and a lattice of longitudinal septa, and that constraint is measurably anisotropic: the growth
+  plate is about ten times more compliant in the axial growth direction than in the transverse direction (cohen1998),
+  and the pericellular matrix immediately around the cell is softer (1.6 kPa) than the interterritorial matrix beyond
+  it (3.6 kPa, prein2016). A cell expanding inside that architecture goes up rather than out without needing any active
+  shaping machinery. What no experiment has done is manipulate the anisotropy and measure the resulting cell dimensions
+  and bone length, or test whether the anisotropy ratio itself changes with growth rate - a static anisotropy explains
+  how a cell could be shaped, not why the shaping varies between a 21-day and a 35-day rat.'
+quantitative:
+- parameter: final terminal cell height during growth acceleration
+  value: 31.2 -> 38.5
+  unit: um
+  conditions: rat proximal tibia, 21 days (suckling) to 35 days (pre-pubertal growth spurt), stereology, n=6 per age;
+    growth rate rose 20% over the same interval
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: +23%, P<0.02 (Wilcoxon signed rank); between-animal coefficients of error 6.6% at 21 d and 5.3% at
+    35 d. NOT A DIRECT MEASUREMENT - see the estimator rows below. hunziker1989 states in its own Methods that vertical
+    cell height "cannot be determined by direct measurement on histological sections" and that the model-based route
+    used instead is "necessarily assumption-dependent".
+- parameter: final terminal cell lateral diameter during growth acceleration
+  value: 29.9 -> 25.6
+  unit: um
+  conditions: same animals and interval as the height measurement
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: -14%, P<0.03. The cell becomes TALLER AND NARROWER, which is why this is a shape change rather than
+    a size change.
+- parameter: final terminal cell volume during growth acceleration
+  value: '-13'
+  unit: '% change'
+  conditions: rat proximal tibia, 21 to 35 days, while growth rate rose 20%
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'P<0.03. THE DECISIVE ROW: volume falls while growth rises, so volume is not the causal variable within
+    a plate over time.'
+- parameter: aspect ratio (height/diameter) of the terminal cell
+  value: 1.04 -> 1.50
+  unit: dimensionless
+  conditions: rat proximal tibia, derived from the reported heights (31.2, 38.5 um) and diameters (29.9, 25.6 um)
+    at 21 and 35 days
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: DERIVED BY THIS ATLAS from two reported means; the paper does not report a ratio and no dispersion
+    can be propagated from the published summary statistics. A 44% rise in aspect ratio accompanies a 20% rise in
+    growth rate. Both inputs are model-derived, not measured - see the estimator rows immediately below.
+- parameter: estimator behind every terminal cell HEIGHT value in hunziker1989
+  value: X(0deg) = 5 * mean cell volume / (pi * E{X^2(90deg)})
+  unit: um
+  conditions: super-egg of revolution about the vertical axis, shape exponent n=2.9, equation 8.11 of the method paper;
+    oblate spheroid used instead for proliferative cells. hunziker1989 cites this paper for the procedure and states
+    that no unbiased model-free estimator of vertical cell height exists.
+  species: rat
+  source_ref: cruzorive1986
+  uncertainty: 'THE HEIGHT IS NOT A MEASUREMENT - it is mean cell VOLUME divided by a cell-WIDTH second moment, times
+    a constant fixed by a shape exponent nobody measured. Verified by this atlas against the method paper''s own worked
+    example: 5 x 10760 um^3 / (pi x 484.9 um^2) = 35.32 um, against the 35.3 um printed in its Table 5. The volume
+    and the width moment are both estimated by procedures the same paper calls unbiased; the height is not an additional
+    observation on top of them.'
+- parameter: coefficient of error of each estimator, one animal, five blocks
+  value: height 19.3 / 23.8; width 4.3 / 10.4; mean cell volume 3.1 / 7.8; numerical density 2.1 / 6.8
+  unit: '% (proliferative / hypertrophic)'
+  conditions: rat proximal tibia, 80-100 g female Wistar, Table 5 of the method paper; a single animal, CEs computed
+    across five blocks
+  species: rat
+  source_ref: cruzorive1986
+  uncertainty: The height estimator is the least precise quantity in the table, by 3-6x. THIS IS NOT COMPARABLE TO
+    hunziker1989's CEs, which are BETWEEN-ANIMAL over six animals (5.3-6.6% for height) - a different quantity, and
+    the reason hunziker1989's P<0.02 is not attacked by this row. What this row bears on is estimator quality, not
+    statistical significance.
+- parameter: orientation bias of the shape estimators, by zone
+  value: hypertrophic width biased HIGH and height biased LOW; proliferative the reverse
+  unit: direction only
+  conditions: 'section 10.5 of the method paper, on cells tilted away from the vertical axis: no unbiased estimator
+    of either mean cell diameter exists, and the direct estimator "will tend to underestimate X(90deg) for proliferative
+    cells and to overestimate X(90deg) for hypertrophic cells, and the opposite will be the case for X(0deg)".'
+  species: rat
+  source_ref: cruzorive1986
+  uncertainty: The bias magnitude is set by the distribution of cell and column TILT, which was never measured and
+    is not held constant between the two ages hunziker1989 compares. A change in tilt alone moves the estimated height
+    and the estimated width in OPPOSITE directions - which is the exact signature reported as evidence for shape modulation
+    (height +23%, width -14%). This does not show the finding is wrong; it shows the finding is not protected against
+    a confound the method paper names.
+- parameter: direction in which the fixed shape exponent biases the reported height change
+  value: upward
+  unit: direction only
+  conditions: prefactor P(n) = (pi/4) x Gamma(1+1/n) x Gamma(1+2/n) / Gamma(1+3/n) in v = P(n) x X(0deg) x E{X^2(90deg)};
+    computed by this atlas at 0.524 (n=2, spheroid), 0.626 (n=2.9, the value used), 0.785 (n=infinity, cylinder).
+    Height = v / (P x E{X^2}), so P and the estimated height move oppositely.
+  species: rat
+  source_ref: cruzorive1986
+  uncertainty: DERIVED BY THIS ATLAS. n=2.9 was fixed once, on one animal at one age, and held for all three ages.
+    A cell that becomes taller relative to its width is by construction moving toward the cylinder end of the family,
+    i.e. toward higher n and higher P, so holding n fixed OVERSTATES the height rise. The estimator's fixed-shape
+    assumption errs in the same direction as the claim it is used to support. Magnitude unknown, because nobody measured
+    n at either age.
+- parameter: growth-rate budget reconstructed from hunziker1989's own tables
+  value: rate = (PZ height / proliferative cell height) x (24 / T_c) x terminal cell height
+  unit: um/day
+  conditions: 'reconstructed by this atlas from Tables 1-3 of hunziker1989. 21 d: 27.90 x 0.2963 x 31.2 = 258 vs 276
+    measured (93.5%). 35 d: 17.81 x 0.4444 x 38.5 = 305 vs 330 (92.4%). 80 d: 9.51 x 0.4444 x 18.2 = 77 vs 85 (90.5%).'
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'DERIVED BY THIS ATLAS, unreplicated. The budget closes to 90-94% at all three ages, which is good
+    internal coherence. But it shows that "cells produced per column per day is unchanged" is not an independent measurement:
+    proliferative cells per column is itself PZ height divided by the model-estimated PROLIFERATIVE cell height (226/8.1=27.9
+    vs 27 printed; 171/9.6=17.8 vs 18; 78/8.2=9.5 vs 9). So the height estimator sits in both the numerator and the
+    denominator of the budget, and enters only as the RATIO h_term/h_prolif, in which any common multiplicative bias
+    cancels exactly. That ratio rises just 4.1% (3.85 to 4.01) between 21 and 35 days, against the +23% headline.
+    Under this factorisation the +19.6% growth rise is 0.638 x 1.500 x 1.234 - a 36% fall in proliferative cells per
+    column, a 50% rise in cycles per day, and the height term. Same arithmetic, different attribution; "almost exclusively
+    cell height" holds only if turnover is treated as measured rather than derived.'
+- parameter: internal consistency of hunziker1989 Table 2 under its own estimator
+  value: 21 d ratio 1.140; 35 d ratio 1.098; 80 d ratio 0.793
+  unit: implied E{X^2(90deg)} divided by the square of the reported mean diameter
+  conditions: back-solving E{X^2(90deg)} = 5v / (pi x X(0deg)) from the printed terminal height, diameter and volume
+    at each age, and comparing with the square of the printed diameter. E{X^2} must be greater than or equal to the
+    square of the mean for any distribution.
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'DERIVED BY THIS ATLAS, unreplicated. At 21 and 35 days the triples are feasible and imply a diameter
+    CV of 0.374 and 0.312. At 80 days they are NOT: the required E{X^2} is 21% below the square of the printed mean,
+    which no distribution permits. The reported 80 d diameter would have to overstate the true width by at least 12%.
+    That is precisely the bias the method paper attributes to this estimator in hypertrophic cells, so the most likely
+    reading is a known, variable, zone-dependent width bias rather than an arithmetic error. The alternative readings
+    - that E{X^2(90deg)} came from the unfolding algorithm rather than from the printed diameter row, or that a different
+    exponent was used at 80 days - cannot be separated from the published tables. Either way the printed height and
+    diameter columns are not mutually consistent under one fixed shape model.'
+- parameter: matrix volume produced per cell
+  value: '0'
+  unit: '% change'
+  conditions: rat proximal tibia, unchanged during BOTH acceleration (21-35 d) and deceleration (35-80 d)
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: not significantly different in either comparison. Matrix is a large contributor to elongation but is
+    not a regulator of it - the authors' own conclusion is that cartilage matrix plays a subordinate role in regulating
+    growth rate.
+- parameter: contribution of cell height vs proliferative cell number to MECHANICALLY altered growth rate
+  value: 1.39 vs 0.72
+  unit: standardised regression coefficient
+  conditions: rat and cattle vertebral and proximal tibial plates plus rabbit proximal tibia, sustained compression
+    or distraction altering growth rate by up to 53%; final (maximum) chondrocytic height in the hypertrophic zone
+    against number of proliferative chondrocytes per unit width
+  species: multiple
+  source_ref: stokes2007
+  uncertainty: 'overall correlation coefficients 0.38 (proliferative number) and 0.56 (chondrocytic height). REPLICATES
+    hunziker1989''s ranking - cell enlargement contributes more than proliferation - in a DIFFERENT laboratory, a
+    DIFFERENT perturbation (mechanical rather than developmental) and three species. It does not replicate the height/volume
+    dissociation, because only height was measured. UPGRADED IN READING 2026-08-06 (CORR-010): THIS IS A DIRECT, SHAPE-MODEL-FREE
+    MEASUREMENT OF TERMINAL CELL HEIGHT, and it is the largest one that exists. Hypertrophic cell profiles are segmented
+    automatically in 1.5 um sections with the stage rotated to align the growth axis, filtered by form factor > 0.3,
+    with partially sectioned and coalesced cells manually removed; measured profile height is regressed against depth
+    in the zone by a logistic fit and h_max read at the chondro-osseous junction. No spheroid, super-egg or ellipsoid
+    is fitted to the cell. 41 rats, 39 rabbits and 18 calves; 146 paired comparisons for h_max; the control plate
+    is WITHIN THE SAME ANIMAL (contralateral tibia, or adjacent vertebrae); and the growth rate is measured in the
+    same specimen by calcein / xylenol orange double labelling. So the claim written into this atlas on 2026-08-06
+    - that terminal cell height has never been measured model-free at two growth rates in any species - was WRONG,
+    and this row is why. Residual limits: a 2D profile height still underestimates true cell height unless the cell
+    is cut centrally, and the paired design cancels that only if loading does not itself change cell tilt or column
+    alignment; and only height was measured, so this cannot adjudicate height against volume.'
+- parameter: correlation of mean hypertrophic cell height with mechanically modulated growth rate
+  value: '0.41'
+  unit: Pearson r
+  conditions: rat caudal vertebrae, 60% bodyweight compression (n=3) or distraction (n=4) for four weeks; growth 53%
+    and 110% of control respectively. Hypertrophic zone height r=0.69, regression slope of cell height on position
+    r=0.37
+  species: rat
+  source_ref: stokes2002a
+  uncertainty: 'CUTS AGAINST a pure shape account: the authors state the percentage changes in chondrocyte dimensions
+    were SMALLER than the percentage changes in growth velocity, so under mechanical loading cell height does NOT
+    fully account for the growth change - unlike hunziker1989''s physiological comparison, where +23% height carried
+    +20% growth almost exactly. Effects were also larger for compression than distraction, i.e. asymmetric.'
+- parameter: hypertrophic phase duration under pharmacological rescue
+  value: 6 -> 4 -> 2.8
+  unit: days
+  conditions: hypophysectomised rat, untreated then infused with IGF-I then with GH
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: DIRECTLY QUALIFIES the invariance recorded from hunziker1989. Hypertrophic phase duration is constant
+    at 45-51 h across PHYSIOLOGICAL states in normal rats, but GH more than halves it in a hypophysectomised one.
+    Pharmacology moves a parameter physiology holds fixed. Whether the same is possible above a normal baseline, rather
+    than in rescue from deficiency, is untested.
+- parameter: proliferating and stem cell cycle time under pharmacological rescue
+  value: proliferating 11 -> 4.5 -> 3; stem 50 -> 15 -> 8
+  unit: days
+  conditions: hypophysectomised rat, untreated then IGF-I then GH
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: GH shortens the proliferating cell cycle nearly four-fold and the stem cycle six-fold. hunziker1989
+    found cycle time changes cancelled against growth fraction during PHYSIOLOGICAL acceleration; under hormone rescue
+    they do not cancel. The two regimes use different levers.
+- parameter: terminal cell height and volume under pharmacological rescue
+  value: restored to physiological values
+  unit: qualitative
+  conditions: hypophysectomised rat; both mean cell volume and cell height were significantly reduced by hypophysectomy
+    at proliferative and hypertrophic stages and restored by either IGF-I or GH
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: restored, not exceeded - the experiment cannot say whether either agent pushes height ABOVE normal.
+    Cell productivity (increase in volume, height and matrix per unit time) did NOT reach normal with either agent
+    and was inversely proportional to cycle time. Matrix volume per cell was similar in normal, treated and untreated
+    groups, consistent with hunziker1989.
+- parameter: chondrocyte shape index, proliferative zone
+  value: '1.57'
+  unit: dimensionless
+  conditions: mouse tibia at E15.5, atomic force microscopy overview images; cells 5-7 um long axis, moderately flattened,
+    oriented along the mediolateral axis before columns have formed
+  species: mouse
+  source_ref: prein2016
+  uncertainty: embryonic and proliferative-zone, so not the terminal hypertrophic cell this node is about; recorded
+    because it is the only directly measured chondrocyte shape index in growth plate cartilage
+- parameter: elastic modulus of pericellular vs interterritorial matrix
+  value: 1.6 vs 3.6
+  unit: kPa
+  conditions: mouse growth plate mid-proliferative zone, AFM; territorial matrix-PCM 1.6 +/- 0.01 kPa, interterritorial
+    matrix 3.6 +/- 0.1 kPa, tracking collagen fibril density
+  species: mouse
+  source_ref: prein2016
+  uncertainty: the cell sits in a SOFTER shell inside a STIFFER matrix, a 2.25-fold ratio. This is the mechanical
+    architecture an anisotropic-constraint account of shape modulation requires, measured for the first time - but
+    it is a radial measurement in the proliferative zone, and nobody has measured whether the constraint differs axially
+    versus laterally, which is what would actually channel expansion into height.
+- parameter: out-of-plane (axial) Young's modulus, growth plate
+  value: 0.47
+  unit: MPa
+  conditions: newborn bovine distal ulnar growth plate, 4 mm disks, unconfined and confined compression stress-relaxation
+    to 10% strain, transversely isotropic biphasic fit; E3, measured IN COMPRESSION along the growth axis. n=20 paired
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: +/- 0.11 SD. Chondroepiphysis is 1.07 +/- 0.27, so growth plate is half as stiff and twice as permeable.
+    Poisson ratio nu31 = 0 for both tissues; nu21 = 0.30 +/- 0.20.
+- parameter: transverse Young's modulus, growth plate
+  value: '4.55'
+  unit: MPa
+  conditions: same specimens; E1, measured IN TENSION in the transverse plane
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: +/- 1.21 SD; chondroepiphysis 10.63 +/- 2.72.
+- parameter: transverse-to-axial modulus ratio, growth plate
+  value: '9.7'
+  unit: ratio
+  conditions: E1/E3 = 4.55/0.47 for bovine growth plate; the same ratio in chondroepiphysis is 9.9
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: 'DERIVED BY THIS ATLAS from the two reported moduli; the paper does not state a ratio. THE LOADING
+    MODES DIFFER AND THAT MUST NOT BE GLOSSED: E1 is a TENSILE modulus in the transverse plane and E3 a COMPRESSIVE
+    modulus along the axis, so this is not one property measured in two directions. It is nevertheless the comparison
+    the shape hypothesis needs, because those are precisely the modes a swelling cell imposes - expanding radially
+    loads the surrounding matrix in circumferential TENSION, expanding axially loads the matrix above and below in
+    COMPRESSION. A cell therefore meets roughly ten times more resistance going sideways than going up. Whether the
+    ratio CHANGES with growth rate, age or load is unmeasured; cohen1998 and sergerie2009 each characterise a single
+    state.'
+- parameter: permeability, axial vs radial
+  value: 3.4 vs 5.0
+  unit: 1e-15 m^4/N.s
+  conditions: bovine growth plate; axial k3 from confined compression, radial k1 from the unconfined fit
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: +/- 1.6 and +/- 1.8. Similar magnitude in both directions, so the anisotropy is in the solid matrix
+    stiffness and not in fluid transport.
+- parameter: terminal hypertrophic cell height under hormone rescue
+  value: 19.5 / 27.3 / 26.5 / 29.8
+  unit: um
+  conditions: hypophysectomised rat proximal tibia after 8 d infusion - NaCl / IGF-I / GH / normal littermate. Proliferative
+    phase 6.8 / 9.8 / 9.9 / 8.9; resting phase 3.9 / 3.9 / 4.7 / 5.9
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: NaCl significantly below the other three at proliferative and hypertrophic phases; the other three
+    not significantly different from each other. Resting phase showed no significant difference between any group.
+- parameter: terminal hypertrophic cell volume under hormone rescue
+  value: 6370 / 9890 / 11140 / 10246
+  unit: um^3
+  conditions: same animals and groups as the height row - NaCl / IGF-I / GH / normal
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: NaCl significantly below the other three; the other three not different from each other. Net matrix
+    production per cell did not differ by group OR by phase.
+- parameter: implied aspect ratio of the terminal cell under hormone rescue
+  value: 0.96 / 1.27 / 1.15 / 1.42
+  unit: dimensionless
+  conditions: NaCl / IGF-I / GH / normal, from the reported heights and volumes assuming a right circular cylinder
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: 'DERIVED BY THIS ATLAS under a geometric assumption the paper does not make - it reports height and
+    volume and never diameter, so the diameter is back-calculated as 2*sqrt(V/pi*h). Read with that caveat, the pattern
+    is that HORMONES RESTORE SIZE MORE COMPLETELY THAN SHAPE: IGF-I and GH bring volume to or above normal (9,890
+    and 11,140 against 10,246) while the aspect ratio reaches only 1.27 and 1.15 against a normal 1.42. This is consistent
+    with the authors'' own statement that cell productivity did not reach normal with either agent, and it suggests
+    size and shape are separately regulated axes - which is the whole premise of this node. It is a derived quantity
+    resting on one geometric assumption and should not be cited as a measurement.'
+- parameter: axial vs transverse compliance of growth plate matrix
+  value: ~10-fold more compliant axially
+  unit: ratio
+  conditions: bovine growth plate and chondroepiphysis, unconfined compression fitted with a transversely isotropic
+    biphasic model; axial = the longitudinal growth direction, transverse = radial. Permeability is of similar range
+    in both directions but more variable axially, and the transverse Poisson's ratio is 2-3x the out-of-plane ratio
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: THE MECHANICAL ARCHITECTURE THE SHAPE HYPOTHESIS REQUIRES, AND IT WAS ALREADY MEASURED. A cell whose
+    surrounding matrix resists lateral expansion roughly ten times more than axial expansion will convert a volume
+    increase into HEIGHT rather than WIDTH with no active machinery at all. This atlas stated in docs/target_screen_round1.md
+    rounds 5 and 6 that nobody had measured axial versus lateral anisotropy; that was wrong. Located via villemure2009
+    used as an index, which is what reviews are for. What remains genuinely unmeasured is whether the ratio CHANGES
+    with growth rate - a static anisotropy explains how a cell could be shaped, not why the shaping varies.
+- parameter: volume versus height as predictors of longitudinal bone growth
+  value: volume is the better predictor
+  unit: qualitative
+  conditions: mouse proximal tibia, distal tibia and distal ulna compared against each other; hundreds of thousands
+    of chondrocytes by PACT-deCAL clearing, light-sheet imaging and 3D segmentation (3D MAPs)
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'REWEIGHTED 2026-08-06 (CORR-010) after reading the paper rather than its abstract. The conclusion
+    sentence is as quoted, but the test behind it is much smaller than "10^5 chondrocytes" suggests, and this atlas
+    had been carrying the cell count as if it were the power of the predictor comparison. FOUR THINGS. (1) The correlation
+    is across THREE growth plate TYPES - proximal tibia, distal tibia, distal ulna - so n=3 for the predictor question,
+    whatever the cell count within each. (2) The growth values are not measured in these animals: growth from E16.5
+    to P40 was taken from previously published data, and correlated against morphology measured at E16.5 - an embryonic
+    snapshot against a lifetime-integrated growth figure. (3) The reported statistics are three pairwise t-tests on
+    the largest 10% of HZ cell volumes: DT vs PT p=0.0279, DT vs DU p=0.0045, PT vs DU p=0.4834 (ns). (4) The sentence
+    that does the comparative work says volume was correlated with all the growth differences "whereas cell DIAMETER
+    was correlated only with some of these differences", and the conclusion drawn one sentence later is about cell
+    HEIGHT. AND THE ESTIMATOR ASYMMETRY RUNS THE SAME WAY AS IN hunziker1989: volume here is the direct mesh volume
+    by the divergence theorem, model-free; height is the height of a BOUNDING BOX FITTED TO AN ELLIPSOID FITTED TO
+    EACH CELL. In both of the two studies that compare these variables, volume is the better-estimated one. A "volume
+    is the better predictor" result is exactly what an estimator-quality difference would produce. THE BETWEEN-PLATE
+    / WITHIN-PLATE AXIS DISTINCTION REMAINS REAL and is still the cleanest reason the two studies need not conflict.'
+- parameter: scorecard of volume and axial extent against the three growth differences in rubin2021
+  value: cell volume 3 of 3; cell bounding-box height 1 of 3
+  unit: pairwise comparisons correctly called
+  conditions: 'mouse proximal tibia (PT), distal tibia (DT), distal ulna (DU) at E16.5 against growth E16.5 to P40;
+    PT and DU more active than DT. VOLUME (Fig. 2C, largest 10% of HZ volumes): DT vs PT p=0.0279, DT vs DU p=0.0045,
+    PT vs DU p=0.4834 ns. BOUNDING-BOX HEIGHT (Supplementary Fig. 4A, hypertrophic zone): PT vs DT not significant
+    in the HZ, DU vs DT p=2.0e-03, DU vs PT p=2.0e-03. Peak HZ values approximately 23 um PT, 22 um DT, 26 um DU'
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'SCORED BY THIS ATLAS from the paper''s own figure and supplement, 2026-08-06. Height fails twice:
+    it misses the PT>DT growth difference, and it reports a significant DU>PT difference where growth shows none.
+    So rubin2021''s published conclusion IS supported by its own data, and this atlas''s round-12 objection - that
+    the comparative sentence says ''diameter'' where the conclusion says ''height'' - is a wording observation only,
+    not a substantive one. n=5 PT, n=5 DT, n=3 DU; the predictor comparison is still across three plate types.'
+- parameter: the published height metric conflates cell elongation with cell alignment
+  value: axial extent = intrinsic long-axis length x alignment with the P-D axis
+  unit: none
+  conditions: 'rubin2021 Supplementary Fig. 4A caption states that the height of the cell bounding box ''is influenced
+    by cell orientation'', and the panel carries an illustration of three differently-shaped cells yielding the same
+    h: a wide flat ellipse, a tall narrow ellipse, and a TILTED elongated ellipse'
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: THE AUTHORS FLAG THIS THEMSELVES. It matters because rubin2021's other central finding is that chondrocytes
+    systematically change principal-axis orientation through the plate, so the one comparison that breaks the height-growth
+    correlation (DU>PT in the HZ) may be an alignment difference rather than a size difference. Volume is orientation-free
+    by construction; axial extent is not. The same confound is named for hunziker1989's 2D estimators by cruzorive1986
+    section 10.5, so BOTH studies that compare these variables measure volume without the confound and height with
+    it. Opened as gap g_l1arch_017.
+- parameter: orientation-free cell axis lengths were extracted and not used in the predictor comparison
+  value: PC1, PC2, PC3 coefficients and orientations, per cell
+  unit: features available
+  conditions: rubin2021 Supplementary Table 1 lists PC1/PC2/PC3 coefficient AND PC1/PC2/PC3 orientation among the
+    extracted cell features; Supplementary Figs 2 and 3 quantify per-feature segmentation error including the PC coefficients;
+    Supplementary Fig. 5 shows PC1 orientation is reproducible between two orthogonal imaging angles. Code on Zenodo,
+    sample data on Figshare, full datasets stated available from the corresponding author on request
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: NOTED BY THIS ATLAS, not by the paper. The dataset already contains everything needed to decompose
+    axial extent into intrinsic long-axis length and alignment, and the predictor comparison uses neither. This makes
+    the decisive test for the height half of C-L1-08 a RE-ANALYSIS OF PUBLISHED DATA rather than a new experiment
+    - the only tractability-1 item in this dispute. See g_l1arch_017.
+- parameter: 'RE-ANALYSIS of rubin2021 raw data: does the orientation confound actually bite?'
+  value: no. elongation 96.7%, realignment 15.0%, interaction -11.7% of the log rise in axial extent
+  unit: '% of log rise, resting zone to hypertrophic zone'
+  conditions: 'mouse distal ulna, sample DU_S84_m3_wt, the only growth plate in rubin2021''s Figshare deposit 10.6084/m9.figshare.14903052.v1;
+    21 tiles, 29,162 segmented cells; RZ window 1,841 cells (P-D 0.00-0.25) against HZ window 456 cells (P-D 0.78-0.90).
+    Counterfactual swap: hypertrophic cell SHAPES wearing resting-zone ORIENTATIONS give 18.68 um axial extent (x1.93)
+    against 9.67 um observed in the RZ; resting shapes wearing hypertrophic orientations give 10.71 um (x1.11); observed
+    HZ 19.10 um (x1.98)'
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'DERIVED BY THIS ATLAS, 2026-08-06, unreplicated, ONE growth plate - grade D, and it is a NEGATIVE
+    result against this atlas''s own round-13 hypothesis. The hypothesis was that ''volume beats height'' might be
+    an artefact of the orientation confound the authors flag. Within this plate it is not: mean alignment |cos(PC1,
+    P-D)| moves only 0.322 to 0.384, both far below the 0.500 expected for uniformly random axes, so chondrocyte long
+    axes stay preferentially IN THE PLANE of the plate even in the hypertrophic zone. VALIDATION: the reconstruction
+    reproduces rubin2021''s own published profile for this sample (Supplementary Fig. 4A) - 10.13 um mean bounding-box
+    height over the first half of the axis against a published trace near 9-10, and a 27.55 um hypertrophic peak against
+    a published peak near 26 - and the tool refuses to report the decomposition if it does not. WHAT THIS CANNOT DO:
+    the deposit holds no proximal or distal tibia, so the DU-versus-PT difference that carries rubin2021''s headline
+    is untestable here, and a resting-to-hypertrophic contrast is a DIFFERENTIATION axis, not a growth-rate contrast.'
+- parameter: 'RE-ANALYSIS of rubin2021 raw data: chondrocyte enlargement is near-isotropic'
+  value: axis folds 2.17, 2.27, 2.38; cube root of the volume fold 2.12
+  unit: fold change, resting zone to hypertrophic peak
+  conditions: same sample and windows as the row above. Principal axis lengths 15.86 -> 34.44 um (PC1), 10.47 -> 23.79
+    um (PC2), 7.49 -> 17.82 um (PC3); cell volume 460 -> 4,407 um^3, a 9.58-fold rise whose cube root is 2.12; sphericity
+    0.779 -> 0.698
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'DERIVED BY THIS ATLAS, unreplicated, one plate - grade D. ALL FOUR FIGURES AGREE TO WITHIN 12%, and
+    the SHORT axis grows marginally FASTER than the long one. THE CONSEQUENCE MATTERS MORE THAN THE NUMBER: if enlargement
+    is isotropic then within a plate height is volume^(1/3) times a constant, so height and volume are not independent
+    variables and cannot be independent predictors. The only thing separating them is which is measured better - and
+    in both rubin2021 and hunziker1989 that is volume. This is a mechanistic account of why ''volume beats height''
+    keeps recurring, and it does NOT require the orientation confound. It also sharpens the disagreement with hunziker1989,
+    which reports an ANISOTROPIC change (height +23% with volume -13%): no such anisotropy appears along the differentiation
+    axis here. Different axes of comparison, so not a direct contradiction - but the shape-modulation phenomenon is
+    invisible in the direction this dataset can see. CORRECTED AND CORROBORATED 2026-08-06 by a per-cell test, same
+    data. CORROBORATED: per-cell regression of log axis length on log volume over all 29,162 cells gives slopes 0.345
+    (PC1), 0.373 (PC2), 0.351 (PC3) against the 1/3 = 0.333 that isometry predicts - so the binned result was not
+    an artefact of binning. rubin2021''s own Fig. 3 reaches the same conclusion by a different statistic and on ALL
+    THREE plates: hypertrophic-zone growth is isometric in PT (slope 0, p=0.937), DT (slope 0, p=0.903) and DU (slope
+    0.01, p=0.301). CORRECTED: the consequence drawn in this row - that height and volume are therefore not independent
+    variables - is TOO STRONG at the level of individual cells. Within the hypertrophic window log volume explains
+    only 43.2% of the variance in log axial extent. The claim holds approximately for ZONE MEANS, which is the level
+    rubin2021''s predictor comparison operates at, and fails for single cells.'
+- parameter: what the residual variance in cell axial extent is made of
+  value: volume 43.2%; the remainder correlates with ALIGNMENT at r=+0.664 and with intrinsic length at r=+0.076
+  unit: '% of variance in log axial extent, hypertrophic window'
+  conditions: mouse distal ulna DU_S84_m3_wt, hypertrophic window n=456 cells (P-D 0.78-0.90). Per-cell OLS of log
+    axial extent on log volume, then the residual correlated against |cos(PC1, P-D)| and against log intrinsic long-axis
+    length
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'DERIVED BY THIS ATLAS, unreplicated, one plate - grade D. THIS IS THE RESULT THAT MATTERS MOST AND
+    IT CUTS BOTH WAYS. Between zones the orientation confound is weak: mean alignment barely moves and elongation
+    carries 97% of the rise in mean axial extent. Between CELLS it is dominant: alignment explains 44% of what volume
+    leaves unexplained, intrinsic length explains 0.6%. So whether the confound contaminates rubin2021''s BETWEEN-PLATE
+    comparison turns entirely on whether MEAN ALIGNMENT DIFFERS BETWEEN PLATES - a quantity nobody has reported and
+    which cannot be computed from the public deposit, because it holds only the distal ulna. That is the specific
+    number requested from the corresponding authors on 2026-08-06.'
+- parameter: which principal axis of the chondrocyte points along the bone
+  value: 'the SHORT axis. |cos| with P-D: PC1 long 0.322/0.384, PC2 medium 0.490/0.472, PC3 short 0.660/0.625'
+  unit: mean |cos| with the proximal-distal axis (resting / hypertrophic)
+  conditions: mouse distal ulna DU_S84_m3_wt at E16.5, 1,841 resting-window and 456 hypertrophic-window cells; 0.500
+    is the value for uniformly random axes in 3D. In the same hypertrophic window the per-cell allometric slope of
+    the SHORT axis on volume is 0.421, against 0.341 (PC1) and 0.352 (PC2) and an isometric prediction of 0.333
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'DERIVED BY THIS ATLAS, unreplicated, one plate - grade D. IT REFRAMES THE QUANTITY THE WHOLE FIELD
+    CALLS CELL HEIGHT. The chondrocyte is a disc lying in the plane of the plate whose THIN direction is the growth
+    direction, in the hypertrophic zone as much as in the resting zone, and longitudinal growth comes from that thin
+    axis thickening - faster than isometry as the cell enlarges. So ''hypertrophic cell height'' is the extent along
+    the cell''s SHORTEST principal axis, not its longest. CAVEAT ON TRANSFER: this is EMBRYONIC MOUSE distal ulna
+    at E16.5. hunziker1989 reports postnatal rat terminal cells with height 38.5 um EXCEEDING lateral diameter 25.6
+    um, i.e. taller than wide, which would put the long axis along the bone. Different species, different age, and
+    rubin2021''s terminal bins are too sparse to compare directly - so this is not a contradiction, it is an open
+    question about whether the terminal cell ever turns its long axis up the bone.'
+- parameter: fraction of total chondrocyte volume increase occurring BEFORE the hypertrophic zone
+  value: '65'
+  unit: '%'
+  conditions: mouse growth plates; volume rises 20% resting to proliferative, 74% proliferative to prehypertrophic,
+    50% prehypertrophic to hypertrophic, about ninefold overall. Surface area rises fivefold with 70% of the increase
+    before the hypertrophic zone
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: contradicts the standing paradigm that most enlargement happens in the hypertrophic zone, which is
+    an assumption embedded in the atlas flow model's h_term term and in every therapeutic programme aimed at hypertrophic
+    enlargement. If most of the volume is acquired prehypertrophically, the terminal cell height is a readout of an
+    earlier process rather than the process itself.
+- parameter: aspect ratio, resting versus hypertrophic chondrocytes
+  value: the same
+  unit: dimensionless
+  conditions: mouse; cells go round (resting) to flat and elongated (proliferative) to round and large (hypertrophic),
+    so shape changes only across the first three zones and returns
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: the authors note this means chondrocytes could in theory have grown isometrically throughout, and suggest
+    the allometric route is chosen TO PREVENT EXPANSION OF THE BONE CIRCUMFERENCE DURING ELONGATION - which is the
+    anisotropic-constraint argument stated from the cell's side rather than the matrix's. Measured across the differentiation
+    axis, not across growth rates.
+- parameter: transverse-to-axial modulus ratio across developmental stage
+  value: 11.0, 10.3, 0.72, 0.80, 1.15
+  unit: ratio
+  conditions: porcine distal ulnar growth plate at newborn (n=24), 4 weeks group A (n=11), 4 weeks group B (n=15),
+    8 weeks (n=28) and 18 weeks (n=14); E1/E3 from a transversely isotropic biphasic fit using the cohen1998 model
+  species: porcine
+  source_ref: wosu2012
+  uncertainty: DERIVED BY THIS ATLAS as E1/E3 from the paper's Table 2; the paper reports the moduli separately and
+    never the ratio. THE ANISOTROPY COLLAPSES ROUGHLY TEN-FOLD ACROSS DEVELOPMENT, from strongly transversely stiff
+    at birth to essentially isotropic by 8-18 weeks, over exactly the period in which porcine growth rate falls. The
+    newborn value of 11.0 independently reproduces cohen1998's 9.7 in newborn bovine. THIS IS A CORRELATION ACROSS
+    AGES, NOT AN INTERVENTION - plate thickness falls 3508 to 1800 um over the same period and many things fall with
+    age. The 4-week animals split into two subgroups whose E1 differs 24-fold (9.74 vs 0.41 MPa) at the same nominal
+    age, which the authors attribute to rapid developmental change at 3-4 weeks and which means developmental stage
+    is not cleanly defined there.
+- parameter: out-of-plane and transverse moduli by developmental stage
+  value: E3 0.52/0.95/0.57/0.49/0.34; E1 5.72/9.74/0.41/0.39/0.39
+  unit: MPa
+  conditions: porcine distal ulna at newborn, 4W(a), 4W(b), 8W, 18W; mean with 95% CI in the source
+  species: porcine
+  source_ref: wosu2012
+  uncertainty: 95% CIs 0.05-0.14 on E3 and 0.06-2.11 on E1. A second fitting method gives somewhat different E1 (6.71
+    newborn, 0.52 at 18W) but the same direction and the same collapse.
+- parameter: human terminal hypertrophic cell HEIGHT and WIDTH in the same cells
+  value: height 8.5 vs 12.8; width 14.9 vs 15.0
+  unit: um
+  conditions: human vertebral body physis; 13 severe-scoliosis patients sampled at the convex-side apex (mean curve
+    67 +/- 23 degrees) against 5 age-matched autopsy controls without scoliosis. Hypertrophic zone height 152 +/-
+    34 vs 180 +/- 42 um (p=0.21, ns)
+  species: human
+  source_ref: bylskiaustrow2018
+  uncertainty: 'THE FIRST HUMAN MEASUREMENT OF CELL HEIGHT AND WIDTH IN THE SAME CELLS. Height differs by 34% (p<0.0005)
+    while WIDTH IS ESSENTIALLY IDENTICAL (14.9 +/- 1.5 vs 15.0 +/- 2.5, ns). Implied aspect ratios 0.57 and 0.85,
+    a 33% difference. Caveats that matter: this is VERTEBRAL not long-bone physis; the scoliosis group is heterogeneous
+    by aetiology (idiopathic, congenital, neurofibromatosis, neuromuscular, Marfan); controls are n=5 autopsy specimens;
+    and no growth rate was measured in either group, so this shows height varying where width does not, NOT height
+    tracking growth.'
+- parameter: human terminal cell height and diameter
+  value: not measured together
+  unit: none
+  conditions: human growth plate, any site, any age
+  species: human
+  source_ref: thurston1985
+  uncertainty: PARTLY SUPERSEDED 2026-08-06 by bylskiaustrow2018, which measures both in human VERTEBRAL physis. For
+    LONG BONE the absence stands. RECORDED AS AN ABSENCE. thurston1985 and kember1976 both report a human hypertrophic
+    cell HEIGHT (and disagree, 20.5 vs 33 um, contradiction C-L1-07). Neither reports the transverse diameter in the
+    same cells, so no human aspect ratio exists and the one quantity hunziker1989 identifies as the carrier of growth-rate
+    change has never been measured in a human.
+localization:
+- 'rat proximal tibia hypertrophic zone: cell VOLUME, surface area and numerical density measured by unbiased estimators;
+  height and diameter DERIVED from them through shape models (hunziker1989 via cruzorive1986)'
+- 'human: height measured, diameter never measured in long bone, aspect ratio unknown'
+human_evidence: indirect
+human_evidence_note: No human study reports terminal hypertrophic cell height and transverse diameter in the same
+  LONG BONE specimen, so the human aspect ratio is unknown and its relationship to human growth rate is untested (bylskiaustrow2018
+  reports both in human VERTEBRAL physis, without a growth rate). The entire rat result rests on one study, which
+  no one has repeated in any species, and whose height and diameter are model outputs rather than measurements.
+species_basis:
+- rat
+- mouse
+- bovine
+- rabbit
+- porcine
+- human
+translation_risk: high
+translation_risk_reason: A single unreplicated rat study is the whole evidential basis, and its two shape parameters
+  are model outputs rather than measurements, from a family of estimators their own method paper says has no unbiased
+  member. The human plate differs from rat in cycle time by roughly an order of magnitude and carries a large inert
+  zone rat lacks, and human terminal cell height is itself contested by 61%.
+confidence: D
+confidence_note: Stays at D on 2026-08-06 rather than dropping to E, and the reason is worth stating. E is for a flagged
+  inference of this atlas's own making; this is a published primary result, reported with a p-value, reproducible
+  from the paper's tables, and independently ranked the same way by a different perturbation in a different set of
+  species (stokes2007). What the cruzorive1986 reading removes is the claim that it is a MEASUREMENT and therefore
+  outranks rubin2021's direct 3D morphometry. It cannot rise above D until someone measures terminal cell height without
+  a shape model at two growth rates in one plate.
+key_refs:
+- ref_id: hunziker1989
+  pmid: '2607442'
+  first_author: Hunziker EB
+  year: 1989
+  type: primary
+  one_line_finding: A 20% rise in rat growth rate is carried by a 23% rise in terminal cell height with diameter falling
+    14% and volume falling 13%; matrix per cell, turnover and hypertrophic-phase duration unchanged.
+- ref_id: cruzorive1986
+  pmid: '3761364'
+  first_author: Cruz-Orive LM
+  year: 1986
+  type: primary
+  one_line_finding: The method paper for hunziker1989 - cell volume, surface and number have unbiased orientation-independent
+    estimators, cell HEIGHT and DIAMETER have none, and the shape estimators used carry opposite-signed tilt bias
+    in the two zones.
+- ref_id: wosu2012
+  pmid: '21559968'
+  first_author: Wosu R
+  year: 2012
+  type: primary
+  one_line_finding: Porcine growth plate transverse-to-axial modulus ratio collapses from about 11 at birth to about
+    1 by 8-18 weeks, i.e. the tissue becomes isotropic as growth slows.
+- ref_id: bylskiaustrow2018
+  pmid: '29573446'
+  first_author: Bylski-Austrow DI
+  year: 2018
+  type: primary
+  one_line_finding: First human measurement of hypertrophic cell height and width together - height differs 34% between
+    scoliosis and control vertebral physes while width is identical.
+- ref_id: rubin2021
+  pmid: '34508093'
+  first_author: Rubin S
+  year: 2021
+  type: primary
+  one_line_finding: 3D light-sheet morphometry of ~10^5 mouse chondrocytes finds hypertrophic cell VOLUME a better
+    predictor of bone growth than cell HEIGHT, and 65% of volume increase occurring before the hypertrophic zone.
+- ref_id: cohen1998
+  pmid: '10412420'
+  first_author: Cohen B
+  year: 1998
+  type: primary
+  one_line_finding: Growth plate is about ten times more compliant in the axial (growth) direction than in the transverse
+    direction, by transversely isotropic biphasic modelling of unconfined compression.
+- ref_id: stokes2007
+  pmid: '17532281'
+  first_author: Stokes IA
+  year: 2007
+  type: primary
+  one_line_finding: Under mechanical growth modulation in three species, final hypertrophic cell height contributes
+    more to altered growth rate than proliferative cell number (regression coefficients 1.39 vs 0.72), replicating
+    hunziker1989's ranking by a different perturbation.
+- ref_id: hunziker1994
+  pmid: '8132746'
+  first_author: Hunziker EB
+  year: 1994
+  type: primary
+  one_line_finding: IGF-I and GH in hypophysectomised rats shorten stem and proliferating cell cycle times and the
+    hypertrophic phase duration, and restore cell height and volume - so pharmacology moves parameters physiological
+    variation holds constant.
+- ref_id: prein2016
+  pmid: '26454027'
+  first_author: Prein C
+  year: 2016
+  type: primary
+  one_line_finding: AFM of mouse growth plate gives a pericellular matrix modulus of 1.6 kPa inside a 3.6 kPa interterritorial
+    matrix, and a chondrocyte shape index of 1.57.
+- ref_id: breur1991
+  pmid: '2010838'
+  first_author: Breur GJ
+  year: 1991
+  type: primary
+  one_line_finding: Final hypertrophic VOLUME correlates with elongation rate across plates (r=0.98 rat, 0.83 pig)
+    - a between-plate relationship that hunziker1989 shows does not hold within a plate over time.
+open_questions:
+- g_l1arch_009
+- g_l1arch_016
+- g_l1arch_017
+contradicts:
+- breur1991
+- rubin2021
+last_verified: '2026-08-06'

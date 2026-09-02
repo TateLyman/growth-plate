@@ -1,0 +1,84 @@
+id: catch_up_growth
+name: Catch-up growth
+type: phenotype
+summary: 'Catch-up growth is a height velocity above the normal range for age sustained for at least a
+  year following a period of growth inhibition, best expressed as a change in height standard deviation
+  score rather than as velocity because it must be separated from the pubertal spurt. It is directly observed
+  in humans after treatment of hypothyroidism, glucocorticoid excess, coeliac disease and malnutrition,
+  and it may be complete or incomplete. Its mechanistic significance for this layer is that it is the
+  strongest functional evidence that the growth plate carries a stored, spendable growth potential: rabbit
+  experiments show that catch-up can be produced within a single growth plate by local glucocorticoid,
+  and that the catching-up plate is histologically and functionally less senescent than an age-matched
+  control. Catch-up growth is therefore evidence FOR the finite-capacity/senescence model - specifically
+  for its division-dependence rather than for a Hayflick mechanism. The evidence AGAINST catch-up requiring
+  a central size sensor rests entirely on the single rabbit local-glucocorticoid experiment (baron1994),
+  which is not open access and has not been read in full by this atlas; the rat replication that HAS been
+  read reports catch-up in heart, liver and kidney mass as well as in bone and explicitly allows that
+  "the observed catch-up growth in nonskeletal organs could be explained by a systemic mechanism"
+  (marino2008). The local-only claim should therefore be treated as supported by one unread primary,
+  not as settled.'
+quantitative:
+- parameter: Minimum duration of supranormal height velocity conventionally required
+  value: '1'
+  unit: year
+  conditions: clinical definition in children
+  species: human
+  source_ref: wit2002
+  uncertainty: convention, not a measurement
+localization:
+- 'human SYS: clinically observed'
+- 'rabbit growth plate: experimentally produced locally (baron1994)'
+human_evidence: direct
+human_evidence_note: Catch-up growth is a directly measured human clinical phenomenon with an accepted
+  quantitative definition; only its mechanism is extrapolated from animals.
+species_basis:
+- human
+- rabbit
+- rat
+translation_risk: low
+translation_risk_reason: The phenotype itself is human-defined and human-measured; the translation risk
+  attaches to the mechanistic explanation, not to the observation.
+confidence: B
+key_refs:
+- ref_id: wit2002
+  pmid: '12510974'
+  first_author: Wit JM
+  year: 2002
+  type: review
+  one_line_finding: Defines catch-up growth quantitatively in children and reviews competing mechanisms
+- ref_id: baron1994
+  pmid: '7925098'
+  doi: 10.1210/endo.135.4.7925098
+  first_author: Baron J
+  year: 1994
+  type: primary_abstract_only
+  one_line_finding: Demonstrates catch-up growth confined to a single locally treated growth plate
+- ref_id: gafni2001
+  pmid: '11641457'
+  doi: 10.1203/00006450-200111000-00014
+  first_author: Gafni RI
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Links catch-up growth to a measurably less senescent growth plate in rabbit
+- ref_id: lui2011
+  pmid: '21865751'
+  doi: 10.1159/000328117
+  first_author: Lui JC
+  year: 2011
+  type: review
+  one_line_finding: Frames catch-up growth as delayed senescence from conserved replicative capacity
+open_questions:
+- g_l2stem_005
+- g_l2stem_006
+- g_l2d_006
+layer: L2
+stub: false
+pending_source: baron1994
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. marino2008 read in FULL; baron1994 and gafni2001,
+  the two rabbit primaries carrying the local and histological-senescence claims, are not open access and
+  are queued in atlas/sources/access_queue.md (P1, P2). Verdict SCOPED. Confidence held at B: the phenotype
+  is human-measured and the mechanism claim was already hedged, so the brief's no-downgrade-for-unreachable
+  rule applies.
+last_verified: '2026-08-05'

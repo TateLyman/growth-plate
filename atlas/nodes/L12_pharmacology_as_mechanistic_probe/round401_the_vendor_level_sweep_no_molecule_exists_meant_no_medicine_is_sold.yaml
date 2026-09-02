@@ -1,0 +1,186 @@
+id: round401_the_vendor_level_sweep_no_molecule_exists_meant_no_medicine_is_sold
+name: "R401: the vendor-level sweep - this file has written no molecule exists about secreted proteins whose recombinant forms are catalogue items, and three of the experiments it calls impossible are purchase orders"
+aliases:
+  - recombinant protein availability sweep
+  - JAG1-Fc DLL1-Fc purchasable
+  - recombinant SCUBE3 exists
+  - vendor catalogue check
+type: method
+layer: L12
+stub: false
+summary: >-
+  CORR-347 established that Open Targets lists only clinical and approved agents, so
+  tool compounds are invisible to it, and that ChEMBL must be queried instead. R401
+  applies the same correction one level further out. ChEMBL indexes SMALL MOLECULES
+  with bioactivity records. It does not index the catalogue of RECOMBINANT PROTEINS AND
+  Fc-FUSIONS that biology suppliers sell. For a file whose best target class is
+  SECRETED PROTEINS and whose repeated conclusion is either "the direction is to SUPPLY
+  this protein" or "the wanted form is the CLUSTERED ligand", that is precisely where
+  the answers would hide - and nobody had looked.
+
+  FOUR THINGS ARE ON SALE THAT THIS FILE TREATED AS NON-EXISTENT OR NEVER ASKED ABOUT.
+  · JAG1-Fc. R400 named a multivalent Notch agonist as the wanted form and treated it
+  as a construct to be built. Recombinant Human Jagged-1 Fc Chimera is a catalogue
+  protein in both full-length and N-terminal forms, with a mouse version and a
+  commercially labelled active listing, and the vendor measures its bioactivity in the
+  IMMOBILISED configuration at an ED50 of 0.3 to 1.8 micrograms per millilitre. This is
+  the exact reagent lin2011 used to expand the epiphysis stem cell zone, and the
+  Fc-dimeric format is the clustered form CORR-355 identifies as the agonist.
+  · DLL1-Fc, never asked here. Human, mouse and rat, ED50 0.1 to 0.5 micrograms per
+  millilitre. DLL1 is the growth plate's OWN Notch ligand - 3.05-fold cartilage-enriched
+  at 24.9 CPM in the purity-corrected human tissue. The physiological ligand, in the
+  agonist format, in all three relevant species.
+  · SCUBE3, and this is the sharpest one. R287 listed recombinant SCUBE3 as one of four
+  cheap experiments that DO NOT EXIST, and R312 recorded no recombinant product. It is
+  sold: CHO-derived, over 95 percent pure, endotoxin under 0.10 EU per microgram - AND
+  THE VENDOR VALIDATES ITS BIOACTIVITY ON CHONDROGENIC CELLS, by adhesion of ATDC5
+  mouse chondrogenic cells at an ED50 of 0.25 to 1.25 micrograms per millilitre. SCUBE3
+  pLoF is minus 7.18 centimetres, so loss shortens and the direction is to SUPPLY, which
+  makes it the one target in R287's layer where supplying is the move.
+  · SMOC-1 and SAG were already recorded as purchasable and are listed for completeness.
+
+  AND THE SAME SWEEP CONFIRMS THE GAPS THAT ARE REAL. No function-blocking or
+  neutralising anti-HHIP is offered by any vendor - the listings are detection reagents
+  for western blot, immunohistochemistry, ELISA, immunoprecipitation and flow, which is
+  exactly what R314 and R376 said. No neutralising anti-STC2. No CHAD-alpha2beta1
+  antagonist. No NRK inhibitor. Those four remain construction problems.
+
+  ⛔ WHAT THIS DOES NOT MEAN. Every item on the available list is a RESEARCH-GRADE
+  REAGENT. None is a medicine, none carries an impurity, endotoxin-release or toxicology
+  package adequate for administration to a person, and none has been given to a human.
+  Nothing here changes the standing position that this file has no obtainable treatment.
+
+  ⭐ WHAT IT DOES CHANGE IS THE COST OF THE DECIDING EXPERIMENTS. Three questions that
+  have blocked this axis for many rounds become purchase orders rather than programmes.
+  Does a CLUSTERED Notch agonist expand the resting zone in a NORMAL GROWING animal and
+  does the bone get longer - JAG1-Fc and DLL1-Fc, human and mouse, catalogue. Is the
+  monomeric soluble JAG1 peptide an agonist or an antagonist IN CHONDROCYTES - both
+  forms purchasable, readout HES1, and CORR-355 predicts the peptide inhibits while the
+  Fc-fusion activates, which is a week in a dish. Does supplying SCUBE3 lengthen a bone
+  - the protein is sold and already validated on chondrogenic cells.
+
+  THE GENERALISABLE CORRECTION, AND IT SHOULD BE APPLIED RETROSPECTIVELY. The phrase
+  "no molecule exists" must now be split THREE ways rather than the two CORR-347
+  established: no APPROVED MEDICINE, which is true of almost everything in this file;
+  no CHEMICAL MATTER, which is a ChEMBL query; and no PURCHASABLE PROTEIN, which is a
+  vendor-catalogue query and had never been run. The third is where a secreted-protein
+  atlas hides its answers, and this file is a secreted-protein atlas.
+quantitative:
+  - parameter: JAG1-Fc availability and vendor bioactivity
+    value: >-
+      human full-length and N-terminal Fc chimeras plus a mouse version, catalogue;
+      bioactivity measured IMMOBILISED at ED50 0.3-1.8 ug/mL
+    unit: qualitative and ug/mL
+    species: not_applicable
+    source_ref: lin2011
+    value_unverified: true
+    note: >-
+      vendor catalogue listings checked 2026-08-14; source_ref nominal - lin2011 is the
+      paper that used this reagent class at the growth plate. Research grade, not a
+      medicine
+  - parameter: DLL1-Fc availability
+    value: human, mouse and rat Fc chimeras, catalogue, ED50 0.1-0.5 ug/mL
+    unit: qualitative and ug/mL
+    species: not_applicable
+    source_ref: lin2011
+    value_unverified: true
+    note: >-
+      vendor listings checked 2026-08-14; source_ref nominal. DLL1 is the plate's own
+      ligand at 3.05x cartilage enrichment, so this is the physiological ligand in the
+      clustered format
+  - parameter: recombinant SCUBE3 availability and its validation assay
+    value: >-
+      CHO-derived, >95% pure, endotoxin <0.10 EU/ug, and bioactivity measured as adhesion
+      of ATDC5 MOUSE CHONDROGENIC CELLS at ED50 0.25-1.25 ug/mL
+    unit: qualitative and ug/mL
+    species: not_applicable
+    source_ref: lin2011
+    value_unverified: true
+    note: >-
+      vendor listing checked 2026-08-14; source_ref nominal. R287 listed this experiment
+      as one that does not exist and R312 recorded no recombinant product. The vendor
+      validates on the relevant cell type
+  - parameter: function-blocking anti-HHIP availability
+    value: NOT AVAILABLE - detection antibodies only (WB, IHC, ELISA, IP, flow)
+    unit: qualitative
+    species: not_applicable
+    source_ref: lin2011
+    value_unverified: true
+    note: >-
+      vendor sweep checked 2026-08-14; source_ref nominal. Confirms R314 and R376 - the
+      best-validated target in the atlas still has no usable agent
+localization: not_applicable
+human_evidence: absent
+human_evidence_note: >-
+  This is a methodological round about reagent availability. None of the listed products
+  has been given to a human and none is manufactured to a standard that would permit it.
+species_basis:
+  - not_applicable
+translation_risk: not_applicable
+translation_risk_reason: >-
+  No translational claim is made. The round changes what experiments are cheap, not what
+  is obtainable as a treatment.
+confidence: B
+claim_grades:
+  - claim: >-
+      JAG1-Fc and DLL1-Fc, the clustered Notch agonist form, are catalogue reagents in
+      the relevant species
+    grade: B
+    basis: >-
+      multiple vendor listings with stated bioactivity assays and ED50 values, checked
+      2026-08-14. Catalogue listings can change and were not independently verified by
+      purchase
+  - claim: >-
+      Recombinant SCUBE3 is sold and is vendor-validated on chondrogenic cells, contrary
+      to R287 and R312
+    grade: B
+    basis: >-
+      vendor listing with purity, endotoxin and a chondrogenic-cell bioactivity assay.
+      The correction to this file's own record is certain; the product specification is
+      taken from the supplier
+  - claim: >-
+      No function-blocking anti-HHIP, neutralising anti-STC2, CHAD antagonist or NRK
+      inhibitor is sold
+    grade: B
+    basis: >-
+      an absence from a vendor sweep, which is weaker than a positive finding, but it
+      agrees with the prior ChEMBL and Open Targets results for all four
+  - claim: >-
+      None of these products is usable as a treatment
+    grade: A
+    basis: research-grade reagents without impurity, endotoxin-release or toxicology packages
+  - claim: >-
+      "No molecule exists" must be split three ways, and the third query had never been
+      run
+    grade: A
+    basis: >-
+      a statement about this file's own method. CORR-347 split it two ways; the
+      recombinant-protein catalogue is a third source that a secreted-protein atlas
+      cannot afford to skip
+key_refs:
+  - ref_id: lin2011
+    year: 2011
+    type: primary_abstract_only
+    role: >-
+      the growth-plate result that used the clustered Jagged1/Fc form now shown to be a
+      catalogue reagent
+  - ref_id: sun2018jag1
+    year: 2018
+    type: primary
+    role: >-
+      CORR-355 - why the format matters, and why the purchasable Fc-fusion rather than
+      the peptide is the tool
+  - ref_id: youngstrom2017
+    year: 2017
+    type: primary
+    role: the immobilised-Jagged-1 bone-anabolic result that anchors the clustered form
+  - ref_id: lin2021
+    year: 2021
+    type: review
+    role: >-
+      SCUBE3 loss shortens, which is why a purchasable recombinant SCUBE3 matters - the
+      direction on that target is to SUPPLY
+open_questions:
+  - g_l7_360a
+contradicts: []
+last_verified: '2026-08-14'

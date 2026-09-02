@@ -1,0 +1,224 @@
+id: human_growth_plate_age_trajectory
+name: The human growth plate from birth to adolescence - what changes with age and what does not
+type: process
+layer: L1
+stub: false
+summary: 'Until 2026-08-06 this atlas held human growth plate measurements at essentially two ages - embryonic (5.7-13
+  post-conception weeks) and early pubertal (11-15 years) - and reasoned about the fifteen-year interval between them
+  by analogy to rodents. Two primary human studies, both read in full on that date, cover it. byers2000 measured 46
+  costochondral junctions at autopsy from children aged 11 days to 13.5 years. kember1976 measured 12 distal femora
+  at necropsy from birth to 14 years and paired them with distal-femoral growth rates read off Harris lines in serial
+  radiographs from the Harpenden Growth Study. Together they say something the rodent literature does not predict.
+  WHAT COLLAPSES: zone heights. Proliferative zone height falls to 34% and hypertrophic zone height to 26% of their
+  day-11 values, and MOST OF THAT HAPPENS IN THE FIRST YEAR OF LIFE - the hypertrophic zone goes 0.37 to 0.104 mm
+  by age 1 and then changes by 9% over the next twelve and a half years. WHAT DOES NOT CHANGE: terminal cell size.
+  Human hypertrophic cell height sits between 29 and 38 um from birth to 13 years with no age dependence, 33 +/- 5
+  um at ages 5-8; chondrocyte lacunar diameter in rib shows no significant change with age in either the proliferative
+  or the hypertrophic zone. WHAT CARRIES THE VARIATION: cell production rate. At ages 5-8 the distal femoral plate
+  elongates 1.4 cm/yr, which is 38 um/day, which at 33 um per terminal cell is 1.2 new cells per column per day; with
+  about 24 proliferative cells per column that is a MEAN CELL CYCLE TIME OF 20 DAYS. The corresponding rat figure
+  is 2 days. kember1976 further report that the number of cells in the proliferation zone does NOT increase during
+  the adolescent spurt, so the spurt must be produced by faster cycling rather than by a bigger proliferative pool.'
+quantitative:
+- parameter: proliferative zone height across the whole of human postnatal growth
+  value: 1.1 at 11 days; 0.671 at 1 year; 0.372 at 13.5 years
+  unit: mm
+  conditions: 46 costochondral junctions (5th-7th ribs) at autopsy, ages 11 days to 13.5 years, 24 girls and 22 boys,
+    deaths from drowning, trauma or asphyxia and free of bone disease; 5 um paraffin sections after nitrous acid/EDTA
+    decalcification; integrated zone height = area divided by width of plate analysed, drawn independently by two
+    observers and averaged
+  species: human
+  source_ref: byers2000
+  uncertainty: 'r = -0.62, p < 0.001 by logarithmic regression. Falls to 34% of the day-11 value. THE SAMPLE IS NOT
+    EVENLY SPREAD: 36 of the 46 cases are under 1 year old and the remaining 10 are single individuals at 1.6, 2.4,
+    4.0, 4.4, 5.8, 6.9, 9.5, 10.3, 12.4 and 13.5 years. The childhood trend therefore rests on ten people, one per
+    age. THE SITE IS RIB, not a long bone, and rib and long-bone plates do not grow at the same rate. Pubertal status
+    of the eldest children was not recorded, so the spurt is not resolved here.'
+- parameter: hypertrophic zone height across the whole of human postnatal growth
+  value: 0.37 at 11 days; 0.104 at 1 year; 0.095 at 13.5 years
+  unit: mm
+  conditions: as above
+  species: human
+  source_ref: byers2000
+  uncertainty: 'r = -0.68, p < 0.001. Falls to 26% of the day-11 value. THE SHAPE MATTERS MORE THAN THE ENDPOINTS:
+    72% of the entire fall occurs in the first year of life, and between age 1 and age 13.5 the hypertrophic zone
+    changes by 9%. Over that same interval growth velocity falls several-fold and then spikes at puberty. HYPERTROPHIC
+    ZONE HEIGHT THEREFORE CANNOT BE WHAT SETS HUMAN GROWTH VELOCITY AFTER INFANCY. Same rib and sampling caveats as
+    the row above.'
+- parameter: HUMAN TERMINAL HYPERTROPHIC CELL HEIGHT, and its age dependence
+  value: 29 to 38 across birth to 13 years, no age dependence; 33 +/- 5 at ages 5-8
+  unit: um
+  conditions: distal femur, 12 necropsy subjects birth to 14 years, collected within 24 h of death from accident or
+    acute illness; EDTA decalcification, celloidin embedding, 15 um sections; maximum dimension of the cell spaces
+    IN THE DIRECTION OF GROWTH, averaged over five groups of ten cells at regular intervals along the metaphyseal
+    border; a 13% linear processing shrinkage was measured on the blocks and corrected for
+  species: human
+  source_ref: kember1976
+  uncertainty: 'VERIFIED AGAINST THE PRIMARY FULL TEXT 2026-08-06; this is the 33 um side of contradiction C-L1-07
+    and the measurement is model-free and shrinkage-corrected. THE NEW FACT IS THE ABSENCE OF AGE DEPENDENCE, which
+    the atlas did not hold: the authors state there was no evidence of it across the whole series. The two 14-year-olds,
+    with plate closure in progress, give 39 um (male) and 25 um (female) - the only departures, and they are at closure.
+    n is 12 subjects and the per-age n is 1-2, so ''no age dependence'' means no trend detectable in 12 people, not
+    a tight bound. DETECTION LIMIT ADDED 2026-08-06 (CORR-014): Kember states that in quantitative histology of this
+    kind, changes smaller than 20% are beyond the limits of detection. ''No age dependence'' therefore means NO TREND
+    LARGER THAN ROUGHLY 20% WAS DETECTABLE IN TWELVE SUBJECTS, not that the parameter is fixed. The observed span
+    29-38 um is itself about +/-14% around 33. The claim the atlas can support is that human terminal cell height
+    does not vary with age ANYWHERE NEAR enough to account for the several-fold variation in growth velocity over
+    the same interval - which is still decisive for the flow model, and is weaker than ''invariant''.'
+- parameter: chondrocyte lacunar diameter with age, human rib
+  value: 'proliferative zone: no significant change. hypertrophic zone: 0.043 at 11 days to 0.036 at 1 year and 0.036
+    at 12.4 years, not significant'
+  unit: mm
+  conditions: point-counting histomorphometry at 30 positions along the long axis of the costochondral junction, 0.108
+    mm2 per position; lacunar diameter is the transverse dimension, the analogue of trabecular separation in the paired
+    bone measurements
+  species: human
+  source_ref: byers2000
+  uncertainty: 'THIS IS THE TRANSVERSE DIMENSION, NOT THE AXIAL ONE, and must not be read as a second measurement
+    of terminal cell height. What it adds is that the cells do not narrow either: across the whole of childhood the
+    human growth plate chondrocyte keeps both its width (byers2000) and its height (kember1976) while the zones containing
+    it collapse. The collapse is therefore in CELL NUMBER per column and in the matrix between columns, not in cell
+    size.'
+- parameter: HUMAN PROLIFERATIVE ZONE CELL CYCLE TIME
+  value: 20 (about +/-50%, i.e. 10-30); floor about 16 on the cell-count assumption alone
+  unit: days
+  conditions: 'distal femur at ages 5-8 years. Derived by the authors from three quantities they measured: growth
+    rate 1.4 cm/yr = 38 um/day (Harris growth-arrest lines on serial Harpenden Growth Study radiographs, magnification
+    factor 1.04 corrected); terminal cell height 33 um, giving 1.2 new cells per column per day; and 36 cells in the
+    combined maturation and proliferation zones, of which the proliferative fraction is taken as two thirds by analogy
+    with rabbit, giving 24 proliferative cells. 24 cells / 1.2 cells per day = 20 days'
+  species: human
+  source_ref: kember1976
+  uncertainty: 'THE ONLY ESTIMATE OF HUMAN GROWTH PLATE CELL CYCLE TIME IN EXISTENCE, and it is a derivation, not
+    a measurement - no human has been labelled. The authors name their weakest step themselves: the number of cells
+    specifically in the proliferation zone, imported from rabbit because no morphological criterion separates proliferating
+    from maturing cells in a stained section. They give a floor: at least 20 proliferative cells, hence at least about
+    16 days. COMPARE THE RAT AT 2 DAYS - a ten-fold species difference in the rate-limiting step of elongation, on
+    which the authors'' own conclusion is that it is unwise to extrapolate this tissue from mouse to man. They also
+    note the cycle time is a MEAN over a heterogeneous zone: in rat, central proliferative cells divide 50-60% per
+    day while cells at the epiphyseal end divide 5-10% per day, so in human some cells might divide every 10 days
+    and others once every 100. QUALIFIED 2026-08-06 ON READING kember1993 (CORR-014). TWO THINGS THE ATLAS QUOTED
+    THIS FIGURE WITHOUT. (1) PRECISION: Kember states this method gives data of about +/-50% precision, so 20 days
+    is 10 to 30 days. (2) INTERPRETATION, WHICH MATTERS MORE: 20 days is a MEAN OVER THE WHOLE PROLIFERATIVE ZONE,
+    and it does not follow that human chondrocytes cycle slowly. Kember says explicitly that the low human labelling
+    percentage is not unequivocal evidence of slow cycling, because the human GROWTH FRACTION may be low - a large
+    proportion of proliferative-zone cells may not be in cycle at all - and ''the cells in cycle could be dividing
+    as rapidly as in rodents''. The two readings cannot be separated because the duration of S phase in human growth
+    cartilage has never been measured. THE ATLAS''S EARLIER PHRASING - a ten to fifteen fold species difference in
+    cycling speed - IS WITHDRAWN; what is established is a ten to fifteen fold difference in MEAN CELL PRODUCTION
+    PER PROLIFERATIVE CELL. See node growth_fraction_human_proliferative_zone.'
+- parameter: how the human adolescent growth spurt is produced
+  value: by faster cycling, not by more proliferative cells
+  unit: qualitative
+  conditions: distal femur, same 12-subject series, cell counts approximately every fiftieth column
+  species: human
+  source_ref: kember1976
+  uncertainty: The authors state there is no evidence that the number of cells in the proliferation zone increases
+    during the growth spurt, so the proliferating cells must divide faster to produce the increased growth rate. WITH
+    TERMINAL CELL HEIGHT ALSO FIXED, THIS LEAVES CYCLE TIME AS THE ONLY FREE VARIABLE IN THE HUMAN PLATE - column
+    cell number falls monotonically with age (62 at birth to about 36 at 5-8 years to 27-28 at 13-14), terminal cell
+    height does not move, and velocity varies several-fold. It is an argument from absence in 12 subjects, not a measurement
+    of cycle time during the spurt, and no such measurement exists.
+- parameter: width of the human resting ("inert") zone across growth
+  value: does not thin or disappear as growth proceeds
+  unit: qualitative
+  conditions: distal femur; the epiphyseal zone where cartilage cells are not in columns, measured with a calibrated
+    eyepiece graticule at every fiftieth column
+  species: human
+  source_ref: kember1976
+  uncertainty: 'kember1976 use this to argue the inert zone CANNOT be a reserve of stem cells. THAT INFERENCE IS WRONG
+    BY MODERN UNDERSTANDING and the observation is not: a compartment renewing by population asymmetry is expected
+    to hold its size, so constancy is what a stem zone should look like, not evidence against one. The atlas records
+    the measurement and rejects the 1976 inference explicitly. What the observation does constrain is any model in
+    which the resting zone is visibly consumed during childhood - in human it is not, until closure, when the authors
+    report it has largely disappeared in a 14-year-old girl with the plate closing.'
+- parameter: matrix, not cells, is what accumulates with age
+  value: proliferative zone cartilage volume fraction 60% at 11 days to 82.5% at 13.5 years; septal thickness 0.046
+    to 0.147 mm; septal number 13/mm to 6.5/mm
+  unit: mixed
+  conditions: human rib costochondral junction, point counting as above
+  species: human
+  source_ref: byers2000
+  uncertainty: r = 0.58, 0.73 and -0.62 respectively, all p < 0.001. Columns get further apart and the partitions
+    between them thicken threefold while the cells inside keep their size. In the HYPERTROPHIC zone the same parameters
+    rise only until age 1 and then plateau (volume fraction 25% to 40%; septal thickness 0.014 to 0.024 mm), and septal
+    NUMBER does not change with age at all - so the zone where cartilage is actually converted to bone is the one
+    that stops remodelling first.
+- parameter: cross-species check on terminal cell height as a driver of growth rate
+  value: chicken tibiotarsus ~1000 um/day on 15 um terminal cells; human distal femur 38 um/day on 33 um terminal
+    cells
+  unit: um/day and um
+  conditions: 'kember1987: three 7-day-old chickens, growth 1.14 cm/week by serial radiography with 60% assigned to
+    the proximal end; mean hypertrophic dimension in the direction of growth 15 um (SE 0.4, 75 cells); about 60 new
+    cells per output channel per day against about 82 flat cells, giving a cycle time near 1 day. Human figures from
+    kember1976 as above'
+  species: chicken
+  source_ref: kember1987
+  uncertainty: 'THE COMPARISON IS THE POINT AND IT IS ROBUST TO ITS OWN SLOPPINESS: a chicken plate elongates roughly
+    26 times faster than a human distal femur using cells LESS THAN HALF THE HEIGHT. Terminal cell height cannot be
+    what sets growth rate across species, and the human has the largest cells and the slowest growth. kember1990 adds
+    the within-clade version across 68 growth plates and nine bird species: hypertrophic cell size 10-18 um with no
+    clear trend, and the authors attribute between-species growth rate differences mainly to the SIZE OF THE FLAT
+    CELL ZONE. The chicken figure carries an assumed 60% proximal share and the human figure is a different bone in
+    a different class of animal; neither is a controlled comparison.'
+localization:
+- human rib costochondral junction (byers2000); human distal femur (kember1976)
+human_evidence: direct
+human_evidence_note: 'Both sources are human primary tissue with quantitative histomorphometry, read in full on 2026-08-06.
+  Between them they cover 58 individuals from 11 days to 14 years at two skeletal sites. This is the age interval
+  the atlas previously could not see. Its weakness is n per age: byers2000 has 36 of 46 cases under one year and one
+  person at each subsequent age; kember1976 has 12 subjects total. Neither resolves the pubertal spurt, and kember1976
+  explicitly declines to estimate cycle time at 13-14 years because of the spread of growth rates during and after
+  the spurt.'
+species_basis:
+- chicken
+- human
+translation_risk: low
+translation_risk_reason: The measurements are human. The risk here runs the other way - these data are what other
+  species should be checked against.
+confidence: B
+confidence_note: 'B, not A. Two independent laboratories, two skeletal sites, two eras and two methods agree on the
+  central claim that terminal cell size does not change with age while zone height collapses, and the zone-height
+  regressions are properly powered (n=46, p<0.001). It is not A because the childhood portion of byers2000 rests on
+  ten individuals one per age, kember1976 has twelve subjects in total, the cell cycle time is a derivation with an
+  imported rabbit assumption rather than a measurement, and neither study resolves puberty. Both are pre-2001 histomorphometry
+  on autopsy tissue and no modern replication exists - which is itself the finding. QUALIFIED 2026-08-06 (CORR-014)
+  without changing the grade. Two rows were overstated when written: the cycle time was quoted without its +/-50%
+  precision and without the growth-fraction alternative, and ''no age dependence'' was quoted without the method''s
+  ~20% detection limit. Both are now bounded. The node''s central claim - that human terminal cell size does not move
+  anywhere near enough to carry the observed variation in growth velocity, so cell production must - survives both
+  qualifications, which is why the grade is held rather than lowered.'
+key_refs:
+- ref_id: byers2000
+  pmid: '11033444'
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: '46 human ribs, 11 days to 13.5 years: proliferative and hypertrophic zone heights collapse to
+    34% and 26%, most of it in the first year, while chondrocyte lacunar diameter does not change and matrix volume
+    fraction and septal thickness rise.'
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: '12 human distal femora birth to 14 years with paired Harpenden growth rates: hypertrophic cell
+    height 29-38 um with NO age dependence, 33 +/- 5 um at 5-8 years, and a derived proliferative cell cycle time
+    of 20 days against 2 days in rat.'
+- ref_id: kember1993
+  pmid: '8219479'
+  first_author: Kember NF
+  year: 1993
+  type: review
+  one_line_finding: Supplies the precision of the cell-production method (+/-50%), its ~20% detection limit, and the
+    growth-fraction alternative to slow human cycling.
+- ref_id: kember1987
+  pmid: '3502931'
+  first_author: Kember NF
+  year: 1987
+  type: primary
+  one_line_finding: Chicken tibiotarsus grows ~1000 um/day on 15 um terminal cells with a cycle time near 1 day.
+open_questions:
+- g_l1arch_human_age_series_modern
+- g_l1arch_human_cycle_time_measured
+last_verified: '2026-08-06'

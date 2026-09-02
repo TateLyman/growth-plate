@@ -1,0 +1,242 @@
+id: round430_the_partition_model_calibrated_it_survives_conditionally_and_corrects_three_rankings
+name: The partition model calibrated against the only ordered valence series in cartilage - it survives on one testable condition, and it corrects three things the file already acted on
+aliases:
+  - R430
+  - the partition calibration
+  - Donnan model validation
+  - dGEMRIC relaxivity correction
+type: method
+layer: L12
+stub: false
+
+summary: >
+  This atlas has ranked compounds with a Donnan partition model since R153 and never once
+  compared it to a measurement in cartilage. R428 found the validation set - menezes2006 and
+  kang2017, both in this bibliography since 2026-08-07 - and read it as evidence that an
+  instrument exists. It is more than that: kang2017 is an ORDERED VALENCE SERIES with a time
+  course, which is exactly what the model predicts. This round fits the model to it.
+
+  ZERO. The two implementations in atlas/tools are algebraically identical and the inversion
+  round-trips, so there is ONE model, not two. Verified in code.
+
+  ONE - THE SIZE CHECK FIRST, AS THE BRIEF REQUIRES, AND IT SEPARATES THE TWO PAPERS.
+  The species in solution is the anion, not the dimeglumine salt: Gd-DTPA 2- is 545.6 Da,
+  Gd-BOPTA 2- 665.7, Gd-DOTA - 557.7, gadobutrol 604.7, gadoteridol 558.7, each computed two
+  ways (PubChem salt MW minus protonated meglumine, and from the anion formula) and agreeing.
+  menezes2006 compares Gd-DTPA against gadoteridol: 2.4 per cent apart in MW and IDENTICAL in
+  plasma relaxivity (4.1 vs 4.1). IT IS THE CLEAN CHARGE TEST, and its direction is the Donnan
+  direction - the neutral agent enhances the physis more than the anion, which is exclusion.
+  kang2017 is matched on neither. But size cannot rescue its anomaly either: its two z=-2
+  agents differ by 22 per cent in MW and THE LARGER ONE GIVES THE LARGER SIGNAL, which is the
+  wrong way round for steric exclusion.
+
+  TWO - THE CORRECTION NOBODY HAD APPLIED, AND THE PAPER ITSELF NAMES IT. dGEMRIC measures
+  dR1 = r1 x [Gd], so a slope in dR1 is a concentration proxy ONLY IF r1 IS MATCHED ACROSS
+  AGENTS. It is not, and kang2017's own conclusion calls Gd-BOPTA a high-relaxivity agent and
+  attributes its higher contrast to that. rohrer2005 gives r1 for all four in water and in
+  plasma. Dividing each slope by its agent's r1 turns the four numbers into concentration-rate
+  differences - the quantity the model actually predicts. THE RAW Gd-BOPTA/Gd-DTPA RATIO OF
+  1.68x FALLS TO 1.39x ON WATER RELAXIVITIES AND 1.09x ON PLASMA RELAXIVITIES. The residual
+  the brief called the falsifier is not a transport residual; it is an artefact of using dR1
+  as a concentration proxy across agents of unequal relaxivity.
+
+  THREE - THEN THE FALSIFICATION TEST, WHICH IS BETTER THAN A FIT BECAUSE cF IS MEASURED.
+  lesperance1992 measured fixed charge density by sodium NMR (calf articular 0.28 M, epiphyseal
+  0.19-0.35 M), so cF is an input, not a free parameter. Two things had to be got right. The
+  perturbation is TRYPSIN DIGESTION, which is large, so the model's prediction is a FINITE
+  DIFFERENCE in partition and not a derivative. And the z=0 agent does NOT give zero: a neutral
+  solute should be completely insensitive to proteoglycan removal under Donnan, and gadobutrol
+  gives 0.0087-0.011. THAT IS A CHARGE-INDEPENDENT POROSITY AND WATER-CONTENT TERM that trypsin
+  also creates, and it has to come off before the charge term is read.
+  Charge-attributable excess ratio, z=-2 over z=-1: 1.610 on water relaxivities, 1.215 on plasma.
+  AT THE MEASURED cF OF 0.28 M - the same tissue class kang2017 used - 73.1 PER CENT DEPLETION
+  REPRODUCES THE PLASMA-CORRECTED RATIO, which is an entirely ordinary trypsin result. On water
+  relaxivities NO depletion between 0 and 1 reproduces it at any measured cF, and the model fails.
+  SO THE MODEL IS CONSISTENT WITH THE ONLY ORDERED VALENCE MEASUREMENT IN CARTILAGE IF AND ONLY
+  IF Gd-BOPTA'S IN-CARTILAGE RELAXIVITY APPROACHES ITS PLASMA VALUE - which is the physically
+  expected case, because that enhancement comes from binding macromolecules and cartilage matrix
+  is macromolecular. A testable condition, stated as one, not an assumption of convenience.
+
+  FOUR - THE BIGGEST CORRECTION IS TO THE MODEL ITSELF AND IT BEARS ON A NUMBER THIS FILE HAS
+  QUOTED. At r = 2.301 the formula gives 12x for z=+3, 149x for z=+6 and 116,791x for z=+14.
+  R371 quoted 1e4-1e6x for the CPC+14 cationic carrier from this formula as though it were a
+  concentration ratio. Ideal Donnan assumes a dilute, ideal, point-charge solute; at |z|>=3 what
+  it predicts is not a free-solution partition but ELECTROSTATIC ADSORPTION onto the fixed
+  charge - which is precisely what vedadghavami2022 measured and described as a BOUND DEPOT.
+  An adsorbed molecule is retained; it is not necessarily free to engage a receptor. THE
+  VALIDATED ENVELOPE IS MW 96-666 Da AND |z| <= 2, and beyond it r^z is an uptake and retention
+  index, not a partition.
+
+  FIVE - AND IT CORRECTS TWO RANKINGS THE FILE ACTED ON. R428 priced the delivery multiplier by
+  SIZE alone and put oral sulfate at 96 Da at the top of the curve with a multiplier of about
+  1.0. SULFATE IS A DIANION: size term 1.000, charge term 0.189, CALIBRATED PARTITION 0.189 -
+  a 5.3-fold penalty, not unity. R428 applied the size half of the model and dropped the charge
+  half on the one agent in the stack where charge dominates. That converges with something the
+  atlas already held and had never joined to it: a 5-fold passive penalty is exactly why the
+  plate carries a dedicated sulfate transporter, SLC26A2 at 118 CPM in 82 per cent of cells.
+  Separately, R153's neutral partitions of 0.82 and 0.74 must be size terms, since a neutral
+  solute's Donnan partition is exactly 1.0 - and the farnum-fitted size function gives 0.67 and
+  0.53 at those weights, so that size penalty was 20-40 per cent too generous.
+
+  WHAT IT DOES NOT DELIVER. Not a measured drug concentration in a human growth plate.
+  menezes2006 and serrat2010 measure TRACERS, not drugs, and R155's core claim is untouched.
+  The calibration is porcine and murine and must be labelled so; no quantitative MRI of a human
+  physis has ever been published. And li2008dce's confound - that physeal enhancement carries a
+  metaphyseal vascular component - is not addressed by an equilibrium fit. Separating it needs
+  the TIME COURSE, which kang2017 has at 10-minute intervals and this round did not use. That is
+  the obvious next step and it needs no new experiment.
+
+quantitative:
+  - parameter: Anion molecular weights of the calibration agents, computed two independent ways
+    value: Gd-DTPA 2- 545.6; Gd-BOPTA 2- 665.7; Gd-DOTA - 557.7; gadobutrol 604.7; gadoteridol 558.7
+    unit: Da
+    species: not_applicable
+    source_ref: kang2017
+    note: >
+      PubChem salt MW (938.0 / 1058.1 / 753.9 / 604.7 / 558.7) minus n protonated meglumine at
+      196.22 Da, cross-checked against the anion molecular formula. The two routes agree.
+      menezes2006's pair differs by 2.4 per cent; kang2017's two z=-2 agents differ by 22 per
+      cent with the LARGER giving the LARGER signal, so size runs the wrong way for its anomaly.
+  - parameter: T1 relaxivity of the four kang2017 agents, water and plasma, 1.5 T, 37 C
+    value: water Gd-BOPTA 4.0 / Gd-DTPA 3.3 / Gd-DOTA 2.9 / gadobutrol 3.3; plasma 6.3 / 4.1 / 3.6 / 5.2
+    unit: mM-1 s-1
+    species: not_applicable
+    source_ref: rohrer2005
+    note: >
+      Tables 3 and 4. Gd-BOPTA carries 1.21x the relaxivity of Gd-DTPA in a protein-free bath and
+      1.54x in plasma, the difference arising from weak transient albumin binding. dGEMRIC
+      measures dR1 = r1 x [Gd], so slopes across agents are not comparable without this.
+  - parameter: kang2017 slope differences, relaxivity-corrected to a common r1
+    value: raw 0.037 / 0.022 / 0.018 / 0.011; plasma-corrected 0.0241 / 0.0220 / 0.0205 / 0.0087
+    unit: dimensionless slope difference (control minus trypsin)
+    species: porcine
+    source_ref: kang2017
+    note: >
+      Order is Gd-BOPTA 2-, Gd-DTPA 2-, Gd-DOTA -, gadobutrol 0. The raw Gd-BOPTA/Gd-DTPA ratio
+      of 1.68x becomes 1.39x on water relaxivities and 1.09x on plasma relaxivities. The
+      apparent superiority of double-negative over single-negative agents is also substantially
+      a relaxivity effect: corrected, z=-1 sits at 0.0205 against z=-2 at 0.0220.
+  - parameter: Charge-independent baseline in the kang2017 series
+    value: 0.0087 to 0.0110
+    unit: dimensionless slope difference at z = 0
+    species: porcine
+    source_ref: kang2017
+    note: >
+      Under ideal Donnan a NEUTRAL solute is completely insensitive to fixed charge, so the
+      gadobutrol slope difference should be zero and is not. It is 38 to 50 per cent of the
+      z=-2 value. This is a porosity and water-content term created by proteoglycan removal and
+      it must be subtracted before the charge term is read. Nobody had separated the two.
+  - parameter: Trypsin depletion required to reconcile the measured fixed charge density with the corrected valence ratio
+    value: 33.6 per cent at cF 0.19 M; 73.1 per cent at cF 0.28 M; 85.5 per cent at cF 0.35 M
+    unit: fraction of fixed charge removed
+    species: porcine
+    source_ref: lesperance1992
+    note: >
+      Using plasma relaxivities. cF is MEASURED by sodium NMR, so this is a falsification test
+      and not a fit; the only free parameter is the depletion, which kang2017 verified
+      qualitatively by safranin-O but never quantified. On WATER relaxivities no depletion
+      between 0 and 1 reconciles the data at any measured cF - so the model's survival is
+      conditional on Gd-BOPTA's in-cartilage relaxivity approaching its plasma value.
+  - parameter: Fitted size term for growth-plate entry
+    value: f_size(MW) = exp(-0.1506 * (MW^(1/3) - 332^(1/3)))
+    unit: fraction of vascular concentration
+    species: mouse
+    source_ref: farnum2006
+    note: >
+      One parameter, four points, anchored at f(332 Da) = 1. Fitted 332 -> 1.000, 10 kDa ->
+      0.111 (observed 0.10), 40 kDa -> 0.016 (observed below a few per cent detection limit).
+      THE WORST POINT IS 3 kDa - fitted 0.323 against an observed 0.50-0.60 - and it is also
+      the point farnum2006 itself reports two ways, ~60 per cent in the text and half in the
+      Fig 6 caption. An interpolant, not a mechanistic model.
+  - parameter: Calibrated partition of the free plasma concentration for stack agents
+    value: anastrozole 1.00; erdafitinib 0.90; SAG 1.99; vepdegestrant 0.73; fostriecin 0.17; sulfate 0.19
+    unit: C_plate / C_plasma_free
+    species: not_applicable
+    source_ref: lesperance1992
+    note: >
+      cF 0.28 M, cs 0.15 M, r 2.301, combined as f_size(MW) x r^z. All six are inside the
+      validated envelope of MW 96-666 Da and |z| <= 2. CNP-38, cANF(4-23) and somatropin fall
+      outside it and their absolute values are not usable - only the sign is.
+  - parameter: r^z at the measured fixed charge density, showing where the model stops being a partition
+    value: z=+1 2.3x; z=+2 5.3x; z=+3 12x; z=+6 149x; z=+14 116,791x
+    unit: predicted enrichment
+    species: not_applicable
+    source_ref: vedadghavami2022
+    note: >
+      R371 quoted 1e4-1e6x for CPC+14 from this formula as a concentration ratio. Ideal Donnan
+      assumes a dilute ideal point-charge solute; at |z|>=3 the prediction corresponds to
+      electrostatic adsorption, which is what vedadghavami2022 observed and called a bound
+      depot. Retention is not free concentration. Read r^z as an uptake index beyond |z| = 2.
+
+localization: >
+  Calibration tissue is porcine articular cartilage (kang2017, patella) and porcine growth
+  plate, epiphyseal cartilage, secondary ossification centre and metaphysis (menezes2006,
+  3-week-old piglet knee). The size term is murine proximal tibial growth plate (farnum2006).
+  The fixed charge density is calf epiphyseal and articular cartilage (lesperance1992). No
+  human physis has ever been quantified by any of these methods.
+
+human_evidence: absent
+human_evidence_note: >
+  Every element of the calibration is porcine, murine or bovine. A targeted query for
+  quantitative MRI of the human physis - T1 mapping, dGEMRIC or dynamic contrast kinetics -
+  returns nothing, and R428 recorded the same absence. The calibrated function is therefore an
+  animal-derived estimate applied to a human stack, and its outputs are ratios rather than
+  concentrations.
+
+species_basis:
+  - porcine
+  - mouse
+  - bovine
+
+confidence: C
+
+translation_risk: high
+translation_risk_reason: >
+  The model is calibrated on porcine articular cartilage and murine growth plate and applied to
+  a human growth plate whose fixed charge density has never been measured. The charge term is
+  validated only over |z| <= 2 and the size term only over 332 Da to 40 kDa in anionic tracers,
+  while several agents of interest sit outside both. And the independence of the size and
+  charge terms - the assumption that lets them be multiplied - has never been tested in
+  cartilage in any species.
+
+last_verified: 2026-08-14
+
+key_refs:
+  - ref_id: kang2017
+  - ref_id: menezes2006
+  - ref_id: rohrer2005
+  - ref_id: farnum2006
+  - ref_id: lesperance1992
+  - ref_id: li2008dce
+  - ref_id: vedadghavami2022
+  - ref_id: serrat2014
+
+edges:
+  - to: round428_the_transport_finding_refiled_as_the_exposure_term_and_the_multiplier_priced_honestly
+    type: corrects
+    note: >
+      R428 priced the delivery multiplier from the SIZE curve alone and concluded sulfate at
+      96 Da sits at the ceiling with a multiplier of about 1.0. Sulfate is a dianion and the
+      calibrated partition is 0.189, a 5.3-fold penalty. R428's broader conclusion - that the
+      multiplier is near unity for erdafitinib and anastrozole and only bites on the peptide
+      arm - survives, because those two are neutral and the size term does govern them.
+  - to: round371_the_smo_agonist_choice_and_the_cartilage_wall_that_does_not_exist_at_this_size
+    type: corrects
+    note: >
+      R371 computed 1e4-1e6x enrichment for CPC+14 at z=+14 from r^z and read it as a
+      concentration ratio. Beyond |z| = 2 that formula describes electrostatic adsorption, not
+      free-solution partition, and vedadghavami2022's own description of a bound depot is the
+      measured form of it. R371's Donnan arithmetic for the monovalent SMO agonists is
+      unaffected and sits inside the validated envelope.
+  - to: growth_plate_drug_exposure
+    type: extends
+    note: >
+      The exposure term's core claim is untouched: no growth-promoting agent has a published
+      growth-plate tissue concentration in any species, and tracers are not drugs. What this
+      round adds is that the model used in place of that measurement now has a validated
+      envelope and a known failure mode outside it.
+
+open_questions:
+  - g_l12_428a
+  - g_l12_430a
+  - g_l6mech_427a

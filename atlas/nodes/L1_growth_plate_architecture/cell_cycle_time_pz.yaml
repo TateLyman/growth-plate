@@ -1,0 +1,296 @@
+id: cell_cycle_time_pz
+name: Proliferative zone chondrocyte cell cycle time
+aliases:
+- PZ cycle time
+- chondrocyte cell cycle duration
+type: process
+layer: L1
+stub: false
+summary: 'Proliferative-zone chondrocytes are slow-cycling compared with most renewing tissues, and the cycle length
+  is set almost entirely by G1. In 28-day-old rats measured in vivo by repeated bromodeoxyuridine pulses, total cycle
+  time is 30.9 h in the fast proximal tibia, 34.0 h in the distal radius, 48.7 h in the distal tibia and 76.3 h in
+  the slow proximal radius; the proximal tibia and distal radius do not differ significantly but all other pairwise
+  differences do. S phase is 3.4-6.1 h, G2 is 3.0 h and M is 0.5-0.6 h, so essentially the whole 2.5-fold spread in
+  cycle time is G1. This makes G1 length a locally controlled determinant of differential growth, in parallel with
+  the hypertrophic volume set point. The human situation is very different and much worse characterised: Kember and
+  Sissons derived a mean cycle time of about 20 days for the human distal femoral proliferative zone from a column
+  length of 24 cells and a radiographic growth rate of 1.4 cm/yr, and explicitly warned against extrapolating rodent
+  kinetics to humans. That figure is inferred, not measured; it assumes steady state and that every proliferative-zone
+  cell cycles. Thurston and Kember''s in vitro tritiated thymidine labelling of human plates found no labelled cells
+  at all in two of four subjects. The two that did label give the only human numbers of their kind: a labelling index
+  of 4.4% and a proliferation zone of 28 cells in the distal femur of a 10-year-old girl, and 3.4-4.0% with 13 proliferation-zone
+  cells in the metatarsals and distal fibula of an 18-month-old girl - against 10-15% in actively growing rodents.
+  From those the authors recomputed the human cycle time as roughly 15 days (28 cells / 1.9 cells per day), which
+  supersedes the 20-day figure but reproduces its circularity exactly: the 1.9 cells/day comes from dividing a radiographic
+  growth rate by the measured cell height, so the cycle time still cannot independently predict growth. The authors
+  also state plainly that S-phase duration cannot be measured by a single-pulse method; their 16 h estimate, or 22
+  h after a +40% age-distribution correction taken from a rat computer simulation, is longer than any other human
+  tissue, which they attribute either to method artefact or to the large hypoxic inert zone slowing metabolism.'
+quantitative:
+- parameter: TOTAL CELL CYCLE TIME, PROLIFERATIVE ZONE, HUMAN
+  value: 20, about +/-50% (i.e. 10-30); floor about 16 days
+  unit: days
+  conditions: human distal femur at ages 5-8 years. Derived from measured distal-femoral growth rate 1.4 cm/yr = 38
+    um/day (Harris growth-arrest lines on serial Harpenden Growth Study radiographs), terminal cell height 33 um giving
+    1.2 new cells per column per day, and 36 cells in the combined maturation and proliferation zones of which two
+    thirds are taken as proliferative by analogy with rabbit, i.e. 24 cells
+  species: human
+  source_ref: kember1976
+  uncertainty: 'ADDED 2026-08-06 ON READING kember1976 IN FULL. The node has cited this reference since it was created
+    and carried no human value; every quantitative row was rat. THE UNITS ARE DAYS AGAINST HOURS IN EVERY OTHER ROW:
+    20 days is 480 h against 30.9 h in fast rat proximal tibia, a roughly 15-fold difference in the same parameter.
+    It is a derivation and not a measurement - no human growth plate has been labelled - and its weakest step, the
+    proliferative fraction of the column, is imported from rabbit; the authors give at least 20 proliferative cells
+    as a floor, hence about 16 days. It is also a MEAN over a heterogeneous zone. QUALIFIED 2026-08-06 (CORR-014).
+    kember1993 gives the method''s precision as about +/-50% and states that the low human labelling percentage does
+    NOT unequivocally mean slower cycling, because the human growth fraction may be low and the cells in cycle could
+    be dividing as fast as in rodents - undecidable while human S-phase duration remains unmeasured. THE COMPARISON
+    WITH THE RAT ROWS IN THIS NODE IS THEREFORE BETWEEN A MEAN OVER A WHOLE ZONE (human, derived) AND A CYCLE TIME
+    OF CYCLING CELLS (rat, BrdU-measured), and those are not the same quantity.'
+- parameter: growth fraction in the same four rat plates, which is what makes the rat cycle times commensurable with
+    a human zone mean
+  value: 0.99, 0.99, 0.98, 0.89
+  unit: fraction of proliferative-zone cells in cycle
+  conditions: proximal tibia, distal radius, distal tibia, proximal radius; continuous BrdU by osmotic pump, labelling
+    index followed to plateau at 12, 24, 48 and 72 h
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'ADDED 2026-08-06. THIS RESOLVES HALF OF THE COMMENSURABILITY PROBLEM THIS NODE RECORDED THE SAME DAY:
+    because the rat growth fraction is essentially 1, the rat cycle times ARE the rat zone means, and the comparison
+    with the human 20-day zone mean is legitimate on the rat side. It remains illegitimate on the human side, where
+    the growth fraction is unmeasured. The one plate below 0.99 is the slowest-growing.'
+- parameter: total cell cycle time, proliferative zone
+  value: '30.9'
+  unit: h
+  conditions: proximal tibia, 28-day-old rat, repeated BrdU pulse labelling, regression of labelling index on inter-pulse
+    interval
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: not reported; differences among plates tested at p<0.05
+- parameter: total cell cycle time, proliferative zone
+  value: '34.0'
+  unit: h
+  conditions: distal radius, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: not significantly different from proximal tibia
+- parameter: total cell cycle time, proliferative zone
+  value: '48.7'
+  unit: h
+  conditions: distal tibia, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: significantly different from proximal tibia, p<0.05
+- parameter: total cell cycle time, proliferative zone
+  value: '76.3'
+  unit: h
+  conditions: proximal radius, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: significantly different from all others, p<0.05
+- parameter: S phase duration
+  value: 3.4-6.1
+  unit: h
+  conditions: proliferative zone, four growth plates, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: range across four plates
+- parameter: G2 phase duration
+  value: '3.0'
+  unit: h
+  conditions: proliferative zone, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: not reported
+- parameter: M phase duration
+  value: 0.5-0.6
+  unit: h
+  conditions: proliferative zone, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: range across four plates
+- parameter: mean cell cycle time, proliferative zone (derived, not measured)
+  value: '20'
+  unit: days
+  conditions: human distal femur, ages 5-8 y; the derivation is stated in full - new cells per day = growth rate /
+    mean hypertrophic cell height = 38 um/day / 33 um = 1.2 per day, and cycle time = 24 proliferating cells / 1.2
+    = 20 days
+  species: human
+  source_ref: kember1976
+  uncertainty: 'derived quantity, and derived from the growth rate it would be used to predict. Two further assumptions
+    are load-bearing and both are stated by the authors: (i) the cell height IS the whole axial advance per cycle,
+    i.e. matrix synthesis contributes nothing to elongation, which rat stereology contradicts (wilsman1996: cells
+    are 50-69% of the volume removed at the junction); (ii) the proliferating fraction of the columnar zone is two-thirds,
+    a ratio taken from the RABBIT, applied to a measured human count of 36 maturing-plus-proliferating cells to give
+    24.'
+- parameter: mean cell cycle time, proliferative zone (lower bound, author-stated)
+  value: '16'
+  unit: days
+  conditions: human distal femur, ages 5-8 y; the authors' own lower bound, from their statement that it is unlikely
+    that fewer than twenty cells lie in the proliferation zone
+  species: human
+  source_ref: kember1976
+  uncertainty: a bound on the N_p input only; it does not relax the assumption that the cell height is the whole axial
+    advance, which is the assumption that would raise the estimate rather than lower it
+- parameter: mean cell cycle time, proliferative zone (derived, not measured)
+  value: '30'
+  unit: days
+  conditions: human distal femur, 3.5-year-old specimen; same method, which the authors describe as less reliable
+    data
+  species: human
+  source_ref: kember1976
+  uncertainty: single specimen; the authors give 20 days at 2 years and 30 days at 3.5 years and decline to estimate
+    at all for the 13- and 14-year-olds because of growth-spurt variability
+- parameter: growth fraction, proliferative zone
+  value: 0.89-0.99
+  unit: fraction
+  conditions: 28-day-old Long-Evans rat, four growth plates; maximum cumulative BrdU labelling index, 0.99 proximal
+    tibia, 0.99 distal radius, 0.98 distal tibia, 0.89 proximal radius
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: the labelling index is followed to plateau (43-81-99% at 12-24-48 h in the proximal tibia), so this
+    is a measured saturation, not an assumption. It is the strongest available support for the 100%-growth-fraction
+    assumption in the human derivations - in RAT, and lowest in the slowest plate, which is the direction that matters
+    for a slow human plate.
+- parameter: mean cell cycle time, proliferative zone (derived, not measured)
+  value: '15'
+  unit: days
+  conditions: human distal femur, 10-year-old girl; 28 measured proliferation-zone cells divided by 1.9 cells/day,
+    where 1.9 = 38 um/day growth contribution / 20.5 um measured hypertrophic cell height
+  species: human
+  source_ref: thurston1985
+  uncertainty: derived quantity, and derived from the growth rate it would be used to predict; assumes steady state
+    and a 100% growth fraction; n=1 subject
+- parameter: S phase duration (derived, not measured)
+  value: '16'
+  unit: h
+  conditions: human distal femur, from a 4.4% labelling index assuming cell age distribution proportional to phase
+    duration
+  species: human
+  source_ref: thurston1985
+  uncertainty: the authors state explicitly that S-phase duration cannot be measured by this single-pulse method;
+    this figure is an inference from the labelling index under an assumption the same paragraph calls doubtful for
+    human tissue
+- parameter: S phase duration (derived, not measured)
+  value: '22'
+  unit: h
+  conditions: human distal femur, the 16 h figure after a +40% correction for a more probable cell age distribution
+    taken from a rat computer simulation (Kember 1969)
+  species: human
+  source_ref: thurston1985
+  uncertainty: the correction factor is rodent-derived and the authors doubt its applicability to man; the resulting
+    value is longer than reported for any other human tissue, which the authors read as either method error or genuine
+    hypoxic slowing
+- parameter: labelling index, proliferation zone
+  value: '4.4'
+  unit: '%'
+  conditions: human distal femur, 10-year-old girl, 1 h in vitro tritiated thymidine, >=100 labelled cells scored
+  species: human
+  source_ref: thurston1985
+  uncertainty: n=1 subject; in vitro labelling of explanted tissue
+- parameter: labelling index, proliferation zone
+  value: 3.4-4.0
+  unit: '%'
+  conditions: human metatarsals (3.4%) and distal fibula (4.0%), 18-month-old girl
+  species: human
+  source_ref: thurston1985
+  uncertainty: n=1 subject; the fibula is described by the authors as grossly abnormal
+- parameter: labelling index, proliferation zone
+  value: 10-15
+  unit: '%'
+  conditions: rodent during active growth, quoted by the authors as the comparison figure
+  species: rat
+  source_ref: thurston1985
+  uncertainty: quoted from a review (Kember 1983) rather than measured in this study; recorded only as the comparator
+    the authors used
+- parameter: labelling index, proliferation zone
+  value: 4.0-10.6
+  unit: '%'
+  conditions: pig distal femur, five animals; 10.6% at 8.0 months, 8.5% at 8.5 months and 7.3% at 10.5 months in the
+    three precisely aged animals, i.e. falling with age
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: two of the five animals were abattoir specimens of uncertain age and gave the two lowest indices; range
+    across animals
+- parameter: mean cell cycle time, proliferative zone
+  value: '2'
+  unit: days
+  conditions: rodent, as quoted for comparison by the authors
+  species: rat
+  source_ref: kember1976
+  uncertainty: author's comparison figure
+localization:
+- 'rat PZ: measured in vivo (wilsman1996a)'
+- 'human distal femur PZ: labelling index and cell count measured; cycle time derived from them (thurston1985)'
+- 'human PZ: cycle time still never measured directly'
+human_evidence: direct
+human_evidence_note: UPGRADED FROM INDIRECT 2026-08-06. kember1976 gives a human distal-femoral proliferative cell
+  cycle time of 20 days at ages 5-8, derived from human growth rates and human histology. It is a derivation rather
+  than a label-based measurement, and no label-based human measurement exists or is likely to.
+species_basis:
+- rat
+- human
+- porcine
+translation_risk: high
+translation_risk_reason: The human and rat values differ by roughly 16-fold and the human value is derived rather
+  than measured. Any inference about proliferation-targeting drug exposure windows, radiation sensitivity or chemotherapy
+  effects on the physis depends on which figure is right.
+confidence: C
+key_refs:
+- ref_id: wilsman1996a
+  pmid: '8764865'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Total PZ cycle time in rat ranges from 30.9 h to 76.3 h across four plates, with nearly all the
+    variation in G1.
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: 'Human distal femur, 12 subjects: hypertrophic cell height MEASURED at 33 +/- 5 um, 1.2 new cells/day,
+    24 proliferating cells (two-thirds of a measured 36, the ratio taken from rabbit) and a derived mean cycle time
+    of ~20 days with a stated 16-day lower bound; explicit warning against rodent-to-human extrapolation.'
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Rat proliferative-zone growth fraction reaches 0.89-0.99 by cumulative BrdU labelling, measured
+    to plateau rather than assumed.
+- ref_id: thurston1985
+  pmid: '3864550'
+  first_author: Thurston MN
+  year: 1985
+  type: primary
+  one_line_finding: Human proliferation zone is 28 cells with a 4.4% labelling index in a 10-year-old distal femur,
+    giving a re-derived cycle time of ~15 days; two of four human subjects gave no labelled cells at all, and S-phase
+    duration is explicitly beyond the method.
+- ref_id: farnum1993
+  pmid: '8443686'
+  first_author: Farnum CE
+  year: 1993
+  type: primary
+  one_line_finding: Established single- and repeated-pulse BrdU labelling as the method for measuring growth plate
+    proliferative kinetics in vivo.
+- ref_id: kember1993
+  pmid: '8219479'
+  first_author: Kember NF
+  year: 1993
+  type: review
+  one_line_finding: Method precision +/-50%; low human labelling may reflect a low growth fraction rather than slow
+    cycling.
+open_questions:
+- g_l1arch_002
+- g_l1arch_012
+last_verified: '2026-08-06'
+confidence_note: 'HELD AT C on 2026-08-06 after adding the human row. The human value is a derivation with an imported
+  rabbit assumption and n=12 subjects, and the rat values it sits beside are properly measured - so the node''s grade
+  is not raised by adding it. What the addition changes is the node''s reach: any model that carries a cycle time
+  from rodent into human is now carrying a 15-fold error, and the atlas can say so. Further qualified 2026-08-06 (CORR-014):
+  the human row is a zone mean of unknown growth fraction, the rat rows are measured cycle times of cycling cells,
+  and the node does not claim they are commensurable. Partially resolved 2026-08-06: wilsman1996 measures the rat
+  growth fraction at 0.89-0.99, so the rat cycle times and the human zone mean differ by at most 11% on that account
+  in rat. The human growth fraction is still unmeasured, so the comparison is still not clean - but the ambiguity
+  now lives entirely on the human side.'

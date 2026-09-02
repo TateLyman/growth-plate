@@ -1,0 +1,83 @@
+id: allometry_organ_scaling
+name: Allometry and organ scaling
+type: process
+layer: L9
+stub: false
+summary: 'Allometry is the statement that organ size scales with body size as a power law rather than
+  proportionally, and its relevance here is that different organs have different exponents, so shape necessarily
+  changes as size changes. The oldest quantitative human dataset on this is the regression of brain weight
+  on body height and on body weight across 23 age groups from birth to the ninth decade, which shows clearly
+  differential rates of change: the brain-to-height and brain-to-weight ratios fall steeply through childhood
+  because the body continues to grow long after the brain has stopped (dekaban1978). The MRI charts give
+  the same relation with modern precision - grey matter volume peaks at 5.9 years while stature is still
+  six years from its peak velocity (bethlehem2022). This atlas records allometry as a constraint rather
+  than a mechanism: any model that reproduces cm/yr at the growth plate must not simultaneously predict
+  isometric growth of the organism, because the human body demonstrably does not grow isometrically. No
+  modern human dataset of organ-specific scaling exponents across postnatal development was located in
+  this sweep and this is logged as a quantitative gap.'
+quantitative:
+- parameter: age groups over which brain weight was regressed on body height and weight
+  value: '23'
+  unit: groups
+  conditions: birth to 86+ years, 4736 pathology-free brains
+  species: human
+  source_ref: dekaban1978
+  uncertainty: as published
+- parameter: direction of change in the brain weight to body height ratio through childhood
+  value: decreasing
+  unit: not_applicable
+  conditions: computed regression lines and ratios by age group
+  species: human
+  source_ref: dekaban1978
+  uncertainty: the brain stops growing while stature continues
+- parameter: interval between peak grey matter volume and peak height velocity
+  value: about 6
+  unit: years
+  conditions: GMV peak 5.9 y versus female APHV 11.8 y
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: derived by subtraction from the two normative models
+- parameter: published organ-specific postnatal allometric exponents for humans
+  value: not located
+  unit: exponent
+  conditions: searched Europe PMC for human organ allometry across development
+  species: human
+  source_ref: dekaban1978
+  uncertainty: no source found; see gap g_l9organism_017
+localization:
+- 'human whole organism: organ weight or volume against body height and weight'
+human_evidence: direct
+human_evidence_note: Both retained sources are direct human measurements, though neither reports fitted
+  scaling exponents.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human measurements.
+confidence: C
+claim_grades:
+- claim: Human postnatal growth is not isometric and organ-to-body ratios change systematically with age
+  grade: A
+  basis: Directly measured brain-to-height and brain-to-weight ratios across 23 age groups plus modern
+    MRI milestones.
+- claim: Organ-specific allometric exponents for human postnatal growth are established
+  grade: X
+  basis: 'Not traceable: no source reporting fitted human postnatal organ scaling exponents was found
+    in this sweep. Logged as gap g_l9organism_017.'
+key_refs:
+- ref_id: dekaban1978
+  pmid: '727739'
+  first_author: Dekaban AS
+  year: 1978
+  type: primary
+  one_line_finding: Regressions of brain weight on body height and weight across 23 age groups show differential
+    rates of change.
+- ref_id: bethlehem2022
+  pmid: '35388223'
+  first_author: Bethlehem RAI
+  year: 2022
+  type: primary
+  one_line_finding: Brain tissue volume milestones fall years before the skeletal pubertal spurt.
+open_questions:
+- g_l9organism_015
+- g_l9organism_017
+last_verified: '2026-08-05'

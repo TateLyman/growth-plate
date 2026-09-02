@@ -1,0 +1,67 @@
+id: periosteal_stem_cell
+name: Periosteal stem cell (PSC)
+aliases:
+- CTSK-lineage periosteal stem cell
+- PSC
+type: cell_type
+summary: 'Cathepsin K-cre unexpectedly labels periosteal rather than osteoclastic mesenchyme from E14.5
+  onward, and within the CTSK-lineage mesenchymal cells three populations separate on flow cytometry,
+  all THY- 6C3- CD49f-dim CD51-dim: PSC (CD200+ CD105-), periosteal progenitor 1 (CD200- CD105-) and periosteal
+  progenitor 2 (CD105+, CD200 variable). PSCs show clonal multipotency and self-renewal and sit at the
+  apex of this hierarchy; they mediate intramembranous bone formation, which is the functional distinction
+  from the endosteal compartment. The uncomfortable observation for the field is that the PSC immunophenotype
+  (CD200+CD105-Thy-6C3-) is the same as the mSSC immunophenotype - the two are separated by anatomy and
+  by Ctsk lineage history, not by surface markers. Subsets of CTSK-lineage cells also express Gremlin1
+  and Nestin, so three published ''distinct'' stem cell schemes intersect within the periosteum.'
+quantitative:
+- parameter: Earliest embryonic day of periosteal CTSK-mGFP labelling
+  value: E14.5
+  unit: embryonic day
+  conditions: Ctsk-cre;mTmG mouse
+  species: mouse
+  source_ref: debnath2018
+  uncertainty: not reported
+- parameter: Populations resolved within CTSK-lineage periosteal mesenchyme
+  value: '3'
+  unit: populations
+  conditions: THY- 6C3- CD49f-dim CD51-dim gate, mouse
+  species: mouse
+  source_ref: debnath2018
+  uncertainty: not applicable
+localization:
+- 'mouse periosteum of long bones and calvarium: confirmed (debnath2018)'
+- 'mouse endosteum: separate compartment, physically divided by the cortex (debnath2018)'
+- 'human periosteum: candidate LRP1+CD13+ population reported separately; not verified here'
+human_evidence: absent
+human_evidence_note: The CTSK-lineage definition requires Cre lineage tracing and has no human counterpart
+  in this evidence base.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Lineage-defined mouse population; in humans CTSK is best known as an osteoclast
+  protease, so the lineage inference does not transfer by expression alone.
+confidence: C
+key_refs:
+- ref_id: debnath2018
+  pmid: '30250253'
+  doi: 10.1038/s41586-018-0554-8
+  first_author: Debnath S
+  year: 2018
+  type: primary
+  one_line_finding: Identifies the CD200+CD105- CTSK-lineage periosteal stem cell and its two-progenitor
+    hierarchy
+- ref_id: chan2015
+  pmid: '25594184'
+  doi: 10.1016/j.cell.2014.12.002
+  first_author: Chan CK
+  year: 2015
+  type: primary
+  one_line_finding: Defines the mSSC with an overlapping surface phenotype, showing markers alone do not
+    specify compartment
+open_questions:
+- g_l2stem_004
+contradicts:
+- mouse_skeletal_stem_cell_hierarchy
+layer: L2
+stub: false
+last_verified: '2026-08-05'

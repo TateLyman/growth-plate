@@ -1,0 +1,4817 @@
+Resource
+Human skeletal development and regeneration are
+shaped by functional diversity of stem cells across
+skeletal sites
+Graphical abstract
+Highlights
+d Single-cell RNA sequencing of hSSCs across ten skeletal
+sites and adulthood
+d Identiﬁcation, mapping, and functional assessment of four
+principal hSSC subtypes
+d A ﬁbrogenic hSSC subtype switch drives age- and disease-
+related skeletal impairments
+d New Boolean gene regulatory network analysis informs the
+approach to target impaired hSSCs
+Authors
+Thomas H. Ambrosi, Sahar Taheri,
+Kun Chen, ..., Michael T. Longaker,
+Debashis Sahoo, Charles K.F. Chan
+Correspondence
+thambrosi@ucdavis.edu (T.H.A.),
+longaker@stanford.edu (M.T.L.),
+dsahoo@ucsd.edu (D.S.)
+In brief
+Ambrosi and colleagues proﬁle human
+skeletal stem cells (hSSCs) across ten
+fetal skeletal sites and from patients
+throughout adulthood, identifying,
+mapping, and functionally testing four
+distinct hSSC subtypes. Skeletal aging
+and disease are characterized by a
+dominant ﬁbrogenic hSSC variant, but
+targeting deﬁned gene regulatory
+networks reinstates functional hSSC
+diversity.
+Ambrosi et al., 2025, Cell Stem Cell 32, 811–823
+May 1, 2025 ª 2025 The Author(s). Published by Elsevier Inc.
+https://doi.org/10.1016/j.stem.2025.02.013
+ll
+Resource
+Human skeletal development and regeneration
+are shaped by functional diversity of stem cells
+across skeletal sites
+Thomas H. Ambrosi,1,2,3,17,* Sahar Taheri,4 Kun Chen,1 Rahul Sinha,2 Yuting Wang,1,2,3,5 Ethan J. Hunt,1
+L. Henry Goodnough,6 Matthew P. Murphy,2,3,7 Holly M. Steininger,2,3 Malachia Y. Hoover,2,3 Franco Felix,2
+Kelly C. Weldon,1 Lauren S. Koepke,2,3 Jan Sokol,2,3 Daniel Dan Liu,2 Liming Zhao,2,3,5 Stephanie D. Conley,2 Wan-Jin Lu,2
+Maurizio Morri,8 Norma F. Neff,8 Noelle L. Van Rysselberghe,6 Erika E. Wheeler,1,9 Yongheng Wang,9 J. Kent Leach,1,9
+Augustine Saiz,1 Aijun Wang,9,10,11 George P. Yang,12,16 Stuart Goodman,6 Julius A. Bishop,6 Michael J. Gardner,6
+Derrick C. Wan,13 Irving L. Weissman,2,14 Michael T. Longaker,2,3,13,* Debashis Sahoo,4,15,* and Charles K.F. Chan2,3,13,16
+1Department of Orthopaedic Surgery, UC Davis Health, Sacramento, CA 95817, USA
+2Institute for Stem Cell Biology and Regenerative Medicine, Stanford University School of Medicine, Stanford, CA 94305, USA
+3Department of Surgery, Stanford University School of Medicine, Stanford, CA 94305, USA
+4Department of Computer Science and Engineering, Jacob’s School of Engineering, University of California, San Diego, La Jolla, CA
+92093, USA
+5Department of Orthopaedic Surgery, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology,
+Wuhan, China
+6Department of Orthopaedic Surgery, Stanford Hospital and Clinics, Stanford, CA 94063, USA
+7Blond McIndoe Laboratories, Division of Cell Matrix Biology and Regenerative Medicine, School of Biological Sciences, Faculty of Biology,
+Medicine and Health, The University of Manchester, Manchester Academic Health Science Centre, Manchester, UK
+8Chan Zuckerberg BioHub, San Francisco, CA 94158, USA
+9Department of Biomedical Engineering, University of California, Davis, Davis, CA 95616, USA
+10Department of Surgery, University of California Davis Health, Sacramento, CA 95817, USA
+11Institute for Pediatric Regenerative Medicine, Shriners Hospitals for Children, Sacramento, CA 95817, USA
+12Department of Surgery, University of Alabama at Birmingham, Birmingham, AL 35233, USA
+13Hagey Laboratory for Pediatric Regenerative Medicine, Stanford University School of Medicine, Stanford University, Stanford, CA
+94305, USA
+14Ludwig Center for Cancer Stem Cell Biology and Medicine at Stanford University, Stanford, CA 94305, USA
+15Department of Pediatrics, University of California, San Diego, La Jolla, CA 92093, USA
+16Deceased
+17Lead contact
+*Correspondence: thambrosi@ucdavis.edu (T.H.A.), longaker@stanford.edu (M.T.L.), dsahoo@ucsd.edu (D.S.)
+https://doi.org/10.1016/j.stem.2025.02.013
+SUMMARY
+The skeleton is one of the most structurally and compositionally diverse organ systems in the human body,
+depending on unique cellular dynamisms. Here, we integrate prospective isolation of human skeletal stem
+cells (hSSCs; CD45CD235aTIE2CD31CD146PDPN+CD73+CD164+) from ten skeletal sites with func-
+tional assays and single-cell RNA sequencing (scRNA-seq) analysis to identify chondrogenic, osteogenic,
+stromal, and ﬁbrogenic subtypes of hSSCs during development and their linkage to skeletal phenotypes.
+We map the distinct composition of hSSC subtypes across multiple skeletal sites and demonstrate their
+unique in vivo clonal dynamics. We ﬁnd that age-related changes in bone formation and regeneration disor-
+ders stem from a pathological ﬁbroblastic shift in the hSSC pool. Utilizing a Boolean algorithm, we uncover
+gene regulatory networks that dictate differences in the ability of hSSCs to generate speciﬁc skeletal tissues.
+Importantly, hSSC lineage dynamics are pharmacologically malleable, providing a new strategy to treat aber-
+rant hSSC diversity central to aging and skeletal maladies.
+INTRODUCTION
+Growth, maintenance, and regeneration of adult organ tissues
+require the constant replenishment of mature cell types by pools
+of resident stem cells. Revealing the identity and characterizing
+the ontogeny of these rare self-renewing, multipotent stem cells
+in different tissues could unlock the underlying biology behind
+degenerative conditions, including aging and cancer. The utility
+of a stem cell-centric approach to understanding disease is
+best exempliﬁed by studies on hematopoietic stem cells
+(HSCs), which give rise to the entire blood system and which
+have been revealed to play key roles in major aspects of
+Cell Stem Cell 32, 811–823, May 1, 2025 ª 2025 The Author(s). Published by Elsevier Inc.
+811
+This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+ll
+OPEN ACCESS
+
+hematopoiesis, from early development to age-related changes
+in immunity and blood-borne malignancies.1,2 Recent advances
+in single-cell RNA sequencing (scRNA-seq) analysis further re-
+vealed previously overlooked cellular heterogeneity in HSC pop-
+ulations while highlighting new aspects of their regulation by
+non-hematopoietic cell types that serve as their niche.3–5
+ScRNA-seq
+has
+also
+been
+applied
+to
+characterize
+the
+complexity of skeletal bone-resident niche populations in
+mice6–8 and humans.9,10 Nonetheless, our understanding of hu-
+man skeletal stem and progenitor cells remains limited due to a
+variety
+of
+challenges,
+including
+ethical
+and
+experimental
+accessibility.
+Although functionally intertwined with HSCs, the identity of a
+self-renewing, multipotent human skeletal stem cell (hSSC) has
+long been elusive. Several cell populations have been proposed
+to enrich stem and progenitor cell types that can create a hema-
+topoiesis-supporting microenvironment but have relied on un-
+speciﬁc single markers or prior in vitro expansion for functional
+assessment.11,12 Using a combination of eight cell surface
+markers, we recently described a distinct bona ﬁde hSSC in
+the fetal growth plate capable of giving rise to bone, cartilage,
+and stromal tissue.13,14 These stem cells can also be found in
+fracture calluses of regenerating adult bones and show a func-
+tional association with healing outcomes and decline during ag-
+ing.15,16 While HSC aging and blood diseases have been attrib-
+uted to aberrant clonal expansion and lineage output,17,18 which
+has been causally tied to skeletal stem cell (SSC) lineage
+dysfunction in mice,19,20 the underlying mechanism of hSSC
+dysfunction remains to be discovered. Additionally, as multiple
+skeletogenic populations have been observed in long bones of
+mice,21–27 a closer examination of human bone-forming stem
+cells is crucial to provide a better understanding of pathological
+changes in humans that are detrimental to skeletal health. In this
+study, we integrate scRNA-seq with functional, clonal, and
+spatial transcriptomic analysis of hSSCs to examine them during
+their development, aging, and disease states. Our ﬁndings reveal
+a striking diversity in hSSCs that is strongly associated with their
+speciﬁc anatomical locations. More importantly, we observe sig-
+niﬁcant functional disparities among hSSCs obtained from pa-
+tient samples, implying that alterations in stem cell diversity
+may be directly linked to various skeletal diseases. Speciﬁcally,
+we have identiﬁed an abnormal increase in ﬁbro-stromal hSSC
+subtypes in cases of age-related bone loss, fracture nonunions,
+and Fibrous Dysplasia (FD). This skewed stem cell population
+suggests a possible pathological shift, contributing to the pro-
+gression of these conditions.
+RESULTS
+Structural diversity in human bones is reﬂected by hSSC
+diversity
+To investigate stem cell diversity in the human skeleton, we
+isolated
+hSSCs
+(CD45CD235aTIE2CD31-CD146PDPN+
+CD73+CD164+) from ten skeletal sites of the developing human
+fetus at the gestational age of 17–20 weeks and conducted func-
+tional and single-cell transcriptional analysis (Figures 1A, S1A,
+and S1B; Table S1).13,14 Using established in vitro assays, we
+conﬁrmed that hSSCs of different bones and skeletal regions
+displayed the potential to clonally expand and to differentiate
+into osteogenic and chondrogenic lineages (Figures S1C–S1H).
+However, prospectively isolated hSSCs varied in terms of their
+expansion potential and their propensity to commit to either
+cartilage or osteoblast fates, as indicated by proteoglycan and
+calcium deposition, respectively.
+In an effort to gain a deeper understanding of the genetic dif-
+ferences that underpin functional variations, we performed
+Smart-seq2 scRNA-seq on freshly sorted, prospectively isolated
+hSSCs. We discovered that hSSCs from every location investi-
+gated exhibited a minimum of 90% gene expression overlap
+with our previously characterized growth plate (GP) hSSCs.
+Remarkably, most core markers speciﬁc to GP hSSCs were
+also present in hSSCs from all examined skeletal sites
+(Figures S1I-S1K; Table S2). Additionally, our research detected
+the presence of the early embryonic human skeletal progenitor
+markers SOX9 and CADM1 (Figure 1B).28 However, it is worth
+noting that there was minimal overlap with widely recognized
+markers to enrich for human skeletal progenitor popula-
+tions.11,12,29 Interestingly, two of these markers—NGFR/CD271
+and MCAM/CD146—were found to be signiﬁcantly more
+concentrated
+in
+populations
+downstream
+of
+the
+hSSC
+(Figures 1B and S2B), including the transit-amplifying human
+bone-cartilage stromal progenitors (hBCSPs) and committed os-
+teo-stromal progenitors (hOPs).
+A gene expression correlation matrix as well as dimensionality
+reduction by uniform manifold approximation and projection
+(UMAP) showed distinct heterogeneity between single hSSCs
+from the various skeletal regions (Figures 1C and S1K). Similar
+to ﬁndings in mice,22,23,30,31 phenotypic hSSCs from different
+skeletal sites expressed markers reﬂecting their distinct embry-
+onic origins (Figure S1L). Unbiased Leiden clustering of all
+hSSCs revealed four major types representing chondrogenic,
+osteogenic, stromal, and ﬁbrogenic gene expression patterns
+as assessed by marker expression and pathway enrichment
+analysis corresponding to their functional and regional differ-
+ences (Figures 1D, 1E, and S1M–S1Q). The relative proportion
+of these hSSC subtypes closely correlated with the primary
+mode of ossiﬁcation known for each bone, i.e., endochondral
+ossiﬁcation (chondrogenic), which depends on a cartilage tem-
+plate, and direct intramembranous ossiﬁcation (osteo-stromal)
+(Figures 1F and S1R). Thus, these results link transcriptional at-
+tributes with functional characteristics.
+In attempting to associate the transcriptomic diversity of
+hSSCs from different locations with skeletal formation, we
+discovered that the expression of certain genes—which, when
+mutated, cause speciﬁc developmental skeletal disorders—
+could be detected at the stem cell level (Figures 1G and S1S).
+For instance, mutations in the gene XYLT1 have been connected
+to dwarﬁsm and scoliosis. This gene was found to be highly ex-
+pressed in growth plate and vertebral chondral hSSC popula-
+tions. In a similar fashion, the genes CDT1 (associated with nar-
+row long bones) and SEC24D (linked to craniosynostosis)
+demonstrated overexpression in periosteal and cranial ﬁbro-
+stromal hSSCs, respectively.
+Collectively, these ﬁndings underscore the notion that while
+hSSCs from various skeletal sites possess similar stem cell attri-
+butes, they also exhibit diversity in their genetic and lineage
+traits. This diversity likely contributes signiﬁcantly to the regional
+formation, maintenance, and dysfunction of individual bones,
+ll
+OPEN ACCESS
+Resource
+812
+Cell Stem Cell 32, 811–823, May 1, 2025
+which show wide variations in shape, size, and structural
+composition.32
+Index-sort scRNA-seq analysis reﬁnes the hSSC
+lineage tree
+Having observed that there are multiple subtypes of hSSCs
+distributed throughout the skeleton, we then asked how these
+variants are arranged within individual bones and how they
+contribute to local areas of osteogenesis. Our prior work, which
+examined the SSC hierarchy in the growth plate of long bones,
+laid out the speciﬁc differentiation pathways of mouse SSCs
+into chondrogenic, osteogenic, and ﬁbro-stromal progenitors
+(Figure S2A).13,22 To better elucidate the bone-forming lineage
+of hSSCs, we employed index-sorting with plate-based Smart-
+seq2 scRNA-seq on prospectively isolated GP hSSCs and
+their deﬁned progenitor subtypes (hBCSPs and hOPs). Using
+UMAP clustering, Leiden separation, trajectory inference, and
+CytoTRACE projections, we identiﬁed hierarchical lineage rela-
+tionships between hSSC and hSSC-derived progenitor cell types
+(Figures 2A–2D, S2B, and S2C).22 Utilizing index-sort informa-
+tion, we further identiﬁed new cell surface marker combinations
+that allowed us to resolve speciﬁc hSSC-derived osteogenic
+progenitor cell (OPC: PDPNCD146+CD73) and stromal pro-
+genitor cell (SPC: PDPNCD146hiCD73low) subsets from the
+hOP population (PDPNCD146+) (Figures 2E, S2D, and S2E).
+In support of this ﬁnding, prospectively isolated OPCs were high-
+ly osteogenic compared with SPCs in vitro and in vivo
+(Figures 2F, S2F, and S2G). Furthermore, utilizing our scRNA-
+seq-based lineage reconstruction together with our previously
+published single-cell data of micro-dissected sections of the
+growth plate zones and the adjacent diaphysis,13 we were able
+to spatially map the lineage hierarchy from fetal hSSCs to
+preBCSPs, BCSPs, and their committed OPC and SPC down-
+stream subsets. Thus, GP hSSCs exhibit a unique sequential dif-
+ferentiation pattern stretching from the epiphysis to the diaph-
+ysis. This differentiation process generates a clearly organized
+stratiﬁcation of hSSC-derived progenitors within the maturing
+growth plate (Figures S2H–S2K).
+Since scRNA-seq data inferred the existence of four hSSC
+subtypes (Figures 1D and 1E), we wondered if they could also
+be identiﬁed based on our existing ﬂow cytometric panel for
+prospective isolation and functional characterization. Since
+index-sort analysis of the cartilaginous fetal growth plate skel-
+etal lineage suggested mostly moderate CD73 and CD164
+Figure 1. Human bone development and disorders are rooted in distinct hSSC diversity
+(A) Schematic overview of fetal skeletal tissue compartments processed for scRNA-seq of hSSCs.
+(B) Dotplot showing gene expression of reported skeletal stem and progenitor (prog.) marker genes in hSSCs across skeletal sites.
+(C) Uniform manifold approximation and projection (UMAP) plot of 2,754 single fetal hSSCs.
+(D) Corresponding Leiden subclustering of all fetal hSSCs.
+(E) Speciﬁed Leiden subclusters with marker genes.
+(F) Distribution of fetal skeletal tissue-speciﬁc hSSCs in Leiden subclusters.
+(G) Selected differentially expressed genes associated with genetic disorders with bone phenotypes as detected in scRNA-seq data of hSSCs from different
+Leiden clusters. Bottom: Matrixplot showing selected genes associated with developmental skeletal disorders and their expression in site-speciﬁc hSSCs.
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823, May 1, 2025
+813
+
+expression levels in hSSCs (Figure 2E), we further subdivided
+the double-positive hSSC fraction from pooled fetal long
+bones, vertebrae, and cranium into four subpopulations with
+varying CD73/CD164 expression intensity and prospectively
+isolated them for quantitative PCR analysis. We found that
+scRNA-seq
+gene
+expression
+matched
+CD164lowCD73low
+(chondrogenic), CD164highCD73low (osteogenic), CD164high
+CD73high (stromal), and CD164lowCD73high (ﬁbrogenic) hSSC
+populations (Figures S2L and S2M). Based on these cell sur-
+face marker proﬁles, and as suggested by scRNA-seq, ﬂow
+cytometric analysis demonstrated that growth plate and
+vertebral hSSCs mainly contained the chondrogenic subtype
+while periosteum (PE) and cranial hSSCs were highly enriched
+for stromal hSSCs (Figure 2G). To test the plasticity of the
+hSSC subtype composition, we challenged hSSCs from
+different skeletal source tissues with a pro-osteogenic differ-
+entiation cocktail, which was sufﬁcient to generate large pro-
+portions of the osteogenic hSSC subtype independent of
+original variant distribution at the four skeletal sites (Fig-
+ure S2N). We independently conﬁrmed bona ﬁde SSC proper-
+ties for each hSSC subtype by prospectively isolating them
+and performing in vivo ossicle formation assays. Both ﬂow cy-
+tometric and histological analyses conﬁrmed the self-renewal
+and multilineage differentiation capacity of all four hSSCs
+subtypes in this setting (Figures 2H and 2I). Altogether,
+these results conﬁrm scRNA-seq data, tying distinct but
+Figure 2. The reﬁned hSSC lineage tree contains four distinct hSSC subtypes
+(A) ForceAtlas2 projection of scRNA-seq data from previously deﬁned and prospectively isolated human skeletal lineage populations (885 cells). hSSC, human
+skeletal stem cell (175 cells); hBCSP, human bone-cartilage-stromal progenitor cell (369 cells); hOP, human osteoprogenitor (341 cells).
+(B) Unbiased Leiden clustering of the same cells with annotation of putative cell types.
+(C) Pseudotime trajectory inference of scRNA-seq data from prospectively isolated hSSC lineage populations.
+(D) Leiden cluster-speciﬁc marker expression.
+(E) Index-sort analysis of scRNA-seq data from skeletal lineage populations colored by Leiden subclusters.
+(F) In vitro (top) and in vivo (bottom) osteogenesis of freshly puriﬁed sorted OPCs (PDPNCD146+CD73), and SPCs (PDPNCD146hiCD73low) stained with
+alizarin red S.
+(G) Representative ﬂow cytometric plots of fetal tissue from four skeletal sites showing distinct hSSC subtype distribution within phenotypic hSSC gate
+(CD45CD235aCD31TIE2PDPN+CD146CD73+CD164+). Below: composition (%) of hSSC subtypes within phenotypic hSSC gate.
+(H) Flow cytometric analysis of 4-week ossicles derived from the four distinct hSSC subtypes.
+(I) Representative alizarin red S staining and immunohistological staining supporting osteogenic (hOCN), chondrogenic (hCOL2A1), and stromal (hCD146) output
+(HNA, human nuclear antigen; hOCN, osteocalcin; hCOL2A1, collagen 2A1; DAPI, nuclei) of sections from 8-week in vivo ossicles derived from prospectively
+isolated hSSC subtype populations. Scale bars, 50 mm.
+ll
+OPEN ACCESS
+Resource
+814
+Cell Stem Cell 32, 811–823, May 1, 2025
+malleable hSSC subtype distribution to various skeletal sites
+(Figure S2O).
+Spatially mapped region-speciﬁc hSSC diversity is
+controlled by distinct clonal dynamics
+To spatially resolve hSSC subtype distribution, we ﬁrst investi-
+gated the distinct differences in GP and PE hSSC diversity (Fig-
+ure S3). We integrated scRNA-seq data of hSSCs from dissected
+growth plate and periosteal regions as well as non-dissected long
+bones, which contained both anatomical sublocations. Gene
+expression by unbiased clustering again showed that PE hSSCs
+predominantly consist of ﬁbrous and stromal subtypes, while
+GP hSSCs are mainly chondrogenic (Figures 3A–3C and S3A–
+S3F). We then conducted spatial transcriptomic analysis of a fetal
+phalange using Nanostring’s CosMx platform with a universal
+1,000 human genes panel, which together with the CellCharter al-
+gorithm33 successfully mapped individual cells to speciﬁc subre-
+gions (Figures 3D, 3E, S3L, and S3M). Since we observed that the
+two long bone hSSC subtypes share expression of common
+markers (Figures 3C and S1I), we estimated hSSC locations and
+distribution throughout the long bone by identifying SOX9+
+PDGFRA+ cells in the CosMx dataset. Indeed, the majority of
+SOX9+PDGFRA+ cells could be found in growth plate and PE re-
+gions, while they were not present in the bone marrow (Figures 3F,
+3G, and S3N). In accordance with Smart-seq2 results of hSSC
+subtypes, SOX9+PDGFRA+ cells in the growth plate expressed
+markers associated with endochondral ossiﬁcation, while cells
+labeled in the periosteum were enriched for genes related to intra-
+membranous ossiﬁcation (Figure 3H). This was also consistent
+with the inference of speciﬁc ligand-receptor interactions with
+other cell types in the vicinity of labeled hSSCs (Figures 3I, 3J,
+and S3O) as well as potential longer-distance crosstalk between
+hSSC subtypes (Figures S3G–S3K). Altogether, these results esti-
+mate the spatial distribution of long bone hSSCs in situ and
+conﬁrm distinct molecular differences of identiﬁed regional
+subtypes.
+We then mined our Smart-seq2 datasets to identify distinct
+markers that could be used to approximate the anatomical orga-
+nization of the newly identiﬁed hSSC subtypes across different
+skeletal sites. Conﬁrming CosMx results, RNA in situ hybridiza-
+tion for SKI like proto-oncogene (SKIL) with co-staining of
+hSSC marker podoplanin (PDPN) localized the chondrogenic
+hSSC subtype primarily to the resting and proliferative zones of
+the growth plate and veriﬁed the presence of HIC ZBTB tran-
+scriptional repressor 1 (HIC1)-expressing stromal hSSCs along
+the periosteum (Figures 4A–4C, S1J, S4A, and S4B). When map-
+ping out the in situ distribution of all four hSSC subtypes (i.e.,
+chondrogenic [SKIL+PDPN+], osteogenic [secreted phospho-
+protein 1, SPP1+PDPN+], stromal [HIC1+PDPN+], and ﬁbrogenic
+[Flavin containing monooxygenase 1, FMO1+PDPN+]) across
+long bones, vertebrae, and the cranium, we could validate their
+overall prevalence as predicted by scRNA-seq (Figures S4A–
+S4G). While we found chondrogenic and osteogenic hSSC sub-
+types in the metaphysis close to newly forming trabecular bone,
+as well as sparsely across periosteal tissue, none of the four sub-
+types were present in the diaphyseal bone marrow space, in
+close alignment with CosMx data. Our analysis therefore sug-
+gests
+that
+cells
+previously
+classiﬁed
+as
+(bone
+marrow)
+Figure 3. Single-cell spatial mapping of fetal long bone hSSCs
+(A) UMAP of scRNA-seq data of 616 prospectively isolated growth plate (GP; 172 cells) hSSCs, periosteum (PE; 78 cells) hSSCs, and hSSCs from non-dissected
+long bone tissue (GP + PE; 366 cells).
+(B) Unbiased Leiden clustering of the same dataset.
+(C) Selected gene expression of hSSC-enriched markers in Leiden populations.
+(D) Nanostring CosMx spatial transcriptomic analysis of a fetal phalange bone section with single cells clustered using CellCharter.
+(E) Marker genes of the subpopulations identiﬁed by CellCharter.
+(F) Expression of genes enriched in hSSCs in different clusters.
+(G) Human SSC-enriched population detected by co-expression of SOX9 and PDGFRA shown as distribution across fetal bone. Fraction of hSSCs per cell cluster
+shown in pie chart. Speciﬁc subregions enriched for SOX9+PDGFRA+ cells are demarcated.
+(H) Distinct gene expression of SOX9+PDGFRA+ cells in GP and PE subregions.
+(I) CellPhoneDB ligand-receptor interactions inference between SOX9+PDGFRA+ and surrounding cells.
+(J) Expression of selected ligands in SOX9+PDGFRA+ cells in subregions as well as expression of respective receptors in surrounding cells. Scale bar, 1 mm.
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823, May 1, 2025
+815
+
+mesenchymal stromal cells (BMSCs) are cell types distinct from
+hSSCs. BMSCs likely consist of perivascular cells (e.g., TIE2+)
+that could include lineage cells derived from hSSCs. The mostly
+chondrogenic vertebral hSSCs were highly abundant speciﬁcally
+at the growth plate area of vertebral bodies and concentric to the
+nucleus pulposus, spanning most of the annulus ﬁbrosus of the
+vertebral disc (Figures S4C and S4D). By contrast, stromal and
+osteogenic hSSC subtypes were abundant in frontal and parietal
+skull regions of the cranium (Figures S4E and S4F). FMO1-ex-
+pressing ﬁbrogenic hSSCs were highly prevalent throughout cra-
+nial suture tissue but less in periosteal and parietal skull regions,
+while they were almost undetectable in growth plate, vertebra,
+and frontal skull regions (Figure S4G). Combined, these results
+connect transcriptomic, functional, and histological readouts of
+hSSC subtype diversity.
+To study the differentiation dynamics of individual hSSCs from
+the growth plate and periosteum, we developed a clonal barcod-
+ing approach. This strategy allows us to trace the differentiation
+paths of individual genetically barcoded hSSCs in vivo (see
+STAR Methods). The single-cell readouts conﬁrmed distinctive
+differentiation outcomes between GP and PE hSSCs. As ex-
+pected from our hSSC subtype analysis, both hSSC populations
+demonstrated robust self-renewal capacity yet showed signiﬁ-
+cant differences in their formation of cartilage, bone, and ﬁbro-
+stromal progenitors on the single-cell level (Figures 4D–4G and
+S4H–S4M). For instance, growth plate-associated hSSCs mainly
+contribute to the development of both cartilage and osteo-stro-
+mal tissues, playing a critical role in facilitating the longitudinal
+growth of bones. By contrast, hSSCs found in the periosteum
+predominantly generate ﬁbro-stromal lineages, providing tough-
+ness and ﬂexibility to the cortical bones. Thus, the speciﬁc
+anatomical locations of hSSCs are crucial in maintaining the
+overall structure of bone. Importantly, when either of these spe-
+ciﬁc hSSC harboring areas are eliminated through microsurgery,
+the overall development of long bones is signiﬁcantly impaired
+(Figures S4N and S4O). This demonstrates the vital role these
+specialized hSSCs play for bone structure and growth. Alto-
+gether, these results indicate that just as different bones contain
+varying ratios of hSSC variants, different subtypes of hSSCs are
+distributed in unique domains within a long bone. Therefore,
+these studies underline the crucial role of location in the function
+of different hSSC subtypes within human bone tissue.
+Figure 4. Regional-speciﬁc hSSC diversity is reﬂected in distinct clonal dynamics
+(A) Gene expression of hSSC subtype-speciﬁc markers SKIL (Chondro.), SPP1 (Osteo.), HIC1 (Stromal), and FMO1 (Fibro.) in UMAP of scRNA-seq data from GP
+and PE hSSCs.
+(B) In situ validation of hSSC subtype marker expression in fetal long bone growth plate (left) and periosteum (right) using RNAScope. DAPI, nuclear stain; RZ,
+resting zone; PZ, proliferative zone; PHZ, pre-hypertrophic zone; HZ, hypertrophic zone; EN, endosteal site. Inserts show co-staining with hSSC marker po-
+doplanin (PDPN).
+((C) H&E staining of fetal long bone (left) and RNA in situ hybridization-based distribution of overall prevalence of hSSC subtypes (bottom). GP, growth plate; MP,
+metaphysis; PE, periosteum; PC, perichondrium.
+(D) UMAP with RNA velocity of Leiden clustered scRNA-seq data from barcoded GP-hSSC-derived grafts (left) and barcoded PE-hSSC-derived grafts (right).
+SSC, skeletal stem cell; BCSP, bone-cartilage-stromal progenitor; CH, chondrogenic; OS, osteo-stromal; FS, ﬁbro-stromal. n = 3 grafts per group.
+(E) Distribution of single-cell-derived cells within UMAP Leiden clusters from two selected GP-hSSC clones (left) and for two selected PE-hSSC clones (right).
+(F) The top 3 most abundant clones per hSSC site of origin and their relative cell type contributions based on Leiden clusters.
+(G) Overall detected clonal cell type output of barcoded GP (n = 46) and PE (n = 21) hSSCs. Scale bars, 50 mm.
+ll
+OPEN ACCESS
+Resource
+816
+Cell Stem Cell 32, 811–823, May 1, 2025
+Skeletal aging and loss of regenerative activity are tied
+to changes in hSSC diversity
+Previous studies have linked aging with decreased skeletal
+regeneration.15,19,34 Our in-depth investigation of age-related
+changes in hSSCs found that, throughout adulthood, these cells
+retain the highest potential for osteochondrogenic development
+in vitro compared with other cell types (Figure S5A). However, an
+analysis of 407 patient-derived fracture callus specimens
+demonstrated a signiﬁcant decrease in hSSC frequency with
+advanced age (Figure S5B). Functional in vitro and in vivo assays
+conducted on hSSCs isolated from 270 of these patients re-
+vealed diminished clonogenicity and bone/cartilage-forming po-
+tential in older patients (Figures 5A, 5B, and S5C–S5E). Subcu-
+taneous transplants of hSSCs from geriatric donors into young
+mice yielded ossicles that showed signiﬁcantly reduced mineral-
+ization compared with hSSCs from young patients (Figures 5C
+and 5D). This was in line with a sex-independent age-related
+pattern of reduced hSSC frequency and expansion potential,
+with male donor cells showing a signiﬁcant negative correlation
+in colony-forming unit-ﬁbroblast (CFU-F) capacity with age.
+The negative correlation of increasing age and bone formation
+potential was also independent of the patient’s sex and body
+mass index (BMI) (Figures S5F and S5G).
+Using functional readouts and scRNA-seq, we found that poor
+fracture healing, which predominantly occurs in older patients
+and can result in nonunions, was associated with the formation
+of ﬁbrogenic tissue instead of mineralized fracture callus
+(Figures 5E and S5H–S5J).35 Surprisingly, hSSC numbers were
+increased in nonunion fracture tissue, but these cells exhibited
+deﬁcient osteogenesis, indicating a link between impaired
+hSSC differentiation and compromised bone regeneration. The
+results demonstrate that hSSCs from older patients primarily
+generate ﬁbro-stromal tissue, suggesting that dysfunction in
+hSSCs could underlie pathologically shifted ﬁbrogenic lineage
+dynamics, thereby impacting the major stem cell source for frac-
+ture repair.
+To gain a better understanding of the biological and molecular
+differences in young, aged, and nonunion adult hSSCs, we
+conducted Smart-seq2 scRNA-seq analysis of freshly puriﬁed
+long bone fracture callus site-derived hSSCs from 20 patients
+(Table S1) along with evaluation of their osteogenic potential
+(Figures 5F and S5K). Based on our functional readouts, we hy-
+pothesized that higher age favored ﬁbro-stromal differentiation
+of fracture hSSCs, thereby preventing proper mineralization at
+the healing site. This was reminiscent of the phenotype found in
+bones of patients with FD, a genetic disease caused by an
+Figure 5. Human skeletal aging and impaired regeneration are tied to a ﬁbro-stromal shift due to loss of hSSC diversity
+(A) Representative X-ray images of a healing acute long bone fracture (FX) with visible fracture callus (left). Acute fracture and follow-up X-ray images of an
+unhealed nonunion (right).
+(B) Association of patient age and in vitro mineralization capacity of phenotypic hSSCs (n = 219). Correlations assessed by Spearman test.
+(C) 4-week-old subcutaneous grafts derived from young and geriatric donor hSSCs showing degree of mineralization by micro-CT (left) and Movat pentachrome
+staining for graft tissue composition (MS, matrix scaffold, white; Bo, bone, yellow; Ca, cartilage, green; FS, ﬁbrogenic stroma, red).
+(D) Quantiﬁcation of mineralization of patient hSSC-derived grafts. n = 5 per age group. Y: young <35 years; G: geriatric >65 years. Data shown as mean +
+standard deviation of the mean (SEM). Signiﬁcance assessed by two-tailed t test with Welch’s correction.
+(E) In vitro osteogenic potential of hSSCs from acute fractures (n = 219) versus nonunion tissue (n = 15). Data shown as mean + SEM. Signiﬁcance assessed by
+Mann-Whitney test.
+(F) Smart-seq2 plate-based scRNA-seq analysis of 1,957 freshly isolated fetal long bone and patient hSSCs and their UMAP clustering. FD, Fibrous Dysplasia;
+NU, nonunion; PE, periosteum.
+(G) Flow cytometry plots of freshly processed human patient tissue stained and gated for phenotypic hSSCs showing subtype composition based on CD73/
+CD164 marker expression with bar graph quantitation below.
+(H) Correlation matrix of hSSCs grouped by distinct donor groups.
+(I) Grouping of hSSCs in UMAP based on combined unbiased Leiden clustering and in vitro functional readout.
+(J) Dotplot showing selected genes and their expression in the three hierarchically clustered subtypes separating functional states of hSSCs.
+(K) Boolean relationships of Boolean equivalent correlated clusters (BECCs) inferred dysfunctional hSSC gene TAGLN and its global relationship with COL2A1
+(top, left) and ACTA2 (bottom, left) as well as its expression relationships in single-cell hSSC dataset (right). Scale bars, 30 mm.
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823, May 1, 2025
+817
+
+activating Gs alpha mutation resulting in softened bones and gen-
+eration of ﬁbrotic marrow that has been linked to stem cell
+dysfunction.36,37 Thus, we also isolated phenotypic hSSCs from
+a patient with FD. We found a high prevalence of phenotypic
+hSSCs in FD bone. However, like nonunion hSSCs, FD hSSCs
+failed to undergo osteogenesis and displayed strong expression
+of ﬁbroblastic genes and myﬁbroblastic proteins such as smooth
+muscle alpha-actin (aSMA/ACTA2) (Figures S5L and S5M). Strik-
+ingly, functional readouts of patient hSSCs were reﬂected in
+distinct hSSC subtype composition detected in patient samples
+(Figure 5G), i.e., higher prevalence of the osteochondrogenic
+hSSC subtypes in bone-forming hSSCs compared with ﬁbro-stro-
+mal subtype abundance in dysfunctional skeletal tissues. In sup-
+port of that, the hSSCs from donors with pro-ﬁbrogenic features,
+i.e., nonunion, FD, and aged PE, showed strong transcriptomic
+correlation (Figure 5H). Additionally, young osteogenic hSSCs
+(fetal and patients <35 years) showed higher developmental po-
+tential, as predicted by CytoTRACE, and lower expression of my-
+oﬁbroblastic genes compared with aged, nonunion, aged PE, and
+FD hSSCs (Figures S5N–S5P). Intriguingly, as we have previously
+shown that osteogenic differentiation performance of hSSCs can
+be a predictor of fracture union even in young patients,16 we found
+that in vitro mineralization capacity assessed by alizarin red stain-
+ing and ﬁbrogenic gene marker expression strongly correlated
+with hierarchical clustering of single hSSCs (Figure S5Q and
+S5R). Indeed, hSSCs from a 28-year-old patient failed to miner-
+alize in culture and clustered closely with pro-ﬁbrogenic nonunion
+and FD hSSCs, similar to PE hSSCs from a 65-year-old patient. To
+investigate the deﬁning properties of different hSSC types more
+easily, we grouped cells into functional (osteochondrogenic),
+impaired, and dysfunctional (pro-ﬁbrogenic) hSSCs based on un-
+biased Leiden separation and functional readouts (Figures 5I and
+S5S). While stem cell marker expression was mostly conserved
+throughout functional groups, top regulated genes were shifted
+from skeletal system development in functional hSSCs to positive
+regulation of ﬁbroblast differentiation and regulation of smooth
+muscle cell proliferation in impaired and dysfunctional hSSCs
+(Figures 5J, S5S, and S5T). Taken together, these results support
+the notion that pro-ﬁbroblastic shifts in hSSC diversity are a major
+pathological mechanism of stem cell dysfunction in bones, which
+might create an imbalance in skeletal homeostasis resulting in
+impaired regenerative capacity.
+Finally, since our observations revealed a shift toward ﬁbro-
+blast-skewed hSSCs in aging, nonunions, and FD, it prompted
+the question of whether this shift is a common mechanism in
+skeletal disorders. The ﬁbroblast marker aSMA/ACTA2 was
+found to be overexpressed in FD and nonunion hSSCs. To
+identify a universal biomarker that could potentially diagnose
+an impaired skeletal tissue state, we employed computational
+Boolean equivalent correlated clusters (BECCs) using a data-
+base of nearly 26,000 public gene expression datasets.38,39
+This approach identiﬁed 25 genes, including the well-known
+ﬁbroblast markers transgelin (TAGLN) and myosin light-chain
+9 (MYL9), as potential markers of ﬁbroblast-skewed hSSCs
+due to their high correlation with each other and ACTA2—
+the seed gene (Figure S5U).40 Single-cell transcriptomic data
+conﬁrmed the speciﬁc expression of these markers in ﬁbro-
+stromal fetal hSSC subtypes as well as in impaired aged,
+FD, and nonunion hSSCs (Figures S5P, S5V, and S5W).
+Remarkably, TAGLN, a pro-ﬁbrotic gene, showed a high-to-
+low correlation with osteochondrogenic marker genes (e.g.,
+COL2A1 and SOX5), emphasizing the inverse Boolean rela-
+tionship between these two gene programs (Figure 5K, S5X,
+and S5Y). Analysis of publicly available human gene expres-
+sion datasets revealed low expression of TAGLN and MYL9
+in fetal hSSCs, growth plate zone cells, and freshly isolated
+bone marrow stromal cells from healthy adults.13 However,
+these markers were highly abundant in tissue samples from
+various ﬁbro- and osteosarcomas.41 Notably, TAGLN was a
+better biomarker than MYL9 for osteoporotic and osteoar-
+thritic bone tissue (Figure S5Z). In sum, our ﬁndings sugg-
+est an expansion of ﬁbroblast-skewed hSSCs in multiple
+skeletal pathologies. Thus, shifts toward higher proportions
+of this hSSC subtype may serve as an indicator of poor
+bone health.
+Combinatorial targeting of gene regulatory networks to
+preserve hSSC diversity
+Noticing considerable transcriptomic differences between func-
+tional and dysfunctional hSSCs, we sought to identify the gene
+regulatory mechanisms that inﬂuence their identities. We used
+an innovative approach, an invariant analysis of Boolean implica-
+tion relationships, across 25,955 human microarrays from
+various tissues and developed a new workﬂow integrating
+scRNA-seq data from healthy/osteochondrogenic and dysfunc-
+tional/ﬁbrogenic
+hSSC
+subtypes
+(Figures
+S6A–S6I;
+STAR
+Methods for a detailed description).
+Initially, we created a comprehensive Boolean implication
+network (BIN) using the most differentially expressed and com-
+mon skeletal markers in hSSCs, revealing fundamental global
+gene expression relationships (Figures 6A and S6J). To simplify
+this, we identiﬁed BIN subnets (pathways) and employed high-
+level mathematical modeling to predict the gene regulation or-
+ders that linked pro-ﬁbrogenic genes in dysfunctional hSSCs
+to genes expressed in functional hSSCs. Intriguingly, our results
+indicated that genes associated with the hedgehog (Hh) pathway
+(IHH, PHOSPHO1) had distinct Boolean relationships with ﬁbro-
+genic genes (ACTA2 and TAGLN), which were closely connected
+to bone morphogenic protein (BMP) signaling (BMPR1A and
+ACVRL1) (Figure 6B). Consistent with the vital role of Hh
+signaling in limb development and its deﬁciency as a factor in
+diabetic bone disease, functional hSSCs exhibited higher
+expression of genes within this pathway compared with their
+dysfunctional
+ﬁbrogenic
+counterparts
+(Figure
+S6K).42,43
+Conversely, excess BMP and heightened transforming growth
+factor beta (TGF-b) signaling are linked with ﬁbrosis and bone
+loss.44,45
+We then applied the BoolTraineR (BTR) models, based on
+Smart-seq2 scRNA-seq data, to the selected subnets to identify
+dynamic Boolean circuits on a single-cell level (Figure 6C).46 The
+results highlighted an unforeseen complexity in gene regulation.
+They suggested the necessity of an activating SOX9-FERMT1-
+IHH gene regulatory loop in osteogenic hSSCs while simulta-
+neously
+preventing
+suppression
+by
+excessive
+inhibitory
+BMPR1A-related gene programs. This was achieved through
+the tight control of PHOSPHO1 expression to favor osteochon-
+drogenic over ﬁbrogenic cell states. To test this functionally,
+we used the small molecules SAG21k, which stimulates Hh
+ll
+OPEN ACCESS
+Resource
+818
+Cell Stem Cell 32, 811–823, May 1, 2025
+Figure 6. Boolean-logic-guided combinatorial targeting of gene regulatory networks restores hSSC diversity
+(A) Schematic of workﬂow for invariant analysis of single-cell data from functional and dysfunctional patient hSSCs based on Boolean implication relationships.
+(B) Selected BIN pathways and high-level mathematical model of gene regulation in hSSCs with predicted orders of activation. Gene relationships indicated by
+color of arrows. Green, hi-hi; red, hi-lo; blue, lo-lo.
+(C) BoolTraineR (BTR) model of a gene regulatory network of hSSCs based on a selected pathway identiﬁed by BIN to capture dynamic Boolean circuit-
+based model.
+(D) Representative alizarin red S staining of in vitro osteogenic assays on patient-derived fracture (Fx) hSSCs either treated with DMSO as control or small
+molecules dorsomorphin homolog 1 (DMH1), smoothened agonist 21k (SAG), and a combination of DMH1 and SAG.
+(E) Quantiﬁcation of in vitro osteogenic assays with small molecule treatments on hSSCs from seven patients. Insert shows quantiﬁcation of combined patient
+hSSCs relative to combinatorial DMH1 + SAG treatment. Data shown as mean + standard deviation of the mean (SEM). Two-tailed Student’s t test versus
+combinatorial treatment with Welch’s correction or Mann-Whitney test to correct for unequal variances or non-normality. n = 14 from independent duplicates of
+seven patient hSSCs.
+(F) Representative mCT images of 8-week grafts derived from transplanted patient hSSCs either treated with DMSO (control) or DMH1 + SAG. Top left insert
+shows bright-ﬁeld image of grafts. No hSSC graft shown in the top right insert of control.
+(G) Representative H&E staining of graft sections. MS, matrix scaffold; Bo, bone; FS, ﬁbro/stroma; Hem, hematopoietic.
+(H) Quantiﬁcation of hSSC grafts either treated with DMSO or combinatorial cocktail. Two-tailed paired Wilcoxon test (n = 6).
+(I) Representative micro-CT and saffranin-O staining images of fracture calluses with hSSC transplants with or without factors at day 21 after bi-cortical fracture.
+Ca, cartilage.
+(J) Micro-CT-based analysis of fractional bone volume in formed callus.
+(K) Immunohistochemistry identifying hSSC-derived cells stained for human nuclear antigen (HNA, red) and osteocalcin (OCN, green) in fracture callus tissue of
+different experimental groups.
+(L) Quantiﬁcation of HNA and OCN double-positive cells across calluses. All fracture callus analyses n = 4–5 per group. Data shown as box-plots with min to max.
+One-way ANOVA with Dunnett’s post hoc test. Scale bars, 50 mm.
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823, May 1, 2025
+819
+
+through smoothened activation, and dorsomorphin homolog 1
+(DMH1), which selectively blocks BMP signaling to prevent the
+upregulation of ﬁbrogenic genes. Based on our Boolean anal-
+ysis, we hypothesized that a combined treatment with these
+molecules could restore hSSC bone-forming hSSC subtype
+composition
+in
+dysfunctional
+stem
+cells.
+In
+vitro
+testing
+conﬁrmed that the combined application of SAG21k and
+DMH1 to primary patient hSSCs elevated IHH and SOX9 expres-
+sion while downregulating BMPR1A and TAGLN (Figure S6L).
+Importantly, these small molecules signiﬁcantly enhanced the
+osteogenesis of patient hSSCs if applied together (Figures 6D
+and 6E). For in vivo testing, we ﬁrst transplanted patient-derived
+hSSCs encapsulated in Matrigel with acellular bone matrix,
+alongside SAG21k and DMH1, subcutaneously into immunode-
+ﬁcient NOD scid gamma (NSG) mice (Figure S6M). The com-
+bined treatment signiﬁcantly improved ossicle formation with
+higher mineralized content compared with controls. While frac-
+ture hSSCs responded most efﬁciently, this dual regimen also
+enhanced bone formation in hSSCs isolated from tendon, carti-
+lage,
+and
+metaphyseal
+bone
+marrow
+of
+aged
+donors
+(Figures 6F–6H). Finally, we transplanted gels encapsulating
+hSSCs with or without SAG21k/DMH1 around the injury site of
+NSG mice with a bi-cortical femoral fracture to determine cellular
+output of human cells and healing outcome (Figure S6N). Flow
+cytometric analysis of day-10 callus tissue identiﬁed donor
+hSSCs enriched for the chondrogenic subtype contributing to
+multiple skeletal lineages during the endochondral ossiﬁcation
+process (Figure S6O). Micro-computed tomography (CT) and
+immunohistology of day-14 callus tissue further demonstrated
+the osteochondrogenic contributions of donor hSSCs during
+healing and importantly signiﬁcantly increased mineralization
+through enhanced bone and cartilage output from hSSCs stimu-
+lated
+by
+SAG21K+DMH1
+but
+not
+mono-treated
+groups
+compared with hSSC-only controls (Figures 6I–6L and S6P–
+S6R). In summary, we have pioneered a novel approach to
+gene regulatory network analysis based on Boolean logic, in-
+ferred from scRNA-seq data of hSSCs. This surpasses tradi-
+tional methods that only infer transcription factor interactions
+(Figure S6S). Utilizing this advanced technique, we identiﬁed
+speciﬁc small molecules that can reinstate functional diversity
+of non-osteochondrogenic, dysfunctional hSSCs.
+DISCUSSION
+Our study provides a unique view into human skeletal develop-
+ment, aging, and disease from the perspective of highly pure
+hSSCs. We have found that individual hSSCs vary in their capac-
+ity for expansion, self-renewal, and differentiation into bone,
+cartilage, and ﬁbro-stromal cells but do not generate fat cells.
+Our research shows that while hSSCs derived from different
+skeletal sites display high transcriptomic similarity, each bone
+hosts a unique diversity of hSSC subtypes with distinct clonal
+dynamics. This diversity appears to be vital for shaping and
+maintaining bone tissue throughout life. We identiﬁed four major
+types of hSSCs, which exhibit over 90% transcriptional similar-
+ity. Interestingly, different variants of hSSCs are dispersed in
+distinct areas of the bone, providing the bone with a ‘‘positional
+memory’’ regarding its compositional architecture. The strategic
+interspersion of ﬁbro-stromal and osteochondrogenic hSSCs in
+speciﬁc ratios might be crucial for achieving the right balance be-
+tween ﬂexibility and rigidity in bone structure, similar to the use of
+rebars and cement in reinforced concrete. Moreover, we found a
+particular directionality in the clonal propagation of skeletal pro-
+genitors derived from hSSCs within a bone. This is likely critical
+for shaping the skeleton and determining its structural character-
+istics during development and growth. Disruptions in genes
+associated with major hSSC subtypes are often linked to genetic
+diseases.
+One of our key observations was that ﬁbroblast-skewed
+hSSCs tend to increase under various pathological conditions,
+an occurrence reminiscent of age-related myeloid skewing by
+HSCs.2 This led us to consider whether the skewing of HSCs
+and hSSCs in humans is interconnected, perhaps through
+communication between the hematopoietic and skeletal com-
+partments.19,20 It would also be worthwhile to explore if certain
+point mutations, such as those found in clonal hematopoiesis
+of indeterminate potential (CHIP), could lead to the expansion
+of ﬁbroblast-skewed hSSCs over time. Alternatively, these
+clones might already exist but become dominant during aging
+or in response to co-morbidities such as diabetes.17 Fibro-
+blast-skewed hSSCs are signiﬁcantly less osteogenic than os-
+teochondral hSSCs. Their pathological expansion results in
+poor ossiﬁcation and bone healing. Understanding why aging
+promotes overexpansion of ﬁbrogenic hSSCs could shed light
+on the interplay between aging, disease, and skeletal health.
+Given that ﬁbroblast-skewed hSSCs expansion seems to be a
+common pathological mechanism in the skeleton, and ﬁbrosis
+is a typical aging hallmark associated with altered ﬁbroblast
+composition, our identiﬁcation of diverse hSSC subtypes
+deﬁned by distinct but tunable gene regulatory networks offers
+a new perspective for designing effective strategies against skel-
+etal aging and disease.47
+Limitations of the study
+Our studies of human tissues are bound by ethical consider-
+ations and limited by the available specimens. Here, we
+collected samples from fetal donors at gestational ages 17–
+20 weeks to capture the role of hSSCs during the early establish-
+ment of the skeleton. Similarly, our patient cohort specimens
+came from skeletally mature healthy and diseased donors be-
+tween 18 and 77 years of age, mostly collected from fracture
+sites. Future work will have to ﬁll the gap by adding hSSC data
+from a broader spectrum of fetal stages and intact adult skeletal
+tissue, e.g., warm autopsies, as well as pre-pubertal to adoles-
+cent age groups to achieve a comprehensive compendium of
+hSSCs throughout all life stages.
+Given the need for prospective isolation of human cell popula-
+tions for functional assessment and the lack of elegant in vivo ge-
+netic perturbation approaches commonly possible in murine
+models, we draw our conclusion from a collective of multiple af-
+ﬁrming readouts. Reﬁnement of in vivo clonal tracking strategies
+allowing simultaneous 3D multiplexed niche analysis will pave
+the way for a more granular understanding of hSSC lineage dy-
+namics in vivo. Our generated single-cell datasets, in combina-
+tion with related data generated by other groups, will also allow
+for the identiﬁcation of additional markers that could further pu-
+rify our already exceedingly homogeneous hSSC populations
+and their lineage tree.
+ll
+OPEN ACCESS
+Resource
+820
+Cell Stem Cell 32, 811–823, May 1, 2025
+RESOURCE AVAILABILITY
+Lead contact
+Further information and requests for resources and reagents should be
+directed to the lead contact, T.H. Ambrosi (thambrosi@ucdavis.edu).
+Materials availability
+This study did not generate any unique reagents.
+Data and code availability
+All scRNA-seq raw data and count ﬁles were deposited in the Gene Expression
+Omnibus as a SuperSeries under accessionnumber GEO:GSE234040. Publicly
+available data used in this manuscript were sourced from SRA: PRJNA478935
+and as speciﬁed in ﬁgures and ﬁgure legends. All code for new analyses
+pipelines presented in this manuscript has been deposited at GitHub for re-
+creating analyses (https://github.com/sahoo00/Invariant-Circuits, https://doi.
+org/10.5281/zenodo.14823193,
+v1.0.1)
+and
+https://github.com/sahoo00/
+Clonetracker, https://doi.org/10.5281/zenodo.14823191, v1.0.1).
+ACKNOWLEDGMENTS
+We thank Gina Ford and C. Queen for administrative and lab management, the
+Stanford University Institute for Stem Cell Biology and Regenerative Medicine
+FACS core (NIH S10 RR02933801) for experimental support, and NIH S10
+1S10OD028493-01A1 (Principal Investigator: Charles K.F. Chan). Special thanks
+go to Lolita Penland, Brian Yu, and Rose Yan from the Chan Zuckerberg Biohub
+for support with scRNA-seq. We also thank the Stanford Gene Expression Facil-
+ity (PAN Facility) for contributing to this project. This work was supported by NIH-
+NIA K99/R00 AG049958-01A1, Stanford Wu Tsai Human Performance Alliance
+Funds, Siebel Foundation, the Heritage Medical Foundation, Prostate Cancer
+Foundation, the American Federation for Aging Research-Arthritis National
+Research Foundation (AFAR-ANRF), a soft launch grant by the Chan Zuckerberg
+Biohub, a seed grant from the WHSDM Stanford Women’s Health and Sex Dif-
+ferences in Medicine Center, and an endowment from the DiGenova Family to
+C.K.F.C.; NIH grants K99/R00 CA151673, R01 GM138385, UG3 TR002968,
+UG3 TR003355, and R01 AI155696 to D.S.; PSRF to M.P.M.; and the German
+Research Foundation (DFG-Fellowship) 399915929 and NIH-NIA K99/R00
+AG066963 as well as U01 AG086165 to T.H.A. Support for T.H.A. and A.S.
+also came from the Orthopaedic Trauma Association under grant #4311. This
+study was further supported by NIH (R56 DE025597, R01 DE026730, R01
+DE021683, R21 DE024230, R01 DE027323, HL099776, U24 DE026914, and
+R21 DE019274), CIRM TR1-01249, the Oak Foundation, the Hagey Laboratory,
+the Pitch Johnson Fund, and the Gunn/Olivier Research Fund to M.T.L. and NIH
+(U01 HL099999, R01 CA86065, and R01 HL058770) and NIDDK SHINE Award
+R01 DK115600 to I.L.W as well as NIH R01 AR079211 to J.K.L. The CIRM
+training grant EDUC4-12792 (CIRM EDUC4 Research Training Program) to
+E.E.W. and K.C.W. supported this work. Micro-CT work on the Bruker Skyscan
+1276
+was
+supported
+by
+NIH
+S10
+Shared
+Instrumentation
+Grant
+(1S10OD02349701, PI Timothy C. Doyle).
+AUTHOR CONTRIBUTIONS
+T.H.A. and C.K.F.C. conceived the study. T.H.A. performed the majority of ex-
+periments and analyzed results. T.H.A., M.T.L., D.S., and C.K.F.C. wrote the
+manuscript. S.T., R.S., L.H.G., M.P.M., H.M.S., M.Y.H., Yuting Wang, E.J.H.,
+F.F., K.C.W., L.S.K., D.D.L., J.S., L.Z., K.C., S.D.C., W.-J.L., M.M., N.F.N.,
+N.L.V.R., E.E.W., J.K.L., A.S., Yongheng Wang, A.W., G.P.Y., S.G., J.A.B.,
+M.J.G., and D.C.W. performed experiments and/or provided expertise.
+T.H.A., I.L.W., M.T.L., D.S., and C.K.F.C. supervised the project.
+DECLARATION OF INTERESTS
+The authors (T.H.A., R.S., I.L.W., M.T.L., D.S., and C.K.F.C.) have ﬁled an in-
+vention disclosure (USPTO Application #63/676,773; ﬁled on July 29, 2024)
+related to this work entitled: ‘‘Compositions and methods for re-activation of
+dysfunctional skeletal stem cells.’’
+STAR+METHODS
+Detailed methods are provided in the online version of this paper and include
+the following:
+d KEY RESOURCES TABLE
+d EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+B Fetal and adult human samples
+B Mice
+d METHOD DETAILS
+B Human fetal and adult bone processing
+B Fluorescence-activated cell sorting (FACS)
+B Cell culture
+B Fibroblast Colony-Forming-Unit (CFU-F) in vitro assay
+B Osteogenic in vitro differentiation
+B Chondrogenic in vitro differentiation
+B Immunocytochemistry
+B RNA in situ hybridization
+B Subcutaneous xenograft transplant model
+B Subcutaneous cell transplants
+B In vivo clonal barcoding of hSSCs
+B Micro-computed tomography
+B Bi-cortical fracture model with hSSC transplants
+B Quantitative PCR
+B Spatial transcriptomics with Nanostring CosMx
+B Plate-based Smart-seq2 single cell RNA-sequencing
+B Single cell RNA-seq data processing
+B 10X Genomics single cell RNA-sequencing
+B Clonal tracking with barcoded single cell readout
+B StepMiner for Boolean Analysis
+B Discovery of Boolean Implication Relationships (BIRs)
+B Boolean Network Explorer (BoNE)
+B Boolean implication network construction
+B Boolean paths
+B Boolean Implication Network and BTR
+B Boolean Equivalent Correlated Clusters (BECC)
+B Quantiﬁcation and statistical analysis
+SUPPLEMENTAL INFORMATION
+Supplemental information can be found online at https://doi.org/10.1016/j.
+stem.2025.02.013.
+Received: May 9, 2024
+Revised: December 17, 2024
+Accepted: February 25, 2025
+Published: March 20, 2025
+REFERENCES
+1. Weissman, I.L., and Shizuru, J.A. (2008). The origins of the identiﬁcation
+and isolation of hematopoietic stem cells, and their capability to induce
+donor-speciﬁc transplantation tolerance and treat autoimmune diseases.
+Blood 112, 3543–3553. https://doi.org/10.1182/blood-2008-08-078220.
+2. Beerman, I., Maloney, W.J., Weissmann, I.L., and Rossi, D.J. (2010). Stem
+cells and the aging hematopoietic system. Curr. Opin. Immunol. 22,
+500–506. https://doi.org/10.1016/j.coi.2010.06.007.
+3. Zhou, F., Li, X., Wang, W., Zhu, P., Zhou, J., He, W., Ding, M., Xiong, F.,
+Zheng, X., Li, Z., et al. (2016). Tracing haematopoietic stem cell formation
+at single-cell resolution. Nature 533, 487–492. https://doi.org/10.1038/
+nature17997.
+4. Pellin, D., Loperﬁdo, M., Baricordi, C., Wolock, S.L., Montepeloso, A.,
+Weinberg, O.K., Bifﬁ, A., Klein, A.M., and Biasco, L. (2019). A comprehensive
+single cell transcriptional landscape of human hematopoietic progenitors.
+Nat. Commun. 10, 2395. https://doi.org/10.1038/s41467-019-10291-0.
+5. Rodriguez-Fraticelli, A.E., Weinreb, C., Wang, S.-W., Migueles, R.P.,
+Jankovic, M., Usart, M., Klein, A.M., Lowell, S., and Camargo, F.D.
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823, May 1, 2025
+821
+
+(2020). Single-cell lineage tracing unveils a role for TCF15 in haematopoi-
+esis. Nature 583, 585–589. https://doi.org/10.1038/s41586-020-2503-6.
+6. Baryawno, N., Przybylski, D., Kowalczyk, M.S., Kfoury, Y., Severe, N.,
+Gustafsson, K., Kokkaliaris, K.D., Mercier, F., Tabaka, M., Hofree, M.,
+et al. (2019). A cellular taxonomy of the bone marrow stroma in homeosta-
+sis and leukemia. Cell 177, 1915–1932.e16. https://doi.org/10.1016/j.cell.
+2019.04.040.
+7. Tikhonova, A.N., Dolgalev, I., Hu, H., Sivaraj, K.K., Hoxha, E., Cuesta-
+Domı´nguez, A´ ., Pinho, S., Akhmetzyanova, I., Gao, J., Witkowski, M.,
+et al. (2019). The bone marrow microenvironment at single-cell resolution.
+Nature 569, 222–228. https://doi.org/10.1038/s41586-019-1104-8.
+8. Baccin, C., Al-Sabah, J., Velten, L., Helbling, P.M., Gr€unschl€ager, F.,
+Herna´ ndez-Malmierca,
+P.,
+Nombela-Arrieta,
+C.,
+Steinmetz,
+L.M.,
+Trumpp, A., and Haas, S. (2020). Combined single-cell and spatial tran-
+scriptomics reveal the molecular, cellular and spatial bone marrow niche
+organization. Nat. Cell Biol. 22, 38–48. https://doi.org/10.1038/s41556-
+019-0439-6.
+9. Bandyopadhyay, S., Duffy, M.P., Ahn, K.J., Sussman, J.H., Pang, M.,
+Smith, D., Duncan, G., Zhang, I., Huang, J., Lin, Y., et al. (2024).
+Mapping the cellular biogeography of human bone marrow niches using
+single-cell transcriptomics and proteomic imaging. Cell 187, 3120–
+3140.e29. https://doi.org/10.1016/j.cell.2024.04.013.
+10. To, K., Fei, L., Pett, J.P., Roberts, K., Blain, R., Polanski, K., Li, T., Yayon,
+N., He, P., Xu, C., et al. (2024). A multi-omic atlas of human embryonic
+skeletal development. Nature 635, 657–667. https://doi.org/10.1038/
+s41586-024-08189-z.
+11. Sacchetti, B., Funari, A., Michienzi, S., Di Cesare, S., Piersanti, S., Saggio,
+I., Tagliaﬁco, E., Ferrari, S., Robey, P.G., Riminucci, M., et al. (2007). Self-
+renewing osteoprogenitors in bone marrow sinusoids can organize a he-
+matopoietic microenvironment. Cell 131, 324–336. https://doi.org/10.
+1016/j.cell.2007.08.025.
+12. Wang, Z., Li, X., Yang, J., Gong, Y., Zhang, H., Qiu, X., Liu, Y., Zhou, C.,
+Chen, Y., Greenbaum, J., et al. (2021). Single-cell RNA sequencing decon-
+volutes the in vivo heterogeneity of human bone marrow-derived mesen-
+chymal stem cells. Int. J. Biol. Sci. 17, 4192–4206. https://doi.org/10.7150/
+ijbs.61950.
+13. Chan, C.K.F., Gulati, G.S., Sinha, R., Tompkins, J.V., Lopez, M., Carter,
+A.C., Ransom, R.C., Reinisch, A., Wearda, T., Murphy, M., et al. (2018).
+Identiﬁcation of the Human Skeletal Stem Cell. Cell 175, 43–56.e21.
+https://doi.org/10.1016/j.cell.2018.07.029.
+14. Hoover, M.Y., Ambrosi, T.H., Steininger, H.M., Koepke, L.S., Wang, Y.,
+Zhao, L., Murphy, M.P., Alam, A.A., Arouge, E.J., Butler, M.G.K., et al.
+(2023). Puriﬁcation and functional characterization of novel human skeletal
+stem cell lineages. Nat. Protoc. 18, 2256–2282. https://doi.org/10.1038/
+s41596-023-00836-5.
+15. Ambrosi, T.H., Goodnough, L.H., Steininger, H.M., Hoover, M.Y., Kim, E.,
+Koepke, L.S., Marecic, O., Zhao, L., Seita, J., Bishop, J.A., et al. (2020).
+Geriatric fragility fractures are associated with a human skeletal stem
+cell defect. Aging Cell 19, e13164. https://doi.org/10.1111/acel.13164.
+16. Goodnough, L.H., Ambrosi, T.H., Steininger, H., DeBaun, M.R., Abrams,
+G.D., McAdams, T.R., Gardner, M.J., Chan, C.K., and Bishop, J.A.
+(2020). Delayed Union of a Diaphyseal Forearm Fracture Associated
+With Impaired Osteogenic Differentiation of Prospectively
+Isolated
+Human Skeletal Stem Cells. JBMR Plus 4, e10398. https://doi.org/10.
+1002/jbm4.10398.
+17. Jaiswal, S., and Ebert, B.L. (2019). Clonal hematopoiesis in human aging
+and disease. Science 366, eaan4673. https://doi.org/10.1126/science.
+aan4673.
+18. Haas, S., Trumpp, A., and Milsom, M.D. (2018). Causes and conse-
+quences of hematopoietic stem cell heterogeneity. Cell Stem Cell 22,
+627–638. https://doi.org/10.1016/j.stem.2018.04.003.
+19. Ambrosi, T.H., Marecic, O., McArdle, A., Sinha, R., Gulati, G.S., Tong, X.,
+Wang, Y., Steininger, H.M., Hoover, M.Y., Koepke, L.S., et al. (2021). Aged
+skeletal stem cells generate an inﬂammatory degenerative niche. Nature
+597, 256–262. https://doi.org/10.1038/s41586-021-03795-7.
+20. Mitchell, C.A., Verovskaya, E.V., Calero-Nieto, F.J., Olson, O.C., Swann,
+J.W., Wang, X., He´ rault, A., Dellorusso, P.V., Zhang, S.Y., Svendsen,
+A.F., et al. (2023). Stromal niche inﬂammation mediated by IL-1 signalling
+is a targetable driver of haematopoietic ageing. Nat. Cell Biol. 25, 30–41.
+https://doi.org/10.1038/s41556-022-01053-0.
+21. Ambrosi, T.H., Sinha, R., Steininger, H.M., Hoover, M.Y., Murphy, M.P.,
+Koepke, L.S., Wang, Y., Lu, W.-J., Morri, M., Neff, N.F., et al. (2021).
+Distinct skeletal stem cell types orchestrate long bone skeletogenesis.
+eLife 10, e66063. https://doi.org/10.7554/eLife.66063.
+22. Chan, C.K.F., Seo, E.Y., Chen, J.Y., Lo, D., McArdle, A., Sinha, R., Tevlin,
+R., Seita, J., Vincent-Tompkins, J., Wearda, T., et al. (2015). Identiﬁcation
+and speciﬁcation of the mouse skeletal stem cell. Cell 160, 285–298.
+https://doi.org/10.1016/j.cell.2014.12.002.
+23. Debnath, S., Yallowitz, A.R., McCormick, J., Lalani, S., Zhang, T., Xu, R.,
+Li, N., Liu, Y., Yang, Y.S., Eiseman, M., et al. (2018). Discovery of a perios-
+teal stem cell mediating intramembranous bone formation. Nature 562,
+133–139. https://doi.org/10.1038/s41586-018-0554-8.
+24. Zhou, B.O., Yue, R., Murphy, M.M., Peyer, J.G., and Morrison, S.J. (2014).
+Leptin-receptor-expressing mesenchymal stromal cells represent the
+main source of bone formed by adult bone marrow. Cell Stem Cell 15,
+154–168. https://doi.org/10.1016/j.stem.2014.06.008.
+25. Sivaraj, K.K., Jeong, H.-W., Dharmalingam, B., Zeuschner, D., Adams, S.,
+Potente, M., and Adams, R.H. (2021). Regional specialization and fate
+speciﬁcation of bone stromal cells in skeletal development. Cell Rep. 36,
+109352. https://doi.org/10.1016/j.celrep.2021.109352.
+26. Murphy, M.P., Koepke, L.S., Lopez, M.T., Tong, X., Ambrosi, T.H., Gulati,
+G.S., Marecic, O., Wang, Y., Ransom, R.C., Hoover, M.Y., et al. (2020).
+Articular cartilage regeneration by activated skeletal stem cells. Nat.
+Med. 26, 1583–1592. https://doi.org/10.1038/s41591-020-1013-2.
+27. Ambrosi, T.H., Scialdone, A., Graja, A., Gohlke, S., Jank, A.-M., Bocian, C.,
+Woelk, L., Fan, H., Logan, D.W., Sch€urmann, A., et al. (2017). Adipocyte
+Accumulation in the Bone Marrow during Obesity and Aging Impairs
+Stem Cell-Based Hematopoietic and Bone Regeneration. Cell Stem Cell
+20, 771–784.e6. https://doi.org/10.1016/j.stem.2017.02.009.
+28. He, J., Yan, J., Wang, J., Zhao, L., Xin, Q., Zeng, Y., Sun, Y., Zhang, H., Bai,
+Z., Li, Z., et al. (2021). Dissecting human embryonic skeletal stem cell
+ontogeny by single-cell transcriptomic and functional analyses. Cell Res.
+31, 742–757. https://doi.org/10.1038/s41422-021-00467-z.
+29. Kenswil, K.J.G., Pisterzi, P., Sa´ nchez-Duffhues, G., van Dijk, C., Lolli, A.,
+Knuth, C., Vanchin, B., Jaramillo, A.C., Hoogenboezem, R.M., Sanders,
+M.A., et al. (2021). Endothelium-derived stromal cells contribute to he-
+matopoietic bone marrow niche formation. Cell Stem Cell 28, 653–
+670.e11. https://doi.org/10.1016/j.stem.2021.01.006.
+30. Sun, J., Hu, L., Bok, S., Yallowitz, A.R., Cung, M., McCormick, J., Zheng,
+L.J., Debnath, S., Niu, Y., Tan, A.Y., et al. (2023). A vertebral skeletal stem
+cell lineage driving metastasis. Nature 621, 602–609. https://doi.org/10.
+1038/s41586-023-06519-1.
+31. Bok, S., Yallowitz, A.R., Sun, J., McCormick, J., Cung, M., Hu, L., Lalani,
+S., Li, Z., Sosa, B.R., Baumgartner, T., et al. (2023). A multi-stem cell basis
+for craniosynostosis and calvarial mineralization. Nature 621, 804–812.
+https://doi.org/10.1038/s41586-023-06526-2.
+32. Cooper, K.L., Oh, S., Sung, Y., Dasari, R.R., Kirschner, M.W., and Tabin,
+C.J. (2013). Multiple phases of chondrocyte enlargement underlie differ-
+ences in skeletal proportions. Nature 495, 375–378. https://doi.org/10.
+1038/nature11940.
+33. Varrone, M., Tavernari, D., Santamaria-Martı´nez, A., Walsh, L.A., and
+Ciriello, G. (2024). CellCharter reveals spatial cell niches associated with
+tissue remodeling and cell plasticity. Nat. Genet. 56, 74–84. https://doi.
+org/10.1038/s41588-023-01588-4.
+34. Gibon, E., Lu, L.Y., Nathan, K., and Goodman, S.B. (2017). Inﬂammation,
+ageing, and bone regeneration. J. Orthop. Transl. 10, 28–35. https://doi.
+org/10.1016/j.jot.2017.04.002.
+35. Panteli, M., Pountos, I., Jones, E., and Giannoudis, P.V. (2015). Biological
+and molecular proﬁle of fracture non-union tissue: current insights. J. Cell.
+Mol. Med. 19, 685–713. https://doi.org/10.1111/jcmm.12532.
+ll
+OPEN ACCESS
+Resource
+822
+Cell Stem Cell 32, 811–823, May 1, 2025
+36. Robey, P.G., Kuznetsov, S., Riminucci, M., and Bianco, P. (2007). The role
+of stem cells in ﬁbrous dysplasia of bone and the Mccune-Albright syn-
+drome. Pediatr. Endocrinol. Rev. 4, 386–394.
+37. Kuznetsov, S.A., Cherman, N., Riminucci, M., Collins, M.T., Robey, P.G.,
+and Bianco, P. (2008). Age-dependent demise of GNAS-mutated skeletal
+stem cells and ‘‘normalization’’ of ﬁbrous dysplasia of bone. J. Bone Miner.
+Res. 23, 1731–1740. https://doi.org/10.1359/jbmr.080609.
+38. Dabydeen, S.A., Desai, A., and Sahoo, D. (2019). Unbiased Boolean anal-
+ysis of public gene expression data for cell cycle gene identiﬁcation. Mol.
+Biol. Cell 30, 1770–1779. https://doi.org/10.1091/mbc.E19-01-0013.
+39. Dang, D., Taheri, S., Das, S., Ghosh, P., Prince, L.S., and Sahoo, D. (2020).
+Computational approach to identifying universal macrophage biomarkers.
+Front. Physiol. 11, 275. https://doi.org/10.3389/fphys.2020.00275.
+40. LeBleu, V.S., and Neilson, E.G. (2020). Origin and functional heterogeneity
+of ﬁbroblasts. FASEB J. 34, 3519–3536. https://doi.org/10.1096/fj.
+201903188R.
+41. Serakinci, N., Guldberg, P., Burns, J.S., Abdallah, B., Schrødder, H.,
+Jensen, T., and Kassem, M. (2004). Adult human mesenchymal stem
+cell as a target for neoplastic transformation. Oncogene 23, 5095–5098.
+https://doi.org/10.1038/sj.onc.1207651.
+42. Macrae, V.E., Davey, M.G., McTeir, L., Narisawa, S., Yadav, M.C., Millan,
+J.L., and Farquharson, C. (2010). Inhibition of PHOSPHO1 activity results
+in impaired skeletal mineralization during limb development of the chick.
+Bone 46, 1146–1155. https://doi.org/10.1016/j.bone.2009.12.018.
+43. Tevlin, R., Seo, E.Y., Marecic, O., McArdle, A., Tong, X., Zimdahl, B.,
+Malkovskiy, A., Sinha, R., Gulati, G., Li, X., et al. (2017). Pharmacological
+rescue of diabetic skeletal stem cell niches. Sci. Transl. Med. 9,
+eaag2809. https://doi.org/10.1126/scitranslmed.aag2809.
+44. Baud’huin, M., Solban, N., Cornwall-Brady, M., Sako, D., Kawamoto, Y.,
+Liharska, K., Lath, D., Bouxsein, M.L., Underwood, K.W., Ucran, J.,
+et al. (2012). A soluble bone morphogenetic protein type IA receptor in-
+creases bone mass and bone strength. Proc. Natl. Acad. Sci. USA 109,
+12207–12212. https://doi.org/10.1073/pnas.1204929109.
+45. Meng, X.-M., Nikolic-Paterson, D.J., and Lan, H.Y. (2016). TGF-b: the
+master regulator of ﬁbrosis. Nat. Rev. Nephrol. 12, 325–338. https://doi.
+org/10.1038/nrneph.2016.48.
+46. Lim, C.Y., Wang, H., Woodhouse, S., Piterman, N., Wernisch, L., Fisher, J.,
+and Go¨ ttgens, B. (2016). BTR: training asynchronous Boolean models us-
+ing single-cell expression data. BMC Bioinformatics 17, 355. https://doi.
+org/10.1186/s12859-016-1235-y.
+47. Selman, M., and Pardo, A. (2021). Fibroageing: an ageing pathological
+feature driven by dysregulated extracellular matrix-cell mechanobiology.
+Ageing Res. Rev. 70, 101393. https://doi.org/10.1016/j.arr.2021.101393.
+48. Jiang, H., Lei, R., Ding, S.-W., and Zhu, S. (2014). Skewer: a fast and ac-
+curate adapter trimmer for next-generation sequencing paired-end reads.
+BMC Bioinformatics 15, 182. https://doi.org/10.1186/1471-2105-15-182.
+49. Dobin, A., Davis, C.A., Schlesinger, F., Drenkow, J., Zaleski, C., Jha, S.,
+Batut, P., Chaisson, M., and Gingeras, T.R. (2013). STAR: ultrafast univer-
+sal RNA-seq aligner. Bioinformatics 29, 15–21. https://doi.org/10.1093/
+bioinformatics/bts635.
+50. Li, B., and Dewey, C.N. (2011). RSEM: accurate transcript quantiﬁcation
+from
+RNA-Seq
+data
+with or
+without
+a
+reference
+genome.
+BMC
+Bioinformatics 12, 323. https://doi.org/10.1186/1471-2105-12-323.
+51. Nestorowa, S., Hamey, F.K., Pijuan Sala, B., Diamanti, E., Shepherd, M.,
+Laurenti, E., Wilson, N.K., Kent, D.G., and Go¨ ttgens, B. (2016). A single-
+cell resolution map of mouse hematopoietic stem and progenitor cell dif-
+ferentiation. Blood 128, e20–e31. https://doi.org/10.1182/blood-2016-05-
+716480.
+52. Gulati, G.S., Sikandar, S.S., Wesche, D.J., Manjunath, A., Bharadwaj, A.,
+Berger, M.J., Ilagan, F., Kuo, A.H., Hsieh, R.W., Cai, S., et al. (2020).
+Single-cell transcriptional diversity is a hallmark of developmental poten-
+tial. Science 367, 405–411. https://doi.org/10.1126/science.aax0249.
+53. La Manno, G., Soldatov, R., Zeisel, A., Braun, E., Hochgerner, H.,
+Petukhov, V., Lidschreiber, K., Kastriti, M.E., Lo¨ nnerberg, P., Furlan, A.,
+et al. (2018). RNA velocity of single cells. Nature 560, 494–498. https://
+doi.org/10.1038/s41586-018-0414-6.
+54. Chen, E.Y., Tan, C.M., Kou, Y., Duan, Q., Wang, Z., Meirelles, G.V., Clark,
+N.R., and Ma’ayan, A. (2013). Enrichr: interactive and collaborative HTML5
+gene list enrichment analysis tool. BMC Bioinformatics 14, 128. https://
+doi.org/10.1186/1471-2105-14-128.
+55. Sahoo, D., Dill, D.L., Tibshirani, R., and Plevritis, S.K. (2007). Extracting bi-
+nary signals from microarray time-course data. Nucleic Acids Res. 35,
+3705–3712. https://doi.org/10.1093/nar/gkm284.
+56. Sahoo, D., Dill, D.L., Gentles, A.J., Tibshirani, R., and Plevritis, S.K. (2008).
+Boolean implication networks derived from large scale, whole genome mi-
+croarray datasets. Genome Biol. 9, R157. https://doi.org/10.1186/gb-
+2008-9-10-r157.
+57. Sahoo, D., Seita, J., Bhattacharya, D., Inlay, M.A., Weissman, I.L.,
+Plevritis, S.K., and Dill, D.L. (2010). MiDReG: a method of mining develop-
+mentally regulated genes using Boolean implications. Proc. Natl. Acad.
+Sci. USA 107, 5732–5737. https://doi.org/10.1073/pnas.0913635107.
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823, May 1, 2025
+823
+
+STAR+METHODS
+KEY RESOURCES TABLE
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Antibodies
+Mouse anti-human CD45
+BioLegend
+Cat#304029-BL; RRID: AB_2174123
+Mouse anti-human CD235a
+BioLegend
+Cat#306612-BL; RRID: AB_2116241
+Mouse anti-human CD31
+Thermo Fisher Scientiﬁc
+Cat#13-0319-82; RRID: AB_466423
+Mouse anti-human CD202b (TIE-2)
+BioLegend
+Cat#334204; RRID: AB_1186046
+Mouse anti-human CD146
+BioLegend
+Cat#342010; RRID: AB_10644009
+Mouse anti-human PDPN
+Thermo Fisher Scientiﬁc
+Cat#17-9381-42; RRID: AB_10801951
+Mouse anti-human CD164
+BioLegend
+Cat#324808; RRID: AB_2072587
+Mouse anti-human CD73
+BioLegend
+Cat#344016; RRID: AB_2561809
+Streptavidin (APC-Alexa Fluor 750)
+Thermo Fisher Scientiﬁc
+Cat#SA1027; RRID: AB_2716627
+Anti-alpha smooth muscle Actin
+Abcam
+Cat# ab7817; RRID: AB_262054
+Goat anti-mouse AF594
+Abcam
+Cat# ab150120; RRID: AB_2631447
+Mouse anti-human PDPN
+eBioscience
+Cat#BMS1105; RRID: AB_10598795
+Goat anti-mouse AF488
+Abcam
+Cat# ab150113; RRID: AB_2687506
+Mouse anti-Human Nuclear Antigen (HNA) antibody
+Abcam
+CAT#ab191181; RRID: AB_2885016
+Rabbit anti-human Osteocalcin
+Abcam
+CAT#ab93876; RRID: AB_10675660
+Rabbit anti-human Collagen II
+Abcam
+CAT#ab34712; RRID: AB_731688
+RNAscope Probe- Hs-HIC1
+Advanced Cell Diagnostics
+Cat#470571
+RNAscope Probe- Hs-SKIL-C3
+Advanced Cell Diagnostics
+Cat#427981-C3
+RNAscope Probe- Hs-SPP1-C2
+Advanced Cell Diagnostics
+Cat#420101-C2
+RNAscope Probe- Hs-FMO1-C2
+Advanced Cell Diagnostics
+Cat#892031-C2
+TaqMan Gene Expression Probe GAPDH
+Thermo Fisher Scientiﬁc
+Hs02786624_g1
+TaqMan Gene Expression Probe SPP1
+Thermo Fisher Scientiﬁc
+Hs00959010_m1
+TaqMan Gene Expression Probe FBN1
+Thermo Fisher Scientiﬁc
+Hs00171191_m1
+TaqMan Gene Expression Probe HAPLN1
+Thermo Fisher Scientiﬁc
+Hs01091999_m1
+TaqMan Gene Expression Probe FMO1
+Thermo Fisher Scientiﬁc
+Hs01032912_m1
+TaqMan Gene Expression Probe BMPR1A
+Thermo Fisher Scientiﬁc
+Hs04980288_g1
+TaqMan Gene Expression Probe IHH
+Thermo Fisher Scientiﬁc
+Hs00745531_s1
+TaqMan Gene Expression Probe SOX9
+Thermo Fisher Scientiﬁc
+Hs00165814_m1
+TaqMan Gene Expression Probe TAGLN
+Thermo Fisher Scientiﬁc
+Hs01038777_g1
+Biological samples
+Human fetal samples
+certiﬁed procurement services
+Gestational age and sex listed in Table S1
+Adult samples
+Stanford University and UC Davis
+Health Hospitals
+Age and sex listed in Table S1.
+Chemicals, peptides, and recombinant proteins
+Type II collagenase
+Sigma-Aldrich
+Cat#C6885
+DNase I
+Worthington
+Cat#NC9199796
+PBS
+GIBCO
+Cat#C14190500BT
+UltraPure 0.5M EDTA
+Invitrogen
+Cat#15575020
+DAPI and Hoechst Nucleic Acid Stains
+Invitrogen
+Cat#D1306
+MEM-alpha medium
+Fisher Scientiﬁc
+Cat#12561-056
+Human platelet-derived lysate
+Stem Cell Technologies
+Cat#06960
+Penicillin-Streptomycin solution
+Thermo Fisher Scientiﬁc
+Cat#15140-122
+Crystal Violet
+Thermo Fisher Scientiﬁc
+Cat#B21932.22
+Paraformaldehyde
+Thermo Fisher Scientiﬁc
+Cat#047340.9L
+(Continued on next page)
+ll
+OPEN ACCESS
+Resource
+e1
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+Continued
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Dexamethasone
+Thermo Fisher Scientiﬁc
+Cat#A17590.03
+Sodium b-glycerophosphate
+Sigma-Aldrich
+Cat#G9891
+L-Ascorbic acid 2-phosphate
+Sigma-Aldrich
+Cat#A8960
+Alizarin Red S
+Sigma-Aldrich
+Cat#A5533
+DMH1
+Selleck
+Cat#S7146
+SAG 21k
+Biotechne
+Cat#5282
+Acetic Acid
+Thermo Fisher Scientiﬁc
+Cat#A35-500
+Methanol
+Fisher Scientiﬁc
+Cat#A412-4
+Alcian Blue
+Sigma-Aldrich
+Cat#A5268
+Human Transforming growth factor b1
+Peprotech
+Cat#100-21C
+Ethylenediaminetetraacetic acid (EDTA)
+Invitrogen
+Cat#15573-038
+Bovine Serum Albumin
+Sigma-Aldrich
+Cat#A2153
+Triton X-100
+Thermo Fisher Scientiﬁc
+Cat#A16046.AP
+Matrigel
+Corning
+Cat#354230
+Anorganic cancellous bone graft granulate
+InterOss
+Cat#IOSG050
+Opti-MEM I Reduced Serum Medium
+Thermo Fisher Scientiﬁc
+Cat#31985070
+Sucrose
+Fisher Scientiﬁc
+Cat#S5-500
+TRIzol
+Thermo Fisher Scientiﬁc
+Cat#15596026
+Nuclease-free water
+Thermo Fisher Scientiﬁc
+Cat#10977023
+RNase inhibitor
+Clontech
+Cat#2313B
+dNTP
+Invitrogen
+Cat#10297-018
+MVG sodium alginate
+Pronova Novamatrix
+Cat#4200101
+Sodium periodate
+Acros Organics
+CAS#7790-28-5
+CaCl2
+MilliporeSigma
+CAS#10043-52-4
+Ammonium chloride
+Sigma
+Cat#A9434-500G
+Potassium bicarbonate
+Fisher Chemical
+Cat#P235-500
+Critical commercial assays
+RNAscope Multiplex Fluorescent Reagent
+Kit v2
+Advanced Cell Diagnostics
+Cat#323100
+Taq PCR Master Mix Kit
+Qiagen
+Cat#201445
+QuantiTect Reverse Transcription Kit
+Qiagen
+Cat#205313
+CosMx Human Universal Cell Characterization
+Panel (RNA, 1000 Plex)
+Nanostring
+CMX-H-USCP-1KP-R
+ERCC (External RNA Controls Consortium)
+ExFold RNA Spike-In Mix 2
+Invitrogen
+Cat#4456739
+SMARTScribe reverse transcriptase
+Clontech
+Cat#639538
+KAPA HiFi HotStart ReadyMix
+Kapa Biosystems
+Cat#KK2602
+AMPure XP beads
+Beckman Coulter
+Cat#A63882
+Nextera XT kit
+Illumina
+Cat#FC-131-1096
+Fragment Analyzer DNA/NGS Kits
+Agilent
+DNF-474-0500
+Bioanalyzer High Sensitivity DNA kit
+Agilent
+5067-4626
+10X Chromium Next GEM Single Cell 3ʹ v3.1
+GEM kit
+10X Genomics Inc
+PN-1000121
+Deposited data
+Single-cell RNA sequencing data
+This paper
+NCBI Gene Expression Omnibus (GEO)
+repository, GEO: GSE234040
+Clonetracker
+Github
+https://github.com/sahoo00/Clonetracker
+(https://doi.org/10.5281/zenodo.14823191, v1.0.1)
+Invariant-Circuits
+Github
+https://github.com/sahoo00/Invariant-Circuits
+(https://doi.org/10.5281/zenodo.14823193, v1.0.1))
+(Continued on next page)
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+e2
+
+EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+Fetal and adult human samples
+The gestational age and sex of fetal specimens are listed in Table S1. Six human fetal samples were obtained from certiﬁed procure-
+ment services and shipped overnight. Samples ranged in age from 17 to 20 weeks of gestation with no restrictions on race or gender.
+Adult hSSCs for functional and scRNAseq assays were obtained from fracture callus (day 1-8 after injury), nonunions (120-300 days
+after injury), uninjured periosteum, and Fibrous Dysplasia bone tissues. Age and sex of bone specimens are also listed in Table S1.
+Fracture callus/nonunion/periosteal/Fibrous Dysplasia specimens were obtained from Stanford University and UC Davis Hospitals.
+Fetal sample procurement and handling as well as collection of all other tissues, including fracture callus, nonunion and Fibrous
+Continued
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Experimental models: Organisms/strains
+NSG (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ;) mice
+JAX
+JAX: 005557
+Oligonucleotides
+oligo dT30VN
+IDT
+custom: 50-AAGCAGTGGTATCAACGCAGA
+GTACT30VN-30
+Template-switching oligonucleotide (TSO)
+Exiqon
+custom: 50-AAGCAGTGGTATCAACGCAGA
+GTACATrGrG+G-30
+IS PCR primers
+IDT
+custom: 50-AAGCAGTGGTATCAACGCAG
+AGT-30
+Partial Read 1 primer (CloneTracker assay)
+IDT
+50-CTACACGACGCTCTTCCGATCT-30
+Adaptor-FBP1 (CloneTracker assay)
+IDT
+50-GTGACTGGAGTTCAGACGTGTGCTCTT
+CCGATCTCCGACCACCGAACGCAACGCA
+CGCA-30
+Recombinant DNA
+CloneTracker XP 10M Barcode-3’ Library in
+pScribe5-Venus-Puro plasmid
+Cellecta
+Cat#BCXP10M3VP-P
+Software and algorithms
+Scanpy
+Github
+v1.9, https://github.com/scverse/scanpy
+Squidpy
+Github
+v1.2.1, https://github.com/scverse/squidpy
+CellphoneDB
+Github
+v5, https://github.com/Teichlab/cellphonedb
+CellCharter
+Github
+v0.3.0, https://github.com/CSOgroup/
+cellcharter
+bcl2fastq2
+Github
+v2.18, https://github.com/brwnj/bcl2fastq
+Skewer
+Github
+v0.2.2, https://github.com/relipmoc/skewer
+STAR aligner
+Github
+v2.6.1d, https://github.com/alexdobin/STAR
+RSEM
+Github
+v1.2.21, https://github.com/deweylab/RSEM
+Cellranger
+10X Genomics Inc
+v7.1.0
+dnaclust
+Github
+https://github.com/hsmurali/SCRAPT/tree/
+main/dnaclust
+Scvelo
+Github
+v0.2.5, https://github.com/theislab/scvelo
+StepMiner
+Github
+https://github.com/suryattheja/StepMiner-
+BioInformatics
+BooleanNet
+Github
+https://github.com/sahoo00/BooleanNet
+MiDReG
+UCSD
+http://hegemon.ucsd.edu/microarray/
+MiDReG/
+Boolean Equivalent Correlated Clusters
+UCSD
+http://hegemon.ucsd.edu/Misc/biomarkers/
+bone.php?go=hs
+GraphPad Prism
+GraphPad Software
+v.9.5.1, http://www.graphpad.com/
+scientiﬁc-software/prism
+FlowJo
+FLOWJO LLC
+https://www.ﬂowjo.com/
+Cytotrace
+Stanford University
+https://cytotrace.stanford.edu/
+Enrichr
+Github
+https://github.com/wjawaid/enrichR
+Biorender
+Biorender
+https://www.biorender.com/
+ll
+OPEN ACCESS
+Resource
+e3
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+Dysplasia, used in this study were conducted under IRB-35711 (Stanford) and IRB-1997852 (UC Davis) in accordance with the guide-
+lines and regulations set by the Institutional Review Board of Stanford University School of Medicine and UC Davis School of Med-
+icine, respectively. On these IRBs, informed consent was not required as samples were considered biological waste. Brieﬂy, fracture
+callus tissue was collected from patients undergoing an open approach and direct reduction of fracture fragments. Hematoma and
+fracture callus tissue that disturbed satisfactory alignment of displaced fragments was removed and saved for research purposes at
+time of surgery. Only tissue between the two ends of the fracture was removed to reassemble fragments prior to ﬁxation. Intrame-
+dullary sampling was not included in this study. No restrictions were made regarding the race, gender, or age of the specimen’s
+donor. Following excision, all specimens were placed on ice, and hSSCs were isolated as described below.
+Mice
+Three-month old male immunodeﬁcient NSG mice (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ; JAX: 005557) were used for transplantation
+studies. Mice were maintained at the Stanford University and UC Davis research animal facilities in accordance with university guide-
+lines. Animals were given food and water ad libitum and housed in temperature- and light-controlled micro-insulators. All studies
+were approved via IACUC by the respective institutions.
+METHOD DETAILS
+Human fetal and adult bone processing
+Human specimens were processed for the generation of a single cell solution as previously described.14 Brieﬂy, human fetal bones
+were separated and gently denuded of soft tissue using scissors and paper towels. Intact long bones, spine, pelvis and cranial tissues
+were collected. Long bones were additionally dissected by ﬁrst gently stripping periosteal/perichondral tissue from the intact skeletal
+element using a razor blade and ﬁne forceps. The cartilaginous bone ends were then removed to analyze the growth plate region. For
+spine tissue vertebral bodies from cerebral, thoracic and lumbar vertebrae were combined. Disc tissues were then separated from
+the rest of the vertebral body by applying force from both sides of the tissue using forceps at the intersection of disc and bone areas.
+For cranial tissue dissection, sutures were ﬁrst removed using a razor blade and ﬁne scissors. Frontal and parietal skull elements were
+then separated along the areas were sutures were removed. For tendon tissue, achillea and patella tendon ﬁbers were combined.
+Once all the desired skeletal site tissues were dissected and cleaned, they were placed on ice in individual 10 cm Petri dishes con-
+taining FACS buffer. From adult human bone specimens regions containing distinguishable areas of clotted blood were dissected out
+with scalpels and the remaining tissue was then minced with razor blades, resuspended in 3000 U/mL type II collagenase (Sigma-
+Aldrich, Cat#C6885) digestion buffer supplemented with 100 U/mL DNase I (Worthington, Cat#NC9199796) and incubated at 37C
+for 60 min under constant agitation. The supernatant was ﬁltered through a 70 mm nylon mesh and quenched with staining buffer (2%
+fetal bovine serum (FBS), in phosphate-buffered saline (PBS), GIBCO, Cat#C14190500BT). Cells were centrifuged at 200 g at 4C
+followed by resuspension in the staining buffer.
+Fluorescence-activated cell sorting (FACS)
+After removing supernatant from the derived pellet, human stromal cells were separated from red blood cells (RBCs) by addition of
+ACK 2 mL of ACK (Ammonium-Chloride-Potassium) lysis buffer. After three minutes incubation on ice 13 mL of staining buffer was
+added to quench lysis reaction followed by centrifugation at 200 g at 4C. The resulting pellet was resuspended in 100 mL of staining
+buffer and stained with ﬂuorochrome-conjugated antibodies against CD45 (BioLegend, Cat#304029-BL), CD235a (BioLegend,
+Cat#306612-BL),
+CD31
+(Thermo
+Fisher
+Scientiﬁc,
+Cat#13-0319-82),
+CD202b
+(TIE-2)
+(BioLegend,
+Cat#334204),
+CD146
+(BioLegend, Cat#342010), PDPN (Thermo Fisher Scientiﬁc, Cat#17-9381-42), CD164 (BioLegend, Cat#324808), and CD73
+(BioLegend, Cat#344016). Secondary antibody staining against Biotin was performed after an extra wash step using Streptavidin
+(Thermo Fisher Scientiﬁc, Cat#SA1027). A FACS Aria II (BD Biosciences) or Aurora CS (CYTEK) was used for ﬂow cytometric analysis
+and sorting of hSSCs. Gating was established with IgG controls and the help of ﬂuorescence-minus-one (FMO: staining with all ﬂuo-
+rophores except one) controls and negative DAPI staining was used as a measure for cell viability.
+Cell culture
+Freshly sorted hSSCs were collected in 200 mL of staining buffer. For assays investigating downstream cell populations, human
+Bone-Cartilage-Stromal Progenitors (hBCSPs) and osteoprogenitors (hOPs) were sorted into individual collection tubes as well. Cells
+were pelleted and resuspended in expansion media containing MEM-alpha medium (Fisher Scientiﬁc: Cat#12561-056) with 10%
+human platelet-derived lysate (Stem Cell Technologies, Cat#06960), 1% Penicillin-Streptomycin solution (Pen-Strep; Thermo Fisher
+Scientiﬁc, Cat#15140-122). Plated culture vessels were maintained in an incubator at 37C with 5% CO2. Fracture callus sample
+specimens yielding less than 30 hSSCs were excluded from further functional assays.
+Fibroblast Colony-Forming-Unit (CFU-F) in vitro assay
+For fetal CFU-F in vitro assays, 500 hSSCs were sorted and plated into 6-well plates and cultured for 10-14 days. At this time, spec-
+imens were ﬁxed with 2% PFA and stained with 0.5% Crystal Violet solution. The number of colonies (>30 cells) per well was counted
+to assess percentage of CFU-F. Human fracture callus derived hSSCs were sorted and plated at maximum of 500 cells per culture
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+e4
+
+vessel into 10 cm culture dishes. Colonies were counted two weeks after seeding using a light microscopy. Cells were then lifted and
+used for in vitro differentiation assays. Samples yielding less than three colonies were excluded from in vitro differentiation assays.
+Osteogenic in vitro differentiation
+Freshly sorted cells expanded for 10-14 days were lifted by trypsin digestion and seeded into 96-well plates for osteogenic differen-
+tiation. After overnight incubation expansion media was substituted with osteogenic differentiation media (DMEM medium with 10%
+FBS, 1% Pen-Strep, 100 nM dexamethasone, 10 mM sodium b-glycerophosphate [Sigma-Aldrich, Cat#G9891], 2.5 mM ascorbic
+acid 2-phosphate [Sigma-Aldrich, Cat#A8960]). Media was changed every other day for 14 days. Cells then were ﬁxed with 2%
+PFA and stained with 2% Alizarin Red S (Sigma-Aldrich, Cat#A5533) to assess osteogenic potential. For experiments testing the acti-
+vation of speciﬁc pathways on osteogenic differentiation DMH1 (4 mM; Selleck: Cat#4126) and/or SAG 21k (0.05 mM; CAS#946002-
+48-8, provided by the Beachy lab at Stanford University) were added during each osteogenic media change. Plates were washed and
+dried before subsequently dissolving stain in 300 ml of 20% Methanol / 10% Acetic Acid solution. After the complete liberation of
+staining, 80 ml of each well was transferred into a new 96-well plate in duplicates and absorbance was measured at 450 nm using
+a Ultraspec 2100 UV/Visible Spectrophotometer (Biochrom, Harvard Bioscience).
+Chondrogenic in vitro differentiation
+For chondrogenic differentiation cells were cultured in a micromass. For that, a 5 mL drop containing 8x105 cells was placed into the
+center of a 24-well plate well. Cells were incubated at 37C for two hours with 5% CO2 and then provided with 500 mL of pre-warmed
+chondrogenic media (DMEMhigh with 10 % FBS, 100 nM Dexamethasone, 1 mM L-ascorbic acid-2-phosphate and 10 ng/ml Human
+Transforming growth factor b1 [Peprotech: Cat#100-21C]). Media was refreshed every other day for two weeks. The micromass was
+then ﬁxed with 2% PFA and stained with 1% Alcian Blue (Sigma-Aldrich, Cat#A5268). Chondrogenic potential was assessed by
+spectrophotometrically measuring absorption at 595 nm.
+Immunocytochemistry
+Freshly sorted hSSCs were plated at a density of 1,000 cells per 96-well plate well and maintained in expansion media for two days,
+allowing to attach and expand. At day two culture medium was removed and cells were ﬁxed with 2% PFA. Fixed cell cultures were
+then permeabilized with 0.1% Triton X-100 solution and blocked with 3% BSA in PBS. Antibody staining was conducted with primary
+human Anti-alpha smooth muscle Actin antibody (Abcam, Cat# ab7817) and secondary goat anti-mouse AF594 (Abcam, Cat#
+ab150120). For nuclear staining specimens were treated with DAPI.
+RNA in situ hybridization
+Fresh human fetal long bone specimens (17 weeks) were ﬁxed overnight before decalciﬁcation using 400 mM Ethylenediaminetetra-
+acetic acid (EDTA; Invitrogen, Cat#15573-038) in PBS (pH 7.2) at 4C for 2 weeks. Specimens were then cryopreserved and
+sectioned at 10 microns. Sections were then processed for RNA in situ hybridization using RNAscope Multiplex Fluorescent Re-
+agent Kit v2 according to manufacturer’s protocol (Advanced Cell Diagnostics, Cat#323100). Sections were RNA-probed with HIC1
+(ACD, Cat# 470571), SKIL (ACD, Cat# 427981-C3), SPP1 (ACD, Cat# 420101-C2) and FMO1 (ACD, Cat# 892031-C2). Additional
+immunoﬂuorescence was added by staining with mouse anti-human PDPN antibody (eBioscience, Cat#BMS1105) followed by sec-
+ondary goat anti-mouse AF488 (Abcam, Cat# ab150113) as well as counterstaining with DAPI.
+Subcutaneous xenograft transplant model
+Freshly dissected fetal phalanges (gestational age 17-20 weeks) were transplanted into the the dorsum of 3-month-old immunode-
+ﬁcient NSG mice (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ; JAX: 005557) as described previously.14 Brieﬂy, a small skin incision was
+made in the dorsum of anesthetized NSG mice and fetal phalanges slid under the skin. Interrupted sutures were applied to close
+the incision, and transplants were allowed to engraft and grow for indicated time points.
+Subcutaneous cell transplants
+Freshly sorted patient-derived hSSCs were sorted and expanded to conﬂuency. 1x106 cells were mixed with 5 mL of Matrigel (Corn-
+ing; Cat#354230) and seeded on 20 mg anorganic cancellous bone graft granulat (InterOss, 0.25-1mm, Cat#IOSG050) before in-
+cubation at 37C for 1h. For experiments testing the activation of speciﬁc pathways DMH1 (2 mg/mL; Selleck: Cat#4126) and SAG 21k
+(30 ng/mL; CAS#946002-48-8, provided by the Beachy lab at Stanford University) or PBS as control were added during the Matrigel/
+InterOss/Cell mixture process. Cell mixtures were placed at room and then immediately subcutaneously transplanted into the
+dorsum of 3-month old immunodeﬁcient NSG mice (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ; JAX: 005557). Grafts were harvested at
+indicated timepoints and analyzed by microCT and histology.
+In vivo clonal barcoding of hSSCs
+For clonal tracking of single hSSCs, 1.5-2x105 freshly sorted cells were seeded into 12-well plate with 1 mL of Opti-MEM Reduced
+Serum Media containing lentiviral barcode particles generated from CloneTracker XP 10M Barcode-3’ Library in pScribe5-Venus-
+Puro plasmid (Cellecta, Cat#BCXP10M3VP-P). Cells were spun in the well plate at 1,500g for 60 min at 24–27 C. Directly following
+that step, 3 mL of fresh culture media was added, and cells were incubated at 37 C for 24 h. At this point, the media was changed,
+ll
+OPEN ACCESS
+Resource
+e5
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+and cells allowed to further incubate for three days. Cells were then lifted using collagenase and stained with FACS antibodies. Sorted
+cells with phenotypic hSSC surface marker proﬁle and simultaneous expression of Venus ﬂuorophore were used for renal capsule
+transplantation assays into NSG mice. To prevent dilution of clones in ﬁnal readout, 500 Venus+, barcoded hSSCs were mixed
+with 5,000 Venus, non-barcoded hSSC supporter cells, mixed with 5 mL of Matrigel and transplanted below the renal capsule of
+mice. Three transplants per hSSC source were conducted. Each mouse was transplanted with hSSCs from the growth plate under
+the renal capsule of one kidney and with hSSCs from the periosteum contralaterally. After three weeks, kidneys were excised from
+sacriﬁced mice and assessed for Venus expression in the graft tissue via microscope. Grafts were then dissected out, pooled by
+respective hSSC sources and processed for ﬂow cytometric isolation of Venus+ cells as described above. Sorted cells from grafts
+were processed for 10X genomics single cell RNA-sequencing for interrogation into cell fates and clonal relationships
+(described below).
+Micro-computed tomography
+Grafts were dissected from mice and ﬁxed in 2% PFA overnight. Samples were then scanned using a Bruker Skyscan 1276 (Bruker
+Preclinical Imaging) with a source voltage of 85 kV, a source current of 200 mA, a ﬁlter setting of AI 1 mm, and pixel size of 12 microns
+at 2016 x 1344. Reconstructed samples were analyzed using CT Analyser and CTvox software (Bruker).
+Bi-cortical fracture model with hSSC transplants
+FACS-puriﬁed primary hSSCs were processed from adult human donors and cultured in hSSC media until conﬂuent. Cells were then
+trypsinized and loaded onto alginate scaffolds. Speciﬁcally, MVG sodium alginate was partially oxidized to a theoretical extent of 1%
+with sodium periodate, which created acetal groups susceptible to hydrolysis and then modiﬁed with arginine–glycine–aspartic acid
+peptide (RGD) to promote cell adhesion. First, Alginate was resuspended in sterile PBS (pH 7.25) at 2%(w/v) and optionally mixed
+with SAG 21k (Biotechne, CAT#5282, resuspended in DMSO at 40 mM) and/or DMH1 (Selleckchem, CAT#S7146, resuspended
+in DMSO at 40 mM) and mixed overnight at 4C. Cells were resuspended at 5 x 106/mL in the precursor solution and pipetted
+onto a silicone mold. To crosslink, samples were submerged in 20 mL of 100 mM CaCl2 for 20 minutes before transferring to a
+well plate. Each gel had a total volume of 6 mL with ﬁnal cell number of 3 x 104 cells and optionally with 0.05 mM SAG 21k and/or
+4 mM DMH1. Secondly, adult male NSG mice were anaesthetized using aerosolized isoﬂurane and analgesia was administered
+before incision. The femur was exposed after muscle distraction and lateral dislocation of the patella. A 25-gauge regular bevel nee-
+dle (BD BioSciences) was inserted between the femoral condyles to provide relative intramedullary ﬁxation, and a transverse fracture
+was created in the mid-diaphysis using micro-scissors. The gel detailed above was then placed adjacent to the fracture. Right after,
+the patella was relocated, and 6-0 nylon suture (Ethicon) was used to re-approximate the muscles. For ﬂow cytometric analysis, mice
+were sacriﬁced after 10 days, and femurs were processed for analysis. For mCT and histology, mice were sacriﬁced after 14 days.
+Femurs were ﬁxed in 2% paraformaldehyde overnight, decalciﬁed in 10% EDTA, and dehydrated in 30% sucrose. Pentachrome and
+IHC staining were performed with anti-Human Nuclear Antigen (HNA) antibody (Abcam, CAT#ab191181), Anti-Osteocalcin antibody
+(Abcam, CAT#ab93876) and Anti-Collagen II antibody (Abcam, CAT#ab34712).
+Quantitative PCR
+For analysis of freshly isolated, non-cultured cell populations of interest, fetal cells were directly sorted into 1.5 mL Eppendorf tubes
+containing 500 uL of Trizol. RNA was isolated from 5-10x104 cells and generated cDNA was used for TaqMan Real-Time PCR Assays
+(ThermoFisher) with the following probes: GAPDH: Hs02786624_g1; SPP1: Hs00959010_m1; FBN1: Hs00171191_m1; HAPLN1:
+Hs01091999_m1; FMO1: Hs01032912_m1. For analysis of in vitro factor treated hSSCs, primary cells were cultured in hSSC expan-
+sion media until conﬂuent. Cells were then trypsinized and plated in a 12-well plate at 100,000 cells/well. Osteogenic media was
+added the day after plating, with or without the addition of the small molecules SAG21k (Hh activator) and DMH1 (BMP receptor in-
+hibitor). After 3 days, cells were ﬁxed with TRIzol Reagent and processed for mRNA extraction. QuantiTect Reverse Transcription
+Kit was used to create the cDNA library, followed by the QuantiTect Taq PCR Master Mix Kit for qPCR. The following probes
+were used: GAPDH: Hs02786624_g1; BMPR1A: Hs04980288_g1; IHH: Hs00745531_s1; SOX9: Hs00165814_m1; TAGLN:
+Hs01038777_g1.
+Spatial transcriptomics with Nanostring CosMx
+CosMx technology (Nanostring, Seattle, WA, USA), a high-plex spatial molecular imager, was employed to proﬁle a 20-week human
+embryonic phalange specimen with the 1,000 genes CosMx Universal Cell Characterization Panel following the manufacturer’s pro-
+tocol. Brieﬂy, ﬁxed frozen specimens were prepared and sliced to a thickness of 5 mm. PanCK, CD45, and CD68 antibodies and DAPI
+were used as morphological markers. Prepared samples were loaded onto the CosMx SMI instrument and underwent data collec-
+tion, image processing, feature extraction, and cell segmentation. Transcriptomic proﬁles of individual cells were generated by inte-
+grating target transcript locations with cell segmentation information. These proﬁles were subsequently used for downstream data
+analysis. Spatial transcriptome analysis was performed using squidpy (v1.2.1) and scanpy (v1.9.3). Cells with <20 probe counts were
+ﬁltered out. After quality control, 58,377 cells were obtained within the CosMx SP5 dataset of 104 ﬁelds of view (FOVs). To integrate
+cellular molecular features with tissue spatial histology, we employed CellCharter33 as the algorithmic framework to identify, char-
+acterize and compare celluar niches. Five distinct celluar niches were annotated. Differentially expressed genes were obtained using
+the ‘‘rank_genes_groups’’ function in scanpy. An average of 113 genes per cell were detected for the periosteal region analyzed, 75
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+e6
+
+genes per cell for the growth plate region and 66 genes per cell for the whole phalange. CellphoneDB was used to investigate inter-
+actions between putative hSSCs and surrounding cells using only genes that were expressed in at least 5% of the cells within the
+respective areas analyzed. Cells located more than 200 mm away were excluded from analysis.
+Plate-based Smart-seq2 single cell RNA-sequencing
+Single cell suspension derived from target tissues was processed for ﬂow cytometric isolation as described above and published.14
+Single cell RNA-sequencing was conducted as reported before.19 Brieﬂy, single cells were index-sorted into 96-well plates contain-
+ing 4 mL lysis buffer [1 U/mL RNase inhibitor (Clontech, Cat#2313B), 0.1% Triton (Thermo Fisher Scientiﬁc, Cat#85111), 2.5 mM dNTP
+(Invitrogen, Cat#10297-018), 2.5 mM oligo dT30VN (IDT, custom: 50–AAGCAGTGGTATCAACGCAGAGTACT30VN-30), and 1:600,000
+ERCC (External RNA Controls Consortium) ExFold RNA Spike-In Mix 2 (ERCC; Invitrogen, Cat#4456739) in nuclease-free water
+(Thermo Fisher Scientiﬁc, Cat#10977023)]. Immediately after sorting, plates were centrifuged at 3000 x g for 30 seconds at 4 C,
+snap frozen on dry ice and kept at -80 C until cDNA synthesis. Reverse transcription (RT) and cDNA pre-ampliﬁcation was performed
+using the Smart-seq2 protocol with minor modiﬁcations. Lysis plates were thawed on ice and incubated at 72 C for 3 minutes fol-
+lowed by immediate snap chilling on ice to anneal the oligo dT30VN primer. cDNA synthesis from single cell RNA was performed
+using oligo-dT primed reverse transcription with SMARTScribe reverse transcriptase (Clontech, Cat#639538) and a locked-nucleic
+acid containing template-switching oligonucleotide (TSO; Exiqon, custom: 50-AAGCAGTGGTATCAACGCAGAGTACATrGrG+G-30).
+PCR ampliﬁcation was conducted using KAPA HiFi HotStart ReadyMix (Kapa Biosystems, Cat#KK2602) with IS PCR primers (IDT,
+custom: 50-AAGCAGTGGTATCAACGCAGAGT-30). To remove residual reaction components and oligos smaller than 400 base pairs,
+pre-ampliﬁed cDNA was puriﬁed using 0.65–0.75X volume of calibrated AMPure XP beads (Beckman Coulter, Cat#A63882). The
+cDNA concentration and size distribution for each well was assessed by a high-sensitivity AATI 96-capillary fragment analyzer
+(HS NGS Fragment Kit [1-6000bp]; Agilent). cDNA from each well was normalized to the desired concentration range (0.15 ng/
+mL) by dilution with EB buffer. The content of four 96-well plates was then consolidated into 384-well plates without cherry-pick-
+ing/removing wells not holding any single cell cDNA. Subsequently the 384-well plates were used for library preparation (Nextera
+XT kit; Illumina, Cat#FC-131-1096) using a semi-automated pipeline. The barcoded libraries of each well were pooled, cleaned-
+up, and size-selected using two rounds (0.35x and 0.75x) of Agencourt AMPure XP beads (Beckman Coulter), as recommended
+by the Nextera XT protocol (Illumina). A high-sensitivity AATI fragment analyzer run was used to assess fragment distribution and
+concentrations. Pooled libraries were sequenced on a NovaSeq 6000 S4 ﬂow cell (Illumina) to obtain 1–2 million 2 x 150 base-
+pair paired-end reads per cell.
+Single cell RNA-seq data processing
+Data was demultiplexed using bcl2fastq2 2.18 (Illumina). Raw reads were further processed using skewer v0.2.2. for 30 quality-trim-
+ming, 30 adaptor-trimming, and removal of degenerate reads.48 Trimmed reads were then aligned to the hg38 genome (Gencode
+version GRCh38.p13) with STAR aligner version 2.6.1d using 2-pass mapping,49 and gene counts were calculated using RSEM
+1.2.21.50 When aligning female data the entire Y chromosome was masked, while only the PAR regions on the Y chromosome
+were masked for male data. If sex was unknown PAR-masking was used. For data pre-processing gene count tables were combined
+with metadata using the Scanpy python package v1.9.1. For each dataset investigated, cells with less than 500 genes or 25,000 read
+counts as well as mitochondrial gene content higher than 15%, ERCC content higher than 30%, and ribosomal gene content higher
+than 25% were excluded. Scrublet was then used to detect and remove residual duplicates. The data were normalized using size
+factor normalization so that every cell had 10,000 read counts, were log2 transformed, underwent cell cycle regression,51 and
+were scaled to a maximum value of 10. To account for batch effects and proper data integration, Scanpy-integrated ComBat was
+applied for cells derived from separate sequencing runs followed by data scaling. Highly variable genes were computed using default
+parameters. We then performed principal component analysis with elbow plot visualization, computed the neighborhood graph, and
+clustered the data using the Leiden method. Cytotrace (https://cytotrace.stanford.edu/) was used to explore the developmental po-
+tential of single cells analyzed.52 To plot and infer cellular state trajectories Force-directed graph drawing (ForceAtlas2) with PAGA
+(Partition-based graph abstraction) or RNA Velocity was applied to the single-cell RNA-seq data.53 Enrichr was used to identify path-
+ways based on top upregulated genes in the target populations.54 A total of 5,764 high quality cells across all donors listed in Table S1
+were included in the analysis with an average gene count of 3,262 for fetal and 2,225 for patient hSSCs across datasets. Step-by-step
+instructions to reproduce preprocessing and analysis of data are available for deposited data in the Gene Expression Omnibus data-
+base (see Resource Availability statement).
+10X Genomics single cell RNA-sequencing
+Freshly collected fracture nonunion tissue was harvested and processed as described for tissue dissociation protocol above. The
+single cell solution was stained for ﬂow cytometry and 3x106 PI-CD45-CD235a- cells were sorted into a collection tube containing
+FACS buffer. Cells were then processed with 10X Chromium Next GEM Single Cell 3ʹ GEM kit (10X Genomics Inc, v3.1) according
+to manufacturer’s instruction to target 10,000 cells. Barcoded samples were demultiplexed, aligned to the human genome
+(GRCh38.p13), and UMI-collapsed with the Cellranger toolkit with standard settings and –force-cells=10,000 (version 7.1.0, 10X Ge-
+nomics Inc) sequenced on an partial-lane Illumina NovaSeq platform. We used the Scanpy package (version 1.9.1.) to explore the
+data. First, quality ﬁltering to exclude multiplets and cells of poor quality was conducted by only keeping cells with a gene count
+of >500 and < 4000 with less than 20% mitochondrial and 35% ribosomal gene content as well as running Scrublet leaving 9,301
+ll
+OPEN ACCESS
+Resource
+e7
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+high quality cells with an average gene count of 2,225 per cell. Genes expressed in less than 3 cells across all cells were also removed
+from downstream analysis. Data was log-normalized, cell cycle regressed and scaled for analysis. Dimensionality reduction and Lei-
+den clustering as well as subclustering were conducted choosing parameters based on PCA elbow plot. All further analyses were
+conducted as described for Smart-seq2 above.
+Clonal tracking with barcoded single cell readout
+For clonal in vivo tracking of hSSCs, lentivirally barcoded hSSC-derived graft cell suspensions were processed according to stan-
+dard 10X Chromium Next GEM Single Cell 3ʹ GEM kit (10X Genomics Inc, v3.1). To amplify clonal barcode sequences (Cellecta,
+Cat#BCXP10M3VP-P) a separate PCR with cDNA after the ampliﬁcation step (before ligation) was performed, since the 10X protocol
+only requires 25% of cDNA for the standard protocol. The extra 10 mL of cDNA were ampliﬁed using a combination of Partial Read 1
+primer (5’-CTACACGACGCTCTTCCGATCT-3’) and an adaptor-FBP1 (Read 2 primer + barcode recognition site) primer (5’-
+GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTCCGACCACCGAACGCAACGCACGCA-3’). Barcode ampliﬁcation was run as
+recommended for cDNA reaction (10X protocol step 2.2) plus 4 extra cycles. From there the product was handled as per standard
+protocol starting from the index primer reaction without any fragmentation or ligation steps. Amplicon libraries were then sequenced
+via MiSeq. After demultiplexing, 10X barcodes and clonal barcodes were read out and matched to 10X barcoded cells in the regular
+analysis as described and deposited at GitHub (https://github.com/sahoo00/Clonetracker, https://doi.org/10.5281/zenodo.
+14823191, v1.0.1). Brieﬂy, the FBP1 ﬂanking sequence was used to locate the Clone Barcode ID in the reverse strand. Unique
+Cell barcode IDs were extracted from the ﬁrst 28 nt-sequences of the forward strand. The extracted Clone Barcode ID reads
+were matched against the known Cellecta barcode library and only reads with barcodes that matched the Cellecta library were
+kept. The Cell Barcode ID and Clone Barcode ID were combined and stored in a fastq ﬁle. The fastq ﬁles were ﬁltered using quality
+information. The ﬁrst 16 nt-sequences from this fastq ﬁle represent the Cell barcode ID, while the last 48-nt sequences are the Clone
+Barcode ID. The Cell Barcodes and Clone Barcodes were clustered using the DNACLUST tool. Scanpy (version 1.9.1.) was used and
+cells were quality ﬁltered only keeping cells with a gene count of >500 and < 6000 with less than 20% mitochondrial and 35% ribo-
+somal gene content as well as running Scrublet leaving 745 high quality cells (433 unique barcodes) of grafts derived from growth
+plate hSSCs and 509 high quality cells (343 unique barcodes) from periosteal hSSCs with an average gene count of 3,178 and
+3,171 per cell, respectively. Clonal barcodes for all ﬁltered cells were identiﬁed. Analysis was conducted as described above for
+10X single cell RNA-sequencing data. We were able to recover 150 GP hSSCs and 85 PE hSSCs of the initial 3x500 transplanted
+hSSCs from each subregion. Cells were only counted as clones if the identical barcode appeared in at least two single cells of which
+at least one cell could be identiﬁed as a hSSC, yielding a recovery of 46 clones for growth plate hSSCs and 21 clones for periosteal
+hSSCs. For trajectory inference scvelo (version 0.2.5.) was used.
+StepMiner for Boolean Analysis
+StepMiner is a computational tool that identiﬁes step-wise transitions in a time-series data.55 StepMiner performs an adaptive regres-
+sion scheme to identify the best possible step up or down based on sum-of-square errors. The steps are placed between time points
+at the sharpest change between low expression and high expression levels, which gives insight into the timing of the gene expres-
+sion-switching event. To ﬁt a step function, the algorithm evaluates all possible step positions, and for each position, it computes the
+average of the values on both sides of the step for the constant segments. An adaptive regression scheme is used that chooses the
+step positions that minimize the square error with the ﬁtted data. Finally, a regression test statistic is computed as follows:
+F stat =
+P
+n
+i = 1
+ð bXi  XÞ2.
+ðm  1Þ
+P
+n
+i = 1
+ðXi  bXiÞ2.
+ðn  mÞ
+Where Xi for i = 1 to n are the values, bXi for i = 1 to n are ﬁtted values. m is the degrees of freedom used for the adaptive regression
+analysis. X is the average of all the values: X = 1
+n  Pn
+j = 1 Xj: For a step position at k, the ﬁtted values bXl are computed by using
+1
+k  Pn
+j = 1 Xj for i = 1 to k and
+1
+ðn  kÞ  Pn
+j = k+1 Xj for i = k + 1 to n.
+Discovery of Boolean Implication Relationships (BIRs)
+Boolean logic is a simple mathematical relationship of two values, i.e., high/low, 1/0, or positive/negative. The Boolean analysis of
+gene expression data requires the conversion of expression levels into two possible values. The StepMiner algorithm is reused to
+perform Boolean analysis of gene expression data.56 The Boolean analysis is a statistical approach which creates binary logical in-
+ferences that explain the relationships between phenomena. Boolean analysis is performed to determine the relationship between
+the expression levels of pairs of genes (Figures S6A and S6B). The StepMiner algorithm is applied to gene expression levels to
+convert them into Boolean values (high and low). In this algorithm, ﬁrst the expression values are sorted from low to high and a rising
+step function is ﬁtted to the series to identify the threshold. Middle of the step is used as the StepMiner threshold. This threshold is
+used to convert gene expression values into Boolean values. A noise margin of 2-fold change is applied around the threshold to deter-
+mine intermediate values, and these values are ignored during Boolean analysis. In a scatter plot, there are four possible quadrants
+based on Boolean values: (low, low), (low, high), (high, low), (high, high). A Boolean implication relationship is observed if any one of
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+e8
+
+the four possible quadrants or two diagonally opposite quadrants are sparsely populated. Based on this rule, there are six kinds of
+Boolean implication relationships. Two of them are symmetric: equivalent (corresponding to the positively correlated genes), oppo-
+site (corresponding to the highly negatively correlated genes). Four of the Boolean relationships are asymmetric, and each corre-
+sponds to one sparse quadrant: (low => low), (high => low), (low => high), (high => high). BooleanNet statistics is used to assess
+the sparsity of a quadrant and the signiﬁcance of the Boolean implication relationships.56,57 Given a pair of genes A and B, four quad-
+rants are identiﬁed by using the StepMiner thresholds on A and B by ignoring the Intermediate values deﬁned by the noise margin of
+2-fold change (+/- 0.5 around StepMiner threshold). Number of samples in each quadrant are deﬁned as a00, a01, a10, and a11 which is
+different from X in the previous equation of F stat. Total number of samples where gene expression values for A and B are low is
+computed using the following equations.
+nAlow = ða00 + a01Þ; nBlow = ða00 + a10Þ;
+Total number of samples considered is computed using following equation.
+total = a00 + a01 + a10 + a11
+Expected number of samples in each quadrant is computed by assuming independence between A and B. For example, expected
+number of samples in the bottom left quadrant e00 = bn is computed as probability of A low ((a00 + a01)/total) multiplied by probability of
+B low ((a00 + a10)/total) multiplied by total number of samples. The following equation is used to compute the expected number of
+samples where ij can be 00, 01, 10, 11.
+n = aij; bn = ðnAlow = total  nBlow = totalÞ  total
+To check whether a quadrant is sparse, a statistical test for (e00 > a00) or (bn > nÞ is performed by computing S00 and p00 using
+following equations. A quadrant is considered sparse if S00 is high (bn > nÞ and p00 is small. Sij is used in the following equation where
+ij can be 00, 01, 10, 11.
+Sij = bn  n
+ﬃﬃﬃ
+bn
+p
+p00 = 1
+2
+
+a00
+ða00+a01Þ +
+a00
+ða00+a10Þ
+
+A suitable threshold is chosen for Sij > sThr and pij < pThr to check sparse quadrant with an acceptable false discovery rate
+(FDR < 0.001). A Boolean implication relationship is identiﬁed when a sparse quadrant is discovered using the following equation.
+Boolean Implication = (Sij > sThr, pij < pThr) where ij can be 00, 01, 10, 11 (see below).
+A relationship is called Boolean equivalent if top-left and bottom-right quadrants are sparse.
+Equivalent = ðS01 > sThr; p01 < pThr; S10 > sThr; p10 < pThrÞ
+Boolean opposite relationships have sparse top-right (a11) and bottom-left (a00) quadrants.
+Opposite = ðS00 > sThr; p00 < pThr; S11 > sThr; p11 < pThrÞ
+Boolean equivalent and opposite are symmetric relationship because the relationship from A to B is same as from B to A. Asym-
+metric relationship forms when there is only one quadrant sparse (A low => B low: top-left; A low => B high: bottom-left; A high => B
+high: bottom-right; A high => B low: top-right). These relationships are asymmetric because the relationship from A to B is different
+from B to A. For example, A low => B low and B low => A low are two different relationships.
+A low => B high is discovered if the bottom-left (a00) quadrant is sparse and this relationship satisﬁes following conditions.
+A low = > B high = ðS00 > sThr; p00 < pThrÞ
+Similarly, A low => B low is identiﬁed if the top-left (a01) quadrant is sparse.
+A low = > B low = ðS01 > sThr; p01 < pThrÞ
+A high => B high Boolean implication is established if the bottom-right (a10) quadrant is sparse as described below.
+A high = > B high = ðS10 > sThr; p < pThrÞ
+Boolean implication A high => B low is found if the top-right (a11) quadrant is sparse using following equation.
+A high = > B low = ðS11 > sThr; p11 < pThrÞ
+For each quadrant a statistic Sij and an error rate pij is computed. Sij > sThr and pij < pThr are the thresholds used on the BooleanNet
+statistics to identify Boolean implication relationships where ij can be 00, 01, 10, 11.
+Boolean analyses in the test dataset GSE119087 uses a threshold of sThr = 3 and pThr = 0.1. False discovery rate is computed for
+these thresholds (FDR < 0.000001) by using randomly permuting gene expression data in GSE119087.
+ll
+OPEN ACCESS
+Resource
+e9
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+Boolean Network Explorer (BoNE)
+Boolean network explorer (BoNE) provides an integrated platform for the construction, visualization and querying of a network of pro-
+gressive changes underlying a disease or a biological process in two steps (Figure S6C): First, the expression levels of all genes in
+these datasets were converted to binary values (high or low) using the StepMiner algorithm. Second, gene expression relationships
+between pairs of genes were classiﬁed into one-of-six possible Boolean Implication Relationships (BIRs), two symmetric and four
+asymmetric, and expressed as Boolean implication statements. This offers a distinct advantage from conventional computational
+methods (Bayesian, Differential, etc.) that rely exclusively on symmetric linear relationships in networks. The other advantage of using
+BIRs is that they are robust to the noise of sample heterogeneity (i.e., healthy, diseased, genotypic, phenotypic, ethnic, interventions,
+disease severity) and every sample follows the same mathematical equation, and hence is likely to be reproducible in independent
+validation datasets. In the resultant Boolean implication network, BoNE enables data science in both unsupervised and supervised
+way while remaining agnostic to the sample type.
+Boolean implication network construction
+Boolean implication analysis was performed in the large diverse human dataset GSE119087 (n = 25,955 human samples,
+Figures S6D and S6E). First, gene expression levels were converted to Boolean values (high and low) using StepMiner algorithm.
+The expression values are sorted from low to high and a rising step function is ﬁtted to the series to identify the threshold. The relation-
+ship between two genes was evaluated in the context of high and low values. These relationships are called Boolean implication re-
+lationships (BIRs) because they are represented by logical implication (=>) formula. BooleanNet statistics is used to assess the sig-
+niﬁcance of the Boolean implication relationships. S > 3 and p < 0.1 are the thresholds (False Discovery Rate < 0.0001) used on the
+BooleanNet statistics during the data analysis to identify Boolean implication relationships. We relaxed this threshold S>3 and
+p < 0.15 to identify Boolean Equivalent relationships. A noise margin of 2-fold change is applied around the threshold to determine
+intermediate values and these values are ignored during Boolean analysis. StepMiner threshold is denoted in red color and the noise
+margin is denoted in light blue colors in scatterplots analyzing Boolean relationships between genes. The Boolean implication
+network contains the six possible Boolean relationships between genes in the form of a directed graph with nodes as genes and
+edges as the Boolean relationship between the genes. The nodes in the Boolean implication network (BIN) are genes and the edges
+correspond to BIRs. Equivalent and Opposite relationships are denoted by undirected edges and the other four types (low => low;
+high => low; low => high; high => high) of BIRs are denoted by having a directed edge between them.
+Boolean paths
+The asymmetric BIRs provide a unique dimension to the network that is fundamentally different from any other gene expression net-
+works in the literature. Traversing a set of nodes in a directed graph of the Boolean network constitutes a Boolean path that can be
+interpreted as follows. A simple Boolean path involves two nodes and the directed edge between them (Figure S6F). This simple
+Boolean path can be interpreted as follows. For the nodes X and Y with X low => Y low only quadrant #(low, high) is sparse; the other
+quadrants are ﬁlled with samples. Assuming monotonicity in X and Y, the quadrants can be ordered in two possible ways: (low, low)-
+(high, low)-(high, high) and (high, high)-(high, low)-(low, low). The path corresponds to (low, low)-(high, low)-(high, high) begins with X
+low and Y low. This is interpreted as X turns on ﬁrst and then Y turns on along a hypothetical biological path deﬁned by the sample
+order. Similarly, Y turns off ﬁrst and then X turns off in the path (high, high)-(high, low)-(low, low). A complex path in the Boolean
+network involves more than one Boolean implication relationship (Figures S6G and S6H). Three Boolean implication relationships
+can be used to group samples into ﬁve bins and the bins can be ordered in two possible ways (forward, reverse).
+Boolean Implication Network and BTR
+A curated list of known bone processes-related genes was combined with selected genes of the top differentially expressed genes
+(p-value < 0.05, LogFC >1.16 and <-1.16; total of 139 genes) within each analyzed group (functional vs. dysfunctional hSSCs). Genes
+were grouped according to their expression for displaying results of the complex Boolean implication network (BIN). A complex BIN
+(Complex-BIN) was created by identifying all signiﬁcant pairwise Boolean implication relationships (BIRs) derived from a large data-
+base (25,955 datastets) of publicly available microarrays of human tissues, diseases, and cell lines (GSE119087). A previously pub-
+lished BooleanNet algorithm was performed to determine the BIRs between genes. Brieﬂy, the BooleanNet algorithm identiﬁes the
+type of BIR by searching the sparsely populated quadrant(s) using a statistical threshold S and likelihood error rate p in a scatterplot
+between two genes. These relationships are called BIRs because they are represented by logical implication (0) formula. There are
+six types of BIR: high 0 high, low 0 low, high 0 low, low 0 high, equivalent, and opposite. The ﬁrst four are asymmetric and have
+only one sparse quadrant while the latter two are symmetric and have two sparse quadrants. S>3 and p<0.15 are the thresholds used
+on the BooleanNet statistics for symmetric BIRs. For asymmetric BIRs, S > 3 and p<0.10 is used. The Complex-BINs are displayed in
+the form of a directed graph where edges (arrows) correspond to the observed BIRs between genes and nodes representing genes.
+To simplify and reduce the size of Complex-BIN, we used Boolean equivalent relationships to cluster genes. There are three zones in
+each Boolean Implication network (two zones for analyzed groups and one for the shared genes between those two groups). First, we
+found Boolean equivalent relationships within each zone, then we found Boolean equivalent relationships between different zones.
+Finally, we clustered all connected components between zones into one clustered-node in the shared zone (each member of the
+clustered-node is labeled as a shared gene regardless of their original group). We identiﬁed relationships between clustered-nodes
+and the remaining genes by combining the BIRs of members for each clustered-node to build the Clustered-BIN. Next, we selected
+ll
+OPEN ACCESS
+Resource
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+e10
+
+four BIRs ( high=>high, high=>low, opposite and low=>low) to simplify the Clustered-BIN by traversing the entire graph by running a
+depth-ﬁrst search to ﬁnd all transitive complex pathways. Each complex pathway was formed from a chain of high=>high BIR,
+followed by a high=>low or opposite BIR followed by a chain of low=>low BIR. As the starting point a gene from one of the analyzed
+groups (zones) was chosen following a path through shared genes and ending in the opposite analyzed group (zone). The simple
+paths containing three BIRS of high=>high, high=>low and low=>low is interpreted in the context of the previously published
+MiDReG algorithm (Figures S6F–S6H). Ordering of the genes was performed using the asymmetric BIRs and MiDReG algorithm.
+The simpliﬁed Clustered-BIN helped to gain predicted orders of genes between analyzed groups. In the ﬁnal step, all cells relevant
+to the analyzed groups and all genes in each selected complex pathway from the simpliﬁed Clustered-BIN were used in BoolTraineR
+(BTR), an algorithm for rebuilding and training the asynchronous Boolean model (Figure S6I). BTR uses a Boolean State Space (BSS)
+scoring function such that the predicted model can resemble a single-cell expression dataset. Furthermore, because of the conver-
+sion of expression levels to two possible values of 0/1, Boolean models are relatively robust to the presence of dropouts. The initial
+expression state (Boolean value) of each gene in the beginning of the selected pathways of MiDReG algorithm was used as an initial
+state for BTR model learning. We also used the BIRs between genes in each selected pathway as an initial Boolean model to start the
+search. Finally, BTR returned the closest predicted model based on the single-cell dataset. The code has been deposited at GitHub
+(https://github.com/sahoo00/Invariant-Circuits, [https://doi.org/10.5281/zenodo.14823193], v1.0.1).
+Boolean Equivalent Correlated Clusters (BECC)
+BECC was used to identify gene clusters that share invariant relationships with a seed gene.38 We used ACTA2 as a seed gene and a
+publicly available 25,955 diverse human samples downloaded from GEO (GSE119087) to identify and validate an invariant signature
+for ﬁbroblast-like cells. The algorithm ﬁrst computes a list of genes that have a Boolean Equivalent relationship with the seed gene.
+The list of genes was then expanded by performing Boolean analysis by following the Boolean equivalent relationship two more
+times. In the second step, a score for each gene in the ﬁnal list was computed from the correlation coefﬁcient and the slope of
+the ﬁtted line comparing with the pre-deﬁned seed gene. Finally, a threshold was imposed using the StepMiner algorithm to deﬁne
+a list of high-conﬁdence genes with potentially superior performance than the seed gene. Once deﬁned, all gene clusters were sub-
+sequently validated across global, bone tissues, and pathological bone diseases in human and murine datasets. This effort resulted in
+a ranked list of 33 probesets, corresponding to 25 unique genes, based on similarity to ACTA2 (with probeID = 200974_at). TAGLN
+and MYL9 showed strong correlation patterns with the seed gene and each other in many validation datasets. The results of the
+BECC algorithm on human, bone-related and other species datasets can be explored via http://hegemon.ucsd.edu/Misc/
+biomarkers/bone.php?go=hs. We also used BECC to ﬁnd invariant markers for osteogenic and chondrogenic hSSCs but no
+high-conﬁdence gene could be found.
+Quantiﬁcation and statistical analysis
+Statistics and reproducibility
+All data presented were validated with multiple experimental replicates and plotted as stated in the ﬁgure or ﬁgure legend. Two-
+tailed Student’s t-tests were performed with corrections for non-normality (Mann-Whitney test) or unequal variances (Welch’s
+test) where appropriate, using GraphPad Prism v.9.5.1 (GraphPad Software). For more than two groups, one-way ANOVA with
+appropriate posthoc tests as indicated in the ﬁgure legends was used. No statistical method was used to predetermine sample
+size. No method of randomization was used. The investigators were partially blinded to allocation during experiments or outcome
+assessment.
+ll
+OPEN ACCESS
+Resource
+e11
+Cell Stem Cell 32, 811–823.e1–e11, May 1, 2025
+Cell Stem Cell, Volume 32
+Supplemental Information
+Human skeletal development and regeneration
+are shaped by functional diversity of stem cells
+across skeletal sites
+Thomas H. Ambrosi, Sahar Taheri, Kun Chen, Rahul Sinha, Yuting Wang, Ethan J.
+Hunt, L. Henry Goodnough, Matthew P. Murphy, Holly M. Steininger, Malachia Y.
+Hoover, Franco Felix, Kelly C. Weldon, Lauren S. Koepke, Jan Sokol, Daniel Dan
+Liu, Liming Zhao, Stephanie D. Conley, Wan-Jin Lu, Maurizio Morri, Norma F.
+Neff, Noelle L. Van Rysselberghe, Erika E. Wheeler, Yongheng Wang, J. Kent
+Leach, Augustine Saiz, Aijun Wang, George P. Yang, Stuart Goodman, Julius A.
+Bishop, Michael J. Gardner, Derrick C. Wan, Irving L. Weissman, Michael T.
+Longaker, Debashis Sahoo, and Charles K.F. Chan
+
+Cell #
+scApproach
+Gender
+Age
+Sample
+#
+366
+Smart-seq2
+Female
+17 weeks 
+(gest.)
+Fetal 1
+1
+1340
+Smart-seq2
+Female
+20 weeks 
+(gest.)
+Fetal 2
+2
+870
+Smart-seq2
+Female
+18 weeks 
+(gest.)
+Fetal 3
+3
+885
+Smart-seq2
+Female
+17 weeks 
+(gest.)
+Fetal 4
+4
+1,254
+10X 
+Genomics
+Female
+17 weeks 
+(gest.)
+Fetal 5
+5
+58,377
+CosMx
+Female
+20 weeks 
+(gest.)
+Fetal 6
+6
+88
+Smart-seq2
+Female
+18 years
+Fracture tissue 1
+7
+164
+Smart-seq2
+Male
+25 years
+Fracture tissue 2
+8
+23
+Smart-seq2
+Male
+27 years
+Fracture tissue 3
+9
+131
+Smart-seq2
+Male
+28 years
+Fracture tissue 4
+10
+25
+Smart-seq2
+Female
+30 years
+Fracture tissue 5
+11
+46
+Smart-seq2
+Male
+32 years
+Fracture tissue 6
+12
+71
+Smart-seq2
+Female
+34 years
+Fracture tissue 7
+13
+91
+Smart-seq2
+Female
+39 years
+Fracture tissue 8
+14
+43
+Smart-seq2
+Male
+53 years
+Fracture tissue 9
+15
+74
+Smart-seq2
+Female
+61 years
+Fracture tissue 10
+16
+74
+Smart-seq2
+Female
+63 years
+Fracture tissue 11
+17
+54
+Smart-seq2
+Female
+65 years
+Fracture tissue 12
+18
+39
+Smart-seq2
+Female
+67 years
+Fracture tissue 13
+19
+241
+Smart-seq2
+Male
+72 years
+Fracture tissue 14
+20
+79
+Smart-seq2
+Female
+77 years
+Fracture tissue 15
+21
+32
+Smart-seq2
+Male
+65 years
+Femoral periosteum
+22
+43
+Smart-seq2
+Male
+51 years
+Nonunion 1
+23
+37
+Smart-seq2
+Female
+59 years
+Nonunion 2
+24
+107
+Smart-seq2
+Female
+60 years
+Nonunion 2
+25
+90
+Smart-seq2
+Female
+62 years
+Nonunion 4
+26
+9,301
+10X 
+Genomics
+Male
+63 years
+Nonunion 5
+27
+49
+Smart-seq2
+Female
+30 years
+Fibrous Dysplasia 
+(mandible/maxillary 
+bone)
+28
+Table S1. Individual human skeletal specimens used in human skeletal stem cell scRNAseq analyses, 
+Related to Figures 1-5.
+Table S1. Individual human skeletal specimens used in human skeletal stem cell
+scRNAseq analyses, related to Figures 1-5. Individual human skeletal specimens used
+in human single cell sequencing studies. (gest.: gestational age; sc: single cell)
+
+Figure S1. Skeletal site-specific diversity of hSSC, Related to Figure 1.
+C
+hSSC
+hOP
+hCP
+Fetal tendon: 
+prospective populations
+Crystal 
+Violet
+Alizarin 
+Red S
+Alcian 
+Blue
+GP+PE
+Phalange
+Pelvis
+Tendon
+Vertebral
+Bone
+Vertebral
+Disc
+Crystal 
+Violet
+Alizarin 
+Red S
+Alcian 
+Blue
+Frontal
+Skull
+Parietal 
+Skull
+Sutures
+% of non-hematopoietic
+0
+5
+10
+15
+B
+G
+H
+D
+E
+F
+0
+10
+20
+30
+40
+50
+CFU (%)
+0
+0.05
+0.10
+0.15
+0.20
+AR OD450
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+AB OD590
+Colony formation
+Osteogenesis
+Chondrogenesis
+p<0.0001
+p<0.0001
+p=0.0004
+p=0.0275
+p<0.0001
+p<0.0001
+p=0.0101
+p=0.0428
+p=0.0149
+p<0.0001
+p<0.0001
+p<0.0001
+p=0.0001
+p=0.0304
+p=0.0097
+p=0.001
+p=0.0198
+p<0.0001
+p<0.0001
+p=0.0059
+p<0.0001 p<0.0001p<0.0001
+p=0.0011
+p<0.0005
+p=0.0131
+p<0.0001
+p=0.007
+p<0.0001
+p=0.0209
+p=0.0206
+p=0.0059
+p<0.0001
+p=0.005
+p<0.0001
+p=0.0024
+p<0.0001 p<0.0001
+p<0.0001
+p=0.0001
+p<0.0001
+p<0.0001
+p<0.0001
+p<0.0001
+p<0.0001p<0.0001
+p<0.0001
+p<0.0001
+p=0.0016
+p<0.0001
+p<0.0001
+p<0.0001
+p<0.0001
+p=0.0027
+p<0.0001
+Fetal tendon 
+hSSC
+Bone
+Fibro.
+Hematopoietic
+cells
+Stroma
+BioOss
+Fetal tendon 
+non-hSSCs/hBCSPs
+BioOss
+Stroma
+Fibro.
+A Representative 
+gating strategy
+CD45/CD235a/DAPI: PB
+CD164: PE
+PDPN: APC
+CD31/Tie2: APC-Cy7
+47.3%
+41.1%
+6.66%
+hSSC
+0
+104
+105
+0
+105
+103
+0
+105
+103
+0
+103
+105
+0
+103
+104
+0
+105
+103
+47.1%
+2.6%
+hBCSP
+hOP
+CD146: PE-Cy7
+CD73: FITC
+hCP
+singlets
+hBCSP: human bone cartilage stroma progenitor
+hCP: human chondroprogenitors
+hOP: human osteo-stromal progenitor
+In vivo graft
+SKIL
+HIC1
+Chondro. SSC marker
+Stromal SSC marker
+I
+J
+Vertebral Bone
+Vertebral Disc
+Pelvis
+Periosteum
+Phalange
+Tendon
+Suture
+Parietal Skull
+Frontal Skull
+Growth Plate
+CXCL14
+NME6
+CNST
+SCRN1
+SFRP4
+HAPLN1
+DLK1
+STAT3
+ACAN
+PRRX1
+ACTA2
+PTHLH
+MX1
+IL33
+hSSC markers
+Other literature 
+candidates
+0 0.5 1
+Mean
+Fraction %
+>60
+40
+20
+SOX5
+GDF5
+VB (95.1%)
+FSK (92.4)
+PSK (92.7%)
+SUT (91.3%)
+GP (100%)
+PEL (94.2%)
+PE (94.3%) 
+PHA (94.8%)
+TEN (89.5%)
+VD (92.4%
+Correlation matrix
+K
+Intramembranous hSSC
+Endochondral hSSC
+hSSC source
+Leiden
+Pseudotime trajectory
+1
+3
+2
+4
+3
+2
+hSSC source
+Leiden
+1
+FA1
+FA2
+early
+late
+Pseudotime
+lo
+hi
+SKIL
+COL2A1
+FMO1
+BGLAP
+CXCL12
+GP
+PEL
+PHA
+VB
+VD
+PE
+PSK
+FSK
+SUT
+TEN
+Pseudotime trajectory
+HIC1
+COL2A1
+FMO1
+BGLAP
+CXCL12
+Stem
+Chondro.
+Osteo.
+Stromal
+Fibro.
+Stem
+Chondro.
+Osteo.
+Stromal
+Fibro.
+R
+N
+L
+Cranial hSSCs
+SHOX
+GDF5
+CTSK
+DDR2
+TWIST1
+FSK
+PSK
+SUT
+Neural
+crest
+Mes.
+Top100 genes by Leiden cluster
+VB
+FSK
+PSK
+SUT
+GP
+PEL
+PE
+PHA
+TEN
+VD
+1-Chondro
+3-Osteo
+2-Stromal
+4-Fibro
+-3
+3
+0
+Limb
+Mes.
+Cranial
+markers
+LHX9
+PRRX1
+MESP1
+ZIC1
+FOXC1
+MSX2
+AXIN2
+SIX2
+MSX1
+COL4A2
+TSHZ2
+TBX3
+PAX3
+BMP5
+COL4A1
+1-Chondro
+3-Osteo
+2-Stromal
+4-Fibro
+CXCL12
+KITLG
+ANGPTL1
+VCAN
+IL6
+IL7
+IL11
+CXCL2
+VEGFB
+DPP4
+EPHB2
+JAG1
+VEGFA
+Niche support factor
+M
+TNC
+THBS4
+TPPP3
+PDGFRA
+PDGFRB
+TNMD
+TNXB
+Tendon 
+hSSCs
+SCX
+PRKG1
+PLAU
+CD44
+P
+Cranial hSSC marker genes
+0
+0.2
+Median
+O
+adj. p-val.
+Endochondral Ossification
+8.6e-10
+Collagen Biosynthesis
+5.9e-9
+Integrins in Angiogenesis
+1.6e-8
+Beta-1 Integrin Cell Surface Interactions      1.1e-12
+ECM-receptor Interaction
+1.4e-12
+Axon Guidance
+4.8e-10
+IL11 pathway
+0.00297
+TWEAK Regulation of Gene Expression      0.00297
+Developmental biology
+0.00297
+TGF-beta Regulation of Extracellular Matrix  4.5e-8
+Collagen Biosynthesis
+6.9e-8
+Extracellular Matrix Organization
+2.3e-7
+Pathway enrichment analysis
+1
+2
+3
+4
+Q
+S
+FGFR2 (osteopenia)
+Bent-Bone dysplasia
+XYLT1 (short stature, scoliosis)
+Desbuquois dysplasia
+DDR2 (short stature)
+Dwarfism
+TNFRSF11B (fragile, deformed skeleton)
+Juvenile Paget’s
+CDT1 (narrow Fracture tissues, cranial defects)
+Meier-Gorlin syndrome 
+KAT6B (joint contractures/abnormal patella)
+Genitopatellar syndrome
+SEC24D (bone fragility/abnormalities)
+Craniosynostosis
+ENPP1 (rickets)
+Chondrocalcinosis
+IHH (short fingers)
+Brachydactyly
+KIF22 (spinal deformity)
+Spondyloepimetaphyseal dysplasia
+ZIC1 (craniosynostosis, scoliosis)
+Osteogenesis imperfecta type 19
+EDNRA (mandibular hypoplasia)
+Mandibulofacial dysostosis with alopecia
+IFITM5 (bone fragility)
+Craniosynostosis/Cole-Carpenter syndrome
+GSC (pelvic/craniofacial abnormality)
+SAMS
+Norm. mean
+max
+min
+Figure S1. Skeletal site-specific diversity of hSSC, Related to Figure 1. (A) Representative FACS gating of
+hSSC lineage populations gated from singlets for living (DAPI-), non-hematopoietic (CD45-CD235a-), non-
+endothelial (CD31-TIE2-) cells. (B) Quantification of hSSC frequency of different fetal source tissues. (n = 1-4
+donors). (C) Representative staining of CFU-F (top; Crystal violet), osteogenic (middle; Alizarin Red S) and
+chondrogenic (bottom; Alcian Blue) in vitro assays of prospectively isolated hSSCs from hSSCs of different fetal
+skeletal tissues. (D) Quantification of CFU-F assay. (n = 3-7) (E) Quantification of osteogenic assay. (n = 4-6). (F)
+Quantification of chondrogenic assay. (n = 2-4). (G) Representative staining of CFU-F (top; Crystal violet),
+osteogenic (middle; Alizarin Red S) and chondrogenic (bottom; Alcian Blue) in vitro assays of prospectively
+isolated skeletal lineage populations from fetal tendon tissue. (H) Representative H&E staining of a tissue section
+of an 8-week-old subcutaneous graft derived from tendon hSSCs able to support host-derived hematopoiesis as
+well as non-stem cell tendon populations forming fibrostromal tissues. (I) Dotplot of stem cell marker expression
+of hSSCs as defined for long bone hSSCs in this study using scRNAseq (left) and expression of markers
+previously used to enrich for bone stem cell-like population as found in single hSSCs from different skeletal sites
+(right). (J) Umap of hSSC single cell expression of Osteo./Chondro. hSSC marker SKIL and Fibro./Stromal hSSC
+marker HIC1 in hSSCs from different skeletal sites. (K) ScRNAseq correlation matrix of hSSCs from different
+fetal skeletal sites. Percentage of shared gene expression compared to growth plate SSCs shown. (L) Tracksplot of
+neural crest and mesoderm marker genes as found in single fetal hSSCs from frontal skull, parietal skull and suture
+tissue. (M) Matrixplot showing enhanced gene expression of hematopoiesis-supporting factors in stromal hSSCs
+compared to other subtypes. (N) Heatmap of top100 genes per Leiden cluster and their expression in hSSCs from
+different fetal skeletal tissues. (O) Stacked violin plots of marker genes for FSK, PSK and Suture hSSCs. (P)
+Tracksplot of tendon-related marker genes as found in tendon-derived single fetal hSSCs. (Q) Gene pathway
+enrichment analysis within Leiden clusters. (R) ForceAtlas2 clustering of fetal hSSCs sub-grouped for
+endochondral (left) and intramembranous (right) hSSCs showing Leiden cluster, PAGA trajectory inference and
+specific marker gene expression. (S) Gene expression of hSSCs from different fetal skeletal source tissues related
+to diseases with skeletal phenotypes shown as matrixplot. Plotted data shown as mean+standard deviation of the
+mean (SEM). Significance assessed by one-way ANOVA with Tukey’s posthoc test.
+
+Figure S2: Identification and characterization of hSSC variants and lineage subtypes, Related to Figure 2.
+K
+SSC
+preBCSP
+BCSP
+SPC
+OPC
+FA1
+FA2
+SOX9
+COL2A1
+ACAN
+CNST
+DLK1
+FBN2
+CXCL12
+THY1
+Developmental potential
+CytoTRACE score
+0
+1
+0.5
+n.s.
+n.s.
+D
+E
+OPC
+SPC
+PDPN: APC
+CD146: PE-Cy7
+hSSC
+hBCSP
+hOP
+SSC
+preBCSP
+BCSP
+hSSC
+hBCSP
+hOP
+Index-leiden distribution
+SSC
+preBCSP
+BCSP SPC
+OPC
+SPC
+BCSP
+SSC
+preBCSP
+BCSP
+SPC OPC
+F
+all others p < 0.001
+C
+Alizarin Red S
+BMSC
+(unsorted)
+SPC
+OPC
+SSC
+In vitro osteogenesis
+(5-day)
+Bone
+Stroma
+In vivo ossicle formation
+SPC
+OPC
+H&E
+G
+hSSC lineage tree
+Bone-Cartilage-Stromal-Prog.
+(hBCSP)
+Skeletal Stem Cell (hSSC)
+PDPN+
+CD146+
+PDPN-
+CD146+
+(human chondroprogenitors)
+hOP (Osteostromal Prog.)
+preBCSP
+PDPN+
+CD146-
+CD73-/+
+CD164-/+
+PDPN+CD146-
+CD164+CD73+
+Chan et al. Cell 2018
+A
+H
+I
+Zone5/6
+Chan et al. 2018
+Zone1/2
+Zone3/4
+MKI67
+PCNA
+SOX9
+COL2A1
+ACAN
+CNST
+DLK1
+FBN2
+CXCL12
+THY1
+Prolif.
+Chondro.
+SSC
+preBCSP
+BCSP
+SPC
+OPC
+BUB1
+Mean exp.
+0                    1 
+Fracture tissue
+Epiphyseal growth plate maturation
+Diaphysis
+Zone2
+Zone3
+Zone4
+Zone5
+Zone1
+Zone6
+Resting 
+Pre-hypertrophic
+Transitional
+Proliferative
+Hypertrophic
+Zones:
+Cell types:
+SSC
+preBCSP
+BCSP
+SPC & OPC
+SSC
+preBCSP
+BCSP
+SPC
+OPC
+Proliferation:
+TOP2A
+J
+Gene:
+Cell type:
+hCP
+SSC
+preBCSP
+BCSP
+SPC
+OPC
+0
+0.5
+1
+Mean
+Fraction %
+10
+Putative stem cell markers
+>60
+40
+20
+30
+50
+B
+Human SSC subtype gating
+(CD45-CD235a-CD31-TIE2-PDPN+CD146-)
+Fibro.
+CD164low
+CD73high
+CD73
+CD164
+Chondro.
+CD164low
+CD73low
+Osteo.
+CD164high
+CD73low
+Stromal.
+CD164high
+CD73high
+L
+0
+104
+105
+105
+0
+104
+low
+high
+Fibro.
+CD164lowCD73high
+Chondro.
+CD164lowCD73low
+Osteo.
+CD164highCD73low
+Stromal.
+CD164highCD73high
+0
+5
+10
+15
+20
+Relative to Chondro
+(GAPDH normalized)
+hSSC subpopulation
+FBN1
+0
+0.5
+1
+1.5
+Relative to Chondro
+(GAPDH normalized)
+HAPLN1
+0
+1
+2
+3
+4
+Relative to Chondro
+(GAPDH normalized)
+FMO1
+0
+1
+2
+3
+SPP1
+scRNAseq
+qPCR
+scRNAseq
+qPCR
+M
+FBN1
+SPP1
+FMO1
+HAPLN1
+hSSC subpopulation
+hSSC subpopulation
+hSSC subpopulation
+Relative to Chondro
+(GAPDH normalized)
+CD73
+CD164
+Lineage output of purified and osteo-induced fetal SSCs from different bone compartments
+Chondro.: CD164lowCD73low Osteo.: CD164highCD73low Stromal.: CD164highCD73high Fibro.: CD164lowCD73high
+CD146
+PDPN
+Growth Plate
+Periosteum
+Vertebra
+Cranium
+hBCSP
+hOP
+hCP
+15.5
+3.4
+32.3
+15
+11.6
+0.79
+58.9
+12.3
+13.7
+2.67
+42.3
+14.7
+8.6
+2.18
+58.8
+16.7
+0.55
+29.3
+56.9
+5.73
+25.6
+51.1
+1.48
+51.7
+23
+6.81
+33.8
+9.46
+% of hSSCs
+Composition
+0 104
+105
+105
+0
+104
+0
+105
+106
+105
+0
+104
+N
+Bone-Cartilage-Stromal-Prog. (hBCSP)
+Skeletal Stem Cell (hSSC)
+PDPN+CD146-CD164low/highCD73low/high
+PDPN+
+CD146+
+PDPN-CD146+
+CD73-
+hCP
+OPC
+updated
+preBCSP
+SPC
+PDPN+CD146-
+CD73-/+CD164-/+
+PDPN-CD146hi
+CD73low(CD164+)
+O
+Figure S2. Identification and characterization of hSSC variants and lineage subtypes, Related to Figure 2.
+(A) Schematic of hSSC lineage tree as reported by Chan et al. Cell 2018 with cell surface marker expression of
+each population. (B) Previously reported skeletal stem and progenitor cell markers as expressed throughout lineage
+populations. (C) CytoTRACE analysis of scRNAseq data based on Leiden cluster annotated cell types and their
+respective inferred developmental potential. Truncated violin plots. Significance by one-way ANOVA with
+Tukey’s posthoc test. (D) Index-sort analysis of scRNAseq data from skeletal lineage populations based on Leiden
+clusters. (E) Distribution of Leiden cluster populations within index-sorted prospective gates of hSSCs, hBCSPs
+and hOPs. (F) Five-day in vitro osteogenesis of freshly purified bone marrow stromal cells (unsorted, plastic
+adherent) and sorted hSSCs, OPCs (PDPN-CD146+CD73-), and SPCs (PDPN-CD146hiCD73lo) stained with
+Alizarin Red S. (G) Eight-week in vivo ossicles formed by OPCs (PDPN-CD146+CD73-) and SPCs (PDPN-
+CD146hiCD73lo) sectioned and stained for H&E. (H) Schematic of fetal growth plate with anatomical subregions
+and distribution of scRNAseq data based annotated cell types based on previous gene expression data of
+anatomically distinct GP zones. (I) GP zone-specific gene expression. (J) Proliferative gene marker expression in
+annotated cell types. (K) Expression of selected genes in UMAP clustering of single skeletal stem cell lineage tree
+populations. (L) Representative gating of hSSC subtypes within CD45-CD235a-CD31-TIE2-PDPN+CD146-
+hSSCs. (M) Leiden clustering of scRNAseq data of prospectively isolated hSSC and confirmation of cluster
+specific markers in prospectively isolated subpopulation based on variance in CD73/CD164 cell surface marker
+expression. n=2 per population. Data shown as mean + SEM. (N) Flow cytometric readout of isolated hSSCs from
+different skeletal sites treated with short-term pro-osteogenic stimuli in vitro and distribution of hSSC subtypes.
+(O) Updated schematic of the human SSC lineage tree incorporating new findings. Scale bars = 50µm.
+
+Figure S3: Distinct features and localization of growth plate and periosteal human skeletal stem cells, Related to Figure 3.
+D
+F
+J
+PE
+GP
+unseparated
+PE
+GP
+Unseparated (GP+PE)
+Top 250 genes
+Unsorted Stromal Vascular Fractions
+Epiphysis
+Diaphysis
+Periosteum
+CFU-F
+Osteogenesis
+Metaphysis
+Fetal long bone tissue
+Epiphysis/
+Growth Plate (GP)
+Metaphysis
+Diaphysis
+Periosteum
+Periosteal
+hSSC
+Growth Plate
+hSSC
+CFU-F
+Osteogenesis
+Chondrogenesis
+C
+A
+B
+0
+10
+20
+30
+40
+50
+CFU-F [%]
+Growth plate
+Periosteum
+hSSC
+hSSC
+hCP hOP
+hOP
+hCP
+P = 0.0535
+P = 0.0049
+P = 0.0097
+P = 0.0354
+K
+hSSC interactions
+GPPE
+PEGP
+PEPE
+TGFB3 – (ACVR1+TGFBR1)
+PTN – SDC4
+POSTN – (ITGAV+ITGB5)
+PDGFD - PDGFRB
+PDGFA - PDGFRB
+PDGFA - PDGFRA
+NAMPT - INSR
+NAMPT – (ITGA5+ITGB1)
+MIF – ACKR3
+MDK – SDC4
+MDK – LRP1
+IGF1 – IGF1R
+CXCL12 – ACKR3
+BMP5 – (ACVR1+BMPR2)
+ANGPTL2 – (ITGA5+ITGB1)
+max
+min
+Commun.
+probability
+P-value
+< 0.05
+< 0.01
+GPGP
+Dim1
+Dim2
+Signaling groups
+Groups
+1234
+Commun.
+probability
+0.1
+0.5
+0.9
+POSTN
+PTN IGF
+BMP
+PDGF
+NAMPT
+MDK
+CXCL
+TGFBMIF
+ANGPTL
+Osteo./Chondro. hSSC
+(GP-enriched)
+Fibro./Stromal hSSC
+(PE-enriched
+high
+UMAP1
+UMAP2
+low
+POSTN
+CXCL12
+CTSK
+ACTA2
+MX1
+MDK
+PDGFRB
+PDGFD
+MIF
+ACKR3
+SDC4
+IGF1
+PTN
+LRP1
+BMP5
+PE hSSCs
+6
+6
+6
+3
+Interactions (#)
+GP hSSCs
+Strength (p-value)
+1.14e-6
+5.42e-9
+1.09e-6
+4.78e-7
+PE hSSCs
+GP hSSCs
+CellChat
+PDGFRA
+PDGFRB
+ACVR1,BMP2R
+INSR
+I
+G
+H
+E
+Chondro.
+Fibro./Stromal
+GP hSSCs
+PE hSSCs
+COL2A1
+COL11A1
+COL9A1
+HAPLN1
+CNMD
+MATN3
+SNORC
+COMP
+GDF5
+CYTL1
+SP7
+PTH1R
+MFAP4
+DPT
+POSTN
+ANGPTL1
+COL6A6
+CXCL12
+CD34
+CD248
+FBN1
+IGF1
+MEOX2
+FBLN5
+COL15A1
+COL9A2
+DCN
+IGF1R
+HDAC1
+COL1A1
+MFAP5
+EGFR
+CD34
+EPHB2
+EFNA5
+FGFR13
+Chondro.
+Osteo.
+Periost./Perichondrium
+Bone marrow
+Myofibroblastic
+0
+50
+100
+Whole 
+tissue
+GP 
+PE 
+Cell cluster distribution (%)
+L
+M
+O
+SOX9+PDGFRA+ cells
+Receptor cells
+lo
+hi
+Mean
+PE subregion
+COL1A1-ITGA5
+PE subregion
+FGF13-FGFR1
+COL9A2-ITGA9,ITGB1
+GP subregion
+GP subregion
+EFNA5-EPHA3
+N
+UMAP1
+UMAP2
+Chondro.
+SOX9+PDGFRA+
+Osteo.
+SOX9+PDGFRA+
+Bone Marrow
+SOX9+PDGFRA+
+Myofibroblast.
+SOX9+PDGFRA+
+Periost./Perichondrium
+SOX9+PDGFRA+
+subregions
+Figure S3. Distinct features and localization of growth plate and periosteal human skeletal stem cells,
+Related to Figure 3. (A) Photograph of human fetal long bone with annotated anatomical subregions (left).
+Representative colony-forming unit fibroblasts (Crystal violet stain; top) and osteogenic potential (Alizarin red
+stain; bottom) of stromal vascular fraction within defined anatomical subregions (right). (B) Representative
+staining of CFU-F, osteogenic and chondrogenic in vitro assays of prospectively isolated hSSCs from GP or PE
+fetal long bone tissue. (C) Quantification of colony-forming unit ability of prospectively isolated hSSCs, hCPs and
+hOPs from GP and PE fetal long bone tissue. (n = 3-7). Data shown as mean + SEM. Comparisons by two-sided
+Student’s t-test adjusted for non-normality (Mann-Whitney test) or unequal variances (Welch’s test) where
+appropriate. (D) Heatmap of scRNAseq data top250 genes expressed in hSSCs from GP, PE or non-dissected fetal
+long bone tissue. (E) Osteo./Chondro. and Fibro./Stromal hSSC marker genes and their expression in GP and PE
+hSSCs. (F) Expression of periosteal marker genes in scRNAseq derived UMAP of Osteo./Chondro. and
+Fibro./Stromal hSSCs. (G) CellChat algorithm analysis of scRNAseq data inferring ligand-receptor interactions
+between Osteo./Chondro. and Fibro./Stromal hSSCs from GP and PE. (H) Strength of interactions as determined
+by CellChat. (I) Overview of genes used to infer ligand-receptor interactions between hSSC subtypes. (J)
+Probability of specific ligand-receptor interactions as determined by CellChat. (K) Ligand genes clustered by
+signaling groups. (L) H&E stain of fetal phalange from an adjacent section used for Nanostring CosMX single cell
+spatial analysis. (M) UMAP plot of cell clusters and cell cluster distribution within analyzed tissues in CosMX
+analysis. (N) UMAP plots showing individual clusters with distribution of SOX9+PDGFRA+ cells (red). (O)
+Expression of selected ligands in SOX9+PDGFRA+ cells in subregions as well as expression of respective receptors
+in surrounding cells. Scale bar = 1mm.
+
+Figure S4: In situ identification of hSSC subtypes and in vivo clonal tracking, Related to Figure 4.
+FMO1
+PDPN
+DAPI
+Frontal Skull
+Parietal Skull
+Suture
+Vertebral Disc
+Vertebral Bone
+BM
+Growth Plate
+Periosteum
+Vertebra
+Disc
+Vertebral
+bone
+scRNAseq hSSC
+subtype distribution
+VB
+VD
+0 20 40 60 80 100%
+NP
+AF
+In situ
+subtype distribution
+Stromal.
+Fibro.
+Osteo.
+VD
+VB
+Chondro.
+B
+BM
+Growth Plate/
+Perichondrium
+SKIL (Chondro)
+SPP1 (Osteo)
+HIC1 (Stromal)
+HIC1
+PDPN
+DAPI
+SPP1
+PDPN
+DAPI
+SKIL 
+PDPN
+DAPI
+Periosteum
+Frontal Skull
+Parietal Skull
+Suture
+A
+C
+E
+G
+D
+F
+Vertebral Disc
+Vertebral Bone
+SKIL (Chondro)
+SPP1 (Osteo)
+HIC1 (Stromal)
+HIC1
+PDPN
+DAPI
+SPP1
+PDPN
+DAPI
+SKIL 
+PDPN
+DAPI
+HIC1
+PDPN
+DAPI
+SPP1
+PDPN
+DAPI
+SKIL (Chondro)
+SPP1 (Osteo)
+HIC1 (Stromal)
+SKIL 
+PDPN
+DAPI
+Fracture tissue
+scRNAseq hSSC
+subtype distribution
+GP
+PE
+0 20 40 60 80100%
+In situ
+subtype distribution
+AF
+NP
+GP/MP
+PE
+0 20 40 60 80100%
+0 20 40 60 80100%
+VB
+VD
+Growth
+Plate
+Periost/
+Endosteum
+Metaphysis (MP)
+BM
+Perichondrium
+Fibro-hSSCs
+Stromal-hSSC
+Chondro-hSSC
+Osteo-hSSCs
+Cranium
+scRNAseq hSSC
+subtype distribution
+0 20 40 60 80100%
+FSK
+PSK
+SUT
+SUT
+PSK
+Chondro.
+Stromal.
+Fibro.
+Osteo.
+In situ
+subtype distribution
+0 20 40 60 80100%
+FSK
+PSK
+SUT
+Intact
+Growth Plate
+removed
+Periosteum 
+removed
+Fetal long bone tissue grafts 8-weeks post transplantation
+N
+O
+Epiphysis/
+Growth Plate (GP)
+GP/Diaphysis
+Fetal phalanges
+dorsal subQ transplant
+8-weeks
+NSG pup
+1 mm
+L
+GP SSC clones
+PE SSC clones
+% of total cells
+Clonal size distribution
+0
+20
+40
+60
+80
+0
+20
+40
+60
+Top 10 clones: Cell type distribution
+Cell type (%)
+M
+GP SSC
+PE SSC
+GP8
+GP7
+GP6
+GP5
+GP4
+GP3
+GP2
+GP1
+GP9
+GP10
+PE8
+PE7
+PE6
+PE5
+PE4
+PE3
+PE2
+PE1
+PE10
+PE9
+SSC
+BCSP
+CH
+OS
+SSC
+BCSP
+CHOS FS
+0
+20
+40
+60
+80
+100
+Mean
+0         1
+J
+K
+SKIL
+SOX9
+GREM1
+COL2A1
+COL9A1
+SNORC
+ACAN
+HAPLN1
+MATN3
+STAT3
+CPM
+DLK1
+TCF4
+ITGB1
+FOXP1
+PE hSSC
+GP hSSC
+UMAP1
+UMAP2
+lo
+hi
+CH
+OS
+SSC
+BCSP
+HIC1
+SEMA5A
+CXCL12
+CDH11
+SEMA5A
+SKIL
+CXCL12
+SSC
+FS
+CH
+OS
+CDH11
+BCSP
+TXNIP
+POSTN
+MAF
+COL1A1
+VCAN
+MYH10
+FMO1
+TNXB
+HIC1
+SOX9
+GREM1
+COL2A1
+COL9A1
+SNORC
+ACAN
+HAPLN1
+MATN3
+STAT3
+CPM
+DLK1
+TCF4
+ITGB1
+FOXP1
+TXNIP
+POSTN
+MAF
+COL1A1
+VCAN
+MYH10
+FMO1
+TNXB
+early
+late
+3. Graft excision
+Imaging
+Digest, sort, scRNAseq
+Clonal analysis
+500 barcoded cells (Venus+)
++ 5,000 SSC supporter cells
+3 weeks
+Freshly isolated 
+GP or PE hSSCs
+2. Transplantation
+Lentiviral barcode  
+library
+1. Transduction
+Re-sort
+H
+Single cell barcoding
+I
+GP hSSCs
+PE hSSCs
+Figure S4. In situ identification of hSSC subtypes and in vivo clonal tracking, Related to Figure 4. (A) H&E
+staining of a human fetal long bone section depicting areas for in situ analysis (red squares) as well as composition
+of hSSC subtypes in distinct subregions as inferred by scRNAseq and in situ readout (relative abundance based on
+analyzed sections). (B) Representative in situ localization of chondrogenic (SKIL+PDPN+), osteogenic
+(SPP1+PDPN+), and stromal (HIC1+PDPN+) hSSC subtypes in distinct anatomical regions of long bones. (C) H&E
+staining of a human fetal vertebra section depicting areas for in situ analysis (red squares) as well as composition
+of hSSC subtypes in distinct subregions as inferred by scRNAseq and in situ readout. NP: Nucleus pulposus, AP:
+Annulus fibrosus. (D) In situ localization of chondrogenic (SKIL+PDPN+), osteogenic (SPP1+PDPN+), and stromal
+(HIC1+PDPN+) hSSC subtypes in distinct anatomical regions of the spine. (E) H&E staining of a human fetal
+cranial bone section depicting areas for in situ analysis (red squares) as well as composition of hSSC subtypes in
+distinct subregions as inferred by scRNAseq and in situ readout. (F) In situ localization of chondrogenic
+(SKIL+PDPN+), osteogenic (SPP1+PDPN+), and stromal (HIC1+PDPN+) hSSC subtypes in distinct anatomical
+regions of the cranium. (G) In situ localization of the fibrogenic (FMO1+PDPN+) hSSC subtype in various skeletal
+regions. All data is representative of tissue from two distinct donors across three sections per site. Scale bars =
+25µm. (H) Schematic of experimental in vivo barcoding approach to track clonal dynamics of GP and PE hSSCs.
+(I) Representative images of grafts with clonal colonies of barcoded and Venus-labeled hSSCs under the renal
+capsule and brightfield image of graft under renal capsule (inset). Scale bar: 0.5 mm. (J) Matrixplot (left) and
+UMAPs (right) showing trajectory inference and expression of cell type specific marker genes for barcoded GP
+hSSC derived grafts. (K) Matrixplot (left) and UMAPs (right) showing trajectory inference and expression of cell
+type specific marker genes for barcoded PE hSSC derived grafts. (L) Clonal size distribution of all clones
+containing hSSCs and at least two cells with identical barcodes. GP n=46 and PE n=21. (M) Distribution of
+cellular subsets within top 10 most abundant clones of GP and PE hSSCs. CH: chondrogenic; OS: osteostromal;
+FS: fibrostromal. (N) Schematic of dorsal subcutaneous transplantation of fetal long bones elements into NSG
+mice (left) and representative Movat’s Pentachrome staining of epiphyseal GP and diaphysis after explant of bones
+8-weeks post-transplant. Scale bar: 5 mm. (O) Subcutaneous fetal long bone grafts 8-weeks post transplantation
+either intact, or with prior removal of growth plate or periosteum. Top images show tissue sections with overview
+stain. Bottom images are micro-CT images of graft tissue in vivo.
+
+C1S
+COL15A1
+COL6A3
+COL1A1
+DC
+PDGFRA
+COL6A2
+LAMA4
+FBN1
+COL1A2
+TAGLN
+COL3A1
+POSTN
+C1R
+MXRA5
+COL4A1
+LUM
+MMP2
+ACTA2
+COL5A2
+MYL9
+SPARCL1
+RGS5
+OLFML3
+BGN
+R
+Functional group distribution
+Fetal
+18 yo
+25 yo
+27 yo
+28 yo
+30 yo
+53 yo
+32 yo
+34 yo
+39 yo
+61 yo
+63 yo
+65 yo
+65 yo PE
+67 yo
+72 yo
+77 yo
+30 yo FD
+51 yo NU
+59 yo NU
+60 yo NU
+62 yo NU
+%
+0
+100
+Functional
+Impaired
+Dysfunctional
+Fetal
+18 yo
+25 yo
+27 yo
+28 yo
+30 yo
+53 yo
+32 yo
+34 yo
+39 yo
+61 yo
+63 yo
+65 yo
+65 yo PE
+67 yo
+72 yo
+77 yo
+30 yo FD
+51 yo NU
+59 yo NU
+60 yo NU
+62 yo NU
+Hierarchical
+clustering
+Figure S5: Aging manifests a fibrogenic lineage fate in human skeletal stem cells, Related to Figure 5.
+I
+J
+UMAP1
+UMAP2
+SSPCs
+Myofibroblast
+CXCL12-RC
+FAPs
+Myogenic
+Endothelial
+Monocyte
+Macrophage
+T-Cell
+Plasma Cell
+CD4 T-Cell
+Nonunion tissue
+Distribution
+Skeletal markers
+Mean
+0
+1
+Fraction %
+20
+10
+B-Cell
+ACTA2
+COL1A1
+TAGLN
+CXCL12
+FABP4
+TTN
+LYZ
+CD63
+SKAP1
+IGKC
+BANK1
+hi
+lo
+PECAM1
+20
+40
+60
+80
+100
+0
+1000
+2000
+3000
+20
+40
+60
+80
+100
+0
+1000
+2000
+3000
+0
+20
+40
+60
+0
+0.5
+1
+0
+20
+40
+60
+0
+10
+20
+30
+40
+20
+40
+60
+0
+1000
+2000
+3000
+4000
+0
+20
+40
+60
+80
+100
+0
+10
+20
+30
+40
+0
+20
+40
+60
+80
+100
+0
+0.5
+1.0
+0
+20
+40
+60
+80
+100
+0
+10
+20
+30
+40
+50
+0
+20
+40
+60
+80
+100
+0
+0.5
+1.0
+BMI
+n = 185
+r =  -0.186
+p = 0.0112
+n = 115
+r =  -0.164
+p = 0.0798
+n = 88
+r =  -0.344
+p = 0.001
+n = 222
+r = -0.0892
+p = 0.1856
+n = 155
+r =  -0.223
+p = 0.0053
+n = 131
+r =  -0.304
+p = 0.0004
+n = 304
+r =  0.0147
+p = 0.7988
+n = 205
+r =  -0.131
+p = 0.0622
+n = 162
+r =  0.102
+p = 0.1956
+F
+G
+Osteogenesis
+Osteogenesis
+Osteogenesis
+Frequency
+Frequency
+Frequency
+CFU-F
+CFU-F
+CFU-F
+BMI
+BMI
+hSSCs/104 CD45-CD235-
+SSCs/104 CD45-CD235-
+AR OD450
+AR OD450
+AR OD450
+%
+%
+%
+hSSCs/104 CD45-CD235-
+% of seeded cells
+Acute
+(n = 270)
+Nonunion
+(n = 18)
+CFU-F
+p=0.0693
+0
+10
+20
+30
+40
+50
+H
+Age (years)
+Age (years)
+Age (years)
+Acute
+(n = 407)
+Nonunion
+(n = 20)
+0
+1x103
+2x103
+3x103
+4x103
+hSSCs/104 CD45-CD235-
+p<0.0001
+Frequency
+A
+hSSCs/104 CD45-CD235-
+B
+Age (years)
+Age (years)
+n = 407
+r =  -0.153
+p = 0.002
+n = 270
+r =  -0.194
+p = 0.0013
+%
+20
+40
+60
+80
+100
+0
+1,000
+2,000
+3,000
+Frequency
+CFU-F
+0
+20
+40
+60
+80
+100
+0
+10
+20
+30
+40
+50
+Frequency
+p<0.0001
+p<0.0001
+p<0.0001
+0-6
+7-14
+>14
+1,000
+3,000
+Days post injury
+SSCs/104 CD45-CD235-
+C
+D
+E
+Osteogenesis
+p=0.0001
+Young
+(<35years)
+Aged
+(36-64)
+Geriatric
+(>65)
+0.0
+0.5
+1.0
+AR OD450
+Chondrogenesis
+n = 46
+r =  -0.559
+p < 0.0001
+0
+20
+40
+60
+80
+100
+0
+1
+Age (years)
+Alcian Blue OD590
+p=0.0003
+hSSC
+hCP
+hOP
+Osteo.
+Chondro.
+Representative 64-year-old
+Age (years)
+Age (years)
+Age (years)
+62 yo NU
+60 yo NU
+77 yo
+72 yo
+65 yo
+63 yo
+28 yo
+25 yo
+18 yo
+27 yo
+30 yo
+32 yo
+34 yo
+39 yo
+53 yo
+61 yo
+67 yo
+65 yo PE
+59 yo NU
+no
+cells
+30 yo FD 51 yo NU
+K
+L
+Fetal/Fx-Young
+Fib.Dyspl.
+Fx-Aged
+Nonunion
+PE-Aged
+FD hSSC marker genes
+GNAS
+FBLN1
+CADM1
+OMD
+CORIN
+ACTA2
+POSTN
+PDGFD
+CHN1
+PTH1R
+MSX1
+BMPR1A
+MYLK
+TAGLN3
+CD36
+αSMA 
+DAPI
+Fx-funct. 
+hSSC
+FD hSSC
+Split foot (HP:0001839)
+0.0006866
+Abnormality of primary teeth (HP:0006481)   0.0006866
+Osteopenia (HP:0000938)
+0.004054
+Hypoplasia of the maxilla (HP:0000327)        0.02516
+Carpal synostosis (HP:0009702)
+0.03159
+Recurrent fractures (HP:0002757)
+0.03228
+Human Phenotype Ontology
+Name
+adj. p-value
+Fibrous Dysplasia
+M
+U
+25,661 public human 
+microarrays datasets
+ACTA2
+Seed gene
+3-step Boolean Equivalence (BE)
+ACTA2
+Equivalent B
+Gene
+Sample 12…n
+ACTA2
+B
+ACTA2
+B
+k times
+51 Probesets
+Ranking
+&
+Filtering
+(CC)
+33 Probesets
+(25 genes)
+Fibroblast-like phenotype associated candidate  genes
+Boolean Equivalent Correlated Clusters (BECC)
+Y
+V
+Chan et al. 2018
+hSSC
+(n=78)
+GP Zones
+(n=549)
+GSE94736
+BMSC
+(n=28)
+OS
+(n=76)
+GSE30699 GSE32981
+MYL9
+TAGLN
+0
+5
+10
+15
+Healthy
+Diseased
+GSE6481
+LMS
+(n=6)
+FS
+(n=4)
+MFH
+(n=21)
+OS
+(n=12)
+OS
+(n=10)
+Log2 expression
+GSE14359
+0
+2
+4
+6
+8
+p=0.0104
+MYL9
+TAGLN
+Bone tissue: GSE72815
+Log2 expression
+Log2 fold change
+(vs. healthy control)
+Bone tissue: GSE8406
+OA
+OA
+OP
+-0.5
+0
+0.5
+OA
+OA
+OP
+MYL9
+TAGLN
+Z
+X
+0
+2
+4
+6
+0
+2
+4
+6
+8
+ANXA1 (log2)
+COL2A1 (log2)
+ACTA2 (log2)
+0
+2
+4
+6
+8
+Fib. Dyspl.
+PE-Aged
+FX-Aged
+Young
+Nonunion
+Global dataset expression
+TAGLN high => SKIL low
+TAGLN high => SOX5 low
+4
+6
+8
+12
+10
+MYL9
+MYL9
+ANXA1 (log2)
+TAGLN
+ACTA2
+TAGLN
+4
+8
+6
+10
+12 14
+4
+8
+6
+10
+12 14
+SKIL
+SOX5
+TAGLN
+4
+6
+8
+10
+3
+5
+6
+7
+9
+8
+4
+No relation
+ACTA2 (log2)
+COL2A1 (log2)
+4
+6
+8
+10
+14
+12
+4
+6
+8
+10
+12
+6
+10
+14
+6
+10
+14
+ANXA1 (log2)
+4
+8
+6
+10 12 14
+4
+6
+8
+10
+12
+4
+6
+8
+10
+12
+ANXA1 low => ACTA2 low
+ACTA2 high => MYL9 high
+TAGLN high => MYL9 high
+TAGLN
+MYL9
+W
+lo
+hi
+Mean
+in group
+1-Chondro.
+hSSC subtypes (fetal)
+2-Stromal.
+3-Osteo.
+4-Fibro.
+lo
+hi
+Skeletal System Development (0001501)         
+2.2e-17
+Cartilage Development (0051216)
+4.2e-11
+Regulation of MSC Differentiation (2000739) 
+4e-3
+Pyruvate Metabolic Process (0006090)            
+3.9e-7
+Neg. Regulation of Apoptotic Process (0043069) 
+3e-5
+Pos. Regulation of Fibroblast Proliferation (0048146) 
+1.1e-3
+Extracellular Matrix Organization (0030198)             
+2.1e-14
+Neg. Regulation of Cell Motility (2000146)
+4.8e-4
+Reg. of Vascular Associated Smooth Muscle Cell Prolif. (1904705)
+7.9e-3
+GO Biological Processes
+Funct.
+Imp.
+Dysf.
+Funct.
+Imp.
+Dysf.
+SKIL
+HIC1
+SOX9
+CNMD
+HAPLN1
+SNORC
+PRRX1
+CTSK
+hSSC markers
+T
+Adj. p-value
+N
+Young
+Fx-Aged
+Nonunion
+Fib.Dyspl.
+PE Aged
+0
+0.5
+1
+CytoTRACE score
+p<0.0001
+p<0.0001
+p=0.0013
+MYL9
+FTL
+MYL12A
+MYL6
+TAGLN
+BMPR1A
+MMP2
+GSN
+ASPN
+LUM
+PDGFRB
+CCN5
+COL1A1
+MYLK
+ACTA2
+Mean
+1
+0
+Leiden
+Osteogenic readout
+1
+2
+3
+4
+5
+6
+7
+8
+high
+low
+defect
+no data
+Q
+11
+9
+12
+10
+O
+P
+S
+Figure S5. Aging manifests a fibrogenic lineage fate in human skeletal stem cells, Related to Figure 5. (A) In
+vitro multipotent differentiation capacity of prospectively isolated cell populations from aged patients. (B) Left:
+Association of abundance of freshly isolated patient hSSCs and age of donor based on flow cytometric analysis of
+freshly processed callus tissue (n = 407). Right: Association of CFU-F and patient age in primary hSSCs (n=270).
+All correlations assessed by Spearman test. (C) Frequency of hSSC abundance in fracture callus tissue based on
+FACS analysis. (0-6 days post injury, n=262; 7-14 days, n=93; >14 days, n=46) (D) In vitro mineralization
+capacity of hSSCs grouped by patient age (young: <35 years, n=65; aged: 35-65 years, n=93; geriatric: >65 years,
+n=62). Significances assessed by one-way ANOVA with Tukey post-hoc test. (E) Association of chondrogenic in
+vitro potential and age of hSSC donor. (F) Correlation of hSSC frequency, CFU-F capacity and in vitro osteogenic
+capacity with age of patient separated into female and male donors. (G) Correlation of BMI with hSSC frequency,
+CFU-F capacity and in vitro osteogenic potential. All correlations assessed by Spearman test. (H) Left: Frequency
+of phenotypic hSSCs based on flow cytometric analysis in acute fracture callus hSSCs (n=407) and nonunion
+hSSCs (n=20). Right: In vitro CFU-F potential of acute fracture (n=270) versus nonunion (n=18) derived hSSCs.
+Data shown as mean + standard deviation of the mean (SEM). Significance assessed by Mann-Whitney test. (I)
+UMAP plot of annotated cells clustered by Leiden found in single cell RNA-sequenced (10X Chromium)
+nonunion tissue. Pie chart shows relative contribution of each cell populations to all cells captured. SSPCs:
+Skeletal Stem and Progenitor Cells; FAPs: Fibro-Adipogenic Progenitors; CXCL12-RCs: CXCL12-expressing
+Reticular Cells. Right: Dotplot of gene expression of osteochondrogenic skeletal stem and differentiation markers
+in each Leiden cell population. (J) UMAP plot showing Leiden cluster specific gene expression in nonunion tissue.
+(K) In vitro osteogenic readout of hSSCs also processed for SmartSeq2 single cell RNA-sequencing. (L) Left:
+Representative immunohistological staining of Smooth muscle actin (aSMA) in freshly cultured hSSCs from a
+healthy fracture (left) and Fibrous Dysplasia (right) tissue. Insets show in vitro osteogenic readouts of the same
+cells. Right: Genes overexpressed in hSSCs in Fibrous Dysplasia compared to hSSCs from other source tissues.
+(M) Gene ontology of phenotypes related to gene expression unique to Fibrous Dysplasia hSSCs. (N) Leiden
+clustering of single hSSCs colored by patient group. (O) CytoTRACE analysis of single cell data inferring
+developmental potential of hSSCs grouped by distinct source tissues. Fx: Fracture. Data shown as violin plots.
+Statistical testing against ‘Young’ done by One-way ANOVA with Bonferroni posthoc test. (P) Matrixplot of gene
+expression related to fibrogenic phenotypes in different hSSC groups. (Q) Left: UMAP of Leiden clustering of
+single hSSCs. Right: UMAP colored by osteogenic readout. (R) Hierarchical clustering of donor-derived hSSCs.
+(S) Abundance of donor hSSCs within functional group clusters. Right: Tracksplot of hSSC related markers as
+found in fetal long bone hSSCs and their expression in functional subgroups of human adult fracture hSSCs. (T)
+Selected GO Biological Processes in top250 genes of hSSCs of different functional states based on single cell
+RNA-sequencing hSSC gene expression data. (U) Schematic overview of Boolean Equivalent Correlated Clusters
+(BECC) algorithm approach performed on the global human dataset (GSE119087). Based on a seed gene (ACTA2)
+the first step performs Boolean analysis by following the Boolean equivalent relationship three times. In the second
+step a score is computed for each gene which are then ranked. Finally, a threshold is imposed using the StepMiner
+algorithm to define a list of high-confidence genes with potentially superior performance than the seed gene (i.e.,
+marking a fibrogenic/dysfunctional state). (V) UMAP plot of patient hSSCs with expression of TAGLN and MYL9.
+(W) Gene expression in fetal hSSC subtypes. (X) Boolean relationships of selected genes based on the global
+microarray dataset. (Y) Boolean relationships of TAGLN and MYL9 with bone marker genes in hSSCs from
+nonunion fracture tissue, Fibrous Dysplasia and fetal bones as well as periosteal tissue. (Z) Top: Gene expression
+of TAGLN and MYL9 in selected published datasets of healthy and pathological cells/tissues (GP Zones: Growth
+Plate Zones; BMSC: Bone Marrow Stromal Cell; FS: Fibrosarcoma; LMS: Leiomyosarcoma; MFH: Malignant
+Fibrous Histiocytoma; OS: Osteosarcoma). Bottom left: Gene expression of TAGLN and MYL9 in publicly
+available GSE8406 dataset containing femoral trabecular bone extracted from healthy as well as osteoporotic (OP)
+and osteoarthritic (OA) patients. Results are shown as log2 fold change of aged-matched healthy controls versus
+diseased OP (n=9) or OA tissue (n=20). Dataset reports overall low fold changes with almost all data points
+between -0.5 and 0.5, potentially reflecting the technical limitation in early microarray technology. Genes could be
+confirmed by qPCR and showed higher fold changes. Bottom right: Gene expression of TAGLN and MYL9 in
+GSE72815 dataset containing iliac crest bone biopsies (n=58) from healthy young (30.3 ± 5.4 years) and old
+patients (73.1 ± 6.6 years) as well as old patients that underwent three weeks of estrogen (Es.) therapy (70.5 ± 5.2
+years). Data shown as whisker boxplots with Tukey distribution. Significance assessed by one-way ANOVA with
+Tukey’s post-hoc test.
+
+Figure S6: Boolean based analysis of gene regulatory networks in single cells, Related to Figure 6.
+A
+B
+C
+F
+G
+D
+E
+H
+I
+J
+MRFAP1
+LIX1
+RUNX1
+CTGF
+SFRP5
+CADM2
+DPEP1
+NUPR1
+CDH15
+ZNF385B
+LHX8
+LUM
+IL34
+KCTD4
+ITSN1
+RRBP1
+IBSP
+KIF1A
+ZNF474
+TAGLN
+MCOLN2
+IL34_CDH15_IBSP_SFRP5
+BSN
+NOTCH3
+ACTA2
+NOTUM
+DUSP2
+COL9A1
+MYL9
+THY1
+TINAGL1
+MPZL2
+LECT1
+SLITRK6
+CTSK
+ISG15
+LBP
+CLDN5
+GRB2
+CDH5_KDR
+PHOSPHO1
+CCDC26
+FGF7
+COL1A2
+TGFB3
+ACRBP
+RAPGEF4
+TNXA
+PRELP
+COL3A1
+CRYBA2
+ANGPT1
+DLK1
+PCOLCE
+ASPN
+CLEC3A
+KDR
+CD86
+WNT5A
+MFAP2
+BTC
+CDH5
+IGF2
+POSTN
+SERPINF1
+FAM46B
+FMOD
+TNFRSF14
+GLI3
+LRP5
+MYBPC2
+B3GNT8
+GLI2
+COL6A3
+DIP2C
+CCN6
+FERMT1
+CTHRC1
+MSLN
+MDK
+AGTR2
+AGR2
+BACE1
+ACVRL1
+FAM104A
+COMP
+IHH
+COL1A1
+BGN
+COL11A1
+FN1
+MMP2
+FBLN1
+MMP13
+RAC2
+CXCL12
+PRRX1
+MATN3
+HIST1H1E
+PRSS23
+PRRX2
+ATF2
+JUNB
+FBXO7
+RARRES2
+RUNX2
+SOX9
+RIPK3
+MXRA8
+CD47
+WNK4
+CCN5
+COL6A1
+FTL
+ACAN
+SLIT3
+SFRP2
+CSF1R
+CXCL14
+PTN
+EGFR
+PAPD4
+IL11RA
+SFRP4
+SMO
+ACTA1
+FBXO2
+HECTD2
+BMPR1B
+COL2A1
+CPEB1
+IL7
+PDGFRB
+MYL4
+EFHD1
+BMPR1A
+DCN
+GRP
+WIF1
+ALPL
+IGF1
+Functional 
+(Osteo./Chondro.)
+Shared
+Dysfunctional 
+(Fibro./Stromal)
+hi-hi
+lo-lo
+lo-hi
+eqv
+opo
+hi-lo
+Ligand
+Receptor
+Transcription
+factor
+Intracellular
+signaling
+Membranous/
+Extracellular
+S
+ZSCAN31
+POU4F2
+NR4A1
+NR4A2
+RBAK
+ZNF620
+NR2F2
+ENO1
+TPI1
+TFAP4
+FOSB
+ZNF575
+DLX5
+ZSCAN25
+DLX6
+ELF5
+RPS10
+ZNF286A
+RPL35
+ZNF286B
+GATA3
+ZNF853
+JUN
+JUNB
+RXRA
+ZNF658
+NR4A3
+ZNF658B
+CEBPA
+LHX1
+MYF5
+BACH2
+MYF6
+FOS
+POU3F3 EGR1
+PKM
+TFCP2L1 ZNF629
+EN2
+ZNF572
+ZNF773
+SEMA4A
+L
+Graft excision
+Imaging/staining
+µCT
+Patient hSSCs
++DMH1 & SAG
+8 weeks
+In vivo subQ transplant
+SCENIC
+M
+N
+R
+O
+qPCR: 48h Osteogenesis
+P
+Q
+Control
+DMH1 & SAG
+DMH1 
+SAG 
+HNA
+COL2
+Patient hSSCs
+Bi-cortical femoral fracture
++Factors
+Fracture
+Injury site
+Patient hSSCs
+TV (mm3)
+0
+10
+20
+30
+40
+50
+Callus volume
+HNA+COL2+
+/section
+0
+50
+100
+150
+200
+0
+50
+100
+150
+p=0.0057
+p=0.0034
+HNA+/section
+Day-10
+Fracture
+0%
+0%
+33%
+67%
+SAG
+CD73
+CD164
+CD146
+PDPN
+no hSSCs
+CD146
+PDPN
+hCP
+hOP
+hBCSP
+hSSC
+Stromal
+7%
+Osteo
+0%
+Fibro
+10%
+Chondro
+83%
+13%
+21%
+9%
+57%
+hSSCs only
+0%
+9%
+27%
+64%
+DMH1
+DMH1+SAG
+Relative to Control
+(GAPDH normalized)
+Relative to Control
+(GAPDH normalized)
+BMPR1A
+TAGLN
+0
+0.5
+1.0
+1.5
+2
+IHH
+SOX9
+0
+0.5
+1.0
+1.5
+2
+K
+PTCH1
+GLI2
+lo
+hi
+SMO
+TGFBR1
+TGFB3
+MMP2
+Functional hSSC enriched genes
+Dysfunctional hSSC enriched genes
+Figure S6. Boolean based analysis of gene regulatory networks in single cells, Related to Figure 6. (A)
+BooleanNet statistic is used to evaluate Boolean implication relationships between two genes, A and B. aij is the
+number of samples in the respective quadrants. nAlow and nBlow are number of samples where A and B is low
+respectively. S00 = BooleanNet statistic and p00 = error rate to test sparsity for the bottom left quadrant. S > 3 and p
+< 0.1 is used to test whether each quadrant is sparse. (B) Deriving six possible Boolean implication relationships
+using BooleanNet statistics. (C) Schematic pipelines of Boolean analysis performed in this manuscript. (D)
+Boolean Implication analysis was performed on the global human dataset (GSE119087) which was built from
+25,955 human microarrays from diverse tissues (bulk samples). (E) Clustered Boolean Implication Network and
+six possible Boolean Implication Relationships (BIRs) between genes/clusters. (F) Visualization of Boolean
+Implication relationships by one-dimensional plots of gene expression levels assuming gene expression value
+change (up or down) only once along a path. Samples are ordered in two possible ways to show the relationship. X
+low => Y low can be represented in a single dimension in two possible ways: (1) X turns on first and then Y turns
+on along a hypothetical biological path defined by the sample order. The path begins with X low and Y low, then it
+transitions to X high and Y low, and finally it transitions to X high and Y high. (2) Y turns off first and then X
+turns off along a hypothetical biological path defined by the sample order. The path begins with X high and Y
+high, then it transitions to X high and Y low; finally, it transitions to both low. Similarly, the other Boolean
+relationships follow two possible path scenarios based on logical conclusions. (G) Visualization of a complex
+Boolean path using one-dimensional plot. (1) Three Boolean relationships between W, X, Y, and Z. (2) Graphic
+representation of the Boolean relationships. Edges are colored differently according to the type of Boolean
+relationship. (3) W turns off first and then X turns off along a hypothetical biological path defined by the sample
+order followed by Y turning on and Z turning on. The path begins with W high, X high, Y low and Z low. (4) The
+path begins with W low, X low, Y high and Z high. Z turns off first and then Y turns off along a hypothetical
+biological path defined by the sample order followed by X turning on and W turning on. (H) Similar to panel E,
+four Boolean implication relationships A equivalent B, B opposite C, C low => D low, D low => E low constitute
+a Boolean path that can be used to develop a computational model of biological process from functional to
+dysfunctional. The computational model predicts how these five genes might be changing along a biological path
+as shown in the plot. (I) In the final step, selected paths from the Clustered BIN is used with BoolTraineR (BTR)
+which incorporates the single-cell RNAseq dataset as an input, the Boolean value of genes in the beginning of the
+selected pathway in MiDReG algorithm as an initial state, and the BIRs between genes as an initial Boolean
+model. A gene regulatory network constructed underlying BTR for single-cell RNAseq dataset is generated. (J)
+Complex Boolean implication network (BIN) derived from large database (GSE119087) of publicly available
+human microarrays of human tissues for genes expressed in functional and dysfunctional hSSCs. Expression
+relationships: hi-hi = A high => B high; hi-lo = A high => B low; lo-hi: A low => B high; lo-lo: A low => B low;
+eqv. = equivalent; opo. = opposite. (K) Expression of Hedgehog pathway specific genes and TGFb pathway
+specific genes in single cell RNA-sequencing data of functional and dysfunctional hSSCs. (L) Quantitative PCR of
+primary hSSCs treated with factors or control for 48h in vitro. n=2 donors. (M) Schematic of in vivo subcutaneous
+grafting of patient hSSCs. (N) Schematic of in vivo fracture site grafting of patient hSSCs. (O) Flow cytometric
+readout of digested callus tissue using the hSSC lineage panel. (P) Micro-CT based callus volume quantification at
+day-14 after fracture. (Q) Immunohistochemistry identifying hSSC-derived cells stained for HNA (Human Nuclear
+antigen, red) and Collagen-2 (COL2, green) in fracture callus tissue of different experimental groups. (R)
+Quantification of HNA and COL2 double-positive cells across calluses. One-way ANOVA with Dunnett's posthoc
+test. (S) Prediction of enriched transcription factor networks using SCENIC based on single cell RNA-sequencing
+data of patient hSSCs for comparison to Boolean method. Left: whole network. Right selected top 50 important
+transcription factors and their interactions. Scale bar = 50µm.

@@ -1,0 +1,80 @@
+id: mandibular_condylar_cartilage
+name: Mandibular condylar cartilage
+type: tissue_structure
+layer: L9
+stub: false
+summary: The mandibular condyle grows by a secondary cartilage that is structurally and lineally unlike
+  a growth plate. It has no resting-proliferative-hypertrophic columnar organisation; instead a fibrous
+  surface layer overlies a polymorphic progenitor layer whose cells express early osteoblast markers -
+  alkaline phosphatase and Runx2 - and can be labelled by an osteoblast progenitor reporter (the 3.6 kb
+  collagen type I fragment in rat), yet differentiate into chondrocytes when appropriately mechanically
+  loaded (robinson2015). So the same progenitor can become bone or cartilage depending on load, whereas
+  the growth plate's resting zone produces only chondrocytes. The consequence at the organism level is
+  that mandibular length is load-responsive in a way that femoral length is not, which is the mechanistic
+  basis for functional orthopaedic appliances and for the mandibular retrognathia seen in growth restriction
+  (craniofacial_growth). All cellular evidence for the progenitor identity is rodent; no human condylar
+  progenitor has been characterised, and the potency and regenerative capacity of these cells remain explicitly
+  open even in rodent.
+quantitative:
+- parameter: markers expressed by mandibular condylar progenitors
+  value: ALP and Runx2
+  unit: not_applicable
+  conditions: rodent condylar cartilage progenitor layer
+  species: rat
+  source_ref: robinson2015
+  uncertainty: marker identity as reviewed; quantities not given
+- parameter: reporter labelling condylar progenitors
+  value: 3.6 kb rat collagen type I fragment
+  unit: not_applicable
+  conditions: rat transgenic reporter
+  species: rat
+  source_ref: robinson2015
+  uncertainty: as reviewed
+- parameter: human condylar progenitor characterisation
+  value: none located
+  unit: not_applicable
+  conditions: searched in this sweep
+  species: human
+  source_ref: robinson2015
+  uncertainty: the review states potency and regenerative capacity remain in question even in rodent
+localization:
+- 'rat mandibular condyle: fibrous, polymorphic/progenitor, and chondrogenic layers'
+- 'human mandibular condyle: uncharacterised at the cellular level'
+human_evidence: absent
+human_evidence_note: No human mandibular condylar progenitor has been isolated or characterised; all cellular
+  claims are rodent.
+species_basis:
+- rat
+- mouse
+translation_risk: high
+translation_risk_reason: The defining claim - that an osteoblast-lineage progenitor becomes chondrogenic
+  under load - rests entirely on rodent reporters, and rodent mandibular growth differs in duration and
+  loading regime from human.
+confidence: D
+claim_grades:
+- claim: Mandibular condylar cartilage is a secondary cartilage without growth-plate columnar zonation
+  grade: B
+  basis: Consistent histological description across species including human autopsy material, though not
+    quantified here.
+- claim: Condylar progenitors are osteoblast-lineage cells that become chondrogenic under mechanical load
+  grade: D
+  basis: Rodent reporter data summarised in a review (robinson2015); the review itself states the potency
+    of these cells remains in question.
+key_refs:
+- ref_id: robinson2015
+  pmid: '26500836'
+  first_author: Robinson J
+  year: 2015
+  type: review
+  one_line_finding: Mandibular condylar cartilage derives from ALP- and Runx2-expressing osteoblast-lineage
+    progenitors that become chondrogenic under mechanical loading.
+- ref_id: van1998
+  pmid: '9753823'
+  first_author: Van Erum R
+  year: 1998
+  type: primary
+  one_line_finding: Mandibular size is disproportionately reduced (<= -1.7 SDS) in short subjects born
+    SGA.
+open_questions:
+- g_l9organism_016
+last_verified: '2026-08-05'

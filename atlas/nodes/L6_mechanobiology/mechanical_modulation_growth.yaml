@@ -1,0 +1,91 @@
+id: mechanical_modulation_growth
+name: Mechanical modulation of longitudinal growth
+type: process
+summary: 'Mechanical modulation is the change in endochondral growth rate produced by an externally imposed
+  stress across a physis, over and above the growth the plate would have produced unloaded. Its measured
+  magnitude in animals is large: 8 days of sustained loading changes growth rate by up to 53%, and the
+  response is approximately linear in stress at 17.1% per 0.1 MPa. Two cell-level levers carry the effect
+  - the number of proliferative chondrocytes generated per column and the final height reached by hypertrophic
+  chondrocytes - and both are altered in the same direction as growth. Modulation is reversible: after
+  15 days of 0.2 MPa compression on rat caudal vertebrae, both growth rate and plate height returned to
+  sham values within 10 days of unloading. Duration matters independently of magnitude, since halving
+  the daily loading time from 24 h to 12 h roughly halves the growth suppression, and the response saturates
+  or reverses with time under a fixed displacement, as posterior vertebral tethering in kyphotic swine
+  shows a 53% growth-modulation advantage of high over low tether tension at 2 weeks that has vanished
+  by 4 weeks. In humans the process is only observed through its surgical exploitation, never measured
+  against a known applied stress.'
+quantitative:
+- parameter: maximum growth rate change achieved by sustained loading
+  value: '53'
+  unit: '%'
+  conditions: 8 days, compression or distraction, rat/rabbit/calf
+  species: multiple
+  source_ref: stokes2007
+  uncertainty: not reported
+- parameter: time to full recovery of growth rate and plate height after unloading
+  value: '10'
+  unit: days
+  conditions: after 15 days of 0.2 MPa static or dynamic compression, rat caudal vertebra
+  species: rat
+  source_ref: mnard2015
+  uncertainty: n=48 rats across 8 subgroups; no residual difference vs sham at 4 weeks
+- parameter: growth modulation, high vs low tether tension at 2 weeks
+  value: 53 vs -1
+  unit: '% growth modulation'
+  conditions: single-level posterior vertebral body tethering, kyphotic swine
+  species: porcine
+  source_ref: halanski2026
+  uncertainty: SD 43 and 15 respectively, p=0.03
+- parameter: growth modulation, high vs low tether tension at 2-4 weeks
+  value: 14 vs 10
+  unit: '%'
+  conditions: same animals, second interval
+  species: porcine
+  source_ref: halanski2026
+  uncertainty: SD 11 and 10, p=0.6
+human_evidence: indirect
+human_evidence_note: Guided growth, epiphysiodesis and vertebral tethering demonstrate that human physes
+  are mechanically modulable, but the applied stress is never measured, so the human dose-response is
+  unknown.
+species_basis:
+- rat
+- rabbit
+- bovine
+- porcine
+translation_risk: high
+translation_risk_reason: All dose-response data are from quadruped tail vertebrae and proximal tibiae
+  under externally applied apparatus over days to weeks.
+confidence: C
+key_refs:
+- ref_id: stokes2007
+  pmid: '17532281'
+  first_author: Stokes IA
+  year: 2007
+  type: primary
+  one_line_finding: Growth changes of up to 53% track proliferative cell number and hypertrophic cell
+    height
+- ref_id: mnard2015
+  pmid: '26416149'
+  first_author: Menard AL
+  year: 2015
+  type: primary
+  one_line_finding: Growth rate and plate height fully recovered 10 days after removal of static or dynamic
+    compression
+- ref_id: halanski2026
+  pmid: '40836185'
+  first_author: Halanski MA
+  year: 2026
+  type: primary
+  one_line_finding: Tether tension effects on vertebral growth modulation are biphasic and transient
+- ref_id: stokes2006
+  pmid: '16705695'
+  first_author: Stokes IA
+  year: 2006
+  type: primary
+  one_line_finding: Established the linear stress-growth relation used to define the modulation coefficient
+open_questions:
+- g_l6mech_001
+- g_l6mech_005
+layer: L6
+stub: false
+last_verified: '2026-08-05'

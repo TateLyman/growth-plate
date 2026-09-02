@@ -1,0 +1,50 @@
+id: igfbp5
+name: IGFBP-5
+aliases:
+- IGFBP5
+type: protein
+layer: L4
+stub: false
+summary: 'IGFBP-5 is the most abundant IGFBP in bone matrix and the only IGFBP besides IGFBP-3 that forms
+  a ternary complex with ALS. It binds hydroxyapatite and extracellular matrix, which converts it from
+  a soluble carrier into a matrix-immobilised IGF reservoir - the property that makes it the most likely
+  IGFBP to matter inside cartilage rather than in blood. It is a PAPP-A2 substrate: in human PAPP-A2 deficiency
+  serum IGFBP-5 rises to 645-997 ug/L against a Tanner I reference of 211-707 ug/L (dauber2016). Whether
+  matrix-bound IGFBP-5 in the growth plate sets a zonal gradient of free IGF-1 has not been measured in
+  any species. This node belongs to the IGF bioavailability control layer - ternary complex formation
+  (IGFBP-3/-5 plus ALS), pericellular proteolysis (PAPP-A, PAPP-A2) and protease inhibition (STC1, STC2)
+  - which sets the free IGF-1 concentration seen by chondrocyte IGF1R independently of total IGF-1. Reviews
+  typically stop at ''IGF-1 level''; the human PAPPA2 kindreds show that total and free IGF-1 can move
+  in opposite directions and that stature tracks the free fraction.'
+quantitative:
+- parameter: serum IGFBP-5 in PAPP-A2 deficiency
+  value: 645-997
+  unit: ug/L
+  conditions: homozygous PAPPA2 mutation; Tanner I reference 211-707 ug/L
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values, n=5 affected
+localization:
+- 'human growth plate: zonal protein localisation not reported'
+human_evidence: indirect
+human_evidence_note: Human evidence is serum IGFBP-5 elevation in PAPP-A2 deficiency; no human IGFBP5
+  mutation phenotype and no human physeal measurement.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: Matrix-reservoir concept is from bone biochemistry, not from physeal measurement.
+confidence: C
+key_refs:
+- ref_id: dauber2016
+  first_author: Dauber A
+  year: 2016
+  type: primary
+  one_line_finding: Serum IGFBP-5 rises when PAPP-A2 proteolysis is lost, confirming IGFBP-5 is a PAPP-A2
+    substrate in humans.
+  pmid: '26902202'
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Paralog-resolved quantitation in the same human cohort as IGFBP-3 (dauber2016).

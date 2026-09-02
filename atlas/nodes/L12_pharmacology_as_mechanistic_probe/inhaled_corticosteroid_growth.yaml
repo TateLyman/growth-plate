@@ -1,0 +1,89 @@
+id: inhaled_corticosteroid_growth
+name: Inhaled corticosteroids and adult height
+aliases: [budesonide growth effect, ICS growth suppression, CAMP adult height]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Inhaled corticosteroids are the definitive human experiment on whether a transient
+  glucocorticoid-induced slowing of growth velocity is recovered. The Childhood Asthma
+  Management Program randomised children aged 5-13 years to budesonide 400 ug/day,
+  nedocromil, or placebo for 4-6 years and then measured adult height in 943 of 1041
+  participants (90.6%) at a mean age of 24.9 +/- 2.7 years. Mean adult height was 1.2 cm
+  lower in the budesonide group than placebo (95% CI -1.9 to -0.5, p=0.001); nedocromil
+  showed no effect (-0.2 cm, 95% CI -0.9 to 0.5). Three features make this the most
+  informative dataset in the layer. First, the adult deficit (-1.2 cm) is essentially
+  identical to the deficit already present after two years of treatment (-1.3 cm, 95% CI
+  -1.7 to -0.9), so the loss was incurred early and was neither recovered nor compounded.
+  Second, it was dose-dependent: -0.1 cm of adult height per ug/kg/day of inhaled
+  glucocorticoid in the first two years (p=0.007). Third, the velocity reduction occurred
+  primarily in prepubertal participants, identifying a window of susceptibility. The
+  general lesson - that a growth velocity deficit becomes a permanent height deficit
+  unless catch-up occurs - is the mirror image of the unresolved question for every
+  growth-promoting agent in this layer.
+quantitative:
+  - parameter: difference in adult height, budesonide versus placebo
+    value: '-1.2'
+    unit: cm
+    conditions: >-
+      CAMP randomised trial, budesonide 400 ug/day for 4-6 years starting at age 5-13 y;
+      adult height measured in 943 of 1041 participants at mean age 24.9 +/- 2.7 y;
+      multiple linear regression adjusted for demographics, asthma features and entry height
+    species: human
+    source_ref: kelly2012
+    uncertainty: 95% CI -1.9 to -0.5, p=0.001
+  - parameter: difference in attained height after 2 years of budesonide
+    value: '-1.3'
+    unit: cm
+    conditions: same trial, interim measurement; essentially equal to the eventual adult deficit
+    species: human
+    source_ref: kelly2012
+    uncertainty: 95% CI -1.7 to -0.9
+  - parameter: dose-response of adult height to inhaled glucocorticoid in the first 2 years
+    value: '-0.1'
+    unit: cm per ug/kg/day
+    conditions: same trial, regression on daily dose in the first 2 years
+    species: human
+    source_ref: kelly2012
+    uncertainty: p=0.007
+  - parameter: difference in adult height, nedocromil versus placebo
+    value: '-0.2'
+    unit: cm
+    conditions: same trial, active comparator arm - the internal negative control
+    species: human
+    source_ref: kelly2012
+    uncertainty: 95% CI -0.9 to 0.5, p=0.61
+localization:
+  - "human growth plate: glucocorticoid receptor-mediated suppression presumed; no plate measurement in treated children"
+human_evidence: direct
+human_evidence_note: >-
+  Randomised controlled trial with 90.6% follow-up to attained adult height at a mean age
+  of nearly 25 years - the longest and most complete growth follow-up in this layer.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: Human randomised trial with a human adult-height endpoint.
+confidence: A
+claim_grades:
+  - claim: Inhaled budesonide 400 ug/day in childhood reduces adult height by about 1.2 cm.
+    grade: A
+    basis: Randomised trial, n=943 with adult height, 90.6% follow-up, adjusted analysis.
+  - claim: The deficit is incurred within the first two years of treatment and is neither recovered nor progressive.
+    grade: A
+    basis: The 2-year deficit (-1.3 cm) and the adult deficit (-1.2 cm) coincide within their confidence intervals.
+  - claim: Prepubertal children are the susceptible group.
+    grade: B
+    basis: Reported within the trial as the subgroup in which velocity fell; a subgroup observation rather than a prespecified test.
+key_refs:
+  - ref_id: kelly2012
+    pmid: '22938716'
+    first_author: Kelly HW
+    year: 2012
+    type: primary
+    one_line_finding: CAMP adult height - budesonide -1.2 cm (95% CI -1.9 to -0.5), deficit set in the first 2 years, not progressive.
+  - ref_id: nct00000575
+    year: 2012
+    type: trial_registry
+    one_line_finding: Registry record for the CAMP trial underlying the adult-height analysis.
+open_questions: [g_l12b_021, g_l12b_022]
+contradicts: []
+last_verified: '2026-08-05'

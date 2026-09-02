@@ -1,0 +1,89 @@
+id: metaphyseal_vasculature
+name: Metaphyseal vasculature
+aliases:
+- metaphyseal capillary loops
+- vascular invasion front
+type: tissue_structure
+layer: L1
+stub: false
+summary: The metaphyseal vasculature terminates in blind capillary loops that abut the last transverse
+  septum of each chondrocyte column and advance as that septum is removed. Scanning electron microscopy
+  of vascular casts shows the invading capillary ends are morphologically varied rather than uniform,
+  and serial-section analysis shows the endothelium penetrates the non-calcified pericellular and territorial
+  matrix specifically, not the mineralised longitudinal septa. The advancing tips are physically associated
+  with FABP5+ septoclasts, which in mouse require endothelial Dll4 for their specification, making the
+  vessel the organiser of its own path through cartilage. In the metaphysis proper the vessels are type
+  H capillaries, a CD31-high/endomucin-high subtype that is enriched near the growth plate, surrounds
+  osteoprogenitors and declines with age. Because vascular invasion sets the rate at which the plate is
+  consumed, anything that blocks metaphyseal angiogenesis thickens the hypertrophic zone without increasing
+  elongation.
+quantitative:
+- parameter: morphology of capillary ends at the invasion front
+  value: variable, not uniform
+  unit: qualitative
+  conditions: rat femur, scanning electron microscopy of vascular casts
+  species: rat
+  source_ref: yamamoto2022
+  uncertainty: descriptive
+- parameter: matrix compartment penetrated by invading endothelium
+  value: non-calcified pericellular and territorial matrix
+  unit: qualitative
+  conditions: distal hypertrophic zone, Yucatan swine, serial light-microscopic sections
+  species: porcine
+  source_ref: farnum1989
+  uncertainty: descriptive
+- parameter: abundance of septoclasts relative to osteoclasts at the chondro-osseous interface
+  value: significantly greater
+  unit: qualitative
+  conditions: 3-week-old mouse femur
+  species: mouse
+  source_ref: sivaraj2022
+  uncertainty: n = 6 animals
+localization:
+- 'rat metaphysis: capillary cast morphology (yamamoto2022)'
+- 'mouse metaphysis: type H vessels and septoclast association (kusumbe2014, sivaraj2022)'
+- 'human metaphysis: RANK+ chondro/osteoclasts quantified by zone (walzer2014)'
+human_evidence: indirect
+human_evidence_note: Human metaphyseal vessels and RANK+ resorptive cells have been quantified by zone
+  in polydactylous digit specimens (walzer2014), but the invasion-front cell biology is entirely rodent.
+species_basis:
+- rat
+- mouse
+- porcine
+- human
+translation_risk: high
+translation_risk_reason: Type H vessel identity and septoclast coupling are murine constructs; no human
+  study has demonstrated either at the growth plate.
+confidence: C
+key_refs:
+- ref_id: kusumbe2014
+  pmid: '24646994'
+  first_author: Kusumbe AP
+  year: 2014
+  type: primary
+  one_line_finding: Type H capillaries are enriched in the metaphysis near the growth plate, couple angiogenesis
+    to osteogenesis and decline with age in mouse.
+- ref_id: sivaraj2022
+  pmid: '35091558'
+  first_author: Sivaraj KK
+  year: 2022
+  type: primary
+  one_line_finding: Septoclasts associate with distal endothelial buds and require endothelial Dll4 for
+    specification.
+- ref_id: farnum1989
+  pmid: '2760737'
+  first_author: Farnum CE
+  year: 1989
+  type: primary
+  one_line_finding: Endothelial penetration at the junction is into non-calcified pericellular and territorial
+    matrix.
+- ref_id: yamamoto2022
+  pmid: '35537657'
+  first_author: Yamamoto T
+  year: 2022
+  type: primary
+  one_line_finding: Scanning electron microscopy of vascular casts shows morphological variety among capillary
+    ends invading the rat epiphyseal plate.
+open_questions:
+- g_l1arch_003
+last_verified: '2026-08-05'

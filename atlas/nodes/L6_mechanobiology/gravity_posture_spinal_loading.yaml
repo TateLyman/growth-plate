@@ -1,0 +1,83 @@
+id: gravity_posture_spinal_loading
+name: Gravity, posture and spinal loading
+type: process
+summary: 'Gravity acting through posture is the largest sustained mechanical variable acting on the growing
+  human axial skeleton, and it can be titrated without surgery. Upright posture compresses the intervertebral
+  discs and vertebral endplate physes; recumbency releases them, producing the overnight recovery of ~70%
+  of the day''s stature loss; and true weightlessness releases them completely, producing a stature gain
+  of up to 3% that fully reverses on return to Earth. Added axial load scales the effect: static shoulder
+  loads of 2.5-40 kg increased the shrinkage rate nonlinearly, and repetitive lifting exceeded equivalent
+  static loading. This makes posture and gravity the natural experiment that most closely mirrors the
+  animal compression studies - except that everything that has actually been measured in humans concerns
+  the disc, not the physis. The vertebral endplate physis sits in series with the disc and must experience
+  some fraction of the same load, but the partition between disc deformation and physeal stress has never
+  been measured in a living human, which is precisely why the human vertebral stress-growth relation is
+  unquantified. Finite element models of the growth plate show that plate morphology itself adapts to
+  the local mechanical environment, so the geometry through which gravity acts is not fixed.'
+quantitative:
+- parameter: stature recovered in the first half of the night (recumbency)
+  value: '70'
+  unit: '% of daily loss'
+  conditions: eight young adults
+  species: human
+  source_ref: tyrrell1985
+  uncertainty: approximate
+- parameter: static shoulder load range over which shrinkage rate rises nonlinearly
+  value: 2.5-40
+  unit: kg
+  conditions: young adults, precision stadiometry
+  species: human
+  source_ref: tyrrell1985
+  uncertainty: relation described as nonlinear; no fitted coefficient reported
+- parameter: stature gain under weightlessness
+  value: up to 3
+  unit: '%'
+  conditions: nine ISS crew, early flight phase
+  species: human
+  source_ref: young2023
+  uncertainty: reverses postflight
+localization:
+- 'human intervertebral disc: directly measured'
+- 'human vertebral endplate physis: load share never measured'
+human_evidence: direct
+human_evidence_note: Postural and gravitational effects on stature are directly measured in humans; the
+  share of that load borne by the physis is not.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human measurement, though the physeal component is inferred.
+confidence: B
+key_refs:
+- ref_id: tyrrell1985
+  pmid: '4002039'
+  first_author: Tyrrell AR
+  year: 1985
+  type: primary
+  one_line_finding: Quantified load- and posture-dependence of spinal shrinkage and recovery in humans
+- ref_id: young2023
+  pmid: '34674563'
+  first_author: Young KS
+  year: 2023
+  type: primary
+  one_line_finding: Weightlessness raises stature up to 3% reversibly, the zero-gravity end point of the
+    posture-load axis
+- ref_id: rodrguez2025
+  pmid: '40475877'
+  first_author: Rodriguez DQ
+  year: 2025
+  type: primary
+  one_line_finding: Growth plate morphology itself adapts to the local mechanical environment in coupled
+    remodelling/ossification models
+- ref_id: hucke2023
+  pmid: '37415789'
+  first_author: Hucke L
+  year: 2023
+  type: primary
+  one_line_finding: Demonstrates the only route currently available to human physeal stress values - personalised
+    finite element modelling from gait
+open_questions:
+- g_l6mech_003
+- g_l6mech_014
+layer: L6
+stub: false
+last_verified: '2026-08-05'

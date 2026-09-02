@@ -1,0 +1,107 @@
+id: comparative_fusion_across_species
+name: Comparative epiphyseal fusion across species
+type: phenotype
+layer: L7
+stub: false
+aliases:
+- which species fuse
+summary: |
+  Species sort into three groups by terminal growth plate fate, and the sorting is the single
+  most load-bearing fact in this atlas. (1) Complete fusion, cartilage destroyed and epiphysis
+  united with metaphysis: human and dog, described histologically as mineralisation advancing
+  from both plate surfaces followed by perforation and destruction of residual cartilage
+  (haines1975); rabbit, in which fusion is observed as an abrupt event with all remaining
+  chondrocytes rapidly replaced by bone elements (weise2001); goat, in which epiphyseal
+  synostosis of the autopod is a documented postnatal event (panebianco2026). (2) Growth
+  cessation without fusion: rat, whose plates persist to 62-80 weeks with a sealed metaphyseal
+  edge and acellular regions (roach2003); mouse, whose plate persists as calcified cartilage
+  at 55 weeks with loss of type X collagen and MMP-13 (yu2025) despite forming countable bony
+  bridges (samvelyan2022). (3) Site- and age-specific persistence in a non-human primate:
+  unclosed vertebral growth plate cartilage was found in every lumbar endplate of 11 normal
+  cynomolgus monkeys aged approximately 9-15 years, in explicit contrast with complete
+  epiphyseal closure in adult humans (iwata2018). The rabbit is therefore the only species in
+  which the whole causal chain from estrogen exposure to fusion has been demonstrated
+  experimentally, and it is not a genetically tractable model; the two genetically tractable
+  models cannot express the endpoint at all.
+quantitative:
+- parameter: proportion of lumbar vertebral endplates with unclosed growth plate cartilage
+  value: 100
+  unit: percent (all endplates in 11 animals)
+  conditions: normal cynomolgus monkeys approximately 9-15 years old, histology
+  species: multiple
+  source_ref: iwata2018
+  uncertainty: n=11 animals; no older animals examined
+localization:
+- 'human: complete union, residual cartilage destroyed (haines1975)'
+- 'dog: complete union (haines1975)'
+- 'rabbit: abrupt fusion when proliferation approaches zero (weise2001)'
+- 'goat autopod: epiphyseal synostosis (panebianco2026)'
+- 'rat: plate persists, growth ceases (roach2003)'
+- 'mouse: plate persists as calcified cartilage (yu2025)'
+- 'cynomolgus monkey lumbar endplate: unclosed at 9-15 y (iwata2018)'
+human_evidence: direct
+human_evidence_note: >-
+  Human union histology is directly described in autopsy/surgical material by haines1975 and
+  in one fusing pubertal plate by emons2009; the comparative claims about other species come
+  from those species' own primaries.
+species_basis:
+- human
+- rabbit
+- rat
+- mouse
+- multiple
+translation_risk: not_applicable
+translation_risk_reason: >-
+  This node is the comparative statement itself; it is the input to translation risk grading
+  elsewhere rather than a claim being transferred.
+confidence: B
+key_refs:
+- ref_id: haines1975
+  pmid: '1184450'
+  first_author: Haines RW
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    Human and dog epiphyseal union described stage by stage; mineralisation spreads from both
+    surfaces, union first by metaplastic bone, then perforation, then loss of all cartilage.
+- ref_id: weise2001
+  pmid: '11381135'
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: >-
+    In rabbits, epiphyseal fusion is an abrupt event in which all remaining chondrocytes are
+    rapidly replaced by bone, occurring when proliferation rate approaches zero.
+- ref_id: iwata2018
+  pmid: '29750005'
+  first_author: Iwata M
+  year: 2018
+  type: primary
+  one_line_finding: >-
+    Unclosed vertebral growth plate cartilage in all lumbar endplates of 11 cynomolgus monkeys
+    aged approximately 9-15 years, unlike adult humans.
+- ref_id: panebianco2026
+  pmid: '40359336'
+  first_author: Panebianco CJ
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    Characterises postnatal bone development and epiphyseal synostosis in the caprine autopod.
+- ref_id: yu2025
+  pmid: '40478277'
+  first_author: Yu X
+  year: 2025
+  type: primary
+  one_line_finding: >-
+    Mouse growth plate remains calcified cartilage at 55 weeks and is not replaced by bone.
+- ref_id: roach2003
+  pmid: '12588965'
+  first_author: Roach HI
+  year: 2003
+  type: primary
+  one_line_finding: Aged rat growth plates persist while longitudinal growth ceases.
+open_questions:
+- g_l7fuse_001
+- g_l7fuse_011
+contradicts: []
+last_verified: '2026-08-05'

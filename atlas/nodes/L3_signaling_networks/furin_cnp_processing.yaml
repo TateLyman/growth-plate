@@ -1,0 +1,53 @@
+id: furin_cnp_processing
+name: Furin processing of proCNP
+type: process
+layer: L3
+stub: false
+summary: 'NPPC is translated as a 126-residue preproprotein; after signal peptide removal, proCNP is cleaved
+
+  by the proprotein convertase furin at a tetrabasic RRRR site to release CNP-53, which can be further
+
+  trimmed to CNP-22. Furin cleavage was demonstrated directly by co-expression and by loss of
+
+  processing in furin-deficient cells (Wu 2003). Processing determines which CNP species reaches
+
+  NPR2 and how much amino-terminal proCNP (NTproCNP) is released; NTproCNP is the clinically used
+
+  circulating marker that tracks height velocity in children, so the processing step is the reason a
+
+  blood assay can report on growth plate activity at all (Olney 2012). No study has localised furin
+
+  activity or measured proCNP-to-CNP conversion efficiency by zone in growth plate cartilage of any
+
+  species, and the tissue site of the CNP-53 to CNP-22 conversion in cartilage is unresolved.
+
+  '
+localization:
+- 'human plasma: NTproCNP measurable and correlated with height velocity (olney2012)'
+- 'growth plate cartilage, any species: furin activity by zone unconfirmed'
+human_evidence: indirect
+human_evidence_note: The processing product NTproCNP is measurable in human plasma and predicts height
+  velocity, but furin cleavage itself was shown in cell systems, not human cartilage.
+species_basis:
+- in_vitro_human_cell
+- human
+translation_risk: moderate
+translation_risk_reason: Cleavage chemistry demonstrated in heterologous cells; cartilage-specific processing
+  has never been measured.
+confidence: C
+key_refs:
+- ref_id: wu2003
+  pmid: '12736257'
+  first_author: Wu C
+  year: 2003
+  type: primary_abstract_only
+  one_line_finding: Furin cleaves proCNP at the tetrabasic site to generate CNP-53.
+- ref_id: olney2012
+  pmid: '22435455'
+  first_author: Olney RC
+  year: 2012
+  type: primary_abstract_only
+  one_line_finding: Plasma NTproCNP predicts height velocity in healthy children.
+open_questions:
+- g_l3core_005
+last_verified: '2026-08-05'

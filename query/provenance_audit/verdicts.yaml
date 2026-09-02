@@ -1,0 +1,82 @@
+# Transitive method audit - hand-written verdicts.
+#
+# provenance_audit.py RANKS rows by what is at stake if their provenance turns out to be
+# model-derived. It cannot adjudicate. Every verdict below was written after reading the
+# source, and each names the evidence that produced it. A row that the ranker put near the
+# top and that turned out to be fine is recorded here too - a triage tool whose top hits are
+# all defects is a tool that has been tuned to its own answer.
+audit_date: '2026-08-06'
+method: provenance_audit.py ranked 1428 rows carrying stake; the top of the list was read against source.
+
+verdicts:
+
+- verdict_id: PROV-001
+  rows: wilsman1996 elongation partition (11 rows across elongation_budget, proximal_tibia_plate,
+    proliferative_zone, chondrocyte_proliferation_rate)
+  status: DEFECT - undeclared derivation
+  finding: >
+    The 9 / 32 / 59 partition is a CALCULATED volume budget, not three measurements, and the
+    paper says so: "the calculation of the relative contributions to elongation ... requires
+    making two assumptions. First, we continue to assume steady-state kinetics over a short
+    time span (24 hours). Second, we assume that the growth plate is modeled as a
+    two-compartment system (cells and matrix)." The proliferative zones are further "modeled
+    as circular cylinders of diameter 1". The atlas rows said only "not reported" or "derived
+    from stereology + oxytetracycline labelling".
+  why_it_matters: >
+    The three shares sum to 100 per cent BY CONSTRUCTION and matrix volume per cell is the
+    COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N, rather than a measurement.
+    They are therefore not independent estimates and cannot carry independent uncertainties.
+    This is the factor flow_model.py halts on at step 3, so nothing has propagated them yet -
+    the risk was latent, not realised.
+  action: PROVENANCE FLAG added to all 11 rows. No value changed.
+  evidence: wilsman1996 full text, section "Calculation of Relative Contributions to Elongation"
+
+- verdict_id: PROV-002
+  rows: hunziker1987 cell HEIGHT rows (hypertrophic_chondrocyte "mean cell height increase,
+    proliferative to late hypertrophic" = 4 fold, and its duplicate)
+  status: DEFECT - inherited, unflagged
+  finding: >
+    hunziker1987 is the same laboratory and the same estimator family as hunziker1989, whose
+    Methods state that vertical cell height "cannot be determined by direct measurement on
+    histological sections" and substitute a super-egg / oblate-spheroid model from
+    cruzorive1986; hunziker1989 further states that some of its 35-day estimators had already
+    appeared in hunziker1987. So the 4-fold HEIGHT increase is a shape-model output carrying
+    the CORR-009 biases. The 10-fold VOLUME increase from the same source is NOT affected -
+    that estimator is unbiased irrespective of cell shape and orientation.
+  confidence_in_the_verdict: >
+    INFERRED, not verified at source. hunziker1987's own Methods have never been read: the
+    PDF supplied on 2026-08-06 was a Literature Abstracts listing page from a different
+    journal. The inference rests on hunziker1989 and cruzorive1986, both read in full.
+  action: PROVENANCE FLAG added to the height rows, stating the inference and its limit.
+  evidence: hunziker1989 Methods; cruzorive1986 sections 8.3 and 10.5; CORR-009
+
+- verdict_id: PROV-003
+  rows: bibliography entry hunziker1987
+  status: DEFECT - structural, in the atlas itself
+  finding: >
+    The entry carried has_full_text = true while the note beside it recorded, in the atlas's
+    own words, that the full text had been "Requested and NOT obtained". A flag directly
+    contradicted by its own annotation.
+  why_it_matters: >
+    has_full_text is what every other tool trusts to decide whether a source has been seen.
+    One entry is a defect; the general lesson is that the flag means "a file was obtained",
+    never "the method was checked" - which is the distinction CORR-009 and CORR-010 both
+    turned on. 1,006 of 1,068 references carry has_full_text; 19 carry full_text_read.
+  action: has_full_text set to false, note amended to record the correction.
+  evidence: the entry's own note field
+
+- verdict_id: PROV-004
+  rows: kember1976 "cells per proliferative column" (24), "derived mean proliferative cell
+    cycle time" (20 days), "mean growth rate expressed per day" (38 um/day)
+  status: NO DEFECT - correctly declared
+  finding: >
+    Ranked 1st, 3rd and 11th by the tool, entirely on heuristic signals (derivation language,
+    no dispersion, unread source, sole source). On reading, all three already declare exactly
+    what they are: the 24-cell count is annotated "NOT a direct count ... the split into 24
+    proliferating is a RABBIT-derived fraction applied to it, and the paper says so", the
+    cycle time as "derived quantity, not measured", the daily rate as "arithmetic conversion
+    of 1.4 cm/year". CORR-008 did this work already.
+  action: none.
+  note: >
+    Recorded because it is the honest result. The ranker's job is to point at rows worth
+    reading, and roughly half of what it pointed at was already sound.

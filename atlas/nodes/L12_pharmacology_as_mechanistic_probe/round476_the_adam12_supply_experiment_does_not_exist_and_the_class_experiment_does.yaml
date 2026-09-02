@@ -1,0 +1,125 @@
+id: round476_the_adam12_supply_experiment_does_not_exist_and_the_class_experiment_does
+name: >-
+  R476 - the ADAM12-S supply experiment does not exist, verified by query; the CLASS experiment does
+  exist, is positive, and its author published the arrest arm in the same year
+aliases:
+  - ADAM12-S supply experiment
+  - gain-only lever supply test
+  - schneider papain acceleration and arrest
+type: intervention
+layer: L12
+stub: false
+confidence: C
+last_verified: '2026-08-27'
+species_basis: mouse, rabbit, human
+human_evidence: indirect
+human_evidence_note: >-
+  The human evidence for ADAM12 is a common-variant height association (nine conditionally independent
+  yengo2022 signals, best rs7920091 P=6e-73, all intronic within a 376 kb gene body) plus the R476
+  compartment coordinate computed here (55.2 per cent trunk on the region's own standing-height lead
+  rs34845021 in 451,921 Europeans). There is no human intervention and no human coding-variant height
+  signal that tests the secreted isoform: the one activity-raising coding variant present in the
+  sumstats, rs41303603 (I908V), is FLAT on standing height, and UniProt O43184 places residue 908 in the
+  region deleted from ADAM12-S, so that null does not test the hypothesis.
+translation_risk: high
+translation_risk_reason: >-
+  Every positive ADAM12 length endpoint is a mouse transgenic secreting the protein into the circulation
+  from a muscle promoter. The exogenous-protein version has never been run in any species, and the one
+  exogenous-protein arm that exists is an in vitro null on the wrong readout.
+summary: >-
+  THE QUESTION WAS WHETHER THE EXPERIMENT THIS FILE KEEPS ASKING FOR ALREADY EXISTS, AND THE ANSWER WAS
+  CHECKED BY QUERY RATHER THAN ASSERTED (CORR-267/284). Five Europe PMC searches pairing ADAM12 with
+  recombinant, administration, injection or supplementation and with bone, femur, tibia or growth plate,
+  and separately with bone length, femur length, tibia length, longitudinal growth or skeletal growth,
+  return exactly ONE record carrying a skeletal growth endpoint out of 39 hits on the tightest query -
+  kveiborg2006 itself. Everything else is livestock GWAS, Kashin-Beck disease, cardiac hypertrophy or
+  obstetric screening. NO EXOGENOUS ADAM12 SUPPLY EXPERIMENT WITH A BONE ENDPOINT EXISTS IN ANY SPECIES.
+  The only exogenous-supply arm anywhere is kveiborg2006's own in vitro null - purified recombinant
+  ADAM12-S on murine chondrocytes, no effect on proliferation by BrdU or flow cytometry - and that is the
+  WRONG READOUT, because in vivo cells per column are unchanged and the entire plate effect is confined to
+  the collagen type X-positive region. So the null constrains the proliferation route and says nothing
+  about the hypertrophic one.
+  WHAT THE ROUND ADDS BEYOND THE NEGATIVE IS THREE THINGS. FIRST, THE COMPARTMENT COORDINATE, AND IT IS
+  FAVOURABLE: streaming the ADAM12 region from the three absolute-trait sumstats in one cohort of 451,921
+  gives a standing-height lead of rs34845021 (chr10:126,019,392, EAF 0.408) at beta +0.01008, P=7.7e-11,
+  with sitting +0.00916 at P=1.1e-08 and leg +0.00744 at P=1.4e-05, i.e. 55.2 PER CENT TRUNK - the top of
+  R421's corrected range (median 45.0, range 8.2-55.2). The residual at bone age 16 is trunk-dominant, and
+  ADAM12 is the first well-evidenced gain-only candidate to sit at the trunk end of that distribution.
+  SECOND, THE CODING-VARIANT TEST WAS RUN AND IT IS UNINFORMATIVE FOR A SPECIFIC AND CHECKABLE REASON.
+  drobiova2026 reports four ADAM12 coding variants of which two, M662V (rs115100580) and I908V
+  (rs41303603), raise proteolytic activity in intact cells. rs41303603 is present in the sumstats at EAF
+  3.58 per cent and is FLAT on standing height - beta +0.000214, SE 0.004355, P=0.91, a 95 per cent
+  interval of about plus or minus 0.0085 SD or 0.6 mm per allele - with sitting and leg trending in
+  OPPOSITE directions at P=0.087 and P=0.13, which is a compartment signature rather than a height one.
+  But UniProt O43184 gives canonical ADAM12 as 909 residues with VAR_SEQ 705-740 and 705-738 replaced and
+  739-909 and 741-909 DELETED in the secreted isoforms, so RESIDUE 908 IS ABSENT FROM ADAM12-S AND THE
+  NULL DOES NOT TEST THE SECRETED-ISOFORM HYPOTHESIS. rs115100580, which does lie in the shared region, is
+  ABSENT from the sumstats at MAF 0.77 per cent.
+  THIRD, AND THIS IS THE PART THAT CHANGES A FRAMING RATHER THAN A NUMBER: THE CLASS EXPERIMENT EXISTS AND
+  IS POSITIVE. schneider1963 put an exogenous PROTEASE into a normal growing bone under tourniquet
+  confinement and measured attained length, and R467 read it in full. R448 established that animals have
+  no expansin and that every animal matrix-loosening modality is proteolytic; R463 predicted the plate's
+  directional yield must therefore be proteolytic; ADAM12-S is a secreted protease whose gain lengthens
+  bone. Those are the same idea at two levels of specificity. AND THE COMPANION HAS NOW BEEN IDENTIFIED
+  AND MUST BE CITED WITH IT: the same author, the same agent and the same year published EXPERIMENTAL
+  EPIPHYSEAL ARREST BY INTRA-OSSEOUS INJECTION OF PAPAIN (JBJS Am 1963;45-A(1):25-35). One investigator,
+  one enzyme, both arms of the band, published separately - which is R467's narrow-limits-of-tolerance
+  conclusion in its strongest possible form and means the acceleration paper must never be quoted alone.
+quantitative:
+  - parameter: ADAM12 region standing-height lead, aligned to the height-increasing allele
+    value: '+0.01008'
+    unit: inverse-normalised SD per allele (P=7.7e-11)
+    species: human
+    source_ref: bartell2026
+    note: >-
+      rs34845021, chr10:126,019,392 GRCh38, EAF 0.408, variant_id 10_127707961_C_CT; region streamed
+      +/-150 kb from GCST90728584 harmonised sumstats, 451,921 Europeans.
+  - parameter: same lead, sitting height
+    value: '+0.00916'
+    unit: SD per allele (SE 0.00185, P=1.1e-08)
+    species: human
+    source_ref: bartell2026
+    note: GCST90728586.
+  - parameter: same lead, leg length
+    value: '+0.00744'
+    unit: SD per allele (SE 0.00175, P=1.4e-05)
+    species: human
+    source_ref: bartell2026
+    note: GCST90728587.
+  - parameter: ADAM12 compartment coordinate on its own standing-height lead
+    value: '55.2'
+    unit: per cent of the height gain in the TRUNK
+    species: human
+    source_ref: bartell2026
+    note: >-
+      Top of R421's corrected-method range (22 genes, median 45.0, range 8.2 LTBP2 to 55.2 TET1). A
+      compartment coordinate is a ranking criterion, not a predicted effect.
+  - parameter: rs41303603 (ADAM12 I908V, activity-raising) on standing height
+    value: '+0.000214'
+    unit: SD per allele (SE 0.004355, P=0.91, EAF 3.58 per cent)
+    species: human
+    source_ref: bartell2026
+    note: >-
+      Flat null, 95 per cent interval about +/-0.0085 SD or 0.6 mm. UNINFORMATIVE for the ADAM12-S
+      hypothesis because residue 908 is deleted from the secreted isoform (UniProt O43184).
+  - parameter: Europe PMC records pairing ADAM12 with any skeletal growth endpoint
+    value: '1'
+    unit: papers, out of 39 hits on the tightest query
+    species: human
+    source_ref: kveiborg2006
+    note: >-
+      Queries run 2026-08-27: ADAM12 AND (bone length OR femur length OR tibia length OR longitudinal
+      growth OR skeletal growth). The single hit is kveiborg2006. Four broader queries returned 640, 89,
+      178 and 543 records, none an exogenous supply experiment with a bone endpoint.
+key_refs:
+  - ref_id: kveiborg2006
+  - ref_id: drobiova2026
+  - ref_id: bartell2026
+  - ref_id: schneider1963
+  - ref_id: schneiderarrest1963
+  - ref_id: loechel2000
+  - ref_id: aszodi2003
+open_questions:
+  - g_l12_476a
+  - g_l12_466a
+  - g_l12_467a

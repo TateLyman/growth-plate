@@ -1,0 +1,90 @@
+id: regulatory_review_document
+name: Regulatory review documents as an evidence source
+aliases: [FDA Summary Basis of Approval, EMA EPAR, product labelling, openFDA]
+type: dataset
+layer: L12
+stub: false
+summary: |
+  Regulatory dossiers carry quantitative pharmacology that the peer-reviewed literature
+  systematically omits, and for this layer they are the difference between a described
+  drug and a characterised one. Four categories of number were obtainable only from
+  labelling in this sweep: full plasma pharmacokinetics with dispersion (vosoritide mean
+  apparent half-life 21.0-27.9 minutes, Tmax 15 minutes, apparent clearance
+  79.4-104 mL/min/kg; navepegritide prodrug half-life 6.7 days and released CNP 5.3 days);
+  the exposure-response position of the chosen dose (vosoritide urinary cGMP near
+  saturation and CXM maximal at 15 ug/kg/day, so the approved dose sits on the plateau);
+  the exact population definition of an indication (mecasermin requires height SDS <= -3.0
+  AND IGF-1 SDS <= -3.0 AND normal or elevated GH); and explicit statements of what is not
+  established, including the paediatric contraindications for both PTH1R agonists and the
+  accelerated-approval language making continued approval contingent on confirmatory
+  benefit. Two access routes were used and both worked without authentication: the openFDA
+  drug label API for structured labelling, and the Drugs@FDA overview pages for approval
+  chronology. Neither the full multidisciplinary review nor the clinical pharmacology
+  review PDFs were retrieved in this sweep, so review-level details such as the sponsor's
+  tissue distribution studies remain unread.
+quantitative:
+  - parameter: agents in this layer for which label-only pharmacokinetic parameters were obtained
+    value: '8'
+    unit: agents
+    conditions: vosoritide, navepegritide, mecasermin, lonapegsomatropin, teriparatide, abaloparatide, pegvisomant, deflazacort via the openFDA drug label API, 2026-08-05
+    species: human
+    source_ref: fda_voxzogo_label_2025
+    uncertainty: not applicable (count)
+  - parameter: FDA multidisciplinary or clinical pharmacology review PDFs retrieved
+    value: '0'
+    unit: documents
+    conditions: only structured labelling and Drugs@FDA overview metadata were retrieved; review PDFs were not read - see access_queue
+    species: not_applicable
+    source_ref: fda_drugsatfda_voxzogo_2021
+    uncertainty: an acknowledged limit of this sweep
+  - parameter: original US approval date, vosoritide
+    value: '2021-11-19'
+    unit: date
+    conditions: NDA 214938; efficacy supplement for a new patient population October 2023, labelling supplement November 2024
+    species: not_applicable
+    source_ref: fda_drugsatfda_voxzogo_2021
+    uncertainty: from the Drugs@FDA overview page
+localization:
+  - "not applicable: an evidence-source node"
+human_evidence: direct
+human_evidence_note: >-
+  Regulatory dossiers summarise human trial and human pharmacokinetic data reviewed by an
+  agency, and are the authoritative record of dose, indication and what remains unproven.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: Evidence-source node.
+confidence: A
+claim_grades:
+  - claim: Label pharmacokinetics for the agents in this layer are retrievable without authentication via the openFDA drug label API.
+    grade: A
+    basis: Eight labels retrieved directly in this sweep with structured sections including clinical pharmacology and pediatric use.
+  - claim: Regulatory documents contain quantitative pharmacology absent from the primary literature.
+    grade: A
+    basis: The vosoritide and navepegritide half-lives and the vosoritide cGMP saturation dose appear in labelling and not in the pivotal trial reports.
+  - claim: No agent's regulatory dossier contains growth plate tissue distribution data.
+    grade: C
+    basis: True of the labelling retrieved, but the full pharmacology/toxicology review PDFs were not read, so a sponsor tissue distribution study could exist unread.
+key_refs:
+  - ref_id: fda_voxzogo_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: Source of vosoritide half-life, clearance, volume of distribution and the cGMP/CXM exposure-response statement.
+  - ref_id: fda_yuviwel_label_2026
+    year: 2026
+    type: regulatory
+    one_line_finding: Source of navepegritide and released-CNP half-lives, Cmax, AUC and accumulation ratios.
+  - ref_id: fda_increlex_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: Source of the exact numeric definition of severe primary IGF-1 deficiency used to gate mecasermin.
+  - ref_id: fda_drugsatfda_voxzogo_2021
+    year: 2021
+    type: regulatory
+    one_line_finding: Approval chronology for NDA 214938 including the 2023 new-patient-population supplement.
+  - ref_id: fda_forteo_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: Source of the open-epiphyses osteosarcoma restriction that keeps PTH1R agonists out of paediatric growth research.
+open_questions: [g_l12b_024]
+contradicts: []
+last_verified: '2026-08-05'

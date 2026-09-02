@@ -1,0 +1,103 @@
+id: proximal_humerus_plate
+name: Proximal humeral growth plate
+aliases:
+- proximal humeral physis
+type: tissue_structure
+layer: L1
+stub: false
+summary: 'The proximal humeral physis is the dominant plate of the upper limb, supplying about 80% of
+  humeral length overall. Its dominance increases through childhood: less than 75% before age 2, about
+  85% at age 8, and a constant 90% after age 11. The humerus as a whole grows about 1.2 cm per year in
+  girls and 1.3 cm per year in boys from age 7 to skeletal maturity, so the proximal plate is contributing
+  roughly 1.0-1.2 cm per year at its peak share. The humerus stays a nearly constant fraction of standing
+  height across this period - 18% at age 7 rising to 19-20% at maturity - which means upper limb growth
+  is proportionally coupled to stature rather than running an independent programme. Clinically the proximal
+  humeral dominance is why proximal humeral fractures in children remodel so extensively and why distal
+  humeral physeal injuries cause disproportionately little shortening. No histological or kinetic data
+  exist for this human plate.'
+quantitative:
+- parameter: share of humeral longitudinal growth
+  value: '80'
+  unit: '% of humeral length'
+  conditions: human, overall
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200 subjects
+- parameter: share of humeral growth before age 2
+  value: less than 75
+  unit: '% of humeral length'
+  conditions: human
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200
+- parameter: share of humeral growth at age 8
+  value: '85'
+  unit: '% of humeral length'
+  conditions: human
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200
+- parameter: share of humeral growth after age 11
+  value: '90'
+  unit: '% of humeral length'
+  conditions: human; constant thereafter
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200
+- parameter: humeral growth rate, girls
+  value: '1.2'
+  unit: cm/year
+  conditions: human, age 7 to skeletal maturity
+  species: human
+  source_ref: pritchett1988
+  uncertainty: n = 121 girls
+- parameter: humeral growth rate, boys
+  value: '1.3'
+  unit: cm/year
+  conditions: human, age 7 to skeletal maturity
+  species: human
+  source_ref: pritchett1988
+  uncertainty: n = 123 boys
+- parameter: humerus as a fraction of standing height
+  value: 18 (age 7) to 19-20 (maturity)
+  unit: '% of standing height'
+  conditions: human, girls and boys
+  species: human
+  source_ref: pritchett1988
+  uncertainty: n = 244
+localization:
+- 'human proximal humerus: radiographic growth data only; no histology'
+human_evidence: direct
+human_evidence_note: Contribution and growth rate come from two human radiographic cohorts (n = 200 and
+  n = 244) followed to skeletal maturity.
+species_basis:
+- human
+- mouse
+translation_risk: not_applicable
+translation_risk_reason: The node's evidence is human radiographic measurement.
+confidence: A
+key_refs:
+- ref_id: pritchett1991
+  pmid: '2060215'
+  first_author: Pritchett JW
+  year: 1991
+  type: primary
+  one_line_finding: Proximal humerus supplies ~80% of humeral growth, rising from <75% before age 2 to
+    90% after age 11.
+- ref_id: pritchett1988
+  pmid: '3356718'
+  first_author: Pritchett JW
+  year: 1988
+  type: primary
+  one_line_finding: Humerus grows ~1.2 cm/yr in girls and ~1.3 cm/yr in boys from age 7 to maturity and
+    stays a near-constant 18-20% of standing height.
+- ref_id: rubin2024
+  pmid: '39269144'
+  first_author: Rubin S
+  year: 2024
+  type: primary
+  one_line_finding: Included the proximal humeral plate in the mouse micro-CT analysis of elongation versus
+    expansion.
+open_questions:
+- g_l1arch_010
+last_verified: '2026-08-05'

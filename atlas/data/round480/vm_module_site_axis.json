@@ -1,0 +1,2768 @@
+{
+ "note": "R480 - DOES THE MATRIX MODULE TRACK THE MATRIX FRACTION? THE ONE SITE-x-ZONE DATASET,\nBOTH SPECIES, WITH R312's FOUR MEASURED CONFOUNDS AS CONTROLS.\n\nTHE PREDICTION, WRITTEN BEFORE LOOKING. The identity is dL/dt = flux x v(d) with\nv(d) = v(c) + v(m). Wilsman 1996 and Breur 1997 agree that as a plate slows, the\nMATRIX FRACTION of the terminal domain RISES - 31.5 per cent in the fastest rat plate\nto 49.7 per cent in the slowest - while terminal cell volume falls 3.6 to 3.9-fold and\nmatrix per cell falls only 1.7 to 1.9-fold. GSE114919's site contrast is 1-week TIBIA\n(fast) against 1-week PHALANX (slow) in the same animals at the same age, zone-resolved,\nin mouse AND rat.\n\n  IF the matrix fraction rises as the plate slows, the matrix-synthesis module should sit\n  HIGHER in the PHALANX than the tibia RELATIVE TO THE GENOME-WIDE BACKGROUND, and the\n  v(c) module (F-R185's 23 h_term genes) should not, or should run the other way.\n\nWHY THIS IS NOT A DISCOVERY SCREEN. R312 measured four confounds in exactly this dataset\nand CLAUDE.md's instruction is explicit: \"Use it to adjudicate genes you already have\nreasons for, never as a discovery screen.\" Muscle contamination alone scores 6.15 in the\n1-week tibia against 1.82 in the phalanx and reproduces the capacity pattern by itself.\nSo every confound panel is scored alongside, and every module is reported as a PERCENTILE\nof the genome-wide distribution rather than as a raw direction - CORR-329's base-rate rule.\n\nWHAT A BULK CONTRAST CANNOT DO, STATED FIRST. Transcript abundance per unit RNA is not\nmatrix volume per cell. If the phalanx terminal cell is smaller, per-cell transcript for\neverything differs. This test can show that the matrix module is DIFFERENTIALLY INVESTED\nbetween a fast and a slow plate; it cannot measure v(m). Nothing here is a volume.\n\nOutput: atlas/data/round480/vm_module_site_axis.json",
+ "sign_convention": "positive log2 = HIGHER IN THE PHALANX, i.e. in the SLOW, matrix-majority plate",
+ "species": {
+  "mouse": {
+   "species": "mouse",
+   "genes_loaded": 20155,
+   "excel_corrupted_dropped": 26,
+   "group_n": {
+    "phal_HZ": 5,
+    "tib_HZ": 5,
+    "phal_PZ": 4,
+    "tib_PZ": 5
+   },
+   "zones": {
+    "HZ": {
+     "n_genes_in_contrast": 16336,
+     "background_median_log2": 0.143,
+     "modules": {
+      "vm_core_protein": {
+       "n_found": 15,
+       "median_log2": 0.093,
+       "mean_log2": -0.513,
+       "genes": [
+        {
+         "gene": "Acan",
+         "log2_phalanx_minus_tibia": -2.426
+        },
+        {
+         "gene": "Vcan",
+         "log2_phalanx_minus_tibia": 0.495
+        },
+        {
+         "gene": "Hapln1",
+         "log2_phalanx_minus_tibia": -2.86
+        },
+        {
+         "gene": "Bgn",
+         "log2_phalanx_minus_tibia": 0.859
+        },
+        {
+         "gene": "Dcn",
+         "log2_phalanx_minus_tibia": 1.516
+        },
+        {
+         "gene": "Fmod",
+         "log2_phalanx_minus_tibia": 0.093
+        },
+        {
+         "gene": "Lum",
+         "log2_phalanx_minus_tibia": 1.267
+        },
+        {
+         "gene": "Prelp",
+         "log2_phalanx_minus_tibia": -0.276
+        },
+        {
+         "gene": "Epyc",
+         "log2_phalanx_minus_tibia": -1.527
+        },
+        {
+         "gene": "Ogn",
+         "log2_phalanx_minus_tibia": 1.029
+        },
+        {
+         "gene": "Aspn",
+         "log2_phalanx_minus_tibia": 0.331
+        },
+        {
+         "gene": "Chad",
+         "log2_phalanx_minus_tibia": 0.612
+        },
+        {
+         "gene": "Comp",
+         "log2_phalanx_minus_tibia": -1.993
+        },
+        {
+         "gene": "Matn1",
+         "log2_phalanx_minus_tibia": -2.136
+        },
+        {
+         "gene": "Matn3",
+         "log2_phalanx_minus_tibia": -2.674
+        }
+       ],
+       "percentile_of_module_median": 47.4,
+       "vs_background_median": -0.05
+      },
+      "vm_collagen": {
+       "n_found": 8,
+       "median_log2": -1.796,
+       "mean_log2": -1.648,
+       "genes": [
+        {
+         "gene": "Col2a1",
+         "log2_phalanx_minus_tibia": -2.028
+        },
+        {
+         "gene": "Col9a1",
+         "log2_phalanx_minus_tibia": -1.859
+        },
+        {
+         "gene": "Col9a2",
+         "log2_phalanx_minus_tibia": -1.877
+        },
+        {
+         "gene": "Col9a3",
+         "log2_phalanx_minus_tibia": -1.883
+        },
+        {
+         "gene": "Col11a1",
+         "log2_phalanx_minus_tibia": -1.247
+        },
+        {
+         "gene": "Col11a2",
+         "log2_phalanx_minus_tibia": -1.185
+        },
+        {
+         "gene": "Col10a1",
+         "log2_phalanx_minus_tibia": -1.733
+        },
+        {
+         "gene": "Col27a1",
+         "log2_phalanx_minus_tibia": -1.369
+        }
+       ],
+       "percentile_of_module_median": 3.6,
+       "vs_background_median": -1.939
+      },
+      "vm_gag_synthesis": {
+       "n_found": 12,
+       "median_log2": -0.591,
+       "mean_log2": -0.534,
+       "genes": [
+        {
+         "gene": "Xylt1",
+         "log2_phalanx_minus_tibia": -1.735
+        },
+        {
+         "gene": "Xylt2",
+         "log2_phalanx_minus_tibia": -0.812
+        },
+        {
+         "gene": "B4galt7",
+         "log2_phalanx_minus_tibia": 0.631
+        },
+        {
+         "gene": "B3galt6",
+         "log2_phalanx_minus_tibia": -0.034
+        },
+        {
+         "gene": "B3gat3",
+         "log2_phalanx_minus_tibia": -0.201
+        },
+        {
+         "gene": "Fam20b",
+         "log2_phalanx_minus_tibia": -0.848
+        },
+        {
+         "gene": "Csgalnact1",
+         "log2_phalanx_minus_tibia": -0.683
+        },
+        {
+         "gene": "Csgalnact2",
+         "log2_phalanx_minus_tibia": -0.395
+        },
+        {
+         "gene": "Chsy1",
+         "log2_phalanx_minus_tibia": -0.699
+        },
+        {
+         "gene": "Chsy3",
+         "log2_phalanx_minus_tibia": -0.5
+        },
+        {
+         "gene": "Chpf",
+         "log2_phalanx_minus_tibia": -0.717
+        },
+        {
+         "gene": "Chpf2",
+         "log2_phalanx_minus_tibia": -0.417
+        }
+       ],
+       "percentile_of_module_median": 19.0,
+       "vs_background_median": -0.734
+      },
+      "vm_sulfation": {
+       "n_found": 14,
+       "median_log2": 0.355,
+       "mean_log2": 0.605,
+       "genes": [
+        {
+         "gene": "Chst3",
+         "log2_phalanx_minus_tibia": 0.88
+        },
+        {
+         "gene": "Chst11",
+         "log2_phalanx_minus_tibia": -0.3
+        },
+        {
+         "gene": "Chst12",
+         "log2_phalanx_minus_tibia": -1.1
+        },
+        {
+         "gene": "Chst13",
+         "log2_phalanx_minus_tibia": 3.095
+        },
+        {
+         "gene": "Chst14",
+         "log2_phalanx_minus_tibia": 1.957
+        },
+        {
+         "gene": "Chst7",
+         "log2_phalanx_minus_tibia": 2.838
+        },
+        {
+         "gene": "Ust",
+         "log2_phalanx_minus_tibia": 0.731
+        },
+        {
+         "gene": "Papss1",
+         "log2_phalanx_minus_tibia": 0.522
+        },
+        {
+         "gene": "Papss2",
+         "log2_phalanx_minus_tibia": -0.675
+        },
+        {
+         "gene": "Slc35b2",
+         "log2_phalanx_minus_tibia": 0.208
+        },
+        {
+         "gene": "Slc35b3",
+         "log2_phalanx_minus_tibia": 0.323
+        },
+        {
+         "gene": "Slc26a2",
+         "log2_phalanx_minus_tibia": -0.18
+        },
+        {
+         "gene": "Impad1",
+         "log2_phalanx_minus_tibia": -0.212
+        },
+        {
+         "gene": "Bpnt1",
+         "log2_phalanx_minus_tibia": 0.387
+        }
+       ],
+       "percentile_of_module_median": 60.1,
+       "vs_background_median": 0.212
+      },
+      "vm_collagen_folding": {
+       "n_found": 14,
+       "median_log2": 0.157,
+       "mean_log2": -0.022,
+       "genes": [
+        {
+         "gene": "Serpinh1",
+         "log2_phalanx_minus_tibia": 0.888
+        },
+        {
+         "gene": "P4ha1",
+         "log2_phalanx_minus_tibia": -0.578
+        },
+        {
+         "gene": "P4ha2",
+         "log2_phalanx_minus_tibia": -1.308
+        },
+        {
+         "gene": "P4hb",
+         "log2_phalanx_minus_tibia": -0.039
+        },
+        {
+         "gene": "P3h1",
+         "log2_phalanx_minus_tibia": -0.174
+        },
+        {
+         "gene": "P3h2",
+         "log2_phalanx_minus_tibia": -1.566
+        },
+        {
+         "gene": "P3h3",
+         "log2_phalanx_minus_tibia": 0.41
+        },
+        {
+         "gene": "Crtap",
+         "log2_phalanx_minus_tibia": 0.22
+        },
+        {
+         "gene": "Ppib",
+         "log2_phalanx_minus_tibia": 0.151
+        },
+        {
+         "gene": "Plod1",
+         "log2_phalanx_minus_tibia": 0.682
+        },
+        {
+         "gene": "Plod2",
+         "log2_phalanx_minus_tibia": -0.104
+        },
+        {
+         "gene": "Plod3",
+         "log2_phalanx_minus_tibia": 0.405
+        },
+        {
+         "gene": "Fkbp10",
+         "log2_phalanx_minus_tibia": 0.163
+        },
+        {
+         "gene": "Fkbp14",
+         "log2_phalanx_minus_tibia": 0.547
+        }
+       ],
+       "percentile_of_module_median": 50.6,
+       "vs_background_median": 0.014
+      },
+      "vm_secretory_export": {
+       "n_found": 18,
+       "median_log2": 0.208,
+       "mean_log2": 0.229,
+       "genes": [
+        {
+         "gene": "Mia3",
+         "log2_phalanx_minus_tibia": -0.036
+        },
+        {
+         "gene": "Sec23a",
+         "log2_phalanx_minus_tibia": -0.086
+        },
+        {
+         "gene": "Sec23b",
+         "log2_phalanx_minus_tibia": -0.278
+        },
+        {
+         "gene": "Sec24d",
+         "log2_phalanx_minus_tibia": -0.11
+        },
+        {
+         "gene": "Sec24c",
+         "log2_phalanx_minus_tibia": -0.422
+        },
+        {
+         "gene": "Sec13",
+         "log2_phalanx_minus_tibia": -0.083
+        },
+        {
+         "gene": "Sec31a",
+         "log2_phalanx_minus_tibia": 0.409
+        },
+        {
+         "gene": "Sar1a",
+         "log2_phalanx_minus_tibia": 0.444
+        },
+        {
+         "gene": "Sar1b",
+         "log2_phalanx_minus_tibia": 0.66
+        },
+        {
+         "gene": "Creb3l2",
+         "log2_phalanx_minus_tibia": 0.447
+        },
+        {
+         "gene": "Creb3l1",
+         "log2_phalanx_minus_tibia": 1.523
+        },
+        {
+         "gene": "Trappc2",
+         "log2_phalanx_minus_tibia": 0.22
+        },
+        {
+         "gene": "Kdelr1",
+         "log2_phalanx_minus_tibia": 0.766
+        },
+        {
+         "gene": "Kdelr2",
+         "log2_phalanx_minus_tibia": 0.463
+        },
+        {
+         "gene": "Tmed9",
+         "log2_phalanx_minus_tibia": -0.085
+        },
+        {
+         "gene": "Tmed2",
+         "log2_phalanx_minus_tibia": 0.23
+        },
+        {
+         "gene": "Tmed10",
+         "log2_phalanx_minus_tibia": 0.196
+        },
+        {
+         "gene": "Surf4",
+         "log2_phalanx_minus_tibia": -0.131
+        }
+       ],
+       "percentile_of_module_median": 53.2,
+       "vs_background_median": 0.065
+      },
+      "vm_golgi_sugar": {
+       "n_found": 11,
+       "median_log2": -0.077,
+       "mean_log2": -0.362,
+       "genes": [
+        {
+         "gene": "Slc35d1",
+         "log2_phalanx_minus_tibia": -1.794
+        },
+        {
+         "gene": "Slc35a1",
+         "log2_phalanx_minus_tibia": -0.077
+        },
+        {
+         "gene": "Slc35a2",
+         "log2_phalanx_minus_tibia": -0.515
+        },
+        {
+         "gene": "Slc35a3",
+         "log2_phalanx_minus_tibia": 0.028
+        },
+        {
+         "gene": "Ugdh",
+         "log2_phalanx_minus_tibia": -0.239
+        },
+        {
+         "gene": "Uxs1",
+         "log2_phalanx_minus_tibia": 0.282
+        },
+        {
+         "gene": "Ugp2",
+         "log2_phalanx_minus_tibia": -1.426
+        },
+        {
+         "gene": "Gale",
+         "log2_phalanx_minus_tibia": -0.541
+        },
+        {
+         "gene": "Cant1",
+         "log2_phalanx_minus_tibia": 0.142
+        },
+        {
+         "gene": "Entpd5",
+         "log2_phalanx_minus_tibia": -0.022
+        },
+        {
+         "gene": "Tmem165",
+         "log2_phalanx_minus_tibia": 0.184
+        }
+       ],
+       "percentile_of_module_median": 38.7,
+       "vs_background_median": -0.22
+      },
+      "vc_fr185_screen": {
+       "n_found": 21,
+       "median_log2": -0.031,
+       "mean_log2": -0.281,
+       "genes": [
+        {
+         "gene": "Pappa",
+         "log2_phalanx_minus_tibia": 1.234
+        },
+        {
+         "gene": "Pappa2",
+         "log2_phalanx_minus_tibia": 1.894
+        },
+        {
+         "gene": "Stc2",
+         "log2_phalanx_minus_tibia": -2.058
+        },
+        {
+         "gene": "Igfbp4",
+         "log2_phalanx_minus_tibia": 0.494
+        },
+        {
+         "gene": "Igfbp5",
+         "log2_phalanx_minus_tibia": 0.559
+        },
+        {
+         "gene": "Igf1",
+         "log2_phalanx_minus_tibia": 1.104
+        },
+        {
+         "gene": "Igf1r",
+         "log2_phalanx_minus_tibia": -0.255
+        },
+        {
+         "gene": "Nppc",
+         "log2_phalanx_minus_tibia": 1.472
+        },
+        {
+         "gene": "Npr2",
+         "log2_phalanx_minus_tibia": -0.585
+        },
+        {
+         "gene": "Npr3",
+         "log2_phalanx_minus_tibia": -3.695
+        },
+        {
+         "gene": "Mme",
+         "log2_phalanx_minus_tibia": 1.121
+        },
+        {
+         "gene": "Ihh",
+         "log2_phalanx_minus_tibia": -2.365
+        },
+        {
+         "gene": "Sox9",
+         "log2_phalanx_minus_tibia": -1.573
+        },
+        {
+         "gene": "Runx2",
+         "log2_phalanx_minus_tibia": -0.025
+        },
+        {
+         "gene": "Gli2",
+         "log2_phalanx_minus_tibia": 1.548
+        },
+        {
+         "gene": "Pth1r",
+         "log2_phalanx_minus_tibia": -1.516
+        },
+        {
+         "gene": "Hdac4",
+         "log2_phalanx_minus_tibia": -0.235
+        },
+        {
+         "gene": "Smo",
+         "log2_phalanx_minus_tibia": 0.113
+        },
+        {
+         "gene": "Mtor",
+         "log2_phalanx_minus_tibia": -0.031
+        },
+        {
+         "gene": "Fgfr3",
+         "log2_phalanx_minus_tibia": -2.065
+        },
+        {
+         "gene": "Inppl1",
+         "log2_phalanx_minus_tibia": -1.039
+        }
+       ],
+       "percentile_of_module_median": 41.0,
+       "vs_background_median": -0.174
+      },
+      "confound_muscle": {
+       "n_found": 8,
+       "median_log2": -3.578,
+       "mean_log2": -3.212,
+       "genes": [
+        {
+         "gene": "Myh8",
+         "log2_phalanx_minus_tibia": -4.533
+        },
+        {
+         "gene": "Myh4",
+         "log2_phalanx_minus_tibia": -4.081
+        },
+        {
+         "gene": "Acta1",
+         "log2_phalanx_minus_tibia": -5.207
+        },
+        {
+         "gene": "Myl1",
+         "log2_phalanx_minus_tibia": -3.301
+        },
+        {
+         "gene": "Tnnt3",
+         "log2_phalanx_minus_tibia": -1.371
+        },
+        {
+         "gene": "Tnnc2",
+         "log2_phalanx_minus_tibia": -3.247
+        },
+        {
+         "gene": "Des",
+         "log2_phalanx_minus_tibia": -0.103
+        },
+        {
+         "gene": "Ckm",
+         "log2_phalanx_minus_tibia": -3.856
+        }
+       ],
+       "percentile_of_module_median": 0.4,
+       "vs_background_median": -3.721
+      },
+      "confound_distal_hox": {
+       "n_found": 5,
+       "median_log2": 4.997,
+       "mean_log2": 4.371,
+       "genes": [
+        {
+         "gene": "Hoxa13",
+         "log2_phalanx_minus_tibia": 4.997
+        },
+        {
+         "gene": "Hoxd13",
+         "log2_phalanx_minus_tibia": 6.363
+        },
+        {
+         "gene": "Hoxa11",
+         "log2_phalanx_minus_tibia": 4.556
+        },
+        {
+         "gene": "Hoxd11",
+         "log2_phalanx_minus_tibia": 5.821
+        },
+        {
+         "gene": "Hoxa10",
+         "log2_phalanx_minus_tibia": 0.118
+        }
+       ],
+       "percentile_of_module_median": 99.9,
+       "vs_background_median": 4.854
+      },
+      "confound_bone": {
+       "n_found": 7,
+       "median_log2": 1.59,
+       "mean_log2": 2.075,
+       "genes": [
+        {
+         "gene": "Bglap",
+         "log2_phalanx_minus_tibia": 1.859
+        },
+        {
+         "gene": "Sost",
+         "log2_phalanx_minus_tibia": 4.425
+        },
+        {
+         "gene": "Mepe",
+         "log2_phalanx_minus_tibia": 3.817
+        },
+        {
+         "gene": "Ibsp",
+         "log2_phalanx_minus_tibia": 1.032
+        },
+        {
+         "gene": "Dmp1",
+         "log2_phalanx_minus_tibia": 1.363
+        },
+        {
+         "gene": "Sp7",
+         "log2_phalanx_minus_tibia": 0.436
+        },
+        {
+         "gene": "Col1a1",
+         "log2_phalanx_minus_tibia": 1.59
+        }
+       ],
+       "percentile_of_module_median": 91.1,
+       "vs_background_median": 1.447
+      },
+      "confound_marrow_immune": {
+       "n_found": 7,
+       "median_log2": 0.504,
+       "mean_log2": 0.768,
+       "genes": [
+        {
+         "gene": "Ms4a1",
+         "log2_phalanx_minus_tibia": 0.504
+        },
+        {
+         "gene": "Cd74",
+         "log2_phalanx_minus_tibia": 1.545
+        },
+        {
+         "gene": "Ccl6",
+         "log2_phalanx_minus_tibia": 2.086
+        },
+        {
+         "gene": "Siglec1",
+         "log2_phalanx_minus_tibia": 2.362
+        },
+        {
+         "gene": "Ptprc",
+         "log2_phalanx_minus_tibia": -0.151
+        },
+        {
+         "gene": "Lyz2",
+         "log2_phalanx_minus_tibia": -0.366
+        },
+        {
+         "gene": "Ctss",
+         "log2_phalanx_minus_tibia": -0.602
+        }
+       ],
+       "percentile_of_module_median": 66.5,
+       "vs_background_median": 0.361
+      },
+      "control_housekeeping": {
+       "n_found": 9,
+       "median_log2": 0.305,
+       "mean_log2": 0.264,
+       "genes": [
+        {
+         "gene": "Gapdh",
+         "log2_phalanx_minus_tibia": -0.317
+        },
+        {
+         "gene": "Actb",
+         "log2_phalanx_minus_tibia": 0.305
+        },
+        {
+         "gene": "Ppia",
+         "log2_phalanx_minus_tibia": 0.172
+        },
+        {
+         "gene": "Tubb5",
+         "log2_phalanx_minus_tibia": 0.616
+        },
+        {
+         "gene": "Rpl13a",
+         "log2_phalanx_minus_tibia": 0.397
+        },
+        {
+         "gene": "B2m",
+         "log2_phalanx_minus_tibia": 0.898
+        },
+        {
+         "gene": "Tbp",
+         "log2_phalanx_minus_tibia": -0.112
+        },
+        {
+         "gene": "Pgk1",
+         "log2_phalanx_minus_tibia": -0.328
+        },
+        {
+         "gene": "Sdha",
+         "log2_phalanx_minus_tibia": 0.748
+        }
+       ],
+       "percentile_of_module_median": 57.8,
+       "vs_background_median": 0.162
+      }
+     }
+    },
+    "PZ": {
+     "n_genes_in_contrast": 16643,
+     "background_median_log2": 0.001,
+     "modules": {
+      "vm_core_protein": {
+       "n_found": 15,
+       "median_log2": -0.482,
+       "mean_log2": -0.089,
+       "genes": [
+        {
+         "gene": "Acan",
+         "log2_phalanx_minus_tibia": -0.614
+        },
+        {
+         "gene": "Vcan",
+         "log2_phalanx_minus_tibia": 1.16
+        },
+        {
+         "gene": "Hapln1",
+         "log2_phalanx_minus_tibia": -1.113
+        },
+        {
+         "gene": "Bgn",
+         "log2_phalanx_minus_tibia": 0.623
+        },
+        {
+         "gene": "Dcn",
+         "log2_phalanx_minus_tibia": 0.921
+        },
+        {
+         "gene": "Fmod",
+         "log2_phalanx_minus_tibia": -0.171
+        },
+        {
+         "gene": "Lum",
+         "log2_phalanx_minus_tibia": -0.482
+        },
+        {
+         "gene": "Prelp",
+         "log2_phalanx_minus_tibia": -0.632
+        },
+        {
+         "gene": "Epyc",
+         "log2_phalanx_minus_tibia": -1.124
+        },
+        {
+         "gene": "Ogn",
+         "log2_phalanx_minus_tibia": 0.931
+        },
+        {
+         "gene": "Aspn",
+         "log2_phalanx_minus_tibia": 1.337
+        },
+        {
+         "gene": "Chad",
+         "log2_phalanx_minus_tibia": 1.682
+        },
+        {
+         "gene": "Comp",
+         "log2_phalanx_minus_tibia": -0.74
+        },
+        {
+         "gene": "Matn1",
+         "log2_phalanx_minus_tibia": -2.605
+        },
+        {
+         "gene": "Matn3",
+         "log2_phalanx_minus_tibia": -0.502
+        }
+       ],
+       "percentile_of_module_median": 22.1,
+       "vs_background_median": -0.483
+      },
+      "vm_collagen": {
+       "n_found": 8,
+       "median_log2": -0.257,
+       "mean_log2": -0.174,
+       "genes": [
+        {
+         "gene": "Col2a1",
+         "log2_phalanx_minus_tibia": -0.196
+        },
+        {
+         "gene": "Col9a1",
+         "log2_phalanx_minus_tibia": -0.537
+        },
+        {
+         "gene": "Col9a2",
+         "log2_phalanx_minus_tibia": -0.319
+        },
+        {
+         "gene": "Col9a3",
+         "log2_phalanx_minus_tibia": -0.548
+        },
+        {
+         "gene": "Col11a1",
+         "log2_phalanx_minus_tibia": -0.49
+        },
+        {
+         "gene": "Col11a2",
+         "log2_phalanx_minus_tibia": -0.103
+        },
+        {
+         "gene": "Col10a1",
+         "log2_phalanx_minus_tibia": 0.559
+        },
+        {
+         "gene": "Col27a1",
+         "log2_phalanx_minus_tibia": 0.244
+        }
+       ],
+       "percentile_of_module_median": 32.5,
+       "vs_background_median": -0.258
+      },
+      "vm_gag_synthesis": {
+       "n_found": 12,
+       "median_log2": -0.267,
+       "mean_log2": -0.287,
+       "genes": [
+        {
+         "gene": "Xylt1",
+         "log2_phalanx_minus_tibia": 0.09
+        },
+        {
+         "gene": "Xylt2",
+         "log2_phalanx_minus_tibia": 0.23
+        },
+        {
+         "gene": "B4galt7",
+         "log2_phalanx_minus_tibia": 0.222
+        },
+        {
+         "gene": "B3galt6",
+         "log2_phalanx_minus_tibia": -0.449
+        },
+        {
+         "gene": "B3gat3",
+         "log2_phalanx_minus_tibia": -0.314
+        },
+        {
+         "gene": "Fam20b",
+         "log2_phalanx_minus_tibia": -0.719
+        },
+        {
+         "gene": "Csgalnact1",
+         "log2_phalanx_minus_tibia": -1.037
+        },
+        {
+         "gene": "Csgalnact2",
+         "log2_phalanx_minus_tibia": -0.22
+        },
+        {
+         "gene": "Chsy1",
+         "log2_phalanx_minus_tibia": -0.96
+        },
+        {
+         "gene": "Chsy3",
+         "log2_phalanx_minus_tibia": -0.162
+        },
+        {
+         "gene": "Chpf",
+         "log2_phalanx_minus_tibia": 0.252
+        },
+        {
+         "gene": "Chpf2",
+         "log2_phalanx_minus_tibia": -0.379
+        }
+       ],
+       "percentile_of_module_median": 31.9,
+       "vs_background_median": -0.268
+      },
+      "vm_sulfation": {
+       "n_found": 14,
+       "median_log2": -0.493,
+       "mean_log2": -0.173,
+       "genes": [
+        {
+         "gene": "Chst3",
+         "log2_phalanx_minus_tibia": 2.735
+        },
+        {
+         "gene": "Chst11",
+         "log2_phalanx_minus_tibia": -0.607
+        },
+        {
+         "gene": "Chst12",
+         "log2_phalanx_minus_tibia": -0.489
+        },
+        {
+         "gene": "Chst13",
+         "log2_phalanx_minus_tibia": -1.393
+        },
+        {
+         "gene": "Chst14",
+         "log2_phalanx_minus_tibia": -0.607
+        },
+        {
+         "gene": "Chst7",
+         "log2_phalanx_minus_tibia": 1.631
+        },
+        {
+         "gene": "Ust",
+         "log2_phalanx_minus_tibia": -0.257
+        },
+        {
+         "gene": "Papss1",
+         "log2_phalanx_minus_tibia": -0.316
+        },
+        {
+         "gene": "Papss2",
+         "log2_phalanx_minus_tibia": -0.385
+        },
+        {
+         "gene": "Slc35b2",
+         "log2_phalanx_minus_tibia": -0.579
+        },
+        {
+         "gene": "Slc35b3",
+         "log2_phalanx_minus_tibia": -0.649
+        },
+        {
+         "gene": "Slc26a2",
+         "log2_phalanx_minus_tibia": -0.496
+        },
+        {
+         "gene": "Impad1",
+         "log2_phalanx_minus_tibia": -0.731
+        },
+        {
+         "gene": "Bpnt1",
+         "log2_phalanx_minus_tibia": -0.278
+        }
+       ],
+       "percentile_of_module_median": 21.7,
+       "vs_background_median": -0.494
+      },
+      "vm_collagen_folding": {
+       "n_found": 14,
+       "median_log2": -0.515,
+       "mean_log2": -0.536,
+       "genes": [
+        {
+         "gene": "Serpinh1",
+         "log2_phalanx_minus_tibia": -0.469
+        },
+        {
+         "gene": "P4ha1",
+         "log2_phalanx_minus_tibia": -0.756
+        },
+        {
+         "gene": "P4ha2",
+         "log2_phalanx_minus_tibia": -1.39
+        },
+        {
+         "gene": "P4hb",
+         "log2_phalanx_minus_tibia": -0.573
+        },
+        {
+         "gene": "P3h1",
+         "log2_phalanx_minus_tibia": -0.406
+        },
+        {
+         "gene": "P3h2",
+         "log2_phalanx_minus_tibia": -0.888
+        },
+        {
+         "gene": "P3h3",
+         "log2_phalanx_minus_tibia": 0.139
+        },
+        {
+         "gene": "Crtap",
+         "log2_phalanx_minus_tibia": -0.364
+        },
+        {
+         "gene": "Ppib",
+         "log2_phalanx_minus_tibia": -0.397
+        },
+        {
+         "gene": "Plod1",
+         "log2_phalanx_minus_tibia": -0.559
+        },
+        {
+         "gene": "Plod2",
+         "log2_phalanx_minus_tibia": -0.493
+        },
+        {
+         "gene": "Plod3",
+         "log2_phalanx_minus_tibia": -0.553
+        },
+        {
+         "gene": "Fkbp10",
+         "log2_phalanx_minus_tibia": -0.263
+        },
+        {
+         "gene": "Fkbp14",
+         "log2_phalanx_minus_tibia": -0.538
+        }
+       ],
+       "percentile_of_module_median": 20.8,
+       "vs_background_median": -0.516
+      },
+      "vm_secretory_export": {
+       "n_found": 18,
+       "median_log2": -0.278,
+       "mean_log2": -0.194,
+       "genes": [
+        {
+         "gene": "Mia3",
+         "log2_phalanx_minus_tibia": -0.154
+        },
+        {
+         "gene": "Sec23a",
+         "log2_phalanx_minus_tibia": -0.557
+        },
+        {
+         "gene": "Sec23b",
+         "log2_phalanx_minus_tibia": 0.044
+        },
+        {
+         "gene": "Sec24d",
+         "log2_phalanx_minus_tibia": -0.013
+        },
+        {
+         "gene": "Sec24c",
+         "log2_phalanx_minus_tibia": -0.088
+        },
+        {
+         "gene": "Sec13",
+         "log2_phalanx_minus_tibia": -0.292
+        },
+        {
+         "gene": "Sec31a",
+         "log2_phalanx_minus_tibia": 0.039
+        },
+        {
+         "gene": "Sar1a",
+         "log2_phalanx_minus_tibia": -0.305
+        },
+        {
+         "gene": "Sar1b",
+         "log2_phalanx_minus_tibia": -0.361
+        },
+        {
+         "gene": "Creb3l2",
+         "log2_phalanx_minus_tibia": 0.156
+        },
+        {
+         "gene": "Creb3l1",
+         "log2_phalanx_minus_tibia": 1.01
+        },
+        {
+         "gene": "Trappc2",
+         "log2_phalanx_minus_tibia": -0.751
+        },
+        {
+         "gene": "Kdelr1",
+         "log2_phalanx_minus_tibia": -0.301
+        },
+        {
+         "gene": "Kdelr2",
+         "log2_phalanx_minus_tibia": -0.471
+        },
+        {
+         "gene": "Tmed9",
+         "log2_phalanx_minus_tibia": -0.526
+        },
+        {
+         "gene": "Tmed2",
+         "log2_phalanx_minus_tibia": -0.449
+        },
+        {
+         "gene": "Tmed10",
+         "log2_phalanx_minus_tibia": -0.216
+        },
+        {
+         "gene": "Surf4",
+         "log2_phalanx_minus_tibia": -0.263
+        }
+       ],
+       "percentile_of_module_median": 31.4,
+       "vs_background_median": -0.279
+      },
+      "vm_golgi_sugar": {
+       "n_found": 11,
+       "median_log2": -0.309,
+       "mean_log2": -0.268,
+       "genes": [
+        {
+         "gene": "Slc35d1",
+         "log2_phalanx_minus_tibia": -0.225
+        },
+        {
+         "gene": "Slc35a1",
+         "log2_phalanx_minus_tibia": 0.516
+        },
+        {
+         "gene": "Slc35a2",
+         "log2_phalanx_minus_tibia": -0.635
+        },
+        {
+         "gene": "Slc35a3",
+         "log2_phalanx_minus_tibia": -0.682
+        },
+        {
+         "gene": "Ugdh",
+         "log2_phalanx_minus_tibia": -0.329
+        },
+        {
+         "gene": "Uxs1",
+         "log2_phalanx_minus_tibia": 0.03
+        },
+        {
+         "gene": "Ugp2",
+         "log2_phalanx_minus_tibia": -0.619
+        },
+        {
+         "gene": "Gale",
+         "log2_phalanx_minus_tibia": -0.083
+        },
+        {
+         "gene": "Cant1",
+         "log2_phalanx_minus_tibia": -0.164
+        },
+        {
+         "gene": "Entpd5",
+         "log2_phalanx_minus_tibia": -0.445
+        },
+        {
+         "gene": "Tmem165",
+         "log2_phalanx_minus_tibia": -0.309
+        }
+       ],
+       "percentile_of_module_median": 29.6,
+       "vs_background_median": -0.31
+      },
+      "vc_fr185_screen": {
+       "n_found": 21,
+       "median_log2": 0.674,
+       "mean_log2": 1.009,
+       "genes": [
+        {
+         "gene": "Pappa",
+         "log2_phalanx_minus_tibia": 2.458
+        },
+        {
+         "gene": "Pappa2",
+         "log2_phalanx_minus_tibia": 3.949
+        },
+        {
+         "gene": "Stc2",
+         "log2_phalanx_minus_tibia": -0.677
+        },
+        {
+         "gene": "Igfbp4",
+         "log2_phalanx_minus_tibia": 1.686
+        },
+        {
+         "gene": "Igfbp5",
+         "log2_phalanx_minus_tibia": 2.45
+        },
+        {
+         "gene": "Igf1",
+         "log2_phalanx_minus_tibia": 2.227
+        },
+        {
+         "gene": "Igf1r",
+         "log2_phalanx_minus_tibia": -0.359
+        },
+        {
+         "gene": "Npr2",
+         "log2_phalanx_minus_tibia": 0.811
+        },
+        {
+         "gene": "Npr3",
+         "log2_phalanx_minus_tibia": 5.452
+        },
+        {
+         "gene": "Ostn",
+         "log2_phalanx_minus_tibia": 0.272
+        },
+        {
+         "gene": "Mme",
+         "log2_phalanx_minus_tibia": 1.683
+        },
+        {
+         "gene": "Ihh",
+         "log2_phalanx_minus_tibia": -1.004
+        },
+        {
+         "gene": "Sox9",
+         "log2_phalanx_minus_tibia": 0.087
+        },
+        {
+         "gene": "Runx2",
+         "log2_phalanx_minus_tibia": -0.031
+        },
+        {
+         "gene": "Gli2",
+         "log2_phalanx_minus_tibia": 1.12
+        },
+        {
+         "gene": "Pth1r",
+         "log2_phalanx_minus_tibia": -0.339
+        },
+        {
+         "gene": "Hdac4",
+         "log2_phalanx_minus_tibia": 1.421
+        },
+        {
+         "gene": "Smo",
+         "log2_phalanx_minus_tibia": 0.24
+        },
+        {
+         "gene": "Mtor",
+         "log2_phalanx_minus_tibia": -0.039
+        },
+        {
+         "gene": "Fgfr3",
+         "log2_phalanx_minus_tibia": -0.898
+        },
+        {
+         "gene": "Inppl1",
+         "log2_phalanx_minus_tibia": 0.674
+        }
+       ],
+       "percentile_of_module_median": 84.3,
+       "vs_background_median": 0.673
+      },
+      "confound_muscle": {
+       "n_found": 9,
+       "median_log2": -4.492,
+       "mean_log2": -4.339,
+       "genes": [
+        {
+         "gene": "Myh8",
+         "log2_phalanx_minus_tibia": -6.084
+        },
+        {
+         "gene": "Myh4",
+         "log2_phalanx_minus_tibia": -7.463
+        },
+        {
+         "gene": "Myh3",
+         "log2_phalanx_minus_tibia": -1.928
+        },
+        {
+         "gene": "Acta1",
+         "log2_phalanx_minus_tibia": -7.482
+        },
+        {
+         "gene": "Myl1",
+         "log2_phalanx_minus_tibia": -5.445
+        },
+        {
+         "gene": "Tnnt3",
+         "log2_phalanx_minus_tibia": -0.68
+        },
+        {
+         "gene": "Tnnc2",
+         "log2_phalanx_minus_tibia": -4.492
+        },
+        {
+         "gene": "Des",
+         "log2_phalanx_minus_tibia": -0.995
+        },
+        {
+         "gene": "Ckm",
+         "log2_phalanx_minus_tibia": -4.48
+        }
+       ],
+       "percentile_of_module_median": 0.2,
+       "vs_background_median": -4.493
+      },
+      "confound_distal_hox": {
+       "n_found": 6,
+       "median_log2": 5.818,
+       "mean_log2": 4.577,
+       "genes": [
+        {
+         "gene": "Hoxa13",
+         "log2_phalanx_minus_tibia": 6.055
+        },
+        {
+         "gene": "Hoxd13",
+         "log2_phalanx_minus_tibia": 8.325
+        },
+        {
+         "gene": "Hoxa11",
+         "log2_phalanx_minus_tibia": -0.024
+        },
+        {
+         "gene": "Hoxd11",
+         "log2_phalanx_minus_tibia": 7.835
+        },
+        {
+         "gene": "Hoxd12",
+         "log2_phalanx_minus_tibia": 5.58
+        },
+        {
+         "gene": "Hoxa10",
+         "log2_phalanx_minus_tibia": -0.305
+        }
+       ],
+       "percentile_of_module_median": 99.9,
+       "vs_background_median": 5.817
+      },
+      "confound_bone": {
+       "n_found": 7,
+       "median_log2": 1.986,
+       "mean_log2": 1.732,
+       "genes": [
+        {
+         "gene": "Bglap",
+         "log2_phalanx_minus_tibia": -0.236
+        },
+        {
+         "gene": "Sost",
+         "log2_phalanx_minus_tibia": 2.439
+        },
+        {
+         "gene": "Mepe",
+         "log2_phalanx_minus_tibia": 4.346
+        },
+        {
+         "gene": "Ibsp",
+         "log2_phalanx_minus_tibia": 1.986
+        },
+        {
+         "gene": "Dmp1",
+         "log2_phalanx_minus_tibia": 2.659
+        },
+        {
+         "gene": "Sp7",
+         "log2_phalanx_minus_tibia": -0.528
+        },
+        {
+         "gene": "Col1a1",
+         "log2_phalanx_minus_tibia": 1.459
+        }
+       ],
+       "percentile_of_module_median": 97.4,
+       "vs_background_median": 1.985
+      },
+      "confound_marrow_immune": {
+       "n_found": 7,
+       "median_log2": 1.224,
+       "mean_log2": 1.132,
+       "genes": [
+        {
+         "gene": "Ms4a1",
+         "log2_phalanx_minus_tibia": 0.897
+        },
+        {
+         "gene": "Cd74",
+         "log2_phalanx_minus_tibia": 1.631
+        },
+        {
+         "gene": "Ccl6",
+         "log2_phalanx_minus_tibia": 1.837
+        },
+        {
+         "gene": "Siglec1",
+         "log2_phalanx_minus_tibia": 1.224
+        },
+        {
+         "gene": "Ptprc",
+         "log2_phalanx_minus_tibia": 1.236
+        },
+        {
+         "gene": "Lyz2",
+         "log2_phalanx_minus_tibia": 0.337
+        },
+        {
+         "gene": "Ctss",
+         "log2_phalanx_minus_tibia": 0.763
+        }
+       ],
+       "percentile_of_module_median": 92.5,
+       "vs_background_median": 1.223
+      },
+      "control_housekeeping": {
+       "n_found": 9,
+       "median_log2": -0.17,
+       "mean_log2": -0.293,
+       "genes": [
+        {
+         "gene": "Gapdh",
+         "log2_phalanx_minus_tibia": -1.09
+        },
+        {
+         "gene": "Actb",
+         "log2_phalanx_minus_tibia": -0.097
+        },
+        {
+         "gene": "Ppia",
+         "log2_phalanx_minus_tibia": -0.45
+        },
+        {
+         "gene": "Tubb5",
+         "log2_phalanx_minus_tibia": -0.17
+        },
+        {
+         "gene": "Rpl13a",
+         "log2_phalanx_minus_tibia": -0.267
+        },
+        {
+         "gene": "B2m",
+         "log2_phalanx_minus_tibia": 1.092
+        },
+        {
+         "gene": "Tbp",
+         "log2_phalanx_minus_tibia": 0.294
+        },
+        {
+         "gene": "Pgk1",
+         "log2_phalanx_minus_tibia": -1.977
+        },
+        {
+         "gene": "Sdha",
+         "log2_phalanx_minus_tibia": 0.033
+        }
+       ],
+       "percentile_of_module_median": 38.0,
+       "vs_background_median": -0.171
+      }
+     }
+    }
+   }
+  },
+  "rat": {
+   "species": "rat",
+   "genes_loaded": 15163,
+   "excel_corrupted_dropped": 27,
+   "group_n": {
+    "phal_HZ": 5,
+    "tib_HZ": 5,
+    "phal_PZ": 5,
+    "tib_PZ": 5
+   },
+   "zones": {
+    "HZ": {
+     "n_genes_in_contrast": 12713,
+     "background_median_log2": 0.135,
+     "modules": {
+      "vm_core_protein": {
+       "n_found": 12,
+       "median_log2": 0.336,
+       "mean_log2": 0.062,
+       "genes": [
+        {
+         "gene": "ACAN",
+         "log2_phalanx_minus_tibia": -1.487
+        },
+        {
+         "gene": "HAPLN1",
+         "log2_phalanx_minus_tibia": -1.826
+        },
+        {
+         "gene": "BGN",
+         "log2_phalanx_minus_tibia": 0.467
+        },
+        {
+         "gene": "DCN",
+         "log2_phalanx_minus_tibia": 1.965
+        },
+        {
+         "gene": "FMOD",
+         "log2_phalanx_minus_tibia": 0.341
+        },
+        {
+         "gene": "LUM",
+         "log2_phalanx_minus_tibia": 2.087
+        },
+        {
+         "gene": "PRELP",
+         "log2_phalanx_minus_tibia": 0.38
+        },
+        {
+         "gene": "EPYC",
+         "log2_phalanx_minus_tibia": 0.331
+        },
+        {
+         "gene": "CHAD",
+         "log2_phalanx_minus_tibia": 2.065
+        },
+        {
+         "gene": "COMP",
+         "log2_phalanx_minus_tibia": -1.358
+        },
+        {
+         "gene": "MATN1",
+         "log2_phalanx_minus_tibia": -0.954
+        },
+        {
+         "gene": "MATN3",
+         "log2_phalanx_minus_tibia": -1.264
+        }
+       ],
+       "percentile_of_module_median": 58.3,
+       "vs_background_median": 0.201
+      },
+      "vm_collagen": {
+       "n_found": 6,
+       "median_log2": -1.201,
+       "mean_log2": -1.079,
+       "genes": [
+        {
+         "gene": "COL2A1",
+         "log2_phalanx_minus_tibia": -1.098
+        },
+        {
+         "gene": "COL9A1",
+         "log2_phalanx_minus_tibia": -1.304
+        },
+        {
+         "gene": "COL9A2",
+         "log2_phalanx_minus_tibia": -1.532
+        },
+        {
+         "gene": "COL11A1",
+         "log2_phalanx_minus_tibia": -0.785
+        },
+        {
+         "gene": "COL11A2",
+         "log2_phalanx_minus_tibia": -1.409
+        },
+        {
+         "gene": "COL27A1",
+         "log2_phalanx_minus_tibia": -0.345
+        }
+       ],
+       "percentile_of_module_median": 10.0,
+       "vs_background_median": -1.336
+      },
+      "vm_gag_synthesis": {
+       "n_found": 10,
+       "median_log2": -0.48,
+       "mean_log2": -0.621,
+       "genes": [
+        {
+         "gene": "XYLT2",
+         "log2_phalanx_minus_tibia": 0.082
+        },
+        {
+         "gene": "B4GALT7",
+         "log2_phalanx_minus_tibia": -0.295
+        },
+        {
+         "gene": "B3GALT6",
+         "log2_phalanx_minus_tibia": 0.003
+        },
+        {
+         "gene": "B3GAT3",
+         "log2_phalanx_minus_tibia": -0.223
+        },
+        {
+         "gene": "FAM20B",
+         "log2_phalanx_minus_tibia": -0.699
+        },
+        {
+         "gene": "CSGALNACT1",
+         "log2_phalanx_minus_tibia": -0.901
+        },
+        {
+         "gene": "CSGALNACT2",
+         "log2_phalanx_minus_tibia": 0.122
+        },
+        {
+         "gene": "CHSY1",
+         "log2_phalanx_minus_tibia": -2.569
+        },
+        {
+         "gene": "CHPF",
+         "log2_phalanx_minus_tibia": -1.065
+        },
+        {
+         "gene": "chpf2",
+         "log2_phalanx_minus_tibia": -0.664
+        }
+       ],
+       "percentile_of_module_median": 25.8,
+       "vs_background_median": -0.615
+      },
+      "vm_sulfation": {
+       "n_found": 13,
+       "median_log2": 0.099,
+       "mean_log2": 0.489,
+       "genes": [
+        {
+         "gene": "CHST3",
+         "log2_phalanx_minus_tibia": -0.091
+        },
+        {
+         "gene": "CHST11",
+         "log2_phalanx_minus_tibia": -1.004
+        },
+        {
+         "gene": "CHST12",
+         "log2_phalanx_minus_tibia": 1.518
+        },
+        {
+         "gene": "CHST13",
+         "log2_phalanx_minus_tibia": 1.652
+        },
+        {
+         "gene": "CHST14",
+         "log2_phalanx_minus_tibia": 1.202
+        },
+        {
+         "gene": "CHST7",
+         "log2_phalanx_minus_tibia": 3.931
+        },
+        {
+         "gene": "UST",
+         "log2_phalanx_minus_tibia": 0.099
+        },
+        {
+         "gene": "PAPSS1",
+         "log2_phalanx_minus_tibia": 0.397
+        },
+        {
+         "gene": "PAPSS2",
+         "log2_phalanx_minus_tibia": -0.684
+        },
+        {
+         "gene": "SLC35B2",
+         "log2_phalanx_minus_tibia": -0.137
+        },
+        {
+         "gene": "SLC26A2",
+         "log2_phalanx_minus_tibia": -0.8
+        },
+        {
+         "gene": "IMPAD1",
+         "log2_phalanx_minus_tibia": -0.185
+        },
+        {
+         "gene": "BPNT1",
+         "log2_phalanx_minus_tibia": 0.464
+        }
+       ],
+       "percentile_of_module_median": 48.5,
+       "vs_background_median": -0.036
+      },
+      "vm_collagen_folding": {
+       "n_found": 13,
+       "median_log2": -0.634,
+       "mean_log2": -0.568,
+       "genes": [
+        {
+         "gene": "SERPINH1",
+         "log2_phalanx_minus_tibia": 0.215
+        },
+        {
+         "gene": "P4HA1",
+         "log2_phalanx_minus_tibia": -1.477
+        },
+        {
+         "gene": "P4HA2",
+         "log2_phalanx_minus_tibia": -1.379
+        },
+        {
+         "gene": "P4HB",
+         "log2_phalanx_minus_tibia": -0.884
+        },
+        {
+         "gene": "P3H1",
+         "log2_phalanx_minus_tibia": -0.114
+        },
+        {
+         "gene": "P3H2",
+         "log2_phalanx_minus_tibia": -1.987
+        },
+        {
+         "gene": "P3H3",
+         "log2_phalanx_minus_tibia": 0.481
+        },
+        {
+         "gene": "PPIB",
+         "log2_phalanx_minus_tibia": 0.108
+        },
+        {
+         "gene": "PLOD1",
+         "log2_phalanx_minus_tibia": 0.363
+        },
+        {
+         "gene": "PLOD2",
+         "log2_phalanx_minus_tibia": -1.294
+        },
+        {
+         "gene": "PLOD3",
+         "log2_phalanx_minus_tibia": -0.634
+        },
+        {
+         "gene": "FKBP10",
+         "log2_phalanx_minus_tibia": 0.045
+        },
+        {
+         "gene": "FKBP14",
+         "log2_phalanx_minus_tibia": -0.827
+        }
+       ],
+       "percentile_of_module_median": 21.2,
+       "vs_background_median": -0.769
+      },
+      "vm_secretory_export": {
+       "n_found": 16,
+       "median_log2": -0.03,
+       "mean_log2": -0.144,
+       "genes": [
+        {
+         "gene": "SEC23A",
+         "log2_phalanx_minus_tibia": -0.563
+        },
+        {
+         "gene": "SEC23B",
+         "log2_phalanx_minus_tibia": -0.294
+        },
+        {
+         "gene": "SEC24C",
+         "log2_phalanx_minus_tibia": -0.334
+        },
+        {
+         "gene": "SEC13",
+         "log2_phalanx_minus_tibia": -0.019
+        },
+        {
+         "gene": "SEC31A",
+         "log2_phalanx_minus_tibia": 0.571
+        },
+        {
+         "gene": "SAR1A",
+         "log2_phalanx_minus_tibia": -1.287
+        },
+        {
+         "gene": "SAR1B",
+         "log2_phalanx_minus_tibia": 0.1
+        },
+        {
+         "gene": "CREB3L2",
+         "log2_phalanx_minus_tibia": -0.04
+        },
+        {
+         "gene": "CREB3L1",
+         "log2_phalanx_minus_tibia": 1.576
+        },
+        {
+         "gene": "TRAPPC2",
+         "log2_phalanx_minus_tibia": 0.663
+        },
+        {
+         "gene": "KDELR1",
+         "log2_phalanx_minus_tibia": 0.088
+        },
+        {
+         "gene": "KDELR2",
+         "log2_phalanx_minus_tibia": -0.151
+        },
+        {
+         "gene": "TMED9",
+         "log2_phalanx_minus_tibia": -2.328
+        },
+        {
+         "gene": "TMED2",
+         "log2_phalanx_minus_tibia": -0.016
+        },
+        {
+         "gene": "TMED10",
+         "log2_phalanx_minus_tibia": 0.409
+        },
+        {
+         "gene": "SURF4",
+         "log2_phalanx_minus_tibia": -0.673
+        }
+       ],
+       "percentile_of_module_median": 43.2,
+       "vs_background_median": -0.165
+      },
+      "vm_golgi_sugar": {
+       "n_found": 11,
+       "median_log2": -0.22,
+       "mean_log2": -0.333,
+       "genes": [
+        {
+         "gene": "SLC35D1",
+         "log2_phalanx_minus_tibia": -1.436
+        },
+        {
+         "gene": "slc35a1",
+         "log2_phalanx_minus_tibia": -0.953
+        },
+        {
+         "gene": "SLC35A2",
+         "log2_phalanx_minus_tibia": -0.017
+        },
+        {
+         "gene": "SLC35A3",
+         "log2_phalanx_minus_tibia": -0.355
+        },
+        {
+         "gene": "UGDH",
+         "log2_phalanx_minus_tibia": -0.639
+        },
+        {
+         "gene": "UXS1",
+         "log2_phalanx_minus_tibia": -0.161
+        },
+        {
+         "gene": "UGP2",
+         "log2_phalanx_minus_tibia": 0.034
+        },
+        {
+         "gene": "GALE",
+         "log2_phalanx_minus_tibia": -0.851
+        },
+        {
+         "gene": "CANT1",
+         "log2_phalanx_minus_tibia": 0.535
+        },
+        {
+         "gene": "ENTPD5",
+         "log2_phalanx_minus_tibia": -0.22
+        },
+        {
+         "gene": "TMEM165",
+         "log2_phalanx_minus_tibia": 0.4
+        }
+       ],
+       "percentile_of_module_median": 35.2,
+       "vs_background_median": -0.355
+      },
+      "vc_fr185_screen": {
+       "n_found": 20,
+       "median_log2": -0.183,
+       "mean_log2": -0.146,
+       "genes": [
+        {
+         "gene": "PAPPA",
+         "log2_phalanx_minus_tibia": 1.357
+        },
+        {
+         "gene": "STC2",
+         "log2_phalanx_minus_tibia": -2.585
+        },
+        {
+         "gene": "IGFBP4",
+         "log2_phalanx_minus_tibia": 1.404
+        },
+        {
+         "gene": "IGFBP5",
+         "log2_phalanx_minus_tibia": 0.319
+        },
+        {
+         "gene": "IGF1R",
+         "log2_phalanx_minus_tibia": -0.731
+        },
+        {
+         "gene": "NPPC",
+         "log2_phalanx_minus_tibia": 0.208
+        },
+        {
+         "gene": "NPR2",
+         "log2_phalanx_minus_tibia": -1.055
+        },
+        {
+         "gene": "NPR3",
+         "log2_phalanx_minus_tibia": -1.575
+        },
+        {
+         "gene": "OSTN",
+         "log2_phalanx_minus_tibia": 1.987
+        },
+        {
+         "gene": "MME",
+         "log2_phalanx_minus_tibia": 2.675
+        },
+        {
+         "gene": "IHH",
+         "log2_phalanx_minus_tibia": -1.25
+        },
+        {
+         "gene": "SOX9",
+         "log2_phalanx_minus_tibia": -0.992
+        },
+        {
+         "gene": "RUNX2",
+         "log2_phalanx_minus_tibia": -0.574
+        },
+        {
+         "gene": "GLI2",
+         "log2_phalanx_minus_tibia": 1.747
+        },
+        {
+         "gene": "PTH1R",
+         "log2_phalanx_minus_tibia": -1.029
+        },
+        {
+         "gene": "HDAC4",
+         "log2_phalanx_minus_tibia": 0.31
+        },
+        {
+         "gene": "SMO",
+         "log2_phalanx_minus_tibia": 0.274
+        },
+        {
+         "gene": "MTOR",
+         "log2_phalanx_minus_tibia": 0.236
+        },
+        {
+         "gene": "FGFR3",
+         "log2_phalanx_minus_tibia": -1.456
+        },
+        {
+         "gene": "INPPL1",
+         "log2_phalanx_minus_tibia": -2.19
+        }
+       ],
+       "percentile_of_module_median": 36.8,
+       "vs_background_median": -0.318
+      },
+      "confound_muscle": {
+       "n_found": 7,
+       "median_log2": -2.195,
+       "mean_log2": -2.131,
+       "genes": [
+        {
+         "gene": "MYH8",
+         "log2_phalanx_minus_tibia": -2.195
+        },
+        {
+         "gene": "MYH4",
+         "log2_phalanx_minus_tibia": -2.517
+        },
+        {
+         "gene": "MYH3",
+         "log2_phalanx_minus_tibia": -3.493
+        },
+        {
+         "gene": "ACTA1",
+         "log2_phalanx_minus_tibia": -1.196
+        },
+        {
+         "gene": "TNNC2",
+         "log2_phalanx_minus_tibia": -2.999
+        },
+        {
+         "gene": "DES",
+         "log2_phalanx_minus_tibia": -0.485
+        },
+        {
+         "gene": "CKM",
+         "log2_phalanx_minus_tibia": -2.03
+        }
+       ],
+       "percentile_of_module_median": 2.6,
+       "vs_background_median": -2.33
+      },
+      "confound_distal_hox": {
+       "n_found": 2,
+       "median_log2": 4.772,
+       "mean_log2": 4.772,
+       "genes": [
+        {
+         "gene": "HOXD13",
+         "log2_phalanx_minus_tibia": 8.18
+        },
+        {
+         "gene": "HOXD12",
+         "log2_phalanx_minus_tibia": 1.365
+        }
+       ],
+       "percentile_of_module_median": 99.8,
+       "vs_background_median": 4.637
+      },
+      "confound_bone": {
+       "n_found": 7,
+       "median_log2": 1.184,
+       "mean_log2": 1.439,
+       "genes": [
+        {
+         "gene": "BGLAP",
+         "log2_phalanx_minus_tibia": 4.039
+        },
+        {
+         "gene": "sost",
+         "log2_phalanx_minus_tibia": 1.184
+        },
+        {
+         "gene": "MEPE",
+         "log2_phalanx_minus_tibia": -0.655
+        },
+        {
+         "gene": "IBSP",
+         "log2_phalanx_minus_tibia": -0.316
+        },
+        {
+         "gene": "DMP1",
+         "log2_phalanx_minus_tibia": 2.803
+        },
+        {
+         "gene": "SP7",
+         "log2_phalanx_minus_tibia": -0.159
+        },
+        {
+         "gene": "COL1A1",
+         "log2_phalanx_minus_tibia": 3.18
+        }
+       ],
+       "percentile_of_module_median": 81.7,
+       "vs_background_median": 1.049
+      },
+      "confound_marrow_immune": {
+       "n_found": 7,
+       "median_log2": 2.18,
+       "mean_log2": 1.456,
+       "genes": [
+        {
+         "gene": "MS4A1",
+         "log2_phalanx_minus_tibia": 0.994
+        },
+        {
+         "gene": "CD74",
+         "log2_phalanx_minus_tibia": 2.577
+        },
+        {
+         "gene": "Ccl6",
+         "log2_phalanx_minus_tibia": 2.18
+        },
+        {
+         "gene": "SIGLEC1",
+         "log2_phalanx_minus_tibia": 2.285
+        },
+        {
+         "gene": "HBB",
+         "log2_phalanx_minus_tibia": -0.365
+        },
+        {
+         "gene": "lyz2",
+         "log2_phalanx_minus_tibia": -0.624
+        },
+        {
+         "gene": "CTSS",
+         "log2_phalanx_minus_tibia": 3.147
+        }
+       ],
+       "percentile_of_module_median": 94.0,
+       "vs_background_median": 2.045
+      },
+      "control_housekeeping": {
+       "n_found": 9,
+       "median_log2": -0.043,
+       "mean_log2": 0.36,
+       "genes": [
+        {
+         "gene": "GAPDH",
+         "log2_phalanx_minus_tibia": -0.276
+        },
+        {
+         "gene": "ACTB",
+         "log2_phalanx_minus_tibia": 0.967
+        },
+        {
+         "gene": "PPIA",
+         "log2_phalanx_minus_tibia": 1.355
+        },
+        {
+         "gene": "TUBB5",
+         "log2_phalanx_minus_tibia": 0.801
+        },
+        {
+         "gene": "RPL13A",
+         "log2_phalanx_minus_tibia": -0.043
+        },
+        {
+         "gene": "B2M",
+         "log2_phalanx_minus_tibia": 1.992
+        },
+        {
+         "gene": "TBP",
+         "log2_phalanx_minus_tibia": -0.341
+        },
+        {
+         "gene": "PGK1",
+         "log2_phalanx_minus_tibia": -0.623
+        },
+        {
+         "gene": "SDHA",
+         "log2_phalanx_minus_tibia": -0.593
+        }
+       ],
+       "percentile_of_module_median": 42.7,
+       "vs_background_median": -0.178
+      }
+     }
+    },
+    "PZ": {
+     "n_genes_in_contrast": 12406,
+     "background_median_log2": 0.024,
+     "modules": {
+      "vm_core_protein": {
+       "n_found": 13,
+       "median_log2": -0.322,
+       "mean_log2": 0.129,
+       "genes": [
+        {
+         "gene": "ACAN",
+         "log2_phalanx_minus_tibia": -0.673
+        },
+        {
+         "gene": "HAPLN1",
+         "log2_phalanx_minus_tibia": -0.545
+        },
+        {
+         "gene": "BGN",
+         "log2_phalanx_minus_tibia": 0.005
+        },
+        {
+         "gene": "DCN",
+         "log2_phalanx_minus_tibia": 3.154
+        },
+        {
+         "gene": "FMOD",
+         "log2_phalanx_minus_tibia": -0.315
+        },
+        {
+         "gene": "LUM",
+         "log2_phalanx_minus_tibia": 0.972
+        },
+        {
+         "gene": "PRELP",
+         "log2_phalanx_minus_tibia": -0.969
+        },
+        {
+         "gene": "EPYC",
+         "log2_phalanx_minus_tibia": -0.405
+        },
+        {
+         "gene": "OGN",
+         "log2_phalanx_minus_tibia": 0.506
+        },
+        {
+         "gene": "CHAD",
+         "log2_phalanx_minus_tibia": 1.107
+        },
+        {
+         "gene": "COMP",
+         "log2_phalanx_minus_tibia": -0.472
+        },
+        {
+         "gene": "MATN1",
+         "log2_phalanx_minus_tibia": -0.362
+        },
+        {
+         "gene": "MATN3",
+         "log2_phalanx_minus_tibia": -0.322
+        }
+       ],
+       "percentile_of_module_median": 26.0,
+       "vs_background_median": -0.346
+      },
+      "vm_collagen": {
+       "n_found": 6,
+       "median_log2": -0.269,
+       "mean_log2": -0.363,
+       "genes": [
+        {
+         "gene": "COL2A1",
+         "log2_phalanx_minus_tibia": -0.283
+        },
+        {
+         "gene": "COL9A1",
+         "log2_phalanx_minus_tibia": -0.234
+        },
+        {
+         "gene": "COL9A2",
+         "log2_phalanx_minus_tibia": -0.698
+        },
+        {
+         "gene": "COL11A1",
+         "log2_phalanx_minus_tibia": -0.255
+        },
+        {
+         "gene": "COL11A2",
+         "log2_phalanx_minus_tibia": -0.46
+        },
+        {
+         "gene": "COL27A1",
+         "log2_phalanx_minus_tibia": -0.245
+        }
+       ],
+       "percentile_of_module_median": 28.9,
+       "vs_background_median": -0.293
+      },
+      "vm_gag_synthesis": {
+       "n_found": 10,
+       "median_log2": -0.296,
+       "mean_log2": -0.407,
+       "genes": [
+        {
+         "gene": "XYLT2",
+         "log2_phalanx_minus_tibia": -0.114
+        },
+        {
+         "gene": "B4GALT7",
+         "log2_phalanx_minus_tibia": -0.234
+        },
+        {
+         "gene": "B3GALT6",
+         "log2_phalanx_minus_tibia": -0.794
+        },
+        {
+         "gene": "B3GAT3",
+         "log2_phalanx_minus_tibia": -0.358
+        },
+        {
+         "gene": "FAM20B",
+         "log2_phalanx_minus_tibia": -0.407
+        },
+        {
+         "gene": "CSGALNACT1",
+         "log2_phalanx_minus_tibia": -0.029
+        },
+        {
+         "gene": "CSGALNACT2",
+         "log2_phalanx_minus_tibia": 0.344
+        },
+        {
+         "gene": "CHSY1",
+         "log2_phalanx_minus_tibia": -1.77
+        },
+        {
+         "gene": "CHPF",
+         "log2_phalanx_minus_tibia": -0.143
+        },
+        {
+         "gene": "chpf2",
+         "log2_phalanx_minus_tibia": -0.571
+        }
+       ],
+       "percentile_of_module_median": 27.4,
+       "vs_background_median": -0.32
+      },
+      "vm_sulfation": {
+       "n_found": 11,
+       "median_log2": -0.245,
+       "mean_log2": -0.228,
+       "genes": [
+        {
+         "gene": "CHST11",
+         "log2_phalanx_minus_tibia": -0.808
+        },
+        {
+         "gene": "CHST12",
+         "log2_phalanx_minus_tibia": -0.531
+        },
+        {
+         "gene": "CHST14",
+         "log2_phalanx_minus_tibia": 0.064
+        },
+        {
+         "gene": "CHST7",
+         "log2_phalanx_minus_tibia": 1.198
+        },
+        {
+         "gene": "UST",
+         "log2_phalanx_minus_tibia": 0.364
+        },
+        {
+         "gene": "PAPSS1",
+         "log2_phalanx_minus_tibia": -0.232
+        },
+        {
+         "gene": "PAPSS2",
+         "log2_phalanx_minus_tibia": -0.429
+        },
+        {
+         "gene": "SLC35B2",
+         "log2_phalanx_minus_tibia": -0.245
+        },
+        {
+         "gene": "SLC26A2",
+         "log2_phalanx_minus_tibia": -0.238
+        },
+        {
+         "gene": "IMPAD1",
+         "log2_phalanx_minus_tibia": -1.082
+        },
+        {
+         "gene": "BPNT1",
+         "log2_phalanx_minus_tibia": -0.57
+        }
+       ],
+       "percentile_of_module_median": 30.4,
+       "vs_background_median": -0.269
+      },
+      "vm_collagen_folding": {
+       "n_found": 13,
+       "median_log2": -0.533,
+       "mean_log2": -0.525,
+       "genes": [
+        {
+         "gene": "SERPINH1",
+         "log2_phalanx_minus_tibia": -0.574
+        },
+        {
+         "gene": "P4HA1",
+         "log2_phalanx_minus_tibia": -0.57
+        },
+        {
+         "gene": "P4HA2",
+         "log2_phalanx_minus_tibia": -1.551
+        },
+        {
+         "gene": "P4HB",
+         "log2_phalanx_minus_tibia": -0.758
+        },
+        {
+         "gene": "P3H1",
+         "log2_phalanx_minus_tibia": -0.371
+        },
+        {
+         "gene": "P3H2",
+         "log2_phalanx_minus_tibia": -1.027
+        },
+        {
+         "gene": "P3H3",
+         "log2_phalanx_minus_tibia": 0.185
+        },
+        {
+         "gene": "PPIB",
+         "log2_phalanx_minus_tibia": -0.328
+        },
+        {
+         "gene": "PLOD1",
+         "log2_phalanx_minus_tibia": -0.817
+        },
+        {
+         "gene": "PLOD2",
+         "log2_phalanx_minus_tibia": 0.226
+        },
+        {
+         "gene": "PLOD3",
+         "log2_phalanx_minus_tibia": -0.409
+        },
+        {
+         "gene": "FKBP10",
+         "log2_phalanx_minus_tibia": -0.533
+        },
+        {
+         "gene": "FKBP14",
+         "log2_phalanx_minus_tibia": -0.295
+        }
+       ],
+       "percentile_of_module_median": 17.6,
+       "vs_background_median": -0.557
+      },
+      "vm_secretory_export": {
+       "n_found": 16,
+       "median_log2": -0.2,
+       "mean_log2": -0.17,
+       "genes": [
+        {
+         "gene": "SEC23A",
+         "log2_phalanx_minus_tibia": -0.267
+        },
+        {
+         "gene": "SEC23B",
+         "log2_phalanx_minus_tibia": -0.178
+        },
+        {
+         "gene": "SEC24C",
+         "log2_phalanx_minus_tibia": -0.222
+        },
+        {
+         "gene": "SEC13",
+         "log2_phalanx_minus_tibia": -0.03
+        },
+        {
+         "gene": "SEC31A",
+         "log2_phalanx_minus_tibia": -0.025
+        },
+        {
+         "gene": "SAR1A",
+         "log2_phalanx_minus_tibia": -0.262
+        },
+        {
+         "gene": "SAR1B",
+         "log2_phalanx_minus_tibia": -0.086
+        },
+        {
+         "gene": "CREB3L2",
+         "log2_phalanx_minus_tibia": -0.691
+        },
+        {
+         "gene": "CREB3L1",
+         "log2_phalanx_minus_tibia": 0.769
+        },
+        {
+         "gene": "TRAPPC2",
+         "log2_phalanx_minus_tibia": 0.311
+        },
+        {
+         "gene": "KDELR1",
+         "log2_phalanx_minus_tibia": -0.177
+        },
+        {
+         "gene": "KDELR2",
+         "log2_phalanx_minus_tibia": -0.334
+        },
+        {
+         "gene": "TMED9",
+         "log2_phalanx_minus_tibia": -0.437
+        },
+        {
+         "gene": "TMED2",
+         "log2_phalanx_minus_tibia": -0.039
+        },
+        {
+         "gene": "TMED10",
+         "log2_phalanx_minus_tibia": -0.407
+        },
+        {
+         "gene": "SURF4",
+         "log2_phalanx_minus_tibia": -0.651
+        }
+       ],
+       "percentile_of_module_median": 33.1,
+       "vs_background_median": -0.224
+      },
+      "vm_golgi_sugar": {
+       "n_found": 11,
+       "median_log2": -0.128,
+       "mean_log2": -0.144,
+       "genes": [
+        {
+         "gene": "SLC35D1",
+         "log2_phalanx_minus_tibia": -0.122
+        },
+        {
+         "gene": "slc35a1",
+         "log2_phalanx_minus_tibia": 0.324
+        },
+        {
+         "gene": "SLC35A2",
+         "log2_phalanx_minus_tibia": -0.794
+        },
+        {
+         "gene": "SLC35A3",
+         "log2_phalanx_minus_tibia": -0.096
+        },
+        {
+         "gene": "UGDH",
+         "log2_phalanx_minus_tibia": -0.455
+        },
+        {
+         "gene": "UXS1",
+         "log2_phalanx_minus_tibia": -0.173
+        },
+        {
+         "gene": "UGP2",
+         "log2_phalanx_minus_tibia": -0.306
+        },
+        {
+         "gene": "GALE",
+         "log2_phalanx_minus_tibia": -0.36
+        },
+        {
+         "gene": "CANT1",
+         "log2_phalanx_minus_tibia": -0.128
+        },
+        {
+         "gene": "ENTPD5",
+         "log2_phalanx_minus_tibia": 0.091
+        },
+        {
+         "gene": "TMEM165",
+         "log2_phalanx_minus_tibia": 0.438
+        }
+       ],
+       "percentile_of_module_median": 38.1,
+       "vs_background_median": -0.152
+      },
+      "vc_fr185_screen": {
+       "n_found": 19,
+       "median_log2": 0.056,
+       "mean_log2": 0.661,
+       "genes": [
+        {
+         "gene": "PAPPA",
+         "log2_phalanx_minus_tibia": 1.419
+        },
+        {
+         "gene": "STC2",
+         "log2_phalanx_minus_tibia": -1.023
+        },
+        {
+         "gene": "IGFBP4",
+         "log2_phalanx_minus_tibia": 3.614
+        },
+        {
+         "gene": "IGFBP5",
+         "log2_phalanx_minus_tibia": 2.679
+        },
+        {
+         "gene": "IGF1R",
+         "log2_phalanx_minus_tibia": -0.465
+        },
+        {
+         "gene": "NPPC",
+         "log2_phalanx_minus_tibia": -0.293
+        },
+        {
+         "gene": "NPR2",
+         "log2_phalanx_minus_tibia": 0.095
+        },
+        {
+         "gene": "NPR3",
+         "log2_phalanx_minus_tibia": 2.34
+        },
+        {
+         "gene": "MME",
+         "log2_phalanx_minus_tibia": 4.737
+        },
+        {
+         "gene": "IHH",
+         "log2_phalanx_minus_tibia": 0.056
+        },
+        {
+         "gene": "SOX9",
+         "log2_phalanx_minus_tibia": -0.479
+        },
+        {
+         "gene": "RUNX2",
+         "log2_phalanx_minus_tibia": -0.015
+        },
+        {
+         "gene": "GLI2",
+         "log2_phalanx_minus_tibia": 0.115
+        },
+        {
+         "gene": "PTH1R",
+         "log2_phalanx_minus_tibia": -0.199
+        },
+        {
+         "gene": "HDAC4",
+         "log2_phalanx_minus_tibia": 0.772
+        },
+        {
+         "gene": "SMO",
+         "log2_phalanx_minus_tibia": -0.161
+        },
+        {
+         "gene": "MTOR",
+         "log2_phalanx_minus_tibia": -0.016
+        },
+        {
+         "gene": "FGFR3",
+         "log2_phalanx_minus_tibia": -0.817
+        },
+        {
+         "gene": "INPPL1",
+         "log2_phalanx_minus_tibia": 0.204
+        }
+       ],
+       "percentile_of_module_median": 52.6,
+       "vs_background_median": 0.032
+      },
+      "confound_muscle": {
+       "n_found": 7,
+       "median_log2": -0.039,
+       "mean_log2": -0.382,
+       "genes": [
+        {
+         "gene": "MYH8",
+         "log2_phalanx_minus_tibia": -0.039
+        },
+        {
+         "gene": "MYH4",
+         "log2_phalanx_minus_tibia": -1.333
+        },
+        {
+         "gene": "MYH3",
+         "log2_phalanx_minus_tibia": 0.077
+        },
+        {
+         "gene": "ACTA1",
+         "log2_phalanx_minus_tibia": 0.356
+        },
+        {
+         "gene": "TNNC2",
+         "log2_phalanx_minus_tibia": 0.137
+        },
+        {
+         "gene": "DES",
+         "log2_phalanx_minus_tibia": -1.056
+        },
+        {
+         "gene": "CKM",
+         "log2_phalanx_minus_tibia": -0.814
+        }
+       ],
+       "percentile_of_module_median": 44.8,
+       "vs_background_median": -0.063
+      },
+      "confound_distal_hox": {
+       "n_found": 1,
+       "median_log2": 9.522,
+       "mean_log2": 9.522,
+       "genes": [
+        {
+         "gene": "HOXD13",
+         "log2_phalanx_minus_tibia": 9.522
+        }
+       ],
+       "percentile_of_module_median": 100.0,
+       "vs_background_median": 9.498
+      },
+      "confound_bone": {
+       "n_found": 6,
+       "median_log2": 2.569,
+       "mean_log2": 2.125,
+       "genes": [
+        {
+         "gene": "BGLAP",
+         "log2_phalanx_minus_tibia": 2.486
+        },
+        {
+         "gene": "MEPE",
+         "log2_phalanx_minus_tibia": 1.974
+        },
+        {
+         "gene": "IBSP",
+         "log2_phalanx_minus_tibia": 3.469
+        },
+        {
+         "gene": "DMP1",
+         "log2_phalanx_minus_tibia": 4.057
+        },
+        {
+         "gene": "SP7",
+         "log2_phalanx_minus_tibia": -1.884
+        },
+        {
+         "gene": "COL1A1",
+         "log2_phalanx_minus_tibia": 2.652
+        }
+       ],
+       "percentile_of_module_median": 96.7,
+       "vs_background_median": 2.545
+      },
+      "confound_marrow_immune": {
+       "n_found": 6,
+       "median_log2": 2.753,
+       "mean_log2": 1.983,
+       "genes": [
+        {
+         "gene": "MS4A1",
+         "log2_phalanx_minus_tibia": 1.282
+        },
+        {
+         "gene": "CD74",
+         "log2_phalanx_minus_tibia": 2.761
+        },
+        {
+         "gene": "SIGLEC1",
+         "log2_phalanx_minus_tibia": -1.402
+        },
+        {
+         "gene": "HBB",
+         "log2_phalanx_minus_tibia": 2.745
+        },
+        {
+         "gene": "lyz2",
+         "log2_phalanx_minus_tibia": 3.076
+        },
+        {
+         "gene": "CTSS",
+         "log2_phalanx_minus_tibia": 3.437
+        }
+       ],
+       "percentile_of_module_median": 97.3,
+       "vs_background_median": 2.729
+      },
+      "control_housekeeping": {
+       "n_found": 9,
+       "median_log2": -0.215,
+       "mean_log2": -0.163,
+       "genes": [
+        {
+         "gene": "GAPDH",
+         "log2_phalanx_minus_tibia": -1.133
+        },
+        {
+         "gene": "ACTB",
+         "log2_phalanx_minus_tibia": 0.189
+        },
+        {
+         "gene": "PPIA",
+         "log2_phalanx_minus_tibia": -0.286
+        },
+        {
+         "gene": "TUBB5",
+         "log2_phalanx_minus_tibia": -0.215
+        },
+        {
+         "gene": "RPL13A",
+         "log2_phalanx_minus_tibia": -0.215
+        },
+        {
+         "gene": "B2M",
+         "log2_phalanx_minus_tibia": 1.973
+        },
+        {
+         "gene": "TBP",
+         "log2_phalanx_minus_tibia": -0.177
+        },
+        {
+         "gene": "PGK1",
+         "log2_phalanx_minus_tibia": -1.343
+        },
+        {
+         "gene": "SDHA",
+         "log2_phalanx_minus_tibia": -0.259
+        }
+       ],
+       "percentile_of_module_median": 32.3,
+       "vs_background_median": -0.239
+      }
+     }
+    }
+   }
+  }
+ }
+}

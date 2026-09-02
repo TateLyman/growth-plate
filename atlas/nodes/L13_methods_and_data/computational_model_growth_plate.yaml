@@ -1,0 +1,73 @@
+id: computational_model_growth_plate
+name: Computational models of the growth plate
+aliases:
+- in silico growth plate model
+type: method
+summary: |
+  Computational models of the growth plate come in two families with different epistemic
+  status. Cell-kinetic models simulate clone behaviour and column formation from proliferation
+  and hypertrophy rules - the earliest simulated chondrocytic clone behaviour in rabbit plates
+  (mosssalentijn1991) - and are parameterised almost entirely from rodent labelling data,
+  which means they inherit a proliferative cycle time that is roughly tenfold shorter than the
+  human value inferred from column counts (kember1976). Whole-bone growth models predict
+  femoral shape and length from personalised multi-scale simulation with reported validation
+  (koller2025) and have been used to ask how gait modification changes growth plate mechanical
+  stimulus (koller2026), and canine physeal growth dynamics have been modelled quantitatively
+  (mcbrien2011). The recurring weakness across the literature is not the mathematics but the
+  parameter provenance: models of HUMAN growth are routinely fitted with rodent cell-kinetic
+  constants and rabbit or porcine mechanical constants because the human values do not exist
+  (g_l1arch_002, g_l5matrix_001). A model built this way can be internally consistent, fit its
+  calibration data and still be a formalisation of mouse biology. The atlas therefore treats
+  any in silico human growth plate result as no stronger than the weakest species assumption
+  in its parameter set.
+quantitative:
+- parameter: ratio of rodent to human proliferative cycle time used in kinetic models
+  value: '1:10'
+  unit: ratio
+  conditions: 2 days rodent versus about 20 days inferred human
+  species: multiple
+  source_ref: kember1976
+  uncertainty: human value derived, not measured
+localization:
+- 'in_silico: zonal structure is imposed by the model, not derived from human data'
+human_evidence: indirect
+human_evidence_note: Human validation exists at the level of bone shape and length, not at the level
+  of cell kinetics.
+species_basis:
+- in_silico
+- rabbit
+- rat
+- human
+translation_risk: high
+translation_risk_reason: Parameter sets for human models are predominantly rodent, so model outputs
+  about human growth carry rodent cell kinetics inside them.
+confidence: C
+key_refs:
+- ref_id: mosssalentijn1991
+  first_author: Moss-Salentijn L
+  year: 1991
+  type: primary
+  one_line_finding: Computer simulation of chondrocytic clone behaviour in rabbit growth plates.
+- ref_id: koller2025
+  first_author: Koller W
+  year: 2025
+  type: primary
+  one_line_finding: Personalised multi-scale femoral growth prediction with validation and sensitivity
+    analysis.
+- ref_id: mcbrien2011
+  first_author: McBrien CS
+  year: 2011
+  type: primary
+  one_line_finding: Quantitative growth dynamics of the canine proximal tibial physis.
+- ref_id: kember1976
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: Human proliferative cycle time about tenfold longer than rodent - the parameter
+    most often transferred.
+open_questions:
+- g_l1arch_002
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

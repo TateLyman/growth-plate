@@ -1,0 +1,10098 @@
+{
+ "method": "R411 - THE INVERSE SEARCH. Not \"which gene is good\" but \"what is this tissue spending\nitself on that the atlas has never said one word about\".\n\nWHY THIS EXISTS. Every search this file has ever run starts from a GENE (a burden effect,\nan IMPC row), a DRUG (Open Targets, ChEMBL, a vendor catalogue) or a PAPER (Europe PMC).\nNone of those can find a missing MODULE, because a module is only missing relative to the\natlas's own coverage, and coverage was never computed. R408 found the cell-volume module\nby accident - it had never been localised in ~400 rounds. This asks the question that\nwould have found it on purpose.\n\nMETHOD\n  1. purity-corrected enrichment on GSE288028, but SEX-CORRECTED (see below)\n  2. keep genes at or above the ACAN benchmark on that split, >=20 CPM, detected 12/12\n  3. count word-boundary mentions of each symbol across every node yaml, gaps.yaml and\n     CLAUDE.md\n  4. the zero-mention rows are the inventory\n\nTHE SEX CORRECTION, WHICH IS THE MOST IMPORTANT THING HERE. Running this genome-wide\nimmediately returned RPS4Y1 at 3442x, UTY at 213x, USP9Y at 199x and PRKY at 29x - all\nY-linked. XIST shows the 12 samples are 9 male and 3 female, and ALL THREE FEMALES SIT IN\nTHE CONTAMINATED HALF. So the purity ratio used since R344 is confounded with sex, and\nany sex-linked gene reads as spuriously enriched. The fix is to compute the split within\nthe 9 males only.\n\nThat reduces the contamination contrast, so the ratios compress and the THRESHOLD MUST BE\nRECALIBRATED rather than carried over: on the male-only split COL2A1 is 7.65 and ACAN is\n1.96, so 1.96 - not 2.0 as an absolute - is the cartilage benchmark.\n\nREAD THE OUTPUT AS: a high-abundance, cartilage-enriched gene with zero atlas mentions is\na COVERAGE gap, not a lever. A large fraction of the list is mitochondrial oxidative\nphosphorylation and ribosomal protein - NDUFA4, NDUFB3, COX8A, UQCRQ, MRPL17, RPL10A and\nso on - which is a composition artefact of contrasting cartilage against blood, and is the\nnegative control this screen needs. What is worth reading is the CLUSTERS that are neither\nhousekeeping nor already known.",
+ "calibrators_on_this_split": {
+  "COL2A1": 7.65,
+  "ACAN": 1.96,
+  "PTPRC": 0.0
+ },
+ "n_candidates": 1681,
+ "n_zero_mention": 1492,
+ "genes": [
+  {
+   "symbol": "SLPI",
+   "pure_cpm": 31.5,
+   "enrichment_ratio": 24.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SYT8",
+   "pure_cpm": 133.7,
+   "enrichment_ratio": 23.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC22A11",
+   "pure_cpm": 23.2,
+   "enrichment_ratio": 18.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MT1X",
+   "pure_cpm": 664.9,
+   "enrichment_ratio": 17.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "S100A1",
+   "pure_cpm": 1149.8,
+   "enrichment_ratio": 16.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BARX1",
+   "pure_cpm": 28.1,
+   "enrichment_ratio": 16.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IFITM3",
+   "pure_cpm": 479.4,
+   "enrichment_ratio": 15.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KRT19",
+   "pure_cpm": 61.3,
+   "enrichment_ratio": 15.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STEAP4",
+   "pure_cpm": 182.1,
+   "enrichment_ratio": 15.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ANG",
+   "pure_cpm": 21.2,
+   "enrichment_ratio": 15.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MT1E",
+   "pure_cpm": 604.4,
+   "enrichment_ratio": 13.72,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OST4",
+   "pure_cpm": 418.7,
+   "enrichment_ratio": 13.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SCRG1",
+   "pure_cpm": 1532.1,
+   "enrichment_ratio": 13.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KLF2",
+   "pure_cpm": 1176.2,
+   "enrichment_ratio": 13.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NOP10",
+   "pure_cpm": 88.2,
+   "enrichment_ratio": 12.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SEC61G",
+   "pure_cpm": 452.8,
+   "enrichment_ratio": 12.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BEX3",
+   "pure_cpm": 123.9,
+   "enrichment_ratio": 12.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KRT18",
+   "pure_cpm": 21.8,
+   "enrichment_ratio": 12.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GPX7",
+   "pure_cpm": 48.0,
+   "enrichment_ratio": 11.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MATN4",
+   "pure_cpm": 67.3,
+   "enrichment_ratio": 11.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TUSC1",
+   "pure_cpm": 23.7,
+   "enrichment_ratio": 11.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KRT10",
+   "pure_cpm": 145.7,
+   "enrichment_ratio": 11.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERTAD4-AS1",
+   "pure_cpm": 21.6,
+   "enrichment_ratio": 11.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VKORC1",
+   "pure_cpm": 374.3,
+   "enrichment_ratio": 11.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RASD1",
+   "pure_cpm": 126.1,
+   "enrichment_ratio": 11.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ID1",
+   "pure_cpm": 443.7,
+   "enrichment_ratio": 11.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SPINT2",
+   "pure_cpm": 247.7,
+   "enrichment_ratio": 11.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IFITM2",
+   "pure_cpm": 198.0,
+   "enrichment_ratio": 10.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MT1M",
+   "pure_cpm": 130.0,
+   "enrichment_ratio": 10.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG29",
+   "pure_cpm": 1001.9,
+   "enrichment_ratio": 10.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNASE4",
+   "pure_cpm": 33.5,
+   "enrichment_ratio": 10.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX8A",
+   "pure_cpm": 177.1,
+   "enrichment_ratio": 10.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB3",
+   "pure_cpm": 66.7,
+   "enrichment_ratio": 10.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL40",
+   "pure_cpm": 34.6,
+   "enrichment_ratio": 10.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C1QL1",
+   "pure_cpm": 73.1,
+   "enrichment_ratio": 10.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ENHO",
+   "pure_cpm": 21.4,
+   "enrichment_ratio": 10.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5MC3",
+   "pure_cpm": 131.0,
+   "enrichment_ratio": 10.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CETN2",
+   "pure_cpm": 43.9,
+   "enrichment_ratio": 10.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "S100B",
+   "pure_cpm": 296.0,
+   "enrichment_ratio": 10.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RHOB",
+   "pure_cpm": 548.0,
+   "enrichment_ratio": 9.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAGED2",
+   "pure_cpm": 219.6,
+   "enrichment_ratio": 9.84,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LPL",
+   "pure_cpm": 200.6,
+   "enrichment_ratio": 9.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPIC",
+   "pure_cpm": 261.7,
+   "enrichment_ratio": 9.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RTL8A",
+   "pure_cpm": 30.9,
+   "enrichment_ratio": 9.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ITM2C",
+   "pure_cpm": 190.5,
+   "enrichment_ratio": 9.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SHISA4",
+   "pure_cpm": 28.9,
+   "enrichment_ratio": 9.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CSTB",
+   "pure_cpm": 140.0,
+   "enrichment_ratio": 9.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNAPIN",
+   "pure_cpm": 24.8,
+   "enrichment_ratio": 9.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TNNI2",
+   "pure_cpm": 26.2,
+   "enrichment_ratio": 9.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ALDOC",
+   "pure_cpm": 51.3,
+   "enrichment_ratio": 9.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "JUNB",
+   "pure_cpm": 1597.0,
+   "enrichment_ratio": 8.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CTHRC1",
+   "pure_cpm": 249.0,
+   "enrichment_ratio": 8.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ITM2A",
+   "pure_cpm": 357.3,
+   "enrichment_ratio": 8.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RTL8C",
+   "pure_cpm": 65.8,
+   "enrichment_ratio": 8.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UBL5",
+   "pure_cpm": 225.7,
+   "enrichment_ratio": 8.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MORN2",
+   "pure_cpm": 22.1,
+   "enrichment_ratio": 8.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA7",
+   "pure_cpm": 57.7,
+   "enrichment_ratio": 8.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "S100P",
+   "pure_cpm": 53.2,
+   "enrichment_ratio": 8.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMED1",
+   "pure_cpm": 43.8,
+   "enrichment_ratio": 8.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA4",
+   "pure_cpm": 155.8,
+   "enrichment_ratio": 8.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DBI",
+   "pure_cpm": 218.4,
+   "enrichment_ratio": 8.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VIT",
+   "pure_cpm": 213.0,
+   "enrichment_ratio": 8.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SMIM26",
+   "pure_cpm": 68.9,
+   "enrichment_ratio": 8.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UQCRQ",
+   "pure_cpm": 192.5,
+   "enrichment_ratio": 8.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MTLN",
+   "pure_cpm": 56.4,
+   "enrichment_ratio": 8.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL17",
+   "pure_cpm": 47.7,
+   "enrichment_ratio": 8.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TIMM8B",
+   "pure_cpm": 72.0,
+   "enrichment_ratio": 8.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRDX4",
+   "pure_cpm": 293.0,
+   "enrichment_ratio": 8.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL10A",
+   "pure_cpm": 881.9,
+   "enrichment_ratio": 8.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC25A5",
+   "pure_cpm": 82.5,
+   "enrichment_ratio": 8.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TCEAL8",
+   "pure_cpm": 56.9,
+   "enrichment_ratio": 8.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COMMD6",
+   "pure_cpm": 209.0,
+   "enrichment_ratio": 8.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAGEH1",
+   "pure_cpm": 22.2,
+   "enrichment_ratio": 8.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DDIT4L",
+   "pure_cpm": 63.5,
+   "enrichment_ratio": 8.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRELID1",
+   "pure_cpm": 125.7,
+   "enrichment_ratio": 8.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IFITM5",
+   "pure_cpm": 74.9,
+   "enrichment_ratio": 8.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PENK",
+   "pure_cpm": 85.8,
+   "enrichment_ratio": 8.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KRT8",
+   "pure_cpm": 27.6,
+   "enrichment_ratio": 8.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "S100A13",
+   "pure_cpm": 752.5,
+   "enrichment_ratio": 8.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C1QBP",
+   "pure_cpm": 67.5,
+   "enrichment_ratio": 7.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NME4",
+   "pure_cpm": 66.4,
+   "enrichment_ratio": 7.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFC2",
+   "pure_cpm": 174.4,
+   "enrichment_ratio": 7.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL22L1",
+   "pure_cpm": 112.2,
+   "enrichment_ratio": 7.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MIA",
+   "pure_cpm": 666.0,
+   "enrichment_ratio": 7.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATRAID",
+   "pure_cpm": 79.6,
+   "enrichment_ratio": 7.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TOMM6",
+   "pure_cpm": 111.3,
+   "enrichment_ratio": 7.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PANX3",
+   "pure_cpm": 148.5,
+   "enrichment_ratio": 7.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX6A1",
+   "pure_cpm": 205.1,
+   "enrichment_ratio": 7.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HIGD1A",
+   "pure_cpm": 32.5,
+   "enrichment_ratio": 7.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPDPF",
+   "pure_cpm": 410.8,
+   "enrichment_ratio": 7.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TCEAL2",
+   "pure_cpm": 32.5,
+   "enrichment_ratio": 7.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM35B",
+   "pure_cpm": 23.4,
+   "enrichment_ratio": 7.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FKBP9",
+   "pure_cpm": 314.2,
+   "enrichment_ratio": 7.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2H",
+   "pure_cpm": 60.6,
+   "enrichment_ratio": 7.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RRAGA",
+   "pure_cpm": 48.8,
+   "enrichment_ratio": 7.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5PD",
+   "pure_cpm": 91.3,
+   "enrichment_ratio": 7.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C4ORF3",
+   "pure_cpm": 233.9,
+   "enrichment_ratio": 7.41,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS7",
+   "pure_cpm": 1070.6,
+   "enrichment_ratio": 7.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX6C",
+   "pure_cpm": 200.4,
+   "enrichment_ratio": 7.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BTF3",
+   "pure_cpm": 265.3,
+   "enrichment_ratio": 7.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL7A",
+   "pure_cpm": 1431.8,
+   "enrichment_ratio": 7.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "YIF1A",
+   "pure_cpm": 99.1,
+   "enrichment_ratio": 7.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS18",
+   "pure_cpm": 2458.3,
+   "enrichment_ratio": 7.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM256",
+   "pure_cpm": 50.4,
+   "enrichment_ratio": 7.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CAVIN3",
+   "pure_cpm": 72.6,
+   "enrichment_ratio": 7.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VIM",
+   "pure_cpm": 3568.5,
+   "enrichment_ratio": 7.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM106C",
+   "pure_cpm": 38.6,
+   "enrichment_ratio": 7.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5MC2",
+   "pure_cpm": 320.2,
+   "enrichment_ratio": 7.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL15",
+   "pure_cpm": 1604.9,
+   "enrichment_ratio": 7.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MYL12A",
+   "pure_cpm": 173.0,
+   "enrichment_ratio": 7.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNRD2",
+   "pure_cpm": 24.3,
+   "enrichment_ratio": 7.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CGREF1",
+   "pure_cpm": 37.0,
+   "enrichment_ratio": 7.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SPCS1",
+   "pure_cpm": 147.0,
+   "enrichment_ratio": 7.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2K",
+   "pure_cpm": 51.7,
+   "enrichment_ratio": 7.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PTRHD1",
+   "pure_cpm": 50.0,
+   "enrichment_ratio": 7.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SOD3",
+   "pure_cpm": 128.2,
+   "enrichment_ratio": 7.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DUSP1",
+   "pure_cpm": 1043.6,
+   "enrichment_ratio": 7.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STEAP1",
+   "pure_cpm": 30.6,
+   "enrichment_ratio": 7.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC9A3R2",
+   "pure_cpm": 71.6,
+   "enrichment_ratio": 7.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB4",
+   "pure_cpm": 136.3,
+   "enrichment_ratio": 7.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL4",
+   "pure_cpm": 972.7,
+   "enrichment_ratio": 7.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SF3B6",
+   "pure_cpm": 125.8,
+   "enrichment_ratio": 6.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA1",
+   "pure_cpm": 172.2,
+   "enrichment_ratio": 6.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL26L1",
+   "pure_cpm": 30.7,
+   "enrichment_ratio": 6.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RBIS",
+   "pure_cpm": 89.8,
+   "enrichment_ratio": 6.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSPO",
+   "pure_cpm": 268.4,
+   "enrichment_ratio": 6.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARSI",
+   "pure_cpm": 135.2,
+   "enrichment_ratio": 6.84,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS23",
+   "pure_cpm": 2022.2,
+   "enrichment_ratio": 6.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CAPN6",
+   "pure_cpm": 108.8,
+   "enrichment_ratio": 6.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL5",
+   "pure_cpm": 1202.8,
+   "enrichment_ratio": 6.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5IF1",
+   "pure_cpm": 165.9,
+   "enrichment_ratio": 6.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IMPDH2",
+   "pure_cpm": 103.1,
+   "enrichment_ratio": 6.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DYNLL1",
+   "pure_cpm": 327.5,
+   "enrichment_ratio": 6.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FXYD1",
+   "pure_cpm": 31.2,
+   "enrichment_ratio": 6.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMA7",
+   "pure_cpm": 362.2,
+   "enrichment_ratio": 6.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD24",
+   "pure_cpm": 176.1,
+   "enrichment_ratio": 6.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TUBB2A",
+   "pure_cpm": 128.2,
+   "enrichment_ratio": 6.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5PF",
+   "pure_cpm": 163.5,
+   "enrichment_ratio": 6.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNF7",
+   "pure_cpm": 98.0,
+   "enrichment_ratio": 6.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FBXO2",
+   "pure_cpm": 142.0,
+   "enrichment_ratio": 6.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DYNLRB1",
+   "pure_cpm": 132.9,
+   "enrichment_ratio": 6.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KDELR2",
+   "pure_cpm": 304.7,
+   "enrichment_ratio": 6.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5MD",
+   "pure_cpm": 229.8,
+   "enrichment_ratio": 6.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DMKN",
+   "pure_cpm": 43.9,
+   "enrichment_ratio": 6.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "G0S2",
+   "pure_cpm": 129.3,
+   "enrichment_ratio": 6.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFAF3",
+   "pure_cpm": 49.4,
+   "enrichment_ratio": 6.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFC1",
+   "pure_cpm": 146.9,
+   "enrichment_ratio": 6.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCN6",
+   "pure_cpm": 72.1,
+   "enrichment_ratio": 6.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL23A",
+   "pure_cpm": 1105.1,
+   "enrichment_ratio": 6.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BTBD6",
+   "pure_cpm": 23.2,
+   "enrichment_ratio": 6.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5MC1",
+   "pure_cpm": 87.2,
+   "enrichment_ratio": 6.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PHB2",
+   "pure_cpm": 67.9,
+   "enrichment_ratio": 6.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRMT112",
+   "pure_cpm": 99.1,
+   "enrichment_ratio": 6.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TP53I11",
+   "pure_cpm": 186.9,
+   "enrichment_ratio": 6.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM258",
+   "pure_cpm": 251.1,
+   "enrichment_ratio": 6.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRAPPC1",
+   "pure_cpm": 71.3,
+   "enrichment_ratio": 6.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IRX5",
+   "pure_cpm": 65.3,
+   "enrichment_ratio": 6.41,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VPS25",
+   "pure_cpm": 34.0,
+   "enrichment_ratio": 6.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COA3",
+   "pure_cpm": 36.6,
+   "enrichment_ratio": 6.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHCHD5",
+   "pure_cpm": 42.4,
+   "enrichment_ratio": 6.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5MF",
+   "pure_cpm": 130.6,
+   "enrichment_ratio": 6.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GCSH",
+   "pure_cpm": 49.7,
+   "enrichment_ratio": 6.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LAMB2",
+   "pure_cpm": 252.2,
+   "enrichment_ratio": 6.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRDX3",
+   "pure_cpm": 55.3,
+   "enrichment_ratio": 6.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ROMO1",
+   "pure_cpm": 137.2,
+   "enrichment_ratio": 6.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDK4",
+   "pure_cpm": 241.8,
+   "enrichment_ratio": 6.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL30",
+   "pure_cpm": 1364.6,
+   "enrichment_ratio": 6.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TUBB2B",
+   "pure_cpm": 128.0,
+   "enrichment_ratio": 6.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TM4SF1",
+   "pure_cpm": 413.0,
+   "enrichment_ratio": 6.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SAP30",
+   "pure_cpm": 58.8,
+   "enrichment_ratio": 6.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL27",
+   "pure_cpm": 624.8,
+   "enrichment_ratio": 6.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UQCR10",
+   "pure_cpm": 164.7,
+   "enrichment_ratio": 6.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CRTAP",
+   "pure_cpm": 210.4,
+   "enrichment_ratio": 6.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ERG28",
+   "pure_cpm": 44.6,
+   "enrichment_ratio": 6.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MYDGF",
+   "pure_cpm": 247.7,
+   "enrichment_ratio": 6.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GJA1",
+   "pure_cpm": 217.5,
+   "enrichment_ratio": 6.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHCHD2",
+   "pure_cpm": 381.5,
+   "enrichment_ratio": 6.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDLIM2",
+   "pure_cpm": 62.7,
+   "enrichment_ratio": 6.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUDT14",
+   "pure_cpm": 21.5,
+   "enrichment_ratio": 6.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EID1",
+   "pure_cpm": 322.3,
+   "enrichment_ratio": 6.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AOC2",
+   "pure_cpm": 53.9,
+   "enrichment_ratio": 6.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RCN3",
+   "pure_cpm": 305.5,
+   "enrichment_ratio": 6.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS17",
+   "pure_cpm": 20.6,
+   "enrichment_ratio": 6.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS25",
+   "pure_cpm": 1089.0,
+   "enrichment_ratio": 6.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GIHCG",
+   "pure_cpm": 32.8,
+   "enrichment_ratio": 6.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERF2",
+   "pure_cpm": 1309.3,
+   "enrichment_ratio": 6.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX7A1",
+   "pure_cpm": 126.8,
+   "enrichment_ratio": 6.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TOMM22",
+   "pure_cpm": 34.1,
+   "enrichment_ratio": 6.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS13",
+   "pure_cpm": 1348.4,
+   "enrichment_ratio": 6.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "S100A11",
+   "pure_cpm": 407.3,
+   "enrichment_ratio": 6.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TOMM5",
+   "pure_cpm": 87.0,
+   "enrichment_ratio": 6.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS3A",
+   "pure_cpm": 2225.6,
+   "enrichment_ratio": 5.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UQCR11",
+   "pure_cpm": 272.1,
+   "enrichment_ratio": 5.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POP7",
+   "pure_cpm": 22.0,
+   "enrichment_ratio": 5.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BHLHE41",
+   "pure_cpm": 182.7,
+   "enrichment_ratio": 5.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSENEN",
+   "pure_cpm": 24.8,
+   "enrichment_ratio": 5.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EEF1A1",
+   "pure_cpm": 6013.1,
+   "enrichment_ratio": 5.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL41",
+   "pure_cpm": 4168.1,
+   "enrichment_ratio": 5.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PCGF2",
+   "pure_cpm": 27.9,
+   "enrichment_ratio": 5.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FOXD1",
+   "pure_cpm": 42.0,
+   "enrichment_ratio": 5.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EEF1B2",
+   "pure_cpm": 493.3,
+   "enrichment_ratio": 5.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COPZ2",
+   "pure_cpm": 199.9,
+   "enrichment_ratio": 5.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ID3",
+   "pure_cpm": 84.4,
+   "enrichment_ratio": 5.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GLMP",
+   "pure_cpm": 25.1,
+   "enrichment_ratio": 5.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL24",
+   "pure_cpm": 966.1,
+   "enrichment_ratio": 5.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DAD1",
+   "pure_cpm": 158.2,
+   "enrichment_ratio": 5.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL19",
+   "pure_cpm": 1278.6,
+   "enrichment_ratio": 5.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRIM47",
+   "pure_cpm": 109.9,
+   "enrichment_ratio": 5.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PAX1",
+   "pure_cpm": 103.0,
+   "enrichment_ratio": 5.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LAPTM4A",
+   "pure_cpm": 361.8,
+   "enrichment_ratio": 5.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5ME",
+   "pure_cpm": 264.7,
+   "enrichment_ratio": 5.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPP21",
+   "pure_cpm": 29.4,
+   "enrichment_ratio": 5.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FKBP7",
+   "pure_cpm": 31.8,
+   "enrichment_ratio": 5.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DCTN3",
+   "pure_cpm": 54.8,
+   "enrichment_ratio": 5.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAPK3",
+   "pure_cpm": 46.0,
+   "enrichment_ratio": 5.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RRAS",
+   "pure_cpm": 35.9,
+   "enrichment_ratio": 5.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM97",
+   "pure_cpm": 20.3,
+   "enrichment_ratio": 5.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG8",
+   "pure_cpm": 172.1,
+   "enrichment_ratio": 5.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TNFRSF12A",
+   "pure_cpm": 125.9,
+   "enrichment_ratio": 5.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GSTM3",
+   "pure_cpm": 40.5,
+   "enrichment_ratio": 5.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CIAO2B",
+   "pure_cpm": 71.3,
+   "enrichment_ratio": 5.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS4X",
+   "pure_cpm": 1415.1,
+   "enrichment_ratio": 5.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POU3F3",
+   "pure_cpm": 26.3,
+   "enrichment_ratio": 5.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS24",
+   "pure_cpm": 2307.9,
+   "enrichment_ratio": 5.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AP1S1",
+   "pure_cpm": 36.1,
+   "enrichment_ratio": 5.72,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZFPL1",
+   "pure_cpm": 29.8,
+   "enrichment_ratio": 5.72,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SELENOW",
+   "pure_cpm": 292.5,
+   "enrichment_ratio": 5.72,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "APRT",
+   "pure_cpm": 92.1,
+   "enrichment_ratio": 5.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UQCRB",
+   "pure_cpm": 345.0,
+   "enrichment_ratio": 5.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SAA1",
+   "pure_cpm": 38.6,
+   "enrichment_ratio": 5.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERPINA3",
+   "pure_cpm": 499.1,
+   "enrichment_ratio": 5.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL32",
+   "pure_cpm": 2089.9,
+   "enrichment_ratio": 5.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EFEMP2",
+   "pure_cpm": 103.5,
+   "enrichment_ratio": 5.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL6",
+   "pure_cpm": 1328.7,
+   "enrichment_ratio": 5.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MT1F",
+   "pure_cpm": 24.7,
+   "enrichment_ratio": 5.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM14C",
+   "pure_cpm": 74.4,
+   "enrichment_ratio": 5.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GMPR2",
+   "pure_cpm": 25.6,
+   "enrichment_ratio": 5.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "WDR83OS",
+   "pure_cpm": 118.5,
+   "enrichment_ratio": 5.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNAI2",
+   "pure_cpm": 133.5,
+   "enrichment_ratio": 5.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COPS9",
+   "pure_cpm": 132.6,
+   "enrichment_ratio": 5.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CYC1",
+   "pure_cpm": 46.8,
+   "enrichment_ratio": 5.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HSBP1",
+   "pure_cpm": 147.6,
+   "enrichment_ratio": 5.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL23",
+   "pure_cpm": 1053.9,
+   "enrichment_ratio": 5.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM162A",
+   "pure_cpm": 147.6,
+   "enrichment_ratio": 5.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COPZ1",
+   "pure_cpm": 94.7,
+   "enrichment_ratio": 5.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL57",
+   "pure_cpm": 72.3,
+   "enrichment_ratio": 5.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TPBG",
+   "pure_cpm": 69.0,
+   "enrichment_ratio": 5.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL51",
+   "pure_cpm": 121.2,
+   "enrichment_ratio": 5.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VWA1",
+   "pure_cpm": 36.8,
+   "enrichment_ratio": 5.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AK1",
+   "pure_cpm": 231.4,
+   "enrichment_ratio": 5.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "WBP1",
+   "pure_cpm": 37.4,
+   "enrichment_ratio": 5.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNF5",
+   "pure_cpm": 33.4,
+   "enrichment_ratio": 5.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC25A3",
+   "pure_cpm": 339.2,
+   "enrichment_ratio": 5.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZFP36",
+   "pure_cpm": 419.3,
+   "enrichment_ratio": 5.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OSTC",
+   "pure_cpm": 293.1,
+   "enrichment_ratio": 5.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MIR503HG",
+   "pure_cpm": 27.6,
+   "enrichment_ratio": 5.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BCKDK",
+   "pure_cpm": 29.5,
+   "enrichment_ratio": 5.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GABARAPL2",
+   "pure_cpm": 134.4,
+   "enrichment_ratio": 5.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA3",
+   "pure_cpm": 72.0,
+   "enrichment_ratio": 5.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL26",
+   "pure_cpm": 1377.7,
+   "enrichment_ratio": 5.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CITED2",
+   "pure_cpm": 106.7,
+   "enrichment_ratio": 5.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BOLA3",
+   "pure_cpm": 35.8,
+   "enrichment_ratio": 5.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PCOLCE",
+   "pure_cpm": 132.9,
+   "enrichment_ratio": 5.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFAB1",
+   "pure_cpm": 91.9,
+   "enrichment_ratio": 5.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDCD5",
+   "pure_cpm": 75.0,
+   "enrichment_ratio": 5.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IL17B",
+   "pure_cpm": 280.5,
+   "enrichment_ratio": 5.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPIB",
+   "pure_cpm": 456.1,
+   "enrichment_ratio": 5.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NME2",
+   "pure_cpm": 481.8,
+   "enrichment_ratio": 5.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CZIB",
+   "pure_cpm": 29.7,
+   "enrichment_ratio": 5.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BMP8B",
+   "pure_cpm": 138.1,
+   "enrichment_ratio": 5.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL43",
+   "pure_cpm": 33.3,
+   "enrichment_ratio": 5.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MXRA8",
+   "pure_cpm": 74.9,
+   "enrichment_ratio": 5.41,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COL12A1",
+   "pure_cpm": 1298.7,
+   "enrichment_ratio": 5.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MIF",
+   "pure_cpm": 1080.7,
+   "enrichment_ratio": 5.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM141",
+   "pure_cpm": 41.1,
+   "enrichment_ratio": 5.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NPDC1",
+   "pure_cpm": 40.3,
+   "enrichment_ratio": 5.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BLOC1S1",
+   "pure_cpm": 77.7,
+   "enrichment_ratio": 5.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C15ORF61",
+   "pure_cpm": 28.2,
+   "enrichment_ratio": 5.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "REXO2",
+   "pure_cpm": 152.3,
+   "enrichment_ratio": 5.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MIR210HG",
+   "pure_cpm": 32.2,
+   "enrichment_ratio": 5.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CKB",
+   "pure_cpm": 81.5,
+   "enrichment_ratio": 5.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SRP14",
+   "pure_cpm": 344.4,
+   "enrichment_ratio": 5.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX7A2",
+   "pure_cpm": 212.8,
+   "enrichment_ratio": 5.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LY6E",
+   "pure_cpm": 81.7,
+   "enrichment_ratio": 5.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GNG10",
+   "pure_cpm": 90.8,
+   "enrichment_ratio": 5.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "APEX1",
+   "pure_cpm": 51.2,
+   "enrichment_ratio": 5.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS15A",
+   "pure_cpm": 1182.5,
+   "enrichment_ratio": 5.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NT5DC2",
+   "pure_cpm": 156.5,
+   "enrichment_ratio": 5.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ANAPC11",
+   "pure_cpm": 112.8,
+   "enrichment_ratio": 5.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB1",
+   "pure_cpm": 116.6,
+   "enrichment_ratio": 5.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OSR2",
+   "pure_cpm": 20.5,
+   "enrichment_ratio": 5.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FGFRL1",
+   "pure_cpm": 137.6,
+   "enrichment_ratio": 5.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS33",
+   "pure_cpm": 48.4,
+   "enrichment_ratio": 5.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CLDN5",
+   "pure_cpm": 20.1,
+   "enrichment_ratio": 5.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TCEAL9",
+   "pure_cpm": 93.4,
+   "enrichment_ratio": 5.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ECHS1",
+   "pure_cpm": 67.6,
+   "enrichment_ratio": 5.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA2",
+   "pure_cpm": 105.0,
+   "enrichment_ratio": 5.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHCHD1",
+   "pure_cpm": 36.1,
+   "enrichment_ratio": 5.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL11",
+   "pure_cpm": 1921.0,
+   "enrichment_ratio": 5.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSTD1",
+   "pure_cpm": 23.5,
+   "enrichment_ratio": 5.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD320",
+   "pure_cpm": 59.8,
+   "enrichment_ratio": 5.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRIP6",
+   "pure_cpm": 40.0,
+   "enrichment_ratio": 5.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MT2A",
+   "pure_cpm": 2171.0,
+   "enrichment_ratio": 5.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL29",
+   "pure_cpm": 1179.7,
+   "enrichment_ratio": 5.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX14",
+   "pure_cpm": 54.6,
+   "enrichment_ratio": 5.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRAPPC2L",
+   "pure_cpm": 44.3,
+   "enrichment_ratio": 5.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFS5",
+   "pure_cpm": 182.0,
+   "enrichment_ratio": 5.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "G6PC3",
+   "pure_cpm": 25.4,
+   "enrichment_ratio": 5.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS15",
+   "pure_cpm": 30.6,
+   "enrichment_ratio": 5.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SHMT2",
+   "pure_cpm": 91.8,
+   "enrichment_ratio": 5.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PEBP1",
+   "pure_cpm": 187.0,
+   "enrichment_ratio": 5.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NME1",
+   "pure_cpm": 42.9,
+   "enrichment_ratio": 5.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LGALS1",
+   "pure_cpm": 464.4,
+   "enrichment_ratio": 5.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL14",
+   "pure_cpm": 870.2,
+   "enrichment_ratio": 5.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5PO",
+   "pure_cpm": 109.5,
+   "enrichment_ratio": 5.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS3",
+   "pure_cpm": 1511.8,
+   "enrichment_ratio": 5.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARMCX2",
+   "pure_cpm": 32.5,
+   "enrichment_ratio": 5.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BEX4",
+   "pure_cpm": 28.4,
+   "enrichment_ratio": 5.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "JAGN1",
+   "pure_cpm": 25.7,
+   "enrichment_ratio": 5.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TPM2",
+   "pure_cpm": 299.9,
+   "enrichment_ratio": 5.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDK2AP1",
+   "pure_cpm": 265.3,
+   "enrichment_ratio": 5.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARMCX6",
+   "pure_cpm": 30.8,
+   "enrichment_ratio": 5.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RACK1",
+   "pure_cpm": 784.2,
+   "enrichment_ratio": 5.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ACTG1",
+   "pure_cpm": 1392.8,
+   "enrichment_ratio": 5.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KDELR3",
+   "pure_cpm": 88.4,
+   "enrichment_ratio": 5.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "S100A6",
+   "pure_cpm": 1102.6,
+   "enrichment_ratio": 5.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PHPT1",
+   "pure_cpm": 145.8,
+   "enrichment_ratio": 5.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPF",
+   "pure_cpm": 93.8,
+   "enrichment_ratio": 5.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX7B",
+   "pure_cpm": 111.0,
+   "enrichment_ratio": 5.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZCRB1",
+   "pure_cpm": 100.3,
+   "enrichment_ratio": 5.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C1ORF122",
+   "pure_cpm": 58.2,
+   "enrichment_ratio": 4.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NHP2",
+   "pure_cpm": 64.5,
+   "enrichment_ratio": 4.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDK4",
+   "pure_cpm": 29.8,
+   "enrichment_ratio": 4.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EGR2",
+   "pure_cpm": 145.1,
+   "enrichment_ratio": 4.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL11",
+   "pure_cpm": 35.0,
+   "enrichment_ratio": 4.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SRSF9",
+   "pure_cpm": 130.3,
+   "enrichment_ratio": 4.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SMIM5",
+   "pure_cpm": 33.4,
+   "enrichment_ratio": 4.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL10",
+   "pure_cpm": 2360.2,
+   "enrichment_ratio": 4.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL7",
+   "pure_cpm": 1140.7,
+   "enrichment_ratio": 4.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSM3",
+   "pure_cpm": 83.0,
+   "enrichment_ratio": 4.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PFN2",
+   "pure_cpm": 35.3,
+   "enrichment_ratio": 4.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC25A6",
+   "pure_cpm": 387.6,
+   "enrichment_ratio": 4.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX5B",
+   "pure_cpm": 146.8,
+   "enrichment_ratio": 4.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM109",
+   "pure_cpm": 32.8,
+   "enrichment_ratio": 4.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2G",
+   "pure_cpm": 48.2,
+   "enrichment_ratio": 4.91,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HLX",
+   "pure_cpm": 37.6,
+   "enrichment_ratio": 4.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA8",
+   "pure_cpm": 37.0,
+   "enrichment_ratio": 4.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GAA",
+   "pure_cpm": 54.9,
+   "enrichment_ratio": 4.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CLIC1",
+   "pure_cpm": 188.7,
+   "enrichment_ratio": 4.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM134",
+   "pure_cpm": 44.1,
+   "enrichment_ratio": 4.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL17",
+   "pure_cpm": 1394.5,
+   "enrichment_ratio": 4.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL34",
+   "pure_cpm": 24.2,
+   "enrichment_ratio": 4.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRAF2",
+   "pure_cpm": 36.8,
+   "enrichment_ratio": 4.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COA4",
+   "pure_cpm": 43.9,
+   "enrichment_ratio": 4.87,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AC010642.2",
+   "pure_cpm": 26.0,
+   "enrichment_ratio": 4.87,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM216",
+   "pure_cpm": 20.3,
+   "enrichment_ratio": 4.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HOXC8",
+   "pure_cpm": 24.2,
+   "enrichment_ratio": 4.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2L",
+   "pure_cpm": 285.8,
+   "enrichment_ratio": 4.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ELOB",
+   "pure_cpm": 303.0,
+   "enrichment_ratio": 4.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DEXI",
+   "pure_cpm": 30.1,
+   "enrichment_ratio": 4.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD63",
+   "pure_cpm": 1217.0,
+   "enrichment_ratio": 4.84,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GALE",
+   "pure_cpm": 69.2,
+   "enrichment_ratio": 4.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OBSL1",
+   "pure_cpm": 101.6,
+   "enrichment_ratio": 4.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DNAJC19",
+   "pure_cpm": 42.6,
+   "enrichment_ratio": 4.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SRI",
+   "pure_cpm": 83.9,
+   "enrichment_ratio": 4.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHMP5",
+   "pure_cpm": 72.8,
+   "enrichment_ratio": 4.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MICOS13",
+   "pure_cpm": 91.9,
+   "enrichment_ratio": 4.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AKR7A2",
+   "pure_cpm": 46.4,
+   "enrichment_ratio": 4.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LAMTOR5",
+   "pure_cpm": 114.9,
+   "enrichment_ratio": 4.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EGR1",
+   "pure_cpm": 1559.4,
+   "enrichment_ratio": 4.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CTSF",
+   "pure_cpm": 41.5,
+   "enrichment_ratio": 4.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NACA",
+   "pure_cpm": 642.2,
+   "enrichment_ratio": 4.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM99",
+   "pure_cpm": 25.4,
+   "enrichment_ratio": 4.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CUTA",
+   "pure_cpm": 102.0,
+   "enrichment_ratio": 4.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS2",
+   "pure_cpm": 2766.3,
+   "enrichment_ratio": 4.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HSD17B10",
+   "pure_cpm": 30.0,
+   "enrichment_ratio": 4.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SIX5",
+   "pure_cpm": 27.1,
+   "enrichment_ratio": 4.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL36A",
+   "pure_cpm": 917.2,
+   "enrichment_ratio": 4.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MUC1",
+   "pure_cpm": 117.4,
+   "enrichment_ratio": 4.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "METTL26",
+   "pure_cpm": 93.3,
+   "enrichment_ratio": 4.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "P3H1",
+   "pure_cpm": 152.9,
+   "enrichment_ratio": 4.72,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MSRB2",
+   "pure_cpm": 34.8,
+   "enrichment_ratio": 4.72,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSM5",
+   "pure_cpm": 66.5,
+   "enrichment_ratio": 4.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP6V1F",
+   "pure_cpm": 77.4,
+   "enrichment_ratio": 4.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMB4",
+   "pure_cpm": 108.2,
+   "enrichment_ratio": 4.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TPT1",
+   "pure_cpm": 3228.8,
+   "enrichment_ratio": 4.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "YIPF3",
+   "pure_cpm": 112.6,
+   "enrichment_ratio": 4.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARL2",
+   "pure_cpm": 44.2,
+   "enrichment_ratio": 4.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MDH2",
+   "pure_cpm": 67.6,
+   "enrichment_ratio": 4.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TAF9",
+   "pure_cpm": 38.8,
+   "enrichment_ratio": 4.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RANBP1",
+   "pure_cpm": 54.8,
+   "enrichment_ratio": 4.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CKS1B",
+   "pure_cpm": 28.2,
+   "enrichment_ratio": 4.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DMAC1",
+   "pure_cpm": 50.3,
+   "enrichment_ratio": 4.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNASEH2C",
+   "pure_cpm": 76.7,
+   "enrichment_ratio": 4.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GSTP1",
+   "pure_cpm": 359.6,
+   "enrichment_ratio": 4.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PCSK1N",
+   "pure_cpm": 20.7,
+   "enrichment_ratio": 4.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHMP2A",
+   "pure_cpm": 85.7,
+   "enrichment_ratio": 4.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB5",
+   "pure_cpm": 63.5,
+   "enrichment_ratio": 4.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BANF1",
+   "pure_cpm": 83.4,
+   "enrichment_ratio": 4.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS29",
+   "pure_cpm": 1280.7,
+   "enrichment_ratio": 4.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG18",
+   "pure_cpm": 42.4,
+   "enrichment_ratio": 4.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DRAP1",
+   "pure_cpm": 111.5,
+   "enrichment_ratio": 4.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5F1B",
+   "pure_cpm": 151.6,
+   "enrichment_ratio": 4.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PGAM1",
+   "pure_cpm": 183.1,
+   "enrichment_ratio": 4.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TXNDC17",
+   "pure_cpm": 129.0,
+   "enrichment_ratio": 4.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMED9",
+   "pure_cpm": 261.4,
+   "enrichment_ratio": 4.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL12",
+   "pure_cpm": 1374.5,
+   "enrichment_ratio": 4.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COMMD4",
+   "pure_cpm": 40.9,
+   "enrichment_ratio": 4.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AC097534.2",
+   "pure_cpm": 29.0,
+   "enrichment_ratio": 4.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NRN1",
+   "pure_cpm": 44.7,
+   "enrichment_ratio": 4.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS5",
+   "pure_cpm": 670.3,
+   "enrichment_ratio": 4.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERPINI1",
+   "pure_cpm": 31.5,
+   "enrichment_ratio": 4.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PYURF",
+   "pure_cpm": 34.0,
+   "enrichment_ratio": 4.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HOXA10",
+   "pure_cpm": 24.8,
+   "enrichment_ratio": 4.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDC26",
+   "pure_cpm": 50.7,
+   "enrichment_ratio": 4.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD151",
+   "pure_cpm": 153.5,
+   "enrichment_ratio": 4.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM205",
+   "pure_cpm": 36.5,
+   "enrichment_ratio": 4.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DDT",
+   "pure_cpm": 106.6,
+   "enrichment_ratio": 4.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RBM3",
+   "pure_cpm": 261.5,
+   "enrichment_ratio": 4.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB11",
+   "pure_cpm": 156.7,
+   "enrichment_ratio": 4.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSPAN6",
+   "pure_cpm": 64.1,
+   "enrichment_ratio": 4.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL37",
+   "pure_cpm": 1533.3,
+   "enrichment_ratio": 4.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HINT2",
+   "pure_cpm": 26.2,
+   "enrichment_ratio": 4.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAGEF1",
+   "pure_cpm": 24.4,
+   "enrichment_ratio": 4.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FKBP10",
+   "pure_cpm": 298.5,
+   "enrichment_ratio": 4.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC39A1",
+   "pure_cpm": 48.4,
+   "enrichment_ratio": 4.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DPM3",
+   "pure_cpm": 39.4,
+   "enrichment_ratio": 4.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM219",
+   "pure_cpm": 99.8,
+   "enrichment_ratio": 4.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB7",
+   "pure_cpm": 144.7,
+   "enrichment_ratio": 4.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX7C",
+   "pure_cpm": 351.5,
+   "enrichment_ratio": 4.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM179B",
+   "pure_cpm": 46.4,
+   "enrichment_ratio": 4.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS28",
+   "pure_cpm": 2292.2,
+   "enrichment_ratio": 4.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM147",
+   "pure_cpm": 60.7,
+   "enrichment_ratio": 4.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "JTB",
+   "pure_cpm": 167.0,
+   "enrichment_ratio": 4.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GAS2L1",
+   "pure_cpm": 22.2,
+   "enrichment_ratio": 4.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PGRMC1",
+   "pure_cpm": 56.6,
+   "enrichment_ratio": 4.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL35A",
+   "pure_cpm": 1236.4,
+   "enrichment_ratio": 4.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPLP0",
+   "pure_cpm": 2010.7,
+   "enrichment_ratio": 4.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PYCR2",
+   "pure_cpm": 35.7,
+   "enrichment_ratio": 4.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS26",
+   "pure_cpm": 28.4,
+   "enrichment_ratio": 4.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KRTCAP2",
+   "pure_cpm": 187.2,
+   "enrichment_ratio": 4.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LAMTOR2",
+   "pure_cpm": 49.9,
+   "enrichment_ratio": 4.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EPB41L4A-AS1",
+   "pure_cpm": 69.5,
+   "enrichment_ratio": 4.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF5A",
+   "pure_cpm": 114.5,
+   "enrichment_ratio": 4.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MICA",
+   "pure_cpm": 32.3,
+   "enrichment_ratio": 4.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRDX2",
+   "pure_cpm": 106.8,
+   "enrichment_ratio": 4.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EMC4",
+   "pure_cpm": 32.1,
+   "enrichment_ratio": 4.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ORAI3",
+   "pure_cpm": 34.2,
+   "enrichment_ratio": 4.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSNA1",
+   "pure_cpm": 42.7,
+   "enrichment_ratio": 4.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLAC9",
+   "pure_cpm": 70.0,
+   "enrichment_ratio": 4.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUPR1",
+   "pure_cpm": 183.6,
+   "enrichment_ratio": 4.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF1",
+   "pure_cpm": 1417.2,
+   "enrichment_ratio": 4.41,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRDX5",
+   "pure_cpm": 143.0,
+   "enrichment_ratio": 4.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMB6",
+   "pure_cpm": 64.6,
+   "enrichment_ratio": 4.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CYGB",
+   "pure_cpm": 43.7,
+   "enrichment_ratio": 4.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NR2F6",
+   "pure_cpm": 27.9,
+   "enrichment_ratio": 4.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPN",
+   "pure_cpm": 52.2,
+   "enrichment_ratio": 4.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM98",
+   "pure_cpm": 34.6,
+   "enrichment_ratio": 4.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS21",
+   "pure_cpm": 1077.1,
+   "enrichment_ratio": 4.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TCEA2",
+   "pure_cpm": 24.4,
+   "enrichment_ratio": 4.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SPTSSA",
+   "pure_cpm": 45.2,
+   "enrichment_ratio": 4.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL22",
+   "pure_cpm": 865.3,
+   "enrichment_ratio": 4.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RHOC",
+   "pure_cpm": 154.6,
+   "enrichment_ratio": 4.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPSA",
+   "pure_cpm": 1049.9,
+   "enrichment_ratio": 4.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HNRNPA1",
+   "pure_cpm": 481.1,
+   "enrichment_ratio": 4.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RCN2",
+   "pure_cpm": 207.9,
+   "enrichment_ratio": 4.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSEN34",
+   "pure_cpm": 36.3,
+   "enrichment_ratio": 4.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C12ORF10",
+   "pure_cpm": 20.8,
+   "enrichment_ratio": 4.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL37A",
+   "pure_cpm": 2236.8,
+   "enrichment_ratio": 4.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSPAN13",
+   "pure_cpm": 56.8,
+   "enrichment_ratio": 4.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC18A2",
+   "pure_cpm": 52.7,
+   "enrichment_ratio": 4.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5MPL",
+   "pure_cpm": 206.8,
+   "enrichment_ratio": 4.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CERS2",
+   "pure_cpm": 52.4,
+   "enrichment_ratio": 4.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EFNA1",
+   "pure_cpm": 29.7,
+   "enrichment_ratio": 4.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAZ",
+   "pure_cpm": 90.1,
+   "enrichment_ratio": 4.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EEF2",
+   "pure_cpm": 1167.2,
+   "enrichment_ratio": 4.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C19ORF53",
+   "pure_cpm": 69.3,
+   "enrichment_ratio": 4.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSC22D3",
+   "pure_cpm": 616.1,
+   "enrichment_ratio": 4.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS12",
+   "pure_cpm": 2556.3,
+   "enrichment_ratio": 4.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HCFC1R1",
+   "pure_cpm": 44.8,
+   "enrichment_ratio": 4.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RGS3",
+   "pure_cpm": 217.5,
+   "enrichment_ratio": 4.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PHLDA2",
+   "pure_cpm": 44.8,
+   "enrichment_ratio": 4.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EMC6",
+   "pure_cpm": 32.5,
+   "enrichment_ratio": 4.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ANKRD35",
+   "pure_cpm": 20.7,
+   "enrichment_ratio": 4.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS27A",
+   "pure_cpm": 2045.6,
+   "enrichment_ratio": 4.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SCRN2",
+   "pure_cpm": 24.7,
+   "enrichment_ratio": 4.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PTMS",
+   "pure_cpm": 299.8,
+   "enrichment_ratio": 4.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TM9SF1",
+   "pure_cpm": 56.0,
+   "enrichment_ratio": 4.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2C",
+   "pure_cpm": 39.2,
+   "enrichment_ratio": 4.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS27",
+   "pure_cpm": 1779.6,
+   "enrichment_ratio": 4.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5MG",
+   "pure_cpm": 248.3,
+   "enrichment_ratio": 4.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COPRS",
+   "pure_cpm": 58.8,
+   "enrichment_ratio": 4.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS6",
+   "pure_cpm": 1613.8,
+   "enrichment_ratio": 4.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BAMBI",
+   "pure_cpm": 110.3,
+   "enrichment_ratio": 4.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SELENOH",
+   "pure_cpm": 149.8,
+   "enrichment_ratio": 4.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FGF11",
+   "pure_cpm": 28.5,
+   "enrichment_ratio": 4.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLP2",
+   "pure_cpm": 96.5,
+   "enrichment_ratio": 4.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MICOS10",
+   "pure_cpm": 92.0,
+   "enrichment_ratio": 4.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TEX264",
+   "pure_cpm": 33.5,
+   "enrichment_ratio": 4.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SGCB",
+   "pure_cpm": 45.4,
+   "enrichment_ratio": 4.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL38",
+   "pure_cpm": 674.5,
+   "enrichment_ratio": 4.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PIGP",
+   "pure_cpm": 38.6,
+   "enrichment_ratio": 4.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TOMM7",
+   "pure_cpm": 414.2,
+   "enrichment_ratio": 4.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL3",
+   "pure_cpm": 2047.0,
+   "enrichment_ratio": 4.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDIA6",
+   "pure_cpm": 335.3,
+   "enrichment_ratio": 4.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SAP18",
+   "pure_cpm": 142.1,
+   "enrichment_ratio": 4.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TAX1BP3",
+   "pure_cpm": 27.5,
+   "enrichment_ratio": 4.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C1R",
+   "pure_cpm": 31.2,
+   "enrichment_ratio": 4.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM9",
+   "pure_cpm": 46.0,
+   "enrichment_ratio": 4.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MZT2B",
+   "pure_cpm": 292.7,
+   "enrichment_ratio": 4.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG32",
+   "pure_cpm": 96.7,
+   "enrichment_ratio": 4.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GTF2H5",
+   "pure_cpm": 50.8,
+   "enrichment_ratio": 4.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PHB",
+   "pure_cpm": 54.2,
+   "enrichment_ratio": 4.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GPRC5C",
+   "pure_cpm": 120.9,
+   "enrichment_ratio": 4.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL54",
+   "pure_cpm": 40.9,
+   "enrichment_ratio": 4.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNF703",
+   "pure_cpm": 30.1,
+   "enrichment_ratio": 4.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSPAN31",
+   "pure_cpm": 36.9,
+   "enrichment_ratio": 4.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC30A1",
+   "pure_cpm": 53.9,
+   "enrichment_ratio": 4.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ILVBL",
+   "pure_cpm": 23.3,
+   "enrichment_ratio": 4.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UFC1",
+   "pure_cpm": 91.4,
+   "enrichment_ratio": 4.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SRP9",
+   "pure_cpm": 124.5,
+   "enrichment_ratio": 4.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC40A1",
+   "pure_cpm": 155.8,
+   "enrichment_ratio": 4.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSTA3",
+   "pure_cpm": 32.5,
+   "enrichment_ratio": 4.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CLIC3",
+   "pure_cpm": 208.7,
+   "enrichment_ratio": 4.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ORMDL3",
+   "pure_cpm": 45.9,
+   "enrichment_ratio": 4.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NPM1",
+   "pure_cpm": 661.2,
+   "enrichment_ratio": 4.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS17",
+   "pure_cpm": 864.6,
+   "enrichment_ratio": 4.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TGFB1I1",
+   "pure_cpm": 35.8,
+   "enrichment_ratio": 4.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL9",
+   "pure_cpm": 1453.7,
+   "enrichment_ratio": 4.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPA3",
+   "pure_cpm": 61.3,
+   "enrichment_ratio": 4.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ENY2",
+   "pure_cpm": 129.7,
+   "enrichment_ratio": 4.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL18",
+   "pure_cpm": 1333.2,
+   "enrichment_ratio": 4.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ISOC2",
+   "pure_cpm": 61.0,
+   "enrichment_ratio": 4.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COA8",
+   "pure_cpm": 46.2,
+   "enrichment_ratio": 4.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB2",
+   "pure_cpm": 202.2,
+   "enrichment_ratio": 4.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PET100",
+   "pure_cpm": 110.6,
+   "enrichment_ratio": 4.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GPX8",
+   "pure_cpm": 62.2,
+   "enrichment_ratio": 4.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IDH3G",
+   "pure_cpm": 30.7,
+   "enrichment_ratio": 4.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HIGD2A",
+   "pure_cpm": 37.5,
+   "enrichment_ratio": 4.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ALKBH7",
+   "pure_cpm": 75.9,
+   "enrichment_ratio": 4.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RAB34",
+   "pure_cpm": 54.0,
+   "enrichment_ratio": 4.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPT1",
+   "pure_cpm": 58.1,
+   "enrichment_ratio": 4.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CETN3",
+   "pure_cpm": 22.8,
+   "enrichment_ratio": 4.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GTF3C6",
+   "pure_cpm": 53.8,
+   "enrichment_ratio": 4.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PERP",
+   "pure_cpm": 27.0,
+   "enrichment_ratio": 4.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPA1",
+   "pure_cpm": 293.5,
+   "enrichment_ratio": 4.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "WFDC1",
+   "pure_cpm": 30.1,
+   "enrichment_ratio": 4.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "H3F3B",
+   "pure_cpm": 834.5,
+   "enrichment_ratio": 4.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LAGE3",
+   "pure_cpm": 34.2,
+   "enrichment_ratio": 4.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IFI27L2",
+   "pure_cpm": 119.9,
+   "enrichment_ratio": 4.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM101",
+   "pure_cpm": 37.2,
+   "enrichment_ratio": 4.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RABAC1",
+   "pure_cpm": 370.2,
+   "enrichment_ratio": 4.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DNASE2",
+   "pure_cpm": 33.7,
+   "enrichment_ratio": 3.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UQCRFS1",
+   "pure_cpm": 54.9,
+   "enrichment_ratio": 3.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SELENOM",
+   "pure_cpm": 190.8,
+   "enrichment_ratio": 3.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD99",
+   "pure_cpm": 597.9,
+   "enrichment_ratio": 3.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LDHB",
+   "pure_cpm": 106.6,
+   "enrichment_ratio": 3.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PFDN4",
+   "pure_cpm": 39.7,
+   "enrichment_ratio": 3.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "H1FX",
+   "pure_cpm": 190.9,
+   "enrichment_ratio": 3.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MFSD10",
+   "pure_cpm": 71.2,
+   "enrichment_ratio": 3.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRAPPC5",
+   "pure_cpm": 103.3,
+   "enrichment_ratio": 3.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SDF4",
+   "pure_cpm": 154.3,
+   "enrichment_ratio": 3.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSPN",
+   "pure_cpm": 196.1,
+   "enrichment_ratio": 3.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CPE",
+   "pure_cpm": 453.1,
+   "enrichment_ratio": 3.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MYL6B",
+   "pure_cpm": 43.7,
+   "enrichment_ratio": 3.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARL1",
+   "pure_cpm": 90.6,
+   "enrichment_ratio": 3.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TIMM17B",
+   "pure_cpm": 23.3,
+   "enrichment_ratio": 3.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "B3GNT7",
+   "pure_cpm": 30.8,
+   "enrichment_ratio": 3.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EPYC",
+   "pure_cpm": 169.6,
+   "enrichment_ratio": 3.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TP53I13",
+   "pure_cpm": 62.9,
+   "enrichment_ratio": 3.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HMGN2",
+   "pure_cpm": 274.3,
+   "enrichment_ratio": 3.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SAT2",
+   "pure_cpm": 54.5,
+   "enrichment_ratio": 3.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C2ORF74",
+   "pure_cpm": 22.9,
+   "enrichment_ratio": 3.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TUSC2",
+   "pure_cpm": 21.7,
+   "enrichment_ratio": 3.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DPCD",
+   "pure_cpm": 32.2,
+   "enrichment_ratio": 3.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SUPT4H1",
+   "pure_cpm": 41.8,
+   "enrichment_ratio": 3.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EMC7",
+   "pure_cpm": 49.6,
+   "enrichment_ratio": 3.91,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NT5C3B",
+   "pure_cpm": 25.9,
+   "enrichment_ratio": 3.91,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RBM42",
+   "pure_cpm": 32.4,
+   "enrichment_ratio": 3.91,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SF3B5",
+   "pure_cpm": 82.5,
+   "enrichment_ratio": 3.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL18A",
+   "pure_cpm": 1609.6,
+   "enrichment_ratio": 3.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TCEAL4",
+   "pure_cpm": 105.4,
+   "enrichment_ratio": 3.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VPS28",
+   "pure_cpm": 81.3,
+   "enrichment_ratio": 3.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD81",
+   "pure_cpm": 397.6,
+   "enrichment_ratio": 3.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MPG",
+   "pure_cpm": 57.1,
+   "enrichment_ratio": 3.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CRIP2",
+   "pure_cpm": 96.8,
+   "enrichment_ratio": 3.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ADH5",
+   "pure_cpm": 57.4,
+   "enrichment_ratio": 3.87,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUDT22",
+   "pure_cpm": 28.7,
+   "enrichment_ratio": 3.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL36",
+   "pure_cpm": 1334.9,
+   "enrichment_ratio": 3.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL8",
+   "pure_cpm": 1622.6,
+   "enrichment_ratio": 3.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB8",
+   "pure_cpm": 113.8,
+   "enrichment_ratio": 3.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDIPT",
+   "pure_cpm": 42.8,
+   "enrichment_ratio": 3.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL39",
+   "pure_cpm": 1704.3,
+   "enrichment_ratio": 3.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PARK7",
+   "pure_cpm": 223.7,
+   "enrichment_ratio": 3.84,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS27L",
+   "pure_cpm": 135.2,
+   "enrichment_ratio": 3.84,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DDOST",
+   "pure_cpm": 70.4,
+   "enrichment_ratio": 3.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SUMO2",
+   "pure_cpm": 199.6,
+   "enrichment_ratio": 3.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CAPNS1",
+   "pure_cpm": 140.3,
+   "enrichment_ratio": 3.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CEBPB",
+   "pure_cpm": 241.7,
+   "enrichment_ratio": 3.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF1B",
+   "pure_cpm": 55.5,
+   "enrichment_ratio": 3.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IFT22",
+   "pure_cpm": 20.4,
+   "enrichment_ratio": 3.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ELP5",
+   "pure_cpm": 27.2,
+   "enrichment_ratio": 3.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC25A1",
+   "pure_cpm": 64.4,
+   "enrichment_ratio": 3.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL55",
+   "pure_cpm": 41.7,
+   "enrichment_ratio": 3.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL34",
+   "pure_cpm": 1984.7,
+   "enrichment_ratio": 3.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SH3BGRL3",
+   "pure_cpm": 393.7,
+   "enrichment_ratio": 3.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSR2",
+   "pure_cpm": 225.0,
+   "enrichment_ratio": 3.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNX17",
+   "pure_cpm": 65.2,
+   "enrichment_ratio": 3.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EMILIN1",
+   "pure_cpm": 76.4,
+   "enrichment_ratio": 3.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PCOLCE2",
+   "pure_cpm": 608.6,
+   "enrichment_ratio": 3.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "H2AFZ",
+   "pure_cpm": 151.6,
+   "enrichment_ratio": 3.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2J",
+   "pure_cpm": 71.6,
+   "enrichment_ratio": 3.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PFN1",
+   "pure_cpm": 298.5,
+   "enrichment_ratio": 3.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDKN2D",
+   "pure_cpm": 27.2,
+   "enrichment_ratio": 3.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FIBP",
+   "pure_cpm": 40.4,
+   "enrichment_ratio": 3.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TM2D2",
+   "pure_cpm": 20.8,
+   "enrichment_ratio": 3.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DDIT4",
+   "pure_cpm": 137.1,
+   "enrichment_ratio": 3.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ERH",
+   "pure_cpm": 89.4,
+   "enrichment_ratio": 3.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HAGHL",
+   "pure_cpm": 29.8,
+   "enrichment_ratio": 3.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NENF",
+   "pure_cpm": 91.8,
+   "enrichment_ratio": 3.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CAV2",
+   "pure_cpm": 106.5,
+   "enrichment_ratio": 3.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFAF8",
+   "pure_cpm": 54.4,
+   "enrichment_ratio": 3.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BRK1",
+   "pure_cpm": 109.3,
+   "enrichment_ratio": 3.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERPINA1",
+   "pure_cpm": 1605.7,
+   "enrichment_ratio": 3.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRAF7",
+   "pure_cpm": 26.8,
+   "enrichment_ratio": 3.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GABARAP",
+   "pure_cpm": 263.4,
+   "enrichment_ratio": 3.75,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SEPTIN8",
+   "pure_cpm": 30.7,
+   "enrichment_ratio": 3.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRKCSH",
+   "pure_cpm": 143.6,
+   "enrichment_ratio": 3.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ERGIC3",
+   "pure_cpm": 123.2,
+   "enrichment_ratio": 3.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SOD1",
+   "pure_cpm": 285.1,
+   "enrichment_ratio": 3.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UQCRH",
+   "pure_cpm": 167.1,
+   "enrichment_ratio": 3.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARL2BP",
+   "pure_cpm": 61.5,
+   "enrichment_ratio": 3.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ALYREF",
+   "pure_cpm": 30.9,
+   "enrichment_ratio": 3.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUDCD2",
+   "pure_cpm": 27.8,
+   "enrichment_ratio": 3.72,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM59",
+   "pure_cpm": 264.8,
+   "enrichment_ratio": 3.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5PB",
+   "pure_cpm": 100.2,
+   "enrichment_ratio": 3.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNHIT1",
+   "pure_cpm": 89.5,
+   "enrichment_ratio": 3.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG6",
+   "pure_cpm": 174.0,
+   "enrichment_ratio": 3.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C12ORF57",
+   "pure_cpm": 176.4,
+   "enrichment_ratio": 3.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RAB13",
+   "pure_cpm": 129.3,
+   "enrichment_ratio": 3.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PACSIN3",
+   "pure_cpm": 22.0,
+   "enrichment_ratio": 3.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC25A11",
+   "pure_cpm": 27.9,
+   "enrichment_ratio": 3.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS12",
+   "pure_cpm": 25.1,
+   "enrichment_ratio": 3.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLE4",
+   "pure_cpm": 30.6,
+   "enrichment_ratio": 3.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDLIM4",
+   "pure_cpm": 100.9,
+   "enrichment_ratio": 3.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GPAA1",
+   "pure_cpm": 57.9,
+   "enrichment_ratio": 3.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ITM2B",
+   "pure_cpm": 573.2,
+   "enrichment_ratio": 3.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF3I",
+   "pure_cpm": 82.7,
+   "enrichment_ratio": 3.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL31",
+   "pure_cpm": 436.5,
+   "enrichment_ratio": 3.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AP2M1",
+   "pure_cpm": 129.9,
+   "enrichment_ratio": 3.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SCOC",
+   "pure_cpm": 35.6,
+   "enrichment_ratio": 3.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SAYSD1",
+   "pure_cpm": 24.4,
+   "enrichment_ratio": 3.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PGLS",
+   "pure_cpm": 82.3,
+   "enrichment_ratio": 3.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CAMK2N1",
+   "pure_cpm": 37.9,
+   "enrichment_ratio": 3.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SMIM15",
+   "pure_cpm": 26.2,
+   "enrichment_ratio": 3.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF3F",
+   "pure_cpm": 136.7,
+   "enrichment_ratio": 3.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MPI",
+   "pure_cpm": 22.9,
+   "enrichment_ratio": 3.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GNB2",
+   "pure_cpm": 100.9,
+   "enrichment_ratio": 3.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SUMO3",
+   "pure_cpm": 82.5,
+   "enrichment_ratio": 3.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TEX261",
+   "pure_cpm": 32.4,
+   "enrichment_ratio": 3.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAU",
+   "pure_cpm": 809.6,
+   "enrichment_ratio": 3.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DYRK4",
+   "pure_cpm": 31.8,
+   "enrichment_ratio": 3.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCT7",
+   "pure_cpm": 77.1,
+   "enrichment_ratio": 3.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SBDS",
+   "pure_cpm": 71.4,
+   "enrichment_ratio": 3.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPLP1",
+   "pure_cpm": 5692.9,
+   "enrichment_ratio": 3.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CSPG4",
+   "pure_cpm": 926.8,
+   "enrichment_ratio": 3.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS14",
+   "pure_cpm": 1804.6,
+   "enrichment_ratio": 3.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STOML2",
+   "pure_cpm": 58.8,
+   "enrichment_ratio": 3.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VDAC2",
+   "pure_cpm": 102.0,
+   "enrichment_ratio": 3.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RTRAF",
+   "pure_cpm": 99.5,
+   "enrichment_ratio": 3.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA11",
+   "pure_cpm": 216.4,
+   "enrichment_ratio": 3.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDC42EP5",
+   "pure_cpm": 75.7,
+   "enrichment_ratio": 3.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RCN1",
+   "pure_cpm": 454.4,
+   "enrichment_ratio": 3.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL21",
+   "pure_cpm": 1952.3,
+   "enrichment_ratio": 3.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CISD3",
+   "pure_cpm": 25.3,
+   "enrichment_ratio": 3.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GSTT2B",
+   "pure_cpm": 21.2,
+   "enrichment_ratio": 3.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C18ORF32",
+   "pure_cpm": 58.2,
+   "enrichment_ratio": 3.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS9",
+   "pure_cpm": 1227.7,
+   "enrichment_ratio": 3.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSC22D4",
+   "pure_cpm": 81.0,
+   "enrichment_ratio": 3.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CUEDC2",
+   "pure_cpm": 31.4,
+   "enrichment_ratio": 3.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ASIC1",
+   "pure_cpm": 42.7,
+   "enrichment_ratio": 3.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TIMM13",
+   "pure_cpm": 73.5,
+   "enrichment_ratio": 3.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CBR1",
+   "pure_cpm": 25.1,
+   "enrichment_ratio": 3.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SHC1",
+   "pure_cpm": 110.9,
+   "enrichment_ratio": 3.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX7A2L",
+   "pure_cpm": 118.7,
+   "enrichment_ratio": 3.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC35A4",
+   "pure_cpm": 22.7,
+   "enrichment_ratio": 3.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMB1",
+   "pure_cpm": 166.4,
+   "enrichment_ratio": 3.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GRHPR",
+   "pure_cpm": 43.0,
+   "enrichment_ratio": 3.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TPI1",
+   "pure_cpm": 468.5,
+   "enrichment_ratio": 3.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRNP25",
+   "pure_cpm": 20.7,
+   "enrichment_ratio": 3.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AGPAT1",
+   "pure_cpm": 34.0,
+   "enrichment_ratio": 3.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COPS7A",
+   "pure_cpm": 44.2,
+   "enrichment_ratio": 3.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EBPL",
+   "pure_cpm": 42.9,
+   "enrichment_ratio": 3.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DOK1",
+   "pure_cpm": 93.9,
+   "enrichment_ratio": 3.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS26",
+   "pure_cpm": 903.9,
+   "enrichment_ratio": 3.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "JOSD2",
+   "pure_cpm": 58.7,
+   "enrichment_ratio": 3.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM3A",
+   "pure_cpm": 23.8,
+   "enrichment_ratio": 3.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PCBP1",
+   "pure_cpm": 210.7,
+   "enrichment_ratio": 3.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "YBX3",
+   "pure_cpm": 315.9,
+   "enrichment_ratio": 3.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UBE2M",
+   "pure_cpm": 60.4,
+   "enrichment_ratio": 3.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UBE2Q1",
+   "pure_cpm": 46.0,
+   "enrichment_ratio": 3.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CYB5R1",
+   "pure_cpm": 36.7,
+   "enrichment_ratio": 3.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BOD1",
+   "pure_cpm": 43.5,
+   "enrichment_ratio": 3.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MIR497HG",
+   "pure_cpm": 24.1,
+   "enrichment_ratio": 3.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MPC2",
+   "pure_cpm": 48.4,
+   "enrichment_ratio": 3.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FOXC1",
+   "pure_cpm": 239.7,
+   "enrichment_ratio": 3.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LAMTOR1",
+   "pure_cpm": 70.7,
+   "enrichment_ratio": 3.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSR3",
+   "pure_cpm": 40.0,
+   "enrichment_ratio": 3.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ACP1",
+   "pure_cpm": 75.2,
+   "enrichment_ratio": 3.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KLHDC3",
+   "pure_cpm": 59.6,
+   "enrichment_ratio": 3.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UNC119B",
+   "pure_cpm": 21.7,
+   "enrichment_ratio": 3.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHAC1",
+   "pure_cpm": 34.1,
+   "enrichment_ratio": 3.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SYDE1",
+   "pure_cpm": 33.1,
+   "enrichment_ratio": 3.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL28",
+   "pure_cpm": 2038.5,
+   "enrichment_ratio": 3.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC2A4RG",
+   "pure_cpm": 47.2,
+   "enrichment_ratio": 3.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS4Y1",
+   "pure_cpm": 312.7,
+   "enrichment_ratio": 3.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DANCR",
+   "pure_cpm": 51.6,
+   "enrichment_ratio": 3.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "JMJD8",
+   "pure_cpm": 46.2,
+   "enrichment_ratio": 3.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RFNG",
+   "pure_cpm": 52.8,
+   "enrichment_ratio": 3.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MARVELD1",
+   "pure_cpm": 64.9,
+   "enrichment_ratio": 3.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL4",
+   "pure_cpm": 25.4,
+   "enrichment_ratio": 3.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RFXANK",
+   "pure_cpm": 27.7,
+   "enrichment_ratio": 3.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MID1IP1",
+   "pure_cpm": 33.3,
+   "enrichment_ratio": 3.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2I",
+   "pure_cpm": 70.2,
+   "enrichment_ratio": 3.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CTSA",
+   "pure_cpm": 73.0,
+   "enrichment_ratio": 3.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EFNB1",
+   "pure_cpm": 30.9,
+   "enrichment_ratio": 3.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GAS5",
+   "pure_cpm": 249.6,
+   "enrichment_ratio": 3.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IER5L",
+   "pure_cpm": 102.6,
+   "enrichment_ratio": 3.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TBCB",
+   "pure_cpm": 56.8,
+   "enrichment_ratio": 3.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UXT",
+   "pure_cpm": 85.3,
+   "enrichment_ratio": 3.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM229B",
+   "pure_cpm": 27.8,
+   "enrichment_ratio": 3.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COMMD3",
+   "pure_cpm": 26.4,
+   "enrichment_ratio": 3.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LZTS2",
+   "pure_cpm": 30.8,
+   "enrichment_ratio": 3.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMC3",
+   "pure_cpm": 70.7,
+   "enrichment_ratio": 3.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "APH1A",
+   "pure_cpm": 55.6,
+   "enrichment_ratio": 3.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRFAP1",
+   "pure_cpm": 138.0,
+   "enrichment_ratio": 3.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPB2",
+   "pure_cpm": 82.9,
+   "enrichment_ratio": 3.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GLT8D1",
+   "pure_cpm": 50.6,
+   "enrichment_ratio": 3.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL32",
+   "pure_cpm": 32.9,
+   "enrichment_ratio": 3.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG7",
+   "pure_cpm": 69.3,
+   "enrichment_ratio": 3.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MGAT2",
+   "pure_cpm": 21.4,
+   "enrichment_ratio": 3.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS24",
+   "pure_cpm": 74.9,
+   "enrichment_ratio": 3.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDRG2",
+   "pure_cpm": 57.8,
+   "enrichment_ratio": 3.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUDT16L1",
+   "pure_cpm": 23.6,
+   "enrichment_ratio": 3.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PFDN6",
+   "pure_cpm": 22.8,
+   "enrichment_ratio": 3.41,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5F1E",
+   "pure_cpm": 499.0,
+   "enrichment_ratio": 3.41,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TAF10",
+   "pure_cpm": 44.1,
+   "enrichment_ratio": 3.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "H3F3A",
+   "pure_cpm": 597.5,
+   "enrichment_ratio": 3.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARF5",
+   "pure_cpm": 22.4,
+   "enrichment_ratio": 3.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRDX1",
+   "pure_cpm": 458.3,
+   "enrichment_ratio": 3.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DNPH1",
+   "pure_cpm": 22.6,
+   "enrichment_ratio": 3.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SYPL1",
+   "pure_cpm": 91.9,
+   "enrichment_ratio": 3.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMA2",
+   "pure_cpm": 86.3,
+   "enrichment_ratio": 3.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUCB1",
+   "pure_cpm": 228.3,
+   "enrichment_ratio": 3.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "B4GALT7",
+   "pure_cpm": 36.5,
+   "enrichment_ratio": 3.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TYMS",
+   "pure_cpm": 34.0,
+   "enrichment_ratio": 3.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TIMM10",
+   "pure_cpm": 29.6,
+   "enrichment_ratio": 3.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB10",
+   "pure_cpm": 85.4,
+   "enrichment_ratio": 3.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GADD45GIP1",
+   "pure_cpm": 88.0,
+   "enrichment_ratio": 3.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PMM1",
+   "pure_cpm": 27.7,
+   "enrichment_ratio": 3.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMSB10",
+   "pure_cpm": 988.6,
+   "enrichment_ratio": 3.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HINT1",
+   "pure_cpm": 211.4,
+   "enrichment_ratio": 3.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERPINA5",
+   "pure_cpm": 64.7,
+   "enrichment_ratio": 3.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RWDD1",
+   "pure_cpm": 71.6,
+   "enrichment_ratio": 3.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC39A13",
+   "pure_cpm": 38.5,
+   "enrichment_ratio": 3.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GNG5",
+   "pure_cpm": 137.3,
+   "enrichment_ratio": 3.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARL16",
+   "pure_cpm": 33.4,
+   "enrichment_ratio": 3.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KDELR1",
+   "pure_cpm": 165.7,
+   "enrichment_ratio": 3.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SMDT1",
+   "pure_cpm": 44.7,
+   "enrichment_ratio": 3.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TOMM20",
+   "pure_cpm": 155.4,
+   "enrichment_ratio": 3.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSR3",
+   "pure_cpm": 237.0,
+   "enrichment_ratio": 3.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL16",
+   "pure_cpm": 21.2,
+   "enrichment_ratio": 3.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CIRBP",
+   "pure_cpm": 434.6,
+   "enrichment_ratio": 3.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMA7",
+   "pure_cpm": 182.8,
+   "enrichment_ratio": 3.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CITED4",
+   "pure_cpm": 28.3,
+   "enrichment_ratio": 3.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MDH1",
+   "pure_cpm": 66.5,
+   "enrichment_ratio": 3.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX17",
+   "pure_cpm": 105.2,
+   "enrichment_ratio": 3.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMED4",
+   "pure_cpm": 54.2,
+   "enrichment_ratio": 3.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AGTRAP",
+   "pure_cpm": 38.0,
+   "enrichment_ratio": 3.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ADI1",
+   "pure_cpm": 40.3,
+   "enrichment_ratio": 3.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS2",
+   "pure_cpm": 20.4,
+   "enrichment_ratio": 3.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EDF1",
+   "pure_cpm": 237.0,
+   "enrichment_ratio": 3.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM89B",
+   "pure_cpm": 30.4,
+   "enrichment_ratio": 3.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL21",
+   "pure_cpm": 28.0,
+   "enrichment_ratio": 3.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DGCR6L",
+   "pure_cpm": 36.8,
+   "enrichment_ratio": 3.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLXNB2",
+   "pure_cpm": 96.4,
+   "enrichment_ratio": 3.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRCP",
+   "pure_cpm": 132.4,
+   "enrichment_ratio": 3.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MMP3",
+   "pure_cpm": 680.6,
+   "enrichment_ratio": 3.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NGRN",
+   "pure_cpm": 53.8,
+   "enrichment_ratio": 3.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PIGT",
+   "pure_cpm": 81.1,
+   "enrichment_ratio": 3.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS8",
+   "pure_cpm": 1102.0,
+   "enrichment_ratio": 3.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZDHHC4",
+   "pure_cpm": 30.8,
+   "enrichment_ratio": 3.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL52",
+   "pure_cpm": 67.7,
+   "enrichment_ratio": 3.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CLPP",
+   "pure_cpm": 33.9,
+   "enrichment_ratio": 3.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPD2",
+   "pure_cpm": 125.8,
+   "enrichment_ratio": 3.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF6",
+   "pure_cpm": 51.8,
+   "enrichment_ratio": 3.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5F1A",
+   "pure_cpm": 127.6,
+   "enrichment_ratio": 3.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STX10",
+   "pure_cpm": 22.3,
+   "enrichment_ratio": 3.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CNIH1",
+   "pure_cpm": 70.1,
+   "enrichment_ratio": 3.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CMTM3",
+   "pure_cpm": 30.2,
+   "enrichment_ratio": 3.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HMGN1",
+   "pure_cpm": 164.3,
+   "enrichment_ratio": 3.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VAMP3",
+   "pure_cpm": 50.9,
+   "enrichment_ratio": 3.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DAB2",
+   "pure_cpm": 102.4,
+   "enrichment_ratio": 3.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSM2",
+   "pure_cpm": 58.2,
+   "enrichment_ratio": 3.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IMPDH1",
+   "pure_cpm": 37.4,
+   "enrichment_ratio": 3.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DUT",
+   "pure_cpm": 103.7,
+   "enrichment_ratio": 3.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC16A3",
+   "pure_cpm": 208.3,
+   "enrichment_ratio": 3.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BSG",
+   "pure_cpm": 236.4,
+   "enrichment_ratio": 3.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM136A",
+   "pure_cpm": 28.5,
+   "enrichment_ratio": 3.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "QARS",
+   "pure_cpm": 55.4,
+   "enrichment_ratio": 3.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OTUD6B-AS1",
+   "pure_cpm": 55.2,
+   "enrichment_ratio": 3.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RSL24D1",
+   "pure_cpm": 115.4,
+   "enrichment_ratio": 3.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MPST",
+   "pure_cpm": 39.7,
+   "enrichment_ratio": 3.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NAA10",
+   "pure_cpm": 29.8,
+   "enrichment_ratio": 3.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RABGGTB",
+   "pure_cpm": 53.9,
+   "enrichment_ratio": 3.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MANF",
+   "pure_cpm": 103.5,
+   "enrichment_ratio": 3.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL35",
+   "pure_cpm": 1145.0,
+   "enrichment_ratio": 3.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUCB2",
+   "pure_cpm": 201.4,
+   "enrichment_ratio": 3.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GADD45B",
+   "pure_cpm": 478.6,
+   "enrichment_ratio": 3.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EMC1",
+   "pure_cpm": 55.2,
+   "enrichment_ratio": 3.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRAPPC4",
+   "pure_cpm": 30.5,
+   "enrichment_ratio": 3.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PFDN5",
+   "pure_cpm": 403.4,
+   "enrichment_ratio": 3.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5F1D",
+   "pure_cpm": 183.8,
+   "enrichment_ratio": 3.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UPK3BL1",
+   "pure_cpm": 27.1,
+   "enrichment_ratio": 3.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNF167",
+   "pure_cpm": 33.1,
+   "enrichment_ratio": 3.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SOWAHC",
+   "pure_cpm": 60.3,
+   "enrichment_ratio": 3.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL41",
+   "pure_cpm": 60.8,
+   "enrichment_ratio": 3.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CTDNEP1",
+   "pure_cpm": 80.2,
+   "enrichment_ratio": 3.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA6",
+   "pure_cpm": 54.2,
+   "enrichment_ratio": 3.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CYBRD1",
+   "pure_cpm": 120.9,
+   "enrichment_ratio": 3.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC52A2",
+   "pure_cpm": 21.6,
+   "enrichment_ratio": 3.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD59",
+   "pure_cpm": 253.3,
+   "enrichment_ratio": 3.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CRYAB",
+   "pure_cpm": 32.4,
+   "enrichment_ratio": 3.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC39A6",
+   "pure_cpm": 77.6,
+   "enrichment_ratio": 3.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SRSF8",
+   "pure_cpm": 41.7,
+   "enrichment_ratio": 3.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARL6IP4",
+   "pure_cpm": 158.3,
+   "enrichment_ratio": 3.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C1ORF56",
+   "pure_cpm": 21.4,
+   "enrichment_ratio": 3.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSM7",
+   "pure_cpm": 112.4,
+   "enrichment_ratio": 3.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KXD1",
+   "pure_cpm": 35.0,
+   "enrichment_ratio": 3.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FOSB",
+   "pure_cpm": 1660.0,
+   "enrichment_ratio": 3.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CALM3",
+   "pure_cpm": 101.4,
+   "enrichment_ratio": 3.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERPINB1",
+   "pure_cpm": 134.5,
+   "enrichment_ratio": 3.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCDC107",
+   "pure_cpm": 40.0,
+   "enrichment_ratio": 3.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC22A17",
+   "pure_cpm": 31.3,
+   "enrichment_ratio": 3.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG9",
+   "pure_cpm": 26.2,
+   "enrichment_ratio": 3.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCDC124",
+   "pure_cpm": 42.1,
+   "enrichment_ratio": 3.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FKBP11",
+   "pure_cpm": 108.2,
+   "enrichment_ratio": 3.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CIB1",
+   "pure_cpm": 92.8,
+   "enrichment_ratio": 3.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FLYWCH2",
+   "pure_cpm": 21.0,
+   "enrichment_ratio": 3.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FTL",
+   "pure_cpm": 1258.8,
+   "enrichment_ratio": 3.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HTATSF1",
+   "pure_cpm": 67.0,
+   "enrichment_ratio": 3.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RER1",
+   "pure_cpm": 133.1,
+   "enrichment_ratio": 3.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HIST1H1C",
+   "pure_cpm": 30.3,
+   "enrichment_ratio": 3.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NT5C",
+   "pure_cpm": 33.0,
+   "enrichment_ratio": 3.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA13",
+   "pure_cpm": 264.3,
+   "enrichment_ratio": 3.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BUD31",
+   "pure_cpm": 81.9,
+   "enrichment_ratio": 3.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SIVA1",
+   "pure_cpm": 86.0,
+   "enrichment_ratio": 3.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NME3",
+   "pure_cpm": 44.8,
+   "enrichment_ratio": 3.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS34",
+   "pure_cpm": 51.1,
+   "enrichment_ratio": 3.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UBXN6",
+   "pure_cpm": 76.8,
+   "enrichment_ratio": 3.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSPAN4",
+   "pure_cpm": 113.8,
+   "enrichment_ratio": 3.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL28",
+   "pure_cpm": 40.8,
+   "enrichment_ratio": 3.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNAI1",
+   "pure_cpm": 55.5,
+   "enrichment_ratio": 3.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AMPD2",
+   "pure_cpm": 34.4,
+   "enrichment_ratio": 3.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MZT2A",
+   "pure_cpm": 113.2,
+   "enrichment_ratio": 3.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HRAS",
+   "pure_cpm": 33.1,
+   "enrichment_ratio": 3.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ORMDL2",
+   "pure_cpm": 25.5,
+   "enrichment_ratio": 3.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GTF2A2",
+   "pure_cpm": 58.2,
+   "enrichment_ratio": 3.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS16",
+   "pure_cpm": 972.5,
+   "enrichment_ratio": 3.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP6V1G1",
+   "pure_cpm": 146.9,
+   "enrichment_ratio": 3.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMX1",
+   "pure_cpm": 85.4,
+   "enrichment_ratio": 3.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM207A",
+   "pure_cpm": 42.1,
+   "enrichment_ratio": 3.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS19BP1",
+   "pure_cpm": 66.8,
+   "enrichment_ratio": 3.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "B4GALT3",
+   "pure_cpm": 25.1,
+   "enrichment_ratio": 3.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SCCPDH",
+   "pure_cpm": 31.5,
+   "enrichment_ratio": 3.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IL11RA",
+   "pure_cpm": 25.0,
+   "enrichment_ratio": 3.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MYL12B",
+   "pure_cpm": 216.8,
+   "enrichment_ratio": 3.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2F",
+   "pure_cpm": 61.9,
+   "enrichment_ratio": 3.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BHLHE40",
+   "pure_cpm": 238.6,
+   "enrichment_ratio": 3.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SMPD1",
+   "pure_cpm": 22.7,
+   "enrichment_ratio": 3.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POGLUT3",
+   "pure_cpm": 32.4,
+   "enrichment_ratio": 3.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TOB1",
+   "pure_cpm": 71.7,
+   "enrichment_ratio": 3.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS15",
+   "pure_cpm": 1204.3,
+   "enrichment_ratio": 3.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC35A2",
+   "pure_cpm": 26.3,
+   "enrichment_ratio": 3.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "YBX1",
+   "pure_cpm": 391.0,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL24",
+   "pure_cpm": 24.2,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUDT1",
+   "pure_cpm": 57.6,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COPS6",
+   "pure_cpm": 49.7,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EEF1G",
+   "pure_cpm": 821.9,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MLF2",
+   "pure_cpm": 83.0,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PHLDA1",
+   "pure_cpm": 253.0,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RGCC",
+   "pure_cpm": 339.7,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "H1F0",
+   "pure_cpm": 101.0,
+   "enrichment_ratio": 3.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EVA1B",
+   "pure_cpm": 86.1,
+   "enrichment_ratio": 3.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MED10",
+   "pure_cpm": 52.0,
+   "enrichment_ratio": 3.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FIS1",
+   "pure_cpm": 112.8,
+   "enrichment_ratio": 3.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLD4",
+   "pure_cpm": 67.1,
+   "enrichment_ratio": 3.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMC5",
+   "pure_cpm": 71.1,
+   "enrichment_ratio": 3.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MATN2",
+   "pure_cpm": 467.0,
+   "enrichment_ratio": 3.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CENPX",
+   "pure_cpm": 33.3,
+   "enrichment_ratio": 3.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNF428",
+   "pure_cpm": 36.1,
+   "enrichment_ratio": 3.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RAB5IF",
+   "pure_cpm": 38.8,
+   "enrichment_ratio": 3.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DNAJB2",
+   "pure_cpm": 78.1,
+   "enrichment_ratio": 3.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SMIM10L1",
+   "pure_cpm": 30.7,
+   "enrichment_ratio": 3.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM200B",
+   "pure_cpm": 25.2,
+   "enrichment_ratio": 2.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL13",
+   "pure_cpm": 2870.2,
+   "enrichment_ratio": 2.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLEKHJ1",
+   "pure_cpm": 24.9,
+   "enrichment_ratio": 2.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSR4",
+   "pure_cpm": 318.9,
+   "enrichment_ratio": 2.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ENPP2",
+   "pure_cpm": 129.5,
+   "enrichment_ratio": 2.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PUF60",
+   "pure_cpm": 36.9,
+   "enrichment_ratio": 2.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MFGE8",
+   "pure_cpm": 551.9,
+   "enrichment_ratio": 2.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNASEK",
+   "pure_cpm": 254.6,
+   "enrichment_ratio": 2.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "REX1BD",
+   "pure_cpm": 64.9,
+   "enrichment_ratio": 2.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAN1B1",
+   "pure_cpm": 75.7,
+   "enrichment_ratio": 2.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF4A1",
+   "pure_cpm": 457.5,
+   "enrichment_ratio": 2.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FKBP8",
+   "pure_cpm": 126.6,
+   "enrichment_ratio": 2.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RGL2",
+   "pure_cpm": 37.8,
+   "enrichment_ratio": 2.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPC",
+   "pure_cpm": 49.1,
+   "enrichment_ratio": 2.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPD3",
+   "pure_cpm": 58.7,
+   "enrichment_ratio": 2.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MGST3",
+   "pure_cpm": 128.1,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM42",
+   "pure_cpm": 20.3,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C8ORF82",
+   "pure_cpm": 24.6,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL27A",
+   "pure_cpm": 895.8,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MYL6",
+   "pure_cpm": 603.6,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IER3IP1",
+   "pure_cpm": 119.4,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL13A",
+   "pure_cpm": 1765.6,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "METTL5",
+   "pure_cpm": 37.3,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPP1R35",
+   "pure_cpm": 20.2,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GSTK1",
+   "pure_cpm": 41.2,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL50",
+   "pure_cpm": 21.6,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TNS2",
+   "pure_cpm": 75.6,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARPC3",
+   "pure_cpm": 184.7,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARRDC4",
+   "pure_cpm": 34.0,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG19",
+   "pure_cpm": 26.9,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HAX1",
+   "pure_cpm": 44.5,
+   "enrichment_ratio": 2.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CPNE3",
+   "pure_cpm": 81.6,
+   "enrichment_ratio": 2.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RIC8A",
+   "pure_cpm": 26.1,
+   "enrichment_ratio": 2.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PYCR1",
+   "pure_cpm": 52.1,
+   "enrichment_ratio": 2.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSM4",
+   "pure_cpm": 42.5,
+   "enrichment_ratio": 2.93,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ILK",
+   "pure_cpm": 46.7,
+   "enrichment_ratio": 2.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPP1R14B",
+   "pure_cpm": 86.2,
+   "enrichment_ratio": 2.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CRELD2",
+   "pure_cpm": 64.2,
+   "enrichment_ratio": 2.92,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ADIPOR1",
+   "pure_cpm": 63.7,
+   "enrichment_ratio": 2.91,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CFL1",
+   "pure_cpm": 253.8,
+   "enrichment_ratio": 2.91,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ETFB",
+   "pure_cpm": 92.4,
+   "enrichment_ratio": 2.91,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPB",
+   "pure_cpm": 74.6,
+   "enrichment_ratio": 2.91,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL33",
+   "pure_cpm": 95.8,
+   "enrichment_ratio": 2.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SPON2",
+   "pure_cpm": 142.9,
+   "enrichment_ratio": 2.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RRAGD",
+   "pure_cpm": 34.8,
+   "enrichment_ratio": 2.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GPRC5B",
+   "pure_cpm": 26.4,
+   "enrichment_ratio": 2.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TXN2",
+   "pure_cpm": 48.9,
+   "enrichment_ratio": 2.9,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRDX6",
+   "pure_cpm": 156.7,
+   "enrichment_ratio": 2.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NUDT16",
+   "pure_cpm": 20.7,
+   "enrichment_ratio": 2.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DEPP1",
+   "pure_cpm": 46.2,
+   "enrichment_ratio": 2.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TIMP1",
+   "pure_cpm": 1433.9,
+   "enrichment_ratio": 2.89,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CALM2",
+   "pure_cpm": 579.9,
+   "enrichment_ratio": 2.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS36",
+   "pure_cpm": 40.9,
+   "enrichment_ratio": 2.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM173",
+   "pure_cpm": 24.5,
+   "enrichment_ratio": 2.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC39A7",
+   "pure_cpm": 84.5,
+   "enrichment_ratio": 2.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNH1",
+   "pure_cpm": 81.2,
+   "enrichment_ratio": 2.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFS3",
+   "pure_cpm": 41.1,
+   "enrichment_ratio": 2.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FBL",
+   "pure_cpm": 91.9,
+   "enrichment_ratio": 2.88,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC25A36",
+   "pure_cpm": 251.1,
+   "enrichment_ratio": 2.87,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM128",
+   "pure_cpm": 21.5,
+   "enrichment_ratio": 2.87,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAP1LC3A",
+   "pure_cpm": 34.7,
+   "enrichment_ratio": 2.87,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GADD45A",
+   "pure_cpm": 88.4,
+   "enrichment_ratio": 2.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS21",
+   "pure_cpm": 110.2,
+   "enrichment_ratio": 2.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMED7",
+   "pure_cpm": 68.9,
+   "enrichment_ratio": 2.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C11ORF24",
+   "pure_cpm": 42.1,
+   "enrichment_ratio": 2.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS7",
+   "pure_cpm": 26.1,
+   "enrichment_ratio": 2.86,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PCYOX1",
+   "pure_cpm": 63.4,
+   "enrichment_ratio": 2.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HMGB2",
+   "pure_cpm": 159.1,
+   "enrichment_ratio": 2.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM8A1",
+   "pure_cpm": 22.7,
+   "enrichment_ratio": 2.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSM1",
+   "pure_cpm": 28.7,
+   "enrichment_ratio": 2.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TUFM",
+   "pure_cpm": 76.7,
+   "enrichment_ratio": 2.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ADRM1",
+   "pure_cpm": 34.5,
+   "enrichment_ratio": 2.85,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB6",
+   "pure_cpm": 49.1,
+   "enrichment_ratio": 2.84,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERPING1",
+   "pure_cpm": 34.5,
+   "enrichment_ratio": 2.84,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RIN1",
+   "pure_cpm": 26.9,
+   "enrichment_ratio": 2.84,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNF181",
+   "pure_cpm": 64.2,
+   "enrichment_ratio": 2.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STMP1",
+   "pure_cpm": 226.2,
+   "enrichment_ratio": 2.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLPP5",
+   "pure_cpm": 89.3,
+   "enrichment_ratio": 2.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DPP7",
+   "pure_cpm": 100.5,
+   "enrichment_ratio": 2.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CKAP4",
+   "pure_cpm": 320.0,
+   "enrichment_ratio": 2.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ECH1",
+   "pure_cpm": 52.2,
+   "enrichment_ratio": 2.83,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TXNIP",
+   "pure_cpm": 161.6,
+   "enrichment_ratio": 2.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LMAN2",
+   "pure_cpm": 84.7,
+   "enrichment_ratio": 2.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FUCA2",
+   "pure_cpm": 23.3,
+   "enrichment_ratio": 2.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LMF2",
+   "pure_cpm": 47.2,
+   "enrichment_ratio": 2.82,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HEBP1",
+   "pure_cpm": 31.7,
+   "enrichment_ratio": 2.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS11",
+   "pure_cpm": 1093.6,
+   "enrichment_ratio": 2.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CYB5R3",
+   "pure_cpm": 139.7,
+   "enrichment_ratio": 2.81,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DVL1",
+   "pure_cpm": 37.0,
+   "enrichment_ratio": 2.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GNAI2",
+   "pure_cpm": 221.2,
+   "enrichment_ratio": 2.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CARD19",
+   "pure_cpm": 27.2,
+   "enrichment_ratio": 2.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ANGPTL5",
+   "pure_cpm": 34.6,
+   "enrichment_ratio": 2.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "METRN",
+   "pure_cpm": 75.2,
+   "enrichment_ratio": 2.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM208",
+   "pure_cpm": 52.1,
+   "enrichment_ratio": 2.8,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNHG5",
+   "pure_cpm": 477.1,
+   "enrichment_ratio": 2.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HNRNPK",
+   "pure_cpm": 316.3,
+   "enrichment_ratio": 2.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IMPA2",
+   "pure_cpm": 30.8,
+   "enrichment_ratio": 2.79,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SOCS5",
+   "pure_cpm": 39.7,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSM6",
+   "pure_cpm": 44.4,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ANKRD37",
+   "pure_cpm": 47.3,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS10",
+   "pure_cpm": 344.7,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BAG1",
+   "pure_cpm": 58.6,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SEC61B",
+   "pure_cpm": 207.0,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SIDT2",
+   "pure_cpm": 57.6,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "H2AFJ",
+   "pure_cpm": 82.1,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CNPY2",
+   "pure_cpm": 133.1,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMED2",
+   "pure_cpm": 108.6,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CFAP20",
+   "pure_cpm": 34.9,
+   "enrichment_ratio": 2.78,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM45A",
+   "pure_cpm": 151.0,
+   "enrichment_ratio": 2.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPLP2",
+   "pure_cpm": 1571.1,
+   "enrichment_ratio": 2.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OXA1L",
+   "pure_cpm": 36.3,
+   "enrichment_ratio": 2.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C5AR2",
+   "pure_cpm": 65.0,
+   "enrichment_ratio": 2.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FCGRT",
+   "pure_cpm": 84.7,
+   "enrichment_ratio": 2.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EMD",
+   "pure_cpm": 46.1,
+   "enrichment_ratio": 2.77,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GUK1",
+   "pure_cpm": 170.6,
+   "enrichment_ratio": 2.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COA5",
+   "pure_cpm": 28.9,
+   "enrichment_ratio": 2.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NSA2",
+   "pure_cpm": 91.2,
+   "enrichment_ratio": 2.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDIA4",
+   "pure_cpm": 147.6,
+   "enrichment_ratio": 2.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS20",
+   "pure_cpm": 728.7,
+   "enrichment_ratio": 2.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAGOHB",
+   "pure_cpm": 31.9,
+   "enrichment_ratio": 2.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPL36AL",
+   "pure_cpm": 235.9,
+   "enrichment_ratio": 2.76,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EBNA1BP2",
+   "pure_cpm": 29.1,
+   "enrichment_ratio": 2.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLDIP2",
+   "pure_cpm": 28.8,
+   "enrichment_ratio": 2.74,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSB",
+   "pure_cpm": 90.9,
+   "enrichment_ratio": 2.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FXYD6",
+   "pure_cpm": 187.3,
+   "enrichment_ratio": 2.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OS9",
+   "pure_cpm": 197.0,
+   "enrichment_ratio": 2.73,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RAB1B",
+   "pure_cpm": 48.1,
+   "enrichment_ratio": 2.71,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PNKD",
+   "pure_cpm": 42.8,
+   "enrichment_ratio": 2.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "THOC7",
+   "pure_cpm": 64.2,
+   "enrichment_ratio": 2.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHST1",
+   "pure_cpm": 30.9,
+   "enrichment_ratio": 2.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PGF",
+   "pure_cpm": 48.9,
+   "enrichment_ratio": 2.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLIRP",
+   "pure_cpm": 85.8,
+   "enrichment_ratio": 2.7,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC29A1",
+   "pure_cpm": 258.8,
+   "enrichment_ratio": 2.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA5",
+   "pure_cpm": 69.4,
+   "enrichment_ratio": 2.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX5A",
+   "pure_cpm": 87.1,
+   "enrichment_ratio": 2.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NOL3",
+   "pure_cpm": 41.8,
+   "enrichment_ratio": 2.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMB3",
+   "pure_cpm": 71.4,
+   "enrichment_ratio": 2.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PODNL1",
+   "pure_cpm": 29.0,
+   "enrichment_ratio": 2.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPN2",
+   "pure_cpm": 278.3,
+   "enrichment_ratio": 2.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LPAR4",
+   "pure_cpm": 85.2,
+   "enrichment_ratio": 2.69,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CAV1",
+   "pure_cpm": 285.8,
+   "enrichment_ratio": 2.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "P3H3",
+   "pure_cpm": 52.4,
+   "enrichment_ratio": 2.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ERP29",
+   "pure_cpm": 129.3,
+   "enrichment_ratio": 2.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UBA52",
+   "pure_cpm": 792.7,
+   "enrichment_ratio": 2.68,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ADAM15",
+   "pure_cpm": 44.9,
+   "enrichment_ratio": 2.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NCSTN",
+   "pure_cpm": 29.2,
+   "enrichment_ratio": 2.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARL6IP5",
+   "pure_cpm": 160.2,
+   "enrichment_ratio": 2.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMUB1",
+   "pure_cpm": 34.5,
+   "enrichment_ratio": 2.67,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMBIM1",
+   "pure_cpm": 44.4,
+   "enrichment_ratio": 2.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GSTZ1",
+   "pure_cpm": 27.4,
+   "enrichment_ratio": 2.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL27",
+   "pure_cpm": 50.9,
+   "enrichment_ratio": 2.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RHOXF1-AS1",
+   "pure_cpm": 21.5,
+   "enrichment_ratio": 2.66,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PTPRF",
+   "pure_cpm": 31.1,
+   "enrichment_ratio": 2.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDHB",
+   "pure_cpm": 31.2,
+   "enrichment_ratio": 2.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLE3",
+   "pure_cpm": 41.6,
+   "enrichment_ratio": 2.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DDIT3",
+   "pure_cpm": 53.7,
+   "enrichment_ratio": 2.65,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CYB561D2",
+   "pure_cpm": 22.0,
+   "enrichment_ratio": 2.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SURF1",
+   "pure_cpm": 26.3,
+   "enrichment_ratio": 2.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MMAB",
+   "pure_cpm": 46.3,
+   "enrichment_ratio": 2.64,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "YIPF2",
+   "pure_cpm": 52.1,
+   "enrichment_ratio": 2.63,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FKBP5",
+   "pure_cpm": 198.9,
+   "enrichment_ratio": 2.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCDC25",
+   "pure_cpm": 36.1,
+   "enrichment_ratio": 2.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ESD",
+   "pure_cpm": 47.7,
+   "enrichment_ratio": 2.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GRN",
+   "pure_cpm": 155.8,
+   "enrichment_ratio": 2.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS23",
+   "pure_cpm": 22.0,
+   "enrichment_ratio": 2.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EMP3",
+   "pure_cpm": 373.2,
+   "enrichment_ratio": 2.62,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AUP1",
+   "pure_cpm": 45.0,
+   "enrichment_ratio": 2.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GMPPA",
+   "pure_cpm": 24.2,
+   "enrichment_ratio": 2.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POMP",
+   "pure_cpm": 125.1,
+   "enrichment_ratio": 2.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRELID3B",
+   "pure_cpm": 22.9,
+   "enrichment_ratio": 2.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP6AP1",
+   "pure_cpm": 93.4,
+   "enrichment_ratio": 2.61,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHRAC1",
+   "pure_cpm": 27.3,
+   "enrichment_ratio": 2.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TNFRSF1A",
+   "pure_cpm": 101.6,
+   "enrichment_ratio": 2.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SPRYD3",
+   "pure_cpm": 20.6,
+   "enrichment_ratio": 2.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC14A1",
+   "pure_cpm": 47.9,
+   "enrichment_ratio": 2.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HNRNPH2",
+   "pure_cpm": 50.6,
+   "enrichment_ratio": 2.6,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NELFE",
+   "pure_cpm": 43.4,
+   "enrichment_ratio": 2.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CYCS",
+   "pure_cpm": 79.7,
+   "enrichment_ratio": 2.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHID1",
+   "pure_cpm": 74.6,
+   "enrichment_ratio": 2.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OSBPL1A",
+   "pure_cpm": 70.7,
+   "enrichment_ratio": 2.59,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NIFK",
+   "pure_cpm": 32.9,
+   "enrichment_ratio": 2.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MGAT4B",
+   "pure_cpm": 26.6,
+   "enrichment_ratio": 2.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GSN",
+   "pure_cpm": 515.6,
+   "enrichment_ratio": 2.58,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPIE",
+   "pure_cpm": 38.6,
+   "enrichment_ratio": 2.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PPCS",
+   "pure_cpm": 42.9,
+   "enrichment_ratio": 2.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "JPH1",
+   "pure_cpm": 25.5,
+   "enrichment_ratio": 2.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GANAB",
+   "pure_cpm": 138.8,
+   "enrichment_ratio": 2.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "H2AFX",
+   "pure_cpm": 24.9,
+   "enrichment_ratio": 2.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NPC2",
+   "pure_cpm": 60.4,
+   "enrichment_ratio": 2.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFS7",
+   "pure_cpm": 45.1,
+   "enrichment_ratio": 2.57,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AURKAIP1",
+   "pure_cpm": 102.4,
+   "enrichment_ratio": 2.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MEA1",
+   "pure_cpm": 25.0,
+   "enrichment_ratio": 2.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CPXM2",
+   "pure_cpm": 72.6,
+   "enrichment_ratio": 2.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PAF1",
+   "pure_cpm": 32.6,
+   "enrichment_ratio": 2.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EMC10",
+   "pure_cpm": 83.1,
+   "enrichment_ratio": 2.56,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR3GL",
+   "pure_cpm": 27.6,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM43A",
+   "pure_cpm": 102.5,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SCIN",
+   "pure_cpm": 293.4,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C11ORF96",
+   "pure_cpm": 124.7,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RBM7",
+   "pure_cpm": 41.5,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TLCD3A",
+   "pure_cpm": 25.7,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLPPR2",
+   "pure_cpm": 21.1,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM210B",
+   "pure_cpm": 31.7,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ADAMTS1",
+   "pure_cpm": 106.6,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MTFR1L",
+   "pure_cpm": 23.4,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "THNSL2",
+   "pure_cpm": 20.4,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GORASP1",
+   "pure_cpm": 22.2,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CBX3",
+   "pure_cpm": 115.0,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDAP1",
+   "pure_cpm": 71.6,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ADIRF",
+   "pure_cpm": 88.3,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MZT1",
+   "pure_cpm": 40.9,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMED10",
+   "pure_cpm": 193.6,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRC2",
+   "pure_cpm": 287.2,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IDH3B",
+   "pure_cpm": 22.3,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPG",
+   "pure_cpm": 103.6,
+   "enrichment_ratio": 2.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FASTK",
+   "pure_cpm": 34.4,
+   "enrichment_ratio": 2.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IRF2BPL",
+   "pure_cpm": 44.5,
+   "enrichment_ratio": 2.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PKM",
+   "pure_cpm": 672.3,
+   "enrichment_ratio": 2.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SDF2",
+   "pure_cpm": 39.8,
+   "enrichment_ratio": 2.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC44A2",
+   "pure_cpm": 328.5,
+   "enrichment_ratio": 2.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GET3",
+   "pure_cpm": 20.1,
+   "enrichment_ratio": 2.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PIM3",
+   "pure_cpm": 138.3,
+   "enrichment_ratio": 2.53,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRIB2",
+   "pure_cpm": 48.3,
+   "enrichment_ratio": 2.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DDR1",
+   "pure_cpm": 23.0,
+   "enrichment_ratio": 2.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UQCC2",
+   "pure_cpm": 41.4,
+   "enrichment_ratio": 2.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCDC34",
+   "pure_cpm": 21.6,
+   "enrichment_ratio": 2.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TUBA1B",
+   "pure_cpm": 265.3,
+   "enrichment_ratio": 2.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "JKAMP",
+   "pure_cpm": 44.3,
+   "enrichment_ratio": 2.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HSPA2",
+   "pure_cpm": 26.1,
+   "enrichment_ratio": 2.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNF358",
+   "pure_cpm": 46.5,
+   "enrichment_ratio": 2.52,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MELTF",
+   "pure_cpm": 417.0,
+   "enrichment_ratio": 2.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCNG1",
+   "pure_cpm": 42.3,
+   "enrichment_ratio": 2.51,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SEMA4C",
+   "pure_cpm": 23.3,
+   "enrichment_ratio": 2.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NFKBIL1",
+   "pure_cpm": 25.7,
+   "enrichment_ratio": 2.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SEM1",
+   "pure_cpm": 280.5,
+   "enrichment_ratio": 2.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NID2",
+   "pure_cpm": 110.6,
+   "enrichment_ratio": 2.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NAA38",
+   "pure_cpm": 125.7,
+   "enrichment_ratio": 2.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMG1",
+   "pure_cpm": 20.2,
+   "enrichment_ratio": 2.5,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERBP1",
+   "pure_cpm": 272.7,
+   "enrichment_ratio": 2.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IMP4",
+   "pure_cpm": 30.6,
+   "enrichment_ratio": 2.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SWI5",
+   "pure_cpm": 64.8,
+   "enrichment_ratio": 2.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SRPRA",
+   "pure_cpm": 64.0,
+   "enrichment_ratio": 2.49,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GDE1",
+   "pure_cpm": 47.3,
+   "enrichment_ratio": 2.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS19",
+   "pure_cpm": 1611.9,
+   "enrichment_ratio": 2.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PTOV1",
+   "pure_cpm": 74.9,
+   "enrichment_ratio": 2.48,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX20",
+   "pure_cpm": 81.7,
+   "enrichment_ratio": 2.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRMT1",
+   "pure_cpm": 69.6,
+   "enrichment_ratio": 2.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MYADM",
+   "pure_cpm": 317.2,
+   "enrichment_ratio": 2.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NORAD",
+   "pure_cpm": 248.7,
+   "enrichment_ratio": 2.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZDHHC9",
+   "pure_cpm": 88.2,
+   "enrichment_ratio": 2.47,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAD2L2",
+   "pure_cpm": 20.4,
+   "enrichment_ratio": 2.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TADA3",
+   "pure_cpm": 38.2,
+   "enrichment_ratio": 2.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BDH2",
+   "pure_cpm": 24.4,
+   "enrichment_ratio": 2.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSBP1",
+   "pure_cpm": 96.8,
+   "enrichment_ratio": 2.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TUBB4B",
+   "pure_cpm": 208.9,
+   "enrichment_ratio": 2.46,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PGM1",
+   "pure_cpm": 100.7,
+   "enrichment_ratio": 2.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TBL2",
+   "pure_cpm": 24.5,
+   "enrichment_ratio": 2.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM119",
+   "pure_cpm": 28.5,
+   "enrichment_ratio": 2.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM230",
+   "pure_cpm": 97.6,
+   "enrichment_ratio": 2.45,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AAMP",
+   "pure_cpm": 29.5,
+   "enrichment_ratio": 2.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DYNLT1",
+   "pure_cpm": 73.6,
+   "enrichment_ratio": 2.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMD8",
+   "pure_cpm": 102.7,
+   "enrichment_ratio": 2.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SBF1",
+   "pure_cpm": 40.6,
+   "enrichment_ratio": 2.44,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PINK1",
+   "pure_cpm": 47.0,
+   "enrichment_ratio": 2.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SOX8",
+   "pure_cpm": 50.4,
+   "enrichment_ratio": 2.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TCEAL3",
+   "pure_cpm": 33.0,
+   "enrichment_ratio": 2.43,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC41A3",
+   "pure_cpm": 22.8,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ANXA5",
+   "pure_cpm": 946.0,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CAMLG",
+   "pure_cpm": 69.6,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARPC1B",
+   "pure_cpm": 128.4,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDGFRL",
+   "pure_cpm": 29.6,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATN1",
+   "pure_cpm": 54.1,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TWF1",
+   "pure_cpm": 36.8,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD2BP2",
+   "pure_cpm": 31.2,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DDRGK1",
+   "pure_cpm": 28.0,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNU13",
+   "pure_cpm": 134.8,
+   "enrichment_ratio": 2.42,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAAP20",
+   "pure_cpm": 61.8,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ELOVL1",
+   "pure_cpm": 28.9,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ABHD14B",
+   "pure_cpm": 31.0,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SCARA3",
+   "pure_cpm": 36.6,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "OGN",
+   "pure_cpm": 94.2,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCDC85B",
+   "pure_cpm": 107.1,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PIN1",
+   "pure_cpm": 35.7,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STMN1",
+   "pure_cpm": 53.3,
+   "enrichment_ratio": 2.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "S100A2",
+   "pure_cpm": 77.0,
+   "enrichment_ratio": 2.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM214",
+   "pure_cpm": 42.1,
+   "enrichment_ratio": 2.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ERLIN2",
+   "pure_cpm": 25.9,
+   "enrichment_ratio": 2.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZFAND1",
+   "pure_cpm": 30.7,
+   "enrichment_ratio": 2.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ENO2",
+   "pure_cpm": 46.6,
+   "enrichment_ratio": 2.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CFL2",
+   "pure_cpm": 22.4,
+   "enrichment_ratio": 2.39,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COPS8",
+   "pure_cpm": 38.9,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HTRA3",
+   "pure_cpm": 30.4,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP5F1C",
+   "pure_cpm": 76.2,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CWC15",
+   "pure_cpm": 46.8,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "WBP2",
+   "pure_cpm": 84.9,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ELOF1",
+   "pure_cpm": 23.9,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF3K",
+   "pure_cpm": 165.4,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UROD",
+   "pure_cpm": 26.3,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STK25",
+   "pure_cpm": 41.6,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FGD5-AS1",
+   "pure_cpm": 64.0,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS16",
+   "pure_cpm": 38.5,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSBP4",
+   "pure_cpm": 63.4,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AKT1S1",
+   "pure_cpm": 40.8,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TFPT",
+   "pure_cpm": 24.5,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SCAND1",
+   "pure_cpm": 64.4,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GET1",
+   "pure_cpm": 35.8,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DYNLT3",
+   "pure_cpm": 46.9,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IFRD2",
+   "pure_cpm": 25.0,
+   "enrichment_ratio": 2.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LRPAP1",
+   "pure_cpm": 85.5,
+   "enrichment_ratio": 2.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MCRIP1",
+   "pure_cpm": 60.6,
+   "enrichment_ratio": 2.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GPS1",
+   "pure_cpm": 26.0,
+   "enrichment_ratio": 2.36,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCDC80",
+   "pure_cpm": 255.0,
+   "enrichment_ratio": 2.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MXD4",
+   "pure_cpm": 120.4,
+   "enrichment_ratio": 2.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HEBP2",
+   "pure_cpm": 36.8,
+   "enrichment_ratio": 2.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNF22",
+   "pure_cpm": 28.1,
+   "enrichment_ratio": 2.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSC22D1",
+   "pure_cpm": 676.2,
+   "enrichment_ratio": 2.35,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHCHD7",
+   "pure_cpm": 33.2,
+   "enrichment_ratio": 2.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CREB3",
+   "pure_cpm": 31.1,
+   "enrichment_ratio": 2.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EI24",
+   "pure_cpm": 66.1,
+   "enrichment_ratio": 2.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AC005224.2",
+   "pure_cpm": 24.3,
+   "enrichment_ratio": 2.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CENPB",
+   "pure_cpm": 33.2,
+   "enrichment_ratio": 2.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VMA21",
+   "pure_cpm": 35.9,
+   "enrichment_ratio": 2.34,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "JUN",
+   "pure_cpm": 1192.7,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AK4",
+   "pure_cpm": 79.7,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "APEH",
+   "pure_cpm": 20.3,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HSPB1",
+   "pure_cpm": 351.0,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HILPDA",
+   "pure_cpm": 56.0,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KLF10",
+   "pure_cpm": 219.0,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RHOBTB1",
+   "pure_cpm": 33.1,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SYVN1",
+   "pure_cpm": 20.7,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMA4",
+   "pure_cpm": 73.2,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC35B1",
+   "pure_cpm": 22.7,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRPD1",
+   "pure_cpm": 71.3,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BCKDHA",
+   "pure_cpm": 29.2,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TP53INP2",
+   "pure_cpm": 51.0,
+   "enrichment_ratio": 2.33,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MTX1",
+   "pure_cpm": 45.9,
+   "enrichment_ratio": 2.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NIT2",
+   "pure_cpm": 21.3,
+   "enrichment_ratio": 2.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCNB1IP1",
+   "pure_cpm": 44.3,
+   "enrichment_ratio": 2.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EHD2",
+   "pure_cpm": 91.0,
+   "enrichment_ratio": 2.32,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHURC1",
+   "pure_cpm": 137.5,
+   "enrichment_ratio": 2.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2M",
+   "pure_cpm": 26.4,
+   "enrichment_ratio": 2.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UBFD1",
+   "pure_cpm": 27.9,
+   "enrichment_ratio": 2.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LRRC59",
+   "pure_cpm": 76.7,
+   "enrichment_ratio": 2.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZFAS1",
+   "pure_cpm": 249.1,
+   "enrichment_ratio": 2.31,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS14",
+   "pure_cpm": 20.5,
+   "enrichment_ratio": 2.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C9ORF16",
+   "pure_cpm": 41.7,
+   "enrichment_ratio": 2.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARL3",
+   "pure_cpm": 60.5,
+   "enrichment_ratio": 2.3,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL20",
+   "pure_cpm": 87.6,
+   "enrichment_ratio": 2.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SORBS3",
+   "pure_cpm": 44.2,
+   "enrichment_ratio": 2.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFA12",
+   "pure_cpm": 36.5,
+   "enrichment_ratio": 2.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GAS6",
+   "pure_cpm": 73.3,
+   "enrichment_ratio": 2.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NAGLU",
+   "pure_cpm": 25.7,
+   "enrichment_ratio": 2.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DCXR",
+   "pure_cpm": 30.8,
+   "enrichment_ratio": 2.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF3G",
+   "pure_cpm": 88.8,
+   "enrichment_ratio": 2.29,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MPLKIP",
+   "pure_cpm": 37.7,
+   "enrichment_ratio": 2.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LGALS3",
+   "pure_cpm": 333.0,
+   "enrichment_ratio": 2.28,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TXNDC5",
+   "pure_cpm": 130.8,
+   "enrichment_ratio": 2.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSPYL1",
+   "pure_cpm": 76.8,
+   "enrichment_ratio": 2.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BSCL2",
+   "pure_cpm": 34.9,
+   "enrichment_ratio": 2.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CST3",
+   "pure_cpm": 426.2,
+   "enrichment_ratio": 2.27,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL37",
+   "pure_cpm": 35.6,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SF3B4",
+   "pure_cpm": 20.8,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERP1",
+   "pure_cpm": 174.1,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C5ORF24",
+   "pure_cpm": 52.9,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KIAA1191",
+   "pure_cpm": 48.2,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM30A",
+   "pure_cpm": 139.4,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GGCT",
+   "pure_cpm": 28.9,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LAMTOR4",
+   "pure_cpm": 101.4,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KLHL9",
+   "pure_cpm": 42.9,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MYO5C",
+   "pure_cpm": 30.1,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSR",
+   "pure_cpm": 25.0,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAFB",
+   "pure_cpm": 96.6,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARRDC3",
+   "pure_cpm": 205.0,
+   "enrichment_ratio": 2.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SMIM19",
+   "pure_cpm": 23.5,
+   "enrichment_ratio": 2.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PAXX",
+   "pure_cpm": 22.4,
+   "enrichment_ratio": 2.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TIMM10B",
+   "pure_cpm": 29.5,
+   "enrichment_ratio": 2.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ALDH6A1",
+   "pure_cpm": 28.2,
+   "enrichment_ratio": 2.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MYL9",
+   "pure_cpm": 47.2,
+   "enrichment_ratio": 2.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IFT27",
+   "pure_cpm": 21.5,
+   "enrichment_ratio": 2.25,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PDCD6",
+   "pure_cpm": 164.3,
+   "enrichment_ratio": 2.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LAPTM4B",
+   "pure_cpm": 44.9,
+   "enrichment_ratio": 2.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CYHR1",
+   "pure_cpm": 30.8,
+   "enrichment_ratio": 2.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF4B",
+   "pure_cpm": 322.6,
+   "enrichment_ratio": 2.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLD3",
+   "pure_cpm": 165.6,
+   "enrichment_ratio": 2.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PIH1D1",
+   "pure_cpm": 30.9,
+   "enrichment_ratio": 2.24,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL14",
+   "pure_cpm": 49.1,
+   "enrichment_ratio": 2.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STARD10",
+   "pure_cpm": 28.8,
+   "enrichment_ratio": 2.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SIX1",
+   "pure_cpm": 21.9,
+   "enrichment_ratio": 2.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C19ORF48",
+   "pure_cpm": 28.6,
+   "enrichment_ratio": 2.23,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MIB2",
+   "pure_cpm": 24.6,
+   "enrichment_ratio": 2.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GBA",
+   "pure_cpm": 32.2,
+   "enrichment_ratio": 2.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TPRKB",
+   "pure_cpm": 21.2,
+   "enrichment_ratio": 2.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DPH3",
+   "pure_cpm": 26.1,
+   "enrichment_ratio": 2.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF4A2",
+   "pure_cpm": 229.2,
+   "enrichment_ratio": 2.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TIMM9",
+   "pure_cpm": 30.1,
+   "enrichment_ratio": 2.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SELENOS",
+   "pure_cpm": 139.3,
+   "enrichment_ratio": 2.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C17ORF49",
+   "pure_cpm": 36.0,
+   "enrichment_ratio": 2.22,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POMGNT1",
+   "pure_cpm": 26.1,
+   "enrichment_ratio": 2.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAF1",
+   "pure_cpm": 41.2,
+   "enrichment_ratio": 2.21,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SELENON",
+   "pure_cpm": 30.4,
+   "enrichment_ratio": 2.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMCO1",
+   "pure_cpm": 100.0,
+   "enrichment_ratio": 2.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GALNT5",
+   "pure_cpm": 53.2,
+   "enrichment_ratio": 2.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GALNT15",
+   "pure_cpm": 40.3,
+   "enrichment_ratio": 2.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HSP90B1",
+   "pure_cpm": 839.7,
+   "enrichment_ratio": 2.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SPNS1",
+   "pure_cpm": 27.0,
+   "enrichment_ratio": 2.2,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPS18C",
+   "pure_cpm": 34.0,
+   "enrichment_ratio": 2.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C5ORF15",
+   "pure_cpm": 154.0,
+   "enrichment_ratio": 2.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VDAC1",
+   "pure_cpm": 127.0,
+   "enrichment_ratio": 2.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EBAG9",
+   "pure_cpm": 25.1,
+   "enrichment_ratio": 2.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFS8",
+   "pure_cpm": 36.1,
+   "enrichment_ratio": 2.19,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CSRNP1",
+   "pure_cpm": 72.4,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HPF1",
+   "pure_cpm": 27.1,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COPS5",
+   "pure_cpm": 43.2,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IDI1",
+   "pure_cpm": 176.0,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCDC90B",
+   "pure_cpm": 49.3,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LLPH",
+   "pure_cpm": 36.7,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHST6",
+   "pure_cpm": 53.8,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNHIT3",
+   "pure_cpm": 27.9,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ABHD17A",
+   "pure_cpm": 47.5,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDC42EP1",
+   "pure_cpm": 38.8,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF3L",
+   "pure_cpm": 118.2,
+   "enrichment_ratio": 2.18,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PEF1",
+   "pure_cpm": 31.3,
+   "enrichment_ratio": 2.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CSRP1",
+   "pure_cpm": 45.0,
+   "enrichment_ratio": 2.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NOL7",
+   "pure_cpm": 69.0,
+   "enrichment_ratio": 2.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C8ORF33",
+   "pure_cpm": 28.2,
+   "enrichment_ratio": 2.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PAGR1",
+   "pure_cpm": 31.3,
+   "enrichment_ratio": 2.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATMIN",
+   "pure_cpm": 22.1,
+   "enrichment_ratio": 2.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CBY1",
+   "pure_cpm": 25.2,
+   "enrichment_ratio": 2.17,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSN",
+   "pure_cpm": 42.3,
+   "enrichment_ratio": 2.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MTA1",
+   "pure_cpm": 38.9,
+   "enrichment_ratio": 2.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SLC1A5",
+   "pure_cpm": 114.3,
+   "enrichment_ratio": 2.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARSA",
+   "pure_cpm": 21.2,
+   "enrichment_ratio": 2.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP6AP2",
+   "pure_cpm": 73.4,
+   "enrichment_ratio": 2.16,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COMMD2",
+   "pure_cpm": 30.2,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ID4",
+   "pure_cpm": 83.7,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RING1",
+   "pure_cpm": 27.4,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SGCE",
+   "pure_cpm": 63.0,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BRI3",
+   "pure_cpm": 102.3,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GLT8D2",
+   "pure_cpm": 28.2,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UBALD1",
+   "pure_cpm": 25.5,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CFAP298",
+   "pure_cpm": 34.1,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARMCX3",
+   "pure_cpm": 67.0,
+   "enrichment_ratio": 2.15,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PFDN2",
+   "pure_cpm": 63.7,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CRIPT",
+   "pure_cpm": 45.7,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MMADHC",
+   "pure_cpm": 58.6,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNX18",
+   "pure_cpm": 52.9,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "REEP5",
+   "pure_cpm": 114.6,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "F13A1",
+   "pure_cpm": 345.6,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "WDR46",
+   "pure_cpm": 27.1,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNF667-AS1",
+   "pure_cpm": 20.3,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PCED1A",
+   "pure_cpm": 22.8,
+   "enrichment_ratio": 2.14,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRAPPC3",
+   "pure_cpm": 34.3,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RBM8A",
+   "pure_cpm": 128.2,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CTDSP1",
+   "pure_cpm": 61.8,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BAP1",
+   "pure_cpm": 20.9,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PAICS",
+   "pure_cpm": 53.5,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ECI2",
+   "pure_cpm": 27.4,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IMPAD1",
+   "pure_cpm": 104.6,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DERL2",
+   "pure_cpm": 44.7,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM174C",
+   "pure_cpm": 50.3,
+   "enrichment_ratio": 2.13,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LGALSL",
+   "pure_cpm": 22.6,
+   "enrichment_ratio": 2.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BZW1",
+   "pure_cpm": 263.1,
+   "enrichment_ratio": 2.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLXNB1",
+   "pure_cpm": 52.2,
+   "enrichment_ratio": 2.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNF395",
+   "pure_cpm": 43.0,
+   "enrichment_ratio": 2.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AGPAT2",
+   "pure_cpm": 21.0,
+   "enrichment_ratio": 2.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MORF4L1",
+   "pure_cpm": 378.3,
+   "enrichment_ratio": 2.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PFKL",
+   "pure_cpm": 91.0,
+   "enrichment_ratio": 2.12,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DTYMK",
+   "pure_cpm": 21.0,
+   "enrichment_ratio": 2.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATOX1",
+   "pure_cpm": 119.8,
+   "enrichment_ratio": 2.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDK2AP2",
+   "pure_cpm": 28.6,
+   "enrichment_ratio": 2.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CD9",
+   "pure_cpm": 332.9,
+   "enrichment_ratio": 2.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BCAP31",
+   "pure_cpm": 83.1,
+   "enrichment_ratio": 2.11,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TAGLN2",
+   "pure_cpm": 157.6,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BTG2",
+   "pure_cpm": 237.4,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TXN",
+   "pure_cpm": 221.0,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "E2F4",
+   "pure_cpm": 20.2,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX4I1",
+   "pure_cpm": 265.3,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MRPL45",
+   "pure_cpm": 20.2,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PRPF31",
+   "pure_cpm": 32.5,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TEF",
+   "pure_cpm": 25.3,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NONO",
+   "pure_cpm": 103.8,
+   "enrichment_ratio": 2.1,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TCEA3",
+   "pure_cpm": 42.8,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HMGCL",
+   "pure_cpm": 26.2,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNRNP27",
+   "pure_cpm": 24.8,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "STEAP3",
+   "pure_cpm": 39.4,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MDFI",
+   "pure_cpm": 146.0,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SUMF2",
+   "pure_cpm": 70.2,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NKAPD1",
+   "pure_cpm": 25.1,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATG101",
+   "pure_cpm": 34.1,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ATP6V0C",
+   "pure_cpm": 195.7,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IER2",
+   "pure_cpm": 136.8,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SERTAD1",
+   "pure_cpm": 89.1,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TRIM28",
+   "pure_cpm": 67.6,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM47",
+   "pure_cpm": 27.2,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMB2",
+   "pure_cpm": 59.9,
+   "enrichment_ratio": 2.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHMP2B",
+   "pure_cpm": 44.2,
+   "enrichment_ratio": 2.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SRPRB",
+   "pure_cpm": 42.7,
+   "enrichment_ratio": 2.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HEXA",
+   "pure_cpm": 126.3,
+   "enrichment_ratio": 2.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM32A",
+   "pure_cpm": 29.6,
+   "enrichment_ratio": 2.08,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM43",
+   "pure_cpm": 70.5,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FSTL1",
+   "pure_cpm": 247.8,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SEC62",
+   "pure_cpm": 267.3,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FAM92A",
+   "pure_cpm": 24.6,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NDUFB9",
+   "pure_cpm": 61.0,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CMAS",
+   "pure_cpm": 32.5,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RHOT2",
+   "pure_cpm": 34.8,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COX11",
+   "pure_cpm": 27.0,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ANGPTL4",
+   "pure_cpm": 117.1,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KIAA2013",
+   "pure_cpm": 35.0,
+   "enrichment_ratio": 2.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MED8",
+   "pure_cpm": 34.3,
+   "enrichment_ratio": 2.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MTX3",
+   "pure_cpm": 23.1,
+   "enrichment_ratio": 2.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "WDR34",
+   "pure_cpm": 34.0,
+   "enrichment_ratio": 2.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NFE2L1",
+   "pure_cpm": 100.5,
+   "enrichment_ratio": 2.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TLE5",
+   "pure_cpm": 90.0,
+   "enrichment_ratio": 2.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "HDGFL2",
+   "pure_cpm": 28.8,
+   "enrichment_ratio": 2.06,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CNIH4",
+   "pure_cpm": 51.2,
+   "enrichment_ratio": 2.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHPF",
+   "pure_cpm": 66.9,
+   "enrichment_ratio": 2.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TENT5A",
+   "pure_cpm": 256.7,
+   "enrichment_ratio": 2.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CRISPLD1",
+   "pure_cpm": 214.1,
+   "enrichment_ratio": 2.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARF6",
+   "pure_cpm": 61.9,
+   "enrichment_ratio": 2.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GOT2",
+   "pure_cpm": 33.4,
+   "enrichment_ratio": 2.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PLIN3",
+   "pure_cpm": 97.3,
+   "enrichment_ratio": 2.05,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DNAJB4",
+   "pure_cpm": 60.3,
+   "enrichment_ratio": 2.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM167B",
+   "pure_cpm": 38.0,
+   "enrichment_ratio": 2.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EPS8L2",
+   "pure_cpm": 74.6,
+   "enrichment_ratio": 2.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SSRP1",
+   "pure_cpm": 44.1,
+   "enrichment_ratio": 2.04,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TMEM18",
+   "pure_cpm": 25.4,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ASNSD1",
+   "pure_cpm": 21.5,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RHOBTB3",
+   "pure_cpm": 266.9,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHPF2",
+   "pure_cpm": 30.8,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DPM2",
+   "pure_cpm": 27.5,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CALCOCO1",
+   "pure_cpm": 48.0,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LRP10",
+   "pure_cpm": 89.8,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "POLR2E",
+   "pure_cpm": 39.6,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAP2K2",
+   "pure_cpm": 90.0,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDK16",
+   "pure_cpm": 42.6,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "QSOX1",
+   "pure_cpm": 100.8,
+   "enrichment_ratio": 2.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IER5",
+   "pure_cpm": 147.5,
+   "enrichment_ratio": 2.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RNF187",
+   "pure_cpm": 49.1,
+   "enrichment_ratio": 2.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ISCU",
+   "pure_cpm": 41.0,
+   "enrichment_ratio": 2.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C16ORF58",
+   "pure_cpm": 34.8,
+   "enrichment_ratio": 2.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MMGT1",
+   "pure_cpm": 30.9,
+   "enrichment_ratio": 2.02,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SYF2",
+   "pure_cpm": 80.7,
+   "enrichment_ratio": 2.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "IRF2BP2",
+   "pure_cpm": 112.8,
+   "enrichment_ratio": 2.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MOGS",
+   "pure_cpm": 33.8,
+   "enrichment_ratio": 2.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "UNC50",
+   "pure_cpm": 31.2,
+   "enrichment_ratio": 2.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ACAA1",
+   "pure_cpm": 24.9,
+   "enrichment_ratio": 2.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "COL5A1",
+   "pure_cpm": 264.4,
+   "enrichment_ratio": 2.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CCDC59",
+   "pure_cpm": 47.5,
+   "enrichment_ratio": 2.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NR1H2",
+   "pure_cpm": 28.8,
+   "enrichment_ratio": 2.01,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "LSM8",
+   "pure_cpm": 80.6,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "RPS6KB2",
+   "pure_cpm": 23.4,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "GTF3A",
+   "pure_cpm": 50.0,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "YPEL3",
+   "pure_cpm": 90.3,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TOMM40",
+   "pure_cpm": 23.8,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "YWHAH",
+   "pure_cpm": 65.9,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ARAF",
+   "pure_cpm": 20.2,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "ZNF593",
+   "pure_cpm": 41.1,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SDC3",
+   "pure_cpm": 35.5,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PHGDH",
+   "pure_cpm": 37.2,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "C1ORF131",
+   "pure_cpm": 20.3,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CDC42EP3",
+   "pure_cpm": 219.4,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TPD52L1",
+   "pure_cpm": 94.8,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "THAP5",
+   "pure_cpm": 25.3,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NTMT1",
+   "pure_cpm": 27.4,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SNF8",
+   "pure_cpm": 46.7,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AMZ2",
+   "pure_cpm": 29.5,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TSR2",
+   "pure_cpm": 20.4,
+   "enrichment_ratio": 1.99,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KIAA1143",
+   "pure_cpm": 29.5,
+   "enrichment_ratio": 1.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "MAP9",
+   "pure_cpm": 42.7,
+   "enrichment_ratio": 1.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SQLE",
+   "pure_cpm": 135.8,
+   "enrichment_ratio": 1.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NAA40",
+   "pure_cpm": 22.2,
+   "enrichment_ratio": 1.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CLN5",
+   "pure_cpm": 38.5,
+   "enrichment_ratio": 1.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FKBP3",
+   "pure_cpm": 40.3,
+   "enrichment_ratio": 1.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "DDX5",
+   "pure_cpm": 630.3,
+   "enrichment_ratio": 1.98,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "AK2",
+   "pure_cpm": 74.7,
+   "enrichment_ratio": 1.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "PSMD4",
+   "pure_cpm": 77.8,
+   "enrichment_ratio": 1.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VAMP5",
+   "pure_cpm": 23.6,
+   "enrichment_ratio": 1.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF4H",
+   "pure_cpm": 120.7,
+   "enrichment_ratio": 1.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "YIF1B",
+   "pure_cpm": 27.8,
+   "enrichment_ratio": 1.97,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "KIF9",
+   "pure_cpm": 27.7,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "EIF3E",
+   "pure_cpm": 223.4,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "NET1",
+   "pure_cpm": 73.4,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "BCL2L2",
+   "pure_cpm": 20.1,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "TPM1",
+   "pure_cpm": 160.9,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "SEC11A",
+   "pure_cpm": 178.4,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "VASN",
+   "pure_cpm": 71.5,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "FLII",
+   "pure_cpm": 48.9,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 0
+  },
+  {
+   "symbol": "CHI3L1",
+   "pure_cpm": 88.3,
+   "enrichment_ratio": 30.56,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "CHI3L2",
+   "pure_cpm": 150.5,
+   "enrichment_ratio": 14.45,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "PLA2G2A",
+   "pure_cpm": 115.4,
+   "enrichment_ratio": 11.87,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "MATN1",
+   "pure_cpm": 101.0,
+   "enrichment_ratio": 10.07,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "TNNT3",
+   "pure_cpm": 27.5,
+   "enrichment_ratio": 9.0,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "SLC38A3",
+   "pure_cpm": 148.3,
+   "enrichment_ratio": 8.86,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "NKX3-2",
+   "pure_cpm": 34.3,
+   "enrichment_ratio": 8.31,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "C1QTNF3",
+   "pure_cpm": 48.1,
+   "enrichment_ratio": 7.03,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "POMC",
+   "pure_cpm": 20.4,
+   "enrichment_ratio": 6.46,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "S100A10",
+   "pure_cpm": 1608.4,
+   "enrichment_ratio": 6.31,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "FZD7",
+   "pure_cpm": 57.6,
+   "enrichment_ratio": 4.79,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "COX6B1",
+   "pure_cpm": 185.2,
+   "enrichment_ratio": 4.46,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "SNRPE",
+   "pure_cpm": 104.8,
+   "enrichment_ratio": 4.07,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "SGMS2",
+   "pure_cpm": 604.9,
+   "enrichment_ratio": 3.91,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "CILP2",
+   "pure_cpm": 33.0,
+   "enrichment_ratio": 3.25,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "PPP1CA",
+   "pure_cpm": 74.5,
+   "enrichment_ratio": 3.21,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "P4HA2",
+   "pure_cpm": 124.6,
+   "enrichment_ratio": 2.96,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "AIP",
+   "pure_cpm": 35.6,
+   "enrichment_ratio": 2.94,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "LAMP1",
+   "pure_cpm": 146.3,
+   "enrichment_ratio": 2.72,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "FZD9",
+   "pure_cpm": 21.9,
+   "enrichment_ratio": 2.56,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "IDH2",
+   "pure_cpm": 61.2,
+   "enrichment_ratio": 2.51,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "ACTB",
+   "pure_cpm": 1362.4,
+   "enrichment_ratio": 2.45,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "RXRB",
+   "pure_cpm": 23.2,
+   "enrichment_ratio": 2.32,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "HNRNPA0",
+   "pure_cpm": 89.1,
+   "enrichment_ratio": 2.26,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "PSMC4",
+   "pure_cpm": 27.2,
+   "enrichment_ratio": 2.02,
+   "atlas_mentions": 1
+  },
+  {
+   "symbol": "SMPD3",
+   "pure_cpm": 498.2,
+   "enrichment_ratio": 12.69,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "FOS",
+   "pure_cpm": 3212.2,
+   "enrichment_ratio": 9.68,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "IGFBP2",
+   "pure_cpm": 26.4,
+   "enrichment_ratio": 9.2,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "DBP",
+   "pure_cpm": 44.5,
+   "enrichment_ratio": 9.14,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "DLX5",
+   "pure_cpm": 94.1,
+   "enrichment_ratio": 8.48,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "SPARC",
+   "pure_cpm": 12339.9,
+   "enrichment_ratio": 7.63,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "FMOD",
+   "pure_cpm": 2595.8,
+   "enrichment_ratio": 7.39,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "CNMD",
+   "pure_cpm": 1739.1,
+   "enrichment_ratio": 6.39,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "PPIA",
+   "pure_cpm": 463.7,
+   "enrichment_ratio": 5.88,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "PGK1",
+   "pure_cpm": 574.1,
+   "enrichment_ratio": 5.64,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "CHADL",
+   "pure_cpm": 174.1,
+   "enrichment_ratio": 5.26,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "MMP2",
+   "pure_cpm": 191.9,
+   "enrichment_ratio": 5.08,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "ADM",
+   "pure_cpm": 87.2,
+   "enrichment_ratio": 4.88,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "SSTR2",
+   "pure_cpm": 44.3,
+   "enrichment_ratio": 4.59,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "CEBPD",
+   "pure_cpm": 157.8,
+   "enrichment_ratio": 4.36,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "ENO1",
+   "pure_cpm": 918.7,
+   "enrichment_ratio": 4.33,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "PCNA",
+   "pure_cpm": 43.5,
+   "enrichment_ratio": 4.18,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "GPX3",
+   "pure_cpm": 117.4,
+   "enrichment_ratio": 3.85,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "CLU",
+   "pure_cpm": 220.3,
+   "enrichment_ratio": 3.71,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "CCDC8",
+   "pure_cpm": 29.3,
+   "enrichment_ratio": 3.28,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "GNA11",
+   "pure_cpm": 41.2,
+   "enrichment_ratio": 3.18,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "FZD8",
+   "pure_cpm": 21.4,
+   "enrichment_ratio": 2.88,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "AHCY",
+   "pure_cpm": 36.7,
+   "enrichment_ratio": 2.84,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "TGFBI",
+   "pure_cpm": 285.2,
+   "enrichment_ratio": 2.44,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "TUBB",
+   "pure_cpm": 250.6,
+   "enrichment_ratio": 2.35,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "INSIG2",
+   "pure_cpm": 67.9,
+   "enrichment_ratio": 2.25,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "BAG6",
+   "pure_cpm": 54.0,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "EBP",
+   "pure_cpm": 33.6,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 2
+  },
+  {
+   "symbol": "NDN",
+   "pure_cpm": 37.5,
+   "enrichment_ratio": 7.69,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "BNIP3",
+   "pure_cpm": 249.6,
+   "enrichment_ratio": 6.08,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "P4HB",
+   "pure_cpm": 986.9,
+   "enrichment_ratio": 5.55,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "CALR",
+   "pure_cpm": 545.9,
+   "enrichment_ratio": 5.15,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "COL16A1",
+   "pure_cpm": 445.1,
+   "enrichment_ratio": 4.68,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "UBB",
+   "pure_cpm": 449.6,
+   "enrichment_ratio": 4.25,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "SLC13A5",
+   "pure_cpm": 64.1,
+   "enrichment_ratio": 2.77,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "LRP1",
+   "pure_cpm": 478.4,
+   "enrichment_ratio": 2.75,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "TMEM237",
+   "pure_cpm": 34.6,
+   "enrichment_ratio": 2.67,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "COMT",
+   "pure_cpm": 79.9,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "ACKR3",
+   "pure_cpm": 97.4,
+   "enrichment_ratio": 2.17,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "GPC4",
+   "pure_cpm": 27.2,
+   "enrichment_ratio": 2.0,
+   "atlas_mentions": 3
+  },
+  {
+   "symbol": "FGFBP2",
+   "pure_cpm": 3985.9,
+   "enrichment_ratio": 14.78,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "COL9A3",
+   "pure_cpm": 6178.7,
+   "enrichment_ratio": 9.89,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "SLC35B2",
+   "pure_cpm": 80.3,
+   "enrichment_ratio": 9.37,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "MEPE",
+   "pure_cpm": 22.8,
+   "enrichment_ratio": 8.79,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "IBSP",
+   "pure_cpm": 2484.7,
+   "enrichment_ratio": 7.6,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "COL11A2",
+   "pure_cpm": 6891.8,
+   "enrichment_ratio": 5.1,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "SOCS1",
+   "pure_cpm": 25.9,
+   "enrichment_ratio": 4.0,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "SNORC",
+   "pure_cpm": 7032.0,
+   "enrichment_ratio": 3.65,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "FIBIN",
+   "pure_cpm": 43.0,
+   "enrichment_ratio": 3.43,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "UBC",
+   "pure_cpm": 913.7,
+   "enrichment_ratio": 3.39,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "COL6A1",
+   "pure_cpm": 828.8,
+   "enrichment_ratio": 2.81,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "HSD17B12",
+   "pure_cpm": 67.2,
+   "enrichment_ratio": 2.54,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "TNFRSF11B",
+   "pure_cpm": 154.9,
+   "enrichment_ratio": 2.49,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "IDH1",
+   "pure_cpm": 46.7,
+   "enrichment_ratio": 2.32,
+   "atlas_mentions": 4
+  },
+  {
+   "symbol": "NDUFA4L2",
+   "pure_cpm": 626.4,
+   "enrichment_ratio": 24.8,
+   "atlas_mentions": 5
+  },
+  {
+   "symbol": "GAPDH",
+   "pure_cpm": 4023.1,
+   "enrichment_ratio": 6.97,
+   "atlas_mentions": 5
+  },
+  {
+   "symbol": "SRM",
+   "pure_cpm": 57.3,
+   "enrichment_ratio": 3.07,
+   "atlas_mentions": 5
+  },
+  {
+   "symbol": "OAZ1",
+   "pure_cpm": 480.0,
+   "enrichment_ratio": 3.0,
+   "atlas_mentions": 5
+  },
+  {
+   "symbol": "AEBP1",
+   "pure_cpm": 422.1,
+   "enrichment_ratio": 2.96,
+   "atlas_mentions": 5
+  },
+  {
+   "symbol": "PRELP",
+   "pure_cpm": 867.3,
+   "enrichment_ratio": 2.66,
+   "atlas_mentions": 5
+  },
+  {
+   "symbol": "EFEMP1",
+   "pure_cpm": 26.8,
+   "enrichment_ratio": 2.32,
+   "atlas_mentions": 5
+  },
+  {
+   "symbol": "TIMP3",
+   "pure_cpm": 769.5,
+   "enrichment_ratio": 2.12,
+   "atlas_mentions": 5
+  },
+  {
+   "symbol": "CDKN1C",
+   "pure_cpm": 244.3,
+   "enrichment_ratio": 9.41,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "LUM",
+   "pure_cpm": 1331.5,
+   "enrichment_ratio": 8.42,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "KLF4",
+   "pure_cpm": 357.6,
+   "enrichment_ratio": 5.57,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "LEPROT",
+   "pure_cpm": 101.5,
+   "enrichment_ratio": 3.48,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "HAS2",
+   "pure_cpm": 128.2,
+   "enrichment_ratio": 3.06,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "ALDH1A3",
+   "pure_cpm": 24.5,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "MYC",
+   "pure_cpm": 57.4,
+   "enrichment_ratio": 2.87,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "BAX",
+   "pure_cpm": 47.1,
+   "enrichment_ratio": 2.71,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "HMG20B",
+   "pure_cpm": 32.6,
+   "enrichment_ratio": 2.55,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "FN1",
+   "pure_cpm": 10528.9,
+   "enrichment_ratio": 2.11,
+   "atlas_mentions": 6
+  },
+  {
+   "symbol": "LOXL4",
+   "pure_cpm": 404.1,
+   "enrichment_ratio": 7.04,
+   "atlas_mentions": 7
+  },
+  {
+   "symbol": "NR1D1",
+   "pure_cpm": 42.5,
+   "enrichment_ratio": 4.6,
+   "atlas_mentions": 7
+  },
+  {
+   "symbol": "ATF4",
+   "pure_cpm": 420.9,
+   "enrichment_ratio": 2.99,
+   "atlas_mentions": 7
+  },
+  {
+   "symbol": "MMP14",
+   "pure_cpm": 145.2,
+   "enrichment_ratio": 2.44,
+   "atlas_mentions": 7
+  },
+  {
+   "symbol": "CCN1",
+   "pure_cpm": 1264.0,
+   "enrichment_ratio": 11.51,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "RBP4",
+   "pure_cpm": 376.9,
+   "enrichment_ratio": 6.92,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "CSNK2B",
+   "pure_cpm": 125.3,
+   "enrichment_ratio": 5.03,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "LDHA",
+   "pure_cpm": 456.4,
+   "enrichment_ratio": 4.43,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "PSMB5",
+   "pure_cpm": 102.2,
+   "enrichment_ratio": 4.07,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "GPC1",
+   "pure_cpm": 441.9,
+   "enrichment_ratio": 3.92,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "SERPINF1",
+   "pure_cpm": 57.9,
+   "enrichment_ratio": 2.6,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "HSPG2",
+   "pure_cpm": 588.2,
+   "enrichment_ratio": 2.57,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "THBS2",
+   "pure_cpm": 159.3,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "CD164",
+   "pure_cpm": 197.5,
+   "enrichment_ratio": 2.35,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "PTGDS",
+   "pure_cpm": 33.4,
+   "enrichment_ratio": 2.08,
+   "atlas_mentions": 8
+  },
+  {
+   "symbol": "COL9A2",
+   "pure_cpm": 4716.8,
+   "enrichment_ratio": 6.4,
+   "atlas_mentions": 9
+  },
+  {
+   "symbol": "SERPINH1",
+   "pure_cpm": 394.3,
+   "enrichment_ratio": 3.39,
+   "atlas_mentions": 9
+  },
+  {
+   "symbol": "HAPLN1",
+   "pure_cpm": 6339.5,
+   "enrichment_ratio": 2.39,
+   "atlas_mentions": 9
+  },
+  {
+   "symbol": "AMOTL2",
+   "pure_cpm": 67.0,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 9
+  },
+  {
+   "symbol": "MATN3",
+   "pure_cpm": 3334.1,
+   "enrichment_ratio": 6.87,
+   "atlas_mentions": 10
+  },
+  {
+   "symbol": "FABP5",
+   "pure_cpm": 141.3,
+   "enrichment_ratio": 6.78,
+   "atlas_mentions": 10
+  },
+  {
+   "symbol": "NEDD8",
+   "pure_cpm": 128.4,
+   "enrichment_ratio": 3.72,
+   "atlas_mentions": 10
+  },
+  {
+   "symbol": "DLL1",
+   "pure_cpm": 21.8,
+   "enrichment_ratio": 3.18,
+   "atlas_mentions": 10
+  },
+  {
+   "symbol": "PPP4C",
+   "pure_cpm": 47.3,
+   "enrichment_ratio": 2.74,
+   "atlas_mentions": 10
+  },
+  {
+   "symbol": "RBX1",
+   "pure_cpm": 126.0,
+   "enrichment_ratio": 2.04,
+   "atlas_mentions": 10
+  },
+  {
+   "symbol": "IGFBP3",
+   "pure_cpm": 148.0,
+   "enrichment_ratio": 6.47,
+   "atlas_mentions": 11
+  },
+  {
+   "symbol": "THY1",
+   "pure_cpm": 70.5,
+   "enrichment_ratio": 4.3,
+   "atlas_mentions": 11
+  },
+  {
+   "symbol": "SCUBE1",
+   "pure_cpm": 53.5,
+   "enrichment_ratio": 6.27,
+   "atlas_mentions": 12
+  },
+  {
+   "symbol": "SP7",
+   "pure_cpm": 61.9,
+   "enrichment_ratio": 4.9,
+   "atlas_mentions": 12
+  },
+  {
+   "symbol": "H19",
+   "pure_cpm": 1863.4,
+   "enrichment_ratio": 4.69,
+   "atlas_mentions": 12
+  },
+  {
+   "symbol": "FKBP1A",
+   "pure_cpm": 79.9,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 12
+  },
+  {
+   "symbol": "DHCR7",
+   "pure_cpm": 39.4,
+   "enrichment_ratio": 4.49,
+   "atlas_mentions": 13
+  },
+  {
+   "symbol": "THBS3",
+   "pure_cpm": 396.3,
+   "enrichment_ratio": 4.36,
+   "atlas_mentions": 13
+  },
+  {
+   "symbol": "IFT20",
+   "pure_cpm": 58.0,
+   "enrichment_ratio": 3.87,
+   "atlas_mentions": 13
+  },
+  {
+   "symbol": "MAF",
+   "pure_cpm": 210.3,
+   "enrichment_ratio": 3.0,
+   "atlas_mentions": 13
+  },
+  {
+   "symbol": "ODC1",
+   "pure_cpm": 77.3,
+   "enrichment_ratio": 2.09,
+   "atlas_mentions": 13
+  },
+  {
+   "symbol": "PDPN",
+   "pure_cpm": 453.2,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 13
+  },
+  {
+   "symbol": "SOCS3",
+   "pure_cpm": 428.6,
+   "enrichment_ratio": 6.93,
+   "atlas_mentions": 14
+  },
+  {
+   "symbol": "SERPINE2",
+   "pure_cpm": 1074.1,
+   "enrichment_ratio": 2.28,
+   "atlas_mentions": 14
+  },
+  {
+   "symbol": "HTRA1",
+   "pure_cpm": 91.8,
+   "enrichment_ratio": 2.38,
+   "atlas_mentions": 15
+  },
+  {
+   "symbol": "IMPACT",
+   "pure_cpm": 29.9,
+   "enrichment_ratio": 4.0,
+   "atlas_mentions": 17
+  },
+  {
+   "symbol": "NNMT",
+   "pure_cpm": 490.9,
+   "enrichment_ratio": 4.43,
+   "atlas_mentions": 18
+  },
+  {
+   "symbol": "PIGS",
+   "pure_cpm": 31.3,
+   "enrichment_ratio": 3.82,
+   "atlas_mentions": 18
+  },
+  {
+   "symbol": "INPPL1",
+   "pure_cpm": 83.3,
+   "enrichment_ratio": 2.64,
+   "atlas_mentions": 19
+  },
+  {
+   "symbol": "BGN",
+   "pure_cpm": 2518.8,
+   "enrichment_ratio": 5.31,
+   "atlas_mentions": 20
+  },
+  {
+   "symbol": "MGP",
+   "pure_cpm": 2920.7,
+   "enrichment_ratio": 4.86,
+   "atlas_mentions": 20
+  },
+  {
+   "symbol": "AKT1",
+   "pure_cpm": 87.4,
+   "enrichment_ratio": 4.1,
+   "atlas_mentions": 20
+  },
+  {
+   "symbol": "COL11A1",
+   "pure_cpm": 14499.4,
+   "enrichment_ratio": 2.73,
+   "atlas_mentions": 20
+  },
+  {
+   "symbol": "CAPS",
+   "pure_cpm": 31.8,
+   "enrichment_ratio": 4.77,
+   "atlas_mentions": 22
+  },
+  {
+   "symbol": "PRKAR1A",
+   "pure_cpm": 186.9,
+   "enrichment_ratio": 1.97,
+   "atlas_mentions": 22
+  },
+  {
+   "symbol": "THRA",
+   "pure_cpm": 21.5,
+   "enrichment_ratio": 2.03,
+   "atlas_mentions": 23
+  },
+  {
+   "symbol": "SPP1",
+   "pure_cpm": 2667.2,
+   "enrichment_ratio": 3.58,
+   "atlas_mentions": 24
+  },
+  {
+   "symbol": "GUSB",
+   "pure_cpm": 49.1,
+   "enrichment_ratio": 2.86,
+   "atlas_mentions": 24
+  },
+  {
+   "symbol": "WNT5A",
+   "pure_cpm": 57.2,
+   "enrichment_ratio": 2.95,
+   "atlas_mentions": 25
+  },
+  {
+   "symbol": "CCN2",
+   "pure_cpm": 6094.4,
+   "enrichment_ratio": 8.75,
+   "atlas_mentions": 26
+  },
+  {
+   "symbol": "CYTL1",
+   "pure_cpm": 430.5,
+   "enrichment_ratio": 11.52,
+   "atlas_mentions": 28
+  },
+  {
+   "symbol": "DCN",
+   "pure_cpm": 1129.4,
+   "enrichment_ratio": 9.23,
+   "atlas_mentions": 31
+  },
+  {
+   "symbol": "COL9A1",
+   "pure_cpm": 6481.7,
+   "enrichment_ratio": 5.77,
+   "atlas_mentions": 31
+  },
+  {
+   "symbol": "LOX",
+   "pure_cpm": 390.3,
+   "enrichment_ratio": 5.52,
+   "atlas_mentions": 31
+  },
+  {
+   "symbol": "SFRP1",
+   "pure_cpm": 27.9,
+   "enrichment_ratio": 4.19,
+   "atlas_mentions": 31
+  },
+  {
+   "symbol": "STUB1",
+   "pure_cpm": 62.9,
+   "enrichment_ratio": 2.36,
+   "atlas_mentions": 31
+  },
+  {
+   "symbol": "CA2",
+   "pure_cpm": 342.8,
+   "enrichment_ratio": 8.79,
+   "atlas_mentions": 32
+  },
+  {
+   "symbol": "PLOD1",
+   "pure_cpm": 160.5,
+   "enrichment_ratio": 4.05,
+   "atlas_mentions": 32
+  },
+  {
+   "symbol": "THBS1",
+   "pure_cpm": 580.3,
+   "enrichment_ratio": 2.47,
+   "atlas_mentions": 32
+  },
+  {
+   "symbol": "HES1",
+   "pure_cpm": 70.6,
+   "enrichment_ratio": 3.18,
+   "atlas_mentions": 34
+  },
+  {
+   "symbol": "MMP13",
+   "pure_cpm": 2085.5,
+   "enrichment_ratio": 11.89,
+   "atlas_mentions": 36
+  },
+  {
+   "symbol": "PHOSPHO1",
+   "pure_cpm": 71.9,
+   "enrichment_ratio": 3.42,
+   "atlas_mentions": 36
+  },
+  {
+   "symbol": "BAD",
+   "pure_cpm": 36.2,
+   "enrichment_ratio": 3.59,
+   "atlas_mentions": 37
+  },
+  {
+   "symbol": "CLEC11A",
+   "pure_cpm": 376.3,
+   "enrichment_ratio": 6.83,
+   "atlas_mentions": 39
+  },
+  {
+   "symbol": "HHIP-AS1",
+   "pure_cpm": 30.1,
+   "enrichment_ratio": 11.16,
+   "atlas_mentions": 42
+  },
+  {
+   "symbol": "COMP",
+   "pure_cpm": 6902.9,
+   "enrichment_ratio": 6.56,
+   "atlas_mentions": 55
+  },
+  {
+   "symbol": "IGF2",
+   "pure_cpm": 24.1,
+   "enrichment_ratio": 2.4,
+   "atlas_mentions": 62
+  },
+  {
+   "symbol": "ALPL",
+   "pure_cpm": 417.5,
+   "enrichment_ratio": 5.56,
+   "atlas_mentions": 63
+  },
+  {
+   "symbol": "CLEC3A",
+   "pure_cpm": 1013.2,
+   "enrichment_ratio": 18.92,
+   "atlas_mentions": 64
+  },
+  {
+   "symbol": "FOXA2",
+   "pure_cpm": 51.5,
+   "enrichment_ratio": 6.52,
+   "atlas_mentions": 71
+  },
+  {
+   "symbol": "SOCS2",
+   "pure_cpm": 29.4,
+   "enrichment_ratio": 2.66,
+   "atlas_mentions": 111
+  },
+  {
+   "symbol": "ECRG4",
+   "pure_cpm": 729.9,
+   "enrichment_ratio": 21.63,
+   "atlas_mentions": 118
+  },
+  {
+   "symbol": "COL10A1",
+   "pure_cpm": 6183.1,
+   "enrichment_ratio": 49.57,
+   "atlas_mentions": 126
+  },
+  {
+   "symbol": "CHAD",
+   "pure_cpm": 306.0,
+   "enrichment_ratio": 6.9,
+   "atlas_mentions": 128
+  },
+  {
+   "symbol": "RAN",
+   "pure_cpm": 206.6,
+   "enrichment_ratio": 6.02,
+   "atlas_mentions": 134
+  },
+  {
+   "symbol": "LOXL2",
+   "pure_cpm": 602.1,
+   "enrichment_ratio": 2.37,
+   "atlas_mentions": 147
+  },
+  {
+   "symbol": "COL2A1",
+   "pure_cpm": 70350.7,
+   "enrichment_ratio": 7.65,
+   "atlas_mentions": 159
+  },
+  {
+   "symbol": "SOX9",
+   "pure_cpm": 514.5,
+   "enrichment_ratio": 5.61,
+   "atlas_mentions": 175
+  },
+  {
+   "symbol": "SCUBE3",
+   "pure_cpm": 111.8,
+   "enrichment_ratio": 2.07,
+   "atlas_mentions": 180
+  },
+  {
+   "symbol": "PTCH1",
+   "pure_cpm": 161.4,
+   "enrichment_ratio": 2.34,
+   "atlas_mentions": 188
+  },
+  {
+   "symbol": "ACAN",
+   "pure_cpm": 3573.7,
+   "enrichment_ratio": 1.96,
+   "atlas_mentions": 216
+  },
+  {
+   "symbol": "STC2",
+   "pure_cpm": 250.2,
+   "enrichment_ratio": 11.26,
+   "atlas_mentions": 251
+  },
+  {
+   "symbol": "IHH",
+   "pure_cpm": 102.3,
+   "enrichment_ratio": 24.46,
+   "atlas_mentions": 349
+  },
+  {
+   "symbol": "SMO",
+   "pure_cpm": 20.3,
+   "enrichment_ratio": 2.23,
+   "atlas_mentions": 387
+  },
+  {
+   "symbol": "SET",
+   "pure_cpm": 216.9,
+   "enrichment_ratio": 2.24,
+   "atlas_mentions": 415
+  },
+  {
+   "symbol": "PTH1R",
+   "pure_cpm": 797.4,
+   "enrichment_ratio": 3.65,
+   "atlas_mentions": 432
+  },
+  {
+   "symbol": "HHIP",
+   "pure_cpm": 83.5,
+   "enrichment_ratio": 3.62,
+   "atlas_mentions": 824
+  }
+ ]
+}

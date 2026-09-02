@@ -1,0 +1,133 @@
+id: adamts5
+name: ADAMTS5 (aggrecanase-2)
+aliases:
+- ADAMTS5
+- aggrecanase-2
+type: protein
+layer: L5
+stub: false
+summary: 'ADAMTS5 is the dominant murine aggrecanase IN ARTICULAR CARTILAGE. Deletion of catalytically
+  active ADAMTS5, but not of ADAMTS4, prevents aggrecan loss and cartilage degradation in surgically induced
+  murine osteoarthritis - and the heterozygote is protected too, so the effect is gene-dosage sensitive.
+  BUT THE HIERARCHY REVERSES IN THE GROWTH PLATE, which the atlas had backwards until glasson2005 was read
+  in full rather than from its abstract. The aggrecanase neoepitope G1-TEGE373 is abundant in wild-type
+  proximal tibial growth plate and NEGLIGIBLE in Adamts4-/- mice, while Adamts5-/- growth plates look like
+  wild type. ADAMTS4, not ADAMTS5, does the visible aggrecan cleavage in the growth plate. THAT SHARPENS
+  THIS LAYER''S REAL HOLE RATHER THAN FILLING IT. Aggrecan is normally cleared from the hypertrophic zone
+  before mineralization, yet Adamts4-/- mice - with the neoepitope abolished - reach normal bone length with
+  normal plate histology, the Adamts4/Adamts5 double knockout is physiologically normal (majumdar2007), and
+  mice carrying MMP-cleavage-resistant aggrecan also develop normal skeletons. So the cleavage that can be
+  seen is DISPENSABLE, and either aggrecan is cleared by a route generating no TEGE373 or its clearance is
+  not rate-limiting for elongation. ADAMTS5 is inhibited by TIMP-3 with sub-nanomolar Ki and by no other TIMP
+  appreciably. In human cartilage explants ADAMTS-4 and ADAMTS-5 both contribute, so the murine hierarchy
+  does not transfer cleanly.'
+quantitative:
+- parameter: Protection from cartilage aggrecan loss in murine surgical OA, Adamts5 null
+  value: histological joint scores significantly reduced (P < 0.05) in BOTH Adamts5-/- and Adamts5+/- against wild
+    type, by mean maximal score and by summed score; summed scores of the Adamts5 knockout were less than 50% of
+    wild type
+  unit: histological score
+  conditions: unilateral joint instability by surgical transection of the medial meniscotibial ligament, scored 4 and
+    8 weeks after surgery
+  species: mouse
+  source_ref: glasson2005
+  uncertainty: 'Adamts4 null not protected in the same model. THE HETEROZYGOTE IS ALSO PROTECTED, which the atlas had
+    not recorded - a gene-dosage effect, and it means half-normal ADAMTS5 activity is already limiting for cartilage
+    destruction. Full text now read; the previous entry recorded only the qualitative direction from the abstract.'
+- parameter: BUT IN THE GROWTH PLATE IT IS ADAMTS4, NOT ADAMTS5 — THE OPPOSITE OF THE JOINT
+  value: the aggrecanase-generated neoepitope G1-TEGE373 stained strongly in wild-type proximal tibial growth plate
+    cells and was NEGLIGIBLE in Adamts4-/- animals, while staining in Adamts5-/- growth plates was SIMILAR to wild
+    type. Gross appearance, LONG BONE LENGTH and growth plate histology were identical to wild type in both knockout
+    strains
+  unit: qualitative, immunostaining for the aggrecanase neoepitope
+  conditions: immunostaining of proximal tibial growth plates from wild-type, Adamts4-/- and Adamts5-/- mice with an
+    antibody to the C-terminal aggrecan neoepitope G1-TEGE373; separately, 18-week-old male and female wild-type and
+    homozygous knockout mice examined by a board-certified veterinary pathologist across 17 tissues including femur
+    and whole sternum, with complete blood count and serum chemistry
+  species: mouse
+  source_ref: glasson2005
+  uncertainty: 'THIS IS IN THE BODY OF THE PAPER AND NOT IN THE ABSTRACT, AND IT IS THE GROWTH-PLATE-RELEVANT HALF.
+    The atlas held this reference for two days on its abstract, which is entirely about ADAMTS5 and osteoarthritis,
+    and therefore recorded the exact inverse of what the paper says about the growth plate. THE TISSUE HIERARCHY IS
+    REVERSED BETWEEN COMPARTMENTS: ADAMTS5 is the operative aggrecanase in articular cartilage under injury, ADAMTS4
+    is the one generating the aggrecanase neoepitope in the growth plate. IT SHARPENS THE NODE''S OWN STATED HOLE
+    RATHER THAN FILLING IT. The question was never only which enzyme cuts aggrecan in the growth plate - it is that
+    the cutting we CAN see is dispensable. Adamts4-/- abolishes the neoepitope and the bones still reach normal
+    length with normal plate histology, and majumdar2007''s double null is likewise normal. So either aggrecan is
+    cleared by a route that generates no TEGE373, or its clearance is not rate-limiting for elongation at all.
+    LIMITS: immunostaining is qualitative with no quantification reported, negligible is the authors'' word and not
+    a measured floor, long bone length is reported as identical without a number or an n, and a neoepitope is
+    evidence of cleavage having occurred rather than of which enzyme is sufficient. AND AN UNREAD ERRATUM STANDS
+    AGAINST THIS PAPER. The bibliography has carried correction_checked false since a 2026-08-06 sweep; Europe PMC
+    confirms an Erratum linked to PMID 15800624 but returns neither an identifier nor a title for it, so it could
+    not be retrieved on 2026-08-07 and the flag stays set. Every number this node now takes from glasson2005 -
+    the joint scores, the under-50-per-cent summed score, the neoepitope staining - is quoted from the original
+    article without knowing what the erratum changed.'
+- parameter: Skeletal development in Adamts4/Adamts5 double null mice
+  value: normal
+  unit: no detectable abnormality
+  conditions: double knockout
+  species: mouse
+  source_ref: majumdar2007
+  uncertainty: negative result
+- parameter: TIMP-3 N-terminal domain Ki against ADAMTS5
+  value: sub-nanomolar
+  unit: nM
+  conditions: recombinant human enzymes
+  species: in_vitro_human_cell
+  source_ref: kashiwagi2001
+  uncertainty: exact value not extracted
+localization:
+- 'mouse ARTICULAR cartilage: ADAMTS5 is the operative aggrecanase in surgical OA (glasson2005)'
+- 'mouse GROWTH PLATE: ADAMTS4, not ADAMTS5, generates the G1-TEGE373 aggrecanase neoepitope - and its loss
+  costs nothing in bone length or plate histology (glasson2005)'
+- 'human growth plate zonal ADAMTS5: not established'
+human_evidence: indirect
+human_evidence_note: No human ADAMTS5 loss-of-function phenotype; human data are cartilage explant studies
+  implicating both ADAMTS-4 and -5.
+species_basis:
+- mouse
+- human
+- in_vitro_human_cell
+translation_risk: moderate
+translation_risk_reason: Species disagree on which aggrecanase dominates, and the mouse null gives no
+  skeletal phenotype at all.
+confidence: C
+key_refs:
+- ref_id: glasson2005
+  pmid: '15800624'
+  first_author: Glasson SS
+  year: 2005
+  type: primary
+  one_line_finding: Deletion of catalytically active ADAMTS5 prevents cartilage aggrecan loss in murine
+    surgical osteoarthritis
+- ref_id: majumdar2007
+  pmid: '17968948'
+  first_author: Majumdar MK
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Adamts4/Adamts5 double knockout mice are physiologically normal and protected from
+    surgical osteoarthritis
+- ref_id: kashiwagi2001
+  pmid: '11278243'
+  first_author: Kashiwagi M
+  year: 2001
+  type: primary
+  one_line_finding: The N-terminal domain of TIMP-3 inhibits ADAMTS4 and ADAMTS5 with sub-nanomolar Ki
+- ref_id: little2005
+  pmid: '15798221'
+  first_author: Little CB
+  year: 2005
+  type: primary
+  one_line_finding: Aggrecan made resistant to MMP cleavage at N341-F342 does not accumulate and the mice
+    develop normally, excluding MMP aggrecanolysis in the growth plate
+open_questions:
+- g_l5matrix_007
+contradicts:
+- adamts4
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Double null done (majumdar2007); catalytically-inactive allele (glasson2005) adds domain-level
+  selectivity.

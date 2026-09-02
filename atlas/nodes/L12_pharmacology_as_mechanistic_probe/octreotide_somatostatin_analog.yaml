@@ -1,0 +1,67 @@
+id: octreotide_somatostatin_analog
+name: Octreotide and somatostatin analogues
+aliases: [somatostatin receptor ligands, SSA, lanreotide, pasireotide]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Somatostatin analogues suppress pituitary GH secretion through somatostatin receptor
+  subtypes 2 and 5, lowering circulating GH and consequently IGF-1. Unlike pegvisomant,
+  which blocks the receptor at the target tissue, they act one level up at the source, so
+  the pair together dissect where in the axis a growth effect is generated. In paediatric
+  practice their growth-relevant use is in GH-secreting adenoma and pituitary gigantism,
+  including McCune-Albright syndrome and AIP-mutation macroadenoma, where the aim is to
+  stop excessive linear growth before epiphyseal fusion. Reported paediatric experience is
+  case-level: surgical series with adjunctive somatostatin analogue, and case reports of
+  gigantism controlled by combined modalities. X-linked acrogigantism is the instructive
+  negative: it responds poorly to somatostatin analogues and has been controlled instead by
+  GH receptor blockade with pegvisomant, indicating that suppressing secretion and blocking
+  the receptor are not interchangeable in humans. No cohort reports final adult height in
+  children treated with a somatostatin analogue as the primary growth-limiting agent, and
+  no measurement of somatostatin analogue exposure at the growth plate exists - which is a
+  smaller problem here than for direct-acting drugs, since the mechanism is endocrine.
+quantitative:
+  - parameter: paediatric cohorts reporting final adult height with a somatostatin analogue as primary growth-limiting therapy
+    value: '0'
+    unit: cohorts
+    conditions: Europe PMC search 2026-08-05; only case reports and small surgical series retrieved
+    species: human
+    source_ref: burren2023
+    uncertainty: absence established by search - see gap g_l12b_014
+localization:
+  - "human pituitary somatotroph: site of action via SSTR2/SSTR5"
+  - "human growth plate: no direct action claimed; effect is entirely through reduced GH and IGF-1"
+human_evidence: direct
+human_evidence_note: >-
+  Human paediatric use is documented in case reports and small series of pituitary
+  gigantism and GH-secreting macroadenoma, not in controlled trials with growth endpoints.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  The pharmacology is entirely human and endocrine; the limitation is sample size and the
+  absence of controlled growth endpoints, not species.
+confidence: D
+claim_grades:
+  - claim: Somatostatin analogues lower GH and IGF-1 in children with GH-secreting adenomas.
+    grade: B
+    basis: Consistent across paediatric case series and adult acromegaly trials; the biochemical effect is not in dispute.
+  - claim: Somatostatin analogues limit final adult height in pituitary gigantism.
+    grade: D
+    basis: Only case-level evidence; no cohort reports final height with a somatostatin analogue as the primary agent.
+  - claim: Suppressing GH secretion and blocking the GH receptor are interchangeable growth-limiting strategies.
+    grade: D
+    basis: Contradicted in X-linked acrogigantism, which responds poorly to somatostatin analogues but was controlled to final height by pegvisomant.
+key_refs:
+  - ref_id: burren2023
+    pmid: '37908565'
+    first_author: Burren CP
+    year: 2023
+    type: primary
+    one_line_finding: X-linked acrogigantism controlled to final height by pegvisomant, the comparator that shows somatostatin analogues are not interchangeable.
+  - ref_id: fda_somavert_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: Defines the alternative mechanism - receptor blockade titrated to IGF-1 rather than suppression of secretion.
+open_questions: [g_l12b_014]
+contradicts: []
+last_verified: '2026-08-05'

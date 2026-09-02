@@ -1,0 +1,81 @@
+id: iodine_deficiency_growth
+name: Iodine deficiency and linear growth
+type: process
+summary: 'Iodine is the micronutrient whose route to the growth plate is fully specified by an existing
+  endocrine node: iodine is the substrate for thyroxine, and thyroid hormone acting through THRA on prehypertrophic
+  chondrocytes is required for hypertrophic differentiation. The human interventional evidence closes
+  the loop at the level of the GH-IGF axis. Three prospective double-blind intervention studies - severely
+  deficient Moroccan children aged 7-10 given iodised salt for 10 months (n=71), moderately deficient
+  Albanian children aged 10-12 given 400 mg iodine as oral iodised oil for 6 months (n=310), and mildly
+  deficient South African children aged 5-14 given two 200 mg doses (n=188) - all raised median urinary
+  iodine above 100 ug/L, and iodine repletion increased IGF-I and IGFBP-3 concentrations and improved
+  somatic growth, with the smallest effect in the mildly deficient South African group where IGF-I rose
+  only modestly (zimmermann2007). A systematic review of 18 studies (13 RCTs, n=5729) found iodine supplementation
+  of severely deficient pregnant women increased mean birthweight by 200 g, while postnatal growth effects
+  in non-cretinous children were inconsistent (farebrother2018). Iodine therefore behaves as a threshold
+  nutrient like vitamin D: severe deficiency has large effects, mild deficiency has small and inconsistent
+  ones.'
+quantitative:
+- parameter: increase in mean birthweight from iodine supplementation of severely iodine-deficient pregnant
+    women
+  value: '200'
+  unit: g
+  conditions: systematic review of 18 studies (13 RCTs), n=5729 total
+  species: human
+  source_ref: farebrother2018
+  uncertainty: mean difference; see review for CI and GRADE rating
+- parameter: participants in the three iodine repletion trials with IGF-I endpoints
+  value: 71 / 310 / 188
+  unit: children
+  conditions: Morocco (severe, 10 mo iodised salt), Albania (moderate, 6 mo 400 mg iodised oil), South
+    Africa (mild, 6 mo two 200 mg doses)
+  species: human
+  source_ref: zimmermann2007
+  uncertainty: not applicable
+localization:
+- 'human SYS: dietary iodine -> T4/T3 -> THRA in prehypertrophic chondrocytes (L4)'
+- 'human growth plate: thyroid hormone receptor action inferred from L4, not measured under iodine repletion'
+human_evidence: direct
+human_evidence_note: Three prospective double-blind iodine repletion trials with measured urinary iodine,
+  thyroid function, IGF-I, IGFBP-3 and growth, plus a systematic review of 18 studies.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: Human interventional data with human endocrine endpoints; only the chondrocyte-level
+  thyroid hormone step is imported from L4.
+confidence: B
+claim_grades:
+- claim: Iodine repletion raises IGF-I and IGFBP-3 and improves somatic growth in iodine-deficient school-age
+    children.
+  grade: A
+  basis: Three prospective double-blind interventions across three severity strata with exposure verified
+    by urinary iodine (zimmermann2007).
+- claim: Postnatal growth benefit is inconsistent in non-cretinous, mildly deficient children.
+  grade: A
+  basis: Systematic review with GRADE assessment of 18 studies, n=5729 (farebrother2018).
+- claim: The growth effect is transduced by T3 acting on THRA in prehypertrophic chondrocytes.
+  grade: B
+  basis: Thyroid hormone action at the plate is established in the L4 thra_receptor and thyroid_hormone_t3
+    nodes; not measured in any iodine trial.
+key_refs:
+- ref_id: zimmermann2007
+  pmid: '17118996'
+  first_author: Zimmermann MB
+  year: 2007
+  type: primary
+  one_line_finding: Iodine repletion in three double-blind trials (n=71, 310, 188) raised urinary iodine
+    above 100 ug/L and increased IGF-I and IGFBP-3 with improved somatic growth; the mildly deficient
+    South African group showed only a modest IGF-I rise.
+- ref_id: farebrother2018
+  pmid: '29767700'
+  first_author: Farebrother J
+  year: 2018
+  type: systematic_review
+  one_line_finding: 'Systematic review of 18 studies (n=5729): iodine supplementation of severely deficient
+    pregnant women raised mean birthweight by 200 g; postnatal growth effects in non-cretinous children
+    were uncertain.'
+open_questions:
+- g_l10env_007
+layer: L10
+stub: false
+last_verified: '2026-08-05'

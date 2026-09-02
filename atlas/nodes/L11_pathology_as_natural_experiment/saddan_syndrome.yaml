@@ -1,0 +1,104 @@
+id: saddan_syndrome
+name: SADDAN syndrome
+aliases:
+- severe achondroplasia with developmental delay and acanthosis nigricans
+- FGFR3 K650M
+type: phenotype
+layer: L11
+stub: false
+summary: 'SADDAN is the single most informative point in the FGFR3 allelic series because it breaks the
+
+  assumption that receptor activation strength predicts lethality. The lesion is A1949T giving
+
+  Lys650Met, one nucleotide away from the A1948G/Lys650Glu substitution that causes lethal
+
+  thanatophoric dysplasia type II. In transient transfection K650M produces roughly three times
+
+  the constitutive receptor kinase activity of K650E - yet the four originally reported
+
+  individuals survived past infancy without prolonged life support, developed extensive
+
+  acanthosis nigricans from early childhood, had severe neurological impairment, and had a
+
+  skeletal phenotype approaching but not equalling TD type I. The dissociation implies that
+
+  lethality in thanatophoric dysplasia is driven by something other than the scalar magnitude of
+
+  FGFR3 kinase output - candidate explanations are differential substrate/pathway bias (MAPK vs
+
+  STAT1), differential receptor trafficking, or the tissue distribution of the activated
+
+  receptor including the thoracic cage and cranial base. Acanthosis nigricans is itself a
+
+  signalling readout: the same activated FGFR3 acting in keratinocytes. No systematic adult
+
+  height series exists for SADDAN and no growth plate histology has been published, so the
+
+  distal end of the causal chain is empty in humans.
+
+  '
+quantitative:
+- parameter: constitutive FGFR3 kinase activity, K650M relative to K650E
+  value: ~3
+  unit: fold
+  conditions: transient transfection of FGFR3 constructs; K650E is the TD type II allele
+  species: in_vitro_human_cell
+  source_ref: tavormina1999
+  uncertainty: fold-change as reported; no CI
+- parameter: unrelated individuals in the defining SADDAN series
+  value: '4'
+  unit: individuals
+  conditions: 3 of 4 developed acanthosis nigricans and survived past infancy
+  species: human
+  source_ref: tavormina1999
+  uncertainty: n=4
+localization:
+- 'human growth plate: no published histology in SADDAN (gap g_l11path_004)'
+human_evidence: direct
+human_evidence_note: Genotype, receptor biochemistry and clinical survival are all documented in the four
+  index patients; no cohort-level auxology exists.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: B
+key_refs:
+- ref_id: tavormina1999
+  pmid: '10053006'
+  first_author: Tavormina PL
+  year: 1999
+  type: primary
+  one_line_finding: SADDAN = FGFR3 K650M with ~3x the constitutive activity of the lethal K650E allele,
+    yet non-lethal.
+- ref_id: bellus2000
+  pmid: '11055896'
+  first_author: Bellus GA
+  year: 2000
+  type: primary
+  one_line_finding: 'The Lys650 codon generates a graded series: K650N/Q mild, K650E/M severe.'
+open_questions:
+- g_l11path_004
+- g_l11path_002
+- g_mr002_allele
+last_verified: '2026-08-05'
+claim_grades:
+- claim: K650M produces roughly three times the constitutive FGFR3 kinase activity of K650E in transient
+    transfection, yet is survivable while K650E (thanatophoric II) is lethal.
+  grade: B
+  basis: In-vitro kinase activity plus human phenotype in the four originally reported individuals; small
+    n but the phenotypic contrast is unambiguous.
+- claim: Phenotypic severity is therefore NOT monotonic in constitutive kinase activity across the FGFR3
+    KINASE-DOMAIN allelic series.
+  grade: B
+  basis: Rests on the K650E/K650M pair specifically. Both are kinase-domain alleles.
+- claim: Severity is non-monotonic in activation across the whole FGFR3 allelic series including transmembrane
+    variants.
+  grade: D
+  basis: 'CONTRADICTED IN PART: the biochemical ordering K650E > G380R matches the phenotypic ordering
+    thanatophoric > achondroplasia. Monotonicity HOLDS across that comparison and breaks only within the
+    kinase-domain pair. The general claim is not supported.'
+contradicts:
+- 'SCOPE LIMIT: the non-monotonicity result is specific to the kinase-domain pair K650E/K650M. Across
+  the kinase-domain-to-transmembrane comparison (K650E vs G380R) activation and severity DO track together.
+  Any therapeutic inference drawn from non-monotonicity must state which alleles it applies to - see g_mr002_allele.'

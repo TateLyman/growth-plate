@@ -1,0 +1,73 @@
+id: matrix_water_content_zonal
+name: Zonal matrix water content of the growth plate
+aliases:
+- physeal hydration
+- growth plate water content
+type: tissue_structure
+layer: L5
+stub: false
+summary: 'Water is the majority phase of growth plate matrix and the medium through which every solute,
+  including Pi and PPi, reaches the mineralization front, yet its zonal distribution is one of the least
+  quantified variables in this layer. The best available figure is indirect: X-ray microprobe analysis
+  of pig growth plate normalises elemental concentrations assuming 66% tissue fluid, and derives extracellular
+  Ca of about 58 mmol/kg wet weight from 0.7% Ca per dry mass on that assumption. A validated non-invasive
+  method exists - MR T1 mapping calculates cartilage and physeal water content with 97.3% accuracy against
+  freeze-drying, with a coefficient of variance of 2.73 (SD 1.3) in vivo in 30 kg pigs and interobserver
+  CV 0.053 - but it has not been applied to produce a zone-resolved human dataset. Indirectly, water content
+  is mechanically load-bearing: knocking out biglycan and decorin in mouse reduces NMR-measured bound
+  water and fracture toughness and raises extrafibrillar matrix modulus, and the modulus effect disappears
+  on dehydration, showing the small proteoglycans act mechanically through the water they retain. Zonal
+  water content of the human growth plate, and its change across the mineralization front, remain unmeasured.'
+quantitative:
+- parameter: Assumed tissue fluid fraction used to normalise porcine growth plate microprobe data
+  value: '66'
+  unit: '% of wet weight'
+  conditions: domestic pig epiphyseal growth plate, electron microprobe normalisation
+  species: porcine
+  source_ref: althoff1982
+  uncertainty: stated as an assumption within the calculation, not an independent measurement
+- parameter: Accuracy of MR T1-mapping water content against freeze-drying
+  value: '97.3'
+  unit: '%'
+  conditions: gelatin standards plus physeal areas of eight skeletally immature 30 kg pigs
+  species: porcine
+  source_ref: shiguetomimedi2013
+  uncertainty: CV vs freeze-dried 2.73 (SD 1.3) in vivo; interobserver CV 0.053
+localization:
+- 'porcine growth plate: whole-plate fluid fraction assumed at 66% (althoff1982)'
+- 'human growth plate zones: water content unmeasured'
+human_evidence: absent
+human_evidence_note: No zone-resolved water content measurement of human growth plate was located; the
+  validated MR method has only been demonstrated in pigs.
+species_basis:
+- porcine
+- mouse
+translation_risk: high
+translation_risk_reason: The single quantitative anchor is a normalisation assumption inside a 1982 porcine
+  microprobe study, not a measurement.
+confidence: D
+key_refs:
+- ref_id: althoff1982
+  pmid: '7107329'
+  first_author: Althoff J
+  year: 1982
+  type: primary
+  one_line_finding: Porcine growth plate microprobe analysis assumes and reports 66% tissue fluid; extracellular
+    sulphur constant at ~3.5% dry mass across zones
+- ref_id: shiguetomimedi2013
+  pmid: '23842573'
+  first_author: Shiguetomi-Medina JM
+  year: 2013
+  type: primary_abstract_only
+  one_line_finding: MR T1 mapping measures physeal and cartilage water content with 97.3% accuracy against
+    freeze-drying in 30 kg pigs
+- ref_id: hua2025
+  pmid: '39743559'
+  first_author: Hua R
+  year: 2025
+  type: primary
+  one_line_finding: Biglycan and decorin deletion reduces NMR-measured bound water and fracture toughness
+    and raises extrafibrillar matrix modulus, an effect abolished by dehydration
+open_questions:
+- g_l5matrix_004
+last_verified: '2026-08-05'

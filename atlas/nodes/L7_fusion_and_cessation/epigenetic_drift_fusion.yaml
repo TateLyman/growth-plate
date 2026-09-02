@@ -1,0 +1,77 @@
+id: epigenetic_drift_fusion
+name: Epigenetic drift model of fusion
+type: hypothesis
+layer: L7
+stub: false
+aliases:
+- methylation drift model of growth plate senescence
+summary: |
+  Mechanism 6 of 6, and the one with the least evidence in any species and none at all in
+  humans. Claim: growth plate senescence and hence fusion are driven by progressive, largely
+  cell-autonomous epigenetic change in chondrocytes - a drift in DNA methylation and chromatin
+  state accumulated with each replication - which silences the growth-promoting expression
+  programme. The strongest indirect support is that growth plate senescence is a coordinated
+  transcriptional programme rather than a passive failure: in rodents, functional, structural and
+  molecular senescent changes occur earlier in the growth plates of small bones (metacarpals,
+  phalanges) than of large bones (femur, tibia), with modulation of IGF, BMP and WNT paracrine
+  pathways, and this differential timing helps set skeletal proportions (lui2018, mouse and rat).
+  A replication-counting clock is also implied by the rabbit dexamethasone experiment, in which
+  suppressing proliferation delayed both senescence and fusion (gafni2001, rabbit). Neither
+  establishes an epigenetic mechanism. A search of Europe PMC for DNA methylation or methylome
+  studies of human growth plate or physeal cartilage in relation to puberty, bone age or
+  epiphyseal fusion returned no qualifying primary study (see g_l7fuse_005): the human growth
+  plate methylome at any age is, as far as this sweep could establish, unpublished.
+  Discriminating experiment: whole-genome bisulfite or EM-seq of FACS-sorted resting-zone and
+  proliferative-zone chondrocytes from human physeal specimens spanning Tanner 2 to fusion, with
+  an epigenetic-clock readout. Under this hypothesis methylation age of resting-zone cells
+  advances faster than chronological age and faster in early-fusing sites; under the
+  progenitor-exhaustion hypothesis the surviving cells are epigenetically young but few.
+quantitative: []
+localization:
+- 'rodent growth plate: senescence programme timing differs between small and large bones (lui2018)'
+- 'human growth plate: no methylation or chromatin data at any age'
+human_evidence: absent
+human_evidence_note: >-
+  No study has measured DNA methylation, chromatin accessibility or histone modification in human
+  growth plate cartilage as a function of pubertal stage or at fusion; the search establishing
+  this null is logged under g_l7fuse_005.
+species_basis:
+- mouse
+- rat
+- rabbit
+translation_risk: high
+translation_risk_reason: >-
+  The supporting data are rodent transcriptomic and rabbit physiological, from species that
+  either do not fuse or are not genetically tractable, and the epigenetic step itself is inferred
+  rather than measured in any species.
+confidence: E
+key_refs:
+- ref_id: lui2018
+  pmid: '30036371'
+  first_author: Lui JC
+  year: 2018
+  type: primary
+  one_line_finding: >-
+    Growth plate senescence is a coordinated molecular programme whose timing differs between
+    small and large bones and involves IGF, BMP and WNT pathway modulation.
+- ref_id: gafni2001
+  pmid: '11641457'
+  first_author: Gafni RI
+  year: 2001
+  type: primary
+  one_line_finding: >-
+    Delaying chondrocyte proliferation delayed growth plate senescence and epiphyseal fusion in
+    rabbits, consistent with a replication-counted rather than time-counted clock.
+- ref_id: emons2011
+  pmid: '21540578'
+  first_author: Emons J
+  year: 2011
+  type: review
+  one_line_finding: >-
+    Surveys the hypotheses for growth plate maturation and fusion; no epigenetic mechanism is
+    established.
+open_questions:
+- g_l7fuse_005
+- g_l7fuse_012
+contradicts: []
+last_verified: '2026-08-05'

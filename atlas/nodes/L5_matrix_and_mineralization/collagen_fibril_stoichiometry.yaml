@@ -1,0 +1,161 @@
+id: collagen_fibril_stoichiometry
+name: Cartilage collagen fibril stoichiometry (II:IX:XI)
+aliases:
+- heterotypic collagen fibril
+- collagen II/IX/XI copolymer
+type: tissue_structure
+layer: L5
+stub: false
+summary: 'Cartilage fibrils are not pure collagen II. They are heterotypic copolymers in which collagen
+  XI forms the nucleating core, collagen II supplies the bulk of the 4D-staggered lattice, and collagen
+  IX decorates the fibril surface covalently crosslinked to collagen II. The stoichiometry is developmental,
+  not fixed: in young growth cartilage the mass proportions are approximately 80% collagen II, >=10% collagen
+  IX and >=10% collagen XI, which shifts on maturation to >=90% II, ~3% XI and ~1% IX in adult articular
+  cartilage. The functional consequence is fibril diameter: reconstitution of purified collagens shows
+  that a mixture of II and XI produces uniform ~20 nm fibrils only while the molar excess of II over XI
+  is below eight-fold, above which control is lost and irregular tactoids form; collagen IX is not required
+  for diameter control but sharply increases assembly efficiency. So the ''8:1:1'' figure quoted in reviews
+  is a mass proportion of young growth cartilage that coincides numerically with the II:XI molar ceiling
+  for diameter control, and the two are frequently conflated. The values above were determined in chick
+  embryonic sternum and bovine/foetal cartilage by CNBr peptide and antibody quantitation; no equivalent
+  quantitation exists for human physeal cartilage specifically, and mammalian fibrils are additionally
+  heterogeneous, with decorin-bearing and collagen IX-bearing fibril subpopulations occupying different
+  territories of the same tissue. Human physeal tissue has however been examined ultrastructurally: in
+  human juvenile rib growth plate collagen XI is confined to fibrils under 25 nm and is absent from thick
+  fibrils even after chaotropic disruption, while collagens II and IX decorate fibrils of all diameters
+  - and the thin fibrils are concentrated in the HYPERTROPHIC zone, the thick ones in the resting zone,
+  with a mixture in the proliferative zone. So the II:XI ratio in the human growth plate is zonally graded,
+  lowest (most XI-rich) where mineralization is about to occur.'
+quantitative:
+- parameter: Collagen II mass fraction of fibrillar collagen, young growth cartilage
+  value: <=80
+  unit: '% of fibrillar collagen'
+  conditions: young/foetal growth cartilage, biochemical quantitation
+  species: bovine
+  source_ref: eyre2002
+  uncertainty: review summary of the author own primary data; no CI given
+  value_unverified: true
+- parameter: Collagen IX mass fraction, young growth cartilage
+  value: '>=10'
+  unit: '% of fibrillar collagen'
+  conditions: young/foetal growth cartilage
+  species: bovine
+  source_ref: eyre2002
+  uncertainty: stated as a lower bound
+  value_unverified: true
+- parameter: Collagen XI mass fraction, young growth cartilage
+  value: '>=10'
+  unit: '% of fibrillar collagen'
+  conditions: young/foetal growth cartilage
+  species: bovine
+  source_ref: eyre2002
+  uncertainty: stated as a lower bound
+  value_unverified: true
+- parameter: Collagen IX mass fraction, mature articular cartilage
+  value: ~1
+  unit: '% of fibrillar collagen'
+  conditions: adult articular cartilage
+  species: human
+  source_ref: eyre2002
+  uncertainty: not reported
+  value_unverified: true
+- parameter: Collagen XI mass fraction, mature articular cartilage
+  value: ~3
+  unit: '% of fibrillar collagen'
+  conditions: adult articular cartilage
+  species: human
+  source_ref: eyre2002
+  uncertainty: not reported
+  value_unverified: true
+- parameter: Maximum collagen II:XI molar ratio compatible with fibril diameter control
+  value: '8'
+  unit: mol:mol (II:XI)
+  conditions: in vitro reconstitution of purified collagens, 20 nm target diameter
+  species: in_vitro_animal_cell
+  source_ref: blaschke2000
+  uncertainty: threshold, above which tactoids coexist with fibrils
+- parameter: Diameter of reconstituted heterotypic II/IX/XI fibrils
+  value: ~20
+  unit: nm
+  conditions: in vitro reconstitution, embryonic cartilage collagens
+  species: in_vitro_animal_cell
+  source_ref: blaschke2000
+  uncertainty: described as uniform; SD not reported
+- parameter: Cartilage fibril diameter carrying collagen XI, human growth plate
+  value: <25
+  unit: nm
+  conditions: human juvenile rib growth plate, immunoelectron microscopy with anti-alpha1(XI) telopeptide
+    and N-terminal antibodies; XI absent from thick fibrils even after chaotropic disruption
+  species: human
+  source_ref: keene1995
+  uncertainty: threshold as reported; collagens II and IX present on fibrils of all sizes
+- parameter: Fibril diameter of adult permanent cartilage versus growth plate/fetal cartilage
+  value: 30-200 vs <25
+  unit: nm
+  conditions: TEM survey, human and bovine
+  species: multiple
+  source_ref: keene1995
+  uncertainty: ranges as reported
+localization:
+- 'human growth plate HZ: thin fibrils, collagen XI enriched (keene1995)'
+- 'human growth plate RZ: thick fibrils, collagen XI absent (keene1995)'
+- 'human growth plate PZ: mixture of thin and thick fibrils (keene1995)'
+- 'chick sternal cartilage fibrils: collagens II, IX and XI colocalised in the same fibril by immuno-EM
+  (mendler1989)'
+- 'mammalian cartilage: decorin-bearing and collagen IX-bearing fibril subpopulations are distinct (hagg1998)'
+- 'human physeal cartilage: mass stoichiometry unquantified'
+human_evidence: indirect
+human_evidence_note: Collagen XI, IX and II have been localised ultrastructurally in human juvenile rib
+  growth plate by immuno-EM, establishing the zonal fibril-diameter pattern; the mass stoichiometry has
+  still not been quantified in human physeal tissue.
+species_basis:
+- human
+- chicken
+- bovine
+- in_vitro_animal_cell
+translation_risk: moderate
+translation_risk_reason: The stoichiometry itself is likely conserved (the same three genes cause chondrodysplasia
+  in humans), but the numbers come from avian and bovine tissue and the developmental shift means any
+  single ratio is age- and tissue-specific.
+confidence: C
+key_refs:
+- ref_id: mendler1989
+  pmid: '2463256'
+  doi: 10.1083/jcb.108.1.191
+  first_author: Mendler M
+  year: 1989
+  type: primary_abstract_only
+  one_line_finding: Immunoelectron microscopy shows collagens II, IX and XI are all integral to the same
+    cartilage fibril, i.e. fibrils are heterotypic
+- ref_id: eyre2002
+  pmid: '11879535'
+  doi: 10.1186/ar380
+  first_author: Eyre D
+  year: 2002
+  type: review
+  one_line_finding: Young growth cartilage fibrils are <=80% collagen II, >=10% IX, >=10% XI by mass;
+    mature articular cartilage is >=90% II, ~1% IX, ~3% XI
+- ref_id: blaschke2000
+  pmid: '10744725'
+  first_author: Blaschke UK
+  year: 2000
+  type: primary
+  one_line_finding: Collagen II/XI mixtures self-limit fibril diameter to ~20 nm only while collagen II
+    molar excess over XI is below 8-fold
+- ref_id: hagg1998
+  pmid: '9660881'
+  first_author: Hagg R
+  year: 1998
+  type: primary
+  one_line_finding: Decorin and collagen IX occupy biochemically distinct fibril subpopulations within
+    the same cartilage
+- ref_id: keene1995
+  pmid: '7560887'
+  first_author: Keene DR
+  year: 1995
+  type: primary
+  one_line_finding: In human juvenile rib growth plate collagen XI is restricted to fibrils <25 nm; hypertrophic
+    zone fibrils are thin, resting zone fibrils thick, proliferative zone mixed
+open_questions:
+- g_l5matrix_003
+last_verified: '2026-08-05'

@@ -1,0 +1,108 @@
+id: de_novo_variant_growth
+name: De novo variation and growth
+aliases:
+- paternal age effect
+- selfish spermatogonial selection
+type: process
+layer: L8
+stub: false
+summary: |-
+  Several of the largest-effect growth-plate mutations in humans are not inherited but arise de novo
+  in the paternal germline, and they are enriched far above the background mutation rate by positive
+  selection acting on spermatogonial stem cells. Neville 2025 sequenced 81 bulk sperm samples from
+  men aged 24-75 with duplex NanoSeq and measured a linear accumulation of 1.67 mutations per year
+  per haploid genome (95% CI 1.41-1.92), identified more than 35,000 germline coding mutations, and
+  found 40 genes under significant positive selection in the male germline, most of them associated
+  with developmental or cancer-predisposition disorders; selection drives a 2-3 fold increased risk
+  of known disease-causing mutations, so 3-5% of sperm from middle-aged and older men carry a
+  pathogenic exome mutation. FGFR3, the achondroplasia gene, is the archetype. Moura 2024 assayed 10
+  FGFR3 missense substitutions by digital PCR across a dissected postmortem human testis and showed
+  that 9 raise ligand-independent receptor signalling, with two distinct expansion behaviours: some
+  variants form larger subclonal expansions whose frequency correlates positively with donor age,
+  while others show elevated frequency independent of age, consistent with accumulation before sexual
+  maturity. That is the mechanistic explanation for why achondroplasia is overwhelmingly de novo,
+  paternal in origin, and associated with advanced paternal age - the mutation is not merely
+  tolerated in the germline, it is selected for.
+quantitative:
+- parameter: germline mutation accumulation rate in sperm
+  value: '1.67'
+  unit: mutations per year per haploid genome
+  conditions: 81 bulk sperm samples, men aged 24-75, duplex NanoSeq
+  species: human
+  source_ref: neville2025
+  uncertainty: 95% CI 1.41-1.92
+- parameter: genes under significant positive selection in the male germline
+  value: '40'
+  unit: genes
+  conditions: 31 newly identified; deep targeted and exome NanoSeq
+  species: human
+  source_ref: neville2025
+  uncertainty: not applicable (count)
+- parameter: increase in risk of known disease-causing mutations from germline positive selection
+  value: 2-3
+  unit: fold
+  conditions: same analysis
+  species: human
+  source_ref: neville2025
+  uncertainty: range as reported
+- parameter: sperm carrying a pathogenic exome mutation, middle-aged to older men
+  value: 3-5
+  unit: '%'
+  conditions: same analysis
+  species: human
+  source_ref: neville2025
+  uncertainty: range as reported
+- parameter: FGFR3 missense substitutions raising ligand-independent signalling
+  value: '9'
+  unit: of 10 tested
+  conditions: digital PCR plus biophysical assay on a dissected postmortem testis
+  species: human
+  source_ref: moura2024
+  uncertainty: not applicable (count)
+localization:
+- 'human: male germline, spermatogonial stem cell compartment'
+human_evidence: direct
+human_evidence_note: Direct sequencing and locus-specific quantification in human sperm and dissected
+  human testis.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human germline measurements throughout.
+confidence: B
+claim_grades:
+- claim: Positive selection in the male germline enriches pathogenic de novo mutations above the
+    neutral rate.
+  grade: A
+  basis: Genome-wide duplex sequencing of 81 sperm samples identifying 40 positively selected
+    genes (neville2025) plus locus-resolved subclonal expansion mapping in testis for FGFR3 (moura2024).
+- claim: This mechanism explains the paternal-age association of achondroplasia specifically.
+  grade: B
+  basis: Age-correlated FGFR3 subclonal expansions measured directly in human testis (moura2024);
+    the epidemiological link to achondroplasia incidence is inferred rather than jointly measured
+    in the same study.
+key_refs:
+- ref_id: neville2025
+  pmid: '41062690'
+  doi: 10.1038/s41586-025-09448-3
+  first_author: Neville MDC
+  year: 2025
+  type: primary
+  one_line_finding: 'Duplex sperm sequencing of 81 men: 1.67 mutations/year/haploid genome and
+    40 positively selected genes, driving 2-3 fold enrichment of disease-causing mutations.'
+- ref_id: moura2024
+  pmid: '38411226'
+  doi: 10.1093/gbe/evae015
+  first_author: Moura S
+  year: 2024
+  type: primary
+  one_line_finding: Nine of ten FGFR3 missense substitutions raise ligand-independent signalling;
+    several form age-correlated subclonal expansions in human testis.
+- ref_id: shiang1994
+  pmid: '7913883'
+  doi: 10.1016/0092-8674(94)90302-6
+  first_author: Shiang R
+  year: 1994
+  type: primary
+  one_line_finding: Achondroplasia arises from recurrent FGFR3 Gly380 substitutions, predominantly
+    de novo.
+last_verified: '2026-08-05'

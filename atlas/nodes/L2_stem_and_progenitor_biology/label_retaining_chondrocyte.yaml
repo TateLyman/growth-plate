@@ -1,0 +1,100 @@
+id: label_retaining_chondrocyte
+name: Label-retaining resting chondrocyte (LRC)
+aliases:
+- slow-cycling growth plate chondrocyte
+- H2B-GFP label-retaining chondrocyte
+type: cell_type
+summary: 'Label retention is the assay that turns ''resting'' from a histological adjective into a measured
+  cell-cycle property. A chondrocyte-specific Tet-Off H2B-EGFP system (Col2a1-tTA) combined with Col2a1-creER
+  lineage marking allows slow-cycling cells to be identified by retained histone-bound GFP: signal halves
+  with each division (measured fold change 2.03 per division), so cells at the top decile of brightness
+  after a doxycycline chase are the least divided. The label-retaining fraction of Col2a1-lineage chondrocytes
+  decays with a half-life of roughly one week (0.99-1.18 weeks) from 86.5% to a plateau of 2.6%, meaning
+  that the durably slow-cycling compartment of the mouse growth plate is a few percent of chondrocytes.
+  Transcriptomically, these LRCs are enriched for both secreted Wnt inhibitors and Wnt activators, and
+  activating beta-catenin in them drives them out of the resting zone - the clearest positive definition
+  of a niche signal for this compartment. Growth hormone reduces this label-retaining pool by pushing
+  the cells into transit-amplifying differentiation, which links a therapeutic hormone directly to stem
+  cell consumption. A 2026 PRISMA systematic review found that despite decades of the word ''quiescent'',
+  functional and molecular assays of quiescence in this compartment are sparse and inconsistently defined.'
+quantitative:
+- parameter: Label-retaining fraction of Col2a1-lineage chondrocytes, initial
+  value: '86.5'
+  unit: '%'
+  conditions: P21 mouse, before doxycycline chase, flow cytometry
+  species: mouse
+  source_ref: hallett2021
+  uncertainty: SE 1.3
+- parameter: Label-retaining fraction, plateau after chase
+  value: '2.6'
+  unit: '%'
+  conditions: doxycycline chase from P21, mouse distal femur
+  species: mouse
+  source_ref: hallett2021
+  uncertainty: SE 0.9
+- parameter: Decay half-life of the label-retaining population
+  value: 0.99-1.18
+  unit: weeks
+  conditions: non-linear decay fit, mouse
+  species: mouse
+  source_ref: hallett2021
+  uncertainty: range of fitted values
+- parameter: Growth plate chondrocytes as fraction of dissociated Col2a1-creER lineage cells
+  value: '99.1'
+  unit: '%'
+  conditions: microdissected epiphysis after collagenase, P49 mouse
+  species: mouse
+  source_ref: hallett2021
+  uncertainty: SD 1.4, n=4 mice
+localization:
+- 'mouse RZ: confirmed, brightest H2B-EGFP cells localise to the top of the growth plate (hallett2021_2)'
+- 'human RZ: indirect - a subset of human resting chondrocytes shows nuclear-retained mRNA and heterochromatin
+  consistent with G0 (avijgan2025)'
+human_evidence: indirect
+human_evidence_note: Human resting chondrocytes show quiescence-associated features (predominantly nuclear
+  mRNA, abundant heterochromatin, ability to exit G0 ex vivo) in spatial transcriptomic biopsies, but
+  label retention itself requires transgenic pulse-chase and has never been done in humans.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: The quantitative kinetics come from a transgenic Tet-Off system with no human
+  counterpart; human evidence is descriptive and cross-sectional.
+confidence: C
+key_refs:
+- ref_id: hallett2021
+  pmid: '34309509'
+  doi: 10.7554/elife.64513
+  first_author: Hallett SA
+  year: 2021
+  type: primary
+  one_line_finding: Defines label-retaining resting chondrocytes quantitatively and places them in a Wnt-inhibitory
+    niche
+- ref_id: chu2025
+  pmid: '41289405'
+  doi: 10.1073/pnas.2512316122
+  first_author: Chu NTL
+  year: 2025
+  type: primary
+  one_line_finding: Growth hormone depletes the label-retaining growth plate stem cell pool by driving
+    differentiation
+- ref_id: avijgan2026
+  pmid: '41795828'
+  doi: 10.1093/stmcls/sxag010
+  first_author: Avijgan M
+  year: 2026
+  type: systematic_review
+  one_line_finding: Systematic review showing quiescence in resting zone chondrocytes is asserted far
+    more often than it is measured
+- ref_id: avijgan2025
+  doi: 10.1101/2025.03.12.642613
+  first_author: Avijgan M
+  year: 2025
+  type: preprint
+  one_line_finding: Human resting zone sub-populations show molecular hallmarks of functional quiescence
+open_questions:
+- g_l2stem_005
+- g_l2stem_010
+layer: L2
+stub: false
+last_verified: '2026-08-05'

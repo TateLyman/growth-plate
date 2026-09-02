@@ -1,0 +1,118 @@
+id: achondroplasia
+name: Achondroplasia
+aliases:
+- ACH
+- FGFR3 G380R dwarfism
+type: phenotype
+layer: L11
+stub: false
+summary: |
+  Achondroplasia is the human loss-of-brake experiment on FGFR3. The causal chain is unusually
+  complete: a heterozygous G-to-A (or G-to-C) transition at cDNA nucleotide 1138 substitutes
+  arginine for glycine at residue 380 in the FGFR3 transmembrane domain (Gly380Arg), found on 15
+  of 16 and 16 of 16 achondroplasia chromosomes in the two original mutation series; the
+  substitution stabilises receptor dimers and produces ligand-independent tyrosine
+  autophosphorylation, demonstrated in transfected cells alongside the thanatophoric alleles;
+  constitutive FGFR3 signalling through MAPK/ERK and STAT1 suppresses chondrocyte proliferation
+  and hypertrophic differentiation in the proliferative and prehypertrophic zones. The human
+  growth plate phenotype - shortened proliferative columns and a truncated hypertrophic zone -
+  is described from autopsy series of the lethal FGFR3 disorders rather than from living
+  achondroplasia patients, so the cellular link in the chain is the weakest one in humans.
+  The stature outcome is precise and reproducible across four continents: adult height is
+  approximately 132 cm in men and 124 cm in women in the largest European cohort (n=466), with
+  population-normal variance around that reduced mean. Loss of height position is not gradual -
+  it occurs almost entirely in the first two postnatal years, while pubertal growth is normal
+  when scaled to the reduced adult height. Birth prevalence is on the order of 1 in 25,000; over
+  80 percent of cases are de novo and arise on the paternal allele.
+quantitative:
+- parameter: adult height, males
+  value: '132'
+  unit: cm
+  conditions: European achondroplasia cohort, GAMLSS-modelled reference from 466 children and 4,375
+    measurement occasions, ages 0-20 y
+  species: human
+  source_ref: merker2018
+  uncertainty: variability comparable to the general population; SD not separately reported in abstract
+- parameter: adult height, females
+  value: '124'
+  unit: cm
+  conditions: same European cohort as above
+  species: human
+  source_ref: merker2018
+  uncertainty: variability comparable to the general population
+- parameter: cohort size for the European growth reference
+  value: '466'
+  unit: children
+  conditions: cross-sectional plus longitudinal, retrospective plus prospective
+  species: human
+  source_ref: merker2018
+  uncertainty: 4,375 measurement occasions
+- parameter: individuals measured for the first achondroplasia growth standards
+  value: '400'
+  unit: individuals
+  conditions: height, growth velocity, upper and lower segment, head circumference
+  species: human
+  source_ref: horton1978
+  uncertainty: abstract only; SDs not extractable
+- parameter: frequency of the Gly380Arg substitution among achondroplasia chromosomes
+  value: 16/16
+  unit: chromosomes
+  conditions: 15 with c.1138G>A and 1 with c.1138G>C, both giving G380R
+  species: human
+  source_ref: shiang1994
+  uncertainty: n=16 affected chromosomes in the original series
+localization:
+- 'human PZ: shortened proliferative columns inferred from the lethal FGFR3 allelic series, not directly
+  documented in living achondroplasia growth plates'
+- 'human HZ: truncated hypertrophic zone described in thanatophoric dysplasia autopsy material (wilcox1998)'
+- 'mouse RZ: resting-zone chondrocyte turnover disrupted by excess Fgfr3 signalling via CREB (horike2026)'
+human_evidence: direct
+human_evidence_note: Mutation, receptor biochemistry and adult height are all established directly
+  in humans; only the growth plate cellular phenotype rests on autopsy material from the lethal allelic
+  variants and on mouse models.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: This is a human phenotype node. The residual risk concerns the zonal/cellular
+  mechanism, which is imported from mouse and from lethal-variant autopsy tissue rather than measured
+  in living achondroplasia growth plates.
+confidence: A
+key_refs:
+- ref_id: shiang1994
+  pmid: '7913883'
+  first_author: Shiang R
+  year: 1994
+  type: primary
+  one_line_finding: G380R in the FGFR3 transmembrane domain on 16/16 achondroplasia chromosomes.
+- ref_id: naski1996
+  pmid: '8640234'
+  first_author: Naski MC
+  year: 1996
+  type: primary
+  one_line_finding: G380R and K650E both constitutively activate FGFR3, with K650E stronger - a graded
+    biochemical series.
+- ref_id: merker2018
+  pmid: '30070757'
+  first_author: Merker A
+  year: 2018
+  type: primary_abstract_only
+  one_line_finding: 'European cohort n=466: adult height 132 cm (M) / 124 cm (F); height SDS loss
+    confined to the first 2 years.'
+- ref_id: horton1978
+  pmid: '690757'
+  first_author: Horton WA
+  year: 1978
+  type: primary_abstract_only
+  one_line_finding: First achondroplasia-specific growth standards from 400 individuals.
+- ref_id: horike2026
+  pmid: '41748604'
+  first_author: Horike N
+  year: 2026
+  type: primary
+  one_line_finding: Excess FGFR3 signalling disrupts resting-zone chondrocyte turnover via CREB (mouse).
+open_questions:
+- g_l11path_001
+- g_l11path_002
+last_verified: '2026-08-05'

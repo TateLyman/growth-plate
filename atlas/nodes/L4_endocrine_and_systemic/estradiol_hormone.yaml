@@ -1,0 +1,85 @@
+id: estradiol_hormone
+name: 17beta-estradiol
+aliases:
+- E2
+- estradiol
+type: hormone
+layer: L4
+stub: false
+summary: '17beta-estradiol is the dominant estrogen of puberty in both sexes and the hormone that both
+  drives the pubertal growth spurt and terminates growth. In boys almost all of it is produced by peripheral
+  aromatisation of testosterone rather than by the gonad. Concentrations are extremely low relative to
+  assay sensitivity: with an ultrasensitive extraction RIA (detection limit 4 pmol/L) the 24-h mean in
+  boys rises from below 4 pmol/L prepubertally to 6 pmol/L in early puberty, 8 pmol/L in mid-puberty,
+  21 pmol/L in late puberty and 32 pmol/L once final height is reached (ankarberglindg2008), which is
+  why routine immunoassays are inadequate for pediatric work. The growth-relevant dose-response has been
+  fitted directly in humans: half-maximal pubertal growth acceleration occurs at a morning estradiol of
+  20 pmol/L in girls (95% CI 13-31; albin2012) and 6.5 pmol/L in boys (95% CI 3.2-13; albin2013). Above
+  roughly the Tanner B2 range (10-51 pmol/L) less than 25% of potential pubertal growth remains - i.e.
+  the stimulating and terminating actions are separated by well under one order of magnitude in concentration.'
+quantitative:
+- parameter: EC50 for half-maximal pubertal growth acceleration, morning 17beta-estradiol
+  value: '20'
+  unit: pmol/L
+  conditions: 27 healthy girls, 37 24-h profiles, ultrasensitive extraction RIA, sixth-order polynomial
+    growth fit to PHV
+  species: human
+  source_ref: albin2012
+  uncertainty: 95% CI 13-31 pmol/L
+- parameter: EC50 for 50% increase in growth velocity, morning 17beta-estradiol
+  value: '6.5'
+  unit: pmol/L
+  conditions: 26 healthy boys, 37 estradiol 24-h profiles, ultrasensitive extraction RIA
+  species: human
+  source_ref: albin2013
+  uncertainty: 95% CI 3.2-13 pmol/L
+- parameter: 24-h mean serum estradiol across male puberty
+  value: <4 / 6 / 8 / 21 / 32
+  unit: pmol/L
+  conditions: prepuberty / early / mid / late-1 / late-2 puberty; 62 profiles from 44 healthy boys aged
+    7.2-18.6 y; extraction RIA, detection limit 4 pmol/L
+  species: human
+  source_ref: ankarberglindg2008
+  uncertainty: '5th-95th percentiles: <4-7, <4-12, 4-17, 12-37, 20-47 pmol/L'
+- parameter: serum estradiol above which <25% of potential pubertal growth remains
+  value: 10-51
+  unit: pmol/L
+  conditions: Tanner breast stage 2 range, healthy girls
+  species: human
+  source_ref: albin2012
+  uncertainty: range corresponds to Tanner B2, not a single threshold
+localization:
+- 'human SYS: ovarian and peripheral aromatisation; serum'
+- 'human growth plate: local estradiol concentration never measured'
+human_evidence: direct
+human_evidence_note: Human dose-response has been fitted from frequently sampled 24-h estradiol profiles
+  against individually modelled growth curves in both sexes; human aromatase deficiency and ESR1 resistance
+  cases (covered in L7) supply the loss-of-function arm.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: The quantitative dose-response cited here is human-only; mice do not fuse their
+  epiphyses, so rodent estradiol dosing cannot be mapped onto this curve.
+confidence: A
+key_refs:
+- ref_id: albin2012
+  first_author: Albin AK
+  year: 2012
+  type: primary
+  one_line_finding: EC50 for half-maximal pubertal growth in girls is 20 pmol/L estradiol (95% CI 13-31).
+  pmid: '23075676'
+- ref_id: albin2013
+  first_author: Albin AK
+  year: 2013
+  type: primary
+  one_line_finding: EC50 for 50% growth velocity increase in boys is estradiol 6.5 pmol/L (95% CI 3.2-13)
+    and testosterone 3.1 nmol/L (2.4-4.2).
+  pmid: '23988590'
+- ref_id: ankarberglindg2008
+  first_author: Ankarberg-Lindgren C
+  year: 2008
+  type: primary
+  one_line_finding: 'Normative 24-h serum estradiol in boys by ultrasensitive extraction RIA: <4 pmol/L
+    prepubertally to 32 pmol/L at final height.'
+  pmid: '18817534'
+last_verified: '2026-08-05'

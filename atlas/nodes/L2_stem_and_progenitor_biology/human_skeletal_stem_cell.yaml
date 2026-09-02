@@ -1,0 +1,112 @@
+id: human_skeletal_stem_cell
+name: Human skeletal stem cell (hSSC)
+aliases:
+- hSSC
+- PDPN+CD146-CD73+CD164+ cell
+type: cell_type
+summary: 'The human SSC is defined as CD45- CD235a- TIE2- CD31- PDPN+ CD146- CD73+ CD164+. It was found
+  by Smart-seq2 single-cell sequencing of seven microdissected regions of a 17-week human fetal femur,
+  scoring each cell for expression of human orthologues of 76 mSSC/mBCSP-specific genes; the cells scoring
+  highest were in the second half of the pre-hypertrophic zone and the first half of the hypertrophic
+  zone - not the resting zone. Sorted hSSCs form ossicles with a marrow cavity under the renal capsule
+  of NSG mice, self-renew through serial colony formation to tertiary CFU and through serial transplantation,
+  and generate bone, cartilage and stroma but not fat. Downstream are a human BCSP, human osteoprogenitors
+  and three chondroprogenitor subsets distinguished by CD73 and CD164. CD146+ cells, the classic marrow
+  ''MSC'', gave smaller and fewer colonies. hSSCs are present in fetal and adult bone, can be induced
+  from BMP2-treated adipose stroma and iPSCs, and expand locally after fracture. Across ten skeletal sites
+  the hSSC pool is compositionally different site by site and shifts toward a fibroblastic state with
+  age. The translation risk runs in the awkward direction: the human panel and the mouse panel share no
+  antigen, and the human cell was localised to a different growth plate zone than the mouse resting-zone
+  stem cell.'
+quantitative:
+- parameter: mSSC/mBCSP-specific genes used to build the human orthologue score
+  value: '76'
+  unit: genes
+  conditions: Gene Expression Commons-derived gene set
+  species: human
+  source_ref: chan2018
+  uncertainty: not applicable
+- parameter: Gestational age of the fetal femur used for hSSC discovery
+  value: '17'
+  unit: weeks
+  conditions: human fetal femur, seven microdissected regions
+  species: human
+  source_ref: chan2018
+  uncertainty: single specimen for the discovery scRNA-seq
+- parameter: hSSCs transplanted for the in vivo serial self-renewal assay
+  value: '>1.5e6'
+  unit: DiD-labelled cells
+  conditions: NSG renal capsule, 2-week primary explant
+  species: human
+  source_ref: chan2018
+  uncertainty: not reported
+- parameter: Distinct human skeletal sites profiled for hSSC composition
+  value: '10'
+  unit: anatomical sites
+  conditions: prospective isolation plus scRNA-seq
+  species: human
+  source_ref: ambrosi2025
+  uncertainty: not reported
+localization:
+- 'human fetal growth plate pre-hypertrophic (p-H2) and hypertrophic (H1) zones: confirmed by FACS and
+  scRNA-seq (chan2018)'
+- 'human diaphysis: depleted (chan2018)'
+- 'human resting zone: unconfirmed - not reported as an hSSC site (chan2018)'
+- 'human adult bone and fracture site: confirmed, expands after injury (chan2018)'
+human_evidence: direct
+human_evidence_note: Cells were prospectively isolated from human fetal and adult bone and assayed functionally,
+  but every functional readout required xenotransplantation into immunodeficient mice or ex vivo culture;
+  no in-situ human assay exists.
+species_basis:
+- human
+- mouse
+translation_risk: high
+translation_risk_reason: 'The reverse translation problem: the hSSC was derived from mouse gene signatures
+  yet shares no surface marker with the mSSC, was localised to a different growth plate zone than the
+  mouse resting-zone stem cell, and its behaviour is measured in a mouse kidney rather than in a human
+  growth plate.'
+confidence: C
+key_refs:
+- ref_id: chan2018
+  pmid: '30241615'
+  doi: 10.1016/j.cell.2018.07.029
+  first_author: Chan CKF
+  year: 2018
+  type: primary
+  one_line_finding: Defines hSSC as CD45- CD235a- TIE2- CD31- PDPN+ CD146- CD73+ CD164+, enriched in the
+    human fetal pre-hypertrophic/hypertrophic zone, self-renewing on serial transplantation
+- ref_id: ambrosi2025
+  pmid: '40118065'
+  doi: 10.1016/j.stem.2025.02.013
+  first_author: Ambrosi TH
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: hSSC subtype composition varies across ten skeletal sites and shifts fibroblastic
+    with age
+- ref_id: sacchetti2007
+  pmid: '17956733'
+  doi: 10.1016/j.cell.2007.08.025
+  first_author: Sacchetti B
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: 'The competing human definition: CD146+ subendothelial stromal cells self-renew and
+    transfer the hematopoietic microenvironment'
+- ref_id: chu2026
+  pmid: '41984930'
+  doi: 10.1126/scitranslmed.adw3590
+  first_author: Chu NTL
+  year: 2026
+  type: primary_abstract_only
+  one_line_finding: Human resting zone stem-like cells identified independently, with a different molecular
+    identity
+open_questions:
+- g_l2stem_004
+- g_l2stem_009
+- g_l2stem_001
+contradicts:
+- mouse_skeletal_stem_cell_hierarchy
+- pthrp_positive_resting_chondrocyte
+- marrow_stromal_cell
+layer: L2
+stub: false
+last_verified: '2026-08-05'

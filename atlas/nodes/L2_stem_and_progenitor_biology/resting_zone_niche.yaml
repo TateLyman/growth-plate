@@ -1,0 +1,120 @@
+id: resting_zone_niche
+name: Resting zone as a stem cell niche
+aliases:
+- reserve zone niche
+- RZ niche
+- epiphyseal stem cell niche
+type: tissue_structure
+summary: 'The resting (reserve) zone is the epiphyseal-most stratum of the growth plate, containing small
+  round chondrocytes in an abundant matrix that divide rarely and sit immediately below the secondary
+  ossification centre. In mouse it functions as a niche rather than a passive reserve: it holds at least
+  three partially overlapping slow-cycling populations (PTHrP/Pthlh+, FoxA2+, and label-retaining Col2a1-lineage
+  cells) that seed the proliferative columns below. Its niche signals are defined negatively as much as
+  positively - resting chondrocytes sit in a Wnt-inhibitory microenvironment (enriched for secreted Wnt
+  inhibitors; forced beta-catenin activation drives them out of the zone), and their fate is instructed
+  in reverse by Indian hedgehog from the hypertrophic zone, since both Smoothened agonism and antagonism
+  reduce the number of columns formed from labelled resting cells - though the source of that statement,
+  mizuhashi2018, adds a qualifier this entry originally omitted and round 268 restored: both regimens acted
+  PREDOMINANTLY ON THE PROLIFERATING ZONE without directly affecting the labelled resting cells, and the
+  agonist and antagonist arms differ from each other by -1.85 columns with an interval straddling zero, so
+  the column count is a downstream readout and not evidence of an optimum in resting-cell behaviour. Loss of niche integrity is phenotypically
+  visible: partial diphtheria-toxin ablation of PTHrP+ resting cells in mouse shrinks the proliferative
+  zone and expands the hypertrophic and resting zones, and Adgrg6 loss shortens the resting zone and produces
+  intra-plate cell clusters. In humans the resting zone has been mapped only transcriptionally and histologically;
+  no human cell has ever been shown to behave as a resting-zone stem cell, because clonal lineage tracing
+  cannot be performed in people.'
+quantitative:
+- parameter: EdU+ fraction, PTHrP-mCherry+ resting chondrocytes at P9
+  value: '6.1'
+  unit: '% of mCherry+ cells'
+  conditions: postnatal day 9 mouse distal femur, 2 h EdU pulse
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: SD 2.3, n=3 mice
+- parameter: EdU+ fraction, proliferative zone chondrocytes at P9
+  value: '30.5'
+  unit: '% of PZ chondrocytes'
+  conditions: postnatal day 9 mouse distal femur, same assay
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: SD 3.2, n=3 mice
+- parameter: H2B-EGFP label-retaining fraction of Col2a1-lineage chondrocytes, plateau
+  value: '2.6'
+  unit: '% of Col2a1-creER lineage cells'
+  conditions: doxycycline chase from P21, mouse distal femur, flow cytometry
+  species: mouse
+  source_ref: hallett2021
+  uncertainty: SE 0.9; decay half-life 0.99-1.18 weeks
+- parameter: H2B-EGFP signal loss per chondrocyte division
+  value: '2.03'
+  unit: fold
+  conditions: P35 mouse, paired EdU- RZ cell vs EdU+ PZ daughter, 24 cell pairs
+  species: mouse
+  source_ref: hallett2021
+  uncertainty: n=4 mice, p<0.0001
+localization:
+- 'mouse RZ: confirmed, PTHrP-mCherry knock-in reporter and PTHrP-creER lineage (mizuhashi2018)'
+- 'mouse RZ: confirmed, H2B-EGFP label-retaining cells concentrated at the top of the plate (hallett2021_2)'
+- 'human RZ: transcriptionally defined only, spatial transcriptomics of adolescent biopsies (avijgan2025,
+  chu2026)'
+- 'rabbit RZ: FoxA2+ cells present at the cartilage/SOC interface (muruganandan2022)'
+human_evidence: indirect
+human_evidence_note: Human resting zone cells have been profiled by single-cell and spatial transcriptomics
+  in adolescent surgical specimens and show quiescence-associated features, but no functional stem-cell
+  assay has been performed in human tissue in situ.
+species_basis:
+- mouse
+- rabbit
+- human
+translation_risk: high
+translation_risk_reason: Every functional claim about the niche (clonality, self-renewal, ablation, Hedgehog
+  and Wnt manipulation) rests on mouse genetics. Mice never fuse their growth plates, so the terminal
+  behaviour of the human niche has no murine counterpart.
+confidence: C
+key_refs:
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: PTHrP+ resting chondrocytes are slow-cycling, clonogenic and generate columns; partial
+    ablation distorts zone heights
+- ref_id: hallett2021
+  pmid: '34309509'
+  doi: 10.7554/elife.64513
+  first_author: Hallett SA
+  year: 2021
+  type: primary
+  one_line_finding: Label-retaining resting chondrocytes occupy a Wnt-inhibitory microenvironment and
+    exit on beta-catenin activation
+- ref_id: muruganandan2022
+  pmid: '35523895'
+  doi: 10.1038/s41467-022-30247-1
+  first_author: Muruganandan S
+  year: 2022
+  type: primary
+  one_line_finding: FoxA2+ cells at the top of the resting zone are a second, longer-lived stem population
+- ref_id: bian2024
+  pmid: '39236220'
+  doi: 10.1093/jbmr/zjae144
+  first_author: Bian F
+  year: 2024
+  type: primary
+  one_line_finding: ADGRG6 is required to maintain slow-cycling resting zone cells and normal zone architecture
+- ref_id: avijgan2025
+  doi: 10.1101/2025.03.12.642613
+  first_author: Avijgan M
+  year: 2025
+  type: preprint
+  one_line_finding: Human adolescent resting zone contains transcriptionally quiescent sub-populations
+    (CHRDL2+, SFRP5+)
+open_questions:
+- g_l2stem_001
+- g_l2stem_003
+- g_l2stem_005
+contradicts:
+- soc_formation_triggers_stemness
+layer: L2
+stub: false
+last_verified: '2026-08-05'

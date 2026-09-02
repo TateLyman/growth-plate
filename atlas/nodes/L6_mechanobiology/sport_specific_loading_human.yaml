@@ -1,0 +1,78 @@
+id: sport_specific_loading_human
+name: Sport-specific mechanical loading effects on the human skeleton
+type: phenotype
+summary: 'Sport gives the only human experiments in which a physis is loaded far outside the normal range
+  for years, and the results split by site. Where loading is compressive, repetitive and applied through
+  a small joint, local growth is suppressed: in gymnasts the wrist bears body weight, and imaging shows
+  distal radial physeal stress injury with acquired positive ulnar variance, i.e. the radius is shortened
+  relative to the ulna in the same limb - an internally controlled demonstration of load-suppressed physeal
+  output in humans. Wrist pain and physeal injury are common enough in adolescent artistic gymnasts to
+  have their own systematic review and meta-analysis. Where loading is impact-type, intermittent and axial,
+  growth is preserved or promoted: a 24-week supervised jumping protocol (3 sessions/week, 50 min) in
+  47 prepubertal short-stature children gave 4.20 cm of height gain against 2.48 cm in controls (p=0.001)
+  alongside a femoral neck BMD Z-score gain of 1.075. The two findings are consistent with the static-versus-dynamic
+  distinction seen in animals rather than with a single monotonic load-growth relation. Neither the gymnast
+  wrist nor the jumping trial measures the stress at the physis, so the human dose axis remains empty;
+  the jumping trial is also small, single-centre and not blinded, and its mediation analysis (via femoral
+  neck BMD, beta=-0.442) is fragile.'
+quantitative:
+- parameter: height gain over 24 weeks, jumping intervention vs control
+  value: 4.20 vs 2.48
+  unit: cm
+  conditions: 47 prepubertal short-stature children aged 8-11 y, 3 sessions/wk of 50 min progressive jumping
+  species: human
+  source_ref: wang2025
+  uncertainty: p=0.001; n=20 intervention, n=27 control; not randomised
+- parameter: femoral neck BMD Z-score change, jumping intervention
+  value: '1.075'
+  unit: Z-score units
+  conditions: same trial, DXA
+  species: human
+  source_ref: wang2025
+  uncertainty: p<0.001, Cohen's d 0.869; lumbar spine BMD unchanged
+- parameter: mediation of height gain by femoral neck BMD change
+  value: '-0.442'
+  unit: beta
+  conditions: same trial
+  species: human
+  source_ref: wang2025
+  uncertainty: 95% CI -1.474 to -0.009; no direct effect detected
+localization:
+- 'human distal radial physis in gymnasts: stress injury and positive ulnar variance (difiori2006)'
+- 'human lower limb physes under impact loading: growth promotion inferred, not localised'
+human_evidence: direct
+human_evidence_note: Both the gymnast wrist series and the jumping trial are human, but neither measures
+  physeal stress and neither is randomised with adult height as the endpoint.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human observational and interventional data.
+confidence: C
+key_refs:
+- ref_id: difiori2006
+  pmid: '16493174'
+  first_author: DiFiori JP
+  year: 2006
+  type: review
+  one_line_finding: Repetitive weight-bearing wrist loading in gymnasts causes distal radial physeal injury
+    and acquired positive ulnar variance
+- ref_id: dileo2026
+  pmid: '41552624'
+  first_author: DiLeo SDF
+  year: 2026
+  type: systematic_review
+  one_line_finding: Quantifies the epidemiology and risk factors of wrist pain and injury in adolescent
+    artistic gymnasts
+- ref_id: wang2025
+  pmid: '41233903'
+  first_author: Wang HM
+  year: 2025
+  type: primary
+  one_line_finding: 24 weeks of jumping exercise gave 4.20 cm height gain vs 2.48 cm in controls in prepubertal
+    short-stature children
+open_questions:
+- g_l6mech_010
+- g_l6mech_003
+layer: L6
+stub: false
+last_verified: '2026-08-05'

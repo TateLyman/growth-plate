@@ -1,0 +1,55 @@
+id: cancer_survivor_growth
+name: Childhood cancer survivor growth failure
+aliases:
+- late effects growth failure
+- post-transplant short stature
+type: phenotype
+layer: L11
+stub: false
+summary: |
+  Childhood cancer survivorship is the human multi-insult experiment on the growth plate, and its
+  value is that the insults are documented, dated and dose-quantified in a way that no other
+  condition in this layer allows. Four separable mechanisms operate: hypothalamic-pituitary
+  irradiation causing GH deficiency, direct spinal or limb irradiation damaging the physis itself,
+  chemotherapy toxicity to proliferating chondrocytes, and gonadal damage altering the timing of
+  the pubertal estrogen exposure that terminates growth. Because radiotherapy fields and cumulative
+  doses are recorded, the direct physeal component can in principle be separated from the endocrine
+  component within the same patient - for example by comparing sitting height with leg length after
+  spinal irradiation. GH replacement is effective but incompletely restorative, and a nationwide
+  longitudinal study of GH therapy after childhood haematopoietic cell transplantation quantifies
+  the response and its predictors. An informative pharmacological probe in this population is
+  adjuvant aromatase inhibition: in 92 GH-deficient male survivors, 22 treated with combination
+  aromatase inhibitor plus GH were compared with 70 on GH alone for final adult height - a direct
+  human test of whether delaying estrogen-driven fusion can recover height lost to an earlier
+  insult.
+quantitative:
+- parameter: GH-deficient male childhood cancer survivors in the aromatase inhibitor study
+  value: '92'
+  unit: patients
+  conditions: 70 treated with GH alone, 22 with combination aromatase inhibitor plus GH; final adult
+    height endpoint
+  species: human
+  source_ref: pollock2024
+  uncertainty: n=92
+localization:
+- 'human physis in the irradiated field: direct radiation damage; distinguishable in principle from
+  endocrine GH deficiency by segment-specific measurement'
+human_evidence: direct
+human_evidence_note: Human cohorts with documented radiation fields and doses, GH replacement outcomes
+  and a comparative aromatase inhibitor intervention with a final-adult-height endpoint.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: C
+key_refs:
+- ref_id: pollock2024
+  pmid: '38804882'
+  first_author: Pollock NI
+  year: 2024
+  type: primary_abstract_only
+  one_line_finding: '92 GH-deficient male cancer survivors: aromatase inhibitor plus GH vs GH alone,
+    final adult height compared.'
+open_questions:
+- g_l11path_025
+last_verified: '2026-08-05'

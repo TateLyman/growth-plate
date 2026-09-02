@@ -1,0 +1,60 @@
+id: population_height_variation
+name: Between-population variation in height
+type: phenotype
+summary: 'The spread of mean adult height across human populations is about 19-20 cm and it has not narrowed.
+  A century ago the tallest and shortest national means differed by 19-20 cm; a century later the differential
+  is unchanged for women and has widened for men, despite a near-complete reshuffling of the country ranking
+  (ncd2016). The extremes are Dutch men born in the last quarter of the 20th century (>182.5 cm) and Guatemalan
+  women born in 1896 (140.3 cm, 95% CrI 135.8-144.8). The same spread is present in adolescents: in 2019
+  the difference between the tallest and shortest national means at age 19 was 20 cm or more (ncd2020).
+  The structural point for the atlas is that the between-population range (~20 cm) and the largest observed
+  within-population secular gain (~20 cm) are the same magnitude, so environmental change alone can move
+  a population across essentially the entire observed between-population range. That does not make the
+  differences purely environmental - the ranking changed while the spread did not - but it does mean that
+  inferring a genetic difference from a contemporary height difference between two populations is unidentified
+  without cohort data.'
+quantitative:
+- parameter: range of national mean adult height, tallest minus shortest
+  value: 19-20
+  unit: cm
+  conditions: 1896 birth cohort and 1996 birth cohort; unchanged for women, widened for men
+  species: human
+  source_ref: ncd2016
+  uncertainty: per-country credible intervals in ncd2016
+- parameter: lowest recorded national mean adult height
+  value: '140.3'
+  unit: cm
+  conditions: Guatemalan women, 1896 birth cohort
+  species: human
+  source_ref: ncd2016
+  uncertainty: 95% credible interval 135.8-144.8
+localization:
+- 'human SYS: population phenotype'
+human_evidence: direct
+human_evidence_note: Measured heights from 200 countries pooled by NCD-RisC.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human population phenotype.
+confidence: A
+key_refs:
+- ref_id: ncd2016
+  pmid: '27458798'
+  first_author: NCD Risk Factor Collaboration (NCD-RisC).
+  year: 2016
+  type: primary
+  one_line_finding: The tallest-to-shortest national mean adult height differential was 19-20 cm a century
+    ago, unchanged for women and larger for men today; lowest recorded mean 140.3 cm (Guatemalan women,
+    1896).
+- ref_id: ncd2020
+  pmid: '33160572'
+  first_author: NCD Risk Factor Collaboration (NCD-RisC).
+  year: 2020
+  type: primary
+  one_line_finding: Difference of 20 cm or more between the tallest and shortest national mean heights
+    at age 19 in 2019.
+open_questions:
+- g_l10env_008
+layer: L10
+stub: false
+last_verified: '2026-08-05'

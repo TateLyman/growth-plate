@@ -1,0 +1,106 @@
+id: gh_dose_versus_final_height
+name: GH dose buys first-year velocity and does not buy final height - the KIGS regional contrast
+type: process
+layer: L12
+stub: false
+summary: 'KIGS is the largest record of growth hormone treatment ever assembled: 83,803 children in 52 countries,
+  322,576 patient-years, opened 1987 and closed 2012. Its full-cohort report (maghnie2022) tabulates height standard
+  deviation score at treatment start, after year 1, at puberty onset and at near-adult height, split by diagnosis
+  and by region - and the regions were dosed differently. In idiopathic GH deficiency the European cohort received
+  a median 0.21 mg/kg/week and the US cohort 0.30, a 43% higher dose, from near-identical starting points (height
+  SDS -3.01 vs -2.99, age 7.51 vs 7.4 years). The higher dose bought more in the first year: delta height SDS 0.75
+  against 0.69. IT BOUGHT NOTHING AT THE END: near-adult height gain 1.96 against 1.97. The second pattern is in the
+  shape of the trajectory rather than the comparison between arms. Across all six diagnosis-by-region cells the FIRST
+  YEAR delivers 35-41% of the entire lifetime height-SDS gain, with the remaining decade of daily injections delivering
+  the rest. Both patterns are what a depletable resource spent at an adjustable rate would look like, and both are
+  equally consistent with catch-up growth toward a genetically set target that involves no depletion at all. The registry
+  cannot separate these, and the confound that most limits it is stated in the numbers themselves: 2,642 of 8,597
+  European children reach near-adult height against 213 of 2,239 American ones, so the two endpoint figures are drawn
+  from populations followed to 31% and 9.5% respectively.'
+quantitative:
+- parameter: DOSE VERSUS FIRST-YEAR GAIN VERSUS FINAL GAIN, idiopathic GHD
+  value: 'Europe 0.21 mg/kg/wk: +0.69 year 1, +1.97 at near-adult height. USA 0.30 mg/kg/wk: +0.75 year 1, +1.96 at
+    near-adult height'
+  unit: delta height SDS from treatment start
+  conditions: KIGS full cohort, patients prepubertal at rhGH start. Europe n = 8,597 at start, 3,968 at puberty onset,
+    2,642 at near-adult height; USA n = 2,239 at start, 979 at puberty onset, 213 at near-adult height. Median (10th,
+    90th percentile) reported; starting height SDS -3.01 vs -2.99 and starting age 7.51 vs 7.4 years
+  species: human
+  source_ref: maghnie2022
+  uncertainty: 'DERIVED BY THIS ATLAS FROM THE PUBLISHED SUPPLEMENTARY TABLE, 2026-08-06, GRADE D AS A COMPARISON.
+    The tabulated numbers are the sponsor''s; the dose-versus-endpoint contrast is mine and was not drawn by the authors.
+    THE COMPARISON IS OBSERVATIONAL AND BETWEEN CONTINENTS, NOT RANDOMISED. Four confounds are large enough to account
+    for it on their own: (1) DIFFERENTIAL ATTRITION - 31% of the European cohort reaches near-adult height against
+    9.5% of the American, so the two endpoint medians describe differently selected survivors; (2) height SDS is computed
+    against Prader standards for a cohort spanning 52 countries; (3) stopping rules, adherence and reimbursement differ
+    by health system; (4) these are medians of different subsets at each row, not a within-person trajectory. THE
+    OBSERVATION IS RECORDED BECAUSE IT IS THE LARGEST HUMAN DATASET BEARING ON WHETHER GH SPENDS SOMETHING FINITE,
+    not because it settles it.'
+- parameter: fraction of the entire lifetime GH height gain delivered in the FIRST YEAR
+  value: IGHD Europe 35%, IGHD USA 38%, IGHD Japan 62%; ISS Europe 38%, ISS USA 41%, ISS Japan 36%
+  unit: '% of near-adult-height delta SDS achieved in year 1'
+  conditions: 'computed by this atlas as year-1 delta height SDS divided by near-adult-height delta height SDS, from
+    the same table. Absolute values: IGHD 0.69/1.97, 0.75/1.96, 0.53/0.85; ISS 0.60/1.56, 0.61/1.49, 0.49/1.36'
+  species: human
+  source_ref: maghnie2022
+  uncertainty: DERIVED BY THIS ATLAS, GRADE D. The numerator and denominator come from different subsets of the cohort
+    - everyone contributes to year 1, only those followed to the end contribute to near-adult height - so the ratio
+    is not a within-person fraction and could be biased in either direction. THE PATTERN IS NONETHELESS CONSISTENT
+    ACROSS THREE CONTINENTS AND TWO DIAGNOSES, which an artefact of one health system would not be. Japan's IGHD figure
+    of 62% is the outlier and its intermediate row is anomalous - cumulative gain at puberty onset (0.41) is LOWER
+    than at year 1 (0.53), which cannot happen within a person and shows plainly that these are different subsets.
+- parameter: cohort scale
+  value: 83,803 children, 52 countries, 277,267 patient-years of rhGH, 322,576 patient-years of observation
+  unit: none
+  conditions: KIGS, 1987 to closure 30 June 2012
+  species: human
+  source_ref: maghnie2022
+  uncertainty: 'Scale is the reason this record matters and not a guarantee of anything: KIGS is a voluntary post-marketing
+    registry run by the manufacturer, not a trial, with no untreated control arm at any point.'
+- parameter: does the registry test whether GH depletes the growth plate stem pool
+  value: no - and the individual-level data that could is not public
+  unit: none
+  conditions: aggregate tables only; individual participant data would require a Vivli or CSDR request
+  species: human
+  source_ref: maghnie2022
+  uncertainty: 'RECORDED AS AN ABSENCE. chu2025 shows in mouse that GH shifts growth plate stem cells toward lineage-restricted
+    division and depletes the label-retaining pool. The human prediction is specific and testable in these data and
+    has not been tested: children on higher cumulative GH exposure should reach near-adult height EARLIER and with
+    a shorter remaining growth period, at the same or lower final height. Answering it needs per-child dose, duration,
+    bone age and age at final height - all collected, none published. THE SUPPLEMENTARY MATERIAL OBTAINED HERE IS
+    THE SAFETY AND DEMOGRAPHIC SUPPLEMENT, not participant data.'
+localization:
+- systemic
+human_evidence: direct
+human_evidence_note: 'Entirely human, and the largest such cohort in existence. What it is not is experimental: no
+  randomisation to dose, no untreated arm, and the regional dose contrast is confounded with health system, reference
+  standard and follow-through rate.'
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: Human throughout. The risk is causal inference from a registry, not species transfer.
+confidence: C
+confidence_note: C. The underlying tabulated numbers are from a peer-reviewed full-cohort report of 83,803 children
+  and are as reliable as registry data get. The two propositions drawn from them here - that a 43% higher dose does
+  not raise final height, and that the first year delivers a third to two fifths of the lifetime gain - are this atlas's
+  own reading of a published table, are observational, and are subject to a differential-attrition confound large
+  enough to explain the first on its own. They are graded D individually within the node. C is the node grade because
+  the scale and the consistency of the trajectory shape across three continents carry more than a single registry
+  comparison would.
+key_refs:
+- ref_id: maghnie2022
+  first_author: Maghnie M
+  year: 2022
+  type: primary
+  one_line_finding: 'Full KIGS cohort, 83,803 children: height SDS trajectories by diagnosis and region show the first
+    year delivering 35-41% of lifetime gain, and a 43% higher US dose giving more first-year gain but identical near-adult
+    height.'
+- ref_id: chu2025
+  first_author: Chu NTL
+  year: 2025
+  type: primary
+  one_line_finding: GH depletes the growth plate stem pool in mouse - the mechanism this registry could test in humans
+    and does not.
+open_questions:
+- g_l12_kigs_depletion_test
+last_verified: '2026-08-06'

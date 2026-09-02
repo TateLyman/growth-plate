@@ -1,0 +1,151 @@
+id: neprilysin_cnp_clearance
+name: Neprilysin (MME) - enzymatic clearance of CNP
+aliases:
+- NEP
+- membrane metalloendopeptidase
+- MME
+- CD10
+- enkephalinase
+type: protein
+layer: L3
+stub: false
+summary: 'Neprilysin is the zinc metalloendopeptidase that DEGRADES C-type natriuretic peptide, and it is the second
+  of the two arms by which CNP is cleared - the other being receptor-mediated uptake by NPR3. The atlas held NPR3
+  from the start and did not hold this one until 2026-08-06, which was a hole in the most therapeutically advanced
+  pathway in the field. It matters because inhibiting neprilysin raises ENDOGENOUS CNP rather than infusing an analogue,
+  and because the drug that does it is already approved and already given to children. Sacubitril, the neprilysin
+  inhibitor component of sacubitril/valsartan, produces DOSE-DEPENDENT SKELETAL OVERGROWTH in wild-type mice, with
+  thickening of BOTH the hypertrophic and proliferative zones that mirrors what CNP administration does. The effect
+  is abolished by cartilage-specific knockout of NPR-B, which is a clean genetic epistasis test placing it squarely
+  on the CNP/NPR-B axis rather than on any of neprilysin''s many other substrates. It also works on fetal tibial explants
+  in organ culture, so it does not require an intact endocrine axis. The finding carries one strong constraint and
+  one strong caveat. The constraint is a WINDOW: sacubitril promoted growth in mice only at 3 to 4 weeks of age, the
+  period when endogenous CNP and neprilysin expression were highest in lumbar vertebrae - so the effect is conditional
+  on the substrate being there to protect, and an agent that raises a peptide the tissue is not making will do nothing.
+  The caveat is that no bone-length or stature measurement exists in any human given sacubitril, at any age, despite
+  the drug being in paediatric use for heart failure. The authors end by calling for exactly that investigation.'
+quantitative:
+- parameter: skeletal overgrowth from neprilysin inhibition, dose-response
+  value: 103 at 0.05% and 102 at 0.025%
+  unit: '% of vehicle naso-anal length at 7 weeks'
+  conditions: male C57BL/6 mice given 0.05% or 0.025% sacubitril or vehicle for 4 weeks from 3 weeks of age; naso-anal
+    length and body weight measured weekly under isoflurane, bone lengths on soft X-ray at cull
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: 'P<0.001 and P<0.02 respectively, dose-dependent. THE MAGNITUDE IS SMALL AND MUST BE quoted as such:
+    2-3% of body length, not a transformation. BODY WEIGHT DID NOT DIFFER between groups at any week, so this is a
+    specifically SKELETAL effect rather than general growth. Reproducible in females: a 1-week treatment from 3 weeks
+    gave significantly longer naso-anal length (P<0.01), longer cranial anteroposterior diameter (P<0.05) and longer
+    lumbar vertebrae (P<0.01), with no weight difference.'
+- parameter: comparison and additivity with CNP itself
+  value: sacubitril 102%, CNP 104%, sacubitril+CNP NOT additive
+  unit: '% of vehicle naso-anal length'
+  conditions: 'four-arm design: vehicle/vehicle, sacubitril/vehicle, vehicle/CNP, sacubitril/CNP. Growth plate histology
+    at 4 weeks by alcian blue'
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: 'P<0.05 and P<0.001 against vehicle. THE NON-ADDITIVITY IS THE MECHANISTIC RESULT AND THE PRACTICAL
+    LIMIT AT ONCE: sacubitril and CNP saturate the same step, which confirms the pathway and means the two CANNOT
+    BE STACKED for additional height. Sacubitril delivers roughly half of what exogenous CNP delivers (2% vs 4%),
+    which sets a ceiling on what protecting the endogenous ligand can achieve relative to supplying an analogue. Growth
+    plate width, including proliferative and hypertrophic zones, was thickened by both and again NOT additively.'
+- parameter: genetic test of the pathway
+  value: 100% of vehicle, P=0.392
+  unit: '% naso-anal length in cartilage-specific NPR-B knockout'
+  conditions: Col2a1-Cre;Npr2flox/flox mice and Npr2flox/flox controls, sacubitril from 3 weeks for 2 weeks; growth
+    velocity, body weight, cranial anteroposterior diameter and lumbar vertebral length all unaltered in the knockout
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: A COMPLETE NULL IN THE KNOCKOUT while the floxed controls responded normally. Neprilysin degrades natriuretic
+    peptides, enkephalins, substance P, bradykinin and amyloid beta among others, so an inhibitor could act through
+    any of them; abolition by a CARTILAGE-SPECIFIC receptor deletion localises the effect to chondrocyte NPR-B and
+    excludes all of them.
+- parameter: age window, tested directly
+  value: 103% treating 3-4 weeks; 99% treating 4-5 weeks
+  unit: '% of vehicle final naso-anal length'
+  conditions: two 1-week treatment arms started one week apart, against vehicle; growth velocity compared week by
+    week
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: 'P<0.05 for the 3-4 week arm and P=0.717 for the 4-5 week arm. THE WINDOW WAS TESTED RATHER THAN INFERRED,
+    and one week later the drug does nothing at all. The authors exclude tachyphylaxis explicitly: long-term sacubitril
+    does not lose its antihypertensive effect or its elevation of circulating natriuretic peptide, so the loss is
+    developmental rather than pharmacological. THIS IS THE ROW THAT WOULD SINK A BADLY TIMED TRIAL - a null obtained
+    outside the window would look like a refuted mechanism.'
+- parameter: independence from the endocrine axis
+  value: promotes endochondral growth in organ culture
+  unit: qualitative
+  conditions: tibial explants from fetal mice
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: An isolated bone with no circulation, pituitary or liver responds, so the mechanism is local to cartilage
+    and needs no GH, IGF-1 or other systemic mediator.
+- parameter: IS THE TARGET PRESENT IN A HUMAN GROWTH PLATE
+  value: yes. MME mean 7.97% of cells against NPR3 1.55%, a 5.1-fold difference
+  unit: '% of cells with detectable transcript, by zone'
+  conditions: 're-analysis by this atlas of GSE288028, the deposited data of chu2026 - single-cell RNA-seq of EARLY
+    PUBERTAL HUMAN growth plate from growth-restricting surgery. Four fresh donors, donor 3 excluded as its library
+    is 83-98% COL10A1-positive in every zone and its zone assignment is not trustworthy. MME by zone: stem 7.11, proliferative
+    2.79, prehypertrophic 5.96, hypertrophic 14.28. NPR3 by zone: 1.50, 0.48, 2.91, 0.97. NPR2 detected in all four
+    donors, all zones'
+  species: human
+  source_ref: chu2026
+  uncertainty: 'DERIVED BY THIS ATLAS, 2026-08-06, grade D. THE TARGET AND THE RECEPTOR ARE BOTH PRESENT IN HUMAN
+    PUBERTAL GROWTH PLATE, and MME exceeds NPR3 in 9 of 11 zone-donor pairs - so the ENZYMATIC clearance arm looks
+    more prominent than the RECEPTOR clearance arm in this tissue, which is the arm sacubitril blocks. THE COMPLICATION:
+    NPPC, the CNP gene itself, sits at the detection floor (0.04-0.52% of cells, zero donors above threshold). Local
+    CNP production in the plate is therefore minimal in these samples, and the mouse rationale - inhibit NEP where
+    CNP and NEP are co-expressed - does not transfer intact. It does not sink the idea, because vosoritide works by
+    supplying CNP systemically and the receptor is plainly there, but it means any human effect would depend on protecting
+    CIRCULATING rather than locally made CNP. Droplet scRNA-seq also under-detects secreted peptides, so a floor reading
+    for NPPC is weak evidence of absence. Donors are children operated on to PREVENT tall stature.'
+- parameter: human bone length or stature on a neprilysin inhibitor
+  value: never measured
+  unit: none
+  conditions: sacubitril/valsartan is approved and in paediatric use for heart failure
+  species: human
+  source_ref: hakata2024
+  uncertainty: RECORDED AS AN ABSENCE. The paper closes by calling for investigation in people with short stature.
+    No trial, registry or case series reporting height in sacubitril-treated children was located on 2026-08-06.
+localization:
+- 'growth plate cartilage: expression highest in lumbar vertebrae at 3-4 weeks in mouse, coincident with peak CNP'
+human_evidence: indirect
+human_evidence_note: 'UPGRADED FROM ABSENT 2026-08-06. No human has been measured for height on a neprilysin inhibitor,
+  but the target is now confirmed present in the right human tissue at the right age: re-analysis of chu2026''s deposited
+  single-cell data from EARLY PUBERTAL HUMAN growth plate finds MME expressed in 3 of 4 donors across all zones, at
+  5.1-fold the level of NPR3, with NPR2 in all four. The complication is that NPPC itself sits at the detection floor,
+  so local CNP production is minimal and any human effect would have to come from protecting circulating rather than
+  locally synthesised CNP.'
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: One laboratory, one species, no magnitude available without the full text, and an explicit
+  age window whose human equivalent is unknown. Against that, the target pathway is the best-validated growth pathway
+  in human skeletal medicine.
+confidence: B
+confidence_note: RAISED C to B on 2026-08-06 after reading hakata2024 in full. The design carries a dose-response,
+  a directly TESTED age window with a one-week-later null, a four-arm CNP comparison establishing non-additivity,
+  a cartilage-specific NPR-B knockout that abolishes the effect completely (P=0.392), reproduction in both sexes,
+  and an organ-culture replication. B not A because it is one laboratory, one species, the effect is 2-3% of body
+  length, and no human has been measured. The human expression row is graded D separately as this atlas's own re-analysis.
+key_refs:
+- ref_id: hakata2024
+  pmid: '38752331'
+  first_author: Hakata T
+  year: 2024
+  type: primary
+  one_line_finding: Sacubitril, an approved neprilysin inhibitor, causes dose-dependent skeletal overgrowth in wild-type
+    mice with thickening of both proliferative and hypertrophic zones, abolished by cartilage-specific NPR-B knockout,
+    and only at 3-4 weeks of age.
+- ref_id: chu2026
+  pmid: '41984930'
+  first_author: Chu NTL
+  year: 2026
+  type: primary
+  one_line_finding: Single-cell and spatial atlas of the early pubertal human growth plate with two resting-zone stem
+    populations and direct GH responsiveness; its deposited data is GSE288028, which this atlas has been using since
+    Phase 5.
+open_questions:
+- g_l3_neprilysin_window
+last_verified: '2026-08-06'

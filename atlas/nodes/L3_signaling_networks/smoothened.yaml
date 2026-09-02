@@ -1,0 +1,72 @@
+id: smoothened
+name: SMO
+aliases:
+- Smoothened
+type: protein
+layer: L3
+stub: false
+summary: 'SMO is the class F GPCR that transduces Hedgehog signals after PTCH1 derepression, and in the
+  growth
+
+  plate it acts in the primary cilium. Chondrocyte-specific Smo deletion reduces columnar chondrocyte
+
+  proliferation cell-autonomously, which established that Ihh acts directly on proliferating
+
+  chondrocytes and not solely through PTHrP (Long 2001). Constitutive Hedgehog activation achieved by
+
+  Smo pathway manipulation accelerates hypertrophy even without PTHrP (Mak 2008), and pharmacological
+
+  SMO agonism increases linear growth in mice (Trompet 2024). The canonical PTCH1-SMO-GLI chain is not
+
+  the whole story in this tissue: cartilage-to-bone transition has been reported to require Hedgehog
+
+  signalling but to proceed independently of Smoothened (Wang 2022), a result that is not reconciled
+
+  with the Smo conditional-knockout literature (contradiction c_l3core_smo).
+
+  '
+localization:
+- 'mouse PZ chondrocyte primary cilium: functionally confirmed by conditional deletion (long2001)'
+- 'human growth plate: unconfirmed'
+human_evidence: absent
+human_evidence_note: No human SMO growth plate phenotype; human SMO mutations (Curry-Jones syndrome) are
+  mosaic patterning disorders.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Mouse conditional genetics only; no human tissue or genetic readout of SMO growth
+  plate function.
+confidence: C
+key_refs:
+- ref_id: long2001
+  pmid: '11748145'
+  first_author: Long F
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Chondrocyte Smo deletion reduces proliferation, proving direct Ihh action.
+- ref_id: mak2008
+  pmid: '18434416'
+  first_author: Mak KK
+  year: 2008
+  type: primary_abstract_only
+  one_line_finding: Hedgehog activation accelerates hypertrophy in a PTHrP-null background.
+- ref_id: wang2022
+  pmid: '35472633'
+  first_author: Wang H
+  year: 2022
+  type: primary_abstract_only
+  one_line_finding: Hedgehog drives cartilage-to-bone transition independently of Smoothened.
+- ref_id: trompet2024
+  pmid: '38516888'
+  first_author: Trompet D
+  year: 2024
+  type: primary_abstract_only
+  one_line_finding: SMO agonism in growth plate stem cells promotes linear bone growth.
+contradicts:
+- wang2022
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Chondrocyte-specific conditional deletion, cell-autonomous (long2001). The open wang2022
+  conflict is a pathway-topology contradiction, not a paralog one.

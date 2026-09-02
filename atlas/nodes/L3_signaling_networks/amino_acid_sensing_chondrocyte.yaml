@@ -1,0 +1,45 @@
+id: amino_acid_sensing_chondrocyte
+name: Amino acid sensing in chondrocytes
+aliases:
+- glutamine metabolism, chondrocyte
+type: process
+layer: L3
+stub: false
+summary: 'Growth plate chondrocytes are avascular, highly anabolic and therefore acutely dependent on amino acid supply.
+  Stegen 2020 shows the sensing is not merely permissive but identity-forming and runs as a feedforward loop: SOX9
+  raises glutamine consumption and glutaminase 1 (GLS1) levels, and GLS1 activity is then required for chondrocyte
+  function through three separable routes - glutamate-dehydrogenase-derived acetyl-CoA for histone acetylation at
+  chondrogenic genes, transaminase-derived aspartate for proliferation and matrix synthesis, and glutamine-derived
+  glutathione for survival in the avascular core (mouse and cell-based). This is a direct metabolic-to-transcriptional
+  convergence: the master chondrogenic transcription factor sets its own nutrient flux, and the flux is required to
+  keep the chromatin state that supports the transcription factor. mTORC1 is the canonical amino-acid-responsive kinase
+  in the same cell and controls translational output (Chen and Long 2014), but the two axes have not been tested against
+  each other in the growth plate. No human growth plate metabolite measurement exists.'
+localization:
+- 'mouse growth plate: GLS1 dependence demonstrated (stegen2020)'
+- 'human growth plate: unconfirmed'
+human_evidence: absent
+human_evidence_note: No human growth plate amino acid or glutamine flux measurement.
+species_basis:
+- mouse
+- in_vitro_animal_cell
+translation_risk: high
+translation_risk_reason: Mouse genetics plus tracer metabolomics in cultured cells; human physeal metabolism is unmeasured.
+confidence: C
+key_refs:
+- ref_id: stegen2020
+  pmid: '32470321'
+  first_author: Stegen S
+  year: 2020
+  type: primary
+  one_line_finding: SOX9 drives glutamine uptake and GLS1, and GLS1 flux is required for chondrocyte epigenetic state,
+    proliferation and survival.
+- ref_id: chen2014
+  pmid: '24948603'
+  first_author: Chen J
+  year: 2014
+  type: primary
+  one_line_finding: mTORC1 converts nutrient status into chondrocyte protein synthesis rate and cell size.
+open_questions:
+- g_l3rest_010
+last_verified: '2026-08-05'

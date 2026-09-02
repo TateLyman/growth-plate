@@ -1,0 +1,46 @@
+id: leptin_receptor
+name: Leptin receptor (LEPR)
+aliases:
+- LEPR
+- ObRb
+- CD295
+type: protein
+layer: L4
+stub: false
+summary: LEPR is a class I cytokine receptor; only the long ObRb isoform has the intracellular box motifs
+  needed to activate JAK2-STAT3, and it is that isoform in hypothalamic arcuate POMC and AgRP neurons
+  that transduces the energy-sufficiency signal to the kisspeptin-GnRH axis. LEPR therefore shares JAK2
+  with the GH receptor, one of several points where the growth and energy axes use the same kinase. Biallelic
+  human LEPR mutations produce severe early-onset obesity, hyperphagia and hypogonadotropic hypogonadism,
+  with 9% mortality in an untreated cohort (saeed2023); unlike LEP deficiency the phenotype is not rescuable
+  with recombinant leptin, and MC4R agonism (setmelanotide) is the effective intervention, which localises
+  the defect downstream of the receptor. Lepr is also the marker of the LepR+ bone marrow stromal population,
+  so the same gene tags a skeletal progenitor lineage - a separate biology that should not be conflated
+  with the endocrine role.
+localization:
+- 'human SYS: hypothalamic arcuate neurons (ObRb), broad low-level expression elsewhere'
+- 'bone marrow: LepR marks a stromal progenitor population (distinct from the endocrine role)'
+- 'human growth plate: LEPR expression not established'
+human_evidence: direct
+human_evidence_note: Biallelic human LEPR mutations cause obesity with hypogonadotropic hypogonadism;
+  setmelanotide trials provide the interventional arm.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Human genetics and human pharmacology are both available.
+confidence: B
+key_refs:
+- ref_id: saeed2023
+  first_author: Saeed S
+  year: 2023
+  type: primary
+  one_line_finding: LEPR-deficient children in a 145-child cohort had 9% mortality with severe obesity
+    and hypogonadotropic hypogonadism.
+  pmid: '37659411'
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Node separates the ObRb isoform from short isoforms AND separates the endocrine role from the
+  LepR+ marrow stromal marker role - a conflation correctly refused.

@@ -1,0 +1,134 @@
+id: pthrp_ihh_feedback_loop
+name: PTHrP/IHH negative feedback loop
+aliases:
+- PTHrP-Ihh loop
+- Indian hedgehog/PTHrP feedback loop
+type: pathway
+layer: L3
+stub: false
+summary: 'PTHrP (PTHLH) is transcribed by periarticular and resting-zone chondrocytes and by perichondrium;
+
+  it diffuses toward the metaphysis and acts on PTH1R, which is most highly expressed in late
+
+  proliferative and prehypertrophic chondrocytes, to keep those cells cycling and to delay the switch
+
+  to hypertrophy (mouse and chick). Chondrocytes that leave the effective range of PTHrP exit the cell
+
+  cycle and switch on Ihh; Ihh then signals back through PTCH1/SMO, relieving GLI3 repressor, and
+
+  raises Pthlh transcription in the periarticular region, closing a negative feedback loop whose
+
+  geometry sets the length of the proliferative column - though whether the Ihh-to-Pthlh arm is direct
+
+  long-range action (Koziel 2004) or runs through a perichondrial signalling relay (raised by
+
+  St-Jacques 1999) has never been formally settled (Vortkamp 1996, chick and mouse; Lanske 1996;
+
+  St-Jacques 1999). The loop is not the whole of Ihh function: Ihh also drives columnar chondrocyte
+
+  proliferation cell-autonomously through Smo, and promotes both periarticular chondrocyte
+
+  differentiation and hypertrophy in a PTHrP-independent manner (Long 2001; Kobayashi 2002; Kobayashi
+
+  2005; Mak 2008). Ihh behaves as a long-range morphogen whose spread is limited by heparan sulfate
+
+  and requires DISP1: reducing Ext1 EXPANDS the Ihh signalling range, whereas Disp1 hypomorphs
+
+  establish the same loop over a shorter distance (Koziel 2004; Tsiairis 2008). Human genetics
+
+  supports each arm separately - PTHLH haploinsufficiency causes brachydactyly type E, IHH mutations
+
+  cause brachydactyly A1 and acrocapitofemoral dysplasia, PTH1R gain of function causes Jansen
+
+  metaphyseal chondrodysplasia and PTH1R loss causes Blomstrand chondrodysplasia - but the loop as a
+
+  closed control system has never been characterised quantitatively in any species: no measured
+
+  diffusion coefficient, decay length, transfer function or loop gain exists (gap g_l3core_001).
+
+  '
+localization:
+- 'mouse periarticular/RZ: Pthlh source, confirmed by ISH (vortkamp1996)'
+- 'mouse PHZ: Ihh source, confirmed by ISH (vortkamp1996)'
+- 'mouse PZ/PHZ: PTH1R highest, confirmed (vortkamp1996)'
+- 'human RZ/PHZ: zonal PTHrP and IHH protein distribution unconfirmed in growth plate'
+human_evidence: indirect
+human_evidence_note: Each node of the loop has a human monogenic phenotype (PTHLH, IHH, PTH1R), but loop
+  topology and gain have never been measured in human tissue.
+species_basis:
+- mouse
+- chicken
+- human
+translation_risk: moderate
+translation_risk_reason: Loop wiring is inferred almost entirely from mouse and chick genetics; human
+  evidence is genetic dose-effect only, and mice do not undergo epiphyseal fusion so late-stage loop behaviour
+  may differ.
+confidence: B
+key_refs:
+- ref_id: vortkamp1996
+  pmid: '8662546'
+  first_author: Vortkamp A
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: Ihh from prehypertrophic chondrocytes raises periarticular PTHrP and blocks hypertrophy
+    in chick limb.
+- ref_id: lee1996
+  pmid: '8895385'
+  first_author: Lee K
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: PTHrP delays terminal chondrocyte differentiation in mouse endochondral bone.
+- ref_id: stjacques1999
+  pmid: '10465785'
+  first_author: St-Jacques B
+  year: 1999
+  type: primary
+  one_line_finding: Ihh-null mice lose chondrocyte proliferation and show ectopic hypertrophy.
+- ref_id: karp2000
+  pmid: '10631175'
+  first_author: Karp SJ
+  year: 2000
+  type: primary_abstract_only
+  one_line_finding: Ihh sets the site of hypertrophy via PTHrP but controls proliferation independently.
+- ref_id: kobayashi2002
+  pmid: '12050144'
+  first_author: Kobayashi T
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: PTHrP and Ihh act at multiple separable steps of chondrocyte differentiation.
+- ref_id: long2001
+  pmid: '11748145'
+  first_author: Long F
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Cell-autonomous Smo deletion reduces chondrocyte proliferation, showing direct Ihh
+    action.
+- ref_id: mak2008
+  pmid: '18434416'
+  first_author: Mak KK
+  year: 2008
+  type: primary
+  one_line_finding: Ihh promotes hypertrophy even in a PTHrP-null background.
+- ref_id: koziel2004
+  pmid: '15177029'
+  first_author: Koziel L
+  year: 2004
+  type: primary_abstract_only
+  one_line_finding: Heparan sulfate limits Ihh range; Ihh acts as a long-range morphogen directly activating
+    Pthlh.
+- ref_id: tsiairis2008
+  pmid: '18395198'
+  first_author: Tsiairis CD
+  year: 2008
+  type: primary
+  one_line_finding: Disp1 hypomorphs establish the PTHrP-Ihh loop over a shorter distance.
+open_questions:
+- g_l3core_001
+- g_l2d_005
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. stjacques1999, kobayashi2005, mak2008 and tsiairis2008
+  read in FULL. Verdict CONFIRMED - every arm holds separately and the node's own statement that the
+  loop has never been measured as a control system (no diffusion coefficient, decay length, transfer
+  function or loop gain) survived the audit intact.
+last_verified: '2026-08-05'

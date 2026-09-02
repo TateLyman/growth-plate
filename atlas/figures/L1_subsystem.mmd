@@ -1,0 +1,181 @@
+graph LR
+  resting_chondrocyte["Resting (reserve) zone chondrocyte"]
+  proliferative_chondrocyte["Proliferative zone chondrocyte"]
+  prehypertrophic_chondrocyte["Prehypertrophic chondrocyte"]
+  hypertrophic_chondrocyte["Hypertrophic chondrocyte"]
+  resting_zone["Resting (reserve) zone"]
+  proliferative_zone["Proliferative zone"]
+  prehypertrophic_zone["Prehypertrophic zone"]
+  hypertrophic_zone["Hypertrophic zone"]
+  zone_provisional_calcification["Zone of provisional calcification"]
+  chondro_osseous_junction["Chondro-osseous junction"]
+  primary_spongiosa["Primary spongiosa"]
+  chondrocyte_hypertrophy["Chondrocyte hypertrophy"]
+  elongation_budget["Partition of elongation among proliferation, matrix synthesis, and hypertrophy"]
+  chondrocyte_proliferation_rate["Chondrocyte proliferation rate"]
+  hypertrophic_volume_increase["Hypertrophic chondrocyte volume increase"]
+  growth_velocity_longitudinal["Longitudinal growth velocity at the physis"]
+  hypertrophic_phase_duration["Hypertrophic phase duration (transit time constraint)"]
+  chondrocyte_rotation["Post-mitotic chondrocyte rotation"]
+  chondrocyte_column_formation["Chondrocyte column formation"]
+  clonal_column["Clonal chondrocyte column"]
+  chondrocyte_cluster["Chondrocyte cluster (non-columnar clone)"]
+  appositional_growth["Appositional (circumferential) growth"]
+  column_density["Column density and cartilage septal number"]
+  septoclast["Septoclast"]
+  cartilage_septum_resorption["Cartilage septum resorption"]
+  metaphyseal_vasculature["Metaphyseal vasculature"]
+  type_h_vessel["Type H vessel"]
+  cartilage_canal["Cartilage canal"]
+  epiphyseal_vasculature["Epiphyseal vasculature"]
+  oxygen_gradient_growth_plate["Oxygen gradient across the growth plate"]
+  nutrient_diffusion_growth_plate["Nutrient diffusion in the growth plate"]
+  growth_plate_height["Growth plate height"]
+  transphyseal_canal["Transphyseal canal"]
+  growth_plate["Growth plate (physis)"]
+  groove_of_ranvier["Groove of Ranvier"]
+  perichondrial_ring_lacroix["Perichondrial ring of LaCroix"]
+  borderline_zone["Borderline zone (peripheral borderline chondrocytes)"]
+  site_specific_growth_rate["Site-specific growth rate (differential growth)"]
+  distal_femur_plate["Distal femoral growth plate"]
+  proximal_tibia_plate["Proximal tibial growth plate"]
+  proximal_humerus_plate["Proximal humeral growth plate"]
+  distal_radius_plate["Distal radial growth plate"]
+  vertebral_growth_plate["Vertebral growth plate"]
+  metacarpal_plate["Metacarpal and metatarsal growth plate"]
+  cell_cycle_time_pz["Proliferative zone chondrocyte cell cycle time"]
+  saltation_stasis_growth["Saltation and stasis growth"]
+  bone_modeling_drift["Bone modelling drift"]
+  metaphyseal_funnelization["Metaphyseal funnelisation"]
+  thanatophoric_dysplasia["Thanatophoric dysplasia types I and II"]
+  acan_related_short_stature["ACAN-related short stature with advanced bone age"]
+  smad1_5_8["SMAD1/5/8 (BMP-responsive R-SMADs)"]
+  bmp_signaling_growth_plate["BMP signalling in the growth plate"]
+  smad2_3["SMAD2/SMAD3 (TGF-beta-responsive R-SMADs)"]
+  tgfb_signaling_chondrocyte["TGF-beta signalling in chondrocytes"]
+  beta_catenin_ctnnb1["beta-catenin (CTNNB1)"]
+  wnt_noncanonical_pcp["Non-canonical WNT / planar cell polarity in the growth plate"]
+  wnt5a_ligand["WNT5A"]
+  hes1_tf["HES1"]
+  notch_signaling_chondrocyte["Notch signalling in chondrocytes"]
+  mtorc1_chondrocyte["mTORC1 signalling in chondrocytes"]
+  tsc1_tsc2["TSC1-TSC2 complex"]
+  hypoxic_gradient_signaling["Hypoxic gradient across the growth plate"]
+  hif1a_chondrocyte["HIF1A in chondrocytes"]
+  vegfa_growth_plate["VEGFA in the growth plate"]
+  sox9_tf["SOX9"]
+  runx2_tf["RUNX2"]
+  runx3_tf["RUNX3"]
+  hdac4_protein["HDAC4"]
+  mef2c_tf["MEF2C"]
+  salt_inducible_kinase3["SIK3"]
+  zfp521_protein["ZFP521 (ZNF521)"]
+  foxa_family_chondrocyte["FOXA family in chondrocytes (FOXA2/FOXA3)"]
+  evc_evc2_complex["EVC-EVC2 complex"]
+  kif3a_protein["KIF3A"]
+  ift80_protein["IFT80"]
+  pathway_convergence_node["Pathway convergence in the growth plate signalling network"]
+  growth_hormone["Growth hormone (GH1 / somatotropin)"]
+  gh_pulse_pattern_hypothesis["GH pulse pattern versus integrated exposure at the plate"]
+  igf1_receptor["IGF-1 receptor (IGF1R)"]
+  pappa_protease["PAPP-A (pappalysin-1)"]
+  thyroid_hormone_t3["Triiodothyronine (T3)"]
+  glucocorticoid_cortisol["Cortisol / glucocorticoid excess"]
+  glucocorticoid_receptor["Glucocorticoid receptor (NR3C1 / GR)"]
+  estradiol_hormone["17beta-estradiol"]
+  gper1_receptor["GPER1 (G protein-coupled estrogen receptor 1)"]
+  androgen_receptor["Androgen receptor (AR)"]
+  seasonality_growth_velocity["Seasonality of growth velocity"]
+  circadian_growth_regulation["Circadian regulation of growth"]
+  resting_chondrocyte -->|"differentiates_into (C)"| proliferative_chondrocyte
+  proliferative_chondrocyte -->|"differentiates_into (C)"| prehypertrophic_chondrocyte
+  prehypertrophic_chondrocyte -->|"differentiates_into (C)"| hypertrophic_chondrocyte
+  resting_zone -->|"precedes (B)"| proliferative_zone
+  proliferative_zone -->|"precedes (C)"| prehypertrophic_zone
+  prehypertrophic_zone -->|"precedes (C)"| hypertrophic_zone
+  hypertrophic_zone -->|"precedes (B)"| zone_provisional_calcification
+  zone_provisional_calcification -->|"precedes (B)"| chondro_osseous_junction
+  chondro_osseous_junction -->|"precedes (B)"| primary_spongiosa
+  chondrocyte_hypertrophy -->|"required_for (C)"| elongation_budget
+  chondrocyte_proliferation_rate -->|"required_for (C)"| elongation_budget
+  hypertrophic_volume_increase -->|"correlates_with (C)"| growth_velocity_longitudinal
+  elongation_budget -->|"required_for (C)"| growth_velocity_longitudinal
+  hypertrophic_phase_duration -->|"required_for (C)"| hypertrophic_volume_increase
+  chondrocyte_rotation -->|"required_for (C)"| chondrocyte_column_formation
+  chondrocyte_column_formation -->|"required_for (C)"| clonal_column
+  chondrocyte_rotation --x|"inhibits (C)"| chondrocyte_cluster
+  chondrocyte_cluster -->|"correlates_with (D)"| appositional_growth
+  clonal_column -->|"correlates_with (B)"| column_density
+  septoclast -->|"required_for (C)"| cartilage_septum_resorption
+  metaphyseal_vasculature -->|"required_for (C)"| septoclast
+  cartilage_septum_resorption -->|"required_for (C)"| chondro_osseous_junction
+  metaphyseal_vasculature -->|"required_for (C)"| primary_spongiosa
+  type_h_vessel -->|"required_for (C)"| metaphyseal_vasculature
+  cartilage_canal -->|"precedes (C)"| epiphyseal_vasculature
+  epiphyseal_vasculature -->|"required_for (C)"| resting_zone
+  oxygen_gradient_growth_plate -->|"correlates_with (C)"| resting_chondrocyte
+  nutrient_diffusion_growth_plate -->|"correlates_with (E)"| growth_plate_height
+  transphyseal_canal -->|"correlates_with (C)"| growth_plate
+  groove_of_ranvier -->|"required_for (C)"| appositional_growth
+  groove_of_ranvier -->|"precedes (D)"| perichondrial_ring_lacroix
+  borderline_zone -->|"differentiates_into (D)"| primary_spongiosa
+  site_specific_growth_rate -->|"correlates_with (A)"| distal_femur_plate
+  site_specific_growth_rate -->|"correlates_with (A)"| proximal_tibia_plate
+  site_specific_growth_rate -->|"correlates_with (A)"| proximal_humerus_plate
+  site_specific_growth_rate -->|"correlates_with (A)"| distal_radius_plate
+  site_specific_growth_rate -->|"correlates_with (D)"| vertebral_growth_plate
+  site_specific_growth_rate -->|"correlates_with (C)"| metacarpal_plate
+  cell_cycle_time_pz -->|"correlates_with (C)"| site_specific_growth_rate
+  saltation_stasis_growth -.->|"hypothesized_link (speculative)"| growth_velocity_longitudinal
+  growth_plate_height -->|"correlates_with (C)"| growth_velocity_longitudinal
+  appositional_growth -->|"precedes (C)"| bone_modeling_drift
+  bone_modeling_drift -->|"required_for (C)"| metaphyseal_funnelization
+  growth_plate -->|"required_for (A)"| growth_velocity_longitudinal
+  thanatophoric_dysplasia --x|"inhibits (A)"| hypertrophic_zone
+  acan_related_short_stature --x|"inhibits (C)"| hypertrophic_zone
+  smad1_5_8 -->|"required_for (C)"| chondrocyte_hypertrophy
+  smad1_5_8 -->|"activates (C)"| chondrocyte_proliferation_rate
+  bmp_signaling_growth_plate -->|"activates (C)"| chondrocyte_proliferation_rate
+  smad2_3 --x|"inhibits (C)"| chondrocyte_hypertrophy
+  tgfb_signaling_chondrocyte --x|"inhibits (B)"| chondrocyte_hypertrophy
+  beta_catenin_ctnnb1 -->|"activates (C)"| chondrocyte_hypertrophy
+  wnt_noncanonical_pcp -->|"required_for (C)"| chondrocyte_column_formation
+  wnt_noncanonical_pcp -->|"required_for (C)"| chondrocyte_rotation
+  wnt5a_ligand --x|"inhibits (D)"| chondrocyte_hypertrophy
+  hes1_tf -->|"activates (C)"| chondrocyte_hypertrophy
+  notch_signaling_chondrocyte --x|"inhibits (C)"| chondrocyte_proliferation_rate
+  notch_signaling_chondrocyte --x|"inhibits (C)"| chondrocyte_hypertrophy
+  mtorc1_chondrocyte -->|"activates (C)"| hypertrophic_volume_increase
+  mtorc1_chondrocyte -->|"activates (C)"| prehypertrophic_chondrocyte
+  tsc1_tsc2 -->|"required_for (C)"| resting_zone
+  oxygen_gradient_growth_plate -->|"correlates_with (D)"| hypoxic_gradient_signaling
+  hif1a_chondrocyte --x|"inhibits (C)"| chondrocyte_proliferation_rate
+  vegfa_growth_plate --x|"inhibits (C)"| hypertrophic_zone
+  vegfa_growth_plate -->|"activates (D)"| type_h_vessel
+  hypoxic_gradient_signaling -->|"correlates_with (E)"| nutrient_diffusion_growth_plate
+  sox9_tf -->|"required_for (C)"| chondrocyte_column_formation
+  runx2_tf -->|"activates (B)"| chondrocyte_hypertrophy
+  runx3_tf -->|"activates (C)"| chondrocyte_hypertrophy
+  hdac4_protein --x|"inhibits (A)"| chondrocyte_hypertrophy
+  mef2c_tf -->|"activates (C)"| chondrocyte_hypertrophy
+  salt_inducible_kinase3 -->|"activates (C)"| chondrocyte_hypertrophy
+  zfp521_protein --x|"inhibits (C)"| chondrocyte_hypertrophy
+  foxa_family_chondrocyte -->|"required_for (C)"| chondrocyte_hypertrophy
+  evc_evc2_complex --x|"inhibits (C)"| chondrocyte_hypertrophy
+  kif3a_protein -->|"required_for (C)"| growth_plate
+  ift80_protein -->|"required_for (C)"| chondrocyte_hypertrophy
+  pathway_convergence_node -.->|"hypothesized_link (speculative)"| chondrocyte_hypertrophy
+  growth_hormone -->|"activates (C)"| resting_zone
+  gh_pulse_pattern_hypothesis -.->|"hypothesized_link (speculative)"| growth_velocity_longitudinal
+  igf1_receptor -->|"required_for (C)"| proliferative_zone
+  pappa_protease -->|"required_for (C)"| chondrocyte_column_formation
+  thyroid_hormone_t3 -->|"activates (B)"| chondrocyte_hypertrophy
+  thyroid_hormone_t3 --x|"inhibits (B)"| proliferative_zone
+  glucocorticoid_cortisol --x|"inhibits (B)"| growth_velocity_longitudinal
+  glucocorticoid_cortisol --x|"inhibits (C)"| resting_zone
+  glucocorticoid_receptor -->|"required_for (C)"| growth_plate_height
+  estradiol_hormone --x|"inhibits (B)"| resting_zone
+  gper1_receptor -->|"activates (C)"| proliferative_zone
+  androgen_receptor -->|"required_for (C)"| growth_velocity_longitudinal
+  seasonality_growth_velocity -->|"correlates_with (A)"| growth_velocity_longitudinal
+  circadian_growth_regulation -.->|"hypothesized_link (speculative)"| growth_plate

@@ -1,0 +1,94 @@
+id: growth_plate
+name: Growth plate (physis)
+aliases:
+- physis
+- epiphyseal plate
+- epiphyseal cartilage plate
+type: tissue_structure
+layer: L1
+stub: false
+summary: 'The growth plate is a disc of hyaline cartilage between epiphysis and metaphysis that is avascular,
+  aneural and alymphatic and contains only chondrocytes and the matrix they make. Its functional unit
+  is a vertical column of chondrocytes; the life history of one cell is laid out in space along that column,
+  from slowly dividing resting-zone cells through rapidly cycling flattened proliferative cells to terminally
+  enlarged hypertrophic cells that are removed at the vascular invasion front. Cartilage neoformation
+  at the epiphyseal face is balanced against destruction at the metaphyseal face, so a plate in steady
+  state maintains constant height while translating the epiphysis away from the diaphysis. In rat proximal
+  tibia the balance is exact enough that the calculated cell production rate matches the loss rate at
+  the chondro-osseous junction. Height and internal proportions are not fixed: in human rib the proliferative
+  and hypertrophic zone heights and the primary spongiosa all fall with age, most steeply in the first
+  postnatal year, while matrix volume fraction and septal thickness rise. Radiographic morphometry in
+  mouse and human agrees that total plate width, and in mouse also total height and resting-zone height,
+  correlate with tibial growth rate, whereas hypertrophic zone height on its own does not.'
+quantitative:
+- parameter: growth plate variable most strongly correlated with tibial length and growth rate
+  value: total growth plate width
+  unit: qualitative rank
+  conditions: mouse proximal tibia histomorphometry and human tibia radiographs
+  species: multiple
+  source_ref: wilson2021
+  uncertainty: linear model; hypertrophic zone height and plate area did not correlate in mouse
+- parameter: chondrocytes lost per column at the vascular front
+  value: '8'
+  unit: cells/day
+  conditions: rat proximal tibia in steady-state growth (one cell every 3 h)
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: not reported
+- parameter: age at which growth plate zone heights change most steeply
+  value: 0-1
+  unit: years postnatal
+  conditions: human rib growth plate, proliferative and hypertrophic zones and primary spongiosa
+  species: human
+  source_ref: byers2000
+  uncertainty: direction of change reported; absolute heights not available from abstract
+localization:
+- 'human: all long bones, vertebral bodies, ribs (byers2000, dimeglio2020)'
+- 'mouse/rat: standard model tissue'
+human_evidence: direct
+human_evidence_note: Human growth plate architecture and its age-dependence have been measured histomorphometrically
+  in rib (byers2000) and in a distal tibia undergoing physiological epiphysiodesis (white2008), and radiographically
+  for plate height and width (wilson2021).
+species_basis:
+- human
+- rat
+- mouse
+- porcine
+- rabbit
+translation_risk: moderate
+translation_risk_reason: 'The zonal plan is conserved across mammals, but the kinetics are not: human
+  proliferative cycle times, plate heights and cell counts per column differ substantially from rodent,
+  and mice do not undergo epiphyseal fusion.'
+confidence: B
+key_refs:
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: Quantified chondrocyte performance and cellular turnover in rat proximal tibial growth
+    plate by stereology plus fluorochrome labelling.
+- ref_id: byers2000
+  pmid: '11033444'
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: Human rib growth plate zone heights and primary spongiosa fall with age, most steeply
+    in the first year, while matrix volume fraction and septal thickness rise.
+- ref_id: wilson2021
+  pmid: '31997656'
+  first_author: Wilson K
+  year: 2021
+  type: primary
+  one_line_finding: Total growth plate width correlates most strongly with tibial length and growth rate
+    in both mouse and human; hypertrophic zone height does not correlate in mouse.
+- ref_id: ostria2026
+  pmid: '41520458'
+  first_author: Ostria CB
+  year: 2026
+  type: review
+  one_line_finding: Current synthesis of growth plate zonal architecture, plasticity and endocrine control.
+open_questions:
+- g_l1arch_001
+- g_l1arch_014
+last_verified: '2026-08-05'

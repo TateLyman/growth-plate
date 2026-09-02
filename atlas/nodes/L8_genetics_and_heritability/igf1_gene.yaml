@@ -1,0 +1,71 @@
+id: igf1_gene
+name: IGF1
+aliases:
+- insulin-like growth factor 1 gene
+type: gene
+layer: L8
+stub: false
+summary: |-
+  IGF1 supplies the human null experiment that the GH receptor cannot: Woods 1996 described a patient
+  with a homozygous partial deletion of the IGF1 gene presenting with intrauterine growth
+  retardation followed by continued postnatal growth failure, together with sensorineural deafness
+  and mental retardation. The combination is what makes the locus informative. Growth hormone
+  deficiency and GH receptor deficiency both spare prenatal growth, because fetal growth is largely
+  GH-independent, whereas IGF1 deletion impairs growth from before birth - so the IGF1 gene sits
+  downstream of the point at which the somatotropic axis becomes GH-dependent, and IGF-1 itself is
+  required in both epochs. The extra-skeletal features (deafness, cognitive impairment) establish
+  that IGF-1 action is not confined to the growth plate, which is a constraint on any therapeutic
+  strategy that raises systemic IGF-1 to gain stature. On the common-variation side of the same
+  locus, Mendelian randomisation now shows the relationship is continuous rather than confined to
+  null alleles: instrumenting serum IGF-1 with UK Biobank variants and testing against GIANT height
+  gives 0.09 SD taller adult height per 1 SD higher IGF-1, an effect that persists after adjustment
+  for childhood BMI and is reproduced by an IGF-1 genetic risk score against measured heights at ages
+  7-17 in ALSPAC. The gap between a catastrophic null phenotype and a 0.09 SD per SD population slope
+  is the quantitative statement of how strongly buffered this axis is.
+quantitative:
+- parameter: adult height change per 1 SD genetically predicted serum IGF-1
+  value: '0.09'
+  unit: SD
+  conditions: two-sample Mendelian randomization, inverse-variance weighted; GIANT height excluding
+    UK Biobank (non-Hispanic White n=1,176,465 plus four other ancestry groups)
+  species: human
+  source_ref: de2026
+  uncertainty: persists after adjustment for childhood BMI
+localization:
+- 'human: germline; IGF-1 produced systemically by liver and locally within the growth plate'
+human_evidence: direct
+human_evidence_note: One homozygous human deletion patient plus a large-scale Mendelian randomization
+  estimate of the continuous IGF-1 to height slope.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Both the null phenotype and the population slope are measured in humans.
+confidence: B
+claim_grades:
+- claim: Homozygous IGF1 deletion causes combined pre- and postnatal growth failure with deafness
+    and cognitive impairment.
+  grade: D
+  basis: Single patient (woods1996); later IGF1 point-mutation patients exist but were not independently
+    verified in this sweep.
+- claim: Higher circulating IGF-1 causally increases adult height by about 0.09 SD per SD.
+  grade: A
+  basis: Two-sample MR in >1.1M individuals with an independent longitudinal replication in ALSPAC
+    (de2026).
+key_refs:
+- ref_id: woods1996
+  pmid: '8857020'
+  doi: 10.1056/nejm199610313351805
+  first_author: Woods KA
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: Homozygous partial deletion of IGF1 causes intrauterine growth retardation
+    with postnatal growth failure, deafness and mental retardation.
+- ref_id: de2026
+  pmid: '41017432'
+  doi: 10.1210/clinem/dgaf532
+  first_author: De La Barrera B
+  year: 2026
+  type: primary
+  one_line_finding: Mendelian randomization gives 0.09 SD taller adult height per 1 SD higher
+    serum IGF-1, replicated against measured heights at ages 7-17 in ALSPAC.
+last_verified: '2026-08-05'

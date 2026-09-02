@@ -1,0 +1,152 @@
+id: infigratinib_growth
+name: Infigratinib
+aliases:
+- BGJ398
+- NVP-BGJ398
+- PROPEL programme
+type: intervention
+layer: L12
+stub: false
+summary: 'Infigratinib is an orally bioavailable ATP-competitive FGFR1-3 tyrosine kinase inhibitor,
+
+  originally an oncology compound, repositioned to achondroplasia at a dose roughly two
+
+  orders of magnitude below its oncology exposure. In the 52-week phase 3 trial
+
+  (NCT06164951, n=114 randomised 2:1, ages 3-17 y, 0.25 mg/kg once daily by mouth) the
+
+  least-squares mean difference from placebo in annualised height velocity was
+
+  1.74 cm/yr (95% CI 1.31-2.17, p<0.001), with height z-score difference 0.32
+
+  (96% CI 0.23-0.41). It is the first oral agent and the first upstream agent to show
+
+  this, and the point estimate is numerically larger than the CNP analogues, though no
+
+  head-to-head trial exists. Two things are unresolved. Potency against achondroplasia''s
+
+  own G380R allele in a stated-ATP kinase assay is not published alongside the clinical
+
+  programme, and the published mutant panel shows potency does not track severity:
+
+  K650E IC50 0.5 nM versus K650M 44.4 nM. And the extension to hypochondroplasia is
+
+  actively contested - one group reports potent inhibition of hypochondroplasia-associated
+
+  variants and mouse efficacy, another reports that infigratinib is a weak inhibitor of
+
+  the FGFR3-N540K hypochondroplasia mutant. No final adult height data exist; the
+
+  long-term extension (NCT05145010) is the designed route to them. ALLELE CAVEAT, load-bearing: the potency
+  figures above were measured against KINASE-DOMAIN alleles (K650E, K650M), and the low-dose efficacy
+  work is in hypochondroplasia (N540K, also kinase-domain). Achondroplasia is caused by G380R, a TRANSMEMBRANE-domain
+  variant that activates the receptor by a different mechanism. Potency measured on kinase-domain alleles
+  does not automatically govern the clinical case, and no IC50 against G380R-activated FGFR3 was located
+  in the literature. The non-monotonicity argument against ''lower kinase output equals benefit'' is well
+  supported for kinase-domain alleles and UNTESTED for G380R.'
+quantitative:
+- parameter: LS mean difference in annualised height velocity vs placebo, week 52
+  value: '1.74'
+  unit: cm/yr
+  conditions: phase 3 double-blind RCT NCT06164951, infigratinib 0.25 mg/kg once daily oral, achondroplasia
+    aged 3-17 y, 75 infigratinib / 39 placebo, prespecified imputation
+  species: human
+  source_ref: savarirayan2026infig
+  uncertainty: 95% CI 1.31-2.17, p<0.001
+- parameter: LS mean difference in height z score vs placebo, week 52
+  value: '0.32'
+  unit: z-score
+  conditions: same trial, key secondary endpoint
+  species: human
+  source_ref: savarirayan2026infig
+  uncertainty: 96% CI 0.23-0.41, p<0.001
+- parameter: daily oral dose in the phase 3 trial
+  value: '0.25'
+  unit: mg/kg/day
+  conditions: once daily oral, children aged 3-17 y
+  species: human
+  source_ref: savarirayan2026infig
+  uncertainty: single dose level
+- parameter: infigratinib concentration achieved within growth plate cartilage
+  value: not measured
+  unit: not applicable
+  conditions: no tissue measurement published for infigratinib in growth plate in any species
+  species: not_applicable
+  source_ref: savarirayan2026infig
+  uncertainty: unmeasured - see gap g_l12b_002
+  value_unverified: true
+localization:
+- 'human growth plate: presumed site of action; intraplate drug concentration unmeasured'
+human_evidence: direct
+human_evidence_note: Completed multicentre double-blind placebo-controlled phase 3 trial in 114 children
+  with achondroplasia with a prespecified annualised height velocity endpoint.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: low
+translation_risk_reason: The efficacy claim is human and randomised. Translation risk attaches instead
+  to the extension claims - hypochondroplasia and osteogenesis imperfecta - which rest on mouse and in
+  vitro data and are contradicted in the hypochondroplasia case.
+confidence: C
+claim_grades:
+- claim: Infigratinib is 89-fold less potent against FGFR3 K650M (IC50 44.4 nM) than against K650E (IC50
+    0.5 nM), despite K650M carrying ~3x the constitutive kinase activity.
+  grade: C
+  basis: In-vitro kinase/cell potency against KINASE-DOMAIN alleles. Replicated in vitro; no human data
+    at these alleles.
+- claim: Inhibitor potency therefore does not track constitutive kinase activity across the FGFR3 kinase-domain
+    allelic series, so "reduce kinase output" is not a sufficient design rule for those alleles.
+  grade: C
+  basis: Follows from the potency data above; established only for kinase-domain alleles.
+- claim: That same non-monotonicity governs the CLINICAL target allele in achondroplasia, G380R.
+  grade: E
+  basis: UNTESTED INFERENCE. G380R is a TRANSMEMBRANE-domain activating variant with a different activation
+    mechanism (altered receptor dimerisation/downregulation), not a kinase-domain change. No published
+    IC50 against G380R-activated FGFR3 was located. See g_mr002_allele.
+- claim: Infigratinib increases growth velocity in children with achondroplasia.
+  grade: B
+  basis: Clinical trial evidence in the G380R population, independent of the in-vitro allele question.
+key_refs:
+- ref_id: savarirayan2026infig
+  pmid: '42370681'
+  first_author: Savarirayan R
+  year: 2026
+  type: primary
+  one_line_finding: Phase 3, n=114, +1.74 cm/yr annualised height velocity vs placebo (95% CI 1.31-2.17).
+- ref_id: nct06164951
+  year: 2026
+  type: trial_registry
+  one_line_finding: Registry record for the completed phase 3 programme.
+- ref_id: nct04265651
+  year: 2025
+  type: trial_registry
+  one_line_finding: Phase 2 dose escalation (n=84) that selected 0.25 mg/kg/day.
+- ref_id: demuynck2025
+  pmid: '40581757'
+  first_author: Demuynck B
+  year: 2025
+  type: primary
+  one_line_finding: Claims in silico, in vitro and Fgfr3-N534K/+ mouse support for infigratinib in hypochondroplasia.
+- ref_id: ursachi2026_2
+  pmid: '41582902'
+  first_author: Ursachi VC
+  year: 2026
+  type: primary
+  one_line_finding: Reports infigratinib is a WEAK inhibitor of the FGFR3-N540K hypochondroplasia mutant.
+- ref_id: ryu2022
+  pmid: '35436119'
+  first_author: Ryu S
+  year: 2022
+  type: primary
+  one_line_finding: Infigratinib IC50 0.5 nM on K650E but 44.4 nM on K650M - potency does not track allele
+    severity.
+open_questions:
+- g_l12b_004
+- g_l12b_005
+- g_l12b_002
+- g_mr002_allele
+contradicts:
+- demuynck2025
+- ursachi2026_2
+last_verified: '2026-08-05'

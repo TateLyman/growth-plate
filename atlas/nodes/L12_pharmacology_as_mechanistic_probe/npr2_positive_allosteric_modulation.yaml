@@ -1,0 +1,324 @@
+id: npr2_positive_allosteric_modulation
+name: NPR2 POSITIVE ALLOSTERIC MODULATION - raise the receptor's gain instead of delivering more ligand,
+  with a human dose-response in standing height and a small molecule that already exists
+aliases:
+- GC-B PAM
+- MCUF-42
+- NPR2 allosteric modulator
+- can you amplify the receptor instead of the ligand
+- small molecule CNP potentiator
+type: intervention
+layer: L12
+stub: false
+summary: 'THREAD 3 SAYS THE CNP ARM IS CAPPED BY A SYSTEMIC EXPOSURE MARGIN WHILE ITS EFFECT DEPENDS ON A
+  PLATE CONCENTRATION NOBODY MEASURES. THIS NODE IS THE ROUTE THAT SIDESTEPS THE CAP ENTIRELY - not more
+  ligand, but more gain at the receptor already sitting in the tissue.
+  THE HUMAN DOSE-RESPONSE IS IN RECEPTOR ACTIVITY, NOT LIGAND, AND IT IS NEAR-LINEAR. jeong2026 built a
+  high-throughput GFP reporter assay for NPR2 function, cross-checked it against a commercial CatchPoint
+  assay and published data, and assigned an ACTIVITY SCORE to 245 NPR2 missense variants - 47
+  loss-of-function, 34 partial loss-of-function and 14 GAIN-of-function - across the receptor functional
+  domains. Activity score tracks standing height near-linearly, R squared 0.438 at P = 5.8e-10, with
+  effects ADDITIVE and apparent ACROSS POLYGENIC BACKGROUNDS. A phenome-wide association analysis found
+  NPR2 activity significantly associated ONLY with height and height-associated traits. So in humans, the
+  quantity that maps onto adult stature is the RECEPTOR GAIN, the mapping does not saturate within the
+  observed variant range, and it appears not to drag other phenotypes with it.
+  AND THE MOLECULE EXISTS. ma2024 screened the NIH Molecular Libraries Small Molecule Repository in a
+  cell-based assay and evolved the hits into MCUF-42, reported as the first small-molecule POSITIVE
+  ALLOSTERIC MODULATOR of guanylyl cyclase B, which is NPR2. It is reported to enhance the binding
+  affinity between GC-B and CNP, to potentiate CNP-induced cGMP, and to enhance CNP inhibition of
+  proliferation - all in HUMAN CARDIAC FIBROBLASTS, because the paper is about myocardial fibrosis.
+  WHY THIS FITS THE DELIVERY PROBLEM BETTER THAN ANY PEPTIDE. The partition curve this atlas holds
+  (farnum2006) is brutal about size - 332 Da reaches roughly 100 per cent of vascular concentration inside
+  the growth plate, 3 kDa about 60 per cent, 10 kDa about 10, 40 kDa undetectable. Every agent on this
+  axis so far is a peptide: vosoritide at 4,102 Da sits partway down that slope and navepegritide is a
+  45 kDa conjugate releasing a 4 kDa peptide. A SMALL MOLECULE SITS AT THE TOP OF THE CURVE. The
+  delivery deficit that thread 3 exists to describe largely dissolves for a compound of a few hundred
+  daltons, without needing a targeting moiety, a nanoparticle or a collagen-binding domain.
+  THE HUMAN PROOF THAT ALLOSTERIC AMPLIFICATION SPECIFICALLY PRODUCES HEIGHT IS ALREADY IN THIS ATLAS.
+  npr2_gain_of_function_tall holds p.Arg655Cys in the kinase homology domain, which amplifies the CNP
+  response rather than raising ligand, and produces tall stature. That is the mechanism of a PAM occurring
+  as a human natural experiment, with the phenotype this project is trying to produce.
+  NOW THE OBJECTION THAT COULD KILL IT, STATED AT FULL STRENGTH. A PAM AMPLIFIES WHEREVER LIGAND AND
+  RECEPTOR MEET, AND NPR2 IS EXPRESSED IN VASCULATURE. The dose-limiting liability of this whole axis is
+  vascular - hirai2026 names hypotension as the liability of systemic CNP distribution, the ACcomplisH
+  protocol monitors orthostatic blood pressure at every visit, and the cardiovascular NOAEL in cynomolgus
+  monkey sits exactly at the clinical dose. A systemic PAM would raise gain at vascular NPR2 as well as
+  at plate NPR2, so it does NOT automatically decouple efficacy from the cardiovascular margin the way a
+  cartilage-targeted ligand would. It buys tissue selectivity ONLY IF the ligand it amplifies is
+  distributed unevenly - that is, only if the plate carries a higher local CNP concentration than the
+  vasculature does.
+  THE CRUX WAS MEASURED IN THE SAME ROUND AND THE ANSWER DEMOTES THIS NODE. Whether the plate PRODUCES
+  its own CNP or merely CONSUMES what arrives decides whether a PAM is selective. It is now measured:
+  the_plate_consumes_cnp_it_does_not_make_it reports NPPC at array floor across all five microdissected
+  compartments of the human growth plate, perichondrium included, on a platform that detects PTHLH at
+  308.6 and GDF5 at 603.8 while NPPC never exceeds 19.8. THE PLATE IS A CONSUMER. With no local
+  production, plate ligand cannot exceed vascular ligand, so a systemic PAM raises signalling at the
+  vascular liability at least as much as at the target and approximates a dose increase - the one thing
+  the cardiovascular margin forbids. THE SELECTIVITY ARGUMENT FOR THIS ROUTE IS GONE.
+  WHAT IS LEFT OF IT, HONESTLY. Two things, and neither is established here. FIRST, the human dose-response
+  in receptor activity (jeong2026) is untouched by the measurement - NPR2 gain still maps onto stature
+  near-linearly, so the TARGET is not in question, only the delivery logic that made a PAM attractive over
+  a ligand. SECOND, a small molecule may accumulate in cartilage on its own physicochemistry, cartilage
+  being densely polyanionic, which would restore selectivity by a completely different mechanism. That is
+  a property of a specific compound, MCUF-42 has not been characterised for it, and it is the only route
+  by which this node returns to the top of the list.
+  ROUND 156 READ ma2024 IN FULL AND CHARACTERISED THE COMPOUND, AND THE ROUTE NAMED IN THE PARAGRAPH ABOVE
+  IS OPEN. Every blank this node listed as not extracted is now filled. MCUF-42 IS PUBCHEM CID 176516521,
+  C19H18Cl2N2OS, MW 393.3 - an N-thioacyl piperidine carrying a propionitrile and a 2,5-dichlorophenyl
+  furan, WITH NO IONISABLE GROUP, so it is NEUTRAL at pH 7.4. Put on the atlas own curve that is a size
+  term of 0.97 and no Donnan penalty: NET PLATE PARTITION 0.97, against 0.47 for vosoritide and 0.21 for
+  the fostriecin free acid. It is the best-partitioning agent this atlas has costed on this axis. But
+  neutral means NO ACCUMULATION EITHER - 0.97 is parity with free plasma, not selectivity.
+  AND THE SCAFFOLD WILL CARRY A CATION, WHICH IS THE WHOLE ARGUMENT. Its GC-A sibling MCUF-651 is
+  CID 162345705, MW 368.4, and DOES carry a basic dimethylaminoethyl group. A monovalent CATION does not
+  merely avoid the Donnan penalty, it is CONCENTRATED by it: at the lesperance1992 fixed charge density a
+  +1 ion partitions at 1.82 to 2.70 of free plasma, so a cationic analogue of this scaffold nets about
+  2.2 - roughly 2.3-fold MORE drug at the plate than in plasma, and about 4.7-fold better than vosoritide.
+  THAT IS TISSUE SELECTIVITY BOUGHT BY PHYSICOCHEMISTRY RATHER THAN BY LIGAND GRADIENT, which is precisely
+  the mechanism this node said was the only way back, and the scaffold is already demonstrated to tolerate
+  the required basic amine.
+  THE PHARMACOLOGY, NOW MEASURED RATHER THAN QUALITATIVE. MCUF-42 potentiates CNP-induced cGMP in HEK293
+  GC-B cells with EC50 0.80 microM and Emax 86 per cent, raising cGMP 4-fold in the presence of CNP, with
+  NO cGMP activity at all in the absence of CNP - a pure PAM with no agonism. It is GC-B SELECTIVE: no
+  cGMP-producing activity in HEK293 GC-A cells with ANP. By SPR it binds the EXTRACELLULAR DOMAIN of human
+  GC-B at KD 710 nM, more than 1,800-fold weaker than CNP at 0.17 nM, and in its presence CNP association
+  accelerates 2.6-fold and CNP KD falls to 0.062 nM. In the functional assay CNP EC50 falls from 3.0 nM to
+  0.31 nM at 5 microM compound, A 6.4-FOLD POTENCY SHIFT.
+  THE MECHANISM IS POTENCY-ONLY, AND THAT IS THE FINDING THAT MATTERS FOR THE SELECTIVITY ARGUMENT.
+  MCUF-42 shifts the CNP concentration-response curve LEFT WITH NO INCREASE IN THE MAXIMAL cGMP RESPONSE.
+  So it cannot exceed what CNP itself can do - it only lowers the CNP concentration needed. AGAINST A
+  CONSUMER TISSUE THAT IS THE WORST CASE: a pure potency-shifter is arithmetically closest to a dose
+  increase, which is the one thing the cardiovascular margin forbids. THE DONNAN ARGUMENT IS THEREFORE NOT
+  A LUXURY FOR THIS COMPOUND CLASS, IT IS THE ONLY THING THAT COULD MAKE IT SELECTIVE.
+  AND THERE IS A SECOND, DIFFERENT ALLOSTERIC SITE ON THE SAME RECEPTOR. andresen2023 compound 20 acts at
+  the INTRACELLULAR kinase homology domain - mapped to GC-A Thr640, corresponding to GC-B Ile624 - raises
+  EFFICACY rather than affinity, and is INDEPENDENT OF PHOSPHORYLATION. MCUF-42 binds the EXTRACELLULAR
+  domain and raises AFFINITY. TWO SITES ON OPPOSITE SIDES OF THE MEMBRANE, TWO DIFFERENT MECHANISMS,
+  neither tested against the other. They are candidates for combination, and an efficacy-raiser is the one
+  that could lift the ceiling a potency-raiser cannot.
+  THE HARD PRACTICAL PROBLEM, STATED PLAINLY: MCUF-42 HAS 0.26 PER CENT ORAL BIOAVAILABILITY IN MICE.
+  Detectable 8 hours after a 5 mg/kg IV bolus, but only 2 hours after 10 mg/kg orally. That is not an oral
+  drug. The encouraging part is that the GC-A sibling from the same programme, MCUF-651, IS orally
+  bioavailable in mice and is in preclinical development - and MCUF-651 is the CATIONIC one. So the single
+  structural change this node is arguing for on partition grounds is the same change that distinguishes the
+  orally bioavailable sibling.'
+quantitative:
+- parameter: 'NPR2 RECEPTOR ACTIVITY MAPS NEAR-LINEARLY ONTO ADULT STANDING HEIGHT IN HUMANS'
+  value: 'R squared 0.438, P = 5.8e-10, across 245 functionally scored missense variants'
+  unit: correlation between assayed receptor activity score and standing height
+  conditions: 'jeong2026. High-throughput GFP reporter assay for NPR2 activity, cross-referenced against a
+    commercial CatchPoint assay and previously published measurements, integrated into a single activity
+    score per variant. 245 missense variants categorised: 47 loss-of-function, 34 partial loss-of-function,
+    14 gain-of-function, spanning the functional domains. The association is described as NEAR-LINEAR,
+    with effects ADDITIVE and apparent ACROSS POLYGENIC BACKGROUNDS. Phenome-wide association analysis
+    found NPR2 activity significantly associated only with height and height-associated traits.'
+  species: human
+  source_ref: jeong2026
+  uncertainty: 'THREE LIMITS, AND THE THIRD IS THE ONE THAT MATTERS FOR THIS SUBJECT. (1) The R squared is
+    computed across the WHOLE variant range, which is dominated by the 81 loss-of-function and partial
+    loss-of-function variants against only 14 gain-of-function; the strength of the relationship ON THE
+    GAIN SIDE - the side a drug would occupy - is not separately established by this figure and must not
+    be read off it. (2) A phenome-wide null is bounded by the power of each phenotype tested; "associated
+    only with height" is reassuring for a target but is not a safety finding, and it cannot speak to
+    effects that are late, rare, or absent from the phenotype catalogue. (3) THESE ARE GERMLINE VARIANTS
+    ACTING FROM CONCEPTION. A lifelong difference in receptor gain producing a height difference does NOT
+    establish that raising receptor gain at bone age 16 produces anything, and this atlas has repeatedly
+    found age gates exactly where this inference would have to hold - serrat2013 for temperature and
+    hakata2024 for neprilysin inhibition, which worked at 3-4 weeks in mice and was 99 per cent gone at
+    4-5 weeks.'
+- parameter: 'A SMALL-MOLECULE NPR2 POSITIVE ALLOSTERIC MODULATOR EXISTS, AND ITS ENTIRE DATASET IS
+    CARDIAC'
+  value: 'MCUF-42 - reported to enhance GC-B/CNP binding affinity, potentiate CNP-induced cGMP and enhance
+    CNP inhibition of proliferation, all in human cardiac fibroblasts'
+  unit: qualitative - no chondrocyte, growth-plate or length endpoint of any kind
+  conditions: 'ma2024, PNAS Nexus. Cell-based high-throughput screen of the NIH Molecular Libraries Small
+    Molecule Repository followed by hit-to-lead structure-activity work. The paper frames GC-B as a target
+    for MYOCARDIAL FIBROSIS and states that small molecules able to bind and potentiate the GC-B/cGMP
+    pathway had not previously been discovered.'
+  species: in_vitro_human_cell
+  source_ref: ma2024
+  uncertainty: 'THE GAP BETWEEN THIS COMPOUND AND THIS PROJECT IS ALMOST THE WHOLE DISTANCE. There is no
+    chondrocyte experiment, no growth-plate experiment, no animal, and no length endpoint - the entire
+    characterisation is in cardiac fibroblasts for an antifibrotic indication. Potency, selectivity,
+    oral bioavailability, plasma protein binding and molecular weight were not extracted here and are not
+    asserted. The claim that a small molecule partitions into the plate better than a peptide is an
+    inference from farnum2006 applied to a compound whose mass this node has NOT verified - it is a
+    property of the size class, and MCUF-42 has not been placed on that curve. Nothing here supports
+    administering this compound to anyone.'
+- parameter: 'MCUF-42 FULLY CHARACTERISED - POTENCY, SITE, SELECTIVITY, MECHANISM AND PK'
+  value: 'HEK293 GC-B cells: potentiates CNP-induced cGMP with EC50 0.80 microM and Emax 86 per cent,
+    raising cGMP 4-FOLD in the presence of CNP and showing NO cGMP activity in the absence of CNP. GC-B
+    SELECTIVE - no cGMP-producing activity in HEK293 GC-A cells with ANP. SPR against the EXTRACELLULAR
+    domain of human GC-B: MCUF-42 KD 710 nM against CNP KD 0.17 nM, so more than 1,800-fold weaker than
+    the ligand; with 5 microM MCUF-42 the CNP association rate rises 2.6-fold and CNP KD falls to 0.062
+    nM. Functionally, CNP EC50 falls from 3.0 nM to 1.4, 0.81, 0.70, 0.53, 0.37 and 0.31 nM across 0.157
+    to 5.0 microM MCUF-42 - A 6.4-FOLD POTENCY SHIFT - WITH NO INCREASE IN MAXIMAL cGMP. Derived from a
+    370,620-compound screen giving 399 hits and 86 GC-B-selective modulators; MCUF-42 is compound 24, a
+    5-arylfuran-2-thioamide. PK IN MICE: detectable 8 h after 5 mg/kg IV, only 2 h after 10 mg/kg oral,
+    ORAL BIOAVAILABILITY 0.26 PER CENT'
+  unit: micromolar; nanomolar; per cent; fold
+  conditions: ma2024, FULL TEXT READ 2026-08-09 (PMC11185183, open access), Results and Table 1. HEK293
+    cells stably overexpressing human GC-B; TR-FRET cGMP; SPR on the isolated extracellular domain.
+  species: in_vitro_human_cell
+  source_ref: ma2024
+  uncertainty: 'THIS FILLS EVERY BLANK THE PREVIOUS VERSION OF THIS NODE FLAGGED, AND TWO OF THE ANSWERS
+    ARE BAD. 0.26 PER CENT ORAL BIOAVAILABILITY IS NOT AN ORAL DRUG - the delivery advantage this node
+    rests on is about tissue partition, not about absorption, and the two must not be conflated.
+    AND THE MECHANISM IS POTENCY-ONLY: a left-shift with no change in maximal response cannot exceed what
+    CNP alone achieves, so against a CONSUMER tissue this is arithmetically the closest thing to a dose
+    increase - the worst mechanism for the selectivity problem, not the best. REMAINING LIMITS UNCHANGED:
+    HEK293 overexpression and human cardiac fibroblasts only, no chondrocyte, no growth plate, no animal
+    efficacy, no length endpoint. The SPR is against an ISOLATED extracellular domain, not the intact
+    receptor in a membrane.'
+- parameter: 'MCUF-42 PARTITION COMPUTED - BEST ON THIS AXIS, BUT PARITY NOT ACCUMULATION; A CATIONIC
+    ANALOGUE WOULD BE CONCENTRATED'
+  value: 'MCUF-42 is CID 176516521, C19H18Cl2N2OS, MW 393.3, with NO ionisable group - the piperidine
+    nitrogen is thioamide-acylated and therefore not basic - so NEUTRAL at pH 7.4. Size term 0.97, Donnan
+    1.00, NET PLATE PARTITION 0.97, against 0.47 for vosoritide, 0.21 for fostriecin free acid and 0.22
+    for endothall. A MONOVALENT CATION IS CONCENTRATED RATHER THAN EXCLUDED by the same fixed charge
+    density: 1.82 (FCD minus 0.19 M) to 2.70 (FCD minus 0.35 M) of free plasma, so a cationic analogue of
+    this scaffold at similar mass nets ABOUT 2.2. The GC-A sibling MCUF-651, CID 162345705, MW 368.4,
+    ALREADY CARRIES a basic dimethylaminoethyl group, so the chemotype demonstrably tolerates one'
+  unit: fraction of free plasma concentration
+  conditions: COMPUTED BY THIS ATLAS 2026-08-09 using the ideal-Donnan function from
+    endothall_experiment_design.py at the lesperance1992 fixed charge density against a 0.15 M bath, with
+    log-linear interpolation of the farnum2006 size anchors. Formulae, masses and structures from PubChem
+    PUG REST; charge states assigned from structure by inspection.
+  species: not_applicable
+  source_ref: pubchem_mcuf42
+  atlas_derived: true
+  uncertainty: 'THE CATION NUMBER IS THE MOST CONSEQUENTIAL AND THE LEAST SAFE THING IN THIS NODE. It
+    inherits every assumption the Donnan work already carries - ideal Donnan, no activity coefficients, no
+    matrix binding, cartilage water at bath ionic strength, bovine fixed charge density - and for a CATION
+    the no-binding assumption is far worse than for an anion, because a lipophilic cation binds
+    phospholipid membranes, partitions into lysosomes and sticks to the very polyanions that produce the
+    Donnan term. Measured cartilage uptake of cationic probes is a real and separately studied phenomenon
+    and this atlas has NOT read that literature. TREAT 2.2 AS A CEILING ON A DIRECTION, NOT A PREDICTION.
+    AND THE MEDICINAL CHEMISTRY IS NOT FREE: adding a basic amine to a dichlorophenyl-bearing lipophilic
+    scaffold raises hERG and phospholipidosis risk, and the amine in MCUF-651 sits on the GC-A-selective
+    molecule, so it cannot be assumed neutral for GC-B potency or selectivity.'
+- parameter: 'THERE ARE TWO DISTINCT ALLOSTERIC SITES ON GC-B, ON OPPOSITE SIDES OF THE MEMBRANE'
+  value: 'MCUF-42 binds the EXTRACELLULAR domain (SPR, KD 710 nM) and acts by raising CNP AFFINITY -
+    2.6-fold faster association, 6.4-fold potency shift - with NO increase in maximal cGMP. The
+    andresen2023 compound 20 site is INTRACELLULAR, in the kinase homology domain, mapped by reciprocal
+    chimeras to GC-A Thr640 / GC-B Ile624, and acts by raising EFFICACY - plus 30 per cent maximum cGMP at
+    GC-A, plus 35 per cent at GC-B I624T - without changing peptide affinity, and INDEPENDENTLY OF
+    RECEPTOR PHOSPHORYLATION'
+  unit: qualitative - binding site and mechanism
+  conditions: ma2024 and andresen2023, both full text read 2026-08-09. The GC-A residue 640 (Thr) and GC-B
+    residue 624 (Ile) assignments were VERIFIED INDEPENDENTLY by this atlas against UniProt P16066 and
+    P20594; the two sequences align with a constant offset of 16 in this region, which matches the chimera
+    boundaries the paper reports (GC-A 621-663 against GC-B 605-647).
+  species: not_applicable
+  source_ref: andresen2023
+  atlas_derived: true
+  uncertainty: 'THE TWO COMPOUNDS HAVE NEVER BEEN TESTED TOGETHER, IN ANY SYSTEM, AND NO GC-B-ACTIVE
+    COMPOUND OF THE andresen2023 SERIES EXISTS - the GC-B numbers quoted are from the I624T POINT MUTANT,
+    not from wild-type GC-B. The inference that two sites on opposite membrane faces must be combinable is
+    a structural plausibility argument, not a result. What is solid is that the mechanisms differ:
+    affinity-raising versus efficacy-raising is a functional distinction measured in both papers, and only
+    an efficacy-raiser can exceed the ceiling set by the ligand itself.'
+localization:
+- 'NPR2 is expressed in the human growth plate across all three zones and all four donors of GSE288028 -
+  2.5 to 8.7 per cent of cells sample-wide, CP10K 0.025 to 0.324 - and is also expressed in vasculature
+  and cardiac fibroblasts, which is the whole difficulty: the receptor is present at both the target and
+  the liability'
+human_evidence: direct
+human_evidence_note: 'The dose-response is human genetic with a human anthropometric endpoint, and the
+  supporting natural experiment (npr2_gain_of_function_tall) is a human gain-of-function variant. The
+  compound evidence is human cell culture only, in the wrong cell type.'
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: high
+translation_risk_reason: 'The genetics and the pharmacology are separated by everything that usually
+  fails. Human genetics establishes that LIFELONG receptor gain sets adult height; the compound
+  establishes that a molecule can raise receptor gain IN CARDIAC FIBROBLASTS. Nothing connects the two in
+  cartilage, in an animal, at a length endpoint, or at a late bone age - which is the specific junction
+  where this atlas has watched several axes fail.'
+confidence: D
+claim_grades:
+- claim: In humans, assayed NPR2 receptor activity is associated with adult standing height near-linearly
+    and additively across polygenic backgrounds.
+  grade: A
+  basis: jeong2026, 245 functionally scored variants against standing height, R squared 0.438 at
+    P = 5.8e-10, in humans with a directly measured anthropometric endpoint.
+- claim: A small-molecule positive allosteric modulator of NPR2 has been reported.
+  grade: B
+  basis: 'ma2024, FULL TEXT READ AT ROUND 156. MCUF-42 from a 370,620-compound screen plus hit-to-lead SAR:
+    EC50 0.80 microM, Emax 86 per cent, 4-fold cGMP potentiation, no agonism alone, no activity at GC-A,
+    and SPR binding to the GC-B extracellular domain at KD 710 nM. Graded B rather than A because it is a
+    single report of a single tool compound with no independent replication located, and every assay is
+    HEK293 overexpression or human cardiac fibroblasts.'
+- claim: MCUF-42 is the best-partitioning agent on this axis, and a cationic analogue would be concentrated
+    in the plate.
+  grade: E
+  basis: 'THE PARTITION FIGURE IS COMPUTED, NOT MEASURED, and the cationic figure is computed for a
+    molecule that does not exist. MCUF-42 at MW 393 and neutral nets 0.97 against 0.47 for vosoritide,
+    which is real arithmetic on a verified formula and charge state. The cationic analogue at about 2.2 is
+    the same arithmetic applied to a hypothetical, and ideal Donnan is at its least trustworthy for a
+    lipophilic cation because it ignores exactly the binding such a molecule does. The scaffold tolerating
+    a basic amine is evidenced only by the GC-A-selective sibling MCUF-651 carrying one.'
+- claim: MCUF-42 as it stands could be given orally.
+  grade: X
+  basis: 'NO. ORAL BIOAVAILABILITY IS 0.26 PER CENT IN MICE - detectable for 2 h after 10 mg/kg oral
+    against 8 h after 5 mg/kg IV. The size-class delivery argument in this node is about partition into
+    cartilage from plasma and says nothing about absorption from gut. The sibling MCUF-651 IS orally
+    bioavailable, so the scaffold family is not intrinsically barred, but this compound is.'
+- claim: An NPR2 PAM would preferentially act on the growth plate rather than on vasculature.
+  grade: X
+  basis: 'THE MEASUREMENT CAME BACK AND IT GOES AGAINST THIS. A PAM amplifies where ligand meets receptor,
+    so it is growth-plate-selective only if local CNP at the plate exceeds CNP at the vasculature, which
+    requires the plate to be a local PRODUCER. the_plate_consumes_cnp_it_does_not_make_it measured NPPC
+    across five microdissected compartments of the human growth plate INCLUDING PERICHONDRIUM, on a
+    platform that detects PTHLH and GDF5, and found it at floor everywhere - maximum 19.8 against PTHLH
+    308.6 and GDF5 603.8. With no local production, plate ligand cannot exceed vascular ligand, and a
+    systemic PAM approximates a DOSE INCREASE - precisely what the cardiovascular margin in thread 3
+    forbids. THE SELECTIVITY ARGUMENT IS DEAD. What survives is a different and untested one: that a
+    small molecule might accumulate in cartilage on its own physicochemistry, cartilage being polyanionic.
+    MCUF-42 has not been characterised for that and this node does not assert it.'
+- claim: A small molecule would solve the delivery deficit that thread 3 describes.
+  grade: D
+  basis: 'farnum2006 puts 332 Da at roughly 100 per cent partition into the plate against about 60 per
+    cent at 3 kDa and undetectable at 40 kDa, so the SIZE CLASS is right in a way no peptide on this axis
+    is. But MCUF-42 has not been placed on that curve here, small molecules face efflux, protein binding
+    and metabolism that dextran tracers do not, and no growth-plate concentration has ever been measured
+    for ANY agent, which is the finding thread 3 rests on.'
+- claim: This compound class should be pursued ahead of cartilage-targeted CNP.
+  grade: D
+  basis: 'It is cheaper, better-sized for the tissue, and supported by a human dose-response in the exact
+    endpoint. Against it, cartilage-targeted CNP has actual cartilage data and this has none, and the
+    tissue-selectivity argument for a PAM is unresolved in a way the targeting argument is not. The honest
+    ranking is that they attack the same cap by different routes and the producer-consumer measurement
+    discriminates between them.'
+key_refs:
+- ref_id: jeong2026
+  year: 2026
+  type: primary
+  role: the human dose-response - NPR2 activity score against standing height across 245 scored variants,
+    with the phenome-wide specificity claim
+- ref_id: ma2024
+  year: 2024
+  type: primary
+  role: MCUF-42, the first small-molecule GC-B positive allosteric modulator - full characterisation read
+    at round 156, including the extracellular binding site and the 0.26 per cent oral bioavailability
+- ref_id: andresen2023
+  year: 2023
+  type: primary
+  role: the SECOND, intracellular allosteric site on this receptor - efficacy-raising, phosphorylation-
+    independent, and mapped to GC-B Ile624
+- ref_id: sangaralingham2021
+  year: 2021
+  type: primary
+  role: MCUF-651, the orally bioavailable CATIONIC GC-A sibling that shows this scaffold family tolerates
+    a basic amine
+- ref_id: pubchem_mcuf42
+  year: 2024
+  type: dataset
+  role: the formula, mass and charge state that let MCUF-42 finally be placed on the partition curve
+open_questions:
+- g_l12_does_the_human_plate_produce_its_own_cnp
+- g_l12_does_a_small_molecule_accumulate_in_cartilage
+- g_l12_gcb_selective_allosteric_enhancer_does_not_exist
+contradicts: []
+last_verified: '2026-08-09'

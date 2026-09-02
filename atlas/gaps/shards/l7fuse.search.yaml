@@ -1,0 +1,87 @@
+searches:
+
+- gap_id: g_l7fuse_003
+  database: Europe PMC
+  exact_query_string: '(human) AND ("growth plate" OR physis) AND (transcriptome OR "single-cell RNA" OR "RNA-seq") AND ("epiphyseal fusion" OR "growth plate closure" OR "fusing growth plate")'
+  filters: 'format=json, resultType=lite, pageSize=30, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 50
+  screened_count: 30
+  reason_none_qualified: >-
+    Screened the 30 highest-ranked records by title and, where ambiguous, abstract. None reports
+    sequencing of human physeal tissue at a defined late-pubertal or fusing stage. The closest
+    qualifying record is a commentary (PMID 42248738) on the human EARLY-PUBERTAL growth plate
+    atlas of chu2026, whose specimens come from growth-restricting surgery and therefore predate
+    fusion by years. The remainder are rodent growth plate studies (e.g. PMID 30036371 rodent
+    differential aging, PMID 35039652 murine gp130/STAT3), reviews of skeletal single-cell
+    methods, cartilage organoid papers, and unrelated skeletal dysplasia genetics. No dataset
+    accession for human fusing physis was identified.
+
+- gap_id: g_l7fuse_005
+  database: Europe PMC
+  exact_query_string: '("growth plate" OR "epiphyseal plate") AND ("DNA methylation" OR methylome) AND human AND (chondrocyte OR cartilage) AND (puberty OR pubertal OR "bone age" OR "epiphyseal fusion")'
+  filters: 'format=json, resultType=lite, pageSize=20, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 99
+  screened_count: 20
+  reason_none_qualified: >-
+    None of the 20 highest-ranked records measures DNA methylation, chromatin accessibility or
+    histone modification in human growth plate cartilage at any age. Hits are reviews of
+    overgrowth-syndrome epigenetics, epigenetic age acceleration measured in BLOOD of GH-treated
+    children (PMID 40507601), murine skeletal studies, and general genetics-of-stature reviews.
+    A deliberately broader companion query, '("growth plate" OR "epiphyseal plate" OR "physeal
+    cartilage") AND ("DNA methylation" OR methylome OR "epigenetic drift") AND (senescence OR
+    aging OR "growth cessation" OR fusion)', returned 441 records whose top 30 were dominated by
+    osteoarthritic articular cartilage, bone marrow stromal cells and systemic ageing, again
+    with no growth plate methylome at any age in any species.
+
+- gap_id: g_l7fuse_008
+  database: Europe PMC
+  exact_query_string: '("bone age") AND (Greulich AND Pyle) AND (interobserver OR inter-rater OR interrater) AND (meta-analysis OR "pooled estimate")'
+  filters: 'format=json, resultType=lite, pageSize=20, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 51
+  screened_count: 20
+  reason_none_qualified: >-
+    No record provides a pooled meta-analytic estimate of human reader error for bone age in
+    years with a confidence interval. The one systematic review and meta-analysis identified in
+    this area (dallora2019, PMID 31344143) pools machine-learning algorithm performance across 26
+    studies, not human inter-rater error, and explicitly notes that samples are predominantly
+    from the United States and Western Europe with few studies exploring ethnic differences.
+    Remaining hits are single-centre reliability audits already captured as primaries
+    (king1994, bull1999, paxton2013, tewattanarat2026, guevel2026), AI-versus-manual validation
+    studies in single national cohorts, and narrative reviews.
+
+- gap_id: g_l7fuse_010
+  database: Europe PMC
+  exact_query_string: '("epiphyseal union" OR "epiphyseal fusion") AND (sequence OR "order of union") AND (population-specific OR "population differences" OR ancestry OR "between populations")'
+  filters: 'format=json, resultType=lite, pageSize=20, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 166
+  screened_count: 20
+  reason_none_qualified: >-
+    No record reports a formal statistical comparison of the SEQUENCE of epiphyseal union
+    between two or more populations. Hits are forensic age-estimation threshold studies at the
+    15- and 18-year marks using single-population reference data, systematic reviews of anatomy
+    in forensic age evaluation, archaeological and ancient-DNA population studies, and clinical
+    case series. Published union sequences remain single-population and use non-comparable
+    element sets (schaefer2007 Bosniak males, 21 epiphyses; cardoso2014 Portuguese sacrum;
+    kvist2021 Swedish wrist/knee/ankle by MRI), so cross-population conservation of order
+    remains an assumption rather than a finding.
+
+- gap_id: g_l7fuse_013
+  database: Europe PMC
+  exact_query_string: '(menarche) AND ("height gain" OR "growth after menarche" OR postmenarcheal) AND (longitudinal OR cohort) AND (centimetres OR centimeters OR cm)'
+  filters: 'format=json, resultType=lite, pageSize=20, no date limit'
+  date_run: '2026-08-05'
+  hit_count: 471
+  screened_count: 20
+  reason_none_qualified: >-
+    Of the 20 highest-ranked records, only grdstedtbergho2024 (PMID 39210984) reports observed
+    postmenarcheal height gain with its full distribution in a healthy community cohort, and it
+    is already cited. The remainder report PREDICTED adult height rather than measured gain, in
+    treated clinical populations - GnRH agonist series for precocious puberty, growth hormone in
+    Turner and SHOX deficiency, congenital adrenal hyperplasia cohorts - or model pubertal growth
+    without decomposing the postmenarcheal increment. No study was found that reports the
+    determinants of the upper tail of postmenarcheal growth (gain above 15 cm), which is the
+    specific quantity this gap requires.

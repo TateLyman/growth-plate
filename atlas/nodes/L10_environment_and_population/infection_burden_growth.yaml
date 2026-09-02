@@ -1,0 +1,79 @@
+id: infection_burden_growth
+name: Infection burden and linear growth
+type: process
+summary: 'Repeated infection is the environmental exposure that most plausibly explains why feeding children
+  more food closes only about a tenth of their linear growth deficit, and its entry point into the graph
+  is the inflammatory suppression of IGF-1. In 740 stunted Ugandan children aged 12-59 months, inflammation
+  markers (C-reactive protein and alpha-1 acid glycoprotein) were the strongest negative correlates of
+  serum IGF-1 in Tobit regression, and a positive rapid malaria test was associated with serum IGF-1 lower
+  by 4.7 ug/L (95% CI -7.8 to -1.6) - an association that did not survive adjustment for inflammation,
+  which is the point: the infection acts through the inflammatory response rather than beside it (madigan2026).
+  The same cohort showed that plasma concentrations of 18 of 21 amino acids were lower in children with
+  elevated inflammatory markers (larnkjr2026), so infection depletes substrate and blocks the anabolic
+  signal at once. Downstream of this the mechanism is the SOCS/STAT5 and IGF1R-AKT/ERK interference documented
+  in inflammation_growth_suppression, all of it rodent. No human study has measured SOCS2, SOCS3 or phospho-STAT5
+  in any tissue during a childhood infection with a linear growth endpoint.'
+quantitative:
+- parameter: serum IGF-1 difference associated with a positive malaria test
+  value: '-4.7'
+  unit: ug/L
+  conditions: 740 stunted Ugandan children aged 12-59 months, Tobit regression before inflammation adjustment
+  species: human
+  source_ref: madigan2026
+  uncertainty: 95% CI -7.8 to -1.6; attenuated after inflammation adjustment
+- parameter: serum IGF-1 sex difference in the same cohort
+  value: '-11.8'
+  unit: ug/L
+  conditions: males versus females, stunted Ugandan children
+  species: human
+  source_ref: madigan2026
+  uncertainty: 95% CI -14.9 to -8.8
+localization:
+- 'human SYS: infection -> acute-phase response -> suppressed circulating IGF-1'
+human_evidence: direct
+human_evidence_note: Human cross-sectional cohort with rapid malaria testing, measured CRP and AGP, and
+  measured serum IGF-1 in 740 stunted children.
+species_basis:
+- human
+translation_risk: moderate
+translation_risk_reason: The human data establish the association; the molecular interference steps between
+  cytokine and chondrocyte are rodent-derived.
+confidence: B
+claim_grades:
+- claim: Infection lowers circulating IGF-1 in stunted children, and does so through the inflammatory
+    response rather than independently of it.
+  grade: A
+  basis: Malaria-IGF-1 association attenuated by inflammation adjustment in a cohort of 740 children with
+    measured markers (madigan2026).
+- claim: Infection-driven IGF-1 suppression is transduced at the growth plate by SOCS-mediated STAT5 blockade.
+  grade: C
+  basis: Mechanism demonstrated only in rodent liver and rodent chondrocytes (denson2003, choukair2014);
+    untested in humans.
+key_refs:
+- ref_id: madigan2026
+  pmid: '41093111'
+  first_author: Madigan E
+  year: 2026
+  type: primary
+  one_line_finding: Inflammation markers were the strongest negative correlates of serum IGF-1 in 740
+    stunted Ugandan children; malaria positivity was associated with -4.7 ug/L before inflammation adjustment.
+- ref_id: larnkjr2026
+  pmid: '42002262'
+  first_author: Larnkjær A
+  year: 2026
+  type: primary
+  one_line_finding: Plasma concentrations of 18 of 21 amino acids were lower in stunted children with
+    elevated inflammatory markers.
+- ref_id: denson2003
+  pmid: '12519742'
+  first_author: Denson LA
+  year: 2003
+  type: primary
+  one_line_finding: Endotoxin blocks hepatic GH-STAT5 signalling via IL-6-dependent induction of CIS and
+    SOCS-3 in mice.
+open_questions:
+- g_l10env_004
+- g_l10env_009
+layer: L10
+stub: false
+last_verified: '2026-08-05'

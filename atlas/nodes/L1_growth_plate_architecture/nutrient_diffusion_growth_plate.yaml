@@ -1,0 +1,75 @@
+id: nutrient_diffusion_growth_plate
+name: Nutrient diffusion in the growth plate
+aliases:
+- solute transport in physeal cartilage
+- metabolite gradients
+type: process
+layer: L1
+stub: false
+summary: 'Because the growth plate contains no vessels, every solute a chondrocyte needs must diffuse
+  from the epiphyseal or metaphyseal margins through a dense, negatively charged proteoglycan matrix,
+  and every waste product must leave the same way. The consequence is that the interior of the plate is
+  simultaneously the most hypoxic and the most nutritionally remote compartment, and that plate height
+  is bounded by diffusion. This is one plausible reason why growth plate height falls as animals mature
+  and why bulk plate height is a poor predictor of growth rate. The direct evidence for a nutrient gradient
+  is much weaker than for the oxygen gradient: the only zonal transport measurements in the growth plate
+  literature are the oxygen electrode profiles of Brighton and Heppenstall, and the strongest indirect
+  evidence is that mouse chondrocytes have evolved an intracellular oxygen store (haemoglobin bodies)
+  precisely because delivery is marginal. Glucose, lactate and amino acid gradients across the plate have
+  not been measured in any species, and no human measurement of any kind exists. Treating this node as
+  established biology would be an error; it is a well-motivated inference from tissue architecture.'
+quantitative:
+- parameter: published measurements of glucose or lactate gradients across the growth plate
+  value: '0'
+  unit: studies
+  conditions: any species, literature to 2026-08-05
+  species: not_applicable
+  source_ref: brighton1971
+  uncertainty: null result; the only zonal transport data are oxygen electrode profiles
+- parameter: evidence of marginal oxygen delivery requiring intracellular storage
+  value: haemoglobin bodies with left-shifted P50 (27.6-27.9 mmHg)
+  unit: mmHg
+  conditions: mouse growth plate chondrocytes
+  species: mouse
+  source_ref: zhang2023
+  uncertainty: two reported values
+localization:
+- 'rat and rabbit: oxygen profile measured (brighton1971)'
+- 'human: no transport measurement of any solute'
+human_evidence: absent
+human_evidence_note: No study measures solute transport or metabolite gradients in human growth plate
+  cartilage.
+species_basis:
+- rat
+- rabbit
+- mouse
+translation_risk: high
+translation_risk_reason: Diffusion limits scale with the square of plate thickness, and human plates are
+  thicker than rodent ones, so rodent inferences about how far solutes reach are not transferable.
+confidence: E
+key_refs:
+- ref_id: brighton1971
+  pmid: '5580029'
+  first_author: Brighton CT
+  year: 1971
+  type: primary
+  one_line_finding: The only zonal measurement of a diffusible solute (oxygen) across the epiphyseal plate,
+    in rat and rabbit.
+- ref_id: zhang2023
+  pmid: '37794190'
+  first_author: Zhang F
+  year: 2023
+  type: primary
+  one_line_finding: Chondrocyte haemoglobin bodies with left-shifted P50 imply that oxygen delivery to
+    the plate interior is marginal.
+- ref_id: schipani2001
+  pmid: '11691837'
+  first_author: Schipani E
+  year: 2001
+  type: primary
+  one_line_finding: Deletion of HIF-1alpha kills chondrocytes specifically in the plate interior, consistent
+    with a diffusion-limited centre.
+open_questions:
+- g_l1arch_007
+pending_source: brighton1971
+last_verified: '2026-08-05'

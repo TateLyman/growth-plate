@@ -1,0 +1,76 @@
+id: sox9_tf
+name: SOX9
+aliases:
+- SRY-box transcription factor 9
+type: protein
+layer: L3
+stub: false
+summary: 'SOX9 is the master chondrogenic transcription factor and the only node in this layer with an unambiguous
+  human loss-of-function phenotype. Heterozygous SOX9 mutations and translocations cause campomelic dysplasia with
+  bowed long bones, hypoplastic scapulae and autosomal XY sex reversal (Foster 1994; Wagner 1994), so human haploinsufficiency
+  alone is sufficient to derail skeletogenesis. In mouse, Sox9-null cells are excluded from cartilage condensations
+  (Bi 1999), and staged inactivation shows successive requirements: for condensation, for overt chondrocyte differentiation,
+  and for expression of Sox5 and Sox6 (Akiyama 2002). Later in the growth plate, SOX9 maintains columnar proliferation
+  and is required to generate hypertrophy while simultaneously restraining Runx2 and beta-catenin, thereby blocking
+  acquisition of an osteoblast phenotype; SOX9 protein outlives its mRNA into upper hypertrophic cells, where it acts
+  with MEF2C to activate Col10a1 directly (Dy 2012, mouse). SOX9 is antagonised by and antagonises beta-catenin reciprocally
+  (Akiyama 2004; Topol 2009), is suppressed by sustained Notch signalling (Kohn 2015), and drives its own nutrient
+  supply via GLS1 (Stegen 2020) - making it the single most convergent node in L3.'
+localization:
+- 'mouse RZ/PZ/PHZ and upper HZ (protein): confirmed (dy2012)'
+- 'human: inferred from campomelic dysplasia haploinsufficiency (foster1994, wagner1994)'
+human_evidence: direct
+human_evidence_note: Heterozygous human SOX9 loss of function causes campomelic dysplasia, a defined skeletal phenotype.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Human haploinsufficiency phenotype and mouse conditional genetics agree in direction and
+  in tissue.
+confidence: A
+key_refs:
+- ref_id: foster1994
+  pmid: '7990924'
+  first_author: Foster JW
+  year: 1994
+  type: primary
+  one_line_finding: Campomelic dysplasia with autosomal sex reversal is caused by mutations in the SRY-related gene
+    SOX9.
+- ref_id: wagner1994
+  pmid: '8001137'
+  first_author: Wagner T
+  year: 1994
+  type: primary
+  one_line_finding: Independent confirmation that mutations in and around SOX9 cause campomelic dysplasia and sex
+    reversal.
+- ref_id: akiyama2002
+  pmid: '12414734'
+  first_author: Akiyama H
+  year: 2002
+  type: primary
+  one_line_finding: Sox9 is required at successive steps of chondrocyte differentiation and for Sox5/Sox6 expression
+    in mouse.
+- ref_id: dy2012
+  pmid: '22421045'
+  first_author: Dy P
+  year: 2012
+  type: primary
+  one_line_finding: Sox9 maintains columnar proliferation, generates hypertrophy, restrains Runx2 and beta-catenin,
+    and activates Col10a1 with Mef2c.
+- ref_id: bi1999
+  pmid: '10319868'
+  first_author: Bi W
+  year: 1999
+  type: primary
+  one_line_finding: Sox9-null cells are excluded from cartilage condensations in mouse chimaeras.
+open_questions:
+- g_l3rest_012
+contradicts:
+- beta_catenin_ctnnb1
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Human heterozygous haploinsufficiency alone is sufficient (foster1994, wagner1994), and the
+  mouse chimaera design (bi1999) excludes both paralog rescue and non-cell-autonomous
+  compensation.

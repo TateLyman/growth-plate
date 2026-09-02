@@ -1,0 +1,58 @@
+id: micromass_culture
+name: Micromass chondrogenic culture
+aliases:
+- high-density chondrocyte culture
+type: method
+summary: |
+  Micromass culture plates mesenchymal cells at high density so that condensation and
+  chondrogenesis occur in vitro, reproducing the earliest step of endochondral development in
+  a format that supports dozens of parallel conditions. Its value in this atlas is upstream:
+  it models condensation and early differentiation, not the zonal growth plate. The
+  distinction is not pedantic, because the properties the atlas cares about - column
+  formation, a resting-zone progenitor pool, a hypertrophic volume set point, terminal fusion
+  - are all emergent properties of a spatially organised tissue with a secondary ossification
+  centre and a mechanical environment, and none of them appears in micromass. Monolayer
+  expansion before micromass compounds the problem: growth plate chondrocytes dedifferentiate
+  rapidly in monolayer, which is visible in the atlas's own dataset inventory, where the human
+  growth plate chondrocyte microarray deposits are monolayer-expanded cells whose zonal
+  identity has already been destroyed (GSE1277, GSE1278). Micromass therefore answers
+  questions about chondrogenic competence and about the response of chondrocytes to a soluble
+  factor, and does not answer questions about zonal organisation.
+quantitative:
+- parameter: zonal organisation reproduced in micromass culture
+  value: none
+  unit: qualitative
+  conditions: no resting/proliferative/hypertrophic axis forms
+  species: in_vitro_human_cell
+  source_ref: zhang2025_2
+  uncertainty: stated as an unmet challenge in the field review
+localization:
+- 'in_vitro_human_cell: no zonal axis'
+human_evidence: indirect
+human_evidence_note: Human cells can be used, but the structure being modelled is not the human growth
+  plate.
+species_basis:
+- in_vitro_human_cell
+- in_vitro_animal_cell
+translation_risk: high
+translation_risk_reason: Reproduces condensation, not zonal architecture, so any inference about
+  growth plate organisation is unsupported by the model itself.
+confidence: C
+key_refs:
+- ref_id: zhang2025_2
+  first_author: Zhang G
+  year: 2025
+  type: review
+  one_line_finding: Engineering a functional growth plate in vitro remains unachieved; existing constructs
+    lack zonal organisation.
+- ref_id: gse9160
+  first_author: Mougey EB
+  year: 2007
+  type: dataset
+  one_line_finding: Zonal identity of human growth plate cells is a spatial property that culture
+    formats do not preserve.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

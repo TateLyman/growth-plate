@@ -1,0 +1,103 @@
+id: human_growth_plate_explant_assay
+name: Human growth plate organ culture - a growth assay that runs on human tissue
+type: method
+layer: L13
+stub: false
+summary: 'Every candidate in this atlas has had to be judged on mouse growth, human genetics, or a human transcript
+  detected in the right cells - never on whether it makes human cartilage grow, because no assay of that existed here.
+  One does. chu2026 section biopsied human growth plate cartilage into 1 mm slices and maintained them EX VIVO FOR
+  TWO MONTHS with preserved histology and Safranin O proteoglycan staining, and growth hormone produced a measurable
+  expansion of the cartilage with significantly increased proliferation in the proliferative zone (P = 0.013) and,
+  at 24 hours, a higher proportion of S-phase cells in the flat-chondrocyte cluster (P < 0.0001). Bone did not expand
+  in the same cultures, which is the internal control that matters - chondrogenesis proceeds without vascularisation
+  and ossification does not. avijgan2026br independently runs the complementary protocol on the same tissue type:
+  intact biopsies pulsed with EdU overnight and then IdU and CldU on subsequent days, which is a sequential-label
+  proliferation readout. Taken together these are the components of a human growth-plate pharmacology platform - human
+  tissue, two-month viability, a cartilage-expansion endpoint, a proliferation endpoint, and a sequential-label readout
+  capable of returning a growth fraction and a cycle time. THE LIMITING RESOURCE IS THE TISSUE, and it comes from
+  one narrow source: epiphysiodesis surgery performed on adolescents to PREVENT idiopathic tall stature.'
+quantitative:
+- parameter: viability of human growth plate cartilage in organ culture
+  value: '2'
+  unit: months
+  conditions: biopsied human growth plate cartilage cut into 1 mm thick slices; histology and Safranin O proteoglycan
+    staining preserved over the culture period
+  species: human
+  source_ref: chu2026
+  uncertainty: The authors attribute the persistence to cartilage being avascular and diffusion-fed in vivo. BONE
+    DID NOT EXPAND in the same cultures, matching prior rodent metatarsal work - so the preparation supports chondrogenesis
+    and not ossification, and any endpoint that requires bone formation is out of reach in it.
+- parameter: response of the assay to a positive control
+  value: measurable cartilage expansion; PZ proliferation P = 0.013; S-phase fraction at 24 h P < 0.0001
+  unit: mixed
+  conditions: vehicle or growth hormone for 2 months for the growth endpoint; 24 h for the transcriptional and cell-cycle
+    endpoints
+  species: human
+  source_ref: chu2026
+  uncertainty: 'GH IS THE RIGHT POSITIVE CONTROL AND IT DID NOT WORK IN EVERY DONOR - the authors state plainly that
+    not all patient samples responded, and attribute it to known interindividual differences in GH responsiveness
+    among children. THAT IS THE ASSAY''S CENTRAL PRACTICAL LIMIT: with donor-to-donor variation large enough to hide
+    the effect of the best-validated growth drug in medicine, any screen run on it needs several donors per arm and
+    will be underpowered for anything weaker than GH. A second reported comparison in the same figure is null (P =
+    0.79) and this atlas has not established which endpoint it belongs to.'
+- parameter: sequential-label proliferation readout on the same tissue
+  value: EdU overnight, then IdU, then CldU on subsequent days
+  unit: protocol
+  conditions: intact human growth plate biopsies from epiphysiodesis, cultured ex vivo
+  species: human
+  source_ref: avijgan2026br
+  uncertainty: Demonstrated as a QUIESCENCE assay - few resting zone cells took EdU while IdU and CldU were incorporated
+    later. The same protocol with varied inter-label intervals and read out on the PROLIFERATIVE zone is the standard
+    way to recover a growth fraction and a cycle time, and no one has published it that way. Explanting itself releases
+    arrest, which the paper demonstrates, so any number it returns is a bound on the in vivo value, not the value.
+- parameter: the tissue supply, and what it selects for
+  value: epiphysiodesis for idiopathic tall stature, ages 11 to 14, Tanner 2 to 4
+  unit: none
+  conditions: 'chu2026: 4 donors, 23,625 cells retained after QC. avijgan2026br: 8 donors, 12 y 2 m to 14 y 6 m, distal
+    femur. chu2026 also reports resting zone width in a comparison group operated for leg-length difference: 728 +/-
+    72 um (n = 4) vs 711 +/- 1 um in idiopathic tall stature (n = 2), P = 0.88'
+  species: human
+  source_ref: chu2026
+  uncertainty: EVERY HUMAN GROWTH PLATE MEASUREMENT IN THIS ATLAS COMES FROM CHILDREN BEING OPERATED ON TO STOP THEM
+    GROWING, and the age window is two to three years wide. The one available check against a different indication
+    - resting zone width in leg-length-difference patients - is null at P = 0.88, which is reassuring on that one
+    parameter with n = 4 versus 2 and is not evidence of general representativeness. There is no normal-stature paediatric
+    growth plate and there is no route to one.
+localization:
+- distal femur growth plate cartilage, ex vivo
+human_evidence: direct
+human_evidence_note: The assay is human tissue by construction. What it cannot be is a normal-stature human, or a
+  human of any age outside 11-14.
+species_basis:
+- human
+translation_risk: moderate
+translation_risk_reason: 'Explant culture is not a child: the tissue is cut, denied its vasculature and mechanical
+  loading, and released from its niche - and avijgan2026br shows that release is enough to move cells out of quiescence
+  within days, which is precisely the variable the assay would most be used to study. An agent that works here has
+  cleared human tissue and has not cleared a human.'
+confidence: B
+confidence_note: B. Two independent groups maintain human growth plate tissue ex vivo and report interpretable endpoints,
+  and chu2026 carries a positive control with a stated effect and a P value plus an internal negative control (bone
+  does not expand). It is not A because the positive control fails in some donors, the growth endpoint is reported
+  without an effect size this atlas has read, n is 4 to 8 donors in a 2-3 year age window, and no one has yet used
+  the platform for a screen.
+key_refs:
+- ref_id: chu2026
+  pmid: '41984930'
+  first_author: Chu NTL
+  year: 2026
+  type: primary
+  one_line_finding: Human growth plate cartilage slices survive 2 months in organ culture with preserved histology;
+    GH expands the cartilage and raises PZ proliferation (P = 0.013), though not in every donor, while bone does not
+    expand.
+- ref_id: avijgan2026br
+  pmid: '42552306'
+  first_author: Avijgan M
+  year: 2026
+  type: primary
+  one_line_finding: Sequential EdU/IdU/CldU labelling of intact human growth plate biopsies works and detects reversible
+    cell cycle arrest.
+open_questions:
+- g_l1arch_human_growth_fraction
+- g_l13_human_explant_screen
+last_verified: '2026-08-06'

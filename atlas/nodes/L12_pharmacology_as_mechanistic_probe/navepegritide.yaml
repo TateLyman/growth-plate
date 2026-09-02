@@ -1,0 +1,127 @@
+id: navepegritide
+name: Navepegritide
+aliases: [TransCon CNP, YUVIWEL, ACcomplisH agent]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Navepegritide is a TransCon prodrug in which unmodified human CNP-38 is bound to a
+  methoxy-PEG carrier by a linker that auto-cleaves with first-order kinetics, releasing
+  native CNP continuously over a one-week dosing interval. The released peptide is
+  chemically identical to endogenous CNP and therefore has the same NPR2 affinity and
+  activity - the engineering is entirely pharmacokinetic, not pharmacodynamic. FDA
+  labelling gives an apparent elimination half-life of 6.7 days for the prodrug and
+  5.3 days for released CNP, with steady-state CNP Cmax 36.0 pmol/L and weekly AUC
+  4410 h*pmol/L at 0.1 mg/kg/week; steady state is reached after about three weekly
+  doses. In the pivotal 52-week placebo-controlled APPROACH trial (NCT05598320, n=84,
+  ages 2-11 y, 100 ug/kg/week) least-squares mean annualised growth velocity was
+  5.89 cm/yr versus 4.41 cm/yr on placebo, a difference of 1.49 cm/yr (95% CI 1.05-1.93,
+  p<0.0001). US approval is accelerated and rests on that surrogate; no final adult
+  height data exist for this or any CNP analogue. The concentration of released CNP
+  actually reaching growth plate chondrocytes has never been measured in any species,
+  so the entire dose-selection rationale rests on plasma exposure.
+quantitative:
+  - parameter: LS mean difference in annualised growth velocity vs placebo, week 52
+    value: '1.49'
+    unit: cm/yr
+    conditions: >-
+      APPROACH phase 2b RCT NCT05598320, navepegritide 100 ug/kg/week subcutaneous,
+      genetically confirmed achondroplasia aged 2-11 y, treatment-naive, 2:1 randomisation
+    species: human
+    source_ref: nct05598320
+    uncertainty: 95% CI 1.05-1.93, p<0.0001
+  - parameter: LS mean annualised growth velocity, navepegritide arm
+    value: '5.89'
+    unit: cm/yr
+    conditions: as above, n=57
+    species: human
+    source_ref: nct05598320
+    uncertainty: 95% CI 5.66-6.13
+  - parameter: LS mean annualised growth velocity, placebo arm
+    value: '4.41'
+    unit: cm/yr
+    conditions: as above, n=27
+    species: human
+    source_ref: nct05598320
+    uncertainty: 95% CI 4.04-4.77
+  - parameter: apparent elimination half-life, released CNP
+    value: '5.3'
+    unit: days
+    conditions: 0.1 mg/kg/week subcutaneous in patients with achondroplasia, population PK model
+    species: human
+    source_ref: fda_yuviwel_label_2026
+    uncertainty: model-derived mean, no CI given in label
+  - parameter: apparent elimination half-life, navepegritide prodrug
+    value: '6.7'
+    unit: days
+    conditions: 0.1 mg/kg/week subcutaneous in patients with achondroplasia, predicted mean
+    species: human
+    source_ref: fda_yuviwel_label_2026
+    uncertainty: predicted mean, no CI given in label
+  - parameter: steady-state plasma Cmax of released CNP
+    value: '36.0'
+    unit: pmol/L
+    conditions: 0.1 mg/kg/week; geometric mean, Tmax 24.4 h
+    species: human
+    source_ref: fda_yuviwel_label_2026
+    uncertainty: CV 23%
+  - parameter: estimated concentration of released CNP at the growth plate
+    value: not measured
+    unit: not applicable
+    conditions: no measurement exists in any species for any CNP analogue
+    species: not_applicable
+    source_ref: fda_yuviwel_label_2026
+    uncertainty: unmeasured - see gap g_l12b_002 and g_l12pharm_002
+    value_unverified: true
+localization:
+  - "human growth plate: presumed site of action via NPR2; drug concentration at the plate unmeasured"
+human_evidence: direct
+human_evidence_note: >-
+  Randomised, double-blind, placebo-controlled phase 2b trial with a prespecified
+  annualised growth velocity endpoint and posted results, followed by US accelerated approval.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  The efficacy estimate comes from a human RCT with posted results. The residual risk is
+  not species translation but endpoint translation: growth velocity at 52 weeks is a
+  surrogate for adult height, and the target-tissue exposure that supposedly drives it
+  has never been measured.
+confidence: A
+claim_grades:
+  - claim: Once-weekly navepegritide 100 ug/kg raises annualised growth velocity by 1.49 cm/yr over 52 weeks versus placebo in achondroplasia aged 2-11 y.
+    grade: A
+    basis: Double-blind placebo-controlled RCT with posted results, n=84.
+  - claim: The growth benefit is produced by sustained CNP occupancy of NPR2 in growth plate chondrocytes.
+    grade: C
+    basis: Mechanism is inferred from NPR2 biology and animal work; no human growth plate pharmacodynamic measurement, and plasma cGMP is the only engagement biomarker.
+  - claim: Continuous weekly exposure is pharmacologically superior to daily peak dosing.
+    grade: D
+    basis: Contradicted by cross-trial comparison - see cnp_analog_pk_challenge; the 1.49 cm/yr effect overlaps the 1.57 cm/yr from once-daily vosoritide despite a ~300-fold difference in exposure duration.
+key_refs:
+  - ref_id: savarirayan2026
+    pmid: '41247754'
+    first_author: Savarirayan R
+    year: 2026
+    type: primary
+    one_line_finding: APPROACH phase 2b RCT of once-weekly navepegritide in 84 children with achondroplasia.
+  - ref_id: nct05598320
+    year: 2025
+    type: trial_registry
+    one_line_finding: Posted results give LS mean AGV difference 1.49 cm/yr (95% CI 1.05-1.93).
+  - ref_id: fda_yuviwel_label_2026
+    year: 2026
+    type: regulatory
+    one_line_finding: Prodrug t1/2 6.7 d, released CNP t1/2 5.3 d, steady-state CNP Cmax 36.0 pmol/L; accelerated approval on AGV.
+  - ref_id: savarirayan2023
+    pmid: '37823031'
+    first_author: Savarirayan R
+    year: 2023
+    type: primary
+    one_line_finding: ACcomplisH dose escalation 6-100 ug CNP/kg/week over 52 weeks established the 100 ug/kg dose.
+  - ref_id: nct04085523
+    year: 2023
+    type: trial_registry
+    one_line_finding: ACcomplisH registry record, n=57, four dose levels.
+open_questions: [g_l12b_001, g_l12b_002, g_l12pharm_001, g_l12pharm_002]
+contradicts: []
+last_verified: '2026-08-05'

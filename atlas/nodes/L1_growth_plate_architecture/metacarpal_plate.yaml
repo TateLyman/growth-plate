@@ -1,0 +1,91 @@
+id: metacarpal_plate
+name: Metacarpal and metatarsal growth plate
+aliases:
+- metacarpal physis
+- metatarsal physis
+- pseudoepiphysis
+type: tissue_structure
+layer: L1
+stub: false
+summary: 'Metacarpals and metatarsals are architecturally unusual: unlike other long bones they carry
+  a functional growth plate at one end only, with the opposite end forming a pseudoepiphysis or none at
+  all. The PTHrP/Ihh feedback loop has been shown to explain this asymmetric architecture, and the same
+  logic applies to the pisiform. This makes these bones a natural experiment for the question of what
+  determines where a growth plate forms and how many a bone gets. Metatarsals are also the element in
+  which the mechanism of evolutionary limb elongation has been localised most precisely: in the jerboa,
+  whose metatarsals are about 2.5 times longer in relative proportion than the mouse''s, hypertrophic
+  chondrocytes reach about 23,000 fl against about 8000 fl in mouse, and individual hypertrophic cell
+  height is 58% greater, achieved by extending the IGF-dependent third phase of enlargement that the mouse
+  metatarsal truncates. Human metacarpal physeal growth rates have not been reported in the sources reviewed
+  here; metacarpophalangeal pattern profiles are used clinically to characterise short stature but describe
+  final proportions, not growth plate kinetics.'
+quantitative:
+- parameter: number of functional growth plates per metatarsal or metacarpal
+  value: '1'
+  unit: growth plate per bone
+  conditions: mammals; opposite end forms a pseudoepiphysis or none
+  species: mouse
+  source_ref: reno2025
+  uncertainty: architectural feature explained by the PTHrP/Ihh loop
+- parameter: final hypertrophic chondrocyte volume, distal metatarsal
+  value: '8000'
+  unit: fl
+  conditions: mouse; phases 1 and 2 complete, phase 3 truncated
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: final hypertrophic chondrocyte volume, distal metatarsal
+  value: '23000'
+  unit: fl
+  conditions: jerboa; phase 3 extended; ~40-fold increase from initial volume
+  species: multiple
+  source_ref: cooper2013
+  uncertainty: approximate; jerboa not in the controlled species vocabulary
+- parameter: hypertrophic cell height, jerboa versus mouse metatarsal
+  value: '58'
+  unit: '% greater'
+  conditions: homologous distal metatarsal plates
+  species: multiple
+  source_ref: cooper2013
+  uncertainty: not reported
+- parameter: relative metatarsal proportion, jerboa versus mouse
+  value: '2.5'
+  unit: fold
+  conditions: hindlimb metatarsals
+  species: multiple
+  source_ref: cooper2013
+  uncertainty: as stated
+localization:
+- 'mouse and jerboa metatarsal: volume trajectories measured (cooper2013)'
+- 'mouse metatarsal and pisiform: single-plate architecture explained (reno2025)'
+- 'human metacarpal: growth plate kinetics not reported'
+human_evidence: absent
+human_evidence_note: No human metacarpal or metatarsal physeal growth rate or histomorphometric measurement
+  was found in this sweep; human hand data are limited to metacarpophalangeal pattern profiles of final
+  bone proportions.
+species_basis:
+- mouse
+- multiple
+translation_risk: high
+translation_risk_reason: All quantitative data are rodent and jerboa, and the jerboa comparison is an
+  evolutionary rather than a physiological model.
+confidence: C
+key_refs:
+- ref_id: reno2025
+  pmid: '40088130'
+  first_author: Reno PL
+  year: 2025
+  type: primary
+  one_line_finding: The PTHrP/Ihh feedback loop explains why mammalian metatarsals and the pisiform carry
+    a growth plate at one end only.
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: Jerboa metatarsal hypertrophic chondrocytes reach ~23,000 fl by extending the third
+    phase of enlargement, versus ~8000 fl in mouse.
+open_questions:
+- g_l1arch_010
+- g_l1arch_009
+last_verified: '2026-08-05'

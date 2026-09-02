@@ -1,0 +1,127 @@
+id: gymnastics_stature_effect
+name: Gymnastics and stature
+type: phenotype
+summary: 'Female artistic gymnasts are short, mature late and have a blunted pubertal spurt; whether training
+  causes this is the longest-running controversy in human growth mechanobiology. The pro-causal case rests
+  on prospective cohorts: 22 gymnasts training >18 h/wk had peak height velocity 5.48 cm/yr against 8.0
+  cm/yr in age-matched swimmers, a height SDS that fell significantly over 2.35 years while the swimmers''
+  did not, selective stunting of leg length (sitting height/leg length ratio 1.054 vs 1.100), and falling
+  predicted adult height - and, critically, no change in the chronological-age/bone-age ratio, which weakens
+  the pure maturational-delay explanation. A dose gradient exists within gymnasts: advanced (20-27 h/wk)
+  versus intermediate (7.5-22 h/wk) trainees had lower peripubertal sitting-height velocity (2.3 vs 3.1
+  cm/yr) and over 35% of pre- and peripubertal gymnasts had height velocity below 4.5 cm/yr. The selection
+  case is equally concrete: gymnasts'' growth curves are indistinguishable from short, late-maturing girls
+  with short parents, the spurt is present and about one year late rather than absent, and adult height
+  is normal in retired gymnasts. The FIG Scientific Commission review concluded that available data cannot
+  establish causality because training volume is confounded with selection, energy availability and family
+  size, and epidemiological criteria for causation are not met. Adjudication: the attenuation during training
+  is real and dose-related; the claim that it removes adult height is not established, and no study has
+  separated mechanical loading of the physis from energy deficit and hypothalamic suppression, which is
+  the mechanistically decisive question for this layer.'
+quantitative:
+- parameter: peak height velocity, gymnasts vs swimmers
+  value: 5.48 vs 8.0
+  unit: cm/yr
+  conditions: mean age 12.3 y, gymnasts ~22 h/wk vs swimmers ~8 h/wk, 2.35 y prospective
+  species: human
+  source_ref: theintz1993
+  uncertainty: SEM 0.32 and 0.50; p<0.05 for bone ages 11-13
+- parameter: sitting height / leg length ratio, gymnasts vs swimmers
+  value: 1.054 vs 1.100
+  unit: ratio
+  conditions: same cohort
+  species: human
+  source_ref: theintz1993
+  uncertainty: SEM 0.005 both; p<0.001
+- parameter: height SDS trajectory in gymnasts over follow-up
+  value: '-0.747'
+  unit: correlation coefficient r vs time
+  conditions: same cohort; swimmers r=-0.165, p=0.1
+  species: human
+  source_ref: theintz1993
+  uncertainty: p<0.001
+- parameter: peak height velocity in competitive gymnasts (advanced and intermediate)
+  value: 6.2-6.4
+  unit: cm/yr
+  conditions: 137 gymnasts, 2 y prospective, Preece-Baines model; age at PHV 13-13.5 y
+  species: human
+  source_ref: daly2005
+  uncertainty: estimated from mixed-longitudinal data
+- parameter: peripubertal sitting height velocity, advanced vs intermediate training
+  value: 2.3 vs 3.1
+  unit: cm/yr
+  conditions: 20-27 h/wk vs 7.5-22 h/wk
+  species: human
+  source_ref: daly2005
+  uncertainty: p<0.05
+- parameter: gymnasts with growth faltering (height velocity <4.5 cm/yr)
+  value: '>35'
+  unit: '% of pre- and peripubertal gymnasts'
+  conditions: same cohort
+  species: human
+  source_ref: daly2005
+  uncertainty: proportion, no CI given
+- parameter: delay in age at peak height velocity vs non-athletic girls
+  value: approximately 1
+  unit: years
+  conditions: 15 Belgian gymnasts ~15 h/wk followed 8.7-15.5 y
+  species: human
+  source_ref: thomis2005
+  uncertainty: spurts present in height, sitting height and leg length
+human_evidence: direct
+human_evidence_note: All data are human prospective anthropometric cohorts; the dispute is about confounding
+  and causal inference, not about whether the association exists.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Inherently human observational phenotype.
+confidence: D
+key_refs:
+- ref_id: theintz1993
+  pmid: '8117341'
+  first_author: Theintz GE
+  year: 1993
+  type: primary
+  one_line_finding: Gymnasts training >18 h/wk had PHV 5.48 vs 8.0 cm/yr in swimmers with falling height
+    SDS and selective leg-length stunting
+- ref_id: daly2005
+  pmid: '15947733'
+  first_author: Daly RM
+  year: 2005
+  type: primary
+  one_line_finding: 'Within-gymnast training-volume gradient: advanced trainees had lower peripubertal
+    sitting-height velocity than intermediate trainees'
+- ref_id: thomis2005
+  pmid: '15689917'
+  first_author: Thomis M
+  year: 2005
+  type: primary
+  one_line_finding: Gymnasts do have adolescent spurts, about a year late and slightly blunted, matching
+    short late-maturing girls with short parents
+- ref_id: malina2013
+  pmid: '23743792'
+  first_author: Malina RM
+  year: 2013
+  type: systematic_review
+  one_line_finding: 'FIG commission review: causality between training and attained adult stature is not
+    established; selection and maturation confound every design'
+- ref_id: beunen2006
+  pmid: '16540852'
+  first_author: Beunen G
+  year: 2006
+  type: review
+  one_line_finding: Reviews the blunted growth velocity claim and the catch-up argument
+- ref_id: bass2002
+  pmid: '12145127'
+  first_author: Bass S
+  year: 2002
+  type: review
+  one_line_finding: States the case that intense training in elite female athletes reduces growth and
+    delays maturation
+open_questions:
+- g_l6mech_010
+contradicts:
+- sport_specific_loading_human
+layer: L6
+stub: false
+last_verified: '2026-08-05'

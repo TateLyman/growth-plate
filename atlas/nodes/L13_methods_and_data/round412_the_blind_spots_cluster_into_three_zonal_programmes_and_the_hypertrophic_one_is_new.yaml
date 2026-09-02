@@ -1,0 +1,202 @@
+id: round412_the_blind_spots_cluster_into_three_zonal_programmes_and_the_hypertrophic_one_is_new
+name: "R412: the 1,492 blind spots cluster into THREE replicated zonal programmes - a 76-gene HYPERTROPHIC-ZONE programme with zero atlas coverage whose top member PANX3 rises 180-fold and has a cryo-EM structure, a 46-gene reserve programme, and a 17-gene proliferative one - plus a self-correction to R366's antifungal advice"
+aliases:
+  - blind spot zonal programmes
+  - PANX3 growth plate
+  - PPA1 pyrophosphatase growth plate
+  - ARSI hypertrophic sulfatase
+  - terbinafine SQLE cartilage
+type: method
+layer: L13
+stub: false
+summary: >-
+  R411 produced 1,492 genes that are cartilage-enriched and abundant in the human growth plate
+  and have never been mentioned anywhere in this atlas. A flat list of 1,492 is not usable, and
+  R411's own negative control showed a large fraction is mitochondrial and ribosomal
+  housekeeping. The separator is SHAPE: a programme turns on or off at a point along the column;
+  housekeeping is flat. So each blind-spot gene was given its zonal profile from GSE9160 - the
+  only zone-resolved human growth plate - with the perichondrium excluded (CORR-339), a
+  detection floor well above the array's own floor calibrator, one auditable probe set per gene,
+  and the requirement that BOTH DONORS AGREE IN DIRECTION at 1.5-fold or more.
+  Tool: atlas/tools/round412_blind_spot_zonal_clustering.py. Data: atlas/data/round412/.
+
+  ⭐ THE RESULT. 1,298 of the 1,492 have a usable profile, and 139 of those fall into three
+  replicated shapes: 76 HZ_RISING, 46 RZ_FALLING, 17 MID_PEAK. Everything else is flat and drops
+  out, which is the housekeeping control working. ⭐ THE METHOD DOES WHAT IT WAS BUILT TO DO -
+  it returns PROGRAMMES rather than genes, and a programme is what a missing arm looks like.
+
+  ⭐⭐ THE HYPERTROPHIC PROGRAMME IS THE PRIZE, BECAUSE h_term IS MADE THERE AND IT IS ROUGHLY
+  80 PERCENT OF LONGITUDINAL GROWTH. Top members, by log2 hypertrophic-over-reserve, with donor
+  1 values:
+  · ARSI +5.11 - an ARYLSULFATASE, reserve 23 rising to hypertrophic 6,820, a ~300-fold rise
+  · PANX3 +4.87 - PANNEXIN 3, reserve 223 to hypertrophic 40,113, ~180-fold, at COL2A1-scale
+    abundance in the hypertrophic zone
+  · SLC18A2 +4.77 · SCIN +4.48 · F13A1 +3.94 (factor XIII-A transglutaminase, 546 to 21,494)
+  · SLC44A2 +3.18 · PPA1 +3.08 - INORGANIC PYROPHOSPHATASE, 1,330 to 21,144
+  · SQLE +2.63 - squalene epoxidase, cholesterol synthesis, 566 to 8,754
+  · PCOLCE2 +2.35 (609 CPM) · CAPN6 +2.22 · SLC30A1 +2.13 (a ZINC EXPORTER) · CSPG4 +1.71
+    (927 CPM) · TMEM45A · RCN1 · CD24 · OSTC · TUBB2A/2B
+
+  ⭐⭐ PANX3 IS THE STANDOUT AND IT IS A CHANNEL. Pannexin 3 is a large-pore channel, 7.6x
+  cartilage-enriched, rising ~180-fold into the zone that makes height, at an abundance
+  comparable to the tissue's own collagen - and this atlas has never said the word. It is not
+  obscure: a cryo-EM structure of the human channel was published in 2025, knockout mice exist,
+  and the skeletal literature on it is active (knee osteoarthritis and disc degeneration after
+  forced running, severe osteoarthritis in aged nulls, impaired fracture healing, and noncoding
+  PANX3 variants associated with chronic back pain).
+  ⚠ AND THE DIRECTION LOOKS WRONG FOR A LEVER, WHICH IS WHY IT IS RECORDED RATHER THAN
+  PROMOTED. IMPC Panx3 homozygote BODY LENGTH is -1.358 at P=0.055 (n=7m/6f) - trending SHORTER,
+  which is the common direction under CORR-329 and underpowered, but it is the largest and most
+  nearly significant length row in the whole programme. Loss shortening means the direction of
+  interest is preservation or activation, and every pannexin agent in existence is a BLOCKER
+  (probenecid, carbenoxolone, the 10Panx peptide). That is R342's shape again: the shelf exists
+  and points the wrong way.
+  ⛔ WHAT IS STILL OWED: Europe PMC returned 503 during this round, so PANX3's growth-plate
+  MECHANISM abstracts were not extracted. The titles establish that the field exists and that
+  its endpoints are osteoarthritis, disc, fracture and pain - not bone length. The mechanism read
+  is the immediate next step and is recorded as such rather than guessed.
+
+  ⭐ THREE MORE MEMBERS THAT EACH TOUCH SOMETHING THIS FILE ALREADY WORKS.
+  · PPA1, inorganic pyrophosphatase, rising 16-fold into the hypertrophic zone with ZERO atlas
+    coverage - while ALPL, ENPP1 and ANKH, the other three nodes of pyrophosphate control, all
+    have coverage. Pyrophosphate is THE inhibitor of hydroxyapatite formation and mineralisation
+    at the chondro-osseous junction is the discharge step, so a 16-fold induction of the enzyme
+    that destroys it is a control point the atlas has an incomplete map of.
+  · ARSI, a sulfatase rising ~300-fold into the hypertrophic zone, QUALIFIES R410. R410 wrote
+    that the plate is built to ADD charge and not to remove it, on the basis that ARSB, SULF1 and
+    SULF2 are all contaminant-leaning. ARSI was not in that panel and it is the single steepest
+    riser in this programme. Whether ARSI acts on chondroitin sulfate is not established here -
+    a 2026 paper reporting arylsulfatase L as a Golgi chondroitin sulfatase makes the question
+    live rather than settled.
+  · SLC30A1, a zinc exporter, sits in this programme, and R411's inventory separately returned
+    MT1X and MT1E, the metallothioneins, at 665 and 604 CPM and 17.9x and 13.7x. Zinc handling
+    is therefore a candidate cluster across two independent screens, and zinc deficiency is a
+    recognised cause of short stature. No zinc gene has ever appeared in this atlas.
+
+  ⛔ A SELF-CORRECTION TO R366's OWN ADVICE, FOUND IN THIS PROGRAMME. R366 recommended
+  TERBINAFINE as the safe oral antifungal, because itraconazole and posaconazole are Smoothened
+  antagonists at ordinary antifungal exposure. Terbinafine's target is SQUALENE EPOXIDASE, and
+  SQLE is in this hypertrophic programme - cartilage-enriched at the benchmark and rising
+  15-fold from reserve to hypertrophic zone. R375 established that CHOLESTEROL is Smoothened's
+  endogenous agonist at the cysteine-rich domain. So terbinafine inhibits, in the hypertrophic
+  zone specifically, an enzyme of the pathway that makes the sterol the receptor needs.
+  ⚠ Grade E - no bone, growth-plate or height endpoint exists for terbinafine in any species,
+  local cholesterol is largely taken up rather than synthesised, and 2.0x is barely above the
+  1.96 benchmark. It does NOT reverse R366: itraconazole and posaconazole have direct Smoothened
+  pharmacology at clinical exposure and terbinafine has none. What it does is remove terbinafine's
+  status as unambiguously clean and promote FLUCONAZOLE, which has no target in this tissue at
+  all, to the preferred substitution.
+
+  ⭐ THE OTHER TWO PROGRAMMES, RECORDED SO THEY ARE NOT REDISCOVERED ONE GENE AT A TIME.
+  RESERVE (RZ_FALLING, 46): SLC14A1 -4.60 (a UREA TRANSPORTER, i.e. an osmolyte channel, falling
+  24-fold out of the reserve zone) · OGN -3.03 · NPDC1 -2.80 · CRIP2 · SSPN · SERPINA3 ·
+  PAX1 -1.60 (a sclerotome and AXIAL identity transcription factor, in the trunk-relevant
+  direction) · TM4SF1 · PCGF2 (polycomb) · GAS6 · TRIP6.
+  PROLIFERATIVE (MID_PEAK, 17): MIF (1,081 CPM) · PRDX4 · EPYC (epiphycan, named for the
+  epiphysis) · HMGB2 · SNAI2 · MUC1 · CHST6 (a keratan-sulfate 6-O-sulfotransferase, peaking in
+  the proliferative zone exactly as CHST11 does, which extends R410's zonal partition of the
+  sulfotransferases) · TYMS.
+
+  ⛔ THE LIMITS, WHICH ARE SEVERE AND APPLY TO EVERY ROW. NOT ONE gene in any of the three
+  programmes is among kosmicki2026's 207, so none has a human effect size. Most have NO IMPC
+  length row at all (ARSI, SLC30A1, PCOLCE2, CAPN6, OGN, PAX1, EPYC, SLC14A1 - CORR-348 case
+  one, never phenotyped rather than measured null), and the ones that do are null or
+  underpowered. The replication is n = 2 donors who are one female and one male, which CORR-317
+  says is never a replicate pair - weaker for absolute level than for shape, since each donor is
+  its own baseline, but not nothing. And everything here is transcript abundance, not protein,
+  activity or flux.
+  ⭐ WHAT THE ROUND DELIVERS IS NOT A LEVER. It is the demonstration that the inverse search
+  returns COHERENT PROGRAMMES rather than scattered genes, three named programmes archived for
+  mining, one channel worth a mechanism read, one control point (PPA1) whose neighbours are all
+  already covered, one qualification of R410, and one correction to R366's own substitution.
+quantitative:
+  - parameter: the three replicated zonal programmes among the blind spots
+    value: >-
+      1,492 blind-spot genes, 1,298 with a usable GSE9160 profile, 139 with a shape replicated in
+      both donors at >=1.5-fold: HZ_RISING 76, RZ_FALLING 46, MID_PEAK 17
+    unit: gene count
+    species: human
+    source_ref: lesperance1992
+    value_unverified: true
+    note: >-
+      computed in R412; source_ref nominal. The flat majority dropping out is the housekeeping
+      control working
+  - parameter: the top of the hypertrophic programme
+    value: >-
+      ARSI +5.11 (RZ 23 to HZ 6,820) · PANX3 +4.87 (223 to 40,113) · SLC18A2 +4.77 · SCIN +4.48 ·
+      F13A1 +3.94 (546 to 21,494) · SLC44A2 +3.18 · PPA1 +3.08 (1,330 to 21,144) · SQLE +2.63
+      (566 to 8,754) · PCOLCE2 +2.35 · SLC30A1 +2.13
+    unit: log2 hypertrophic over reserve, donor 1 MAS5 linear values
+    species: human
+    source_ref: lesperance1992
+    value_unverified: true
+    note: all replicated in direction in donor 2; per-gene donor 2 values are in the archived JSON
+  - parameter: PANX3 mouse length
+    value: homozygote body length -1.358, P=0.055, n=7 male / 6 female
+    unit: IMPC effect size
+    species: mouse
+    source_ref: lesperance1992
+    value_unverified: true
+    note: >-
+      trending shorter, the common direction under CORR-329 and underpowered, but the largest and
+      most nearly significant length row in the whole programme. Loss shortening means the
+      direction of interest is preservation, and every pannexin agent is a blocker
+localization: >-
+  human growth plate, zone-resolved: a 76-gene hypertrophic programme, a 46-gene reserve
+  programme and a 17-gene proliferative programme, all previously absent from this atlas
+human_evidence: direct
+human_evidence_note: >-
+  The expression and the zonal shapes are human. No member of any programme has a human height
+  effect size, and none is in kosmicki2026's 207.
+species_basis:
+  - human
+  - mouse
+translation_risk: high
+translation_risk_reason: >-
+  No member has a human effect size, most have no mouse length endpoint at all, and the one
+  informative row runs in the load-bearing direction with only blockers available.
+confidence: B
+claim_grades:
+  - claim: The blind-spot list contains three zonal programmes that replicate across both donors
+    grade: B
+    basis: >-
+      139 of 1,298 profiled genes pass a two-donor concordance filter at 1.5-fold; the flat
+      majority drops out, which is the intended housekeeping control. n = 2 donors, CORR-317
+  - claim: PANX3 rises about 180-fold into the hypertrophic zone and has zero atlas coverage
+    grade: B
+    basis: >-
+      both donors, one auditable probe set, against the array's own floor calibrator; and a
+      word-boundary count of zero across the whole graph
+  - claim: PANX3 is a lever
+    grade: E
+    basis: >-
+      not supported. Mouse loss trends shorter, its published endpoints are osteoarthritis, disc,
+      fracture and pain rather than length, and only blockers exist. The growth-plate mechanism
+      literature was not extracted this round because Europe PMC was unavailable
+  - claim: PPA1 is an uncovered node of pyrophosphate control at the discharge step
+    grade: C
+    basis: >-
+      a 16-fold induction into the hypertrophic zone with zero coverage, while ALPL, ENPP1 and
+      ANKH are covered. Positional, not functional - no PPA1 perturbation exists in cartilage
+  - claim: ARSI qualifies R410's statement that the plate only adds charge
+    grade: C
+    basis: >-
+      the steepest riser in the programme is an arylsulfatase, and R410's panel did not contain
+      it. Whether ARSI acts on chondroitin sulfate is not established here
+  - claim: Terbinafine is no longer unambiguously the clean antifungal choice
+    grade: E
+    basis: >-
+      its target SQLE is at the enrichment benchmark and rises 15-fold into the hypertrophic zone,
+      and cholesterol is Smoothened's endogenous agonist. Mechanistic only - no skeletal endpoint
+      for terbinafine in any species, and local cholesterol is largely taken up rather than made
+key_refs:
+  - ref_id: lesperance1992
+    year: 1992
+    type: primary
+    role: >-
+      placeholder anchor for the computed expression results; the substantive PANX3 references
+      are named in the summary and their mechanism abstracts remain unextracted
+open_questions:
+  - g_l5_what_is_the_intracellular_small_solute_content_of_a_hypertrophic_chondrocyte
+contradicts: []
+last_verified: '2026-08-14'

@@ -1,0 +1,67 @@
+id: gdf5_protein
+name: GDF5
+aliases:
+- growth differentiation factor 5
+- CDMP1
+- BMP14
+type: protein
+layer: L3
+stub: false
+summary: 'GDF5 is a BMP-family ligand expressed at prospective joint interzones. Loss of function in mouse (brachypodism,
+  bp) shortens and fuses limb segments and reduces digit number, and the bp locus was identified as Gdf5 by positional
+  cloning (Storm 1994). The human orthologue produces the mirror phenotype: GDF5/CDMP1 mutations cause Grebe- and
+  Hunter-Thompson-type acromesomelic chondrodysplasia with severe limb shortening (Thomas 1996), so this is one of
+  the few BMP-arm nodes with direct human loss-of-function evidence. GDF5 is also a common-variant height locus: the
+  GDF5-UQCC region carries SNPs associated with adult stature in general-population GWAS (Sanna 2008), which places
+  the ligand on the normal-variation axis and not only in dysplasia. Guo 2009 proposes Gdf5/BMP signalling as a downstream,
+  non-cell-autonomous effector of Wnt/beta-catenin control of hypertrophy in mouse, linking this node to the WNT subsystem.'
+quantitative:
+- parameter: Effect of GDF5-UQCC region height allele (rs143384/rs6060369 region) on adult stature
+  value: ~0.4
+  unit: cm per allele
+  conditions: meta-analysis of population cohorts of European ancestry, both sexes
+  species: human
+  source_ref: sanna2008
+  uncertainty: value read from abstract only; CI not confirmed at source
+  value_unverified: true
+localization:
+- 'mouse joint interzone: confirmed (storm1994)'
+- 'human: inferred from skeletal phenotype of CDMP1 mutations (thomas1996)'
+human_evidence: direct
+human_evidence_note: Biallelic GDF5/CDMP1 mutations cause human acromesomelic chondrodysplasia, and common GDF5-region
+  variants associate with adult height.
+species_basis:
+- mouse
+- human
+translation_risk: low
+translation_risk_reason: Concordant loss-of-function phenotypes in mouse and human plus a human common-variant height
+  association.
+confidence: A
+key_refs:
+- ref_id: storm1994
+  pmid: '8145850'
+  first_author: Storm EE
+  year: 1994
+  type: primary
+  one_line_finding: Mouse brachypodism is caused by mutations in Gdf5, a new TGF-beta superfamily member.
+- ref_id: thomas1996
+  pmid: '8589725'
+  first_author: Thomas JT
+  year: 1996
+  type: primary
+  one_line_finding: A human chondrodysplasia (Hunter-Thompson type) is caused by a CDMP1/GDF5 mutation.
+- ref_id: sanna2008
+  pmid: '18193045'
+  first_author: Sanna S
+  year: 2008
+  type: primary
+  one_line_finding: Common variants at the GDF5-UQCC locus associate with adult human height.
+- ref_id: guo2009
+  pmid: '19557172'
+  first_author: Guo X
+  year: 2009
+  type: primary
+  one_line_finding: Wnt/beta-catenin controls hypertrophy onset non-cell-autonomously, possibly via Gdf5/BMP.
+open_questions:
+- g_l3rest_002
+last_verified: '2026-08-05'

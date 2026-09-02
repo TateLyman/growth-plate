@@ -1,0 +1,80 @@
+id: growth_plate_explant_culture
+name: Growth plate explant culture
+aliases:
+- physeal organ culture
+type: method
+summary: |
+  Explant culture keeps a piece of intact growth plate alive with its zonal architecture and
+  matrix intact, which is the only way to apply a defined stimulus to a growth plate without
+  systemic confounding. It is the format in which the two most informative human growth plate
+  experiments were done: human biopsies from three epiphysiodesis patients were mechanically
+  loaded at 0.4 N and 0.77 Hz for 30 seconds then cultured 24 hours before RNA-seq (gse246390,
+  zhang2024a), and human growth plate cartilage from five donors was exposed to radial
+  shockwave with unexposed tissue from the same limb as control (ramesh2022). Both designs use
+  within-subject controls, which is the correct response to n being small. In animals the
+  format supports controlled compression with viability and strain readouts (kaviani2015,
+  kaviani2016, sergerie2011, zimmermann2017) and matrix-turnover measurement (xu2026,
+  shapses1994). The limits are stated by the format: no blood supply, so oxygen and nutrient
+  gradients differ from in vivo and the hypertrophic zone - already the most hypoxic - is the
+  first to suffer; no systemic endocrine input unless supplied; and viable culture windows
+  measured in days, so anything slower than a few cell cycles is inaccessible. For human
+  tissue the binding constraint remains supply, not technique.
+quantitative:
+- parameter: human donors in the largest human growth plate explant loading experiment
+  value: '3'
+  unit: donors
+  conditions: 18 biopsies, 9 loaded and 9 control, 0.4 N at 0.77 Hz for 30 s, 24 h culture
+  species: human
+  source_ref: gse246390
+  uncertainty: GEO record
+- parameter: human donors in the human explant shockwave experiment
+  value: '5'
+  unit: donors
+  conditions: paired exposed and unexposed samples from the same limb, 24 h readout
+  species: human
+  source_ref: ramesh2022
+  uncertainty: stated in abstract
+localization:
+- 'human PZ/HZ: intact zonal architecture retained in explant'
+human_evidence: direct
+human_evidence_note: Two human growth plate explant experiments exist, both with within-subject controls
+  and n of 3 and 5 donors.
+species_basis:
+- human
+- porcine
+- bovine
+translation_risk: low
+translation_risk_reason: Where the explant is human the tissue is human; risk enters only when porcine
+  or bovine explant parameters are used to set expectations for human tissue.
+confidence: B
+key_refs:
+- ref_id: gse246390
+  first_author: Zhang Z
+  year: 2024
+  type: dataset
+  one_line_finding: Human growth plate biopsies from three donors loaded under controlled conditions
+    then RNA-sequenced.
+- ref_id: ramesh2022
+  first_author: Ramesh S
+  year: 2022
+  type: primary
+  one_line_finding: Human growth plate cartilage from five donors exposed to radial shockwave with
+    same-limb controls.
+- ref_id: kaviani2016
+  first_author: Kaviani R
+  year: 2016
+  type: primary
+  one_line_finding: Growth plate cartilage shows different strain patterns under static versus dynamic
+    loading.
+- ref_id: zimmermann2017
+  first_author: Zimmermann EA
+  year: 2017
+  type: primary
+  one_line_finding: In situ chondrocyte deformation measured in stress-controlled compression of
+    explants.
+open_questions:
+- g_l6mech_004
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

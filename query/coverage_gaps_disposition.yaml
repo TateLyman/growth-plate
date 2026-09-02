@@ -1,0 +1,134 @@
+swept:
+- id: cg25_adrenergic_physis
+  disposition: SWEPT AND CLOSED
+  europe_pmc_hits: 889
+  query: (adrenergic OR sympathetic OR catecholamine OR "beta-blocker") AND ("growth plate" OR physis
+    OR "longitudinal bone growth" OR "bone elongation") NOT PUB_TYPE:"Review"
+  note: 'New node beta2_adrenoceptor_chondrocyte (grade D) + 2 edges + gap g_l3adrn_001 with search log.
+    kuhn2026: chondrocyte-specific beta-2 adrenoceptor knockout reduces long bone growth in mouse via
+    a faster proliferative-to-hypertrophic transition. The atlas now has an autonomic input where it had
+    none, and the human question is now a gap with a named discriminating experiment (propranolol for
+    infantile haemangioma) rather than an absence nobody had noticed.'
+  date: '2026-08-06'
+- id: cg24_fgf23_ckd_growth
+  disposition: SWEPT AND CLOSED
+  europe_pmc_hits: 977
+  query: (FGF23 OR "fibroblast growth factor 23") AND ("chronic kidney disease") AND (growth OR stature
+    OR height OR "growth plate") AND child* NOT PUB_TYPE:"Review"
+  note: New edge e01184 fgf23_hormone correlates_with chronic_kidney_disease_growth on perwad2026 (CKiD,
+    543 children, biannual FGF23, trajectory modelling, independent predictor of progression to kidney
+    failure). Deliberately correlates_with with sign unknown - an observational trajectory association
+    is not a demonstration that FGF23 causes the growth failure, and signing it would assert more than
+    the study shows.
+  date: '2026-08-06'
+- id: cg04_velocity_SD
+  disposition: SEARCHED, NOT CLOSED
+  europe_pmc_hits: 4167
+  query: ("height velocity" OR "growth velocity") AND ("standard deviation" OR "SD" OR "reference" OR
+    centile) AND (children OR childhood) AND (cm/year OR "cm per year") NOT PUB_TYPE:"Review"
+  note: The query returns growth-hormone trial cohorts and syndrome case series, not a population reference
+    for the BETWEEN-INDIVIDUAL SD of height velocity in the childhood plateau. The number the Phase 6
+    flow model wants is a dispersion statistic from a longitudinal growth reference, which is reported
+    as centile curves rather than as an SD in cm/yr. Needs a targeted sweep of growth-reference methodology
+    papers (Tanner-Whitehouse, WHO velocity standards, SITAR), not a PubMed keyword search.
+  date: '2026-08-06'
+- id: cg05_leptin_marrow_adipocyte
+  disposition: SEARCHED, NOT CLOSED
+  europe_pmc_hits: 2333
+  query: (leptin) AND ("bone marrow" AND (adipocyte OR adipogenesis)) AND (differentiation) NOT PUB_TYPE:"Review"
+  note: Hits are dominated by BMSC osteogenic/adipogenic balance under hyperglycaemia, electromagnetic
+    fields and diterpenes - leptin as an INSTRUCTIVE marrow adipogenic signal is not what the top-ranked
+    records test. Requires a narrower query on Lepr-cre lineage and leptin add-back in marrow stroma.
+  date: '2026-08-06'
+- id: cg06_covid_child_growth
+  disposition: SEARCHED, NOT CLOSED
+  europe_pmc_hits: 3405
+  query: (SARS-CoV-2 OR COVID-19) AND (("height velocity" OR "linear growth" OR "growth failure" OR stature))
+    AND (child* OR paediatric OR pediatric) NOT PUB_TYPE:"Review"
+  note: Top records are COVID severity, nutritional status as a severity predictor, and GH/IGF-1 as severity
+    modifiers - i.e. growth axis as PREDICTOR of COVID outcome, which is the reverse of the question.
+    No retrieved record measures height velocity before and after infection. The honest reading is that
+    the question may not have been asked; establishing that needs a proper null-search with screening
+    counts.
+  date: '2026-08-06'
+- id: cg12_axial_hox
+  disposition: SEARCHED, PARTIALLY ANSWERABLE
+  europe_pmc_hits: 2149
+  query: (HOX) AND (vertebral OR axial OR somite) AND (patterning OR identity) AND (mouse OR human) NOT
+    PUB_TYPE:"Review"
+  note: Real primaries exist and are on point - Ibarra-Soria 2026 large-scale mouse mutagenesis identifying
+    genes affecting vertebral anatomy, Wang 2026 on permissive and instructive Hox codes in limb positioning.
+    This is a genuine L0 sweep target of one to two nodes, not a null. Not built in this pass; recorded
+    as owed.
+  date: '2026-08-06'
+- id: cg10_avian_growth_plate
+  disposition: SEARCHED, LOW VALUE
+  europe_pmc_hits: 797
+  query: (avian OR chicken OR bird) AND ("growth plate" OR physis) AND (architecture OR fusion OR "hypertrophic
+    zone") NOT PUB_TYPE:"Review"
+  note: Avian hits are dominated by broiler tibial dyschondroplasia - an economically driven poultry literature
+    about a lesion, not a comparative account of avian physeal architecture. One quail/chicken histomorphometry
+    paper (Karim 2025) is the nearest thing. Comparative value to a human atlas is low and the cost is
+    a species-basis expansion; recorded as deliberately not swept.
+  date: '2026-08-06'
+- id: cg09_athlete_protein
+  disposition: OUT OF SCOPE ON RE-READ
+  europe_pmc_hits: 1663
+  query: ("protein intake") AND (adolescen* OR youth) AND (athlete* OR training) AND (growth OR stature
+    OR height) NOT PUB_TYPE:"Review"
+  note: Hits are sports-nutrition performance and bone-density papers. The atlas already holds protein_intake_growth
+    (source vs quantity in 8-year-old boys). An intake RECOMMENDATION is guidance, not a mechanism, and
+    the atlas does not hold guidance. Reclassified from sweep target to correct refusal.
+  date: '2026-08-06'
+- id: cg18_vitd_prevalence
+  disposition: OUT OF SCOPE ON RE-READ
+  europe_pmc_hits: 8244
+  query: ("vitamin D deficiency" OR "25-hydroxyvitamin D") AND prevalence AND (children OR adolescents)
+    AND (national OR population OR survey) NOT PUB_TYPE:"Review"
+  note: 'Population prevalence of vitamin D deficiency is epidemiology of an exposure, not a growth-plate
+    mechanism, and the atlas holds the mechanism (vitamin_d_deficiency_rickets: hypophosphataemia, not
+    a direct chondrocyte effect). Reclassified from sweep target to correct refusal - with the note that
+    a population prevalence WOULD be in scope if it were being used to weight a population-level growth
+    effect, which nothing here does.'
+  date: '2026-08-06'
+summary: FINAL-01 item H. Nine in-scope targets from the query layer's own coverage-gap backlog. 2 SWEPT
+  AND CLOSED with new graph objects, 4 SEARCHED AND NOT CLOSED with the reason recorded, 1 SEARCHED AND
+  PARTIALLY ANSWERABLE and owed, 2 RECLASSIFIED as correct refusals on re-reading. The remaining 11 backlog
+  entries generated by the Phase 7 run are structural cross-layer defects registered in query/falsification_corrections.md
+  as C-01..C-08 and are deferred there for the reason given in that file - their only warrant is the held-out
+  paper. Searches were run live against Europe PMC on 2026-08-06 and hit counts are recorded so any of
+  them can be re-run.
+
+benchmark_recheck:
+  scope: >-
+    TARGETED re-check of the two questions the item-H sweep closed, NOT a blind re-run of
+    the 43-question benchmark. A targeted re-check can only move in one direction, so it is
+    reported as a check that the closures landed and never as a benchmark score. The
+    benchmark number stands at what the blind run produced; nothing here revises it.
+  date: '2026-08-06'
+  results:
+    - question: Does sympathetic / adrenergic input regulate longitudinal bone growth at the physis?
+      before: >-
+        UNANSWERABLE. 'adrenergic' and 'catecholamine' resolved to 0 nodes across 614, and no
+        gap asserted the absence - so a negative-space query could not even report the hole.
+      after: >-
+        ANSWERABLE as [ATLAS] and partly as [ATLAS-INFERRED]. beta2_adrenoceptor_chondrocyte
+        resolves on both aliases and carries two traversal_usable signed edges - inhibits(-)
+        to hypertrophic_chondrocyte and required_for(+) to growth_velocity_longitudinal. The
+        answer the protocol should now give is 'yes in mouse at grade D, nothing human, and
+        here is the discriminating experiment' (g_l3adrn_001), which is a correct answer
+        rather than a hole.
+    - question: What is the role of FGF23 in chronic kidney disease mineral bone disorder?
+      before: >-
+        PARTIALLY ANSWERABLE. Both endpoint nodes existed and no edge joined them, so the
+        connection could be asserted from node prose but not traversed.
+      after: >-
+        ANSWERABLE as [ATLAS]. e01184 joins fgf23_hormone to chronic_kidney_disease_growth on
+        perwad2026. It is DELIBERATELY correlates_with with sign unknown and
+        traversal_usable false, so it is still not derivable - and that is the correct
+        outcome, not a shortfall. An observational trajectory association should not become a
+        signed causal edge because it would be more convenient to traverse.
+  note: >-
+    The second result is the more instructive one. Closing a coverage gap does not always
+    make a question derivable; sometimes it makes the atlas able to say precisely why it is
+    not derivable, which is the better answer.

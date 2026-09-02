@@ -1,0 +1,242 @@
+id: matrix_volume_per_chondrocyte
+name: v(m) - matrix volume per terminal chondrocyte
+aliases:
+- v(m)
+- matrix per cell
+- matrix volume per chondrocyte
+- the matrix half of the terminal chondrocytic domain
+type: process
+layer: L5
+stub: false
+summary: 'The growth identity is dL/dt = flux x v(d), where v(d) is the TERMINAL CHONDROCYTIC DOMAIN VOLUME
+  and v(d) = v(c) + v(m): the terminal hypertrophic cell volume plus the matrix volume attributable to that
+  cell. v(m) is the second of those two terms and it is between a third and a half of longitudinal bone
+  elongation. THE IDENTITY CLOSES ON WILSMAN 1996''S OWN SEPARATELY MEASURED NUMBERS TO 0.03 PER CENT and
+  that is not circular: v(c) is a stereological mean cell volume, v(m) is computed from the hypertrophic
+  volume fraction, and v(d) is the total volume turned over at the chondro-osseous junction divided by the
+  cells lost there, so the three are independent measurements. Proximal tibia 14997 + 6900 = 21897 against
+  a measured 21901 um^3; proximal radius 4135 + 4090 = 8225 against a measured 8222. The matrix fraction
+  of the domain rises monotonically as the plate slows - 31.5 / 32.4 / 40.2 / 49.7 per cent across the four
+  rat plates - and IN THE SLOWEST PLATE v(c) AND v(m) ARE EQUAL TO ONE PER CENT (4135 against 4090 um^3),
+  so the terminal domain of a slow growth plate is half cell and half matrix. Breur 1997 is an independent
+  measurement of both terms in the same four plates and agrees within 3 to 32 per cent per plate while reaching
+  the same structural conclusion: terminal CELL volume varies 3.6 to 3.9-fold between sites while MATRIX
+  per cell varies only 1.7 to 1.9-fold, and matrix per cell is age-invariant within a plate while cell volume
+  is not. That is a SITE-patterned setpoint rather than the physiological rate control, which is the signature
+  of an unexploited lever and equally the signature of a structural constraint - nothing in the arithmetic
+  distinguishes them. The elasticity is exact and favourable: at constant flux and constant v(c), d ln(rate)
+  / d ln(v(m)) equals the matrix fraction, so in a slow plate a 20 per cent rise in matrix per cell buys
+  about 10 per cent of elongation rate and a doubling buys about 50 per cent - and unlike a flux increase
+  it is not a withdrawal from the progenitor pool. THE HUMAN ANCHOR EXISTS AND HAD NOT BEEN RECOGNISED AS
+  ONE: Wilsman defines matrix per cell as (1 - hypertrophic cellular volume fraction) x v(d), so the matrix
+  fraction of the domain IS the cartilage volume fraction of the hypertrophic zone - the quantity byers2000
+  measured in 46 human growth plates, where it rises from 25 per cent at 11 days to 40 per cent by one year
+  and holds there to 13.5 years. A human terminal domain is therefore about 40 per cent matrix, inside the
+  rat range and at its slow end.'
+quantitative:
+- parameter: Source decomposition of daily turned-over volume, fast plate (proximal tibia, 396 um/day)
+  value: 9 / 32 / 59
+  unit: percent cell duplication / matrix production / hypertrophic enlargement
+  conditions: point-sampled stereology, oxytetracycline growth rate, same animals; verified verbatim against
+    the atlas local full text 2026-09-01
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: as printed
+- parameter: Source decomposition of daily turned-over volume, slow plate (proximal radius, 47 um/day)
+  value: 7 / 49 / 44
+  unit: percent cell duplication / matrix production / hypertrophic enlargement
+  conditions: same animals; verified verbatim against the atlas local full text 2026-09-01
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: as printed
+- parameter: Matrix volume per cell across four growth plates (Table 6)
+  value: 6900 +/- 980 / 5970 +/- 1100 / 5780 +/- 1270 / 4090 +/- 780
+  unit: um^3 per cell (proximal tibia / distal radius / distal tibia / proximal radius)
+  conditions: V[m]hypertrophic = (1 - hypertrophic cellular volume fraction) x total volume turned over /
+    cells lost
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 1.69-fold range between sites
+- parameter: Terminal hypertrophic cell volume, same four plates
+  value: 14997 (proximal tibia) to 4135 (proximal radius)
+  unit: um^3
+  conditions: stereological mean cellular volume, stated in the Results text
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 3.63-fold range between sites
+- parameter: Terminal chondrocytic domain volume v(d), same four plates
+  value: 21901 / 18428 / 14362 / 8222
+  unit: um^3 (proximal tibia / distal radius / distal tibia / proximal radius)
+  conditions: total volume turned over per day divided by chondrocytes lost per day at the chondro-osseous
+    junction; computed here from Table 4 and Table 6
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: derived from two printed columns; the identity v(d) = v(c) + v(m) closes to 0.034 percent
+- parameter: Matrix fraction of the terminal chondrocytic domain across four plates
+  value: 31.5 / 32.4 / 40.2 / 49.7
+  unit: percent of v(d), fastest to slowest plate
+  conditions: equals 1 minus the hypertrophic cellular volume fraction by Wilsman's own definition; monotone
+    in elongation rate
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: derived quantity, arithmetic only
+- parameter: Matrix volume per cell across four growth plates at day 21
+  value: 4650 / 6380 / 8950 / 7860
+  unit: um^3 per cell (proximal radius / distal radius / proximal tibia / distal tibia)
+  conditions: nine stereologic parameters with growth rate in the same animals; independent of wilsman1996
+    and agreeing with it within 6.6 to 30.5 percent per plate
+  species: rat
+  source_ref: breur1997
+  uncertainty: 1.92-fold range between sites
+- parameter: Terminal cell volume across the same four plates at day 21
+  value: 4420 / 12860 / 17040 / 11900
+  unit: um^3 (proximal radius / distal radius / proximal tibia / distal tibia)
+  conditions: same animals as the matrix values above
+  species: rat
+  source_ref: breur1997
+  uncertainty: 3.86-fold range between sites
+- parameter: Matrix volume per cell, age invariance within one plate
+  value: 8950 at D21 versus 8880 at D35
+  unit: um^3 per cell, proximal tibia
+  conditions: same plate, two ages, growth rate falling
+  species: rat
+  source_ref: breur1997
+  uncertainty: not significantly different in all four plates
+- parameter: Matrix volume per cell through hypertrophy
+  value: 8040 to 11760
+  unit: um^3 per cell, lower proliferative to lower hypertrophic
+  conditions: 'point-sampled stereology; split pericellular/territorial +61 percent (4580 to 7390) versus
+    interterritorial +26 percent (3460 to 4370)'
+  species: porcine
+  source_ref: noonan1998
+  uncertainty: n=6 mini-pigs
+- parameter: Matrix production per cell per hour, glycosaminoglycan
+  value: 54.2 / 62.6 / 25.2
+  unit: um^3 per cell per hour at 21 / 35 / 80 days
+  conditions: rat proximal tibia, matrix synthesis measured in the same animals as organelle stereology
+  species: rat
+  source_ref: hunziker1999organelle
+  uncertainty: as printed
+- parameter: Matrix production per cell per hour, fibrillar collagen
+  value: 44.9 / 77.6 / 82.5
+  unit: um^3 per cell per hour at 21 / 35 / 80 days
+  conditions: rat proximal tibia, same animals
+  species: rat
+  source_ref: hunziker1999organelle
+  uncertainty: as printed
+- parameter: Matrix fraction of the human HYPERTROPHIC zone, which is the matrix fraction of the terminal
+    domain by Wilsman's own definition
+  value: 25 at 11 days rising to 40 by one year and holding to 13.5 years
+  unit: percent cartilage volume fraction of the hypertrophic zone
+  conditions: 46 normal human rib growth plates at autopsy, manual point counting, r = 0.35 p < 0.05; verified
+    against the atlas local full text 2026-09-01
+  species: human
+  source_ref: byers2000
+  uncertainty: 'rib rather than a long bone; the authors attribute the rise to a fall in chondrocyte lacunar
+    profile diameter (0.043 to 0.036 mm) which was NOT statistically significant, so the mechanism they offer
+    rests on a trend'
+- parameter: Matrix fraction of the human PROLIFERATIVE zone
+  value: 60 at 11 days rising to 77.5 by one year and 82.5 at 13.5 years
+  unit: percent cartilage volume fraction
+  conditions: same 46 subjects; r = 0.58 p < 0.001; septal thickness rose 0.046 to 0.147 mm while septal
+    number fell 13 to 6.5 per mm and lacunar profile diameter did NOT change significantly
+  species: human
+  source_ref: byers2000
+  uncertainty: proliferative rather than terminal zone, so it is not v(m)/v(d); recorded because lacunar
+    diameter is flat while matrix fraction rises, which is matrix per cell rising
+- parameter: Matrix area per cell across the second half of human gestation
+  value: increased approximately 1.5-fold
+  unit: matrix area per chondrocyte, 2-D
+  conditions: human upper tibial growth plate, 46 stillborn and 79 newborn subjects; matrix area fraction
+    rose about 12 percent over the same interval
+  species: human
+  source_ref: rodriguez1992
+  uncertainty: VALUE_UNVERIFIED - agent-reported from the abstract, full text not held; 2-D area rather than
+    volume, and a fetal-to-newborn interval rather than childhood
+- parameter: Elasticity of elongation rate to matrix per cell
+  value: equals the matrix fraction of the domain
+  unit: d ln(rate) / d ln(v_m)
+  conditions: at constant flux and constant terminal cell volume; derived from the identity
+  species: not_applicable
+  source_ref: wilsman1996
+  uncertainty: exact given the identity; 0.315 to 0.497 across the four measured rat plates
+localization:
+- 'terminal hypertrophic domain: the compartment in which v(m) is defined'
+- 'pericellular and territorial matrix: rises +61 percent through hypertrophy, does not calcify (noonan1998)'
+- 'interterritorial matrix: rises +26 percent, calcifies first (noonan1998)'
+human_evidence: direct
+human_evidence_note: 'No measurement of matrix volume per chondrocyte in absolute units exists for a human
+  growth plate at any age or site. What does exist, and had not been recognised as the same quantity, is
+  the matrix FRACTION of the domain. Wilsman defines matrix per cell as (1 - hypertrophic cellular volume
+  fraction) x v(d), so the matrix fraction of the terminal domain is identically the cartilage volume fraction
+  of the hypertrophic zone - and byers2000 measured that in 46 normal human growth plates, finding 25 percent
+  at 11 days rising to 40 percent by one year and holding to 13.5 years. A human terminal chondrocytic domain
+  is therefore about 40 percent matrix, which sits inside the rat range of 31.5 to 49.7 percent and at its
+  slow end, as expected for a rib. The absolute human v(m) in um^3 still requires a terminal cell volume,
+  and the only human one is white2008 (n=1, distal tibia at mid-closure with 46 percent central bridging
+  bone, 5900 um^3, in a child treated with cisplatin, doxorubicin and methotrexate) - which is a floor rather
+  than a representative value.'
+species_basis:
+- rat
+- porcine
+- human
+translation_risk: moderate
+translation_risk_reason: 'The identity, the absolute volumes and the source decomposition are rat. The human
+  evidence is a FRACTION and not a volume, and it comes from the rib rather than a long bone. The direction
+  of the site extrapolation is supported by two independent rat datasets measuring both terms in the same
+  four plates, and the human fraction lands where the rat series predicts for a slow plate, but no human
+  matrix volume per chondrocyte has ever been measured.'
+confidence: B
+key_refs:
+- ref_id: wilsman1996
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: 'Matrix production is 32 percent of elongation in a fast rat plate and 49 percent in
+    a slow one; Table 6 gives matrix volume per cell directly for four plates (6900 to 4090 um^3) and the
+    identity v(d) = v(c) + v(m) closes on the separately measured terms to 0.03 percent'
+- ref_id: breur1997
+  first_author: Breur GJ
+  year: 1997
+  type: primary
+  one_line_finding: 'Independent measurement of both terms in the same four rat plates: matrix per cell spans
+    only 1.92-fold and is age-invariant within a plate while terminal cell volume spans 3.86-fold'
+- ref_id: hunziker1989
+  first_author: Hunziker EB
+  year: 1989
+  type: primary
+  one_line_finding: 'Net matrix production per cell is invariant across an approximately eightfold growth-rate
+    range and the authors conclude cartilage matrix plays a subordinate role in regulating longitudinal growth
+    rate - the load-bearing negative against this term as a lever'
+- ref_id: hunziker1994
+  first_author: Hunziker EB
+  year: 1994
+  type: primary
+  one_line_finding: 'GH and IGF-I in hypophysectomised rats restore terminal cell volume and height while
+    matrix volume per cell is similar in normal, hormone-treated and untreated animals - the somatotropic
+    axis moves v(c) and does not move v(m)'
+- ref_id: noonan1998
+  first_author: Noonan KJ
+  year: 1998
+  type: primary
+  one_line_finding: 'Matrix per cell rises 8040 to 11760 um^3 through hypertrophy in mini-pig, split +61
+    percent pericellular/territorial versus +26 percent interterritorial, with growth rate related to matrix
+    volume per cell'
+- ref_id: byers2000
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: 'In 46 human rib growth plates the cartilage volume fraction of the hypertrophic zone
+    - which is the matrix fraction of the terminal domain by Wilsman''s definition - rises from 25 percent
+    at 11 days to 40 percent by one year, while lacunar profile diameter does not change significantly in
+    the proliferative zone'
+- ref_id: hunziker1999organelle
+  first_author: Hunziker EB
+  year: 1999
+  type: primary
+  one_line_finding: 'Matrix production per cell per hour measured with organelle stereology in the same animals:
+    GAG 54.2/62.6/25.2 and fibrillar collagen 44.9/77.6/82.5 um^3/cell/h at 21/35/80 days'
+open_questions:
+- g_l5_480a
+- g_l5_480b
+last_verified: '2026-09-01'

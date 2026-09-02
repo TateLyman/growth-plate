@@ -1,0 +1,118 @@
+id: craniofacial_growth
+name: Craniofacial growth
+type: process
+layer: L9
+stub: false
+summary: 'The craniofacial skeleton grows by three mechanically and developmentally distinct mechanisms
+  operating simultaneously: sutural growth at the calvarial and facial sutures, endochondral growth at
+  the cranial base synchondroses, and surface remodelling with condylar growth at the mandible. Because
+  these mechanisms are separable, growth restriction produces a patterned rather than a uniform shortfall.
+  In 48 short subjects born small for gestational age the anterior cranial base was -1.8 SDS, the mandible
+  at or below -1.7 SDS and the maxilla -1.5 SDS, while the mandibular plane angle was +1.9 SDS, the cranial
+  base angle +1.0 SDS and lower anterior face height +1.7 SDS - a small retrognathic face with a relatively
+  increased lower face height, not a scaled-down normal face (van1998). In the same subjects skeletal
+  maturation was delayed but dental age was not, which is why craniofacial growth cannot be predicted
+  from bone age alone. The timing anchor for the whole complex is the cranial base: spheno-occipital synchondrosis
+  fusion stages 3 and 4 fall at 12.7-13.9 years in males and 11.0-12.5 years in females, i.e. close to
+  peak height velocity in each sex (kim2024), so the endochondral component of the skull ceases on the
+  same schedule as the appendicular skeleton while the sutural component does not.'
+quantitative:
+- parameter: anterior cranial base length in short SGA subjects
+  value: '-1.8'
+  unit: SDS
+  conditions: 48 subjects aged 2-32 y, 77 cephalograms
+  species: human
+  source_ref: van1998
+  uncertainty: age- and sex-specific SDS
+- parameter: mandibular dimensions in short SGA subjects
+  value: <= -1.7
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: several measures at or below
+- parameter: maxillary dimension in short SGA subjects
+  value: '-1.5'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: as reported
+- parameter: mandibular plane angle in short SGA subjects
+  value: '+1.9'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: as reported
+- parameter: cranial base angle in short SGA subjects
+  value: '+1.0'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: as reported
+- parameter: lower anterior face height in short SGA subjects
+  value: '+1.7'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: increased despite global short stature
+- parameter: dental age delay in the same short SGA subjects
+  value: none
+  unit: years
+  conditions: dental delay score, same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: skeletal maturation delayed in the same subjects
+- parameter: age at spheno-occipital synchondrosis fusion stages 3-4, males
+  value: 12.7-13.9
+  unit: years
+  conditions: 630 Korean subjects aged 6-18 y, 3D CT, 5-stage system
+  species: human
+  source_ref: kim2024
+  uncertainty: proposed as an indicator of the pubertal growth peak
+- parameter: age at spheno-occipital synchondrosis fusion stages 3-4, females
+  value: 11.0-12.5
+  unit: years
+  conditions: same cohort
+  species: human
+  source_ref: kim2024
+  uncertainty: females more advanced; OR 1.972 (95% CI 1.063-3.658)
+localization:
+- 'human skull: lateral cephalometry and 3D CT of the cranial base'
+human_evidence: direct
+human_evidence_note: Both sources are direct human radiographic measurement series.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human craniofacial measurement.
+confidence: B
+claim_grades:
+- claim: Growth restriction produces a patterned, site-selective craniofacial shortfall
+  grade: B
+  basis: Directly measured cephalometric SDS pattern in 48 short SGA subjects; single centre, wide age
+    range, no matched short-non-SGA control group.
+- claim: The endochondral cranial base ceases growing on the same schedule as the appendicular skeleton
+  grade: B
+  basis: Spheno-occipital fusion stages 3-4 coincide with the sex-specific pubertal growth peak in 630
+    CT subjects (kim2024); a cross-sectional staging study, so individual synchrony is inferred not observed.
+key_refs:
+- ref_id: van1998
+  pmid: '9753823'
+  first_author: Van Erum R
+  year: 1998
+  type: primary
+  one_line_finding: Short subjects born SGA show a specific pattern of craniofacial hypoplasia with delayed
+    skeletal but normal dental maturation.
+- ref_id: kim2024
+  pmid: '37938056'
+  first_author: Kim SM
+  year: 2024
+  type: primary
+  one_line_finding: Spheno-occipital synchondrosis fusion stages 3-4 fall at 12.7-13.9 y in males and
+    11.0-12.5 y in females on 3D CT.
+open_questions:
+- g_l9organism_016
+last_verified: '2026-08-05'

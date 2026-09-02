@@ -1,0 +1,174 @@
+id: mid_parental_target_height
+name: Mid-parental target height
+aliases:
+- target height
+- corrected mid-parental height
+- Tanner target height
+type: method
+layer: L9
+stub: false
+summary: 'Target height is a child''s mid-parental height corrected for sex, conventionally by adding
+  6.5 cm for a son or subtracting 6.5 cm for a daughter (equivalently, adding 13 cm to the mother''s height
+  before averaging), a procedure introduced by Tanner, Goldstein and Whitehouse (tanner1970) and still
+  the recommended method. Three of its assumptions are demonstrably wrong. First, the sex correction is
+  additive and constant, but in the CDC reference the male-female height difference at matched percentiles
+  rises from 12.2 cm at the 3rd percentile to 14.7 cm at the 97th, and a multiplicative factor of 1.08
+  fits with R-squared = 1 (zeevi2024). Second, parental height is measured after adult height loss has
+  begun, biasing target height downward: in a cohort with parents aged 62 +/- 5 years the children were
+  2.7 cm taller than predicted, and a nonlinear age correction reduced that bias to 0.06 cm (zeevi2024).
+  Third, regression to the mean is ignored: the regression of standardised child height on standardised
+  mid-parental height has a slope of about 0.79 (zeevi2024) and 0.75-0.78 in a population-based Swedish
+  sample (luo1998), so the uncorrected method systematically underestimates the adult height of children
+  of short parents - Luo found up to a 6 cm error by the Tanner method at mid-parental height below -2
+  SDS. Wright and Cheetham showed the practical consequence: of 13 children below the 2nd height centile,
+  8 appeared to be within the mid-parental 90% range, but only 3 remained so once regression to the mean
+  was applied (wright1999).'
+quantitative:
+- parameter: conventional sex correction applied to mid-parental height
+  value: '6.5'
+  unit: cm
+  conditions: added for sons, subtracted for daughters
+  species: human
+  source_ref: tanner1970
+  uncertainty: fixed constant by convention
+- parameter: male-female height difference at the 3rd percentile
+  value: '12.2'
+  unit: cm
+  conditions: CDC growth charts, height at age 20
+  species: human
+  source_ref: zeevi2024
+  uncertainty: exact from the chart
+- parameter: male-female height difference at the 97th percentile
+  value: '14.7'
+  unit: cm
+  conditions: CDC growth charts, height at age 20
+  species: human
+  source_ref: zeevi2024
+  uncertainty: exact from the chart
+- parameter: multiplicative sex-correction factor fitting CDC matched-percentile heights
+  value: '1.08'
+  unit: ratio
+  conditions: male height = 1.08 x female height at the same percentile
+  species: human
+  source_ref: zeevi2024
+  uncertainty: R-squared = 1 with intercept forced to zero
+- parameter: bias of uncorrected mid-parental height (children taller than predicted)
+  value: '2.7'
+  unit: cm
+  conditions: 303 adult children of 23 families; parents aged 62 +/- 5 y
+  species: human
+  source_ref: zeevi2024
+  uncertainty: reduced to 0.06 cm after nonlinear parental-age correction
+- parameter: regression slope of standardised child height on standardised mid-parental height
+  value: '0.79'
+  unit: dimensionless
+  conditions: 23 large nuclear families, sex correction by x1.08
+  species: human
+  source_ref: zeevi2024
+  uncertainty: intercept -0.077
+- parameter: regression slope of adult height on mid-parental height, boys
+  value: '0.78'
+  unit: cm/cm
+  conditions: population-based Swedish sample, n=2402
+  species: human
+  source_ref: luo1998
+  uncertainty: y = 45.99 + 0.78x
+- parameter: regression slope of adult height on mid-parental height, girls
+  value: '0.75'
+  unit: cm/cm
+  conditions: same Swedish sample
+  species: human
+  source_ref: luo1998
+  uncertainty: y = 37.85 + 0.75x
+- parameter: underestimation of target height by the Tanner method at mid-parental height below -2 SDS
+  value: '6'
+  unit: cm
+  conditions: children whose mid-parental height is below 163 cm
+  species: human
+  source_ref: luo1998
+  uncertainty: compared with 2 cm underestimation by the linear-regression method
+- parameter: heritability of stature estimated from parent-offspring regression
+  value: 0.75-0.78
+  unit: proportion (cm scale)
+  conditions: population-based Swedish sample n=2402
+  species: human
+  source_ref: luo1998
+  uncertainty: 0.55-0.60 when expressed in SDS
+- parameter: heritability of stature, uncorrected Tanner procedure
+  value: '0.74'
+  unit: proportion
+  conditions: 303 adult children, 23 families
+  species: human
+  source_ref: zeevi2024
+  uncertainty: rises to 0.80 with age, multiplicative sex and regression corrections
+- parameter: variance in adult child height explained by mid-parental height
+  value: '36'
+  unit: percent
+  conditions: uncorrected Tanner procedure, 303 children
+  species: human
+  source_ref: zeevi2024
+  uncertainty: rises to 40 percent with all three corrections
+localization:
+- 'human whole organism: adult standing height of parents and offspring'
+human_evidence: direct
+human_evidence_note: All data are measured adult heights of parents and their adult children in population-based
+  and family-based human cohorts.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A human clinical calculation with no animal counterpart.
+confidence: A
+claim_grades:
+- claim: Mid-parental height explains only about 36-40% of the variance in adult child height
+  grade: A
+  basis: Directly measured in 303 adult children of 23 large families with both parents measured (zeevi2024);
+    consistent with the 0.75-0.78 parent-offspring regression slopes in a population sample of 2402 (luo1998).
+- claim: The additive 13 cm sex correction is wrong at the height extremes and a multiplicative 1.08 factor
+    is correct
+  grade: B
+  basis: Demonstrated arithmetically against CDC matched-percentile heights and validated by improved
+    variance explained in one family cohort; not replicated in a second population.
+- claim: Ignoring regression to the mean systematically misclassifies short children
+  grade: A
+  basis: 'Direct demonstration in a representative survey sample: 8 of 13 children below the 2nd centile
+    appeared within the mid-parental 90% range, falling to 3 of 13 after correction (wright1999).'
+key_refs:
+- ref_id: tanner1970
+  pmid: '5491878'
+  first_author: Tanner JM
+  year: 1970
+  type: primary
+  one_line_finding: Introduces parent-adjusted height standards and the corrected mid-parental target
+    height method still in clinical use.
+- ref_id: zeevi2024
+  pmid: '39201851'
+  first_author: Zeevi D
+  year: 2024
+  type: primary
+  one_line_finding: In 23 large nuclear families, uncorrected mid-parental height explains 36% of child
+    height variance with a 2.7 cm downward bias; corrections raise this to 40% and remove the bias.
+- ref_id: luo1998
+  pmid: '9773847'
+  first_author: Luo ZC
+  year: 1998
+  type: primary
+  one_line_finding: Population-based regression of adult height on mid-parental height with slopes 0.78
+    (boys) and 0.75 (girls) and a 95% prediction interval of about +/-10 cm.
+- ref_id: wright1999
+  pmid: '10451401'
+  first_author: Wright CM
+  year: 1999
+  type: primary
+  one_line_finding: Mid-parental height misclassifies short children unless regression to the mean is
+    applied.
+- ref_id: hermanussen2003
+  pmid: '12649571'
+  first_author: Hermanussen M
+  year: 2003
+  type: primary_abstract_only
+  one_line_finding: Reconsiders the arithmetic of target-height calculation; full text not retrieved in
+    this sweep.
+open_questions:
+- g_l9organism_004
+pending_source: hermanussen2003
+last_verified: '2026-08-05'

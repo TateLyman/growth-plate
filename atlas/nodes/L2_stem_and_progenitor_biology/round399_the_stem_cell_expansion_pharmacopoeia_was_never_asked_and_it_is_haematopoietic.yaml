@@ -1,0 +1,291 @@
+id: round399_the_stem_cell_expansion_pharmacopoeia_was_never_asked_and_it_is_haematopoietic
+name: "R399: the one field built to expand a stem cell pool had zero coverage here - asked properly it does not transfer, because every one of its drugs was built for the BLOOD stem cell; and the two shelves that DO reach cartilage both point the wrong way"
+aliases:
+  - stem cell expansion drugs growth plate
+  - StemRegenin aryl hydrocarbon receptor bone
+  - gamma-secretase inhibitor resting zone
+  - bempedoic acid contraindication
+  - UM171 CoREST cartilage
+type: intervention
+layer: L2
+stub: false
+summary: >-
+  The standing answer to "what is missing from the stack" is that nothing in it
+  refills the reserve. Every pool candidate this atlas has ever produced - HHIP,
+  SPIN4, SMOC1, STC2, CHAD, CLEC3A, ECRG4 - was reached from HEIGHT GENETICS and has
+  no molecule. So the question was put the other way round: there is an entire
+  clinical field whose explicit purpose is expanding a stem cell pool, with an
+  APPROVED product and several clinical-stage molecules. What does it say?
+
+  IT HAD ZERO COVERAGE HERE. Grep on 2026-08-14: UM171 zero files, aryl hydrocarbon
+  zero, StemRegenin zero, omidubicel zero, "stem cell expansion" zero, CoREST zero,
+  "gamma secretase" zero, nirogacestat zero, jagged zero, "prostaglandin E2" zero,
+  sprifermin zero. A genuine blind spot, not a re-derivation.
+
+  ONE - THE SHELF IS HAEMATOPOIETIC, AND SO ARE ITS TARGETS IN THIS TISSUE. Run
+  against the purity-corrected human postnatal growth plate before any literature
+  search (atlas/tools/round399_pool_expansion_shelf_receiver_test.py): AHR, the
+  StemRegenin-1 target and the canonical HSC expander, is 7.0 CPM pure against 77.3
+  contaminated, RATIO 0.09 - the range that killed losartan at 0.03 and sacubitril at
+  0.17, against COL2A1 at 8.92 and the resting-zone marker NT5E at 8.18. Its output
+  genes agree: AHRR 0.01, CYP1A1 0.32. RCOR1, the CoREST complex UM171 acts on, is
+  0.19. NAMPT, the nicotinamide route on which omidubicel was APPROVED in 2023, is
+  0.12. The drugs that expand a stem cell pool were all built for the blood stem
+  cell, and in cartilage their targets sit in the blood and immune fraction.
+
+  TWO - AND THE ONE TARGET OF THAT SHELF THAT *IS* IN THE HUMAN GROWTH PLATE HAS A
+  BONE-LENGTH ENDPOINT THAT RUNS THE WRONG WAY. cedervall2015, from the Savendahl
+  laboratory whose chagin2007 closed tamoxifen in this file, first shows AhR PROTEIN
+  is widely expressed in rare human growth plate cartilage samples - so the transcript
+  ratio was wrong about presence, which is CORR-351 firing exactly as it did for ESR1.
+  Then it does the experiment: cultured fetal rat metatarsals with longitudinal growth
+  monitored. The AhR AGONIST, TCDD, had NO effect at any concentration from 1 pM to
+  10 nM. The AhR ANTAGONIST, alpha-naphthoflavone, SUPPRESSED bone growth and
+  increased chondrocyte apoptosis, at 50 micromolar. StemRegenin-1 is an AhR
+  ANTAGONIST. That is disqualifier two - wrong direction - with a length endpoint in
+  the target tissue, not a gap.
+
+  THREE - NOTCH HAS AN APPROVED DRUG CLASS AND IT IS A CONTRAINDICATION, NOT A
+  CANDIDATE. lin2011, neonatal rat femur organ culture: Jagged1/Fc, which turns Notch
+  ON, RAISED the epiphysis-stem-cell zone as a fraction of plate length and RAISED the
+  number of BrdU-positive proliferating stem cells; DAPT, a GAMMA-SECRETASE INHIBITOR,
+  LOWERED both. PTHrP(1-34) did the same as Jagged1/Fc and raised NICD and Jagged1,
+  placing Notch downstream of PTHrP. So Notch MAINTAINS the resting-zone compartment
+  and blocking gamma-secretase shrinks it.
+  NIROGACESTAT is an approved gamma-secretase inhibitor - approved 2023 for desmoid
+  tumours - and has been reported in paediatric and young-adult patients. It should
+  not be near an open growth plate.
+  ⭐ AND IT RECONCILES WITH THE EXISTING NOTCH NODE BY COMPARTMENT, WHICH IS CORR-300's
+  SHAPE AGAIN. mead2009 has chondrocyte Rbpj deletion INCREASING proliferation and
+  hypertrophic cell number; lin2011 has gamma-secretase inhibition DECREASING
+  resting-zone stem cells. Both can hold: turning Notch off pushes resting cells out
+  into the columns, giving more proliferation in the plate and FEWER cells in the
+  reserve. That is spending the pool, which is the precise failure this whole line of
+  work exists to avoid.
+  ✗ The direction that would help - Notch ON - has no drug. Jagged1/Fc is a
+  recombinant reagent.
+
+  FOUR - THE PROSTAGLANDIN ROUTE DIES ON THE RECEIVER TEST, AND IT TAKES AN OLD WORRY
+  WITH IT. dmPGE2 expands haematopoietic stem cells and EP4 agonists were built for
+  fracture healing, so EP4 agonism looked like a candidate. PTGER4 is 0.05 and PTGER2
+  is 0.11 - both Gs-coupled EP receptors are contaminant-leaning. But PTGES is
+  cartilage-enriched at 2.21 and PTGS2 is present at 70.4 CPM. ⭐ THE PLATE MAKES PGE2
+  AND CARRIES NEITHER RECEPTOR THAT WOULD RECEIVE IT: PGE2 is an OUTGOING signal here,
+  not an incoming one. That removes the receiver for every EP4 agonist - and it also
+  weakens R306's NSAID worry, whose chain ran NSAID to less PGE2 to less EP4 to less
+  cAMP to shorter. The EP4 link in that chain is not on the chondrocyte.
+
+  FIVE - THE ONE GENUINELY NEW POOL MECHANISM THE ROUND FOUND, AND IT IS A
+  CONTRAINDICATION. kobayashi2023glycolysis: suppressing glycolysis by LDH ablation
+  EXPANDS the resting zone, and the mechanism is REDUCED ACETYL-CoA rather than an ATP
+  deficit - established because deleting Acly reproduces both the expansion and the
+  gross phenotype WITHOUT energy deficiency, via reduced histone acetylation. The
+  machinery is emphatically in the chondrocyte: LDHA 281 CPM at 3.58-fold enrichment,
+  ACLY 204 at 1.53, HIF1A 440 at 1.42.
+  ⛔ BUT IT IS CORR-292's JAM AND NOT A POOL. The model is a miR-140-5p
+  gain-of-function mouse for the human dysplasia SEDN, which is SHORT; the paper
+  reports skeletal developmental defects alongside the expansion; and the same
+  resting-zone expansion is reproduced by OVEREXPRESSING ACTIVATED FGFR3, which is
+  achondroplasia. An expanded resting zone next to a short bone is a jam, and only a
+  length endpoint separates the two.
+  ⭐ NEW CONTRAINDICATION: BEMPEDOIC ACID, an APPROVED ORAL ACLY INHIBITOR. Grade E,
+  mechanistic, free to avoid. Statins are unaffected - humphries2018 cleared them on
+  human height data.
+
+  SIX - THE STRUCTURAL CONCLUSION, WHICH IS THE DURABLE PART. A targeted query for
+  "skeletal stem cell expansion" with small molecule, drug or pharmacology returns
+  ZERO records. There is no drug in any species that expands a chondroprogenitor pool.
+  The reason is R298's base rate one level up: the only stem cell anyone ever needed
+  to expand in a patient was the haematopoietic one, so that is the only stem cell the
+  pharmacopoeia was built to expand. It is not that the search was insufficient - the
+  indication never existed. That leaves SAG standing alone as the only agent shown to
+  enlarge this pool in a NORMAL animal, and HHIP removal as the better target with no
+  molecule at all. Neither position moved this round; what moved is that the
+  alternative shelf has now been asked and answered instead of assumed.
+quantitative:
+  - parameter: HSC-expansion drug targets in the human postnatal growth plate
+    value: >-
+      AHR ratio 0.09 (7.0 pure vs 77.3 contaminated); AHRR 0.01; CYP1A1 0.32; RCOR1
+      0.19; NAMPT 0.12 - against COL2A1 8.92, ACAN 4.65 and NT5E 8.18
+    unit: purity ratio, pure vs contaminated median CPM
+    species: human
+    source_ref: bian2024
+    value_unverified: true
+    note: >-
+      computed in R399 from GSE288028 by R344's purity split. source_ref is nominal -
+      the numbers are this atlas's own computation, not from that paper. Calibration:
+      AGTR1 0.03 killed losartan, MME 0.17 killed sacubitril
+  - parameter: local AhR modulation and longitudinal bone growth
+    value: >-
+      AhR AGONIST TCDD no effect at 1 pM to 10 nM; AhR ANTAGONIST alpha-naphthoflavone
+      SUPPRESSED growth and raised chondrocyte apoptosis at 50 microM
+    unit: longitudinal growth of cultured fetal rat metatarsals
+    species: rat
+    source_ref: cedervall2015
+    note: >-
+      the direction that kills StemRegenin-1, which is an AhR antagonist. Same paper
+      confirms AhR PROTEIN is widely expressed in human growth plate cartilage, so the
+      transcript ratio understated presence - CORR-351
+  - parameter: Notch manipulation and the epiphysis stem cell zone
+    value: >-
+      Jagged1/Fc and PTHrP(1-34) RAISED both the stem-cell zone fraction and BrdU+ stem
+      cells; DAPT (gamma-secretase inhibitor) and PTHrP(7-34) LOWERED both
+    unit: qualitative, organ culture
+    species: rat
+    source_ref: lin2011
+    note: >-
+      makes gamma-secretase inhibitors - nirogacestat is approved and has been given to
+      paediatric and young-adult patients - a predicted contraindication. No bone-length
+      endpoint
+  - parameter: prostaglandin machinery in the human growth plate
+    value: >-
+      PTGER4 ratio 0.05 and PTGER2 0.11, both contaminant-leaning, while PTGES is 2.21
+      enriched and PTGS2 is 70.4 CPM
+    unit: purity ratio and CPM
+    species: human
+    source_ref: bian2024
+    value_unverified: true
+    note: >-
+      computed in R399; source_ref nominal. The plate makes PGE2 and carries neither
+      Gs-coupled receptor for it, so PGE2 is an outgoing signal - which removes the
+      receiver for EP4 agonists and weakens R306's NSAID chain
+  - parameter: metabolic control of resting zone size
+    value: >-
+      LDH ablation EXPANDS the resting zone; Acly deletion reproduces it WITHOUT energy
+      deficiency, so the mediator is reduced acetyl-CoA and reduced histone acetylation
+    unit: qualitative
+    species: mouse
+    source_ref: kobayashi2023glycolysis
+    note: >-
+      preprint. The expansion occurs in a SEDN dysplasia model that is short, alongside
+      skeletal defects, and is reproduced by activated FGFR3 - so it is CORR-292's jam
+  - parameter: glycolytic and acetyl-CoA machinery in the human growth plate
+    value: LDHA 281 CPM at 3.58x enrichment, ACLY 204 at 1.53, HIF1A 440 at 1.42, all 12/12
+    unit: CPM and purity ratio
+    species: human
+    source_ref: bian2024
+    value_unverified: true
+    note: >-
+      computed in R399; source_ref nominal. The receiver is emphatically present, which
+      is what makes bempedoic acid a contraindication rather than an irrelevance
+  - parameter: existence of any pharmacological skeletal-progenitor expander
+    value: zero records
+    unit: literature query
+    species: not_applicable
+    source_ref: cedervall2015
+    value_unverified: true
+    note: >-
+      Europe PMC, skeletal stem cell AND expansion AND (small molecule OR drug OR
+      pharmacolog*) returns 0. source_ref nominal - this is a search result recorded in
+      R399, not a finding of that paper
+localization: >-
+  growth-plate resting zone; the HSC-expansion targets localise instead to the blood
+  and immune fraction of the same samples
+human_evidence: indirect
+human_evidence_note: >-
+  The expression work is human. The two decisive functional experiments are rat organ
+  culture, and the metabolic mechanism is a mouse preprint. AhR protein presence in
+  human growth plate cartilage is directly shown by cedervall2015.
+species_basis:
+  - human
+  - rat
+  - mouse
+translation_risk: moderate
+translation_risk_reason: >-
+  The negatives are strong because they combine human localisation with functional
+  experiments in the right tissue. The two new contraindications - gamma-secretase
+  inhibitors and bempedoic acid - are inferred from organ culture and from a preprint
+  respectively, with no bone-length endpoint for either agent in any species.
+confidence: B
+claim_grades:
+  - claim: >-
+      The stem-cell-expansion pharmacopoeia is built on the haematopoietic stem cell and
+      its targets are not chondrocyte transcripts
+    grade: B
+    basis: >-
+      AHR 0.09, RCOR1 0.19, NAMPT 0.12 against calibrators that already killed two drugs
+      in this file. A transcript-origin argument, subject to CORR-351
+  - claim: >-
+      The AhR arm is dead in the direction StemRegenin-1 acts, on a bone-length endpoint
+    grade: B
+    basis: >-
+      cedervall2015 - agonist null across four log units, antagonist suppressive. Fetal
+      rat metatarsal culture, and the suppressive concentration may be cytotoxic
+  - claim: Notch maintains the resting-zone stem cell compartment
+    grade: C
+    basis: >-
+      lin2011, bidirectional in one organ-culture experiment with both an activator and
+      an inhibitor, plus PTHrP epistasis. Abstract-only, Chinese-language journal, no
+      length endpoint
+  - claim: Gamma-secretase inhibitors are a contraindication near an open growth plate
+    grade: D
+    basis: >-
+      inferred from lin2011's DAPT arm. No gamma-secretase inhibitor has a growth-plate
+      or bone-length endpoint in any species, and nirogacestat's paediatric reports do
+      not record growth
+  - claim: >-
+      The growth plate makes PGE2 and carries neither Gs-coupled EP receptor, so EP4
+      agonists have no receiver
+    grade: C
+    basis: >-
+      PTGER4 0.05 and PTGER2 0.11 against PTGES 2.21 and PTGS2 70.4. A transcript
+      argument only, and R306 read GSE9160 as showing PTGER4 present
+  - claim: >-
+      Lower glycolytic flux expands the resting zone through reduced acetyl-CoA, and the
+      expansion is a jam rather than a pool
+    grade: C
+    basis: >-
+      kobayashi2023glycolysis is a preprint, but the Acly arm is a clean dissociation of
+      acetyl-CoA from ATP. The jam reading rests on the model being a short-stature
+      dysplasia and on activated FGFR3 phenocopying it
+  - claim: Bempedoic acid is predicted to be a contraindication
+    grade: E
+    basis: >-
+      mechanistic only. Bempedoic acid is a prodrug requiring ACSVL1/SLC27A2, which is
+      present in the plate at only 16 CPM, so local activation is itself unproven
+  - claim: No drug in any species expands a chondroprogenitor pool
+    grade: B
+    basis: >-
+      a targeted query returning zero, plus the structural reason - the indication never
+      existed. An absence from searching, so it can be overturned by one paper
+key_refs:
+  - ref_id: cedervall2015
+    year: 2015
+    type: primary
+    role: >-
+      the kill on the AhR arm - agonist null, antagonist suppressive, with a
+      longitudinal growth endpoint, plus AhR protein confirmed in human growth plate
+  - ref_id: lin2011
+    year: 2011
+    type: primary_abstract_only
+    role: >-
+      the direction of Notch at the resting zone, and therefore the reason a
+      gamma-secretase inhibitor is a contraindication
+  - ref_id: kobayashi2023glycolysis
+    year: 2023
+    type: primary
+    role: >-
+      the new pool mechanism, and its jam signature - Acly deletion separates acetyl-CoA
+      from ATP, and activated FGFR3 phenocopies the expansion
+  - ref_id: bian2024
+    year: 2024
+    type: primary
+    role: >-
+      the cartilage-enriched adhesion GPCR that maintains the slow-cycling resting zone
+      - already held here, and the reason ADGRG6 was not treated as new in this round
+  - ref_id: mead2009
+    year: 2009
+    type: primary
+    role: >-
+      the Notch result that appears to contradict lin2011 and is reconciled by
+      compartment - Rbpj deletion raises column proliferation while the reserve shrinks
+  - ref_id: humphries2018
+    year: 2018
+    type: primary
+    role: >-
+      the reason the bempedoic acid contraindication does not extend to statins - 300
+      children, 4.45 versus 4.60 cm per year, P=0.73
+open_questions:
+  - g_l7_360a
+contradicts: []
+last_verified: '2026-08-14'

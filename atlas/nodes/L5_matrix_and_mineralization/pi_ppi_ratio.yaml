@@ -1,0 +1,115 @@
+id: pi_ppi_ratio
+name: Extracellular Pi/PPi ratio as the mineralization control variable
+aliases:
+- Pi:PPi ratio
+- phosphate to pyrophosphate ratio
+type: process
+layer: L5
+stub: false
+summary: 'Mineralization in the growth plate is not controlled by mineral supply. Electron microprobe
+  analysis of pig growth plate shows the extracellular Ca x P ion product is far above the ~2 mM^2 needed
+  for mineralization in vitro in EVERY zone, including the resting and proliferative zones that never
+  mineralize, so the tissue is chronically supersaturated and the operative variable is inhibition. The
+  dominant inhibitor is PPi and the dominant permissive signal is Pi, so the ratio of the two is the control
+  variable. Human circulating values bracket the scale: plasma PPi is 3.50 +/- 0.11 umol/L (99% range
+  1.19-5.65) against a serum phosphate of order 1-2 mmol/L, i.e. a circulating Pi:PPi ratio of roughly
+  300-600:1. The ratio is not merely physicochemical. In growth plate chondrocytes extracellular Pi stimulates
+  and extracellular PPi inhibits terminal differentiation marker expression, mineralization and apoptosis,
+  with different Pi thresholds for the two - lower Pi favours differentiation, higher Pi is required for
+  apoptosis - all dependent on Pit-1/Pit-2 type III Na/Pi cotransporter expression and actual Pi uptake.
+  Every genetic manipulation of the axis (TNAP loss, ENPP1 loss, ANK loss, PHOSPHO1 loss) moves the phenotype
+  in the direction predicted by the ratio, and opposing mutations cancel. What is missing is the number:
+  no measurement of Pi or PPi concentration, or of their ratio, in the extracellular fluid of any growth
+  plate zone in situ was located in this sweep.'
+quantitative:
+- parameter: Circulating Pi:PPi ratio in healthy humans
+  value: ~300-600
+  unit: mol:mol (serum Pi 1-2 mmol/L over plasma PPi 3.5 umol/L)
+  conditions: derived from measured plasma PPi and conventional serum phosphate reference range
+  species: human
+  source_ref: russell1971
+  uncertainty: derived quantity; the serum phosphate term is a reference range, not measured in the same
+    subjects
+  value_unverified: true
+- parameter: Ca x P ion product needed for in vitro mineralization of connective tissue
+  value: '2'
+  unit: mM^2
+  conditions: threshold cited by microprobe study
+  species: not_applicable
+  source_ref: althoff1982
+  uncertainty: threshold value
+- parameter: Growth plate extracellular Ca x P ion product relative to that threshold
+  value: much greater than 1
+  unit: fold above threshold, in all zones
+  conditions: porcine growth plate electron microprobe
+  species: porcine
+  source_ref: althoff1982
+  uncertainty: stated qualitatively as much higher
+- parameter: Relative Pi requirement for terminal differentiation versus apoptosis of growth plate chondrocytes
+  value: apoptosis requires higher Pi than differentiation
+  unit: rank order of concentration thresholds
+  conditions: cultured growth plate chondrocytes, graded extracellular Pi, Pit-1 knockdown control
+  species: rat
+  source_ref: kim2010
+  uncertainty: absolute Pi concentrations not extracted from abstract
+localization:
+- 'porcine growth plate all zones: supersaturated Ca x P product (althoff1982)'
+- 'growth plate zone-resolved Pi and PPi concentrations: never measured in situ in any species'
+human_evidence: indirect
+human_evidence_note: Human evidence is the plasma PPi range plus the two opposing human loss-of-function
+  syndromes (ALPL and ENPP1); the local ratio in the growth plate has never been measured in humans or
+  animals.
+species_basis:
+- human
+- porcine
+- rat
+- mouse
+translation_risk: moderate
+translation_risk_reason: The systemic numbers are human but the tissue-level ratio, which is the actual
+  control variable, is unmeasured in every species.
+confidence: B
+key_refs:
+- ref_id: kim2010
+  pmid: '20601283'
+  first_author: Kim HJ
+  year: 2010
+  type: primary
+  one_line_finding: Extracellular Pi stimulates and PPi inhibits growth plate chondrocyte terminal differentiation
+    and apoptosis, with different Pi thresholds for differentiation and apoptosis, all Pit-1 dependent
+- ref_id: althoff1982
+  pmid: '7107329'
+  first_author: Althoff J
+  year: 1982
+  type: primary
+  one_line_finding: Porcine growth plate Ca x P ion product is far above the 2 mM^2 needed for in vitro
+    mineralization in every zone
+- ref_id: russell1971
+  pmid: '4324072'
+  first_author: Russell RG
+  year: 1971
+  type: primary
+  one_line_finding: Plasma PPi 3.50 +/- 0.11 umol/L in 73 healthy adults, 99% range 1.19-5.65 umol/L
+- ref_id: milln2016
+  pmid: '26590809'
+  first_author: Millan JL
+  year: 2016
+  type: review
+  one_line_finding: Plasma PPi 1-6 uM in humans; TNAP acts to establish a local Pi/PPi ratio conducive
+    to controlled calcification
+- ref_id: harmey2004
+  pmid: '15039209'
+  first_author: Harmey D
+  year: 2004
+  type: primary
+  one_line_finding: Genetic manipulation of TNAP, NPP1 and ANK moves PPi and osteopontin in the same direction
+    and rescues opposite mineralization phenotypes
+- ref_id: anderson2004
+  pmid: '14982838'
+  first_author: Anderson HC
+  year: 2004
+  type: primary
+  one_line_finding: Alpl-/- growth plate mineral initiates in matrix vesicles but cannot propagate into
+    a PPi-rich extravesicular matrix
+open_questions:
+- g_l5matrix_002
+last_verified: '2026-08-05'

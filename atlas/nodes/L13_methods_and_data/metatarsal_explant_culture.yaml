@@ -1,0 +1,64 @@
+id: metatarsal_explant_culture
+name: Fetal metatarsal explant culture
+aliases:
+- rat metatarsal bone culture
+- ex vivo bone growth assay
+type: method
+summary: |
+  Cultured fetal rodent metatarsals are the workhorse pharmacological assay for longitudinal
+  bone growth: whole rudiments grow measurably in culture over days, so a compound's effect on
+  elongation can be read as a length change without confounding by appetite, systemic
+  endocrine feedback or skeletal loading. The format established that androgen receptor
+  modulation does not affect longitudinal growth of cultured fetal rat metatarsals
+  (chagin2009), and it is the system in which FGF signalling was shown to inhibit chondrocyte
+  proliferation through STAT signalling (sahni1999). Its principal structural caveat is
+  anatomical rather than technical: in mammalian metatarsals the growth plate occupies an
+  unusual location, and the PTHrP/Ihh feedback loop operates there in a configuration that is
+  not the standard long-bone one (reno2025), so metatarsal results are not automatically
+  statements about femoral or tibial physes. Two further limits matter for translation. The
+  rudiments are fetal, so they have no secondary ossification centre and therefore no resting
+  zone in the postnatal sense - which is the compartment L2 is about. And they are rodent,
+  inheriting the full mouse/rat translation risk. No human equivalent exists, because fetal
+  human rudiments are not available at the scale a dose-response requires.
+quantitative:
+- parameter: human fetal metatarsal culture dose-response studies located
+  value: '0'
+  unit: studies
+  conditions: Europe PMC sweep 2026-08-05
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: see search log g_l13b_007
+localization:
+- 'rat PZ/HZ: present in cultured rudiment; RZ in the postnatal sense absent'
+human_evidence: absent
+human_evidence_note: No human counterpart; all metatarsal culture pharmacology is rodent.
+species_basis:
+- rat
+- mouse
+translation_risk: high
+translation_risk_reason: Fetal, rodent, and located at a site where the PTHrP/Ihh loop configuration
+  differs from the standard long-bone physis.
+confidence: B
+key_refs:
+- ref_id: chagin2009
+  first_author: Chagin AS
+  year: 2009
+  type: primary
+  one_line_finding: Androgen receptor modulation does not affect longitudinal growth of cultured
+    fetal rat metatarsals.
+- ref_id: sahni1999
+  first_author: Sahni M
+  year: 1999
+  type: primary
+  one_line_finding: FGF signalling inhibits chondrocyte proliferation via STAT in cultured rudiments.
+- ref_id: reno2025
+  first_author: Reno PL
+  year: 2025
+  type: primary
+  one_line_finding: The PTHrP/Ihh feedback loop operates in an unusual configuration at the mammalian
+    metatarsal growth plate.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

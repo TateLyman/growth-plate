@@ -1,0 +1,85 @@
+id: head_circumference_growth
+name: Head circumference growth
+aliases:
+- occipitofrontal circumference
+type: phenotype
+layer: L9
+stub: false
+summary: 'Head circumference is the clinical proxy for brain growth and it tracks brain volume closely
+  in infancy, which is why it is the only anthropometric measure with a WHO velocity standard alongside
+  length and weight (who_velocity_2009). Its trajectory is unlike stature: the increment is largest in
+  the first months and then decays rapidly, mirroring the peak grey matter volume velocity at 5.08 months
+  and the four-fold rise in brain weight by 3 years (bethlehem2022, dekaban1978), and there is no pubertal
+  head-circumference spurt. This is the clearest organism-level demonstration that the calvaria and the
+  long bones are not driven by a common growth signal: cranial vault expansion is essentially complete
+  when the long bones still have more than a decade of elongation ahead, and the sutures that permit vault
+  expansion begin closing in a substantial minority of children before adolescence (han2025). Numerical
+  increment centiles for head circumference by month are published in the WHO velocity standards and are
+  flagged for hand verification because the source is a manual rather than an indexed article.'
+quantitative:
+- parameter: age range of the WHO head circumference velocity standards
+  value: 0-24
+  unit: months
+  conditions: 1- to 6-month increments with percentiles and z-scores
+  species: human
+  source_ref: who_velocity_2009
+  uncertainty: flagged verify_by_hand
+- parameter: age at peak grey matter volume velocity (brain correlate of the head circumference velocity
+    peak)
+  value: '5.08'
+  unit: months
+  conditions: normative MRI model
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% CI 4.85-5.22
+- parameter: increase in brain weight from birth to 3 years
+  value: '4'
+  unit: fold
+  conditions: autopsy series
+  species: human
+  source_ref: dekaban1978
+  uncertainty: quadruples
+- parameter: pubertal spurt in head circumference
+  value: none
+  unit: not_applicable
+  conditions: implied by the absence of any adolescent brain volume velocity peak
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: inference from the brain charts; not measured as head circumference
+localization:
+- 'human head: occipitofrontal circumference by tape'
+human_evidence: direct
+human_evidence_note: WHO velocity standards are constructed from measured human infant head circumference;
+  the brain correlates are human MRI and autopsy data.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human anthropometry.
+confidence: B
+claim_grades:
+- claim: Head circumference velocity peaks in early infancy and there is no pubertal spurt
+  grade: B
+  basis: Directly standardised in infancy (who_velocity_2009) and consistent with the brain volume velocity
+    peaks; the absence of a pubertal spurt is inferred from brain charts rather than measured as head
+    circumference in this sweep.
+key_refs:
+- ref_id: who_velocity_2009
+  first_author: WHO Multicentre Growth Reference Study Group
+  year: 2009
+  type: regulatory
+  one_line_finding: Publishes head circumference increment standards from birth to 24 months.
+- ref_id: bethlehem2022
+  pmid: '35388223'
+  first_author: Bethlehem RAI
+  year: 2022
+  type: primary
+  one_line_finding: Grey matter volume velocity peaks at 5.08 months with no adolescent volume spurt.
+- ref_id: dekaban1978
+  pmid: '727739'
+  first_author: Dekaban AS
+  year: 1978
+  type: primary
+  one_line_finding: Brain weight quadruples in the first three years.
+open_questions:
+- g_l9organism_014
+last_verified: '2026-08-05'

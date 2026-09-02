@@ -1,0 +1,78 @@
+id: notch_signaling_chondrocyte
+name: Notch signalling in chondrocytes
+type: pathway
+layer: L3
+stub: false
+summary: 'Ligand binding releases the Notch intracellular domain (NICD) by gamma-secretase cleavage; NICD
+  enters the nucleus and converts RBPJ from repressor to activator. In cartilage the pathway is required
+  at two separable steps and its sign depends on which step is examined. Forced NICD expression in the
+  mouse chondrocyte lineage reduces cartilage precursor proliferation and blocks hypertrophic differentiation,
+  while chondrocyte-lineage Rbpj deletion increases proliferation and increases hypertrophic chondrocyte
+  number (Mead 2009) - so Notch restrains both proliferation and, in the gain-of-function direction, hypertrophy.
+  Kohn 2015 resolves the mechanism genetically: Notch controls the ONSET of maturation through SOX9 (the
+  Rbpj-mutant phenotype is rescued by removing one Sox9 allele), whereas Notch control of TERMINAL maturation
+  is SOX9-independent. Hosaka 2013 shows the terminal arm operates through HES1 and demonstrates NICD1/2
+  nuclear translocation in human osteoarthritic articular chondrocytes, the only human chondrocyte data
+  in this subsystem. Notch activity has never been mapped by zone in a human growth plate.'
+localization:
+- 'mouse PHZ/HZ: RBPJ-dependent activity required for onset and terminal maturation (mead2009, kohn2015)'
+- 'human articular chondrocyte (OA): NICD1/NICD2 nuclear translocation confirmed (hosaka2013)'
+- 'human growth plate: unconfirmed'
+human_evidence: indirect
+human_evidence_note: NICD nuclear translocation has been shown in human OA articular chondrocytes, and
+  NOTCH2 gain-of-function causes human Hajdu-Cheney syndrome; neither is a growth plate measurement.
+species_basis:
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: Mechanistic genetics are mouse; the human observations are in diseased articular,
+  not physeal, cartilage.
+confidence: B
+key_refs:
+- ref_id: mead2009
+  pmid: '19590010'
+  first_author: Mead TJ
+  year: 2009
+  type: primary
+  one_line_finding: Chondrocyte NICD gain of function blocks hypertrophy; Rbpj deletion increases proliferation
+    and hypertrophic chondrocyte number.
+- ref_id: kohn2015
+  pmid: '26558140'
+  first_author: Kohn A
+  year: 2015
+  type: primary
+  one_line_finding: Notch controls onset of chondrocyte maturation SOX9-dependently and terminal maturation
+    SOX9-independently.
+- ref_id: hosaka2013
+  pmid: '23319657'
+  first_author: Hosaka Y
+  year: 2013
+  type: primary
+  one_line_finding: RBPJ-dependent Notch drives terminal endochondral ossification via HES1; NICD1/2 translocate
+    in human OA chondrocytes.
+- ref_id: simpson2011
+  pmid: '21378985'
+  first_author: Simpson MA
+  year: 2011
+  type: primary
+  one_line_finding: Truncating NOTCH2 mutations that stabilise NICD cause human Hajdu-Cheney syndrome
+    with acro-osteolysis and bone loss.
+open_questions:
+- g_l3rest_009
+last_verified: '2026-08-05'
+reanalysis_observations:
+- observation: 'Detected in both human donors: NOTCH1, NOTCH2, NOTCH3, JAG1, JAG2, DLL1, HES1, HEY1, HEY2,
+    RBPJ, PSEN1. NOTCH2, RBPJ, PSEN1, JAG2 and HEY2 are detected in all five compartments of both donors.
+    NOT detected in either donor: NOTCH4, DLL3, DLL4, HES5. The donor whose dissection resolves zones
+    places the maximum in the RESTING zone for NOTCH1/2/3, JAG1, JAG2, HES1, HEY1 and PSEN1, NOTCH3 at
+    a 110-fold range.'
+  interpretation: The Notch machinery is present in human physis and is not zonally restricted at the
+    level of its components. A resting-zone bias appears in the one usable dissection but rests on that
+    single donor. Where the pathway is ACTIVE, and whether it restrains hypertrophy in human tissue as
+    in mouse, are untouched by this.
+  caveats: Component transcription is not pathway activity. See notebook section 3.
+  reanalysis: p8_01_gse9160_human_zonal
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'

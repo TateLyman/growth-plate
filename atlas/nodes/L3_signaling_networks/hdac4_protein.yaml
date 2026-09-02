@@ -1,0 +1,86 @@
+id: hdac4_protein
+name: HDAC4
+aliases:
+- histone deacetylase 4
+- class IIa HDAC
+type: protein
+layer: L3
+stub: false
+summary: 'HDAC4 is a class IIa histone deacetylase with negligible intrinsic deacetylase activity that works as a
+  signal-responsive corepressor. It is expressed in prehypertrophic chondrocytes and restrains hypertrophy by two
+  routes: binding and inhibiting RUNX2 (Vega 2004) and binding and repressing MEF2 (Arnold 2007; Nishimori 2019).
+  Hdac4-null mice show ectopic and premature chondrocyte hypertrophy with premature ossification, phenocopying constitutive
+  RUNX2 expression, while HDAC4 overexpression in proliferating chondrocytes blocks hypertrophy and phenocopies RUNX2
+  loss (Vega 2004, mouse). Its activity is set by SUBCELLULAR LOCALISATION, not by abundance: phosphorylation at 14-3-3-binding
+  sites holds it in the cytoplasm (inactive), and dephosphorylation lets it enter the nucleus (active as a repressor).
+  PTHrP drives that dephosphorylation via PP2A (Kozhemyakina 2009) and via inhibition of SIK3 (Nishimori 2019, 2021).
+  Human HDAC4 haploinsufficiency in 2q37 deletion syndrome causes brachydactyly type E, present in 48% of 103 reported
+  individuals, plus developmental delay - direct human evidence that HDAC4 dose sets metacarpal/metatarsal growth
+  plate output (Le 2019); a missense HDAC4 variant produces the same syndrome in a family (Takeyari 2023).'
+quantitative:
+- parameter: Brachydactyly type E frequency in 2q37 deletion (HDAC4 haploinsufficiency)
+  value: '48'
+  unit: '% of individuals'
+  conditions: literature review of 101 published plus 2 new cases (n=103), mixed ages and sexes
+  species: human
+  source_ref: le2019
+  uncertainty: no CI reported; ascertainment biased toward clinically diagnosed cases
+- parameter: Dysmorphic craniofacial features in 2q37 deletion
+  value: '86'
+  unit: '% of individuals'
+  conditions: same n=103 cohort
+  species: human
+  source_ref: le2019
+  uncertainty: no CI reported
+localization:
+- 'mouse PHZ: confirmed - HDAC4 expressed in prehypertrophic chondrocytes (vega2004)'
+- 'human: inferred from 2q37 deletion phenotype (le2019)'
+- 'human growth plate protein localisation: unconfirmed'
+human_evidence: direct
+human_evidence_note: HDAC4 haploinsufficiency in humans (2q37 deletion, and a point mutation in one family) causes
+  brachydactyly type E.
+species_basis:
+- mouse
+- human
+translation_risk: low
+translation_risk_reason: Human haploinsufficiency produces a growth-plate-attributable digit phenotype concordant
+  with the mouse premature-hypertrophy null.
+confidence: A
+key_refs:
+- ref_id: vega2004
+  pmid: '15537544'
+  first_author: Vega RB
+  year: 2004
+  type: primary
+  one_line_finding: HDAC4 is expressed in prehypertrophic chondrocytes and inhibits RUNX2; Hdac4-null mice show ectopic
+    premature hypertrophy.
+- ref_id: arnold2007
+  pmid: '17336904'
+  first_author: Arnold MA
+  year: 2007
+  type: primary
+  one_line_finding: HDAC4 and MEF2C are titrated against each other genetically in endochondral bone formation.
+- ref_id: kozhemyakina2009
+  pmid: '19704004'
+  first_author: Kozhemyakina E
+  year: 2009
+  type: primary
+  one_line_finding: PTHrP/forskolin activates a PP2A-dependent HDAC4 phospho-S246 phosphatase, driving HDAC4 into
+    the nucleus to repress MEF2.
+- ref_id: le2019
+  pmid: '30848064'
+  first_author: Le TN
+  year: 2019
+  type: primary
+  one_line_finding: In 103 individuals with 2q37 deletion, brachydactyly type E occurs in 48% and HDAC4 is the primary
+    genetic contributor.
+- ref_id: takeyari2023
+  pmid: '37020696'
+  first_author: Takeyari S
+  year: 2023
+  type: primary_abstract_only
+  one_line_finding: A missense HDAC4 variant causes brachydactyly-mental retardation syndrome in a family, without
+    a deletion.
+open_questions:
+- g_l3rest_013
+last_verified: '2026-08-05'

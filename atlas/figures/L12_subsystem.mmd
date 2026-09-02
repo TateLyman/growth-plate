@@ -1,0 +1,149 @@
+graph LR
+  remaining_growth_prediction["Remaining growth prediction"]
+  final_adult_height_endpoint["Final adult height as a trial endpoint"]
+  vosoritide["Vosoritide"]
+  npr2_receptor["NPR2"]
+  navepegritide["Navepegritide"]
+  growth_velocity_longitudinal["Longitudinal growth velocity at the physis"]
+  npr2_agonist_class["NPR2 agonist drug class"]
+  fgfr3_mapk_branch["FGFR3-MAPK/ERK branch"]
+  cgmp_second_messenger["cGMP"]
+  pkg2_kinase["PKG-II"]
+  infigratinib_growth["Infigratinib"]
+  fgfr3_receptor["FGFR3"]
+  fgfr3_tyrosine_kinase_inhibitor["FGFR3 tyrosine kinase inhibitor class"]
+  adult_height_attainment["Adult height attainment"]
+  soluble_fgfr3_decoy["Soluble FGFR3 decoy (recifercept)"]
+  growth_plate_drug_exposure["Drug exposure at the growth plate"]
+  meclizine_repurposing["Meclizine repurposing for achondroplasia"]
+  recombinant_human_gh["Recombinant human growth hormone (somatropin)"]
+  gh_receptor["Growth hormone receptor (GHR)"]
+  transcon_growth_hormone["Lonapegsomatropin (TransCon hGH)"]
+  mecasermin_igf1["Mecasermin (recombinant human IGF-1)"]
+  igf1_receptor["IGF-1 receptor (IGF1R)"]
+  igf1_gh_combination_therapy["Combined rhGH plus rhIGF-1 therapy"]
+  pegvisomant["Pegvisomant"]
+  octreotide_somatostatin_analog["Octreotide and somatostatin analogues"]
+  growth_hormone["Growth hormone (GH1 / somatotropin)"]
+  aromatase_inhibitor_letrozole["Letrozole"]
+  aromatase_cyp19a1["Aromatase (CYP19A1)"]
+  bone_age["Bone age"]
+  aromatase_inhibitor_anastrozole["Anastrozole"]
+  gnrh_analog_leuprolide["Leuprolide acetate"]
+  gnrh_hormone["GnRH (gonadotropin-releasing hormone)"]
+  gnrh_analog_triptorelin["Triptorelin"]
+  oxandrolone["Oxandrolone"]
+  estrogen_low_dose_therapy["Low-dose oestrogen therapy"]
+  estrogen_biphasic_dose_effect["Biphasic dose-dependent estrogen effect on growth"]
+  teriparatide["Teriparatide (PTH 1-34)"]
+  pth1r_receptor["PTH1R"]
+  abaloparatide["Abaloparatide (PTHrP 1-34 analogue)"]
+  bisphosphonate_growth_plate["Bisphosphonates and the growth plate"]
+  chondro_osseous_junction["Chondro-osseous junction"]
+  methylphenidate_growth["Methylphenidate and growth suppression"]
+  inhaled_corticosteroid_growth["Inhaled corticosteroids and adult height"]
+  glucocorticoid_receptor["Glucocorticoid receptor (NR3C1 / GR)"]
+  tyrosine_kinase_inhibitor_growth_toxicity["Tyrosine kinase inhibitor growth toxicity"]
+  chemotherapy_growth_plate_toxicity["Chemotherapy and growth plate toxicity"]
+  deflazacort["Deflazacort"]
+  glucocorticoid_sparing_strategy["Glucocorticoid-sparing strategies for growth"]
+  trial_endpoint_annualized_growth_velocity["Annualised growth velocity as a trial endpoint"]
+  limb_lengthening_surgery["Surgical limb lengthening"]
+  cnp_analog_pk_challenge["CNP analogue pharmacokinetic challenge"]
+  statin_ipsc_achondroplasia["Statins in iPSC models of FGFR3 skeletal dysplasia"]
+  mecasermin_rinfabate["Mecasermin rinfabate (rhIGF-1/rhIGFBP-3 complex)"]
+  igfbp3["IGFBP-3"]
+  regulatory_review_document["Regulatory review documents as an evidence source"]
+  fgfr1_receptor["FGFR1"]
+  fgfr2_receptor["FGFR2"]
+  pthrp_ihh_feedback_loop["PTHrP/IHH negative feedback loop"]
+  stat5b_tf["STAT5B"]
+  jak2_kinase["JAK2 (Janus kinase 2)"]
+  igf1_systemic["Systemic (hepatic) IGF-1"]
+  gh_pulse_pattern_hypothesis["GH pulse pattern versus integrated exposure at the plate"]
+  estradiol_hormone["17beta-estradiol"]
+  androgen_receptor["Androgen receptor (AR)"]
+  estrogen_receptor_alpha["Estrogen receptor alpha (ESR1 / ERalpha)"]
+  metatarsal_explant_culture["Fetal metatarsal explant culture"]
+  remaining_growth_prediction -->|"correlates_with (A)"| final_adult_height_endpoint
+  vosoritide -->|"activates (A)"| npr2_receptor
+  navepegritide -->|"activates (A)"| npr2_receptor
+  navepegritide -->|"activates (A)"| growth_velocity_longitudinal
+  npr2_agonist_class --x|"inhibits (C)"| fgfr3_mapk_branch
+  npr2_agonist_class -->|"activates (A)"| cgmp_second_messenger
+  pkg2_kinase -->|"required_for (speculative)"| npr2_agonist_class
+  infigratinib_growth --x|"inhibits (D)"| fgfr3_receptor
+  infigratinib_growth -->|"activates (A)"| growth_velocity_longitudinal
+  fgfr3_tyrosine_kinase_inhibitor -.->|"hypothesized_link (speculative)"| adult_height_attainment
+  soluble_fgfr3_decoy -->|"correlates_with (A)"| growth_velocity_longitudinal
+  soluble_fgfr3_decoy -.->|"hypothesized_link (speculative)"| growth_plate_drug_exposure
+  meclizine_repurposing -->|"correlates_with (D)"| growth_velocity_longitudinal
+  recombinant_human_gh ---|"binds (A)"| gh_receptor
+  recombinant_human_gh -->|"activates (A)"| growth_velocity_longitudinal
+  transcon_growth_hormone -->|"activates (A)"| growth_velocity_longitudinal
+  mecasermin_igf1 ---|"binds (B)"| igf1_receptor
+  mecasermin_igf1 -->|"activates (A)"| adult_height_attainment
+  igf1_gh_combination_therapy -->|"activates (B)"| growth_velocity_longitudinal
+  pegvisomant --x|"inhibits (A)"| gh_receptor
+  pegvisomant --x|"inhibits (D)"| adult_height_attainment
+  octreotide_somatostatin_analog --x|"inhibits (D)"| growth_hormone
+  aromatase_inhibitor_letrozole --x|"inhibits (A)"| aromatase_cyp19a1
+  aromatase_inhibitor_letrozole --x|"inhibits (B)"| bone_age
+  aromatase_inhibitor_letrozole -->|"correlates_with (D)"| adult_height_attainment
+  aromatase_inhibitor_anastrozole -->|"activates (C)"| adult_height_attainment
+  gnrh_analog_leuprolide --x|"inhibits (A)"| gnrh_hormone
+  gnrh_analog_leuprolide -->|"activates (A)"| adult_height_attainment
+  gnrh_analog_leuprolide --x|"inhibits (A)"| bone_age
+  gnrh_analog_triptorelin --x|"inhibits (B)"| gnrh_hormone
+  oxandrolone -->|"activates (B)"| adult_height_attainment
+  estrogen_low_dose_therapy -->|"correlates_with (C)"| estrogen_biphasic_dose_effect
+  teriparatide -->|"activates (A)"| pth1r_receptor
+  teriparatide -.->|"hypothesized_link (speculative)"| growth_velocity_longitudinal
+  abaloparatide -->|"activates (A)"| pth1r_receptor
+  bisphosphonate_growth_plate --x|"inhibits (A)"| chondro_osseous_junction
+  methylphenidate_growth --x|"inhibits (A)"| growth_velocity_longitudinal
+  inhaled_corticosteroid_growth --x|"inhibits (A)"| adult_height_attainment
+  inhaled_corticosteroid_growth -->|"activates (C)"| glucocorticoid_receptor
+  tyrosine_kinase_inhibitor_growth_toxicity --x|"inhibits (B)"| adult_height_attainment
+  tyrosine_kinase_inhibitor_growth_toxicity -.->|"hypothesized_link (speculative)"| fgfr3_tyrosine_kinase_inhibitor
+  chemotherapy_growth_plate_toxicity --x|"inhibits (C)"| growth_velocity_longitudinal
+  deflazacort -->|"activates (A)"| glucocorticoid_receptor
+  glucocorticoid_sparing_strategy -->|"correlates_with (B)"| adult_height_attainment
+  growth_plate_drug_exposure -->|"required_for (speculative)"| npr2_agonist_class
+  trial_endpoint_annualized_growth_velocity -->|"precedes (speculative)"| final_adult_height_endpoint
+  limb_lengthening_surgery -->|"activates (A)"| adult_height_attainment
+  cnp_analog_pk_challenge -->|"correlates_with (B)"| npr2_agonist_class
+  statin_ipsc_achondroplasia -->|"degrades (D)"| fgfr3_receptor
+  transcon_growth_hormone -->|"correlates_with (D)"| navepegritide
+  mecasermin_rinfabate ---|"binds (X)"| igfbp3
+  regulatory_review_document -.->|"hypothesized_link (speculative)"| growth_plate_drug_exposure
+  vosoritide -->|"correlates_with (B)"| cgmp_second_messenger
+  vosoritide -.->|"hypothesized_link (speculative)"| pkg2_kinase
+  navepegritide -.->|"hypothesized_link (speculative)"| pkg2_kinase
+  navepegritide -->|"activates (A)"| cgmp_second_messenger
+  npr2_agonist_class -->|"activates (A)"| npr2_receptor
+  vosoritide --x|"inhibits (C)"| fgfr3_mapk_branch
+  cnp_analog_pk_challenge -.->|"hypothesized_link (speculative)"| npr2_receptor
+  soluble_fgfr3_decoy --x|"inhibits (D)"| fgfr3_receptor
+  fgfr3_tyrosine_kinase_inhibitor --x|"inhibits (D)"| fgfr3_receptor
+  infigratinib_growth --x|"inhibits (E)"| fgfr3_mapk_branch
+  infigratinib_growth --x|"inhibits (D)"| fgfr1_receptor
+  infigratinib_growth --x|"inhibits (D)"| fgfr2_receptor
+  meclizine_repurposing --x|"inhibits (D)"| fgfr3_receptor
+  abaloparatide -.->|"hypothesized_link (speculative)"| pthrp_ihh_feedback_loop
+  teriparatide -.->|"hypothesized_link (speculative)"| pthrp_ihh_feedback_loop
+  recombinant_human_gh -->|"activates (B)"| stat5b_tf
+  recombinant_human_gh -->|"activates (E)"| jak2_kinase
+  recombinant_human_gh -->|"activates (A)"| igf1_systemic
+  transcon_growth_hormone -->|"activates (A)"| gh_receptor
+  transcon_growth_hormone -->|"activates (A)"| igf1_systemic
+  transcon_growth_hormone -->|"correlates_with (A)"| gh_pulse_pattern_hypothesis
+  igf1_gh_combination_therapy -->|"activates (B)"| igf1_receptor
+  pegvisomant --x|"inhibits (A)"| igf1_systemic
+  aromatase_inhibitor_anastrozole --x|"inhibits (A)"| aromatase_cyp19a1
+  aromatase_inhibitor_letrozole --x|"inhibits (A)"| estradiol_hormone
+  aromatase_inhibitor_anastrozole --x|"inhibits (A)"| estradiol_hormone
+  oxandrolone -->|"activates (B)"| androgen_receptor
+  estrogen_low_dose_therapy -->|"activates (C)"| estrogen_receptor_alpha
+  chemotherapy_growth_plate_toxicity --x|"inhibits (C)"| growth_hormone
+  metatarsal_explant_culture -->|"required_for (B)"| npr2_agonist_class

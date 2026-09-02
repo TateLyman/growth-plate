@@ -1,0 +1,64 @@
+id: primary_cilium_mechanosensing
+name: Primary cilium mechanosensing in the growth plate
+type: process
+summary: 'The primary cilium is the one mechanosensory organelle with a clean, loading-controlled growth
+  plate experiment. Cartilage-specific inducible deletion of Ift88 (AggrecanCreERT2;Ift88fl/fl) in juvenile
+  and adolescent mice reduced ciliation and disrupted chondrocyte differentiation, cartilage resorption
+  and mineralisation - but only in the peripheral tibial regions beneath the load-bearing compartments
+  of the knee, which accumulated enlarged hypertrophic populations. Hedgehog signalling was preserved,
+  so the defect is not the usual ciliary Hh phenotype; instead hypertrophic VEGF expression fell, with
+  downstream loss of vascular recruitment, osteoclastic activity and cartilage-to-bone replacement. Two
+  controls make the mechanical interpretation strong: raising physiological loading in control mice reproduced
+  the impaired peripheral ossification, and limb immobilisation abolished the Ift88-null phenotype. Separately,
+  PIEZO1 colocalises with the cilium in mouse growth plate chondrocytes and chloral hydrate cilia disruption
+  (cilia-positive cells 97.2% to 16.6%) or IFT88 knockdown reversed compression-induced cartilage degeneration,
+  placing the cilium downstream of or in a feedback loop with PIEZO1. All of this is mouse; no human physeal
+  cilium mechanics data exist.'
+quantitative:
+- parameter: cilia-positive growth plate chondrocytes before vs after chloral hydrate
+  value: 97.2 -> 16.6
+  unit: '%'
+  conditions: primary mouse growth plate chondrocytes, in vitro
+  species: mouse
+  source_ref: chen2025
+  uncertainty: p<0.001
+- parameter: disc/plate degeneration score under caudal compression, wild type vs IFT88-cKO
+  value: 12 vs 8
+  unit: score (baseline 2)
+  conditions: 8-week-old C57BL/6J mice, 10 kPa caudal compression, 8 weeks
+  species: mouse
+  source_ref: chen2025
+  uncertainty: MRI at 4 weeks; n not extracted
+localization:
+- 'mouse growth plate chondrocytes, peripheral load-bearing tibial regions: functional evidence (coveney2022)'
+- 'mouse growth plate chondrocyte cilium, PIEZO1 colocalised: confirmed (chen2025)'
+- 'human growth plate: no data'
+human_evidence: absent
+human_evidence_note: No human growth plate ciliary mechanosensing data; human ciliopathies affect the
+  skeleton but through Hedgehog patterning rather than a demonstrated load pathway.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Requires inducible cartilage-specific gene deletion plus controlled limb loading
+  and immobilisation, none of which is possible in humans.
+confidence: C
+key_refs:
+- ref_id: coveney2022
+  pmid: '35038201'
+  first_author: Coveney CR
+  year: 2022
+  type: primary
+  one_line_finding: Ciliary IFT88 protects load-bearing regions of the adolescent growth plate from disruptive
+    physiological force; immobilisation abolishes the phenotype
+- ref_id: chen2025
+  pmid: '41194970'
+  first_author: Chen F
+  year: 2025
+  type: primary
+  one_line_finding: PIEZO1 colocalises with the primary cilium in growth plate chondrocytes and cilia
+    disruption blocks compression-induced degeneration
+open_questions:
+- g_l6mech_008
+layer: L6
+stub: false
+last_verified: '2026-08-05'

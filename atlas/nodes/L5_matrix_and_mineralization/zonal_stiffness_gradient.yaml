@@ -1,0 +1,285 @@
+id: zonal_stiffness_gradient
+name: Zonal mechanical properties of the growth plate
+aliases:
+- growth plate zonal modulus
+- physeal stiffness gradient
+type: tissue_structure
+layer: L5
+stub: false
+summary: 'There is no single number for growth plate stiffness, and the published values span three orders of magnitude
+  because the methods measure different things at different length scales on differently prepared tissue. Tissue-scale
+  hydrated measurements give hundreds of kilopascals to low megapascals: microindentation of 9-week rabbit proximal
+  tibial physis gives a Hertz reduced modulus of 380-690 kPa; AFM microindentation of rabbit cranial base growth plate
+  gives 0.57 +/- 0.05 MPa in the reserve zone rising to 1.41 +/- 0.19 MPa in the mineralizing zone. Nanoscale sharp-tip
+  AFM on human growth plate cryosections gives 130.7 +/- 36.6 MPa in the resting zone and 416.2 +/- 107.2 MPa in the
+  hypertrophic zone - two to three orders of magnitude higher, because a 9 nm tip loaded to 6 uN probes the local
+  mineralised/fibrillar matrix rather than the poroelastic tissue, and because the interstitial fluid cannot redistribute
+  at that scale. Worse, the DIRECTION of the gradient is not agreed. Porcine unconfined compression makes the reserve
+  zone the stiffest zone, with proliferative and hypertrophic zones half as stiff axially. Rabbit microindentation
+  puts the peak in the upper hypertrophic zone. Rabbit cranial base AFM has modulus increasing monotonically from
+  reserve to mineralizing zone. Species, site, age, hydration, loading rate and constitutive model all differ between
+  these, and none of them is a human weight-bearing physis measured hydrated at tissue scale. The growth plate is
+  also mechanically anisotropic - longitudinal indentation of the rabbit reserve zone gives 0.77 +/- 0.12 MPa versus
+  0.57 MPa transversely - and permeability differs threefold between zones, so a scalar modulus is an incomplete description
+  in any case. LINKED 2026-08-06 to gap g_l1arch_018: this node is the enzymatic determinant in a five-step chain
+  that would make tissue mechanical ANISOTROPY the converter from isotropic chondrocyte enlargement into axial bone
+  length. The chain is (i) the plate is ~10x more compliant along the growth axis than transversely at birth (cohen1998,
+  wosu2012); (ii) that ratio collapses to ~1 as growth slows (wosu2012); (iii) chondrocyte enlargement is near-isotropic,
+  per-cell allometric slopes 0.345/0.373/0.351 against an isometric 1/3 over 29,162 cells (re-analysis of rubin2021
+  by this atlas, grade D); (iv) the axis pointing along the bone is the cell''s SHORT one, and it thickens fastest
+  with volume; (v) in classical homocystinuria, interference with collagen and fibrillin cross-linking accompanies
+  TALL STATURE in humans. The missing link is between (v) and (i) - nobody has measured cross-link density and mechanical
+  anisotropy in the same growth plate in any species, which is why this node is graded E.'
+quantitative:
+- parameter: Hertz reduced modulus, growth plate, microindentation
+  value: 380-690
+  unit: kPa
+  conditions: 9-week New Zealand White rabbit proximal tibia, n=15, hydrated, peak in upper hypertrophic zone
+  species: rabbit
+  source_ref: eckstein2022
+  uncertainty: range of zonal means; neighbouring zones differ at p<0.05
+- parameter: Elastic modulus, reserve zone, transverse AFM microindentation
+  value: '0.57'
+  unit: MPa
+  conditions: rabbit cranial base growth plate, en bloc, 50 um increments
+  species: rabbit
+  source_ref: radhakrishnan2004
+  uncertainty: SD 0.05
+- parameter: Elastic modulus, mineralizing zone, transverse AFM microindentation
+  value: '1.41'
+  unit: MPa
+  conditions: same specimens and method
+  species: rabbit
+  source_ref: radhakrishnan2004
+  uncertainty: SD 0.19
+- parameter: Elastic modulus, reserve zone, longitudinal AFM indentation (anisotropy)
+  value: '0.77'
+  unit: MPa
+  conditions: indentation along the long axis, same specimens
+  species: rabbit
+  source_ref: radhakrishnan2004
+  uncertainty: SD 0.12; significantly different from transverse
+- parameter: Elastic modulus, resting zone, sharp-tip AFM on human growth plate
+  value: '130.70'
+  unit: MPa
+  conditions: 150 um hydrated cryosections in PBS, 9 nm tip radius, 26 N/m cantilever, 6 uN peak force, Hertz conical
+    fit; phalangeal (0-5 y) and tibial (6-14 y) growth plates, 10 donors, n=3 per interface
+  species: human
+  source_ref: xie2025
+  uncertainty: SD 36.56
+- parameter: Elastic modulus, hypertrophic zone, sharp-tip AFM on human growth plate
+  value: '416.20'
+  unit: MPa
+  conditions: same method and donors
+  species: human
+  source_ref: xie2025
+  uncertainty: SD 107.18
+- parameter: Axial stiffness of proliferative and hypertrophic zones relative to reserve zone
+  value: '0.5'
+  unit: fold (PZ,HZ relative to RZ)
+  conditions: newborn porcine distal ulna, unconfined compression stress relaxation, transversely isotropic biphasic
+    model
+  species: porcine
+  source_ref: sergerie2009
+  uncertainty: absolute moduli not available from the abstract
+- parameter: Transverse stiffness of proliferative and hypertrophic zones relative to reserve zone
+  value: '0.33'
+  unit: fold (about three times less stiff)
+  conditions: same study
+  species: porcine
+  source_ref: sergerie2009
+  uncertainty: as reported
+- parameter: Radial permeability of proliferative and hypertrophic zones relative to reserve zone
+  value: '3'
+  unit: fold higher
+  conditions: same study
+  species: porcine
+  source_ref: sergerie2009
+  uncertainty: as reported
+- parameter: THE ABSOLUTE HUMAN PHYSEAL TENSILE NUMBERS — FULL TEXT NOW READ
+  value: ultimate stress 0.98 +/- 0.29 MPa; tangent modulus 4.16 +/- 1.22 MPa; ultimate strain 31 +/- 7 per cent;
+    growth plate thickness 1.35 +/- 0.33 mm
+  unit: MPa, per cent, mm
+  conditions: human capital femoral physis, 8 specimens that failed through cartilage out of 40 prepared, from TWO
+    cerebral palsy patients with spastic quadriplegia aged 8 and 14 (one specimen from the 8-year-old, seven from the
+    14-year-old); tension at 0.003 per second, tested identically to the bovine specimens
+  species: human
+  source_ref: williams2001
+  uncertainty: 'THE ONLY ABSOLUTE HUMAN PHYSEAL TENSILE VALUES THIS ATLAS HOLDS, and they were sitting in a PDF on
+    disk while the atlas recorded "absolute values not in abstract" (CORR-035 class). Against bovine proximal tibia
+    the human plate is about twice as thick, about half as strong and about half as stiff, with the SAME ultimate
+    strain. THE SAMPLE IS AS BAD AS IT LOOKS: two patients, both with cerebral palsy and chronic painful hip
+    dislocation, so in vivo loading history is abnormal and the authors say so; 32 of 40 specimens failed in bone
+    rather than cartilage because the epiphyseal bone was riddled with cysts, so the eight analysed are a survivor
+    subset; and the capital femoral physis is not a long-bone metaphyseal plate. The authors note the mean ultimate
+    tensile stress is close to a published estimate of the ultimate SHEAR stress of the same physis without
+    perichondrium, 0.8 MPa at age six to 1 MPa at age twelve.'
+- parameter: AND THE HUMAN RESTING ZONE IS TWO TO THREE TIMES THE PROPORTION OF THE PLATE THAT BOVINE IS
+  value: the reserve zone occupied 60-80 per cent of growth plate thickness in the human capital femoral physis,
+    against about 30 per cent in both the 5-month and 12-18-month bovine proximal tibial growth plate
+  unit: per cent of growth plate thickness
+  conditions: light microscopy and scanning electron microscopy of the same specimens used for tensile testing
+  species: human
+  source_ref: williams2001
+  uncertainty: 'RECORDED HERE BECAUSE IT IS A HUMAN RESTING-ZONE MEASUREMENT AND THIS ATLAS HAS ALMOST NONE, not
+    because it is a mechanical result. If the human resting zone really is 60-80 per cent of the plate against 30 per
+    cent in cattle, then the compartment this entire project treats as the limiting resource is proportionally far
+    larger in humans than in the animal models the depletion literature is built on, and cross-species transfer of
+    resting zone counts is worse than assumed. THE CAVEATS ARE SEVERE ENOUGH THAT THIS SHOULD NOT BE TREATED AS A
+    HUMAN NORM: two cerebral palsy patients aged 8 and 14, the capital femoral physis specifically - a site whose
+    architecture is atypical and which is prone to slipped epiphysis - abnormal loading, and a range rather than a
+    mean with no per-specimen values. It is a flag for a question, not an established proportion.'
+- parameter: Regional variation in bovine physeal tensile strength
+  value: 'lateral against CENTRE: up to 40 per cent stronger (P = 0.02) and tangent modulus 34 per cent greater
+    (P < 0.001). Lateral against MEDIAL: 30 per cent stronger but P = 0.08, NOT significant, and tangent modulus 25
+    per cent greater (P = 0.05). No difference between centre and medial in strength (P = 0.8) or modulus (P = 0.2).
+    Ultimate stress by region and rate 1.64-3.46 MPa; tangent modulus 9.53-15.78 MPa'
+  unit: per cent difference and MPa
+  conditions: 12-18-month heifer proximal tibia, 70 specimens, three strain rates 0.0007, 0.007 and 0.07 per second
+  species: bovine
+  source_ref: williams2001
+  uncertainty: 'CORRECTED ON READING THE FULL TEXT. This row previously read "+33 per cent, lateral vs medial" with
+    no P value, taken from the abstract. The abstract does say 33 per cent; the RESULTS say 30 per cent for that
+    comparison AT P = 0.08, which is not significant. The comparison that IS significant is lateral against CENTRE
+    at 40 per cent, P = 0.02. So the atlas was carrying a non-significant contrast as the headline regional effect,
+    and the abstract and results disagree on its magnitude. Ultimate strain did not differ by region (P = 0.51) or
+    strain rate; strength and modulus both rose with strain rate.'
+- parameter: THICKER GROWTH PLATES ARE WEAKER, AND IT IS A REGRESSION NOT AN IMPRESSION
+  value: ultimate stress (MPa) = 3.2 - 2.8 x growth plate thickness (mm), R-squared 0.55, P < 0.0001
+  unit: MPa per mm
+  conditions: all 40 specimens of the bovine age-comparison study pooled across the 5-month and 12-18-month groups,
+    pooled because the regression slopes for each age group were the same
+  species: bovine
+  source_ref: williams2001
+  uncertainty: 'A QUANTITATIVE STRUCTURE-PROPERTY RELATION THE ATLAS DID NOT HOLD, and it runs opposite to intuition -
+    a thicker plate is a WEAKER one, not a more substantial one. It is the mechanical counterpart of the age result
+    in the next row, where the older plate is simultaneously thinner and stronger. Limits: bovine proximal tibia only,
+    thickness spans a narrow range, R-squared 0.55 leaves nearly half the variance unexplained, and the relation is
+    extrapolated to zero strength at 1.14 mm which is within the range of human plate thickness measured in this same
+    paper (1.35 mm) - so the linear form cannot be correct across species.'
+- parameter: tangent modulus by zone, tension along the growth axis
+  value: resting 27.0; proliferating 14.9; hypertrophic 15.1; whole plate 17.7
+  unit: MPa
+  conditions: rabbit distal radius and ulna, 20 animals aged 8 weeks, epiphysis-growth plate-metaphysis complex loaded
+    to failure with four dye markers tracked by video dimension analyser so strain could be resolved per zone
+  species: rabbit
+  source_ref: fujii2000
+  uncertainty: mean +/- SE. The RESTING zone is roughly 80% stiffer than the two zones below it, and it fails at less
+    than half the strain (0.043 against 0.081 and 0.096) with under half the energy absorption (32.9 against 66.2
+    and 88.5 kJ/m3). So the compliant, extensible part of the plate is the proliferative-plus-hypertrophic region
+    - the part that has to accommodate cell expansion.
+- parameter: collagen fibre orientation by zone
+  value: proliferative and hypertrophic fibres aligned parallel to the long axis; resting random
+  unit: ellipse long/short axis ratio, direction relative to the bone axis
+  conditions: same rabbit specimens; fibre architecture scored microscopically per zone
+  species: rabbit
+  source_ref: fujii2000
+  uncertainty: 'p<0.01 for longitudinal alignment in proliferative and hypertrophic zones; the mean direction did
+    not differ significantly between zones but the CONCENTRATION of directions did. AWKWARD FOR ANY SIMPLE FIBRE-ALIGNMENT
+    ACCOUNT OF STIFFNESS: the resting zone is the least aligned and the STIFFEST in axial tension, which is the opposite
+    of what aligned load-bearing fibres would predict. Whatever sets the zonal modulus here, it is not fibre alignment
+    alone.'
+- parameter: total collagen by zone
+  value: radius 250.6, 294.5, 399.6, 332.7, 207.2; ulna 234.2, 273.8, 345.6, 267.5, 207.2
+  unit: ug hydroxyproline per mg dry tissue, zones I-V epiphyseal to metaphyseal
+  conditions: rabbit distal radius and ulna, same animals as the mechanical testing
+  species: rabbit
+  source_ref: fujii2000
+  uncertainty: Collagen peaks in the middle of the plate (zone III) and falls by roughly half at the metaphyseal end
+    in both bones. Note the collagen peak does not coincide with the stiffness peak, which is at the epiphyseal end.
+- parameter: ultimate tensile stress, radius versus ulna in the same animals
+  value: 1.05 vs 1.03
+  unit: MPa
+  conditions: rabbit distal radial and ulnar growth plates, 20 animals, both plates from each animal; cross-sectional
+    areas 29.7 and 27.9 mm2
+  species: rabbit
+  source_ref: fujii2000
+  uncertainty: 'NOT SIGNIFICANTLY DIFFERENT, p>0.1. THIS IS A NULL RESULT AGAINST g_l1arch_018 AND IS THE CLOSEST
+    EXISTING TEST OF ITS BETWEEN-PLATE PREDICTION: two plates of different growth rate, same animals, same age - and
+    no difference in axial tensile strength. It is not a direct refutation, because the quantity predicted to differ
+    is the transverse-to-axial modulus RATIO and what was compared here is axial ultimate stress alone, with the modulus
+    pooled across both bones. But nothing in this dataset supports the prediction either.'
+- parameter: change in physeal tensile properties with age
+  value: 25% thinner, 34% stronger, 65% greater failure strain in the older animals
+  unit: '% change, 5-month calves to 12-18-month heifers'
+  conditions: bovine proximal tibia, 21 specimens from 12-18-month and 19 from 5-month animals, four matched anatomic
+    sites, tension at 0.004 mm/s
+  species: bovine
+  source_ref: williams2001
+  uncertainty: The plate gets axially STRONGER as the animal ages and growth slows. Consistent in direction with wosu2012,
+    where the transverse-to-axial modulus ratio collapses over development, but NOT the same measurement - wosu2012
+    measured transverse tension and out-of-plane compression, this is axial tension - and the two should not be pooled.
+- parameter: human physeal tensile strength against bovine
+  value: about twice as thick and about half as strong, with similar ultimate strain
+  unit: relative to bovine proximal tibia
+  conditions: 8 samples from the femoral capital growth plate of two cerebral palsy patients, tested identically to
+    the bovine specimens
+  species: human
+  source_ref: williams2001
+  uncertainty: A RARE HUMAN PHYSEAL MECHANICAL MEASUREMENT and the only one this atlas holds. Two patients, both with
+    cerebral palsy, so the specimens come from limbs with abnormal loading history and probably abnormal growth; capital
+    femoral physis, not a long-bone metaphyseal plate. Directional only - no absolute value is quoted here because
+    the sample cannot support one.
+localization:
+- 'rabbit proximal tibia: modulus peak in upper hypertrophic zone (eckstein2022)'
+- 'rabbit cranial base: modulus increases monotonically RZ -> mineralizing zone (radhakrishnan2004)'
+- 'porcine distal ulna: reserve zone stiffest (sergerie2009)'
+- 'human phalangeal and tibial growth plate: RZ softer than HZ at nanoscale (xie2025)'
+human_evidence: direct
+human_evidence_note: One study measures modulus directly in human growth plate tissue, but at nanoscale with a sharp
+  tip; no hydrated tissue-scale modulus of a human weight-bearing physis exists.
+species_basis:
+- rabbit
+- porcine
+- bovine
+- human
+translation_risk: high
+translation_risk_reason: The only human numbers were obtained by a method whose values are 200-1000 fold above every
+  animal tissue-scale measurement, so human and animal data cannot currently be reconciled or pooled.
+confidence: D
+key_refs:
+- ref_id: eckstein2022
+  pmid: '35203020'
+  first_author: Eckstein KN
+  year: 2022
+  type: primary
+  one_line_finding: 'Microindentation of 9-week rabbit proximal tibial growth plate: Hertz reduced modulus 380-690
+    kPa with a PEAK in the upper hypertrophic zone'
+- ref_id: radhakrishnan2004
+  pmid: '15008376'
+  first_author: Radhakrishnan P
+  year: 2004
+  type: primary
+  one_line_finding: 'AFM microindentation of rabbit cranial base growth plate: modulus rises 0.57 -> 1.41 MPa from
+    reserve to mineralizing zone'
+- ref_id: sergerie2009
+  pmid: '19185303'
+  first_author: Sergerie K
+  year: 2009
+  type: primary_abstract_only
+  one_line_finding: 'Newborn porcine ulnar growth plate: reserve zone is the STIFFEST zone, proliferative and hypertrophic
+    zones half as stiff axially and a third as stiff transversely'
+- ref_id: xie2025
+  pmid: '40781081'
+  first_author: Xie C
+  year: 2025
+  type: primary
+  one_line_finding: 'Human growth plate AFM (sharp tip, 26 N/m cantilever, 6 uN, hydrated cryosections): RZ 130.7
+    +/- 36.6 MPa, HZ 416.2 +/- 107.2 MPa'
+- ref_id: williams2001
+  pmid: '11781003'
+  first_author: Williams JL
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Bovine physeal tensile strength varies 33% by anatomic site and with strain rate; two human capital
+    femoral physis specimens were twice as thick and about half as strong as bovine
+open_questions:
+- g_l1arch_018
+- g_l5matrix_001
+- g_l5matrix_008
+contradicts:
+- sergerie2009
+- eckstein2022
+- radhakrishnan2004
+- xie2025
+last_verified: '2026-08-06'

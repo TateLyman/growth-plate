@@ -1,0 +1,125 @@
+id: chondrocyte_proliferation_rate
+name: Chondrocyte proliferation rate
+aliases:
+- chondrocyte production rate
+- cell production per column
+type: process
+layer: L1
+stub: false
+summary: 'Chondrocyte production rate is the number of new cells a plate generates per unit time, and in steady state
+  it equals the number removed at the chondro-osseous junction. It is measured in vivo by pulse or repeated pulse
+  labelling with bromodeoxyuridine combined with unbiased stereology. In 28-day-old rats the whole-plate output differs
+  4.4-fold between plates of the same animal: about 16,400 new chondrocytes per day in the proximal tibia against
+  about 3,700 in the proximal radius. Per column the rat proximal tibia produces and loses 8 cells per day. Crucially,
+  production rate is not the main lever on elongation: in the same rat proximal tibia cell division accounts for only
+  9% of elongation directly, and Hunziker and Schenk found that the physiological acceleration of growth between 21
+  and 35 days is achieved without any increase in longitudinal proliferation rate at all. Proliferation does become
+  limiting in the other direction: growth deceleration toward maturity involves simultaneous falls in cell height,
+  cell volume and proliferation rate. Human production rates have never been measured; the only human proliferation
+  datum is an in vitro labelling index that failed to label any cells in half the specimens.'
+quantitative:
+- parameter: new chondrocytes produced per day, whole plate
+  value: '16400'
+  unit: cells/day
+  conditions: proximal tibia, 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: not reported
+- parameter: new chondrocytes produced per day, whole plate
+  value: '3700'
+  unit: cells/day
+  conditions: proximal radius, 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: not reported
+- parameter: chondrocytes produced and lost per column per day
+  value: '8'
+  unit: cells/day
+  conditions: rat proximal tibia, steady state
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: one every 3 h
+- parameter: change in longitudinal proliferation rate during physiological growth acceleration
+  value: unchanged
+  unit: qualitative
+  conditions: rat proximal tibia, 21 to 35 days
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: explicitly reported as unchanged while cell height increased
+- parameter: chondrocytes produced per column per day (derived, not measured)
+  value: '1.9'
+  unit: cells/day
+  conditions: human distal femur, 10-year-old girl; 38 um/day mean growth contribution divided by the measured 20.5
+    um terminal hypertrophic cell height
+  species: human
+  source_ref: thurston1985
+  uncertainty: derived from the growth rate, so it cannot be used to predict the growth rate; the 38 um/day is the
+    midpoint of a 1.1-1.7 cm/yr radiographic range for 10-year-old girls, not a measurement on this subject; n=1
+- parameter: direct contribution of proliferation to elongation
+  value: '9'
+  unit: '% of elongation'
+  conditions: proximal tibia, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: THIS IS A CALCULATED
+    PARTITION, NOT A MEASUREMENT, and the paper states its assumptions plainly - ''the calculation of the relative
+    contributions to elongation ... requires making two assumptions. First, we continue to assume steady-state kinetics
+    over a short time span (24 hours). Second, we assume that the growth plate is modeled as a two-compartment system
+    (cells and matrix).'' The proliferative zones are further ''modeled as circular cylinders of diameter 1''. THE
+    THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they are one volume budget divided three ways and sum to 100% by construction,
+    and matrix volume per cell is obtained as the COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N,
+    rather than measured. Any error in the cell volume or numerical density moves all three shares together. Nothing
+    downstream may treat them as three independent measurements or propagate independent uncertainties on them.'
+localization:
+- 'rat: measured in vivo (wilsman1996, farnum1993)'
+- 'human: not measured (thurston1985 in vitro only)'
+human_evidence: absent
+human_evidence_note: No in vivo human proliferation rate exists; the single human attempt used in vitro tritiated
+  thymidine and produced no labelled cells in two of four subjects (thurston1985).
+species_basis:
+- rat
+- porcine
+- human
+translation_risk: high
+translation_risk_reason: All rate data are rodent and obtained with labelling methods that cannot be applied to healthy
+  children.
+confidence: C
+key_refs:
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Daily chondrocyte production of 16,400 (proximal tibia) versus 3,700 (proximal radius) in one
+    28-day-old rat, matching the loss rate at the junction.
+- ref_id: hunziker1989
+  pmid: '2607442'
+  first_author: Hunziker EB
+  year: 1989
+  type: primary
+  one_line_finding: Growth acceleration occurs without any increase in longitudinal proliferation rate.
+- ref_id: farnum1993
+  pmid: '8443686'
+  first_author: Farnum CE
+  year: 1993
+  type: primary
+  one_line_finding: Established BrdU pulse and repeated-pulse labelling for growth plate proliferative kinetics.
+- ref_id: farnum2003
+  pmid: '12508079'
+  first_author: Farnum CE
+  year: 2003
+  type: primary
+  one_line_finding: Catch-up growth after fasting in rats is achieved by increases in chondrocyte production and hypertrophic
+    volume.
+- ref_id: thurston1985
+  pmid: '3864550'
+  first_author: Thurston MN
+  year: 1985
+  type: primary
+  one_line_finding: A measured 20.5 um human terminal hypertrophic cell height turns the 38 um/day distal-femoral
+    growth contribution into 1.9 cells/day per column - the only human column production figure, and still a derived
+    one.
+open_questions:
+- g_l1arch_012
+- g_l1arch_001
+last_verified: '2026-08-05'

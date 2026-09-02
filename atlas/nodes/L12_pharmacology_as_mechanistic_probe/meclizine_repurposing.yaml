@@ -1,0 +1,116 @@
+id: meclizine_repurposing
+name: Meclizine repurposing for achondroplasia
+aliases: [meclozine, meclizine hydrochloride, Bonine]
+type: intervention
+layer: L12
+stub: false
+summary: |
+  Meclizine is an over-the-counter H1 antihistamine for motion sickness, identified by
+  drug repositioning screening as an inhibitor of FGFR3 signalling. It has the best
+  human pharmacokinetic characterisation of any repurposed achondroplasia candidate and
+  the weakest efficacy signal. A 14-day repeat-dose phase 1b in 12 children with
+  achondroplasia aged 5-10 y gave, at 12.5 mg/day, Cmax 167 ng/mL (95% CI 83-250),
+  Tmax 3.7 h, AUC0-24 1170 ng*h/mL and terminal half-life 7.4 h, with no serious adverse
+  events. The 26-week open-label single-arm phase 2 in nine children, meclizine 12.5-25
+  mg/day co-administered with growth hormone, moved height velocity from 4.35 +/- 1.36 to
+  4.46 +/- 1.54 cm/yr - a change of about 0.1 cm/yr with only one of nine children
+  reaching the 6 cm/yr threshold. Arm span velocity was 6.93 +/- 2.50 cm/yr with six of
+  nine exceeding 6 cm/yr, a dissociation between segment measurements that the small
+  single-arm design cannot interpret. The mouse data are far stronger: 2 mg/kg/day
+  meclozine five days a week from postnatal day 7 to 56 reduced death or paralysis and
+  increased body, cranial and long-bone length in Fgfr3-ach mice of both sexes. This is
+  a clean example of an agent with adequate systemic exposure and no toxicity that still
+  produces no measurable linear growth effect in humans.
+quantitative:
+  - parameter: change in height velocity over 26 weeks, meclizine plus GH
+    value: '+0.11'
+    unit: cm/yr
+    conditions: >-
+      open-label single-arm phase 2, four sites in Japan, n=9 children with achondroplasia
+      aged 5-10 y, meclizine 12.5 mg/day (<20 kg) or 25 mg/day (>=20 kg) with concomitant GH;
+      pre-treatment 4.35 +/- 1.36 cm/yr, post-treatment 4.46 +/- 1.54 cm/yr
+    species: human
+    source_ref: matsushita2025
+    uncertainty: SDs given; no control arm, no CI on the difference; n=9
+  - parameter: arm span velocity during treatment
+    value: '6.93'
+    unit: cm/yr
+    conditions: same cohort; 6 of 9 children exceeded 6 cm/yr for arm span versus 1 of 9 for height
+    species: human
+    source_ref: matsushita2025
+    uncertainty: SD 2.50, n=9
+  - parameter: Cmax after 14-day repeated dosing, meclizine 12.5 mg/day
+    value: '167'
+    unit: ng/mL
+    conditions: children with achondroplasia aged 5-10 y, dosed after meals, n=12 across two cohorts
+    species: human
+    source_ref: matsushita2023
+    uncertainty: 95% CI 83-250
+  - parameter: terminal elimination half-life, meclizine 12.5 mg/day
+    value: '7.4'
+    unit: hours
+    conditions: same phase 1b cohort after 14 days of repeated dosing
+    species: human
+    source_ref: matsushita2023
+    uncertainty: 95% CI 6.7-8.0
+  - parameter: AUC0-24 after 14-day repeated dosing, meclizine 12.5 mg/day
+    value: '1170'
+    unit: ng*h/mL
+    conditions: same phase 1b cohort
+    species: human
+    source_ref: matsushita2023
+    uncertainty: 95% CI 765-1570
+  - parameter: effective dose in the achondroplasia mouse model
+    value: '2'
+    unit: mg/kg/day
+    conditions: oral, 5 days per week from postnatal day 7 to 56, Fgfr3-ach mice, both sexes
+    species: mouse
+    source_ref: funahashi2024
+    uncertainty: single dose level
+localization:
+  - "human growth plate: no measurement of meclizine concentration in cartilage"
+human_evidence: direct
+human_evidence_note: >-
+  A dedicated paediatric phase 1b pharmacokinetic study and a 26-week open-label phase 2
+  in children with genetically confirmed achondroplasia.
+species_basis: [human, mouse]
+translation_risk: high
+translation_risk_reason: >-
+  Mouse efficacy was substantial (survival, spinal canal and long-bone length) while the
+  human height-velocity change was about 0.1 cm/yr in nine children on concomitant growth
+  hormone. Plasma exposure was adequate and tolerability good, so the failure is not a
+  dosing failure; either the murine effect does not exist in the human plate or the drug
+  does not reach it.
+confidence: B
+claim_grades:
+  - claim: Meclizine at 12.5-25 mg/day achieves measurable systemic exposure in children with achondroplasia without serious adverse events.
+    grade: A
+    basis: Dedicated paediatric phase 1b with full PK parameters and 95% CIs, n=12.
+  - claim: Meclizine increases linear growth velocity in children with achondroplasia.
+    grade: D
+    basis: Single-arm, uncontrolled, n=9, with concomitant growth hormone; observed change ~0.1 cm/yr. Does not support the claim.
+  - claim: Meclizine inhibits FGFR3 signalling in growth plate chondrocytes.
+    grade: C
+    basis: Mouse growth plate and survival data replicated across sexes; no human tissue evidence.
+key_refs:
+  - ref_id: matsushita2025
+    pmid: '41326861'
+    first_author: Matsushita M
+    year: 2025
+    type: primary
+    one_line_finding: '26-week phase 2 (n=9): height velocity 4.35 to 4.46 cm/yr, arm span velocity 6.93 cm/yr.'
+  - ref_id: matsushita2023
+    pmid: '37428729'
+    first_author: Matsushita M
+    year: 2023
+    type: primary
+    one_line_finding: 'Phase 1b PK in 12 children: Cmax 167 ng/mL, t1/2 7.4 h, AUC0-24 1170 ng*h/mL at 12.5 mg/day.'
+  - ref_id: funahashi2024
+    pmid: '38544920'
+    first_author: Funahashi H
+    year: 2024
+    type: primary
+    one_line_finding: Meclozine 2 mg/kg/d reduced death or paralysis and increased body, cranial and long-bone length in Fgfr3-ach mice.
+open_questions: [g_l12b_007, g_l12b_002]
+contradicts: [funahashi2024]
+last_verified: '2026-08-05'

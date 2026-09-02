@@ -1,0 +1,88 @@
+id: cyp19a1_gene
+name: CYP19A1
+aliases:
+- aromatase gene
+- CYP19
+type: gene
+layer: L8
+stub: false
+summary: |-
+  CYP19A1 encodes aromatase, the single enzyme converting androgens to estrogens, and its human
+  loss-of-function phenotype is the ligand-side control for the ESR1 receptor-side experiment.
+  Morishima 1995 reported a novel CYP19 mutation in an XX proband and her brother: the 28-year-old
+  sister had non-adrenal female pseudohermaphroditism at birth, progressive virilisation at the age
+  of puberty, pubertal failure with no signs of estrogen action, hypergonadotropic hypogonadism,
+  polycystic ovaries and tall stature, with elevated plasma testosterone, androstenedione and
+  17-hydroxyprogesterone and low estradiol. Carani 1997 then performed the intervention that closes
+  the loop, treating an aromatase-deficient man with testosterone and then estradiol and showing that
+  only estradiol produced the skeletal response. Rochira 2010 characterised four aromatase-deficient
+  men and found a paradox that constrains any simple model: their GH response to GHRH plus arginine
+  was severely impaired compared with 12 normal subjects and basal IGF-1 was low, yet they were tall.
+  Tall stature in aromatase deficiency therefore occurs despite, not because of, growth hormone -
+  the plate stays open long enough that a subnormal growth rate accumulates more total height than a
+  normal rate applied for a normal number of years. Aromatase deficiency and ESR1 disruption together
+  form the ligand/receptor pair that makes the estrogen-fusion claim in this atlas an A-grade human
+  result rather than an extrapolation.
+quantitative:
+- parameter: GH response to GHRH plus arginine, aromatase-deficient men
+  value: severely impaired
+  unit: qualitative
+  conditions: n=4 aromatase-deficient men versus 12 normal subjects
+  species: human
+  source_ref: rochira2010
+  uncertainty: P < 0.001; peak values not restated in abstract
+- parameter: stature phenotype of untreated aromatase deficiency
+  value: tall
+  unit: qualitative
+  conditions: XX proband followed from infancy plus XY sibling; four further adult men
+  species: human
+  source_ref: morishima1995
+  uncertainty: no cohort mean height reported
+localization:
+- 'human: germline; aromatase expressed in ovary, testis, placenta, brain and adipose tissue under
+  alternative tissue-specific promoters'
+human_evidence: direct
+human_evidence_note: Human enzyme-deficient patients of both sexes, with an intervention arm (testosterone
+  versus estradiol) in an affected man.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human enzyme deficiency with human hormone-replacement intervention.
+confidence: A
+claim_grades:
+- claim: Loss of aromatase activity prevents epiphyseal fusion and produces tall stature in humans
+    of both sexes.
+  grade: A
+  basis: Sibling pair with the enzyme defect (morishima1995), an intervention showing estradiol
+    but not testosterone restores the skeletal response (carani1997), and four further adult men
+    (rochira2010).
+- claim: Tall stature in aromatase deficiency occurs despite an impaired GH-IGF-1 axis.
+  grade: B
+  basis: Case-control GH stimulation testing in 4 patients versus 12 controls (rochira2010); single
+    study, small n.
+key_refs:
+- ref_id: morishima1995
+  pmid: '8530621'
+  doi: 10.1210/jcem.80.12.8530621
+  first_author: Morishima A
+  year: 1995
+  type: primary
+  one_line_finding: A novel CYP19 mutation in XX and XY siblings gives absent estrogen action,
+    hypergonadotropic hypogonadism and tall stature.
+- ref_id: carani1997
+  pmid: '9211678'
+  doi: 10.1056/nejm199707103370204
+  first_author: Carani C
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: In an aromatase-deficient man, estradiol but not testosterone produced the
+    skeletal response.
+- ref_id: rochira2010
+  pmid: '20164294'
+  doi: 10.1210/jc.2009-1743
+  first_author: Rochira V
+  year: 2010
+  type: primary
+  one_line_finding: Four aromatase-deficient men had severely impaired GH response to GHRH-arginine
+    and low IGF-1 yet were tall.
+last_verified: '2026-08-05'

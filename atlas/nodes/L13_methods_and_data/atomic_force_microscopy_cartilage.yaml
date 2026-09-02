@@ -1,0 +1,77 @@
+id: atomic_force_microscopy_cartilage
+name: Atomic force microscopy of cartilage and physis
+aliases:
+- AFM nanoindentation cartilage
+type: method
+summary: |
+  AFM nanoindentation measures elastic modulus at spatial scales below the cell, resolving the
+  pericellular matrix separately from the interterritorial matrix - a distinction no bulk
+  mechanical test can make. Spatial mapping in porcine articular cartilage showed the
+  pericellular matrix is measurably softer than the surrounding territorial matrix when probed
+  in situ (darling2010), and zone-specific micromechanical mapping of rabbit growth plate
+  matrix demonstrated that stiffness varies by zone (radhakrishnan2004). Against the
+  dimensions that matter, AFM operates at 10 nm to 1 um contact radii, three orders of
+  magnitude finer than a chondrocyte, so its limitation is not resolution but sampling: each
+  indentation samples a micrometre-scale patch, and building a zonal map of a 1 mm plate
+  requires thousands of points on a cryosectioned or freshly cut surface, which introduces
+  cutting artefact and depth-of-tissue dehydration. In human physis the method has essentially
+  not been used; the nearest human measurement is nanoindentation across the growth-
+  plate/epiphysis and growth-plate/metaphysis interfaces in ten paediatric donors, which found
+  a sharp modulus transition at the epiphyseal interface and a gradual rise at the metaphyseal
+  one (xie2025). That single study is the human anchor for gap g_l5matrix_001, and it measured
+  interfaces rather than a full zonal profile.
+quantitative:
+- parameter: human growth plate interface modulus behaviour
+  value: sharp step at GP-epiphysis interface; gradual gradient at GP-metaphysis interface
+  unit: qualitative modulus profile
+  conditions: 10 paediatric donors, nanoindentation on hydrated sections
+  species: human
+  source_ref: xie2025
+  uncertainty: absolute moduli not extracted here; see access_queue
+- parameter: AFM contact-radius scale relative to chondrocyte diameter
+  value: 0.01-1 vs 10-20
+  unit: um
+  conditions: indenter contact radius versus target cell diameter
+  species: not_applicable
+  source_ref: darling2010
+  uncertainty: order-of-magnitude comparison
+localization:
+- 'porcine PERI: pericellular matrix resolved as mechanically distinct'
+- 'rabbit RZ/PZ/HZ: zonal modulus differences demonstrated'
+human_evidence: indirect
+human_evidence_note: AFM zonal mapping of growth plate exists in rabbit and pig; the only human physeal
+  micromechanics is interface nanoindentation in ten donors.
+species_basis:
+- porcine
+- rabbit
+- human
+translation_risk: high
+translation_risk_reason: Cartilage modulus depends on hydration, fixed charge density and collagen
+  crosslinking, all of which differ with species and age, and the rabbit plate is an order of magnitude
+  thinner than the human one.
+confidence: C
+key_refs:
+- ref_id: darling2010
+  first_author: Darling EM
+  year: 2010
+  type: primary
+  one_line_finding: Pericellular matrix mapped as mechanically distinct from territorial matrix by
+    in situ AFM.
+- ref_id: radhakrishnan2004
+  first_author: Radhakrishnan P
+  year: 2004
+  type: primary
+  one_line_finding: Zone-specific micromechanical properties of growth plate extracellular matrix.
+- ref_id: xie2025
+  first_author: Xie C
+  year: 2025
+  type: primary
+  one_line_finding: Sharp modulus step at the human growth-plate/epiphysis interface and a gradual
+    rise at the metaphyseal interface, ten paediatric donors.
+open_questions:
+- g_l5matrix_001
+- g_l5matrix_008
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

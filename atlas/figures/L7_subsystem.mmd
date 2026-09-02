@@ -1,0 +1,129 @@
+graph LR
+  estradiol_hormone["17beta-estradiol"]
+  epiphyseal_fusion["Epiphyseal fusion"]
+  estrogen_receptor_alpha["Estrogen receptor alpha (ESR1 / ERalpha)"]
+  aromatase_cyp19a1["Aromatase (CYP19A1)"]
+  aromatase_deficiency_human["Aromatase (CYP19A1) deficiency - stature outcome"]
+  estrogen_driven_fusion["Estrogen-driven fusion"]
+  estrogen_resistance_esr1["ESR1 estrogen resistance - stature outcome"]
+  estradiol_threshold_fusion["Serum estradiol threshold for epiphyseal closure"]
+  estrogen_accelerated_senescence["Estrogen acceleration of growth plate senescence"]
+  growth_plate_senescence["Growth plate senescence"]
+  growth_cessation["Growth cessation"]
+  stem_cell_exhaustion_fusion["Stem cell exhaustion model of fusion"]
+  rz_depletion_causes_fusion["Hypothesis: resting zone stem cell depletion causes epiphyseal fusion"]
+  bidirectional_vascular_invasion["Bidirectional vascular invasion at fusion"]
+  bony_bridge_formation["Bony bridge formation"]
+  vegfa_growth_plate["VEGFA in the growth plate"]
+  apoptosis_at_fusion["Apoptosis at fusion"]
+  hypoxia_necrosis_at_fusion["Hypoxia and necrosis at fusion"]
+  ecm_remodeling_at_fusion["ECM change at fusion"]
+  epigenetic_drift_fusion["Epigenetic drift model of fusion"]
+  chondrocyte_to_osteoblast_transdifferentiation["Chondrocyte-to-osteoblast transdifferentiation"]
+  physeal_scar["Physeal scar"]
+  adult_height_attainment["Adult height attainment"]
+  peak_height_velocity["Peak height velocity"]
+  menarche_growth_remaining["Menarche and remaining growth"]
+  bone_age["Bone age"]
+  greulich_pyle_method["Greulich-Pyle atlas method"]
+  tanner_whitehouse_tw3["Tanner-Whitehouse 3"]
+  rus_score["RUS score"]
+  fels_method["Fels method"]
+  sanders_staging["Sanders skeletal maturity staging"]
+  risser_sign["Risser sign"]
+  automated_bone_age_ai["Automated/AI bone age assessment"]
+  mri_physeal_closure_staging["MRI staging of physeal closure"]
+  bone_age_measurement_error["Bone age measurement error"]
+  remaining_growth_prediction["Remaining growth prediction"]
+  final_adult_height_endpoint["Final adult height as trial endpoint"]
+  mouse_does_not_fuse["Mice do not undergo epiphyseal fusion"]
+  species_transfer_risk_fusion["Species-transfer risk in fusion biology"]
+  rat_growth_cessation_without_fusion["Rat growth cessation without epiphyseal fusion"]
+  comparative_fusion_across_species["Comparative epiphyseal fusion across species"]
+  sex_difference_fusion_timing["Sex difference in fusion timing"]
+  fusion_timing_order["Site-by-site fusion order"]
+  population_variation_fusion["Population variation in fusion timing"]
+  achondroplasia["Achondroplasia"]
+  acromegaly["Acromegaly"]
+  gh_deficiency["Growth hormone deficiency (childhood-onset)"]
+  acan_related_short_stature["ACAN-related short stature with advanced bone age"]
+  central_precocious_puberty["Central precocious puberty"]
+  delayed_puberty_constitutional["Constitutional delay of growth and puberty"]
+  congenital_adrenal_hyperplasia["Congenital adrenal hyperplasia"]
+  aromatase_excess_syndrome["Aromatase excess syndrome"]
+  turner_syndrome["Turner syndrome"]
+  klinefelter_syndrome["Klinefelter syndrome"]
+  multiple_epiphyseal_dysplasia["Multiple epiphyseal dysplasia"]
+  x_linked_hypophosphatemia["X-linked hypophosphatemia"]
+  noonan_syndrome["Noonan syndrome and the RASopathies"]
+  osteogenesis_imperfecta_growth["Osteogenesis imperfecta growth failure"]
+  pseudohypoparathyroidism["Pseudohypoparathyroidism"]
+  sotos_syndrome["Sotos syndrome"]
+  beta_catenin_ctnnb1["beta-catenin (CTNNB1)"]
+  salt_inducible_kinase3["SIK3"]
+  pubertal_growth_spurt["Pubertal growth spurt"]
+  estradiol_hormone -->|"required_for (B)"| epiphyseal_fusion
+  estrogen_receptor_alpha -->|"required_for (B)"| epiphyseal_fusion
+  aromatase_cyp19a1 -->|"required_for (B)"| epiphyseal_fusion
+  aromatase_deficiency_human -->|"correlates_with (B)"| estrogen_driven_fusion
+  estrogen_resistance_esr1 -->|"correlates_with (B)"| estrogen_driven_fusion
+  estradiol_threshold_fusion -->|"precedes (D)"| epiphyseal_fusion
+  estradiol_hormone -->|"activates (C)"| estrogen_accelerated_senescence
+  estrogen_accelerated_senescence -->|"precedes (C)"| epiphyseal_fusion
+  growth_plate_senescence -->|"precedes (C)"| growth_cessation
+  stem_cell_exhaustion_fusion -.->|"hypothesized_link (speculative)"| epiphyseal_fusion
+  rz_depletion_causes_fusion -->|"correlates_with (C)"| stem_cell_exhaustion_fusion
+  bidirectional_vascular_invasion -.->|"hypothesized_link (speculative)"| bony_bridge_formation
+  vegfa_growth_plate -->|"correlates_with (D)"| bidirectional_vascular_invasion
+  apoptosis_at_fusion -.->|"hypothesized_link (speculative)"| epiphyseal_fusion
+  hypoxia_necrosis_at_fusion -.->|"hypothesized_link (speculative)"| epiphyseal_fusion
+  ecm_remodeling_at_fusion -.->|"hypothesized_link (speculative)"| epiphyseal_fusion
+  epigenetic_drift_fusion -.->|"hypothesized_link (speculative)"| growth_plate_senescence
+  chondrocyte_to_osteoblast_transdifferentiation -.->|"hypothesized_link (speculative)"| bony_bridge_formation
+  bony_bridge_formation -->|"precedes (B)"| epiphyseal_fusion
+  epiphyseal_fusion -->|"precedes (B)"| physeal_scar
+  epiphyseal_fusion -->|"precedes (A)"| growth_cessation
+  growth_cessation -->|"precedes (A)"| adult_height_attainment
+  peak_height_velocity -->|"precedes (A)"| epiphyseal_fusion
+  menarche_growth_remaining -->|"correlates_with (A)"| adult_height_attainment
+  estradiol_hormone -->|"activates (B)"| bone_age
+  bone_age -->|"correlates_with (C)"| epiphyseal_fusion
+  greulich_pyle_method -->|"correlates_with (A)"| bone_age
+  tanner_whitehouse_tw3 -->|"correlates_with (A)"| bone_age
+  rus_score -->|"correlates_with (A)"| bone_age
+  fels_method -->|"correlates_with (D)"| bone_age
+  sanders_staging -->|"correlates_with (B)"| bone_age
+  risser_sign -->|"correlates_with (C)"| bone_age
+  automated_bone_age_ai -->|"correlates_with (A)"| bone_age
+  mri_physeal_closure_staging -->|"correlates_with (A)"| epiphyseal_fusion
+  bone_age_measurement_error -->|"correlates_with (B)"| remaining_growth_prediction
+  bone_age -->|"required_for (A)"| remaining_growth_prediction
+  remaining_growth_prediction -->|"correlates_with (A)"| final_adult_height_endpoint
+  mouse_does_not_fuse -->|"required_for (A)"| species_transfer_risk_fusion
+  rat_growth_cessation_without_fusion -->|"required_for (B)"| species_transfer_risk_fusion
+  comparative_fusion_across_species -->|"required_for (B)"| species_transfer_risk_fusion
+  sex_difference_fusion_timing -->|"correlates_with (A)"| fusion_timing_order
+  population_variation_fusion -->|"correlates_with (C)"| fusion_timing_order
+  fusion_timing_order -->|"precedes (A)"| adult_height_attainment
+  growth_plate_senescence -->|"precedes (C)"| epiphyseal_fusion
+  achondroplasia -->|"correlates_with (A)"| adult_height_attainment
+  epiphyseal_fusion -->|"precedes (A)"| acromegaly
+  gh_deficiency -->|"correlates_with (A)"| adult_height_attainment
+  acan_related_short_stature -->|"correlates_with (A)"| bone_age
+  acan_related_short_stature -->|"precedes (A)"| growth_cessation
+  estrogen_resistance_esr1 -->|"required_for (B)"| epiphyseal_fusion
+  central_precocious_puberty -->|"correlates_with (A)"| adult_height_attainment
+  delayed_puberty_constitutional -->|"correlates_with (A)"| adult_height_attainment
+  congenital_adrenal_hyperplasia -->|"correlates_with (A)"| bone_age
+  aromatase_excess_syndrome -->|"activates (B)"| epiphyseal_fusion
+  turner_syndrome -->|"correlates_with (A)"| adult_height_attainment
+  klinefelter_syndrome -->|"correlates_with (A)"| adult_height_attainment
+  multiple_epiphyseal_dysplasia -->|"correlates_with (A)"| adult_height_attainment
+  x_linked_hypophosphatemia -->|"correlates_with (B)"| bone_age
+  noonan_syndrome -->|"correlates_with (A)"| adult_height_attainment
+  osteogenesis_imperfecta_growth -->|"correlates_with (C)"| adult_height_attainment
+  pseudohypoparathyroidism -->|"activates (B)"| epiphyseal_fusion
+  sotos_syndrome -->|"correlates_with (C)"| bone_age
+  beta_catenin_ctnnb1 -->|"activates (D)"| epiphyseal_fusion
+  salt_inducible_kinase3 -->|"activates (D)"| epiphyseal_fusion
+  pubertal_growth_spurt -->|"precedes (A)"| peak_height_velocity

@@ -1,0 +1,101 @@
+graph LR
+  human_growth_plate_tissue_scarcity["Scarcity and provenance bias of human growth plate tissue"]
+  human_resting_zone_chondrocyte["Human resting zone chondrocyte"]
+  laser_capture_microdissection_zonal["Laser capture microdissection of growth plate zones"]
+  resting_zone["Resting (reserve) zone"]
+  chondrocyte_dissociation_bias["Dissociation bias in growth plate single-cell RNA-seq"]
+  hypertrophic_chondrocyte["Hypertrophic chondrocyte"]
+  cre_lox_lineage_tracing["Cre-lox lineage tracing in the growth plate"]
+  monoclonal_column_formation["Monoclonal column formation in the growth plate"]
+  mouse_model_translation_risk["Mouse model translation risk"]
+  epiphyseal_fusion["Epiphyseal fusion"]
+  spatial_transcriptomics_growth_plate["Spatial transcriptomics of the growth plate"]
+  growth_plate["Growth plate (physis)"]
+  stereology_growth_plate["Stereology of the growth plate"]
+  hypertrophic_volume_increase["Hypertrophic chondrocyte volume increase"]
+  rabbit_growth_plate_model["Rabbit growth plate model"]
+  growth_plate_senescence["Growth plate senescence"]
+  immunohistochemistry_cartilage_artifact["Artefact modes of cartilage immunohistochemistry"]
+  resting_chondrocyte["Resting (reserve) zone chondrocyte"]
+  knemometry["Knemometry"]
+  growth_velocity_longitudinal["Longitudinal growth velocity at the physis"]
+  finite_element_model_physis["Finite element models of the physis"]
+  snrna_seq_growth_plate["Single-nucleus RNA-seq of the growth plate"]
+  human_growth_plate_biobank["Absence of a human growth plate biobank"]
+  brdu_edu_labeling["BrdU and EdU labelling of proliferating chondrocytes"]
+  cell_cycle_time_pz["Proliferative zone chondrocyte cell cycle time"]
+  cartilage_organoid["Cartilage and skeletal organoids"]
+  chondrocyte_column_formation["Chondrocyte column formation"]
+  atomic_force_microscopy_cartilage["Atomic force microscopy of cartilage and physis"]
+  zonal_stiffness_gradient["Zonal mechanical properties of the growth plate"]
+  porcine_growth_plate_model["Porcine growth plate model"]
+  physeal_stress_in_vivo["In vivo physeal stress"]
+  growth_plate_explant_culture["Growth plate explant culture"]
+  static_vs_dynamic_loading["Static versus dynamic loading of the growth plate"]
+  hueter_volkmann_law["Hueter-Volkmann law"]
+  rat_growth_plate_model["Rat growth plate model"]
+  strain_magnitude_dependence["Strain magnitude dependence of growth modulation"]
+  micro_ct_growth_plate["Micro-CT of the growth plate"]
+  physeal_bar_formation["Physeal bar formation"]
+  proteomics_growth_plate["Proteomics of the growth plate"]
+  mineralization_front["Mineralization front / zone of provisional calcification"]
+  collagen_type_x["Collagen type X (COL10A1)"]
+  synchrotron_imaging_cartilage["Synchrotron phase-contrast imaging of cartilage"]
+  chondron["Chondron"]
+  tetracycline_labeling["Tetracycline labelling of the mineralisation front"]
+  pde_isoform_inventory["Phosphodiesterase isoform inventory in the growth plate"]
+  lineage_tracing_limitations["Unavailability of lineage tracing in humans"]
+  human_skeletal_stem_cell["Human skeletal stem cell (hSSC)"]
+  clonal_column["Clonal chondrocyte column"]
+  hypertrophic_chondrocyte_survival["Hypertrophic chondrocyte survival at the chondro-osseous junction"]
+  stadiometry_measurement_error["Stadiometry measurement error"]
+  saltation_stasis_growth["Saltation and stasis growth"]
+  estrogen_receptor_alpha["Estrogen receptor alpha (ESR1 / ERalpha)"]
+  growth_velocity_measurement_interval["Growth velocity measurement interval"]
+  seasonality_growth_velocity["Seasonality of growth velocity"]
+  in_situ_hybridization_cartilage["In situ hybridization in growth plate cartilage"]
+  ihh_protein["Indian hedgehog"]
+  dxa_body_composition["DXA body composition and skeletal measurement"]
+  muscle_bone_mechanical_coupling["Muscle-bone mechanical coupling"]
+  metatarsal_explant_culture["Fetal metatarsal explant culture"]
+  npr2_agonist_class["NPR2 agonist drug class"]
+  human_growth_plate_tissue_scarcity -->|"required_for (A)"| human_resting_zone_chondrocyte
+  laser_capture_microdissection_zonal -->|"required_for (A)"| resting_zone
+  chondrocyte_dissociation_bias --x|"inhibits (D)"| hypertrophic_chondrocyte
+  cre_lox_lineage_tracing -->|"required_for (A)"| monoclonal_column_formation
+  mouse_model_translation_risk --x|"inhibits (A)"| epiphyseal_fusion
+  spatial_transcriptomics_growth_plate -->|"correlates_with (A)"| growth_plate
+  stereology_growth_plate -->|"required_for (D)"| hypertrophic_volume_increase
+  rabbit_growth_plate_model -->|"required_for (B)"| growth_plate_senescence
+  immunohistochemistry_cartilage_artifact -->|"correlates_with (D)"| resting_chondrocyte
+  knemometry -->|"correlates_with (A)"| growth_velocity_longitudinal
+  finite_element_model_physis -->|"correlates_with (C)"| growth_plate
+  snrna_seq_growth_plate --x|"inhibits (C)"| chondrocyte_dissociation_bias
+  human_growth_plate_biobank -->|"required_for (B)"| human_growth_plate_tissue_scarcity
+  brdu_edu_labeling -->|"required_for (D)"| cell_cycle_time_pz
+  cartilage_organoid -.->|"hypothesized_link (speculative)"| chondrocyte_column_formation
+  atomic_force_microscopy_cartilage -->|"correlates_with (B)"| zonal_stiffness_gradient
+  porcine_growth_plate_model -->|"correlates_with (C)"| zonal_stiffness_gradient
+  finite_element_model_physis -->|"correlates_with (C)"| physeal_stress_in_vivo
+  growth_plate_explant_culture -->|"required_for (B)"| static_vs_dynamic_loading
+  growth_plate_explant_culture --x|"inhibits (B)"| hypertrophic_chondrocyte
+  porcine_growth_plate_model -->|"correlates_with (C)"| hueter_volkmann_law
+  rat_growth_plate_model -->|"required_for (C)"| strain_magnitude_dependence
+  micro_ct_growth_plate -->|"required_for (B)"| physeal_bar_formation
+  proteomics_growth_plate -->|"required_for (C)"| mineralization_front
+  human_growth_plate_tissue_scarcity --x|"inhibits (B)"| zonal_stiffness_gradient
+  immunohistochemistry_cartilage_artifact --x|"inhibits (C)"| collagen_type_x
+  synchrotron_imaging_cartilage -->|"required_for (B)"| chondron
+  tetracycline_labeling -->|"required_for (B)"| mineralization_front
+  human_growth_plate_tissue_scarcity -->|"required_for (A)"| epiphyseal_fusion
+  spatial_transcriptomics_growth_plate -->|"required_for (A)"| pde_isoform_inventory
+  lineage_tracing_limitations -->|"required_for (A)"| human_skeletal_stem_cell
+  lineage_tracing_limitations -->|"required_for (A)"| clonal_column
+  chondrocyte_dissociation_bias --x|"inhibits (B)"| hypertrophic_chondrocyte_survival
+  stadiometry_measurement_error -->|"required_for (A)"| saltation_stasis_growth
+  immunohistochemistry_cartilage_artifact -->|"required_for (A)"| estrogen_receptor_alpha
+  growth_velocity_measurement_interval -->|"required_for (B)"| seasonality_growth_velocity
+  in_situ_hybridization_cartilage -->|"required_for (A)"| ihh_protein
+  atomic_force_microscopy_cartilage -->|"required_for (B)"| zonal_stiffness_gradient
+  dxa_body_composition -->|"required_for (B)"| muscle_bone_mechanical_coupling
+  metatarsal_explant_culture -->|"required_for (B)"| npr2_agonist_class

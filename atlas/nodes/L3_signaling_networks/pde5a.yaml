@@ -1,0 +1,99 @@
+id: pde5a
+name: PDE5A
+type: protein
+layer: L3
+stub: false
+summary: 'PDE5A is a cGMP-specific phosphodiesterase and, in rat, the dominant cGMP-hydrolysing activity
+  of
+
+  growth plate chondrocytes: transcript profiling of primary chondrocytes from newborn rat epiphyses
+
+  identified robust PDE5 expression, and the PDE5 inhibitor tadalafil raised the peak CNP-stimulated
+
+  intracellular cGMP by 37% and attenuated its decline (Wang 2018). The functional consequence,
+
+  however, was negative: three weeks of tadalafil at 10 mg/kg/day in one-month-old rats raised tissue
+
+  cGMP by 52% but produced no change in long bone length, cortical or trabecular bone properties, or
+
+  growth plate histology. This is a directly relevant negative result for the assumption that raising
+
+  bulk cGMP is sufficient to lengthen bone, and it stands against the positive mouse result obtained
+
+  with PDE3 inhibition (Kawabe 2025). PDE5A transcript is reported in human, mouse and chicken growth
+
+  plate chondrocytes in bulk profiling (Ursachi 2026), but no human growth plate PDE5A localisation or
+
+  pharmacology has been reported, despite children with pulmonary arterial hypertension being treated
+
+  chronically with PDE5 inhibitors.
+
+  '
+quantitative:
+- parameter: peak CNP-stimulated cGMP with tadalafil vs vehicle
+  value: '37'
+  unit: '% increase'
+  conditions: primary newborn rat epiphyseal chondrocytes
+  species: rat
+  source_ref: wang2018
+  uncertainty: P<0.01
+- parameter: long bone length change after 3 weeks tadalafil 10 mg/kg/day
+  value: '0'
+  unit: '% change vs vehicle'
+  conditions: 1-month-old Sprague Dawley rats
+  species: rat
+  source_ref: wang2018
+  uncertainty: not significant; bodyweight gain reduced 9% (P<0.01)
+localization:
+- 'rat epiphyseal chondrocytes: robust expression, confirmed by transcript profiling (wang2018)'
+- 'human, mouse and chicken growth plate chondrocytes (bulk): PDE5A transcript reported (ursachi2026 index)'
+- 'human growth plate zone: unconfirmed'
+human_evidence: absent
+human_evidence_note: No human growth plate PDE5A measurement and no reported skeletal outcome data from
+  paediatric PDE5-inhibitor exposure.
+species_basis:
+- rat
+- human
+- mouse
+translation_risk: high
+translation_risk_reason: The one functional experiment is rat and negative; human children are chronically
+  exposed to PDE5 inhibitors with no reported growth plate follow-up.
+confidence: D
+key_refs:
+- ref_id: wang2018
+  pmid: '29920215'
+  first_author: Wang L
+  year: 2018
+  type: primary_abstract_only
+  one_line_finding: PDE5 is the major cGMP PDE in rat epiphyseal chondrocytes; tadalafil raised cGMP 37-52%
+    but did not lengthen bone.
+- ref_id: ursachi2026
+  pmid: '41732176'
+  first_author: Ursachi VC
+  year: 2026
+  type: review
+  one_line_finding: PDE5A transcript reported in human, mouse and chicken growth plate chondrocytes.
+open_questions:
+- g_l3core_006
+- g_l3core_007
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: Tadalafil is PDE5-selective, target engagement was independently confirmed (cGMP +37%
+  peak, +52% tissue), and the claim being defended is a NEGATIVE on bone length - the one case where cross-reactivity
+  cannot manufacture a false positive.
+reanalysis_observations:
+- observation: 'PLATFORM DISAGREEMENT, recorded as a contradiction rather than resolved. P8-01: PDE5A
+    not detected on any of 8 HG-U133 Plus 2.0 probe sets in either donor. P8-02: detected at the 91.2nd
+    percentile of the array in GSE22855 (Illumina HumanWG-6, 6 probes, 2 donors), and NOT detected in
+    GSE32398 (28.4th) or GSE18338 (37.2nd).'
+  interpretation: 'One platform of four reports PDE5A strongly; three do not. That is a contradiction
+    about probe design or about donor/age/site, and this design cannot separate them. The P8-01 reading
+    - that PDE5-inhibitor pharmacology has no transcriptional basis in the human physis - is weakened
+    but not overturned: it holds on three of four platforms.'
+  caveats: Transcript only. Grade unchanged at D. See P8-02 RESULTS section 5.
+  reanalysis: p8_02_independent_corroboration
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'

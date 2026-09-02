@@ -1,0 +1,173 @@
+id: sitar_model
+name: SITAR shape-invariant growth model
+aliases:
+- SuperImposition by Translation And Rotation
+type: method
+layer: L9
+stub: false
+summary: 'SITAR fits one mean spline curve to all subjects and gives each individual three random effects:
+  size (vertical shift, cm), tempo (horizontal shift, years) and velocity (age-scale stretch, fractional)
+  (cole2010). Its importance here is that it partitions between-individual variance into interpretable
+  pieces, and the partition is lopsided. In 3245 Christ''s Hospital boys with 129508 heights, adjusting
+  for size alone cut the residual SD from 6.6 cm to 2.3 cm, adding tempo cut it to 1.2 cm, and adding
+  velocity cut it to 0.8 cm - a 98.9% variance reduction from three numbers per child. The final residual
+  SD of 0.79 cm matches the median residual of individually fitted five-parameter Preece-Baines curves,
+  so three population-level parameters buy the same fit as five individual ones. The random-effect SDs
+  are the organism-level dispersion numbers a mechanistic model must reproduce: size SD 6.1 cm, tempo
+  SD 0.97 years, velocity SD 0.15, that is a 15% between-child spread in how fast the pubertal clock runs.
+  The three axes correlate with each other only at about +0.3 in healthy boys, so growing tall, growing
+  late and growing fast are largely separable; in Turner syndrome the tempo-velocity correlation reverses
+  to -0.46, showing the correlation structure is not a property of the method.'
+quantitative:
+- parameter: residual SD about the raw mean spline curve (unadjusted)
+  value: '6.6'
+  unit: cm
+  conditions: 3245 Christ's Hospital boys, 129508 heights, ages 9-19
+  species: human
+  source_ref: cole2010
+  uncertainty: exact as reported
+- parameter: residual SD after adjusting for size only
+  value: '2.3'
+  unit: cm
+  conditions: same
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: residual SD after adjusting for size and tempo
+  value: '1.2'
+  unit: cm
+  conditions: same
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: residual SD after adjusting for size, tempo and velocity
+  value: '0.8'
+  unit: cm
+  conditions: same
+  species: human
+  source_ref: cole2010
+  uncertainty: 0.79 cm in the random-effects table; 0.7 cm after trimming 0.74% outliers
+- parameter: variance in height explained by the three SITAR parameters
+  value: '98.9'
+  unit: percent
+  conditions: same
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: SD of the SITAR size random effect
+  value: '6.1'
+  unit: cm
+  conditions: same
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: SD of the SITAR tempo random effect
+  value: '0.97'
+  unit: years
+  conditions: same; 0.068 on the fractional log-age scale, converted at mean APHV 14.3 y
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: SD of the SITAR velocity random effect
+  value: '0.15'
+  unit: fraction
+  conditions: same; a 15% between-child spread in the rate at which the growth curve runs
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: correlation between size and tempo random effects
+  value: '0.33'
+  unit: Pearson r
+  conditions: same
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: correlation between size and velocity random effects
+  value: '0.36'
+  unit: Pearson r
+  conditions: same
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: correlation between tempo and velocity random effects
+  value: '0.28'
+  unit: Pearson r
+  conditions: same
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: mean age at peak height velocity
+  value: '14.3'
+  unit: years
+  conditions: Christ's Hospital boys attending 1939-1968
+  species: human
+  source_ref: cole2010
+  uncertainty: cohort-specific; 0.8-1.8 y later than modern cohorts
+- parameter: residual SD after SITAR adjustment, Turner syndrome cohort
+  value: '0.6'
+  unit: cm
+  conditions: 105 girls with Turner syndrome, 1321 heights, ages 9-18
+  species: human
+  source_ref: cole2010
+  uncertainty: raw RSD 5.9 cm; 99% of variance explained
+- parameter: SD of the size random effect, Turner syndrome
+  value: '5.9'
+  unit: cm
+  conditions: same Turner cohort
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: SD of the tempo random effect, Turner syndrome
+  value: '1.04'
+  unit: years
+  conditions: same Turner cohort
+  species: human
+  source_ref: cole2010
+  uncertainty: exact
+- parameter: correlation between tempo and velocity, Turner syndrome
+  value: '-0.46'
+  unit: Pearson r
+  conditions: 105 girls, puberty mostly induced
+  species: human
+  source_ref: cole2010
+  uncertainty: opposite in sign to the +0.28 in healthy boys
+localization:
+- 'human whole organism: serial standing height, ages 9-19 in both example cohorts'
+human_evidence: direct
+human_evidence_note: Fitted directly to two human longitudinal height datasets totalling 130829 measurements.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human curve-fitting method.
+confidence: A
+claim_grades:
+- claim: Three random effects explain 98.9% of the between-child variance in pubertal height
+  grade: A
+  basis: Direct fit to 129508 heights in 3245 boys with the stepwise residual reduction reported.
+- claim: Size, tempo and velocity are largely independent axes of variation
+  grade: B
+  basis: Pairwise correlations near +0.3 in one large male cohort; the tempo-velocity correlation reverses
+    sign in Turner syndrome, so independence is cohort-specific.
+key_refs:
+- ref_id: cole2010
+  pmid: '20647267'
+  first_author: Cole TJ
+  year: 2010
+  type: primary
+  one_line_finding: SITAR reduces residual SD from 6.6 cm to 0.79 cm with three random effects per child,
+    matching individually fitted Preece-Baines curves.
+- ref_id: chun2024
+  pmid: '39376676'
+  first_author: Chun D
+  year: 2024
+  type: primary
+  one_line_finding: Applies SITAR to Korean children to derive pubertal onset, PHV magnitude and PHV timing.
+- ref_id: galvo2025
+  pmid: '40878738'
+  first_author: Galvao LG
+  year: 2025
+  type: primary
+  one_line_finding: Bayesian SITAR in Brazilian children stratified by maturity group.
+open_questions:
+- g_l9organism_002
+last_verified: '2026-08-05'

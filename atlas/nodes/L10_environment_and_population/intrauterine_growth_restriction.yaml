@@ -1,0 +1,82 @@
+id: intrauterine_growth_restriction
+name: Intrauterine growth restriction
+type: phenotype
+aliases:
+- IUGR
+- fetal growth restriction
+summary: 'Intrauterine growth restriction is failure to achieve the genetically expected fetal growth
+  trajectory, and it is the point at which environmental exposure and the fetal IGF axis meet most directly.
+  Its importance for adult stature is quantified through birth size: in a population-based Swedish cohort
+  of 3650 healthy full-term singletons followed to final height at about 18 years, infants short at birth
+  (birth length below -2 SDS) carried a 7.1-fold higher risk of short adult stature (95% CI 3.7-13.6)
+  than non-short-at-birth infants, and 22% of the short 18-year-olds had been short at birth while only
+  14% had been light at birth (karlberg1995) - birth length, not birth weight, is the informative measure.
+  Across five long-running birth cohorts, intrauterine growth restriction was among the indices most strongly
+  related to shorter adult height (victora2008). The Dutch Hunger Winter shows what the restriction does
+  to the genotype-phenotype map: severe mid-to-late gestational famine abolished the detectable influence
+  of a birthweight polygenic index (taeubert2026). The mechanistic entry point is the fetal IGF system
+  - IGF-2 dominates fetal growth and PAPP-A2 sets IGF bioavailability - but no human study links a measured
+  IUGR exposure to a measured fetal IGF-axis parameter and a growth plate readout.'
+quantitative:
+- parameter: relative risk of short final stature for infants born short (birth length < -2 SDS)
+  value: '7.1'
+  unit: relative risk
+  conditions: 3650 healthy full-term Swedish singletons followed from birth to final height at ~18 y
+  species: human
+  source_ref: karlberg1995
+  uncertainty: 95% CI 3.7-13.6
+- parameter: proportion of short 18-year-olds who were short at birth
+  value: '22'
+  unit: '%'
+  conditions: same cohort; 14% when SGA is defined by birth weight instead of birth length
+  species: human
+  source_ref: karlberg1995
+  uncertainty: not reported
+localization:
+- 'human SYS: fetal growth trajectory; entry via the fetal IGF-2/IGF-1 axis (L4)'
+human_evidence: direct
+human_evidence_note: Population-based human birth cohort followed to final height, plus pooled multi-country
+  cohort analyses.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype with human longitudinal follow-up.
+confidence: A
+claim_grades:
+- claim: Short birth length carries a seven-fold risk of short adult stature.
+  grade: A
+  basis: Population-based cohort of 3650 followed to final height with a reported relative risk and CI
+    (karlberg1995).
+- claim: Birth length is a better predictor of adult short stature than birth weight.
+  grade: A
+  basis: Within-cohort comparison of the two definitions in the same 3650 children (karlberg1995).
+- claim: IUGR acts through suppressed fetal IGF-2/IGF-1 signalling at the growth plate.
+  grade: E
+  basis: Not measured in these cohorts; imported from L4 igf2_hormone and pappa2_protease.
+key_refs:
+- ref_id: karlberg1995
+  pmid: '8552442'
+  first_author: Karlberg J
+  year: 1995
+  type: primary
+  one_line_finding: In 3650 full-term Swedish singletons, birth length below -2 SDS carried a 7.1-fold
+    risk of short final stature (95% CI 3.7-13.6); 22% of short 18-year-olds had been short at birth.
+- ref_id: victora2008
+  pmid: '18206223'
+  first_author: Victora CG
+  year: 2008
+  type: systematic_review
+  one_line_finding: Intrauterine growth restriction was among the indices most strongly associated with
+    shorter adult height across five LMIC birth cohorts.
+- ref_id: taeubert2026
+  pmid: '41820558'
+  first_author: Taeubert MJ
+  year: 2026
+  type: primary
+  one_line_finding: Severe mid-to-late gestational famine abolished the detectable influence of a birthweight
+    polygenic index on birthweight.
+open_questions:
+- g_l10env_008
+layer: L10
+stub: false
+last_verified: '2026-08-05'

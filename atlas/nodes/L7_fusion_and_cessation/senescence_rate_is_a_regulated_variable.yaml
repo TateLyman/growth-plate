@@ -1,0 +1,160 @@
+id: senescence_rate_is_a_regulated_variable
+name: Senescence runs at different rates in different bones — and the long bones are already at ceiling
+type: process
+layer: L7
+stub: false
+summary: 'weise2001 establishes that fusion happens when proliferation reaches zero. The obvious next question is
+  what sets the RATE OF APPROACH, and lui2018 answers it with an experiment nobody needed to invent: different bones
+  in the same animal senesce at different rates, so the rate is a regulated variable and its regulators can be read
+  off by comparing bones. In mice, phalanges and metacarpals FUSE AT 2-3 WEEKS while femurs and tibias are still
+  unfused at 12 weeks. At 1 week of age the metacarpal grows at 49% of the tibial rate with proliferation per column
+  at 46%. THREE PATHWAYS SEPARATE THE FAST-SENESCING SMALL BONES FROM THE SLOW-SENESCING LONG ONES, AND THE
+  SUPPLEMENTARY TABLES HAVE NOW BEEN READ SO THE MAGNITUDES ARE HERE RATHER THAN JUST THE DIRECTIONS. Nine genes are
+  FDR-corrected AND replicated in BOTH mouse and rat. IGF: phalanges carry high Igfbp4 (log2 +1.47 mouse, +2.77 rat)
+  and Igfbp5 (+1.73/+2.81), both inhibitors. BMP: tibias carry high Bmp6 (-2.36/-1.74) against phalanx-high Bmp3
+  (+1.62/+2.22) and Bmper (+1.82/+2.10) antagonists, with higher phosphorylated SMAD1/5/9. WNT: tibias carry high
+  Wnt4 (-1.32/-1.34) and Wnt5b (-1.49/-1.90) against phalanx-high Wif1 (+2.08/+3.12) and Dkk3 (+2.51/+1.66). READING
+  THE TABLES ALSO CORRECTED THE LIST. Igfbp7 and Wnt5a are AGE-axis genes, not between-bone genes, and IGF2 IS ON
+  NEITHER LIST - it is 17.66 in 1-week phalanx against 17.78 in 1-week tibia, no difference at all, so this atlas''s
+  previous claim that tibias carry high Igf2 was wrong as a between-bone statement. AND THEN THE FUNCTIONAL TEST, WHICH IS THE PART THAT MATTERS AND WHICH CUTS AGAINST
+  US. EXOGENOUS IGF1 STIMULATED PHALANGEAL CHONDROCYTES AND DID NOTHING TO TIBIAL ONES. EXOGENOUS BMP2 INCREASED
+  HYPERTROPHY IN METATARSALS AND NOT IN TIBIAS. The authors read this as signalling already being optimal in the
+  large bones, and if that is right it is a mechanistic explanation for something this atlas found empirically and
+  could not explain: velocity interventions saturate on final height. THE LONG BONES ARE ALREADY RUNNING AT THE TOP
+  OF THE DOSE-RESPONSE FOR THE PATHWAYS THAT SET THEIR OWN SENESCENCE RATE. A femur is not a phalanx with more
+  growth left in it; it is a phalanx whose IGF and BMP inputs are already maximal. That does not say the rate is
+  unmovable - forcinito2011 shows growth-inhibiting conditions slow senescence, so it moves in the SLOW direction.
+  It says the direction we want is the direction in which the tissue has no headroom on these three pathways.'
+quantitative:
+- parameter: DIFFERENT BONES IN THE SAME ANIMAL FUSE DECADES APART IN DEVELOPMENTAL TIME
+  value: phalanges and metacarpals fuse at 2-3 weeks; femurs and tibias remain unfused at 12 weeks and beyond
+  unit: weeks to epiphyseal fusion
+  conditions: C57BL/6 mice; the comparison is within the same animals, so systemic hormonal milieu, age and nutrition
+    are held constant by construction
+  species: mouse
+  source_ref: lui2018
+  uncertainty: 'THE WITHIN-ANIMAL DESIGN IS WHAT MAKES THIS WORTH SOMETHING - every systemic explanation is controlled
+    away, so whatever sets the difference is local to the plate. A four-to-sixfold difference in time-to-fusion within
+    one skeleton is a large effect and hard to attribute to noise. Mouse, and mouse long bones famously do not fuse
+    at all in the human sense, so "unfused at 12 weeks" is a statement about a species whose long-bone plates persist
+    indefinitely; the informative half of the comparison is that the SMALL bones fuse promptly even in that species.'
+- parameter: AND THEY GROW AND PROLIFERATE AT DIFFERENT RATES FROM THE START
+  value: metacarpal growth rate 49% of tibial; proliferation rate per column 46% of tibial
+  unit: percent of tibial rate
+  conditions: 1-week-old mice; proliferation also extended farther down the chondrocyte columns in tibia and femur
+    than in metacarpal and phalanx
+  species: mouse
+  source_ref: lui2018
+  uncertainty: A roughly twofold difference in both growth rate and proliferation rate, measured at a single early
+    timepoint. Because the rates differ from the outset, the difference in time-to-fusion is not purely a difference
+    in when senescence starts - the small bones are slower AND finish sooner, which is what a smaller initial capacity
+    spent at a lower rate would look like, and this study does not separate initial capacity from rate of spending.
+- parameter: THE MOLECULAR SIGNATURE THAT SEPARATES SLOW-SENESCING FROM FAST-SENESCING PLATES — NOW WITH MAGNITUDES
+  value: 'BONE AXIS, tibia against phalanx at 1 week, log2 fold change as mouse / rat, all FDR-corrected and replicated
+    in BOTH species. PHALANX-HIGH (antagonists and inhibitors): Igfbp4 +1.47/+2.77, Igfbp5 +1.73/+2.81, Wif1
+    +2.08/+3.12 in proliferative zone and +1.28/+3.19 in hypertrophic, Dkk3 +2.51/+1.66, Bmp3 +1.62/+2.22, Bmper
+    +1.82/+2.10. TIBIA-HIGH (agonists): Wnt4 -1.32/-1.34, Bmp6 -2.36/-1.74, Wnt5b -1.49/-1.90. Plus higher
+    phosphorylated SMAD1/5/9 in tibia by Western blot'
+  unit: log2 fold change, phalanx relative to tibia (positive = phalanx-high)
+  conditions: RNA-seq of laser-capture-microdissected proliferative and hypertrophic zones, 1-week tibia against
+    1-week proximal forelimb phalanx, n = 4-5 per group; selection >2-fold, FDR < 0.05, IN BOTH MOUSE AND RAT.
+    Values read from lui2018 S5 Table (proliferative zone, 160 genes) and S6 Table (hypertrophic zone, 403 genes),
+    downloaded 2026-08-07
+  species: mouse
+  source_ref: lui2018
+  uncertainty: 'MAGNITUDES NOW RECORDED - the earlier version of this row carried DIRECTIONS ONLY because the paper had
+    been read through a summarisation step. Reading the supplementary tables both strengthened and corrected it.
+    STRENGTHENED: nine genes across three unrelated pathways are FDR-corrected and REPLICATED IN A SECOND SPECIES,
+    which is much harder to get by chance than the direction-only version implied, and in every case the slow-senescing
+    bone carries more agonist and less antagonist. CORRECTED, AND THIS MATTERS: THREE OF THE TWELVE GENES THIS ATLAS
+    LISTED AS BONE-AXIS DIFFERENCES ARE NOT ON THE BONE-AXIS LISTS AT ALL. Igfbp7 (+1.15/+1.96) and Wnt5a
+    (-1.79/-2.01) belong to the AGE axis - lui2018 S3 Table, 1-week against 4-week tibia - and not to the
+    tibia-against-phalanx comparison. IGF2 IS ON NEITHER LIST: in the paper''s own per-sample counts it is 17.66 in
+    1-week phalanx proliferative zone against 17.78 in 1-week tibia, which is no difference at all, while it falls to
+    12.5 in 4-week tibia. So "tibias carry high Igf2" was wrong as a between-bone claim; Igf2 is an age gene, and it
+    did not survive the both-species filter. The confusion is understandable because lui2018''s own thesis is that the
+    two axes CORRELATE, but the atlas had presented all twelve as between-bone differences and only nine are. THE
+    STANDING LIMIT IS UNCHANGED: differential expression between two tissues that differ in a dozen ways is
+    correlational, and the functional tests in the next row were done on only two of the three pathways.'
+- parameter: THE LONG BONES DO NOT RESPOND TO MORE IGF OR MORE BMP — THEY ARE ALREADY AT CEILING
+  value: exogenous IGF1 stimulated phalangeal chondrocytes and did NOT stimulate tibial chondrocytes; exogenous BMP2
+    increased hypertrophy in metatarsals and NOT in tibias
+  unit: qualitative, presence or absence of response
+  conditions: primary chondrocytes in monolayer culture for the IGF1 experiment; metatarsal versus tibial explants
+    for BMP2
+  species: mouse
+  source_ref: lui2018
+  uncertainty: 'THE MOST CONSEQUENTIAL ROW IN THE NODE AND THE ONE WITH THE WEAKEST DESIGN. If large-bone growth plates
+    are already saturated for IGF and BMP, then the entire class of interventions that adds more of either cannot
+    raise final height by acting on the plates that determine it - which would explain the KIGS pattern this atlas
+    holds, where a 43% higher GH dose buys first-year velocity and nothing at near-adult height. BUT THIS IS A NULL
+    IN CULTURE, TWICE. Absence of response in monolayer chondrocytes may reflect the culture rather than the tissue,
+    no dose-response is reported, and no power calculation makes a null informative. It is also a ceiling on THESE
+    pathways in THIS species, and mouse long bones never stop growing, which is precisely the physiology that would
+    make them look saturated. This row is a hypothesis with an experiment behind it, not a demonstration, and the
+    atlas should treat any therapeutic inference from it as provisional.'
+- parameter: AND THE RATE DOES MOVE — BUT ONLY IN THE DIRECTION WE DO NOT WANT
+  value: growth-inhibiting conditions slow growth plate senescence
+  unit: qualitative
+  conditions: cited by lui2018 from forcinito2011, which this atlas has NOT read; the atlas independently holds the
+    same claim in delayed_senescence_hypothesis from glucocorticoid, hypothyroid and propylthiouracil models
+  species: rat
+  source_ref: forcinito2011
+  uncertainty: 'RECORDED AS A POINTER, NOT AS EVIDENCE - forcinito2011 is a WANTED reference and only its title and
+    the citing sentence have been seen. It matters because it establishes that senescence rate is MODIFIABLE and not
+    merely variable between bones, which is the difference between a descriptive finding and a target. The asymmetry
+    is the problem: everything known to move the rate moves it by inhibiting growth, and this atlas has no example
+    of the rate being slowed while growth continued at a normal or raised velocity. That combination - slower
+    senescence at unchanged velocity - is the same untested cell as g_l2_larger_pool_with_intact_flux, reached from
+    a different direction.'
+localization:
+- growth plate; the comparison is between anatomical sites within one skeleton
+human_evidence: absent
+human_evidence_note: Entirely mouse and rat. NO human data on differential senescence rate between bones exists in
+  this atlas, although the phenomenon is visible in every human bone age atlas as the ordered sequence in which
+  epiphyses fuse - which is an observation nobody appears to have analysed as a rate comparison. The human version
+  of this experiment is a tissue question and would need growth plates from more than one site in the same individual,
+  which is exactly what avijgan2026br and chu2026 sampling could in principle provide.
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: Mouse long-bone growth plates do not fuse in the human sense, so a claim that they are at
+  their senescence-rate ceiling is being made in the one species whose long bones never run out. The functional
+  ceiling result rests on nulls in monolayer culture.
+confidence: C
+confidence_note: C. The within-animal design controls every systemic confounder, the three-pathway signature is
+  internally coherent, and the functional experiments were attempted rather than assumed. THE PROVENANCE CAVEAT THAT
+  PREVIOUSLY CAPPED THIS NODE IS PARTLY RETIRED - lui2018 has now been read directly rather than through a
+  summarisation step, and its per-animal raw values were obtained as the open S1 Data workbook, from which this atlas
+  computed the first yield estimate it holds (see the_exchange_rate_between_growth_and_pool_depletion). The
+  TRANSCRIPTOMIC fold-changes behind the three-pathway signature are still not extracted, so the rows recording that
+  signature remain directions rather than magnitudes. It is not B because the central therapeutic claim still rests on
+  two culture nulls with no dose-response or power analysis, and because the species is the wrong one for a statement
+  about running out. It is not D because the fusion-timing and proliferation-rate comparisons are direct measurements
+  in a controlled design.
+key_refs:
+- ref_id: lui2018
+  pmid: '30036371'
+  first_author: Lui JC
+  year: 2018
+  type: primary
+  one_line_finding: Small bones senesce and fuse far earlier than long bones in the same mouse, with IGF, BMP and Wnt
+    signatures separating them, and long-bone chondrocytes do not respond to exogenous IGF1 or BMP2.
+- ref_id: forcinito2011
+  pmid: '20974641'
+  first_author: Forcinito P
+  year: 2011
+  type: primary
+  one_line_finding: Growth-inhibiting conditions slow growth plate senescence - the rate is modifiable, and the only
+    known direction of modification is downward via growth inhibition.
+- ref_id: weise2001
+  pmid: '11381135'
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: Fusion occurs when chondrocyte proliferation approaches zero; oestrogen accelerates a spontaneous
+    programme rather than initiating it.
+open_questions:
+- g_l2_larger_pool_with_intact_flux
+last_verified: '2026-08-07'

@@ -1,0 +1,83 @@
+id: round453_the_recessive_instrument_confirms_r432_and_names_the_scan_nobody_has_run
+name: 'R453 - the recessive instrument run at population scale: homozygosity LOWERS height at P below 1e-300 across
+  354,224 people and four continental groups, first-cousin offspring are 1.2 cm shorter, and the authors read it
+  as evidence that TALL STATURE HAS BEEN POSITIVELY SELECTED - which confirms R432 and explains why the recessive
+  class keeps returning shortening genes'
+aliases:
+- R453
+- runs of homozygosity
+- F_ROH
+- directional dominance
+- consanguinity and height
+- Pakistan Genome Resource
+- joshi2015
+- koch2026
+type: phenotype
+layer: L8
+stub: false
+confidence: A
+last_verified: '2026-08-27'
+species_basis:
+- human
+human_evidence: direct
+human_evidence_note: 354,224 people in 102 cohorts across four continental groups, plus a 173,303-person recessive-enriched
+  biobank.
+translation_risk: low
+translation_risk_reason: Human genetic association on the trait of interest, replicated across ancestries.
+summary: 'R432 concluded that the recessive class of height genes is real, large and nearly disjoint from kosmicki2026''s
+  207 - and that its content is overwhelmingly oestrogen-deficiency and connective-tissue biology this file already
+  works. It reached that from HPO disease annotations. The population-scale instrument says the same thing quantitatively
+  and adds a reason.
+
+
+  ONE - THE DIRECTION AND THE MAGNITUDE. joshi2015: runs of homozygosity against 16 health-related traits in 354,224
+  individuals from 102 cohorts. HEIGHT IS THE STRONGEST ASSOCIATION IN THE STUDY AT P BELOW 1e-300, increased homozygosity
+  associated with DECREASED height, EQUIVALENT TO THE OFFSPRING OF FIRST COUSINS BEING 1.2 CM SHORTER. Similar effect
+  sizes across four continental groups and across populations with different baseline homozygosity, which the authors
+  take as evidence that homozygosity itself rather than confounding drives it. Notably, blood pressure and LDL showed
+  nothing, so this is not a generic inbreeding-depression artefact spread across all traits.
+
+
+  TWO - AND THE AUTHORS'' OWN INTERPRETATION IS THE USEFUL PART FOR THIS FILE. Directional dominance is predicted
+  for traits under directional evolutionary selection, so they conclude that INCREASED STATURE HAS BEEN POSITIVELY
+  SELECTED IN HUMAN EVOLUTION. That is a structural reason why the recessive instrument returns shortening genes
+  almost exclusively: selection has already driven the height-increasing alleles toward fixation and left the recessive
+  load on the other side. R432 observed the asymmetry (HPO: 1,483 short-stature genes against 180 tall) and CORR-295
+  explained it by ascertainment - being short brings a child to a clinic. joshi2015 supplies a second, non-ascertainment
+  reason, and the two are additive.
+
+
+  THREE - THE SCAN THAT WOULD ACTUALLY TEST R432 EXISTS AS A COHORT AND HAS NEVER BEEN RUN. koch2026: the Pakistan
+  Genome Resource, 173,303 participants with high familial relatedness, collectively carrying naturally occurring
+  HOMOZYGOUS loss-of-function variants in 6,476 GENES, built explicitly because such variants mimic pharmacological
+  inhibition. CORR-358 says a heterozygous burden test cannot contain a recessive gene by construction; this is
+  the cohort in which that constraint lifts. But F_ROH is an AGGREGATE - it says the recessive load lowers height
+  on average, not which genes. A GENE-LEVEL HOMOZYGOUS-LoF SCAN AGAINST HEIGHT HAS NEVER BEEN PUBLISHED IN ANY COHORT.
+  That is the largest cheap gap this round found, it needs no new data collection, and it is the only instrument
+  that could return a recessive gene whose loss LENGTHENS.
+
+
+  FOUR - A NUMBER I AM NOT ASSERTING. An F_ROH-on-height effect of -0.05 SD at P=1.6e-48 in the PGR was reported
+  to me second-hand and is NOT in koch2026''s abstract. It is recorded as value_unverified and the height claim
+  here rests on joshi2015, which is verbatim.'
+quantitative:
+- parameter: effect of runs of homozygosity on adult height
+  value: P < 1e-300; offspring of first cousins 1.2 cm shorter
+  unit: centimetres, and significance
+  species: human
+  source_ref: joshi2015
+  note: 354,224 individuals, 102 cohorts, 16 traits; height was the strongest of the four significant associations.
+    Similar effect sizes across four continental groups. No effect on blood pressure or LDL
+- parameter: genes with naturally occurring homozygous loss of function in the Pakistan Genome Resource
+  value: 6,476
+  unit: genes, across 173,303 participants
+  species: human
+  source_ref: koch2026
+  note: the cohort in which a recessive gene-level height scan becomes possible. THE SCAN HAS NEVER BEEN PUBLISHED.
+    A reported F_ROH height effect of -0.05 SD at P=1.6e-48 is value_unverified and not in the abstract
+key_refs:
+- ref_id: joshi2015
+- ref_id: koch2026
+- ref_id: clark2019
+open_questions:
+- g_l8_453b

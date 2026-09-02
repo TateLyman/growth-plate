@@ -1,0 +1,1747 @@
+
+=== PAGE 1 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026
+Abstract. Fracture healing is a complex biological process 
+involving chondrocyte (cH) differentiation and endochondral 
+ossification. A subset of c Hs may transdifferentiate into 
+osteoblasts, enhancing bone regeneration. The oxygen‑sensing 
+histone demethylase lysine demethylase 6A (K dM6A) and 
+local oxygen microenvironment are hypothesized to serve 
+pivotal roles in modulating this transition; however, the 
+precise regulatory mechanisms remain unclear. To assess the 
+role of K dM6A, an oxygen‑sensitive histone demethylase, 
+in endochondral ossification, an inducible cartilage‑specific 
+Kdm6a‑knockout mouse model was generated. Single‑cell 
+RNA sequencing (scRNA‑seq) analysis was performed 
+in a mouse tibial fracture model to characterize c H 
+subpopulations and their fate transitions during bone repair. 
+scRNA‑seq identified distinct CH subpopulations, including 
+chondrocyte‑derived osteoprogenitors ( cdOPs), which acted 
+as osteoblast precursors during endochondral ossification. 
+Pseudotime trajectory analysis revealed a bifurcated differ ‑
+entiation pathway, with cd OPs exhibiting rapid osteoblast 
+conversion. Functional enrichment analyses implicated the 
+Wnt/β‑catenin pathway in this transition. In vitro, cHs isolated 
+from bone callus of KdM6A‑knockout and control mice were 
+induced to undergo transdifferentiation into osteoblasts under 
+varying oxygen tensions. The expression levels of chondro ‑
+genic markers, osteogenic differentiation‑related indicators 
+and canonical Wnt signaling molecules, as well as the levels 
+of histone dimethylation of H3K27 (H3K27me2) and trimeth‑
+ylation of H3K27 (H3K27me3) at their promoter regions, were 
+assessed. In vivo, the molecular and functional consequences 
+of K dM6A deficiency were characterized through histo ‑
+pathological evaluation and bone microarchitecture analysis. 
+In vitro, cHs cultured under normoxic conditions exhibited 
+greater osteogenic differentiation than those cultured under 
+hypoxic conditions. conversely, loss of K dM6A impaired 
+the pro‑osteogenic effect of normoxia on c H‑to‑osteoblast 
+transdifferentiation, indicating the importance of K dM6A 
+in oxygen‑mediated c H‑to‑osteoblast transdifferentiation. 
+Mechanistically, chromatin immunoprecipitation analysis 
+revealed that under normoxic conditions, K dM6A‑knockout 
+cHs exhibited higher levels of the repressive histone marks 
+H3K27me2 and H3K27me3 at the Wnt3a promoter region, as 
+well as increased H3K27me3 levels at the Runt‑related tran ‑
+scription factor 2 (RUNX2) promoter region, compared with 
+control cells. These findings indicated that KDM6A catalyzed 
+the removal of H3K27 methylation at the promoters of Wnt3a 
+and RUNX2, thereby relieving their transcriptional repres‑
+sion. In vivo, K dM6A‑knockout mice exhibited osteogenic 
+defects and delayed fracture healing compared with control 
+mice. K dM6A serves as a pivotal oxygen sensor that drives 
+cH‑to‑osteoblast transdifferentiation and enhances fracture 
+healing through Wnt /β‑catenin pathway activation. The 
+KdM6A‑mediated oxygen response mechanism is a potential 
+target for enhancing bone regeneration during fracture repair.
+Introduction
+Bone fractures represent a significant global health burden, 
+with an epidemiological study reporting >170 million new 
+cases annually worldwide  (1). While most fractures achieve 
+successful healing, 5‑10% result in delayed union or nonunion, 
+creating substantial clinical and economic challenges (2). The 
+Oxygen‑sensing histone demethylase KDM6A modulates 
+chondrocyte‑to‑osteoblast transdifferentiation 
+by activating the Wnt/β‑catenin pathway
+YI RONG1,2*,  HAO YU1*,  HENG YIN1,3,  SHAOSHUO LI1,  JIANWEI WANG1,  ZHONGYUAN SHEN4,  
+XINXIN dING1,  FANcHEN BU1,  TIANYI dAI1,  GEAN WU1  and  ZHEN HUA1,3
+1Department of Traumatology and Orthopedics, Wuxi Affiliated Hospital of Nanjing University of Chinese Medicine, Wuxi, Jiangsu 214071, 
+P.R. china; 2department of Basic Medicine, School of Health Medicine, Wuxi Taihu University, Wuxi, Jiangsu 214063, P.R. china; 
+3Jiangsu chinese Medicine clinical Innovation center of degenerative Bone and Joint disease, Wuxi, Jiangsu 214071, P.R. china; 
+4Department of Orthopedics, The Affiliated Hospital of Nanjing University of Chinese Medicine, Nanjing, Jiangsu 210029, P.R. China
+Received July 30, 2025;  Accepted February 20, 2026
+DOI: 10.3892/ijmm.2026.5874
+Correspondence to:  d r Zhen Hua or d r Gean Wu, d epartment 
+of Traumatology and Orthopedics, Wuxi Affiliated Hospital of 
+Nanjing University of c hinese Medicine, 8 Zhongnan West Road, 
+Wuxi, Jiangsu 214071, P.R. china
+E‑mail: wxzy044@njucm.edu.cn
+E‑mail: wga7025038@163.com
+*contributed equally
+Key words:  fracture healing, single‑cell RNA sequencing, 
+endochondral ossification, chondrocyte transdifferentiation, lysine 
+demethylase 6A, Wnt/β‑catenin pathway
+
+
+=== PAGE 2 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION2
+healing process is particularly compromised in anatomically 
+vulnerable sites such as the tibia, where limited soft tissue 
+coverage and poor vascularity frequently impede proper 
+bone regeneration (3,4). The biological complexity of fracture 
+repair is exemplified by the delicate balance between multiple 
+cellular processes and molecular signaling pathways that 
+must be precisely coordinated across temporal and spatial 
+dimensions (5).
+Fracture healing occurs via two primary mechanisms: 
+Intramembranous ossification at the fracture margins and 
+endochondral ossification in the central callus region (6,7). The 
+latter process, which involves the formation of a cartilaginous 
+template that is subsequently replaced by bone, is crucial for 
+healing unsfig fractures and defects with limited stability (5,8). 
+The traditional understanding was that hypertrophic chon ‑
+drocytes (HT cs) in cartilaginous callus undergo apoptosis 
+before bone formation  (9‑12). However, emerging evidence 
+from lineage‑tracing studies has fundamentally challenged 
+this paradigm, demonstrating that a substantial proportion of 
+HTcs can directly trans‑differentiate into osteoblasts without 
+undergoing programmed cell death (13‑15). This newly recog‑
+nized pathway contributes to bone regeneration, with a study 
+indicating that 30‑40% of osteocytes in the callus are derived 
+from chondrocytes ( cHs), reaching 80% at the chondroos‑
+seous junction (15).
+The fracture microenvironment is characterized by 
+dynamic physicochemical gradients, with oxygen tension 
+representing a key regulatory signal (16,17). The initial 
+hypoxic conditions within the avascular cartilaginous callus 
+gradually transition to normoxic conditions through angiogen‑
+esis, creating a spatially and temporally heterogeneous oxygen 
+landscape (18,19). While the hypoxia‑inducible factor‑1 α 
+(HIF‑1α) pathway has been well‑established as a mediator 
+of cellular adaptation to low oxygen, promoting cH survival 
+and angiogenesis (16,20,21), evidence suggests that more 
+direct oxygen‑sensing mechanisms operate at the epigenetic 
+level to guide cell fate decisions (22,23). Histone modifica ‑
+tions, particularly the methylation of histone H3 lysine 27 
+(H3K27), have emerged as critical epigenetic determinants 
+of cellular differentiation (24,25). Trimethylation of H3K27 
+(H3K27me3), catalyzed by polycomb repressive complex 2, 
+serves as a repressive mark that silences developmental 
+genes (26), whereas demethylation by specific enzymes acti ‑
+vates transcriptional programs (27).
+Oxygen‑sensitive histone demethylase lysine demeth ‑
+ylase 6A (K dM6A) represents a compelling molecular link 
+between microenvironmental cues and epigenetic regula ‑
+tion (22). Unlike HIF‑1α, which primarily mediates adaptive 
+metabolic responses, K dM6A directly senses oxygen levels 
+through its Jumonji c (Jmj c) domain and translates this 
+information into epigenetic instructions by removing repres‑
+sive H3K27 methylation marks (22,23). This unique property 
+positions K dM6A as a potential key regulator of cell fate 
+transitions in oxygen‑gradient environments, such as fracture 
+calluses. Supporting this notion, K dM6A has been shown to 
+be essential for embryonic development  (28,29) and serves 
+critical roles in various differentiation processes, including the 
+osteogenic differentiation of mesenchymal stem cells (30,31).
+The Wnt/ β‑catenin signaling pathway has been estab ‑
+lished as a master regulator of osteoblastogenesis and 
+fracture healing (32‑35). Multiple studies have demonstrated 
+that Wnt pathway activation enhances bone repair through 
+various mechanisms, including the promotion of osteo ‑
+blast differentiation and activity (36,37). Pharmacological 
+approaches targeting negative regulators of this pathway, such 
+as antibodies against sclerostin and d ickkopf‑1, have shown 
+promising results in accelerating bone regeneration in animal 
+models (38‑40). Wnt/β‑catenin signaling has been specifically 
+implicated in c H‑to‑osteoblast transdifferentiation, with a 
+study showing that β‑catenin stabilization in HT cs enhances 
+their conversion into osteoblasts (41).
+The convergence of oxygen sensing, epigenetic regula ‑
+tion and canonical signaling pathways presents a compelling 
+framework for understanding the coordination of c H fate 
+during bone repair. A study has established connections 
+between K dM6A and Wnt signaling, with RNA sequencing 
+analyses revealing effects on Wnt gene expression in 
+KDM6A‑deficient contexts (42). In bone marrow stromal cells, 
+KDM6A directly removes H3K27me3 modifications from the 
+promoter regions of osteogenic genes, including RUNX family 
+transcription factor 2 (RUNX2), thereby initiating differentia‑
+tion programs (30,31). However, to the best of our knowledge, 
+the functional significance of this epigenetic regulator in frac‑
+ture healing, particularly its role in integrating oxygen signals 
+to modulate c H transdifferentiation via the Wnt/ β‑catenin 
+pathway, remains unexplored.
+Investigation of these mechanisms across different frac ‑
+ture types has revealed intriguing patterns of interaction. 
+In tibial shaft fractures, where endochondral ossification 
+predominates (43), the oxygen‑K dM6A‑Wnt axis may serve 
+a particularly critical role because of the prolonged hypoxic 
+conditions characteristic of these injuries (30,31,42). 
+Conversely, in well‑vascularized fracture sites or rigidly fixed 
+fractures where intramembranous ossification predominates, 
+the relative importance of this pathway may differ (22,23). 
+Understanding these context‑dependent variations is essential 
+for the development of targeted therapeutic approaches.
+Based on these considerations, we hypothesized that 
+KdM6A serves as a critical molecular nexus, linking oxygen 
+sensing to c H fate determination during fracture repair. 
+Specifically, we hypothesized that, in the transitioning oxygen 
+environment of the healing callus, KdM6A activation promotes 
+cH‑to‑osteoblast transdifferentiation by removing repressive 
+H3K27 methylation marks from Wnt pathway genes, thereby 
+activating the Wnt/ β‑catenin/RUNX2 signaling axis. To test 
+this hypothesis, an integrated approach combining single‑cell 
+RNA sequencing (scRNA‑seq) of fractured calli, lineage 
+tracing and cartilage‑specific inducible Kdm6a‑knockout was 
+employed. This methodological framework was designed to 
+uncover the mechanisms underlying the oxygen‑dependent 
+modulation of bone regeneration across different fracture 
+environments and to assess its potential as a therapeutic target 
+for challenging clinical scenarios, such as nonunions and 
+osteoporotic fractures.
+Materials and methods
+Mice. All animal protocols were approved by the Animal 
+care and Use committee of Wuxi Affiliated Hospital 
+of Nanjing University of c hinese Medicine (approval 
+
+=== PAGE 3 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 3
+no. GZR2023032801; Wuxi, c hina). Mice were housed in 
+groups of ≤5 animals in a room using microisolator tech ‑
+nology, and kept at 22‑24˚C with a 12‑h light /dark schedule, 
+with ad libitum access to food and water.
+Kdm6a‑Flox (a conditional knockout strain where 
+essential exons of the Kdm6a gene are flanked by loxP 
+sites), collagen type II α1 chain ( col2a1)‑2A‑tamoxifen 
+(Tam)‑inducible c re recombinase ( creERT2) (expressing 
+CreERT2 specifically in CHs, driven by the Col2a1 promoter) 
+and R26‑cAG‑LSL‑tdTomato (a cre‑dependent reporter strain 
+in which a loxP‑flanked transcriptional stop cassette prevents 
+the expression of the tdTomato fluorescent protein; upon 
+cre‑mediated recombination, tdTomato is expressed, perma ‑
+nently labeling cre‑active cells and their progeny) mice were 
+purchased from Shanghai Model Organisms c enter, Inc. All 
+mutant mice had a c57/B6J background. col2a1‑2A‑creERT2 
+mice were bred with R26‑ cAG‑LSL‑tdTomato mice to 
+generate inducible cartilage‑specific labeled mice that 
+carried a Tam‑inducible c reERT2 transgene under the 
+control of the Col2a1 gene promoter for CH‑specific expres‑
+sion, and the c re/loxP‑inducible Rosa‑ cAG‑LSL‑tdTomato 
+reporter to mark the cells after c reER activity was induced 
+by Tam injections. To generate inducible cartilage‑specific 
+Kdm6a‑knockout mice, Kdm6a flox/flox  mice were bred with 
+col2a1‑2A‑ creERT2&R26‑ cAG‑LSL‑tdTomato mice to 
+generate Kdm6a flox/+ &col2a1‑2A‑ creERT2&R26‑ cAG‑ 
+LSL‑tdTomato (fx/wt) mice, and these mice were intercrossed 
+or bred with Kdm6aflox/flox mice again to generate Kdm6aflox/flox&
+col2a1‑2A‑creERT2&R26‑cAG‑LSL‑tdTomato (fx/fx) mice 
+and fx/wt mice (44). Fx/wt mice were used as controls. d NA 
+was obtained from tail biopsy samples and genotyping was 
+performed using PcR (2X Taq Plus Master Mix; P212; Vazyme 
+Biotech Co., Ltd.). The conditions for amplification reactions 
+were as follows: 94˚C for 3 min, followed by 34 cycles of 94˚C 
+for 30 sec, 56˚C (Kdm6a‑Flox and Col2a1‑CreERT2)/58˚C 
+(R26‑CAG‑LSL‑tdTomato) for 30 sec and 72˚C for 30 sec. The 
+primer sequences are shown in Table  SI. The P cR products 
+were separated on a 3% agarose gel, stained with GelStain 
+fluorescent nucleic acid dye (TransGen Biotech Co., Ltd.) and 
+visualized using a fully automatic digital gel imaging analysis 
+system (Tanon Science and Technology co., Ltd.). As described 
+in data S1, an example of mouse tail clipping P cR genotype 
+identification results is shown in Fig. S1. A total of 120 male 
+mice were used in the present study. At the start of the experi‑
+ment, the mice were 6 months old, with body weights ranging 
+between 25 and 30 g. According to their genotype, the mice 
+were divided into two groups: The inducible cartilage‑specific 
+Kdm6a‑knockout group (fx/fx; n=60) and the control group 
+(fx/wt; n=60). Mice from each group were then randomly 
+allocated to different experimental endpoints as follows: 
+scRNA‑seq (n=6 per genotype), histological staining (n=15 per 
+genotype), radiological examination (n=6 per genotype) and 
+cytological experiments (n=33 per genotype). After the primary 
+cHs were extracted from the mouse cartilage callus, K dM6A 
+protein expression in the cells of the two groups was detected by 
+western blotting to verify successful gene knockout (Fig. S2). 
+Live‑cell imaging was performed during the in vitro induction 
+of c H transdifferentiation into osteoblasts in the cartilage 
+callus. Imaging was performed directly after transferring the 
+cells into osteogenic induction culture medium. A fluorescence 
+microscope (carl Zeiss AG) equipped with an environmental 
+control chamber was used to maintain the cells at 37˚C with 
+5% cO2 during observation. Imaging was performed for 48 h, 
+capturing an image every 30 min. Fluorescence imaging 
+showed that the CHs specifically expressed a clear red labeling 
+signal, and the col2a1‑ creERT2/RosatdTomato model was 
+successfully established (Fig. S3).
+Tibial fracture model. Fx /fx and fx /wt mice were intra ‑
+peritoneally injected with 75 mg /kg Tam (Sigma‑Aldrich; 
+Merck KGaA) once daily for 5 days. The fracture model 
+was established on the second day after induction. Mice 
+were weighed and anesthetized by intraperitoneal injec ‑
+tion of 0.4% pentobarbital sodium at a dose of 40 mg /kg. 
+After the mice were completely anesthetized, the skin was 
+prepared in front of the left tibia, and hair was removed as 
+cleanly and thoroughly as possible. Mice were placed in the 
+left lateral position. The surgical site on the left lower limb 
+was disinfected three times with iodine, followed by draping 
+with sterile fenestrated drapes. Using high‑temperature 
+and high‑pressure sterilized instruments, a small incision 
+of ~1 cm was made along the longitudinal axis of the left 
+tibia, from the knee joint to the middle section of the tibia. 
+Hemostatic forceps were used to expose the anterior edge 
+of the tibia to obtain the skin, muscles and fascia. Surgical 
+blade 11 was positioned at the highest point of the antero ‑
+lateral protrusion of the tibia. A transverse fracture was 
+created by striking the base of the blade vertically with a 
+small hammer and a slight lateral movement was performed 
+to confirm the fracture. A sterile 1‑ml syringe needle was 
+inserted into the medulla for fixation, and the exposed needle 
+was removed (45). After disinfection with Aner iodine, the 
+incision was sutured layer‑by‑layer using a 5‑0 medical 
+suture needle and thread. After the operation, 40,000 U 
+penicillin was injected intramuscularly for 3 consecutive 
+days to prevent infection. The mice were raised without any 
+activity restrictions. The incision conditions and activity of 
+the mice were monitored daily. Fractured callus tissues were 
+harvested on days 10 and 21 post‑fracture for single‑cell 
+sequencing. The samples at each time point were obtained 
+from 6 different mice. Samples of the left tibiae from 12, 12 
+and 18 different mice were collected on days 10, 21 and 28 
+post‑fracture for radiological and histological analyses.
+scRNA‑seq. Bone callus samples were dissociated into 
+single‑cell suspensions. The cell concentration and viability 
+were determined using a countstar Rigel S2 automated cell 
+fluorescence analyzer (Shanghai Ruiyu Biotech Co., Ltd.) 
+with AO /PI staining (RE010212; Shanghai Ruiyu Biotech 
+co., Ltd.) and c ountstar counting slides ( cO010101; 
+Shanghai Ruiyu Biotech c o., Ltd.). The concentration 
+was adjusted to 700‑1,200  cells /µl. Single‑cell capture, 
+barcoding and library preparation were performed using 
+the c hromium Next GEM Single c ell 3' Reagent Kits v3.1 
+(cat. no. 1000268; 10x Genomics). c ell suspensions were 
+combined with barcoded gel beads and master mix, and 
+encapsulated into gel beads‑in‑emulsion (GEMs) using a 
+microfluidic system. Within the GEMs, poly (dT) primers 
+bound to mRNA poly‑A tails to initiate reverse transcrip ‑
+tion (RT). Full‑length barcoded c dNA was generated by 
+
+
+=== PAGE 4 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION4
+RT using the integrated RT reagents: RT Reagent B (cat. 
+no. 2000165; buffer), RT Enzyme c  (M‑MLV Reverse 
+Transcriptase; cat. no. 2000085 /2000102), Template 
+Switch Oligo (cat. no. 3000228) and Reducing Agent B 
+(cat. no. 2000087) from the c hromium Next GEM Single 
+cell 3' Reagent Kit v3.1 (10x Genomics). The RT reaction 
+was performed at 53˚C for 45 min, followed by enzyme 
+inactivation at 85˚C for 5 min. The GEMs were then 
+broken, and the pooled cDNA was amplified by PCR using 
+a high‑fidelity DNA polymerase from the Amp Mix (cat. 
+no. 2000047 /2000103; 10x Genomics) with the following 
+primers: Forward, 5'‑ cTA cAc GAc GcT cTT ccG ATcT‑3' 
+and reverse, 5'‑AAG  cAG TGG TAT cAA cGc AGA G‑3'. 
+The thermocycling conditions were as follows: 98˚C for 
+3 min; cycling (12‑13 cycles, optimized for cell recovery) 
+at 98˚C for 15 sec, 63˚C for 20 sec and 72˚C for 1 min; 
+and 72˚C for 1 min. The quality and size distribution of 
+the amplified cDNA were verified using an Agilent 2100 
+Bioanalyzer (Agilent Technologies, Inc.), showing a main 
+peak of 1,000‑2,000 bp. The c dNA was fragmented 
+(~400 bp on average) and sequencing adapters were added. 
+A final sample indexing P cR was conducted using the 
+same Amp Mix and the d ual Index Kit TT Set A primers 
+(cat. no. 1000215; 10x Genomics) containing unique i5 and 
+i7 index sequences. The sequences were: P5 primer (with 
+i5 index), 5'‑AAT  GAT AcG GcG Acc Acc GAG ATc TAc 
+Ac‑N10‑AcA cTc TTT ccc TAc AcG AcG cTc‑3'; P7 primer 
+(with i7 index), 5'‑ cAA GcA GAA GAc GGc ATA cGA 
+GAT‑N10‑GTG  AcT GGA GTT cAG AcG TG T‑3' (where 
+N10 represents the unique 10‑bp index sequence for each 
+sample). The indexing PCR conditions were: 98˚C for 
+45 sec; cycling (8‑16 cycles, optimized for c dNA input) at 
+98˚C for 20 sec, 54˚C for 30 sec and 72˚C for 20 sec; and 
+72˚C for 1 min. The concentration of the final sequencing 
+library was determined by quantitative P cR (qP cR) to 
+ensure accurate loading for sequencing. The quantification 
+was performed using the VAHTS Library Quantification 
+Kit for Illumina ® (cat. no. NQ101; Vazyme Biotech c o., 
+Ltd.) according to the manufacturer's protocol. The fluores‑
+cent dye premix solution and the primers (forward, 5'‑AAT  
+GAT AcG GcG Acc Acc GA‑3'; reverse, 5'‑ cAA GcA GAA 
+GAc GGc ATA cGA‑3') were all included in this kit. This 
+method provides absolute quantification of the library. 
+Briefly, a dilution series of the library was prepared and used 
+as template alongside the d NA standards (cat. no. NQ105; 
+Vazyme Biotech c o., Ltd.) to generate a standard curve. 
+Each qP cR reaction was set up in triplicate using the 
+provided premix. Amplification was carried out on a qPCR 
+instrument with a standard cycling protocol appropriate 
+for the kit (95˚C for 5 min, followed by 35 cycles of 95˚C 
+for 30 sec and 60˚C for 45 sec). The library concentration 
+was calculated according to the kit's protocol. A standard 
+curve was generated using the provided d NA standards of 
+known concentrations. The c t values of the library samples 
+were interpolated from this standard curve to obtain a 
+preliminary concentration. This value was then corrected 
+for the average library length using the following formula: 
+corrected concentration (pM)=[452 bp /mean library length 
+(bp)] x preliminary concentration (pM). The final, accurate 
+concentration of the original library (nM) was derived by 
+multiplying the corrected concentration by the dilution 
+factor. Following quantification, the pooled libraries were 
+diluted to a final concentration of 200 pM and loaded 
+onto an Illumina NovaSeq 6000 flow cell (Illumina, Inc.) 
+for cluster generation and sequencing. Paired‑end 150‑bp 
+sequencing was performed on an Illumina NovaSeq 6000 
+platform (Illumina, Inc.) using the Illumina NovaSeq 6000 
+S4 Reagent Kit (cat. no. 20028312; Illumina, Inc.). Raw 
+sequencing data were processed using c ellRanger (v8.0.1; 
+10x Genomics). d ownstream analysis was performed in 
+R (v4.1.2; https: //www.r‑project.org /) utilizing the Seurat 
+package (v4.1.1; https: //satijalab.org /seurat /).
+The raw sequencing data were processed using cellRanger 
+for genome alignment, background cell filtering and unique 
+molecular identifier (UMI) counting of cellular transcripts. 
+data integration across multiple samples was performed 
+using the anchor‑based canonical correlation analysis method 
+as previously described (46). For the cell gene expres‑
+sion matrix generated by c ellRanger, Seurat software was 
+used to filter dead or stressed cells by removing cells with 
+abnormal gene or UMI counts, high mitochondrial gene 
+content and potential doublets. The filtering criteria were 
+set as follows: Number of genes per cell, 500‑infinity; total 
+UMIs per cell, < infinity; and proportion of mitochondrial 
+gene expression per cell, <25%; and doublets were removed 
+using the doubletFinder package (version 2.0.4; https://github.
+com/chris‑mcginnis‑ucsf/ doubletFinder). The distribution 
+of basic information of each sample cell after cell filtering is 
+shown in Figs. S4 and S5.
+After quality control, only the high‑quality cells suitable 
+for downstream analyses were retained ( data S1; Tables SII 
+and SIII). during data preprocessing, regression analysis was 
+performed to eliminate the effects of total UMI counts and 
+mitochondrial gene proportion, and expression data were 
+normalized using a scale factor of 1x10 4. Highly variable 
+genes were selected using the FindVariableGenes algorithm 
+in the Seurat package (parameters: x.low.cutoff, 0.0125; 
+y.cutoff, 0.5), and principal component analysis (P cA) was 
+performed based on these genes. The top 100 significant 
+principal components were selected, and cell sub‑clusters 
+were identified using the Find clusters function (derived 
+from Seurat v4.1.1; dims, 1:30; resolution, 0.5). Finally, 
+uniform manifold approximation and projection (UMAP) 
+was employed for dimensionality reduction and visualization 
+of the gene expression data.
+Following cell clustering and annotation, the expression 
+patterns of key marker genes across subpopulations were 
+visualized. UMAP plots depicting the expression of individual 
+genes were generated using the FeaturePlotfunction in Seurat, 
+where color intensity corresponds to the expression level of 
+the feature gene in each cell. Violin plots were used to display 
+the distribution of expression for these marker genes across 
+the annotated cell clusters. Additionally, a dot plot was created 
+to summarize the expression of characteristic marker genes 
+across the main c H‑osteoblast lineage subpopulations. In 
+this plot, the size of the dot represents the percentage of cells 
+within a cluster expressing the gene, and the color gradient 
+indicates the mean expression level.
+Based on marker genes and referencing the cellMarker2.0 
+database (http://117.50.127.228/ cellMarker/), cell type 
+
+=== PAGE 5 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 5
+annotation was performed. For enrichment analysis, genes with 
+specific high expression in each cell subcluster (top 10) were 
+subjected to Gene Ontology (GO) and Kyoto Encyclopedia of 
+Genes and Genomes (KEGG) pathway enrichment analysis 
+using the clusterProfiler R package (v4.2.2; https://biocon ‑
+ductor.org/packages/clusterProfiler) to interpret potential 
+biological functions. The enrichment results were visualized 
+using the ggplot2 package (v3.4.0; https://cran.r‑project.
+org/web/packages/ggplot2/index.html), with bubble plots and 
+bar charts displaying significantly enriched pathways. Gene 
+set enrichment analysis (GSEA) was conducted using GSEA 
+software (v4.4.0; https://www.broadinstitute.org/gsea/), and 
+the results were visualized using the GseaVis R package 
+(v0.1.1; https://github.com/junjunlab/GseaVis).
+Pseudotime trajectory analysis of CH‑to‑osteoblast trans ‑
+differentiation. Pseudotime trajectories were constructed 
+by integrating highly variable genes from cell subpopula ‑
+tions using Monocle3 (v1.3.4; http: //cole‑trapnell‑lab.github.
+io/monocle3 /). Trajectory visualization was achieved in 
+combination with UMAP . The learn‑graph algorithm was 
+employed to define c Hs as the root of the trajectory, and 
+dynamic changes in gene expression along pseudotime were 
+analyzed using the plot‑genes‑in‑pseudotime function.
+CellChat‑based cell‑cell communication analysis. The dataset 
+was analyzed using the c ellchat package (version 2.1.2; 
+https: //github.com /sqjin /cell chat) in R (version 4.4.1; 
+https://www.r‑project.org/). cellchat models the intercellular 
+communication probability by applying the law of mass action 
+and integrating gene expression data with prior knowledge of 
+the interactions among signaling ligands, receptors and their 
+cofactors. Based on cell type annotation and identification 
+of upregulated genes, the compute communProb function 
+was used to infer ligand‑receptor interaction probabilities, 
+the compute communProbPathway function was used to 
+quantify pathway‑level communication strength and key 
+interactions were visualized as chord diagrams using the 
+netVisual‑chord‑gene function.
+H&E and safranin O‑Fast Green staining. After fixation 
+in 4% paraformaldehyde at room temperature for 24 h, the 
+samples were decalcified in an EDTA decalcification solution 
+at room temperature. The decalcification solution was changed 
+every 2‑3 days. during each solution change, the progress of 
+decalcification was assessed by testing the tissue firmness. 
+Decalcification was considered complete when a 1‑ml syringe 
+needle could be inserted into the tibial cortex without resistance. 
+Once decalcification was complete, tibial specimens were rinsed 
+under running water for 4 h, dehydrated, cleared, embedded in 
+paraffin and sectioned. The thickness of sections was 3 µm. The 
+sections were stained with H&E (Beijing Solarbio Science & 
+Technology co., Ltd.) using hematoxylin solution for 5 min and 
+eosin solution for 1 min, and safranin O‑Fast Green (Wuhan 
+Servicebio Technology co., Ltd.) using Fast Green for 5 min 
+followed by Safranin O for 2 min according to the manufac ‑
+turer's instructions at room temperature. Images were acquired 
+using a panoramic digital slide scanner (3 dHISTEcH, Ltd.), 
+which is a high‑resolution whole‑slide imaging system based on 
+bright‑field light microscopy.
+Immunofluorescence staining. The sample fixation and decal‑
+cification steps were the same as those for H&E and safranin 
+O‑Fast Green staining. The thickness of paraffin sections 
+was 3 µm. The paraffin sections were placed one by one into 
+xylene I and xylene II for dewaxing for 10 min each, then 
+soaked in absolute ethanol I and absolute ethanol II for 5 min 
+each, rehydrated in 95, 85 and 75% ethanol for 3 min each, 
+and finally rinsed in distilled water for 2 min. Subsequently, 
+the paraffin sections were immersed in a 1X antigen retrieval 
+solution and heated at 100˚C for 20 min. After cooling to 
+room temperature, the sections were washed with PBS. 
+Permeabilization was performed by incubating the tissues with 
+Triton X‑100 (ready‑to‑use working solution; cat. no. P0096; 
+Beyotime Biotechnology) for 30 min, followed by incubation 
+with 3% BSA (Beijing Biosynthesis Biotechnology co., Ltd.) 
+at room temperature for 30 min to block nonspecific binding. 
+The sections were then incubated overnight at 4˚C with 
+diluted primary antibody [anti‑osteocalcin (O cN); 1:400; cat. 
+no. ER1919‑20; Hangzhou HuaAn Biotechnology Co., Ltd.] 
+After washing with PBS, the sections were incubated with a 
+fluorescent secondary antibody [anti‑rabbit IgG (H+L), F(ab')2 
+Fragment; Alexa Fluor® 488 conjugate; 1:1,000; cat. no. 4412; 
+cell Signaling Technology, Inc.] in the dark at room tempera‑
+ture for 50 min. After washing with PBS, the nuclei were 
+counterstained with d API at room temperature for 10 min. 
+Fluorescence images were acquired using a panoramic digital 
+slide scanner, and analyzed using ImageJ software (1.54p; 
+National Institutes of Health).
+CH isolation from the fracture callus. On day 10 after model‑
+ling, c Hs were isolated from the fracture calli of the mice. 
+The mice were euthanized by cervical dislocation, and the left 
+lower limb was removed and placed in a pre‑chilled culture 
+dish containing PBS supplemented with penicillin‑strepto ‑
+mycin at a 1:9 ratio. Using sterilized instruments, the skin was 
+incised at the knee joint, and the surrounding hair, muscle, 
+fascia and vascular tissues were carefully separated to expose 
+the fracture site. The cartilaginous callus was isolated from 
+the surrounding fibrous tissue, and translucent cartilage was 
+scraped off using a blade, taking care to remove cortical 
+bone and other bony tissues. A randomly selected piece of 
+the removed cartilage tissue was subjected to Alcian blue and 
+Alizarin red combined staining (data not shown) to ensure 
+that the cartilage tissue collected did not contain bone tissue. 
+Briefly, the tissue fragment was fixed in 4% paraformaldehyde 
+at 4˚C for 24  h, embedded in paraffin and sectioned at 4  µm 
+thickness. Sections were stained with Alcian Blue (pH 2.5) for 
+30 min and Alizarin Red S solutions for 5 min at room temper‑
+ature according to standard protocols, and observed under a 
+light microscope (Olympus BX53; Olympus corporation).
+The collected cartilage was placed in a pre‑chilled culture 
+dish containing PBS with penicillin‑streptomycin (1:9 ratio) 
+and kept on ice. The cartilage was cut into small fragments of 
+~1 mm using fine scissors, and the cartilage fragments were 
+transferred into a 15‑ml centrifuge tube.
+Subsequently, 4 ml of 0.25% trypsin‑E dTA solution 
+was added and the sample was incubated at 37˚C for 15  min 
+to remove any attached fibroblasts or osteoblasts. During 
+digestion, the tube was manually shaken for 15  sec every 
+5 min to ensure complete digestion. The digestion was 
+
+
+=== PAGE 6 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION6
+terminated by adding 4 ml complete c H medium [10% FBS 
+(Sigma‑Aldrich; Merck KGaA), 1% penicillin‑streptomycin 
+and 89% DMEM/F12 (1:1) (HyClone; Cytiva)], and the 
+sample was centrifuged at 200 x g at 4˚C for 5 min. The 
+supernatant was discarded and the tissue was washed twice 
+with PBS.
+A mixture of 1  ml hyaluronidase (1  mg/ml; ~400  U), 1 
+ml collagenase IA (2 mg/ml; >250 U) and 1 ml d Nase II 
+(0.25 mg/ml; >250 U) was prepared, and 3 ml of this enzyme 
+mixture was added to the tissue. The samples were digested 
+at 37˚C for 30 min in an incubator. Digestion was terminated 
+by adding 3 ml complete c H medium, and the sample was 
+centrifuged at 200 x g at 4˚C for 5 min. The supernatant from 
+the first 30‑min digestion was discarded to remove remaining 
+fibroblasts and osteoblasts.
+A new aliquot (3 ml) of the enzyme mixture was then 
+added, and the tissue was digested for an additional 30 min at 
+37˚C. After adding 3 ml complete medium to terminate diges‑
+tion and allowing the cartilage to settle, the supernatant was 
+collected and filtered through a 70‑µm cell strainer, followed 
+by centrifugation at 200 x g at 4˚C for 5 min. The supernatant 
+was removed and the cell pellet was gently resuspended in 
+1 ml complete cH medium.
+This process of enzymatic digestion, centrifugation and 
+cell collection was repeated with a freshly prepared enzyme 
+mixture until all cHs were released, as indicated by the absence 
+or minimal presence of cell pellets in the centrifuge tube after 
+spinning the supernatant from the digestion. This protocol can 
+yield highly purified cartilage cell preparations characterized 
+by strong expression of cartilage formation markers and a 
+strong tendency for cells to synthesize a cartilage matrix rich 
+in proteoglycans (47).
+Hypoxic culture and osteogenic induction. After cHs isolated 
+from the fracture callus in both groups of mice had established 
+stable growth to the appropriate size and density under hypoxic 
+conditions (6% O2), the cells were randomly divided into four 
+groups: fx /wt hypoxia group (continued culture in 6% O 2), 
+fx/wt normoxia group (cultured in 21% O 2), fx /fx hypoxia 
+group (continued culture in 6% O2) and fx/fx normoxia group 
+(cultured in 21% O2). The oxygen concentrations of 6 and 21% 
+were selected based on the established oxygen‑sensing property 
+of KdM6A. A seminal study demonstrated that the enzymatic 
+activity of its Jmjc domain was inhibited below ~5% O2 (22). 
+Therefore, 6% O2 represents a point where activity potentially 
+begins to recover, while 21% O2 (atmospheric level) reflects its 
+fully active state. This range allows interrogation of the func ‑
+tional continuum of KdM6A from inhibition to full activation, 
+thereby enabling a clear analysis of the axis linking oxygen 
+levels, KdM6A‑mediated epigenetic regulation and cell fate.
+The original cH culture medium [10% fetal bovine serum, 
+1% penicillin‑streptomycin and 89% DMEM/F12 (1:1)] was 
+replaced with osteogenic induction medium [ α‑Minimum 
+Essential Medium (Hy clone; c ytiva) supplemented 
+with 10% fetal bovine serum, 1% L‑glutamine, 1% peni ‑
+cillin‑streptomycin, 10 mM β‑glycerophosphate, 0.2  mM 
+ascorbate‑2‑phosphate and 100  ng/ml bone morphogenetic 
+protein 2 (BMP‑2)] to induce the transdifferentiation of c Hs 
+into osteoblasts at 37˚C for 7 days. The culture medium was 
+replaced every 2‑3 days.
+Alcian blue, alizarin red and alkaline phosphatase (ALP) 
+staining. After 7 days of osteogenic induction, the cells 
+seeded in 24‑well plates (2.5x10 4/cm2) were removed from 
+the incubator. The culture medium was discarded and the 
+cells were washed with PBS and fixed with 4% cell fixative 
+(P1110; Beijing Solarbio Science & Technology c o., Ltd.) at 
+room temperature for 15 min. According to the manufacturer's 
+protocols, staining was performed as follows: Alcian blue 
+(E670107; Sangon Biotech co., Ltd.) staining for 30 min at 
+room temperature, ALP (G1481; Beijing Solarbio Science & 
+Technology Co., Ltd.) staining for 2 h at 37˚C and Alizarin red 
+(G1038; Wuhan Servicebio Technology co., Ltd.) staining for 
+30 min at room temperature. Images were observed under a 
+light microscope and analyzed using ImageJ software (1.54p; 
+National Institutes of Health).
+RT‑qPCR. Total mRNA was extracted from each cell sample 
+using TRNzol reagent (Tiangen Biotech co., Ltd.), and cdNA 
+was obtained by RT using the PrimeScript ™ FAST RT 
+reagent Kit with g dNA Eraser (Takara Bio, Inc.) according 
+to the manufacturer's instructions. Reverse‑transcribed c dNA 
+was used as the template, and primers and TB Green Premix 
+Ex Taq II (Tli RNaseH Plus) (Takara Bio, Inc.) were added 
+to perform qPCR. The amplification reaction conditions were 
+as follows: 95˚C for 30 sec, followed by 40 cycles of 95˚C 
+for 5 sec and 60˚C for 34 sec. Finally, β‑actin was used as 
+an internal reference, and the relative expression levels of the 
+target genes were calculated using the 2‑ΔΔCq method (48). The 
+mRNA levels of col2a1, collagen type X α1 chain (col10a1), 
+aggrecan (Acan), collagen type  I α1 chain ( col1a1), secreted 
+phosphoprotein 1 (Spp1), secreted protein acidic and cysteine 
+rich (Sparc) and β‑actin were analyzed using the primer 
+sequences listed in Table I.
+Western blotting. The protein extraction buffer was prepared 
+with a ratio of RIPA lysis buffer (Jiangsu Kangwei century 
+Biotechnology co., Ltd.) to proteinase inhibitor mixture 
+(Jiangsu Kangwei century Biotechnology co., Ltd.) of 100:1. 
+cells were lysed in the protein extraction buffer on ice for 
+20 min to extract protein samples. When analyzing dimethyl ‑
+ation of H3K27 (H3K27me2) and H3K27me3, nuclear lysates 
+were prepared using the Nuclear and c ytoplasmic Protein 
+Extraction Kit (P0028; Beyotime Biotechnology), with histone 
+H3 serving as the nuclear reference. The protein concentra ‑
+tion was determined using the B cA method. Equal amounts 
+(20 µg/lane) of protein were loaded onto a sodium dodecyl 
+sulfate‑polyacrylamide gel (4‑12%) for electrophoresis. After 
+electrophoresis, the proteins were transferred to a PV dF 
+membrane, and the membrane was blocked with a protein‑free 
+rapid blocking solution (Boster Biological Technology) at 
+room temperature for 10  min. Primary antibodies, including 
+anti‑KdM6A antibody (1:1,000; cat. no. 33510; cell Signaling 
+Technology, Inc.), anti‑Wnt3a antibody (1:1,000; cat. no. 2391; 
+cell Signaling Technology, Inc.), anti‑ β‑catenin antibody 
+(1:1,000; cat. no. 37447; c ell Signaling Technology, Inc.), 
+anti‑RUNX2 antibody (1:1,000; cat. no. ab236639; Abcam), 
+anti‑GAP dH antibody (1:2,000; cat. no. ab8245; Abcam), 
+anti‑histone H3 (di methyl K27) antibody (1:1,000; cat. 
+no. 9728; Cell Signaling Technology, Inc.), anti‑histone H3 (tri 
+methyl K27) antibody (1:1,000; cat. no.  9733; Cell Signaling 
+
+=== PAGE 7 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 7
+Technology, Inc.) and anti‑histone H3 antibody (1:2,000; cat. 
+no. 4499; Cell Signaling Technology, Inc.), diluted in antibody 
+diluent according to the manufacturer's instructions, were then 
+added for incubation overnight at 4˚C with gentle shaking. The 
+membranes were washed with TBS with 0.1% Tween‑20 and 
+incubated with the appropriate horseradish peroxidase‑conju ‑
+gated secondary antibodies (1:4,000; cat. no. S0001 or S0002; 
+Affinity Biosciences, Ltd.) at room temperature for 1 h. The 
+proteins were then exposed and stained with EcL reagent. On 
+the same membrane, different primary antibodies were incu ‑
+bated successively. Before changing the primary antibody, the 
+previous round of primary /secondary antibodies was eluted 
+with Stripping buffer (Beyotime Biotechnology). The target 
+bands were analyzed using ImageJ software (1.54p; National 
+Institutes of Health) for gray‑value calculations.
+Chromatin immunoprecipitation‑PCR (ChIP‑PCR). 
+chIP‑PcR was used to observe the changes in H3K27me2 and 
+H3K27me3 in the promoter region of Wnt3a, β‑catenin and 
+RUNX2 in the fx /wt normoxia group and the fx /fx normoxia 
+group after 3 days of osteogenic induction. The chIP assay was 
+performed using the chIP Assay Kit (cat. no. P2078; Beyotime 
+Biotechnology) according to the manufacturer's instructions. 
+The cells were treated with 1% formaldehyde to form cova ‑
+lent cross‑links between intracellular d NA‑bound proteins 
+and dNA and the cross‑linking reaction was quenched with 
+125 mM glycine. cells were lysed with 1 mM PMSF in S dS 
+Lysis Buffer (included in the chIP Assay Kit) (200 µl/106 cells), 
+and the genomic d NA was subsequently fragmented by 
+sonication (20 kHz; 4 sec pulse; 8 sec interval; at a rate of 
+5 times per min for a total of 5 min in an ice‑water bath) to 
+obtain random fragments typically ranging between 200 and 
+1,000 bp. Specific antibodies against the target proteins were 
+used, including anti‑histone H3 (di methyl K27) (1:50; cat. 
+no. 9728; Cell Signaling Technology, Inc.), anti‑histone H3 (tri 
+methyl K27) (1:50; cat. no. 9733; Cell Signaling Technology, 
+Inc.) and IgG (cat. no. 2729; Cell Signaling Technology, Inc.). 
+These antibody‑chromatin complexes were subsequently 
+captured with 60 µl Protein A+G Agarose beads (included in 
+the chIP Assay Kit) to enrich the dNA fragments bound by the 
+target proteins. Subsequently, the instructions in the kit (cat. 
+no. P2078; Beyotime Biotechnology) were followed to wash 
+the precipitate. The wash procedure was performed sequen ‑
+tially with Low Salt Immune complex Wash Buffer, High 
+Salt Immune complex Wash Buffer, Li cl Immune complex 
+Wash Buffer and TE Buffer. The cross‑linking of proteins and 
+DNA was relieved by centrifugation (1,000 x g; 1 min; 4˚C) 
+and heating, and proteins were degraded using proteinase K. 
+The enriched d NA fragments were purified using a d NA 
+purification kit (cat. no. D0033; Beyotime Biotechnology). 
+Purified DNA was used as a template for PCR amplification 
+using PrimeSTAR ® HS dNA Polymerase (Takara Bio, Inc.). 
+The primer sequences are listed in Table  II. The amplifica ‑
+tion reaction conditions were as follows: 30 cycles of 98˚C for 
+10 sec, 60˚C for 15 sec and 72˚C for 50 sec. The PCR products 
+were separated by 1.5% agarose gel electrophoresis, stained 
+with GelStain fluorescent nucleic acid dye (TransGen Biotech 
+co., Ltd.) and visualized using a fully automatic digital gel 
+imaging analysis system (Tanon Science and Technology co., 
+Ltd.).
+Table I. Nucleotide sequences of primers used for reverse transcription‑quantitative PcR.
+Target gene Forward primer (5'‑3') Reverse primer (5'‑3')
+col2a1 AGAGGGGAcTGAAGGGAcAcc GccAGGGATTccATTAGAGcc
+col10a1 GcTGccTcAAATAcccTTTcTGc GGAATGccTTGTTcTccTcTTAcTG
+Acan TAGAAcccTcGGGcAGAAGAAAG cTGTAGccTGTGcTTGTAGGTGTTG
+col1a1 GGcAAcAGTcGcTTcAccTAcAG GAGGTcTTGGTGGTTTTGTATTcG
+Spp1 cTGATGAAcAGTATccTGATGccAc GGGAcTccTTAGAcTcAccGcT
+Sparc TTGGcGAGTTTGAGAAGGTATGc AGGTGAccAGGAcATTTTTGAGc
+Wnt3a GGAGTTTGccGATGccAGGGAG AccAccAGcAGGTcTTcAcTTcAcAG
+β‑catenin TcGTGcTGGTGAcAGGGAAGAc GcAGTccATAATGAAGGcGAAcG
+RUNX2 GGAATGATGAGAAcTAcTccGccG GAAAcTcTTGccTcGTccGcTc
+β‑actin AGGTcATcAcTATTGGcAAcGAG TTGGcATAGAGGTcTTTAcGGAT
+Acan, aggrecan; col1a1, collagen type I α1 chain; col10a1, collagen type X α1 chain; col2a1, collagen type II α1 chain; RUNX2, RUNX 
+family transcription factor 2; Sparc, secreted protein acidic and cysteine rich; Spp1, secreted phosphoprotein 1.
+Table II. Nucleotide sequences of primers used for chromatin 
+immunoprecipitation‑PCR amplification.
+Target
+gene Primer sequence (5'‑3') Size, bp
+Wnt3a  473
+  Forward AGGGTcTTTTcTcTGGGcTAcAA 
+  Reverse ATcTcAAccTATGGGGGTcAcAG 
+β‑catenin  657
+  Forward TTGAcAAGTGccAATcGTGAAGG 
+  Reverse AAAGTAGTccccGccAGTccG 
+RUNX2  890
+  Forward AcTGTccAcGcTGATGAAAGAAT 
+  Reverse TGTcTcTTTAcTTATGGGTGTTccT 
+RUNX2, RUNX family transcription factor 2.
+
+
+=== PAGE 8 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION8
+Micro‑CT analysis. Micro‑ cT was used to assess the bone 
+structure and fracture healing (49). At 28 days post‑fracture, 
+the mice underwent in  vivo micro‑ cT scanning and 
+three‑dimensional reconstruction to observe morphological 
+changes at the fracture site. The mice were initially anesthe ‑
+tized in an induction chamber with 4% isoflurane delivered 
+in air at a flow rate of 1  l/min via a gas anesthesia machine. 
+Once anesthetized, the mouse was transferred to a nose cone 
+for maintenance on 1.8% isoflurane in air at a flow rate of 
+0.8 l/min throughout the scanning procedure. The positions 
+of the mouse and scanning chamber were carefully fixed, 
+an appropriate scanning bed was selected, and imaging was 
+performed, followed by three‑dimensional reconstruction to 
+obtain images for subsequent analysis.
+For ex vivo scanning, the bone samples were placed in a 
+small sample holder for scanning and three‑dimensional recon‑
+struction to collect data for subsequent analyses. On day 28 
+post‑fracture, tibial specimens were collected and then fixed in 
+4% paraformaldehyde at 4˚C for 48 h. After fixation, the samples 
+were wrapped in gauze and placed in a small ex vivo chamber 
+for standard micro‑ cT scanning and three‑dimensional 
+reconstruction (parameters: tube voltage, 70 kV; tube current, 
+150 µA; reconstruction algorithm, Feldkamp‑ davis‑Kress; 
+resolution, 1k x 1k). After reconstruction, the images were 
+segmented and bone analysis was performed using Avatar3 
+software [2.0.12.0; PINGSENG Healthcare (Kunshan) Inc.]. 
+The region of interest was defined as an area 1 mm above and 
+below the fracture line. Quantitative analyses were performed 
+to determine the trabecular bone volume fraction (BV/TV), 
+trabecular bone surface area fraction (BS/TV), trabecular 
+number (Tb.N) and trabecular thickness (Tb.Th).
+Statistical analysis. c luster‑specific marker genes were 
+identified using the Wilcoxon rank‑sum test implemented in 
+the FindAllMarkers function of the Seurat package, with an 
+adjusted P‑value <0.05 and |avglog 2 fold change (F c)|>0.25 
+as thresholds. differentially expressed genes between groups 
+were explored using the FindMarkers function with the 
+built‑in Wilcoxon rank‑sum test, with an adjusted P‑value 
+<0.05 and |avglog 2Fc|>0.15. The experimental data were 
+obtained from at least three independent replicates. Statistical 
+analyses of all data were performed using GraphPad Prism 
+(version 8.0.2; d otmatics). d ata were normally distributed. 
+comparisons between two groups were analyzed using a 
+two‑tailed, unpaired Student's t‑test. For comparisons among 
+multiple groups, one‑way ANOVA was performed, followed 
+by Tukey's post hoc test. data are presented as the mean ± Sd. 
+P<0.05 was considered to indicate a statistically significant 
+difference.
+Results
+Transcriptional landscape of callus tissue during mouse 
+fracture healing. First, six fx/wt (WT) mouse fracture callus 
+samples were analyzed, including three samples collected at 
+10 days post‑fracture (WT1_10, WT2_10 and WT3_10) and 
+three samples collected at 21 days post‑fracture (WT1_21, 
+WT2_21 and WT3_21). Following quality control and data 
+filtering, 56,189 high‑quality deeply sequenced cells were 
+obtained and 25 distinct clusters were identified. Each cluster 
+was defined by comparing its expression profile with that of 
+known lineage markers or canonical gene signatures.
+during cell annotation, dimensionality reduction and 
+unbiased clustering were performed based on gene expression 
+profiles and classical markers of the cells, resulting in the 
+identification of 19 clusters (Fig. 1A). There were distinct differ‑
+ences in the UMAP plots between callus samples collected 10 
+and 21 days after fracture, indicating different cellular compo‑
+sitions at these stages (Fig. 1B). The present study focused 
+particularly on six cH subpopulations: i)  Proliferative cHs, 
+characterized by high expression levels of Ucma, c 1qtnf3, 
+cnmd, Itm2a and Scrg1; ii) pre‑HT cs, marked by elevated 
+levels of cdkn1c, Hapln1, Ppa1, Pth1r and Snorc; iii) HT cs, 
+expressing col10a1, cst3, Spp1, Ihh and ddit4l; iv) cH‑derived 
+osteoprogenitors ( cdOPs), distinguished by high expression 
+levels of Mmp13, Spp1, osteomodulin (Omd), matrix Gla 
+protein (Mgp) and MAF bZIP transcription factor B (Mafb); 
+v) osteoblasts, identified by the expression of Bglap, Bglap2, 
+Ifitm5, Ibsp and Col1a1; and vi) osteoclasts, which specifically 
+expressed Acp5, Ctsk, Ckb, S100a4 and Mmp9 (Fig. 1C).
+Proportion plots were generated for each cell type 
+(Fig. 1d). At 10 days post‑fracture, cHs in the tissue were in 
+a rapid proliferative phase, with pre‑HTcs, HTcs and cdOPs 
+constituting a larger proportion. Osteoblasts were already 
+present but at relatively low levels. By day 21, the proportion 
+of cHs had markedly decreased, indicating that hypertrophy 
+and transdifferentiation were near completion, whereas the 
+numbers of endothelial cells and osteoclasts had increased, 
+accelerating vascular invasion and cartilage matrix degrada ‑
+tion.
+The volcano plot demonstrated that a special cdOP 
+subset was distinguished by the co‑expression of a specific 
+set of marker genes, including Mmp13, Spp1, Mgp, Omd and 
+Mafb (Fig. 1E). The expression profiles of key representa ‑
+tive genes during c H transdifferentiation, including col2a1, 
+Sox9, Col10a1, Mmp13, RUNX2, Spp1, Sp7 (Osx) and Col1a1, 
+were examined and visualized using UMAP and violin 
+plots (Fig. 1F and G). d ot plot analysis revealed that cd OPs 
+co‑expressed col2a1 and col1a1, and lacked HT c marker 
+col10a1, suggesting active matrix mineralization, remodeling 
+and proliferation (Fig. 1H) (35).
+Systematic functional analysis of endochondral ossifica ‑
+tion‑related differentially expressed gene clusters in cd OPs 
+revealed that the core differential genes, according to GO func‑
+tional annotation, were significantly enriched in key biological 
+processes such as ‘protein binding’ (molecular function), ‘chon‑
+drocyte differentiation’ (biological process) and ‘skeletal system 
+development’ (cellular component). Notably, these genes were 
+highly associated with ‘ossification’ and ‘bone development’ 
+(Fig. 1I). KEGG pathway enrichment analysis further demon‑
+strated that the differential genes were primarily involved in the 
+‘FoxO signaling pathway’ , ‘TGF‑β signaling pathway’ , ‘MAPK 
+signaling pathway’ , ‘EcM‑receptor interaction’ and ‘PI3K‑Akt 
+signaling pathway’ (Fig.  1J). These pathways collectively 
+mediate the establishment of the osteogenic microenvironment 
+through the coordinated regulation of cell cycle progression, 
+proliferative and differentiation dynamics, migratory and adhe‑
+sive behaviors, and matrix remodeling capacity. The significant 
+enrichment of ‘signaling pathways regulating pluripotency of 
+stem cells’ (Fig. 1J) suggested that cdOPs may possess the 
+
+=== PAGE 9 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 9
+Figure 1. Transcriptional landscape of callus tissue during mouse fracture healing. (A) UMAP plot displaying 19 major cell types identified in the callus tissue. 
+(B) UMAP plots of tissue samples collected from WT mice at 10 and 21 days post‑fracture. ( c) UMAP plots showing six subpopulations of c H‑osteoblast 
+lineage cells. (d) Proportion plots of the cell types of interest for each tissue sample. (E) Volcano plots of differentially expressed genes for the subpopulations 
+of interest. (F) UMAP plots of characteristic marker genes for c H‑osteoblast subpopulations. d eeper colors indicate higher expression levels of the feature 
+gene in specific cell populations. (G) Expression profiles of the key representative genes in each subpopulation during CH transdifferentiation. (H) Dot plot 
+showing the expression of 14 characteristic marker genes across the six subpopulations. d ot size represents the proportion of cells expressing a particular 
+marker, whereas the color gradient indicates the average expression level of the marker. (I) Bubble plot of GO functional enrichment analysis of genes in 
+cluster 5 (cdOP). (J) Bar plot of KEGG pathway enrichment analysis of genes in cluster 5 ( cdOP). For each timepoint, callus tissues were harvested from 
+three independent mice (n=3 biologically independent animals per timepoint). cd OP, chondrocyte‑derived osteoprogenitor; cH, chondrocyte; cTL, cytotoxic 
+T lymphocyte; FAM, fibroblastic reticular cell‑associated macrophage; GO, Gene Ontology; HTC, hypertrophic chondrocyte; KEGG, Kyoto Encyclopedia of 
+Genes and Genomes; UMAP, uniform manifold approximation and projection; WT, wild‑type.
+
+
+=== PAGE 10 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION10
+potential for mesenchymal stem cell differentiation toward the 
+osteogenic lineage.
+Differentiation of CDOPs into osteoblasts during endochon ‑
+dral ossification is regulated by the oxygen environment. 
+Based on trajectory inference analysis of single‑cell transcrip‑
+tomic data, the present study utilized the Monocle3 algorithm 
+to perform pseudo‑time modeling of six relevant cell subpopu‑
+lations involved in the transdifferentiation process of c Hs. 
+UMAP nonlinear dimensionality reduction (Fig. 2A) was used 
+to construct a continuum of cellular states, followed by integra‑
+tion with RNA velocity to resolve the topological structure of 
+the cell differentiation trajectories. Using c Hs as the starting 
+point of the trajectory (pseudotime t=0), the results revealed a 
+pronounced bifurcation in cell fate with no table bidirectional 
+heterogeneity: The primary branch (branch 1) culminated in 
+osteoblasts as the terminally differentiated state, while the 
+secondary branch (branch 2) terminated in HT cs. Notably, 
+osteoblasts were strictly localized to the terminal region 
+of branch 1 along the pseudotime axis, with no significant 
+temporal overlap in transcriptomic features with intermediate 
+cell states, such as the cd OP subpopulation, suggesting that 
+this subpopulation may undergo a rapid terminal differentiation 
+program. By contrast, HT cs and cd OPs exhibited partially 
+overlapping segments along the pseudo‑time axis, indicating 
+that they may share transitional regulatory networks. Further 
+analysis examined the temporal changes in the expression of 
+characteristic genes at various time points and across different 
+cell subpopulations ( Fig. 2B and c). Pseudotime analysis 
+showed that 1700025G04Rik was highly expressed during the 
+early stages of cH transdifferentiation, suggesting its potential 
+role in driving the differentiation process. collagen type III α1 
+chain (col3a1) is primarily distributed in blood vessels, marking 
+vascular ingrowth during differentiation, and together with 
+col1a1, helps maintain tissue tensile strength (50). collagen 
+type  V α2 chain ( col5a2) serves a regulatory role in the 
+assembly of Col1a1, thereby influencing collagen fiber diam ‑
+eter and organization of the extracellular matrix  (51). Serpin 
+family E member 2 (Serpine2) inhibits plasmin and thrombin, 
+thereby regulating E cM remodeling, axon guidance and 
+synaptic plasticity (52). Myosin IB (Myo1b), an unconventional 
+myosin, modulates the interplay between the cell membrane 
+and the cytoskeleton through its association with actin. Myo1b 
+participates in vesicle trafficking and cell migration, and 
+serves a crucial role in the regulation of diverse cellular func ‑
+tions, including cell proliferation and apoptosis (53). d uring 
+the transdifferentiation process, col5a2, Myo1b and Serpine2 
+expression progressively increased, peaking at the terminal 
+stage, whereas col3a1 expression remained s table during the 
+cH phase and was gradually downregulated upon osteoblast 
+commitment. Taken together, these findings suggested that 
+cdOPs are the precursor subpopulations of osteoblasts, 
+whereas conventional HT cs maintain paracrine regulatory 
+roles during endochondral ossification.
+GO functional enrichment analysis of the top 100 differen‑
+tially expressed genes (Fig. 2 d) revealed the following: First, 
+the core biological themes were skeletal development and 
+remodeling, as evidenced by terms such as ‘endochondral ossi‑
+fication’ , ‘skeletal system development’ and ‘ossification’. There 
+were also implicit connections, such as strong enrichment of 
+‘EcM proteoglycans’ and the ‘PId INTEGRIN1 PATHWAY’ , 
+indicating that dynamic remodeling of the extracellular matrix 
+was a driving force in bone formation. Second, crosstalk 
+between signaling pathways was apparent: The enrichment of 
+the ‘PId INTEGRIN1 PATHWAY’ along with the ‘response 
+to mechanical stimulus’ suggested that integrins may regulate 
+cH differentiation by sensing mechanical signals (such as 
+the piezoelectric effect in bones). The ‘PI d SYN dEcAN 4 
+PATHWAY’ and its association with E cM proteoglycans 
+may mediate cell matrix adhesion and coordinate with 
+growth factors (such as cell adhesion molecule and BMP). 
+Third, enrichment of ‘E cM proteoglycans’ and ‘keratan 
+sulfate biosynthesis’ underscored the critical role of glycos‑
+aminoglycan modifications in establishing and maintaining 
+a c H‑to‑osteoblast transition microenvironment. The term 
+‘negative regulation of molecular function’ likely reflected the 
+precise control of matrix degradation by protease inhibitors, 
+such as Serpine2. Fourth, microenvironmental homeostasis 
+mechanisms were highlighted by terms such as ‘hemostasis’ 
+and ‘blood vessel development’ , indicating the coupled roles of 
+angiogenesis, coagulation factors and the oxygen microenvi ‑
+ronment in bone repair processes. Enrichment of the ‘apoptotic 
+signaling pathway’ and ‘positive regulation of execution phase 
+of apoptosis’ likely reflected the contribution of programmed 
+death of HTCs to the progression of ossification.
+Safranin O/Fast Green staining of callus tissues harvested 
+from the fracture sites at 10 and 21 days post‑fracture was 
+performed (Fig. 2E). On day 10, the robust formation of carti‑
+laginous calluses was observed in all groups. The extracellular 
+matrix of HT cs, rich in proteoglycans, was intensely stained 
+red by Safranin O, indicating that the cartilage tissue consti ‑
+tuted the majority of the callus at this stage, with only a small 
+proportion of gray‑blue‑stained osteogenic areas present. 
+A marked increase in the number and proportion of tdTo ‑
+mato+/OcN+ double‑positive cells indicative of c H‑derived 
+osteoblasts was evident from the immunofluorescence images 
+comparing fracture calli at day 10 and day 21 post‑fracture 
+(Fig. 2E).
+Oxygen availability facilitates the osteogenic differentiation 
+of CHs via KDM6A. Given that K dM6A acts as an oxygen 
+sensor to regulate cellular differentiation (22), the present 
+study investigated how c H‑to‑osteoblast differentiation 
+during endochondral ossification is altered under different 
+oxygen levels. cHs derived from fx /wt and fx /fx mice were 
+subjected to transdifferentiation induction. After 7 days of 
+induction, Alcian blue staining ( Fig. 3A and B) revealed that 
+the fx /wt‑normoxic group exhibited a significantly lower 
+amount of acidic mucopolysaccharides than the fx/wt‑hypoxic 
+group (P<0.05), while the fx /fx‑normoxic group showed a 
+significant increase in acidic mucopolysaccharides compared 
+with the fx /wt‑normoxic group (P<0.01). ALP staining 
+(Fig. 3c and d) demonstrated that the number of ALP‑positive 
+cells was markedly higher in the fx /wt‑normoxic group than 
+in the fx /wt‑hypoxic group (P<0.001), whereas the number of 
+ALP‑positive cells in the fx /fx‑normoxic group was signifi ‑
+cantly lower than that in the fx /wt‑normoxic group (P<0.001). 
+Alizarin red staining ( Fig. 3E and F) indicated an increased 
+number of mineralized nodules in the fx /wt‑normoxic group 
+compared with the fx/wt‑hypoxic group (P<0.05), whereas the 
+
+=== PAGE 11 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 11
+fx/fx‑normoxic group had fewer mineralized nodules than the 
+fx/wt‑normoxic group (P<0.05).
+qPcR analysis of cH marker gene expression 3 days after 
+induction (Fig. 3G) showed that the mRNA levels of col10a1, 
+Acan and col2a1 were reduced in the fx/wt‑normoxic group 
+compared with the fx/wt‑hypoxic group (P<0.05, P<0.01 and 
+P<0.0001, respectively). By contrast, fx/fx‑normoxic mice 
+exhibited increased expression of all three genes compared 
+with fx/wt‑normoxic mice (P<0.05), with a particularly 
+significant upregulation of col2a1 and Acan (P<0.0001). 
+Furthermore, analysis of the relative mRNA levels of osteo ‑
+genic differentiation‑related genes (Fig.  3H) revealed that 
+Col1a1, Spp1 and Sparc were significantly upregulated in the 
+fx/wt‑normoxic group compared with the fx/wt‑hypoxic group 
+Figure 2. Differentiation of CDOPs into osteoblasts during endochondral ossification is regulated by the oxygen environment. (A) UMAP plot showing the 
+distribution of cell subpopulations, with a pseudo‑time trajectory from cHs to osteoblasts/HTcs that included both fates 1 and 2. The trajectory plot shows the 
+underlying graph structure as black lines. The white line indicates fate 1, representing the transdifferentiation path from c Hs through the transitional cd OP 
+state to osteoblasts. The blue line indicates fate 2, depicting the differentiation path from cHs through pre‑HT cs to HTcs. White circles represent roots, gray 
+circles indicate terminal fates (leaves) and black circles denote the branch points from which cells can diverge toward multiple fates. (B) Pseudotime expres ‑
+sion plots for the top six genes, illustrating their dynamic changes along the differentiation trajectory. (C) Expression profiles of the top six genes across the 
+different cell subpopulations. ( d) Bar plot of GO functional enrichment for the top 100 genes, colored by P‑value. (E) Representative Safranin O/Fast Green 
+staining images of mouse tibial fracture callus at 10 and 21  days post‑fracture (scale bar, 200  µm), and immunofluorescence staining images showing OCN + 
+and col2a1‑tdTomato+ cells (scale bars, 500 and 20 µm). For each timepoint, callus tissues were harvested from three independent mice (n=3 biologically 
+independent animals per timepoint). O cN, osteocalcin; cdOP, chondrocyte‑derived osteoprogenitor; cH, chondrocyte; col2a1, collagen type II α1 chain; 
+col3a1, collagen type  III α1 chain; c ol5a2, collagen type V α2 chain; E cM, extracellular matrix; GO, Gene Ontology; HT c, hypertrophic chondrocyte; 
+Myo1b, myosin IB; Ncf2, neutrophil cytosolic factor 2; PI d, Pathway Interaction d atabase; Serpine2, serpin family E member 2; UMAP, uniform manifold 
+approximation and projection.
+
+
+=== PAGE 12 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION12
+(P<0.001, P<0.0001 and P<0.05, respectively). However, the 
+expression levels of all three genes were markedly reduced in 
+the fx/fx‑normoxic group compared with the fx/wt‑normoxic 
+group (P<0.0001, P<0.0001 and P<0.05, respectively).
+KDM6A promotes the differentiation of CHs into CDOPs by 
+activating the Wnt signaling pathway. scRNA‑seq was also 
+performed on chondral callus cell samples from fx /wt (WT) 
+and fx /fx mice (FX), 10  days post‑fracture. The analysis 
+focused on c Hs, pre‑HT cs, HT cs, cdOPs and osteoblasts 
+(Fig. 4A). Violin plots of gene expression ( Fig. 4B) revealed 
+that the mean expression levels of col2a1 in the WT group 
+were lower than those in the FX group, whereas col10a1, 
+RUNX2 and col1a1 were more highly expressed in the WT 
+group than in the FX group. The expression levels of Acan 
+and Bglap were similar in the two groups. The present study 
+specifically focused on the CDOP subpopulation. The volcano 
+plot of differentially expressed genes showed that osteogenic 
+genes, including Col1a1, Sp7, RUNX2 and Spp1, were signifi‑
+cantly upregulated in cdOPs of the WT group compared with 
+those of the FX group ( Fig. 4c). GO analysis indicated that 
+the upregulated genes were enriched in biological processes, 
+such as ‘cell adhesion’ , ‘chondrocyte differentiation’ , ‘skeletal 
+system development’ , ‘endochondral ossification’ and ‘osteo‑
+blast differentiation’. Pathway analysis revealed that the ‘Wnt 
+signaling pathway’ was the most prominent osteogenic pathway 
+enriched in our dataset ( Fig. 4 d and E). GSEA ( Fig. 4F) 
+indicated that the ‘Wnt signaling pathway’ was significantly 
+enriched in the WT group (enrichment score, 0.276; P=0.0063; 
+false discovery rate, 0), suggesting that global Wnt pathway 
+activity was higher in WT cells.
+CellChat analysis identified intercellular communication 
+among the 16 clusters detected in callus samples on day 10 
+post fracture, revealing extensive molecular interactions 
+Figure 3. Oxygen availability facilitates the osteogenic differentiation of c Hs via lysine demethylase 6A. (A) Alcian blue staining of cells from each group 
+after 7 days of induction (scale bar, 100 µm). (B) Quantitative analysis of Alcian blue staining in each group. ( c) ALP staining of cells from each group after 
+7 days of induction (scale bar, 100 µm). (d) Quantitative analysis of ALP staining in each group. (E) Alizarin red staining of cells from each group after 7 days 
+of induction (scale bar, 100 µm). (F) Quantitative analysis of Alizarin Red staining in each group. (G) Relative mRNA expression levels of c H marker genes 
+in each group 3 days after induction. (H) Relative mRNA expression levels of osteogenic differentiation‑related genes in each group 3 days after induction. 
+n=3, data derived from three independent experiments. P‑values were calculated using one‑way ANOVA followed by Tukey's post hoc test. The values are 
+presented as the mean ± S d. *P<0.05, **P<0.01, ***P<0.001 and ****P<0.0001. Acan, aggrecan; ALP, alkaline phosphatase; c H, chondrocyte; c ol1a1, collagen 
+type I α1 chain; col10a1, collagen type X α1 chain; col2a1, collagen type II α1 chain; fx, Kdm6a conditional knockout mice; Int den, integrated density; ns, 
+not significant; Sparc, secreted protein acidic and cysteine rich; Spp1, secreted phosphoprotein 1; wt, wild‑type.
+
+=== PAGE 13 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 13
+Figure 4. Lysine demethylase 6A promotes the differentiation of c Hs into cdOPs by activating the Wnt signaling pathway. (A) UMAP visualization of cH 
+and osteoblast subpopulations in WT and FX groups. (B) Violin plots showing the average expression levels of marker genes across six samples. ( c) Volcano 
+plot depicting upregulated genes in cdOPs between the WT and FX groups. ( d) Bubble plot of GO functional enrichment analysis of upregulated genes in 
+cdOPs. (E) Line graph of gene set enrichment analysis enrichment scores for upregulated genes in cd OPs based on the GO database. (F) Line graph of 
+enrichment scores from the Kyoto Encyclopedia of Genes and Genomes pathway analysis showing upregulation of the Wnt pathway in cd OPs. (G) Network 
+plot illustrating the number of interactions between any two cell groups. (H) Network plot displaying the interaction strength between any two cell groups. 
+(I) Visualization of outgoing communication patterns of cell populations. (J)  Visualization of incoming communication patterns of cell populations, with 
+Sankey diagrams showing relationships between cell clusters and patterns, as well as between pathways and patterns. (K) c hord diagram of Wnt signaling 
+pathway interactions among c H subpopulations. (L) Hierarchical plot of Wnt signaling pathway interactions among c H subpopulations. Source (left) and 
+target (right) cell populations are represented by colored circles. c onnecting lines indicate inferred Wnt ligand‑receptor interactions, with the line color 
+corresponding to the source cell type and the line thickness proportional to the interaction probability/strength. The plot highlights cd OPs as a prominent 
+source of Wnt signals within the chondro‑osteogenic lineage, with c Hs also contributing as a target. For each timepoint, callus tissues were harvested from 
+three independent mice (n=3 biologically independent animals per timepoint). cd OP, chondrocyte‑derived osteoprogenitor; cH, chondrocyte; cTL, cytotoxic 
+T lymphocyte; ES, enrichment score; FAM, fibroblastic reticular cell‑associated macrophage; FDR, false discovery rate; FX, Kdm6a conditional knockout 
+mice; GO, Gene Ontology; HTc, hypertrophic chondrocyte; UMAP, uniform manifold approximation and projection; WT, wild‑type.
+
+
+=== PAGE 14 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION14
+(Fig. 4G and H). Sankey plots showed how 13 sender cell 
+populations (acting as signaling sources) coordinated with 
+one another and with specific signaling pathways to drive 
+communication, and how 12 receiver cell populations (acting 
+as targets) coordinated to respond to incoming signals 
+(Fig. 4I and J). Notably, cHs and cdOPs exhibited the highest 
+frequency of intercellular interactions via the Wnt signaling 
+pathway (Fig. 4K). Furthermore, the hierarchical plot (Fig. 4L) 
+delineated the sending and receiving roles of different c H 
+subsets within the Wnt signaling network, highlighting cdOPs 
+as key signaling hubs.
+KDM6A deficiency inhibits endochondral ossification under 
+normoxic conditions by suppressing the Wnt/β‑catenin pathway 
+through enhanced histone H3K27 methylation. Western blot 
+analysis was performed to assess the histone methylation levels 
+in cHs from fx /wt‑normoxic and fx/fx‑normoxic cells during 
+transdifferentiation. H3K27me2 and H3K27me3 levels were 
+normalized to those of total histone H3 (loading control) to 
+quantify relative changes in these histone modifications inde ‑
+pendently of total protein variation. As shown in Fig.  5A, the 
+expression levels of H3K27me2 and H3K27me3 proteins were 
+significantly higher in the fx /fx‑normoxic group than in the 
+fx/wt‑normoxic group (P<0.001). chIP‑PcR (Fig. 5B) showed 
+that enrichment of H3K27me2 and H3K27me3 at the Wnt3a 
+promoter region was markedly increased in the fx/fx normoxic 
+group compared with the fx /wt‑normoxic group. H3K27me3 
+enrichment at the RUNX2 promoter was also higher in the 
+fx/fx‑normoxic group than in the fx /wt‑normoxic group. 
+Additionally, the protein expression levels of Wnt3a, β‑catenin 
+and RUNX2 (Fig. 5c and d) were reduced in the fx/fx‑hypoxic 
+group compared with the fx/wt‑hypoxic group (P<0.05). In addi‑
+tion, the fx /wt‑normoxic group exhibited significantly higher 
+expression levels of β‑catenin and RUNX2 compared with the 
+fx/wt‑hypoxic group (P<0.001), while Wnt3a expression was also 
+increased (P<0.01). By contrast, the expression levels of all three 
+proteins were significantly decreased in fx /fx‑normoxic mice 
+compared with fx/wt‑normoxic mice (P<0.001). differences in 
+the mRNA expression levels of Wnt3a, β‑catenin and RUNX2 
+(Fig. 5E) among the groups were in accordance with their 
+respective protein expression patterns.
+KDM6A deletion inhibits the transdifferentiation of CHs 
+within the cartilage callus and delays fracture healing in 
+mice. The present study subsequently investigated the impact 
+of KdM6A deletion on fracture healing in mice. H&E staining 
+(Fig. 6A) showed that at 10 days post‑fracture, both fx/wt and 
+fx/fx mice exhibited calluses comprising a small amount of 
+fibrous tissue and a large amount of cartilage tissue, with 
+woven bone already formed in both groups. Notably, the 
+fx/wt group displayed a greater amount of woven bone than 
+the fx/fx group. By day 28 post‑fracture, the bone entered the 
+remodeling phase; the woven bone in the fx/fx group appeared 
+loose and irregular, whereas the fracture ends in the fx /wt 
+group were smoother. In the fx /wt group, the woven bone 
+transformed into lamellar bone, with a relatively continuous 
+lamellar bone observed, suggesting a better degree of healing 
+than in the fx/fx group.
+At 28 days post‑fracture, in  vivo micro‑ cT scanning and 
+three‑dimensional reconstruction (Fig. 6B) were performed 
+to assess the morphology of the fracture ends. In the fx/wt 
+group, a cortical bone bridge was formed, with no obvious 
+peripheral callus observed, and partial recanalization of the 
+medullary cavity was evident. By contrast, in the fx/fx group, 
+a bone bridge was present, but the peripheral callus was not 
+completely resorbed. Ex vivo micro‑cT standard scanning and 
+three‑dimensional reconstruction (Fig. 6B) were performed 
+on the harvested mouse tibiae to assess bone microarchi ‑
+tecture at the fracture ends. Three‑dimensional views from 
+the lateral, medial and dorsal aspects of the tibia, as well as 
+two‑dimensional sagittal and coronal sections, revealed that 
+both groups exhibited bony union at the fracture site, with 
+varying degrees of endosteal and periosteal callus resorption. 
+calli in the remodeling phase were observed in the outer 
+cortex. On two‑dimensional sagittal and transverse sections, 
+irregular block‑like intramedullary calluses were visible at the 
+fracture ends, which were more pronounced in the fx/fx group. 
+Quantitative analyses were conducted for BV/TV , BS/TV , 
+Tb.N and Tb.Th within 1 mm of and below the fracture line 
+(Fig. 6c). In the fx/fx group, both BV/TV and BS/TV were 
+significantly higher than those in the fx/wt group (P<0.01), 
+whereas Tb.N was also higher in the fx/fx group (P<0.05); no 
+significant difference in Tb.Th was observed (P>0.05).
+Immunofluorescence staining for OCN at the fracture callus 
+at 10 and 21 days (Fig. 6d) was performed to assess the propor‑
+tion of cH‑to‑osteoblast transdifferentiation. KdM6A deletion 
+resulted in a significant reduction in transdifferentiation effi ‑
+ciency on day 10 (Fig. 6E; P<0.01) and a further decrease by 
+day 21 (Fig. 6G; P<0.001). Safranin O/Fast Green staining 
+(Fig. 6F) on day 10 post‑fracture revealed active cartilage callus 
+formation in both groups, with HTc‑rich matrix stained bright 
+red (proteoglycan content) and cartilage predominating in the 
+callus, while a few gray‑blue‑stained osteogenic regions were 
+visible. The fx/wt group had a greater osteogenic area than the 
+fx/fx group, and the latter had fewer gray‑blue regions than the 
+former. At 21 days post‑fracture, the red‑stained cartilage area 
+in the fx/wt group was decreased, indicating active ossifica ‑
+tion, and the gray‑blue osteogenic area was increased; the red 
+cartilage alternated with the loose gray‑blue woven bone. In the 
+fx/fx group, abundant red cartilage regions persisted, and the 
+gray‑blue woven bone was sparser, indicating a lower degree of 
+ossification compared with the fx/wt group.
+Discussion
+The present study provided compelling evidence for a 
+novel regulatory axis in fracture healing, in which the 
+oxygen‑sensing histone demethylase K dM6A orchestrated 
+cH‑to‑osteoblast transdifferentiation through epigenetic 
+activation of the Wnt/β‑catenin pathway. Using an integrated 
+approach combining scRNA‑seq, genetic lineage tracing and 
+conditional gene knockout, the cellular dynamics and molec ‑
+ular mechanisms underlying this critical bone repair process 
+were delineated.
+Single‑cell transcriptomic analysis of the fracture calli at 
+different time points (days 10 and 21) revealed a previously 
+unknown complexity in cH differentiation trajectories during 
+endochondral ossification. A distinct population of CDOPs 
+that represent a transitional state between HT cs and mature 
+osteoblasts was identified. These CDOPs co‑expressed both 
+
+=== PAGE 15 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 15
+chondrogenic (col2a1) and osteogenic (col1a1) markers, while 
+exhibiting elevated expression of matrix remodeling genes, 
+including Mmp13 and Spp1. This unique gene expression 
+signature suggested that cdOPs serve an active role in modi‑
+fying the extracellular environment to facilitate the transition 
+from cartilage to bone. Pseudotime trajectory analysis further 
+supported the existence of a direct differentiation pathway 
+from c Hs to osteoblasts through this cd OP intermediate, 
+challenging the traditional view that HTcs primarily undergo 
+apoptosis during endochondral ossification (9‑12).
+GO enrichment analysis of genes differentially expressed 
+along the transdifferentiation trajectory provided crucial 
+insights into the biological processes regulated by K dM6A. 
+The significant enrichment of terms including ‘skeletal system 
+development’ , ‘endochondral ossification’ and ‘ossification’ 
+directly links the identified gene set to bone formation processes. 
+Particularly noteworthy was the concurrent enrichment of 
+‘EcM proteoglycans’ and ‘PI d INTEGRIN1 PATHWAY’ , 
+indicating that K dM6A promoted a transcriptional program 
+conducive to extensive extracellular matrix remodeling. This 
+Figure 5. Lysine demethylase 6A deficiency inhibits endochondral ossification under normoxic conditions by suppressing the Wnt/ β‑catenin pathway 
+through enhanced histone H3K27 methylation. (A) d ensitometric analysis of H3K27me2 and H3K27me3 protein bands. Representative western blot bands 
+of H3K27me2 and H3K27me3 are shown. Statistical analysis was performed using unpaired t‑tests. The values are presented as the mean ± S d, ***P<0.001, 
+****P<0.0001. (B) Gel electrophoresis of chromatin immunoprecipitation‑P cR showing differences in H3K27me2 and H3K27me3 enrichment at the Wnt3a, 
+β‑catenin and RUNX2 promoter regions between the two groups. (c) densitometric analysis of the Wnt3a, β‑catenin and RUNX2 protein bands. P‑values were 
+calculated using one‑way ANOVA followed by Tukey's post hoc test. (d) Representative protein bands for Wnt3a, β‑catenin and RUNX2. (E) Relative mRNA 
+expression levels of Wnt3a, β‑catenin and RUNX2 in each group after 3 days of induction. n=3, data derived from three independent experiments. P‑values were 
+calculated using one‑way ANOVA followed by Tukey's post hoc test. The values are presented as the mean ± Sd. *P<0.05, **P<0.01, ***P<0.001, ****P<0.0001. fx, 
+Kdm6a conditional knockout mice; H3K27me2, histone H3 lysine 27 dimethylation; H3K27me3, histone H3 lysine 27 trimethylation; RUNX2, Runt‑related 
+transcription factor 2; wt, wild‑type.
+
+
+=== PAGE 16 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION16
+finding is consistent with the recognized importance of matrix 
+remodeling in endochondral ossification (7), and suggests that 
+KdM6A‑mediated epigenetic regulation coordinates both cell 
+fate determination and microenvironment modification. The 
+co‑enrichment of ‘response to mechanical stimulus’ with integrin 
+signaling pathways further implies that KdM6A may help inte‑
+grate biophysical cues with biochemical signals during fracture 
+healing, representing a sophisticated mechanism for regulating 
+bone repair in response to complex environmental signals.
+To investigate the regulatory role of the oxygen micro ‑
+environment in endochondral ossification, an in vitro c H 
+transdifferentiation model was established, and the effect of 
+the oxygen environment on cH transdifferentiation was inves‑
+tigated by changing the oxygen concentration in the culture. 
+Mice with cartilage‑specific deletion of KDM6A were gener ‑
+ated to explore the role of KdM6A in this process. cHs cultured 
+under normoxic conditions exhibited greater osteogenic 
+differentiation than those cultured under hypoxic conditions. 
+The enhanced expression of osteogenesis‑related marker genes 
+(col1a1, Spp1 and Sparc) and key Wnt/ β‑catenin pathway 
+components (Wnt3a, β‑catenin and RUNX2) under normoxic 
+conditions promoted c H‑to‑osteoblast transdifferentiation. 
+conversely, the loss of KdM6A abrogated this pro‑osteogenic 
+effect of normoxia, resulting in a significant reduction in the 
+expression of these molecules and a consequent impairment 
+of osteogenic differentiation, indicating the importance of 
+KdM6A in oxygen‑mediated chondrogenic and osteogenic 
+transdifferentiation. Single‑cell sequencing results indicated 
+that the influence of KDM6A was primarily exerted during 
+the early and middle stages of transdifferentiation, specifi ‑
+cally from c Hs to the cd OP stage. Furthermore, K dM6A 
+deficiency inhibited endochondral ossification under normoxic 
+conditions by suppressing the Wnt/β‑catenin pathway through 
+enhanced histone H3K27 methylation. To further determine 
+Figure 6. Lysine demethylase 6A deletion inhibits the transdifferentiation of cHs within the cartilage callus and delays fracture healing in mice. (A) Representative 
+H&E staining of the fracture callus from each group at 10 and 28 days post‑surgery (scale bar, 200 µm). (B) Micro‑cT scans and three‑dimensional reconstruc ‑
+tion images at 28 days post‑fracture (scale bar, 10 mm) showing lateral, medial and dorsal views, trabecular bone within 1 mm above and below the fracture 
+site, and two‑dimensional sagittal, coronal and transverse sections (scale bars, 5  and 2 mm). ( c) Statistical analyses of BV/TV, BS/TV, Tb.N and Tb.Th. 
+n=6; six samples in each group were independently derived from 6 separate mice. Statistical analysis was performed using unpaired t‑tests. The values are 
+presented as the mean  ± Sd. *P<0.05, **P<0.01. (D) OCN was marked with green fluorescence, CHs marked with tdTomato have inherent red fluorescence 
+and the overlapping part in yellow indicates osteoblasts derived from CHs. Representative fluorescence images showing OCN + and c ol2a1 tdTomato+ cells 
+(scale bar, 100 µm). (E) Quantification of transdifferentiation rates on day 10 post‑fracture. n=3, three samples in each group were independently derived from 
+3 separate mice. Statistical analysis was performed using unpaired t‑tests. The values are presented as the mean ± Sd. **P<0.01. (F) Representative Safranin 
+O/Fast Green staining of the fracture callus from each group at 10 and 21 days post‑surgery (scale bar, 200 µm). (G) Quantification of transdifferentiation rates 
+at day 21 post‑fracture. For each timepoint, callus tissues were harvested from three independent mice (n=3 biologically independent animals per timepoint). 
+Statistical analysis was performed using unpaired t‑tests. The values are presented as the mean ± S d. ***P<0.001. OcN, osteocalcin; BS/TV, trabecular bone 
+surface area fraction; BV/TV, trabecular bone volume fraction; cHs, chondrocytes; col2a1, collagen type II α1 chain; fx, Kdm6a conditional knockout mice; 
+ns, not significant; Tb.N, trabecular number; Tb.Th, trabecular thickness; TdT, tdTomato; wt, wild‑type.
+
+=== PAGE 17 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 17
+the epigenetic target of K dM6A in the osteogenic differen ‑
+tiation of cHs, western blotting was performed to detect the 
+levels of H3K27me2 and H3K27me3 in cells. The levels of 
+H3K27me2 and H3K27me3 were significantly increased in 
+KdM6A knockout cells, indicating that K dM6A serves a 
+role in removing H3K27me2 and me3 during chondrogenic 
+transdifferentiation. c hIP‑PcR showed that K dM6A knock‑
+down increased H3K27me2 and H3K27me3 levels in the 
+Wnt3a promoter region, and H3K27me3 levels in the RUNX2 
+promoter region. c ombined with the aforementioned experi ‑
+ments, we hypothesized that oxygen might remove histone 
+H3K27me2 and me3 methylation in the Wnt3a promoter region 
+and H3K27me3 methylation in the RUNX2 promoter region 
+by activating KdM6A to relieve the transcriptional repression 
+of Wnt3a and RUNX2. Consistent with the present findings, 
+it has been widely reported that K dM6A activates the Wnt 
+signaling pathway through H3K27 demethylation (54,55). 
+A previous study has shown that K dM6A directly removes 
+H3K27me3 modifications in the promoter regions of OCN and 
+RUNX2 to initiate osteogenic differentiation in bone marrow 
+mesenchymal stem cells (30). KdM6A activates RUNX2 and 
+OSX by removing H3K27me3 and promotes MS cs differ ‑
+entiation into osteoblasts (31). K dM6A protein expression 
+is increased during differentiation of M c3T3‑E1 cells and 
+primary osteoblasts. GSK‑J1, a K dM6A inhibitor, increases 
+H3K27me3 levels in the RUNX2 and osterix promoter regions 
+in M c3T3‑E1 cells. This inhibitor reduces the expression 
+levels of RUNX2 and Osterix, and ALP activity, indicating 
+that KdM6A serves an important role in osteoblast differentia‑
+tion by regulating the expression of RUNX2 and Osterix (56). 
+These findings are similar to the present results and confirm 
+the important influence of KDM6A on cell differentiation at 
+the epigenetic level. Previous studies have demonstrated that 
+KdM6A is closely associated with embryonic development 
+and genomic stability. K dM6A contains a Jmj c domain 
+and six tetratricopeptide repeat domains responsible for 
+protein‑protein interactions. Its activity is highly dependent 
+on the oxygen concentration. However, K dM6A functions 
+independently of classical HIF‑1α (57,58). Unlike the HIF‑1α 
+pathway, which is mainly responsible for cell hypoxic adap ‑
+tation and survival  (16,17), KdM6A mediates a ‘directive’ 
+pathway that directly determines cell fate (22). The two 
+may act synergistically in hypoxic calli: HIF‑1 α provides 
+the necessary metabolic basis and angiogenic conditions for 
+regeneration, while the KdM6A‑Wnt axis directly initiates the 
+osteogenic transformation program.
+Finally, the present study demonstrated that oxygen 
+promoted the transdifferentiation of c Hs into osteoblasts and 
+facilitated fracture healing in mice by activating K dM6A, 
+which upregulated the Wnt signaling pathway and RUNX2 
+expression. In KDM6A‑deficient mice, woven bone forma ‑
+tion was markedly reduced in the fractured callus on day 10 
+post‑fracture. At 21 days after fracture, there were still more 
+bright red cartilage areas in the callus of K dM6A‑knockout 
+mice, and the gray‑blue woven bone was sparse. By 
+day 28, during the bone remodeling phase, the callus in 
+KdM6A‑knockout mice retained a loose woven bone struc ‑
+ture, and the healing process was delayed. Micro‑ cT analysis 
+further revealed that following K dM6A deletion, irregular, 
+bulky intramedullary calli remained at the fracture site and 
+healing was slowed. Immunofluorescence staining of tibial 
+tissue sections was performed using an anti‑O cN antibody 
+(green) to label osteoblasts. Since cHs were genetically labeled 
+with tdTomato (red), cells exhibiting both green (O cN) and 
+red (tdTomato) fluorescence were identified as CH‑derived 
+osteoblasts. The proportion of these double‑positive cells rela‑
+tive to all tdTomato+ cells was analyzed. KdM6A knockdown 
+resulted in reduced transdifferentiation efficiency at both 10 
+and 21 days, visually demonstrating the effect of K dM6A on 
+callus cH differentiation.
+The core finding of the present study was that KDM6A 
+was the key molecular switch that coordinated cell fate 
+switching. deletion of KdM6A inhibited the transcription of 
+Wnt pathway genes by increasing H3K27me3 modification 
+levels, thereby blocking the transformation trajectory from 
+cHs to cdOPs and osteoblasts. Notably, cell communication 
+analysis further suggested that K dM6A activity enhanced 
+signal communication between various subsets of c Hs. This 
+suggested that KdM6A not only determines cell fate through a 
+cell‑autonomous mechanism but may also regulate the expres‑
+sion of cytokines to coordinate the behavior of cell populations 
+in the endochondral osteogenic microenvironment at a broader 
+scale and ensure the orderly progression of fracture repair.
+The present study has some limitations. The fracture model 
+was limited to a single tibial fracture in mice, and data from 
+studies on other species and calluses in humans are lacking. In 
+addition, to avoid the side effects of Tam on the reproductive 
+system and hormone secretion in female mice (59), only male 
+mice were used for the experiment. The generalizability and 
+clinical relevance of the present findings to different biological 
+settings, such as different species, sex and fracture sites, need 
+to be further explored. Although the present study confirmed 
+that KdM6A activated the Wnt/ β‑catenin pathway, it did not 
+verify the broader upstream regulatory inputs or alternative 
+downstream effector pathways of K dM6A beyond this axis. 
+KdM6A may also serve a role in endochondral osteogenesis 
+via a non‑Wnt pathway. Future studies employing c hIP‑seq 
+could map the genome‑wide binding sites of KdM6A, thereby 
+clarifying its specific epigenetic regulation of Wnt target genes 
+and potential effects on other pathways. The results of the 
+cell experiments showed that a normoxic environment could 
+promote the transdifferentiation of callus cHs into osteoblasts. 
+Subsequent studies could include a hyperoxia group to further 
+explore the effect of different oxygen concentrations on this 
+process and screen the appropriate therapeutic concentra ‑
+tion to promote transdifferentiation to provide a basis for 
+clinical application. Oxygen‑sensitive KdM6A was shown to 
+be a therapeutic target for fracture healing. In the future, its 
+spatiotemporally specific regulatory network can be further 
+analyzed, and the combination of biomaterials, gene editing 
+and precision medicine technology can promote the efficient 
+transformation of this mechanism into clinical applications. 
+Examples include local oxygen therapy at the fracture site 
+(biomaterial delivery of oxygen) and targeting of KdM6A.
+Novel KdM6A agonists could be developed as bone regen‑
+eration drugs. Their therapeutic potential may be enhanced 
+through synergistic application with Wnt or BMP pathway 
+modulators. Such a combination strategy could provide indi ‑
+vidualized treatment for patients whose stem cell osteogenic 
+capacity is compromised by underlying diseases, ultimately 
+
+
+=== PAGE 18 ===
+RONG et al:  KdM6A AcTIVATES Wnt/β‑catenin IN TRANS dIFFERENTIATION18
+aiming to accelerate callus maturation and shorten the frac ‑
+ture healing cycle. In summary, the present study revealed 
+that endochondral ossification during fracture healing was a 
+highly coordinated, multi‑step process in which c H‑derived 
+cdOPs differentiated into functional osteoblasts to complete 
+bone tissue reconstruction. Oxygen accelerated fracture 
+healing by activating K dM6A, which removed H3K27me2 
+and H3K27me3 methylation marks at the Wnt3a promoter and 
+H3K27me3 at the RUNX2 promoter, thereby promoting c H 
+differentiation into osteoblasts. These findings not only deepen 
+the fundamental understanding of bone development and 
+repair but also provide a theoretical basis for the development 
+of epigenetics‑based bone tissue engineering technologies and 
+for optimizing clinical strategies for fracture treatment. Future 
+research will focus on developing small‑molecule compounds 
+that specifically regulate KDM6A activity and explore their 
+therapeutic potential in challenging bone injuries, such as 
+osteoporotic fractures and nonunions.
+Acknowledgements
+Not applicable.
+Funding
+The present study was supported by the National Natural 
+Science Foundation of c hina (grant no. 82205142), the Top 
+Talent Support Program for Young and Middle‑Aged People 
+of the Wuxi Health committee (grant no. HB 2023073), and 
+the Postgraduate Research & Practice Innovation Program of 
+Jiangsu Province (grant no. KYcX22_2062).
+Availability of data and materials
+The sequencing data generated in the present study may be 
+found in the National c enter for Biotechnology Information 
+database under BioProject accession number PRJNA1267459 
+or at the following URL: https://www.ncbi.nlm.nih.gov/biopro‑
+ject/PRJNA1267459. The other data generated in the present 
+study may be requested from the corresponding author.
+Authors' contributions
+YR and HYu contributed to experiment design, data analysis 
+and manuscript writing. HYi provided resources and 
+contributed to designing and performing experiments. SL 
+contributed to experiment design and reviewing the bioinfor ‑
+matics analysis. JW and ZS contributed to data analysis. X d, 
+FB and T d contributed to data analysis, review and revision 
+of the manuscript. GW and ZH contributed to conception and 
+design, funding acquisition, and supervision. GW and ZH 
+confirm the authenticity of all raw data. All authors have read 
+and approved the final version of the manuscript.
+Ethics approval and consent to participate
+All animal protocols were approved by the Animal care and Use 
+Committee of Wuxi Affiliated Hospital of Nanjing University 
+of chinese Medicine (approval no. GZR2023032801; Wuxi, 
+china).
+Patient consent for publication
+No applicable.
+Competing interests
+The authors declare that they have no competing interests.
+References
+ 1.  GBD 2019 Fracture Collaborators: Global, regional, and 
+national burden of bone fractures in 204 countries and territories, 
+1990‑2019: A systematic analysis from the global burden of 
+disease study. Lancet Healthy Longev 2: e580‑e592, 2021.
+ 2.  Wildemann B, Ignatius A, Leung F, Taitsman LA, Smith RM, 
+Pesántez R, Stoddart MJ, Richards RG and Jupiter JB: Non‑union 
+bone fractures. Nat Rev dis Primers 7: 57, 2021.
+ 3.  Noorlander‑Borgdorff MP, Şekercan A, Young‑Afat DA, 
+Bouman  M, Botman  M and Giannakópoulos GF: Nationwide 
+study on open tibial fractures in the Netherlands: Incidence, 
+demographics and level of hospital care. Injury 55: 111487, 2024.
+ 4.  Zhang S, c hen L, Zhang c , Gong c , He X, Zhong H, Liu c , 
+cao Z, c hen W, Lin N, et al : Osteoking exerts pro‑osteogenic 
+and anti‑adipogenic effects in promoting bone fracture healing 
+via EGF/EGFR/H dAc1/Wnt/ β‑catenin signaling. Int J Mol 
+Med 55: 75, 2025.
+ 5.  claes L, Recknagel S and Ignatius A: Fracture healing under healthy 
+and inflammatory conditions. Nat Rev Rheumatol 8: 133‑143, 2012.
+ 6.  Mathavan N, Singh A, Marques F c, Günther d , Kuhn GA, 
+Wehrle E and Müller R: Spatial transcriptomics in bone mecha ‑
+nomics: Exploring the mechanoregulation of fracture healing in 
+the era of spatial omics. Sci Adv 11: eadp8496, 2025.
+ 7. dennis S c, Berkland c J, Bonewald LF and d etamore MS: 
+Endochondral ossification for enhancing bone regeneration: 
+converging native extracellular matrix biomaterials and develop‑
+mental engineering in vivo. Tissue Eng Part B Rev 21: 247‑266, 2015.
+ 8.  Amizuka N, Hasegawa T, Oda K, Luiz de Freitas PH, Hoshi K, 
+Li M and Ozawa H: Histology of epiphyseal cartilage calcifica ‑
+tion and endochondral ossification. Front Biosci (Elite Ed) 4: 
+2085‑2100, 2012.
+ 9. Aizawa T, Kokubun S and Tanaka Y: Apoptosis and proliferation 
+of growth plate chondrocytes in rabbits. J Bone Joint Surg Br 79: 
+483‑486, 1997.
+10. Farnum cE and Wilsman NJ: Morphologic stages of the terminal 
+hypertrophic chondrocyte of growth plate cartilage. Anat 
+Rec 219: 221‑232, 1987.
+11. Farnum c E and Wilsman NJ: c ondensation of hypertrophic 
+chondrocytes at the chondro‑osseous junction of growth plate 
+cartilage in Yucatan swine: relationship to long bone growth. Am 
+J Anat 186: 346‑358, 1989.
+12. Gibson G: Active role of chondrocyte apoptosis in endochondral 
+ossification. Microsc Res Tech 43: 191‑204, 1998.
+13. Yang L, Tsang KY, Tang H c, c han d and c heah KSE: 
+Hypertrophic chondrocytes can become osteoblasts and osteo ‑
+cytes in endochondral bone formation. Proc Natl Acad Sci 
+USA 111: 12097‑12102, 2014.
+14. Giovannone d, Paul S, Schindler S, Arata c, Farmer dT, Patel P, 
+Smeeton J and c rump JG: Programmed conversion of hyper ‑
+trophic chondrocytes into osteoblasts and marrow adipocytes 
+within zebrafish bones. Elife 8: e42736, 2019.
+15. Im GI and Kim  TK: Overcoming current dilemma in cartilage 
+regeneration: Will direct conversion provide a breakthrough? 
+Tissue Eng Regen Med 17: 829‑834, 2020.
+16. Stegen S, Laperre K, Eelen G, Rinaldi G, Fraisl P, Torrekens S, 
+Van Looveren R, Loopmans S, Bultynck G, Vinckier S, et al : 
+HIF‑1α metabolically controls collagen synthesis and modifica ‑
+tion in chondrocytes. Nature 565: 511‑515, 2019.
+17. Lu c, Saless N, Wang X, Sinha A, decker S, Kazakia G, Hou H, 
+Williams B, Swartz HM, Hunt TK, et al : The role of oxygen 
+during fracture healing. Bone 52: 220‑229, 2013.
+18. Johnson RW, Sowder ME and Giaccia AJ: Hypoxia and bone 
+metastatic disease. curr Osteoporos Rep 15: 231‑238, 2017.
+19. An Y, Liu WJ, Xue P, Ma  Y, Zhang LQ, Zhu B, Qi M, Li LY, 
+Zhang YJ, Wang QT and Lin Y: Autophagy promotes 
+MSc‑mediated vascularization in cutaneous wound healing via 
+regulation of VEGF secretion. Cell Death Dis 9: 58, 2018.
+
+=== PAGE 19 ===
+INTERNATIONAL JOURNAL OF MO LEcULAR ME dIcINE  58:  203,  2026 19
+20. Schipani  E, Ryan HE, d idrickson S, Kobayashi  T, Knight  M 
+and Johnson RS: Hypoxia in cartilage: HIF‑1alpha is essential 
+for chondrocyte growth arrest and survival. Genes d ev 15: 
+2865‑2876, 2001.
+21. Provot S and Schipani E: Fetal growth plate: A developmental 
+model of cellular adaptation to hypoxia. Ann N Y Acad Sci 1117: 
+26‑39, 2007.
+22. chakraborty AA, Laukka T, Myllykoski M, Ringel AE, Booker MA, 
+Tolstorukov MY, Meng YJ, Meier SR, Jennings RB, creech AL, 
+et al : Histone demethylase K dM6A directly senses oxygen to 
+control chromatin and cell fate. Science 363: 1217‑1222, 2019.
+23. Tamagawa  H, Fujii  M, Togasaki  K, Seino T, Kawasaki  S, 
+Takano A, Toshimitsu K, Takahashi S, Ohta Y, Matano M, et al: 
+Wnt‑deficient and hypoxic environment orchestrates squamous 
+reprogramming of human pancreatic ductal adenocarcinoma. 
+Nat Cell Biol 26: 1759‑1772, 2024.
+24. Kong N, Zhang R, Wu G, Sui X, Wang J, Kim NY, Blake S, de d, 
+Xie T, cao Y and Tao W: Intravesical delivery of KdM6A‑mRNA 
+via mucoadhesive nanoparticles inhibits the metastasis of bladder 
+cancer. Proc Natl Acad Sci USA 119: e2112696119, 2022.
+25. Wang JJ, Wang X, Xian YE, chen ZQ, Sun YP, Fu YW, Wu ZK, 
+Li PX, Zhou ES and Yang ZT: The JMJ d3 histone demethylase 
+inhibitor GSK ‑J1 ameliorates lipopolysaccharide ‑induced 
+inflammation in a mastitis model. J Biol Chem 298: 102017, 2022.
+26. Gao M, Li Y, c ao P, Liu H, c hen J and Kang S: Exploring the 
+therapeutic potential of targeting polycomb repressive complex 2 
+in lung cancer. Front Oncol 13: 1216289, 2023.
+27. de Santa F, Totaro MG, Prosperini E, Notarbartolo S, Testa G 
+and Natoli G: The histone H3 lysine‑27 demethylase Jmjd3 links 
+inflammation to inhibition of polycomb‑mediated gene silencing. 
+Cell 130: 1083‑1094, 2007.
+28. Lee  S, Lee  JW and Lee  SK: UTX, a histone H3‑lysine 27 
+demethylase, acts as a critical switch to activate the cardiac 
+developmental program. dev cell 22: 25‑37, 2012.
+29. Thieme S, Gyárfás T, Richter c, Özhan G, Fu J, Alexopoulou d, 
+Muders MH, Michalk I, Jakob c , d ahl A, et al : The histone 
+demethylase UTX regulates stem cell migration and hematopoi ‑
+esis. Blood 121: 2462‑2473, 2013.
+30. Hemming S, cakouros d, Isenmann S, c ooper L, Menicanin d , 
+Zannettino  A and Gronthos S: EZH2 and K dM6A act as an 
+epigenetic switch to regulate mesenchymal stem cell lineage 
+specification. Stem Cells 32: 802‑815, 2014.
+31. Pribadi  c, cakouros d , camp E, Anderson  P and Gronthos S: 
+KdM6A‑mediated regulation of cranial frontal bone suture fusion 
+in mice is sex dependent. Stem Cells Dev 32: 398‑409, 2023.
+32. Wise JK, Sena K, Vranizan K, Pollock JF, Healy KE, Hughes WF, 
+Sumner DR and Virdi  AS: Temporal gene expression profiling 
+during rat femoral marrow ablation‑induced intramembranous 
+bone regeneration. PLoS One 5: e12987, 2010.
+33. Teng JW, Ji PF and Zhao ZG: MiR‑214‑3p inhibits β‑catenin 
+signaling pathway leading to delayed fracture healing. Eur Rev 
+Med Pharmacol Sci 22: 17‑24, 2018.
+34. Zhou J, Liu HX, Li  SH, Gong  YS, Zhou  MW, Zhang JH and 
+Zhu GY: Effects of human umbilical cord mesenchymal stem 
+cells‑derived exosomes on fracture healing in rats through 
+the Wnt signaling pathway. Eur Rev Med Pharmacol Sci 23: 
+4954‑4960, 2019.
+35. Yao cJ, Lv Y, Zhang cJ, Jin JX, Xu LH, Jiang J, Geng B, Li H, 
+Xia YY and Wu M: MicroRNA‑185 inhibits the growth and 
+proliferation of osteoblasts in fracture healing by targeting PTH 
+gene through down‑regulating Wnt/ β‑catenin axis: In an animal 
+experiment. Biochem Biophys Res commun 501: 55‑63, 2018.
+36. Zhou H, Zhang L, chen Y, Zhu cH, chen FM and Li A: Research 
+progress on the hedgehog signalling pathway in regulating bone 
+formation and homeostasis. cell Prolif 55: e13162, 2022.
+37. Minear S, Leucht  P, Jiang J, Liu B, Zeng A, Fuerer c , Nusse R 
+and Helms JA: Wnt proteins promote bone regeneration. Sci 
+Transl Med 2: 29ra30, 2010.
+38. Suen PK, He YX, c how d HK, Huang L, Li c , Ke HZ, 
+Ominsky  MS and Qin  L: Sclerostin monoclonal antibody 
+enhanced bone fracture healing in an open osteotomy model in 
+rats. J Orthop Res 32: 997‑1005, 2014.
+39. Florio M, Gunasekaran K, Stolina M, Li X, Liu L, Tipton B, 
+Salimi‑Moosavi H, Asuncion FJ, Li c, Sun B, et al: A bispecific 
+antibody targeting sclerostin and d KK‑1 promotes bone mass 
+accrual and fracture repair. Nat c ommun 7: 11505, 2016.
+40. Jin H, Wang B, Li J, Xie W, Mao Q, Li S, dong F, Sun Y, Ke HZ, 
+Ba bij P, et al : Anti‑ dKK1 antibody promotes bone fracture 
+healing through activation of β‑catenin signaling. Bone 71: 
+63‑75, 2015.
+41. Houben A, Kostanova‑Poliakova d , Weissenböck M, Graf J, 
+Teufel S, von der Mark K and Hartmann c : β‑catenin activity 
+in late hypertrophic chondrocytes locally orchestrates osteoblas ‑
+togenesis and osteoclastogenesis. d evelopment 143: 3826‑3838, 
+2016.
+42. Meng Y, Zhang T, Zheng R, ding S, Yang J, Liu R, Jiang Y and 
+Jiang W: depletion of demethylase KdM6 enhances early neuro‑
+ectoderm commitment of human PSCs. Front Cell Dev Biol 9: 
+702462, 2021.
+43. Kikuchi K, Haneda M, Hayashi S, Maeda T, Nakano N, 
+Kuroda Y, Tsubosaka M, Kamenaga T, Fujita M, Ikuta K, et al : 
+P21 deficiency exhibits delayed endochondral ossification during 
+fracture healing. Bone 165: 116572, 2022.
+44. catheline SE, Hoak d, chang M, Ketz JP, Hilton MJ, Zuscik MJ 
+and Jonason JH: Chondrocyte‑specific RUNX2 overexpression 
+accelerates post‑traumatic osteoarthritis progression in adult 
+mice. J Bone Miner Res 34: 1676‑1689, 2019.
+45. Gao H, Huang J, Wei Q and He  c: Advances in animal models 
+for studying bone fracture healing. Bioengineering (Basel) 10: 
+201, 2023.
+46. Ramírez‑Salazar EG, Almeraya EV , López‑Perez TV , Patiño N, 
+Salmeron J and Velázquez‑ cruz R: MicroRNA‑548‑3p 
+overexpression inhibits proliferation, migration and inva ‑
+sion in osteoblast‑like cells by targeting STAT1 and MAFB. 
+J Biochem 168: 203‑211, 2020.
+47. cheng Z, Li A, Tu cL, Maria cS, Szeto N, Herberger A, chen TH, 
+Song F, Wang J, Liu X, et al: calcium‑sensing receptors in chon‑
+drocytes and osteoblasts are required for callus maturation and 
+fracture healing in mice. J Bone Miner Res 35: 143‑154, 2020.
+48. Livak KJ and Schmittgen T d: Analysis of relative gene expres ‑
+sion data using real‑time quantitative PcR and the 2(‑delta delta 
+c(T)) method. Methods 25: 402‑408, 2001.
+49. Peyrin F, d ong P, Pacureanu A and Langer M: Micro‑ and 
+nano‑cT for the study of bone ultrastructure. c urr Osteoporos 
+Rep 12: 465‑474, 2014.
+50. Wang c , Brisson BK, Terajima M, Li Q, Hoxha K, 
+Han B, Goldberg AM, Sherry Liu X, Marcolongo MS, 
+Enomoto‑Iwamoto M, et al: Type III collagen is a key regulator 
+of the collagen fibrillar structure and biomechanics of articular 
+cartilage and meniscus. Matrix Biol 85‑86: 47‑67, 2020.
+51. chen M, Zhu X, Zhang L and Zhao d : cOL5A2 is a prog ‑
+nostic‑related biomarker and correlated with immune infiltrates 
+in gastric cancer based on transcriptomics and single‑cell RNA 
+sequencing. BMc Med Genomics 16: 220, 2023.
+52. Wang L, c hen S, Zhang H, Wei G, Ma F, Zhang M, Zhang B, 
+Yang S, c heng H, Yang R, et al : Serine protease inhibitor E2 
+protects against cartilage tissue destruction and inflammation 
+in osteoarthritis by targeting NF‑ κB signalling. Rheumatology 
+(Oxford) 63: 3172‑3183, 2024.
+53. chen YH, Xu NZ, Hong c, Li WQ, Zhang YQ, Yu XY, Huang YL 
+and Zhou JY: Myo1b promotes tumor progression and angiogen‑
+esis by inhibiting autophagic degradation of HIF‑1α in colorectal 
+cancer. Cell Death Dis 13: 939, 2022.
+54. Shi B, Li W, Song Y, Wang Z, Ju R, Ulman A, Hu J, Palomba F, 
+Zhao Y, Le JP, et al: UTX condensation underlies its 
+tumour‑suppressive activity. Nature 597: 726‑731, 2021.
+55. Wen Y, chen X, Feng H, Wang X, Kang X, Zhao P, Zhao c  
+and Wei Y: Kdm6a deficiency in microglia/macrophages epige ‑
+netically silences Lcn2 expression and reduces photoreceptor 
+dysfunction in diabetic retinopathy. Metabolism 136: 155293, 
+2022.
+56. Yang d , Okamura H, Teramachi J and Haneji T: Histone 
+demethylase Utx regulates differentiation and mineralization in 
+osteoblasts. J cell Biochem 116: 2628‑2636, 2015.
+57. duplaquet L, Li Y, Booker MA, Xie Y, Olsen SN, Patel RA, 
+Hong d, Hatton c, denize T, Walton E, et al: KdM6A epigeneti‑
+cally regulates subtype plasticity in small cell lung cancer. Nat 
+cell Biol 25: 1346‑1358, 2023.
+58. Yang Y, chen c, Zuo Q, Lu H, Salman S, Lyu Y, Huang TYT, 
+Wicks EE, Jackson W III, d atan E, et al : NARF is a 
+hypoxia‑induced coactivator for O cT4‑mediated breast cancer 
+stem cell specification. Sci Adv 8: eabo5000, 2022.
+59. Li H, Liu Y, Wang Y, Zhao X and Qi  X: Hormone therapy for 
+ovarian cancer: Emphasis on mechanisms and applications 
+(Review). Oncol Rep 46: 223, 2021.
+Copyright © 2026 Rong et al. This work is licensed under 
+a Creative Commons Attribution-NonCommercial-
+NoDerivatives 4.0 International (CC BY-NC-ND 4.0) 
+License.
+

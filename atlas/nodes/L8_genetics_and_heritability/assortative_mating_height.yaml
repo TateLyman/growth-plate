@@ -1,0 +1,88 @@
+id: assortative_mating_height
+name: Assortative mating for height
+aliases:
+- homogamy for stature
+type: process
+layer: L8
+stub: false
+summary: |-
+  Height is one of the traits for which assortative mating is genetically detectable, and it matters
+  for this atlas because it inflates every quantitative-genetic parameter derived from relatives.
+  Sunde 2024 showed theoretically and empirically that assortative mating raises trait-specific
+  genetic variance and genetic similarity between relatives, and that distant relatives are more
+  affected than close ones - a signature that lets the history of assortment be read from
+  present-day data. Correlating polygenic indices in 47,135 co-parents from the Norwegian Mother,
+  Father and Child Cohort Study gave genetic evidence of assortative mating in nine of sixteen traits
+  examined, and the same traits showed elevated similarity between relatives, especially distant
+  ones. For six of the nine traits the offspring generation showed greater genetic variance than
+  stable long-run assortment would produce, implying assortment is recent or intensifying rather than
+  at equilibrium. Three consequences follow for L8. Twin heritability estimates are biased upward
+  because assortment increases dizygotic but not monozygotic genetic correlation. Polygenic score
+  weights trained in an assorting population absorb the induced gametic-phase disequilibrium between
+  causal alleles. And Mendelian randomization using height instruments inherits the same bias unless
+  family-based designs are used. The magnitude of the height-specific inflation is not quantified in
+  the sources reached here, which is the main quantitative gap on this node.
+quantitative:
+- parameter: co-parent pairs with polygenic indices analysed
+  value: '47135'
+  unit: co-parents
+  conditions: Norwegian Mother, Father and Child Cohort Study (MoBa)
+  species: human
+  source_ref: sunde2024
+  uncertainty: not applicable (count)
+- parameter: traits with genetic evidence of assortative mating
+  value: '9'
+  unit: of 16 traits
+  conditions: polygenic index correlation between co-parents
+  species: human
+  source_ref: sunde2024
+  uncertainty: not applicable (count)
+- parameter: traits showing offspring genetic variance inconsistent with equilibrium assortment
+  value: '6'
+  unit: of 9 traits
+  conditions: same analysis
+  species: human
+  source_ref: sunde2024
+  uncertainty: interpreted as recent or intensifying assortment
+localization:
+- 'human: population mating structure, not tissue-localized'
+human_evidence: direct
+human_evidence_note: Polygenic indices measured in 47,135 human co-parents plus relative-similarity
+  patterns across a national cohort.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human population structure.
+confidence: B
+claim_grades:
+- claim: Assortative mating is genetically detectable and raises genetic variance and relative
+    similarity for assorted traits.
+  grade: A
+  basis: Path-analytic prediction plus empirical confirmation in 47,135 co-parents with the predicted
+    distant-versus-close relative gradient (sunde2024).
+- claim: Assortative mating for height specifically inflates height heritability estimates by
+    a quantified amount.
+  grade: D
+  basis: No height-specific inflation magnitude was located; the effect is established in principle
+    and for the trait class but not measured for stature. See gap g_l8gen_011.
+key_refs:
+- ref_id: sunde2024
+  pmid: '38531929'
+  doi: 10.1038/s41467-024-46939-9
+  first_author: Sunde HF
+  year: 2024
+  type: primary
+  one_line_finding: Genetic evidence of assortative mating in 9 of 16 traits among 47,135 MoBa
+    co-parents, with elevated similarity between distant relatives and offspring genetic variance
+    inconsistent with equilibrium assortment.
+- ref_id: sidorenko2024
+  pmid: '39375568'
+  doi: 10.1038/s41588-024-01940-2
+  first_author: Sidorenko J
+  year: 2024
+  type: primary
+  one_line_finding: Sibling IBD heritability design chosen partly because it is less exposed to
+    assortative-mating inflation than pedigree correlations.
+open_questions:
+- g_l8gen_011
+last_verified: '2026-08-05'

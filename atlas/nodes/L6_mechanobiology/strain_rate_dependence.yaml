@@ -1,0 +1,53 @@
+id: strain_rate_dependence
+name: Strain rate dependence
+type: process
+summary: 'Growth plate cartilage is strongly viscoelastic and poroelastic, so its mechanical response
+  depends on how fast strain is applied, not only on how much. This is the mechanistic root of the static/dynamic
+  distinction: under stress control, a slowly or indefinitely applied load allows fluid exudation and
+  continued creep, and hypertrophic chondrocytes accumulate lateral and volumetric strain over time, whereas
+  a rapidly cycling load of the same mean magnitude truncates creep and leaves cells with the same axial
+  but lower lateral and volumetric deformation. Digital image correlation in porcine explants likewise
+  shows qualitatively different internal strain fields under static versus dynamic modulation rather than
+  a simple scaling. Because the tissue''s apparent modulus rises with loading rate, the stress transmitted
+  to chondrocytes during a fast heel strike is not predictable from the quasi-static modulus, which is
+  one reason in vivo human physeal stress cannot be inferred from joint contact force alone. No experiment
+  has yet varied strain rate as the sole independent variable in an in vivo growth plate and measured
+  growth rate.'
+quantitative:
+- parameter: axial hypertrophic cell strain, static vs dynamic at matched mean stress
+  value: not different
+  unit: qualitative
+  conditions: stress-controlled compression, pre-pubertal rat proximal tibial explants
+  species: rat
+  source_ref: zimmermann2017
+  uncertainty: lateral p<0.001 and volumetric p<=0.015 both higher under static
+human_evidence: absent
+human_evidence_note: No human physeal strain-rate measurement exists.
+species_basis:
+- rat
+- porcine
+translation_risk: high
+translation_risk_reason: Inference rests on explant rheology in two species; the in vivo human loading
+  rate spectrum is unknown.
+confidence: D
+key_refs:
+- ref_id: zimmermann2017
+  pmid: '28365062'
+  first_author: Zimmermann EA
+  year: 2017
+  type: primary
+  one_line_finding: Time-dependent creep under static stress control is what raises lateral and volumetric
+    chondrocyte strain
+- ref_id: kaviani2016
+  pmid: '26452368'
+  first_author: Kaviani R
+  year: 2016
+  type: primary
+  one_line_finding: Internal strain fields in growth plate cartilage differ qualitatively between static
+    and dynamic modulation
+open_questions:
+- g_l6mech_002
+- g_l6mech_006
+layer: L6
+stub: false
+last_verified: '2026-08-05'

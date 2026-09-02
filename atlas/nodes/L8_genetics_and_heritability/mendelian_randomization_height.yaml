@@ -1,0 +1,86 @@
+id: mendelian_randomization_height
+name: Mendelian randomization using height
+aliases:
+- MR of height
+- height as an instrument
+type: method
+layer: L8
+stub: false
+summary: |-
+  Height is the workhorse exposure and outcome for Mendelian randomization because it has thousands of
+  strong instruments, is measured without error, and cannot be reverse-caused by most outcomes of
+  interest. Two uses matter for this atlas. Used as an outcome, MR converts endocrine correlations
+  into causal slopes: De La Barrera 2026 instrumented serum IGF-1 with UK Biobank variants and tested
+  against GIANT height excluding UK Biobank (non-Hispanic White n=1,176,465, plus African descent
+  168,191, South Asian 49,032, East Asian 361,369 and Hispanic 58,709), obtaining 0.09 SD taller
+  adult height per 1 SD higher IGF-1 by inverse-variance weighting, persisting after adjustment for
+  childhood BMI and replicated longitudinally against measured heights at ages 7-17 in ALSPAC. That
+  number puts a hard ceiling on how much of normal stature variation the IGF-1 axis explains, and it
+  sits alongside the Laron and IGFALS phenotypes as the population-scale version of the same axis.
+  Used as an exposure, height MR consistently estimates effects on cardiovascular and other outcomes,
+  but those analyses are outside this atlas's scope. The methodological caveat that matters here is
+  that assortative mating for height induces correlations between causal alleles and inflates genetic
+  variance, which biases MR estimates that use height instruments unless family-based designs are
+  used - a caveat that applies specifically and strongly to this trait.
+quantitative:
+- parameter: adult height change per 1 SD genetically predicted serum IGF-1
+  value: '0.09'
+  unit: SD
+  conditions: two-sample MR, inverse-variance weighted, GIANT excluding UK Biobank across five
+    ancestry groups
+  species: human
+  source_ref: de2026
+  uncertainty: persisted after adjustment for childhood BMI; replicated in ALSPAC ages 7-17
+- parameter: GIANT non-Hispanic White outcome sample
+  value: '1176465'
+  unit: individuals
+  conditions: plus 168,191 African descent, 49,032 South Asian, 361,369 East Asian, 58,709 Hispanic
+  species: human
+  source_ref: de2026
+  uncertainty: not applicable (count)
+localization:
+- 'human: population-level instrumental-variable analysis'
+human_evidence: direct
+human_evidence_note: Human genetic instruments against measured human stature, with a longitudinal
+  cohort replication.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human epidemiological method.
+confidence: B
+claim_grades:
+- claim: Higher circulating IGF-1 causally increases adult height by about 0.09 SD per SD.
+  grade: A
+  basis: Two-sample MR in >1.8M individuals with an independent ALSPAC longitudinal replication
+    using both measured IGF-1 and an IGF-1 genetic risk score (de2026).
+- claim: Height MR estimates are unbiased in populations with assortative mating.
+  grade: D
+  basis: Not supported. Assortative mating induces gametic-phase correlations between causal alleles
+    (sunde2024), which biases population-based MR using height instruments; family-based designs
+    are required.
+key_refs:
+- ref_id: de2026
+  pmid: '41017432'
+  doi: 10.1210/clinem/dgaf532
+  first_author: De La Barrera B
+  year: 2026
+  type: primary
+  one_line_finding: MR gives 0.09 SD taller adult height per 1 SD higher serum IGF-1, replicated
+    against repeated height measurements at ages 7-17 in ALSPAC.
+- ref_id: sunde2024
+  pmid: '38531929'
+  doi: 10.1038/s41467-024-46939-9
+  first_author: Sunde HF
+  year: 2024
+  type: primary
+  one_line_finding: Assortative mating increases trait-specific genetic variance and genetic similarity
+    between relatives, a source of bias for height-instrument designs.
+- ref_id: yengo2022
+  pmid: '36224396'
+  doi: 10.1038/s41586-022-05275-y
+  first_author: Yengo L
+  year: 2022
+  type: primary
+  one_line_finding: 'Supplies the instrument set: 12,111 conditionally independent height SNPs
+    from 5.4M individuals.'
+last_verified: '2026-08-05'

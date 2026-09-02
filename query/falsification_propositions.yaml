@@ -1,0 +1,771 @@
+# Phase 7 — falsification baseline: held-out propositions
+#
+# PROTOCOL NOTE. Every proposition below was written from the paper's abstract
+# ALONE. query/graph.json, query/derived.json and the node files were NOT opened
+# between the literature sweep and the completion of this file. The blinding is
+# the validity of the exercise; the git commit that adds this file precedes the
+# commit that adds falsification_baseline.md for exactly that reason.
+#
+# cutoff_date: 2026-02-01  (papers with Europe PMC FIRST_PDATE strictly after it)
+# non_ingestion: verified by DOI AND PMID against atlas/sources/bibliography.yaml
+#                (1036 refs, 973 with DOI, 991 with PMID) — zero collisions.
+# search: Europe PMC REST, resultType=core, FIRST_PDATE:[2026-02-01 TO 2026-12-31],
+#         PUB_TYPE:"Journal Article" NOT PUB_TYPE:"Review" on the primary sweep.
+
+meta:
+  cutoff_date: '2026-02-01'
+  date_run: '2026-08-05'
+  n_propositions: 64
+  n_scored: 63
+  n_excluded_contaminated: 1   # P38 - see exclusions below
+  layers_spanned: 14
+  bibliography_refs_at_cutoff: 1036
+  blinding: >-
+    Propositions authored before any read of query/graph.json, query/derived.json,
+    query/parameters.json or atlas/nodes/**. coverage.md was read (it is required
+    by QUERY.md §8 and contains no node- or edge-level content).
+
+# ── EXCLUSIONS (added at scoring time, after the blinded commit) ───────────────
+# The non-ingestion check was re-run immediately before scoring, against BOTH
+# bibliography.yaml AND graph.json.refs. One item failed on the second pass.
+exclusions:
+  - id: P38
+    doi: 10.1016/j.xhgg.2026.100597
+    pmid: '41904631'
+    layer: L8
+    reason: >-
+      CONTAMINATED. Absent from bibliography.yaml at sweep time (1036 refs) and
+      present at scoring time (1037 refs) as ref_id `wang2026_2`, cited in the
+      height_gwas node - added by a concurrent process writing to this repo
+      between the two checks. Excluded from every count in
+      query/falsification_baseline.md. Had it been retained it would have scored
+      CORRECT_PREDICTION and raised L8's hit rate from 20% to 33%: the single
+      most flattering item in the weakest layer was the contaminated one.
+    disposal: see query/falsification_corrections.md C-07
+
+propositions:
+
+  # ── L0 developmental_origin ────────────────────────────────────────────────
+  - id: P01
+    layer: L0
+    doi: 10.3390/genes17020238
+    pmid: '41751622'
+    date: '2026-02-15'
+    proposition: >-
+      Duplication of PAR1 spanning SHOX (increased SHOX dosage) produces tall
+      stature in a human male, the directional mirror of SHOX haploinsufficiency.
+    species: human
+
+  - id: P02
+    layer: L0
+    doi: 10.1038/s41413-026-00517-5
+    pmid: '41957346'
+    date: '2026-04-09'
+    proposition: >-
+      USP26 deubiquitinates FBP2, raising mitochondrial oxidative phosphorylation
+      in chondrocytes, and is required for chondrocyte hypertrophy and
+      mineralization during endochondral ossification; compression loading induces
+      it via ERalpha S118 phosphorylation.
+    species: mouse
+
+  - id: P03
+    layer: L0
+    doi: 10.1038/s41467-026-71952-5
+    pmid: '41980979'
+    date: '2026-04-14'
+    proposition: >-
+      CD55+CD90+ mesenchymal cells transiently give rise to FABP5+ septoclasts at
+      the chondro-osseous junction and drive osteoclastogenesis in the primary
+      ossification centre before LepR+ stroma assumes that role.
+    species: mouse
+
+  - id: P04
+    layer: L0
+    doi: 10.1038/s41598-026-46913-z
+    pmid: '42002583'
+    date: '2026-04-19'
+    proposition: >-
+      Podoplanin-positive osteolineage cells arise in the bone collar
+      concurrently with primary ossification centre initiation and contribute to
+      metaphyseal trabecular bone.
+    species: mouse
+
+  - id: P05
+    layer: L0
+    doi: 10.1016/j.jot.2026.101123
+    pmid: '42182072'
+    date: '2026-05-16'
+    proposition: >-
+      A CD140a+PDPN+ skeletal stem/progenitor population peaks at E14.5 in the
+      limb bud and is chondrogenically primed by a specific type-E endothelial
+      subset via direct cell-cell communication.
+    species: mouse
+
+  # ── L1 growth_plate_architecture ───────────────────────────────────────────
+  - id: P06
+    layer: L1
+    doi: 10.3349/ymj.2025.0111
+    pmid: '41560384'
+    date: '2026-02-01'
+    proposition: >-
+      Metaphyseal drill holes distal to an intact physis change long-bone length:
+      a single hole causes overgrowth, whereas two holes cause growth suppression,
+      i.e. the metaphyseal vascular response modulates physeal output without any
+      physeal injury.
+    species: rabbit
+
+  - id: P07
+    layer: L1
+    doi: 10.1038/s41413-025-00500-6
+    pmid: '41663374'
+    date: '2026-02-09'
+    proposition: >-
+      Growth-plate chondrocytes transition to an osteoblast phenotype during
+      normal postnatal bone formation, and the switch is governed by NOTCH, BMP
+      and MAPK signalling with Mesp1/Alx1/Grhl3/Hmx3 as transcriptional markers.
+    species: mouse
+
+  - id: P08
+    layer: L1
+    doi: 10.1093/jbmrpl/ziag021
+    pmid: '41809686'
+    date: '2026-02-14'
+    proposition: >-
+      Chondrocyte-specific loss of the beta2-adrenoceptor REDUCES long bone
+      growth by accelerating the proliferative-to-hypertrophic transition, so
+      sympathetic beta2-AR signalling in chondrocytes is growth-permissive.
+    species: mouse
+
+  - id: P09
+    layer: L1
+    doi: 10.3390/ijms27073324
+    pmid: '41977500'
+    date: '2026-04-07'
+    proposition: >-
+      Gli1+ slow-cycling progenitors occupy the TMJ enthesis-condyle interface,
+      and Evc2 loss in them paradoxically increases Gli1 and mechanosensor
+      (Yap/Wwtr1/Piezo1) expression and expands transit-amplifying cells.
+    species: mouse
+
+  - id: P10
+    layer: L1
+    doi: 10.1016/j.bone.2026.117913
+    pmid: '42070715'
+    date: '2026-05-01'
+    proposition: >-
+      Osteochondromas in hereditary multiple osteochondroma arise from
+      perichondrial progenitors, and the inner (Pdgfra+) rather than the outer
+      (Fgf18+) perichondrial layer supplies the tumour-initiating cells.
+    species: mouse
+
+  - id: P11
+    layer: L1
+    doi: 10.1016/j.bone.2026.118036
+    pmid: '42546827'
+    date: '2026-08-03'
+    proposition: >-
+      Prepubertal blue-light exposure advances puberty onset and alters
+      epiphyseal plate and proliferative-zone thickness with changed local
+      IGF-1/IGFBP-3 expression, in a dose (duration)-dependent and sex-dependent way.
+    species: rat
+
+  # ── L2 stem_and_progenitor_biology ─────────────────────────────────────────
+  - id: P12
+    layer: L2
+    doi: 10.1002/advs.75725
+    pmid: '42153977'
+    date: '2026-05-19'
+    proposition: >-
+      A Prg4+ chondroprogenitor-like population is electro-mechanically
+      responsive and mediates cartilage anabolism via an ECM-FAK-PI3K-Akt axis.
+    species: rat
+
+  - id: P13
+    layer: L2
+    doi: 10.1016/j.bone.2026.117980
+    pmid: '42302904'
+    date: '2026-06-16'
+    proposition: >-
+      Skeletal stem/progenitor cells do NOT depend on high glycolytic flux:
+      PFKFB3 deletion cuts glycolysis by >=30% yet leaves SSPC function and bone
+      mass intact through compensatory substrate uptake.
+    species: mouse
+
+  - id: P14
+    layer: L2
+    doi: 10.1038/s41467-026-74929-6
+    pmid: '42363015'
+    date: '2026-06-26'
+    proposition: >-
+      Juvenile metaphyseal osteoblast proliferation is sustained by growth-plate
+      Indian hedgehog and ceases at growth-plate maturation, so growth-plate IHH
+      output is the permissive condition for the juvenile metaphyseal window in
+      which osteosarcoma arises.
+    species: mouse
+
+  # ── L3 signaling_networks ──────────────────────────────────────────────────
+  - id: P15
+    layer: L3
+    doi: 10.1242/bio.062540
+    pmid: '41954527'
+    date: '2026-03-01'
+    proposition: >-
+      FGFR3 gain-of-function raises Dkk1 in cartilage, and Dkk1 inhibition
+      (de-repressing canonical Wnt/beta-catenin) restores growth in an
+      achondroplasia model — i.e. FGFR3 acts partly by suppressing Wnt.
+    species: mouse
+
+  - id: P16
+    layer: L3
+    doi: 10.1016/j.jbc.2026.113111
+    pmid: '42103217'
+    date: '2026-05-06'
+    proposition: >-
+      ARSL is a Golgi chondroitin-4-O-sulfatase; its loss hypersulfates
+      chondroitin sulfate, alters chondrocyte TGF-beta responsiveness and causes
+      chondrodysplasia punctata-like skeletal malformation.
+    species: human_genetic_plus_medaka
+
+  - id: P17
+    layer: L3
+    doi: 10.3390/biom16050746
+    pmid: '42194094'
+    date: '2026-05-19'
+    proposition: >-
+      Palmitic acid REDUCES longitudinal bone growth while INCREASING collagenous
+      matrix deposition and mineralization — growth length and matrix maturation
+      dissociate under lipotoxic exposure.
+    species: chick_ex_vivo
+
+  - id: P18
+    layer: L3
+    doi: 10.3892/ijmm.2026.5874
+    pmid: '42212366'
+    date: '2026-05-29'
+    proposition: >-
+      The oxygen-sensing demethylase KDM6A promotes chondrocyte-to-osteoblast
+      transdifferentiation by activating Wnt/beta-catenin, linking the local
+      oxygen gradient to the fate of hypertrophic chondrocytes.
+    species: mouse
+
+  - id: P19
+    layer: L3
+    doi: 10.1016/j.diff.2026.100978
+    pmid: '42442044'
+    date: '2026-07-13'
+    proposition: >-
+      A synonymous NPR2 variant (c.2484C>T) causes acromesomelic dysplasia
+      Maroteaux type by creating a splice donor, producing frameshift and NMD —
+      i.e. NPR2 loss of function can be produced by a protein-silent change.
+    species: human
+
+  # ── L4 endocrine_and_systemic ──────────────────────────────────────────────
+  - id: P20
+    layer: L4
+    doi: 10.1016/j.molmet.2026.102355
+    pmid: '41850396'
+    date: '2026-03-16'
+    proposition: >-
+      IGF1R signalling in LepRb (hypothalamic leptin-receptor) neurons is
+      required for normal pubertal timing and transient postnatal somatic growth,
+      so part of IGF-1's growth action is central, not growth-plate-local.
+    species: mouse
+
+  - id: P21
+    layer: L4
+    doi: 10.1210/clinem/dgaf626
+    pmid: '41239863'
+    date: '2026-04-01'
+    proposition: >-
+      In adolescents with childhood idiopathic isolated GHD who retest GH
+      sufficient at mid-puberty, STOPPING rhGH does not reduce near-adult height
+      relative to target height compared with continuing it.
+    species: human
+
+  - id: P22
+    layer: L4
+    doi: 10.1302/2046-3758.155.bjr-2025-0563.r1
+    pmid: '42125896'
+    date: '2026-05-13'
+    proposition: >-
+      In Pappa2-null mice, rhGH or rhPAPP-A2 (but not rhIGF1 equally) rescues
+      body length, and the rescue is sex-specific and involves cannabinoid
+      receptor and STAT3 signalling in bone.
+    species: mouse
+
+  - id: P23
+    layer: L4
+    doi: 10.1080/07853890.2026.2697592
+    pmid: '42433026'
+    date: '2026-07-10'
+    proposition: >-
+      rhGH treatment of short stature increases incident scoliosis (HR ~2.7) with
+      a positive dose-response on cumulative GH dose — a growth-acceleration
+      cost paid in spinal deformity.
+    species: human
+
+  - id: P24
+    layer: L4
+    doi: 10.1210/clinem/dgag309
+    pmid: '42538806'
+    date: '2026-08-01'
+    proposition: >-
+      Once-weekly somapacitan is non-inferior to daily GH for 52-week height
+      velocity in prepubertal girls with Turner syndrome (9.0 vs 9.5 cm/yr).
+    species: human
+
+  # ── L5 matrix_and_mineralization ───────────────────────────────────────────
+  - id: P25
+    layer: L5
+    doi: 10.1093/jbmr/zjaf136
+    pmid: '41051346'
+    date: '2026-03-01'
+    proposition: >-
+      Inhibiting ENPP1 lowers plasma PPi and improves skeletal mineralization in
+      a late-onset hypophosphatasia model — i.e. ENPP1 is the dominant generator
+      of the PPi that accumulates when TNAP is deficient, and is druggable.
+    species: mouse
+
+  - id: P26
+    layer: L5
+    doi: 10.1210/clinem/dgaf585
+    pmid: '41137448'
+    date: '2026-03-01'
+    proposition: >-
+      Calcitriol MONOTHERAPY (no oral phosphate, no burosumab) improves rickets
+      severity and mineral markers in XLH over 12 months without worsening
+      nephrocalcinosis.
+    species: human
+
+  - id: P27
+    layer: L5
+    doi: 10.1016/j.jbc.2026.111459
+    pmid: '41999892'
+    date: '2026-04-16'
+    proposition: >-
+      P4HA3, though peaking in the developing skeleton at E12.5, is DISPENSABLE
+      for prolyl-4-hydroxylation of type I collagen in vivo — isoform redundancy
+      not isoform specificity.
+    species: mouse
+
+  - id: P28
+    layer: L5
+    doi: 10.1016/s2213-8587(26)00013-6
+    pmid: '42044650'
+    date: '2026-04-24'
+    proposition: >-
+      Burosumab given below 12 months of age in XLH is safe and improves
+      phosphate homeostasis and rickets, extending the effective treatment window
+      earlier than the licensed >=1 year.
+    species: human
+
+  - id: P29
+    layer: L5
+    doi: 10.3389/fped.2026.1845607
+    pmid: '42465210'
+    date: '2026-07-02'
+    proposition: >-
+      In XLH on conventional therapy, LATER age at diagnosis predicts worse final
+      height Z-score independently of other factors — diagnostic delay is itself
+      a determinant of adult stature.
+    species: human
+
+  # ── L6 mechanobiology ──────────────────────────────────────────────────────
+  - id: P30
+    layer: L6
+    doi: 10.37796/2211-8039.1696
+    pmid: '41799032'
+    date: '2026-03-01'
+    proposition: >-
+      Restricting physical activity (COVID lockdown) lowers linear growth
+      velocity in children, with a detectable effect in boys and not in girls.
+    species: human
+
+  - id: P31
+    layer: L6
+    doi: 10.3389/fspor.2026.1746084
+    pmid: '42535076'
+    date: '2026-07-14'
+    proposition: >-
+      Sport-specific hip loading concentrates compressive stress in identifiable
+      subregions of the proximal femoral physis, giving a mechanical route from
+      adolescent athletic loading to cam deformity.
+    species: human_in_silico
+
+  - id: P32
+    layer: L6
+    doi: 10.1186/s12938-026-01598-3
+    pmid: '42458460'
+    date: '2026-07-15'
+    proposition: >-
+      A single mechanobiological growth rule — octahedral shear stress
+      accelerates and hydrostatic compressive stress retards longitudinal growth
+      — reproduces juvenile femoral morphogenesis across epiphyseal, apophyseal
+      and appositional growth simultaneously.
+    species: human_in_silico
+
+  # ── L7 fusion_and_cessation ────────────────────────────────────────────────
+  - id: P33
+    layer: L7
+    doi: 10.1097/md.0000000000047998
+    pmid: '41861206'
+    date: '2026-03-01'
+    proposition: >-
+      Post-menarcheal height gain in girls with early/precocious puberty is small
+      and bounded, and GnRH-agonist treatment before menarche raises predicted
+      adult height relative to untreated girls.
+    species: human
+
+  - id: P34
+    layer: L7
+    doi: 10.1007/s40618-026-02957-6
+    pmid: '42340620'
+    date: '2026-06-24'
+    proposition: >-
+      In premature pubarche, final height is predicted by height relative to
+      genetic potential and by skeletal maturation (BA/CA) at presentation,
+      rather than by androgen concentrations.
+    species: human
+
+  - id: P35
+    layer: L7
+    doi: 10.3390/children13070861
+    pmid: '42509887'
+    date: '2026-06-29'
+    proposition: >-
+      In Laron syndrome (IGF-1 deficiency), menarche occurs at a bone age closer
+      to normal than its chronological age, so skeletal maturation rather than
+      chronological age indexes pubertal maturation when growth is abnormal.
+    species: human
+
+  - id: P36
+    layer: L7
+    doi: 10.13107/jocr.2026.v16.i07.7622
+    pmid: '42428412'
+    date: '2026-07-01'
+    proposition: >-
+      The canonical skeletal-maturity sequence can invert: distal phalangeal
+      physeal closure can precede thumb adductor sesamoid ossification in GH
+      deficiency, so bone-age landmark ordering is not invariant across
+      endocrine states.
+    species: human
+
+  # ── L8 genetics_and_heritability ───────────────────────────────────────────
+  - id: P37
+    layer: L8
+    doi: 10.1016/j.ajhg.2026.02.015
+    pmid: '41861830'
+    date: '2026-03-19'
+    proposition: >-
+      Skeletal PROPORTION (sitting-height ratio) has its own genetic
+      architecture: 565 loci across ~550,000 people, overlapping height loci but
+      with fine-mapped signals that are frequently distinct from height signals.
+    species: human
+
+  - id: P38
+    layer: L8
+    doi: 10.1016/j.xhgg.2026.100597
+    pmid: '41904631'
+    date: '2026-03-27'
+    proposition: >-
+      Height polygenic scores derived in European-ancestry GWAS transfer poorly
+      to admixed Latino cohorts, and explicitly modelling ancestry PCs alongside
+      the PGS recovers ~0.05 R2.
+    species: human
+
+  - id: P39
+    layer: L8
+    doi: 10.1038/s41586-026-10358-1
+    pmid: '41986721'
+    date: '2026-04-15'
+    proposition: >-
+      Polygenic height in West Eurasia has been under strong DIRECTIONAL
+      selection over the last ten millennia, with ~1 SD shifts in
+      trait-predicting allele combinations — human stature genetics is not at
+      neutral equilibrium.
+    species: human
+
+  - id: P40
+    layer: L8
+    doi: 10.1016/j.ajhg.2026.05.013
+    pmid: '42330953'
+    date: '2026-06-22'
+    proposition: >-
+      Adults shorter than their polygenic score predicts are enriched for
+      predicted-loss-of-function variants in ACAN and IGF1, and adults taller
+      than predicted for damaging missense in FBN1 — monogenic growth-plate genes
+      surface as residual from the polygenic model.
+    species: human
+
+  - id: P41
+    layer: L8
+    doi: 10.1016/j.ajcnut.2026.101425
+    pmid: '42386083'
+    date: '2026-07-01'
+    proposition: >-
+      Residual height (observed minus genetically predicted from ~9,863 variants)
+      carries independent associations with later-life disease incidence and
+      mortality — the non-genetic component of attained stature is itself a
+      health signal.
+    species: human
+
+  - id: P42
+    layer: L8
+    doi: 10.1186/s13059-026-04140-9
+    pmid: '42393741'
+    date: '2026-07-02'
+    proposition: >-
+      Rare variants (LD-independent, from WGS in ~349,000 people) account for
+      ~0.37 of the heritability of standing height — a substantially larger rare
+      variant share than for BMI or blood pressure.
+    species: human
+
+  # ── L9 whole_organism_growth ───────────────────────────────────────────────
+  - id: P43
+    layer: L9
+    doi: 10.3390/children13050641
+    pmid: '42194168'
+    date: '2026-05-03'
+    proposition: >-
+      In SGA children without catch-up, EARLIER rhGH initiation yields greater
+      height gain and a smaller adult-height deficit versus target height, and
+      pubertal growth contributes little to final adult height.
+    species: human
+
+  - id: P44
+    layer: L9
+    doi: 10.1183/13993003.01678-2025
+    pmid: '42392826'
+    date: '2026-07-02'
+    proposition: >-
+      Ivacaftor (a CFTR modulator, not a growth drug) accelerates height growth
+      and raises final height in cystic fibrosis — correcting the primary
+      systemic disease recovers linear growth.
+    species: human
+
+  - id: P45
+    layer: L9
+    doi: 10.1007/s12325-026-03719-9
+    pmid: '42518139'
+    date: '2026-07-28'
+    proposition: >-
+      Vosoritide raises height SDS in Chinese children with achondroplasia in
+      routine care (-4.7 to -4.3 at 12 months) and improves body proportion
+      (sitting height/height ratio).
+    species: human
+
+  - id: P46
+    layer: L9
+    doi: 10.1038/s41598-026-61162-w
+    pmid: '42547787'
+    date: '2026-08-03'
+    proposition: >-
+      Prednisone but NOT vamorolone suppresses serum bone/cartilage turnover
+      markers (ALP, osteocalcin, P1NP, CTX1) in DMD boys — the growth-failure
+      arm of glucocorticoid action is dissociable from the anti-inflammatory arm.
+    species: human
+
+  # ── L10 environment_and_population ─────────────────────────────────────────
+  - id: P47
+    layer: L10
+    doi: 10.3389/fped.2026.1769902
+    pmid: '41853244'
+    date: '2026-03-03'
+    proposition: >-
+      Central precocious puberty incidence in girls rose during the COVID-19
+      pandemic in Japan, replicating the international pandemic signal in a
+      population with low obesity prevalence.
+    species: human
+
+  - id: P48
+    layer: L10
+    doi: 10.1371/journal.pone.0351677
+    pmid: '42284343'
+    date: '2026-06-12'
+    proposition: >-
+      Height in Macao children rose ~2.1 cm (boys) and ~2.4 cm (girls) between
+      2005 and 2020 while BMI rose faster than height — the secular height trend
+      continues but is decoupling from the weight trend.
+    species: human
+
+  - id: P49
+    layer: L10
+    doi: 10.1002/ajhb.70309
+    pmid: '42437732'
+    date: '2026-07-01'
+    proposition: >-
+      Adult male height in Poland rose across 1965-2023 AND a socioeconomic
+      gradient in height persisted throughout — secular gain does not abolish
+      the SES stratification of attained stature.
+    species: human
+
+  # ── L11 pathology_as_natural_experiment ────────────────────────────────────
+  - id: P50
+    layer: L11
+    doi: 10.1210/clinem/dgaf533
+    pmid: '41001785'
+    date: '2026-02-01'
+    proposition: >-
+      Exome sequencing of SGA children with persistent short stature yields a
+      monogenic/CNV diagnosis in ~18%, half of them copy-number variants —
+      failure of catch-up growth is frequently a genetic skeletal or syndromic
+      diagnosis rather than idiopathic.
+    species: human
+
+  - id: P51
+    layer: L11
+    doi: 10.1038/s41431-026-02124-8
+    pmid: '42069959'
+    date: '2026-05-02'
+    proposition: >-
+      Mesomelic dysplasia Savarirayan-type is caused by ID4 misexpression through
+      TAD disruption and limb-enhancer adoption — a non-coding structural
+      mechanism, not a coding lesion.
+    species: human
+
+  - id: P52
+    layer: L11
+    doi: 10.1002/ajmg.a.70243
+    pmid: '42410297'
+    date: '2026-07-06'
+    proposition: >-
+      Biallelic loss-of-function in MIMS1 (FAM210A) causes a new
+      spondyloepimetaphyseal dysplasia with short stature, tracheal stenosis and
+      ectodermal features.
+    species: human
+
+  - id: P53
+    layer: L11
+    doi: 10.1038/s41431-026-02176-w
+    pmid: '42414553'
+    date: '2026-07-07'
+    proposition: >-
+      C-terminal frameshift variants in the last exon of FGFR1, producing a
+      164-aa elongation tail, cause fully penetrant multiple epiphyseal dysplasia
+      with mild short stature — an FGFR1 gain-of-tail mechanism distinct from
+      classical FGFR3 dysplasias.
+    species: human
+
+  - id: P54
+    layer: L11
+    doi: 10.3389/fendo.2026.1830126
+    pmid: '42483685'
+    date: '2026-07-07'
+    proposition: >-
+      In Turner syndrome, karyotype class (45,X monosomy vs mosaic vs structural
+      X abnormality) associates with clinical phenotype and with GH response,
+      and the height SDS gain from GH is front-loaded into the first year.
+    species: human
+
+  - id: P55
+    layer: L11
+    doi: 10.1016/j.gim.2026.102666
+    pmid: '42495828'
+    date: '2026-07-23'
+    proposition: >-
+      Vosoritide started before age 3 in achondroplasia improves foramen magnum
+      growth relative to untreated ACH reference curves — a CNP-pathway agonist
+      acts on a synchondrosis-derived, non-long-bone skeletal site.
+    species: human
+
+  # ── L12 pharmacology_as_mechanistic_probe ──────────────────────────────────
+  - id: P56
+    layer: L12
+    doi: 10.1210/jendso/bvag008
+    pmid: '41783511'
+    date: '2026-02-20'
+    proposition: >-
+      Vosoritide increases spinal canal width and blunts the natural increase in
+      thoracolumbar kyphosis angle in achondroplasia — the CNP agonist changes
+      vertebral/spinal morphology, not just long-bone length.
+    species: human
+
+  - id: P57
+    layer: L12
+    doi: 10.1016/j.aed.2026.04.004
+    pmid: '42491490'
+    date: '2026-04-18'
+    proposition: >-
+      Adding an aromatase inhibitor to GH during puberty in ACAN-related short
+      stature (which has advanced bone age and early fusion) yields adult height
+      well above pretreatment prediction — oestrogen blockade buys physeal time
+      in an aggrecan-deficient plate.
+    species: human
+
+  - id: P58
+    layer: L12
+    doi: 10.1210/jendso/bvag123
+    pmid: '42299320'
+    date: '2026-05-30'
+    proposition: >-
+      Exogenous testosterone in constitutional delay transiently suppresses LH,
+      FSH and INSL3, whereas letrozole does not — the two CDGP treatments differ
+      in their gonadotropin-axis footprint despite both advancing puberty.
+    species: human
+
+  - id: P59
+    layer: L12
+    doi: 10.1159/000553101
+    pmid: '42348474'
+    date: '2026-06-25'
+    proposition: >-
+      Pooled across REAL 3/4/6, once-weekly somapacitan matches daily GH on
+      height velocity at 52 and 156 weeks, including across puberty onset —
+      weekly GH exposure profile does not cost growth.
+    species: human
+
+  - id: P60
+    layer: L12
+    doi: 10.1007/s40618-026-02986-1
+    pmid: '42525213'
+    date: '2026-07-29'
+    proposition: >-
+      Long-acting GH (somatrogon) raises IGF-I SDS while leaving adrenal (ACTH,
+      cortisol) and thyroid (TSH, FT4, FT3) axes stable — the weekly formulation
+      does not unmask other pituitary deficiencies.
+    species: human
+
+  # ── L13 methods_and_data ───────────────────────────────────────────────────
+  - id: P61
+    layer: L13
+    doi: 10.1080/03014460.2026.2627918
+    pmid: '41885468'
+    date: '2026-03-26'
+    proposition: >-
+      Adding a fourth "post-growth" random effect to SITAR improves fit for BOTH
+      height and weight (height residual SD 0.67 vs 0.74 cm) — the standard
+      three-parameter SITAR under-describes post-pubertal height velocity.
+    species: human
+
+  - id: P62
+    layer: L13
+    doi: 10.1016/j.cdnut.2026.107714
+    pmid: '42305912'
+    date: '2026-05-13'
+    proposition: >-
+      WHO and CDC growth references classify the SAME children's height status
+      discordantly, so measured stunting prevalence is reference-dependent, not
+      a property of the population.
+    species: human
+
+  - id: P63
+    layer: L13
+    doi: 10.1136/bmjph-2025-004567
+    pmid: '42370059'
+    date: '2026-06-23'
+    proposition: >-
+      Linear growth faltering at 24-30 months (stunting, or short for genetic
+      potential) flags children who fail neurodevelopmental screening — height
+      is an indicator of a non-skeletal outcome.
+    species: human
+
+  - id: P64
+    layer: L13
+    doi: 10.1007/s00256-026-05297-x
+    pmid: '42435209'
+    date: '2026-07-11'
+    proposition: >-
+      Combining hand-wrist AND knee radiographs in a dual-input deep model gives
+      bone-age MAE of 3.77 months in LATE adolescence (13-19 y), the range where
+      hand-only bone age saturates.
+    species: human

@@ -1,0 +1,73 @@
+id: cartilage_organoid
+name: Cartilage and skeletal organoids
+aliases:
+- growth plate organoid
+- skeletal assembloid
+type: method
+summary: |
+  Skeletal organoids and assembloids are the most serious current attempt to build a human
+  growth plate outside a human. Region-specific skeletal organoids differentiated from human
+  pluripotent stem cells via PRRX1+ limb-bud mesenchyme generate GDF5+PRG4+
+  interzone/articular progenitors and SP7+ growth plate chondrocytes, with transcriptional
+  similarity to human embryonic skeletal tissue (GSE288042-46 series). Human PSC-derived
+  osteochondral fusion constructs transplanted under the mouse kidney capsule contain a full
+  endochondral spectrum including the hypertrophic-to-osteoblast transition (GSE275943), which
+  is the human counterpart of a claim otherwise established only by murine lineage tracing.
+  iPSC-derived pellets can be directed either to articular chondrocytes or along the growth
+  plate pathway to hypertrophic cells that transdifferentiate to osteoblasts and mineralise a
+  collagen I matrix (GSE219215). What no organoid has produced is the thing the atlas is
+  about: a stacked, columnar, zonally organised plate with a resting zone, a proliferative
+  column, a hypertrophic gradient, and a mineralisation front, generating unidirectional
+  elongation - explicitly identified as an unmet challenge (zhang2025_2). Organoids therefore
+  currently model the endochondral differentiation trajectory in human cells, not the growth
+  plate as an organ.
+quantitative:
+- parameter: human iPSC endochondral trajectory samples deposited
+  value: '42'
+  unit: samples
+  conditions: GSE219215, articular versus growth plate pathway with osteogenic organoids
+  species: ipsc_derived
+  source_ref: geo_census_l13b_20260805
+  uncertainty: GEO sample count
+- parameter: organoid systems reproducing columnar zonal architecture with unidirectional elongation
+  value: '0'
+  unit: systems
+  conditions: field review 2025
+  species: ipsc_derived
+  source_ref: zhang2025_2
+  uncertainty: stated as unmet challenge
+localization:
+- 'ipsc_derived: hypertrophic differentiation achieved; columnar zonal axis not achieved'
+human_evidence: direct
+human_evidence_note: These are human cells differentiating along a human endochondral trajectory,
+  which is direct human evidence about the trajectory but not about the organ.
+species_basis:
+- ipsc_derived
+- in_vitro_human_cell
+translation_risk: moderate
+translation_risk_reason: Human genetics and human cells, but no zonal architecture, no mechanical
+  loading and no systemic endocrine input, so organ-level claims do not follow.
+confidence: C
+key_refs:
+- ref_id: zhang2025_2
+  first_author: Zhang G
+  year: 2025
+  type: review
+  one_line_finding: Engineering a functional growth plate in vitro remains an unresolved challenge.
+- ref_id: kamakura2023
+  first_author: Kamakura T
+  year: 2023
+  type: primary
+  one_line_finding: Collagen X dispensable for hypertrophic differentiation and endochondral ossification
+    of human iPSC-derived cartilage.
+- ref_id: geo_census_l13b_20260805
+  first_author: Human Growth System Atlas L13 sweep
+  year: 2026
+  type: dataset
+  one_line_finding: Human iPSC skeletal organoid and assembloid deposits catalogued in the dataset
+    inventory.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

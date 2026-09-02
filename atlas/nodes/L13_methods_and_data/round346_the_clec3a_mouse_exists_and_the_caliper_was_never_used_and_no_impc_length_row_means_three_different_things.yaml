@@ -1,0 +1,205 @@
+id: round346_the_clec3a_mouse_exists_and_the_caliper_was_never_used_and_no_impc_length_row_means_three_different_things
+name: 'Round 346 - the Clec3a-null mouse exists at JAX, was phenotyped on 145 parameters, and body length
+  was never among them; "no IMPC length row" means three different things and the atlas has read all three
+  as null; and the two best-validated targets in the file both have positive heterozygous mouse body-length
+  effects nobody had extracted'
+aliases:
+- Clec3a knockout phenotype
+- JR34222
+- no IMPC length row is not a null
+- Hhip heterozygote body length
+- male-specific body composition in Clec3a nulls
+type: dataset
+layer: L13
+stub: false
+summary: 'R345 ended by naming the cheapest possible validation - put a caliper on a Clec3a-null - and stating
+  that no such measurement exists. THE INSTRUCTION WAS TO CHECK WHETHER IT EXISTS OR IS INFERRABLE. It is
+  both, and checking produced three results, one of which is a correction to how this atlas reads its largest
+  supplied dataset.
+
+  ONE - THE MOUSE EXISTS, IS ORDERABLE, AND THE ONE MEASUREMENT WE NEED WAS NEVER TAKEN. MGI holds Clec3a<em1(IMPC)J>
+  homozygotes, strain C57BL/6NJ-Clec3a<em1(IMPC)J>/Mmjax, MGI:6357989, IMPC colony JR34222, phenotyped at
+  JAX. CORR-341 applied first: the allele string is a clean single-gene homozygous null, not a double knockout
+  and not a Cre-driven conditional. The line was run through 145 PARAMETERS - DXA, clinical chemistry, haematology,
+  ECG, eye morphology, auditory brainstem response, open field, grip strength, glucose tolerance - AND BODY
+  LENGTH IS NOT AMONG THEM. There is no radiography procedure in the pipeline for this line at all. So the
+  absence of Clec3a from the atlas''s IMPC length table is NOT a null result. It is a measurement that was
+  never made, on an animal that exists and can be ordered.
+
+  ⛔ I HAD THIS WRONG AN HOUR EARLIER AND RECORD THE CORRECTION. On seeing the six MGI terms without a length
+  term I inferred "IMPC only reports significant hits, so this is a null on length." That inference was wrong,
+  and the raw statistical file disproves it: length was not measured, so there was never a hit to report
+  or suppress.
+
+  TWO - AND "NO IMPC LENGTH ROW" MEANS THREE DIFFERENT THINGS, WHICH THE ATLAS HAS BEEN READING AS ONE.
+  R303 and R304 treat atlas/data/round303/impc_length_endpoints_all.json (12,068 rows, 7,216 genes) as though
+  a gene''s absence from it is informative. Checked against the raw statistical-results file, absence resolves
+  into three distinct cases. (a) NOT PHENOTYPED AT ALL - Stc2, Chad, Nrk, Scube3, Amd1 and Ihh have ZERO
+  rows in IMPC, so there is no mouse. (b) EXTENSIVELY PHENOTYPED BUT LENGTH NEVER MEASURED - Clec3a (145
+  parameters), LOXL2 (170 rows across 116 parameters) and Pappa (30 rows). (c) LENGTH ACTUALLY MEASURED
+  - Hhip and Tet1. ⭐ THE CASE THAT MATTERS IS (b), BECAUSE IT CONVERTS "NO DATA" INTO "AN EXISTING MOUSE
+  AND AN UNMEASURED CALIPER". R333 wrote that "IMPC has no Loxl2 length row at all" and treated it as uninformative
+  about the atlas''s standing lead; the reason is now known, and it is that the line was characterised on
+  116 parameters without one of them being length.
+
+  THREE - THE Clec3a PHENOTYPE THAT DOES EXIST IS MALE-SPECIFIC, SURVIVES CORRECTION FOR ALL 145 TESTS,
+  AND RUNS IN THE FAVOURABLE DIRECTION ON THE ONE AXIS THAT USUALLY COSTS US. In males: LEAN MASS +2.32
+  g at p=4.6e-08, FAT MASS -2.46 g at p=2.7e-08, BONE MINERAL DENSITY +0.0032 at p=3.9e-06, bone mineral
+  content p=1.2e-03, lean/body weight p=7.2e-04, fat/body weight p=1.9e-05. In females every one of those
+  is null (p = 0.31 to 0.83). A Bonferroni threshold across all 145 measured parameters is 3.4e-04, and
+  the lean, fat and BMD results clear it by two to four orders of magnitude. ⭐ THE BONE DIRECTION IS WHAT
+  MAKES THIS UNUSUAL. Almost every candidate in this file costs bone - SPIN4 carries BHI -2.34 and TBLH
+  BMD Z -3.29, the ERalpha-null humans reach spine Z -3.85 to -5.6, the aromatase-inhibitor arm spends lumbar
+  BMD, tankyrase nulls lose BMD and bone area - and R278 established that this cost is an EFFICACY term rather
+  than a safety footnote because it is vertebral. CLEC3A LOSS GAINS BONE MINERAL DENSITY. It is the only
+  candidate in the file whose bone term points the right way.
+
+  FOUR - AND CHECKING CASE (c) PRODUCED A NEW NUMBER ON THE ATLAS''S BEST-VALIDATED TARGET. ⭐⭐ Hhip<tm1Icmb>
+  HETEROZYGOTES have INCREASED BODY LENGTH IN MALES: male effect +0.228 at p=0.00346, n=10 males and 10
+  females, phenotyped at HMGU. The combined-sex test is null (p=0.588) and the female arm is null, so this
+  is a sex-specific call and must be graded as one - but it matters for three reasons. It is HETEROZYGOUS,
+  which is the correct genetic model of the human heterozygous pLoF that gives +9.92 cm, whereas haraguchi2025
+  is a limb-restricted homozygous conditional; it is POSITIVE, which under CORR-329 is the rare and informative
+  direction in a dataset where significant hits run 245 negative to 38 positive; and it is MALE. Tet1<tm1a(KOMP)Wtsi>
+  heterozygotes give body length +0.116 overall at p=0.0217, male-driven (+0.146, p=0.0237), n=7 - a second,
+  independent row consistent with the +0.282 at P=0.022 this file already held. SO THE TWO LARGEST-EFFECT
+  TARGETS IN THE ATLAS, HHIP AT +9.92 cm AND TET1 AT +7.95 cm IN HUMANS, BOTH HAVE SIGNIFICANT POSITIVE
+  HETEROZYGOUS MOUSE BODY-LENGTH EFFECTS, AND THE HHIP ONE WAS NOT IN THIS FILE.
+
+  WHAT THIS DOES NOT DO. It does not produce a compound. CLEC3A still has zero chemical matter, tranexamic
+  acid remains disqualified on the endothelin off-target (R345), and the plasmin-versus-PI3K-AKT contradiction
+  in the CLEC3A mechanism literature is untouched by a body-composition phenotype. What it does is convert
+  the cheapest validation in the file from a proposal into a purchase order, and identify the arm to measure.'
+quantitative:
+- parameter: 'the Clec3a-null exists, was phenotyped on 145 parameters, and body length was not one of them'
+  value: 'Clec3a<em1(IMPC)J>/Clec3a<em1(IMPC)J>, C57BL/6NJ-Clec3a<em1(IMPC)J>/Mmjax, MGI:6357989, IMPC colony
+    JR34222, phenotyped at JAX. 145 distinct parameters with statistical results. NO body length, NO tibia
+    length, NO radiography procedure. MGI records six phenotype terms: increased bone mineral density, increased
+    lean body mass, decreased total body fat amount, absent vibrissae, hyperactivity, abnormal auditory brainstem
+    response.'
+  unit: strain identifiers and parameter count
+  conditions: Read from atlas/data/supplied_2026_08_12/MGI_GenePheno.rpt, MGI_PhenoGenoMP.rpt, VOC_MammalianPhenotype.rpt
+    and statistical-results-ALL.csv.gz.
+  species: mouse
+  source_ref: kosmicki2026
+  uncertainty: 'THE ABSENCE OF A LENGTH MEASUREMENT IS THE LOAD-BEARING OBSERVATION AND IT IS A DIRECT READ
+    OF THE FULL RESULTS FILE, not an inference from a summary table. It corrects my own inference of an hour
+    earlier that the missing length row was a null. CAVEAT ON WHAT THIS LICENSES: an existing mouse line
+    is not the same as an available cohort - the strain is distributed by JAX but establishing a growing
+    cohort with a length endpoint at the right ages is a real experiment, not a lookup.'
+- parameter: 'the Clec3a-null body-composition phenotype is male-specific and clears correction for all 145
+    tests'
+  value: 'MALES - lean mass +2.324 g (p=4.60e-08), fat mass -2.458 g (p=2.70e-08), bone mineral density excluding
+    skull +0.00319 (p=3.89e-06), bone mineral content +0.0384 (p=1.17e-03), lean/body weight (p=7.25e-04),
+    fat/body weight (p=1.88e-05). FEMALES - the same parameters at p=0.305, 0.830, 0.385, 0.534, 0.305 and
+    0.461 respectively. Bone area null in both (p=0.42). n=8 male and 8 female homozygotes.'
+  unit: grams, DXA units and p-values
+  conditions: IMPC JAX pipeline, homozygous Clec3a<em1(IMPC)J>, colony JR34222, from the per-sex model estimates
+    in statistical-results-ALL.csv.gz.
+  species: mouse
+  source_ref: kosmicki2026
+  uncertainty: 'THE STATISTICS ARE STRONG FOR THE SAMPLE SIZE AND THE SEX-SPECIFICITY IS UNEXPLAINED. A Bonferroni
+    threshold across all 145 measured parameters is 3.4e-04 and the lean, fat and BMD male results clear
+    it by two to four orders of magnitude, so these are not multiple-testing artefacts. BUT n IS 8 PER SEX,
+    the female arm is completely null on every one of them, and IMPC sex-specific calls are exploratory rather
+    than pre-registered - a sex-by-genotype interaction of this size on n=8 should be replicated before it
+    is relied on. DXA bone mineral density in mice is AREAL and is confounded by body size, which is exactly
+    the measurement that was not taken; the coherent direction of lean up, fat down and BMD up argues for
+    a real composition shift rather than an artefact, but it cannot be separated from a size effect without
+    a length.'
+- parameter: '"no IMPC length row" resolves into three distinct cases, and the atlas has read all three as
+    null'
+  value: 'NOT PHENOTYPED AT ALL (zero IMPC rows) - Stc2, Chad, Nrk, Scube3, Amd1, Ihh. PHENOTYPED BUT LENGTH
+    NEVER MEASURED - Clec3a (145 parameters), Loxl2 (170 rows, 116 parameters), Pappa (30 rows). LENGTH MEASURED
+    - Hhip (106 rows), Tet1 (473 rows).'
+  unit: gene counts by case
+  conditions: Queried directly against statistical-results-ALL.csv.gz for the atlas's named targets, counting
+    rows and distinct parameter names per gene and testing for any parameter containing "length".
+  species: mouse
+  source_ref: kosmicki2026
+  uncertainty: 'THIS IS A CORRECTION TO INTERPRETATION RATHER THAN A NEW MEASUREMENT, AND IT CUTS BOTH WAYS.
+    It does not change any conclusion the atlas drew FROM a positive IMPC length row. It changes what an
+    ABSENCE licenses - and R333 in particular treated the missing Loxl2 length row as uninformative when
+    the correct reading is that the line was characterised on 116 parameters without length among them.
+    The sample here is the atlas''s own named targets rather than a systematic audit of all 7,216 genes, so
+    the three-way split is demonstrated rather than quantified across the whole resource.'
+- parameter: 'Hhip and Tet1 heterozygotes both have positive mouse body length, male-driven, in the rare
+    informative direction'
+  value: 'Hhip<tm1Icmb> heterozygote, HMGU, n=10/10 - body length male effect +0.2279 at p=0.00346; combined-sex
+    p=0.588; female effect +0.0398 at p=0.588. Tet1<tm1a(KOMP)Wtsi> heterozygote, WTSI, n=7/7 - body length
+    +0.1157 at p=0.0217 combined, male +0.1456 at p=0.0237, female +0.0726 at p=0.342.'
+  unit: IMPC effect size and p-value
+  conditions: statistical-results-ALL.csv.gz, parameter name "Body length", both heterozygous alleles. CORR-329's
+    base rate applies - 63.6 per cent of all IMPC length rows are negative and significant hits run 245 negative
+    to 38 positive, so a significant POSITIVE row is the informative direction.
+  species: mouse
+  source_ref: kosmicki2026
+  uncertainty: 'THE HHIP ROW IS NEW TO THIS ATLAS AND IT IS A SEX-SPECIFIC CALL WITH A NULL COMBINED TEST,
+    WHICH IS THE MAIN LIMIT. p=0.588 across both sexes and p=0.00346 in males on n=10 is the signature of
+    either a genuine sex-specific effect or a small-sample split, and IMPC sex-specific calls are exploratory.
+    WHAT MAKES IT WORTH RECORDING ANYWAY is that it is HETEROZYGOUS - the correct model of the human heterozygous
+    pLoF at +9.92 cm, where haraguchi2025 is a limb-restricted homozygous conditional - and POSITIVE, which
+    is rare in this dataset. The Tet1 row is a second independent row consistent with the +0.282 the file
+    already held, so that one is corroboration rather than a new claim.'
+localization:
+- 'mouse whole-body DXA: where the Clec3a phenotype was measured'
+- 'the missing measurement: femur, tibia or body length in Clec3a<em1(IMPC)J> males'
+human_evidence: absent
+human_evidence_note: This round is entirely mouse resource data. The human anchor for CLEC3A (+1.52 cm, P=1.2e-43,
+  4,160 carriers) and for HHIP (+9.92 cm) and TET1 (+7.95 cm) is recorded in R345, R285 and R334.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Mouse body composition on n=8 per sex, with the length endpoint that would make
+  it interpretable absent by construction.
+confidence: B
+claim_grades:
+- claim: The Clec3a-null mouse exists, is orderable, and body length was never measured in it.
+  grade: A
+  basis: MGI:6357989, strain C57BL/6NJ-Clec3a<em1(IMPC)J>/Mmjax, IMPC colony JR34222, phenotyped at JAX across
+    145 parameters read directly from statistical-results-ALL.csv.gz, with no length parameter and no radiography
+    procedure present. The allele string is a clean single-gene homozygous null (CORR-341 checked).
+- claim: My earlier inference that the missing length row was a null result was wrong.
+  grade: A
+  basis: Recorded because it was made in this session. Seeing six MGI terms without a length term, I inferred
+    IMPC had measured length and found nothing. The raw file shows length was never measured, so no result
+    existed to report or suppress.
+- claim: '"No IMPC length row" is not evidence of a null.'
+  grade: A
+  basis: Demonstrated on the atlas's own targets - Stc2, Chad, Nrk, Scube3, Amd1 and Ihh have no IMPC rows
+    at all; Clec3a, Loxl2 and Pappa were phenotyped on 145, 116 and 30 parameters respectively without length
+    among them; only Hhip and Tet1 had length measured. R333's reading of the missing Loxl2 length row needs
+    restating on this basis.
+- claim: Clec3a-null males gain bone mineral density and lean mass and lose fat.
+  grade: B
+  basis: Male lean mass +2.32 g at p=4.6e-08, fat mass -2.46 g at p=2.7e-08 and BMD +0.0032 at p=3.9e-06,
+    all clearing a Bonferroni threshold of 3.4e-04 across the 145 measured parameters, with the female arm
+    null throughout. Graded B not A because n is 8 per sex, the sex-specificity is unexplained, and areal
+    DXA BMD cannot be separated from a body-size effect without the length measurement that is missing.
+- claim: This is the only candidate in the file whose bone term points the right way.
+  grade: C
+  basis: SPIN4 carries BHI -2.34 and TBLH BMD Z -3.29 in the human proband; the ERalpha-null humans reach
+    spine Z -3.85 to -5.6; the aromatase-inhibitor arm spends lumbar BMD in both arms of zegarra2024; Tnks-null
+    mice lose BMD -1.749 and bone area -1.817. Clec3a-null males gain BMD. Graded C because it is a comparison
+    across heterogeneous measurements in different species rather than a head-to-head.
+- claim: Hhip heterozygous mice have increased body length.
+  grade: C
+  basis: 'Male effect +0.228 at p=0.00346, n=10, in the rare positive direction for this dataset. Not higher
+    than C because the combined-sex test is null at p=0.588, the female arm is null, and IMPC sex-specific
+    calls are exploratory. Its value is that it is HETEROZYGOUS - matching the human pLoF architecture - where
+    the atlas''s existing mouse evidence (haraguchi2025) is a limb-restricted homozygous conditional.'
+- claim: This produces a compound.
+  grade: X
+  basis: It does not. CLEC3A has zero chemical matter on a proper ChEMBL query, tranexamic acid was disqualified
+    in R345 on a characterised endothelin-receptor off-target that raises MMP13, and the plasmin-versus-PI3K-AKT
+    contradiction in the CLEC3A mechanism literature is untouched by a body-composition phenotype. What this
+    round delivers is a validation route that can be bought rather than proposed.
+key_refs:
+- ref_id: kosmicki2026
+  year: 2026
+  type: primary
+  one_line_finding: Supplies the human anchors this mouse resource data is being read against - CLEC3A +1.52
+    cm at P=1.2e-43 in 4,160 carriers, HHIP +9.92 cm, TET1 +7.95 cm.
+open_questions: []
+contradicts: []
+last_verified: '2026-08-13'

@@ -1,0 +1,184 @@
+id: stem_pool_size_versus_flux
+name: Growth tracks FLUX THROUGH the resting zone, not the SIZE of it
+type: process
+layer: L2
+stub: false
+summary: 'The whole depletion argument in this atlas has treated the resting-zone stem pool as a budget, and a budget
+  invites one therapeutic instinct: make it bigger. THREE INDEPENDENT PERTURBATIONS SAY THAT INSTINCT IS WRONG, because
+  in three of the four experimental cells pool size and bone growth move in OPPOSITE directions. (1) GROWTH HORMONE
+  SHRINKS THE POOL AND SPEEDS GROWTH - chu2025 shows GH drives slow-cycling label-retaining stem cells into committed
+  division, depleting them, while raising elongation rate. (2) HEDGEHOG ACTIVATION ENLARGES THE PLATE AND DOES NOT
+  LENGTHEN THE BONE - orikasa2024 deleted Ptch1 in PTHrP+ resting chondrocytes, producing clonal "patched roses",
+  columns widening from 1-2 to 5-6 cells and frank growth plate hyperplasia, and bone length showed no significant
+  difference; the hyperplasia was TRANSIENT and the descendants converted to trabecular osteoblasts. (3) ACHONDROPLASIA
+  ENLARGES THE RESTING ZONE AND SHORTENS THE BONE - horike2026 finds the Fgfr3 resting zone EXPANDED, with clonal
+  progeny moving in random directions and failing to enter the proliferative zone, in mice whose femur, tibia and
+  ulna are all significantly shorter. (4) AND THE RESCUE RUNS THE OTHER WAY: the CREB inhibitor 666-15 partially restores
+  bone growth while DECREASING resting-zone height and increasing proliferative and hypertrophic heights. THE VARIABLE
+  THAT TRACKS GROWTH IN ALL FOUR IS FLUX - the rate at which cells leave the resting zone and enter columns. A pool
+  that cannot discharge is a bigger pool and a shorter bone. THIS DOES NOT MAKE THE POOL IRRELEVANT: chu2025''s depletion
+  result stands, and a pool spent to zero ends growth. It makes pool size and flux SEPARATE variables, and says that
+  raising final height requires raising the INTEGRAL of flux, which is capacity times duration - not the standing
+  size of the compartment at any moment. NOBODY HAS YET PRODUCED A LARGER POOL WITH INTACT FLUX. In orikasa2024 the
+  enlarged pool discharged into bone instead of cartilage; in horike2026 it could not discharge at all. That untested
+  cell is where a height therapy would have to live. A FOURTH PERTURBATION MAKES THE SAME POINT FROM A NEW DIRECTION:
+  liu2026cih shows a third of the growth plate lost to chronic intermittent hypoxia and then largely recovered by a
+  KDM6 inhibitor, with the RESTING ZONE UNCHANGED THROUGHOUT - growth destroyed and restored without the pool moving,
+  by repairing senescent osteoprogenitors OUTSIDE the plate.'
+quantitative:
+- parameter: GH DEPLETES THE POOL WHILE ACCELERATING GROWTH
+  value: significant reduction in label-retaining cells; elongation rate increased over the same 10 days
+  unit: qualitative with P value
+  conditions: mouse; H2B-GFP Tet-On label-retention, doxycycline P10-P23, chase P23-P38, GH 5 mg/kg/day over the final
+    10 days (P28-P38); P < 0.001, n = 4 per group. Clonal analysis in Col2a1-CreERT2;R26R-Confetti mice over 6 months
+    gave falling clone number with rising clone size and exponential size scaling - the population-asymmetry signature
+  species: mouse
+  source_ref: chu2025
+  uncertainty: ALREADY HELD BY THIS ATLAS in stem_pool_population_asymmetry; recorded here because it is one of the
+    four cells of the pool-versus-flux comparison and its DIRECTION is what makes the comparison informative. The authors
+    do not report absolute LRC counts, only significance. Whether depletion is reversible after GH withdrawal is stated
+    by the authors as untested.
+- parameter: HEDGEHOG ACTIVATION IN RESTING CHONDROCYTES ENLARGES THE PLATE AND DOES NOT LENGTHEN THE BONE
+  value: columns widen from 1-2 cells to 5-6 cells at P36 with growth plate hyperplasia; bone length not significantly
+    different at most timepoints; hyperplasia normalises by P56-P70
+  unit: cells per column width
+  conditions: mouse; Pthrp-creER;Ptch1fl/fl;R26R-tdTomato, tamoxifen at P6, so Hedgehog is activated cell-autonomously
+    in PTHrP+ resting zone stem cells by removing the receptor's brake. Descendants form concentric clonal expansions
+    and by P96 transform into trabecular bone osteoblasts in the diaphyseal marrow; diaphyseal trabecular bone volume
+    rises significantly
+  species: mouse
+  source_ref: orikasa2024
+  uncertainty: 'THE MOST DIRECT TEST OF "MAKE THE PLATE BIGGER" THAT EXISTS, AND IT DID NOT LENGTHEN THE BONE. Two
+    cautions, both real. FIRST, A NULL ON BONE LENGTH IN A MOUSE COHORT IS WEAK EVIDENCE - the paper reports no significant
+    difference rather than an equivalence bound, and this atlas does not treat an underpowered null as a demonstration
+    of no effect. What carries weight is the CONTRAST with the large, obvious effect on plate size in the same animals:
+    the morphology moved and the length did not. SECOND, Ptch1 deletion is a supraphysiological, permanent, cell-autonomous
+    activation, not a drug, and the transience of the hyperplasia suggests a homeostat pulling back. The osteoblast
+    conversion is the mechanistic reading that matters: the enlarged pool discharged into BONE rather than into cartilage
+    columns, so flux was diverted, not increased.'
+- parameter: THE ACHONDROPLASTIC RESTING ZONE IS EXPANDED AND THE BONE IS SHORT
+  value: resting zone height significantly increased by P21; femur, tibia and ulna all significantly shorter
+  unit: qualitative with direction
+  conditions: mouse; Fgfr3-Ach knock-in carrying p.Gly374Arg, the orthologue of the human p.Gly380Arg achondroplasia
+    mutation. Lineage tracing shows clonal progeny moving in random directions and REMAINING in the resting zone rather
+    than entering the proliferative zone; the expanded zone is poor in proteoglycan and type II collagen; scRNA-seq
+    identifies a cluster corresponding to the expanded zone; CREB is identified as the mediator disrupting stem-like
+    behaviour
+  species: mouse
+  source_ref: horike2026
+  uncertainty: THE CLEANEST OF THE THREE, because the pool and the bone move in opposite directions with both effects
+    significant in the same animals, and because the mechanism is directly observed - the cells cannot LEAVE. This
+    is a gain-of-function receptor mutation and therefore says what happens when exit is blocked, not what happens
+    when the pool is enlarged by other means. It is also the human disease's own mutation, which is as close to human
+    relevance as a mouse row in this atlas gets.
+- parameter: RESTORING EXIT SHRINKS THE RESTING ZONE AND LENGTHENS THE BONE
+  value: CREB inhibitor 666-15 partially and significantly restores bone growth; resting zone height DECREASES while
+    proliferative and hypertrophic zone heights INCREASE
+  unit: qualitative with direction
+  conditions: mouse; 666-15 administered to Fgfr3-Ach animals; femur length increased and body weight partially restored
+  species: mouse
+  source_ref: horike2026
+  uncertainty: 'THE DECISIVE CELL OF THE TABLE, because it is an INTERVENTION rather than an observation and it moves
+    pool size and bone length in opposite directions on purpose. A rescue in a disease model is not a demonstration
+    that the same manoeuvre raises growth in a normal animal, and 666-15 was not given to wild-type mice here - so
+    this says exit-blockade is causal in achondroplasia, not that CREB inhibition is a height drug. The partial rescue
+    also leaves the FGFR3 lesion''s other effects untouched.'
+- parameter: A FOURTH DECOUPLING — GROWTH LOST AND RESTORED WITH THE RESTING ZONE UNTOUCHED
+  value: growth plate length fell 31.34% +/- 15.85 with proliferative zone down ~34% and hypertrophic zone down ~25%,
+    while RESTING ZONE LENGTH WAS UNCHANGED; the KDM6 inhibitor GSK-J4 largely reversed the growth impairment
+  unit: percent change in zone height
+  conditions: mouse, C57BL/6J, three weeks old, chronic intermittent hypoxia modelling obstructive sleep apnoea; the
+    senescent cells are OSX+ METAPHYSEAL OSTEOPROGENITORS, not growth plate chondrocytes, identified by SA-beta-gal,
+    p19, p21, reduced Ki67 and a SASP of IL-6, MMP13 and IGFBP3; GSK-J4 targets UTX/KDM6 demethylase and raises H3K27me3;
+    femoral length reduced in females and tail length restored by treatment
+  species: mouse
+  source_ref: liu2026cih
+  uncertainty: 'THE FOURTH INDEPENDENT PERTURBATION AND IT DECOUPLES THE TWO VARIABLES FROM A NEW DIRECTION: a third
+    of the growth plate was lost and then largely recovered WITHOUT THE RESTING ZONE POOL CHANGING AT ALL. Growth was
+    restored by repairing a compartment OUTSIDE the plate. It also settles a live confusion. This is the one setting
+    in which cellular senescence in the p16/SASP sense demonstrably costs longitudinal growth - and it is in metaphyseal
+    OSTEOPROGENITORS under a pathological insult, NOT in growth plate chondrocytes, whose senescence this atlas records
+    as division-dependent depletion rather than the p16/SASP state. A published letter (PMID 41377263, Annals of Medicine
+    and Surgery, a Letter to the Editor carrying no new data) proposes senolytics and senomorphics to "delay epiphyseal
+    fusion and restore growth potential." THAT PROPOSAL REQUIRES GROWTH PLATE SENESCENCE TO BE CELLULAR SENESCENCE,
+    AND THE PRIMARY EVIDENCE SAYS IT IS NOT. What liu2026cih supports is narrower and real: clearing or blocking genuine
+    senescence in the PERI-PLATE compartment can protect growth against an insult. It does not support extending growth
+    beyond its normal endpoint in a healthy plate, and no experiment here tested that. The 31.34% +/- 15.85 figure
+    carries a standard deviation half its own size, so the magnitude is soft even though the direction is clear.'
+- parameter: THE HUMAN OBSERVATION THIS PREDICTS, AND IT IS ALREADY IN THE ATLAS
+  value: the first year of GH delivers 35-41% of the entire lifetime height-SDS gain across six diagnosis-by-region
+    cells, and a 43% higher median dose buys more in year 1 (+0.75 vs +0.69 SDS) and nothing at near-adult height
+    (+1.96 vs +1.97)
+  unit: fraction of lifetime gain
+  conditions: KIGS registry aggregates, idiopathic GHD prepubertal at start, Europe versus USA
+  species: human
+  source_ref: maghnie2022
+  uncertainty: 'RECORDED AS CONSISTENCY, NOT AS EVIDENCE FOR THE MECHANISM. A front-loaded response with a saturating
+    endpoint is what a fixed integrated capacity spent at an adjustable rate looks like, and chu2025 now supplies a
+    cellular mechanism that would produce it. But the atlas already holds the confound that forbids the inference:
+    2,642 of 8,597 European children reach near-adult height against 213 of 2,239 American ones, so the two endpoint
+    medians describe differently selected survivors, and catch-up growth toward a genetic target with no depletion
+    at all predicts the same shape. An aggregate cannot separate these and this row does not claim it does.'
+localization:
+- resting zone, and the boundary at which resting cells enter proliferative columns
+human_evidence: indirect
+human_evidence_note: 'Every perturbation is mouse. The human side is an aggregate registry pattern that is consistent
+  with a fixed integrated capacity and equally consistent with catch-up toward a target, plus the fact that horike2026
+  uses the human achondroplasia mutation. NO HUMAN EXPERIMENT HAS VARIED RESTING-ZONE FLUX AND MEASURED BONE LENGTH,
+  and none can be done directly. The nearest tractable human instrument is chu2026''s growth plate explant, which survives
+  two months and in which zone heights and proliferation can be measured under a perturbation.'
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Three mouse perturbations, one of them a supraphysiological genetic activation and one a
+  disease mutation. The mouse growth plate never closes, which is precisely the property that makes the integral of
+  flux different between the species. And the human row is an aggregate with a known selection confound.
+confidence: B
+confidence_note: B. The claim is a DIRECTIONAL COMPARISON across three independent primaries in three different laboratories
+  using three unrelated perturbations, and the directions agree - which is a stronger structure than any one of them
+  alone. It is not A because one of the four cells rests on a null (orikasa2024's bone length) that is not powered
+  as an equivalence test, because all four are mouse, and because no experiment has yet produced the informative condition
+  - a larger pool with intact flux. It is not C because the horike2026 rescue is an intervention that moves both variables
+  in opposite directions deliberately, and because the three perturbations are mechanistically unrelated, so a shared
+  artefact is implausible.
+key_refs:
+- ref_id: chu2025
+  pmid: '41289405'
+  first_author: Chu NTL
+  year: 2025
+  type: primary
+  one_line_finding: GH drives slow-cycling growth plate stem cells into committed division, depleting the pool, while
+    raising elongation rate; the pool renews by population asymmetry.
+- ref_id: orikasa2024
+  pmid: '38051593'
+  first_author: Orikasa S
+  year: 2024
+  type: primary
+  one_line_finding: Ptch1 deletion in PTHrP+ resting chondrocytes widens columns from 1-2 to 5-6 cells and produces
+    transient growth plate hyperplasia with no significant bone length difference, and the descendants become trabecular
+    osteoblasts.
+- ref_id: horike2026
+  pmid: '41748604'
+  first_author: Horike N
+  year: 2026
+  type: primary
+  one_line_finding: The Fgfr3 achondroplasia resting zone is EXPANDED because progeny cannot exit into the proliferative
+    zone, in significantly shorter bones, and a CREB inhibitor shrinks the resting zone while restoring growth.
+- ref_id: liu2026cih
+  pmid: '41387208'
+  first_author: Liu X
+  year: 2026
+  type: primary
+  one_line_finding: Chronic intermittent hypoxia makes metaphyseal osteoprogenitors senescent and shortens the growth
+    plate by 31.3% while sparing the resting zone, and the KDM6 inhibitor GSK-J4 largely reverses the growth impairment.
+- ref_id: maghnie2022
+  first_author: Maghnie M
+  year: 2022
+  type: primary
+  one_line_finding: The first year of GH delivers 35-41% of lifetime height-SDS gain, and a 43% higher median dose
+    buys more in year 1 and nothing at near-adult height.
+open_questions:
+- g_l2_larger_pool_with_intact_flux
+- g_l2_recruit_reserve_pharmacologically
+last_verified: '2026-08-07'

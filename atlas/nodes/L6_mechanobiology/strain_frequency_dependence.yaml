@@ -1,0 +1,75 @@
+id: strain_frequency_dependence
+name: Strain frequency dependence
+type: process
+summary: 'Frequency has been varied over a narrow band (0.1-1.0 Hz) in in vivo growth plate loading and
+  it changes both growth and tissue response. In rat caudal vertebrae held at 0.2 MPa mean, sinusoidal
+  loading at 0.1 Hz (+/-0.2 MPa) and at 1.0 Hz (+/-0.06 MPa) each reduced growth rate below sham without
+  measurable histomorphometric change, whereas 1.0 Hz combined with +/-0.14 MPa produced repeated inflammation
+  and loss of plate integrity - so frequency and amplitude are not independent. At the cell level frequency
+  acts through viscoelasticity: in stress-controlled explant compression, higher-frequency dynamic loading
+  produced significantly lower hypertrophic chondrocyte volumetric strain than lower-frequency loading
+  (p=0.002), because each cycle is too short for full creep. Distraction osteogenesis provides the only
+  frequency dose-response with a clinical endpoint: at a fixed 1.0 mm/day, increasing the number of increments
+  from 1 to 4 to 60 per day monotonically improved regenerate quality in the canine tibia. No physiological
+  frequency spectrum of human physeal loading (gait at ~1-2 Hz, running higher) has been mapped onto a
+  growth response.'
+quantitative:
+- parameter: dynamic loading frequencies tested in vivo on rat caudal vertebrae
+  value: 0.1 and 1.0
+  unit: Hz
+  conditions: mean 0.2 MPa, 15 days, amplitudes +/-0.2, +/-0.06 and +/-0.14 MPa
+  species: rat
+  source_ref: mnard2014
+  uncertainty: n=3-4 per group
+- parameter: hypertrophic chondrocyte volumetric strain, high vs low frequency dynamic compression
+  value: lower at high frequency
+  unit: p=0.002
+  conditions: stress-controlled compression of rat proximal tibial growth plate explants
+  species: rat
+  source_ref: zimmermann2017
+  uncertainty: effect size not reported as a ratio
+- parameter: distraction frequency giving best regenerate at fixed 1.0 mm/day
+  value: '60'
+  unit: increments/day
+  conditions: canine tibia, compared with 1/day and 4/day
+  species: multiple
+  source_ref: ilizarov1989
+  uncertainty: histomorphological grading, no numeric effect size reported
+human_evidence: indirect
+human_evidence_note: The only human-facing frequency evidence is distraction rhythm in limb lengthening,
+  where higher increment frequency at fixed rate is preferred; physiological gait-frequency effects on
+  the physis are unmeasured.
+species_basis:
+- rat
+- multiple
+translation_risk: high
+translation_risk_reason: Frequencies tested (0.1-1.0 Hz) barely overlap human locomotor loading, and the
+  canine distraction data concern regenerate bone, not a native physis.
+confidence: D
+key_refs:
+- ref_id: mnard2014
+  pmid: '24902946'
+  first_author: Menard AL
+  year: 2014
+  type: primary
+  one_line_finding: Frequency and amplitude interact; each alone reduced growth without histological change,
+    together they destroyed the plate
+- ref_id: zimmermann2017
+  pmid: '28365062'
+  first_author: Zimmermann EA
+  year: 2017
+  type: primary
+  one_line_finding: Higher-frequency dynamic compression gave lower hypertrophic cell volumetric strain
+- ref_id: ilizarov1989
+  pmid: '2912628'
+  first_author: Ilizarov GA
+  year: 1989
+  type: primary
+  one_line_finding: At fixed 1.0 mm/day, greater distraction frequency (up to 60 steps/day) gave better
+    osteogenesis
+open_questions:
+- g_l6mech_005
+- g_l6mech_006
+layer: L6
+stub: false
+last_verified: '2026-08-05'

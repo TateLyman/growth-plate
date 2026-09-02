@@ -1,0 +1,106 @@
+id: pappa2_protease
+name: PAPP-A2 (pappalysin-2)
+aliases:
+- PAPPA2
+- pappalysin-2
+type: protein
+layer: L4
+stub: false
+summary: 'PAPP-A2 is a secreted metzincin metalloproteinase that liberates IGF-1 from inhibitory binding
+  proteins by cleaving IGFBP-3 and IGFBP-5, the two IGFBPs that form the 150 kDa ternary complex with
+  ALS. Two unrelated consanguineous families with homozygous PAPPA2 mutations (p.D643fs25* and p.Ala1033Val,
+  both abolishing proteolytic activity in vitro) define the human phenotype: progressive postnatal growth
+  failure, moderate microcephaly, thin long bones and mildly reduced bone density, with a paradoxical
+  biochemistry of ELEVATED total IGF-1, IGF-2, IGFBP-3, IGFBP-5 and ALS but REDUCED free and bioactive
+  IGF-1 (dauber2016). Size-exclusion chromatography confirmed the IGF-1 is trapped in ternary complexes.
+  Affected adults reached heights of -2.16 to -3.81 SDS. This is the cleanest human demonstration that
+  IGF bioavailability, not IGF concentration, sets stature. This node belongs to the IGF bioavailability
+  control layer - ternary complex formation (IGFBP-3/-5 plus ALS), pericellular proteolysis (PAPP-A, PAPP-A2)
+  and protease inhibition (STC1, STC2) - which sets the free IGF-1 concentration seen by chondrocyte IGF1R
+  independently of total IGF-1. Reviews typically stop at ''IGF-1 level''; the human PAPPA2 kindreds show
+  that total and free IGF-1 can move in opposite directions and that stature tracks the free fraction.'
+quantitative:
+- parameter: adult/near-adult height in PAPP-A2 deficiency
+  value: -2.16 to -3.81
+  unit: SDS
+  conditions: family 2, subjects II.1 (22.2 y), II.3 (18.6 y), II.4 (13.8 y), II.5 (9.5 y), homozygous
+    PAPPA2 A1033V
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values, n=5 affected in family 2
+- parameter: ratio of bioactive IGF to total IGF-1
+  value: 0.09-0.32
+  unit: '%'
+  conditions: PAPP-A2-deficient individuals; healthy reference median 1.23% (range 0.46-2.59%, n=95)
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values, n=5 affected
+- parameter: free IGF-1
+  value: 0.27-1.98
+  unit: ug/L
+  conditions: PAPP-A2-deficient children; prepubertal reference 1.58-3.15 ug/L, pubertal 4.89-9.37 ug/L
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values
+- parameter: serum IGFBP-3
+  value: 4403-5912
+  unit: ug/L
+  conditions: PAPP-A2-deficient children; Tanner I reference 2206-4200 ug/L
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values
+- parameter: circulating PAPP-A2 protein
+  value: not detectable
+  unit: ug/L
+  conditions: frameshift (D643fs25*) homozygotes; assay reference range 0.16-2.69 ug/L (Tanner I)
+  species: human
+  source_ref: dauber2016
+  uncertainty: expected zero because the frameshift removes the assay epitope
+- parameter: residual IGFBP-3/-4/-5 proteolytic activity of mutant PAPP-A2
+  value: '0'
+  unit: '% of wild type'
+  conditions: transfected-cell media, radiolabelled IGFBP cleavage assay, both mutations
+  species: in_vitro_human_cell
+  source_ref: dauber2016
+  uncertainty: complete absence of cleavage on autoradiography
+localization:
+- 'human SYS: circulating; measured by ELISA in serum'
+- 'human growth plate: PAPP-A2 protein not localised in physeal tissue'
+human_evidence: direct
+human_evidence_note: Two unrelated consanguineous families with homozygous loss-of-function PAPPA2 mutations,
+  biochemically and functionally characterised, plus a Pappa2-null mouse with reduced femur length.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: low
+translation_risk_reason: The defining experiment is human genetic with in vitro functional confirmation.
+confidence: A
+key_refs:
+- ref_id: dauber2016
+  first_author: Dauber A
+  year: 2016
+  type: primary
+  one_line_finding: Homozygous PAPPA2 mutations cause short stature with elevated total but reduced free/bioactive
+    IGF-1.
+  pmid: '26902202'
+- ref_id: lpezgambero2025
+  first_author: López-Gambero AJ
+  year: 2025
+  type: primary
+  one_line_finding: Pappa2 knockout alters IGF-1 bioavailability with sex-specific metabolic and skeletal
+    consequences in mouse.
+  pmid: '40695421'
+- ref_id: fernndezarjona2024
+  first_author: Fernández-Arjona MDM
+  year: 2024
+  type: primary
+  one_line_finding: Pappa2-null mice show reduced body and femur length and sex-specific responses to
+    rhGH, rhIGF1 and rhPAPP-A2.
+  pmid: '38589872'
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Human homozygous PAPPA2 genetics is gene-selective; substrate split from PAPP-A (IGFBP-3/-5
+  versus IGFBP-4) is measured.

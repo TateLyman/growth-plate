@@ -1,0 +1,77 @@
+id: idiopathic_short_stature
+name: Idiopathic short stature
+aliases:
+- ISS
+- non-syndromic short stature
+type: phenotype
+layer: L11
+stub: false
+summary: |
+  Idiopathic short stature is not a disease but the residual category left after the disorders in
+  this layer have been excluded, and its progressive dissolution is one of the strongest arguments
+  that the layer works. Defined as height more than 2 SD below the mean without an identifiable
+  cause, ISS has been repeatedly re-partitioned by sequencing: NPR2 haploinsufficiency accounts
+  for somewhere between 0 and 1 in 26 of ISS patients depending on cohort and ascertainment; ACAN
+  mutations account for a further tranche and are recognisable by advanced bone age; NPPC, SHOX,
+  IHH, BMP2, PTPN11 and the RASopathies, and PAPPA2 have each been carved out of the same
+  residual. The pattern that emerges is that most of the recovered causes are growth-plate-intrinsic
+  (matrix, CNP/cGMP, FGF/RAS) rather than endocrine - the opposite of the historical clinical
+  assumption that unexplained short stature is a hormone problem. Two lessons follow for the atlas.
+  First, ISS is a moving denominator, so any prevalence quoted for a monogenic cause is a function
+  of when and how the cohort was ascertained. Second, the remaining ISS is expected to be
+  polygenic, connecting this layer directly to the height GWAS architecture of Layer L8.
+quantitative:
+- parameter: estimated prevalence of NPR2 haploinsufficiency within idiopathic short stature
+  value: 0 to 1/26
+  unit: proportion
+  conditions: functionally verified loss-of-function NPR2 variants in short-stature cohorts
+  species: human
+  source_ref: wang2015
+  uncertainty: range as reported
+- parameter: pathogenic NPR2 yield among SHOX-negative disproportionate short stature referrals
+  value: ~3
+  unit: percent
+  conditions: 173 suspected Leri-Weill plus 95 ISS referrals
+  species: human
+  source_ref: hisadooliva2015
+  uncertainty: n=268
+localization:
+- 'human growth plate: not examined in idiopathic short stature'
+human_evidence: direct
+human_evidence_note: Sequencing studies of defined human short-stature cohorts with functional validation
+  of recovered variants; the category is defined by exclusion and shrinks as sequencing improves.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: wang2015
+  pmid: '25703509'
+  first_author: Wang SR
+  year: 2015
+  type: primary
+  one_line_finding: NPR2 haploinsufficiency prevalence in ISS estimated at 0 to 1/26 with functional
+    verification.
+- ref_id: hisadooliva2015
+  pmid: '26075495'
+  first_author: Hisado-Oliva A
+  year: 2015
+  type: primary
+  one_line_finding: NPR2 mutations in ~3% of SHOX-negative disproportionate short stature referrals.
+- ref_id: gkourogianni2017
+  pmid: '27870580'
+  first_author: Gkourogianni A
+  year: 2017
+  type: primary
+  one_line_finding: ACAN mutations recovered from short-stature cohorts by advanced bone age.
+- ref_id: martn2026
+  pmid: '42187530'
+  first_author: Martín Pérez IM
+  year: 2026
+  type: systematic_review
+  one_line_finding: Systematic review of hormonal treatment across paediatric growth disorders including
+    ISS.
+open_questions:
+- g_l11path_011
+last_verified: '2026-08-05'

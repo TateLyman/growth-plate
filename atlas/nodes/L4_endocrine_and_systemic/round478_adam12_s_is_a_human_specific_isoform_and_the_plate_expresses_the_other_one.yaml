@@ -1,0 +1,138 @@
+id: round478_adam12_s_is_a_human_specific_isoform_and_the_plate_expresses_the_other_one
+name: >-
+  R478 - ADAM12-S has NO ANNOTATED RODENT COUNTERPART, so the null mouse femur never tested it; and every
+  isoform-resolved inducer raises the MEMBRANE form, which is the one the growth plate actually expresses
+aliases:
+  - ADAM12-S species restriction
+  - ADAM12-L versus ADAM12-S
+  - ADAM12m IGFBP-5 cleavage in chondrocytes
+type: gene
+layer: L4
+stub: false
+confidence: B
+last_verified: '2026-08-27'
+species_basis: human, mouse, rat, zebrafish, cattle
+human_evidence: direct
+human_evidence_note: >-
+  The transcript inventory is a direct RefSeq query run this round against NCBI eutils for all three
+  species. The chondrocyte mechanism (ADAM-12m cleaving IGFBP-5 to liberate IGF-1) is in human
+  osteoarthritic chondrocytes.
+translation_risk: high
+translation_risk_reason: >-
+  The isoform this atlas has been pursuing appears not to exist as an annotated transcript in either
+  standard preclinical rodent, so there is no species in which its loss can be tested and no obvious model
+  in which to test a gain other than by expressing the human gene.
+summary: >-
+  A DIRECT RefSeq QUERY RUN THIS ROUND SPLITS THE TARGET IN TWO AND THE SPLIT IS SPECIES-LEVEL. Querying
+  NCBI for all curated ADAM12 mRNAs: HUMAN returns TEN, of which THREE are short transcripts of about 3.3 kb
+  - NM_021641 (variant 2, 3337 nt, the annotated ADAM12-S), NM_001288974 (3334 nt) and NM_001288975 (3328
+  nt) - against the long forms at about 7.9 kb. MOUSE RETURNS EXACTLY ONE, NM_007400 at 7708 nt, LONG.
+  RAT RETURNS EXACTLY ONE, NM_001427293 at 7631 nt, LONG. NEITHER STANDARD PRECLINICAL RODENT HAS AN
+  ANNOTATED SHORT, SECRETED ADAM12 TRANSCRIPT. Independently, a bovine promoter and gene study reports that
+  cattle lack a canonical 3-prime splice acceptor upstream of the putative short-form exon and therefore
+  cannot produce an ADAM12-S counterpart at all.
+  THREE CONSEQUENCES, AND THE FIRST TWO CUT IN OUR FAVOUR.
+  ONE - THE NULL MOUSE FEMUR NEVER TESTED ADAM12-S. R469 closed g_l12_466b on kveiborg2006 Figure 3B, where
+  Adam12-null, heterozygous and wild-type littermates have indistinguishable femoral length, and used it to
+  define the GAIN-ONLY LEVER class: a protein whose loss is null and whose supply lengthens bone. That
+  class survives, but the reason changes and improves. The mouse knockout removes the LONG form because
+  there is no short form in a mouse to remove. So the null is UNINFORMATIVE about the secreted isoform
+  rather than evidence that losing it costs nothing.
+  TWO - AND IT EXPLAINS THE TRANSGENE. kveiborg2006 expressed HUMAN ADAM12-S in the mouse, which had looked
+  like an ordinary reagent choice and is now a necessity: there was no mouse orthologue to express. That
+  makes the experiment the purest elevation-above-normal design in this atlas - the animal is being given a
+  protein species it does not itself make, so CORR-203 cannot reach it in any form.
+  THREE - AND THE LOSS DIRECTION IS NOT NULL IN THE ONE SPECIES WHERE IT WAS ASKED PROPERLY. ADAM12-deficient
+  zebrafish show RETARDATION IN BODY GROWTH AT THE JUVENILE STAGE WITHOUT DEVELOPMENTAL DEFECTS. Zebrafish,
+  like rodents, will be losing the long form. So losing ADAM12-L SHORTENS a fish while gaining human
+  ADAM12-S LENGTHENS a mouse, and the two are not the same molecule.
+  AND THE MEMBRANE FORM IS THE ONE THE GROWTH PLATE EXPRESSES, WITH A MECHANISM THAT LANDS EXACTLY ON THIS
+  FILE'S OWN LOCAL-IGF ARM. In human chondrocytes TGF-beta selectively enhances ADAM-12m, the MEMBRANE form,
+  which cleaves IGFBP-5 to liberate IGF-1 and drive chondrocyte proliferation; and in ATDC5 cells and the
+  MOUSE GROWTH PLATE, TGF-beta1 raises Adam12 with the protein localised to the PROLIFERATIVE ZONE,
+  regulating IGF-1 and RUNX2. R326's yakar2016 split makes LOCAL IGF-1 the longitudinal-growth arm and
+  circulating IGF-1 the radial one, and pericellular IGFBP-5 cleavage inside the plate is as local as that
+  gets. R477 showed the ADAM12-S plate phenotype is the canonical IGF-I signature; this says the resident
+  isoform runs the same chemistry from the membrane.
+  WHAT THIS COSTS THE PROPOSAL. There is no way to raise endogenous ADAM12-S in a non-pregnant mammal. Its
+  physiological source is essentially the placenta and tumour stroma - the discovery paper found the short
+  transcript abundant in human term placenta while the long form is what normal adult skeletal, cardiac and
+  smooth muscle carry. Every isoform-resolved inducer found raises the LONG form and explicitly not the
+  short one - Notch upregulates the long but not the short form; TGF-beta-driven EMT raises ADAM12-L;
+  miR-29 and miR-200 target the ADAM12-L 3-prime UTR while ADAM12-S levels are unchanged, because the two
+  isoforms carry different 3-prime UTRs and are separately regulated. NO SPLICING FACTOR HAS EVER BEEN
+  LINKED TO ADAM12 IN ANY SYSTEM. The only S-selective transcriptional mechanism on record is placental
+  syncytialisation lifting EZH2-mediated H3K27me3 at the promoter, and the only in vivo S-raising drug
+  experiment is an EZH2 inhibitor in pregnant mice - a class this atlas contraindicates twice over.
+  ONE FREE BY-PRODUCT FOR THE CONTRAINDICATION LIST. HDAC inhibitors - trichostatin A, valproic acid,
+  MS-275 and apicidin - abrogate TGF-beta induction of Adam12, and HDAC3 knockdown does the same; the
+  opposite arm of the same switch is a KAT2A-dependent axis identified in an unbiased screen of 350
+  perturbations, in which ADAM12 was one of very few tissue-restricted genes reactivable by a single event.
+  R298 contraindicated HDAC inhibitors - including givinostat, approved 2024 and taken chronically by
+  growing boys - on the HDAC4-MEF2C argument. This is a second, independent mechanism pointing the same way.
+quantitative:
+  - parameter: curated RefSeq mRNA transcripts for ADAM12, HUMAN
+    value: '10'
+    unit: transcripts, of which THREE are short (NM_021641 3337 nt, NM_001288974 3334, NM_001288975 3328)
+    species: human
+    source_ref: gilpin1998
+    note: >-
+      Long forms NM_003474 7950 nt and NM_001288973 7941 nt. NM_021641 is the annotated ADAM12-S. Queried
+      via NCBI eutils esearch/esummary on nuccore, srcdb_refseq AND biomol_mrna, 2026-08-27.
+  - parameter: curated RefSeq mRNA transcripts for Adam12, MOUSE
+    value: '1'
+    unit: transcript, NM_007400, 7708 nt, LONG - no short/secreted form annotated
+    species: mouse
+    source_ref: kveiborg2006
+    note: >-
+      Same query, same day. This is why kveiborg2006's transgenic expressed the HUMAN gene, and why its
+      knockout arm cannot test the secreted isoform.
+  - parameter: curated RefSeq mRNA transcripts for Adam12, RAT
+    value: '1'
+    unit: transcript, NM_001427293, 7631 nt, LONG - no short/secreted form annotated
+    species: rat
+    source_ref: kveiborg2006
+    note: Same query. Neither standard preclinical rodent has an annotated ADAM12-S.
+  - parameter: body growth in ADAM12-deficient zebrafish
+    value: retardation at the juvenile stage
+    unit: without developmental defects
+    species: zebrafish
+    source_ref: adam12zf2016
+    note: >-
+      A loss anchor in a second species and it is NOT null, against kveiborg2006's null mouse femur. Both
+      are presumably removing the long form.
+  - parameter: isoform selectivity of the chondrocyte TGF-beta response
+    value: ADAM-12m (MEMBRANE form) selectively enhanced
+    unit: with cleavage of IGFBP-5 liberating IGF-1 and driving chondrocyte proliferation
+    species: human
+    source_ref: kerna2008
+    note: >-
+      Human osteoarthritic chondrocytes. The substrate is IGFBP-5, which is also one of ADAM12-S's two
+      substrates in loechel2000, so the two isoforms run the same chemistry from different locations.
+  - parameter: ADAM12 protein localisation in the mouse growth plate
+    value: PROLIFERATIVE ZONE
+    unit: with TGF-beta1 inducing Adam12 and regulating IGF-1 and RUNX2 in ATDC5 cells
+    species: mouse
+    source_ref: horita2019
+    note: >-
+      Independent of kveiborg2006 and in the resident isoform. Matches kveiborg2006's own observation that
+      BrdU rose in the proliferative zone while cells per column were unchanged.
+  - parameter: published splicing factors linked to ADAM12 isoform choice
+    value: '0'
+    unit: records, Europe PMC TITLE_ABS ADAM12 with SRSF, splicing factor, hnRNP or ESRP
+    species: human
+    source_ref: gilpin1998
+    note: >-
+      The L-versus-S choice has no known regulator in any system, which is why there is no route to raising
+      the secreted form pharmacologically.
+key_refs:
+  - ref_id: kveiborg2006
+  - ref_id: gilpin1998
+  - ref_id: adam12zf2016
+  - ref_id: kerna2008
+  - ref_id: horita2019
+  - ref_id: rao2015adam12l
+  - ref_id: loechel2000
+open_questions:
+  - g_l4_478b
+  - g_l12_466a

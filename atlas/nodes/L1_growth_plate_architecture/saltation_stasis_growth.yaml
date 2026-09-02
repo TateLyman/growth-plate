@@ -1,0 +1,160 @@
+id: saltation_stasis_growth
+name: Saltation and stasis growth
+aliases:
+- saltatory growth
+- episodic growth
+- mini growth spurts
+type: hypothesis
+layer: L1
+stub: false
+summary: 'The saltation-and-stasis model holds that linear growth is not continuous but occurs in discrete
+  bursts separated by intervals of true zero growth. Lampl, Veldhuis and Johnson reported from serial
+  infant measurements (n = 31 infants measured weekly, semi-weekly or daily over the first 21 months)
+  that length accrues in 0.5-2.5 cm saltations separated by stasis intervals of 2-63 days, with 90-95%
+  of days growth-free. The claim is contested on both statistical and biological grounds. Klein and colleagues
+  measured rabbit proximal tibial elongation directly with about 15-fold better precision than human anthropometry
+  and obtained a single Gaussian distribution of daily velocities rather than the bimodal distribution
+  the model predicts, concluding growth is continuous; Heinrichs et al. published a further critique in
+  Science. The saltation camp replied that frequency-distribution shape cannot exclude saltation, showing
+  by Monte Carlo simulation that a genuinely pulsatile process can produce unimodal, left- or right-skewed
+  distributions depending on sampling frequency, measurement error and study duration. A third position
+  holds that short-term growth is chaotic rather than discretely saltatory, with mini growth spurts and
+  no true stasis. Separately from the statistical dispute there is one unambiguous, directly measured
+  discontinuity: in lambs with implanted microtransducers at least 90% of elongation occurs during recumbency,
+  so growth is mechanically gated on a diurnal cycle. Canine proximal tibial growth measured with implanted
+  tantalum markers has been reported as following the saltation-and-stasis model. The dispute has never
+  been settled because no group has measured the same preparation with both camps'' instruments.'
+quantitative:
+- parameter: saltation amplitude
+  value: 0.5-2.5
+  unit: cm per event
+  conditions: human infants, first 21 months, serial length measurement
+  species: human
+  source_ref: lampl1992
+  uncertainty: range across events; n = 31 infants (19 female, 12 male)
+- parameter: stasis interval duration
+  value: 2-63
+  unit: days
+  conditions: human infants, first 21 months
+  species: human
+  source_ref: lampl1992
+  uncertainty: range across intervals
+- parameter: proportion of days without measurable growth
+  value: 90-95
+  unit: '% of days'
+  conditions: human infants, first 21 months
+  species: human
+  source_ref: lampl1992
+  uncertainty: as stated by the authors
+- parameter: implied annualised velocity during a growth event
+  value: greater than 350
+  unit: cm/year
+  conditions: recalculation of the saltation model by its critics
+  species: human
+  source_ref: klein1994
+  uncertainty: critics' arithmetic, stated in the abstract
+- parameter: precision advantage of rabbit proximal tibial measurement over human anthropometry
+  value: '15'
+  unit: fold
+  conditions: implanted marker measurement of daily growth rate
+  species: rabbit
+  source_ref: klein1994
+  uncertainty: as stated
+- parameter: shape of the daily growth velocity distribution
+  value: single Gaussian
+  unit: qualitative
+  conditions: rabbit proximal tibia, direct daily measurement
+  species: rabbit
+  source_ref: klein1994
+  uncertainty: interpreted by the authors as evidence of continuous growth
+- parameter: fraction of elongation occurring during recumbency
+  value: '90'
+  unit: '% or more'
+  conditions: lamb tibia, implanted microtransducer sampled every 167 s for 21-25 days
+  species: ovine
+  source_ref: noonan2004
+  uncertainty: as stated
+localization:
+- 'human infants: external anthropometry (lampl1992)'
+- 'rabbit proximal tibia: direct implanted measurement (klein1994)'
+- 'lamb tibia: continuous microtransducer (noonan2004)'
+- 'dog proximal tibia: tantalum markers, monthly radiographs (mcbrien2011)'
+human_evidence: direct
+human_evidence_note: The human evidence is serial anthropometry in infants (lampl1992) and its statistical
+  re-analysis; there is no direct human measurement of physeal elongation at daily resolution.
+species_basis:
+- human
+- rabbit
+- ovine
+- rat
+translation_risk: moderate
+translation_risk_reason: The pro-saltation evidence is human but indirect (surface anthropometry with
+  a technical error exceeding the mean daily increment); the strongest anti-saltation evidence is direct
+  but from rabbit. Neither camp has measured the human physis.
+confidence: D
+key_refs:
+- ref_id: lampl1992
+  pmid: '1439787'
+  first_author: Lampl M
+  year: 1992
+  type: primary
+  one_line_finding: Infant length accrues in 0.5-2.5 cm saltations separated by 2-63 day stasis intervals,
+    with 90-95% of days growth-free.
+- ref_id: klein1994
+  pmid: '8119172'
+  first_author: Klein KO
+  year: 1994
+  type: primary
+  one_line_finding: Direct daily measurement of rabbit proximal tibial elongation gives a unimodal Gaussian
+    velocity distribution, not the predicted bimodal one.
+- ref_id: johnson1996
+  pmid: '8940335'
+  first_author: Johnson ML
+  year: 1996
+  type: primary
+  one_line_finding: Monte Carlo simulation shows frequency-distribution shape cannot exclude a saltatory
+    process.
+- ref_id: hermanussen1998
+  pmid: '9661976'
+  first_author: Hermanussen M
+  year: 1998
+  type: primary
+  one_line_finding: Rat short-term growth is a chaotic series of mini growth spurts rather than discrete
+    saltation with true stasis.
+- ref_id: noonan2004
+  pmid: '15502578'
+  first_author: Noonan KJ
+  year: 2004
+  type: primary
+  one_line_finding: At least 90% of lamb tibial elongation occurs during recumbency, establishing a real
+    load-gated diurnal discontinuity.
+- ref_id: mcbrien2011
+  pmid: '21470252'
+  first_author: McBrien CS
+  year: 2011
+  type: primary
+  one_line_finding: Canine proximal tibial growth measured with implanted tantalum markers is reported
+    to follow a saltation-and-stasis model.
+- ref_id: heinrichs1995
+  pmid: '7716552'
+  first_author: Heinrichs C
+  year: 1995
+  type: primary
+  one_line_finding: Science report on patterns of human growth published as part of the saltation controversy;
+    full text not retrieved.
+- ref_id: lampl2017
+  pmid: '28217849'
+  first_author: Lampl M
+  year: 2017
+  type: review
+  one_line_finding: Argues that saltation and stasis is the auxological signature of discretely timed
+    hypertrophic expansion events at the growth plate.
+open_questions:
+- g_l1arch_005
+- g_l1arch_006
+contradicts:
+- klein1994
+- lampl1992
+- mcbrien2011
+pending_source: heinrichs1995
+last_verified: '2026-08-05'

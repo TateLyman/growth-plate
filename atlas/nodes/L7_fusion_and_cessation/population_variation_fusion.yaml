@@ -1,0 +1,94 @@
+id: population_variation_fusion
+name: Population variation in fusion timing
+type: phenotype
+layer: L7
+stub: false
+summary: |
+  Fusion timing varies substantially between populations while the fusion order appears largely
+  conserved, and the two facts have different consequences. Timing: of ten epiphyses compared
+  between young Bosnian males and the McKern and Stewart North American Korean War sample, every
+  element was at least two years advanced in the Bosnian material; standards built on the
+  American sample therefore produce upper age limits two or more years older than the true
+  chronological age when applied in the Balkans (schaefer2005, human). Bone age standards inherit
+  the same problem in reverse: the Greulich-Pyle atlas was built on healthy Caucasian children of
+  high socioeconomic status in Cleveland, Ohio in the 1920s to 1940s, and its applicability to
+  modern diverse populations is an empirical question rather than an assumption (guevel2026). The
+  empirical answer is mixed rather than catastrophic - in 472 modern US paediatric patients,
+  Greulich-Pyle bone age exceeded chronological age by only 2.9 months (SD 12.8) with no
+  systematic bias across race, ethnicity or area deprivation index, but with 95% limits of
+  agreement of about 2 years and a 15.9-month underestimate in underweight patients
+  (guevel2026); in 406 Australian children mean bone age was 2.2 months below chronological age
+  overall, and 3.7 months below in girls (paxton2013). Order: no study located in this sweep has
+  formally compared the sequence of epiphyseal union between populations, so the widespread
+  assumption that fusion order is conserved is an untested extrapolation from single-population
+  sequences (g_l7fuse_010).
+quantitative:
+- parameter: advancement of epiphyseal union in Bosnian versus North American males
+  value: at least 2
+  unit: years earlier
+  conditions: 10 epiphyses compared with the McKern and Stewart Korean War sample
+  species: human
+  source_ref: schaefer2005
+  uncertainty: all 10 elements advanced; per-element figures in source
+- parameter: mean Greulich-Pyle bone age minus chronological age, modern US cohort
+  value: '2.9'
+  unit: months (bone age older)
+  conditions: 472 paediatric ACL reconstruction candidates, multicentre
+  species: human
+  source_ref: guevel2026
+  uncertainty: SD 12.8; P<0.001; 95% limits of agreement approximately 2 years
+- parameter: mean Greulich-Pyle bone age minus chronological age, Australian children
+  value: '-2.2'
+  unit: months (bone age younger)
+  conditions: 406 children under 18 investigated for trauma
+  species: human
+  source_ref: paxton2013
+  uncertainty: P=0.005; females -3.7 months (P=0.002), males -1.5 months (P=0.142)
+- parameter: Greulich-Pyle bone age deficit in underweight patients
+  value: '-15.9'
+  unit: months
+  conditions: modern US paediatric cohort, stratified by BMI
+  species: human
+  source_ref: guevel2026
+  uncertainty: P=0.008
+localization:
+- 'SYS: applies to all radiographic and skeletal age standards used across populations'
+human_evidence: direct
+human_evidence_note: >-
+  Direct cross-population comparisons of epiphyseal union ages and of bone age versus
+  chronological age in three separate national cohorts.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype measured directly in humans.
+confidence: B
+key_refs:
+- ref_id: schaefer2005
+  pmid: '16078477'
+  first_author: Schaefer MC
+  year: 2005
+  type: primary
+  one_line_finding: >-
+    All ten epiphyses examined united at least two years earlier in young Bosnian males than in
+    the North American reference sample.
+- ref_id: guevel2026
+  pmid: '42159483'
+  first_author: Guevel B
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    In a modern diverse US cohort the Greulich-Pyle atlas showed no systematic bias by race,
+    ethnicity or deprivation index but 95% limits of agreement of about 2 years.
+- ref_id: paxton2013
+  pmid: '23374549'
+  first_author: Paxton ML
+  year: 2013
+  type: primary
+  one_line_finding: >-
+    In 406 Australian children Greulich-Pyle bone age was on average 2.2 months below
+    chronological age, with a larger deficit in girls.
+open_questions:
+- g_l7fuse_010
+- g_l7fuse_008
+contradicts: []
+last_verified: '2026-08-05'

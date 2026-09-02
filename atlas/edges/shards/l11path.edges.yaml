@@ -1,0 +1,965 @@
+# Edge shard for Layer L11 (pathology as natural experiment).
+# edge_ids are local; merge_shards.py renumbers globally.
+edges:
+- edge_id: e00001
+  source: fgfr3_receptor
+  target: achondroplasia
+  relation: required_for
+  sign: +
+  magnitude: G380R on 16/16 achondroplasia chromosomes
+  context: human, heterozygous FGFR3 c.1138G>A/G>C (G380R), transmembrane domain; germline
+  evidence_tier: T1
+  refs:
+  - shiang1994
+  confidence: A
+  notes: The mutation is necessary and sufficient for the phenotype in humans; >80% de novo.
+- edge_id: e00002
+  source: achondroplasia
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '-'
+  magnitude: adult height 132 cm (M) / 124 cm (F)
+  context: human, European cohort n=466 children, ages 0-20 y, both sexes
+  evidence_tier: T1
+  refs:
+  - merker2018
+  confidence: A
+  notes: Height SDS loss occurs almost entirely in the first 2 postnatal years; pubertal growth is
+    normal relative to adult height.
+- edge_id: e00003
+  source: fgfr3_receptor
+  target: thanatophoric_dysplasia
+  relation: required_for
+  sign: +
+  magnitude: constitutive activation exceeding G380R
+  context: human, K650E (TD2, 16/16) or R248C/S371C (TD1, 23/39); germline sporadic
+  evidence_tier: T1
+  refs:
+  - tavormina1995
+  confidence: A
+  notes: Different FGFR3 domains give different lethal phenotypes at the same receptor.
+- edge_id: e00004
+  source: thanatophoric_dysplasia
+  target: hypertrophic_zone
+  relation: inhibits
+  sign: '-'
+  context: human autopsy growth plate, 91 registry cases with matched genotype and histopathology
+  evidence_tier: T1
+  refs:
+  - wilcox1998
+  confidence: A
+  notes: 'Growth plate preservation is genotype-dependent and NOT monotonic in receptor activation:
+    K650E plates are better preserved than R248C/Y373C plates.'
+- edge_id: e00005
+  source: fgfr3_receptor
+  target: hypochondroplasia
+  relation: required_for
+  sign: +
+  magnitude: weaker constitutive kinase activation than G380R or K650E
+  context: human, heterozygous FGFR3 N540K (8/14 in the discovery series) or K650N/K650Q
+  evidence_tier: T1
+  refs:
+  - bellus1995
+  - bellus2000
+  confidence: A
+- edge_id: e00006
+  source: fgfr3_receptor
+  target: saddan_syndrome
+  relation: required_for
+  sign: +
+  magnitude: ~3x the constitutive kinase activity of the lethal K650E allele
+  context: human, heterozygous FGFR3 A1949T (K650M), kinase activation loop
+  evidence_tier: T1
+  refs:
+  - tavormina1999
+  confidence: A
+  notes: Non-lethal despite greater kinase output than thanatophoric dysplasia type II - the key
+    non-monotonicity of the series.
+- edge_id: e00007
+  source: fgfr3_mapk_branch
+  target: achondroplasia
+  relation: required_for
+  sign: +
+  context: human genetic inference plus mouse mechanism; growth plate PZ/PHZ
+  evidence_tier: T1
+  refs:
+  - naski1996
+  confidence: B
+  notes: The ERK branch is the presumed effector of the proliferative block; the branch-specific
+    contribution has not been measured in human tissue.
+- edge_id: e00008
+  source: npr2_receptor
+  target: acromesomelic_dysplasia_maroteaux
+  relation: required_for
+  sign: +
+  magnitude: markedly deficient guanylyl cyclase activity in 3 tested missense alleles
+  context: human, biallelic NPR2 loss of function, 21 families, 21 distinct mutations
+  evidence_tier: T1
+  refs:
+  - bartels2004
+  confidence: A
+- edge_id: e00009
+  source: npr2_gene
+  target: npr2_heterozygous_short_stature
+  relation: required_for
+  sign: +
+  magnitude: -1.8 +/- 1.1 SDS vs -0.4 +/- 0.8 SDS in non-carrier relatives (n=16 vs 23, P<0.0005)
+  context: human, single NPR2 loss-of-function allele; within-family carrier vs non-carrier comparison
+  evidence_tier: T1
+  refs:
+  - olney2006
+  - wang2015
+  confidence: A
+- edge_id: e00010
+  source: npr2_heterozygous_short_stature
+  target: height_sds_z_score
+  relation: correlates_with
+  sign: '-'
+  magnitude: approximately 1.4 SDS per lost NPR2 allele
+  context: human, NPR2 heterozygotes; body proportion unchanged relative to non-carriers
+  evidence_tier: T1
+  refs:
+  - olney2006
+  confidence: A
+- edge_id: e00011
+  source: cgmp_second_messenger
+  target: npr2_gain_of_function_tall
+  relation: required_for
+  sign: +
+  context: human, NPR2 V883M three-generation family; blood cGMP elevated in affected individuals
+  evidence_tier: T1
+  refs:
+  - miura2012
+  confidence: B
+  notes: One of very few human disorders in which the second messenger itself was measured in the
+    affected people.
+- edge_id: e00012
+  source: cnp_protein
+  target: nppc_duplication_tall_stature
+  relation: required_for
+  sign: +
+  magnitude: plasma CNP doubled vs 5 controls; NT-proCNP elevated in the independent t(1;2) case
+  context: human, de novo t(2;7)(q37.1;q21.3) with breakpoint adjacent to NPPC
+  evidence_tier: T1
+  refs:
+  - bocciardi2007
+  - ko2015
+  confidence: A
+  notes: Two independent rearrangements at the same locus give the same phenotype with the same biomarker.
+- edge_id: e00013
+  source: npr3_clearance_receptor
+  target: nppc_duplication_tall_stature
+  relation: inhibits
+  sign: '-'
+  context: human, biallelic NPR3 loss-of-function variants causing extreme tall stature
+  evidence_tier: T1
+  refs:
+  - lauffer2022
+  confidence: B
+  notes: Failing to clear CNP phenocopies making too much of it, confirming the axis is ligand-concentration
+    limited in humans.
+- edge_id: e00014
+  source: acromesomelic_dysplasia_maroteaux
+  target: limb_segment_proportion
+  relation: correlates_with
+  sign: '-'
+  context: human, biallelic NPR2 null; middle and distal limb segments disproportionately shortened
+  evidence_tier: T1
+  refs:
+  - bartels2004
+  confidence: A
+  notes: Acromesomelic shortening is the opposite proportional signature to the rhizomelia of FGFR3
+    disorders.
+- edge_id: e00015
+  source: vosoritide
+  target: npr2_receptor
+  relation: activates
+  sign: +
+  context: human, approved CNP analogue; the receptor whose biallelic loss causes AMDM and whose
+    haploinsufficiency causes short stature
+  evidence_tier: T1
+  refs:
+  - bartels2004
+  - wang2015
+  confidence: A
+  notes: AMDM and NPR2 haploinsufficiency are the human genetic negative and partial controls for
+    vosoritide's target.
+- edge_id: e00016
+  source: gh_receptor
+  target: laron_syndrome
+  relation: required_for
+  sign: +
+  context: human, homozygous GHR mutation (codon 180/exon 6 in the Ecuadorian cohort), 201 adults
+  evidence_tier: T1
+  refs:
+  - guevaraaguirre2025
+  confidence: A
+- edge_id: e00017
+  source: laron_syndrome
+  target: limb_segment_proportion
+  relation: correlates_with
+  sign: '-'
+  magnitude: lowest lower-segment/height and highest head-circumference/height ratios of four groups
+  context: human, 201 adults with GHR deficiency vs carrier and non-carrier relatives and unrelated
+    controls
+  evidence_tier: T1
+  refs:
+  - guevaraaguirre2025
+  confidence: A
+  notes: Contradicts the assumption that the GH-IGF axis scales the human skeleton uniformly - loss
+    causes DISproportionate growth.
+- edge_id: e00018
+  source: stat5b_tf
+  target: stat5b_deficiency
+  relation: required_for
+  sign: +
+  magnitude: height 114 cm, -7.8 SDS; IGF-I 7.2 ng/mL (normal 242-600)
+  context: human, homozygous STAT5B frameshift with absent protein; female aged 16.4 y
+  evidence_tier: T1
+  refs:
+  - hwa2005
+  confidence: A
+- edge_id: e00019
+  source: igf1_systemic
+  target: igf1_deficiency_human
+  relation: required_for
+  sign: +
+  context: human, homozygous IGF1 exon 4-5 deletion; intrauterine and postnatal growth failure
+  evidence_tier: T1
+  refs:
+  - woods1996
+  confidence: B
+  notes: Growth failure begins prenatally, unlike GH deficiency - IGF-I acts on the human fetal skeleton
+    independently of GH.
+- edge_id: e00020
+  source: igf1_receptor
+  target: igf1r_mutation_human
+  relation: required_for
+  sign: +
+  context: human, compound heterozygous R108Q/K115N (reduced function) or R59stop (reduced receptor
+    number)
+  evidence_tier: T1
+  refs:
+  - abuzzahab2003
+  confidence: A
+  notes: Two mechanisms - fewer receptors or worse receptors - give the same phenotype.
+- edge_id: e00021
+  source: pappa2_protease
+  target: pappa2_deficiency
+  relation: required_for
+  sign: +
+  context: human, homozygous PAPPA2 p.D643fs25* or p.Ala1033Val; complete loss of IGFBP-3/-5 proteolysis
+  evidence_tier: T1
+  refs:
+  - dauber2016
+  confidence: A
+  notes: Total IGF-I is HIGH and free IGF-I is LOW - the growth plate reads the free fraction.
+- edge_id: e00022
+  source: igfbp3
+  target: pappa2_deficiency
+  relation: correlates_with
+  sign: +
+  context: human, PAPP-A2-deficient patients; IGFBP-3 elevated with more IGF-I retained in the ternary
+    complex
+  evidence_tier: T1
+  refs:
+  - dauber2016
+  confidence: A
+- edge_id: e00023
+  source: growth_hormone
+  target: pituitary_gigantism
+  relation: required_for
+  sign: +
+  magnitude: final height >2 SD above country mean was an inclusion criterion
+  context: human, GH excess with onset before epiphyseal fusion; 208-patient international series
+  evidence_tier: T1
+  refs:
+  - rostomyan2015
+  confidence: A
+- edge_id: e00024
+  source: epiphyseal_fusion
+  target: acromegaly
+  relation: precedes
+  context: human; identical GH excess produces gigantism before fusion and acromegaly after it
+  evidence_tier: T1
+  refs:
+  - rostomyan2015
+  - trivellin2014
+  confidence: A
+  notes: 'The boundary condition for any claim that adult longitudinal growth can be restarted: lifelong
+    endogenous GH excess does not lengthen a fused long bone.'
+- edge_id: e00025
+  source: xlag_gpr101
+  target: pituitary_gigantism
+  relation: required_for
+  sign: +
+  magnitude: all X-LAG patients had onset in early childhood; no non-duplicated patient presented
+    before age 5
+  context: human, Xq26.3 microduplication containing GPR101 in 13/43 gigantism patients
+  evidence_tier: T1
+  refs:
+  - trivellin2014
+  confidence: A
+- edge_id: e00026
+  source: gh_deficiency
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '-'
+  context: human, 169 individuals with idiopathic GHD followed to adult height, treated vs untreated
+  evidence_tier: T1
+  refs:
+  - zhao2025
+  confidence: A
+- edge_id: e00027
+  source: aggrecan_acan
+  target: acan_related_short_stature
+  relation: required_for
+  sign: +
+  magnitude: adult height -2.8 SDS (range -5.9 to -0.9)
+  context: human, heterozygous ACAN loss of function, 103 individuals from 20 families
+  evidence_tier: T1
+  refs:
+  - gkourogianni2017
+  confidence: A
+- edge_id: e00028
+  source: acan_related_short_stature
+  target: bone_age
+  relation: correlates_with
+  sign: +
+  magnitude: bone age advanced by a median +1.3 years (range 0 to +3.7)
+  context: human, children with heterozygous ACAN mutations
+  evidence_tier: T1
+  refs:
+  - gkourogianni2017
+  - tatsi2017
+  confidence: A
+  notes: Advanced bone age is NOT obligate - ACAN mutations also cause short stature without accelerated
+    maturation.
+- edge_id: e00029
+  source: acan_related_short_stature
+  target: growth_cessation
+  relation: precedes
+  sign: +
+  context: human; adult height (-2.8 SDS) is worse than childhood height (-2.0 SDS) in the same cohort
+  evidence_tier: T1
+  refs:
+  - gkourogianni2017
+  confidence: A
+  notes: The growth plate both grows less per year and exhausts sooner - the two components have
+    never been separated.
+- edge_id: e00030
+  source: acan_related_short_stature
+  target: hypertrophic_zone
+  relation: inhibits
+  sign: '-'
+  context: mouse Acan+/- growth plate histomorphometry and single-cell transcriptomics; NOT human
+    tissue
+  evidence_tier: T1
+  refs:
+  - bendre2025
+  confidence: C
+  notes: Impaired hypertrophy with proliferation largely spared, via Camk1D suppression of Akt. Mouse
+    only - the human growth plate in ACAN deficiency has never been examined (g_l11path_010).
+- edge_id: e00031
+  source: acan_related_short_stature
+  target: idiopathic_short_stature
+  relation: correlates_with
+  sign: +
+  context: human; ACAN mutations are a recurrent recovered cause within cohorts labelled idiopathic
+    short stature
+  evidence_tier: T1
+  refs:
+  - gkourogianni2017
+  - wang2015
+  confidence: A
+- edge_id: e00032
+  source: pth1r_receptor
+  target: jansen_metaphyseal_chondrodysplasia
+  relation: required_for
+  sign: +
+  magnitude: ligand-independent cAMP accumulation in COS-7 cells
+  context: human, heterozygous activating PTH1R (H223R in 18/24; T410P, T410R, I458R, I458K)
+  evidence_tier: T1
+  refs:
+  - schipani1995
+  - saito2018
+  confidence: A
+- edge_id: e00033
+  source: pth1r_receptor
+  target: blomstrand_chondrodysplasia
+  relation: required_for
+  sign: '-'
+  magnitude: abolished PTH/PTHrP binding, cAMP and inositol phosphate responses
+  context: human, homozygous inactivating PTH1R (P132L; exon M5 splice deletion)
+  evidence_tier: T1
+  refs:
+  - karaplis1998
+  - jobert1998
+  confidence: A
+- edge_id: e00034
+  source: pthrp_ihh_feedback_loop
+  target: jansen_metaphyseal_chondrodysplasia
+  relation: required_for
+  sign: +
+  context: human; constitutive PTH1R signalling delays the proliferative-to-hypertrophic transition
+  evidence_tier: T1
+  refs:
+  - schipani1995
+  - saito2018
+  confidence: B
+  notes: Jansen and Blomstrand are a matched activating/inactivating human pair at one receptor -
+    the only direct human test of this loop.
+- edge_id: e00035
+  source: pthrp_ihh_feedback_loop
+  target: blomstrand_chondrodysplasia
+  relation: required_for
+  sign: '-'
+  context: human; loss of PTH1R signalling gives extremely ADVANCED endochondral bone maturation
+  evidence_tier: T1
+  refs:
+  - karaplis1998
+  - jobert1998
+  confidence: B
+- edge_id: e00036
+  source: jansen_metaphyseal_chondrodysplasia
+  target: blomstrand_chondrodysplasia
+  relation: hypothesized_link
+  sign: biphasic
+  context: human; proposed reciprocal displacement of the proliferative-to-hypertrophic boundary
+    in the two disorders
+  evidence_tier: T1
+  refs:
+  - schipani1995
+  - karaplis1998
+  - pereira2025
+  confidence: speculative
+  gap_id: g_l11path_012
+  notes: No side-by-side histological comparison of a Jansen and a Blomstrand human growth plate
+    has been performed.
+- edge_id: e00037
+  source: parathyroid_hormone
+  target: chronic_kidney_disease_growth
+  relation: correlates_with
+  sign: '-'
+  context: human, nationwide paediatric dialysis cohort; growth failure associates with PTH level
+  evidence_tier: T1
+  refs:
+  - imaizumi2026
+  confidence: B
+  notes: Links the genetic PTH1R perturbations (Jansen, Blomstrand) to acquired systemic growth failure
+    through the same receptor.
+- edge_id: e00038
+  source: aromatase_cyp19a1
+  target: aromatase_deficiency_human
+  relation: required_for
+  sign: +
+  context: human, biallelic CYP19A1 mutation in XX and XY siblings
+  evidence_tier: T1
+  refs:
+  - morishima1995
+  confidence: A
+  notes: Fusion mechanism analysed in L7; this edge records the human perturbation only.
+- edge_id: e00039
+  source: estrogen_receptor_alpha
+  target: estrogen_resistance_esr1
+  relation: required_for
+  sign: +
+  magnitude: 204 cm with unfused epiphyses and continued growth into adulthood
+  context: human, homozygous disruptive ESR1 mutation, 28-year-old male
+  evidence_tier: T1
+  refs:
+  - smith1994
+  confidence: B
+- edge_id: e00040
+  source: estrogen_resistance_esr1
+  target: epiphyseal_fusion
+  relation: required_for
+  sign: '-'
+  context: human; normal virilisation with absent epiphyseal closure in the same individual
+  evidence_tier: T1
+  refs:
+  - smith1994
+  confidence: B
+  notes: Androgen action was intact and did not fuse the plates - the estrogen requirement is receptor-mediated.
+- edge_id: e00041
+  source: estradiol_hormone
+  target: central_precocious_puberty
+  relation: required_for
+  sign: +
+  context: human; premature estrogen exposure raises velocity and advances bone age simultaneously
+  evidence_tier: T1
+  refs:
+  - bahar2025
+  confidence: A
+  notes: Bone age advances faster than height age, so the net effect on ADULT height is negative.
+- edge_id: e00042
+  source: central_precocious_puberty
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '-'
+  context: human girls treated with GnRH analogues from around age eight; final adult height reported
+  evidence_tier: T1
+  refs:
+  - bahar2025
+  confidence: A
+- edge_id: e00043
+  source: delayed_puberty_constitutional
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: unknown
+  context: human; delayed spurt is offset by delayed fusion, so adult height is usually near target
+  evidence_tier: T4
+  refs:
+  - wang2026
+  confidence: A
+  notes: The reference case showing that a temporary velocity reduction need not cost adult height
+    if fusion is also delayed.
+- edge_id: e00044
+  source: congenital_adrenal_hyperplasia
+  target: bone_age
+  relation: correlates_with
+  sign: +
+  context: human; adrenal androgens aromatised to estrogens advance skeletal maturation
+  evidence_tier: T1
+  refs:
+  - navardauskaite2026
+  - abseyi2026
+  confidence: A
+  notes: Tall for age in childhood, short as an adult - the estrogen-driven premature fusion phenotype
+    from a non-gonadal source.
+- edge_id: e00045
+  source: aromatase_excess_syndrome
+  target: epiphyseal_fusion
+  relation: activates
+  sign: +
+  magnitude: premature fusion with short adult stature - the mirror of aromatase deficiency
+  context: human, CYP19A1 promoter rearrangement raising estrogen production
+  evidence_tier: T1
+  refs:
+  - giannopoulou2024
+  confidence: B
+- edge_id: e00046
+  source: shox_haploinsufficiency
+  target: turner_syndrome
+  relation: required_for
+  sign: +
+  magnitude: per-copy sex-chromosome dosage effect quantified in 1,225 aneuploid adults within 928,605
+    individuals
+  context: human, 45,X and Xp deletions; PAR1 gene escaping X inactivation
+  evidence_tier: T1
+  refs:
+  - berry2025
+  confidence: A
+- edge_id: e00047
+  source: shox_gene
+  target: klinefelter_syndrome
+  relation: correlates_with
+  sign: +
+  magnitude: one extra Y adds 3.1 cm (95% CI 1.9-4.3) MORE than one extra inactive X
+  context: human, 47,XXY; extra inactive X carries an extra PAR1 SHOX copy
+  evidence_tier: T1
+  refs:
+  - berry2025
+  - davis2025
+  confidence: A
+- edge_id: e00048
+  source: turner_syndrome
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '-'
+  context: 'human, untreated Turner growth references: 259 Brazilian and 842 Turkish girls, no GH
+    or oxandrolone'
+  evidence_tier: T1
+  refs:
+  - carpinidantas2025
+  - darendeliler2015
+  confidence: A
+- edge_id: e00049
+  source: klinefelter_syndrome
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: +
+  context: human, 55 boys with 47,XXY in a QEPS growth-model decomposition; 35 reached final height
+  evidence_tier: T1
+  refs:
+  - holmgren2026
+  - davis2025
+  confidence: A
+- edge_id: e00050
+  source: collagen_type_x
+  target: schmid_metaphyseal_chondrodysplasia
+  relation: required_for
+  sign: +
+  context: human, heterozygous COL10A1 mutations, predominantly NC1 trimerisation domain
+  evidence_tier: T1
+  refs:
+  - mcintosh1994
+  - richmond1993
+  confidence: A
+  notes: Collagen X is expressed ONLY in hypertrophic chondrocytes, and the radiographic lesion is
+    confined to the metaphysis.
+- edge_id: e00051
+  source: collagen_type_ii
+  target: spondyloepiphyseal_dysplasia
+  relation: required_for
+  sign: +
+  context: human, heterozygous COL2A1 mutations across the achondrogenesis II - SEDC - Kniest - Stickler
+    spectrum
+  evidence_tier: T1
+  refs:
+  - zhan2025
+  confidence: B
+  notes: Type II collagen is present throughout hyaline cartilage, and the lesion is epiphyseal and
+    vertebral rather than metaphyseal.
+- edge_id: e00052
+  source: comp_protein
+  target: pseudoachondroplasia
+  relation: required_for
+  sign: +
+  magnitude: in-frame variants and p.Asp473del are pseudoachondroplasia-specific
+  context: human, heterozygous COMP mutations; 830 patients, 224 variants, 87.7% in the T3 repeat
+    domain
+  evidence_tier: T4
+  refs:
+  - ni2026
+  confidence: A
+- edge_id: e00053
+  source: comp_protein
+  target: multiple_epiphyseal_dysplasia
+  relation: required_for
+  sign: +
+  magnitude: height normal or at the lower limit through ages 11-18 in 15 followed children
+  context: human; missense COMP variants in T3-4 and T3-5 subdomains associate with EDM1 rather than
+    PSACH
+  evidence_tier: T4
+  refs:
+  - ni2026
+  - taner2026
+  confidence: A
+- edge_id: e00054
+  source: multiple_epiphyseal_dysplasia
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: unknown
+  context: human, 22 MED patients from 17 families followed a median 5.5 years
+  evidence_tier: T1
+  refs:
+  - taner2026
+  confidence: A
+  notes: Structural failure of epiphyseal cartilage with near-normal longitudinal growth - height
+    output and mechanical competence are separable.
+- edge_id: e00055
+  source: aggrecan_acan
+  target: camptodactyly_arthropathy_syndrome
+  relation: correlates_with
+  sign: unknown
+  context: human; contrast case - PRG4 loss destroys articular cartilage while sparing the growth
+    plate
+  evidence_tier: T1
+  refs:
+  - tkachenko2026
+  confidence: C
+  notes: Negative control separating articular from growth plate cartilage failure.
+- edge_id: e00056
+  source: inorganic_pyrophosphate
+  target: hypophosphatasia
+  relation: required_for
+  sign: +
+  magnitude: rickets-like metaphyseal change at NORMAL serum calcium and phosphate
+  context: human, ALPL loss of function; pyrophosphate is not hydrolysed and inhibits apatite nucleation
+  evidence_tier: T1
+  refs:
+  - sala2026
+  confidence: A
+- edge_id: e00057
+  source: matrix_vesicle
+  target: hypophosphatasia
+  relation: required_for
+  sign: +
+  context: human ZPC; failure of matrix-vesicle-mediated mineralisation with accumulation of unmineralised
+    hypertrophic cartilage
+  evidence_tier: T5
+  refs:
+  - sala2026
+  confidence: B
+- edge_id: e00058
+  source: fgf23_hormone
+  target: x_linked_hypophosphatemia
+  relation: required_for
+  sign: +
+  context: human, PHEX inactivation leading to FGF23 excess, renal phosphate wasting and hypophosphataemia
+  evidence_tier: T1
+  refs:
+  - liang2025
+  confidence: A
+- edge_id: e00059
+  source: x_linked_hypophosphatemia
+  target: bone_age
+  relation: correlates_with
+  sign: '-'
+  magnitude: bone age DELAYED - the opposite direction to ACAN-related short stature
+  context: human, children with XLH
+  evidence_tier: T1
+  refs:
+  - soto2026
+  confidence: B
+  notes: Two common monogenic causes of short stature move bone age in opposite directions, so bone
+    age is not measuring one underlying variable (g_l11path_021).
+- edge_id: e00060
+  source: thyroid_hormone_t3
+  target: congenital_hypothyroidism
+  relation: required_for
+  sign: +
+  context: human; untreated congenital hypothyroidism arrests terminal hypertrophy and gives epiphyseal
+    dysgenesis
+  evidence_tier: T1
+  refs:
+  - karimian2024
+  - kochar2025
+  confidence: A
+- edge_id: e00061
+  source: mct8_transporter
+  target: allan_herndon_dudley
+  relation: required_for
+  sign: +
+  context: human, SLC16A2 loss of function; high serum T3 with tissue-level hypothyroidism in MCT8-dependent
+    cells
+  evidence_tier: T1
+  refs:
+  - li2026
+  confidence: B
+  notes: Whether human growth plate chondrocytes are MCT8-dependent is unknown (g_l11path_023).
+- edge_id: e00062
+  source: glucocorticoid_cortisol
+  target: cushing_syndrome_growth
+  relation: required_for
+  sign: '-'
+  magnitude: growth failure WITH weight gain - near-pathognomonic in paediatrics
+  context: human, endogenous or exogenous glucocorticoid excess in childhood
+  evidence_tier: T5
+  refs:
+  - lodish2018
+  confidence: B
+- edge_id: e00063
+  source: celiac_disease_growth
+  target: catch_down_growth
+  relation: correlates_with
+  sign: '-'
+  context: human, longitudinal cohort of Swedish children aged 0-6 y around diagnosis and gluten
+    withdrawal
+  evidence_tier: T1
+  refs:
+  - fjelstad2026
+  confidence: B
+  notes: Catch-up after antigen withdrawal implies the growth plate has not irreversibly consumed
+    proliferative capacity during the arrest.
+- edge_id: e00064
+  source: juvenile_idiopathic_arthritis_growth
+  target: growth_velocity_curve
+  relation: correlates_with
+  sign: biphasic
+  context: human; systemic inflammation suppresses growth while local joint hyperaemia can accelerate
+    the adjacent physis
+  evidence_tier: T1
+  refs:
+  - ahirwar2025
+  confidence: C
+  notes: Same disease, opposite-signed local and systemic effects - no systemic model explains both.
+- edge_id: e00065
+  source: igf2_hormone
+  target: beckwith_wiedemann_syndrome
+  relation: required_for
+  sign: +
+  context: human, 11p15.5 gain of methylation, paternal UPD11, KCNQ1OT1 loss of methylation or CDKN1C
+    mutation
+  evidence_tier: T5
+  refs:
+  - saal1993
+  - gregorova2025
+  confidence: B
+- edge_id: e00066
+  source: igf2_hormone
+  target: russell_silver_syndrome
+  relation: required_for
+  sign: '-'
+  context: human, 11p15.5 loss of methylation, maternal UPD7, or paternally inherited IGF2 variants
+  evidence_tier: T5
+  refs:
+  - saal1993
+  - lokulosodipe2020
+  confidence: B
+  notes: Reciprocal to Beckwith-Wiedemann at the same imprinted locus - a human bidirectional dosage
+    experiment.
+- edge_id: e00067
+  source: prader_willi_growth
+  target: gh_deficiency
+  relation: correlates_with
+  sign: +
+  context: human, 15q11-q13 paternal deletion/mUPD/imprinting defect with hypothalamic dysfunction
+  evidence_tier: T4
+  refs:
+  - caino2025
+  - almutadares2025
+  confidence: A
+- edge_id: e00068
+  source: noonan_syndrome
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '-'
+  context: human, genetically defined RASopathy cohorts followed to final height (n=67 and n=23 of
+    101)
+  evidence_tier: T1
+  refs:
+  - klar2025
+  - jirova2026
+  confidence: A
+  notes: Parental heights in these cohorts are themselves below average, so the apparent disease
+    effect is partly polygenic background.
+- edge_id: e00069
+  source: mek1_erk_chondrocyte
+  target: noonan_syndrome
+  relation: required_for
+  sign: +
+  context: human, germline gain-of-function PTPN11/SOS1/RAF1 raising RAS-MAPK flux
+  evidence_tier: T1
+  refs:
+  - jirova2026
+  confidence: B
+  notes: Mechanistically adjacent to achondroplasia - FGFR3 signals through the same cascade.
+- edge_id: e00070
+  source: cancer_survivor_growth
+  target: gh_deficiency
+  relation: correlates_with
+  sign: +
+  context: human, 92 GH-deficient male childhood cancer survivors; final adult height with and without
+    adjuvant aromatase inhibition
+  evidence_tier: T1
+  refs:
+  - pollock2024
+  confidence: B
+- edge_id: e00071
+  source: irradiation_growth_plate_damage
+  target: sitting_height_ratio
+  relation: correlates_with
+  sign: '-'
+  context: human, craniospinal irradiation - vertebral physes inside the field, limb physes outside
+  evidence_tier: T1
+  refs:
+  - pollock2024
+  confidence: C
+  notes: The within-patient irradiated vs non-irradiated physis comparison under identical endocrine
+    conditions has never been done with dosimetry (g_l11path_025).
+- edge_id: e00072
+  source: mucopolysaccharidosis_growth
+  target: growth_velocity_curve
+  relation: correlates_with
+  sign: '-'
+  context: human, longitudinal MPS IVA and MPS IIIA cohorts; normal birth length with progressive
+    deceleration
+  evidence_tier: T1
+  refs:
+  - carmon2026
+  confidence: B
+- edge_id: e00073
+  source: osteogenesis_imperfecta_growth
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '-'
+  context: human, national OI registry; height loss is largely mechanical rather than physeal
+  evidence_tier: T1
+  refs:
+  - mordenti2026
+  confidence: C
+  notes: Type I collagen is the matrix of bone, not of growth plate cartilage - adult height here
+    is plate output minus accumulated structural loss.
+- edge_id: e00074
+  source: pseudohypoparathyroidism
+  target: epiphyseal_fusion
+  relation: activates
+  sign: +
+  magnitude: premature closure of selected plates, giving brachydactyly with only mild overall short
+    stature
+  context: human, GNAS inactivation reducing Gs-alpha signalling downstream of PTH1R; metacarpal
+    and metatarsal plates
+  evidence_tier: T1
+  refs:
+  - yang2026
+  - portalescastil2025
+  confidence: B
+  notes: Completes a three-point human dose series on the PTH1R axis with Jansen and Blomstrand.
+- edge_id: e00075
+  source: cleidocranial_dysplasia
+  target: achondroplasia
+  relation: correlates_with
+  sign: unknown
+  context: human contrast; RUNX2 haploinsufficiency severely affects intramembranous bone but spares
+    endochondral growth
+  evidence_tier: T1
+  refs:
+  - mijovic2025
+  confidence: C
+  notes: Asymmetric dose sensitivity between two ossification programmes in the same individual.
+- edge_id: e00076
+  source: idiopathic_short_stature
+  target: npr2_heterozygous_short_stature
+  relation: correlates_with
+  sign: +
+  magnitude: 0 to 1/26 of ISS; ~3% of SHOX-negative disproportionate short stature referrals
+  context: human; NPR2 haploinsufficiency recovered from ISS cohorts by sequencing
+  evidence_tier: T1
+  refs:
+  - wang2015
+  - hisadooliva2015
+  confidence: A
+- edge_id: e00077
+  source: homocystinuria_tall
+  target: collagen_crosslinking
+  relation: inhibits
+  sign: '-'
+  context: human, biallelic CBS deficiency; homocysteine interferes with collagen and fibrillin cross-linking
+  evidence_tier: T1
+  refs:
+  - wanninayake2026
+  confidence: C
+  notes: A purely metabolic block producing a connective-tissue overgrowth phenotype indistinguishable
+    from Marfan syndrome on habitus.
+- edge_id: e00078
+  source: marfan_syndrome
+  target: limb_segment_proportion
+  relation: correlates_with
+  sign: +
+  context: human, heterozygous FBN1 mutation; dolichostenomelia with reduced upper-to-lower segment
+    ratio
+  evidence_tier: T1
+  refs:
+  - gregorova2025
+  confidence: C
+  notes: Segment-specific overgrowth - the mirror of the segment-specific shortening in FGFR3 and
+    NPR2 disorders.
+- edge_id: e00079
+  source: loeys_dietz_syndrome
+  target: marfan_syndrome
+  relation: correlates_with
+  sign: +
+  context: human; TGF-beta receptor mutation versus fibrillin-1 microfibril loss converging on the
+    same marfanoid endpoint
+  evidence_tier: T1
+  refs:
+  - ko2015
+  confidence: C
+  notes: One reported patient carries both an NPPC gain and a TGFB2 disruption - a natural human
+    double perturbation of two overgrowth pathways.
+- edge_id: e00080
+  source: sotos_syndrome
+  target: bone_age
+  relation: correlates_with
+  sign: +
+  context: human, NSD1 haploinsufficiency; childhood overgrowth with advanced bone age and only upper-normal
+    adult height
+  evidence_tier: T5
+  refs:
+  - sada2024
+  - gregorova2025
+  confidence: C
+  notes: The overgrowth mirror of ACAN deficiency - in both, advanced maturation shortens the growth
+    period and moves adult height toward the mean.

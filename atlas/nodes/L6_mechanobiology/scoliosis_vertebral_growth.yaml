@@ -1,0 +1,96 @@
+id: scoliosis_vertebral_growth
+name: Scoliosis and vertebral growth modulation
+type: phenotype
+summary: 'Adolescent idiopathic scoliosis is the largest natural human experiment in physeal mechanobiology,
+  through the ''vicious cycle'' hypothesis: a pre-existing lateral curve makes muscular and gravitational
+  loading asymmetric across vertebral endplate physes, asymmetric loading modulates vertebral growth by
+  Hueter-Volkmann, the vertebra wedges, and the curve worsens. The hypothesis has been tested quantitatively
+  rather than merely asserted - a frontal-plane mathematical simulation using the measured animal stress-growth
+  sensitivity reproduced observed rates of curve progression, giving quantitative data consistent with
+  the cycle. The animal counterpart is direct: sustained compression and distraction across rat and calf
+  tail vertebrae produce wedging and altered growth exactly as required. Two caveats sit on the human
+  side. Vertebral wedging in the animal model arises from both asymmetric growth and remodelling, not
+  growth alone. And clinical growth modulation shows the relation is not a simple monotone function of
+  applied load: in kyphotic swine, high tether tension gave 53% growth modulation versus -1% for low tension
+  at 2 weeks, but by 2-4 weeks the two were indistinguishable (14% vs 10%), so the tension benefit is
+  transient and modulation becomes load-independent. Human vertebral body tethering works, but no human
+  study has measured the stress across a vertebral endplate physis.'
+quantitative:
+- parameter: growth modulation, high vs low tether tension at 2 weeks
+  value: 53 vs -1
+  unit: '%'
+  conditions: single-level posterior vertebral body tethering, kyphotic swine model
+  species: porcine
+  source_ref: halanski2026
+  uncertainty: SD 43 and 15; p=0.03 vs low tension, p=0.01 vs non-operative control
+- parameter: growth modulation, high vs low tether tension at 2-4 weeks
+  value: 14 vs 10
+  unit: '%'
+  conditions: same animals
+  species: porcine
+  source_ref: halanski2026
+  uncertainty: SD 11 and 10; p=0.6
+- parameter: growth-rate sensitivity used to simulate curve progression
+  value: '15.0'
+  unit: '% per 0.1 MPa (vertebral plates)'
+  conditions: animal-derived coefficient applied to a human frontal-plane model
+  species: multiple
+  source_ref: stokes2006
+  uncertainty: the human application is an extrapolation
+localization:
+- 'human vertebral endplate physes: the presumed site, never directly instrumented'
+- 'rat and calf caudal vertebral physes: measured (stokes2006)'
+- 'porcine thoracic vertebrae: measured (halanski2026)'
+human_evidence: indirect
+human_evidence_note: Human evidence is the observed correlation between curve magnitude, remaining growth
+  and progression, plus the success of tethering; the mechanical step is modelled from animal coefficients.
+species_basis:
+- human
+- rat
+- bovine
+- porcine
+translation_risk: moderate
+translation_risk_reason: The phenomenon is human and the treatment works in humans, but the quantitative
+  mechanism is imported wholesale from quadruped tail vertebrae.
+confidence: B
+key_refs:
+- ref_id: stokes2006a
+  pmid: '17049077'
+  first_author: Stokes IA
+  year: 2006
+  type: review
+  one_line_finding: A frontal-plane simulation using the measured stress-growth coefficient reproduces
+    observed scoliosis progression rates
+- ref_id: halanski2026
+  pmid: '40836185'
+  first_author: Halanski MA
+  year: 2026
+  type: primary
+  one_line_finding: Tether tension effects on vertebral growth modulation are large early and vanish by
+    4 weeks, i.e. biphasic and transient
+- ref_id: aronsson2011
+  pmid: '21173627'
+  first_author: Aronsson DD
+  year: 2011
+  type: review
+  one_line_finding: Reviews non-fusion growth modulation for adolescent scoliosis as a Hueter-Volkmann
+    application
+- ref_id: chen2025a
+  pmid: '40714837'
+  first_author: Chen F
+  year: 2025
+  type: primary
+  one_line_finding: Compression-driven PIEZO1-GPX4 ferroptosis in vertebral growth plate chondrocytes
+    accelerates scoliosis in mice and is druggable
+- ref_id: stokes2006
+  pmid: '16705695'
+  first_author: Stokes IA
+  year: 2006
+  type: primary
+  one_line_finding: Supplies the vertebral stress-growth sensitivity of 15%/0.1 MPa used in the simulation
+open_questions:
+- g_l6mech_003
+- g_l6mech_001
+layer: L6
+stub: false
+last_verified: '2026-08-05'

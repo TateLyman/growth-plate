@@ -1,0 +1,76 @@
+id: klinefelter_syndrome
+name: Klinefelter syndrome
+aliases:
+- 47,XXY
+type: phenotype
+layer: L11
+stub: false
+summary: |
+  Klinefelter syndrome is the opposite-sign arm of the same PAR1 dosage experiment as Turner
+  syndrome: an extra X chromosome means an extra SHOX copy, and the phenotype is tall stature.
+  The dosage effect has been isolated quantitatively in the 928,605-person biobank analysis that
+  included 505 adults with 47,XXY, and the same analysis shows that the height contribution of an
+  inactive X is real but smaller than that of a Y - the asymmetry that explains part of normal
+  sexual dimorphism. Two recent auxological studies pin down when the extra height appears rather
+  than merely that it does. Reference growth charts were built from 1,279 males under 20 years
+  with Klinefelter syndrome across six US paediatric centres. A QEPS growth-model decomposition
+  of 55 boys with 47,XXY, of whom 35 reached final height (34 on testosterone replacement),
+  partitions the excess into the infancy, childhood and pubertal functions - the kind of analysis
+  that distinguishes a growth plate that grows faster from one that grows for longer.
+  Klinefelter is therefore the human case where extra SHOX dosage and hypogonadism (which delays
+  fusion) push height in the SAME direction, which is why the effect is larger and more
+  consistent than the SHOX dosage alone would predict.
+quantitative:
+- parameter: adults with 47,XXY in the biobank dosage analysis
+  value: '505'
+  unit: adults
+  conditions: within 1,225 sex-chromosome aneuploidy adults and 928,605 individuals total
+  species: human
+  source_ref: berry2025
+  uncertainty: n=505
+- parameter: males contributing to the Klinefelter-specific growth charts
+  value: 1,279
+  unit: males
+  conditions: aged under 20 y, six US paediatric centres, at least one height and/or weight measurement
+  species: human
+  source_ref: davis2025
+  uncertainty: n=1,279
+- parameter: boys with 47,XXY in the QEPS growth-model analysis
+  value: '55'
+  unit: boys
+  conditions: 35 reached final height, 34 of them on testosterone replacement
+  species: human
+  source_ref: holmgren2026
+  uncertainty: n=55
+localization:
+- 'human growth plate: not examined in Klinefelter syndrome'
+human_evidence: direct
+human_evidence_note: Population-scale aneuploidy dosage modelling plus disorder-specific growth references
+  and a growth-phase decomposition to final height.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: berry2025
+  pmid: '40388606'
+  first_author: Berry ASF
+  year: 2025
+  type: primary
+  one_line_finding: Inactive-X dosage raises height, but by 3.1 cm less per copy than Y dosage.
+- ref_id: davis2025
+  pmid: '41198007'
+  first_author: Davis SM
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: Klinefelter-specific growth charts from 1,279 boys across six US centres.
+- ref_id: holmgren2026
+  pmid: '41658991'
+  first_author: Holmgren A
+  year: 2026
+  type: primary
+  one_line_finding: QEPS decomposition of growth in 55 boys with 47,XXY; 35 reached final height.
+open_questions:
+- g_l11path_014
+last_verified: '2026-08-05'

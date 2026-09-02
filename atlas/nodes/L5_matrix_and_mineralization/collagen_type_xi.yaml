@@ -1,0 +1,127 @@
+id: collagen_type_xi
+name: Collagen type XI (COL11A1/COL11A2)
+aliases:
+- COL11A1
+- COL11A2
+- alpha3(XI)=alpha1(II)B
+type: protein
+layer: L5
+stub: false
+summary: 'Collagen XI is the minor fibrillar collagen that nucleates the cartilage fibril and sets its
+  diameter. The molecule is a heterotrimer of alpha1(XI), alpha2(XI) and alpha3(XI), the last of which
+  is the COL2A1 gene product alpha1(II)B differing only in post-translational glycosylation. It is buried
+  inside the fibril and antigenically masked, becoming accessible to antibodies only where fibril packing
+  is disrupted. Reconstitution experiments show the causal role directly: purified collagen II alone forms
+  tapered tactoids of uncontrolled width, whereas II plus XI forms uniform ~20 nm fibrils provided the
+  molar excess of II over XI stays below eight-fold. In the chondrodysplasia (cho/cho) mouse, a Col11a1
+  null, alpha1(XI) is absent and alpha1(V) substitutes in the fibril, giving abnormally thick cartilage
+  collagen fibrils and severe chondrodysplasia; heterozygotes have hearing loss, showing dosage sensitivity.
+  In humans COL11A1 mutations cause Marshall and Stickler type II syndromes and fibrochondrogenesis, COL11A2
+  causes otospondylomegaepiphyseal dysplasia and non-syndromic deafness, and COL11A2 variants have been
+  reported in autosomal dominant familial short stature. In adult articular cartilage the isolated collagen
+  XI fraction contains roughly equal amounts of alpha1(V) and alpha1(XI), so what is called collagen XI
+  in mature tissue is a V/XI hybrid, not the embryonic molecule.'
+quantitative:
+- parameter: Collagen XI mass fraction, young growth cartilage
+  value: '>=10'
+  unit: '% of fibrillar collagen'
+  conditions: foetal/young growth cartilage
+  species: bovine
+  source_ref: eyre2002
+  uncertainty: lower bound
+  value_unverified: true
+- parameter: Collagen XI mass fraction, adult articular cartilage
+  value: ~3
+  unit: '% of fibrillar collagen'
+  conditions: adult articular cartilage
+  species: human
+  source_ref: eyre2002
+  uncertainty: not reported
+  value_unverified: true
+- parameter: Maximum collagen II:XI molar ratio preserving 20 nm fibril diameter
+  value: '8'
+  unit: mol:mol
+  conditions: in vitro reconstitution
+  species: in_vitro_animal_cell
+  source_ref: blaschke2000
+  uncertainty: threshold value
+- parameter: alpha1(V):alpha1(XI) ratio in the collagen XI fraction of mature articular cartilage
+  value: ~1
+  unit: mol:mol
+  conditions: adult human articular cartilage
+  species: human
+  source_ref: eyre2002
+  uncertainty: described as roughly equal amounts
+  value_unverified: true
+- parameter: Fibril diameter carrying collagen XI in human growth plate
+  value: <25
+  unit: nm
+  conditions: human juvenile rib growth plate immuno-EM; XI absent from thick fibrils
+  species: human
+  source_ref: keene1995
+  uncertainty: threshold as reported
+localization:
+- 'human growth plate HZ (thin fibrils): collagen XI present (keene1995)'
+- 'human growth plate RZ (thick fibrils): collagen XI absent (keene1995)'
+- inside the cartilage collagen fibril, antigenically masked in chick sternum (mendler1989)
+human_evidence: direct
+human_evidence_note: Collagen XI has been immunolocalised ultrastructurally in human juvenile rib growth
+  plate, in addition to the human COL11A1/2 disease genetics.
+species_basis:
+- human
+- mouse
+- chicken
+- bovine
+- in_vitro_animal_cell
+translation_risk: moderate
+translation_risk_reason: Human disease genetics confirm the gene matters, but the quantitative fibril-assembly
+  rules are entirely in vitro or murine.
+confidence: B
+key_refs:
+- ref_id: blaschke2000
+  pmid: '10744725'
+  first_author: Blaschke UK
+  year: 2000
+  type: primary
+  one_line_finding: Collagen II/XI mixtures self-limit fibril diameter to ~20 nm only while collagen II
+    molar excess over XI is below 8-fold
+- ref_id: mendler1989
+  pmid: '2463256'
+  doi: 10.1083/jcb.108.1.191
+  first_author: Mendler M
+  year: 1989
+  type: primary_abstract_only
+  one_line_finding: Immunoelectron microscopy shows collagens II, IX and XI are all integral to the same
+    cartilage fibril, i.e. fibrils are heterotypic
+- ref_id: eyre2002
+  pmid: '11879535'
+  doi: 10.1186/ar380
+  first_author: Eyre D
+  year: 2002
+  type: review
+  one_line_finding: Young growth cartilage fibrils are <=80% collagen II, >=10% IX, >=10% XI by mass;
+    mature articular cartilage is >=90% II, ~1% IX, ~3% XI
+- ref_id: fernandes2007
+  pmid: '17683922'
+  first_author: Fernandes RJ
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: In cho/cho (Col11a1-null) mouse cartilage alpha1(V) substitutes for alpha1(XI) and
+    fibrils are abnormally thick
+- ref_id: keene1995
+  pmid: '7560887'
+  first_author: Keene DR
+  year: 1995
+  type: primary
+  one_line_finding: In human juvenile rib growth plate collagen XI is restricted to fibrils <25 nm; hypertrophic
+    zone fibrils are thin, resting zone fibrils thick, proliferative zone mixed
+open_questions:
+- g_l5matrix_003
+last_verified: '2026-08-05'
+paralog_audit: passed
+paralog_audit_date: '2026-08-05'
+paralog_audit_note: >-
+  Template node - records that alpha1(V) physically SUBSTITUTES for alpha1(XI) in the cho/cho null
+  (fernandes2007) and that mature articular collagen XI is a ~1:1 V/XI hybrid (eyre2002).
+  Reconstitution from purified components (blaschke2000) is the strongest available selectivity
+  control.

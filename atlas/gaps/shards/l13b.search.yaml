@@ -1,0 +1,95 @@
+searches:
+
+  - gap_id: g_l13b_001
+    database: Europe PMC (REST search, resultType=core)
+    exact_query_string: '("growth plate" OR physis OR "physeal cartilage") AND (biobank OR "tissue bank" OR biorepository OR "tissue repository") AND (human) AND (paediatric OR pediatric OR children OR child)'
+    filters: 'no date limit; pageSize=10 screened from 184 hits, ranked by relevance'
+    date_run: '2026-08-05'
+    hit_count: 184
+    screened_count: 10
+    reason_none_qualified: >-
+      No hit describes a catalogued repository of human growth plate or physeal tissue. Hits
+      are paediatric biobank studies of other tissues (leukaemia microDNA, stature GWAS across
+      biobanks), MRI cohort protocols, and animal chondrodysplasia genetics. The nearest
+      relevant record is the EndoCompass research roadmap for growth disorders, which sets
+      priorities but describes no tissue resource. Cross-checked against the repository side:
+      GEO, ArrayExpress/BioStudies and the Human Cell Atlas contain deposited datasets but no
+      tissue-bank registration, and the single human growth plate scRNA-seq deposit (GSE288028)
+      states that raw human files were withheld.
+
+  - gap_id: g_l13b_002
+    database: Human Cell Atlas Azul index (organ facet enumeration) and GTEx API v2 tissueSiteDetail
+    exact_query_string: 'GET https://service.azul.data.humancellatlas.org/index/projects?size=1 (organ termFacets enumerated); GET https://gtexportal.org/api/v2/dataset/tissueSiteDetail?itemsPerPage=100'
+    filters: 'default catalog dcp60; all 532 HCA projects indexed; all 54 GTEx tissue sites'
+    date_run: '2026-08-05'
+    hit_count: 0
+    screened_count: 54
+    reason_none_qualified: >-
+      The HCA organ vocabulary contains bone marrow (9 projects), bone tissue (6), bone element
+      (1), femur (1), hindlimb (3), limb (1), skeletal element (1) and musculoskeletal system
+      (1), and contains no term for cartilage or growth plate at all, so zero HCA projects can
+      be indexed to physeal tissue. The 54 GTEx tissue sites contain no cartilage, bone or
+      growth plate entry (the only skeletal term is Muscle_Skeletal), and GTEx donors are aged
+      20-79, so no paediatric growth plate exists there either. Confirmed against the Human
+      Protein Atlas: querying COL2A1 returns tissue-specific expression in epididymis,
+      pituitary, retina and stomach, with no cartilage tissue in the normal-tissue panel.
+
+  - gap_id: g_l13b_004
+    database: Europe PMC (REST search, resultType=core)
+    exact_query_string: '("growth plate" OR physis) AND human AND (synchrotron)'
+    filters: 'no date limit; pageSize=10 screened from 164 hits'
+    date_run: '2026-08-05'
+    hit_count: 164
+    screened_count: 10
+    reason_none_qualified: >-
+      No hit reports synchrotron imaging of a human growth plate. The one human growth plate
+      paper returned (xie2025) used nanoindentation, EDX and proteomics rather than synchrotron
+      tomography. Other hits are murine, ovine, medaka or human articular/subchondral tissue.
+      Separately, the two human synchrotron cartilage studies located in this sweep (b2026 at
+      2.75 um voxel, xu2024 at 650 nm) imaged articular cartilage and the osteochondral
+      interface, not physis.
+
+  - gap_id: g_l13b_005
+    database: Europe PMC (REST search, resultType=core)
+    exact_query_string: '("growth plate" OR physis) AND human AND ("in situ hybridization" OR "in situ hybridisation" OR RNAscope) AND (zone OR zonal OR resting OR proliferative OR hypertrophic)'
+    filters: 'no date limit; pageSize=10 screened from 1173 hits, relevance-ranked'
+    date_run: '2026-08-05'
+    hit_count: 1173
+    screened_count: 10
+    reason_none_qualified: >-
+      Every screened hit that performs zonal in situ hybridization does so in mouse (Hhip1
+      conditional knockout, Trpv4 mutant mice, ApoE resting-zone marker, Gli1 fetal murine
+      limb) or in medaka/chicken. The word "human" in these records refers to human disease
+      being modelled, not to human tissue being hybridised. No systematic RNAscope or ISH
+      survey of human growth plate zones was found; human zonal transcript data in this atlas
+      come from laser capture microdissection (gse9160) instead.
+
+  - gap_id: g_l13b_006
+    database: Europe PMC (REST search, resultType=core)
+    exact_query_string: '(human) AND ("growth plate" OR physis) AND ("single-nucleus" OR "single nucleus" OR snRNA-seq)'
+    filters: 'no date limit; pageSize=10 screened from 90 hits'
+    date_run: '2026-08-05'
+    hit_count: 90
+    screened_count: 10
+    reason_none_qualified: >-
+      No hit reports single-nucleus sequencing of human growth plate tissue. Returned records
+      are deer antler multi-omics, murine fetal limb Gli1 progenitors, human osteoarthritic
+      articular cartilage progenitors, neural-crest-derived craniofacial chondrogenic
+      organoids, and reviews. Cross-checked in GEO: the human growth plate single-cell corpus
+      (18 records) is dissociation-based; no single-nucleus human physis deposit exists.
+
+  - gap_id: g_l13b_007
+    database: Europe PMC (REST search, resultType=core)
+    exact_query_string: '(human) AND ("growth plate" OR physis) AND (bromodeoxyuridine OR BrdU OR EdU OR "tritiated thymidine" OR tetracycline) AND (in vivo OR labelling OR labeling)'
+    filters: 'no date limit; pageSize=10 screened from 1431 hits, relevance-ranked'
+    date_run: '2026-08-05'
+    hit_count: 1431
+    screened_count: 10
+    reason_none_qualified: >-
+      No hit reports in vivo thymidine-analogue or tetracycline labelling of a human growth
+      plate. All labelling records screened are murine (miR-433, FGFR3/CREB resting zone
+      turnover, retinoid antagonist injury, ADGRG6) or in vitro. The only human labelling
+      study located anywhere in this sweep is thurston1985, which used tritiated thymidine on
+      human growth plate IN VITRO alongside porcine tissue. In vivo administration of a
+      mutagenic nucleoside analogue followed by tissue harvest cannot be performed in a child,
+      so the null here is method_blocked rather than merely unsearched.

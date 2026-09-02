@@ -1,0 +1,573 @@
+edges:
+
+- edge_id: e00001
+  source: growth_velocity_curve
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    organism peak 9.5-9.6 cm/yr (boys) and 8.3-8.4 cm/yr (girls) must equal the summed axial
+    output of the lower-limb, vertebral and skull-base plates; the human distal femur alone
+    contributes about 1.3 cm/yr after age 7
+  context: human, both sexes, birth to fusion; whole organism versus single physis
+  evidence_tier: T1
+  refs:
+  - chun2024
+  - galvo2025
+  confidence: B
+  notes: >-
+    This is the summation edge on which the whole validation layer rests. It is B not A because
+    no study has measured all contributing plates in the same children at the same time; the
+    plate-level velocities come from radiographic series in different cohorts.
+
+- edge_id: e00002
+  source: growth_velocity_curve
+  target: peak_height_velocity
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'PHV 9.61 cm/yr at 12.46 y (boys), 8.32 cm/yr at 10.99 y (girls) by SITAR'
+  context: human, both sexes, puberty; organism-level velocity
+  evidence_tier: T1
+  refs:
+  - chun2024
+  - galvo2025
+  - elhakeem2024
+  confidence: A
+
+- edge_id: e00003
+  source: growth_velocity_curve
+  target: site_specific_growth_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: >-
+    a single organism velocity is partitioned across plates whose relative shares change with age;
+    the partition is what produces the changing sitting height ratio
+  context: human, both sexes, childhood and puberty
+  evidence_tier: T1
+  refs:
+  - fredriks2005
+  - hirano2025
+  confidence: B
+
+- edge_id: e00004
+  source: icp_growth_model
+  target: pubertal_growth_spurt
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'the puberty component is asserted time-invariant in size; QEPS analysis disputes this'
+  context: human, both sexes, puberty; model component versus measured spurt
+  evidence_tier: T1
+  refs:
+  - karlberg1989
+  - holmgren2017
+  confidence: D
+  notes: The two cited sources disagree; see contradicts on icp_growth_model.
+
+- edge_id: e00005
+  source: icp_growth_model
+  target: growth_velocity_longitudinal
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'no measured plate parameter has ever been mapped onto an ICP component'
+  context: human, 6-12 months, infancy-childhood transition
+  evidence_tier: T5
+  refs:
+  - karlberg1990
+  confidence: speculative
+  gap_id: g_l9organism_003
+
+- edge_id: e00006
+  source: preece_baines_model
+  target: peak_height_velocity
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'PHV read from a five-parameter fit with residual SD 6-7 mm; algebraic solution in sayers2013'
+  context: human, both sexes, ages 2 to maturity
+  evidence_tier: T1
+  refs:
+  - preece1978
+  - sayers2013
+  - cole2010
+  confidence: A
+
+- edge_id: e00007
+  source: jpa2_model
+  target: peak_height_velocity
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'derived from an asymptotic fit spanning birth to maturity; residuals not published'
+  context: human, both sexes, birth to maturity
+  evidence_tier: T1
+  refs:
+  - jolicoeur1992
+  confidence: D
+
+- edge_id: e00008
+  source: sitar_model
+  target: peak_height_velocity
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    tempo SD 0.97 y and velocity SD 0.15 quantify between-child dispersion in the timing and
+    speed of the spurt; residual SD 0.79 cm
+  context: human male, ages 9-19, Christ's Hospital cohort; and human female Turner syndrome
+  evidence_tier: T1
+  refs:
+  - cole2010
+  confidence: A
+
+- edge_id: e00009
+  source: mid_parental_target_height
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'regression slope 0.75-0.79 on standardised mid-parental height; 36-40% of variance explained'
+  context: human, both sexes, adult height versus parental adult heights
+  evidence_tier: T1
+  refs:
+  - luo1998
+  - zeevi2024
+  confidence: A
+
+- edge_id: e00010
+  source: target_height_predictive_sd
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'residual SD 4.7 cm (sons) and 4.4 cm (daughters) about the corrected target height'
+  context: human, both sexes, adult height; 303 adult children of 23 large families
+  evidence_tier: T1
+  refs:
+  - zeevi2024
+  - luo1998
+  confidence: B
+  notes: >-
+    This is the number a mechanistic model of adult height must reproduce as its irreducible
+    prediction error given both parents' heights.
+
+- edge_id: e00011
+  source: canalization_growth
+  target: catch_up_growth
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'monomolecular kinetics fit 83-90% of episodes; rate constant differs by disease, asymptote does not'
+  context: human, prepubertal, coeliac disease, juvenile hypothyroidism and GH deficiency
+  evidence_tier: T1
+  refs:
+  - wit2021
+  - prader1963
+  confidence: B
+
+- edge_id: e00012
+  source: canalization_growth
+  target: delayed_senescence_hypothesis
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: >-
+    if catch-up is plate-intrinsic, the disease-specific rate constants of wit2021 should track
+    the duration of growth suppression rather than the hormone replaced
+  context: human, prepubertal; competing mechanistic accounts of catch-up
+  evidence_tier: T5
+  refs:
+  - wit2002
+  - wit2021
+  confidence: speculative
+  gap_id: g_l9organism_006
+
+- edge_id: e00013
+  source: catch_down_growth
+  target: catch_up_growth
+  relation: correlates_with
+  sign: '-'
+  magnitude: 'bidirectional centile crossing onto the parental channel, largely complete by 2 years'
+  context: human infants, birth to 2 years
+  evidence_tier: T1
+  refs:
+  - smith1976
+  confidence: C
+
+- edge_id: e00014
+  source: sitting_height_ratio
+  target: vertebral_growth_plate
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    the post-pubertal rise in SH/H is the organism-level signature of continued vertebral
+    elongation after the lower-limb plates decelerate
+  context: human, both sexes, puberty and post-puberty
+  evidence_tier: T1
+  refs:
+  - fredriks2005
+  confidence: B
+
+- edge_id: e00015
+  source: sitting_height_ratio
+  target: site_specific_growth_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'SH/H SDS is negatively correlated with height SDS, so the partition itself scales with size'
+  context: human, ages 0-21, Dutch national reference
+  evidence_tier: T1
+  refs:
+  - fredriks2005
+  confidence: A
+
+- edge_id: e00016
+  source: limb_segment_proportion
+  target: proximal_humerus_plate
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'arm span is dominated by the proximal humeral and distal radial physes'
+  context: human, ages 5.5-18.5, Japanese national reference
+  evidence_tier: T1
+  refs:
+  - hirano2025
+  confidence: C
+
+- edge_id: e00017
+  source: limb_segment_proportion
+  target: distal_radius_plate
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'arm span/height ratio is population-specific at every age and plateaus at population-specific ages'
+  context: human, Japanese versus Dutch versus Turkish children
+  evidence_tier: T1
+  refs:
+  - hirano2025
+  confidence: C
+
+- edge_id: e00018
+  source: body_proportion_development
+  target: site_specific_growth_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: >-
+    growth restriction gives a patterned shortfall (cranial base -1.8 SDS, mandible <= -1.7 SDS,
+    lower face height +1.7 SDS), not uniform miniaturisation
+  context: human, 48 short subjects born small for gestational age, ages 2-32 y
+  evidence_tier: T1
+  refs:
+  - van1998
+  confidence: B
+
+- edge_id: e00019
+  source: height_sds_z_score
+  target: remaining_growth_prediction
+  relation: required_for
+  sign: '+'
+  magnitude: 'every remaining-growth method expresses attained and predicted height in SDS against a named reference'
+  context: human, both sexes, clinical prediction of adult height
+  evidence_tier: T1
+  refs:
+  - cole1992
+  - kuczmarski2002
+  confidence: A
+
+- edge_id: e00020
+  source: cdc_growth_reference
+  target: remaining_growth_prediction
+  relation: required_for
+  sign: '+'
+  magnitude: 'supplies the adult height distribution converting +/-1.64 SDS to +/-10.6 cm (girls) and +/-11.7 cm (boys)'
+  context: human, both sexes, US reference population
+  evidence_tier: T1
+  refs:
+  - kuczmarski2002
+  - zeevi2024
+  confidence: A
+
+- edge_id: e00021
+  source: who_growth_standard
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: unknown
+  magnitude: >-
+    site explains about 3% and individuals within sites about 70% of variance in early linear
+    growth, bounding how much of infant plate output is environmental
+  context: human, birth to 5 years, six countries
+  evidence_tier: T1
+  refs:
+  - who2006
+  confidence: A
+
+- edge_id: e00022
+  source: infancy_growth_nutrition_dependence
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'the infancy-childhood control switch at 6-12 months changes what regulates plate output'
+  context: human infants, 0-3 years
+  evidence_tier: T1
+  refs:
+  - karlberg1990
+  - who2006
+  confidence: C
+
+- edge_id: e00023
+  source: mini_puberty_infancy
+  target: testosterone_hormone
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    a 25th-to-75th percentile shift in free testosterone corresponds to +8.3 cm/yr growth velocity
+    in boys (95% CI 3.5-15.3)
+  context: human male infants, 0-12 months, Copenhagen Minipuberty Study
+  evidence_tier: T1
+  refs:
+  - pridik2026
+  confidence: B
+
+- edge_id: e00024
+  source: mini_puberty_infancy
+  target: igf1_systemic
+  relation: correlates_with
+  sign: '+'
+  magnitude: '32.6% of the free-testosterone effect on infant growth velocity is mediated by IGF-I'
+  context: human male infants, 0-12 months
+  evidence_tier: T1
+  refs:
+  - pridik2026
+  confidence: C
+
+- edge_id: e00025
+  source: dental_development_clock
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    r=0.85 in unselected schoolchildren, but the two clocks dissociate by 1.68 y in untreated GH
+    deficiency (bone age -1.99 y, dental age -0.31 y) with the delays uncorrelated
+  context: human, ages 6-17, healthy and GH-deficient
+  evidence_tier: T1
+  refs:
+  - demirjian1985
+  - torliskawalkow2026
+  - floresmir2005
+  confidence: A
+  notes: >-
+    The correlation in unselected samples is driven by shared chronological age; under endocrine
+    perturbation the clocks separate, which is the constraint on any single-systemic-signal theory
+    of maturation.
+
+- edge_id: e00026
+  source: tooth_mineralization_stages
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'Spearman 0.779 (males) and 0.785 (females) against cervical vertebral maturation stage'
+  context: human, 194 orthodontic patients aged 7-17, Iran
+  evidence_tier: T1
+  refs:
+  - mohammadianras2026
+  confidence: B
+
+- edge_id: e00027
+  source: skeletal_muscle_growth
+  target: physeal_stress_in_vivo
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'peak lean mass velocity precedes peak bone mineral accrual by 0.36 y (boys) and 0.51 y (girls)'
+  context: human, both sexes, pubertal growth spurt, whole body DXA
+  evidence_tier: T1
+  refs:
+  - rauch2004
+  confidence: B
+
+- edge_id: e00028
+  source: muscle_bone_mechanical_coupling
+  target: mechanical_modulation_growth
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    peak lean mass velocity explains 50% (total body), 61% (arms) and 41% (legs) of variance in
+    peak bone mineral content velocity; peak height velocity explains none of it independently
+  context: human, 70 boys and 68 girls, pubertal growth spurt
+  evidence_tier: T1
+  refs:
+  - rauch2004
+  confidence: B
+
+- edge_id: e00029
+  source: muscle_bone_mechanical_coupling
+  target: physeal_stress_in_vivo
+  relation: hypothesized_link
+  sign: '+'
+  magnitude: >-
+    the mechanostat requires that muscle force is the proximate stimulus at the plate; the human
+    data are compatible with independent genetic determination of both tissues
+  context: human, pubertal growth spurt
+  evidence_tier: T1
+  refs:
+  - rauch2004
+  confidence: speculative
+  gap_id: g_l9organism_013
+
+- edge_id: e00030
+  source: satellite_cell
+  target: resting_zone
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: >-
+    both are quiescent stem pools that contract as growth proceeds (satellite cells 14 to 5 per
+    fibre by mouse P21); no experiment tests whether they deplete on a shared schedule
+  context: mouse EDL versus mouse and human growth plate resting zone
+  evidence_tier: T1
+  refs:
+  - white2010
+  confidence: speculative
+  gap_id: g_l9organism_011
+
+- edge_id: e00031
+  source: muscle_hypertrophy_vs_hyperplasia
+  target: hypertrophic_volume_increase
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: >-
+    muscle enlarges 14.1-fold in volume without producing new fibres, whereas the plate produces
+    new cells that enlarge and are removed; the contrast is structural, not tested
+  context: mouse EDL versus mouse and rat growth plate hypertrophic zone
+  evidence_tier: T1
+  refs:
+  - white2010
+  confidence: speculative
+  gap_id: g_l9organism_011
+
+- edge_id: e00032
+  source: myostatin_mstn
+  target: mechanical_modulation_growth
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: >-
+    if muscle force drove longitudinal growth, human myostatin loss of function should lengthen
+    long bones; no such phenotype is reported
+  context: human; single MSTN loss-of-function case and adult ActRIIB blockade
+  evidence_tier: T1
+  refs:
+  - schuelke2004
+  - rooks2017
+  confidence: speculative
+  gap_id: g_l9organism_012
+
+- edge_id: e00033
+  source: activin_receptor_2b
+  target: mechanical_modulation_growth
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'receptor blockade raises muscle volume in adults with no reported skeletal length effect'
+  context: human adult males after casting-induced atrophy
+  evidence_tier: T1
+  refs:
+  - rooks2017
+  confidence: speculative
+  gap_id: g_l9organism_012
+
+- edge_id: e00034
+  source: craniofacial_growth
+  target: bone_age
+  relation: correlates_with
+  sign: unknown
+  magnitude: >-
+    craniofacial dimensions are reduced in short SGA subjects whose skeletal maturation is delayed
+    but whose dental age is not, so bone age alone does not predict facial growth
+  context: human, 48 short subjects born small for gestational age
+  evidence_tier: T1
+  refs:
+  - van1998
+  confidence: C
+
+- edge_id: e00035
+  source: cranial_base_synchondrosis
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'fusion stage correlates with cervical vertebral maturation at Spearman 0.955 (M) and 0.964 (F)'
+  context: human, 630 Korean subjects aged 6-18, 3D CT
+  evidence_tier: T1
+  refs:
+  - kim2024
+  confidence: A
+
+- edge_id: e00036
+  source: cranial_base_synchondrosis
+  target: epiphyseal_fusion
+  relation: precedes
+  sign: unknown
+  magnitude: >-
+    spheno-occipital fusion stages 3-4 occur at 12.7-13.9 y (M) and 11.0-12.5 y (F), around peak
+    height velocity and before appendicular fusion
+  context: human, both sexes, puberty
+  evidence_tier: T1
+  refs:
+  - kim2024
+  confidence: B
+
+- edge_id: e00037
+  source: suture_fusion_timing
+  target: epiphyseal_fusion
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: >-
+    up to 17% of healthy children close a calvarial suture before adulthood, decades before
+    appendicular fusion; whether the two share any mechanism is untested
+  context: human, 1119 healthy children aged 0-18, high-resolution CT
+  evidence_tier: T1
+  refs:
+  - han2025
+  confidence: speculative
+  gap_id: g_l9organism_016
+
+- edge_id: e00038
+  source: mandibular_condylar_cartilage
+  target: mechanical_modulation_growth
+  relation: hypothesized_link
+  sign: '+'
+  magnitude: >-
+    condylar progenitors express osteoblast markers and become chondrogenic under load, so
+    mandibular length is load-responsive in a way femoral length is not
+  context: rat mandibular condyle; no human cellular data
+  evidence_tier: T5
+  refs:
+  - robinson2015
+  confidence: speculative
+  gap_id: g_l9organism_016
+
+- edge_id: e00039
+  source: growth_velocity_curve
+  target: sex_difference_fusion_timing
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'girls reach peak height velocity about 2 years earlier and 1.2 cm/yr lower than boys'
+  context: human, both sexes, puberty
+  evidence_tier: T1
+  refs:
+  - chun2024
+  - galvo2025
+  - elhakeem2024
+  confidence: A
+
+- edge_id: e00040
+  source: growth_velocity_curve
+  target: growth_cessation
+  relation: precedes
+  sign: '-'
+  magnitude: 'end of pubertal growth defined at height velocity below 1 cm/yr in the QEPS decomposition'
+  context: human, both sexes, late puberty
+  evidence_tier: T1
+  refs:
+  - holmgren2017
+  confidence: B
+
+- edge_id: e00041
+  source: articular_cartilage
+  target: distal_femur_plate
+  relation: correlates_with
+  sign: '-'
+  magnitude: >-
+    femoral articular cartilage is significantly thicker while the distal femoral physis is open
+    and thins as the physis closes (p<0.001 at three femoral sites), whereas patellar cartilage
+    does not vary with age or maturity
+  context: human, ages 7-18, knee MRI, both sexes
+  evidence_tier: T1
+  refs:
+  - sidharthan2021
+  confidence: B

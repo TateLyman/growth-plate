@@ -1,0 +1,63 @@
+id: marrow_stromal_cell
+name: Bone marrow stromal cell (skeletal 'MSC')
+aliases:
+- BMSC
+- mesenchymal stem cell
+- CD146+ adventitial reticular cell
+type: cell_type
+summary: 'This node exists to hold the older, competing definition of the skeletal stem cell. Human MCAM/CD146-expressing
+  subendothelial cells in marrow stroma, transplanted heterotopically, self-renew, reconstitute identical
+  subendothelial cells in a miniature bone organ and transfer the hematopoietic microenvironment - the
+  assay that originally defined a human skeletal stem cell. In this framework the SSC is a specific perivascular
+  adventitial reticular cell that also makes marrow adipocytes. That last property is the point of collision:
+  the mSSC, Grem1+ OCR and hSSC schemes all explicitly exclude adipogenesis, and the hSSC paper reports
+  that CD146+ cells give smaller and fewer colonies than PDPN+CD146-CD73+CD164+ cells, while the CD146
+  school argues that FACS-defined ''MSC'' populations from different tissues are not equivalent and that
+  in vitro phenotype is not evidence of stemness. The disagreement is unresolved and is logged in audit/contradictions.md.'
+quantitative: []
+localization:
+- 'human marrow sinusoidal wall (subendothelial/adventitial reticular): confirmed (sacchetti2007)'
+- 'mouse perisinusoidal marrow: LepR+/Cxcl12-high equivalent (zhou2014)'
+human_evidence: direct
+human_evidence_note: Human CD146+ marrow stromal cells were prospectively isolated and shown to self-renew
+  and organise a hematopoietic microenvironment, though again only after heterotopic transplantation into
+  mice.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The defining experiments were done on human cells, but the readout is ectopic
+  ossicle formation in a mouse, which does not test the cell's role in a human growth plate.
+confidence: C
+key_refs:
+- ref_id: sacchetti2007
+  pmid: '17956733'
+  doi: 10.1016/j.cell.2007.08.025
+  first_author: Sacchetti B
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Human CD146+ subendothelial marrow stromal cells self-renew and transfer the hematopoietic
+    microenvironment
+- ref_id: bianco2015
+  pmid: '25758217'
+  doi: 10.1242/dev.102210
+  first_author: Bianco P
+  year: 2015
+  type: review
+  one_line_finding: Sets out the adventitial-reticular-cell definition of the skeletal stem cell against
+    FACS-hierarchy definitions
+- ref_id: chan2018
+  pmid: '30241615'
+  doi: 10.1016/j.cell.2018.07.029
+  first_author: Chan CKF
+  year: 2018
+  type: primary
+  one_line_finding: Reports CD146+ cells as inferior colony formers relative to the proposed hSSC
+open_questions:
+- g_l2stem_004
+contradicts:
+- human_skeletal_stem_cell
+- mouse_skeletal_stem_cell_hierarchy
+layer: L2
+stub: false
+last_verified: '2026-08-05'

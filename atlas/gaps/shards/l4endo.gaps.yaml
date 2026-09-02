@@ -1,0 +1,601 @@
+gaps:
+  - gap_id: g_l4endo_001
+    question: >-
+      In a growing human, what fraction of IGF1R activation in growth plate chondrocytes is
+      driven by IGF-1 produced within the plate itself versus IGF-1 delivered from the
+      circulation, and how does that fraction change across the resting, proliferative and
+      hypertrophic zones?
+    type: quantitative_gap
+    layer: L4
+    why_it_matters: >-
+      This single number decides between the somatomedin and dual-effector accounts, and it
+      determines whether a therapeutic should raise circulating IGF-1 (mecasermin), raise GH
+      to drive local IGF-1, or deliver IGF-1 to cartilage directly. The two hypotheses make
+      opposite predictions about who benefits from rhIGF-1 versus rhGH in partial GH
+      insensitivity, and the field currently answers the question with a mouse experiment
+      (liver-specific Igf1 deletion) whose species caveats are usually dropped in review.
+    what_is_known: >-
+      Two independent liver-specific Igf1 deletions in mouse cut serum IGF-1 by roughly 75%
+      with no detectable change in body weight, body length or femoral length (yakar1999,
+      sjgren1999), so circulating IGF-1 is not rate-limiting in mouse at that level. Below a
+      threshold - reached only when ALS knockout is combined with liver Igf1 deletion -
+      growth plate total, proliferative and hypertrophic zone heights all fall and are
+      restored by exogenous IGF-1 (yakar2002). On the local side, GH increases the number of
+      IGF-1-immunoreactive chondrocytes in the rat germinal zone (nilsson1986) and somatomedin
+      antiserum abolishes the local response to intra-arterial GH (schlechter1986). A
+      cartilage-targeting antibody-IGF-1 fusion raised growth plate height in GH-deficient
+      lit mice without kidney off-target proliferation, showing IGF-1 delivered to the plate
+      is sufficient (lui2019).
+    what_is_missing: >-
+      No measurement of IGF-1 concentration in human growth plate interstitial fluid, no
+      zonal gradient, and no partition of receptor occupancy between locally produced and
+      circulating ligand in any species. Every quantitative statement about the local/systemic
+      split rests on mouse whole-body genetics, which cannot separate concentration from
+      source at the receptor.
+    nearest_evidence: [yakar1999, sjgren1999, yakar2002, nilsson1986, schlechter1986, lui2019]
+    discriminating_experiment: >-
+      Model system - a mouse carrying an Igf1 allele whose product is distinguishable from
+      wild type by mass (e.g. a tagged or codon-variant IGF-1), expressed either only in
+      hepatocytes (Alb-Cre) or only in chondrocytes (Acan-CreERT2), on an otherwise
+      Igf1-null background. Readout - targeted mass spectrometry of laser-capture-
+      microdissected resting, proliferative and hypertrophic zones quantifying the two IGF-1
+      species separately, alongside phospho-IGF1R immunostaining by zone. Expected result -
+      under a somatomedin model, hepatocyte-derived IGF-1 dominates the physeal pool in all
+      zones and chondrocyte-derived IGF-1 is <20%; under a dual-effector model, chondrocyte-
+      derived IGF-1 exceeds hepatocyte-derived in the resting and proliferative zones
+      specifically and tracks GH dose. Human translation step - a parallel measurement in
+      surgical human physeal tissue (epiphysiodesis or limb-lengthening waste tissue) of
+      total and free IGF-1 per unit wet weight by zone, benchmarked against paired serum, to
+      establish whether the human plate concentration exceeds what serum ultrafiltration
+      could supply.
+    tractability: 3
+    search_log_ref: g_l4endo_001
+
+  - gap_id: g_l4endo_002
+    question: >-
+      Does the temporal PATTERN of GH exposure - burst amplitude, interburst trough depth and
+      burst frequency - change growth plate output in humans at matched 24-hour integrated GH
+      exposure, and has the GH concentration-time profile ever been measured in growth plate
+      interstitium in any species?
+    type: search_established
+    layer: L4
+    why_it_matters: >-
+      Long-acting weekly GH analogues are now in routine paediatric use and deliberately
+      flatten the GH profile. If growth is pulse-encoded rather than exposure-encoded, those
+      products are not pharmacokinetically equivalent to daily GH at matched AUC, and the
+      difference would appear in adult height rather than in year-one velocity. The rat data
+      say pattern matters and say so with a clean design; the human data do not exist.
+    what_is_known: >-
+      In GH-deficient dwarf rats given patterned intravenous infusions in which the peak and
+      trough components were varied independently of total dose, weight gain rose from
+      1.1 +/- 0.2 to 2.1 +/- 0.2 g/day when the extra dose was delivered as pulses but not
+      when delivered continuously, and pulsatile versus continuous dose-response curves were
+      significantly non-parallel; hepatic GHR and plasma GHBP showed the mirror-image
+      dependence on the continuous component (gevers1996). At the tissue level, pulsatile but
+      not continuous GH narrowed the resting zone while both patterns widened the
+      proliferative and hypertrophic zones (gevers1996a). Independently, meal-feeding versus
+      grazing at matched intake tripled GH secretion, added two bursts per day and preserved
+      tibial epiphyseal plate width in a ghrelin/GHS-R-dependent manner (hornsby2025). Human
+      deconvolution studies establish that the pattern exists (13.7-13.8 bursts/24 h, ~88% of
+      output pulsatile; van2016) and is modulated by age, BMI, sex steroids and sleep
+      (roelfsema2016, calvert2022, roelfsema2018).
+    what_is_missing: >-
+      No human study delivers the same total GH dose in two different temporal patterns and
+      measures linear growth. No study of any species measures the GH concentration-time
+      profile within growth plate interstitial fluid, so it is unknown whether the plate even
+      sees a pulsatile signal or whether capillary transit and matrix diffusion low-pass
+      filter it into a near-constant exposure.
+    nearest_evidence: [gevers1996, gevers1996a, hornsby2025, van2016, roelfsema2016]
+    discriminating_experiment: >-
+      Model system - prepubertal children with severe isolated GH deficiency, randomised
+      within a crossover or parallel design to daily rhGH versus a weekly long-acting GH
+      analogue titrated to identical 7-day integrated serum GH bioactivity (not identical
+      IGF-1), with 10-minute GH profiling to confirm the two patterns actually differ.
+      Readout - annualised height velocity by stadiometry plus knemometry for short-interval
+      resolution, with IGF-1 and IGFBP-3 as intermediate markers, followed to adult height.
+      Expected result - under exposure-encoding, height velocity and adult height are
+      identical between arms and IGF-1 is the sufficient intermediate; under pulse-encoding,
+      the daily arm outgrows the weekly arm at matched GH exposure, and the gap widens over
+      years rather than appearing in year one. Preclinical companion - implantable
+      microdialysis or ultrafiltration probe in the rabbit proximal tibial epiphysis to
+      recover the actual physeal GH profile during pulsatile versus continuous systemic
+      infusion, which would settle whether the plate is exposed to pulses at all.
+    tractability: 2
+    search_log_ref: g_l4endo_002
+
+  - gap_id: g_l4endo_003
+    question: >-
+      Is the glucocorticoid receptor expressed differentially across the resting,
+      proliferative and hypertrophic zones of the HUMAN growth plate, and what fraction of it
+      is ligand-occupied at physiological versus therapeutic cortisol exposure?
+    type: search_established
+    layer: L4
+    why_it_matters: >-
+      Glucocorticoid growth suppression is the commonest iatrogenic cause of short stature in
+      chronically ill children, and the rabbit unilateral-infusion experiments locate the
+      effect inside the plate. Which zone is hit determines whether the deficit is
+      recoverable: suppression of resting zone proliferation conserves progenitor capacity
+      and permits catch-up, whereas hypertrophic-zone effects would translate directly into
+      lost bone. Without zonal receptor data in human tissue, the choice between
+      glucocorticoid-sparing strategies and rescue with GH is made on rabbit histology.
+    what_is_known: >-
+      Local intra-plate dexamethasone (80 ng/uL at 1 uL/h) cut ipsilateral rabbit tibial
+      growth rate by 77% versus the contralateral vehicle-infused plate (baron1992), and
+      subsequent catch-up growth was also confined to the treated plate (baron1994).
+      Dexamethasone slowed rabbit resting zone chondrocyte proliferation and their numerical
+      depletion, conserving proliferative capacity (schrier2006). Against this, tamoxifen-
+      inducible chondrocyte-specific GR knockout mice had normal growth plates, long bone
+      length and bone microarchitecture at all ages tested, with impairment only in
+      metaphyseal fracture healing (tu2014).
+    what_is_missing: >-
+      No study reports GR protein abundance, isoform composition (GRalpha versus GRbeta), or
+      transcriptional output by zone in human growth plate tissue; there is no human
+      ligand-occupancy or GR-target-gene measurement in the physis at any cortisol exposure.
+    nearest_evidence: [baron1992, baron1994, schrier2006, tu2014]
+    discriminating_experiment: >-
+      Model system - archived and prospectively collected human growth plate tissue from
+      epiphysiodesis, limb-lengthening and post-mortem series, stratified by documented
+      systemic glucocorticoid exposure. Readout - laser-capture microdissection of the three
+      zones with (i) quantitative GR immunohistochemistry and GRalpha/GRbeta isoform-specific
+      RNA quantification, and (ii) a GR-target transcript panel (FKBP5, TSC22D3/GILZ, PER1)
+      as a readout of actual receptor occupancy rather than expression. Expected result -
+      under a resting-zone-suppression model, GR and its target transcripts are highest in
+      the resting zone and rise with glucocorticoid exposure there, matching the rabbit
+      catch-up phenotype; under a hypertrophic-zone model, GR target induction concentrates
+      in prehypertrophic/hypertrophic cells, predicting irreversible loss; under a
+      GR-independent model (consistent with tu2014) GR targets are induced weakly and
+      uniformly and the growth effect must be sought in perichondrium or vasculature.
+    tractability: 3
+    search_log_ref: g_l4endo_003
+
+  - gap_id: g_l4endo_004
+    question: >-
+      What is the complete dose-response relationship between serum estradiol and human
+      longitudinal growth rate, from the stimulatory low-dose limb through to the
+      fusion-accelerating high-dose limb, measured within a single experiment?
+    type: quantitative_gap
+    layer: L4
+    why_it_matters: >-
+      Aromatase inhibitors and low-dose estrogen are both used to manipulate adult height,
+      and they act on opposite sides of a curve whose shape is inferred rather than measured.
+      Knowing where the maximum lies, and how steeply the curve turns, determines whether an
+      aromatase inhibitor should aim for near-zero or for a low target estradiol, and whether
+      a given transgender or Turner-syndrome estrogen regimen sits on the growing or the
+      fusing side.
+    what_is_known: >-
+      The only direct human dose-response experiment is 40 years old and has n=5: four-day
+      intravenous estradiol infusions at 4, 20 and 90 ug/day in prepubertal and early
+      pubertal boys, double-blind and randomised, raised three-week ulnar growth velocity
+      significantly only at the LOWEST dose (0.45 to 1.38 mm/3 weeks, P<0.05, serum estradiol
+      10 +/- 2.3 pg/mL); at 20 and 90 ug/day the increments were smaller and non-significant
+      while somatomedin-C rose only at the two higher doses (carusonicolett1985). Separately,
+      the ascending limb has been fitted observationally: half-maximal pubertal growth
+      acceleration at morning estradiol 20 pmol/L in girls (95% CI 13-31) and 6.5 pmol/L in
+      boys (3.2-13), with <25% of potential growth remaining above the Tanner B2 range
+      (albin2012, albin2013). The descending limb is known only through long-term
+      pharmacology (ross2011, quigley2014, rosenfield2005) and through rabbit senescence
+      experiments at a single high dose (weise2001, nilsson2014).
+    what_is_missing: >-
+      No experiment measures growth rate at four or more estradiol concentrations spanning
+      ~5 to ~200 pmol/L in the same individuals with a modern ultrasensitive assay, so the
+      position of the maximum, the steepness of the descending limb, and whether the curve is
+      genuinely biphasic rather than monotonically saturating are all unmeasured. The 1985
+      study is underpowered (n=5, three doses, no significant difference BETWEEN doses) and
+      its assay is not comparable with current extraction RIA or LC-MS/MS values.
+    nearest_evidence: [carusonicolett1985, albin2012, albin2013, ross2011, weise2001]
+    discriminating_experiment: >-
+      Model system - prepubertal or early pubertal children (for example, girls with Turner
+      syndrome already committed to estrogen replacement, or adolescents on GnRH-analogue
+      suppression) randomised to four transdermal estradiol dose levels producing steady-state
+      serum estradiol of approximately 5, 15, 40 and 120 pmol/L by LC-MS/MS, each maintained
+      for 8-12 weeks in a crossover with washout. Readout - knemometry (lower-leg length
+      velocity, resolution ~0.1 mm/week) as the short-interval growth endpoint, with bone-age
+      advance by automated AI reading and serum IGF-1, IGFBP-3 and bone turnover markers as
+      secondary outcomes. Expected result - under a biphasic model, growth velocity peaks at
+      the 15 pmol/L level and is lower at both 5 and 120 pmol/L while bone-age advance
+      increases monotonically, giving a genuine inverted-U for growth against a monotone
+      maturation curve; under a saturating model, growth velocity rises monotonically and
+      plateaus, and the apparent "high-dose inhibition" is entirely attributable to
+      accelerated maturation rather than to reduced growth rate.
+    tractability: 3
+    search_log_ref: g_l4endo_004
+
+  - gap_id: g_l4endo_005
+    question: >-
+      Do growth plate chondrocytes express 11beta-HSD1 or 11beta-HSD2, and does pre-receptor
+      cortisol/cortisone interconversion within the plate amplify or damp systemic
+      glucocorticoid exposure?
+    type: search_established
+    layer: L4
+    why_it_matters: >-
+      Pre-receptor metabolism is the step that would explain why children on identical
+      glucocorticoid doses show very different growth suppression, and it is the only
+      mechanism in the glucocorticoid arm that is pharmacologically addressable without
+      abandoning the steroid. If the plate expresses 11beta-HSD1, selective inhibitors
+      already developed for metabolic disease become candidate growth-sparing agents; if it
+      expresses 11beta-HSD2, the plate defends itself and dose-response variation must be
+      sought elsewhere.
+    what_is_known: >-
+      11beta-HSD1 activity is well documented in osteoblasts and osteoclasts, where it
+      mediates part of glucocorticoid-induced bone loss, and 11beta-HSD2 forms the placental
+      barrier whose reduction is linked to fetal growth restriction. Human HSD11B2 loss of
+      function causes apparent mineralocorticoid excess with low birth weight. Glucocorticoid
+      action on the plate itself is demonstrably local (baron1992, baron1994).
+    what_is_missing: >-
+      No primary study measures 11beta-HSD1 or 11beta-HSD2 expression, protein or enzymatic
+      activity in growth plate chondrocytes, by zone or in bulk, in any species. The
+      pre-receptor amplification model is applied to the physis by extension from osteoblast
+      data.
+    nearest_evidence: [baron1992, baron1994, tu2014]
+    discriminating_experiment: >-
+      Model system - human growth plate tissue from epiphysiodesis or limb-lengthening,
+      paired with rabbit proximal tibial plate for functional work. Readout - (i) zonal
+      HSD11B1/HSD11B2 transcript and protein quantification by laser-capture
+      microdissection plus immunohistochemistry; (ii) enzymatic assay on microdissected zonal
+      homogenates measuring cortisone-to-cortisol and cortisol-to-cortisone conversion by
+      LC-MS/MS with deuterated internal standards. Expected result - under an amplification
+      model, HSD11B1 reductase activity is detectable in the resting/proliferative zones and
+      a selective 11beta-HSD1 inhibitor co-infused with dexamethasone-precursor
+      (11-dehydrocorticosterone) in the rabbit unilateral model abolishes the ipsilateral
+      growth suppression; under a protection model, HSD11B2 dehydrogenase dominates and
+      inhibiting it worsens local suppression; under a null model, neither activity exceeds
+      assay background and the plate's glucocorticoid exposure equals free plasma cortisol.
+    tractability: 4
+    search_log_ref: g_l4endo_005
+
+  - gap_id: g_l4endo_006
+    question: >-
+      Does the human growth plate contain a functioning cell-autonomous circadian oscillator,
+      and does disrupting it change longitudinal bone growth in humans?
+    type: search_established
+    layer: L4
+    why_it_matters: >-
+      Sleep-associated GH release, seasonal variation in growth velocity and the diurnal
+      variation in standing height are all routinely attributed to "circadian regulation of
+      growth" without specifying whether the clock is in the pituitary, the plate, or both.
+      If the plate has its own clock that gates matrix synthesis, then shift-work-like
+      conditions, night-time light exposure and mistimed GH dosing would have effects that no
+      systemic measurement would detect.
+    what_is_known: >-
+      This search REVISED the gap rather than confirming absence. Rodent evidence for a
+      functional physeal clock does exist: artificial light at night suppressed developmental
+      growth plate cartilage formation in mice by inhibiting BMAL1-driven collagen
+      hydroxylation (chen2023). Cartilage clock literature is otherwise dominated by articular
+      and temporomandibular cartilage in osteoarthritis models. On the systemic side the human
+      GH axis is strongly nycthemeral (van2016, calvert2022) and is entrained by feeding
+      pattern through ghrelin in both rodents and humans (hornsby2025).
+    what_is_missing: >-
+      No demonstration of a running BMAL1/PER oscillation in human growth plate chondrocytes,
+      no human intervention altering clock phase with a linear-growth endpoint, and no
+      separation in any species of the plate-intrinsic clock from the entrained systemic GH
+      rhythm.
+    nearest_evidence: [chen2023, van2016, calvert2022, hornsby2025]
+    discriminating_experiment: >-
+      Model system - human growth plate chondrocytes from surgical waste tissue, transduced
+      with a PER2::luciferase reporter and cultured as explants; in parallel, a mouse carrying
+      chondrocyte-specific Bmal1 deletion (Acan-CreERT2) versus a mouse with an intact
+      chondrocyte clock but a pituitary-specific Bmal1 deletion. Readout - bioluminescence
+      period and amplitude for the human explants; tibial length, growth plate zonal heights
+      and matrix collagen hydroxylation for the mouse arms. Expected result - under a
+      plate-intrinsic model, human explants sustain a ~24 h oscillation for several cycles in
+      constant conditions and chondrocyte-Bmal1 deletion shortens the tibia independently of
+      normal GH rhythm; under a purely systemic model, human explants damp within one cycle
+      and only the pituitary deletion, which flattens GH rhythmicity, affects bone length.
+    tractability: 3
+    search_log_ref: g_l4endo_006
+
+  - gap_id: g_l4endo_007
+    question: >-
+      Which thyroid hormone receptor isoform mediates T3 action in growth plate chondrocytes -
+      TRalpha, as human THRA mutations imply, or TRbeta, as mouse rib chondrocyte knockouts
+      imply?
+    type: contradiction
+    layer: L4
+    why_it_matters: >-
+      Isoform-selective thyromimetics (resmetirom-class TRbeta agonists) are entering clinical
+      use, and their skeletal safety in growing children depends entirely on which isoform the
+      plate uses. If the plate is TRbeta-driven, a TRbeta-selective agonist would accelerate
+      hypertrophic differentiation and advance bone age; if TRalpha-driven, the same drug
+      would be skeletally silent. The literature currently supports both answers.
+    what_is_known: >-
+      Human side - heterozygous dominant-negative THRA variants cause growth retardation,
+      delayed bone age and disharmonious short stature with low free T4 and normal-to-mildly-
+      raised TSH, and these children respond to levothyroxine plus rhGH with height gains up
+      to 2.5 SDS (jorge2025). Human RTHbeta (dominant-negative THRB) is common, well described
+      and typically NOT associated with short stature. Mouse side - in primary neonatal rib
+      chondrocytes, T3 reduced proliferation and accelerated differentiation normally in
+      TRalpha-deficient cells but ALL T3 responses were abolished in TRbeta-deficient cells,
+      and T3 upregulated TRbeta1 itself (rabier2006). Both TRalpha1, TRalpha2 and TRbeta1
+      protein are present in rat reserve and proliferating zone chondrocytes and absent from
+      hypertrophic cells (robson2000), so localisation does not adjudicate.
+    what_is_missing: >-
+      No isoform-selective test in long-bone growth plate chondrocytes of either species -
+      the mouse experiment used RIB chondrocytes, a different skeletal element - and no
+      measurement of THRA versus THRB transcript or protein in human physeal tissue. Germline
+      knockouts also permit compensation that a conditional, adult-onset deletion would not.
+    nearest_evidence: [jorge2025, rabier2006, robson2000]
+    discriminating_experiment: >-
+      Model system - side-by-side conditional deletion of Thra and Thrb in Acan-CreERT2
+      chondrocytes of the mouse proximal tibia, induced postnatally, plus primary human growth
+      plate chondrocytes from surgical waste treated with isoform-selective agonists
+      (TRbeta-selective resmetirom-class compound versus a TRalpha-sparing control) at matched
+      receptor occupancy. Readout - tibial length and zonal heights in vivo; COL10A1, ALPL and
+      proliferation index in the human cells; isoform transcript quantification in the same
+      human tissue. Expected result - under the human-genetics-led model, Thra deletion
+      shortens the tibia and TRbeta-selective agonists leave human chondrocyte differentiation
+      markers unchanged; under the mouse-chondrocyte-led model, Thrb deletion is the one that
+      blocks hypertrophic differentiation and the TRbeta agonist induces COL10A1 in human
+      cells - which would be a direct paediatric safety signal for that drug class.
+    tractability: 3
+
+  - gap_id: g_l4endo_008
+    question: >-
+      What drives the seasonal variation in human height velocity - photoperiod, ambient
+      temperature, or seasonal nutrition - and why does the phase of the peak differ between
+      cohorts?
+    type: contradiction
+    layer: L4
+    why_it_matters: >-
+      The seasonal amplitude is not trivial (~13% of mean linear growth velocity in infants),
+      which means growth-velocity measurement intervals shorter than a year are systematically
+      biased by season - directly affecting clinical decisions about starting or stopping GH
+      and the interpretation of short trials. It is also the only routinely observable
+      environmental modulator of the human growth plate, so identifying the transducer would
+      be mechanistically valuable.
+    what_is_known: >-
+      Three large human cohorts agree that seasonality is real and disagree on phase and
+      driver. In 11,587 three-month intervals from 2,277 GH-treated prepubertal children,
+      height velocity scaled with average daylight hours (+0.146 cm/yr per hour in treatment
+      year 1, +0.121 thereafter), the effect grew with latitude, and calendar month had no
+      independent effect - a photoperiod signature (shulman2013). In 9,409 Japanese infants,
+      length z-velocity peaked in SUMMER, with a winter-summer difference of 0.0026 z/day
+      (95% CI 0.0015-0.0036), about 13% of mean velocity (narumi2020). In 760 Danish 8-11
+      year olds, height velocity was above the 6.10 cm/yr mean in JANUARY-APRIL, and unlike
+      earlier reports of a spring height peak with an autumn weight peak, weight, BMI and
+      fat-free mass index peaked coincidentally (dalskov2016).
+    what_is_missing: >-
+      No study manipulates photoperiod, temperature or energy intake independently while
+      measuring growth, and no study measures a candidate mediator (melatonin amplitude,
+      25-hydroxyvitamin D, IGF-1, GH pulsatility) longitudinally across seasons in the same
+      children with growth as the outcome. The competing explanations have never been placed
+      in one model.
+    nearest_evidence: [shulman2013, narumi2020, dalskov2016]
+    discriminating_experiment: >-
+      Model system - a prospective cohort of prepubertal children measured by knemometry every
+      2 weeks for 24 months at three widely separated latitudes (for example ~60 N, ~35 N and
+      ~5 N), with a nested arm in a controlled-photoperiod setting (polar winter workers'
+      children or a residential facility with fixed lighting). Readout - lower-leg length
+      velocity as the outcome, with monthly serum 25(OH)D, IGF-1, IGFBP-3, overnight urinary
+      6-sulphatoxymelatonin and 7-day dietary energy record as candidate mediators, analysed
+      by mediation model. Expected result - under a photoperiod model, growth velocity
+      amplitude scales with latitude, peaks in phase with daylight hours regardless of
+      temperature, and melatonin amplitude is the strongest mediator; under a
+      temperature/energy model, amplitude tracks seasonal temperature or energy intake and is
+      near zero at low latitude despite a substantial photoperiod swing there being absent;
+      under a vitamin D model, 25(OH)D mediates the effect and supplementation in a randomised
+      sub-arm abolishes the seasonal amplitude.
+    tractability: 3
+
+  - gap_id: g_l4endo_009
+    question: >-
+      Which IGF binding proteins are present in the human growth plate, and do they form a
+      zonal gradient that sets the free IGF-1 concentration differently in the resting,
+      proliferative and hypertrophic zones?
+    type: search_established
+    layer: L4
+    why_it_matters: >-
+      The IGF bioavailability layer is demonstrably load-bearing in humans - PAPP-A2 loss
+      raises total IGF-1 several-fold while cutting the bioactive fraction to 0.09-0.32% and
+      producing heights of -2.16 to -3.81 SDS - yet the entire model is built on serum
+      measurements. If IGFBP-5, which binds hydroxyapatite and matrix, forms a zonal reservoir
+      in the plate, then the local free IGF-1 concentration is a matrix property rather than a
+      circulating one, and PAPP-A2 replacement therapy would act by remodelling that reservoir
+      rather than by raising serum free IGF-1.
+    what_is_known: >-
+      In serum, human PAPPA2 deficiency raises IGFBP-3 to 4403-5912 ug/L (Tanner I reference
+      2206-4200) and IGFBP-5 to 645-997 ug/L (reference 211-707) while free IGF-1 falls
+      (dauber2016), and IGFALS deficiency collapses IGFBP-3 with only mild short stature
+      (domen2004). At the tissue level, PAPP-A is required for IGF-dependent chondrocyte
+      differentiation and columnar organisation in mouse and zebrafish cartilage (harboe2024),
+      implying substrate IGFBPs are present and functional there.
+    what_is_missing: >-
+      No zonal immunolocalisation or quantification of any IGFBP in human growth plate tissue,
+      and no measurement of free versus bound IGF-1 in physeal interstitium in any species.
+      Searching for zonal IGFBP localisation in human physis returns only serum-based clinical
+      studies and rodent whole-plate work.
+    nearest_evidence: [dauber2016, domen2004, harboe2024, kobber2022]
+    discriminating_experiment: >-
+      Model system - human growth plate tissue from epiphysiodesis and limb-lengthening
+      surgery across a range of ages, with rabbit proximal tibia as a functional companion.
+      Readout - multiplexed immunofluorescence or imaging mass cytometry for IGFBP-2 through
+      -6, ALS, PAPP-A, PAPP-A2 and STC2 across the three zones, quantified per cell and per
+      unit matrix area, cross-validated by laser-capture zonal proteomics. Expected result -
+      under a matrix-reservoir model, IGFBP-5 and PAPP-A2 are concentrated in the
+      proliferative zone matrix and free IGF-1 (by zonal ultrafiltration) peaks where
+      protease-to-inhibitor ratio is highest; under a serum-delivery model, IGFBP profile in
+      the plate mirrors serum with no zonal structure and the free fraction is uniform.
+    tractability: 3
+    search_log_ref: g_l4endo_009
+
+  - gap_id: g_l4endo_010
+    question: >-
+      Does human SOCS2 loss of function produce overgrowth, as the mouse predicts, and if not,
+      what compensates?
+    type: species_gap
+    layer: L4
+    why_it_matters: >-
+      Socs2-null mice are among the largest single-gene overgrowth models in the GH axis and
+      are cited as evidence that GH signalling is submaximally braked. If no human phenotype
+      exists at any allele frequency, the brake is either redundant in humans or SOCS2 loss is
+      selected against for non-skeletal reasons - and the therapeutic idea of pharmacologically
+      inhibiting SOCS2 to enhance GH response, which follows directly from the mouse, loses its
+      premise.
+    what_is_known: >-
+      Socs2-null mice show substantial skeletal overgrowth with normal circulating GH and
+      IGF-1, and the overgrowth is GH-dependent (metcalf2000). SOCS2 is a direct STAT5B target
+      and binds phosphorylated GHR to target it for degradation, so the mechanism is specific
+      and well defined. Human STAT5B loss of function - which would also remove SOCS2
+      induction - causes short, not tall, stature (kofoed2003, hwa2005), consistent with the
+      brake being downstream of the signal it limits.
+    what_is_missing: >-
+      No reported human SOCS2 biallelic loss-of-function individual with an overgrowth
+      phenotype, and no systematic interrogation of tall-stature cohorts or population
+      biobanks for SOCS2 predicted-loss-of-function carriers with height as the tested
+      outcome.
+    nearest_evidence: [metcalf2000, kofoed2003, hwa2005]
+    discriminating_experiment: >-
+      Model system - population-scale exome/genome biobanks (UK Biobank, All of Us, gnomAD-
+      linked cohorts) plus curated idiopathic tall-stature and overgrowth cohorts. Readout -
+      burden test of SOCS2 predicted loss-of-function and missense-deleterious variants
+      against standing height in SD units, with a matched positive control (e.g. NPR2
+      gain-of-function) and negative control gene set; complemented by a
+      SOCS2-hypomorph knock-in mouse humanised at the GHR-SOCS2 interface. Expected result -
+      under a conserved-brake model, SOCS2 pLoF carriers are significantly taller with an
+      effect size of the order of +0.3 to +1 SD and the signal replicates across biobanks;
+      under a species-divergence model, SOCS2 pLoF carriers exist at expected frequency with
+      no height effect, which would locate the mouse phenotype in a rodent-specific feature of
+      GH pulse amplitude or GHR turnover rather than in a general mammalian mechanism.
+    tractability: 5
+    search_log_ref: g_l4endo_010
+
+  - gap_id: g_l4endo_011
+    question: >-
+      Why does pharmacological glucocorticoid act locally and potently on the growth plate
+      (77% growth suppression on unilateral infusion in rabbit) while genetic deletion of the
+      glucocorticoid receptor from chondrocytes leaves mouse growth plates and long bone
+      length entirely normal?
+    type: contradiction
+    layer: L4
+    why_it_matters: >-
+      These two results are used interchangeably to support "glucocorticoids act on the
+      chondrocyte", but they cannot both mean that. Either the receptor mediating
+      pharmacological suppression is not the classical chondrocyte GR (raising the possibility
+      of a perichondrial, vascular or mineralocorticoid-receptor route), or endogenous and
+      pharmacological glucocorticoid exposures engage different mechanisms. The answer changes
+      what a growth-sparing steroid would have to avoid.
+    what_is_known: >-
+      Local intra-plate dexamethasone infusion (80 ng/uL at 1 uL/h) reduced ipsilateral rabbit
+      proximal tibial growth by 77% versus the vehicle-infused contralateral plate, P<0.0001,
+      with a measurement error of ~5% (baron1992); subsequent catch-up was likewise confined
+      to the treated plate (baron1994); dexamethasone slowed rabbit resting zone chondrocyte
+      proliferation and their numerical depletion (schrier2006). Against this, tamoxifen-
+      inducible chondrocyte-specific GR knockout mice showed normal knee joint architecture,
+      cartilage structure, growth plates, intervertebral discs, long bone length and bone
+      microarchitecture at all ages, with a defect confined to metaphyseal fracture healing
+      (tu2014).
+    what_is_missing: >-
+      No experiment applies the two designs to the same question: nobody has performed the
+      unilateral local dexamethasone infusion in a chondrocyte-specific GR knockout animal,
+      which is the single measurement that would resolve it. Nor has the mouse GR knockout
+      been challenged with systemic glucocorticoid excess and a growth endpoint.
+    nearest_evidence: [baron1992, baron1994, schrier2006, tu2014]
+    discriminating_experiment: >-
+      Model system - Acan-CreERT2 x Nr3c1-flox mice and littermate controls, each receiving
+      unilateral intra-growth-plate dexamethasone infusion with contralateral vehicle, plus a
+      systemic high-dose dexamethasone arm. Readout - ipsilateral versus contralateral tibial
+      growth rate by calcein/tetracycline double labelling and pin-radiograph measurement,
+      with zonal heights and resting zone chondrocyte counts. Expected result - under a
+      chondrocyte-GR model, local dexamethasone suppresses growth in controls but has no
+      ipsilateral effect in chondrocyte-GR-null mice, and the mouse null result in tu2014 is
+      simply the absence of a physiological ligand challenge; under a non-chondrocyte-target
+      model, local dexamethasone suppresses growth equally in both genotypes, redirecting the
+      search to perichondrium, hypertrophic-zone vasculature or the mineralocorticoid
+      receptor.
+    tractability: 4
+
+  - gap_id: g_l4endo_012
+    question: >-
+      Does restoring IGF-1 bioavailability - rather than IGF-1 concentration - rescue growth
+      in humans, and by how much per unit increase in the bioactive IGF fraction?
+    type: known_unknown
+    layer: L4
+    why_it_matters: >-
+      PAPP-A2 deficiency is the proof that the bioavailability layer sets stature in humans,
+      and it also names a specific replacement molecule (recombinant PAPP-A2) that no other
+      short-stature condition has. If a defined increase in bioactive IGF fraction maps to a
+      defined height-velocity gain, the same relationship becomes the dose target for
+      idiopathic short stature, GH insensitivity and any condition where total IGF-1 is normal
+      but free IGF-1 is low - a much larger group than PAPPA2 mutation carriers.
+    what_is_known: >-
+      In PAPP-A2-deficient humans the bioactive IGF fraction is 0.09-0.32% of total against a
+      healthy median of 1.23% (range 0.46-2.59%), free IGF-1 is 0.27-1.98 ug/L against a
+      prepubertal reference of 1.58-3.15, and heights are -2.16 to -3.81 SDS (dauber2016).
+      rhIGF-1 improves growth velocity and height in these patients. In Pappa2-null mice,
+      rhGH, rhIGF-1 and rhPAPP-A2 all partially rescue skeletal growth but with sex-specific
+      differences in the signalling response (fernndezarjona2024, lpezgambero2025).
+      Population-level data show PAPP-A2 and STC2, but not PAPP-A, associate with circulating
+      total IGF-1 in adults (nimptsch2024), and children with obesity have high free IGF-1 and
+      accelerated growth despite reduced pappalysins (martnrivada2025).
+    what_is_missing: >-
+      No human dose-response linking a measured change in bioactive or free IGF-1 to a measured
+      change in height velocity, in PAPP-A2 deficiency or in any other condition; no human
+      recombinant PAPP-A2 exposure; and no agreed reference method for bioactive IGF, so the
+      0.09-0.32% versus 1.23% comparison rests on a single laboratory's assay.
+    nearest_evidence: [dauber2016, fernndezarjona2024, lpezgambero2025, nimptsch2024, martnrivada2025]
+    discriminating_experiment: >-
+      Model system - a multi-arm dose-finding study in children with low free IGF-1 and normal
+      or high total IGF-1 (PAPPA2 mutation carriers plus a broader biochemically defined
+      cohort), receiving rhIGF-1 at several doses, with a parallel first-in-human recombinant
+      PAPP-A2 arm if available. Readout - free and bioactive IGF-1 by a harmonised assay
+      (IGF-1 kinase receptor activation bioassay plus ultrafiltration free IGF-1) measured at
+      steady state, against 6-month height velocity and 12-month height SDS change. Expected
+      result - under a bioavailability model, height velocity is a monotone function of
+      bioactive IGF fraction irrespective of total IGF-1, and rhPAPP-A2 achieves the same
+      velocity as rhIGF-1 at a lower total IGF-1; under a concentration model, height velocity
+      tracks total or free IGF-1 mass and the bioactive fraction adds no independent
+      information.
+    tractability: 2
+  - gap_id: g_l4_does_dio2_set_resting_zone_quiescence_in_the_growth_plate
+    question: Does type 2 deiodinase, and therefore local intracellular T3 tone inside the resting zone, maintain
+      the growth plate reserve the way it maintains quiescence and self-renewal in muscle - and does anything
+      in the stack perturb it?
+    type: species_gap
+    layer: L4
+    tractability: 2
+    why_it_matters: THIS IS THE ONE MUSCLE MECHANISM THAT SURVIVED A DIRECT TEST AGAINST HUMAN CARTILAGE, and
+      it points at a lever nobody in this field has touched. de2026a shows D2 MARKS quiescent stem cells in muscle
+      and skin, that depleting it forces a G(Alert)-like state which RAISES proliferative potential and DESTROYS
+      self-renewal, depleting the pool and causing regenerative failure over time, and that the mechanism runs
+      through thyroid hormone sustaining Notch. THAT IS THE ROUND-198 FIXED-RESERVE MODEL MEASURED IN ANOTHER
+      TISSUE. A round-201 re-analysis of avijgan2026 deposited human spatial data finds DIO2 at 32 CPM in the
+      resting zone and UNDETECTABLE in the proliferative and hypertrophic zones (6 sections up, 0 down, sign p
+      = 0.031), with NOTCH2 3.4-fold resting-zone enriched (p = 0.016) and THRA and HEY1 trending the same way.
+      The whole axis is compartment-matched to the human reserve. If it functions as it does in muscle the direction
+      of benefit is the OPPOSITE of the intuitive one - raising local T3 inside the plate would SPEND the reserve
+      rather than build it. Thyroid status is also manipulable, monitorable, and already routinely disturbed by
+      growth hormone therapy, which makes this a question the stack cannot leave unanswered.
+    what_is_known: de2026a, mouse - D2 marks quiescent muscle and skin stem cells; genetic D2 depletion in quiescent
+      muscle stem cells triggers a G0 to G(Alert)-like transition that increases proliferative potential but impairs
+      self-renewal, depleting the stem cell pool and causing regenerative failure over time; thyroid hormone sustains
+      Notch and active Notch overexpression partially rescues; transient pharmacological D2 inhibition accelerates
+      muscle regeneration and skin wound healing. HUMAN GROWTH PLATE, from a round-201 re-analysis whose pipeline
+      reproduces the authors' own markers (ZNF550 85.7x, UCMA 22.0x, CHRDL2 16.2x, SFRP5 7.0x, and COL10A1 correctly
+      hypertrophic) - DIO2 is resting-zone restricted within the cartilage, the secondary ossification centre
+      is also positive at 48.6 CPM, DIO3 is at the detection floor, THRA is 1.52-fold and THRB 1.20-fold resting-zone
+      enriched. Separately and long established, thyroid hormone is required for growth plate function and drives
+      hypertrophic differentiation, so the tissue is known to be thyroid-responsive - what is new is that the
+      ENZYME SETTING LOCAL T3 sits in the reserve compartment and nowhere else in the cartilage.
+    what_is_missing: Any functional D2 experiment in cartilage - conditional Dio2 deletion or D2 inhibition in
+      a growing animal with a BONE LENGTH endpoint and the Hunziker decomposition rather than a zone height. Also
+      missing - D2 PROTEIN localisation in growth plate, since the finding above is transcript only; whether resting-zone
+      D2 changes with pubertal stage or approaching fusion; whether growth hormone alters growth plate D2 as it
+      alters peripheral T4-to-T3 conversion; and whether the Notch arm is the effector in cartilage as it is in
+      muscle.
+    nearest_evidence:
+    - de2026a
+    - avijgan2026
+    - rodgers2014
+    - weise2001
+    nearest_evidence_note: de2026a carries the mechanism and no cartilage; avijgan2026 carries the human cartilage
+      compartment and no function. Neither cites the other and no paper joins them. weise2001 is listed because
+      de2026a is its model in a different tissue - alerting a quiescent pool raises output and exhausts it.
+    discriminating_experiment: Two arms, cheap one first. (1) IN EXISTING TISSUE - D2 and NOTCH2 protein immunostaining
+      on the human growth plate sections both Karolinska groups already hold, scored by zone, which converts a
+      transcript screen into a localisation result and costs no new material. (2) IN A GROWING ANIMAL - cartilage-conditional
+      Dio2 deletion, or systemic D2 inhibition with iopanoic acid, from weaning to skeletal maturity, reading
+      FINAL BONE LENGTH plus the Hunziker five plus resting-zone cell number over time. de2026a predicts a specific
+      and unusual shape - EARLY acceleration followed by EARLY exhaustion and a SHORTER final bone, with resting-zone
+      cell number falling faster than in controls. That shape is distinguishable from every other manipulation
+      in this atlas, because no other agent is predicted to raise early velocity and lower adult length through
+      pool depletion specifically. If final length instead RISES, the muscle model does not transfer and this
+      line closes.

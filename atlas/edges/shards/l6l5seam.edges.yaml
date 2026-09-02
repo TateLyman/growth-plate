@@ -1,0 +1,2013 @@
+# Cross-layer seam shard: L6->L1, L6->L5, L5->L1, L11->L5, L13->{L1,L5,L6}
+# All four seams were empty or near-empty before this pass.
+# Convention used here: `timescale` records the observation window over which the
+# stated effect was demonstrated, NOT a guess at the underlying biological rate.
+edges:
+
+# =====================================================================
+# SEAM A - L6 mechanobiology -> L1 growth plate architecture
+# NOTE: the quantitative stress-growth coefficient is rat/rabbit/calf only and
+# in vivo human physeal stress has never been measured (physeal_stress_in_vivo,
+# g_l6mech_003). Every animal-derived edge below therefore carries an explicit
+# species caveat; the human-context claims are written separately and are almost
+# all either surgical (guided growth, epiphysiodesis) or observational (sport).
+# =====================================================================
+
+  - edge_id: e00001
+    source: hueter_volkmann_law
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: "-"
+    magnitude: "17.1% change in longitudinal growth rate per 0.1 MPa sustained stress (range across plates 9.2-23.9); 15.0%/0.1 MPa for caudal vertebral plates, 18.6%/0.1 MPa for proximal tibial plates; compression slows, distraction accelerates"
+    context: "rat, rabbit and calf caudal vertebrae and proximal tibiae; immature animals, sex not reported; whole-plate output measured by oxytetracycline label displacement"
+    timescale: "8 days of sustained external loading"
+    evidence_tier: T1
+    refs: [stokes2006, stokes2002]
+    confidence: C
+    notes: >-
+      The coefficient is invariant across a 12-fold range of baseline growth rate (30-366 um/day),
+      which is why it is applied to humans. No human measurement of the coefficient exists and no
+      human physeal stress has ever been measured in vivo (g_l6mech_001, g_l6mech_003), so the
+      human application is extrapolation across three species and two skeletal sites.
+
+  - edge_id: e00002
+    source: hueter_volkmann_law
+    target: growth_plate_height
+    relation: correlates_with
+    sign: "-"
+    magnitude: "hypertrophic zone height 87% of control; total plate thickness significantly reduced under static compression only"
+    context: "rat caudal vertebra, ~60% body weight for 4 weeks (stokes2002); rat caudal vertebra Cd7, 0.2 MPa mean for 2 weeks (valteau2011); immature animals"
+    timescale: "2-4 weeks of sustained loading"
+    evidence_tier: T1
+    refs: [stokes2002, valteau2011]
+    confidence: C
+    notes: >-
+      Plate height is a poor proxy for growth rate in general, but under load it moves in the same
+      direction as growth rate because the same zonal parameters drive both.
+
+  - edge_id: e00003
+    source: mechanical_modulation_growth
+    target: chondrocyte_hypertrophy
+    relation: inhibits
+    sign: "-"
+    magnitude: "mean hypertrophic chondrocyte height 85% of control; increment in cell height along the growth direction 78% of control"
+    context: "rat caudal vertebra, sustained compression at ~60% body weight, 4 weeks; both effects significant"
+    timescale: "4 weeks"
+    evidence_tier: T1
+    refs: [stokes2002]
+    confidence: C
+
+  - edge_id: e00004
+    source: mechanical_modulation_growth
+    target: hypertrophic_volume_increase
+    relation: inhibits
+    sign: "-"
+    magnitude: "final hypertrophic cell height is the single strongest correlate of loaded growth rate: normalised multiple-regression coefficient 1.39, overall r=0.56"
+    context: "pooled loaded and control plates from rat, rabbit and calf caudal vertebrae and proximal tibiae, 8 days sustained compression or distraction"
+    timescale: "8 days"
+    evidence_tier: T1
+    refs: [stokes2007]
+    confidence: C
+    notes: >-
+      Load acts on the same variable that dominates unloaded elongation, so mechanical modulation is
+      not a separate mechanism but a shift along the existing hypertrophy axis.
+
+  - edge_id: e00005
+    source: mechanical_modulation_growth
+    target: chondrocyte_proliferation_rate
+    relation: inhibits
+    sign: "-"
+    magnitude: "proliferative cells per unit plate width: normalised regression coefficient 0.72, overall r=0.38 - roughly half the explanatory weight of hypertrophic cell height"
+    context: "pooled rat, rabbit and calf loaded and control plates, 8 days"
+    timescale: "8 days"
+    evidence_tier: T1
+    refs: [stokes2007]
+    confidence: C
+
+  - edge_id: e00006
+    source: mechanical_modulation_growth
+    target: elongation_budget
+    relation: correlates_with
+    sign: "-"
+    magnitude: "hypertrophic cell height r=0.56 and proliferative cells per unit width r=0.38 of loaded growth-rate variance; the matrix-synthesis term of the budget was not partitioned"
+    context: "pooled rat, rabbit, calf; 8-day sustained loading"
+    timescale: "8 days"
+    evidence_tier: T1
+    refs: [stokes2007]
+    confidence: C
+    notes: >-
+      Load redistributes the elongation budget between the division and hypertrophy terms; whether it
+      touches the matrix-synthesis term is untested in any species.
+
+  - edge_id: e00007
+    source: static_vs_dynamic_loading
+    target: proliferative_zone
+    relation: inhibits
+    sign: "-"
+    magnitude: "proliferative cells per column reduced under static loading only (p<0.01 static vs dynamic); growth rate fell 19% under both"
+    context: "rat caudal vertebra Cd7, 0.2 MPa mean sustained vs 0.2 MPa +/-30% at 0.1 Hz, 2 weeks"
+    timescale: "2 weeks"
+    evidence_tier: T1
+    refs: [valteau2011]
+    confidence: C
+    notes: >-
+      Waveform dissociates growth-rate suppression (equal under both) from architectural damage
+      (static only). This is the strongest argument for dynamic tethering strategies.
+
+  - edge_id: e00008
+    source: static_vs_dynamic_loading
+    target: growth_plate_height
+    relation: inhibits
+    sign: "-"
+    magnitude: "plate thickness significantly reduced by static but not dynamic compression at equal mean stress; hypertrophic cell height difference p=0.014"
+    context: "rat caudal vertebra Cd7, 0.2 MPa mean, 0.1 Hz, 2 weeks"
+    timescale: "2 weeks"
+    evidence_tier: T1
+    refs: [valteau2011]
+    confidence: C
+
+  - edge_id: e00009
+    source: static_vs_dynamic_loading
+    target: chondrocyte_column_formation
+    relation: correlates_with
+    sign: biphasic
+    magnitude: "in vitro the sign REVERSES: dynamic compression (7-13% strain, 0.1 Hz) caused severe loss of columnar arrangement in proliferative and hypertrophic zones, while static (10% strain) preserved columns with only slight deviation from the growth axis"
+    context: "growth plate explants from distal ulnae of 4-week-old swine, unconfined compression, matched mean strain, 48 h"
+    timescale: "48 h"
+    evidence_tier: T1
+    refs: [sergerie2011]
+    confidence: D
+    gap_id: g_l6l5_002
+    notes: >-
+      Directly opposite in sign to valteau2011 in vivo, where static is the architecturally damaging
+      waveform. Explant (no perfusion, cut boundaries, 48 h) vs in vivo (2 weeks) is the obvious
+      confound but has not been tested. Logged as a contradiction.
+
+  - edge_id: e00010
+    source: strain_magnitude_dependence
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: "-"
+    magnitude: "linear in applied stress, slope 17.1% per 0.1 MPa, demonstrated over approximately -0.2 to +0.1 MPa (negative = compression); no threshold or saturation detected inside that window"
+    context: "rat, rabbit and calf caudal vertebrae and proximal tibiae, external loading apparatus"
+    timescale: "8 days"
+    evidence_tier: T1
+    refs: [stokes2006]
+    confidence: C
+    notes: >-
+      The stress range was set by the apparatus rather than by physiology, so linearity outside
+      0.02-0.2 MPa is untested (g_l6mech_002).
+
+  - edge_id: e00011
+    source: strain_rate_dependence
+    target: hypertrophic_chondrocyte
+    relation: correlates_with
+    sign: "+"
+    magnitude: "at equal mean stress and equal axial strain, static loading gave higher lateral (p<0.001) and volumetric (p<=0.015) hypertrophic cell strain than dynamic; axial cell strain did not differ"
+    context: "pre-pubertal rat proximal tibial growth plate explants, stress-controlled compression, confocal cell tracking"
+    timescale: "minutes to hours (viscoelastic creep window)"
+    evidence_tier: T1
+    refs: [zimmermann2017]
+    confidence: C
+    notes: >-
+      This is the mechanistic root of the static/dynamic distinction: the cell, not the tissue, sees
+      a different strain state under the two waveforms even when the tissue-level input is matched.
+
+  - edge_id: e00012
+    source: strain_frequency_dependence
+    target: growth_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "0.2 +/- 0.14 MPa at 1.0 Hz for 15 days destroyed plate integrity with repeated inflammation, preventing analysis (n=3)"
+    context: "rat caudal vertebrae, in vivo external loading, 0.1 vs 1.0 Hz at 0.2 MPa mean"
+    timescale: "15 days"
+    evidence_tier: T1
+    refs: [mnard2014]
+    confidence: D
+    notes: >-
+      An upper bound on tolerable dynamic amplitude, from a group that failed rather than from a
+      dose-response design. n=3.
+
+  - edge_id: e00013
+    source: static_vs_dynamic_loading
+    target: hypertrophic_chondrocyte
+    relation: inhibits
+    sign: "-"
+    magnitude: "chondrocyte viability fell monotonically with compression magnitude (0.1 vs 0.2 MPa), duration (12 vs 24 h), frequency (0.1 vs 1.0 Hz) and amplitude (30 vs 100%); proliferative and hypertrophic chondrocytes were the most sensitive zones"
+    context: "swine ulnar growth plate explants, n=60 across 10 groups, live/dead confocal quantification"
+    timescale: "12-24 h"
+    evidence_tier: T1
+    refs: [kaviani2015]
+    confidence: C
+    notes: >-
+      Sets the ceiling on explant loading protocols: above it an experiment measures cell death, not
+      mechanobiology. Relevant to interpreting sergerie2011 and kaviani2016.
+
+  - edge_id: e00014
+    source: loading_effect_plate_height
+    target: hypertrophic_zone
+    relation: correlates_with
+    sign: "-"
+    magnitude: "hypertrophic zone height 87% of control, mean cell height 85%, cell-height increment along the growth axis 78%"
+    context: "rat caudal vertebra, ~60% body weight sustained compression, 4 weeks"
+    timescale: "4 weeks"
+    evidence_tier: T1
+    refs: [stokes2002]
+    confidence: C
+
+  - edge_id: e00015
+    source: loading_effect_plate_height
+    target: proliferative_zone
+    relation: correlates_with
+    sign: "-"
+    magnitude: "proliferative cells per column reduced under static loading; correlation of proliferative cells per unit width with growth rate r=0.38"
+    context: "rat caudal vertebra 0.2 MPa 2 weeks (valteau2011); pooled rat/rabbit/calf 8 days (stokes2007)"
+    timescale: "8 days to 2 weeks"
+    evidence_tier: T1
+    refs: [valteau2011, stokes2007]
+    confidence: C
+
+  - edge_id: e00016
+    source: disuse_growth_effect
+    target: growth_plate_height
+    relation: correlates_with
+    sign: "+"
+    magnitude: "plate height and growth rate fully recovered by 10 days after removal of 15 days of 0.2 MPa static or dynamic compression; no residual difference from sham at 4 weeks"
+    context: "rat caudal vertebra, n=48 across 8 subgroups"
+    timescale: "10 days to full recovery"
+    evidence_tier: T1
+    refs: [mnard2015]
+    confidence: C
+    notes: >-
+      Mechanical modulation of the rat plate is fully reversible on this timescale. Whether a human
+      physis tethered for the 1-3 years typical of guided growth recovers equally is unknown.
+
+  - edge_id: e00017
+    source: disuse_growth_effect
+    target: hypertrophic_zone
+    relation: correlates_with
+    sign: "-"
+    magnitude: "limb immobilisation abolished the enlarged peripheral hypertrophic cell populations of cartilage-specific Ift88-null mice"
+    context: "AggrecanCreERT2;Ift88fl/fl juvenile/adolescent mouse tibia, peripheral regions beneath the load-bearing knee compartments"
+    timescale: "weeks (juvenile-adolescent window)"
+    evidence_tier: T1
+    refs: [coveney2022]
+    confidence: C
+    notes: >-
+      Unloading is protective here, not growth-promoting - the disruptive stimulus in the adolescent
+      plate is ordinary physiological load.
+
+  - edge_id: e00018
+    source: physeal_bar_formation
+    target: growth_velocity_longitudinal
+    relation: inhibits
+    sign: "-"
+    magnitude: "growth arrest in 30.1% of 332 prospectively followed paediatric physeal fractures, against up to 5.5% in the prior literature; mean age at arrest 12.8 vs 9.4 years, displacement 59.0% vs 47.8%"
+    context: "human children, prospective cohort, all physeal fracture sites, >=6 months follow-up or arrest"
+    timescale: "months to years after injury"
+    evidence_tier: T1
+    refs: [hooper2024]
+    confidence: B
+    notes: >-
+      The authors caution that diagnostic criteria for arrest vary and the true figure may be lower.
+      Physeal fractures are 18-30% of all paediatric fractures.
+
+  - edge_id: e00019
+    source: physeal_bar_formation
+    target: distal_femur_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "86% growth arrest after distal femoral physeal fracture - the highest of any site in the cohort (small subgroup)"
+    context: "human children, same prospective cohort"
+    timescale: "months to years"
+    evidence_tier: T1
+    refs: [hooper2024]
+    confidence: B
+    notes: >-
+      Site specificity is real but confounded: the distal femur is also the fastest human plate, so
+      a given bar tethers a larger absolute growth increment.
+
+  - edge_id: e00020
+    source: physeal_bar_formation
+    target: growth_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "progressive bone tissue accumulation across the plate over 42 days in a reproducible drill-hole model, scored on a validated 5-point radiological/histological scale"
+    context: "mouse distal femur drill-hole injury; Pdgfra and Pdgfrb lineage-traced cells, absent from the uninjured plate, migrate in and build the bar"
+    timescale: "42 days"
+    evidence_tier: T1
+    refs: [li2026_2]
+    confidence: B
+    notes: >-
+      The bar is a repair response by perivascular/mesenchymal populations, not transdifferentiation
+      of resident chondrocytes - so it is an externally imposed tether on the plate, mechanically
+      equivalent to a surgical tension band.
+
+  - edge_id: e00021
+    source: guided_growth_tension_band
+    target: growth_velocity_longitudinal
+    relation: inhibits
+    sign: "-"
+    magnitude: "unilateral physeal tethering; 68.7% of children reached a neutral mechanical axis (idiopathic 78.2% vs non-idiopathic 66.3%, p=0.02)"
+    context: "human, 654 growth modulations in 313 children, extraperiosteal two-hole tension-band plates"
+    timescale: "months to a few years of implant dwell"
+    evidence_tier: T1
+    refs: [tolk2026]
+    confidence: A
+    notes: >-
+      The cleanest human demonstration that a physis is mechanically modulable. The applied stress is
+      never measured, so this is a demonstration of sign, not of dose.
+
+  - edge_id: e00022
+    source: guided_growth_tension_band
+    target: distal_femur_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "mLDFA correction 0.67 degrees/month (SD 0.55)"
+    context: "human, 313 children, 55.4% of modulations at the distal femur"
+    timescale: "per month of implant dwell"
+    evidence_tier: T1
+    refs: [tolk2026]
+    confidence: A
+
+  - edge_id: e00023
+    source: guided_growth_tension_band
+    target: proximal_tibia_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "mMPTA correction 0.43 degrees/month (SD 0.38)"
+    context: "human, same cohort, 44.6% of modulations at the proximal tibia; 42.2% of children had both sites treated"
+    timescale: "per month of implant dwell"
+    evidence_tier: T1
+    refs: [tolk2026]
+    confidence: A
+
+  - edge_id: e00024
+    source: guided_growth_tension_band
+    target: site_specific_growth_rate
+    relation: correlates_with
+    sign: "+"
+    magnitude: "distal femur corrects 1.56x faster than proximal tibia in the same children (0.67 vs 0.43 deg/month)"
+    context: "human, 654 modulations in 313 children, within-cohort comparison"
+    timescale: "per month"
+    evidence_tier: T1
+    refs: [tolk2026]
+    confidence: A
+    notes: >-
+      This is the only human dataset in which two physes are mechanically modulated in the same
+      individuals. The ratio tracks the sites' baseline growth velocities, so it does NOT establish
+      that the two plates differ in mechanosensitivity - baseline rate and mechanosensitivity are
+      not separable without a stress measurement. SD is 60-90% of the mean at both sites.
+
+  - edge_id: e00025
+    source: blount_disease
+    target: proximal_tibia_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "progressive varus from growth suppression confined to the posteromedial quadrant of the physis"
+    context: "human children and adolescents; the compressed side of the plate is the suppressed side"
+    timescale: "years"
+    evidence_tier: T1
+    refs: [tolk2026]
+    confidence: C
+    notes: >-
+      Cited here to the guided-growth cohort in which non-idiopathic (largely Blount and related)
+      deformity corrected less completely than idiopathic (66.3% vs 78.2%, p=0.02). Blount is the
+      standard human illustration of Hueter-Volkmann but its causal direction - does varus cause the
+      medial suppression or vice versa - is not resolved by any of these data.
+
+  - edge_id: e00026
+    source: scoliosis_vertebral_growth
+    target: vertebral_growth_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "growth modulation 53% vs -1% at 2 weeks for high vs low tether tension (SD 43 and 15; p=0.03 vs low tension, p=0.01 vs non-operative control); the effect collapsed to 14% vs 10% (p=0.6) over weeks 2-4"
+    context: "porcine, single-level posterior vertebral body tethering in a kyphotic swine model"
+    timescale: "biphasic: strong in the first 2 weeks, absent from 2-4 weeks"
+    evidence_tier: T1
+    refs: [halanski2026]
+    confidence: C
+    notes: >-
+      The escape from load-dependence after 2 weeks is the important result and is unexplained
+      (g_l6mech_005). It is the reason clinical vertebral body tethering under-corrects.
+
+  - edge_id: e00027
+    source: scoliosis_vertebral_growth
+    target: vertebral_growth_plate
+    relation: activates
+    sign: "+"
+    magnitude: "compressive stress upregulates PIEZO1 in vertebral growth plate chondrocytes, driving GPX4 loss, ferroptosis and accelerated pathological ossification; Col2a1-CreERT;Piezo1fl/fl deletion or local pharmacological blockade slowed curve progression"
+    context: "mouse vertebral growth plate under applied caudal/vertebral compression; adolescent idiopathic scoliosis model"
+    timescale: "weeks of sustained compression"
+    evidence_tier: T1
+    refs: [chen2025a, chen2025]
+    confidence: C
+    notes: >-
+      A molecular route from compression to premature ossification of the vertebral plate, i.e. the
+      vicious cycle expressed as cell death rather than as growth-rate modulation. Systemic PIEZO1
+      inhibition caused osteoporosis as an off-target effect.
+
+  - edge_id: e00028
+    source: sport_specific_loading_human
+    target: distal_radius_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "distal radial physeal stress injury with acquired POSITIVE ULNAR VARIANCE - the radius shortens relative to the ulna in the same limb, an internally controlled human demonstration of load-suppressed physeal output"
+    context: "human adolescent artistic gymnasts, weight-bearing through the wrist over years of training"
+    timescale: "years of training"
+    evidence_tier: T5
+    refs: [difiori2006, dileo2026]
+    confidence: C
+    notes: >-
+      Evidence tier is limited by source type: a narrative review plus a systematic review/
+      meta-analysis of wrist pain epidemiology. The ulnar-variance comparison is the strongest human
+      internal control in this layer because the two bones of one forearm share age, sex, nutrition,
+      hormones and genotype and differ only in load.
+
+  - edge_id: e00029
+    source: sport_specific_loading_human
+    target: growth_velocity_longitudinal
+    relation: activates
+    sign: "+"
+    magnitude: "4.20 cm vs 2.48 cm height gain over 24 weeks (p=0.001); femoral neck BMD Z-score +1.075 (p<0.001, Cohen's d 0.869); lumbar spine BMD unchanged"
+    context: "human, 47 prepubertal short-stature children aged 8-11 y, 3 supervised jumping sessions/week of 50 min; n=20 intervention, n=27 control, NOT randomised"
+    timescale: "24 weeks"
+    evidence_tier: T1
+    refs: [wang2025]
+    confidence: D
+    notes: >-
+      Opposite in sign to the gymnast wrist and to the gymnastics stature literature. The reconciling
+      hypothesis is the static/dynamic distinction: impact loading is intermittent and axial, wrist
+      weight-bearing in gymnastics is sustained and compressive. Small, single-centre, unblinded,
+      and the mediation analysis (beta -0.442, 95% CI -1.474 to -0.009) is fragile.
+
+  - edge_id: e00030
+    source: sport_specific_loading_human
+    target: appositional_growth
+    relation: activates
+    sign: "+"
+    magnitude: "throwing arm gained 4.3% (95% CI 1.1-7.5) more cortical BMC, 3.9% (0.7-7.0) more cortical area and 2.9% (0.3-5.4) more cortical vBMD asymmetry than the non-throwing arm over 12 months"
+    context: "human, 12 male pre-pubertal baseball players, mean age 10.3 +/- 0.6 y, distal humerus pQCT, within-subject contralateral control"
+    timescale: "12 months"
+    evidence_tier: T1
+    refs: [weatherholt2018]
+    confidence: B
+    notes: >-
+      A within-subject human loading experiment on appositional (periosteal/cortical) growth, which
+      is the arm of skeletal growth where Wolff's law is well supported. The same design has NEVER
+      been used to read out longitudinal physeal output, which is the asymmetry this seam exposes:
+      human loading data are strong for bone width and absent for bone length.
+
+  - edge_id: e00031
+    source: gymnastics_stature_effect
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: "-"
+    magnitude: "peak height velocity 5.48 vs 8.0 cm/yr in gymnasts vs swimmers (SEM 0.32 and 0.50; p<0.05 at bone ages 11-13); height SDS declined with follow-up time in gymnasts (r=-0.747, p<0.001) but not swimmers (r=-0.165); >35% of pre- and peripubertal gymnasts had height velocity <4.5 cm/yr"
+    context: "human female artistic gymnasts, ~22 h/wk training vs swimmers ~8 h/wk, mean age 12.3 y; second cohort 137 gymnasts followed 2 y"
+    timescale: "years of training through puberty"
+    evidence_tier: T1
+    refs: [theintz1993, daly2005]
+    confidence: D
+    notes: >-
+      Selection versus causation is unresolved: short, late-maturing girls are also selected INTO
+      elite gymnastics. Directly contradicts the jumping-intervention edge e00029; the atlas records
+      both rather than choosing.
+
+  - edge_id: e00032
+    source: gymnastics_stature_effect
+    target: site_specific_growth_rate
+    relation: correlates_with
+    sign: "-"
+    magnitude: "sitting height / leg length ratio 1.054 vs 1.100 in gymnasts vs swimmers (SEM 0.005 both, p<0.001); peripubertal sitting height velocity 2.3 vs 3.1 cm/yr for advanced vs intermediate training loads (p<0.05)"
+    context: "human female artistic gymnasts vs swimmers, same cohorts"
+    timescale: "years"
+    evidence_tier: T1
+    refs: [theintz1993, daly2005]
+    confidence: D
+    notes: >-
+      The deficit is disproportionately axial (trunk/vertebral plates) rather than appendicular,
+      which is the pattern predicted if sustained axial compression is the mediator - but energy
+      availability suppresses trunk growth preferentially too, so the finding does not discriminate.
+
+  - edge_id: e00033
+    source: primary_cilium_mechanosensing
+    target: chondrocyte_column_formation
+    relation: required_for
+    sign: "+"
+    magnitude: "Kif3a deletion (loss of intraflagellar transport, hence of primary cilia) disrupts postnatal columnar organisation"
+    context: "mouse postnatal growth plate; Kif3a is the Kinesin-II subunit required for IFT"
+    timescale: "postnatal weeks"
+    evidence_tier: T1
+    refs: [song2007kif3a, koyama2007]
+    confidence: C
+    notes: >-
+      Column formation depends on the 90-degree post-mitotic rotation, and the cilium is one of only
+      two structures (with integrin beta-1) shown to be required for it.
+
+  - edge_id: e00034
+    source: primary_cilium_mechanosensing
+    target: chondrocyte_hypertrophy
+    relation: required_for
+    sign: "+"
+    magnitude: "AggrecanCreERT2;Ift88fl/fl accumulated enlarged hypertrophic populations, but ONLY in peripheral tibial regions beneath the load-bearing knee compartments; Hedgehog signalling was preserved"
+    context: "mouse juvenile and adolescent tibia, cartilage-specific inducible deletion"
+    timescale: "weeks (juvenile-adolescent window)"
+    evidence_tier: T1
+    refs: [coveney2022]
+    confidence: C
+    notes: >-
+      Two controls make this a mechanical rather than a signalling phenotype: raising physiological
+      load in control mice reproduced it, and limb immobilisation abolished it. This is the cleanest
+      loading-controlled cilium experiment in a growth plate.
+
+  - edge_id: e00035
+    source: primary_cilium_mechanosensing
+    target: chondro_osseous_junction
+    relation: required_for
+    sign: "+"
+    magnitude: "hypertrophic VEGF expression fell, with downstream loss of vascular recruitment, osteoclastic activity and cartilage-to-bone replacement"
+    context: "mouse adolescent tibia, AggrecanCreERT2;Ift88fl/fl, load-bearing peripheral regions"
+    timescale: "weeks"
+    evidence_tier: T1
+    refs: [coveney2022]
+    confidence: C
+
+  - edge_id: e00036
+    source: integrin_beta1_chondrocyte
+    target: chondrocyte_rotation
+    relation: required_for
+    sign: "+"
+    magnitude: "conditional Itgb1 deletion disrupts the 90-degree daughter-cell rotation; defective rotation in a Cdh2 (N-cadherin) mutant is RESCUED by heterozygous loss of Itgb1, placing N-cadherin as a negative regulator of integrin beta-1 rather than a parallel driver"
+    context: "mouse cranial base explants, live time-lapse confocal imaging, conditional cartilage-specific alleles"
+    timescale: "hours (one division-rotation cycle)"
+    evidence_tier: T1
+    refs: [greer2024]
+    confidence: C
+
+  - edge_id: e00037
+    source: integrin_beta1_chondrocyte
+    target: chondrocyte_column_formation
+    relation: required_for
+    sign: "+"
+    magnitude: "beta1-deficient chondrocytes have abnormal shape and fail to arrange into columns; caused by loss of motility from lost adhesion to collagen II, reduced binding to and spreading on fibronectin, and abnormal F-actin organisation"
+    context: "mouse, chondrocyte-specific Itgb1 inactivation; chondrodysplasia of variable severity"
+    timescale: "embryonic to postnatal"
+    evidence_tier: T1
+    refs: [aszodi2003, greer2024]
+    confidence: C
+
+  - edge_id: e00038
+    source: integrin_beta1_chondrocyte
+    target: chondrocyte_proliferation_rate
+    relation: required_for
+    sign: "+"
+    magnitude: "decreased proliferation from a G1/S transition defect plus a cytokinesis defect; the G1/S block is at least partly caused by Fgfr3 overexpression, Stat1/Stat5a nuclear translocation and cell-cycle inhibitor upregulation"
+    context: "mouse, chondrocyte-specific Itgb1 inactivation"
+    timescale: "per cell cycle"
+    evidence_tier: T1
+    refs: [aszodi2003]
+    confidence: C
+    notes: >-
+      A direct mechanical-adhesion input onto the FGFR3 axis that dominates L3, and one of the few
+      places where mechanobiology and the achondroplasia pathway are experimentally joined.
+
+  - edge_id: e00039
+    source: cytoskeletal_tension_chondrocyte
+    target: chondrocyte_rotation
+    relation: required_for
+    sign: "+"
+    magnitude: "abnormal F-actin organisation is the proximate cause of the motility loss that prevents rotation in beta1-integrin-null chondrocytes"
+    context: "mouse, chondrocyte-specific Itgb1 inactivation; cranial base and long bone plates"
+    timescale: "hours"
+    evidence_tier: T1
+    refs: [aszodi2003, greer2024]
+    confidence: C
+    notes: >-
+      The one hard structural result in this node: the actin/adhesion machinery is load-bearing for
+      growth plate architecture. It is inferred from integrin loss, not from direct manipulation of
+      cytoskeletal tension.
+
+  - edge_id: e00040
+    source: piezo1_channel
+    target: primary_spongiosa
+    relation: required_for
+    sign: "+"
+    magnitude: "Col2a1-Cre Piezo1 inactivation gives near-absence of trabecular bone beneath the growth plate postnatally with 100% rib-fracture penetrance by day 7; Col10a1-Cre deletion restricted to hypertrophic chondrocytes raises osteoclast number in the primary spongiosa via RANKL repression and OPG induction"
+    context: "mouse, two independent cartilage-lineage Cre drivers"
+    timescale: "postnatal days to weeks"
+    evidence_tier: T1
+    refs: [brylka2024, tschaffonmller2026]
+    confidence: C
+
+  - edge_id: e00041
+    source: piezo1_channel
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: unknown
+    magnitude: "linear skeletal growth only MILDLY affected despite near-absence of trabecular bone beneath the plate"
+    context: "mouse, Col2a1-Cre Piezo1 conditional null"
+    timescale: "postnatal weeks"
+    evidence_tier: T1
+    refs: [brylka2024]
+    confidence: C
+    notes: >-
+      A dissociation edge: PIEZO1 is required for the bone the plate produces far more than for the
+      plate's own longitudinal output. Cited as a caution against reading trabecular phenotypes as
+      growth phenotypes.
+
+  - edge_id: e00042
+    source: piezo2_channel
+    target: growth_plate
+    relation: correlates_with
+    sign: unknown
+    magnitude: "NO growth plate or endochondral phenotype detected, in the same study and against littermate Piezo1 mutants with an overt phenotype"
+    context: "mouse, Piezo2 Col2a1-Cre conditional null"
+    timescale: "postnatal"
+    evidence_tier: T1
+    refs: [brylka2024]
+    confidence: D
+    notes: >-
+      A negative result recorded deliberately. PIEZO2 is repeatedly listed as a growth plate
+      mechanotransducer; the only experiment done inside the plate says otherwise.
+
+  - edge_id: e00043
+    source: trpv4_channel
+    target: chondrocyte_proliferation_rate
+    relation: required_for
+    sign: "+"
+    magnitude: "loading-driven cartilage growth and joint shape depend on TRPV4 activity, mediated via cell proliferation and matrix biosynthesis; TRPV4 localises to regions of high biophysical stimulus"
+    context: "MOUSE EMBRYONIC hindlimb explants, mechanically stimulated ex vivo; knee joint cartilage, NOT a postnatal growth plate"
+    timescale: "days of explant culture"
+    evidence_tier: T1
+    refs: [khatib2023]
+    confidence: D
+    notes: >-
+      The species-and-stage caveat is the point: no study has applied a defined mechanical stimulus
+      to a POSTNATAL growth plate and shown a TRPV4-dependent change in longitudinal growth rate.
+
+  - edge_id: e00044
+    source: trpv4_channel
+    target: growth_plate
+    relation: correlates_with
+    sign: biphasic
+    magnitude: "both gain- and loss-of-function TRPV4 variants cause metaphyseal disorganisation with severe short stature (metatropic dysplasia, spondylometaphyseal dysplasia Kozlowski, brachyolmia), so the dose-response is non-monotonic"
+    context: "human, germline TRPV4 variants; graded allelic series"
+    timescale: "lifelong"
+    evidence_tier: T1
+    refs: [roblesespinoza2025, wang2025a, nevarez2026]
+    confidence: B
+    notes: >-
+      The strongest human evidence for any candidate physeal mechanotransducer - but it is genetic,
+      not mechanical. Small-molecule TRPV4 inhibition rescues the mouse phenotype, so it is the
+      channel's activity level and not its presence that sets plate output.
+
+  - edge_id: e00045
+    source: distraction_osteogenesis
+    target: growth_plate
+    relation: correlates_with
+    sign: unknown
+    magnitude: "the distraction regenerate is NOT a growth plate: new bone forms in parallel columns extending in BOTH directions from a central fibrous growth zone, with features of physeal and of intramembranous ossification and belonging to neither"
+    context: "canine tibia, open osteotomy and closed osteoclasis, Ilizarov external fixation"
+    timescale: "weeks of distraction plus consolidation"
+    evidence_tier: T1
+    refs: [ilizarov1989, ilizarov1989a]
+    confidence: C
+    notes: >-
+      Recorded as a structural NEGATIVE. Distraction osteogenesis is often invoked as proof that
+      tension drives physeal growth; the primary source explicitly denies the structural identity.
+      Its real contribution is that the tension vector, not the bone's mechanical axis, sets the
+      direction of new bone formation - tension is instructive for skeletal tissue, outside a physis.
+
+  - edge_id: e00046
+    source: diurnal_stature_variation
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: unknown
+    magnitude: "19.3 mm mean circadian stature variation in adults (1.1% of stature, 54% of the loss in the first hour after rising, 70% regained in the first half of the night); 4.6 mm over 7 h in 12-14 year old boys; 7 mm (SD 7) over a day in 98 children with idiopathic scoliosis"
+    context: "human; 8 young adults to 1 mm precision (tyrrell1985), 11-19 boys aged 12-14 (whitehouse1974), 98 scoliosis patients Cobb 10-52 deg (czaprowski2019)"
+    timescale: "24 h cycle"
+    evidence_tier: T1
+    refs: [tyrrell1985, whitehouse1974, czaprowski2019]
+    confidence: A
+    notes: >-
+      This is a MEASUREMENT relation, not a physeal one: the diurnal swing exceeds a week of true
+      longitudinal growth in a mid-childhood child, so any stature-velocity estimate over short
+      intervals is dominated by it unless time of day is fixed. The swing is intervertebral disc
+      fluid; no measurement partitions any of it to the vertebral physis (g_l6l5_010).
+
+  - edge_id: e00047
+    source: physeal_stress_in_vivo
+    target: growth_velocity_longitudinal
+    relation: hypothesized_link
+    sign: "-"
+    context: "human, all ages, all sites - no zone, stage or sex can be specified because no measurement exists"
+    timescale: "unknown"
+    evidence_tier: T5
+    refs: [hucke2023, stokes2006]
+    confidence: speculative
+    gap_id: g_l6l5_001
+    notes: >-
+      Every quantitative claim in L6 is expressed per MPa of physeal stress, and that stress has
+      never been measured in a living human at any age. All human figures in the literature are
+      finite-element model output, and the models' authors state they are not fully
+      participant-specific. The edge is written speculative deliberately: the animal coefficient is
+      the only number available and applying it to a human is an assumption, not a result.
+
+  - edge_id: e00048
+    source: spaceflight_microgravity_growth
+    target: growth_velocity_longitudinal
+    relation: hypothesized_link
+    sign: "+"
+    context: "human - but the only human data are 9 ADULT ISS crew with closed physes; no paediatric spaceflight has ever occurred"
+    timescale: "months in orbit"
+    evidence_tier: T1
+    refs: [young2023, chen2026]
+    confidence: speculative
+    gap_id: g_l6l5_009
+    notes: >-
+      Stature rose up to 3% early in flight, plateaued, and fully reversed on landing, with segment
+      circumferences falling up to 11%. In adults with fused physes that gain is spinal unloading and
+      contains no endochondral component. The mechanistic argument that unloading acts on the physis
+      comes from mice (simulated microgravity reverses PIEZO1-driven growth plate ossification), not
+      from humans.
+
+  - edge_id: e00049
+    source: gravity_posture_spinal_loading
+    target: vertebral_growth_plate
+    relation: hypothesized_link
+    sign: "-"
+    context: "human, growing children and adolescents; upright posture vs recumbency"
+    timescale: "24 h cycle, integrated over years"
+    evidence_tier: T1
+    refs: [tyrrell1985, czaprowski2019]
+    confidence: speculative
+    gap_id: g_l6l5_010
+    notes: >-
+      Gravity acting through posture is the largest sustained mechanical variable on the growing
+      human axial skeleton and is titratable without surgery (recumbency, shoulder loads of
+      2.5-40 kg produce nonlinear shrinkage). Whether ANY of the resulting axial stress reaches the
+      vertebral physis, as opposed to being absorbed by the discs, is unmeasured. Over 130 human
+      vertebral plates generate the trunk segment, so the question is not marginal.
+
+  - edge_id: e00050
+    source: focal_adhesion_kinase
+    target: chondrocyte_column_formation
+    relation: hypothesized_link
+    sign: "+"
+    context: "mouse and in vitro human cell inference; no growth plate experiment in any species"
+    timescale: "unknown"
+    evidence_tier: T5
+    refs: [aszodi2003, greer2024]
+    confidence: speculative
+    gap_id: g_l6l5_011
+    notes: >-
+      Integrin beta-1 is required for the rotation that builds columns (e00036, e00037) and FAK is
+      the obligatory kinase downstream of integrin engagement in every other tissue. The inference is
+      strong and completely untested inside a physis.
+
+  - edge_id: e00051
+    source: yap_taz_chondrocyte
+    target: chondrocyte_hypertrophy
+    relation: hypothesized_link
+    sign: "-"
+    context: "mouse and in vitro animal cell inference; no zonal YAP/TAZ localisation or conditional deletion readout in a postnatal growth plate"
+    timescale: "unknown"
+    evidence_tier: T5
+    refs: [khatib2023]
+    confidence: speculative
+    gap_id: g_l6l5_012
+    notes: >-
+      YAP/TAZ are the canonical stiffness- and tension-responsive transcriptional co-activators, and
+      the growth plate has a steep (if disputed) zonal stiffness gradient plus a stereotyped
+      stiffness-to-hypertrophy correspondence. That coincidence is the entire basis for the link.
+
+# =====================================================================
+# SEAM B - L6 mechanobiology -> L5 matrix and mineralization
+# This is the emptiest of the four seams. The literature that connects applied
+# load to growth plate MATRIX (as opposed to growth plate ARCHITECTURE) is
+# essentially one explant study plus a handful of chondron-deformation papers.
+# Loading -> mineralization machinery and loading -> collagen crosslinking are
+# both search-established nulls (g_l6l5_003, g_l6l5_004).
+# =====================================================================
+
+  - edge_id: e00052
+    source: static_vs_dynamic_loading
+    target: aggrecan_acan
+    relation: correlates_with
+    sign: biphasic
+    magnitude: "static 10% strain caused notable LOSS of aggrecan immunostaining; dynamic 7-13% strain at 0.1 Hz at the same mean strain CONTRIBUTED to aggrecan synthesis in the extracellular matrix"
+    context: "growth plate explants from distal ulnae of 4-week-old swine, unconfined compression, 48 h, matched mean compressive strain"
+    timescale: "48 h"
+    evidence_tier: T1
+    refs: [sergerie2011]
+    confidence: D
+    notes: >-
+      The only study that reads out growth plate matrix protein against a controlled static/dynamic
+      contrast. Readout is semi-quantitative immunohistochemistry with no reported effect size, in
+      one species, at one age, for 48 h. It carries the whole loading-to-matrix seam.
+
+  - edge_id: e00053
+    source: static_vs_dynamic_loading
+    target: collagen_type_ii
+    relation: correlates_with
+    sign: biphasic
+    magnitude: "static 10% strain caused notable loss of type II collagen expression; dynamic 7-13% at 0.1 Hz contributed to type II collagen synthesis"
+    context: "swine ulnar growth plate explants, 4 weeks old, unconfined compression, 48 h"
+    timescale: "48 h"
+    evidence_tier: T1
+    refs: [sergerie2011]
+    confidence: D
+
+  - edge_id: e00054
+    source: static_vs_dynamic_loading
+    target: collagen_type_x
+    relation: inhibits
+    sign: "-"
+    magnitude: "static 10% strain caused notable loss of type X collagen expression; no preservation under dynamic loading was reported for collagen X, in contrast to aggrecan and collagen II"
+    context: "swine ulnar growth plate explants, 4 weeks old, 48 h; collagen X marks the hypertrophic zone only"
+    timescale: "48 h"
+    evidence_tier: T1
+    refs: [sergerie2011]
+    confidence: D
+    notes: >-
+      Consistent with the in vivo finding that compression shortens hypertrophic cells and thins the
+      hypertrophic zone (e00003, e00014): the hypertrophic programme, not just its geometry, is
+      suppressed.
+
+  - edge_id: e00055
+    source: strain_magnitude_dependence
+    target: chondron
+    relation: correlates_with
+    sign: "+"
+    magnitude: "chondrons bend and kink along their length under 20% (physiological), 30% and 40% compression, with the largest bending deformations at the reserve/proliferative zone interface"
+    context: "bovine growth plate, ex vivo compression, structural deformation mapping along whole chondron lengths with texture correlation"
+    timescale: "acute (single compression step)"
+    evidence_tier: T1
+    refs: [vendra2018]
+    confidence: C
+    notes: >-
+      Explains the previously reported nonuniform, apparently random strain fields inside a
+      compressed physis as chondron bending. The authors propose that bending at the RZ/PZ interface
+      is what aligns dividing cells longitudinally - i.e. that the matrix unit converts tissue
+      compression into the rotation cue for column formation. That last step is a proposal, not a
+      result.
+
+  - edge_id: e00056
+    source: strain_magnitude_dependence
+    target: pericellular_matrix
+    relation: activates
+    sign: "+"
+    magnitude: "collagen VI is first assembled at the cell surface and then displaced to form a shell at the pericellular/territorial matrix boundary; cell-surface-bound hyaluronan is required for the process"
+    context: "mouse; 3D chondrocyte culture plus microfluidic cell-compression platforms plus genetic mouse models; chondrons generally rather than a zonally resolved growth plate"
+    timescale: "days of culture"
+    evidence_tier: T1
+    refs: [lee2025]
+    confidence: D
+    notes: >-
+      The pericellular matrix through which load reaches the chondrocyte surface is itself built in a
+      mechanoresponsive way, so the transducer and the transmission medium are not independent. Not
+      demonstrated zonally in a growth plate.
+
+  - edge_id: e00057
+    source: integrin_beta1_chondrocyte
+    target: collagen_type_ii
+    relation: binds
+    sign: "+"
+    magnitude: "loss of adhesion to type II collagen is one of the three proximate causes (with reduced fibronectin binding and abnormal F-actin) of the motility loss in beta1-null chondrocytes"
+    context: "mouse, chondrocyte-specific Itgb1 inactivation"
+    timescale: "not applicable (adhesion)"
+    evidence_tier: T1
+    refs: [aszodi2003]
+    confidence: C
+    notes: >-
+      Identifies collagen II as the specific matrix ligand through which growth plate architecture is
+      mechanically anchored.
+
+  - edge_id: e00058
+    source: integrin_beta1_chondrocyte
+    target: fibronectin_cartilage
+    relation: binds
+    sign: "+"
+    magnitude: "reduced binding to and impaired spreading on fibronectin in beta1-null chondrocytes; alpha5beta1 integrin mediates the chondrocyte-fibronectin interaction and modulates proliferation"
+    context: "mouse conditional null; in vitro animal chondrocytes"
+    timescale: "not applicable (adhesion)"
+    evidence_tier: T1
+    refs: [aszodi2003, enomotoiwamoto1997]
+    confidence: C
+
+  - edge_id: e00059
+    source: strain_rate_dependence
+    target: zonal_stiffness_gradient
+    relation: correlates_with
+    sign: "+"
+    magnitude: "bovine physeal tensile strength and tangent modulus were measured at three strain rates and vary with rate; growth plate cartilage is viscoelastic and poroelastic so any modulus is rate-conditional"
+    context: "bovine proximal tibia, 12-18 month heifer, 70 specimens, three strain rates (williams2001); rat proximal tibial explants under stress-controlled static vs dynamic compression (zimmermann2017)"
+    timescale: "seconds to hours depending on the test"
+    evidence_tier: T1
+    refs: [williams2001, zimmermann2017]
+    confidence: C
+    notes: >-
+      A stiffness value for the physis without a stated loading rate is not interpretable. Combined
+      with the length-scale problem (e00097) this is most of why published moduli span three orders
+      of magnitude.
+
+  - edge_id: e00060
+    source: gravity_posture_spinal_loading
+    target: matrix_water_content_zonal
+    relation: hypothesized_link
+    sign: "-"
+    context: "human, growing children; upright posture vs recumbency; no zone specified because none has been measured"
+    timescale: "24 h cycle"
+    evidence_tier: T1
+    refs: [tyrrell1985]
+    confidence: speculative
+    gap_id: g_l6l5_010
+    notes: >-
+      The diurnal stature swing is fluid exudation. Cartilage is 66-80% water and the growth plate is
+      poroelastic, so daily axial loading must move fluid in and out of physeal matrix - but water is
+      the least-quantified variable in L5 and no one has measured a diurnal change in a physis.
+
+  - edge_id: e00061
+    source: mechanical_modulation_growth
+    target: collagen_crosslinking
+    relation: hypothesized_link
+    sign: unknown
+    context: "no species, zone or stage can be specified - the experiment has not been done in a growth plate"
+    timescale: "unknown"
+    evidence_tier: T5
+    refs: [eyre2002, stokes2006]
+    confidence: speculative
+    gap_id: g_l6l5_004
+    notes: >-
+      Sustained load changes the mechanical demand on the collagen network, and lysyl-oxidase-derived
+      pyridinoline crosslinks are what carry tensile load in cartilage. A Europe PMC sweep found no
+      study measuring crosslink density or lysyl oxidase activity in a mechanically loaded growth
+      plate in any species (g_l6l5_004). Written as speculative rather than omitted because the
+      quantity is measurable with existing methods.
+
+  - edge_id: e00062
+    source: mechanical_modulation_growth
+    target: proteoglycan_turnover
+    relation: hypothesized_link
+    sign: "-"
+    context: "porcine explant evidence only for aggrecan STAINING, not turnover; no radiolabel or racemization measurement under load in any species"
+    timescale: "unknown"
+    evidence_tier: T1
+    refs: [sergerie2011, shapses1994]
+    confidence: speculative
+    gap_id: g_l6l5_007
+    notes: >-
+      sergerie2011 shows aggrecan immunostaining falls under static compression, which is consistent
+      with either reduced synthesis or increased breakdown - the two possibilities the aggrecan
+      turnover literature exists to separate, and which have never been separated under load.
+
+# =====================================================================
+# SEAM C - L5 matrix and mineralization -> L1 growth plate architecture
+# =====================================================================
+
+  - edge_id: e00063
+    source: collagen_type_x
+    target: hypertrophic_zone
+    relation: required_for
+    sign: "+"
+    magnitude: "compressed growth plates with reduced trabecular bone in the perinatal-lethal subset (~10.8% of nulls dying by week 3, a further subset by week 12); an earlier characterisation of the same null reported NO detectable difference in long bone growth"
+    context: "mouse, Col10a1 homozygous null, variable penetrance; skeleto-haematopoietic phenotype"
+    timescale: "perinatal to 12 weeks"
+    evidence_tier: T1
+    refs: [gress2000, rosati1994]
+    confidence: D
+    notes: >-
+      Two reports on the same null disagree on whether there is a phenotype at all. The atlas records
+      the phenotype as real but subtle and incompletely penetrant, not as established.
+
+  - edge_id: e00064
+    source: collagen_type_x
+    target: chondrocyte_hypertrophy
+    relation: correlates_with
+    sign: unknown
+    magnitude: "COL10A1-/- human iPSC-derived chondrocytes undergo NORMAL hypertrophic differentiation in vitro and normal endochondral ossification after transplantation into immunodeficient mice"
+    context: "human iPSC-derived chondrocytes, dual sgRNA CRISPR deletion, 3D pellet induction plus in vivo transplantation"
+    timescale: "weeks of differentiation plus transplantation"
+    evidence_tier: T1
+    refs: [kamakura2023]
+    confidence: B
+    notes: >-
+      The decisive negative of this layer, and it is HUMAN. Collagen X is the canonical marker of
+      hypertrophy and is largely dispensable FOR hypertrophy. Any model that makes collagen X the
+      structural prerequisite for hypertrophy or for cartilage mineralization is contradicted by
+      mouse null, human iPSC deletion and the mildness of Schmid MCD independently.
+
+  - edge_id: e00065
+    source: aggrecan_acan
+    target: chondrocyte_hypertrophy
+    relation: required_for
+    sign: "+"
+    magnitude: "postnatal growth cessation in heterozygotes despite normal size at birth, attributable to decreased extracellular matrix and impaired growth plate chondrocyte hypertrophy"
+    context: "mouse, Acan+/- (cartilage matrix deficiency, 7 bp microdeletion); postnatal"
+    timescale: "postnatal weeks"
+    evidence_tier: T1
+    refs: [bendre2025]
+    confidence: B
+    notes: >-
+      Aggrecan is dosage-sensitive and the mechanism is architectural, not signalling: less matrix,
+      smaller hypertrophic cells, less elongation. The heterozygote is the correct model because
+      human ACAN disease is haploinsufficiency.
+
+  - edge_id: e00066
+    source: aggrecan_acan
+    target: growth_plate_height
+    relation: correlates_with
+    sign: "+"
+    magnitude: "reduced extracellular matrix with impaired hypertrophy in Acan+/-; postnatal growth cessation"
+    context: "mouse Acan+/-, postnatal"
+    timescale: "postnatal weeks"
+    evidence_tier: T1
+    refs: [bendre2025]
+    confidence: C
+
+  - edge_id: e00067
+    source: aggrecan_acan
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: "+"
+    magnitude: "median adult height -2.8 SDS (range -5.9 to -0.9) in 103 individuals from 20 families with heterozygous ACAN loss of function, with advanced bone age and early growth cessation"
+    context: "human, mixed ancestry, both sexes, heterozygous ACAN loss-of-function variants"
+    timescale: "childhood through adult height"
+    evidence_tier: T1
+    refs: [gkourogianni2017, nilsson2014_2]
+    confidence: A
+    notes: >-
+      One of the few places where a single matrix protein's dosage is quantitatively tied to human
+      adult stature. ACAN haploinsufficiency is among the commonest monogenic causes of idiopathic
+      short stature.
+
+  - edge_id: e00068
+    source: hyaluronan_matrix
+    target: chondrocyte_column_formation
+    relation: required_for
+    sign: "+"
+    magnitude: "growth plates severely abnormal and disorganised with disruption of normal columnar cellular relationships, and decreased aggrecan deposition in the matrix"
+    context: "mouse, Prx1-Cre limb-mesoderm-specific Has2 conditional null; embryonic and perinatal limb"
+    timescale: "embryonic to perinatal"
+    evidence_tier: T1
+    refs: [matsumoto2009]
+    confidence: B
+    notes: >-
+      Hyaluronan is the backbone filament of the aggrecan aggregate, so this is also the aggregate's
+      architectural phenotype - aggrecan cannot be retained without it.
+
+  - edge_id: e00069
+    source: hyaluronan_matrix
+    target: chondrocyte_hypertrophy
+    relation: required_for
+    sign: "+"
+    magnitude: "striking reduction in the NUMBER of hypertrophic chondrocytes and in the expression domains of hypertrophic differentiation markers"
+    context: "mouse, Prx1-Cre Has2 conditional null limb"
+    timescale: "embryonic to perinatal"
+    evidence_tier: T1
+    refs: [matsumoto2009]
+    confidence: B
+
+  - edge_id: e00070
+    source: hyaluronan_matrix
+    target: growth_velocity_longitudinal
+    relation: required_for
+    sign: "+"
+    magnitude: "all limb skeletal elements severely shortened; proximal phalanges duplicated (a patterning effect separable from the growth effect)"
+    context: "mouse, Prx1-Cre Has2 conditional null limb"
+    timescale: "embryonic to perinatal"
+    evidence_tier: T1
+    refs: [matsumoto2009]
+    confidence: B
+
+  - edge_id: e00071
+    source: link_protein_hapln1
+    target: hypertrophic_zone
+    relation: required_for
+    sign: "+"
+    magnitude: "significantly reduced aggrecan deposition in the hypertrophic zone and decreased numbers of prehypertrophic AND hypertrophic chondrocytes; mice dwarfed with delayed bone formation, small epiphyses and flared metaphyses"
+    context: "mouse, Crtl1(Hapln1) targeted null; most homozygotes die perinatally of respiratory failure, survivors develop progressive dwarfism and cervical lordosis"
+    timescale: "perinatal to adult"
+    evidence_tier: T1
+    refs: [watanabe1999]
+    confidence: B
+    notes: >-
+      Link protein does nothing but clamp the aggrecan G1 domain onto hyaluronan, so its null
+      phenotype isolates the contribution of AGGREGATE STABILITY (as opposed to aggrecan abundance)
+      to zonal architecture. The radiographic picture is a spondyloepiphyseal dysplasia.
+
+  - edge_id: e00072
+    source: link_protein_hapln1
+    target: prehypertrophic_zone
+    relation: required_for
+    sign: "+"
+    magnitude: "decreased numbers of prehypertrophic chondrocytes"
+    context: "mouse Crtl1(Hapln1) null"
+    timescale: "perinatal"
+    evidence_tier: T1
+    refs: [watanabe1999]
+    confidence: C
+
+  - edge_id: e00073
+    source: perlecan_hspg2
+    target: chondrocyte_column_formation
+    relation: required_for
+    sign: "+"
+    magnitude: "severe chondrodysplasia with disorganised growth plate columns and reduced fibrillar collagen, in a tissue that has no basement membranes at all"
+    context: "mouse, Hspg2 homozygous null; human functional-null HSPG2 causes dyssegmental dysplasia Silverman-Handmaker, hypomorphic alleles cause Schwartz-Jampel syndrome"
+    timescale: "embryonic to perinatal"
+    evidence_tier: T1
+    refs: [costell1999, arikawahirasaw2001, nicole2000]
+    confidence: B
+    notes: >-
+      Perlecan is a core pericellular matrix component and also the reservoir that presents FGF-2 to
+      the chondrocyte, so the architectural phenotype is not cleanly structural.
+
+  - edge_id: e00074
+    source: perlecan_hspg2
+    target: growth_plate_height
+    relation: correlates_with
+    sign: "+"
+    magnitude: "severe chondrodysplasia; a human allelic series in which complete loss is lethal-severe and hypomorphic loss is mild"
+    context: "mouse null; human DDSH vs Schwartz-Jampel"
+    timescale: "embryonic to lifelong"
+    evidence_tier: T1
+    refs: [costell1999, nicole2000]
+    confidence: C
+
+  - edge_id: e00075
+    source: collagen_type_ii
+    target: growth_plate
+    relation: required_for
+    sign: "+"
+    magnitude: "Col2a1-null mice produce structurally abnormal cartilage that LACKS growth plates in long bones, and develop a skeleton with no endochondral bone formation"
+    context: "mouse, Col2a1 homozygous null, embryonic"
+    timescale: "embryonic"
+    evidence_tier: T1
+    refs: [aszdi1998]
+    confidence: B
+    notes: >-
+      The most absolute matrix requirement in this seam: without collagen II there is no growth plate
+      to have architecture. Human COL2A1 mutations are hypomorphic or dominant-negative rather than
+      null, which is why type II collagenopathies are epiphyseal/vertebral dysplasias rather than
+      absence of endochondral bone.
+
+  - edge_id: e00076
+    source: collagen_fibril_stoichiometry
+    target: hypertrophic_zone
+    relation: correlates_with
+    sign: "+"
+    magnitude: "in HUMAN juvenile rib growth plate, collagen XI is restricted to fibrils under 25 nm diameter and the hypertrophic zone carries a distinct fibril population; young growth cartilage fibrils are up to 80% collagen II, at least 10% IX and at least 10% XI by mass"
+    context: "human juvenile rib growth plate, immunoelectron microscopy; bovine and chicken for the mass fractions"
+    timescale: "not applicable (structural)"
+    evidence_tier: T1
+    refs: [keene1995, eyre2002, mendler1989]
+    confidence: C
+    notes: >-
+      A rare zonally resolved HUMAN matrix-architecture measurement: fibril composition is not
+      constant across the plate, so a single set of matrix material properties cannot be correct for
+      all zones.
+
+  - edge_id: e00077
+    source: collagen_type_ix
+    target: growth_plate
+    relation: correlates_with
+    sign: unknown
+    magnitude: "Col9a1-null mice have NORMAL skeletal development and only later develop non-inflammatory degenerative joint disease; monoallelic human COL9A2 and COL9A3 variants cause multiple epiphyseal dysplasia (11.8% each of a 22-patient, 17-family series)"
+    context: "mouse null; human MED cohort"
+    timescale: "lifelong"
+    evidence_tier: T1
+    refs: [fssler1994, taner2026]
+    confidence: C
+    notes: >-
+      Negative for the plate, positive for the epiphysis - the same protein separates two
+      compartments that are usually conflated.
+
+  - edge_id: e00078
+    source: comp_protein
+    target: growth_plate
+    relation: correlates_with
+    sign: "-"
+    magnitude: "830 patients (471 probands) with COMP variants concentrated in the calcium-binding type 3 repeats; the disease mechanism is intracellular ER retention of misfolded COMP in chondrocytes, not loss of an extracellular structural protein"
+    context: "human, heterozygous COMP variants; pseudoachondroplasia (severe) and multiple epiphyseal dysplasia (mild) as one allelic continuum"
+    timescale: "lifelong"
+    evidence_tier: T1
+    refs: [ni2026, taner2026, briggs1995, thur2001]
+    confidence: B
+    notes: >-
+      Recorded because it inverts the naive matrix logic: the plate fails from a chondrocyte
+      proteostasis defect caused by a matrix gene, so 'matrix protein knockout' intuitions do not
+      transfer. In MED the plate fails structurally without costing much height.
+
+  - edge_id: e00079
+    source: matrilin3
+    target: growth_plate
+    relation: correlates_with
+    sign: "-"
+    magnitude: "MATN3 von Willebrand A domain mutations cause autosomal dominant MED (11.8% of a 22-patient series) by misfolding the A domain and preventing secretion; matrilin-1/matrilin-3 double-deficient mice have abnormally thick and irregular cartilage collagen fibrils"
+    context: "human MED cohorts; mouse double null"
+    timescale: "lifelong"
+    evidence_tier: T1
+    refs: [chapman2001, cotterill2005, nicolae2007, taner2026]
+    confidence: C
+    notes: >-
+      Same proteostasis mechanism as COMP, in a protein that physically sits on the collagen IX
+      surface - and matrilin-3 fails to integrate into matrix at all in collagen IX-null mice, so the
+      COMP/MATN3/COL9 dysplasias are one adaptor network failing in three places.
+
+  - edge_id: e00080
+    source: biglycan_protein
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: "+"
+    magnitude: "biglycan-null mice have shortened long bones and reduced bone mass, an osteoporosis-like phenotype; Bgn but not Dcn deletion lowers trabecular bone mass"
+    context: "mouse, Bgn null; no human BGN growth phenotype established"
+    timescale: "postnatal to adult"
+    evidence_tier: T1
+    refs: [xu1998, hua2025]
+    confidence: C
+
+  - edge_id: e00081
+    source: decorin_protein
+    target: growth_plate
+    relation: correlates_with
+    sign: unknown
+    magnitude: "decorin-null mice have coarse irregular collagen fibrils and fragile skin, with NO reported growth plate phenotype; Dcn deletion does not lower trabecular bone mass whereas Bgn deletion does"
+    context: "mouse, Dcn null"
+    timescale: "postnatal to adult"
+    evidence_tier: T1
+    refs: [danielson1997, hua2025]
+    confidence: D
+    notes: >-
+      A deliberate negative that separates the two class I SLRPs: they are structurally near-identical
+      and skeletally non-equivalent.
+
+  - edge_id: e00082
+    source: fibronectin_cartilage
+    target: chondrocyte_proliferation_rate
+    relation: correlates_with
+    sign: "+"
+    magnitude: "alpha5beta1 integrin mediates the chondrocyte-fibronectin interaction and modulates proliferation"
+    context: "in vitro animal chondrocytes; heterozygous human FN1 mutations cause spondylometaphyseal dysplasia with corner fractures"
+    timescale: "per cell cycle"
+    evidence_tier: T1
+    refs: [enomotoiwamoto1997, lee2017]
+    confidence: D
+
+  - edge_id: e00083
+    source: tnap_alpl
+    target: zone_provisional_calcification
+    relation: required_for
+    sign: "+"
+    magnitude: "Alpl-/- mice have under 1% of wild-type plasma TNAP activity and accumulate PPi, phosphoethanolamine and pyridoxal-5-phosphate; high-resolution TEM places the lesion precisely - mineral crystals still initiate NORMALLY inside matrix vesicles but fail to propagate beyond the vesicle membrane; radiographic rachitic change from about 10 days"
+    context: "mouse Alpl homozygous null, 10-day-old tibial growth plate; TNAP activity is immunolocalised to the hypertrophic and calcifying zones in chicken and coincides with maximal organically bound phosphorus in pig"
+    timescale: "onset by ~10 days postnatal"
+    evidence_tier: T1
+    refs: [fedde1999, anderson2004, vnnen1980, althoff1982]
+    confidence: B
+    notes: >-
+      TNAP is required for the EXTRAvesicular step, not the intravesicular one. This is the sharpest
+      mechanistic localisation in the whole mineralization module and it is why hypophosphatasia and
+      XLH produce superficially similar rickets from opposite causes.
+
+  - edge_id: e00084
+    source: tnap_alpl
+    target: hypertrophic_zone
+    relation: required_for
+    sign: "+"
+    magnitude: "developmental arrest of chondrocyte differentiation with diminished or absent hypertrophic zones in Alpl-/- mice; in human hypophosphatasia the plate continues to grow but the unmineralised zone widens as rickets"
+    context: "mouse Alpl null; human ALPL loss-of-function"
+    timescale: "postnatal, from ~10 days in mouse"
+    evidence_tier: T1
+    refs: [fedde1999, sala2026]
+    confidence: B
+
+  - edge_id: e00085
+    source: inorganic_pyrophosphate
+    target: zone_provisional_calcification
+    relation: inhibits
+    sign: "-"
+    magnitude: "PPi adsorbs to nascent apatite crystal faces and blocks crystal proliferation and growth; human plasma PPi is 3.50 +/- 0.11 umol/L (99% range 1.19-5.65) and the working range in tissue is 1-6 uM"
+    context: "human plasma (73 healthy adults); mouse and rat growth plate chondrocytes; the master physiological mineralization inhibitor"
+    timescale: "continuous"
+    evidence_tier: T1
+    refs: [russell1971, milln2016, kim2010]
+    confidence: B
+    notes: >-
+      Mineralization in the plate is not controlled by mineral supply - the extracellular Ca x P ion
+      product in pig growth plate is far above the ~2 mM^2 needed in vitro. It is controlled by where
+      the inhibitor is destroyed.
+
+  - edge_id: e00086
+    source: pi_ppi_ratio
+    target: chondrocyte_hypertrophy
+    relation: activates
+    sign: "+"
+    magnitude: "extracellular Pi stimulated terminal differentiation marker genes (ank, alkaline phosphatase, MMP-13, osteocalcin, Runx2), mineralization and apoptosis, dependent on concentration and on type III Na/Pi cotransporter (Pit-1) expression; LOWER Pi sufficed for differentiation, HIGHER Pi was required for apoptosis; Pit-1 suppression abolished the effect"
+    context: "growth plate chondrocytes in culture; extracellular Pi is highest in the growth plate immediately before mineralization onset"
+    timescale: "hours to days"
+    evidence_tier: T1
+    refs: [kim2010]
+    confidence: C
+    notes: >-
+      Makes phosphate an instructive signal rather than a substrate: the Pi/PPi ratio sets the timing
+      of terminal differentiation, not merely whether apatite forms. Directly relevant to why XLH
+      (low Pi) impairs hypertrophy as well as mineralization.
+
+  - edge_id: e00087
+    source: pi_ppi_ratio
+    target: hypertrophic_chondrocyte
+    relation: activates
+    sign: "+"
+    magnitude: "high extracellular Pi was required for stimulation of apoptosis of growth plate chondrocytes; PPi opposed it"
+    context: "growth plate chondrocytes in culture, dose-separated from the differentiation effect"
+    timescale: "hours to days"
+    evidence_tier: T1
+    refs: [kim2010]
+    confidence: C
+    notes: >-
+      Ties the mineralization module to the terminal fate decision at the chondro-osseous junction.
+
+  - edge_id: e00088
+    source: matrix_vesicle
+    target: zone_provisional_calcification
+    relation: required_for
+    sign: "+"
+    magnitude: "the first apatite crystal of the growth plate forms inside 30-200 nm vesicles budded into the longitudinal septa of the LOWER hypertrophic zone; Phospho1-/-;Alpl-/- double nulls have NO detectable skeletal mineral at all, while each single null retains some"
+    context: "mouse, chicken and rat matrix vesicle preparations; mouse double null is perinatal lethal"
+    timescale: "continuous during plate transit"
+    evidence_tier: T1
+    refs: [wuthier1992, anderson2004, yadav2011]
+    confidence: B
+    notes: >-
+      Genetically separable two-stage model: intravesicular initiation (PHOSPHO1, Pi influx) then
+      extravesicular propagation (TNAP holding PPi low). The double null is the proof that these are
+      the only two routes.
+
+  - edge_id: e00089
+    source: phospho1_enzyme
+    target: zone_provisional_calcification
+    relation: required_for
+    sign: "+"
+    magnitude: "PHOSPHO1 is the cytosolic, matrix-vesicle-enclosed phosphatase specific for phosphoethanolamine and phosphocholine that supplies intravesicular Pi; its pharmacological inhibition impairs skeletal mineralization in chick limb development, and Phospho1-/- tibiae have reduced elastic modulus and hardness by nanoindentation"
+    context: "mouse Phospho1 null; chicken limb development; PHOSPHO1 ablation alters the growth plate lipidome in all three zones by MALDI imaging"
+    timescale: "continuous"
+    evidence_tier: T1
+    refs: [roberts2007, yadav2011, macrae2010, huesa2011, tzvetkov2023]
+    confidence: C
+
+  - edge_id: e00090
+    source: enpp1_enzyme
+    target: zone_provisional_calcification
+    relation: inhibits
+    sign: "-"
+    magnitude: "ENPP1 hydrolyses ATP to AMP plus PPi and is the required source of extracellular PPi: Enpp1-/- mouse bone contains under 2.5% of wild-type PPi"
+    context: "mouse Enpp1 null; human ENPP1 loss of function causes generalised arterial calcification of infancy AND autosomal recessive hypophosphatemic rickets type 2 from the same alleles"
+    timescale: "continuous"
+    evidence_tier: T1
+    refs: [szeri2022, lorenzdepiereu2010, rutsch2003]
+    confidence: B
+    notes: >-
+      The opposing arm to TNAP on the same PPi pool. The 2022 revision showed ANKH exports ATP rather
+      than PPi, so ENPP1 rather than ANKH is the proximate PPi generator.
+
+  - edge_id: e00091
+    source: ankh_transporter
+    target: zone_provisional_calcification
+    relation: inhibits
+    sign: "-"
+    magnitude: "blocking Ank in terminal growth plate chondrocytes raises extracellular PPi and blocks mineralization; ANK expression in growth plate chondrocytes is oxygen-tension dependent and HIF-1 mediated"
+    context: "rat and mouse terminal growth plate chondrocytes; human ANKH disease alleles"
+    timescale: "continuous"
+    evidence_tier: T1
+    refs: [wang2005, zaka2009, szeri2022]
+    confidence: C
+    notes: >-
+      Mechanism revised in 2022: ANKH is an ATP exporter, not a PPi transporter, so its effect on
+      physeal PPi is indirect via ENPP1 substrate supply. ANK is absent from matrix vesicles, which
+      is why ank loss cannot rescue Alpl-/-.
+
+  - edge_id: e00092
+    source: osteopontin_spp1
+    target: zone_provisional_calcification
+    relation: inhibits
+    sign: "-"
+    magnitude: "osteopontin inhibits hydroxyapatite formation and growth in a gelatin gel in vitro; Opn-/-;Mgp-/- double nulls calcify far worse than Mgp-/- alone, establishing additivity; in HUMAN growth plate SPP1 marks the mineralization-INHIBITING epiphyseal boundary"
+    context: "in vitro gel; mouse double null; human proteomic and elemental mapping of growth plate from ten paediatric donors (six amputation, four polydactyly)"
+    timescale: "continuous"
+    evidence_tier: T1
+    refs: [boskey1993, speer2002, xie2025]
+    confidence: B
+
+  - edge_id: e00093
+    source: matrix_gla_protein
+    target: growth_plate
+    relation: inhibits
+    sign: "-"
+    magnitude: "Mgp-/- mice calcify their growth plate cartilage and their arteries and die within two months - inappropriate mineralization of zones that are normally unmineralized"
+    context: "mouse Mgp null; MGP is also among the genes upregulated in the cartilage layer that suppresses calcification of the deep layer in bovine osteochondral explants"
+    timescale: "within 2 months postnatal"
+    evidence_tier: T1
+    refs: [luo1997, xu2026, speer2002]
+    confidence: B
+    notes: >-
+      The mirror-image experiment to hypophosphatasia: removing an inhibitor mineralizes the wrong
+      zones, removing the inhibitor-destroyer leaves the right zone unmineralized. Zonal
+      mineralization is set by inhibitor placement, not by mineral availability.
+
+  - edge_id: e00094
+    source: fetuin_a_ahsg
+    target: zone_provisional_calcification
+    relation: inhibits
+    sign: "-"
+    magnitude: "AHSG concentrates at the growth-plate/epiphysis interface in human tissue, where mineralization is actively inhibited; Ahsg-null mice develop widespread ectopic calcification; fetuin-A works by forming soluble colloidal calciprotein particles rather than by adsorbing to crystal faces"
+    context: "human growth plate proteomics (10 paediatric donors); mouse Ahsg null; liver-derived, reaches cartilage from the circulation"
+    timescale: "continuous"
+    evidence_tier: T1
+    refs: [xie2025, schafer2003, heiss2003]
+    confidence: B
+
+  - edge_id: e00095
+    source: mineralization_front
+    target: chondro_osseous_junction
+    relation: precedes
+    sign: "+"
+    magnitude: "longitudinal septa mineralize while transverse septa do not, converting cartilage into the scaffold the capillary bud and osteoblasts then occupy; extracellular sulphur (sulphated proteoglycan proxy) falls from 3.5% to 0.3% of dry mass on mineralization; the human GP-metaphysis interface shows a GRADUAL modulus rise (416 -> 3220 MPa) enriched in ENPP1 and ALPL, whereas the GP-epiphysis interface shows a SHARP step (131 -> 11920 MPa) and is an active inhibition zone"
+    context: "porcine electron microprobe (althoff1982); human AFM plus proteomics on 10 paediatric donors (xie2025)"
+    timescale: "continuous, tracking plate advance"
+    evidence_tier: T1
+    refs: [althoff1982, xie2025]
+    confidence: B
+    notes: >-
+      The plate is mineralization-POLARISED, not merely mineralization-terminated. Both boundaries
+      carry inhibitors; what differs is whether TNAP and ENPP1 are present to override them.
+
+  - edge_id: e00096
+    source: hydroxyapatite_nucleation
+    target: zone_provisional_calcification
+    relation: required_for
+    sign: "+"
+    magnitude: "mineral appears first as amorphous calcium phosphate, transiently stabilised by inhibitory proteins, then converted to oriented apatite platelets templated by collagen charge clusters in the 40 nm gap zone"
+    context: "in vitro collagen templating (nudetlman-type cryo-TEM); porcine growth plate microprobe for the ionic environment"
+    timescale: "minutes to hours per crystal, continuous at tissue level"
+    evidence_tier: T1
+    refs: [nudelman2010, althoff1982, wuthier1992]
+    confidence: C
+
+  - edge_id: e00097
+    source: zonal_stiffness_gradient
+    target: chondron
+    relation: correlates_with
+    sign: "+"
+    magnitude: "chondron bending and kinking is largest at the reserve/proliferative interface, which is also where the porcine unconfined-compression data place the largest step in zonal stiffness (RZ stiffest; PZ and HZ 0.5x axially, 0.33x transversely, permeability 3x higher)"
+    context: "bovine compressed physis for the deformation (vendra2018); newborn porcine distal ulna, transversely isotropic biphasic model, for the stiffness (sergerie2009)"
+    timescale: "acute"
+    evidence_tier: T1
+    refs: [vendra2018, sergerie2009]
+    confidence: D
+    notes: >-
+      Two species, two methods, one inferred correspondence. Recorded at low confidence because the
+      DIRECTION of the zonal stiffness gradient is itself disputed (see e00098).
+
+  - edge_id: e00098
+    source: zonal_stiffness_gradient
+    target: chondrocyte_hypertrophy
+    relation: hypothesized_link
+    sign: unknown
+    context: "rabbit, porcine, bovine and human; no zone, stage or sex can be specified because the underlying measurement is not agreed"
+    timescale: "unknown"
+    evidence_tier: T1
+    refs: [sergerie2009, xie2025, eckstein2022, radhakrishnan2004]
+    confidence: speculative
+    gap_id: g_l6l5_005
+    notes: >-
+      Published growth plate moduli span 0.38 MPa (rabbit tissue-scale microindentation) to 416 MPa
+      (human sharp-tip AFM) - three orders of magnitude - and the DIRECTION of the zonal gradient is
+      not agreed: porcine unconfined compression makes the reserve zone stiffest, rabbit
+      microindentation puts the peak in the upper hypertrophic zone, rabbit cranial base AFM has
+      modulus rising monotonically to the mineralizing zone. Until that is resolved, no
+      stiffness-to-behaviour relation in the plate can be stated with a sign, which is why this edge
+      is written speculative rather than given a direction.
+
+  - edge_id: e00099
+    source: mmp9_protease
+    target: growth_plate_height
+    relation: inhibits
+    sign: "-"
+    magnitude: "Mmp9-null growth plates lengthen progressively to about EIGHT TIMES normal before three weeks postnatal, then normalise after three weeks by compensatory apoptosis and vascularisation"
+    context: "mouse Mmp9 null; MMP-9 is supplied by invading marrow-derived chondroclasts/septoclasts, not by chondrocytes"
+    timescale: "transient: accumulates to 3 weeks postnatal, resolved thereafter"
+    evidence_tier: T1
+    refs: [vu1998]
+    confidence: C
+    notes: >-
+      The largest single-gene effect on growth plate height in this atlas, and it is a REMOVAL rate
+      defect, not a production defect. No human MMP9 deficiency syndrome is known, so the mechanism
+      has no human genetic anchor.
+
+  - edge_id: e00100
+    source: mmp9_protease
+    target: chondro_osseous_junction
+    relation: required_for
+    sign: "+"
+    magnitude: "hypertrophic chondrocytes differentiate normally but their apoptosis, the vascular invasion and the ossification are all delayed; the defect is cell-extrinsic to cartilage and is rescued by wild-type bone marrow transplantation"
+    context: "mouse Mmp9 null with marrow transplant rescue"
+    timescale: "first 3 weeks postnatal"
+    evidence_tier: T1
+    refs: [vu1998]
+    confidence: C
+
+  - edge_id: e00101
+    source: mmp9_protease
+    target: metaphyseal_vasculature
+    relation: required_for
+    sign: "+"
+    magnitude: "Mmp9-null growth plates in culture show delayed release of a matrix-bound angiogenic activator"
+    context: "mouse Mmp9 null growth plate culture"
+    timescale: "days in culture"
+    evidence_tier: T1
+    refs: [vu1998]
+    confidence: C
+
+  - edge_id: e00102
+    source: mmp13_protease
+    target: hypertrophic_zone
+    relation: inhibits
+    sign: "-"
+    magnitude: "Mmp13-null mice have MARKEDLY INCREASED hypertrophic domains with significant interstitial collagen accumulation, plus delayed endochondral ossification and delayed formation and vascularisation of primary ossification centres; the abnormality persists into adulthood and phenocopies human hereditary chondrodysplasias"
+    context: "mouse Mmp13 null; MMP-13 is the chondrocyte-intrinsic collagenase of the hypertrophic zone"
+    timescale: "embryonic through adult (persistent, unlike Mmp9)"
+    evidence_tier: T1
+    refs: [inada2004]
+    confidence: B
+    notes: >-
+      Contrast with Mmp9: MMP-13 is made by the chondrocyte and its loss is permanent; MMP-9 comes
+      from invading marrow cells and its loss is compensated after 3 weeks. Different cellular
+      sources, different persistence.
+
+  - edge_id: e00103
+    source: mmp13_protease
+    target: cartilage_septum_resorption
+    relation: required_for
+    sign: "+"
+    magnitude: "absence of Mmp13 causes significant interstitial collagen accumulation from lack of the collagenase-mediated cleavage that normally occurs in growth plates and primary ossification centres"
+    context: "mouse Mmp13 null; authentic matrix vesicles also contain active MMP-13 capable of activating latent TGF-beta"
+    timescale: "continuous during plate transit"
+    evidence_tier: T1
+    refs: [inada2004, dangelo2001]
+    confidence: C
+
+  - edge_id: e00104
+    source: mmp13_protease
+    target: growth_velocity_longitudinal
+    relation: correlates_with
+    sign: unknown
+    magnitude: "a novel human MMP13 frameshift variant causes short stature via ENHANCED MMP13-HSPA5 interaction and activated ER stress - a gain of interaction, not a simple loss of proteolysis"
+    context: "human, single kindred"
+    timescale: "childhood to adult height"
+    evidence_tier: T1
+    refs: [lu2026]
+    confidence: C
+    notes: >-
+      Sign is left unknown deliberately. The mouse null (more hypertrophic zone) and the human variant
+      (short stature) do not have a common direction because the human mechanism is proteostatic,
+      like COMP and MATN3, rather than proteolytic.
+
+  - edge_id: e00105
+    source: mmp14_mt1mmp
+    target: growth_plate
+    relation: required_for
+    sign: "+"
+    magnitude: "Mmp14-null mice develop dwarfism, osteopenia, generalised arthritis and connective tissue disease from inadequate collagen turnover - the most severe skeletal phenotype of any single MMP; MMP-14 is the most prominent MMP in the HUMAN child and adolescent growth plate and is present in all zones"
+    context: "mouse global null; human growth plate immunolocalisation across zones"
+    timescale: "postnatal, progressive"
+    evidence_tier: T1
+    refs: [holmbeck1999, haeusler2005, xia2023]
+    confidence: C
+    notes: >-
+      The severity is partly non-chondrocytic: global but not chondrocyte-specific MT1-MMP deficiency
+      causes the inflammatory arthritis, so the dwarfism and the arthritis are separable.
+
+  - edge_id: e00106
+    source: cartilage_osmotic_swelling
+    target: hypertrophic_volume_increase
+    relation: hypothesized_link
+    sign: "+"
+    context: "mouse hypertrophic chondrocytes for the swelling measurement; bovine and human articular cartilage for the osmotic parameters - no zone-resolved measurement in a growth plate"
+    timescale: "hours (phase 2 of the three-phase enlargement)"
+    evidence_tier: T1
+    refs: [cooper2013, zimmerman2021, lesperance1992]
+    confidence: speculative
+    gap_id: g_l6l5_008
+    notes: >-
+      Quantitative phase microscopy shows the middle phase of chondrocyte enlargement is massive fluid
+      uptake diluting cellular dry mass by about 60%. Cartilage fixed charge density is -0.19 to
+      -0.35 M and in situ osmotic pressure is about one third of the ideal Donnan prediction. Whether
+      the swelling gradient is generated cell-autonomously by intracellular solute accumulation or by
+      a change in matrix fixed charge around the hypertrophying cell has not been tested - the
+      measurements exist in different tissues and have never been made in the same specimen.
+
+  - edge_id: e00107
+    source: pericellular_matrix
+    target: hypertrophic_volume_increase
+    relation: hypothesized_link
+    sign: "-"
+    context: "human, porcine and mouse pericellular matrix data; bovine chondron deformation; no growth plate experiment manipulates the pericellular matrix and reads out hypertrophic cell volume"
+    timescale: "unknown"
+    evidence_tier: T1
+    refs: [vendra2018, darling2010, lee2025]
+    confidence: speculative
+    gap_id: g_l6l5_008
+    notes: >-
+      The standard account of why hypertrophy elongates a bone rather than widening it is that the
+      laterally confining matrix channels volume increase along the growth axis. The pericellular
+      matrix has a modulus about 0.35x that of the interterritorial matrix and chondrons bend rather
+      than compress uniformly, both of which bear on that account, but no experiment has tested it.
+
+  - edge_id: e00108
+    source: proteoglycan_turnover
+    target: cartilage_septum_resorption
+    relation: hypothesized_link
+    sign: "+"
+    context: "human turnover numbers come from ADULT ARTICULAR cartilage; the septal removal rate comes from rat proximal tibia; the two have never been measured in the same tissue"
+    timescale: "mismatched by three orders of magnitude - see notes"
+    evidence_tier: T1
+    refs: [maroudas1998, shapses1994, hunziker1987]
+    confidence: speculative
+    gap_id: g_l6l5_007
+    notes: >-
+      Aggrecan monomer half-life in adult human articular cartilage is 3.4 years and free G1 half-life
+      is 25 years. A rat proximal tibial column removes one septum per 3 cells per hour, i.e. the
+      entire matrix of a column transits and is destroyed in days. These two numbers cannot both
+      describe growth plate proteoglycan, and no growth-plate-specific human turnover measurement
+      exists. This is a scale gap, and quoting articular half-lives for physeal matrix is a defect
+      that appears in reviews.
+
+  - edge_id: e00109
+    source: adamts5
+    target: growth_plate
+    relation: correlates_with
+    sign: unknown
+    magnitude: "Adamts4/Adamts5 DOUBLE knockout mice are physiologically normal and protected from surgical osteoarthritis; separately, mice engineered with aggrecan resistant to MMP cleavage at the N341-F342 interglobular-domain site grow normally and do not accumulate aggrecan"
+    context: "mouse; two independent genetic strategies, both negative for skeletal growth"
+    timescale: "developmental through adult"
+    evidence_tier: T1
+    refs: [majumdar2007, little2005]
+    confidence: C
+    notes: >-
+      A double negative with real consequences: neither aggrecanase-mediated nor MMP-mediated
+      aggrecanolysis is required to remove aggrecan from the hypertrophic zone before mineralization,
+      so the actual removal mechanism is unidentified (g_l6l5_006). Dilution by matrix expansion and
+      ADAMTS cleavage at Glu373-Ala374 in a redundant configuration are the surviving candidates.
+
+  - edge_id: e00110
+    source: matrix_water_content_zonal
+    target: nutrient_diffusion_growth_plate
+    relation: hypothesized_link
+    sign: "+"
+    context: "porcine microprobe (66% tissue fluid, assumed not measured zonally) and mouse; no zonally resolved water measurement in any growth plate, human or animal"
+    timescale: "unknown"
+    evidence_tier: T1
+    refs: [althoff1982, shiguetomimedi2013]
+    confidence: speculative
+    gap_id: g_l6l5_015
+    notes: >-
+      The plate is avascular, so every solute a chondrocyte needs crosses a dense polyanionic gel by
+      diffusion, and water is the medium. Water content is the least quantified variable in L5:
+      66% is an assumed value in the microprobe study, and MR T1 mapping can measure physeal water to
+      97.3% accuracy against freeze-drying but has not been applied zonally.
+
+  - edge_id: e00111
+    source: aggrecan_acan
+    target: nutrient_diffusion_growth_plate
+    relation: hypothesized_link
+    sign: "-"
+    context: "bovine fixed-charge-density measurements in articular cartilage; no solute transport measurement in growth plate matrix in any species"
+    timescale: "unknown"
+    evidence_tier: T1
+    refs: [lesperance1992, zimmerman2021]
+    confidence: speculative
+    gap_id: g_l6l5_015
+    notes: >-
+      Aggrecan carries essentially all the fixed negative charge of cartilage (-0.19 to -0.35 M), which
+      must retard anionic solutes and concentrate cations by Donnan partition. Oxygen and glucose
+      gradients across the plate are measured; the charge-dependence of solute transport in physeal
+      matrix specifically is not.
+
+  - edge_id: e00112
+    source: lysyl_oxidase
+    target: growth_plate
+    relation: hypothesized_link
+    sign: "+"
+    context: "mouse Lox null - perinatal lethal from aortic aneurysm and diaphragmatic defects before any growth plate readout is possible"
+    timescale: "unknown"
+    evidence_tier: T1
+    refs: [mki2002, eyre2002]
+    confidence: speculative
+    gap_id: g_l6l5_013
+    notes: >-
+      Lysyl oxidase initiates every covalent collagen crosslink, and cartilage collagen II is
+      crosslinked head-to-tail by hydroxylysyl pyridinoline at two telopeptide sites. The global null
+      dies before the growth plate can be assessed, so a cartilage-specific conditional is the missing
+      experiment. This is a method-blocked gap, not an absence of interest.
+
+# =====================================================================
+# SEAM D - L11 pathology -> L5 matrix and mineralization
+# The existing graph already carries L5->L11 gene-to-disease edges (ACAN, COL10A1,
+# COL2A1, COMP, PPi, matrix vesicle). Written here are (a) the reverse-direction
+# edges where the DISEASE STATE perturbs a matrix process, which is different
+# biology, and (b) the two gene-to-disease links the L5->L11 set was missing.
+# =====================================================================
+
+  - edge_id: e00113
+    source: x_linked_hypophosphatemia
+    target: pi_ppi_ratio
+    relation: inhibits
+    sign: "-"
+    magnitude: "inactivating PHEX mutations raise circulating FGF23, which suppresses renal phosphate reabsorption and 1-alpha-hydroxylation of vitamin D, producing chronic hypophosphataemia"
+    context: "human, X-linked dominant PHEX loss of function; systemic rather than zone-local"
+    timescale: "lifelong, from infancy"
+    evidence_tier: T1
+    refs: [liang2025, soto2026]
+    confidence: B
+    notes: >-
+      The mirror of hypophosphatasia: in HPP the inhibitor is not destroyed, in XLH the substrate is
+      not supplied. Both give rachitic widening of the unmineralized zone, from opposite sides of the
+      same equation - which is why serum phosphate, not radiographs, distinguishes them.
+
+  - edge_id: e00114
+    source: x_linked_hypophosphatemia
+    target: hydroxyapatite_nucleation
+    relation: inhibits
+    sign: "-"
+    magnitude: "insufficient extracellular phosphate for apatite deposition at the zone of provisional calcification, plus impaired hypertrophy"
+    context: "human PHEX loss of function; growth plate, hypertrophic and calcifying zones"
+    timescale: "lifelong"
+    evidence_tier: T1
+    refs: [liang2025, soto2026, kim2010]
+    confidence: B
+    notes: >-
+      The hypertrophy component is not merely a consequence of failed mineralization: extracellular
+      Pi independently drives terminal differentiation via Pit-1 (kim2010), so low Pi hits both steps.
+
+  - edge_id: e00115
+    source: mucopolysaccharidosis_growth
+    target: proteoglycan_turnover
+    relation: inhibits
+    sign: "-"
+    magnitude: "lysosomal enzyme deficiency blocks glycosaminoglycan catabolism so keratan sulphate and chondroitin-6-sulphate (MPS IVA, Morquio A) or heparan sulphate (MPS IIIA, Sanfilippo A) accumulate in chondrocyte lysosomes and in the extracellular matrix"
+    context: "human, autosomal recessive lysosomal enzyme deficiencies; postnatally acquired growth failure with normal birth length"
+    timescale: "postnatal, progressive over childhood"
+    evidence_tier: T1
+    refs: [carmon2026]
+    confidence: B
+    notes: >-
+      The only human experiment in which growth plate matrix is progressively poisoned from within by
+      undegraded substrate rather than by a missing structural component. Keratan sulphate and
+      chondroitin-6-sulphate are the aggrecan glycosaminoglycans, so MPS IVA is in effect a defect of
+      aggrecan CATABOLISM - the step that e00109 shows is otherwise unidentified.
+
+  - edge_id: e00116
+    source: matrilin3
+    target: multiple_epiphyseal_dysplasia
+    relation: required_for
+    sign: "+"
+    magnitude: "MATN3 accounts for 11.8% of a 22-patient, 17-family MED series; von Willebrand A domain mutations misfold the A domain and prevent secretion of the mutant protein"
+    context: "human, autosomal dominant MED; MATN3 alongside COMP (47%), COL9A2 and COL9A3 (11.8% each), SLC26A2 (17.6%) and CANT1 (11.8%)"
+    timescale: "childhood onset, lifelong"
+    evidence_tier: T1
+    refs: [chapman2001, cotterill2005, taner2026]
+    confidence: A
+    notes: >-
+      Fills the MATN3 arm of the MED aetiology that the existing COMP-only edges left open.
+
+  - edge_id: e00117
+    source: collagen_type_ix
+    target: multiple_epiphyseal_dysplasia
+    relation: required_for
+    sign: "+"
+    magnitude: "monoallelic COL9A2 and COL9A3 variants account for 11.8% each in a 22-patient, 17-family MED series"
+    context: "human, autosomal dominant MED; contrast with Col9a1-null mice which have normal skeletal development"
+    timescale: "childhood onset, lifelong"
+    evidence_tier: T1
+    refs: [taner2026, fssler1994]
+    confidence: B
+    notes: >-
+      Human dominant COL9 alleles cause epiphyseal disease that the mouse null does not - a
+      dominant-negative rather than loss-of-function mechanism, consistent with matrilin-3 failing to
+      integrate into matrix when collagen IX is absent.
+
+# =====================================================================
+# SEAM E - L13 methods -> L1 / L5 / L6
+# Method nodes constrain what can be known about the other three seams. L13->L5
+# and L13->L6 were both completely empty.
+# =====================================================================
+
+  - edge_id: e00118
+    source: atomic_force_microscopy_cartilage
+    target: zonal_stiffness_gradient
+    relation: correlates_with
+    sign: "+"
+    magnitude: "sharp-tip AFM (9 nm tip radius, 26 N/m cantilever, 6 uN peak force, Hertz conical fit) on 150 um hydrated human cryosections gives 130.7 +/- 36.6 MPa (resting zone) and 416.2 +/- 107.2 MPa (hypertrophic zone); tissue-scale hydrated microindentation of 9-week rabbit proximal tibia gives 380-690 kPa - a 300- to 1000-fold difference on the same tissue class"
+    context: "human phalangeal (0-5 y) and tibial (6-14 y) growth plates, 10 donors, n=3 per interface; rabbit proximal tibia n=15"
+    timescale: "not applicable (measurement)"
+    evidence_tier: T1
+    refs: [xie2025, eckstein2022, radhakrishnan2004, darling2010]
+    confidence: B
+    notes: >-
+      The single largest source of the three-order-of-magnitude spread in published physeal stiffness:
+      a nanoscale sharp tip probes local mineralised/fibrillar matrix with no time for interstitial
+      fluid to redistribute, while tissue-scale indentation probes a poroelastic continuum. These are
+      different physical quantities reported under one word. Any L6 model that consumes a modulus must
+      state the length scale.
+
+  - edge_id: e00119
+    source: porcine_growth_plate_model
+    target: zonal_stiffness_gradient
+    relation: correlates_with
+    sign: unknown
+    magnitude: "newborn porcine distal ulna by unconfined compression stress-relaxation with a transversely isotropic biphasic model makes the RESERVE zone the stiffest: proliferative and hypertrophic zones 0.5x axially, 0.33x transversely, with 3x higher radial permeability"
+    context: "newborn porcine distal ulna"
+    timescale: "not applicable (measurement)"
+    evidence_tier: T1
+    refs: [sergerie2009]
+    confidence: C
+    notes: >-
+      Opposite in DIRECTION to rabbit microindentation (peak in upper hypertrophic zone) and to human
+      sharp-tip AFM (monotonic rise to the hypertrophic zone). Species, age, hydration, loading rate
+      and constitutive model all differ; none of the three is a human weight-bearing physis measured
+      hydrated at tissue scale.
+
+  - edge_id: e00120
+    source: finite_element_model_physis
+    target: physeal_stress_in_vivo
+    relation: correlates_with
+    sign: unknown
+    magnitude: "every human physeal stress figure in the literature is model output; the tension-band-plate model of the femoral physis during guided growth is stated by its authors as not fully participant-specific"
+    context: "human geometry, in silico; guided growth, gait-driven femoral models, foot progression angle models"
+    timescale: "not applicable (method)"
+    evidence_tier: T1
+    refs: [hucke2023, rodrguez2025, koller2026]
+    confidence: C
+    notes: >-
+      The models are unavoidable - the measurement is impossible (g_l6mech_003) - but they consume the
+      animal stress-growth coefficient as an input, so a model cannot be used to validate the
+      coefficient without circularity.
+
+  - edge_id: e00121
+    source: growth_plate_explant_culture
+    target: static_vs_dynamic_loading
+    relation: required_for
+    sign: "+"
+    magnitude: "the entire matched-mean-strain static/dynamic contrast exists only in explants: 10% static vs 7-13% at 0.1 Hz for 48 h in swine ulna, and a stress-relaxation plus confocal protocol varying frequency and amplitude in the same model"
+    context: "porcine ulnar growth plate explants, 4-week-old animals, bioreactor"
+    timescale: "48 h to days"
+    evidence_tier: T1
+    refs: [sergerie2011, kaviani2016]
+    confidence: B
+    notes: >-
+      Explants are the only format in which a defined stimulus can be applied to a growth plate
+      without systemic confounding, and they are also where the static/dynamic result INVERTS relative
+      to in vivo (e00009). Method and finding cannot be separated here.
+
+  - edge_id: e00122
+    source: growth_plate_explant_culture
+    target: hypertrophic_chondrocyte
+    relation: inhibits
+    sign: "-"
+    magnitude: "viability falls with compression magnitude, duration, frequency and amplitude; proliferative and hypertrophic chondrocytes are the most sensitive zones"
+    context: "swine ulnar growth plate explants, n=60 across 10 loading groups"
+    timescale: "12-24 h"
+    evidence_tier: T1
+    refs: [kaviani2015]
+    confidence: B
+    notes: >-
+      A method-artefact edge: above a threshold an explant loading experiment measures zonal cell
+      death rather than mechanobiology, and the most sensitive zones are exactly the ones whose
+      architecture is scored.
+
+  - edge_id: e00123
+    source: porcine_growth_plate_model
+    target: hueter_volkmann_law
+    relation: correlates_with
+    sign: "+"
+    magnitude: "porcine single-level vertebral body tethering reproduces growth modulation at human-scale plate dimensions: 53% vs -1% at 2 weeks for high vs low tether tension (p=0.03), collapsing to 14% vs 10% (p=0.6) over weeks 2-4"
+    context: "kyphotic swine model, posterior vertebral body tethering"
+    timescale: "2 weeks, then escape"
+    evidence_tier: T1
+    refs: [halanski2026, sergerie2009]
+    confidence: C
+    notes: >-
+      The pig is the only model whose physeal dimensions and loading approach human scale, and it
+      reproduces both the law and its two-week escape.
+
+  - edge_id: e00124
+    source: rat_growth_plate_model
+    target: strain_magnitude_dependence
+    relation: required_for
+    sign: "+"
+    magnitude: "the entire stress-growth linearity result (17.1%/0.1 MPa, range 9.2-23.9) comes from rat, rabbit and calf caudal vertebrae and proximal tibiae loaded by an external apparatus over approximately 0.02-0.2 MPa"
+    context: "rat, rabbit, bovine; two skeletal sites; immature animals"
+    timescale: "8 days"
+    evidence_tier: T1
+    refs: [stokes2006]
+    confidence: C
+    notes: >-
+      The applied stress range was chosen for the apparatus, not for physiology, so the linear window
+      is an artefact of the method as much as a property of the plate (g_l6mech_002). Rats do not fuse
+      their physes, which further limits what an 8-day rat window can say about a human plate that
+      must run for 15 years and then close.
+
+  - edge_id: e00125
+    source: micro_ct_growth_plate
+    target: physeal_bar_formation
+    relation: required_for
+    sign: "+"
+    magnitude: "transphyseal bony bridges counted and their density quantified in mouse tibiae; bony bar accumulation followed over 42 days on a validated 5-point radiological and histological scale in the mouse distal femoral drill-hole model"
+    context: "mouse tibia and distal femur; micro-CT images mineral, and the plate is defined by its absence of mineral"
+    timescale: "up to 42 days"
+    evidence_tier: T1
+    refs: [samvelyan2022, li2026_2]
+    confidence: B
+    notes: >-
+      Micro-CT reports the plate as a radiolucent gap, so it measures the bar and the gap geometry
+      well and the cartilage itself not at all. Every quantitative bar phenotype in this atlas is
+      therefore a mineral measurement.
+
+  - edge_id: e00126
+    source: proteomics_growth_plate
+    target: mineralization_front
+    relation: required_for
+    sign: "+"
+    magnitude: "the polarised-mineralization model - SPP1 and AHSG at the inhibiting epiphyseal boundary, ENPP1 and ALPL alongside them at the promoting metaphyseal boundary - rests on ONE human study of ten paediatric donors (six amputations for osteosarcoma or trauma, four polydactyly)"
+    context: "human growth plate, proteomic plus elemental mapping; ToF-SIMS imaging as the second human dataset"
+    timescale: "not applicable (method)"
+    evidence_tier: T1
+    refs: [xie2025, zoehrer2025]
+    confidence: C
+    notes: >-
+      The most important recent human result in L5 has n=10 donors and no independent replication.
+      Four of the ten are polydactylous digits, which are not weight-bearing physes.
+
+  - edge_id: e00127
+    source: human_growth_plate_tissue_scarcity
+    target: zonal_stiffness_gradient
+    relation: inhibits
+    sign: "-"
+    magnitude: "a donor census across the atlas bibliography plus a Europe PMC title sweep located 30 studies examining human growth plate tissue directly; the 21 that state donor counts sum to 259 donors, 157 of them fetal or perinatal autopsy specimens; the human physeal AFM stiffness dataset uses 10 donors with n=3 per interface"
+    context: "human; census executed 2026-08-05"
+    timescale: "not applicable (constraint)"
+    evidence_tier: T1
+    refs: [human_gp_donor_census_20260805, xie2025, rodriguez1992]
+    confidence: B
+    notes: >-
+      The reason no human weight-bearing physis has been measured hydrated at tissue scale is supply,
+      not method. This is what makes g_l6l5_005 a method-and-material problem rather than a question
+      awaiting a better instrument.
+
+  - edge_id: e00128
+    source: immunohistochemistry_cartilage_artifact
+    target: collagen_type_x
+    relation: inhibits
+    sign: "-"
+    magnitude: "decalcification, mandatory wherever the hypertrophic zone or chondro-osseous junction is included, degrades epitopes; the polyanionic proteoglycan matrix binds cationic antibodies non-specifically"
+    context: "human growth plate immunohistochemistry, the basis of most human zonal protein localisation"
+    timescale: "not applicable (artefact)"
+    evidence_tier: T1
+    refs: [nilsson2003, egerbacher2002, nilsson1999]
+    confidence: C
+    notes: >-
+      Collagen X is chosen as the target because it is the canonical hypertrophic marker AND is
+      localised in exactly the decalcified compartment. The same caveat applies to every human zonal
+      matrix protein claim in L5, including the sergerie2011 loading result which is also IHC-based.
+
+  - edge_id: e00129
+    source: synchrotron_imaging_cartilage
+    target: chondron
+    relation: required_for
+    sign: "+"
+    magnitude: "phase-contrast microtomography at 2.75 um voxel size with 0.65 um validation tomographs resolves individual chondrocytes, cell density and cell angle inside intact, unsectioned human cartilage from 49 deceased donors plus 4 arthroplasty patients"
+    context: "human knee cartilage; the only 3D method that avoids sectioning artefact for chondron geometry"
+    timescale: "not applicable (method)"
+    evidence_tier: T1
+    refs: [b2026, white2008]
+    confidence: B
+    notes: >-
+      Applied to articular, not physeal, cartilage so far. It is the obvious instrument for resolving
+      the chondron-bending account of column formation (e00055) in a human plate.
+
+  - edge_id: e00130
+    source: tetracycline_labeling
+    target: mineralization_front
+    relation: required_for
+    sign: "+"
+    magnitude: "two doses separated by a known interval leave two fluorescent lines whose separation divided by the interval gives the mineral apposition rate at the advancing chondro-osseous junction, i.e. tissue-level longitudinal growth rate in vivo"
+    context: "rat; oxytetracycline label displacement is also the readout for the entire stress-growth coefficient literature"
+    timescale: "hours to days between labels"
+    evidence_tier: T1
+    refs: [farnum2003, stokes2006]
+    confidence: B
+    notes: >-
+      The method that makes the L6 seam quantitative at all: every percent-per-MPa figure in this
+      shard is ultimately a distance between two tetracycline lines. It cannot be used in children.

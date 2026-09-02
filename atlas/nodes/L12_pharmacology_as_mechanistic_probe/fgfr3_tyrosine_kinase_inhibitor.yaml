@@ -1,0 +1,158 @@
+id: fgfr3_tyrosine_kinase_inhibitor
+name: FGFR3 tyrosine kinase inhibitor class
+aliases:
+- pan-FGFR inhibitors
+- FGFR1-3 TKIs
+- selective FGFR3 inhibitors
+type: intervention
+layer: L12
+stub: false
+summary: 'FGFR3 tyrosine kinase inhibitors are ATP-competitive small molecules repurposed from
+
+  oncology to reduce the constitutive kinase output of mutant FGFR3. Infigratinib is the
+
+  only member with a positive phase 3 result in achondroplasia; TYRA-300 is an
+
+  FGFR3-selective agent with mouse efficacy only. The class rests on a premise the human
+
+  genetics does not support: that phenotype severity tracks kinase output monotonically.
+
+  FGFR3 K650M (SADDAN) has roughly three times the constitutive kinase activity of the
+
+  lethal K650E (thanatophoric dysplasia type II) yet is survivable, so reducing kinase
+
+  output is not by itself predictive of benefit. The pharmacology makes the same point
+
+  from the other side: in a radiometric kinase panel infigratinib inhibits wild-type
+
+  FGFR3 at IC50 0.66 nM and K650E at 0.5 nM but K650M at 44.4 nM - an ~89-fold loss of
+
+  potency against the allele with the higher kinase activity - and 505.9 nM against the
+
+  V555M gatekeeper mutant. Potency is therefore allele-specific in a way that does not
+
+  parallel severity. Class-wide, selectivity is the limiting problem: pan-FGFR inhibition
+
+  reduced male trabecular bone in mice, and chronic kinase inhibition in children is the
+
+  same manoeuvre that causes growth failure when TKIs are used in paediatric leukaemia.
+
+  '
+quantitative:
+- parameter: infigratinib IC50, wild-type FGFR3
+  value: '0.66'
+  unit: nM
+  conditions: radiometric kinase activity assay; ATP concentration not stated in the ChEMBL-curated record
+  species: in_vitro_human_cell
+  source_ref: ryu2022
+  uncertainty: single reported value, no CI
+- parameter: infigratinib IC50, FGFR3 K650E (thanatophoric dysplasia type II allele)
+  value: '0.5'
+  unit: nM
+  conditions: radiometric kinase activity assay, same panel
+  species: in_vitro_human_cell
+  source_ref: ryu2022
+  uncertainty: single reported value
+- parameter: infigratinib IC50, FGFR3 K650M (SADDAN allele)
+  value: '44.4'
+  unit: nM
+  conditions: radiometric kinase activity assay, same panel; ~89-fold weaker than against K650E
+  species: in_vitro_human_cell
+  source_ref: ryu2022
+  uncertainty: single reported value
+- parameter: infigratinib IC50, FGFR3 V555M gatekeeper mutant
+  value: '505.9'
+  unit: nM
+  conditions: radiometric kinase activity assay, same panel
+  species: in_vitro_human_cell
+  source_ref: ryu2022
+  uncertainty: single reported value
+- parameter: infigratinib IC50, FGFR3, microfluidic mobility shift assay
+  value: '1.0'
+  unit: nM
+  conditions: enzymatic assay, Caliper microfluidic mobility-shift readout, ATP concentration set at Km
+    - the assay condition is stated, unlike most reported values
+  species: in_vitro_human_cell
+  source_ref: chembl_infigratinib
+  uncertainty: curated ChEMBL value
+- parameter: constitutive FGFR3 kinase activity, K650M relative to K650E
+  value: ~3
+  unit: fold
+  conditions: transient transfection; K650E is lethal, K650M (SADDAN) is survivable
+  species: in_vitro_human_cell
+  source_ref: tavormina1999
+  uncertainty: fold-change as reported, no CI
+localization:
+- 'human growth plate: no measurement of intraplate TKI concentration for any member of the class'
+human_evidence: direct
+human_evidence_note: One class member, infigratinib, has a completed placebo-controlled phase 3 trial
+  in children with achondroplasia; the kinase potency data are biochemical.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: moderate
+translation_risk_reason: Human efficacy exists for one agent, but the class rationale, the allele-selectivity
+  data and the skeletal safety signals are biochemical and murine. Chronic pan-FGFR inhibition in a growing
+  child has no long-term human safety dataset in a non-malignant indication, and the closest human analogue
+  - paediatric TKI exposure in CML - reduces final height.
+confidence: B
+claim_grades:
+- claim: Infigratinib inhibits FGFR3 K650M ~89-fold less potently than K650E in a radiometric kinase assay.
+  grade: D
+  basis: Single biochemical panel, ATP concentration not stated for these values; not independently replicated.
+- claim: FGFR3 phenotype severity is not monotonic in constitutive kinase activity.
+  grade: B
+  basis: K650M has ~3x the activity of the lethal K650E yet is survivable (Tavormina 1999); replicated
+    by the graded Lys650 allelic series.
+- claim: Reducing FGFR3 kinase output increases growth velocity in achondroplasia.
+  grade: A
+  basis: Phase 3 RCT of infigratinib, n=114, +1.74 cm/yr vs placebo.
+key_refs:
+- ref_id: ryu2022
+  pmid: '35436119'
+  first_author: Ryu S
+  year: 2022
+  type: primary
+  one_line_finding: Kinase panel giving infigratinib IC50 0.66 nM wild-type, 0.5 nM K650E, 44.4 nM K650M,
+    505.9 nM V555M.
+- ref_id: guagnano2011
+  pmid: '21936542'
+  first_author: Guagnano V
+  year: 2011
+  type: primary
+  one_line_finding: Discovery and selectivity optimisation of NVP-BGJ398 (infigratinib) as an FGFR1-3
+    inhibitor.
+- ref_id: tavormina1999
+  pmid: '10053006'
+  first_author: Tavormina PL
+  year: 1999
+  type: primary
+  one_line_finding: SADDAN K650M has ~3x the constitutive activity of the lethal K650E allele yet is non-lethal.
+- ref_id: tyra300_2025
+  pmid: '40178985'
+  first_author: Starrett JH
+  year: 2025
+  type: primary
+  one_line_finding: FGFR3-selective TYRA-300 increased long bone length and foramen magnum size in two
+    Fgfr3 mouse models.
+- ref_id: kot2026
+  pmid: '41641077'
+  first_author: Kot A
+  year: 2026
+  type: primary
+  one_line_finding: Infigratinib lengthened femora and the proliferative zone in Aga2/+ mice but reduced
+    male trabecular bone - a class selectivity cost.
+- ref_id: chembl_infigratinib
+  year: 2026
+  type: dataset
+  one_line_finding: Curated FGFR3 potency series including an ATP=Km mobility-shift IC50 of 1.0 nM.
+open_questions:
+- g_l12b_004
+- g_l12b_005
+- g_mr002_allele
+contradicts:
+- 'ALLELE MISMATCH: published FGFR3-inhibitor potency data are on kinase-domain alleles (K650E, K650M,
+  N540K). The clinical achondroplasia target is the transmembrane G380R. Whether potency rank order transfers
+  across activation mechanism is untested - see g_mr002_allele.'
+last_verified: '2026-08-05'

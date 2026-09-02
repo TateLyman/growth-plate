@@ -1,0 +1,148 @@
+id: brain_growth_trajectory
+name: Brain growth trajectory
+type: process
+layer: L9
+stub: false
+summary: 'The brain and the skeleton run on different clocks, and the size of the mismatch is now measured
+  precisely. In the largest normative MRI resource assembled - 123984 scans from 101457 people spanning
+  115 days post-conception to 100 years - grey matter volume peaks at 5.9 years (95% CI 5.8-6.1), total
+  cerebrum volume at 12.5 years (12.14-12.89), cortical surface area at 10.97 years, subcortical grey
+  matter at 14.4 years and white matter volume at 28.7 years, while mean cortical thickness peaks at 1.7
+  years and its velocity peaks prenatally at about -0.38 years relative to birth (bethlehem2022). The
+  velocity peaks are earlier still: grey matter volume velocity peaks at 5.08 months and white matter
+  volume velocity at 2.4 years. Critically, none of these trajectories shows an adolescent volume spurt
+  corresponding to peak height velocity - only grey matter peaks before puberty at all, and the remaining
+  tissue classes peak during or long after it. Autopsy weights give the same picture with a different
+  method: brain weight quadruples over birth weight in the first 3 years and rises only marginally further
+  over the next 15 years, reaching maximum near 19 years, with male brains 9.8% heavier than female across
+  4736 pathology-free brains (dekaban1978). Any theory that a single systemic maturational signal drives
+  organ growth must explain why the brain''s peak precedes the pubertal skeletal spurt by six years and
+  the white matter''s by fifteen.'
+quantitative:
+- parameter: age at peak grey matter volume
+  value: '5.9'
+  unit: years
+  conditions: 123984 MRI scans, 101457 participants, GAMLSS normative model
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI 5.8-6.1
+- parameter: age at peak white matter volume
+  value: '28.7'
+  unit: years
+  conditions: same resource
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI 28.1-29.2
+- parameter: age at peak subcortical grey matter volume
+  value: '14.4'
+  unit: years
+  conditions: same resource
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI 14.0-14.7
+- parameter: age at peak total cerebrum volume
+  value: '12.5'
+  unit: years
+  conditions: same resource
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI 12.14-12.89
+- parameter: age at peak cortical surface area
+  value: '10.97'
+  unit: years
+  conditions: same resource
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI 10.42-11.51
+- parameter: age at peak mean cortical thickness
+  value: '1.7'
+  unit: years
+  conditions: same resource
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI 1.3-2.1
+- parameter: age at peak grey matter volume velocity
+  value: '5.08'
+  unit: months
+  conditions: same resource
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI 4.85-5.22
+- parameter: age at peak white matter volume velocity
+  value: '2.4'
+  unit: years
+  conditions: same resource
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI 2.2-2.6
+- parameter: age at peak cortical thickness velocity
+  value: '-0.38'
+  unit: years relative to birth
+  conditions: same resource; approximately mid-gestation
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: 95% bootstrap CI -0.4 to -0.34
+- parameter: increase in brain weight from birth to 3 years
+  value: '4'
+  unit: fold
+  conditions: 4736 pathology-free autopsy brains weighed fresh
+  species: human
+  source_ref: dekaban1978
+  uncertainty: quadruples over birth weight
+- parameter: age at maximum brain weight
+  value: '19'
+  unit: years
+  conditions: same autopsy series, 23 age groups
+  species: human
+  source_ref: dekaban1978
+  uncertainty: about 19 years
+- parameter: male-female difference in brain weight
+  value: '9.8'
+  unit: percent
+  conditions: 2773 male and 1963 female brains
+  species: human
+  source_ref: dekaban1978
+  uncertainty: males heavier overall
+- parameter: brain volume metrics showing an adolescent spurt coincident with peak height velocity
+  value: '0'
+  unit: metrics
+  conditions: of the tissue classes charted (GMV, WMV, sGMV, TCV, cortical thickness, surface area)
+  species: human
+  source_ref: bethlehem2022
+  uncertainty: only GMV peaks before typical pubertal onset; none shows a pubertal velocity peak
+localization:
+- 'human brain: structural MRI volumes and fresh autopsy weights'
+human_evidence: direct
+human_evidence_note: 'Both sources are human: a 123984-scan MRI normative model and a 4736-brain autopsy
+  series.'
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human measurements throughout.
+confidence: A
+claim_grades:
+- claim: Human brain tissue volumes peak at ages between 1.7 and 28.7 years depending on tissue class
+  grade: A
+  basis: Normative GAMLSS model on 123984 scans with bootstrap CIs on each milestone.
+- claim: There is no adolescent brain volume spurt corresponding to the height spurt
+  grade: B
+  basis: No pubertal velocity peak appears in any charted tissue class (bethlehem2022); MRI cohorts are
+    unevenly sampled in adolescence, which limits the strength of a negative result.
+key_refs:
+- ref_id: bethlehem2022
+  pmid: '35388223'
+  first_author: Bethlehem RAI
+  year: 2022
+  type: primary
+  one_line_finding: Lifespan brain charts place peak grey matter volume at 5.9 y, total cerebrum at 12.5
+    y and white matter at 28.7 y, with no adolescent volume spurt.
+- ref_id: dekaban1978
+  pmid: '727739'
+  first_author: Dekaban AS
+  year: 1978
+  type: primary
+  one_line_finding: Brain weight quadruples by 3 years, peaks near 19 years, and is 9.8% greater in males
+    across 4736 autopsy brains.
+open_questions:
+- g_l9organism_014
+last_verified: '2026-08-05'

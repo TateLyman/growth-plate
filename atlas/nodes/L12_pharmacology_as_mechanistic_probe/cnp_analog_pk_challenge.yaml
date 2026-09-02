@@ -1,0 +1,147 @@
+id: cnp_analog_pk_challenge
+name: CNP analogue pharmacokinetic challenge
+aliases:
+- CNP half-life problem
+- NEP resistance engineering
+type: process
+layer: L12
+stub: false
+summary: Vosoritide has a plasma half-life of 21-28 minutes; navepegritide releases CNP with a half-life
+  of 5.3 days, roughly 300-fold longer. At their respective effective doses the two produce similar annualised
+  growth gains (+1.57 and +1.49 cm/yr). That cross-trial similarity is CORROBORATION ONLY and is the weakest
+  available comparative design - different cohorts, control arms, baselines and eras - so it is not the
+  basis for any mechanistic claim here. The load-bearing evidence is within-drug and within-cohort, and
+  it points in two directions that must both be reported. In the ACcomplisH four-arm dose-escalation (6/20/50/100
+  ug CNP/kg/week, single cohort) navepegritide showed a DOSE-DEPENDENT AGV improvement in which only the
+  100 ug arm separated from placebo (5.42 vs 4.35 cm/yr, p=0.0218) - so exposure demonstrably matters
+  across that range and the drug is NOT saturated below its top dose. Against that, a vosoritide PK/PD
+  analysis found that drug exposure correlated with urine cGMP, i.e. with systemic target engagement,
+  but did NOT correlate with growth outcome within the treated cohort. Exposure therefore predicts receptor
+  engagement but not effect, at least across the vosoritide dose range studied. The reconciling reading
+  is a shared efficacy CEILING reached by both agents at their effective doses, with navepegritide's lower
+  arms sitting below it - not that exposure duration is irrelevant.
+quantitative:
+- parameter: mean apparent plasma half-life, vosoritide
+  value: 21.0-27.9
+  unit: minutes
+  conditions: 15 ug/kg once daily subcutaneous over 52 weeks, n=58 children with achondroplasia aged 5-13
+    y
+  species: human
+  source_ref: fda_voxzogo_label_2025
+  uncertainty: SD 4.7-9.9 min across visits
+- parameter: mean apparent plasma half-life, CNP released from navepegritide
+  value: '5.3'
+  unit: days
+  conditions: 0.1 mg/kg once weekly subcutaneous, population PK model
+  species: human
+  source_ref: fda_yuviwel_label_2026
+  uncertainty: model-derived mean
+- parameter: ratio of exposure duration, navepegritide-released CNP to vosoritide
+  value: ~300
+  unit: fold
+  conditions: computed from the two label half-lives (5.3 d vs ~24 min); comparison across labels, not
+    a head-to-head study
+  species: human
+  source_ref: fda_yuviwel_label_2026
+  uncertainty: derived quantity, no CI
+  value_unverified: true
+- parameter: placebo-controlled AGV gain, vosoritide vs navepegritide
+  value: 1.57 vs 1.49
+  unit: cm/yr
+  conditions: separate trials, different age ranges (5 to <18 y vs 2-11 y); confidence intervals overlap
+    almost completely
+  species: human
+  source_ref: nct05598320
+  uncertainty: 95% CI 1.22-1.93 and 1.05-1.93 respectively; no head-to-head trial exists
+- parameter: pooled class effect on AGV, CNP analogues
+  value: '1.36'
+  unit: cm/yr
+  conditions: meta-analysis of 4 RCTs, n=326, children <18 y with genetically confirmed achondroplasia
+  species: human
+  source_ref: cnpmeta2026
+  uncertainty: 95% CI 1.05-1.68
+localization:
+- 'human growth plate: exposure profile at the target never measured for either agent'
+human_evidence: direct
+human_evidence_note: Both pharmacokinetic profiles are human label data from patients with achondroplasia,
+  and both efficacy estimates are from human placebo-controlled RCTs.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: All the numbers are human. The inference that draws them together - that similar
+  efficacy despite dissimilar exposure implies a saturable downstream step - is a cross-trial comparison,
+  not a randomised contrast, and is graded accordingly.
+confidence: D
+claim_grades:
+- claim: Navepegritide produces a dose-dependent increase in annualised growth velocity across 6-100 ug
+    CNP/kg/week, with only the 100 ug arm separating from placebo.
+  grade: A
+  basis: ACcomplisH phase 2, randomised, placebo-controlled, four dose arms in a single cohort, n=42 treated
+    + 15 placebo.
+- claim: Within the vosoritide dose range studied, drug exposure correlates with urine cGMP but not with
+    growth outcome.
+  grade: B
+  basis: Single PK/PD analysis in hypochondroplasia; within-cohort but one study, and in a different indication
+    from the pivotal achondroplasia trial.
+- claim: Vosoritide and navepegritide reach a comparable efficacy ceiling despite ~300-fold different
+    exposure duration.
+  grade: D
+  basis: 'Cross-trial comparison only: different cohorts, controls, baselines and eras. Corroborative,
+    not primary.'
+- claim: The efficacy ceiling is set downstream of NPR2 rather than by drug delivery or tolerability.
+  grade: E
+  basis: Inference. Three mechanisms predict the same observation (H1/H2/H3 below); none has been discriminated.
+key_refs:
+- ref_id: fda_voxzogo_label_2025
+  year: 2025
+  type: regulatory
+  one_line_finding: Vosoritide mean apparent half-life 21.0-27.9 minutes, Tmax 15 min; urinary cGMP near
+    saturation at 15 ug/kg/day.
+- ref_id: fda_yuviwel_label_2026
+  year: 2026
+  type: regulatory
+  one_line_finding: Released CNP half-life 5.3 days, steady state after ~3 weekly doses, Cmax 36.0 pmol/L.
+- ref_id: savarirayan2020
+  pmid: '32891212'
+  first_author: Savarirayan R
+  year: 2020
+  type: primary
+  one_line_finding: Vosoritide +1.57 cm/yr vs placebo (95% CI 1.22-1.93).
+- ref_id: nct05598320
+  year: 2025
+  type: trial_registry
+  one_line_finding: Navepegritide +1.49 cm/yr vs placebo (95% CI 1.05-1.93).
+- ref_id: cnpmeta2026
+  pmid: '42306228'
+  first_author: Kamrul-Hasan ABM
+  year: 2026
+  type: meta_analysis
+  one_line_finding: Pooled CNP-analogue AGV effect 1.36 cm/yr (95% CI 1.05-1.68) across 4 RCTs, n=326.
+- ref_id: galetaki2026
+  pmid: '39427650'
+  first_author: Galetaki D
+  year: 2026
+  type: primary
+  one_line_finding: Vosoritide exposure correlated with urine cGMP but NOT with growth outcomes - within-cohort
+    dissociation of target engagement from effect.
+- ref_id: savarirayan2023
+  pmid: '37823031'
+  first_author: Savarirayan R
+  year: 2023
+  type: primary
+  one_line_finding: 'ACcomplisH four-arm dose escalation: dose-dependent AGV improvement, only 100 ug/kg/wk
+    separated from placebo (5.42 vs 4.35 cm/yr, p=0.0218).'
+open_questions:
+- g_l12b_001
+- g_l12b_002
+- g_l12pharm_002
+- g_mr002_h1
+- g_mr002_h2
+- g_mr002_h3
+contradicts:
+- 'INTERNAL TENSION: navepegritide shows a clear within-trial dose-response (ACcomplisH) while vosoritide
+  exposure does not predict growth within its cohort (galetaki2026). Both cannot be simple exposure-response
+  relationships over the same effective range. The most economical resolution is a shared ceiling with
+  navepegritide sampling the sub-saturating region and vosoritide sitting at or above it - but that is
+  inference, not measurement.'
+last_verified: '2026-08-05'

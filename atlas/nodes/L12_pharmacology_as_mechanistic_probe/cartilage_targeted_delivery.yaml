@@ -1,0 +1,101 @@
+id: cartilage_targeted_delivery
+name: Cartilage-targeted nanoparticle delivery to the growth plate
+aliases:
+- CT-CM-NPs
+- collagen-II-targeting nanoparticle
+- chondrocyte membrane-coated nanoparticle
+type: intervention
+layer: L12
+stub: false
+summary: 'The growth plate is avascular and alymphatic, so every systemic agent reaches it by diffusion
+  through a dense proteoglycan matrix. That is the exposure problem, and it is the reason the atlas records
+  no measured drug concentration in growth-plate cartilage for any compound in any species (g_l12b_002).
+  Cartilage-targeted carriers are the only class of intervention that attacks the exposure term itself
+  rather than the target. The best-characterised construct is a PLGA core coated with primary chondrocyte
+  plasma membrane and decorated with DSPE-PEG2k conjugated to WYRGRL, a collagen-II-binding peptide whose
+  affinity for recombinant human COL2A1 is about 1.2 uM by surface plasmon resonance. Loaded with the
+  Hedgehog agonist purmorphamine and given intravenously at 1 mg/kg every two days for five weeks, it
+  restored body length in Fgfr3 V376D/+ hypochondroplasia mice to a value not significantly different
+  from wild-type littermates. The two components do different jobs: the peptide drives enrichment around
+  cartilage, the membrane coat drives retention inside it, and neither alone reproduces the combination.
+  What the study does NOT provide is an exposure measurement. Every growth-plate number in it is normalised
+  fluorescence radiant efficiency of DiR, a lipophilic carbocyanine membrane dye that reports where the
+  particle label is and not how much drug arrived. There is no concentration in any absolute unit, no AUC,
+  no half-life, and no free-versus-bound fraction. The authors state that they could not obtain human
+  growth-plate cartilage to validate any of it.'
+quantitative:
+- parameter: WYRGRL peptide affinity for human collagen II
+  value: '1.2'
+  unit: uM
+  conditions: DSPE-PEG2k-WYRGRL against immobilised recombinant human COL2A1 (~12,600 RU), surface plasmon
+    resonance, 0.31-20 uM analyte, 1:1 Langmuir fit
+  species: not_applicable
+  source_ref: ye2026
+  uncertainty: 'reported as approximate; no CI given; a 1:1 Langmuir fit to a peptide-collagen interaction
+    is a strong model assumption. This is the one measurement in the study made against a HUMAN protein.'
+- parameter: purmorphamine encapsulation efficiency
+  value: '72.59'
+  unit: '%'
+  conditions: microemulsion, PLGA:purmorphamine mass ratio 10:1, the optimised condition
+  species: not_applicable
+  source_ref: ye2026
+  uncertainty: n=5; best of a ratio series, so an optimised rather than a typical value
+- parameter: time to peak nanoparticle signal in the distal femoral region
+  value: '24'
+  unit: h
+  conditions: single intravenous injection of 100 ug DiR-labelled nanoparticles, mouse, ex vivo IVIS of
+    the distal femur; all four formulations peaked at the same time
+  species: mouse
+  source_ref: ye2026
+  uncertainty: 'n=6 regions from 3 mice; the readout is normalised radiant efficiency of a membrane dye,
+    not drug. A carbocyanine dye can dissociate from its carrier, so this is the kinetics of the LABEL.'
+- parameter: body length after targeted purmorphamine
+  value: '8.94'
+  unit: cm
+  conditions: Fgfr3 V376D/+ mice, CT-CM-NPs-PM 1 mg/kg intravenously every two days for five weeks, naso-anal
+    length; reported as not significantly different from Fgfr3 +/+
+  species: mouse
+  source_ref: ye2026
+  uncertainty: n=8 per group; the untreated mutant and wild-type values are in the figure and not stated
+    in the text, so the effect SIZE cannot be read from the paper's prose alone
+- parameter: drug concentration measured in growth-plate cartilage
+  value: not reported
+  unit: none
+  conditions: whole study; delivery is quantified only as normalised DiR fluorescence radiant efficiency
+  species: mouse
+  source_ref: ye2026
+  uncertainty: RECORDED AS AN ABSENCE, deliberately. No ng/g, no ug/g, no AUC, no half-life, no percent
+    injected dose per gram appears anywhere in the paper. This row exists so that the node cannot later
+    be read as supplying an exposure figure.
+localization:
+- 'mouse distal femoral growth plate: DiR signal detected on hard-tissue cryosections (ye2026)'
+- 'human growth plate: never tested; the authors state the tissue was unobtainable'
+human_evidence: absent
+human_evidence_note: No human tissue and no human subject. The single human-relevant measurement is the
+  1.2 uM affinity of the targeting peptide for recombinant human collagen II, which says the ligand should
+  bind human cartilage matrix and says nothing about whether a particle penetrates a human physis, which
+  is thicker, slower and more heavily loaded than a mouse one.
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: 'Diffusion into avascular cartilage scales badly with thickness, and the human
+  growth plate is far thicker than the mouse plate that was treated - the human inert zone alone is 700-1000
+  um (thurston1985), which is more than the full height of a mouse plate. A carrier that penetrates a mouse
+  physis in 24 h has not been shown to penetrate a human one at all, and the study contains no concentration
+  measurement with which to model the scaling.'
+confidence: D
+key_refs:
+- ref_id: ye2026
+  pmid: '42338508'
+  first_author: Ye SH
+  year: 2026
+  type: primary
+  one_line_finding: Chondrocyte-membrane-coated, collagen-II-targeted PLGA nanoparticles carried purmorphamine
+    to mouse growth plate and normalised body length in Fgfr3 V376D/+ mice, with delivery quantified only
+    as normalised dye fluorescence.
+open_questions:
+- g_l12b_002
+- g_l12b_026
+contradicts: []
+last_verified: '2026-08-06'

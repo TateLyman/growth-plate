@@ -1,0 +1,139 @@
+id: stem_pool_population_asymmetry
+name: Population asymmetry - the growth plate stem pool is a REGULATED NUMBER, not a fixed budget
+type: process
+layer: L2
+stub: false
+summary: 'How a stem compartment renews determines whether its size is a constant of the tissue or a variable the
+  body sets. Under INVARIANT ASYMMETRY every stem division yields one stem and one committed daughter, so the number
+  of stem cells cannot change and clone number and clone size both stay flat over time. Under POPULATION ASYMMETRY
+  cells divide stochastically and the compartment is held only on average, so some clones are lost while survivors
+  expand - clone NUMBER falls while clone SIZE rises. chu2025 tested which of these the growth plate uses, by labelling
+  all Col2a1+ cells in Col2-CreERT2;R26R-Confetti mice and chasing for a month, and found the population-asymmetry
+  signature. THIS IS THE STRUCTURAL FACT THAT DECIDES WHETHER FINAL HEIGHT IS CAPPED BY A FIXED ALLOWANCE. If the
+  pool renewed by invariant asymmetry its size would be untouchable and the only levers on height would be velocity
+  and duration. Because it renews by population asymmetry, the SIZE OF THE POOL IS ITSELF A TARGET, set by the ratio
+  of self-renewing to lineage-restricted divisions - and that ratio is demonstrably movable, because growth hormone
+  moves it. GH shifts divisions toward the committed side: it reduces slow-cycling label-retaining cells in the resting
+  zone, reduces the number of PTHrP+ stem cells, and raises clone size in every zone including the resting zone. The
+  same paper shows the effect is stem-cell-autonomous, because deleting the GH receptor in PTHrP+ cells impairs their
+  clone-forming activity. The therapeutic reading is uncomfortable and worth stating flatly: the standard drug for
+  short stature spends the compartment that sets how long growth can continue, and no experiment has yet asked whether
+  a schedule or a co-treatment could raise the renewal fraction instead.'
+quantitative:
+- parameter: MODE OF SELF-RENEWAL of growth plate stem cells
+  value: population asymmetry, not invariant asymmetry
+  unit: qualitative, from the clone-number vs clone-size signature
+  conditions: Col2a1-CreERT2;R26R-Confetti mice, all growth plate cells labelled and chased for a month; the unbiased
+    clonal strategy previously established in hair follicle and intestine. Invariant asymmetry predicts constant clone
+    number and constant clone size; population asymmetry predicts FALLING clone number with RISING clone size
+  species: mouse
+  source_ref: chu2025
+  uncertainty: 'THIS IS THE MOST CONSEQUENTIAL ROW IN THE NODE AND IT IS QUALITATIVE. The atlas holds no number for
+    the self-renewal probability, the loss rate, or the equilibrium pool size, because the paper reports the signature
+    rather than a fitted neutral-drift parameter. Read against clonal_exhaustion, the two are the same phenomenon
+    seen twice: mizuhashi2018 saw labelled column number fall and plateau by 6 months with a surviving minority, which
+    is exactly what population asymmetry looks like from the other end.'
+- parameter: effect of growth hormone on the slow-cycling label-retaining pool
+  value: reduced
+  unit: GFP+ label-retaining cells in the resting zone
+  conditions: H2B-GFP Tet-On mice, doxycycline P10-P23 to label, chase to P38, GH 5 mg/kg/d or vehicle intraperitoneally
+    daily P28-P38; xylenol 1 d before cull to mark mineralised tissue for accurate resting-zone quantification; LRCs
+    after chase were confined to the resting zone below the secondary ossification centre
+  species: mouse
+  source_ref: chu2025
+  uncertainty: n = 4 mice per group, P < 0.001 by unpaired t test. THE EFFECT SIZE IS NOT IN THE TEXT - the quantification
+    is in the figure and the magnitude has not been read off it. Direction and significance only. A 10-day exposure
+    in a mouse is not a childhood of therapy in a human and the extrapolation is not made here.
+- parameter: effect of growth hormone on the PTHrP+ stem population
+  value: significantly reduced
+  unit: number of PTHrP+ cells
+  conditions: Pthrp-mCherry reporter mice treated with GH for 10 d; CD73+ cells reduced in parallel; phospho-STAT5
+    present in both mCherry+ and CD73+ cells, so the cells are directly GH-responsive
+  species: mouse
+  source_ref: chu2025
+  uncertainty: 'The authors call it surprising, and it is: the drug given to make children taller reduces the population
+    that determines how long they can keep growing. The paper states the reduction is NOT attributable to altered
+    proliferative activity, which is what forces the differentiation-shift interpretation rather than a simple washout.
+    Magnitude in figure only.'
+- parameter: is the GH effect intrinsic to the stem cell
+  value: yes - GHR deletion in PTHrP+ cells impairs clone formation
+  unit: qualitative, clone size and full-length columns per mm
+  conditions: GHR conditional knockout with Confetti reporter, tamoxifen P6, daily EdU P24-P28, growth plates at P28;
+    clones defined as >=3 cells; distribution of clone sizes, mean clone size per mouse and frequency of full-length
+    columns per mm all quantified on 50 um sections
+  species: mouse
+  source_ref: chu2025
+  uncertainty: 'A CELL-AUTONOMOUS TEST, which is what separates this from every correlative GH result. Its own limitation
+    is stated by the authors and matters: BONE LENGTH DID NOT CHANGE - tibia 18.3 +/- 0.2 mm in controls (n=3) vs
+    17.9 +/- 0.3 mm in GHRcKO (n=4), P = 0.31; femur 13.2 +/- 0.2 vs 12.8 +/- 0.3, P = 0.35 - which they attribute
+    to a low recombination rate. So the cellular phenotype is present and the ORGAN-LEVEL phenotype is absent in the
+    same animals, and the reconciliation is an untested assumption about mosaicism.'
+- parameter: clone size under GH, by zone
+  value: increased in every zone analysed, INCLUDING the resting zone
+  unit: cells per clone, stratified by distance from the top of the growth plate
+  conditions: Col2-CreERT2;R26R-Confetti, tamoxifen 4 d before the end of GH or vehicle treatment
+  species: mouse
+  source_ref: chu2025
+  uncertainty: The resting zone result is the one that matters - it is the direct evidence that GH reaches the top
+    of the plate and makes those cells divide, rather than only amplifying transit-amplifying cells further down.
+    Clones seen beyond 125 um may reflect longitudinal transit during the 4-day chase rather than local division,
+    and the authors say so.
+- parameter: serum IGF-1 during pharmacological GH
+  value: DECREASED
+  unit: direction only
+  conditions: 4 d of GH at 5 mg/kg/d in intact mice; liver IGF-1 pathway components downregulated, SOCS2 up
+  species: mouse
+  source_ref: chu2025
+  uncertainty: A PARADOX THE ATLAS SHOULD NOT SMOOTH OVER. The classical model routes GH to bone through hepatic IGF-1,
+    and here the growth effect occurs while serum IGF-1 falls. The authors note a prior study at a comparable dose
+    in intact rats also found no rise. Their reading is a homeostatic compensatory suppression, which makes the growth
+    effect direct rather than IGF-1-mediated. This is a high dose in a normal animal and does not describe replacement
+    dosing in a deficient child.
+- parameter: does the human growth plate stem pool renew by population asymmetry
+  value: never tested
+  unit: none
+  conditions: clone-level observation requires genetic labelling, which cannot be done in a person
+  species: human
+  source_ref: chu2025
+  uncertainty: RECORDED AS AN ABSENCE, and it is the absence that governs how far this node may be used. Every number
+    here is mouse, and the mouse growth plate never closes while the human one does. A renewal mode measured in a
+    plate that never runs out is being used to reason about the thing that makes a plate run out.
+localization:
+- resting zone, below the secondary ossification centre - where label-retaining cells sit after chase
+human_evidence: absent
+human_evidence_note: 'No human measurement exists or can currently exist: distinguishing invariant from population
+  asymmetry requires clonal genetic labelling and a time course. The nearest human-obtainable proxy would be clone-size
+  distributions recovered from somatic mutation phylogenies in growth plate or bone, which has been done in other
+  human tissues and never in cartilage.'
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: One laboratory, one species, and the species is the one whose growth plate does not close.
+  The conclusion drawn here - that pool size is a legitimate therapeutic target because it is regulated rather than
+  fixed - depends on the renewal mode transferring to human, which is untested.
+confidence: C
+confidence_note: C, not B. The renewal-mode result rests on a clone-number-versus-clone-size signature from a single
+  study in a single species with no human counterpart, and the atlas holds no fitted parameter from it. The GH-depletes-the-pool
+  half is better supported - four independent readouts (H2B-GFP LRCs, PTHrP-mCherry, CD73, Confetti clone size) all
+  move the same way, and the GHR conditional knockout makes it cell-autonomous - but the bone-length null in those
+  same knockouts is unexplained, and the magnitudes live in figures this atlas has not read off. Grade C is what the
+  read supports; it is not raised because the conclusion is interesting.
+key_refs:
+- ref_id: chu2025
+  pmid: '41289405'
+  first_author: Chu NTL
+  year: 2025
+  type: primary
+  one_line_finding: Growth plate stem cells renew by POPULATION ASYMMETRY, so their number is a regulated variable;
+    GH shifts their divisions toward the committed side and depletes the pool, and the effect is cell-autonomous by
+    GHR conditional knockout.
+- ref_id: mizuhashi2018
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Labelled column number falls and plateaus by 6 months with a surviving minority - the same population-asymmetry
+    signature seen from the exhaustion end.
+open_questions:
+- g_l2stem_population_asymmetry_human
+- g_l2stem_renewal_fraction_lever
+last_verified: '2026-08-06'

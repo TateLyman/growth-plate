@@ -1,0 +1,87 @@
+id: milk_consumption_height
+name: Cow's milk intake and linear growth
+type: process
+summary: Cow's milk is the single dietary item with a reproducible, source-specific effect on the human
+  GH-IGF axis, and it is the best-characterised environmental input into that axis. In a randomised 7-day
+  intervention in 24 healthy 8-year-old boys, 1.5 L/day of skimmed milk raised serum IGF-I by 19% (P=0.001)
+  and IGF-I/IGFBP-3 by 13% (P<0.0001), while the same quantity of protein as lean meat raised neither,
+  even though protein intake rose by 54-61% in both arms (hoppe2004). A 2x2 factorial trial in 57 boys
+  localised the effect to the casein fraction (+15% IGF-1, P<0.0001) and separated it from the whey fraction,
+  which instead raised fasting insulin by 21% (P=0.006); high milk-mineral content had no independent
+  effect on IGF-1 or insulin (hoppe2009). The growth-promoting component of milk is therefore neither
+  its total protein nor its calcium and phosphorus. Observationally, milk intake associates with linear
+  growth in both undernourished and well-nourished populations, an association the field reads through
+  the IGF axis (hoppe2006). What is missing is any demonstration that the milk-induced increment in circulating
+  IGF-1 changes chondrocyte proliferation or hypertrophy - no milk intervention has ever been coupled
+  to a growth plate readout.
+quantitative:
+- parameter: serum IGF-I response to 1.5 L/day skimmed milk for 7 days
+  value: '+19'
+  unit: '%'
+  conditions: healthy prepubertal boys aged 8 y, n=12
+  species: human
+  source_ref: hoppe2004
+  uncertainty: P=0.001
+- parameter: serum IGF-I/IGFBP-3 ratio response to the same milk load
+  value: '+13'
+  unit: '%'
+  conditions: healthy prepubertal boys aged 8 y, n=12
+  species: human
+  source_ref: hoppe2004
+  uncertainty: P<0.0001
+- parameter: serum IGF-1 response to the casein fraction of 1.5 L skim milk
+  value: '+15'
+  unit: '%'
+  conditions: 57 boys aged 8 y, 7-day randomised 2x2 factorial
+  species: human
+  source_ref: hoppe2009
+  uncertainty: P<0.0001
+localization:
+- 'human SYS: diet -> hepatic IGF-1 and IGFBP-3'
+- 'human growth plate: never measured under a milk intervention'
+human_evidence: direct
+human_evidence_note: Two randomised controlled dietary interventions in prepubertal boys with measured
+  serum IGF-I, IGFBP-3 and insulin.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: The endocrine response is a direct human measurement; only the plate-level consequence
+  is inferred.
+confidence: B
+claim_grades:
+- claim: Milk raises circulating IGF-I in prepubertal children and an isonitrogenous meat load does not.
+  grade: A
+  basis: Randomised human intervention, weighed dietary records (hoppe2004).
+- claim: The IGF-1-raising component is casein, not whey and not milk minerals.
+  grade: A
+  basis: 2x2 factorial randomised trial, n=57 (hoppe2009).
+- claim: Milk-induced IGF-1 elevation translates into faster chondrocyte proliferation at the plate.
+  grade: E
+  basis: Never measured; inferred from IGF-1 action in other systems.
+key_refs:
+- ref_id: hoppe2004
+  pmid: '15054433'
+  first_author: Hoppe C
+  year: 2004
+  type: primary
+  one_line_finding: Skimmed milk but not meat raised serum IGF-I (19%) and IGF-I/IGFBP-3 (13%) in 8-year-old
+    boys over 7 days.
+- ref_id: hoppe2009
+  pmid: '19471293'
+  first_author: Hoppe C
+  year: 2009
+  type: primary
+  one_line_finding: Casein raised IGF-1 15%, whey raised fasting insulin 21%, milk minerals had no independent
+    effect (n=57).
+- ref_id: hoppe2006
+  pmid: '16848703'
+  first_author: Hoppe C
+  year: 2006
+  type: review
+  one_line_finding: Reviews observational and intervention evidence that cow's milk stimulates linear
+    growth in developing and industrialised settings, proposing IGF-I as the mediator.
+open_questions:
+- g_l10env_002
+layer: L10
+stub: false
+last_verified: '2026-08-05'

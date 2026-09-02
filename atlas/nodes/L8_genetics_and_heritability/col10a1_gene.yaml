@@ -1,0 +1,93 @@
+id: col10a1_gene
+name: COL10A1
+aliases:
+- type X collagen alpha-1 gene
+type: gene
+layer: L8
+stub: false
+summary: |-
+  COL10A1 encodes the short-chain collagen made exclusively by hypertrophic chondrocytes, and it is
+  the one human locus in this atlas where dominant-negative and haploinsufficiency alleles of the
+  same gene have been compared quantitatively in the same cohort. Warman 1993 mapped autosomal
+  dominant Schmid metaphyseal chondrodysplasia to a 13 bp COL10A1 deletion segregating in a large
+  kindred (lod 18.2 at theta=0), producing a frameshift that shortens the alpha-1(X) chain by nine
+  residues in the conserved C-terminal NC1 domain. Meng 2025 assembled 4 new cases plus 124 published
+  ones and found the discriminating result: patients carrying missense variants had height Z
+  -3.62 +/- 1.95 versus -1.99 +/- 1.28 for truncating variants (P = 0.013), and had more metaphyseal
+  irregularity of the distal radius and ulna (P = 0.019). Because truncating COL10A1 alleles are
+  degraded by nonsense-mediated decay - leaving the wild-type allele to make half the normal amount
+  of collagen X - while missense alleles produce a stable chain that disrupts trimerisation of the
+  wild-type product, this is a direct human measurement that dominant-negative interference costs
+  about 1.6 SDS more stature than losing one copy outright. NC1-domain variants also present earlier
+  than non-NC1 variants (median 12 versus 72 months, P = 0.0014). The mechanistic reading is
+  corroborated in vitro: Xu 2025 showed a frameshift allele disrupts trimerisation of normal collagen
+  X, exerting a dominant-negative effect on the wild-type chain.
+quantitative:
+- parameter: height Z-score, COL10A1 missense (dominant-negative) variants
+  value: '-3.62'
+  unit: SDS
+  conditions: metaphyseal chondrodysplasia Schmid, at first presentation; 4 new plus 124 published
+    cases
+  species: human
+  source_ref: meng2025
+  uncertainty: SD 1.95; P=0.013 vs truncating
+- parameter: height Z-score, COL10A1 truncating (haploinsufficiency) variants
+  value: '-1.99'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: meng2025
+  uncertainty: SD 1.28
+- parameter: age at onset, NC1-domain variants
+  value: '12'
+  unit: months
+  conditions: median, same cohort
+  species: human
+  source_ref: meng2025
+  uncertainty: P=0.0014 versus non-NC1
+- parameter: age at onset, non-NC1-domain variants
+  value: '72'
+  unit: months
+  conditions: median, same cohort
+  species: human
+  source_ref: meng2025
+  uncertainty: P=0.0014
+localization:
+- 'human: germline; product restricted to hypertrophic zone chondrocytes'
+human_evidence: direct
+human_evidence_note: Height Z-scores measured in 128 human COL10A1 cases and stratified by mutation
+  class.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: The Col10a1-null mouse has a mild or absent phenotype and is deliberately
+  not used to support any claim here.
+confidence: A
+claim_grades:
+- claim: COL10A1 mutations cause metaphyseal chondrodysplasia Schmid.
+  grade: A
+  basis: Original linkage kindred at lod 18.2 (warman1993) plus a 128-case genotype-phenotype
+    series (meng2025).
+- claim: Missense (dominant-negative) COL10A1 alleles reduce stature more than truncating (haploinsufficient)
+    alleles.
+  grade: B
+  basis: Single pooled cohort of 128 cases with P=0.013 (meng2025); the comparison is within one
+    literature aggregation rather than two independent cohorts.
+key_refs:
+- ref_id: warman1993
+  pmid: '8220429'
+  doi: 10.1038/ng0993-79
+  first_author: Warman ML
+  year: 1993
+  type: primary_abstract_only
+  one_line_finding: A 13 bp COL10A1 deletion segregates with autosomal dominant Schmid metaphyseal
+    chondrodysplasia at lod 18.2, truncating the NC1 domain.
+- ref_id: meng2025
+  pmid: '41454937'
+  doi: 10.1007/s00223-025-01457-8
+  first_author: Meng L
+  year: 2025
+  type: primary
+  one_line_finding: In 128 COL10A1 cases, missense variants gave height Z -3.62 +/- 1.95 versus
+    -1.99 +/- 1.28 for truncating variants (P=0.013).
+last_verified: '2026-08-05'

@@ -1,0 +1,64 @@
+# NODE SCHEMA - one YAML file per entity, at atlas/nodes/<layer_dir>/<node_id>.yaml
+# Fields marked REQUIRED are enforced by atlas/tools/validate.py.
+# Stub nodes (phase 1) may set `stub: true` and omit the fields marked STUB_EXEMPT.
+
+id:                 # REQUIRED. snake_case, globally unique, matches filename stem. e.g. npr2_receptor
+name:               # REQUIRED. canonical name
+aliases: []         # optional list
+type:               # REQUIRED. one of vocab.node_types
+layer:              # REQUIRED. L0..L13
+stub: false         # true = coastline placeholder, not yet researched
+
+summary: |          # REQUIRED (STUB_EXEMPT). 3-8 sentences, mechanistic, no filler, no hedging.
+                    # Every clause should be checkable. Species-tag every claim.
+
+quantitative:       # optional list; the primary feedstock for quant/parameters.csv
+  - parameter:      #   what is measured, e.g. "chondrocyte height increase, PZ->HZ"
+    value:          #   numeric or range as string, e.g. "6.5" or "5.0-8.0"
+    unit:           #   SI or explicit, e.g. "um", "fold", "cm/yr", "SDS"
+    conditions:     #   age, site, sex, assay
+    species:        #   vocab.species
+    source_ref:     #   key into sources/bibliography.yaml (ref_id)
+    uncertainty:    #   "95% CI 4.1-5.3" | "SD 1.2" | "n=6, range given" | "not reported"
+    value_unverified: false   # true if the number could not be confirmed at source
+
+localization: []    # list of "species SPACE zone/tissue: status" strings.
+                    # e.g. "human RZ: unconfirmed", "mouse PHZ: confirmed by ISH (ref_id)"
+
+human_evidence:     # REQUIRED. direct|indirect|absent  + `human_evidence_note` one sentence
+human_evidence_note:# REQUIRED (STUB_EXEMPT). what the human evidence actually is
+species_basis: []   # REQUIRED (STUB_EXEMPT). which organisms the claim rests on
+translation_risk:   # REQUIRED (STUB_EXEMPT). low|moderate|high|unknown|not_applicable
+translation_risk_reason: # REQUIRED (STUB_EXEMPT)
+confidence:         # REQUIRED (STUB_EXEMPT). A|B|C|D|E|X
+                    # Grades the WEAKEST claim the summary makes. A node whose summary
+                    # spans an association AND a mechanism is not one claim: the
+                    # association may be A-grade while the mechanistic reading is C.
+                    # Reporting the stronger of the two would be optimistic; reporting
+                    # only the weaker is lossy. So: `confidence` = weakest, and
+                    # `claim_grades` carries the breakdown.
+claim_grades:       # OPTIONAL but REQUIRED where support diverges across claims.
+  - claim:          #   one falsifiable sentence
+    grade:          #   A|B|C|D|E|X for THAT claim specifically
+    basis:          #   one line: what evidence supports this claim at this grade
+
+key_refs:           # REQUIRED (STUB_EXEMPT). >=1 entry
+  - ref_id:         #   key into sources/bibliography.yaml
+    pmid:           #   at least one of pmid/doi must be present and must resolve
+    doi:
+    first_author:
+    year:
+    type:           #   vocab.ref_types
+    one_line_finding: #  what THIS paper showed, not what the field thinks
+
+open_questions: []  # list of gap_ids in gaps/gaps.yaml
+contradicts: []     # node_ids or ref_ids where literature disagrees
+termination_reason: # intervention nodes only. vocab.termination_reason.
+                    # ONLY `scientific_null` may be cited as negative evidence about
+                    # biology. `strategic` and `logistical` stops carry no evidential
+                    # content, and a node treating one as a negative result is defective.
+termination_note:   # required when termination_reason is set: the whyStopped text and
+                    # any posted results that survive the termination
+
+pending_source:     # ref_id queued in sources/access_queue.md, if paywall-blocked
+last_verified:      # REQUIRED. ISO date YYYY-MM-DD

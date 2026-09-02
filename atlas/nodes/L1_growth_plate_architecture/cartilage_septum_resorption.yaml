@@ -1,0 +1,110 @@
+id: cartilage_septum_resorption
+name: Cartilage septum resorption
+aliases:
+- septal resorption
+- transverse septum breakdown
+type: process
+layer: L1
+stub: false
+summary: Removal of cartilage at the metaphyseal face is selective, not wholesale. The transverse septa separating
+  successive chondrocytes in a column are removed to open a channel for the capillary bud, while the mineralised longitudinal
+  septa are preserved and become the cores of the primary spongiosa trabeculae. Serial-section analysis in swine shows
+  that invading endothelial cells penetrate the non-calcified pericellular and territorial matrix compartments specifically,
+  which explains the geometric selectivity. In rodents the executing cell is the septoclast, a cathepsin-B-rich, FABP5+
+  mesenchymal cell whose differentiation depends on endothelial Dll4 and whose transcriptional programme includes
+  Ctsb and Mmp13; osteoclasts are present but sparse at this interface. The rate of septal removal must equal the
+  rate of chondrocyte production for the plate to hold constant height, and in rat that means one cell per column
+  every three hours. In human tissue, septal thickness has been measured across age - it increases from birth to adolescence
+  in rib - but the resorbing cell has never been identified.
+quantitative:
+- parameter: direction of cartilage septal thickness change with age
+  value: increasing
+  unit: qualitative
+  conditions: human rib growth plate, birth to adolescence
+  species: human
+  source_ref: byers2000
+  uncertainty: absolute values not available from abstract
+- parameter: septal removal rate implied by steady state
+  value: 1 per 3
+  unit: cells per hour per column
+  conditions: rat proximal tibia
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: equivalently 8 per day
+- parameter: matrix compartment targeted by invading endothelium
+  value: non-calcified pericellular and territorial matrix
+  unit: qualitative
+  conditions: distal hypertrophic zone, Yucatan swine
+  species: porcine
+  source_ref: farnum1989
+  uncertainty: descriptive
+- parameter: orientation of hypertrophic cell columns relative to the bone axis
+  value: nearly parallel to the diaphyseal axis regardless of the local plate surface angle
+  unit: qualitative, with the plate surface inclined up to 60 degrees
+  conditions: bovine distal femur, ~12-month animals, 12 femora; gross morphology by hypochlorite maceration plus
+    histology, alongside 86 tensile tests
+  species: bovine
+  source_ref: cohen1992
+  uncertainty: The columns and transphyseal septa stay axial even where the primary contour of the physis is inclined
+    as much as 60 degrees to the diaphyseal axis, so the axial architecture is independent of the plate surface geometry.
+    The authors identify column orientation as one of the dominant microstructural features governing tensile behaviour
+    of the bone-plate-bone specimen.
+- parameter: relationship between composition and tensile properties across anatomical regions
+  value: greater collagen content in the regions that were stiffest and strongest
+  unit: qualitative correlation
+  conditions: bovine distal femoral physis, regions compared for ultimate stress and two tangent moduli against water
+    content, sulfated GAG and hydroxyproline measured on adjacent tissue
+  species: bovine
+  source_ref: cohen1992
+  uncertainty: 'PARTLY WITHDRAWS THE REVISED CLAIM IN g_l1arch_018 that no one has paired composition with mechanics
+    in the same growth plate: cohen1992 does exactly that, by anatomical region, with least-squares regression of
+    both material properties on collagen content. What is still unpaired is CROSS-LINK density specifically - collagen
+    content and cross-link density are different quantities, and farquharson1996 shows they can move independently,
+    since collagen concentration varies about 5-fold through the chick plate while pyridinoline varies about 18-fold
+    and in a different pattern.'
+localization:
+- 'mouse: FABP5+ septoclast-mediated (sivaraj2022)'
+- 'rat: cathepsin B-rich septoclasts (lee1995)'
+- 'human: septal thickness measured, resorbing cell unidentified (byers2000)'
+human_evidence: indirect
+human_evidence_note: Human cartilage septal thickness and number have been quantified across age (byers2000), but
+  no human study identifies the cell that resorbs the septa.
+species_basis:
+- mouse
+- rat
+- porcine
+- human
+translation_risk: high
+translation_risk_reason: The mechanism is entirely rodent; only the static septal geometry has been measured in humans.
+confidence: C
+key_refs:
+- ref_id: sivaraj2022
+  pmid: '35091558'
+  first_author: Sivaraj KK
+  year: 2022
+  type: primary
+  one_line_finding: Septoclasts, not osteoclasts, mediate matrix degradation and chondrocyte phagocytosis at the chondro-osseous
+    border.
+- ref_id: farnum1989
+  pmid: '2760737'
+  first_author: Farnum CE
+  year: 1989
+  type: primary
+  one_line_finding: Endothelial penetration is into non-calcified pericellular and territorial matrix, explaining
+    selective septal removal.
+- ref_id: byers2000
+  pmid: '11033444'
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: Human cartilage septal thickness increases and septal number falls in the proliferative zone across
+    childhood.
+- ref_id: lee1995
+  pmid: '7730591'
+  first_author: Lee ER
+  year: 1995
+  type: primary
+  one_line_finding: Cathepsin B-rich septoclast defined as the cell resorbing growth plate cartilage septa in rat.
+open_questions:
+- g_l1arch_003
+last_verified: '2026-08-06'

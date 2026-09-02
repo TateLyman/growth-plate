@@ -1,0 +1,64 @@
+id: microbiome_igf1_axis
+name: Microbiome-IGF-1 axis
+type: pathway
+summary: 'The proposed molecular link from gut bacteria to the growth plate is short-chain fatty acids
+  raising hepatic and adipose IGF-1 production. In mice, colonisation of germ-free animals substantially
+  increased serum IGF-1 with increased IGF-1 production in liver and adipose tissue; antibiotic treatment
+  of conventional mice decreased serum IGF-1 and inhibited bone formation; and supplementing antibiotic-treated
+  mice with short-chain fatty acids - products of microbial fermentation - restored IGF-1 and bone mass
+  to untreated levels (yan2016). That restoration experiment is the load-bearing evidence: it converts
+  a correlation between microbiota and IGF-1 into a sufficiency claim for a specific class of microbial
+  metabolite. The somatotropic axis is also the route by which monocolonising lactobacilli promote juvenile
+  growth (schwarzer2016). Two things are missing before this can be used as a human entry point. No SCFA
+  receptor or transporter has been localised or functionally tested in growth plate chondrocytes in any
+  species, so the metabolite may act entirely on the liver. And no human study has manipulated the microbiota
+  and measured IGF-1 and linear growth together, so the entire axis is a mouse construct with a human
+  motivation.'
+quantitative:
+- parameter: serum IGF-1 response to short-chain fatty acid supplementation in antibiotic-treated mice
+  value: restored to non-antibiotic-treated levels
+  unit: qualitative
+  conditions: conventionally raised mice after antibiotic depletion
+  species: mouse
+  source_ref: yan2016
+  uncertainty: direction and endpoint as reported; absolute concentrations in the paper
+localization:
+- 'mouse liver and adipose tissue: increased IGF-1 production after colonisation (yan2016)'
+- 'mouse and human growth plate: no SCFA receptor localisation or function reported'
+human_evidence: absent
+human_evidence_note: No human study measures a microbiota manipulation, circulating IGF-1 and linear growth
+  together.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Germ-free and antibiotic-depleted mouse states have no human equivalent, and
+  the human IGF axis differs from the mouse in carrying abundant postnatal IGF-2.
+confidence: C
+claim_grades:
+- claim: Short-chain fatty acids are sufficient to restore serum IGF-1 and bone mass after microbiota
+    depletion.
+  grade: C
+  basis: Antibiotic depletion plus SCFA repletion in mice, single study (yan2016).
+- claim: The microbiome-IGF-1 axis operates in humans.
+  grade: X
+  basis: Asserted throughout the review literature; no human interventional test exists. Logged as g_l10env_001.
+key_refs:
+- ref_id: yan2016
+  pmid: '27821775'
+  first_author: Yan J
+  year: 2016
+  type: primary
+  one_line_finding: Microbial colonisation raised serum IGF-1 with increased hepatic and adipose IGF-1
+    production; antibiotics lowered it and SCFA supplementation restored IGF-1 and bone mass.
+- ref_id: schwarzer2016
+  pmid: '26912894'
+  first_author: Schwarzer M
+  year: 2016
+  type: primary
+  one_line_finding: Selected lactobacilli sustain juvenile growth through the somatotropic hormone axis
+    in monocolonised mice.
+open_questions:
+- g_l10env_001
+layer: L10
+stub: false
+last_verified: '2026-08-05'

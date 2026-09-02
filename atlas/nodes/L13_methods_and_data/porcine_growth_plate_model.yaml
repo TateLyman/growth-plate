@@ -1,0 +1,116 @@
+id: porcine_growth_plate_model
+name: Porcine growth plate model
+aliases:
+- pig physis model
+type: process
+summary: |
+  The pig is the large-animal model whose growth plate most closely matches human dimensions
+  and loading, and it is the model of choice for physeal mechanics. Unconfined compression of
+  porcine growth plate and its three zones has been used to derive zone-specific mechanical
+  properties (sergerie2009), and porcine explants have supplied the controlled loading
+  experiments the human plate cannot be subjected to: compressive modulation alters
+  chondrocyte viability (kaviani2015), static and dynamic loading produce different strain
+  fields (kaviani2016), and in situ chondrocyte deformation has been measured under stress-
+  controlled static versus dynamic compression (zimmermann2017). Morphological and X-ray
+  microprobe studies of the porcine plate established zonal mineral chemistry (althoff1982),
+  and porcine tissue supplied the T1-mapping calibration used to infer water content by MRI
+  (shiguetomimedi2013). Human comparative data exist directly: in vitro thymidine labelling
+  was performed in human AND porcine growth plates in the same study, with the same pulse and
+  the same processing (thurston1985), and that study is the reason the pig is scored as
+  architecturally intermediate rather than merely dimensionally similar. It found the pig
+  plate to sit between human and rodent on every axis it measured: a prominent inert zone
+  but narrower than man's, regular columns as in rodents, fine well-ordered primary spongiosa
+  projecting into the metaphysis as in rodents rather than the few coarse trabeculae of the
+  human plate, labelling indices of 4.0-10.6% between the human 3.4-4.4% and the rodent 10-15%,
+  30-36 proliferation-zone cells against 13-28 in human, and terminal hypertrophic heights of
+  22-35 um against 20.5-26 um in human. One difference is not intermediate but opposite:
+  labelled cells were present in the inert zone of all five pigs and in neither human specimen.
+  Scored on
+  the four-axis scheme defined in mouse_model_translation_risk (fusion competence, plate
+  architecture, scale, tempo; each 1-5, mean reported). Pig scores A=2, B=1, C=1, D=2, mean
+  1.5, giving translation_risk moderate; the residual risk is that pig growth completes far
+  faster than human and that pigs are usually studied as juveniles well before any fusion
+  event.
+quantitative:
+- parameter: pig translation risk score (this layer, 1-5)
+  value: '1.5'
+  unit: score
+  conditions: mean of fusion competence 2, architecture 1, scale 1, tempo 2
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is
+    defined in mouse_model_translation_risk and the axis scores are this atlas's judgement.
+    source_ref names the anchor primary for the model (thurston1985); that paper does not contain
+    this number and must not be cited for it.
+  atlas_derived: true
+- parameter: labelling index, proliferation zone
+  value: 4.0-10.6
+  unit: '%'
+  conditions: distal femur, five pigs; 10.6% at 8.0 months, 8.5% at 8.5 months, 7.3% at 10.5 months in
+    the three precisely aged animals; 5.6% and 4.0% in two abattoir animals of uncertain age
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: range across five animals; the two lowest values come from the two animals whose ages the
+    authors could not establish, and the authors themselves discount those two
+- parameter: proliferation zone cells per column
+  value: 30-36
+  unit: cells
+  conditions: distal femur, five pigs, estimated from the labelling profiles
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: range across five animals (30, 36, 31, 34, 30); estimated from histogram shape, no dispersion
+    reported
+- parameter: terminal hypertrophic cell height along the growth axis
+  value: 22-35
+  unit: um
+  conditions: distal femur, five pigs, mean of 20 cells each along the metaphyseal border
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: range across five animals (29, 22, 27, 35, 32 um); decalcified paraffin histology
+localization:
+- 'porcine RZ/PZ/HZ: zone-specific compressive properties measured'
+- 'porcine inert zone: labelled cells present in all five animals, unlike human (thurston1985)'
+human_evidence: indirect
+human_evidence_note: One study labelled human and porcine growth plates side by side with the same pulse
+  and the same processing (thurston1985), which is the strongest direct human-porcine comparison available
+  and the only one in which a species difference cannot be an inter-laboratory difference. It rests on
+  five pigs against two usable human subjects.
+species_basis:
+- porcine
+- human
+translation_risk: moderate
+translation_risk_reason: Dimensional and mechanical similarity to human is high, but pigs are studied
+  juvenile, growth completes much faster, and fusion is rarely the endpoint.
+confidence: B
+key_refs:
+- ref_id: sergerie2009
+  first_author: Sergerie K
+  year: 2009
+  type: primary
+  one_line_finding: Mechanical properties of the porcine growth plate and its three zones from unconfined
+    compression.
+- ref_id: kaviani2015
+  first_author: Kaviani R
+  year: 2015
+  type: primary
+  one_line_finding: Compressive mechanical modulation alters growth plate chondrocyte viability in
+    porcine explants.
+- ref_id: zimmermann2017
+  first_author: Zimmermann EA
+  year: 2017
+  type: primary
+  one_line_finding: In situ growth plate chondrocyte deformation under static versus dynamic compression.
+- ref_id: thurston1985
+  pmid: '3864550'
+  first_author: Thurston MN
+  year: 1985
+  type: primary
+  one_line_finding: Thymidine labelling performed in human and porcine growth plates in the same study;
+    pig labelling index, proliferation zone size and hypertrophic cell height all lie between human and
+    rodent values.
+open_questions:
+- g_l6mech_003
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

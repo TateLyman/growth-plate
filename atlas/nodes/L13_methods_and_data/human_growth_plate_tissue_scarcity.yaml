@@ -1,0 +1,137 @@
+id: human_growth_plate_tissue_scarcity
+name: Scarcity and provenance bias of human growth plate tissue
+aliases:
+- human physeal tissue access
+- surgical waste provenance
+type: process
+summary: |
+  A donor census executed on 2026-08-05 across the atlas bibliography and a Europe PMC title
+  sweep located 30 studies that examined human growth plate tissue directly. Twenty-one of
+  them state a donor count; those 21 sum to 259 distinct human donors. Of these, 157 are fetal
+  or perinatal autopsy specimens - 125 from a single 1992 series of 46 stillborns and 79
+  newborns (rodriguez1992), 20 sudden-infant-death sternochondral specimens (werther1990) and
+  12 fetal to 13-month bodies (strangevognsen1997). Only 102 donors contributed a POSTNATAL,
+  still-growing growth plate, and every one of those came from surgical waste: epiphysiodesis
+  or epiphyseal surgery, polydactyly digit resection, amputation for osteosarcoma or trauma,
+  or transplant salvage. The largest single postnatal series is 24 proximal tibial biopsies
+  (16 boys, 8 girls, Tanner 1-5) from a 2003 immunohistochemistry study that was never
+  deposited in any repository (nilsson2003). The 102 figure is an upper bound because several
+  Stockholm-based studies (nilsson1999, nilsson2003, ramesh2022, zhang2024a, chu2026)
+  plausibly draw on one accumulating biopsy bank; it is also a lower bound in the sense that 9
+  further located studies do not state their donor count. Two consequences follow directly.
+  First, "the normal human growth plate" is a composite of tissue from children who were
+  having surgery, most often for limb-length discrepancy, excessive predicted height, a
+  supernumerary digit or a bone tumour, so normality is assumed rather than demonstrated.
+  Second, the mouse-to-human asymmetry is not merely literary: GEO holds 919 mouse growth
+  plate records against 141 human (geo_census_20260805), while the entire human histological
+  corpus rests on roughly one hundred growing plates.
+quantitative:
+- parameter: distinct human donors whose growth plate tissue has been examined, studies with stated
+    n
+  value: '259'
+  unit: donors
+  conditions: 21 of 30 located studies; census 2026-08-05
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: 'lower bound: 9 further located studies do not state donor count'
+- parameter: distinct donors contributing a POSTNATAL growing human growth plate
+  value: '102'
+  unit: donors
+  conditions: surgical-waste provenance only, studies with stated n
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: 'upper bound: probable cohort overlap between Stockholm-based studies'
+- parameter: distinct donors contributing fetal or perinatal autopsy growth plate
+  value: '157'
+  unit: donors
+  conditions: rodriguez1992 125 + werther1990 20 + strangevognsen1997 12
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: exact sum of stated counts
+- parameter: largest single postnatal human growth plate biopsy series
+  value: '24'
+  unit: donors
+  conditions: 16 boys and 8 girls, proximal tibia, Tanner 1-5
+  species: human
+  source_ref: nilsson2003
+  uncertainty: stated in abstract
+- parameter: largest single human growth plate histology series of any age
+  value: '125'
+  unit: donors
+  conditions: 46 stillborns + 79 newborns, 20-41 weeks gestation, proximal tibia
+  species: human
+  source_ref: rodriguez1992
+  uncertainty: stated in abstract
+- parameter: human growth plates examined histologically at or immediately before fusion
+  value: '2'
+  unit: plates
+  conditions: white2008 distal tibia n=1; emons2009 one late-pubertal plate about to fuse
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: exhaustive within the located literature; see gap g_l7fuse_002
+- parameter: ratio of mouse to human GEO growth plate records
+  value: '6.5'
+  unit: ratio
+  conditions: 919 mouse vs 141 human, GEO DataSets 2026-08-05
+  species: multiple
+  source_ref: geo_census_20260805
+  uncertainty: derived value
+localization:
+- 'human PERI: not applicable - this node describes tissue supply, not anatomy'
+human_evidence: direct
+human_evidence_note: The census counts human donors in human studies; it is a direct measurement
+  of the human evidence base.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: This node measures the size of the human evidence base rather than transferring
+  an animal claim.
+confidence: A
+claim_grades:
+- claim: At most about 100 postnatal growing human growth plates have been examined in studies that
+    state a donor count.
+  grade: A
+  basis: Arithmetic over stated donor counts in 21 located primary studies; reproducible from atlas/quant/human_growth_plate_donor_census.csv.
+- claim: The true number of distinct postnatal donors is lower than 102 because of cohort overlap.
+  grade: E
+  basis: Inference from shared authorship and single-centre recruitment; not verified against patient
+    identifiers.
+- claim: Essentially all postnatal human growth plate tissue is surgical waste.
+  grade: A
+  basis: 'Provenance is stated in each source: epiphysiodesis, polydactyly, amputation, transplant
+    salvage.'
+key_refs:
+- ref_id: human_gp_donor_census_20260805
+  first_author: Human Growth System Atlas L13 sweep
+  year: 2026
+  type: dataset
+  one_line_finding: 30 human growth-plate tissue studies located; 21 state donor counts summing to
+    259 donors, of which 102 are postnatal.
+- ref_id: rodriguez1992
+  first_author: Rodriguez JI
+  year: 1992
+  type: primary
+  one_line_finding: Proximal tibial growth plate histology in 46 stillborns and 79 newborns - the
+    largest human series in existence, and entirely perinatal.
+- ref_id: nilsson2003
+  first_author: Nilsson O
+  year: 2003
+  type: primary
+  one_line_finding: Proximal tibial growth plate biopsies from 16 boys and 8 girls across Tanner
+    1-5 - the largest postnatal series located.
+- ref_id: werther1990
+  first_author: Werther GA
+  year: 1990
+  type: primary
+  one_line_finding: GH receptor localised in sternochondral growth cartilage from 20 sudden-infant-death
+    donors.
+- ref_id: geo_census_20260805
+  first_author: NCBI GEO
+  year: 2026
+  type: dataset
+  one_line_finding: 919 mouse versus 141 human growth plate records in GEO DataSets.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
+last_verified: '2026-08-05'

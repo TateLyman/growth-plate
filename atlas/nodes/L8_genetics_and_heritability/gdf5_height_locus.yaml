@@ -1,0 +1,59 @@
+id: gdf5_height_locus
+name: GDF5 height locus
+aliases:
+- GDF5-UQCC region
+- rs143383
+type: gene
+layer: L8
+stub: false
+summary: |-
+  The GDF5-UQCC region is the height locus that ties normal stature variation to osteoarthritis risk.
+  Sanna 2008 performed genome-wide association analyses in 6,669 individuals from Finland and
+  Sardinia with follow-up in 28,801 more and showed that common variants in this osteoarthritis-
+  associated locus contribute to height with an estimated additive effect of 0.44 cm per allele
+  (overall P < 1e-15). GDF5 (growth/differentiation factor 5, BMP-14) is a genuine skeletal
+  developmental gene - it specifies the joint interzone and is mutated in brachydactyly and in
+  Grebe/Hunter-Thompson chondrodysplasia - so unlike ZBTB38 this locus has a plausible and
+  independently established route to the growth plate and joint. The per-allele effect, 0.44 cm, is
+  statistically indistinguishable in magnitude from HMGA2's 0.4 cm, which is the useful comparison:
+  a locus with clear skeletal developmental function and a locus with none contribute the same
+  fraction of a centimetre. That equality is a direct observation against the intuition that
+  common-variant effect size tracks biological centrality, and it is one of the empirical footings of
+  the omnigenic argument. Sanna's authors explicitly proposed the link between height genetics and
+  osteoarthritis is mediated through bone growth and development.
+quantitative:
+- parameter: additive per-allele height effect, GDF5-UQCC region
+  value: '0.44'
+  unit: cm
+  conditions: 6,669 Finnish and Sardinian individuals plus 28,801 follow-up
+  species: human
+  source_ref: sanna2008
+  uncertainty: overall P < 1e-15
+localization:
+- 'human: germline 20q11.22; GDF5 protein acts at the joint interzone and in growth plate cartilage'
+human_evidence: direct
+human_evidence_note: Human GWAS with replication and a measured per-allele centimetre effect.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human association data; murine Gdf5 (brachypodism) work sits in gdf5_protein
+  and gdf5_gene (L0).
+confidence: A
+key_refs:
+- ref_id: sanna2008
+  pmid: '18193045'
+  doi: 10.1038/ng.74
+  first_author: Sanna S
+  year: 2008
+  type: primary
+  one_line_finding: Common variants in the GDF5-UQCC region alter adult height by an estimated
+    0.44 cm per allele (P < 1e-15) in 35,470 individuals.
+- ref_id: weedon2008
+  pmid: '18391952'
+  doi: 10.1038/ng.121
+  first_author: Weedon MN
+  year: 2008
+  type: primary
+  one_line_finding: Independent first-generation height GWAS establishing the scale of common-variant
+    effects against which the GDF5 effect is compared.
+last_verified: '2026-08-05'
