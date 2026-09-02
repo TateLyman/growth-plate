@@ -16186,3 +16186,80 @@ SPOCK2 (p=8.87e-15) than for CHST3 (p=1.04e-11), only 3.5 orders apart where R47
 and the CHST3 eQTL sign is TISSUE-DEPENDENT — negative in most tissues but POSITIVE in cultured fibroblasts,
 the only mesenchymal proxy GTEx has, where the CHST3-RAISING allele goes with SHORTER height.** The LD /
 colocalisation test that would separate CHST3 from SPOCK2 was not run and needs no new data. `g_l5_487e`.
+
+## 🧬📐🧬📐 R488 — **THE SCUBE3 DIRECTION IS SIGNED IN HUMANS BY THE SECOND INSTRUMENT, AND IT AGREES WITH
+## THE FIRST: RAISING SCUBE3 IS TALLER. THE COMPARTMENT IS NOT 29.5% TRUNK — IT IS *ZERO*, WITH SITTING
+## HEIGHT FRANKLY NULL AT P=0.47 AND LEG LENGTH AT P=1.4e-63. AND THE REGION'S HEADLINE HEIGHT SIGNAL IS
+## NOT ATTRIBUTABLE TO SCUBE3 AT ALL.**
+## Run `atlas/tools/round488_scube3_eqtl_direction.py` · data `atlas/data/round488/`
+
+⭐ **WHY.** R404 put SCUBE3 at the top of the untried supply list on a **LOSS** number — pLoF **−6.71 cm at
+P=2.1e-37**, load-bearing, direction is to SUPPLY. R487 then found the catalogue protein has already been
+given in vivo to normal mice. **What the arm had never had is a human signal in the GAIN direction** — and
+R477/R479 built the instrument for exactly that on ADAM12: **take every GTEx significant cis-eQTL for the
+gene, align each variant to its GENE-RAISING allele by the NES sign, and read the height beta.** 722 SCUBE3
+eQTL variants, 521 matched into all three absolute traits in one cohort of 451,921.
+
+⭐⭐⭐ **ONE — THE DIRECTION, AND IT IS THE SAME ANSWER FROM AN INSTRUMENT OF THE OPPOSITE DESIGN.**
+**494 of 521 matched variants (94.8%) have the SCUBE3-RAISING allele associated with TALLER**; at eQTL
+p<1e-4, **447 of 461 (97.0%)**; of the 436 that are genome-wide significant for height, **425 are taller.**
+⚠ **THOSE ARE LD-CORRELATED AND ARE NOT INDEPENDENT TESTS — the honest count of independent signals in the
+load-bearing block below is ONE.** What the concordance establishes is that the sign is stable across the
+whole locus rather than resting on one variant's orientation.
+→ ⭐ **A HETEROZYGOUS pLoF BURDEN TEST SAYS LOSING IT SHORTENS; AN eQTL-SIGNED COMMON-VARIANT TEST SAYS
+RAISING IT LENGTHENS. TWO INSTRUMENTS, OPPOSITE DESIGNS, ONE DIRECTION — WHICH IS WHAT THE SUPPLY ARM
+LACKED.**
+
+⭐⭐⭐⭐ **TWO — THE LOAD-BEARING BLOCK, AND THE COMPARTMENT IS THE ADAM12 SHAPE EXACTLY.** At the variants
+where **SCUBE3 IS THE TOP eQTL GENE** — eQTL p **1.51e-32**, NES **+0.320**, cultured fibroblasts, leading
+the next gene (TCP11, 9.68e-23) by **9.7 orders** — five variants in one LD block give identical numbers.
+Best, **rs9296143, chr6:35,147,515, SCUBE3-raising allele C**:
+| trait | beta per SCUBE3-raising allele | P |
+|---|---|---|
+| **LEG LENGTH** | **+0.029617** | **1.4e-63** |
+| standing height | +0.019122 | 8.6e-31 |
+| **SITTING HEIGHT** | **−0.001241** | **0.47 — FRANKLY NULL** |
+⭐ **−4.4% TRUNK. THE ENTIRE EFFECT IS IN THE LEG, AND THE TRUNK ARM IS NOT MERELY SMALL — IT IS ZERO WITH
+THE POINT ESTIMATE ON THE WRONG SIDE.** Third gene in this file with that signature after ADAM12 (R477) and,
+by a different route, the CNP axis.
+⛔ **SO R406's 29.5% TRUNK IS SUPERSEDED, AND IT WAS TOO GENEROUS.** R406 took the region's standing-height
+lead at chr6:35,313,194 — which **is** a SCUBE3 eQTL, at **3.14e-11**, i.e. **twenty-one orders weaker than
+the block above.** There are at least two SCUBE3-eQTL signals at this locus and R406 read the compartment off
+the weaker one. **The gene-level coordinate is ~0% trunk.**
+
+⛔⛔ **THREE — AND THE REGION'S HEADLINE HEIGHT SIGNAL IS *NOT* SCUBE3'S, WHICH IS R479's ADAM12/UROS RESULT
+REPRODUCED ON A SECOND GENE.** The strongest height variants in the window are far stronger than anything in
+the SCUBE3-specific block — **rs3734254 at chr6:35,427,233, standing P=1.3e-102** — and at that variant
+**SCUBE3 IS ONLY THE FOURTH-RANKED eQTL GENE**: DEF6 5.18e-16 · ZNF76 2.03e-11 · TCP11 2.36e-11 · **SCUBE3
+8.45e-11**. Same at rs2267667 (DEF6 3.18e-17 ahead of SCUBE3 3.79e-13) and at rs9394274 (**TCP11 3.93e-25**,
+seven orders ahead of SCUBE3 7.66e-18).
+→ ⭐ **CHR6p21 IS GENE-DENSE AND R406 SAID SO IN ITS OWN CAVEAT. THE P=1e-102 SIGNAL MUST NOT BE QUOTED AS
+EVIDENCE ABOUT SCUBE3. What carries the gene is the weaker, cleaner block where SCUBE3 leads.**
+⚠ **AND THE NAMED ALTERNATIVE IS SPECIFIC: TCP11 runs at NES −0.588 at the same block, so if TCP11 is the
+causal gene the direction reads "LOWERING TCP11 IS TALLER" and the SCUBE3 reading collapses.** Also present
+in that neighbourhood and worth recording because two of them are genes this file works elsewhere: **DEF6,
+ZNF76, UHRF1BP1, RPL10A, TAF11, SNRPC, PPARD and TEAD3.**
+
+⛔ **FOUR — WHAT THIS IS NOT.** **No colocalisation and no conditional analysis were run** — this is
+lead-variant gene specificity plus sign concordance, which is weaker than coloc or SMR-HEIDI, and R479's
+1000 Genomes EUR panel is available for the LD half. **GTEx has no cartilage**; all 197 of the strongest
+eQTLs are **cultured fibroblasts**, the same mesenchymal proxy R477 had to use for ADAM12, while SCUBE3 in
+the human plate is 171.0 CPM at ratio 16.02 (R465). **And the magnitude is a common-variant magnitude** —
+leg-length SD is of order 4–5 cm, so +0.0296 SD is about **1.2–1.5 mm per allele**, which establishes a SIGN
+and says nothing about supraphysiological supply.
+
+⭐⭐ **FIVE — AND THE COMPARTMENT RESULT IS NOT A DEMOTION UNDER THE CURRENT RULING, WHICH IS THE POINT.**
+Before R479 a ~0%-trunk coordinate would have demoted the arm outright, as it did for the CNP axis in R318
+and for ADAM12 in R477. **The operator opened the limb compartment explicitly, and a gene whose entire
+measured human effect is leg length at P=1.4e-63 is aimed exactly where the instruction points.** What it
+costs is the trunk claim `lin2021`'s axial phenotype invited — and R487 already recorded that the human
+disease carries no proportion measurement at all.
+
+🧭 **NET FOR THE ARM.** SCUBE3 now has: a load-bearing human LOSS effect (−6.71 cm, P=2.1e-37) · a
+concordant human GAIN direction from an independent instrument (94.8% sign concordance, best block
+P=8.6e-31 standing / 1.4e-63 leg) · a purely LIMB compartment · a catalogue protein demonstrated bioactive
+in vivo in a normal animal (R487, `liu2022scube3`) · and a perfused target compartment exempt from R315's
+delivery wall. ⛔ **Against it, unchanged and unresolved: no skeletal endpoint under supplied SCUBE3 in any
+species · no dose-response · a first-in-class neutralising anti-SCUBE3 antibody in oncology development ·
+and R487's new `yang2007scube3` collision, in which the SCUBE3 C-terminus potentiates TGF-β1 in the exact
+perichondrial compartment where LESS TGF-β is ~7% LONGER bone.** `g_l5_487d`, `g_l5_488a`.

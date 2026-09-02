@@ -20479,3 +20479,27 @@ gaps:
     the height lead a CHST3 eQTL at all, or is it a SPOCK2 eQTL with CHST3 orders weaker. Then, separately,
     obtain the miyata2012 line and measure a bone, because the construct is verified as pCAG-driven full
     length human C6ST-1 with ZERO skeletal measurements in the whole 68 kB text.
+- gap_id: g_l5_488a
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Does the chr6p21 leg-length signal colocalise with the SCUBE3 eQTL, or with TCP11 or DEF6?
+  why_it_matters: R488 gives the SCUBE3 supply arm its first human evidence in the GAIN direction - 494 of
+    521 GTEx eQTL variants have the SCUBE3-raising allele associated with taller, and at the block where
+    SCUBE3 is the top eQTL gene the effect is LEG LENGTH +0.029617 at P=1.4e-63 with SITTING HEIGHT NULL at
+    P=0.47. That is the only human directional evidence the arm has, and its attribution rests on a 9.7-order
+    eQTL separation over TCP11, against 19 orders in R477 and 35 in R479. If the causal gene is TCP11 the
+    direction inverts to lowering TCP11 is taller and the SCUBE3 reading collapses entirely.
+  what_is_known: SCUBE3 leads at chr6:35,147,515 (rs9296143) at eQTL p=1.51e-32, NES +0.320, cultured
+    fibroblasts, with TCP11 at 9.68e-23, DEF6 2.35e-13, UHRF1BP1 5.52e-12. At the region's strongest HEIGHT
+    variants SCUBE3 is NOT the top gene - at rs3734254, standing P=1.3e-102, the order is DEF6 5.18e-16,
+    ZNF76 2.03e-11, TCP11 2.36e-11, SCUBE3 8.45e-11 - so the headline height signal is not attributable to
+    SCUBE3 and must not be quoted as if it were. R406 read its 29.5% trunk coordinate off a lead whose SCUBE3
+    eQTL is 3.14e-11, twenty-one orders weaker than the block above.
+  what_is_missing: No colocalisation and no conditional analysis were run. No LD computation between the
+    SCUBE3-leading block and the headline height lead. And GTEx has no cartilage, so cultured fibroblasts are
+    the mesenchymal proxy for a gene whose plate expression is 171.0 CPM at 16.02x cartilage enrichment.
+  discriminating_experiment: Needs no new data. Pull the 1000 Genomes phase 3 EUR PLINK panel already used in
+    R479, compute r-squared between rs9296143 and the headline height lead rs3734254 and across the whole
+    block, and run coloc or SMR-HEIDI for SCUBE3, TCP11 and DEF6 against the leg-length sumstats separately.
+    A conditional analysis on the headline lead would say whether the SCUBE3-specific block survives it.
