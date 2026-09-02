@@ -16263,3 +16263,124 @@ delivery wall. ⛔ **Against it, unchanged and unresolved: no skeletal endpoint 
 species · no dose-response · a first-in-class neutralising anti-SCUBE3 antibody in oncology development ·
 and R487's new `yang2007scube3` collision, in which the SCUBE3 C-terminus potentiates TGF-β1 in the exact
 perichondrial compartment where LESS TGF-β is ~7% LONGER bone.** `g_l5_487d`, `g_l5_488a`.
+
+## 🎯🎯🎯🎯🎯 R488b — **THE INSTRUMENT GETS A STRATIFICATION RULE, AND RUN ON *NPR3* IT RETURNS THE
+## STRONGEST SINGLE RESULT IN THIS FILE: AT eQTL p<1e-8, EIGHTY-THREE OF EIGHTY-THREE VARIANTS SAY
+## *LOWERING NPR3 IS TALLER*, AT P=2.2e-120, WITH NPR3 THE SOLE eQTL GENE — AND IT REPRODUCES R421's
+## 59.2% TRUNK TO ONE DECIMAL BY A COMPLETELY DIFFERENT SELECTION RULE.**
+## Run `atlas/tools/round488_eqtl_signed_compartment.py <SYM> <GENCODE> <CHR> <START> <END>`
+## data `atlas/data/round488/{scube3,ostn,npr3}_eqtl_direction.json`
+
+⭐ **ZERO — THE METHODOLOGICAL UPGRADE, AND IT APPLIES RETROSPECTIVELY TO R477, R479 AND R488a.** Run on
+three genes the instrument shows one repeated structure: **a majority direction plus a DISTAL, WEAK-eQTL,
+OPPOSITE-SIGNED MINORITY BLOCK** — SCUBE3 eleven variants at eQTL p≈2.4e-04 but standing P=9.4e-16;
+OSTN twelve at eQTL p≈4e-05 to 1e-04 but leg P=1.1e-15; NPR3 fifty-four topping out at eQTL p=1.3e-07.
+**In all three the minority sits at WEAK eQTL evidence and STRONG height evidence, which is the signature
+of a second, independent GWAS signal in LD with the gene's weaker eQTLs rather than of the gene changing
+sign.** ⭐ **THE DISCRIMINATOR IS eQTL-SIGNIFICANCE STRATIFICATION AND NEITHER R477 NOR R479 RAN IT:**
+| gene | all | eQTL p<1e-4 | **eQTL p<1e-8** | eQTL p<1e-12 |
+|---|---|---|---|---|
+| **SCUBE3** taller | 94.8% (494/521) | 97.0% | **94.4% (186/197)** | 94.2% |
+| **OSTN** taller | 28.3% (126/446) | 27.5% | **5.9% (11/186)** | — |
+| **NPR3** taller | 21.3% (60/282) | 19.4% | **0.0% (0/83)** | **0.0% (0/39)** |
+→ ⭐ **READ THE DIRECTION AT eQTL p<1e-8, NOT OVER ALL VARIANTS. Every gene sharpens toward its majority
+and NPR3 becomes unanimous.** ⚠ These are LD-correlated and NOT independent tests; the fraction is a
+CONSISTENCY CHECK, not a p-value, and it was doing that work implicitly in R477 and R479 without being
+named.
+
+⭐⭐⭐⭐ **ONE — NPR3, AND IT IS THE CLEANEST DIRECTIONAL RESULT THE ATLAS HAS EVER PRODUCED.**
+805 GTEx v8 cis-eQTL variants, 282 matched into all three absolute traits (451,921 Europeans).
+**Best variant rs12656497 / rs10059884 (chr5:32,831,833 and 32,832,368 GRCh38, Nerve_Tibial, eQTL
+p=7.88e-45, NES +0.554), aligned to the NPR3-RAISING allele:**
+| trait | beta per NPR3-raising allele | P |
+|---|---|---|
+| **standing height** | **−0.036952** | **2.2e-120** |
+| **sitting height** | **−0.036345** | **4.7e-90** |
+| leg length | −0.024998 | 3.5e-47 |
+| | | **59.2% TRUNK** |
+⭐ **AND THE GENE-SPECIFICITY CHECK R479 MADE OBLIGATORY PASSES AT ITS STRONGEST FORM: NPR3 IS *THE ONLY*
+eQTL GENE AT THAT VARIANT — 1 OF 1, AT ALL FOUR TOP VARIANTS.** No neighbour to attribute it to, unlike
+ADAM12 (where the region's height lead was a UROS/DHX32 eQTL, R479) and unlike SCUBE3 (fourth-ranked
+behind DEF6, ZNF76 and TCP11 at its region's height lead, R488a).
+⭐⭐ **AND IT CONVERGES WITH THE CODING INSTRUMENT ON A GENE WHERE BOTH EXIST, WHICH NOTHING ELSE IN THIS
+FILE DOES: `kosmicki2026` gives NPR3 pLoF+delmis +1.910 cm at P=1.42e-61 across 3,727 carriers and
+all-missense +0.942 at P=3.76e-55 across 14,092 (R424). LOSS OF FUNCTION IS TALLER; LOWERED EXPRESSION IS
+TALLER. A BURDEN TEST AND AN eQTL-SIGNED COMMON-VARIANT TEST, DIFFERENT VARIANT CLASSES, DIFFERENT
+COHORTS, ONE DIRECTION — AND IT IS THE DIRECTION THE ATLAS'S DERIVED SPEC ALREADY WANTED** (block the
+clearance receptor, spare local CNP for NPR2).
+⭐⭐⭐ **AND THE COMPARTMENT REPRODUCES R421 TO ONE DECIMAL FROM A DIFFERENT SELECTION RULE. R421 computed
+59.2% trunk from the region's STANDING-HEIGHT LEAD under R323/R406's corrected method; this computes
+59.2% from the STRONGEST eQTL VARIANT aligned by NES sign. Two orthogonal ways of choosing the variant,
+one number** — and 59.2% remains the most trunk-dominant value either method has produced against R421's
+own base rate of 22 genes (median 45.0, range 8.2–55.2). **The residual at BA16 is trunk-dominant.**
+⚠ **WHAT IT DOES NOT DO: it does not resolve R424's paradox, it sharpens it.** NPR3 acts through NPR2, and
+NPR2 corrects to **29.8% LIMB** — so the clearance receptor and the signalling receptor it feeds give
+opposite compartment coordinates. R424's proposed resolution is that NPR3 is not chondrocyte-concentrated
+(2.62 CPM at ratio 1.42 against NPR2's 13.01 at 2.90) and that 59.2% is therefore a **SYSTEMIC** coordinate.
+⭐ **This round adds a tissue fact consistent with that and does not settle it: the eQTL tissues at p<1e-6
+are Nerve_Tibial 90, Lung 20, Spleen 8, Testis 7, Skin 2 — NOTHING MUSCULOSKELETAL.** ⛔ **But GTEx
+contains NO cartilage or bone at all, so the absence of a cartilage eQTL is CORR-348 case one — never
+measured, not measured null — and cannot be read as evidence the effect is extra-skeletal.**
+⚠ **THE MINORITY, STATED: 54 GWS variants run TALLER**, in Spleen (28), Skin (13) and Nerve_Tibial (11),
+strongest at eQTL p=1.3e-07, positioned **200–300 kb DOWNSTREAM of the gene body** (32,991,568–33,088,895
+against a gene at 32,689,070–32,791,724). **Every one of them lies OUTSIDE the p<1e-8 stratum, which is
+what makes NPR3's unanimity real rather than selected.**
+⚠ And the effect is large for a common variant — **−0.037 SD of standing height per allele, of order
+2.5 mm** — which is consistent with NPR3 being among the strongest height loci in the genome and is a
+reason to expect the locus to contain more than one signal.
+
+⛔⛔ **TWO — AND THE SAME INSTRUMENT RUNS *AGAINST* R487's OSTEOCRIN ARM. RECORDED IN FULL BECAUSE IT
+COSTS US A CANDIDATE COMMITTED ONE ROUND AGO.** OSTN (ENSG00000188729, chr3:191,199,235–191,265,615),
+722 eQTL variants, 446 matched:
+· **DIRECTION: raising OSTN reads SHORTER — 320/446 overall and 175/186 at eQTL p<1e-8.**
+· ⭐ **AND THE ATTRIBUTION IS THE CLEANEST THE INSTRUMENT HAS PRODUCED: OSTN IS *1 OF 1* eQTL GENES AT
+  three of four checked variants and leads CCDC50 by 4.7 orders at the fourth. It sits in a gene desert on
+  3q28 — there is no neighbour to blame.**
+· ⭐⭐ **AND THE REGION'S OWN STANDING-HEIGHT LEAD *IS* AN OSTN eQTL AND NOTHING ELSE'S: rs9837890,
+  chr3:191,204,610, INSIDE the gene body, standing-height P=1.8e-14 in the ±300 kb window, GTEx returns
+  ONE gene at that variant (OSTN, p=6.71e-11).** That is the strongest form of R479's specificity check and
+  it passes — **for a result that runs the wrong way.**
+| rs9837890, aligned to the OSTN-RAISING allele (A) | beta | P |
+|---|---|---|
+| standing height | **−0.015794** | **1.8e-14** |
+| sitting height | −0.003233 | **0.19 — NULL** |
+| **leg length** | **−0.020350** | **2.2e-19** |
+⚠ **THE ONE MITIGATION, AND IT IS WEAK AND POST-HOC AND LABELLED AS SUCH: ALL TWELVE GWS TALLER VARIANTS
+ARE Muscle_Skeletal, in a single 49 kb window 72–121 kb UPSTREAM of the gene** (rs2666365, rs75435497,
+rs9917736, rs1588484; eQTL p 3.9e-05 to 1.2e-04) — **standing +0.0127 P=3.7e-10, leg +0.0178 P=5.4e-15,
+sitting null.** Osteocrin IS musclin and `watanabetakano2021`'s mechanism is periosteal and muscular
+loading, so **skeletal muscle is the one GTEx tissue with a defensible claim to be its compartment.**
+⛔ **But that block sits at WEAK eQTL evidence, drops out at p<1e-8, and is structurally identical to the
+minority blocks SCUBE3 and NPR3 both carry — so invoking it to rescue OSTN would also require weakening
+R488a's SCUBE3 result, and consistency forbids using it one way only.**
+⚠ **A SECOND, BETTER-GROUNDED CAVEAT, VERIFIED THIS ROUND: `ataman2016` (Nature, PMID 27830782) shows OSTN
+was REPURPOSED IN PRIMATES through the evolutionary acquisition of DNA regulatory elements binding MEF2,
+and is induced by depolarisation in HUMAN but not MOUSE neurons.** → **The human OSTN locus carries
+regulatory architecture the mouse does not have, so a human cis-eQTL and a mouse transgenic are not reading
+the same gene regulation.** ⭐ **AND IT CUTS BOTH WAYS, WHICH IS WHY IT IS NOT AN ESCAPE: the acquired
+elements bind MEF2, and MEF2C is this plate's hypertrophy driver at 13,179 CPM in the hypertrophic zone
+(R306) — so a primate-specific MEF2 responsiveness could make the human genetics MORE relevant to
+cartilage, not less.** Both readings available, neither tested.
+🧭 **NET FOR R487's OSTEOCRIN ARM: NOT REFUTED, AND NO LONGER SUPPORTED BY HUMAN GENETICS.** R487's arm is
+the ENDOGENOUS, LOAD-DRIVEN, LOCAL periosteal decoy (`watanabetakano2021`) plus `kanai2017`'s transgenic
+gain — neither is a claim about lifelong systemic OSTN level, which is what a cis-eQTL measures, and
+R469's gain-only logic says a modest endogenous variation need not predict supraphysiological supply.
+**But that argument was available before the data and the data now run against it at P=2.2e-19 on leg
+length, so the arm's grade falls and the serum-osteocrin measurement it proposes is now as likely to
+disconfirm as to confirm.** `g_l4_488b`.
+
+⭐ **THREE — AND ONE COMPARTMENT RESULT SURVIVES THE SIGN DISPUTE ENTIRELY, WHICH IS THE PART TO KEEP.**
+Both OSTN clusters — the shortening intragenic one and the lengthening upstream muscle one — put **sitting
+height at P=0.19 to 0.67 (null) with leg length carrying the whole effect: 8.3% and 13.7% trunk.**
+⭐ **A RATIO IS ROBUST TO THE SIGN OF ITS NUMERATOR AND DENOMINATOR TOGETHER, SO WHATEVER OSTN DOES TO
+HEIGHT, IT DOES IT TO THE LEG** — as limb-dominant as LTBP2 (8.2%), the most limb-leaning gene in R421's
+22. Under the operator's R479 limb ruling that is favourable, and it is the one thing here that does not
+depend on which cluster is causal.
+
+⛔ **FOUR — WHAT NONE OF THIS IS.** **No colocalisation and no conditional analysis were run for any of the
+three genes** — this is lead-variant gene specificity plus eQTL-stratified sign concordance, which is
+weaker than coloc or SMR-HEIDI and cannot establish a shared causal variant. **GTEx has no cartilage**, so
+every tissue here is a proxy. Betas are inverse-normalised SD, not centimetres. And a common-variant
+direction is a statement about **lifelong modest endogenous variation**, not about what supplying or
+blocking the protein pharmacologically would do — which is the exact gap R469 named for the gain-only
+class and which no genetic instrument can close.
