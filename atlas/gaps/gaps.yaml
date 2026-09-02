@@ -20412,3 +20412,70 @@ gaps:
     terminal/degenerative step, concordant with horigome2020 Atg7-null chondrocytes accumulating glycogen
     granules. Reopening would require a pulse-chase flux measurement by zone showing turnover the static
     measurements cannot see.
+- gap_id: g_l5_487d
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Does supplying recombinant SCUBE3 to a NORMAL growing animal lengthen bone?
+  why_it_matters: R287 named this as one of FOUR cheap experiments that do not exist, R312 recorded no
+    recombinant product, and R401 corrected that to a catalogue protein. R487 goes one step further - the
+    catalogue protein has ALREADY been given in vivo to NORMAL mice and produced a phenotype, in a tissue
+    nobody was asking a skeletal question about. SCUBE3 is the largest load-bearing secreted effect in
+    kosmicki2026 at -6.71 cm and P=2.1e-37, its direction is to SUPPLY rather than to block, and lin2021
+    localises it to PERIOSTEUM and trabecular endosteum, which is R323 perfused compartment and therefore
+    exempt from R315 avascular delivery wall.
+  what_is_known: liu2022 - R and D Systems 7730-SC-050, the exact catalogue reagent, delivered on Affi-Gel
+    beads to NORMAL mice at P48 for four days, mean difference 18 +/- 3.44, n=7, P<0.001, with a 20-month arm
+    at 31.78 +/- 2.40, n=9, P<0.0001, plus a human scalp SCID xenograft arm. The endpoint is hair follicle
+    regeneration; skelet, cartilag and growth plate are all ABSENT from the full text, so the reagent is
+    demonstrated to be bioactive in vivo and nothing skeletal was measured. lin2021 - Scube3-null at 8 weeks,
+    body weight -14%, body length -23%, femur -14%, tibia -9%, all P<0.01, no paralogue compensation in
+    femoral tissue, and lentiviral Scube3 further enhances BMP2 signalling in CONTROL chondrocytes, which is
+    the elevation-above-normal direction in vitro.
+  what_is_missing: No skeletal measurement of any kind under supplied SCUBE3, in any species. No dose-response.
+    No human trunk measurement - sitting height, arm span and segment ratio are all zero hits in the SCUBE3
+    clinical literature. AND THE DIRECTION IS NOT SETTLED - yang2007 abstract, obtained in R487, shows the
+    carboxy-terminal portion of SCUBE3 physically interacts with TGF-beta1 and PROMOTES TGF-beta1-mediated
+    transcriptional activation, which collides with R323/sedes2022 where LESS TGF-beta availability at the
+    outer perichondrium gives ~7% LONGER bone with recombinant TGF-beta1 add-back normalising it, in the same
+    compartment lin2021 localises SCUBE3 to. So SCUBE3 carries a BMP-potentiating arm that is growth-positive
+    and a TGF-beta1-potentiating arm that is growth-negative at the perichondrium, and which dominates on
+    supply has never been measured. yang2007 also does NOT report a skeletal null - its statement is that male
+    transgenics appeared normal from birth to adulthood, a gross-appearance observation with no bone measured
+    (CORR-340), and its promoter is not named in the abstract so the carried Col1a1 attribution is withdrawn.
+  discriminating_experiment: Give R and D 7730-SC to a NORMAL growing animal, post-SOC, with a littermate or
+    contralateral control, and measure femur, tibia AND vertebral length at maturity - with terminal
+    hypertrophic cell HEIGHT scored separately from WIDTH per R463, and the collagen type X-positive zone
+    measured, because the mechanism is BMP-driven chondrogenesis and R469 showed a proliferation readout
+    misses exactly this class of effect. READ OUT pSMAD1/5/8 AND pSMAD2/3 IN THE PERICHONDRIUM IN THE SAME
+    ANIMALS, because the two arms have opposite signs there and a length endpoint alone cannot separate them.
+    Make the supply argument on BMP and not on hedgehog - johnson2012 shows knocking down all three scube
+    genes together phenocopies complete loss of Hh transduction, and lin2015 shows SCUBE2 rather than SCUBE3
+    is the most potent modulator of IHH signalling in vitro with Scube2-null alone giving defective
+    endochondral bone formation, so a hedgehog-framed supply argument saturates and a BMP-framed one does not.
+- gap_id: g_l5_487e
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Is the chr10 common-variant height signal attributable to CHST3 or to SPOCK2?
+  why_it_matters: R480 built the positional-sulfation arm on a C6ST1/CHST3 transgenic giving femur +1.27% and
+    tibia +1.63% in normal mice at unmoved fixed charge, which is orthogonal to every other sulfation argument
+    in this file, all of which are denominated in Donnan fixed charge. R487 found the region carries a real
+    common-variant height signal - lead 10_73737124_C_G at chr10:71,977,366 GRCh38, standing +0.012464 at
+    P=1.7e-14, 121 genome-wide significant variants in the window - but attribution is unsettled, and R479
+    showed on ADAM12 that a neighbouring gene can carry the entire height association while the gene of
+    interest carries an independent and much weaker eQTL.
+  what_is_known: The R487 compartment read, on R323/R406 corrected method, gives CHST3 49.0% trunk and CHST11
+    43.7% trunk, both at R421 corrected-method median of 45.0% and therefore unremarkable in either direction.
+    The attribution problem is that the eQTL separation is only about 3.5 orders of magnitude, against 35
+    orders for the ADAM12/UROS case R479 resolved, and one fibroblast eQTL sign points the wrong way.
+  what_is_missing: The LD and colocalisation test was NOT run. Neither was a conditional analysis. And the
+    isocharge premise itself is damaged on this file own criterion - deutsch1995 shows 6-O sulfation RISES
+    from reserve to hypertrophic zone and bayliss1999 and mourao1988 show it RISES with age in human
+    cartilage, which is the opposite of the declining-with-age profile this file uses to identify a lever.
+  discriminating_experiment: Needs no new data. Pull the 1000 Genomes phase 3 EUR PLINK panel already used in
+    R479, compute r-squared between the CHST3 standing-height lead and every common variant across the
+    neighbouring block, and run the same gene-specificity query per variant against GTEx that R477 used - is
+    the height lead a CHST3 eQTL at all, or is it a SPOCK2 eQTL with CHST3 orders weaker. Then, separately,
+    obtain the miyata2012 line and measure a bone, because the construct is verified as pCAG-driven full
+    length human C6ST-1 with ZERO skeletal measurements in the whole 68 kB text.

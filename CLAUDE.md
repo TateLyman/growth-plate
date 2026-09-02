@@ -16023,3 +16023,166 @@ hypothesis is refuted on its own load-bearing requirement by the only two zone-r
 R445's expression asymmetry is explained; the one druggable enzyme class sits on the arm the tissue does not
 use; and the human loss-of-function state has normal stature. **`farnum2002`'s missing 93% of the osmotic
 drive is still missing, and glycogen is no longer a candidate for it.** `g_l5_487c`.
+
+## 🧪🧪🧪🧪 R487 — **SCUBE3: THE SUPPLY EXPERIMENT THIS FILE HAS CALLED NON-EXISTENT SINCE R287 HAS BEEN
+## HALF-DONE — THE SAME CATALOGUE PROTEIN WAS GIVEN IN VIVO TO NORMAL MICE AND PRODUCED A PHENOTYPE. AND THE
+## LOSS ARM'S NUMBERS, THE COMPARTMENT AND THE SATURATION ANSWER ALL LAND FAVOURABLY. WHAT IS MISSING IS THE
+## CALIPER.** All five primaries below verified verbatim in the main loop, not taken from an agent report.
+
+⭐⭐⭐ **ONE — `liu2022` (PMID 35777353, Dev Cell 2022, PMC9344965, read via the PMC classic view) GAVE
+**R&D SYSTEMS 7730-SC-050** — *THE EXACT CATALOGUE PROTEIN R401 NAMED* — TO **NORMAL** MICE IN VIVO.**
+Verbatim: *"When microinjected for four days starting at P48, recombinant human SCUBE3 (rhSCUBE3) induced
+significant hair growth when compared on day 14 to bovine serum albumin (BSA)"* — **mean difference 18 ± 3.44,
+n=7, P<0.001**, delivered on **Affi-Gel agarose beads**, with an **aged 20-month arm at 31.78 ± 2.40, n=9,
+P<0.0001** and a **human occipital scalp hair-follicle SCID xenograft arm.**
+⭐⭐ **THAT IS EXOGENOUS PROTEIN INTO AN ANIMAL WITH A FULLY INTACT ENDOGENOUS SCUBE1/2/3 COMPLEMENT,
+PRODUCING A LARGE PHENOTYPE. IT IS AN ELEVATION-ABOVE-NORMAL ARM, SO CORR-203 CANNOT REACH IT** — and it
+supplies the dose (250 µg/mL reconstitution), the vehicle, the route and the catalogue number.
+⛔ **AND THE TISSUE IS SKIN. Full-text search: `skelet` NOT FOUND · `cartilag` NOT FOUND · `growth plate` NOT
+FOUND.** R287 listed *"recombinant SCUBE3 → measure a bone"* as one of four cheap experiments that do not
+exist; **the administration half now exists in a normal animal and the caliper half still does not.** The
+correct statement is no longer *"nobody has supplied it"* but **"it has been supplied, in vivo, in a normal
+mouse, and nobody has measured a bone."** CORR-340's shape on the atlas's own named experiment.
+
+⭐⭐ **TWO — AND THE LOSS ARM'S NUMBERS ARE IN `lin2021` (PMID 33308444, PMC7820739) AND THIS FILE HAS ONLY
+EVER CARRIED THE WORD "SHORTENS".** Verbatim, 8-week-old mice: **body weight −14%, NOSE-TO-ANUS BODY LENGTH
+−23%, FEMORAL BONE LENGTH −14%, TIBIAL BONE LENGTH −9%**, all **P<0.01** (body length n=7 vs 9; femur and
+tibia n=8 vs 7). Trabecular vBMD −22%, BV/TV −42%.
+⭐ **Two internal controls make it a length result rather than a general-sickness result.** *"loss of Scube3
+expression did not induce compensatory upregulation of Scube1 and Scube2 in femoral tissues"* — **so the
+paralogue redundancy that governs the hedgehog arm does NOT operate on this one in bone.** And in
+chondrocytes, lentiviral Scube3 rescued defective BMP2 signalling in nulls **and FURTHER ENHANCED IT IN
+CONTROL CELLS** — a second elevation arm, in the right cell type.
+⭐⭐ **THREE — AND THE COMPARTMENT IS THE PERFUSED ONE, WHICH IS THE SAME EXCEPTION THAT MAKES THE OSTEOCRIN
+ARM DELIVERABLE.** `lin2021`: *"Scube3 is specifically expressed in the PERIOSTEUM and trabecular
+endosteum."* **R315's delivery wall is about AVASCULAR cartilage and R323's exception is that the
+perichondrium/periosteum is a vascularised sheath a systemic agent reaches.** Two independent arms of this
+round — osteocrin and SCUBE3 — are both periosteal secreted proteins, and neither has to cross the wall.
+
+⛔⛔ **FOUR — THE SATURATION OBJECTION IS ANSWERED, AND THE ANSWER IS THAT THE SUPPLY ARGUMENT MUST BE MADE ON
+BMP AND NOT ON HEDGEHOG.** `johnson2012` (zebrafish): knocking down **all three** scube genes together
+phenocopies complete loss of Hh transduction — **triple redundancy on the hedgehog axis**; and `lin2015`:
+**SCUBE2, not SCUBE3, is the most potent modulator of IHH signalling in vitro**, with Scube2−/− alone giving
+defective endochondral bone formation. **On hedgehog SCUBE3 is the junior paralogue and a supply argument is
+dead. On BMP it is not redundant — no paralogue compensation in bone, and its own null is −23% body length.**
+⭐ That also corrects the natural reading of R379/R405, which reached SCUBE3 through the hedgehog
+ligand-release layer. **Its own arm is BMP/TGF-β.**
+
+⛔ **FIVE — WHAT IS EARNED-NEGATIVE OR UNRESOLVED, STATED WITH IT.**
+· ⛔ **THE TRUNK QUESTION CANNOT BE ANSWERED FROM THE HUMAN DISEASE.** Searched in the retrieved `lin2021`
+  full text: **`sitting height` 0 · `arm span` 0 · `segment` 0 · `growth hormone` 0.** What exists is
+  qualitative and axial — **11 rib pairs 4/13, abnormal vertebrae 6/12, squared lumbar bodies 5/13, scoliosis
+  6/13** — with no proportion measurement anywhere. **R406's corrected coordinate, 29.5% TRUNK from the
+  standing-height lead, remains the only compartment number and it is limb-leaning.**
+· ⛔ **NO DOSE-RESPONSE OF ANY KIND EXISTS FOR SCUBE3 IN ANY SPECIES**, so the saturation answer above is
+  argued from redundancy structure rather than measured.
+· ⛔ **THE COST IS UNCHANGED AND IS THE HARDEST OBJECTION (R405): a FIRST-IN-CLASS NEUTRALISING ANTI-SCUBE3
+  ANTIBODY is in preclinical development as a pan-cancer therapy. We would be supplying the exact protein an
+  oncology programme is being built to remove.**
+· ⚠ **The catalogue protein is a PROCESSED TWO-CHAIN SPECIES** — R&D 7730-SC, CHO-derived, Ala21–Lys993 with
+  an N-terminal HA tag, **>95% purity, endotoxin <0.10 EU/µg**, bioactivity assayed as **ATDC5 chondrogenic
+  cell adhesion, ED50 0.25–1.25 µg/mL** — running at **110–130 kDa AND 60–70 kDa reducing** with N-terminal
+  sequencing at Tyr **and** Arg538. **Research use only; no GMP grade; and no bioactivity-validated mouse or
+  rat SCUBE3 protein exists from any supplier.** ⚠ Datasheet figures, `value_unverified`.
+⛔⛔ **SIX — `yang2007` OBTAINED (ABSTRACT), AND IT CORRECTS THIS BLOCK IN BOTH DIRECTIONS. THE SATURATION
+CLAIM DISSOLVES AND A NEW, SPECIFIC MECHANISTIC OBJECTION REPLACES IT.** The bullet this replaces recorded a
+*"Col1a1-promoter SCUBE3 transgenic, reported SECONDHAND as having NO SKELETAL PHENOTYPE, primary 403-blocked
+and `value_unverified`."* **PMID 17442284, Yang HY et al., Cardiovasc Res 2007;75(1):139–47, DOI
+10.1016/j.cardiores.2007.03.014 — the FULL TEXT is gated and THE ABSTRACT WAS ALWAYS RETRIEVABLE.** Third
+instance of that shape after R474 (`buckwalter1986`, half its abstract never quoted) and R478 (`schmidt2026`,
+tetracycline numbers in the main text while only the abstract was checked). **Fetch the abstract before
+recording a document as blocked.**
+· ⛔ **THE PROMOTER IS NOT NAMED IN THE ABSTRACT AND "Col1a1" IS WITHDRAWN AS UNVERIFIED.** What is stated is
+  that SCUBE3 is expressed in ventricular myocardium and that these are *transgenic mice overexpressing
+  SCUBE3.*
+· ⛔ **AND IT IS NOT A SKELETAL NULL: the sentence is that male transgenics APPEARED NORMAL DURING DEVELOPMENT
+  FROM BIRTH TO ADULTHOOD. THAT IS A GROSS-APPEARANCE STATEMENT WITH NO BONE MEASURED** — CORR-340's shape.
+  **So the one in-vivo overexpression result that looked like it argued saturation does not argue anything,
+  and the supply arm is not opposed by it.**
+· ⭐⭐ **WHAT REPLACES IT IS WORSE FOR THE ARM AND IS THE REASON TO RECORD THIS AT ALL: THE CARBOXY-TERMINAL
+  PORTION OF SCUBE3 PHYSICALLY INTERACTS WITH TGF-β1 AND PROMOTES TGF-β1-MEDIATED TRANSCRIPTIONAL ACTIVATION**,
+  with induced SCUBE3 plus elevated TGF-β1 named as the mechanism of accelerated hypertrophy under pressure
+  overload. ⛔ **THAT COLLIDES DIRECTLY WITH R323/sedes2022: LESS TGF-β AVAILABILITY AT THE OUTER
+  PERICHONDRIUM IS ~7% LONGER BONE, WITH RECOMBINANT TGF-β1 ADD-BACK NORMALISING IT — AND `lin2021` PUTS
+  SCUBE3 IN PERIOSTEUM AND TRABECULAR ENDOSTEUM, THE SAME COMPARTMENT. Supplying SCUBE3 there is predicted to
+  RAISE perichondrial TGF-β1 signalling, which is the direction that SHORTENS.**
+· ⭐ **SO SCUBE3 CARRIES TWO ARMS OF OPPOSITE SIGN IN ONE COMPARTMENT: BMP-POTENTIATING (growth-positive, from
+  `lin2021`'s −23% body length on loss) AND TGF-β1-POTENTIATING (growth-negative at the perichondrium, from
+  `yang2007`). Which dominates on supply has never been measured in any species, and the supply experiment
+  must therefore read out pSMAD1/5/8 AND pSMAD2/3 in the perichondrium, not a length endpoint alone.**
+· ⛔ **AND A REAL COST ARRIVES WITH IT: CARDIAC HYPERTROPHY IN TRANSGENICS BY 8 MONTHS ON ECHOCARDIOGRAPHY AND
+  HISTOPATHOLOGY, ACCELERATED AND MORE SEVERE UNDER PRESSURE OVERLOAD.** This file deprioritises risk, but the
+  cost is on-mechanism rather than incidental — TGF-β1 potentiation is the stated driver of both.
+⭐ **THE EXPERIMENT IS NOW FULLY SPECIFIED AND ITS PARTS ARE ALL IN HAND: give R&D 7730-SC to a NORMAL growing
+animal, and measure femur, tibia AND vertebral length — with terminal hypertrophic cell HEIGHT scored
+separately from WIDTH (R463) and the Col X⁺ zone measured, because the mechanism is BMP-driven chondrogenesis
+and R469 showed a proliferation readout misses exactly this class of effect.** `g_l5_487d`.
+
+## 🧂⛔🧂⛔ R487 — **AND THE C6ST1 POSITIONAL-SULFATION ARM (R480) IS DAMAGED ON THE FILE'S OWN CRITERION:
+## 6-O SULFATION *RISES* WITH AGE AND *RISES* INTO THE HYPERTROPHIC ZONE, SO THE TRANSGENIC PUSHES THE PLATE
+## FURTHER IN THE DIRECTION IT IS ALREADY TRAVELLING AS IT MATURES.**
+
+⭐ **ONE — THE CONSTRUCT, VERIFIED FROM THE ON-DISK FULL TEXT OF `miyata2012` (PMID 22246436).** *"Full-length
+**human** C6ST-1 cDNA… cloned into the EcoRI site of a **pCAG vector, which drives transgene expression using
+a chicken β-actin promoter and CMV enhancer**"*, injected into C57BL/6 embryos.
+⛔ **AND R482 RECORDED IT AS "UBIQUITOUS AND CONSTITUTIVE", WHICH IS A PROPERTY OF THE PROMOTER CLASS AND NOT
+A MEASUREMENT IN THIS LINE. The paper reports NO transgene fold-change, NO tissue-distribution assay, NO
+viability, NO fertility and NO body-size data — and a keyword sweep of all 68,629 bytes returns ZERO hits for
+growth plate, cartilage, chondrocyte, femur, tibia or body weight.** Only brain was analysed.
+✓ What it does establish supports the isocharge reading: **total chondroitin sulfate did not differ between
+transgenic and wild type**, and 6-sulfation is only ~2% of total CS in adult wild-type brain.
+
+⛔⛔ **TWO — THE PHARMACOLOGY IS AN EARNED NEGATIVE AT THE STRONGEST LEVEL, AND IT IS CORR-347-COMPLIANT.**
+Queried by UniProt accession against the ChEMBL target endpoint, with a positive control:
+**CHST3 (Q7LGC8) → total_count 0 · CHST11 (Q9NPF2) → total_count 0 · CHST4 (Q8NCG5) → total_count 1
+(CHEMBL2239).** **`n_molecules` for CHST3 and CHST11 is UNDEFINED, NOT ZERO — ChEMBL holds no target entity
+for either enzyme, so there is nothing to count. There is no CHST3 activator and no C4ST-1 inhibitor in any
+species**, and the operator-suggested move — a selective C4ST inhibitor redirecting the shared PAPS pool —
+has no molecule to test it with. ⚠ R484's mouse data say that direction is dangerous anyway: **Chst11 gene-trap
+is neonatal-lethal with decreased long-bone length.**
+
+⛔⛔⛔ **THREE — AND THE MATURATION AXIS RUNS AGAINST THE ARM, MEASURED, IN THE TARGET TISSUE.**
+`deutsch1995` (PMID 7722760, bovine fetal rib and proximal tibial growth plates, purified aggrecan CS,
+capillary zone electrophoresis after chondroitinase): a gradient **from the reserve to the hypertrophic zone
+characterised by a marked INCREASE in ΔDi-6S from about 32% to about 52% and a marked DECREASE in ΔDi-4S from
+about 53% to about 35%.** Human age axis, twice: **`bayliss1999` (PMID 10336494) — the 6-sulfated
+disaccharide rises from ~50% to ~85% of total between birth and 20 years**, with the 4-sulfated falling; and
+**`mourao1988` (PMID 3136774) — articular cartilage is 6S-rich, GROWTH cartilage nearly equal, and ADULT
+cartilage with calcification complete contains ONLY 6S.**
+→ ⭐⭐ **R480's arm was attractive because a declining-with-age profile is a lever's profile. 6-O SULFATION
+DOES THE OPPOSITE — IT RISES WITH AGE AND RISES INTO HYPERTROPHY — SO THE TRANSGENIC PUSHES THE PLATE FURTHER
+ALONG ITS OWN MATURATION SIGNATURE. That does not refute the +1.27% femur and +1.63% tibia; it removes the
+mechanistic story that made them attractive, and it means any account of that gain has to explain why MORE of
+an ageing signature makes a LONGER bone.**
+⭐ **`deutsch1995` ALSO INDEPENDENTLY CONFIRMS THE ISOCHARGE PREMISE IN THE TARGET TISSUE: ΔDi-0S, ΔDi-4S and
+ΔDi-6S together are >98% of all disaccharides in every zone of both plates, and disulfated and trisulfated
+species were NOT DETECTED — so within a growth plate a 4S↔6S shift cannot change total fixed charge.** That
+is why R480's result is orthogonal to every Donnan/fixed-charge argument in this file.
+⚠ **CONTRADICTED ON DIRECTION BY ONE STUDY, RECORDED NOT SMOOTHED: `hagiwara1995` (PMID 7553135, rat proximal
+tibia, immuno-EM with 1-B-5 / 2-B-6 / 3-B-3) has chondroitin-4-sulfate INCREASING from the proliferative to
+the calcifying zone while 6-sulfate stays constant then DECREASES.** ⭐ `bayliss1999` supplies the reason they
+need not agree, in its own words: the sulfation pattern at the reducing-terminal stub *"did not necessarily
+reflect the internal disaccharide composition of the chains."* **Chondroitinase-generated stub
+immunoreactivity and mol% of purified chains are different quantities. Unresolved.**
+
+⛔ **FOUR — AND THE ONE LENGTH ENDPOINT SITS INSIDE A DISEASE MODEL WHOSE PLATE WAS NEVER EXAMINED.**
+`koike2022` (PMID 36572689, PMC9792594) — **Figure 5 is titled "High bone mass phenotypes in C6ST1 transgenic
+mice"**, the paper's subject is **Raine syndrome, a lethal osteosclerotic bone dysplasia**, and the authors'
+own framing is that enhanced osteoblastogenesis might produce osteosclerotic phenotypes characteristic of it.
+Verbatim: *"At 16 weeks of age, the long bones of male C6ST1 transgenic mice were significantly longer than
+those of their wild-type littermates."* ⛔ **`growth plate` RETURNS ZERO HITS IN THE ENTIRE FULL TEXT.** The
+one length result on this arm comes from a study that measured the bone and not the plate, in animals its own
+authors present as a disease model.
+⚠ **AND `Chst3` HAS NEVER BEEN PHENOTYPED FOR LENGTH: IMPC genotype-phenotype numFound 0 — CORR-348 case one,
+which says nothing in either direction** — while two independent MGI alleles carry immune, haematopoietic,
+ovarian and behavioural terms and **not one bone, cartilage, growth-plate or limb term.**
+⚠ **A common-variant height signal DOES exist at both loci and neither gene is in `kosmicki2026`'s 207,
+because that instrument is a HETEROZYGOUS burden test and both CHST diseases are RECESSIVE (CORR-358).**
+`atlas/tools/round487_chst_compartment.py`, R323/R406's corrected method, 451,921 Europeans: **CHST3 lead
+rs4148926, INTRAGENIC, standing height +0.012464 at P=1.7e-14, 49.0% trunk · CHST11 lead rs12305866,
++0.026052 at P=1.2e-14, 43.7% trunk.** ⛔ **Both sit at R421's corrected-method median of 45.0%, so neither a
+trunk nor a limb argument — and ATTRIBUTION IS UNRESOLVED: rs4148926 is a better eQTL for the neighbour
+SPOCK2 (p=8.87e-15) than for CHST3 (p=1.04e-11), only 3.5 orders apart where R477's ADAM12 separation was 35,
+and the CHST3 eQTL sign is TISSUE-DEPENDENT — negative in most tissues but POSITIVE in cultured fibroblasts,
+the only mesenchymal proxy GTEx has, where the CHST3-RAISING allele goes with SHORTER height.** The LD /
+colocalisation test that would separate CHST3 from SPOCK2 was not run and needs no new data. `g_l5_487e`.
