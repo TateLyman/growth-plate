@@ -15690,3 +15690,181 @@ compartment argument for the systemic route has fallen, but newly burdened by a 
 against its own vehicle**; **lateral joint loading**, still a device built three times and never used in a
 human; and **local limb warming**, now split into a delivery dose a human knee can reach and a growth dose it
 cannot.
+
+## 🐁🦘🐁🦘 R486 — **THE INTERSPECIES INTERACTION INSTRUMENT, BUILT AND RUN. THE NATURALLY ELONGATED
+## ELEMENT DIFFERS FROM ITS OWN CONTROL ALMOST ENTIRELY IN THE **EXTRACELLULAR LIGAND-BINDING LAYER** AND
+## IN **POSITIONAL IDENTITY** — AND IN THE TRANSCRIPTIONAL OUTPUT OF NO PATHWAY THIS FILE HAS EVER WORKED.**
+## Run `atlas/tools/round486_saxena_interaction_extract.py` → `_analysis.py` → `_panels.py` →
+## `round486_interaction_x_human_purity.py` · data `atlas/data/round486/`
+
+⭐ **THE INSTRUMENT, AND WHY IT IS NEW HERE.** `saxena2022` deposited DESeq2 output for **METATARSAL versus
+RADIUS/ULNA growth cartilage in BOTH mouse and jerboa**, two independent cohorts (n=3 and n=2). The jerboa
+metatarsal is the naturally elongated element; the mouse metatarsal is its control. **The species × element
+INTERACTION — `jerboa MT−RU log2FC` minus `mouse MT−RU log2FC` — cancels every species-level mapping,
+annotation and normalisation artefact, because each species is compared only against itself.**
+⭐ **AND THE CANCELLATION IS DEMONSTRATED RATHER THAN ASSERTED: housekeeping genes with ENORMOUS per-arm
+values collapse. Gapdh MT +9.29 / RU +8.77 → interaction +0.52 · Hprt −2.42 / −2.38 → −0.04 · Sdha +0.19 /
++0.17 → +0.02 · Ppia +3.00 / +2.88 → +0.13.** Base rate of |interaction| across **15,632 orthologues**:
+**median 0.268 · p75 0.614 · p90 1.182 · p95 1.654 · p99 2.772 · max 7.03.**
+✓ **POSITIVE CONTROLS FIRE AT THE TOP: Shox2 +5.48 (100th percentile), Mab21l2 −6.04, Crabp1 +3.57,
+Gdf10 −2.56, Tbx5 −4.23** — `saxena2022`'s own named genes, recovered blind by the arithmetic.
+
+⛔ **ONE — THE COMPOSITION CONFOUND, MEASURED FIRST (CORR-339), AND IT IS LARGE.** Median interaction by
+module: **CARTILAGE −0.86** (Col2a1 −1.78, Comp −1.14, Col11a1 −0.86) · **MUSCLE +1.93** (Myh3 +3.42,
+Acta1 +2.27) · **BONE +1.74** (Alpl +2.07, Col1a1 +1.74, Ibsp +1.36) · **HOUSEKEEPING +0.22.**
+→ **THE JERBOA METATARSAL SAMPLE IS RELATIVELY CARTILAGE-POOR AND MUSCLE- AND BONE-RICH, so a POSITIVE value
+may be contamination and a NEGATIVE value may be dilution.** Every number below is read against that.
+
+⭐⭐⭐⭐ **TWO — THE FINDING. THE ELONGATED ELEMENT REMODELS THE LAYER AND NOT THE PATHWAY.**
+· **RETINOID: the BINDING PROTEINS move enormously — Crabp1 +3.57, Crabp2 +2.03, Rxrg +2.23, Stra6 +2.30,
+  Fabp5 +1.00 — WHILE THE TARGET-GENE READOUT IS INCOHERENT, 4 DOWN AND 7 UP** (Cyp26a1 −2.41, Cyp26c1 −2.03,
+  Cyp26b1 −0.28, Hoxa1 −0.82 down; Rarb +0.47, Dhrs3 +0.49, Crabp2 +2.03, Stra6 +2.30, Nr2f1 +1.31,
+  Nr2f2 +0.08, Rbp1 +0.23 up). ⛔ **"RA SIGNALLING IS LOWER IN THE ELONGATING ELEMENT" IS NOT SUPPORTED BY ITS
+  OWN READOUT.** ⚠ And Cyp26a1's interaction is driven entirely by the RU arm (MT lfc +0.11, ns), i.e. it is a
+  statement about the jerboa FORELIMB.
+· **WNT: the secreted modulators move and the readout does not.** Sfrp2 +3.35, Sfrp4 +2.56, Dkk2 +1.77,
+  Dkk3 +1.65, Dkk1 +1.63, Smoc1 +1.18, Sfrp1 +1.05 UP against Wif1 −1.89, Frzb −1.45, Sfrp5 −0.65,
+  Notum −0.69 DOWN — **seven up, four down, incoherent — while AXIN2 IS +0.16 (30.7th percentile),
+  Ctnnb1 +0.15 and Ccn4 +0.15.**
+· ⭐⭐ **AND EVERY PATHWAY OUTPUT THIS FILE HAS EVER WORKED IS FLAT.** Hypertrophy programme:
+  **Sox9 −0.02 (3.5th pct), Mef2c −0.09, Pth1r −0.19, Runx2 +0.22, Ihh −0.39, Col10a1 −0.53.**
+  CNP receptors: **Npr2 +0.14 (30.7th pct), Npr3 +0.49, Ostn +0.77** — only Nppc moves (+1.80) and it sits at
+  **baseMean 43 with NEITHER arm significant.** FGF: Fgfr3 −0.32. Sulfation: every member negative-to-flat and
+  confounded with the dilution (Chst11 −0.70, Papss2 −0.61, Slc26a2 −0.19, Slc35b2 −0.21, Impad1 −0.16).
+· ⭐⭐⭐ **AND THE CLEANEST NEGATIVE IN THE ROUND IS THE GLYCOGEN MACHINERY, BECAUSE ITS PER-ARM VALUES ARE
+  HUGE AND THEY CANCEL: Stbd1 MT −5.99 / RU −5.37 → −0.62 · Gaa −3.55 / −3.29 → −0.26 · Pygl −2.81 / −1.88 →
+  −0.93 · Ppp1r3c −2.33 / −2.64 → +0.31 · Slc2a1 −2.46 / −2.57 → +0.12 · Gbe1 −0.15 · Gyg +0.18.**
+  **A five-to-six log2 shift in each species SEPARATELY, and essentially nothing between them.** R445 proposed
+  glycogen as the missing 93% of the osmotic drive for hypertrophy; **the one natural experiment in which an
+  element elongates disproportionately does not touch it.**
+⚠ **TWO READINGS OF THE LAYER FINDING, AND BOTH ARE RECORDED BECAUSE NEITHER IS EXCLUDED.** ① Secreted
+modulators are the most evolvable part of a signalling system, so this may be **evolvability rather than
+causal centrality**. ② The layer's job is to shape gradients and range **SPATIALLY, and a bulk RNA-seq
+target-gene average is spatially blind** — so "output unchanged" is evidence the MEAN is unchanged, not that
+signalling is unchanged. **Neither reading can be settled from bulk data.** `g_l3_486a`
+
+⭐⭐ **THREE — THE CROSS-SCREEN, AND ITS LIMITATION IS STATED WITH IT.** The cartilage confound is NEGATIVE, so
+**a gene that is CARTILAGE-RESTRICTED IN AN INDEPENDENT HUMAN DATASET and comes out POSITIVE in the interaction
+is moving AGAINST its own dilution and cannot be a muscle or bone contaminant.** Crossed against R411's
+sex-corrected purity split (calibrators reproduced exactly: COL2A1 7.65, ACAN 1.96, COL10A1 49.57, IHH 24.51
+against PTPRC 0.00, HBB 0.03, AGTR1 0.10, MME 0.21): **2,678 genes pass abundance + significance + sign
+replication; 813 are cartilage-enriched at the ACAN benchmark; 315 of those are UP.**
+⛔ **AND THE TOP OF THAT CLASS IS VISIBLY THE OSSIFICATION MODULE — Alpl +2.07 (ratio 5.56), Lox +1.45 (5.52),
+Ifitm5 +1.43 (8.03), Thbs2 +1.41, Ibsp +1.36 (7.60), Col5a1 +1.21, Pcolce +0.89 — BECAUSE GSE288028's
+CONTAMINANT AXIS IS *BLOOD*. THE SCREEN REMOVES MUSCLE AND BLOOD CONTAMINATION AND DOES NOT REMOVE BONE.**
+✓ Non-osteoblastic survivors worth naming: **Scube1 +1.40 (ratio 6.28), Spon2 +1.73 (2.90), Matn4 +1.23
+(11.99), Fabp5 +1.00 (6.78), Sfrp1 +1.05 (4.20), Matn2 +0.79, Adamts1 +0.88, Gja1 +1.08 (6.20).**
+⛔ **AND THE MIRROR CLASS IS PRINTED SEPARATELY BECAUSE IT IS CONFOUNDED BY CONSTRUCTION: Cytl1 −2.68
+(ratio 11.52), Barx1 −2.29 (16.08), Col2a1 −1.78 (7.65 — the dilution itself), Ndufa4l2 −1.62 (24.81),
+Cnmd −1.64, Fmod −1.43, Col9a3 −1.34, Scrg1 −1.32, Col9a1 −1.30, Chadl −1.14, Comp −1.14.**
+⛔⛔ **EVERY ATLAS LEAD THAT COMES OUT NEGATIVE FALLS IN THAT CLASS AND DISSOLVES ON CARTILAGE-NORMALISATION
+(add back +0.86): Chad −0.96 (ratio 6.90), Stc2 −0.63 (11.26), Clec3a −0.61 (18.93), Hhip −0.49 (3.62),
+Ecrg4 −0.04 (21.64), Plod1 −0.45, Tet1 −0.76, Aebp1 +0.05. NONE OF THEM IS A RESULT IN THIS INSTRUMENT.**
+
+⭐ **FOUR — THE SCUBE FAMILY IS THE ONE COHERENT MODULE-LEVEL POSITIVE.** All three up, sign-replicated in
+both cohorts: **Scube1 +1.40 / +1.13 (human ratio 6.28, 53.5 CPM) · Scube2 +1.64 / +2.42 (ratio 0.30) ·
+Scube3 +1.40 / +1.12 (ratio 2.07, 111.8 CPM, 92.7th percentile).** SCUBE3 is already an atlas target — human
+pLoF **−6.71 cm** on the best-powered row, direction is to **SUPPLY**, recombinant protein purchasable and
+vendor-validated on ATDC5 chondrogenic cells (R401), declining with age in mouse and rat (R312), co-receptor
+rather than sequestering architecture (R405). ⛔ **AGAINST: SCUBE3 is osteoblast-expressed and this screen
+cannot exclude bone contamination.** ✓ **The counter is that SCUBE1 (platelet/endothelial) and SCUBE2
+(endothelial) have different tissue distributions and move together, which argues family-level regulation
+rather than one contaminating lineage.** Not decisive either way.
+
+⚠ **FIVE — NRK GETS ITS FIRST DIRECTIONAL CROSS-SPECIES READ, THE CONFOUND RUNS THE WRONG WAY, AND IT
+CONTRADICTS R312.** **Nrk −1.09 / −1.19, 88.4th percentile, baseMean 13,110.** Human NRK pLoF is **+2.79 cm**
+(loss = taller, therapeutic direction = INHIBIT), so **DOWN in the naturally elongated element is
+directionally concordant.** ⭐ **And the confound cannot have produced it: NRK is a SKELETAL-MUSCLE gene
+(`kanaiazuma1999`) and muscle is confounded +1.93, so the contamination pushes it UP — the true
+cartilage-referenced value is MORE negative, not less.** ⛔ **AND IT CONTRADICTS R312, which found NRK
+capacity-like — higher where growth is higher — in mouse AND rat on the age and site axes.** ⚠ NRK's human
+purity ratio is **1.23**, below the ACAN benchmark, so it is not in the cartilage-enriched class at all.
+**Recorded as a genuine between-instrument contradiction, not resolved.** `g_l8_486b`
+
+⚠ **SIX — THE TWO IGFBP-3/-5 PROTEASES CONVERGE, AND THE ASYMMETRY BETWEEN THEM IS WHAT MATTERS.**
+`loechel2000`: ADAM12-S cleaves IGFBP-3 and IGFBP-5 and **not** IGFBP-1/2/4/6; PAPPA2 cleaves IGFBP-3 and -5;
+**PAPPA cleaves IGFBP-4 and is therefore the internal control.**
+**Adam12 +1.73 / +1.26 (95.5th pct) · Pappa2 +2.34 / +2.80 (98.1st pct) · PAPPA −0.38 / −0.78 · Stc2 −0.63.**
+⛔ **BUT THE SUBSTRATE-MATCHED STORY IS MUDDIED IN ITS OWN DATA: Igfbp3 +0.57, Igfbp5 +1.10 AND Igfbp4 +1.16 —
+the substrate PAPPA does not cleave moves as much as the two it does not touch, while PAPPA itself is flat.**
+⭐⭐ **AND THE DECISIVE ASYMMETRY IS BETWEEN THE TWO PROTEASES: ADAM12 IS A MYOBLAST-FUSION GENE, ITS HUMAN
+PURITY RATIO IS 0.24 (CONTAMINANT-LEANING), AND MUSCLE IS CONFOUNDED +1.93 — SO ITS POSITIVE IS NOT SEPARABLE
+FROM THE CONFOUND. PAPPA2's SIGNAL SITS ENTIRELY IN THE *RU* ARM (RU −2.69 against MT −0.34), AND A
+CONTAMINATION ARTEFACT OF THE JERBOA *METATARSAL* SAMPLE CANNOT PRODUCE THAT.** PAPPA2 is the confound-immune
+member and it is the one this file has never worked.
+
+⭐ **SEVEN — THE UNBIASED TOP, FOR THE RECORD.** UP: **Shox2 +5.48, Irx1 +5.05, Cyp1b1 +4.99, Vsnl1 +3.65,
+Crabp1 +3.57, Crtac1 +3.50, Galnt17 +3.46, Thbs4 +3.46, Sfrp2 +3.35, Coch +3.15, Eya1 +3.04.**
+DOWN: **Csmd3 −7.03, Prg4 −6.23 at baseMean 13,833, Mab21l2 −6.04, Tenm1 −5.11, Cilp −3.83, Omd −3.69,
+A2m −3.17, Glis1 −2.96, Cytl1 −2.68, Gdf10 −2.56, Gdf6 −2.50, Barx1 −2.29.**
+⭐ **The top of both tails is POSITIONAL IDENTITY — Shox2, Irx1, Eya1, Barx1, Glis1, Tbx5 −4.23, Hoxb9 +2.98 —
+which is what a limb-element proportion difference should look like, and which is exactly the class this file
+cannot use, because a positional TF is not a lever in a bone whose position is already fixed.**
+
+⛔ **WHAT R486 DOES NOT DELIVER: A CANDIDATE.** It delivers an instrument, a measured confound, a structural
+finding about which layer differs, a set of informative flat modules, one confound-immune protease, one
+module-level positive that was already a target, and one between-instrument contradiction on NRK. **The single
+most decision-relevant limitation is that the elongated element is a METATARSAL, which contributes nothing to
+stature, and `saxena2022`'s own Shox2 gain-of-function has a MILD SHORTENING EFFECT ON PROXIMAL LIMB
+ELEMENTS — distal up, proximal down. The instrument measures the wrong compartment by construction.**
+
+## 🧬🧬🧬 R486 — **AND THE RETINOID ARM CLOSES PROPERLY. R485 LEFT `deluca2000` STANDING ALONE; THERE ARE
+## THREE MORE NORMAL-ANIMAL BLOCKADE EXPERIMENTS AND THEY ALL SHORTEN — INCLUDING ONE USING `deluca2000`'s
+## OWN COMPOUND. AND THE RA CONCENTRATION *HAS* BEEN MEASURED, WHICH REFINES R431's PREMISE RATHER THAN
+## REFUTING IT.**
+
+⭐⭐⭐ **ONE — THE MEASUREMENT R485's OWN GAP SAYS HAS NEVER BEEN MADE. IT HAS.** `williams2010ra`
+(PMID 20843807, JBC 2010, **ABSTRACT VERIFIED, full text NOT obtained — JBC 403 and Elsevier linkinghub**):
+rabbit rib growth plate microsurgically split into upper two-thirds and lower one-third, **ULTRASENSITIVE
+LC-TANDEM MS**: all-trans retinoic acid **UGP ≈0.6 nM · LGP ≈1.8 nM · PERICHONDRIUM ≈4.9 nM** — while
+**RETINOL, the inactive precursor, is 1.1–1.6 µM AND SIMILAR IN ALL THREE**, so the gradient is anabolic
+capacity and not substrate supply (RALDH2 and CRABP1 transcripts much higher in LGP). Threshold measured in
+the same paper: **≈3 nM atRA is needed to elicit appreciable RARE-luc reporter activity** and to decrease
+proteoglycan synthesis.
+⭐⭐ **SO R431's PREMISE — "the plate already holds retinoic acid near zero, therefore RARγ is already
+unliganded, therefore an antagonist has almost nothing to add" — IS TRUE OF THE UPPER ZONES AND ONLY THE UPPER
+ZONES. THE PLATE IS ZONALLY LIGAND-POOR, NOT UNIFORMLY LIGAND-FREE, AND THE ONE COMPARTMENT ABOVE THE REPORTER
+THRESHOLD IS THE PERICHONDRIUM AT 4.9 nM.** The authors' own conclusion is that atRA in the hypertrophic
+portion is within effective range and in the upper zones is not.
+⭐ **AND THE PERICHONDRIUM IS THE COMPARTMENT THIS FILE ALREADY CARES ABOUT MOST: it is where `sedes2022`'s
+FBN1 restraint acts, where R323 established the delivery wall does NOT apply because it is vascularised, and
+where `koyama1999` independently reports "very large amounts" of endogenous retinoids by bioassay.**
+⛔ **CORRECTION OWED TO `g_l12_485c`, WHICH STATES THAT THIS MEASUREMENT "HAS NEVER BEEN MADE IN GROWTH-PLATE
+CARTILAGE IN ANY SPECIES". IT HAS. Corrected in this commit.**
+
+⛔⛔ **TWO — AND `deluca2000` IS NOW ONE POSITIVE AGAINST FOUR NEGATIVES, ONE OF WHICH USES ITS OWN COMPOUND.**
+R485 recorded that `retinoic acid receptor antagonist AND longitudinal bone growth` returns exactly one paper.
+**Widening the query to any RA-blockade modality against any skeletal length endpoint in a NORMAL animal
+returns four more, and they run the other way:**
+| study | system | agent | result |
+|---|---|---|---|
+| ⭐ **`koyama1999`** (PMID 10191052) | **CHICK embryo, in vivo, beads at the humeral anlage** | ⭐ **Ro 41-5253 OR AGN 193109** | **HUMERI SIGNIFICANTLY SHORTER and abnormally bent** |
+| `yamaguchi1998` (PMID 9636177) | mouse, dominant-negative RAR in chondrogenic cells | genetic | retardation of skeletal development |
+| `williams2009` (PMID 19389355) | mouse, cartilage-conditional RARα+γ **or** RARβ+γ | genetic | **severe growth retardation by ~3 weeks**, aggrecan collapse |
+| `koyama2021` (PMID 33724538) | mouse, 1.5 mg/kg/day gavage P20→P31 | CD2665 | **stated NULL on tibial length** |
+⭐⭐ **AND `koyama1999` IS THE DECISIVE ONE FOR TWO REASONS. FIRST, AGN 193109 IS `deluca2000`'s OWN
+ANTAGONIST** — recovered by R485 from the MEDLINE supplementary chemical record `RN — ZC6062V1O9`, not from
+the paper, which stays closed. **The same molecule accelerates growth in fetal rat metatarsal ORGAN CULTURE
+and shortens a bone IN VIVO.**
+⭐⭐ **SECOND, ITS MECHANISM IS EXPLICITLY CHARGE WITHOUT DISCHARGE, STATED IN ITS OWN ABSTRACT: the treated
+diaphyseal chondrocytes REMAINED PREHYPERTROPHIC Ihh-expressing cells, did not express RARγ and did NOT
+UNDERGO ENDOCHONDRAL OSSIFICATION, while the intramembranous bony collar was unaffected. Blocking RA blocked
+MATURATION, and the bone got shorter.** Eleventh instance of failure mode #1 in this file.
+⭐⭐⭐ **AND THE TWO RESULTS RECONCILE ON `williams2010ra`'s OWN GRADIENT: RA SIGNALLING IS ACTIVE WHERE
+HYPERTROPHY AND ENDOCHONDRAL OSSIFICATION HAPPEN (LGP and perichondrium) AND INACTIVE IN THE RESERVE AND
+PROLIFERATIVE ZONES. AN RAR ANTAGONIST THEREFORE ACTS ON DISCHARGE, NOT ON CHARGE — WHICH IS PRECISELY THE
+DIRECTION THIS FILE HAS REJECTED NINE TIMES.**
+⚠ **CORR-299 governs `koyama1999` and `yamaguchi1998`** — both are embryonic patterning contexts, not open
+postnatal plates. **`williams2009` and `koyama2021` are postnatal and are the load-bearing pair.**
+🧭 **VERDICT: R431's CLOSURE OF THE RARγ ANTAGONIST ARM STANDS, AND IT NOW STANDS ON BETTER GROUNDS THAN THE
+ONES R431 GAVE.** Not "the plate has no ligand so there is nothing to block" — **the plate has ligand exactly
+where discharge happens, and blocking it there is the failure mode.** ⛔ **DO NOT RE-PROPOSE AN RAR ANTAGONIST.
+What remains live from R485 is unchanged and is the SUBTRACTION half: oral isotretinoin (already quantified by
+R478) and SYSTEMIC VITAMIN A, which is a free question and has zero atlas coverage.**
+
+⭐ **THREE — TWO ALIAS CORRECTIONS THAT WOULD HAVE SURVIVED AN ORDER FORM.** ⛔ **VTP-194204 IS *NOT* ANOTHER
+NAME FOR AGN 193109.** PubChem: AGN 193109 = CID 177238, C₂₈H₂₄O₂, MW 392.5, CAS 171746-21-7, also **CD 3106**,
+UNII ZC6062V1O9. **VTP-194204 = CID 9863341, C₂₄H₃₂O₂, MW 352.5, CAS 220619-73-8 = IRX4204 / NRX-194204 — a
+pentadienoic acid and an RXR *AGONIST*, a different chemotype and a different receptor.** ⛔ And **PubChem
+conflates BMS-453 and BMS-189453 onto one CID (9875424)**, which the literature treats as distinct. **Specify
+retinoid tool compounds by molecular formula and CAS, never by trivial alias.**
