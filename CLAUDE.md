@@ -459,9 +459,25 @@ and do not collapse to knees-only. Both compartments are live for him.
   (aubdool2025): NPR-C is a clearance sink in cartilage **and a Gi-coupled aortoPROTECTIVE receptor**, and
   **M372049 is the tool reagent used to ABOLISH that protection.** Wanted profile = **an occupant that
   SIGNALS** — cANF(4-23), `nishizawa2017` compound 23 (built on that scaffold, its own paper credits
-  increased NPR3 **agonist** activity). **AP-811 is an ANTAGONIST (Ki 0.45–0.48 nM, >20,000× over NPR1) and
-  therefore the WRONG CLASS — its NPR1 number is the wrong comparison twice over.** Efficacy counter-screen
-  = **NPR2**; safety axis = **blocker vs occupant**. Neither run for any candidate.
+  agonist). ⛔⛔ **"AP-811 IS AN ANTAGONIST AND THEREFORE THE WRONG CLASS" IS WITHDRAWN — CORR-368, R489.
+  ITS CLASS IS CONTESTED INSIDE ITS OWN LITERATURE AND THE LEDGER PICKED ONE LABEL.** `koyama1994`
+  (PMID 8045678) is **TITLED "AP-811, a novel ANP-C receptor selective AGONIST"**, reports a **STRONG
+  AGONIST at ANP-C** with **no agonistic effect at ANP-A**, and closes calling it the smallest
+  C-receptor-selective agonist; `johns2007` (PMID 17475216) lists **"the NPR-C ligands AP-811 and
+  cANP(4-23)"** in one breath. ⛔ **AGAINST THAT, `william2008` (PMID 18272821) USES AP-811 AS A BLOCKER AND
+  IT BEHAVES AS ONE: it ABOLISHED ANP-induced Na⁺-K⁺ pump stimulation while "the selective NPR-C agonist
+  ANP(4-23)" REPRODUCED it — the two molecules OPPOSITE on one readout** — and `veale2000` (PMID 10987424)
+  and `li2024nprcwat` both call it an antagonist. **SO AP-811 AND cANF(4-23) ARE NOT DEMONSTRABLY THE SAME
+  CLASS; WHAT IS ESTABLISHED IS THAT AP-811's SIGNALLING SIGN IS UNRESOLVED AND WAS NEVER MEASURED, WHICH IS
+  A GAP AND NOT A DISQUALIFICATION.**
+  ⭐ **THE VOCABULARY TRAP IS REAL AND IT IS CLEANEST ON cANF ITSELF: `drewett1990` (PMID 1978729) CALLS IT
+  "the clearance receptor antagonist" IN THE SAME ABSTRACT IN WHICH IT SHOWS IT INHIBITS BASAL AND
+  VIP-INDUCED cAMP AT 10⁻¹²–10⁻⁹ M, BLOCKED BY PERTUSSIS TOXIN.** One ligand blocks clearance and activates
+  Gi at once, and "antagonist" in this field names the first function only. ⚠ The Ki 0.45–0.48 nM /
+  >20,000×-over-NPR1 figures are not in `koyama1994`'s abstract and stay `value_unverified`.
+  ⛔ **The only ligand in the arm described as a TRUE pharmacological antagonist is M372049, and it is NOT
+  COMMERCIALLY AVAILABLE** — `porter2020` (PMID 32153307) publishes a synthesis saying so verbatim.
+  Efficacy counter-screen = **NPR2**; safety axis = **blocker vs occupant**. Neither run for any candidate.
   ⭐⭐ **R424: CLAUDE.md HAS BEEN QUOTING THE WEAKEST ROW. Best-powered NPR3 = pLoF+delmis <0.5%, +1.910 cm
   at P=1.42e-61 across 3,727 carriers; all-missense +0.942 at P=3.76e-55 across 14,092 — a carrier base
   ~63× the 224 quoted below. AND THE CONSTRAINT FLAGS ARE THE DRUGGABILITY ARGUMENT: NPR3 constrained=0
@@ -16384,3 +16400,155 @@ every tissue here is a proxy. Betas are inverse-normalised SD, not centimetres. 
 direction is a statement about **lifelong modest endogenous variation**, not about what supplying or
 blocking the protein pharmacologically would do — which is the exact gap R469 named for the gain-only
 class and which no genetic instrument can close.
+
+## ⚖️⚖️⚖️⚖️⚖️ R489 — **TWO WAYS OF ENGAGING ONE RECEPTOR NOW HAVE OPPOSITE HUMAN SIGNS AT P=2.2e-120 AND
+## P=1.8e-14, THEY SHARE THE CLEARANCE TERM, AND THE ONLY TERM THAT DIFFERS IS NPR-C's OWN SIGNALLING ARM.
+## THAT INVERTS R424's COMPOUND SPEC FOR HEIGHT — AND CORR-368 SHOWS THE SPEC WAS DRAWN ON A WORD.**
+
+⭐⭐⭐⭐ **ONE — THE DECOMPOSITION, AND IT IS FORCED RATHER THAN CHOSEN.** R488b signed both genes of one
+axis with the same instrument, in the same cohort:
+| engagement | what it does to the two NPR-C functions | human sign |
+|---|---|---|
+| **LOWER NPR3** (less receptor) | clearance ↓ **and** NPR-C signalling ↓ | ⭐ **TALLER, standing P=2.2e-120** |
+| **RAISE OSTN** (more occupant) | clearance ↓ **and** NPR-C signalling ↑ | ⛔ **SHORTER, standing P=1.8e-14** |
+⭐ **THE CLEARANCE TERM IS SHARED AND FAVOURABLE IN BOTH. THE ONLY TERM THAT MOVES IN OPPOSITE DIRECTIONS
+BETWEEN THEM IS NPR-C's OWN SIGNALLING, SO IF BOTH READINGS ARE CAUSAL THAT TERM MUST BE GROWTH-SUPPRESSIVE
+AND LARGE ENOUGH TO FLIP THE SIGN.** Not an argument imported from anywhere — it falls out of two numbers.
+
+⭐⭐ **TWO — AND THE MECHANISM IS CANONICAL, PRIMARY-SUPPORTED, AND LANDS ON THIS FILE'S OWN cAMP GENETICS.**
+**NPR-C is coupled to inhibitory G-proteins that INHIBIT ADENYLYL CYCLASE** (`moghtadaei2016`, review, index
+only). The primary is better: **`drewett1990` (JPET, PMID 1978729) — cANF(4-23) at 10⁻¹²–10⁻⁹ M
+INHIBITED basal and VIP-induced cAMP generation concentration-dependently, AND THE EFFECT WAS BLOCKED BY
+PERTUSSIS TOXIN.** So the atlas's own preferred occupant is a demonstrated **Gi agonist that lowers cAMP.**
+⭐ **AND LOWERING cAMP IS THIS FILE'S SHORTENING DIRECTION, ON FOUR INDEPENDENT LINES ALREADY HELD:**
+**GNAS pLoF −9.36 cm · ADCY6 −2.70 cm at P=5.1e-13 · PDE3B (which DEGRADES cAMP) +1.22 cm at P=5.1e-13 ·
+and the whole iPPSD family — GNAS, PRKAR1A, PDE4D, PDE3A — every member SHORT WITH BRACHYDACTYLY** (R305,
+R306). **The derivation and the pathway agree without being fitted to each other.**
+⭐ Independent primary that the two functions are separable and do different things: **`devotta2023`
+(eLife, PMID 37162198) — "Npr3 regulates neural crest and cranial placode progenitors formation through its
+DUAL FUNCTION as CLEARANCE and SIGNALING receptor"**, with the two programmes dissociated by knockdown,
+pharmacology and rescue. **The dual-function split is not a device invented here to explain an inconvenient
+number; it is the organising result of a 2023 primary.**
+
+⭐⭐⭐ **THREE — SO R424's COMPOUND SPEC INVERTS FOR HEIGHT, AND IT INVERTS FOR A REASON THE OPERATOR HAS
+ALREADY RULED ON.** R424 wrote the wanted profile as **"an occupant that SIGNALS"** rather than a blocker —
+and it chose that **on AORTIC-SAFETY grounds**, because `aubdool2025` shows NPR-C's Gi arm is aortoprotective
+and M372049 abolishes that protection. **RISK IS EXPLICITLY DEPRIORITISED FOR THIS CASE.**
+→ ⭐ **UNDER THE HEIGHT OBJECTIVE THE WANTED PROFILE IS THE ONE R424 REJECTED: BLOCK CLEARANCE *AND* BLOCK
+SIGNALLING. THE SAFETY CHOICE AND THE HEIGHT DIRECTION ARE IN OPPOSITION, AND THIS FILE HAD NOT NOTICED
+BECAUSE IT HAD NEVER HAD A SIGN ON THE SIGNALLING ARM.**
+⛔⛔ **AND THIS IS A RE-INVERSION, NOT A DISCOVERY — GREPED BEFORE COMMITTING, CORR-313/CORR-324.** The node
+`the_compound_this_thread_needs` derives the molecule from five constraints and **originally specified A
+SUB-KILODALTON, NPR3-SELECTIVE ANTAGONIST**; a bracketed insert records *"SPECIFICATION INVERTED AT ROUND 151
+— CORR-161 / SD-007. THE WORD ANTAGONIST BELOW IS WRONG"*, replacing it with the cANF-class occupant **on
+`aubdool2025`'s aortic grounds and on nothing else**, and closing *"Everything below about SIZE, PARTITION and
+ADDING NO LIGAND stands; only the sign at the receptor changes."* ⭐ **R489 FLIPS THAT ONE SIGN BACK, FOR A
+SUBJECT WHOSE RISK IS DEPRIORITISED, AND NOW WITH A DIRECTIONAL ARGUMENT R151 DID NOT HAVE. The atlas's
+ORIGINAL spec was right and was overturned on a safety axis this case does not price.** Constraints 1–5 —
+size under the `farnum2006` partition curve, local MME proteolysis, CNP-inducible local NPR3 clearance,
+systemic silence at vascular NPR2, and the unproven BA16 age gate — are untouched by the sign flip.
+⛔⛔ **AND THE PRICE IS REAL AND MUST BE STATED WITH IT: SWITCHING TO A TRUE ANTAGONIST MAKES THE NPR2 GATE
+HARSHER, NOT EASIER.** R424's gate is that NPR2 loss is **−2.750 cm at P=5.88e-96** while NPR3 loss is
++1.910 cm. **An AGONIST that cross-reacts with NPR2 would ACTIVATE the receptor we want active; an
+ANTAGONIST that cross-reacts with NPR2 BLOCKS IT and buys the −2.750 cm directly.** The spec inversion buys
+the right signalling sign and costs a far more stringent selectivity requirement. **Neither cANF(4-23),
+nor AP-811, nor `nishizawa2017` compound 23, nor M372049 reports an NPR2 number.**
+
+⛔⛔⛔ **CORR-368 — AND THE SPEC WAS SPLIT ON A WORD. THE LEDGER'S OWN LIVE COMPOUNDS ENTRY IS CORRECTED IN
+THIS COMMIT.** It has read *"AP-811 is an ANTAGONIST and therefore the WRONG CLASS"* for many rounds.
+**`koyama1994` (PMID 8045678) IS TITLED "AP-811, a novel ANP-C receptor selective AGONIST"**, reports a
+**strong agonist** at ANP-C with **no agonistic effect at ANP-A**, and `johns2007` (PMID 17475216) lists
+**"the NPR-C ligands AP-811 and cANP(4-23)"** in one breath — while `veale2000` (PMID 10987424) and
+`li2024nprcwat` (PMID 39154732) both call AP-811 an **antagonist**.
+⭐⭐ **AND THE VOCABULARY TRAP IS DEMONSTRABLE ON cANF ITSELF, WHICH IS THE LOAD-BEARING HALF: `drewett1990`
+(PMID 1978729) CALLS IT "the clearance receptor antagonist" IN THE SAME ABSTRACT IN WHICH IT SHOWS IT
+INHIBITS BASAL AND VIP-INDUCED cAMP GENERATION AT 10⁻¹²–10⁻⁹ M, BLOCKED BY PERTUSSIS TOXIN — i.e. ONE
+MOLECULE IS AN ANTAGONIST OF CLEARANCE AND AN AGONIST OF Gi AT ONCE, AND THE FIELD NAMES ONLY THE FIRST
+FUNCTION.** CORR-324/CORR-330's family — a statement about a WORD read as a statement about a PROPERTY.
+⛔⛔ **BUT I DREW THE CONCLUSION TOO FAR AND AM CORRECTING IT IN THE SAME BLOCK: "AP-811 AND cANF(4-23) ARE
+THE SAME CLASS" IS NOT SUPPORTED AND IS CONTRADICTED BY `william2008` (PMID 18272821), WHERE THE TWO ARE
+OPPOSITE ON ONE READOUT IN ONE EXPERIMENT — AP-811 "abolished ANP-induced pump stimulation" while "the
+selective NPR-C agonist ANP(4-23)" REPRODUCED it.** What survives is narrower and is still a correction:
+**the ledger rejected AP-811 on its LABEL rather than on a measured signalling assay, and no paper reports
+whether AP-811 engages the Gi arm. Its signalling sign is a GAP, not a disqualification.**
+
+⭐ **FOUR — THE CORRECTED SHELF, AND THE ONE COMPOUND WITH THE WANTED PROFILE IS THE ONE YOU CANNOT BUY.**
+| ligand | clearance | NPR-C signalling arm | NPR2 number | obtainable |
+|---|---|---|---|---|
+| **osteocrin / proOSTN(83-133)** | blocks | occupant, signals | ⭐ **Kd ≈5 nM at NPR-C, NO binding to GC-A or GC-B** (`moffatt2007`, R487) | catalogue protein; construct ≠ circulating species |
+| cANF(4-23) | blocks | ⭐ **Gi AGONIST — lowers cAMP, PTX-sensitive** (`drewett1990`) | none | catalogue; human tracer-dose exposure only |
+| AP-811 | blocks | ⛔ **CONTESTED — agonist by title (`koyama1994`), blocker in function (`william2008`), antagonist by label (`veale2000`, `li2024nprcwat`). NEVER MEASURED ON cAMP.** | none | catalogue-adjacent |
+| ⭐⭐ **M372049 = AZ12107657** | blocks | ⭐ **TRUE ANTAGONIST — abolishes CNP's NPR-C-mediated protection** (`aubdool2025`) | none | ⛔ not purchasable — **BUT SEE SECTION FOUR-B: IT HAS A PUBLISHED SYNTHESIS AND A TEN-WEEK IN VIVO RODENT DOSING RECORD** |
+⛔ **R298's BASE RATE, AGAIN, EXACTLY: the profile the biology wants is the one profile with no product.**
+
+⭐⭐⭐⭐ **FOUR-B — AND THAT LAST LINE IS TOO PESSIMISTIC, BECAUSE THE ATLAS ALREADY HELD THE PAPER THAT
+DISPROVES IT AND HAD RECORDED THE COMPOUND AS UNIDENTIFIED. `dabaghie2024` HAS BEEN IN THIS BIBLIOGRAPHY
+SINCE 2026-08-08, IS OPEN ACCESS, AND `the_compound_this_thread_needs` SAYS OF IT: "the abstract does not
+identify it and this atlas has not established its structure, class or whether it is a small molecule."
+THE FULL TEXT IDENTIFIES IT IN ONE LINE: NPR3i IS AZ12107657 / M372049.**
+· **METHODS, VERBATIM IN SUBSTANCE — MOUSE:** NPR3 selective inhibitor **AZ12107657/M372049, 15 mg/kg**, in
+  **water/DMSO 50/50**, delivered **CONTINUOUSLY by subcutaneous Alzet micro-osmotic pump (model 1002)** for
+  **14 days**, implanted the day before disease induction, **body weight followed**.
+· ⭐⭐ **RAT — AND THIS IS THE LONGEST EXPOSURE:** obese uninephrectomised ZSF1 rats, **NPR3i 15 mg/kg s.c.,
+  three times weekly for weeks 1–5 then ONCE DAILY for weeks 6–10 — TEN WEEKS OF CONTINUOUS DOSING, n=10 PER
+  GROUP**, with body weight and blood glucose measured at baseline and weekly, alongside vehicle, losartan and
+  combination arms.
+· The paper calls it a **"selective NPR3 blocking peptide"** and a **"NPR3-specific blocking peptide"**,
+  consistent with `porter2020`'s *peptidomimetic*. It was **reno-protective** in the NTS glomerulonephritis
+  model (less fibrinoid necrosis, more WT1⁺ podocytes) and **null as monotherapy** on albuminuria in ZSF1,
+  potentiating losartan only in combination.
+· ⭐ **AND ONE SELECTIVITY-ADJACENT DATUM THE ARM HAS NEVER HAD: NO COMPENSATORY EXPRESSIONAL CHANGES WERE
+  DETECTED FOR NPR1 AND NPR2 IN NPR3i-TREATED GLOMERULI.** That is not an NPR2 binding number — it is an
+  expression readout in kidney — but it is the first anything on the counter-screen R424 named as the gate.
+→ ⭐⭐⭐ **SO THE STATUS OF M372049 CHANGES FROM "the compound you cannot buy" TO "the compound with a
+PUBLISHED SYNTHESIS, AN ASTRAZENECA COMPOUND CODE, AN ESTABLISHED IN VIVO DOSE, ROUTE, SCHEDULE AND VEHICLE,
+AND A TEN-WEEK TOLERABILITY RECORD IN TWO RODENT SPECIES — ON WHICH NOBODY HAS EVER PUT A CALIPER."**
+⛔ **CORR-340's SHAPE, ON THE ONE MOLECULE THE CORRECTED SPEC WANTS: THE ANIMALS WERE DOSED, FOR TEN WEEKS,
+WITH BODY WEIGHT RECORDED, AND NO BONE WAS MEASURED.** ⚠ And the honest limits: both models are **DISEASED**
+adults (nephrotoxic serum; obese diabetic uninephrectomised ZSF1), the rats were **10 weeks old at purchase**
+so the rat arm runs across a period when a rat is still growing but is not a growth study, plasma and urinary
+cGMP were measured but the growth plate was not, and **the compound is a peptidomimetic, so the `farnum2006`
+partition constraint that constraint 1 of the spec turns on is unaddressed.**
+✓ **What survives untouched is the SELECTIVITY-CLEAN member: osteocrin is still the only ligand in the arm
+with a published NPR2 (GC-B) number, and it is a clean negative.**
+
+⛔ **FIVE — WHAT WOULD KILL THE WHOLE DERIVATION, STATED BEFORE ANYONE ACTS ON IT, AND TWO OF IT ARE
+MEASURED.**
+⭐⭐ **(a) NPR-C's COUPLING IS CELL-TYPE DEPENDENT AND HAS BEEN SHOWN TO INVERT IN A HUMAN CELL TYPE.**
+`sellitti2001` (PMID 11164945): in human thyrocytes, where **>97% of ANF binding sites are NPR-C**, ANF
+**RAISED maximal cAMP TO 200–300% OF CONTROL and C-ANF(4-23) DUPLICATED IT** — the paper opening by noting
+the relationship "has generally been shown to be an inhibitory one… mediated via the NPR-C receptor coupled
+to adenylyl cyclase by inhibitory G proteins". ⚠ In the same paper **neither ligand moved cAMP in rat aortic
+smooth muscle**, so the positive coupling is not general either. **THE SIGN OF THE NPR-C SIGNALLING ARM IN A
+CHONDROCYTE IS UNKNOWN AND HAS NEVER BEEN MEASURED IN ANY SPECIES.** That is the discriminating experiment
+and it is a dish experiment.
+⛔ **(b) AND IN THE ONE TISSUE WHERE Npr3 LOSS HAS BEEN DECOMPOSED, THE CLEARANCE ARM DOMINATES.**
+`li2024nprcwat`: Npr3 knockdown drives WAT browning **via AKT and p38, and the effect is ATTENUATED BY Npr2
+KNOCKDOWN** — i.e. it runs through sparing ligand for the guanylyl-cyclase receptor, which is the arm the
+decomposition assumes CANCELS. The same paper reports NPR-C **suppressing cAMP in an NPR-B-INDEPENDENT
+manner**, so both arms are present there and only their relative weight is at issue.
+⛔ Also unresolved: the derivation assumes **both** eQTL readings are causal for their genes, and **no
+colocalisation was run for either**; **OSTN's own minority block runs the other way** (twelve
+Muscle_Skeletal variants, leg P=5.4e-15); and **`ataman2016`** shows OSTN carries primate-specific
+MEF2-binding regulatory elements, so a human OSTN eQTL and a mouse OSTN transgenic need not read the same
+regulation.
+⚠ And a confound flag for any future Npr3-null length claim: **`li2024nprcwat` — global Npr3 deficiency
+gives REDUCED BODY WEIGHT**, increased WAT browning and resistance to diet-induced obesity, so per
+`campion2022tofacitinib` a length endpoint in that animal must be read against body weight first.
+✓ **What the derivation's mechanism half DOES have is a clean primary: `devotta2023` (eLife 2023) separates
+the two functions experimentally in one organism, proposing Npr3 acts "as a clearance receptor to regulate
+local concentrations of natriuretic peptides for optimal cGMP production" AND "as a signaling receptor to
+control cAMP levels through inhibition of adenylyl cyclase" — the two arms named, separated and both
+required, in a developmental patterning context rather than a growth plate.**
+
+🧭 **WHAT R489 DELIVERS.** No new compound. What it changes is the **SPEC**: for a subject whose risk is
+deprioritised, the NPR3 arm should be pursued with a ligand that blocks BOTH functions rather than an
+occupant that signals — the opposite of what this file has specified since R424 — and the file's rejection
+of AP-811 was a vocabulary error rather than a pharmacological one. **The deciding measurement is small,
+cheap and has never been made: put cANF(4-23), AP-811 and osteocrin on human growth-plate chondrocytes and
+measure cAMP, with pertussis toxin as the control.** `g_l3_489a`.
+⭐⭐ **AND THE SECOND DELIVERABLE IS AN IDENTIFICATION RATHER THAN AN ARGUMENT: the compound the corrected
+spec wants is M372049 = AZ12107657, it is a real AstraZeneca peptidomimetic with a published synthesis
+(`porter2020`) and a ten-week subcutaneous rodent dosing record at 15 mg/kg (`dabaghie2024`), and the atlas
+had it filed as an unidentified reagent. What it has never had is a growing animal and a caliper.**
+`g_l3_489b`.
