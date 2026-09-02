@@ -1,0 +1,503 @@
+{
+ "note": "R485 - THE RETINOID BRAKE PANEL, RE-RUN AGAINST R431's OWN NUMBERS.\n\nWHY.  saxena2022 (Curr Biol 2022;32:289-303, PMID 34793695), read in full this\nround, states that endogenous retinoic acid REPRESSES growth in mouse\nmetatarsals and that the jerboa de-represses it.  Its cited basis is\ndeluca2000 (Endocrinology 2000;141:346-53, PMID 10614657), whose abstract says\nthat in the ABSENCE of exogenous RA an RAR antagonist ACCELERATED bone growth,\nas did an RA-specific NEUTRALISING ANTIBODY.\n\nR431 closed the retinoid arm on two grounds:\n  (a) koyama2021's CD2665 monotherapy null on mouse TIBIA length in vivo, and\n  (b) a purity-corrected read of the human plate that \"already holds retinoic\n      acid near zero\", quoted as CYP26A1 47.9x, CRABP2 7.6x, CRABP1 4.3x,\n      ALDH1A2 0.02, ALDH1A1 0.31, RARG 1.08, RARA 0.42, RARB 0.31.\n\nThis script re-derives every one of those numbers with R411's sex-corrected\nsplit so they can be checked rather than carried, and adds the genes R431 did\nnot have: CRABP1's partner set, the RA-inducible inhibitory ligand GDF10, and\nthe BMP inhibitor MAB21L2 - the two de-repression genes saxena2022 identifies\nalongside CRABP1.\n\nCORR-363 GOVERNS.  A purity ratio measures INVESTMENT, not rate-limitation, and\nis structurally blind to universal machinery.  What is interpretable is the\nINTERNAL CONTRAST between modules scored against one comparator.\n\nMethod identical to round480_vm_matrix_panel.py: GSE288028, 12 human samples\n(R344 removed the 2 mouse ones), sex called from XIST vs the Y panel, split\nWITHIN the 9 males by COL2A1, median CPM in the purest half over the median in\nthe contaminated half.\n\nOutput: atlas/data/round485/retinoid_panel.json",
+ "male_pure": [
+  "P25452_001",
+  "P25452_004",
+  "P25452_005",
+  "P22202_1015"
+ ],
+ "male_contaminated": [
+  "P25452_008",
+  "P30453_1003",
+  "P30453_1001",
+  "P30453_1002"
+ ],
+ "modules": {
+  "ra_synthesis": [
+   {
+    "gene": "ALDH1A1",
+    "pure_med_cpm": 0.09,
+    "contam_med_cpm": 1.07,
+    "purity_ratio": 0.08,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "ALDH1A2",
+    "pure_med_cpm": 0.06,
+    "contam_med_cpm": 17.53,
+    "purity_ratio": 0.0,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "ALDH1A3",
+    "pure_med_cpm": 24.48,
+    "contam_med_cpm": 8.29,
+    "purity_ratio": 2.95,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "RDH10",
+    "pure_med_cpm": 10.19,
+    "contam_med_cpm": 17.5,
+    "purity_ratio": 0.58,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "DHRS3",
+    "pure_med_cpm": 62.93,
+    "contam_med_cpm": 73.84,
+    "purity_ratio": 0.85,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "STRA6",
+    "pure_med_cpm": 0.39,
+    "contam_med_cpm": 0.15,
+    "purity_ratio": 2.61,
+    "ratio_is_infinite": false,
+    "detected_of_12": 11
+   },
+   {
+    "gene": "RBP1",
+    "pure_med_cpm": 4.3,
+    "contam_med_cpm": 1.14,
+    "purity_ratio": 3.77,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "RBP4",
+    "pure_med_cpm": 376.9,
+    "contam_med_cpm": 54.48,
+    "purity_ratio": 6.92,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   }
+  ],
+  "ra_clearance": [
+   {
+    "gene": "CYP26A1",
+    "pure_med_cpm": 26.16,
+    "contam_med_cpm": 0.39,
+    "purity_ratio": 67.72,
+    "ratio_is_infinite": false,
+    "detected_of_12": 11
+   },
+   {
+    "gene": "CYP26B1",
+    "pure_med_cpm": 10.14,
+    "contam_med_cpm": 10.86,
+    "purity_ratio": 0.93,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "CYP26C1",
+    "pure_med_cpm": 0.58,
+    "contam_med_cpm": 0.12,
+    "purity_ratio": 4.79,
+    "ratio_is_infinite": false,
+    "detected_of_12": 10
+   }
+  ],
+  "ra_binding": [
+   {
+    "gene": "CRABP1",
+    "pure_med_cpm": 0.74,
+    "contam_med_cpm": 1.26,
+    "purity_ratio": 0.59,
+    "ratio_is_infinite": false,
+    "detected_of_12": 11
+   },
+   {
+    "gene": "CRABP2",
+    "pure_med_cpm": 2.36,
+    "contam_med_cpm": 1.44,
+    "purity_ratio": 1.64,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "FABP5",
+    "pure_med_cpm": 141.3,
+    "contam_med_cpm": 20.85,
+    "purity_ratio": 6.78,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   }
+  ],
+  "ra_receptors": [
+   {
+    "gene": "RARA",
+    "pure_med_cpm": 14.45,
+    "contam_med_cpm": 31.38,
+    "purity_ratio": 0.46,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "RARB",
+    "pure_med_cpm": 15.0,
+    "contam_med_cpm": 45.03,
+    "purity_ratio": 0.33,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "RARG",
+    "pure_med_cpm": 53.56,
+    "contam_med_cpm": 56.38,
+    "purity_ratio": 0.95,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "RXRA",
+    "pure_med_cpm": 74.64,
+    "contam_med_cpm": 52.6,
+    "purity_ratio": 1.42,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "RXRB",
+    "pure_med_cpm": 23.18,
+    "contam_med_cpm": 10.0,
+    "purity_ratio": 2.32,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "RXRG",
+    "pure_med_cpm": 0.03,
+    "contam_med_cpm": 0.04,
+    "purity_ratio": 0.65,
+    "ratio_is_infinite": false,
+    "detected_of_12": 9
+   }
+  ],
+  "ra_corepressors": [
+   {
+    "gene": "NCOR1",
+    "pure_med_cpm": 69.36,
+    "contam_med_cpm": 180.83,
+    "purity_ratio": 0.38,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "NCOR2",
+    "pure_med_cpm": 41.87,
+    "contam_med_cpm": 200.76,
+    "purity_ratio": 0.21,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "SIN3A",
+    "pure_med_cpm": 24.96,
+    "contam_med_cpm": 72.58,
+    "purity_ratio": 0.34,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "HDAC3",
+    "pure_med_cpm": 22.12,
+    "contam_med_cpm": 19.9,
+    "purity_ratio": 1.11,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   }
+  ],
+  "saxena_derepression": [
+   {
+    "gene": "CRABP1",
+    "pure_med_cpm": 0.74,
+    "contam_med_cpm": 1.26,
+    "purity_ratio": 0.59,
+    "ratio_is_infinite": false,
+    "detected_of_12": 11
+   },
+   {
+    "gene": "GDF10",
+    "pure_med_cpm": 6.06,
+    "contam_med_cpm": 1.59,
+    "purity_ratio": 3.8,
+    "ratio_is_infinite": false,
+    "detected_of_12": 11
+   },
+   {
+    "gene": "MAB21L2",
+    "pure_med_cpm": 5.35,
+    "contam_med_cpm": 0.92,
+    "purity_ratio": 5.81,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   }
+  ],
+  "saxena_nodes": [
+   {
+    "gene": "SHOX2",
+    "pure_med_cpm": 4.33,
+    "contam_med_cpm": 4.05,
+    "purity_ratio": 1.07,
+    "ratio_is_infinite": false,
+    "detected_of_12": 11
+   },
+   {
+    "gene": "SHOX",
+    "pure_med_cpm": 73.46,
+    "contam_med_cpm": 85.8,
+    "purity_ratio": 0.86,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "PRRX1",
+    "pure_med_cpm": 15.17,
+    "contam_med_cpm": 63.5,
+    "purity_ratio": 0.24,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "PAX1",
+    "pure_med_cpm": 103.02,
+    "contam_med_cpm": 17.59,
+    "purity_ratio": 5.86,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "HOXB9",
+    "pure_med_cpm": 0.14,
+    "contam_med_cpm": 0.06,
+    "purity_ratio": 2.26,
+    "ratio_is_infinite": false,
+    "detected_of_12": 10
+   },
+   {
+    "gene": "HOXB13",
+    "pure_med_cpm": 0.0,
+    "contam_med_cpm": 0.0,
+    "purity_ratio": null,
+    "ratio_is_infinite": false,
+    "detected_of_12": 3
+   },
+   {
+    "gene": "RSRC1",
+    "pure_med_cpm": 21.37,
+    "contam_med_cpm": 139.61,
+    "purity_ratio": 0.15,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   }
+  ],
+  "bmp_receiver": [
+   {
+    "gene": "BMP2",
+    "pure_med_cpm": 80.13,
+    "contam_med_cpm": 50.82,
+    "purity_ratio": 1.58,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "BMP4",
+    "pure_med_cpm": 4.03,
+    "contam_med_cpm": 2.87,
+    "purity_ratio": 1.4,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "BMPR1A",
+    "pure_med_cpm": 22.7,
+    "contam_med_cpm": 122.84,
+    "purity_ratio": 0.18,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "BMPR1B",
+    "pure_med_cpm": 2.45,
+    "contam_med_cpm": 18.89,
+    "purity_ratio": 0.13,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "BMPR2",
+    "pure_med_cpm": 50.02,
+    "contam_med_cpm": 347.12,
+    "purity_ratio": 0.14,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "SMAD1",
+    "pure_med_cpm": 11.09,
+    "contam_med_cpm": 47.52,
+    "purity_ratio": 0.23,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "SMAD4",
+    "pure_med_cpm": 49.38,
+    "contam_med_cpm": 89.61,
+    "purity_ratio": 0.55,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "SMAD5",
+    "pure_med_cpm": 76.17,
+    "contam_med_cpm": 71.82,
+    "purity_ratio": 1.06,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   }
+  ],
+  "gdf10_receiver": [
+   {
+    "gene": "ACVR1",
+    "pure_med_cpm": 26.64,
+    "contam_med_cpm": 124.27,
+    "purity_ratio": 0.21,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "ACVR1B",
+    "pure_med_cpm": 3.46,
+    "contam_med_cpm": 11.57,
+    "purity_ratio": 0.3,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "ACVR2A",
+    "pure_med_cpm": 6.95,
+    "contam_med_cpm": 44.78,
+    "purity_ratio": 0.16,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "ACVR2B",
+    "pure_med_cpm": 4.08,
+    "contam_med_cpm": 8.8,
+    "purity_ratio": 0.46,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "TGFBR1",
+    "pure_med_cpm": 42.99,
+    "contam_med_cpm": 145.89,
+    "purity_ratio": 0.29,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "TGFBR2",
+    "pure_med_cpm": 314.75,
+    "contam_med_cpm": 249.77,
+    "purity_ratio": 1.26,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "GDF11",
+    "pure_med_cpm": 7.5,
+    "contam_med_cpm": 14.22,
+    "purity_ratio": 0.53,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "MSTN",
+    "pure_med_cpm": 0.14,
+    "contam_med_cpm": 0.09,
+    "purity_ratio": 1.55,
+    "ratio_is_infinite": false,
+    "detected_of_12": 11
+   }
+  ],
+  "calibrators_cartilage": [
+   {
+    "gene": "COL2A1",
+    "pure_med_cpm": 70350.74,
+    "contam_med_cpm": 9200.72,
+    "purity_ratio": 7.65,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "ACAN",
+    "pure_med_cpm": 3573.74,
+    "contam_med_cpm": 1826.39,
+    "purity_ratio": 1.96,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "IHH",
+    "pure_med_cpm": 102.3,
+    "contam_med_cpm": 4.17,
+    "purity_ratio": 24.51,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "COL10A1",
+    "pure_med_cpm": 6183.12,
+    "contam_med_cpm": 124.73,
+    "purity_ratio": 49.57,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   }
+  ],
+  "calibrators_blood": [
+   {
+    "gene": "PTPRC",
+    "pure_med_cpm": 0.96,
+    "contam_med_cpm": 294.03,
+    "purity_ratio": 0.0,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "HBB",
+    "pure_med_cpm": 11.72,
+    "contam_med_cpm": 415.58,
+    "purity_ratio": 0.03,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "AGTR1",
+    "pure_med_cpm": 0.15,
+    "contam_med_cpm": 1.43,
+    "purity_ratio": 0.1,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   },
+   {
+    "gene": "MME",
+    "pure_med_cpm": 2.63,
+    "contam_med_cpm": 12.25,
+    "purity_ratio": 0.21,
+    "ratio_is_infinite": false,
+    "detected_of_12": 12
+   }
+  ]
+ }
+}

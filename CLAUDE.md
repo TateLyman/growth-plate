@@ -14909,6 +14909,216 @@ tibia in a normal mouse from a sulfation POSITION switch at unmoved fixed charge
 sulfation argument in this file. That is the honest state, and the deciding measurements are documents
 rather than experiments.**
 
+## 📏📏📏📏📏 R485 — **THE TERMINAL CELL HEIGHT TERM HAS EXACTLY ONE CLEAN POSITIVE IN ANY SPECIES, IT WAS
+## SITTING IN THIS BIBLIOGRAPHY WITH ITS NUMBERS FLAGGED `value_unverified` AND ITS AXIS RECORDED AS THE
+## WRONG ONE — AND READ PROPERLY IT CONVERGES WITH `wang1999` AND `hunziker1994` ON ONE MECHANISM: GLYCOGEN.**
+
+⛔ **ZERO — THE ENTRY IN OUR OWN BIBLIOGRAPHY SAID "hypertrophic cell DIAMETER … NUMBERS ARE SECONDHAND FROM
+AN AGENT SUMMARY AND ARE value_unverified PENDING THE FULL TEXT."** `ramesh2020` (PMID 31794485, Clin Orthop
+Relat Res 2020) is **open access at PMC7145076**, and the full text was fetched and read in the main loop this
+round. **The abstract and the Fig 1E legend both say "diameter". THE METHODS SAY THE OPPOSITE, VERBATIM:
+hypertrophic cells were defined by a HEIGHT ALONG THE LONGITUDINAL AXIS greater than 7 µm**, 25 hypertrophic
+chondrocytes per bone from the epiphyseal and metaphyseal sides, one blinded observer, **intra-assay CV 20.1%.**
+⭐ **THE ABSTRACT ALONE WOULD HAVE INVERTED THE AXIS — AND THE AXIS IS THE WHOLE QUESTION, BECAUSE `bush2008`
+SHOWS A CHONDROCYTE THAT GETS FATTER DOES NOT LENGTHEN A BONE. Read the Methods definition, never the
+abstract's noun.** New failure mode, and it is CORR-318's mirror: not a figure-only value, but a **value whose
+UNIT is defined only in the Methods and mis-named everywhere else in the same paper.**
+
+⭐⭐⭐ **ONE — THE ONLY EXPERIMENT IN ANY SPECIES THAT RAISES TERMINAL HYPERTROPHIC CELL HEIGHT ON THE STATED
+LONGITUDINAL AXIS IN A NORMAL, NON-DEFICIENT SYSTEM, WITH A LENGTH ENDPOINT IN THE SAME BONES.** Fetal rat
+metatarsals, single rESWT application, 14 days culture, all values now first-hand:
+| | control | low 90 mJ | mid 120 mJ | **high 180 mJ** |
+|---|---|---|---|---|
+| **terminal HC height (µm)** | **13 ± 3.06** | **13 ± 3 — unaffected** | p<0.001 | **18 ± 3.46, p<0.001 (+38%)** |
+| hypertrophic ZONE height (µm) | 159 ± 13 | 269 ± 65 | 429 ± 100 | **505 ± 117** |
+| **bone length (mm)** | **3.50 ± 0.38** | — | — | **4.46 ± 0.75, p=0.01 (+27%)**, n=15 vs 34 |
+| proliferative chondrocytes/bone | 500 ± 413 | — | — | 1363 ± 393, p=0.04 |
+| **IGF-1 immunopositive cells/bone** | **270 ± 121** | — | — | **1015 ± 322, p=0.043** |
+⭐⭐ **AND THE READOUT ARITHMETIC IS THE POINT: THE ZONE ROSE 218% FOR A 27% LENGTH GAIN AND A 38% CELL-HEIGHT
+GAIN. THE ZONE NUMBER OVERSTATES THE LENGTH GAIN EIGHT-FOLD** — which is the quantitative form of R463/R471's
+rule and the reason a zone-only "hit" means almost nothing.
+⛔ **CORRECTION TO THE AGENT THAT FOUND IT, MADE AGAINST ITS HEADLINE: it reported a clean low-dose
+dissociation — zone +69% while cell height flat. The cell-height half is exact (13 → 13). The zone half is
+NOT statistically supported: the paper flags p<0.001 for MID AND HIGH DOSE ONLY, so the low-dose 159 → 269 is
+a numerical rise the authors do not claim.** Both readouts move at the same two doses. **The dissociation is a
+trend, not a demonstrated threshold.**
+⛔ **AND IT IS NOT A CANDIDATE: fetal, ex vivo, no vasculature, n=6 bones for every cell measure, a 38% effect
+against a 20.1% intra-assay CV, proliferation moved too so it is not a clean h_term result — and R468 already
+showed rESWT's IN VIVO length effect decays ~9-fold from 26 weeks to the paper's own primary endpoint at
+sacrifice.** Sixth proxy-to-length failure stands.
+
+⭐⭐⭐⭐ **TWO — THE CONVERGENCE, AND IT IS THE ROUND. THREE EXPERIMENTS, ONE TERM, THE RIGHT AXIS, ONE
+MECHANISM — AND THE MECHANISM IS GLYCOGEN AND RIBOSOME, NOT SWELLING.**
+· ⭐ **`wang1999` (PMID 10544181, FASEB J 1999), verified verbatim — the cleanest decomposition in the
+  literature: Igf1-null mice have NORMAL chondrocyte numbers and NORMAL proliferation, ColX and alkaline
+  phosphatase expression normal, and TERMINAL HYPERTROPHIC CHONDROCYTES REDUCED IN LINEAR DIMENSION BY 30%,
+  which the authors state accounts for MOST of their 35% growth deficit.**
+· ⭐⭐ **AND THE MECHANISM IS IN THE SAME ABSTRACT: GLUT4 SIGNIFICANTLY DECREASED · GSK3β HYPO-PHOSPHORYLATED ·
+  GLYCOGEN SIGNIFICANTLY DECREASED · RIBOSOMAL RNA REDUCED BY ALMOST 75%.** The authors' own framing is that
+  IGF-1 augments hypertrophy by **"insulin-like" anabolic actions** — a BIOSYNTHETIC account, not an osmotic one.
+· **`ramesh2020` raises the same term +38% with IGF-1 immunostaining up 3.8-fold in the same bones.**
+· **`hunziker1994` terminal cell heights 19.5 / 27.3 / 26.5 / 29.8 µm for saline / IGF-I / GH / normal
+  littermate** — already held, and the only one of the three that is a hypophysectomy restoration.
+→ ⭐⭐ **THREE INDEPENDENT SYSTEMS, ONE TERM MEASURED ON THE RIGHT AXIS, ALL NAMING IGF-1, AND TWO OF THE THREE
+ARE NOT DEFICIENCY MODELS.**
+⭐⭐⭐ **AND IT JOINS R445 FROM THE OPPOSITE SIDE, WHICH IS WHAT MAKES IT MORE THAN A FOURTH IGF PAPER. R445
+FOUND THE HUMAN PLATE CONCENTRATES GLYCOGEN *DESTRUCTION* — STBD1 6.57×, GAA 4.90×, PPP1R3G 4.93× — WHILE NOT
+CONCENTRATING SYNTHESIS (GYS1 0.35, GBE1 0.24), WITH GYG1 AT −0.695 cm ACROSS 6,915 CARRIERS AT P=2.89e-16,
+AND COULD NOT SAY WHAT THE DESTRUCTION WAS FOR. `wang1999` IS WHAT IT IS FOR: REMOVE IGF-1, GLYCOGEN FALLS,
+AND THE TERMINAL CELL LOSES 30% OF ITS HEIGHT.** R440 left glycogen as the one untested candidate for
+`farnum2002`'s 93%-unaccounted osmotic drive; this is an independent line into it from the anabolic side.
+⛔ **STEP 0 IS THE OBJECTION AND IT IS REAL: this is the GH/IGF-1 arm, priced at ≈0 attained height after
+mid-puberty.** The defence is R326's `yakar2016` split — circulating IGF-1 → RADIAL, local IGF-1 →
+LONGITUDINAL — plus IGFALS 0/14 in the human plate, i.e. the same argument that let R341 reopen STC2 and R477
+keep ADAM12-S. **It is a defence, not a clearance.**
+⚠ **NEW AND UNWORKED, VERIFIED THIS ROUND: `ppp1r3c2025` (PMID 40232792, PNAS 2025) — PPP1R3C/PTG integrates
+cholesterol metabolism and IDH in growth-plate chondrocytes by REGULATING INTRACELLULAR GLYCOGEN, and THE
+GROWTH-PLATE PHENOTYPE OF GENETIC CHOLESTEROL-BIOSYNTHESIS INHIBITION IS PARTIALLY RESCUED BY PPP1R3C
+OVEREXPRESSION.** Human and mouse, with data at PRJNA1210610. ⛔ **Its frame is enchondroma and IDH-mutant
+neoplasia, and this file already contraindicates AKG and records IDH-mutant enchondroma as a SHORT-stature
+syndrome — so the direction is not free.** Recorded as the first named genetic handle on chondrocyte glycogen
+content, not as a lever. `g_l5_485a`.
+
+⭐⭐ **THREE — AND THE READOUT RULE GETS ITS BIDIRECTIONAL DATASET, WHICH QUALIFIES R463 AGAINST ITSELF.**
+`stokes2002` (PMID 12377917, JBJS Am 2002), rat caudal vertebra, ~60% body weight for four weeks,
+verified verbatim:
+· **COMPRESSION — growth 52% of control (p=0.002); zone height 87%, mean chondrocyte height 85%, AMOUNT OF
+  INCREASE IN CELL HEIGHT 78%; all three significantly below control.**
+· ⭐ **DISTRACTION — growth 113% of control, and the zone height, mean chondrocyte height and amount of
+  increase in cell height DID NOT DIFFER SIGNIFICANTLY FROM CONTROL.**
+· ⛔ **AND THE CORRELATIONS RUN AGAINST THE STRONG FORM OF R463's RULE: zone height r²=0.29 (p=0.03) versus
+  cell height r²=0.23 (p=0.06) against growth rate. HERE THE ZONE READOUT TRACKS GROWTH SLIGHTLY BETTER THAN
+  THE CELL READOUT.** R463's rule must therefore stay in the narrow form R476 already gave it — **a zone-height
+  null is WEAK evidence, not NO evidence** — and it must not be extended to "zone height is uninformative."
+⭐ **What the paper adds that is new here: the percentage changes in cell dimensions were SMALLER than the
+percentage changes in growth rate, which the authors read as proliferation being modulated too. And the
+asymmetry is R426's at cell level — COMPRESSION MOVES THE TERM AND DISTRACTION DOES NOT.** A 113% growth rate
+with every cell measurement unchanged is also a fourth instance of length rising with the cell term flat.
+
+⭐⭐ **FOUR — A CEILING MECHANISM FOR THE TERM, AND IT PREDICTS THE ONE LEVER R438 FOUND AND COULD NOT
+INTERPRET.** `neurohr2019` (PMID 30739799, Cell 2019), verified verbatim: growing budding yeast **and primary
+mammalian cells** beyond a certain size impairs gene induction, cell-cycle progression and signalling, because
+large cells cannot scale nucleic-acid and protein biosynthesis with volume — **effectively CYTOPLASM DILUTION —
+and the loss of scaling beyond a critical size is DUE TO DNA BECOMING LIMITING.**
+⭐⭐ **A TERMINAL HYPERTROPHIC CHONDROCYTE ENLARGES 5–10× AND MUST KEEP SECRETING MATRIX THROUGHOUT. IF DNA
+BECOMES LIMITING AT A CRITICAL VOLUME, THAT IS A CANDIDATE MECHANISM FOR THE ONE THING R454 AND R480 BOTH
+HIT AND COULD NOT EXPLAIN: WHY MATRIX PER CELL IS CLAMPED ACROSS AN EIGHT-FOLD GROWTH-RATE RANGE
+(`hunziker1989`, `hunziker1994`) WHILE CELL VOLUME IS NOT.** And `wang1999`'s **rRNA down 75%** is the same
+variable measured in a growth plate.
+⭐⭐⭐ **AND IT CONVERTS R438's 42-YEAR-OLD OBSERVATION FROM A CURIOSITY INTO A PREDICTION. `kusuzaki1984`
+resolved BINUCLEAR AND MONONUCLEAR TETRAPLOID CELLS in a growing RAT epiphyseal plate by cytofluorometry;
+`erenpreisa1999` found polyploid metaphases and 15–30% tetraploid dark chondrocytes in chick. Both descriptive,
+both uncited in this context, and R438 could not say what ploidy was FOR. Neurohr says what it would be for:
+RAISING DNA CONTENT RAISES THE BIOSYNTHETIC CEILING THAT SETS HOW LARGE A CELL CAN GET AND STILL FUNCTION.**
+⛔ **Grade E and stated as such: yeast and primary mammalian cells, not chondrocytes; no ploidy manipulation has
+ever been performed in a growth plate in any species; and `(polyploid* OR ploidy OR endoreduplication) AND
+"growth plate" AND chondrocyte AND hypertroph*` still returns ZERO.** `g_l5_437a` restated with a mechanism.
+
+⛔ **FIVE — TWO AGENT CLAIMS CHECKED AND CORRECTED IN THE MAIN LOOP, WHICH IS WHY AGENT RETURNS ARE VERIFIED
+BEFORE THEY ARE WRITTEN.**
+· ⛔ **"A SECOND DISTINCT `breur1997` (PMID 9351885)" IS FALSE — PMID 9351885 IS `breur1997`**, already in this
+  bibliography and already the source of R470's four-plate matrix-per-cell table. The duplicate check fired.
+  ⚠ **But re-reading its abstract does qualify R470's framing: verbatim, "WITHIN AGE GROUPS, THE MATRIX VOLUME
+  PER CELL INCREASED WITH INCREASING GROWTH RATES", and the authors conclude the matrix volume produced per
+  cell "may be tightly regulated."** R470 recorded it as "a SITE property, not a RATE property." Both describe
+  the same data — site sets rate — **but the paper's own words tie it to RATE, and R480's elevation argument
+  should be read against the paper's framing rather than ours.**
+· ⛔ **`sox9transduction2008` (PMID 18433381) — R480 CALLED IT "THE ONE DEMONSTRATION THAT PER-CELL MATRIX
+  CAPACITY IS RAISABLE AT ALL." THAT IS WRONG AND THE ABSTRACT SAYS SO: SOX9 EXPRESSION RAPIDLY FALLS DURING
+  MONOLAYER CULTURE OF ISOLATED CHONDROCYTES AND THIS TURNS OFF AGGRECAN — so transduction of PASSAGED
+  chondrocytes is a RESCUE OF DEDIFFERENTIATION. CORR-203 in a dish, not elevation above normal.**
+  ⭐ **What survives is the stronger half and R480 had it right: the expression of the CS glycosyltransferase
+  and sulfotransferase genes was UNAFFECTED, so the capacity rise must occur by indirect regulation of enzyme
+  ACTIVITY through protein translation or enzyme organisation. THE CONTROL POINT IS NOT THE ENZYMES** — which
+  is concordant with R461's finding that the Golgi module runs in ten minutes and is limited by acceptor and
+  donor supply rather than by enzyme levels.
+
+⭐ **SIX — AND THE MEASUREMENT THAT WOULD SETTLE THE WHOLE ARM IS NOW A RE-ANALYSIS RATHER THAN AN EXPERIMENT.**
+`gppro2026` (PMID 41836565, J Orthop Translat 2026, open access) — an automated pipeline that localises the
+growth plate on a whole-slide image, segments it with SAM2 and extracts **single-cell lacunar morphometry by
+differentiation stage**, at **3.6 s per section**, >95% end-to-end success, **90.28% chondrocyte identification
+accuracy and 94.76% macro-precision**, validated on **mouse, hamster AND rat** in both Safranin-O and H&E, and
+in its application arm it detects **aberrantly elongated pre-hypertrophic chondrocytes** in the hypertensive rat.
+⭐⭐ **THE STRUCTURAL NEGATIVE IT ACTS ON, EARNED BY QUERY: `"chondrocyte height" AND "chondrocyte width"`
+RETURNS ZERO PUBMED RECORDS, AND THE ONLY FOUR PAPERS PAIRING "cell height" WITH "cell width" IN CARTILAGE ARE
+ALL FROM ONE SPINAL-BIOMECHANICS GROUP. NO PHARMACOLOGICAL AGENT HAS EVER BEEN SCORED ON CELL HEIGHT VERSUS
+WIDTH, IN ANY SPECIES** — and separately, `Fgfr3 AND hypertrophic AND (cell size OR volume OR height OR shape)`
+returns **zero**, while **every CNP/vosoritide/NPR2 paper reports hypertrophic ZONE width and not one reports a
+cell dimension.** ⭐ **The instrument and the question have never met, and every agent this file cares about has
+archived histology.** ⚠ Two caveats to carry: the per-zone aspect-ratio values are **figure-only** and the paper
+publishes **no code-availability statement**; and per PMID 20473830 conventional fixation shrinks these cells,
+so archived material can only be compared within a matched fixation protocol. `g_l5_485b`.
+
+## 🧬🧬🧬 R485 — **AND THE RETINOID ARM: THE PAPER THAT CLOSED IT NEVER TESTED THE ENZYME THE PLATE ACTUALLY
+## CONCENTRATES, THE ONE FUNCTIONAL DEMONSTRATION OF ENDOGENOUS RA BRAKING HAS NEVER BEEN IN THIS FILE, AND
+## THE FREE-SUBTRACTION HALF IS DEFUSED BY A PAEDIATRIC MAXIMAL-USAGE PK STUDY.**
+
+⛔ **ONE — THREE OF R431's OWN QUOTED PURITY RATIOS ARE WRONG AND ONE IS THE OPPOSITE CALL.** Re-derived with
+R411's sex-corrected split, calibrators reproduced exactly (`atlas/tools/round485_retinoid_brake_panel.py`,
+`atlas/data/round485/retinoid_panel.json`):
+| gene | R431 quoted | **R485 measured** |
+|---|---|---|
+| **CRABP1** | 4.3× | ⛔ **0.59 — CONTAMINANT-LEANING, THE OPPOSITE CALL** |
+| CRABP2 | 7.6× | 1.64 |
+| CYP26A1 | 47.9× | 67.72× |
+| RARG | 1.08 | 0.95 |
+| ALDH1A2 / ALDH1A1 | 0.02 / 0.31 | 0.00 / 0.08 — confirmed |
+⭐⭐ **AND THE LOAD-BEARING OMISSION: ALDH1A3 IS 2.95× CARTILAGE-ENRICHED AT 24.5 CPM, 12/12 — A FULLY
+COMPETENT RA-SYNTHESISING ENZYME R431's PANEL DID NOT TEST** — alongside **RBP4 6.92× (376.9 CPM), RBP1 3.77×,
+STRA6 2.61×.** R431's premise was *the RA-synthesising enzymes are contamination, therefore the plate holds RA
+near zero, therefore RARγ is already unliganded, therefore an antagonist has nothing to add.* **That premise
+rests on a panel that omitted the one ALDH1A paralogue the plate concentrates — and BOTH synthesis AND
+clearance being enriched is the signature of a REGULATED SET POINT, not an absent ligand.**
+⚠ Also new: **FABP5 6.78× (141.3 CPM) against CRABP2 1.64× (2.36 CPM)** — the FABP5-dominant configuration
+routes RA to PPARβ/δ rather than to RAR, which is a second reason the receptor arm may be quieter than the
+ligand supply implies.
+
+⭐⭐ **TWO — AND THE FUNCTIONAL DEMONSTRATION HAS NEVER BEEN IN THIS BIBLIOGRAPHY.** `deluca2000` (PMID
+10614657, Endocrinology 2000;141:346-53, Baron lab), reached through `saxena2022`'s reference list: in fetal
+rat metatarsal culture RA inhibited growth by three mechanisms — decreased proliferation, **decreased matrix
+synthesis measured as ³⁵SO₄ incorporation into GAGs**, and decreased cell hypertrophy — **and IN THE ABSENCE OF
+EXOGENOUS RA AN RAR ANTAGONIST ACCELERATED BONE GROWTH, AS DID AN RA-SPECIFIC NEUTRALISING ANTIBODY.**
+⭐ **TWO INDEPENDENT AGENTS, IN A NORMAL SYSTEM, HITTING BOTH TERMS OF v(d) PLUS PROLIFERATION — AND
+`retinoic acid receptor antagonist AND longitudinal bone growth` RETURNS EXACTLY ONE PAPER IN ALL OF PUBMED.
+IT IS THIS ONE, AND NOBODY HAS FOLLOWED IT UP IN 26 YEARS.**
+⛔ **THE STANDING CONFLICT, RECORDED NOT RESOLVED: `koyama2021`'s CD2665 monotherapy TIBIA null in vivo (R261,
+R431) against this ex vivo metatarsal positive.** Three candidate reconciliations, none tested: **compound
+class** (`le2019a` shows CD2665 PRESERVES the SMRT corepressor state while a neutralising antibody removes the
+ligand outright) · **bone** (`saxena2022` independently proposes the RA brake is metatarsal-specific) ·
+**system and age** (fetal explant versus juvenile in vivo). ⛔ Closed access, `is_oa: False` — the magnitudes
+are an operator ask.
+
+⭐ **THREE — `saxena2022` (PMID 34793695) READ IN FULL, HELD AS `primary_abstract_only` SINCE 2026-08-05 WITH
+ZERO LEDGER PRESENCE.** `Prrx1-Cre; Rosa26-LSL-Shox2`: **metacarpals +23.6% and metatarsals +9.1% at eight
+weeks, normalised to skull length which was unaffected, INDISTINGUISHABLE AT BIRTH** — a postnatally-accruing
+gain that passes CORR-299 outright. Its de-repression set: **CRABP1 +10.6-fold (padj 1.5e-92, perichondrium),
+GDF10/BMP3B −9.3-fold (padj 1.3e-83, proliferative zone), MAB21L2 −16.8-fold**, the last giving a **1.9%
+shorter humerus (p=0.0221)** on chick misexpression.
+⛔ **AND THE COST IS IN THE SAME FIGURE AND DISQUALIFIES IT FOR STATURE: Shox2 misexpression has a MILD
+SHORTENING EFFECT ON PROXIMAL LIMB ELEMENTS. DISTAL UP, PROXIMAL DOWN — and the proximal elements are what
+carry height, while metacarpals and metatarsals contribute nothing to it.**
+✓ Both de-repression genes pass CORR-327 in human tissue: **MAB21L2 5.81× (5.35 CPM, 12/12) and GDF10 3.80×
+(6.06 CPM, 11/12)**, both above the ACAN benchmark. ⛔ But **Gdf10-null body length is −0.581 at p=0.0400 — the
+wrong direction** — and Crabp1-null is −0.803 at p=0.0212, which is concordant with the jerboa direction.
+⭐ **SHOX2, GDF10/BMP3B, MAB21L2, HOXB13 and GDF11 all had ZERO atlas coverage anywhere before this round.**
+⚠ **GDF11 is the one worth naming twice: het +0.950 at p=0.0133 — the RARE positive direction under CORR-329 —
+12/12 at 12.1 CPM in the human plate, not in the 207. ⛔ AND Acvr2b het is −0.481 and −2.429, so every
+obtainable ligand trap (luspatercept, sotatercept, bimagrumab, ACE-031) hits a receptor whose loss SHORTENS.**
+A CORR-324-shaped ligand-versus-receptor split with opposite signs in one instrument.
+
+✅ **FOUR — AND THE FREE-SUBTRACTION HALF IS DEFUSED FOR THE TOPICAL CLASS, BY THE STRONGEST POSSIBLE MEMBER.**
+`trifarotene2020` (PMID 32017149): trifarotene is **RARγ-SELECTIVE** — the exact receptor this arm turns on —
+and its clinical pharmacology programme includes **TWO MAXIMAL-USAGE PHARMACOKINETIC TRIALS, ONE OF THEM IN
+PAEDIATRIC PATIENTS AGED 9–17 WITH MODERATE TO SEVERE ACNE, AT UP TO TWICE THE MARKET STRENGTH.** Result,
+verbatim in substance: **systemic absorption was generally UNQUANTIFIABLE in the target population.**
+→ ⭐ **THE MOST RECEPTOR-APPROPRIATE TOPICAL RETINOID, UNDER MAXIMISED USE, IN THE EXACT AGE BAND, DOES NOT
+REACH THE CIRCULATION. TOPICAL RETINOIDS COME OFF THE FREE-QUESTIONS LIST.** That is a measured negative and it
+runs against what I expected.
+⛔ **WHAT STAYS ON IT: ORAL ISOTRETINOIN, already quantified by R478 — −1.70 cm if initiated <13, −1.81 at 13,
+−0.95 at 14 and +0.51 at ≥15, every interval excluding zero — and SYSTEMIC VITAMIN A: retinol, beta-carotene
+and cod liver oil, which have ZERO atlas coverage and are the one arm that delivers ligand to the circulation.**
+`g_l12_485c`.
+
 ## 🧬📐🧬📐 R477 — **THE ADAM12 DIRECTION IS SIGNED AT LAST, AND THE METHOD IS NEW TO THIS FILE: CROSS THE
 ## eQTL AGAINST THE GWAS. RAISING ADAM12 IS TALLER — AND IT IS ENTIRELY LEG, WHICH WITHDRAWS R476'S OWN
 ## COMPARTMENT COORDINATE ONE ROUND AFTER I COMPUTED IT.**
