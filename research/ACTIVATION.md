@@ -1,6 +1,6 @@
 # Activating the boundary: the least-complex route — revision 2
 
-How to switch on a longitudinal growth interface in an adult, in situ. Third document in the series, after [THEORY.md](THEORY.md) (mechanics) and [COMPOUNDS.md](COMPOUNDS.md) (pharmacology). Built from 108 full texts read in full, notes in [notes/](notes/).
+How to switch on a longitudinal growth interface in an adult, in situ. Third document in the series, after [THEORY.md](THEORY.md) (mechanics) and [COMPOUNDS.md](COMPOUNDS.md) (pharmacology). Built from 109 full texts read in full, notes in [notes/](notes/).
 
 **Revision 2** follows a round of reading aimed specifically at strengthening, confirming and raising the ceiling of revision 1. It changes the emphasis, the molecular chain, the anatomical target and the arithmetic. §1 is the changelog; revision 1's core claim — that the apparatus exists and is held shut rather than absent — survives and is now much better supported.
 
@@ -632,6 +632,18 @@ Not a contradiction with §18.2; the same rule at two timepoints:
 
 **So the target is not "raise the positional value." It is "install a positional disparity inside a competent field and let the tissue fill it."** That is a different and more specific proposition than §18.3 implied, and it is what the ALM does surgically (graft opposite-axis tissue) and what RA does pharmacologically (rewrite a subpopulation, creating a gap against its neighbours).
 
+### 18.6b The complete rule: growth = positional disparity × permission
+
+[17975060](notes/17975060.md) supplies the missing half. **nAG**, a secreted Anterior Gradient protein, is the **ligand for Prod 1** — the positional determinant is also the growth receptor. nAG appears in distal nerve-sheath Schwann cells at day 5 and wound-epidermis glands after day 10, and **denervation abolishes both**. Electroporating nAG into a **denervated** newt stump rescued regeneration to digit stage in **half the animals, versus 0 of the vector controls**, without restoring innervation — a single protein substituting for the nerve. On blastemal cells (70% surface-Prod 1+) it drove S-phase entry **8.3 ± 3.3-fold** across 8 experiments.
+
+The authors state the division of labour: "PD identity is manifested by the quantitative gradation of Prod 1, and **nAG has no role in specifying that identity but acts through Prod 1 to promote cell division**." And the condition: "Blastemal growth is stimulated in experimental confrontations of cells differing in positional identity … and **this is always dependent on the presence of the nerve**."
+
+**Growth = positional disparity × permission signal. Neither alone.** Permission into a positionally uniform field gives proliferation without pattern — the ALM's "bump." Disparity without permission gives nothing. This sharpens §18.4: the two steps are not merely sequential; **the permission ligand signals through the positional determinant itself.**
+
+**A named mammalian candidate pair.** Human **AGR2** (secreted, the AG-family counterpart of nAG) complexes with **LYPD3/C4.4A** — a GPI-anchored protein with two Ly6/uPAR-type domains, the same superfamily as Prod 1. The authors' inference: "functional interactions between AG proteins and this class of small Cys-rich protein domains may be conserved." Both are real, well-characterised human genes; AGR2 is secreted and LYPD3 has antibodies against it. **This is the project's first named, molecularly specific mammalian candidate for "permission to build a structure."** It is an inference from domain relatedness, not a demonstrated mammalian function — and Prod 1 itself is salamander-specific, which is why [35241664](notes/35241664.md)'s conserved, membrane-bound **TIG1/RARRES1** matters more as the positional side.
+
+Also relevant: **Prod 1 is expressed by dermal fibroblasts and is retinoic-acid inducible.** The positional *receptor* level is RA-tunable, which puts the CYP26 route (§18.2) upstream of both halves of the rule.
+
 ### 18.7 Does the mammal have the substrate? Yes, with one hard limit
 
 [16895450](notes/16895450.md) — 47 primary fibroblast populations from **43 anatomic sites across the adult human body**, every culture passaged five or more times in identical medium to strip the environment away.
@@ -667,4 +679,4 @@ This is the most promising *mechanism* the project has found and it is further f
 
 ---
 
-*Built from 108 full texts read in full, notes in [notes/](notes/). Untested. The newest and least-settled section is §18. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
+*Built from 109 full texts read in full, notes in [notes/](notes/). Untested. The newest and least-settled section is §18. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
