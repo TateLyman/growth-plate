@@ -213,6 +213,8 @@ Added after reading [31026439](notes/31026439.md), [40494878](notes/40494878.md)
 
 **Two approved drugs enter with local-only efficacy.** Same paper, mouse wound-induced hair neogenesis: **plerixafor** (CXCR4 antagonist) topical **5.1-fold** (8.1 ± 3.2 → 41.6 ± 9.7) and **systemic i.p. inert** (7.3 ± 3.0 → 10.3 ± 2.6); CSF1R inhibition **2.8-fold**. The local/systemic dissociation is explicit and is the delivery lesson for anything in this class. The endpoint is hair follicles, not length.
 
+**A new constraint on every candidate in this document: SOX9 must not fall.** [36870529](notes/36870529.md) drove the whole-body GH set-point in mice and got hypertrophic *markers* in a disintegrating template — COLX and RUNX2 up with **SOX9 significantly down**, matrix loss, subchondral BMD down, osteophytes, **ectopic chondrogenesis in 100% of animals**, and measurable pain from three months. SOX9 is identified there as the factor "required for protecting the AC from degradation." COLX-up is therefore not a success criterion on its own: COLX up with SOX9 down is the osteoarthritic conversion signature, not the growth programme. **This also kills the GH/acromegaly route as a cartilage-growth lever** — with the honest caveat that the model has open plates and grew 15–19% longer, and the human radiographic literature (joint thickening is *reversible*, and cured acromegaly shows osteophytes *without* joint-space narrowing) points the other way and is still unread.
+
 **What has not changed:** none of this is post-closure in a mammal. Every §18 result requires a blastema, and the one mammalian contribution was dead matrix donated into an axolotl. §8 below applies to this section specifically.
 
 ## 8. What I will not write, and why

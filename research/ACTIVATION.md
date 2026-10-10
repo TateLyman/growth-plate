@@ -1,6 +1,6 @@
 # Activating the boundary: the least-complex route — revision 2
 
-How to switch on a longitudinal growth interface in an adult, in situ. Third document in the series, after [THEORY.md](THEORY.md) (mechanics) and [COMPOUNDS.md](COMPOUNDS.md) (pharmacology). Built from 109 full texts read in full, notes in [notes/](notes/).
+How to switch on a longitudinal growth interface in an adult, in situ. Third document in the series, after [THEORY.md](THEORY.md) (mechanics) and [COMPOUNDS.md](COMPOUNDS.md) (pharmacology). Built from 110 full texts read in full, notes in [notes/](notes/).
 
 **Revision 2** follows a round of reading aimed specifically at strengthening, confirming and raising the ceiling of revision 1. It changes the emphasis, the molecular chain, the anatomical target and the arithmetic. §1 is the changelog; revision 1's core claim — that the apparatus exists and is held shut rather than absent — survives and is now much better supported.
 
@@ -679,4 +679,4 @@ This is the most promising *mechanism* the project has found and it is further f
 
 ---
 
-*Built from 109 full texts read in full, notes in [notes/](notes/). Untested. The newest and least-settled section is §18. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
+*Built from 110 full texts read in full, notes in [notes/](notes/). Untested. The newest and least-settled section is §18. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
