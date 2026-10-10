@@ -1,6 +1,8 @@
 # Longitudinal bone growth after growth-plate fusion: a mechanical theory
 
-**Status:** a hypothesis built from 66 full texts I read myself (notes in [`notes/`](notes/), one file per PMID). It has **not** been tested. Every claim below is tagged with the PMID it rests on. Where I go beyond the data, I say so.
+**Status:** a hypothesis built from full texts I read myself (notes in [`notes/`](notes/), one file per PMID — 66 at the time this document was written, 84 across the project). It has **not** been tested. Every claim below is tagged with the PMID it rests on. Where I go beyond the data, I say so.
+
+**Companion document:** [`COMPOUNDS.md`](COMPOUNDS.md) covers the pharmacological route — which existing agents touch which node, what each produced, and what kills each. Read together, the two documents converge rather than compete: the compound literature's central switch (YAP/TAZ) is a mechanotransduction node, FOP progenitors reach it by *misreading tissue stiffness*, and Sirt1 activation opens Piezo1 even when its force-transduction residues are mutated. That last result matters for this document specifically: it is a way to deliver the mechanical signal where the stiffness contrast of a fused diaphysis (§0.1) will not transmit it.
 
 ---
 

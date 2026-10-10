@@ -39,6 +39,41 @@ These test the weakest links: whether the adult articular front can be pushed in
 
 Already read in full after downloading them myself (no need to send): Xie 2020 eLife, Albro 2012, Gardner 2017, Decker 2017, Kozhemyakina 2015, Debnath 2018, Intema 2011 (KJD), Ogawa 2014, Solem 2011.
 
+## Tier 0b: needed to confirm or kill the compound route ([COMPOUNDS.md](COMPOUNDS.md))
+
+These are the primaries behind the compound-phase claims. The top three are the ones most likely to change the answer.
+
+| PMID | Year | Paper | DOI / link | Which link it tests |
+|---|---|---|---|---|
+| 30042178 | 2018 | **Lin28a overexpression reveals the role of Erk signaling in articular cartilage development** | **PMC-free** PMC6110150 | **The one reported case of a molecular input making articular cartilage thicker. Erk1/2 as the thickness-setting pathway; constitutively active Kras mimics it. Abstract says thickness is set embryonically — need the full text to see whether postnatal induction was tried.** |
+| — | — | **The Lin28a OA paper cited as ref 52 of [41786976](notes/41786976.md): Lin28a restores chondrocyte stemness (Nanog-high) and *increases osteophyte volume*** | ask me / I'll chase the citation | **The only observation of adult articular cartilage making new bony outgrowth under a defined factor. Highest-priority unread lead of the compound phase.** |
+| — | — | **Fig. S2 of [40999873](notes/40999873.md) in full (supplementary): growth-plate width, endochondral ossification and osteoclast number in chondrocyte-specific Piezo1 cKO** | 10.1002/advs.202510103 suppl. | **The only direct growth-plate result for the Piezo1 lever, and it is in supplementary material.** |
+| 23937304 | 2014 | Thyroid hormone-induced hypertrophy in MSC chondrogenesis is mediated by BMP-4 | **PMC-free** PMC3875213 | T3 → hypertrophy in *adult* MSC chondrogenesis, and whether BMP-4 is the obligate intermediate |
+| 23940373 | 2013 | let-7 and miR-140 coordinately regulate skeletal development | **PMC-free** PMC3761644 | let-7 suppression reduces chondrocyte proliferation; let-7 is the Lin28a target. The proliferation lever nothing else supplies. |
+| — | 2012 | Johnson et al., kartogenin: filamin A / CBFβ–RUNX1 mechanism + in vivo OA data (Science) | Science 336:717 | Mechanism and in vivo dose for [33467170](notes/33467170.md) |
+| — | — | Chakkalakal 2016: palovarotene *ameliorating* skeletal growth deficits in Prrx1-Cre FOP mice | ask me | Direct contradiction of [30226468](notes/30226468.md) |
+| — | 2018 | Inubushi 2018: palovarotene 3–6 wk vs 2–6 wk dosing window, tibia/femur length and distal femoral plate | ask me | Whether the plate toxicity is window- or dose-driven |
+| — | — | Noyes 2016; Vahlquist 1992; DiGiovanna 2001: **human** retinoid skeletal toxicity and premature physeal closure | ask me | Human evidence that a drug closes plates — and therefore the mirror hypothesis (RARγ antagonism to delay closure) |
+| — | — | Refs 67, 68 of [38672135](notes/38672135.md): *Acvr1*^R206H cells sensing soft substrates as stiff; RhoA / pCofilin / pMLC2 / YAP-TAZ | ask me | The mechanotransduction bridge between THEORY.md and COMPOUNDS.md |
+| — | — | Ref 69 of [38672135](notes/38672135.md): *Yap* deletion ablates HO in *Acvr1*^Q207D mice | ask me | YAP as the required effector for ectopic endochondral bone |
+| 17786946 | 2008 | Osmotic sensitivity of rat growth plate chondrocytes in situ: mechanisms of hypertrophy | 10.1002/jcp.21249 | How hypertrophic swelling — the actual length actuator — is driven, and whether it is osmotically druggable |
+| — | — | Refs 6, 8, 9, 10 of [35844802](notes/35844802.md): the interfragmentary **strain window** for PSC-mediated callus formation and cartilage-to-bone conversion | ask me | Quantitative strain dosing for PCAC |
+| — | — | Refs 10–14 of [38664820](notes/38664820.md): upregulated thyroid signalling makes cartilage prone to OA **on mechanical loading** | ask me | The T3 × load interaction — exactly the combination a staged program would create |
+| — | — | Ref 15 of [38664820](notes/38664820.md): the original T3 human ex vivo osteochondral explant model | ask me | Primary method paper |
+| — | — | Ref 96 of [40118845](notes/40118845.md): primary human embryonic long-bone scRNA-seq at PCW 8.0 | ask me | The human resting-zone reference signature |
+| — | — | Refs 81, 82 of [40118845](notes/40118845.md): the embryonic long-bone growth rates the 0.61 mm/week was compared against | ask me | Whether the 0.61 mm/week comparison is fair |
+| — | — | Ref 24 of [40118845](notes/40118845.md): hPSC-derived **limb-bud-like** cells | ask me | The appendicular counterpart the sclerotome papers lack |
+| 16479568 | — | Chondrocyte injection in distraction epiphysiolysis | ask me | Cells + distraction, the closest existing combined approach |
+| 7697285 | — | Epiphyseal plate transplantation: historical review | ask me | What was already tried and why it failed |
+| 26621707 | — | (PMC stub — abstract only in this container) | ask me | — |
+| — | — | **Hochberg et al., FORWARD primary publication (JAMA 2019): prespecified 2-year total femorotibial cartilage thickness under sprifermin, in absolute mm** | ask me | The adult-human cartilage-thickness ceiling as a single number rather than a sum score ([26138203](notes/26138203.md)) |
+| — | — | Lohmander et al.: the parent sprifermin phase 2 RCT (total and lateral femorotibial thickness, dose response) | ask me | Same |
+| — | — | Ref 13 of [26309783](notes/26309783.md) (Li et al.): chitin scaffold + precultured MSCs — **significant decrease in angular deformation AND longitudinal discrepancy** | ask me | The dimensional result the PLGA pilot failed to reproduce |
+| — | — | Refs 14–16 of [26309783](notes/26309783.md): sodium hyaluronate/collagen and agarose scaffolds where **limb length improved** | ask me | The only other scaffold results reporting a length outcome |
+| — | — | Refs 169–175 of [37483459](notes/37483459.md): zonal stiffness/permeability measurements and the mechanoregulatory gradient | ask me | **Needed to resolve the hydrostatic-vs-shear contradiction between [37483459](notes/37483459.md) and [19540500](notes/19540500.md)/[23009361](notes/23009361.md)** |
+| — | — | Dey et al. 2016: the Mx1+/Scx+ tissue-resident progenitors that form the cartilaginous anlagen in FOP | ask me | Cell-identity primary behind [28629737](notes/28629737.md) |
+| — | — | Any study measuring **bone length or longitudinal growth rate** after Yoda1, SRT2104, dasatinib, kartogenin or T3 | ask me | **The missing experiment for every compound lever. None exists in anything I have read.** |
+
 ## Tier 1: decisive for a post-fusion mechanical mechanism
 
 | PMID | Year | Paper | DOI / link | Why it matters |
