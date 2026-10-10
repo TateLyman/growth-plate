@@ -51,6 +51,19 @@ Added after the volume-actuator phase. Everything in [ACTIVATION.md](ACTIVATION.
 | — | — | Ref 17 of [36719517](notes/36719517.md): **non-surgical decompression increasing disc height and reducing pain in elderly humans** | ask me | The only existing non-surgical adult height-changing intervention in the corpus |
 | 28798204 | 2017 | Imaging IGF-I uptake in growth plate cartilage using in vivo multiphoton microscopy | **PMC-free** PMC5792102 | How IGF-1 actually reaches the cells that need it for phase 3 |
 
+| — | — | **Ref 24 of [29280739](notes/29280739.md): hSTC1 / hSTC2 transgenic mice with "severe impairment in post-natal, linear *axial* skeletal growth"** | ask me | **The only explicitly axial statement about the IGF-bioavailability gate; [ACTIVATION.md](ACTIVATION.md) §13.3c rests on it** |
+| 26902202 | 2016 | Dauber et al., Mutations in *PAPPA2* cause short stature due to low IGF-I availability (EMBO Mol Med) | **PMC-free** PMC4818753 | The human primary for the proteolytic half of the gate; fetched, full read pending |
+| 20351075 | 2010 | **Longevity and age-related pathology of mice deficient in PAPP-A** (J Gerontol A) | **PMC-free** PMC2869530 | **The growth-versus-lifespan trade-off on the same gene** |
+| 36542300 | 2023 | Recapitulation of anti-ageing phenotypes by global deletion of PAPP-A in mice (GeroScience) | **PMC-free** PMC9886707 | Same |
+| 37450557 | 2024 | **Epigenetic Causes of Overgrowth Syndromes** (JCEM) | **PMC-free** PMC11032252 | **The review of the whole MDEM tall-stature class — *NSD1*, *SETD2*, *EZH2*, *EED*, *SUZ12*, *DNMT3A*, *HIST1H1E*. An entire class of human overgrowth disorders my corpus had missed** |
+| 29244146 | 2018 | Weaver *EZH2* mutations cause partial loss of H3K27 methyltransferase activity (JCEM) | **PMC-free** PMC6276576 | The dose-dependence of the human variants |
+| 18590419 | 2008 | **Fine structure of cartilage canal and vascular buds in the rabbit vertebral endplate** (J Neurosurg Spine) | 10.3171/SPI/2008/9/7/096 | **The vertebral endplate's own conversion-front anatomy** |
+| 4095820 | 1985 | Studies of the lumbar vertebral end-plate region in the pig (Ups J Med Sci) | 10.3109/03009738509178481 | Endplate structure |
+| — | — | **Intradiscal pressure, its diurnal variation, and the stress state actually experienced by the vertebral endplate cartilage** | ask me | **[ACTIVATION.md](ACTIVATION.md) §13.3b — the hydrostatic-shielding argument for the spine depends entirely on this and I have read none of it** |
+| 40323130 | 2025 | The *TBXT* rs2305089 SNP links the benign notochordal cell tumour and chordoma (J Pathol) | **PMC-free** PMC12146811 | Fetched; abstract read, body unread |
+| — | — | A **GSK-J4 / selective KDM6B-inhibitor arm in fetal metatarsal culture**, with hypertrophic cell size and elongation as endpoints | nobody has run it | **[ACTIVATION.md](ACTIVATION.md) §14.7 — the single cheapest test of the §3b mechanism** |
+| — | — | Anything measuring **PAPP-A, PAPP-A2, STC1, STC2, IGFBP3/5 or H3K27me3 at the *IGFBP3/5* promoters in adult human articular cartilage or vertebral endplate** | nobody has done it | §14.8 |
+
 ## Tier 0: needed to confirm or kill the proposed mechanism ([THEORY.md](THEORY.md), [ACTIVATION.md](ACTIVATION.md))
 
 **The single most load-bearing item in this file is the adult tidemark advance rate** (7410471, 2124371, 9101369, 3446655, 893504). [ACTIVATION.md](ACTIVATION.md) §7 and §9 are hostage to it, and 9101369 (unweighting accelerates tidemark advancement) is currently a title I have not read. The biphasic fluid-load-support pair (10710186, 14614932) is next: it is the assumed mechanical shield for the hypertrophic cells.

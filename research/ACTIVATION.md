@@ -10,7 +10,9 @@ How to switch on a longitudinal growth interface in an adult, in situ. Third doc
 
 **Longitudinal growth rate in a postnatal mammal is set almost entirely by how large hypertrophic chondrocytes get, not by how many there are.** Four growth plates in one rat, at one moment, elongating at rates differing 3–7×, produce **the same ~10,500 new chondrocytes per day each**; what differs is hypertrophic cell volume, which ranges **4,000 → 20,000 µm³** and correlates with elongation rate at **r = 0.70**, while cell production correlates at r = 0.35, non-significantly ([18404738](notes/18404738.md)). Across an eight-fold range of growth rate, **cellular enlargement contributes 59% of axial growth, matrix synthesis 32% and proliferation 9%**, and accelerated growth is "almost exclusively" enlargement ([32852849](notes/32852849.md)). That enlargement is an **osmotic pump with named parts**: IGF-1 licenses its final phase, **NKCC1 (SLC12A2)** traffics to the plasma membrane immediately before the cell swells, **AE3 (SLC4A3)** rises 14-fold alongside it, and blocking NKCC1 with bumetanide removes **35% of longitudinal growth while leaving hypertrophic cell number unchanged to three significant figures** ([20200963](notes/20200963.md), [23485973](notes/23485973.md)). **Adult articular deep-zone chondrocytes are stuck at roughly 1,750 µm³ — they have finished true hypertrophy and never begun swelling, leaving phases 2 and 3 entirely unused** (§4). One pathway — **ERK** — simultaneously sets progenitor proliferation in the groove of Ranvier, Ihh/PTHrP output, cell size, hypertrophic-zone depth and the gate to terminal conversion, and it has existing drugs on both sides ([25003010](notes/25003010.md), [24875294](notes/24875294.md)). And the thing being overcome is not exhaustion but **active restraint**: the perichondrium is a maintained anti-chondrogenic border made of heparan sulfate, and the fastest-elongating mammalian bone known gets that way partly by **releasing brakes** — 10.6× more retinoic-acid-sequestering Crabp1, 9.3× less of the RA-induced inhibitor Gdf10 ([23821404](notes/23821404.md), [34793695](notes/34793695.md)).
 
-**So the revised answer: do not try to make more cells, and do not try to build a plate. Release the brake on an existing border, let the resident progenitors of the perichondrial rim form the interface where the gradient already points along the bone's axis, and then drive the volume actuator through phases 2 and 3 while cycling ERK to convert the bottom of the stack to bone.**
+**And the gate on that actuator is the thing I had missed** (§3b): hypertrophic cell size is set by **local free IGF availability**, which is set by **IGFBP abundance** — *Igfbp3* and *Igfbp5* are **direct H3K27me3 targets** whose derepression shrinks hypertrophic cells, and whose exogenous addition shrinks them just as much, while high IGF-1 overrides the whole thing ([27897169](notes/27897169.md)) — and by **IGFBP proteolysis**, carried out by **PAPP-A and PAPP-A2 and inhibited by stanniocalcin-2**, where **partial loss of *STC2* adds +1.9 cm to adult human height, the largest effect of any of 83 rare coding variants on stature**, with the effect strengthening postnatally and the overexpression phenotype being specifically **axial** ([29280739](notes/29280739.md)).
+
+**So the revised answer: do not try to make more cells, and do not try to build a plate. Release the brake on an existing border, let the resident progenitors of the perichondrial rim form the interface where the gradient already points along the bone's axis, drive the volume actuator through phases 2 and 3 by opening the IGF gate locally, and cycle ERK to convert the bottom of the stack to bone.** The best site for it is probably the **vertebral endplate**, not the knee (§13.2–13.3c), and the honest price of the IGF gate is that it is a validated tumour-promoting axis whose loss makes mice long-lived (§3b).
 
 ---
 
@@ -28,6 +30,9 @@ How to switch on a longitudinal growth interface in an adult, in situ. Third doc
 | The apparatus is "frozen" | **It is actively braked.** Two independent literatures: an HS anti-chondrogenic border, and de-repression of latent growth potential | [23821404](notes/23821404.md), [34793695](notes/34793695.md) |
 | No human evidence of adult longitudinal growth from such an interface | **Two human proofs**: exostoses keep growing after plates close (no new ones form); and aromatase/ERα-deficient men grew into their fourth decade with radiographically open plates at 190–204 cm | [23821404](notes/23821404.md), [24485503](notes/24485503.md) |
 | Arithmetic over 4 articular surfaces per leg | **Add the axial skeleton: ~48 vertebral endplates, the last structures to close, contributing 100 mm of T5–L5 length in adolescence** | [34362001](notes/34362001.md), 16778695 |
+| The actuator's *regulated step* was "NKCC1 trafficking and phosphorylation", mechanism of licensing unstated | **§3b: the gate is local free IGF availability, set by IGFBP abundance (direct H3K27me3/PRC2 targets) and IGFBP proteolysis (PAPP-A/PAPP-A2, inhibited by STC1/STC2). Partial loss of STC2 = +1.9 cm of adult human height, the largest rare-coding-variant effect known** | [27897169](notes/27897169.md), [29280739](notes/29280739.md), [24572990](notes/24572990.md) |
+| T3 and dasatinib were marginal leads | **Both were already raising free local IGF in adult human tissue** — T3 raises *PAPPA* 2.7–3.4× in 60–76-year-old cartilage; dasatinib raises *IGF1* and lowers *IGFBP1/3*. Neither paper measured cell volume | [38664820](notes/38664820.md), [39402753](notes/39402753.md) |
+| — | **The epigenetic lever points the opposite way from the obvious one.** PRC2 loss costs length in chondrocytes and adds appositional width in osteoblasts; the Weaver mouse has normal bone length. So EZH2 inhibitors are wrong-signed, and **KDM6 inhibition is the untested correctly-signed lever** | [37425751](notes/37425751.md), [27897169](notes/27897169.md) |
 | — | **New dead end: looking for an animal whose endochondral plates never stop.** Zebrafish grow indeterminately for life and still arrest their endochondral zones; intramembranous is what stays active | [32852849](notes/32852849.md) |
 
 ---
@@ -66,6 +71,47 @@ Three independent lines, one conclusion.
 | Anti-lever | **Loop diuretics.** Furosemide shortened rat tibiae in vivo at normal electrolytes; bumetanide is the tool that defined the mechanism | [20200963](notes/20200963.md) |
 
 **Every step has a name. Two have existing drugs pointing the wrong way (loop diuretics, corticosteroids), one has a licensed ligand pointing the right way (IGF-1 and its binding-protein regulation), and the regulated step — NKCC1 trafficking and phosphorylation — is the class of target small molecules reach well and that nobody in this literature has tried to push.**
+
+---
+
+## 3b. The gate on the actuator — the mechanism I had missed
+
+Revision 2 named the actuator (§3) but not what opens it. **It is local free IGF availability at the hypertrophic chondrocyte, and it has exactly two controls: how much IGF-binding protein is present, and how fast that binding protein is cleaved.** Both are named, both have human genetic validation, and both have drugs — pointing the wrong way.
+
+**Control 1 — IGFBP abundance, under direct epigenetic repression.** In chondrocyte-specific *Ezh1/Ezh2* loss ([27897169](notes/27897169.md)):
+- Terminal hypertrophic cell size fell. **Neither *Igf1* nor *Igf2*, nor *Igf1r* nor *Igf2r*, changed.** (*Igf2*, not *Igf1*, is the predominant ligand in the hypertrophic zone.)
+- **Only *Igfbp3* and *Igfbp5* rose, specifically in the hypertrophic zone, and ChIP put H3K27me3 directly on both promoters in wild-type chondrocytes and nowhere on *Ihh* or *ColX*.**
+- The EZH1/2 inhibitor **UNC1999** raised the IGFBPs and markedly shrank hypertrophic cells in monolayer, pellet and fetal metatarsal culture.
+- **Exogenous IGFBP3 or IGFBP5 alone shrank hypertrophic cells as much as UNC1999, with no additive effect.** And **high IGF-1 completely overrode UNC1999** — equal cell size with IGF-1 alone or IGF-1 + UNC1999. The mechanism is pure ligand sequestration.
+- **IGF-1 did not significantly affect proliferation.** A fifth independent dissociation of *h_max* from *n*.
+- IGF-1 alone **significantly increased bone growth** in fetal metatarsal culture.
+
+**Control 2 — IGFBP proteolysis, with the largest rare-variant effect on human height sitting on it** ([29280739](notes/29280739.md)):
+- **PAPP-A** cleaves IGFBP-4 **at the cell surface and only when IGF is already bound** — a substrate-gated, autocrine/paracrine *local* amplifier ([24572990](notes/24572990.md)). **PAPP-A2** cleaves **IGFBP-3 and IGFBP-5** — the two the hypertrophic zone uses.
+- **STC2** covalently binds and inactivates both; **STC1** inhibits PAPP-A.
+- **Of 83 rare and low-frequency coding variants associated with adult human height, the largest effect was in *STC2*: p.Arg44Leu gives +1.9 cm (P = 5.7×10⁻¹⁵) and p.Met86Ile +0.9 cm**, both with demonstrated partial loss of PAPP-A binding and of PAPP-A inhibition.
+- The mirror: ***PAPPA2* loss of function gives −2.8 to −3.8 SD height with *elevated* total IGF-1, IGFBP-3, IGFBP-5 and ALS but low free IGF-1**, and no pubertal growth spurt. rhIGF-1 took height velocity from **3.7 → 7.6** and **3.0 → 6.2 cm/year**.
+- **Mice: *Stc2* KO born 15% heavier, with the growth-promoting effect "persisted or became more apparent in post-natal growth"; *Pappa* KO and hSTC1/hSTC2 transgenics 30–40% lighter; and hSTC1/hSTC2 transgenics showed "severe impairment in post-natal, linear *axial* skeletal growth."**
+- *PAPPA*, *PAPPA2*, *STC2* and *IGFBP4* are all in genome-wide-significant height loci.
+
+**Why this is the answer rather than one more lever.** It is the gate on the term that carries 59% of axial growth and ~100% of growth modulation (§2). It is **local** — a surface protease releasing ligand where it sits, which is precisely the property every systemic idea in [COMPOUNDS.md](COMPOUNDS.md) lacks and which acromegaly's mandible-only phenotype indicts. It has **human genetic validation at ~2 cm per allele**. Its effect **strengthens postnatally**. And in the one explicitly axial observation in the corpus, the overexpression phenotype is **axial**.
+
+**And it explains two compound leads I under-rated, because I was scoring them against cell number.**
+- **T3 raises *PAPPA* 2.7–3.4-fold in adult human articular cartilage explants from 60–76-year-olds** ([38664820](notes/38664820.md)).
+- **Dasatinib raises *IGF1* while lowering *IGFBP1* and *IGFBP3* in adult human chondrocytes** ([39402753](notes/39402753.md)).
+**Both were already moving this exact node in adult human tissue. Neither paper measured hypertrophic cell volume, which is the endpoint that would have shown whether it mattered.**
+
+**The correctly-signed epigenetic lever is the opposite of the obvious one.** Weaver syndrome (EZH2 partial loss) is a human overgrowth disorder, which invites reaching for an EZH2 inhibitor. **Do not.** In chondrocytes, EZH1/2 loss *derepresses* IGFBP3/5 and *shrinks* hypertrophic cells; and the Weaver mouse has **normal femur, tibia and body length**, with its phenotype being raised cortical area and **periosteal/endosteal mineral apposition** — appositional width, not length — reversed by the KDM6A/6B inhibitor **GSK-J4** ([37425751](notes/37425751.md)). Two lineages, opposite signs, one mark: **PRC2 loss costs length in chondrocytes and adds width in osteoblasts.**
+> **Prediction, mine, untested: KDM6A/6B inhibition (GSK-J4 class) should deepen H3K27me3 at *Igfbp3/5*, lower IGFBP abundance, raise local free IGF and therefore increase hypertrophic cell volume.** The mirror-image arm of an experiment already run in the other direction. §14.7.
+
+**The dangers, since they were asked for directly.**
+- **PAPP-A is a validated oncology target *for inhibition*.** An anti-PAPP-A exosite antibody (Ki 135 pM) suppresses xenograft growth ([24572990](notes/24572990.md)). Raising PAPP-A activity means deliberately doing what that drug exists to prevent.
+- ***Pappa*-null mice are long-lived with reduced age-related pathology** (20351075, 36542300 — abstract-only here). **The growth direction and the longevity direction are opposite on the same gene.**
+- **Intracranial hypertension**: one of four rhIGF-1-treated PAPP-A2-deficient patients required discontinuation for severe headaches; resolved on withdrawal.
+- **hSTC2 overexpression caused 26–34% neonatal mortality in mice** — the axis is not benignly tunable in either direction.
+- **Insulin resistance, pre-diabetes and hypoglycaemia risk**; IGF-1 signals through insulin and hybrid receptors.
+- **STC1 also governs calcium and phosphate metabolism.**
+- And the standing objection: **the human +1.9 cm is a lifelong developmental effect in people whose plates were open. Nothing shows this axis does anything after closure.**
 
 ---
 
@@ -194,6 +240,8 @@ Two literatures that do not cite each other reach the same conclusion.
 
 Revision 1 said two inputs and put the mechanical one first. **Revision 2 keeps the mechanical input but demotes it from "six of seven jobs" to "the enabling envelope," and promotes the volume actuator to the central intervention.** The reason is §2: mechanics on an existing apparatus buys about +5% growth per 0.1 MPa ([23009361](notes/23009361.md)), whereas the volume term spans a 5-fold measured range.
 
+**Where input (2) now points.** Revision 2's §3b replaces "whatever raises NKCC1/AE3 membrane activity" with something specific: **raise local free IGF at the hypertrophic cell, by lowering IGFBP3/5 abundance or by raising IGFBP proteolysis.** The named handles are **PAPP-A2 activity**, **STC2 inhibition** (a secreted target, the most tractable class), **the H3K27me3 mark on *Igfbp3/5*** (and therefore KDM6 inhibition, §14.7), and the two agents already shown to move this node in adult human tissue — **T3** (*PAPPA* up 2.7–3.4×) and **dasatinib** (*IGF1* up, *IGFBP1/3* down). It also makes the preferred site the **vertebral endplate** rather than the knee, for the reasons in §13.3b.
+
 **One addition worth its complexity, unchanged from revision 1:** a single marrow-access or margin event at the start. The de novo literature says a signal without an injury does not initiate ([28629737](notes/28629737.md)), and in a primed adult the sufficient injury was **a 5 mm shallow skin cut** ([28645539](notes/28645539.md)).
 
 ---
@@ -221,6 +269,12 @@ Extrapolated to the full spine, ~24 mm/year at juvenile throughput — **compara
 
 **13.3 And the spine closes last.** Cervical vertebral body growth continues to **19–20 in males, 17–18 in females** (30945292, abstract only); ring apophyses reach 98% fusion only at 21, with several years of level-to-level heterogeneity ([34362001](notes/34362001.md)); and "**the spine continues to grow longer than the lower extremities… after the lower limb's growth has ceased**" (Sanders 2020, cited in [34362001](notes/34362001.md)). **If recency of closure predicts reactivability, the vertebral endplates are the best target in the adult skeleton, and they are also the most numerous.** This is the single clearest way to raise the ceiling, and it was absent from revision 1.
 
+**13.3b Why the spine is structurally the right site, not just the most numerous.** Hypertrophic chondrocytes **tolerate hydrostatic stress and die under principal compressive and deviatoric stress at ~0.023 MPa without shielding**, tolerating 25× more once shielded ([33063669](notes/33063669.md)); and the single measured adult-human cartilage-thickening intervention works by **removing contact stress while preserving fluid-pressure oscillation** ([21565898](notes/21565898.md)). **The vertebral endplate is the only growth cartilage in the body that faces a hydrostatically pressurised, diurnally cycling fluid chamber — the nucleus pulposus — instead of an articulating contact surface.** If that is right, the spine supplies Stage 4's shielding and Stage 5's cycling anatomically, free, at up to 48 surfaces, where a knee needs an external fixator to approximate it. **Caveat: this rests on intradiscal pressure and vertebral endplate anatomy papers I have not read** (18590419, 4095820, 21213210; 15296209 came back abstract-only), and it is the most important untested structural claim in revision 2.
+
+**13.3c And the axial bias of the IGF gate.** hSTC1 and hSTC2 transgenic mice showed "**severe impairment in post-natal, linear *axial* skeletal growth**" ([29280739](notes/29280739.md)) — the one explicitly axial statement about the §3b gate in the corpus. Its primary (their ref 24) is unread and is now a priority.
+
+**13.3d The seductive axial dead end, flagged so it is not chased twice.** **Brachyury (TBXT)+ notochordal-lineage cells persist in the adult human nucleus pulposus** at every age and degeneration grade, with a CA12+Gal3+T+CD24+ subpopulation identifiable by flow cytometry ([28473691](notes/28473691.md)) — and Brachyury is the master regulator of **posterior axial elongation**. Raising *TBXT* dose produces **benign notochordal cell tumours in adult vertebrae, which progress to chordoma** (40323130, abstract only). **So the adult axial skeleton does retain a proliferation-competent elongation-programme lineage — and its output is an intraosseous mass, not a longer vertebra.** The tailbud neuromesodermal progenitor pool that Brachyury actually elongates does not exist after embryogenesis. Note the pattern this completes, though: **heparan-sulfate dose → exostosis → chondrosarcoma; ERK-low in groove progenitors → enchondroma/osteochondroma → chondrosarcoma; TBXT dose → BNCT → chordoma.** Three lineages, three nodes, one shape: adult proliferative competence is retained, dose-gated by a single node, and its uncontrolled form is a tumour.
+
 **13.4 Combined, at 25% restored throughput: ~0.9 cm/year from both legs plus ~0.6 cm/year from the spine ≈ 1.5 cm/year.** At 50%: ~3 cm/year.
 
 **13.5 What the numbers rest on, and what could break them.** The 59/32/9 partition is cited, not read (8982136, Tier 00). The spine partition is an abstract. The adult tidemark advance rate is still unread (Tier 0). The §4 headroom calculation multiplies two measurements from different species. **No one has measured bone length under any agent named in this document.** And the independent brake on all of it: endochondral growth-zone arrest is conserved in mammals, birds and even an indeterminately-growing teleost ([32852849](notes/32852849.md)) — this is working against something deep.
@@ -243,6 +297,12 @@ Extrapolated to the full spine, ~24 mm/year at juvenile throughput — **compara
 
 **14.6 The axial site.** Everything in 14.1–14.5 at a **vertebral endplate** rather than a limb, given §13.2–13.3. Nobody in this corpus has looked at the adult vertebral endplate as a growth target.
 
+**14.7 Does KDM6 inhibition enlarge hypertrophic chondrocytes?** The mirror of an arm already run. [27897169](notes/27897169.md) applied the EZH1/2 inhibitor UNC1999 to fetal metatarsal culture and got raised *Igfbp3/5* and **shrunken** hypertrophic cells. Run **GSK-J4** (or a selective KDM6B inhibitor) in the same system, with hypertrophic cell size and metatarsal elongation as primary endpoints and *Igfbp3/5* and H3K27me3 ChIP as mechanism. **Prediction: deeper H3K27me3 at *Igfbp3/5* → less IGFBP → more free IGF → larger hypertrophic cells → faster elongation. Kill criterion: no increase in cell size or elongation.** Cheap, fast, and it tests §3b's whole logic in one experiment. Watch the confound that GSK-J4 also suppresses osteoblast apposition ([37425751](notes/37425751.md)).
+
+**14.8 Does the §3b gate exist in adult tissue, and does it have an axial bias?** Measure **PAPP-A, PAPP-A2, STC1, STC2, IGFBP3, IGFBP5 and H3K27me3 at the *IGFBP3/5* promoters** in adult human articular cartilage deep zone and in adult human vertebral endplate cartilage, side by side. **Nobody has done this.** Then: STC2 neutralisation or PAPP-A2 supplementation on adult osteochondral and vertebral-endplate explants, with hypertrophic cell volume as the endpoint. **Kill criterion: the gate's components are absent from adult tissue, or free IGF cannot be raised locally.** If the axial tissue shows more STC2 or more IGFBP than the appendicular, that would independently support §13.3c.
+
+**14.9 Is the vertebral endplate's stress state what §13.3b assumes?** Read the intradiscal-pressure and endplate primaries first. Then measure, in a large animal, what fraction of axial load arrives at the endplate cartilage as interstitial fluid pressure versus matrix compression, across the diurnal cycle. **Kill criterion: the endplate sees principal compressive stress comparable to an articular surface** → the anatomical-shielding argument for the spine collapses and the site advantage reduces to surface count.
+
 **Positive control throughout:** the **adult mandibular condyle**, which runs this apparatus, never fuses, and is mechanically reactivatable in adult primates ([THEORY.md](THEORY.md) §2, §7).
 
 ---
@@ -264,6 +324,15 @@ Extrapolated to the full spine, ~24 mm/year at juvenile throughput — **compara
 - **Shox2 and the jerboa phenotype are developmental**, driven from limb-bud stages. Nothing shows a postnatal or adult induction works, and genetic Shox2 misexpression *shortens* proximal elements.
 - **Crabp1 and Gdf10 knockouts had no detected phenotype** (bone lengths not precisely measured). The de-repression circuit is assembled, not demonstrated.
 - **NKCC1-null mice reach normal adult size.** The system is redundant, which is consistent with bumetanide capturing only 35% and needing DIDS to reach 80%.
+
+- **§3b's human validation is developmental, not post-closure.** +1.9 cm from an *STC2* variant accrued over a childhood with open plates. **No evidence exists that manipulating IGF bioavailability after epiphyseal closure does anything at all.** This is the same objection that applies to aromatase deficiency, and it applies with full force here.
+- **The growth direction and the longevity direction are opposite on PAPP-A.** *Pappa*-null mice are long-lived with less age-related pathology. Raising PAPP-A activity is raising a validated tumour-promoting axis that the oncology field is actively trying to block, with a sub-nanomolar antibody already built to do so.
+- **The KDM6 prediction (§14.7) is mine**, chained from two papers in different cell types and systems. It has not been tested, and GSK-J4 is a promiscuous tool compound.
+- **The Weaver mouse has no longitudinal phenotype at all** — normal femur, tibia and body length. So the human overgrowth syndromes (*EZH2*, *EED*, *SUZ12*, *NSD1*, *SETD2*, *DNMT3A*) remain unexplained mechanistically for *height*, and 37450557, the review of that whole class, came back abstract-only.
+- **The "severe impairment in post-natal, linear axial skeletal growth" claim is one sentence citing one unread reference.** §13.3c rests on it.
+- **§13.3b's hydrostatic-shielding argument rests entirely on unread primaries.** It is the most important untested structural claim in this revision.
+- **For 40323130 I read only the abstract**; nothing in §13.3d from it should be weighted more heavily than that.
+- **IGF-2, not IGF-1, is the predominant hypertrophic-zone ligand** ([27897169](notes/27897169.md)). The entire GH/IGF-1 literature, and my own §3 and Stage 3, may be naming the wrong ligand.
 
 **Carried over from revision 1.**
 - **The adult tidemark advance rate is unknown to me** (five papers, Tier 0).
@@ -302,10 +371,25 @@ Extrapolated to the full spine, ~24 mm/year at juvenile throughput — **compara
   phase 1  600→2,000 fl   true hypertrophy
   ────────────────────────────────────────  adult articular deep zone sits HERE (~1,750 fl)
   phase 2  2,000→8,000 fl  SWELLING   ← NKCC1 (membrane trafficking) + AE3   [UNUSED]
-  phase 3  8,000→14,000 fl            ← IGF-1-dependent                      [UNUSED]
+  phase 3  8,000→14,000 fl            ← IGF-dependent (IGF-2 is the HZ ligand) [UNUSED]
   jerboa metatarsal reaches 23,000 fl (40× initial)
   directed by laterally restricting matrix channels
   ✗ loop diuretics  ✗ corticosteroids
+
+      ↑ THE GATE (§3b) — what opens phase 3
+      local FREE IGF  =  f( IGFBP abundance , IGFBP proteolysis )
+                             │                    │
+        H3K27me3 directly on │                    │ PAPP-A  → IGFBP-4
+        Igfbp3 / Igfbp5      │                    │ PAPP-A2 → IGFBP-3/5
+        (PRC2 writes it;     │                    │     ⊣ inhibited by STC1/STC2
+         KDM6A/6B erase it)  │                    │
+        EZH2 inhibitors = WRONG SIGN              STC2 partial LOF = +1.9 cm in humans
+        KDM6 inhibition = predicted right sign    Stc2-KO mice heavier, effect grows postnatally
+        (§14.7, untested)                         hSTC1/2 overexpression → impaired postnatal
+                                                  linear AXIAL growth
+        already moving in adult human tissue: T3 → PAPPA ×2.7-3.4
+                                              dasatinib → IGF1 up, IGFBP1/3 down
+        price: PAPP-A is an oncology target for INHIBITION; Pappa-null mice are long-lived
           │
           ▼
   ─── CONVERSION FRONT ───────────────────  ← STAGE 4  convert, on schedule
@@ -334,8 +418,8 @@ Extrapolated to the full spine, ~24 mm/year at juvenile throughput — **compara
                with radiographically open knee and pelvic plates
 ```
 
-**Revision 2 in one line: the growth apparatus is held shut by active brakes rather than spent, the rate-setting variable is hypertrophic cell volume and it is almost entirely unused in adult cartilage, the addressable compartment is the perfused perichondrial rim rather than the avascular interior, polarity is set by the direction of the morphogen gradient, and one pathway — ERK — moves nearly all of it.**
+**Revision 2 in one line: the growth apparatus is held shut by active brakes rather than spent; the rate-setting variable is hypertrophic cell volume and it is almost entirely unused in adult cartilage; the gate on it is local free IGF availability, controlled by an H3K27me3 mark on two binding-protein genes and by a surface protease whose inhibitor costs two centimetres of human height; the addressable compartment is the perfused perichondrial rim rather than the avascular interior; polarity is set by the direction of the morphogen gradient; the best site is probably a vertebral endplate; and one pathway — ERK — moves nearly all of the rest.**
 
 ---
 
-*Built from 94 full texts read in full, notes in [notes/](notes/). Untested. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
+*Built from 98 full texts read in full, notes in [notes/](notes/). Untested. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
