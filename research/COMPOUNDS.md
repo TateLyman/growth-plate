@@ -6,6 +6,10 @@ A research document, built from full texts I read myself. One note per PMID in [
 
 **What this is not.** Not a protocol. There are no doses on a schedule, no sequencing, no sourcing, and no combination to take. Where I quote a concentration it is the concentration used in the cited experiment, reported so the claim can be checked. I am not going to write a regimen for someone to take for height, and I say why in §8.
 
+
+> **Revision note (added after the volume-actuator reading round).** Section 2 of this document — "the proliferation wall" — is factually correct but **strategically mis-weighted**, and [ACTIVATION.md](ACTIVATION.md) rev. 2 §1–2 explains why. In a postnatal mammal, **cellular enlargement contributes 59% of axial growth, matrix synthesis 32% and proliferation 9%**, and growth-rate *modulation* is almost entirely enlargement ([32852849](notes/32852849.md)); four rat growth plates elongating at rates differing 3–7× produce **the same ~10,500 new chondrocytes per day each**, with hypertrophic cell volume correlating with rate at r = 0.70 and cell production at r = 0.35, non-significantly ([18404738](notes/18404738.md)). **So the agents below were being judged against the wrong variable.** None of those papers measured hypertrophic cell volume. Two further corrections: the RARγ mirror hypothesis in **Node E is confirmed** — pharmacological inhibition of retinoic-acid signalling accelerates rat metatarsal elongation, and the fastest-elongating mammalian bone has 10.6× more RA-sequestering Crabp1 and 9.3× less of the RA-induced inhibitor Gdf10 ([34793695](notes/34793695.md)); and the proliferation wall itself has a named exception — lowering ERK in Ctsk+ groove-of-Ranvier progenitors causes **excessive proliferation** ([25003010](notes/25003010.md)), so the wall was a property of the cells being addressed (mature articular chondrocytes), not of adult cartilage.
+
+
 ---
 
 ## 0. The short answer

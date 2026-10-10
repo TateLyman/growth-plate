@@ -3,6 +3,54 @@
 Drop PDFs into `research/inbox/` named `<PMID>.pdf` (or attach them in chat).
 Items marked **PMC-free** are free on PubMed Central but PMC's site blocks this container with a captcha; download from the PMC link.
 
+## Tier 00: the two papers that would settle the most
+
+Added after the volume-actuator phase. Everything in [ACTIVATION.md](ACTIVATION.md) rev. 2 rests on these and I have both only second-hand.
+
+| PMID | Year | Paper | DOI / link | Why it is first |
+|---|---|---|---|---|
+| **8982136** | 1996 | **Wilsman, Farnum et al. — "Differential growth by growth plates as a function of multiple parameters of chondrocytic kinetics" (J Orthop Res 14:927)** | 10.1002/jor.1100140613 | **The source of the partition: cellular enlargement 59%, matrix synthesis 32%, proliferation 9% of axial growth, over an 8-fold range of growth rate (50–400 µm/day). Every magnitude claim in ACTIVATION.md rev. 2 depends on this number and I have it only as cited by [32852849](notes/32852849.md) and [18404738](notes/18404738.md).** |
+| **10614657** | 2000 | **De Luca et al. — "Retinoic acid is a potent regulator of growth plate chondrogenesis" (Endocrinology 141:346)** | 10.1210/endo.141.1.7283 | **Almost certainly the source of "pharmacological inhibition of RA signaling accelerates rat metatarsal elongation in vitro" cited by [34793695](notes/34793695.md). This is the one pharmacological result that directly supports de-repression, and it confirms the RARγ mirror hypothesis of COMPOUNDS.md Node E.** |
+
+## Tier 0c: the volume actuator and the de-repression route
+
+| PMID | Year | Paper | DOI / link | Which link it tests |
+|---|---|---|---|---|
+| — | — | Ref 2 of [20200963](notes/20200963.md): the primary cell-volume measurements along the growth plate (1,000 → 15,000 µm³) and the hypo-osmotic challenge data | ask me | The quantitative basis of the whole volume argument |
+| — | — | Ref 1 of [20200963](notes/20200963.md): attribution of ~80% of bone lengthening to hypertrophic volume increase and ~10% to proliferation | ask me | The partition, second source |
+| — | — | Refs 22, 33, 34 of [20200963](notes/20200963.md): **NKCC1 activation by phosphorylation/dephosphorylation and its translocation to the plasma membrane** | ask me | **The actuator's regulated step — the lever, currently unread** |
+| — | — | Anything on **AE3/SLC4A3 in cartilage**, and on **KCC-family efflux transporters in the growth plate** | ask me | The second half of the osmotic pump, and the untried correctly-signed direction (inhibit efflux) |
+| 17786946 | 2008 | Osmotic sensitivity of rat growth plate chondrocytes in situ: clarifying the mechanisms of hypertrophy | 10.1002/jcp.21249 | How the swelling is driven and whether it is osmotically druggable |
+| 11014914 | 2000 | **Quantitative 3-D analysis of chondrocytic kinetic responses to short-term stapling of the growth plate** (Cells Tissues Organs) | 10.1159/000016787 | **A direct mechanical manipulation with full stereological read-out — the closest existing experiment to the mechanics × h_max coupling** |
+| 8764865 | 1996 | Cell cycle analysis of proliferative zone chondrocytes in growth plates elongating at different rates | 10.1002/jor.1100140410 | Whether the *n* term really is invariant |
+| 3543020 | 1987 | Quantitation of chondrocyte performance in growth-plate cartilage during longitudinal bone growth | JBJS Am 69:1056 | Same |
+| — | — | Refs 32, 33 of [32852849](notes/32852849.md): **bat wing metacarpal and jerboa metatarsal elongation driven by hypertrophic cell enlargement** | ask me | **The two natural experiments in making one bone far longer than its homologue** |
+| 18160802 | 2008 | Postnatal bone elongation of the manus versus pes: analysis of the chondrocytic differentiation cascade | 10.1159/000109963 | Manus-vs-pes differential elongation kinetics |
+| 35149382 | 2022 | Effects of high-dose all-trans retinoic acid on longitudinal bone growth of young rats | 10.1016/j.ghir.2022.101446 | The RA brake, dose and direction |
+| — | — | Refs 64, 65 of [34793695](notes/34793695.md): RA inhibition accelerating metatarsal elongation; Gdf10 upregulated by RA / RARγ agonist | ask me | The de-repression circuit |
+| — | — | Noyes 2016; Vahlquist 1992; DiGiovanna 2001: **human retinoid skeletal toxicity and premature physeal closure** | ask me | The human half of the RA brake (already Tier 0b) |
+| — | — | **Huegel et al. 2013 — Surfen micromass/limb-explant study and *Gdf5Cre;Ext1*^fl/fl perichondrial deletion** | ask me | **The only small molecule that turns perichondrium chondrogenic by de-restricting endogenous BMP** |
+| — | — | Zak et al. 2011 — *Ext1*+/−;*Ext2*+/− double hets with properly zoned exostoses beside long-bone plates | ask me | The HS dose-response for forming an organised ectopic plate |
+| — | — | Koyama 2007 (*Kif3a*, HSPG loss, broadened Ihh) and de Andrea 2010 (**loss of columnar polarity in human osteochondroma cells**) | ask me | **Primary cilia as the column-forming machinery — the order-preserving design requirement** |
+| 41056386 | 2025 | An ectopic Hedgehog signaling axis drives **directional** tumor outgrowth in a mouse model of hereditary multiple exostoses (Sci Signal) | 10.1126/scisignal.adu6357 | The polarity question stated directly |
+| — | — | **Yang W et al. 2013 — Ctsk-Cre;Ptpn11 model, CCP characterisation, Ihh/PTHrP data, PF-04449913 treatment** | ask me | **The primary for the groove-of-Ranvier progenitor and the ERK dial** |
+| 19563472 | 2009 | Identification of a stem cell niche in the zone of Ranvier within the knee joint (J Anat) | **PMC-free** PMC2750766 | The *n* reservoir, in the knee |
+| 28768899 | 2017 | Aberrant perichondrial BMP signaling mediates multiple osteochondromagenesis in mice (JCI Insight) | **PMC-free** PMC5543909 | Perichondrial BMP → directional ectopic outgrowth |
+| 34809786 | 2021 | Osteochondroma pathogenesis: mouse models and interactions with retinoid signaling (Am J Pathol) | **PMC-free** PMC8647428 | Where the ectopic-plate and retinoid stories meet |
+| — | — | Refs 9, 10 of [25164565](notes/25164565.md): the groove of Ranvier as a marrow-like niche with an extensive vascular network, and **GOR cells migrating to the articular surface** | ask me | Whether the groove feeds the articular surface |
+| — | — | Refs 39, 40 of [25164565](notes/25164565.md): Salter-Harris type IV fractures confined to the groove causing severe growth disturbance | ask me | The groove's functional requirement for longitudinal growth |
+| 20164294 | 2010 | **Tall stature without growth hormone: four male patients with aromatase deficiency** (JCEM) | 10.1210/jc.2009-1743 | Four more cases of adult linear growth, and GH-independence |
+| 19707181 | 2009 | Aromatase deficiency in men: a clinical perspective (Nat Rev Endocrinol) | 10.1038/nrendo.2009.176 | Same |
+| — | 1994–97 | **Smith et al. 1994 (ESR1 man); Morishima 1995 and Carani 1997 (aromatase-deficient men)** | ask me | **Serial heights and bone ages — the growth *rate* of an adult with open plates, the number that would set the closure-delay ceiling** |
+| — | — | Refs 25, 26 of [24485503](notes/24485503.md): tissue-specific *CYP19A1* promoter architecture | ask me | Whether skeletally-restricted estrogen deprivation is possible |
+| 16778695 | 2006 | **Vertebral height growth predominates over disc height growth in adolescents** (Spine) | **PMC-free** PMC1538980 | **The spine arithmetic: T5–L5 gains 250→350 mm, vertebral ~17 mm/yr vs discal ~8 mm/yr at 7.5 y, discal ≈ 0 after age 12** |
+| 34798645 | 2023 | Disc and vertebral body morphology from birth to adulthood (Spine) | 10.1097/BRS.0000000000004278 | Same, to adulthood |
+| — | 2020 | **Ref 30 of [34362001](notes/34362001.md) (Sanders 2020) — "the spine continues to grow longer than the lower extremities"** | ask me | **The claim that reorders the target list toward the axial skeleton** |
+| — | — | Refs 22, 31 of [34362001](notes/34362001.md) (Di Meglio) — yearly height-gain velocity, trunk vs lower limb | ask me | How much of stature is spine, and at what rate |
+| 15296209 | 2004 | Spine height and disc height changes under hyperextension, by stadiometry and MRI (Iowa Orthop J) | **PMC-free** PMC1888420 | How much axial height is reversibly recoverable |
+| — | — | Ref 17 of [36719517](notes/36719517.md): **non-surgical decompression increasing disc height and reducing pain in elderly humans** | ask me | The only existing non-surgical adult height-changing intervention in the corpus |
+| 28798204 | 2017 | Imaging IGF-I uptake in growth plate cartilage using in vivo multiphoton microscopy | **PMC-free** PMC5792102 | How IGF-1 actually reaches the cells that need it for phase 3 |
+
 ## Tier 0: needed to confirm or kill the proposed mechanism ([THEORY.md](THEORY.md), [ACTIVATION.md](ACTIVATION.md))
 
 **The single most load-bearing item in this file is the adult tidemark advance rate** (7410471, 2124371, 9101369, 3446655, 893504). [ACTIVATION.md](ACTIVATION.md) §7 and §9 are hostage to it, and 9101369 (unweighting accelerates tidemark advancement) is currently a title I have not read. The biphasic fluid-load-support pair (10710186, 14614932) is next: it is the assumed mechanical shield for the hypertrophic cells.
