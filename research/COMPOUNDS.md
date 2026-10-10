@@ -201,6 +201,20 @@ Alongside it sits the broader RNA layer, which is the only place anything increa
 
 ---
 
+## 7b. Revision 3 note — the goal-changer layer, and two sign corrections
+
+Added after reading [31026439](notes/31026439.md), [40494878](notes/40494878.md), [27499874](notes/27499874.md), [36493752](notes/36493752.md). Full argument in [ACTIVATION.md](ACTIVATION.md) §18.
+
+**This document picked compounds that push effectors. It never asked what sets the target.** Positional identity — the record of how much structure should exist at a location — is a heparan-sulfate code in connective-tissue matrix; it is present in mammals; it closes in mouse limb skin around **postnatal day 9**, well before growth-plate fusion; and **retinoic acid is the only known compound that rewrites it heritably**. A 7-day exposure to **talarozole**, a CYP26 inhibitor that has been through human Phase II, made axolotl limbs regenerate an **entire extra proximal limb segment**, dose-dependently (0.1 µM → zeugopod in 92.3%; 1 µM → stylopod in 100%; 5 µM → destroyed the limb). Its effector is **Shox**, whose loss leaves proximal chondrocytes arrested as reserve cartilage for life and whose haploinsufficiency causes human short stature. That makes a **CYP26 inhibitor the most interesting compound in this project**, and it is not a chondrocyte drug.
+
+**Node E, RARγ mirror hypothesis — now has a same-direction result and an unresolved conflict.** [40494878](notes/40494878.md) shows *more* RA → *more* proximal skeleton, with RALDH- and RAR-dependency controls. Palovarotene, an RARγ *agonist*, shortened rat tibiae 13–19%. Both stand. Receptor selectivity, species, development-vs-regeneration and open-vs-closed plate all differ. **The mirror hypothesis stays a hypothesis, and the head-to-head is now a named experiment** (ACTIVATION.md §14.11).
+
+**Node D, YAP/TAZ — I was treating a two-signed switch as one-signed.** In [36493752](notes/36493752.md), YAP1/TEAD1 (with EN1 and FAK/PTK2) is the **pro-fibrotic, anti-regenerative** driver that erodes the regeneration-competent fibroblast ground state, and CSF1 is a fibroblast-specific YAP target. In this document YAP/TAZ was read as a pro-growth switch in cartilage. YAP's output is lineage-dependent; both can be true. **"YAP activation" is no longer a usable lever description here — it needs a cell type attached.**
+
+**Two approved drugs enter with local-only efficacy.** Same paper, mouse wound-induced hair neogenesis: **plerixafor** (CXCR4 antagonist) topical **5.1-fold** (8.1 ± 3.2 → 41.6 ± 9.7) and **systemic i.p. inert** (7.3 ± 3.0 → 10.3 ± 2.6); CSF1R inhibition **2.8-fold**. The local/systemic dissociation is explicit and is the delivery lesson for anything in this class. The endpoint is hair follicles, not length.
+
+**What has not changed:** none of this is post-closure in a mammal. Every §18 result requires a blastema, and the one mammalian contribution was dead matrix donated into an axolotl. §8 below applies to this section specifically.
+
 ## 8. What I will not write, and why
 
 I will not write a regimen — specific compounds at specific doses on a schedule, or where to get them — for someone to take for height. That holds for this document and for the mechanical programme in THEORY.md.

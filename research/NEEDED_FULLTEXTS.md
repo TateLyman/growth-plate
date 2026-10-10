@@ -3,6 +3,30 @@
 Drop PDFs into `research/inbox/` named `<PMID>.pdf` (or attach them in chat).
 Items marked **PMC-free** are free on PubMed Central but PMC's site blocks this container with a captcha; download from the PMC link.
 
+## Tier 0000: the positional layer (§18 of ACTIVATION.md)
+
+Added after reading [31026439](notes/31026439.md), [40494878](notes/40494878.md), [27499874](notes/27499874.md) and [36493752](notes/36493752.md). These bear on the lever that sets **how much** skeleton the body builds, which is upstream of everything in Tiers 000–2.
+
+| PMID | Year | Paper | Why it matters |
+|---|---|---|---|
+| — | 2012 | **Monaghan JR et al. — FGFR1, BMP2R and nerve-dependent *crabp1* in regenerative limb wounds vs non-regenerative flank wounds (axolotl)** | **The hinge between three convergent literatures. CRABP1 marks the regeneration-competent fibroblast in reindeer velvet and fetal human skin (82% vs 10% adult), rises 10.6× in the fastest-elongating mammalian bone, and is nerve-dependently induced here. If CRABP1 is instructive rather than correlative, it is the competence marker for the whole §18 route.** Cited via [31026439](notes/31026439.md) |
+| — | 2014 | **Makanae A et al. — the combinatorial FGF/BMP screen (which combinations give pattern-competence vs blastema-only)** | The source of the FGF-2 + FGF-8 + BMP-2 competence cocktail. Needed: whether any combination confers competence *without* a wound |
+| — | 2014 | **McCusker CD et al. — RA replaces the positional graft in the ALM** | The primary for RA-as-goal-changer; the 150 µg/g dose and its staging |
+| — | 2016 | **Nacu E et al. — Shh and FGF-8 induce incomplete limbs that do not regenerate when re-amputated** | The discriminating control for permanence. RA passes, these fail. Needed in full to confirm the asymmetry is as clean as [31026439](notes/31026439.md) reports |
+| 35241664 | 2022 | Tig1 regulates proximo-distal identity during salamander limb regeneration (Nat Commun) | **PMC-free, fetched, unread.** TIG1/RARRES1 is an RA-responsive adhesion molecule and candidate proximalizing effector. Next to read |
+| — | 2015 | **Wang S, Beck CW — sulf1/sulf2 in *Xenopus* limb development and regeneration** | The *erasers* of the heparan-sulfate positional code. If sulfatases set it, they are the enzymatic handle |
+| — | 2004, 2010 | **Nogami K et al. 2004; Kobayashi T et al. 2010 — HS6ST1 in the developing chick limb bud** | Third species for the HS positional code; tests whether the anterior-high HS6ST1 pattern is general |
+| — | — | **Human *SHOX* duplication / overdosage and adult stature** | **[40494878](notes/40494878.md) shows *Shox* loss shortens proximal limb segments and arrests their chondrocytes as reserve cartilage for life. It does not show gain-of-function lengthening. Human SHOX overdosage is the only place that question has natural data. Needed: is the dosage–stature relationship monotonic upward, and did any case change after closure?** |
+| — | — | **Talarozole (R115866) and liarozole: human pharmacokinetics, tissue distribution, and any skeletal findings in animal toxicology** | The one drug in the project with human exposure that changed how much skeleton an animal built. Needed: does it reach cartilage or perichondrium, and did any tox study look at bone |
+| 39149228 | 2024 | Retinoic acid breakdown is required for proximodistal positional identity (bioRxiv preprint of 40494878) | Preprint may carry data cut from the final paper; low priority since the published version was read in full |
+
+**Experiments nobody has run** (not papers — recorded here because they are the kill criteria for §18, and are §14.10–14.11 of ACTIVATION.md):
+1. **Adult** mouse limb-skin ECM in the axolotl ALM, anterior vs posterior, ± heparin lyase III. [27499874](notes/27499874.md) stopped at PN9.
+2. HS sulfotransferase and SULF1/2 expression in **adult human perichondrial groove and vertebral endplate cartilage** — is the positional code still written there?
+3. **CYP26B1** expression in adult human articular cartilage, endplate and perichondrial groove.
+4. Talarozole vs an RARγ agonist, head to head, on adult human osteochondral explants — the direct test of the palovarotene sign conflict.
+5. Does CRABP1 overexpression confer regenerative competence on an adult mammalian fibroblast?
+
 ## Tier 000: the single claim that would change the most
 
 | PMID | Year | Paper | Why it is first |

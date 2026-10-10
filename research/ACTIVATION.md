@@ -1,6 +1,6 @@
 # Activating the boundary: the least-complex route — revision 2
 
-How to switch on a longitudinal growth interface in an adult, in situ. Third document in the series, after [THEORY.md](THEORY.md) (mechanics) and [COMPOUNDS.md](COMPOUNDS.md) (pharmacology). Built from 94 full texts read in full, notes in [notes/](notes/).
+How to switch on a longitudinal growth interface in an adult, in situ. Third document in the series, after [THEORY.md](THEORY.md) (mechanics) and [COMPOUNDS.md](COMPOUNDS.md) (pharmacology). Built from 106 full texts read in full, notes in [notes/](notes/).
 
 **Revision 2** follows a round of reading aimed specifically at strengthening, confirming and raising the ceiling of revision 1. It changes the emphasis, the molecular chain, the anatomical target and the arithmetic. §1 is the changelog; revision 1's core claim — that the apparatus exists and is held shut rather than absent — survives and is now much better supported.
 
@@ -8,7 +8,7 @@ How to switch on a longitudinal growth interface in an adult, in situ. Third doc
 
 ## 0. The answer in one paragraph
 
-**Longitudinal growth rate in a postnatal mammal is set almost entirely by how large hypertrophic chondrocytes get, not by how many there are.** Four growth plates in one rat, at one moment, elongating at rates differing 3–7×, produce **the same ~10,500 new chondrocytes per day each**; what differs is hypertrophic cell volume, which ranges **4,000 → 20,000 µm³** and correlates with elongation rate at **r = 0.70**, while cell production correlates at r = 0.35, non-significantly ([18404738](notes/18404738.md)). Across an eight-fold range of growth rate, **cellular enlargement contributes 59% of axial growth, matrix synthesis 32% and proliferation 9%**, and accelerated growth is "almost exclusively" enlargement ([32852849](notes/32852849.md)). That enlargement is an **osmotic pump with named parts**: IGF-1 licenses its final phase, **NKCC1 (SLC12A2)** traffics to the plasma membrane immediately before the cell swells, **AE3 (SLC4A3)** rises 14-fold alongside it, and blocking NKCC1 with bumetanide removes **35% of longitudinal growth while leaving hypertrophic cell number unchanged to three significant figures** ([20200963](notes/20200963.md), [23485973](notes/23485973.md)). **Adult articular deep-zone chondrocytes are stuck at roughly 1,750 µm³ — they have finished true hypertrophy and never begun swelling, leaving phases 2 and 3 entirely unused** (§4). One pathway — **ERK** — simultaneously sets progenitor proliferation in the groove of Ranvier, Ihh/PTHrP output, cell size, hypertrophic-zone depth and the gate to terminal conversion, and it has existing drugs on both sides ([25003010](notes/25003010.md), [24875294](notes/24875294.md)). And the thing being overcome is not exhaustion but **active restraint**: the perichondrium is a maintained anti-chondrogenic border made of heparan sulfate, and the fastest-elongating mammalian bone known gets that way partly by **releasing brakes** — 10.6× more retinoic-acid-sequestering Crabp1, 9.3× less of the RA-induced inhibitor Gdf10 ([23821404](notes/23821404.md), [34793695](notes/34793695.md)).
+**Longitudinal growth rate in a postnatal mammal is set almost entirely by how large hypertrophic chondrocytes get, not by how many there are.** Four growth plates in one rat, at one moment, elongating at rates differing 3–7×, produce **the same ~10,500 new chondrocytes per day each**; what differs is hypertrophic cell volume, which ranges **4,000 → 20,000 µm³** and correlates with elongation rate at **r = 0.70**, while cell production correlates at r = 0.35, non-significantly ([18404738](notes/18404738.md)). Across an eight-fold range of growth rate, **cellular enlargement contributes 59% of axial growth, matrix synthesis 32% and proliferation 9%**, and accelerated growth is "almost exclusively" enlargement ([32852849](notes/32852849.md)). That enlargement is an **osmotic pump with named parts**: IGF-1 licenses its final phase, **NKCC1 (SLC12A2)** traffics to the plasma membrane immediately before the cell swells, **AE3 (SLC4A3)** rises 14-fold alongside it, and blocking NKCC1 with bumetanide removes **35% of longitudinal growth while leaving hypertrophic cell number unchanged to three significant figures** ([20200963](notes/20200963.md), [23485973](notes/23485973.md)). **Adult articular deep-zone chondrocytes are stuck at roughly 1,750 µm³ — they have finished true hypertrophy and never begun swelling, leaving phases 2 and 3 entirely unused** (§4). One pathway — **ERK** — simultaneously sets progenitor proliferation in the groove of Ranvier, Ihh/PTHrP output, cell size, hypertrophic-zone depth and the gate to terminal conversion, and it has existing drugs on both sides ([25003010](notes/25003010.md), [24875294](notes/24875294.md)). And the thing being overcome is not exhaustion but **active restraint**: the perichondrium is a maintained anti-chondrogenic border made of heparan sulfate, and the fastest-elongating mammalian bone known gets that way partly by **releasing brakes** — 10.6× more retinoic-acid-sequestering Crabp1, 9.3× less of the RA-induced inhibitor Gdf10 ([23821404](notes/23821404.md), [34793695](notes/34793695.md)). **Two sections were added after the above was written and both change its scope.** §17 finds that the programme which builds skeleton outside a physis is the circumferential cartilaginous callus, and that it involutes unless apposed to a partner tissue. **§18 finds the layer above all of it: positional identity — what sets how much skeleton the body thinks it should have. It is a heparan-sulfate code in connective-tissue matrix, it is present in mammals, it closes around postnatal day 9 in mouse, retinoic acid is the only known compound that rewrites it heritably, and a 7-day exposure to the CYP26 inhibitor talarozole — a drug that has been through human Phase II — made axolotl limbs build an entire extra proximal segment, dose-dependently. Its effector is *Shox*, whose loss leaves proximal chondrocytes arrested as reserve cartilage for life and whose haploinsufficiency is a cause of human short stature.** On the evidence here the post-closure problem has two locks, not one: no responsive template, and no positional instruction.
 
 **And the gate on that actuator is the thing I had missed** (§3b): hypertrophic cell size is set by **local free IGF availability**, which is set by **IGFBP abundance** — *Igfbp3* and *Igfbp5* are **direct H3K27me3 targets** whose derepression shrinks hypertrophic cells, and whose exogenous addition shrinks them just as much, while high IGF-1 overrides the whole thing ([27897169](notes/27897169.md)) — and by **IGFBP proteolysis**, carried out by **PAPP-A and PAPP-A2 and inhibited by stanniocalcin-2**, where **partial loss of *STC2* adds +1.9 cm to adult human height, the largest effect of any of 83 rare coding variants on stature**, with the effect strengthening postnatally and the overexpression phenotype being specifically **axial** ([29280739](notes/29280739.md)).
 
@@ -307,6 +307,10 @@ Extrapolated to the full spine, ~24 mm/year at juvenile throughput — **compara
 
 **14.9 Is the vertebral endplate's stress state what §13.3b assumes?** Read the intradiscal-pressure and endplate primaries first. Then measure, in a large animal, what fraction of axial load arrives at the endplate cartilage as interstitial fluid pressure versus matrix compression, across the diurnal cycle. **Kill criterion: the endplate sees principal compressive stress comparable to an articular surface** → the anatomical-shielding argument for the spine collapses and the site advantage reduces to surface count.
 
+**14.10 Does positional information still exist in adult mammalian connective tissue?** The cheapest decisive experiment in the project, and nobody has run it. [27499874](notes/27499874.md) tested mouse limb-skin ECM donors from E11.5 to **PN9 only**, and found the inductive capacity peaking at PN5–7 (60%) and gone by PN9 — alongside the disappearance of four heparan sulfate sulfotransferases. **Repeat it with adult mouse donors, anterior and posterior, ± heparin lyase III**, in the same axolotl ALM assay. Then assay **NDST1/2, HS2ST1, HS6ST1, HS3ST1/2/3a and SULF1/2 in adult human perichondrial groove and vertebral endplate cartilage** for graded expression. **Kill criterion: adult mammalian ECM induces nothing and the sulfotransferases are uniformly off** → lock 2 (§18.6) is shut and the positional layer has to be supplied exogenously rather than de-repressed, which makes §18 a materials problem, not a pharmacology one. **Converse, and the more interesting result: if the code is still written in the perichondrial groove**, then the template question (§4) and the positional question collapse into a single target in a single tissue.
+
+**14.11 Does CYP26 inhibition do anything in a mammal's skeleton?** Three tiers, cheapest first. (i) Is **CYP26B1** expressed in adult human articular cartilage, vertebral endplate and perichondrial groove? If CYP26B1 is actively clearing RA in adult growth-competent cartilage, that is a standing repression with a Phase-II drug already pointed at it. (ii) Talarozole or liarozole on adult human osteochondral and endplate explants — endpoints **MEIS1, SHOX, COL10A1, and hypertrophic cell volume**, with the palovarotene sign conflict (§18.7) explicitly tested by running an RARγ agonist arm in parallel. (iii) Only then, an intact adult animal. **Kill criterion: CYP26B1 is absent from adult cartilage, or raising RA moves SHOX in the wrong direction** → §18 does not transfer out of the blastema and should be recorded as an amphibian mechanism.
+
 **Positive control throughout:** the **adult mandibular condyle**, which runs this apparatus, never fuses, and is mechanically reactivatable in adult primates ([THEORY.md](THEORY.md) §2, §7).
 
 ---
@@ -539,8 +543,104 @@ Revision 2 said: release the brake on an existing border, let the perichondrial 
 
 Its advantages over everything else in this document are that **Stage 1 already works in humans**, that the deficiency is a **physical barrier** rather than a missing capacity, that the partner is **substitutable by a licensed agent**, that the **timing window is defined** (before involution), that **position is set by where the periosteum is**, and that the **output is length** — "significantly longer than their width" in the one experiment that produced it.
 
-Its disadvantage is that **every instance of it in a mammal began with an amputation or a fracture.** The CCC is a response to bone injury. Nothing in this literature provokes one without breaking something — which is why **bioelectrical stimulation of intact periosteum** (§17.2) and the search for a non-destructive CCC trigger are now the highest-value open questions in the project.
+Its disadvantage is that **every instance of it in a mammal began with an amputation or a fracture.** The CCC is a response to bone injury. Nothing in this literature provokes one without breaking something — which is why **bioelectrical stimulation of intact periosteum** (§17.2) and the search for a non-destructive CCC trigger remain open questions. §18 adds the layer this section was missing: a programme that builds skeleton still needs to be told *how much* to build.
 
 ---
 
-*Built from 101 full texts read in full, notes in [notes/](notes/). Untested. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
+## 18. Goal changers — positional identity as the lever
+
+§17 asked what *programme* builds skeleton outside a physis. This section asks a different and larger question: **what sets how much skeleton the body thinks it should have?** Growth-rate genes answer "how fast"; this answers "how much" — and it is the only axis in the project where a compound has been shown to make an animal build an *additional skeletal segment*.
+
+### 18.1 The thing that exists: positional identity
+
+Loose connective-tissue cells carry a stable record of where in the body they are. In salamanders this is the substrate of regeneration: confront cells of different positional value and they proliferate and intercalate the missing pattern between them. Three results make this relevant rather than exotic.
+
+**(a) It is a chemical property of matrix, not a cell state.** Decellularized axolotl limb skin ECM carries it. Anterior ECM grafted into an anterior wound **abolished blastema formation in 8/8**; posterior ECM into the same wound induced jointed, tapered phalanx-like elements in 30%. Heparin lyase III lifted the anterior block completely. An **artificial matrix of nothing but Sigma type-I collagen and Sigma porcine heparan sulfate** induced complex jointed skeletal patterns in **8/19 (42%)** of blastemas at 5 mg/ml HS — and in **0/6** with collagen alone, **0/5** at 10 mg/ml ([27499874](notes/27499874.md)). The code is the sulfation pattern of heparan sulfate, written by NDST1/2, HS6ST1, HS2ST1, HS3ST1/2/3a and erased by SULF1/2.
+
+**(b) It exists in mammals.** Mouse hindlimb skin ECM, grafted into an axolotl wound, induced skeletal elements position-specifically and HS-dependently: **PN3–4 posterior 37%, PN5–7 posterior 60%, anterior 0–18%**, abolished by heparin lyase III. The axolotl cells built *Alizarin-Red-positive calcified* elements rather than their native cartilage — the mammalian matrix imposed the mammalian fate ([27499874](notes/27499874.md)).
+
+**(c) It can be rewritten by a compound, permanently.** Retinoic acid applied to an axolotl blastema reprograms positional memory, and the reprogramming is **heritable through a second regeneration**: RA-induced ectopic structures, re-amputated, regenerated — 94% to the same pattern, 6% to a *more* complex one — and skin grafted from them induced new structures in fresh wounds. Shh and FGF-8 supply a positional *cue* that produces structures which **fail both tests** ([31026439](notes/31026439.md)). RA is, as of this literature, the only molecule that stably rewrites the record.
+
+### 18.2 The result that matters most
+
+A **7-day exposure to a CYP26 inhibitor, dissolved in water, scored 120 days later, made distally amputated axolotl limbs regenerate an entire extra proximal limb segment, dose-dependently** ([40494878](notes/40494878.md)):
+
+| Talarozole | Distally amputated limbs |
+|---|---|
+| 0.1 µM | **92.3% duplicated a zeugopod** (61.2% whole, 30.1% partial) |
+| 1 µM | **100% duplicated a stylopod** (66.7% full, 33.3% partial) |
+| 5 µM | 92.3% failed to regenerate |
+
+The mechanism is degradation, not supply: RARs, RALDHs and RA synthesis are not graded along the proximodistal axis — **CYP26B1** is, and it sets local RA. Inhibiting it raised RA reporter signal, erased the HOXA13 reporter, and shifted the distal transcriptome toward the proximal one. Co-treatment with a RALDH inhibitor or a pan-RAR antagonist abolished the gain, so the effect runs through RA and RAR.
+
+**Talarozole (R115866) has been through human Phase II.** This is the only place in the whole project where a drug that has been in people changed the amount of skeleton an animal built.
+
+### 18.3 SHOX — where this touches human height
+
+The RA-responsive effector is **Shox**, downstream of Meis1, mutually exclusive with Hoxa13, restricted to the proximal mesenchyme ([40494878](notes/40494878.md)).
+
+- *Shox* crispants and *Shox*−/− axolotls: **shortened stylopod and zeugopod, autopod unaffected.**
+- Their proximal chondrocytes **"failed to proliferate, appearing to remain as reserve cartilage through adulthood"** and never calcified — while digit chondrocytes in the same animals ossified normally.
+- Shox is **dispensable for regeneration** and does not set positional identity (Meis1 and Hoxa13 are unchanged in its absence). It *executes* a positional instruction.
+- In humans, *SHOX* haploinsufficiency is the cause of **Léri-Weill dyschondrosteosis, the short stature of Turner syndrome, and a measurable fraction of idiopathic short stature.**
+
+Two things follow, and they are the reason this section exists.
+
+**First, SHOX is a permission signal for reserve cartilage to enter the growth programme — and §4 of this document argues that is exactly where adult cartilage is stuck.** Adult articular deep-zone chondrocytes sit at ~1,750 fl, having finished true hypertrophy and never begun swelling. The *Shox*-null phenotype is the same arrest, described independently, in a different animal, by authors not thinking about adults: cartilage that stays reserve cartilage for life. The gate I inferred from cell volumes has a candidate name, and the name is RA-responsive.
+
+**Second, it is proximally biased.** Shox governs stylopod and zeugopod and not autopod; proximal and distal endochondral ossification run on separate transcriptional programmes. A height strategy wants precisely that bias — long bones and, if it extends axially, vertebrae — rather than acromegaly's hands, feet and jaw. This is the first lever in the project with a *built-in* anatomical selectivity pointing the right way.
+
+### 18.4 The architecture: competence, then goal
+
+Across four papers the same two-step structure appears, and neither step works alone.
+
+| | Step 1 — competence | Step 2 — goal |
+|---|---|---|
+| Axolotl ALM | FGF-2 + FGF-8 + BMP-2 (replaces the nerve) | RA → complete limb, 52% ([31026439](notes/31026439.md)) |
+| Positional ECM | nerve-deviated blastema | HS sulfation state ([27499874](notes/27499874.md)) |
+| Reindeer velvet | CRABP1+ fibroblast ground state | threshold of network activity ([36493752](notes/36493752.md)) |
+| CYP26 inhibition | amputation blastema | talarozole dose ([40494878](notes/40494878.md)) |
+
+**Mature tissue is refractory to step 2.** RA changed Alx4 and Shh in blastemas and left mature limb tissue untouched at both timepoints. Positional rewriting requires an already-activated cell. The gate on the goal changer is competence — which is the same conclusion §17 reached from the callus literature and the reindeer paper reached from fibroblast ground states.
+
+### 18.5 CRABP1 — three literatures, one gene
+
+| Source | Finding |
+|---|---|
+| Reindeer velvet vs back skin | **CRABP1** the top marker of the regeneration-competent fibroblast; **82% of fetal human** vs **10% of adult human** fibroblasts; absent from adult human interfollicular dermis ([36493752](notes/36493752.md)) |
+| Axolotl regenerative vs flank wounds | **crabp1** significantly higher in regenerating wounds, and **nerve-dependent** (Monaghan 2012, via [31026439](notes/31026439.md)) |
+| Fastest-elongating mammalian bone | **10.6× more Crabp1**, 9.3× less of the RA-induced inhibitor **Gdf10** ([23821404](notes/23821404.md)) |
+
+CRABP1 is a cytosolic retinoic-acid binding protein — it controls how RA reaches the nucleus. Three unrelated literatures, examining regenerative skin, regenerative limbs and fast bone elongation, independently converge on the same RA-handling gene as the marker of the competent state. That is the strongest unforced convergence in the project, and it says the competence step and the goal step are not two systems but one.
+
+### 18.6 The second closure
+
+This is the finding that changes the shape of the problem. In mouse limb skin, **four heparan sulfate sulfotransferases drop below detection and NDST2 inverts its polarity by postnatal day 9**, and the ECM's ability to instruct pattern disappears on the same schedule — PN5–7 posterior 60% → PN9 0% ([27499874](notes/27499874.md)).
+
+**The mammalian skeleton stops knowing how much of itself there should be long before it stops being able to grow.** Growth-plate fusion is the second lock, not the first. Post-closure there are two:
+
+1. **No responsive template** — the cell-volume actuator has no substrate (§3, §4).
+2. **No positional instruction** — the matrix no longer encodes how much to build (§18.1b).
+
+Everything in COMPOUNDS.md and §§2–16 of this document addresses lock 1. Nothing addressed lock 2, because I did not know it was there. A compound that opens the actuator in tissue with no positional instruction produces thickness, nodules and disorganised mass — which is, precisely, what every failed attempt in this literature produces, and what the bulbous masses in the ALM were.
+
+### 18.7 What this changes, and what it does not
+
+**Changes:** the target is now two-layered, and the positional layer is upstream. The most interesting drug in the project is a CYP26 inhibitor rather than anything acting on chondrocytes. The best mechanistic marker of a competent cell is CRABP1. And "trick the state permanently" has a documented affirmative answer with its own discriminating control — RA yes, Shh/FGF-8 no.
+
+**Does not change:** every one of these results required a blastema, and every one is an amphibian except the mouse ECM, which was donated as dead matrix into an axolotl. Specifically unresolved, and these are the load-bearing gaps:
+
+- **Proximal blastemas did not respond** to the doses that transformed distal ones. The lever works by making a distal field believe it is proximal. An adult asking to be taller is asking for *more proximal than proximal*, and no result here shows that headroom exists.
+- **No adult mammalian ECM was ever tested.** The PN9 result makes adult inertness likely; it was not measured. This is the cheapest decisive experiment in the project (§14.10).
+- **The sign conflict with palovarotene is unresolved.** Here more RA → more proximal skeleton; in rats an RARγ agonist shortened tibiae 13–19%. Receptor selectivity, species, open vs closed plate and development vs regeneration all differ.
+- **Loss-of-function shortening is not gain-of-function lengthening.** *Shox* ablation shortens. Nobody has shown extra *SHOX* lengthens.
+- **The window is about one log wide.** 5 µM talarozole regressed limbs to the scapula; HS is biphasic in both directions. This class of lever has an optimum, not a direction.
+- **The anterior anti-regenerative factor is unidentified** — salt-displaceable, HS-bound, FGF2-competable, anonymous.
+
+### 18.8 Honest placement
+
+This is the most promising *mechanism* the project has found and it is further from a human intervention than anything in §§2–16, because its entire evidentiary base sits in a blastema. It belongs here as the answer to "what sets the goal," not as a route anyone can take. The compound that matters — talarozole — has human safety data and no skeletal indication, no cartilage pharmacokinetics, and an axolotl-only efficacy record. I am not writing a regimen (§8 of [COMPOUNDS.md](COMPOUNDS.md) still holds and holds for this section specifically).
+
+---
+
+*Built from 106 full texts read in full, notes in [notes/](notes/). Untested. The newest and least-settled section is §18. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
