@@ -14,6 +14,8 @@ How to switch on a longitudinal growth interface in an adult, in situ. Third doc
 
 **So the revised answer: do not try to make more cells, and do not try to build a plate. Release the brake on an existing border, let the resident progenitors of the perichondrial rim form the interface where the gradient already points along the bone's axis, drive the volume actuator through phases 2 and 3 by opening the IGF gate locally, and cycle ERK to convert the bottom of the stack to bone.** The best site for it is probably the **vertebral endplate**, not the knee (§13.2–13.3c), and the honest price of the IGF gate is that it is a validated tumour-promoting axis whose loss makes mice long-lived (§3b).
 
+**But every gene named above works through an open physis. §17 is the post-closure answer, and it is a different kind of thing: not a growth gene but a regeneration programme.** Every mammal, humans included, launches an endochondral elongation programme from the periosteum within hours of a bone injury — a **circumferential cartilaginous callus** — and then shuts it down, because the callus **involutes unless it is apposed to a partner tissue**. Deer escape that and regrow a metre of endochondral bone at **2 cm/day, annually, as adults**, from 3.3 million periosteal stem cells, released by **testosterone falling below ~0.5 ng/ml**. The partner is **substitutable by BMP2 applied before the callus involutes, which restored the entire length of a bone in a mammal** — and rhBMP-2 is licensed. What humans lack is not the cells or the capacity but a partner, and the block appears to be a **physical barrier of interposed connective tissue and muscle** ([37490254](notes/37490254.md)).
+
 ---
 
 ## 1. What changed in revision 2
@@ -33,6 +35,8 @@ How to switch on a longitudinal growth interface in an adult, in situ. Third doc
 | The actuator's *regulated step* was "NKCC1 trafficking and phosphorylation", mechanism of licensing unstated | **§3b: the gate is local free IGF availability, set by IGFBP abundance (direct H3K27me3/PRC2 targets) and IGFBP proteolysis (PAPP-A/PAPP-A2, inhibited by STC1/STC2). Partial loss of STC2 = +1.9 cm of adult human height, the largest rare-coding-variant effect known** | [27897169](notes/27897169.md), [29280739](notes/29280739.md), [24572990](notes/24572990.md) |
 | T3 and dasatinib were marginal leads | **Both were already raising free local IGF in adult human tissue** — T3 raises *PAPPA* 2.7–3.4× in 60–76-year-old cartilage; dasatinib raises *IGF1* and lowers *IGFBP1/3*. Neither paper measured cell volume | [38664820](notes/38664820.md), [39402753](notes/39402753.md) |
 | — | **The epigenetic lever points the opposite way from the obvious one.** PRC2 loss costs length in chondrocytes and adds appositional width in osteoblasts; the Weaver mouse has normal bone length. So EZH2 inhibitors are wrong-signed, and **KDM6 inhibition is the untested correctly-signed lever** | [37425751](notes/37425751.md), [27897169](notes/27897169.md) |
+| Every lever was a growth gene or pathway | **§17: all of them work only through an open physis. The post-closure programme is epimorphic regeneration — the periosteal circumferential cartilaginous callus, which humans already form and then involute for want of a partner tissue. Antler: 2 cm/day in adults; BMP2 substitutes for the partner and restored a bone's entire length; androgen withdrawal below ~0.5 ng/ml releases it** | [37490254](notes/37490254.md) |
+| The "boundary" was this document's organising device | **It is the general rule for mammalian skeletal growth outside a physis** — six systems, one architecture, single domains always involute | §17.1 |
 | — | **New dead end: looking for an animal whose endochondral plates never stop.** Zebrafish grow indeterminately for life and still arrest their endochondral zones; intramembranous is what stays active | [32852849](notes/32852849.md) |
 
 ---
@@ -334,6 +338,15 @@ Extrapolated to the full spine, ~24 mm/year at juvenile throughput — **compara
 - **For 40323130 I read only the abstract**; nothing in §13.3d from it should be weighted more heavily than that.
 - **IGF-2, not IGF-1, is the predominant hypertrophic-zone ligand** ([27897169](notes/27897169.md)). The entire GH/IGF-1 literature, and my own §3 and Stage 3, may be naming the wrong ligand.
 
+- **§17's load-bearing claim is unread.** "BMP2 restored the entire length of P2" reaches me through a review citing Yu 2010/2012 and Dawson 2017. P2 is a mouse middle phalanx; the claim is **restoring an amputated segment, not lengthening a normal bone**; and I have not read the primaries. They are Tier 000.
+- **The rat two-step regeneration result is unpublished** (one histology figure, no measurements).
+- **Every mammalian CCC in this literature follows an amputation or a fracture.** Nothing provokes one without breaking bone. Bioelectrical stimulation of intact periosteum is the only non-destructive candidate and it was one step of an unpublished procedure.
+- **Antlers have no joints, no muscle and no load**, are cast and regrown rather than lengthened, and run on a cell population expressing Oct4/Nanog/SOX2/TERT that expands 3.3 million cells into 15 kg in 70 days. The literature does not discuss neoplasia.
+- **Androgen withdrawal in a human adult lowers estrogen too**, and the aromatase-deficient men who kept growing were severely osteoporotic. The deer result cannot be read across without accounting for that.
+- **The antler's interactive substance is unknown**, stated twice. It is the single most valuable unknown in §17.
+- **The sclerostin/Wnt thread is abstract-level only** (27742500, 3351908, 11836356), and the sclerosteosis phenotype is dominated by appositional thickening, skull and mandible — the same appositional-not-longitudinal pattern as the Weaver mouse.
+- **PI3K is a programme one can switch off, not on.** The activating direction is a mosaic mutation in a major human oncogene, and "reduced hemihypertrophy" is a pathological overgrowth shrinking toward normal, not evidence anything can exceed normal.
+
 **Carried over from revision 1.**
 - **The adult tidemark advance rate is unknown to me** (five papers, Tier 0).
 - **"Unweighting accelerates tidemark advancement" is a title, not a reading** (9101369).
@@ -418,8 +431,116 @@ Extrapolated to the full spine, ~24 mm/year at juvenile throughput — **compara
                with radiographically open knee and pelvic plates
 ```
 
-**Revision 2 in one line: the growth apparatus is held shut by active brakes rather than spent; the rate-setting variable is hypertrophic cell volume and it is almost entirely unused in adult cartilage; the gate on it is local free IGF availability, controlled by an H3K27me3 mark on two binding-protein genes and by a surface protease whose inhibitor costs two centimetres of human height; the addressable compartment is the perfused perichondrial rim rather than the avascular interior; polarity is set by the direction of the morphogen gradient; the best site is probably a vertebral endplate; and one pathway — ERK — moves nearly all of the rest.**
+```
+  AND THE POST-CLOSURE PROGRAMME (§17) — a different architecture entirely
+
+  bone injury  →  PERIOSTEUM divides within 8-24 h  →  CIRCUMFERENTIAL
+                                                        CARTILAGINOUS CALLUS
+                                                               │
+                                          ┌────────────────────┴────────────────────┐
+                                     has a PARTNER                          NO partner
+                                          │                                        │
+                      antler: fused velvet skin  (2 cm/day, >1 m)          INVOLUTES
+                      fracture: the opposite CCC (BMP, gap-distance tuned)  (every human
+                      digit tip: the nail organ (Wnt)                        amputation
+                      stump + BMP2 before involution → ENTIRE BONE LENGTH    stump)
+                                          │
+                                      BLASTEMA  →  elongation
+
+  release switch: testosterone < 0.5 ng/ml      barrier: interposed loose connective
+  (castration starts it in 2 weeks;             tissue + muscle between periosteum
+   exogenous T blocks it ~permanently)          and skin — remove it and length returns
+```
+
+**Revision 2 in one line: the growth apparatus is held shut by active brakes rather than spent; the rate-setting variable is hypertrophic cell volume and it is almost entirely unused in adult cartilage; the gate on it is local free IGF availability, controlled by an H3K27me3 mark on two binding-protein genes and by a surface protease whose inhibitor costs two centimetres of human height; the addressable compartment is the perfused perichondrial rim rather than the avascular interior; polarity is set by the direction of the morphogen gradient; the best site is probably a vertebral endplate; and one pathway — ERK — moves nearly all of the rest. And after closure specifically, the thing to pull is not a growth gene at all but the periosteal regeneration programme every mammal already runs and then aborts for want of a partner tissue (§17).**
 
 ---
 
-*Built from 98 full texts read in full, notes in [notes/](notes/). Untested. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*
+## 17. Programs, not genes — the post-closure answer
+
+Every "height gene" in this corpus works through an open physis: *FGFR3*, *NPR2*/CNP, *SHOX*/*SHOX2*, *STC2*/*PAPPA2*, *EZH2*, aromatase. All of them. The question of what works **after** closure is a different question, and it has a different answer: **not a growth gene, but a regeneration programme.**
+
+### 17.1 The circumferential cartilaginous callus — the universal mammalian elongation programme
+
+**Every mammal, including humans, launches an endochondral elongation programme from the periosteum within hours of a bone injury, and then shuts it down.**
+
+- Periosteal cell division is detectable within **~8 hours** of a fracture and peaks at **~24 hours**, forming a **circumferential cartilaginous callus (CCC)** ([37490254](notes/37490254.md)).
+- **This happens at every mammalian digit, limb and long-bone stump, including regeneration-incompetent ones, and it is "virtually independent of environmental factors."**
+- **And it is short-lived. Without an interactive partner tissue the CCC involutes and the stump returns to its original form.**
+
+| System | Partner | Substance | Outcome |
+|---|---|---|---|
+| **Deer antler** | enveloping velvet skin, **fused** to the pedicle periosteum | **unknown** | full regeneration, **up to 2 cm/day, >1 m, 15 kg from 3.3 million cells in 70 days** |
+| **Fracture** | the opposite CCC | **BMP** | bridging callus, union |
+| **Digit tip** | the nail organ | **Wnt** | tip restored |
+| **Limb/digit stump** | **none** | — | **CCC forms, then involutes** |
+
+**The human experiment that settles it.** One patient: a tibial fracture on one side, an amputation at approximately the same level on the other. **At six weeks both sides had formed CCCs. The fracture side had begun a bridging callus toward its partner; the amputation-stump CCC "was apparently inert even though it could be regarded as one side of a fracture."** Same person, same time, same periosteum. One had a partner. One did not.
+
+**And this is the general rule the whole document has been circling.** Six systems, one architecture — in every case a single domain alone stalls or involutes, and juxtaposition sustains growth:
+- chondro-spheroid + osteo-spheroid → a growth plate at the interface, in neither alone ([40118845](notes/40118845.md))
+- perichondrium + de-restricted Ihh/BMP gradient → an organised ectopic plate ([23821404](notes/23821404.md))
+- articular cartilage + calcified cartilage at the tidemark ([25603997](notes/25603997.md))
+- CCC + opposite CCC → bridging callus
+- CCC + nail organ → digit tip
+- CCC + fused skin → an antler
+**"The boundary" is not a device of this document. It is how mammalian skeletal growth works outside a physis.**
+
+### 17.2 What humans are missing is a partner, not a capacity
+
+**Stage 1 is intact in humans. Stage 2 is blocked, and the block is anatomical.**
+- In a rat stump, "throughout the entire course of wound healing… the distal periosteum/CCC and the enveloping skin are separated by **multiple layers of muscle and loose connective tissue**." Goss argued this interposed layer — "the pad", "the dermal barrier" — is **the cause, not the consequence**, of regeneration failure, physically blocking inductive communication.
+- In the deer pedicle, the periosteum and the skin are **almost fused over the distal third — the antler-regeneration region — and only loosely associated over the proximal two-thirds, the non-regeneration region.** An impermeable membrane inserted at the **fused** distal third did **not** prevent regeneration (a skin-less antler grew under a scab); inserted at the **loose** proximal region it **abolished** regeneration although CCCs still formed.
+- **This is the soft-tissue version of the perichondrium's anti-chondrogenic heparan-sulfate border (§8).** Two literatures, two tissues, one conclusion: **the adult mammal maintains a barrier that blocks inductive communication, and growth resumes when the barrier is removed.**
+- **And removing it works.** A two-step rat procedure — **(1) bioelectrical stimulation to the distal periosteum immediately after amputation** to enhance the CCC, then **(2) surgical removal of the interposing connective tissue and muscle, holding periosteum and skin tightly together** — induced blastema formation and **partial stump regeneration in which "the length of the regenerates was significantly longer than their width."** (Reported as unpublished, one figure.)
+
+### 17.3 The partner is substitutable by an approved compound
+
+> **"In the regeneration-incompetent digit/limb stump, the blastema can be induced by topical application of BMP2 to the CCC *before its involution*, and this induced blastema has the potential to regenerate the entire length of P2."**
+
+**BMP2 substituted for the missing partner and restored the full length of a bone in a mammal** (cited to Yu 2010/2012 and Dawson 2017). It restored bone length **but not the joint or the distal P3 element**. The mechanism was **not more signal but longer signal** — BMP "enhanced the endogenous response by **extending the period of BMP2 signalling**." Periosteal-derived BMP2 is likewise required for the bridging callus after fracture.
+
+**rhBMP-2 is a licensed human product.** This is the first thing in the entire project that is simultaneously **(a) post-closure, (b) about length, (c) in a mammal, and (d) deliverable with an existing clinical agent.**
+
+**The qualifiers are real and I am not going to bury them.** P2 is a mouse middle phalanx — a millimetre-scale bone. "Restoring the entire length of P2" after amputation means **replacing a removed segment, not making a bone longer than it was.** It is regeneration, not augmentation. **I have not read the primaries** (Yu 2010/2012, Dawson 2017), and they carry the whole claim; they are now Tier 000 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md). And BMP2 in soft tissue is the heterotopic-ossification mechanism ([28629737](notes/28629737.md), [28645539](notes/28645539.md)) — in a primed adult, a 5 mm skin cut was a sufficient trigger.
+
+### 17.4 The release switch is androgen withdrawal, at a threshold
+
+The antler cycle is not triggered by injury. **Casting and regeneration are not causally related** — new antlers grow even when the old ones are screwed in place, and autumn trauma triggers nothing.
+
+- **"Antler regeneration is strictly under control of androgen hormones… triggered by the *low* threshold level of circulating androgen."**
+- **Castration at any point in the hard-antler phase → antlers cast within two weeks and regeneration begins immediately. Exogenous testosterone inhibits both casting and regeneration "relatively permanently."**
+- The threshold given is **< 0.5 ng/ml testosterone**: wounding "potentiates" the periosteum, and **the fall in androgen "releases the brake."**
+
+**That is the sixth independent instance of the de-repression frame** — after heparan sulfate / perichondrium, Crabp1-Gdf10 / retinoic acid, ERK / SHP2, PRC2 / IGFBP, and STC2 / PAPP-A. And **every clinically relevant androgen lever is an approved drug class** (GnRH agonists and antagonists, AR antagonists).
+
+**Read it against the human aromatase data and the two point the same way.** In deer, lowering androgen *releases* the periosteal growth programme. In humans, estrogen — aromatised from androgen — is what closes plates, and men who cannot make or sense it were **still growing at 38, at 190–204 cm, with radiographically open knee and pelvic plates** ([24485503](notes/24485503.md)). **Lowering androgen signalling lowers both.** The cost is also the same in both: hypogonadism means bone loss, muscle loss and metabolic change, and the osteoporosis of the aromatase-deficient men was severe.
+
+### 17.5 The cells, and why deer get away with it
+
+Three antler stem cell populations: **antlerogenic periosteum** (first pedicle), **pedicle periosteum** (annual regeneration), and **reserve mesenchyme cells** — an apical undifferentiated pool feeding the growth zone, i.e. **the antler's resting zone, positioned at a free end and fed by periosteum rather than enclosed between two ossification centres.**
+
+Pedicle periosteum cells express **CD73, CD90 and CD105** — *the same markers as the groove-of-Ranvier progenitors* ([25164565](notes/25164565.md)) and the Ctsk+ chondroid progenitors ([25003010](notes/25003010.md)) — **and also Oct4, Nanog, SOX2, TERT and nucleostemin.** "An intermediate cell type between adult and embryonic stem cells." **Position is set by where the periosteum is**: total removal abrogates regeneration, removing only the distal third gives an antler growing from the cut end of the residual periosteum, away from the natural site.
+
+**And the programme is transferable as a reagent.** Antler stem cell injection or **topical conditioned medium** heals wounds in rats; **cell-free** preparations repair bone defects in rabbits; and **extracellular vesicles from antler blastema progenitor cells, given intravenously to aged mice and rhesus macaques, raised femoral BMD, improved physical and cognitive function, and reduced epigenetic age by >3 months in mice and >2 years in macaques** (40660003, abstract only — recorded in [37490254](notes/37490254.md)). That is BMD and ageing, not length — but it establishes that the programme's outputs survive isolation, injection and a species jump into a primate.
+
+**Why this cannot simply be copied.** Deer have a dedicated permanent pedicle, a dedicated stem cell population with partial embryonic character, velvet skin physically fused to the periosteum, and a seasonal hormonal cycle built around all of it. **Antlers have no joints, no muscles, bear no load, and are cast and regrown rather than lengthened.** And a cell population expressing Oct4/Nanog/SOX2/TERT that goes from 3.3 million cells to 15 kg in 70 days is, in any other context, a description of tumour risk — which the literature does not discuss.
+
+### 17.6 Two further programmes worth naming
+
+- **PI3K–AKT.** *PIK3CA* gain-of-function causes **progressive postnatal segmental overgrowth** including skeletal overgrowth and hemihypertrophy. **BYL719 (alpelisib, now licensed as Vijoice) improved symptoms in all 19 PROS patients treated, reducing hemihypertrophy and attenuating scoliosis, without substantial side effects** ([29899452](notes/29899452.md)). So PI3K–AKT is a **drug-controlled, postnatal, progressive skeletal overgrowth programme**, demonstrated bidirectionally in humans — one direction by a mosaic oncogenic mutation, the other by an approved inhibitor. It also connects to the corpus: *Acvr1*^R206H drives heterotopic ossification partly through PI3K/mTOR, and mTOR and PI3K inhibitors reduce HO ([38672135](notes/38672135.md)).
+- **Sclerostin / Wnt.** *SOST* loss of function (sclerosteosis, van Buchem disease) causes **progressive skeletal overgrowth continuing through adult life**, with tall stature reported, mandibular overgrowth and increased head circumference. Sclerostin is the secreted Wnt inhibitor made by **osteocytes — the mechanosensing cell — and loading suppresses it**. **Romosozumab is an approved anti-sclerostin antibody.** This connects to the corpus at three points: postnatal β-catenin ablation produces exostosis-like masses off the growth plate and in periosteum, HME osteochondroma cartilage is β-catenin-negative ([23821404](notes/23821404.md)); **DKK1 inhibition with WAY262611 increased condylar cartilage volume** ([42650460](notes/42650460.md)); and Wnt/β-catenin is enriched and activated in the fast-elongating jerboa metatarsal ([34793695](notes/34793695.md)). **The honest caution: the sclerosteosis phenotype is dominated by appositional thickening, skull and mandible — the same appositional-not-longitudinal pattern as the Weaver mouse (§3b) — and I have read only abstracts here** (27742500, 3351908, 11836356 all came back abstract-only or stubs).
+
+### 17.7 What this changes
+
+Revision 2 said: release the brake on an existing border, let the perichondrial rim form the interface, drive the volume actuator, cycle ERK. **§17 says the border and the rim are not the only option, and may not be the best one.** The alternative programme is:
+
+> **Provoke a CCC from periosteum at a chosen site; give it a partner before it involutes; and keep the androgen brake off.**
+
+Its advantages over everything else in this document are that **Stage 1 already works in humans**, that the deficiency is a **physical barrier** rather than a missing capacity, that the partner is **substitutable by a licensed agent**, that the **timing window is defined** (before involution), that **position is set by where the periosteum is**, and that the **output is length** — "significantly longer than their width" in the one experiment that produced it.
+
+Its disadvantage is that **every instance of it in a mammal began with an amputation or a fracture.** The CCC is a response to bone injury. Nothing in this literature provokes one without breaking something — which is why **bioelectrical stimulation of intact periosteum** (§17.2) and the search for a non-destructive CCC trigger are now the highest-value open questions in the project.
+
+---
+
+*Built from 101 full texts read in full, notes in [notes/](notes/). Untested. The two most load-bearing unread papers are 8982136 (the 59/32/9 partition) and 10614657 (RA inhibition accelerating elongation), both Tier 00 of [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md).*

@@ -3,6 +3,24 @@
 Drop PDFs into `research/inbox/` named `<PMID>.pdf` (or attach them in chat).
 Items marked **PMC-free** are free on PubMed Central but PMC's site blocks this container with a captcha; download from the PMC link.
 
+## Tier 000: the single claim that would change the most
+
+| PMID | Year | Paper | Why it is first |
+|---|---|---|---|
+| — | 2010, 2012, 2017 | **Yu L. et al. (2010, 2012) and Dawson L.A. et al. (2017): topical BMP2 applied to the amputated P2 digit stump induces a blastema from the circumferential cartilaginous callus and "restores the entire length of P2"** | **The only claim in the project that is simultaneously post-closure, about length, in a mammal, and achievable with a licensed agent (rhBMP-2). It reaches me only through [37490254](notes/37490254.md)'s citation. Needed: dose, the timing window relative to callus involution, animal age and whether plates were closed, what was measured, and whether anything exceeded original length rather than restoring it.** |
+| — | — | **Li C. et al. 2007b — the impermeable-membrane experiments in the deer pedicle** (fused distal third vs loosely associated proximal two-thirds) | The experiment that identifies tissue apposition, not any molecule, as the gate on Stage 2 |
+| — | — | **Zhang et al. (unpublished in 2023) — the rat two-step procedure: bioelectrical stimulation of stump periosteum, then removal of interposing connective tissue and muscle, producing partial regeneration "significantly longer than its width"** | The only mammalian result in the corpus where a deliberate intervention produced length-dominant regeneration |
+| — | — | **The interactive substance between deer pedicle periosteum and velvet skin** | Unknown, stated twice by the field's principal investigator. If identified, it is the partner-substitute for a human stump |
+| 36821675 | 2023 | A population of stem cells with strong regenerative potential discovered in deer antlers (Science) | Single-cell characterisation of the antler blastema progenitors |
+| — | — | Li C. et al. 2009 — the 3.3 million cells → 15 kg in 70 days quantification and the Oct4/Nanog/SOX2/TERT characterisation | The magnitude and the cell identity |
+| — | — | Akhtar 2019; Bubenik 1982; Suttie 1995a — **the < 0.5 ng/ml testosterone threshold and the castration experiments** | The release switch, and whether it is dose-graded |
+| — | — | Wang Q. 2011 — periosteal-derived BMP2 required for the bridging chondrogenic callus | The partner substance in fracture |
+| 40660003 | 2025 | Extracellular vesicles from antler blastema progenitor cells reverse bone loss and mitigate ageing (Nat Aging) | **PMC-free** PMC12443635. Fetched; abstract read, body unread. Which factors, and does any touch length |
+| 27742500 | 2017 | **Sclerostin deficiency in humans** (Bone) | Whether sclerosteosis overgrowth includes genuine longitudinal gain or is appositional only |
+| 3351908 | 1988 | Sclerosteosis (J Med Genet) | **PMC-free** PMC1015488; stub here. The clinical phenotype including stature |
+| — | — | Anything measuring **bone length** in PROS, rather than limb circumference or clinical hemihypertrophy | [29899452](notes/29899452.md) |
+| — | — | **A non-destructive trigger for a circumferential cartilaginous callus** — bioelectrical, mechanical, pharmacological, anything that provokes the periosteal response without an amputation or fracture | **The highest-value open question in the project. Every mammalian CCC in this literature follows broken bone.** |
+
 ## Tier 00: the two papers that would settle the most
 
 Added after the volume-actuator phase. Everything in [ACTIVATION.md](ACTIVATION.md) rev. 2 rests on these and I have both only second-hand.
