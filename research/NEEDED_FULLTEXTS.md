@@ -3,7 +3,9 @@
 Drop PDFs into `research/inbox/` named `<PMID>.pdf` (or attach them in chat).
 Items marked **PMC-free** are free on PubMed Central but PMC's site blocks this container with a captcha; download from the PMC link.
 
-## Tier 0: needed to confirm or kill the proposed mechanism ([THEORY.md](THEORY.md))
+## Tier 0: needed to confirm or kill the proposed mechanism ([THEORY.md](THEORY.md), [ACTIVATION.md](ACTIVATION.md))
+
+**The single most load-bearing item in this file is the adult tidemark advance rate** (7410471, 2124371, 9101369, 3446655, 893504). [ACTIVATION.md](ACTIVATION.md) §7 and §9 are hostage to it, and 9101369 (unweighting accelerates tidemark advancement) is currently a title I have not read. The biphasic fluid-load-support pair (10710186, 14614932) is next: it is the assumed mechanical shield for the hypertrophic cells.
 
 These test the weakest links: whether the adult articular front can be pushed into *bone length*, whether loading rate can select hydrostatic vs deviatoric stress, and whether non-invasive traction can reproduce knee joint distraction (KJD).
 

@@ -1,6 +1,6 @@
 # Compounds and existing agents that could plausibly produce centimetre-scale longitudinal growth after growth-plate closure
 
-A research document, built from full texts I read myself. One note per PMID in [notes/](notes/). Companion to [THEORY.md](THEORY.md) (the mechanical route) and [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md) (what I could not reach).
+A research document, built from full texts I read myself. One note per PMID in [notes/](notes/). Companion to [THEORY.md](THEORY.md) (the mechanical route), [ACTIVATION.md](ACTIVATION.md) (the least-complex way to switch the boundary on, which is where the agents named here are actually placed) and [NEEDED_FULLTEXTS.md](NEEDED_FULLTEXTS.md) (what I could not reach).
 
 **What this is.** Named, existing agents and approaches, organised by the node in the growth mechanism each one touches, with the species and skeletal age of the evidence, the magnitude it actually produced, and what kills it. The question it answers is the one you set: *not* a stack, *not* millimetres — plausible existing things that could cause centimetre-scale adult longitudinal gain.
 
